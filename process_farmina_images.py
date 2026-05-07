@@ -134,7 +134,16 @@ class ShopifyAPI:
 
 # ─── Procesamiento de imágenes ────────────────────────────────────────────────
 
-def _corners_are_white(img: Image.Image) -> bool:
+def check_issues(img: Image.Image) -> dict:
+    issues = {}
+    if img.size != TARGET_SIZE:
+        issues["tamaño"] = f"{img.size[0]}×{img.size[1]} → 2000×2000"
+    if img.format != "JPEG":
+        issues["formato"] = f"{img.format or '?'} → JPEG"
+    return issues
+
+def _sample_bg_color(img: Image.Image) -> tuple:
+    """Muestrea el color de fondo dominante desde las esquinas."""
     rgb = img.convert("RGB")
     w, h = rgb.size
     corners = [
@@ -143,32 +152,26 @@ def _corners_are_white(img: Image.Image) -> bool:
         rgb.getpixel((0, h - 1)),
         rgb.getpixel((w - 1, h - 1)),
     ]
-    return all(all(v > 240 for v in c) for c in corners)
-
-def check_issues(img: Image.Image) -> dict:
-    issues = {}
-    if img.size != TARGET_SIZE:
-        issues["tamaño"] = f"{img.size} → {TARGET_SIZE}"
-    has_alpha = img.mode in ("RGBA", "LA") or (
-        img.mode == "P" and "transparency" in img.info
-    )
-    if has_alpha or not _corners_are_white(img):
-        issues["fondo"] = "no es blanco sólido"
-    return issues
+    r = sum(c[0] for c in corners) // 4
+    g = sum(c[1] for c in corners) // 4
+    b = sum(c[2] for c in corners) // 4
+    return (r, g, b)
 
 def process_image(img: Image.Image) -> Image.Image:
-    img = img.convert("RGBA")
-    background = Image.new("RGBA", TARGET_SIZE, (255, 255, 255, 255))
-    ratio = img.width / img.height
+    """Redimensiona a 2000×2000 manteniendo proporciones y fondo original."""
+    bg_color = _sample_bg_color(img)
+    img_rgb  = img.convert("RGB")
+    ratio    = img_rgb.width / img_rgb.height
     if ratio > 1:
         new_w, new_h = TARGET_SIZE[0], int(TARGET_SIZE[0] / ratio)
     else:
         new_w, new_h = int(TARGET_SIZE[1] * ratio), TARGET_SIZE[1]
-    resized = img.resize((new_w, new_h), Image.LANCZOS)
+    resized    = img_rgb.resize((new_w, new_h), Image.LANCZOS)
+    background = Image.new("RGB", TARGET_SIZE, bg_color)
     ox = (TARGET_SIZE[0] - new_w) // 2
     oy = (TARGET_SIZE[1] - new_h) // 2
-    background.paste(resized, (ox, oy), resized)
-    return background.convert("RGB")
+    background.paste(resized, (ox, oy))
+    return background
 
 def to_b64_jpeg(img: Image.Image) -> str:
     buf = BytesIO()

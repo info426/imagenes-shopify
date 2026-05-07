@@ -68,27 +68,12 @@ def get_image_info(url: str) -> dict:
         img = Image.open(BytesIO(resp.content))
         size_kb = len(resp.content) // 1024
 
-        # Comprobar fondo
-        rgb = img.convert("RGB")
-        w, h = rgb.size
-        corners = [
-            rgb.getpixel((0, 0)),
-            rgb.getpixel((w - 1, 0)),
-            rgb.getpixel((0, h - 1)),
-            rgb.getpixel((w - 1, h - 1)),
-        ]
-        fondo_blanco = all(all(v > 240 for v in c) for c in corners)
-        tiene_alpha  = img.mode in ("RGBA", "LA") or (
-            img.mode == "P" and "transparency" in img.info
-        )
-
         return {
-            "size":         img.size,
-            "mode":         img.mode,
-            "format":       img.format or "?",
-            "kb":           size_kb,
-            "fondo_blanco": fondo_blanco and not tiene_alpha,
-            "ok":           img.size == TARGET_SIZE and (img.format == "JPEG") and fondo_blanco and not tiene_alpha,
+            "size":   img.size,
+            "mode":   img.mode,
+            "format": img.format or "?",
+            "kb":     size_kb,
+            "ok":     img.size == TARGET_SIZE and img.format == "JPEG",
         }
     except Exception as exc:
         return {"error": str(exc)}
@@ -149,9 +134,7 @@ def main():
                     detalles.append(f"{info['size'][0]}×{info['size'][1]}")
                 if info["format"] != "JPEG":
                     detalles.append(info["format"])
-                if not info["fondo_blanco"]:
-                    detalles.append("fondo no blanco")
-                problemas.append(", ".join(detalles))
+                problemas.append(", ".join(detalles) if detalles else "requiere reoptimización")
 
         n = len(images)
         if problemas:
