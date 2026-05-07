@@ -156,12 +156,16 @@ def _sample_bg_color(img: Image.Image) -> tuple:
     b = sum(c[2] for c in corners) // 4
     return (r, g, b)
 
-def check_issues(img: Image.Image) -> dict:
+def check_issues(img: Image.Image, url: str = "") -> dict:
     issues = {}
     if img.size != TARGET_SIZE:
         issues["tamaño"] = f"{img.size[0]}×{img.size[1]} → 2000×2000"
-    if img.format != "JPEG":
-        issues["formato"] = f"{img.format or '?'} → JPEG"
+    # Comprueba el contenido Y la extensión de la URL del CDN
+    url_clean = url.split("?")[0].lower()
+    content_is_jpeg = img.format == "JPEG"
+    url_is_jpg = url_clean.endswith(".jpg") or url_clean.endswith(".jpeg")
+    if not content_is_jpeg or not url_is_jpg:
+        issues["formato"] = f"URL={'jpg' if url_is_jpg else 'png'} contenido={'JPEG' if content_is_jpeg else img.format} → .jpg"
     return issues
 
 def process_image(img: Image.Image) -> Image.Image:
@@ -319,7 +323,7 @@ def main():
                 log.info(f"  Imagen {j}/{len(images)}: {src}")
 
                 img    = download_image(src)
-                issues = check_issues(img)
+                issues = check_issues(img, url=src)
 
                 if not issues:
                     log.info("  ✓ Ya cumple todos los requisitos — omitida")
