@@ -1,0 +1,47 @@
+name: Procesar producto de prueba
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'ID del producto a procesar'
+        required: true
+        default: '15509745107331'
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout rama de trabajo
+        uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Procesar producto
+        env:
+          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
+          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
+          CLIENT_SECRET: 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
+          PRODUCT_ID: ${{ github.event.inputs.product_id }}
+        run: |
+          mkdir -p resultados
+          python3 process_farmina_images.py --product-id "$PRODUCT_ID" 2>&1 | tee resultados/prueba_${{ github.event.inputs.product_id }}.txt
+
+      - name: Guardar log en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: log prueba producto ${{ github.event.inputs.product_id }}"
+          git push

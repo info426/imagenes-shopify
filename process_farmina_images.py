@@ -18,6 +18,7 @@ import json
 import time
 import base64
 import logging
+import argparse
 import requests
 from pathlib import Path
 from io import BytesIO
@@ -31,7 +32,7 @@ load_dotenv()
 SHOP_DOMAIN   = os.getenv("SHOP_DOMAIN",   "7ev1zx-eg.myshopify.com")
 CLIENT_ID     = os.getenv("CLIENT_ID",     "")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET", "")
-VENDOR_FILTER = os.getenv("VENDOR_FILTER", "Farmina")
+VENDOR_FILTER = os.getenv("VENDOR_FILTER", "Farmina ND")
 
 API_VERSION  = "2024-10"
 TARGET_SIZE  = (2000, 2000)
@@ -236,6 +237,11 @@ def search_farmina_image(title: str) -> str | None:
 # ─── Flujo principal ──────────────────────────────────────────────────────────
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--product-id", type=int, default=None,
+                        help="Procesar solo este product ID (modo prueba)")
+    args = parser.parse_args()
+
     if not CLIENT_ID or not CLIENT_SECRET:
         log.error("Faltan CLIENT_ID o CLIENT_SECRET. Revisa el archivo .env")
         sys.exit(1)
@@ -246,17 +252,28 @@ def main():
     log.info("PROCESADOR DE IMÁGENES FARMINA ND — SHOPIFY")
     log.info("=" * 60)
     log.info(f"Tienda : {SHOP_DOMAIN}")
-    log.info(f"Vendor : {VENDOR_FILTER}")
 
     token = get_access_token()
     api   = ShopifyAPI(token)
 
-    log.info(f"\nObteniendo productos con vendor='{VENDOR_FILTER}'...")
-    products = api.get_products(vendor=VENDOR_FILTER)
-    log.info(f"Total productos encontrados: {len(products)}\n")
+    if args.product_id:
+        log.info(f"Modo prueba — producto ID: {args.product_id}")
+        # Obtener solo el producto solicitado directamente
+        resp = requests.get(
+            f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}/products/{args.product_id}.json",
+            headers={"X-Shopify-Access-Token": token},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        products = [resp.json()["product"]]
+    else:
+        log.info(f"Vendor : {VENDOR_FILTER}")
+        log.info(f"\nObteniendo productos con vendor='{VENDOR_FILTER}'...")
+        products = api.get_products(vendor=VENDOR_FILTER)
+        log.info(f"Total productos encontrados: {len(products)}\n")
 
     if not products:
-        log.warning("Sin resultados. Verifica VENDOR_FILTER en .env.")
+        log.warning("Sin resultados.")
         return
 
     stats = dict(total=len(products), actualizadas=0,
