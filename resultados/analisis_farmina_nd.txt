@@ -12,1500 +12,639 @@ Productos Farmina ND (sin Vet Life): 157
 
 #    PRODUCTO                                      IMGS  ESTADO
 ---------------------------------------------------------------------------
-1    FARMINA N&D CAT NATURAL FISH TRIO MENU 6X70G  2     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-2    FARMINA N&D CAT NATURAL MEAT DUO MENU 6X70GR  2     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-3    FARMINA ND BROWN DOG CORDERO SPIRULINA MED/M  10    ✗ 400×600, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | 500×320, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-4    FARMINA ND BROWN DOG CORDERO SPIRULINA MINI   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-5    FARMINA ND BROWN DOG PUPPY CORDERO SPIRULINA  9     ✗ 400×600, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-6    FARMINA ND CAT ANCESTRAL CORDERO              10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-7    FARMINA ND CAT ANCESTRAL NEUTERED POLLO       10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-8    FARMINA ND CAT ANCESTRAL POLLO                10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-9    FARMINA ND CAT KITTEN OCEAN ATUN BACALAO CAL  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-10   FARMINA ND CAT KITTEN OCEAN BACALAO CALABAZA  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-11   FARMINA ND CAT KITTEN PRIME POLLO             11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-12   FARMINA ND CAT KITTEN PRIME POLLO CAJA        9     ✗ 800×1200 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-13   FARMINA ND CAT KITTEN TROPICAL SELECTION COR  9     ✗ 400×600, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | Error: 502 Server Error: Bad Gateway for url: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/7_85599254-cccd-448e-8475-f3680c9dde13.png?v=1778152531 | PNG, fondo no blanco | 4167×4167, PNG, fondo no blanco
-14   FARMINA ND CAT OCEAN ARENQUE                  11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-15   FARMINA ND CAT OCEAN ATUN BACALAO CALABAZA 6  9     ✗ 951×542 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-16   FARMINA ND CAT OCEAN ATUN CALAMAR GAMBA CAJA  8     ✗ 951×542 | 500×320 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-17   FARMINA ND CAT OCEAN ATUN GAMBA CAJA 24X70GR  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-18   FARMINA ND CAT OCEAN ATUN SALMON CAJA 24X70G  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-19   FARMINA ND CAT OCEAN ATUN SARDINA GAMBA CAJA  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | Error: HTTPSConnectionPool(host='cdn.shopify.com', port=443): Read timed out. (read timeout=20) | PNG, fondo no blanco
-20   FARMINA ND CAT OCEAN LOW GRAIN BACALAO        10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-21   FARMINA ND CAT OCEAN NEUTERED                 10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-22   FARMINA ND CAT OCEAN PUMPKIN ARENQUE          10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-23   FARMINA ND CAT PRIME ADULT POLLO              11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-24   FARMINA ND CAT PRIME CORDERO                  11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-25   FARMINA ND CAT PRIME CORDERO CAJA             9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-26   FARMINA ND CAT PRIME JABALI                   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-27   FARMINA ND CAT PRIME JABALI CAJA 24X70GR      9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-28   FARMINA ND CAT PRIME NEUTERED POLLO           10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-29   FARMINA ND CAT PRIME POLLO CAJA               9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-30   FARMINA ND CAT PUMPKIN CODORNIZ               10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-31   FARMINA ND CAT PUMPKIN CODORNIZ CAJA 24X70GR  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-32   FARMINA ND CAT PUMPKIN CORDERO CAJA 24X70GR   9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-33   FARMINA ND CAT PUMPKIN JABALI CAJA 24X70GR    9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-34   FARMINA ND CAT PUMPKIN NEUTERED CODORNIZ      10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-35   FARMINA ND CAT PUMPKIN NEUTERED CORDERO ARAN  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-36   FARMINA ND CAT PUMPKIN PATO                   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-37   FARMINA ND CAT PUMPKIN PATO CAJA 24X70GR      9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-38   FARMINA ND CAT PUMPKIN POLLO CAJA 24X70GR     9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-39   FARMINA ND CAT PUMPKIN VENADO                 10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-40   FARMINA ND CAT PUMPKIN VENADO CAJA 24X70GR    9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-41   FARMINA ND CAT QUINOA DIGESTION CAJA 24X80GR  7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-42   FARMINA ND CAT QUINOA DIGESTION CORDERO       9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-43   FARMINA ND CAT QUINOA HAIRBALL PATO 1,5KG     7     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-44   FARMINA ND CAT QUINOA NEUTERED CAJA 24X80GR   6     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-45   FARMINA ND CAT QUINOA NEUTERED PATO           9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-46   FARMINA ND CAT QUINOA SENIOR CAJA 24X80GR     2     ✗ 951×542 | 500×320, PNG, fondo no blanco
-47   FARMINA ND CAT QUINOA SENIOR CORDERO          2     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-48   FARMINA ND CAT QUINOA SKIN COAT ARENQUE       9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-49   FARMINA ND CAT QUINOA SKIN COAT ARENQUE CAJA  7     ✗ PNG | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-50   FARMINA ND CAT QUINOA SKIN COAT CODORNIZ      9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-51   FARMINA ND CAT QUINOA SKIN COAT CODORNIZ CAJ  7     ✗ PNG | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-52   FARMINA ND CAT QUINOA SKIN COAT PATO CAJA 24  7     ✗ PNG | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-53   FARMINA ND CAT QUINOA URINARY CAJA 24X80GR    7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-54   FARMINA ND CAT QUINOA URINARY PATO            9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-55   FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CAJA  6     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-56   FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CORD  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-57   FARMINA ND CAT SPIRULINA ARANQUE 1,5KG        9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-58   FARMINA ND CAT SPIRULINA CORDERO 1,5KG        9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-59   FARMINA ND CAT SPIRULINA KITTEN ARENQUE 1,5K  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-60   FARMINA ND CAT TROPICAL SELECTION NEUTERED C  11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-61   FARMINA ND CAT TROPICAL SELECTION NEUTERED P  11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-62   FARMINA ND CAT TROPICAL SELECTION POLLO       11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-63   FARMINA ND DOG ADULT PUPPY PUMPKIN CORDERO C  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-64   FARMINA ND DOG ANCESTRAL GIGANTE POLLO 12KG   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-65   FARMINA ND DOG ANCESTRAL LIGHT MEDIUM MAXI    10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-66   FARMINA ND DOG ANCESTRAL LIGHT MINI 2,5KG     9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-67   FARMINA ND DOG ANCESTRAL MEDIUM MAXI CORDERO  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-68   FARMINA ND DOG ANCESTRAL MEDIUM MAXI POLLO 1  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-69   FARMINA ND DOG ANCESTRAL MINI CORDERO         10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-70   FARMINA ND DOG ANCESTRAL MINI POLLO           10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-71   FARMINA ND DOG OCEAN LOW GRAIN MEDIUM MAXI B  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-72   FARMINA ND DOG OCEAN LOW GRAIN MINI BACALAO   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-73   FARMINA ND DOG OCEAN MEDIUM MAXI ARENQUE 12K  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-74   FARMINA ND DOG OCEAN MINI ARENQUE 2,5KG       9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-75   FARMINA ND DOG OCEAN PUMPKIN BACALAO CAJA 6X  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-76   FARMINA ND DOG OCEAN PUMPKIN MEDIUM MAXI BAC  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-77   FARMINA ND DOG OCEAN PUMPKIN MINI BACALAO     10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-78   FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKIN M  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-79   FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKN MI  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-80   FARMINA ND DOG OCEAN SALMON BACALAO CAJA 6X2  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-81   FARMINA ND DOG OCEAN SALMON BACALAO MEDIUM M  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-82   FARMINA ND DOG OCEAN SALMON BACALAO MINI      11    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-83   FARMINA ND DOG PRIME MEDIUM MAXI POLLO 12KG   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-84   FARMINA ND DOG PRIME MINI CORDERO 2,5KG       10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-85   FARMINA ND DOG PRIME MINI POLLO 2,5KG         9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-86   FARMINA ND DOG PRIME POLLO CAJA 6X285GR       9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-87   FARMINA ND DOG PUMPKIN CORDERO CAJA 6X285GR   9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-88   FARMINA ND DOG PUMPKIN JABALI CAJA 6X285GR    9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-89   FARMINA ND DOG PUMPKIN MEDIUM MAXI CORDERO    10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-90   FARMINA ND DOG PUMPKIN MEDIUM MAXI JABALI     10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-91   FARMINA ND DOG PUMPKIN MEDIUM MAXI POLLO      10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-92   FARMINA ND DOG PUMPKIN MINI CORDERO           10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-93   FARMINA ND DOG PUMPKIN MINI JABALI            10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-94   FARMINA ND DOG PUMPKIN MINI PATO 2KG          9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-95   FARMINA ND DOG PUMPKIN MINI POLLO             10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-96   FARMINA ND DOG PUMPKIN POLLO CAJA 6X285GR     8     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-97   FARMINA ND DOG PUMPKIN POLLO STARTER PUPPY 6  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-98   FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI C  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-99   FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI P  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-100  FARMINA ND DOG PUPPY ANCESTRAL MINI POLLO 2,  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-101  FARMINA ND DOG PUPPY PRIME MEDIUM MAXI POLLO  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-102  FARMINA ND DOG PUPPY PRIME MINI POLLO 2,5KG   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-103  FARMINA ND DOG PUPPY PRIME POLLO CAJA 6X285G  9     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-104  FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI COR  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-105  FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI POL  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-106  FARMINA ND DOG PUPPY PUMPKIN MINI CORDERO     10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-107  FARMINA ND DOG PUPPY PUMPKIN MINI POLLO 2,5K  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-108  FARMINA ND DOG PUPPY SPIRULINA MINI CORDERO   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-109  FARMINA ND DOG PUPPY TROPICAL SELECTION MED   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-110  FARMINA ND DOG PUPPY TROPICAL SELECTION MINI  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-111  FARMINA ND DOG QUINOA DIGESTION CAJA 6X285GR  7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-112  FARMINA ND DOG QUINOA DIGESTION CORDERO MED   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-113  FARMINA ND DOG QUINOA DIGESTION CORDERO MINI  8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-114  FARMINA ND DOG QUINOA NEUTERED PATO MEDIUM M  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-115  FARMINA ND DOG QUINOA NEUTERED PATO MINI      8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-116  FARMINA ND DOG QUINOA SENIOR CAJA 6X285GR     4     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-117  FARMINA ND DOG QUINOA SENIOR CORDERO MED MAX  5     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-118  FARMINA ND DOG QUINOA SENIOR CORDERO MINI     5     ✗ 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-119  FARMINA ND DOG QUINOA SKIN COAT ARENQUE       9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-120  FARMINA ND DOG QUINOA SKIN COAT CODORNIZ CAJ  7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-121  FARMINA ND DOG QUINOA SKIN COAT CODORNIZ MIN  8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-122  FARMINA ND DOG QUINOA SKIN COAT PATO MED/MAX  8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-123  FARMINA ND DOG QUINOA SKIN COAT PATO MINI 2,  8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-124  FARMINA ND DOG QUINOA SKIN COAT VENADO CAJA   7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-125  FARMINA ND DOG QUINOA SKIN COAT VENADO MED M  9     ✗ PNG, fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-126  FARMINA ND DOG QUINOA SKIN COAT VENADO MINI   8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-127  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CAJA  7     ✗ PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-128  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORD  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-129  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORD  8     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-130  FARMINA ND DOG SELECTION ANCESTRAL MED MAXI   9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-131  FARMINA ND DOG SENIOR ANCESTRAL MEDIUM MAXI   10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-132  FARMINA ND DOG SENIOR ANCESTRAL MINI POLLO 2  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-133  FARMINA ND DOG SPIRULINA MEDIUM MAXI ARENQUE  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-134  FARMINA ND DOG SPIRULINA MEDIUM MAXI CORDERO  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-135  FARMINA ND DOG SPIRULINA MINI ARENQUE 2KG     9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-136  FARMINA ND DOG SPIRULINA MINI CORDERO 2KG     9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-137  FARMINA ND DOG STARTER PUPPY PUMPKIN POLLO 2  9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-138  FARMINA ND DOG TROPICAL SELECTION MED MAXI C  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-139  FARMINA ND DOG TROPICAL SELECTION MED MAXI P  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-140  FARMINA ND DOG TROPICAL SELECTION MED MAXI S  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-141  FARMINA ND DOG TROPICAL SELECTION MINI CORDE  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-142  FARMINA ND DOG TROPICAL SELECTION MINI POLLO  10    ✗ 1500×1500 | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | 1500×1500, fondo no blanco | fondo no blanco | fondo no blanco
-143  FARMINA ND DOG TROPICAL SELECTION MINI SALMO  10    ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-144  FARMINA ND WHITE DOG LUBINA SPIRULINA MED/MA  7     ✗ 1500×1500 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-145  FARMINA ND WHITE DOG LUBINA SPIRULINA MINI    9     ✗ fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco | fondo no blanco
-146  FARMINA ND WHITE DOG PUPPY LUBINA SPIRULINA   7     ✗ 1500×1500 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
-147  FARMINA TREAT ND BROWN                        3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-148  FARMINA TREAT ND PUMPKIN DOG CORDERO ADULT    3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-149  FARMINA TREAT ND PUMPKIN DOG POLLO ADULT      3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-150  FARMINA TREAT ND QUINOA DOG DIGESTION ADULT   3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-151  FARMINA TREAT ND QUINOA DOG FLATULENCE ADULT  3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-152  FARMINA TREAT ND QUINOA DOG FRESH BREATHE AD  3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-153  FARMINA TREAT ND QUINOA DOG SKIN COAT ARENQU  3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-154  FARMINA TREAT ND QUINOA DOG SKIN COAT VENADO  3     ✗ 1500×1500 | 1500×1500 | 500×320, PNG, fondo no blanco
-155  FARMINA TREAT ND QUINOA DOG WEIGHT M CORDERO  3     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 500×320, PNG, fondo no blanco
-156  FARMINA TREAT ND TROPICAL SELECTION POLLO     7     ✗ 400×600, PNG, fondo no blanco | 400×600, PNG, fondo no blanco | 4167×4167, PNG, fondo no blanco | 500×320, PNG, fondo no blanco | PNG, fondo no blanco | 4167×4167, PNG, fondo no blanco | 4167×4167, PNG, fondo no blanco
-157  FARMINA TREAT ND WHITE                        7     ✗ 400×600 | 1500×1500 | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco | PNG, fondo no blanco
+1    FARMINA N&D CAT NATURAL FISH TRIO MENU 6X70G  2     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+2    FARMINA N&D CAT NATURAL MEAT DUO MENU 6X70GR  2     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+3    FARMINA ND BROWN DOG CORDERO SPIRULINA MED/M  10    ✗ 400×600, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+4    FARMINA ND BROWN DOG CORDERO SPIRULINA MINI   10    ✓ OK
+5    FARMINA ND BROWN DOG PUPPY CORDERO SPIRULINA  9     ✗ 400×600, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+6    FARMINA ND CAT ANCESTRAL CORDERO              10    ✓ OK
+7    FARMINA ND CAT ANCESTRAL NEUTERED POLLO       10    ✓ OK
+8    FARMINA ND CAT ANCESTRAL POLLO                10    ✓ OK
+9    FARMINA ND CAT KITTEN OCEAN ATUN BACALAO CAL  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+10   FARMINA ND CAT KITTEN OCEAN BACALAO CALABAZA  10    ✓ OK
+11   FARMINA ND CAT KITTEN PRIME POLLO             11    ✓ OK
+12   FARMINA ND CAT KITTEN PRIME POLLO CAJA        9     ✗ 800×1200 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+13   FARMINA ND CAT KITTEN TROPICAL SELECTION COR  9     ✗ 400×600, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | 4167×4167, PNG
+14   FARMINA ND CAT OCEAN ARENQUE                  11    ✓ OK
+15   FARMINA ND CAT OCEAN ATUN BACALAO CALABAZA 6  9     ✗ 951×542 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+16   FARMINA ND CAT OCEAN ATUN CALAMAR GAMBA CAJA  8     ✗ 951×542 | 500×320 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+17   FARMINA ND CAT OCEAN ATUN GAMBA CAJA 24X70GR  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+18   FARMINA ND CAT OCEAN ATUN SALMON CAJA 24X70G  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+19   FARMINA ND CAT OCEAN ATUN SARDINA GAMBA CAJA  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+20   FARMINA ND CAT OCEAN LOW GRAIN BACALAO        10    ✓ OK
+21   FARMINA ND CAT OCEAN NEUTERED                 10    ✓ OK
+22   FARMINA ND CAT OCEAN PUMPKIN ARENQUE          10    ✓ OK
+23   FARMINA ND CAT PRIME ADULT POLLO              11    ✓ OK
+24   FARMINA ND CAT PRIME CORDERO                  11    ✓ OK
+25   FARMINA ND CAT PRIME CORDERO CAJA             9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+26   FARMINA ND CAT PRIME JABALI                   10    ✓ OK
+27   FARMINA ND CAT PRIME JABALI CAJA 24X70GR      9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+28   FARMINA ND CAT PRIME NEUTERED POLLO           10    ✓ OK
+29   FARMINA ND CAT PRIME POLLO CAJA               9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+30   FARMINA ND CAT PUMPKIN CODORNIZ               10    ✓ OK
+31   FARMINA ND CAT PUMPKIN CODORNIZ CAJA 24X70GR  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+32   FARMINA ND CAT PUMPKIN CORDERO CAJA 24X70GR   9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+33   FARMINA ND CAT PUMPKIN JABALI CAJA 24X70GR    9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+34   FARMINA ND CAT PUMPKIN NEUTERED CODORNIZ      10    ✓ OK
+35   FARMINA ND CAT PUMPKIN NEUTERED CORDERO ARAN  10    ✓ OK
+36   FARMINA ND CAT PUMPKIN PATO                   10    ✓ OK
+37   FARMINA ND CAT PUMPKIN PATO CAJA 24X70GR      9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+38   FARMINA ND CAT PUMPKIN POLLO CAJA 24X70GR     9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+39   FARMINA ND CAT PUMPKIN VENADO                 10    ✓ OK
+40   FARMINA ND CAT PUMPKIN VENADO CAJA 24X70GR    9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+41   FARMINA ND CAT QUINOA DIGESTION CAJA 24X80GR  7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+42   FARMINA ND CAT QUINOA DIGESTION CORDERO       9     ✓ OK
+43   FARMINA ND CAT QUINOA HAIRBALL PATO 1,5KG     7     ✓ OK
+44   FARMINA ND CAT QUINOA NEUTERED CAJA 24X80GR   6     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+45   FARMINA ND CAT QUINOA NEUTERED PATO           9     ✓ OK
+46   FARMINA ND CAT QUINOA SENIOR CAJA 24X80GR     2     ✗ 951×542 | 500×320, PNG (transparente→fondo blanco)
+47   FARMINA ND CAT QUINOA SENIOR CORDERO          2     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+48   FARMINA ND CAT QUINOA SKIN COAT ARENQUE       9     ✓ OK
+49   FARMINA ND CAT QUINOA SKIN COAT ARENQUE CAJA  7     ✗ PNG | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+50   FARMINA ND CAT QUINOA SKIN COAT CODORNIZ      9     ✓ OK
+51   FARMINA ND CAT QUINOA SKIN COAT CODORNIZ CAJ  7     ✗ PNG | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+52   FARMINA ND CAT QUINOA SKIN COAT PATO CAJA 24  7     ✗ PNG | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+53   FARMINA ND CAT QUINOA URINARY CAJA 24X80GR    7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+54   FARMINA ND CAT QUINOA URINARY PATO            9     ✓ OK
+55   FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CAJA  6     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+56   FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CORD  9     ✓ OK
+57   FARMINA ND CAT SPIRULINA ARANQUE 1,5KG        9     ✓ OK
+58   FARMINA ND CAT SPIRULINA CORDERO 1,5KG        9     ✓ OK
+59   FARMINA ND CAT SPIRULINA KITTEN ARENQUE 1,5K  9     ✓ OK
+60   FARMINA ND CAT TROPICAL SELECTION NEUTERED C  11    ✓ OK
+61   FARMINA ND CAT TROPICAL SELECTION NEUTERED P  11    ✓ OK
+62   FARMINA ND CAT TROPICAL SELECTION POLLO       11    ✓ OK
+63   FARMINA ND DOG ADULT PUPPY PUMPKIN CORDERO C  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+64   FARMINA ND DOG ANCESTRAL GIGANTE POLLO 12KG   9     ✓ OK
+65   FARMINA ND DOG ANCESTRAL LIGHT MEDIUM MAXI    10    ✓ OK
+66   FARMINA ND DOG ANCESTRAL LIGHT MINI 2,5KG     9     ✓ OK
+67   FARMINA ND DOG ANCESTRAL MEDIUM MAXI CORDERO  9     ✓ OK
+68   FARMINA ND DOG ANCESTRAL MEDIUM MAXI POLLO 1  9     ✓ OK
+69   FARMINA ND DOG ANCESTRAL MINI CORDERO         10    ✓ OK
+70   FARMINA ND DOG ANCESTRAL MINI POLLO           10    ✓ OK
+71   FARMINA ND DOG OCEAN LOW GRAIN MEDIUM MAXI B  9     ✓ OK
+72   FARMINA ND DOG OCEAN LOW GRAIN MINI BACALAO   9     ✓ OK
+73   FARMINA ND DOG OCEAN MEDIUM MAXI ARENQUE 12K  9     ✓ OK
+74   FARMINA ND DOG OCEAN MINI ARENQUE 2,5KG       9     ✓ OK
+75   FARMINA ND DOG OCEAN PUMPKIN BACALAO CAJA 6X  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+76   FARMINA ND DOG OCEAN PUMPKIN MEDIUM MAXI BAC  10    ✓ OK
+77   FARMINA ND DOG OCEAN PUMPKIN MINI BACALAO     10    ✓ OK
+78   FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKIN M  10    ✓ OK
+79   FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKN MI  9     ✓ OK
+80   FARMINA ND DOG OCEAN SALMON BACALAO CAJA 6X2  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+81   FARMINA ND DOG OCEAN SALMON BACALAO MEDIUM M  10    ✓ OK
+82   FARMINA ND DOG OCEAN SALMON BACALAO MINI      11    ✓ OK
+83   FARMINA ND DOG PRIME MEDIUM MAXI POLLO 12KG   10    ✓ OK
+84   FARMINA ND DOG PRIME MINI CORDERO 2,5KG       10    ✓ OK
+85   FARMINA ND DOG PRIME MINI POLLO 2,5KG         9     ✓ OK
+86   FARMINA ND DOG PRIME POLLO CAJA 6X285GR       9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+87   FARMINA ND DOG PUMPKIN CORDERO CAJA 6X285GR   9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+88   FARMINA ND DOG PUMPKIN JABALI CAJA 6X285GR    9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+89   FARMINA ND DOG PUMPKIN MEDIUM MAXI CORDERO    10    ✓ OK
+90   FARMINA ND DOG PUMPKIN MEDIUM MAXI JABALI     10    ✓ OK
+91   FARMINA ND DOG PUMPKIN MEDIUM MAXI POLLO      10    ✓ OK
+92   FARMINA ND DOG PUMPKIN MINI CORDERO           10    ✓ OK
+93   FARMINA ND DOG PUMPKIN MINI JABALI            10    ✓ OK
+94   FARMINA ND DOG PUMPKIN MINI PATO 2KG          9     ✓ OK
+95   FARMINA ND DOG PUMPKIN MINI POLLO             10    ✓ OK
+96   FARMINA ND DOG PUMPKIN POLLO CAJA 6X285GR     8     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+97   FARMINA ND DOG PUMPKIN POLLO STARTER PUPPY 6  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+98   FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI C  9     ✓ OK
+99   FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI P  10    ✓ OK
+100  FARMINA ND DOG PUPPY ANCESTRAL MINI POLLO 2,  9     ✓ OK
+101  FARMINA ND DOG PUPPY PRIME MEDIUM MAXI POLLO  9     ✓ OK
+102  FARMINA ND DOG PUPPY PRIME MINI POLLO 2,5KG   9     ✓ OK
+103  FARMINA ND DOG PUPPY PRIME POLLO CAJA 6X285G  9     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+104  FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI COR  10    ✓ OK
+105  FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI POL  10    ✓ OK
+106  FARMINA ND DOG PUPPY PUMPKIN MINI CORDERO     10    ✓ OK
+107  FARMINA ND DOG PUPPY PUMPKIN MINI POLLO 2,5K  9     ✓ OK
+108  FARMINA ND DOG PUPPY SPIRULINA MINI CORDERO   9     ✓ OK
+109  FARMINA ND DOG PUPPY TROPICAL SELECTION MED   10    ✓ OK
+110  FARMINA ND DOG PUPPY TROPICAL SELECTION MINI  9     ✓ OK
+111  FARMINA ND DOG QUINOA DIGESTION CAJA 6X285GR  7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+112  FARMINA ND DOG QUINOA DIGESTION CORDERO MED   9     ✓ OK
+113  FARMINA ND DOG QUINOA DIGESTION CORDERO MINI  8     ✓ OK
+114  FARMINA ND DOG QUINOA NEUTERED PATO MEDIUM M  9     ✓ OK
+115  FARMINA ND DOG QUINOA NEUTERED PATO MINI      8     ✓ OK
+116  FARMINA ND DOG QUINOA SENIOR CAJA 6X285GR     4     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+117  FARMINA ND DOG QUINOA SENIOR CORDERO MED MAX  5     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+118  FARMINA ND DOG QUINOA SENIOR CORDERO MINI     5     ✗ 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+119  FARMINA ND DOG QUINOA SKIN COAT ARENQUE       9     ✓ OK
+120  FARMINA ND DOG QUINOA SKIN COAT CODORNIZ CAJ  7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+121  FARMINA ND DOG QUINOA SKIN COAT CODORNIZ MIN  8     ✓ OK
+122  FARMINA ND DOG QUINOA SKIN COAT PATO MED/MAX  8     ✓ OK
+123  FARMINA ND DOG QUINOA SKIN COAT PATO MINI 2,  8     ✓ OK
+124  FARMINA ND DOG QUINOA SKIN COAT VENADO CAJA   7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+125  FARMINA ND DOG QUINOA SKIN COAT VENADO MED M  9     ✗ PNG (transparente→fondo blanco)
+126  FARMINA ND DOG QUINOA SKIN COAT VENADO MINI   8     ✓ OK
+127  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CAJA  7     ✗ PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+128  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORD  9     ✓ OK
+129  FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORD  8     ✓ OK
+130  FARMINA ND DOG SELECTION ANCESTRAL MED MAXI   9     ✓ OK
+131  FARMINA ND DOG SENIOR ANCESTRAL MEDIUM MAXI   10    ✓ OK
+132  FARMINA ND DOG SENIOR ANCESTRAL MINI POLLO 2  9     ✓ OK
+133  FARMINA ND DOG SPIRULINA MEDIUM MAXI ARENQUE  10    ✓ OK
+134  FARMINA ND DOG SPIRULINA MEDIUM MAXI CORDERO  10    ✓ OK
+135  FARMINA ND DOG SPIRULINA MINI ARENQUE 2KG     9     ✓ OK
+136  FARMINA ND DOG SPIRULINA MINI CORDERO 2KG     9     ✓ OK
+137  FARMINA ND DOG STARTER PUPPY PUMPKIN POLLO 2  9     ✓ OK
+138  FARMINA ND DOG TROPICAL SELECTION MED MAXI C  10    ✓ OK
+139  FARMINA ND DOG TROPICAL SELECTION MED MAXI P  10    ✓ OK
+140  FARMINA ND DOG TROPICAL SELECTION MED MAXI S  10    ✓ OK
+141  FARMINA ND DOG TROPICAL SELECTION MINI CORDE  10    ✓ OK
+142  FARMINA ND DOG TROPICAL SELECTION MINI POLLO  10    ✗ 1500×1500 | 1500×1500
+143  FARMINA ND DOG TROPICAL SELECTION MINI SALMO  10    ✓ OK
+144  FARMINA ND WHITE DOG LUBINA SPIRULINA MED/MA  7     ✗ 1500×1500 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+145  FARMINA ND WHITE DOG LUBINA SPIRULINA MINI    9     ✓ OK
+146  FARMINA ND WHITE DOG PUPPY LUBINA SPIRULINA   7     ✗ 1500×1500 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
+147  FARMINA TREAT ND BROWN                        3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+148  FARMINA TREAT ND PUMPKIN DOG CORDERO ADULT    3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+149  FARMINA TREAT ND PUMPKIN DOG POLLO ADULT      3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+150  FARMINA TREAT ND QUINOA DOG DIGESTION ADULT   3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+151  FARMINA TREAT ND QUINOA DOG FLATULENCE ADULT  3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+152  FARMINA TREAT ND QUINOA DOG FRESH BREATHE AD  3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+153  FARMINA TREAT ND QUINOA DOG SKIN COAT ARENQU  3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+154  FARMINA TREAT ND QUINOA DOG SKIN COAT VENADO  3     ✗ 1500×1500 | 1500×1500 | 500×320, PNG (transparente→fondo blanco)
+155  FARMINA TREAT ND QUINOA DOG WEIGHT M CORDERO  3     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 500×320, PNG (transparente→fondo blanco)
+156  FARMINA TREAT ND TROPICAL SELECTION POLLO     7     ✗ 400×600, PNG (transparente→fondo blanco) | 400×600, PNG (transparente→fondo blanco) | 4167×4167, PNG | 500×320, PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | 4167×4167, PNG | 4167×4167, PNG
+157  FARMINA TREAT ND WHITE                        7     ✗ 400×600 | 1500×1500 | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco) | PNG (transparente→fondo blanco)
 
 =================================================================
 RESUMEN
 =================================================================
   Total Farmina ND          : 157
-  Necesitan procesado       : 157
+  Necesitan procesado       : 61
   Sin imagen (buscar en web): 0
-  Ya cumplen requisitos     : 0
+  Ya cumplen requisitos     : 96
 
 Productos que necesitan trabajo:
   ID 15509726986627 · FARMINA N&D CAT NATURAL FISH TRIO MENU 6X70GR
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509727019395 · FARMINA N&D CAT NATURAL MEAT DUO MENU 6X70GR
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509727052163 · FARMINA ND BROWN DOG CORDERO SPIRULINA MED/MAX
-           → 400×600, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509727150467 · FARMINA ND BROWN DOG CORDERO SPIRULINA MINI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509727248771 · FARMINA ND BROWN DOG PUPPY CORDERO SPIRULINA MINI 1,5KG
-           → 400×600, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509727314307 · FARMINA ND CAT ANCESTRAL CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509727510915 · FARMINA ND CAT ANCESTRAL NEUTERED POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509727707523 · FARMINA ND CAT ANCESTRAL POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509727871363 · FARMINA ND CAT KITTEN OCEAN ATUN BACALAO CALABAZA
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469439811971 · FARMINA ND CAT KITTEN OCEAN BACALAO CALABAZA
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509728199043 · FARMINA ND CAT KITTEN PRIME POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728297347 · FARMINA ND CAT KITTEN PRIME POLLO CAJA
            → 800×1200
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728362883 · FARMINA ND CAT KITTEN TROPICAL SELECTION CORDERO 1,5KG
-           → 400×600, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → Error: 502 Server Error: Bad Gateway for url: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/7_85599254-cccd-448e-8475-f3680c9dde13.png?v=1778152531
-           → PNG, fondo no blanco
-           → 4167×4167, PNG, fondo no blanco
-  ID 15469439254915 · FARMINA ND CAT OCEAN ARENQUE
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → 4167×4167, PNG
   ID 15509728592259 · FARMINA ND CAT OCEAN ATUN BACALAO CALABAZA 6X70GR
            → 951×542
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728625027 · FARMINA ND CAT OCEAN ATUN CALAMAR GAMBA CAJA 24X70GR
            → 951×542
            → 500×320
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728690563 · FARMINA ND CAT OCEAN ATUN GAMBA CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728788867 · FARMINA ND CAT OCEAN ATUN SALMON CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509728887171 · FARMINA ND CAT OCEAN ATUN SARDINA GAMBA CAJA
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → Error: HTTPSConnectionPool(host='cdn.shopify.com', port=443): Read timed out. (read timeout=20)
-           → PNG, fondo no blanco
-  ID 15509729706371 · FARMINA ND CAT OCEAN LOW GRAIN BACALAO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509730132355 · FARMINA ND CAT OCEAN NEUTERED
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509730689411 · FARMINA ND CAT OCEAN PUMPKIN ARENQUE
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469437845891 · FARMINA ND CAT PRIME ADULT POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469441089923 · FARMINA ND CAT PRIME CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509732229507 · FARMINA ND CAT PRIME CORDERO CAJA
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469440795011 · FARMINA ND CAT PRIME JABALI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509732983171 · FARMINA ND CAT PRIME JABALI CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469358875011 · FARMINA ND CAT PRIME NEUTERED POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509733310851 · FARMINA ND CAT PRIME POLLO CAJA
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469438042499 · FARMINA ND CAT PUMPKIN CODORNIZ
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509733605763 · FARMINA ND CAT PUMPKIN CODORNIZ CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509733638531 · FARMINA ND CAT PUMPKIN CORDERO CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509733671299 · FARMINA ND CAT PUMPKIN JABALI CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509733802371 · FARMINA ND CAT PUMPKIN NEUTERED CODORNIZ
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509733933443 · FARMINA ND CAT PUMPKIN NEUTERED CORDERO ARANDANO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469441220995 · FARMINA ND CAT PUMPKIN PATO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509734130051 · FARMINA ND CAT PUMPKIN PATO CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15469440336259 · FARMINA ND CAT PUMPKIN POLLO CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469440991619 · FARMINA ND CAT PUMPKIN VENADO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509734392195 · FARMINA ND CAT PUMPKIN VENADO CAJA 24X70GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509734424963 · FARMINA ND CAT QUINOA DIGESTION CAJA 24X80GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509734457731 · FARMINA ND CAT QUINOA DIGESTION CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509734588803 · FARMINA ND CAT QUINOA HAIRBALL PATO 1,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509734687107 · FARMINA ND CAT QUINOA NEUTERED CAJA 24X80GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469440205187 · FARMINA ND CAT QUINOA NEUTERED PATO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509734949251 · FARMINA ND CAT QUINOA SENIOR CAJA 24X80GR
            → 951×542
-           → 500×320, PNG, fondo no blanco
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509735014787 · FARMINA ND CAT QUINOA SENIOR CORDERO
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-  ID 15509735113091 · FARMINA ND CAT QUINOA SKIN COAT ARENQUE
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509735276931 · FARMINA ND CAT QUINOA SKIN COAT ARENQUE CAJA 24X80GR
            → PNG
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469440729475 · FARMINA ND CAT QUINOA SKIN COAT CODORNIZ
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509735506307 · FARMINA ND CAT QUINOA SKIN COAT CODORNIZ CAJA 24X80GR
            → PNG
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509735571843 · FARMINA ND CAT QUINOA SKIN COAT PATO CAJA 24X80GR
            → PNG
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509735637379 · FARMINA ND CAT QUINOA URINARY CAJA 24X80GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509735702915 · FARMINA ND CAT QUINOA URINARY PATO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509735768451 · FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CAJA 24X80GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469438271875 · FARMINA ND CAT QUINOA WEIGHT MANAGEMENT CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509735932291 · FARMINA ND CAT SPIRULINA ARANQUE 1,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509735965059 · FARMINA ND CAT SPIRULINA CORDERO 1,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509736030595 · FARMINA ND CAT SPIRULINA KITTEN ARENQUE 1,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438763395 · FARMINA ND CAT TROPICAL SELECTION NEUTERED CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438173571 · FARMINA ND CAT TROPICAL SELECTION NEUTERED POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438534019 · FARMINA ND CAT TROPICAL SELECTION POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509739733379 · FARMINA ND DOG ADULT PUPPY PUMPKIN CORDERO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509736489347 · FARMINA ND DOG ANCESTRAL GIGANTE POLLO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469439943043 · FARMINA ND DOG ANCESTRAL LIGHT MEDIUM MAXI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469440467331 · FARMINA ND DOG ANCESTRAL LIGHT MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509736784259 · FARMINA ND DOG ANCESTRAL MEDIUM MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509736849795 · FARMINA ND DOG ANCESTRAL MEDIUM MAXI POLLO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509736948099 · FARMINA ND DOG ANCESTRAL MINI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737046403 · FARMINA ND DOG ANCESTRAL MINI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737210243 · FARMINA ND DOG OCEAN LOW GRAIN MEDIUM MAXI BACALAO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737243011 · FARMINA ND DOG OCEAN LOW GRAIN MINI BACALAO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737341315 · FARMINA ND DOG OCEAN MEDIUM MAXI ARENQUE 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737374083 · FARMINA ND DOG OCEAN MINI ARENQUE 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509737406851 · FARMINA ND DOG OCEAN PUMPKIN BACALAO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469437944195 · FARMINA ND DOG OCEAN PUMPKIN MEDIUM MAXI BACALAO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737603459 · FARMINA ND DOG OCEAN PUMPKIN MINI BACALAO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737767299 · FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKIN MEDIUM MAXI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737800067 · FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKN MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509737832835 · FARMINA ND DOG OCEAN SALMON BACALAO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509737963907 · FARMINA ND DOG OCEAN SALMON BACALAO MEDIUM MAXI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509737996675 · FARMINA ND DOG OCEAN SALMON BACALAO MINI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738094979 · FARMINA ND DOG PRIME MEDIUM MAXI POLLO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738127747 · FARMINA ND DOG PRIME MINI CORDERO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738226051 · FARMINA ND DOG PRIME MINI POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509738258819 · FARMINA ND DOG PRIME POLLO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509738291587 · FARMINA ND DOG PUMPKIN CORDERO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509738324355 · FARMINA ND DOG PUMPKIN JABALI CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15469440270723 · FARMINA ND DOG PUMPKIN MEDIUM MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738520963 · FARMINA ND DOG PUMPKIN MEDIUM MAXI JABALI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738619267 · FARMINA ND DOG PUMPKIN MEDIUM MAXI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469432963459 · FARMINA ND DOG PUMPKIN MINI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438337411 · FARMINA ND DOG PUMPKIN MINI JABALI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509738946947 · FARMINA ND DOG PUMPKIN MINI PATO 2KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469440893315 · FARMINA ND DOG PUMPKIN MINI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509739110787 · FARMINA ND DOG PUMPKIN POLLO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509739176323 · FARMINA ND DOG PUMPKIN POLLO STARTER PUPPY 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509739209091 · FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI CORDERO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509739405699 · FARMINA ND DOG PUPPY ANCESTRAL MEDIUM MAXI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438992771 · FARMINA ND DOG PUPPY ANCESTRAL MINI POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509739536771 · FARMINA ND DOG PUPPY PRIME MEDIUM MAXI POLLO 12KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509739602307 · FARMINA ND DOG PUPPY PRIME MINI POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509739635075 · FARMINA ND DOG PUPPY PRIME POLLO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509739831683 · FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469439549827 · FARMINA ND DOG PUPPY PUMPKIN MEDIUM MAXI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469439451523 · FARMINA ND DOG PUPPY PUMPKIN MINI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509740224899 · FARMINA ND DOG PUPPY PUMPKIN MINI POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509740355971 · FARMINA ND DOG PUPPY SPIRULINA MINI CORDERO 2KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509740519811 · FARMINA ND DOG PUPPY TROPICAL SELECTION MED MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509740585347 · FARMINA ND DOG PUPPY TROPICAL SELECTION MINI CORDERO 1,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509740716419 · FARMINA ND DOG QUINOA DIGESTION CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509741011331 · FARMINA ND DOG QUINOA DIGESTION CORDERO MED MAXI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469440041347 · FARMINA ND DOG QUINOA DIGESTION CORDERO MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509741207939 · FARMINA ND DOG QUINOA NEUTERED PATO MEDIUM MAXI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509741240707 · FARMINA ND DOG QUINOA NEUTERED PATO MINI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509741437315 · FARMINA ND DOG QUINOA SENIOR CAJA 6X285GR
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509741470083 · FARMINA ND DOG QUINOA SENIOR CORDERO MED MAXI
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509741633923 · FARMINA ND DOG QUINOA SENIOR CORDERO MINI
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509741732227 · FARMINA ND DOG QUINOA SKIN COAT ARENQUE
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509741896067 · FARMINA ND DOG QUINOA SKIN COAT CODORNIZ CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509741928835 · FARMINA ND DOG QUINOA SKIN COAT CODORNIZ MINI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742027139 · FARMINA ND DOG QUINOA SKIN COAT PATO MED/MAXI 7KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742059907 · FARMINA ND DOG QUINOA SKIN COAT PATO MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509742125443 · FARMINA ND DOG QUINOA SKIN COAT VENADO CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509742158211 · FARMINA ND DOG QUINOA SKIN COAT VENADO MED MAXI
-           → PNG, fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742223747 · FARMINA ND DOG QUINOA SKIN COAT VENADO MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
   ID 15509742289283 · FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CAJA 6X285GR
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509742387587 · FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORDERO MED/MX
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742453123 · FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CORDERO MINI 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469438665091 · FARMINA ND DOG SELECTION ANCESTRAL MED MAXI POLLO 12+3KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742584195 · FARMINA ND DOG SENIOR ANCESTRAL MEDIUM MAXI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742649731 · FARMINA ND DOG SENIOR ANCESTRAL MINI POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742715267 · FARMINA ND DOG SPIRULINA MEDIUM MAXI ARENQUE
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509742846339 · FARMINA ND DOG SPIRULINA MEDIUM MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743010179 · FARMINA ND DOG SPIRULINA MINI ARENQUE 2KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743042947 · FARMINA ND DOG SPIRULINA MINI CORDERO 2KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743075715 · FARMINA ND DOG STARTER PUPPY PUMPKIN POLLO 2,5KG
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15469440565635 · FARMINA ND DOG TROPICAL SELECTION MED MAXI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743272323 · FARMINA ND DOG TROPICAL SELECTION MED MAXI POLLO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743337859 · FARMINA ND DOG TROPICAL SELECTION MED MAXI SALMON
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743403395 · FARMINA ND DOG TROPICAL SELECTION MINI CORDERO
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509743468931 · FARMINA ND DOG TROPICAL SELECTION MINI POLLO
            → 1500×1500
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → 1500×1500, fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-  ID 15509743632771 · FARMINA ND DOG TROPICAL SELECTION MINI SALMON
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → 1500×1500
   ID 15509743698307 · FARMINA ND WHITE DOG LUBINA SPIRULINA MED/MAXI
            → 1500×1500
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-  ID 15509743796611 · FARMINA ND WHITE DOG LUBINA SPIRULINA MINI
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
-           → fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509743862147 · FARMINA ND WHITE DOG PUPPY LUBINA SPIRULINA MINI 1,5KG
            → 1500×1500
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
   ID 15509743960451 · FARMINA TREAT ND BROWN
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744025987 · FARMINA TREAT ND PUMPKIN DOG CORDERO ADULT
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744124291 · FARMINA TREAT ND PUMPKIN DOG POLLO ADULT
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744189827 · FARMINA TREAT ND QUINOA DOG DIGESTION ADULT
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744288131 · FARMINA TREAT ND QUINOA DOG FLATULENCE ADULT
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744419203 · FARMINA TREAT ND QUINOA DOG FRESH BREATHE ADULT
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744583043 · FARMINA TREAT ND QUINOA DOG SKIN COAT ARENQUE
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744845187 · FARMINA TREAT ND QUINOA DOG SKIN COAT VENADO
            → 1500×1500
            → 1500×1500
-           → 500×320, PNG, fondo no blanco
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509744976259 · FARMINA TREAT ND QUINOA DOG WEIGHT M CORDERO
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 500×320, PNG (transparente→fondo blanco)
   ID 15509745107331 · FARMINA TREAT ND TROPICAL SELECTION POLLO
-           → 400×600, PNG, fondo no blanco
-           → 400×600, PNG, fondo no blanco
-           → 4167×4167, PNG, fondo no blanco
-           → 500×320, PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → 4167×4167, PNG, fondo no blanco
-           → 4167×4167, PNG, fondo no blanco
+           → 400×600, PNG (transparente→fondo blanco)
+           → 400×600, PNG (transparente→fondo blanco)
+           → 4167×4167, PNG
+           → 500×320, PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → 4167×4167, PNG
+           → 4167×4167, PNG
   ID 15509745238403 · FARMINA TREAT ND WHITE
            → 400×600
            → 1500×1500
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
-           → PNG, fondo no blanco
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
+           → PNG (transparente→fondo blanco)
 
 Análisis completado. Pega este resultado para continuar.
