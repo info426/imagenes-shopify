@@ -1,0 +1,41 @@
+name: Análisis Farmina ND
+
+on:
+  workflow_dispatch:
+
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout rama de trabajo
+        uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar análisis (solo lectura)
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOPIFY_DOMAIN }}
+          CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 analizar_farmina_nd.py | tee resultados/analisis_farmina_nd.txt
+
+      - name: Guardar resultados en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/analisis_farmina_nd.txt
+          git diff --cached --quiet || git commit -m "chore: resultados análisis Farmina ND"
+          git push
