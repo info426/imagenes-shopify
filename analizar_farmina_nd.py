@@ -68,12 +68,16 @@ def get_image_info(url: str) -> dict:
         img = Image.open(BytesIO(resp.content))
         size_kb = len(resp.content) // 1024
 
+        transparent = img.mode in ("RGBA", "LA") or (
+            img.mode == "P" and "transparency" in img.info
+        )
         return {
-            "size":   img.size,
-            "mode":   img.mode,
-            "format": img.format or "?",
-            "kb":     size_kb,
-            "ok":     img.size == TARGET_SIZE and img.format == "JPEG",
+            "size":        img.size,
+            "mode":        img.mode,
+            "format":      img.format or "?",
+            "kb":          size_kb,
+            "transparent": transparent,
+            "ok":          img.size == TARGET_SIZE and img.format == "JPEG",
         }
     except Exception as exc:
         return {"error": str(exc)}
@@ -133,7 +137,8 @@ def main():
                 if info["size"] != TARGET_SIZE:
                     detalles.append(f"{info['size'][0]}×{info['size'][1]}")
                 if info["format"] != "JPEG":
-                    detalles.append(info["format"])
+                    suffix = " (transparente→fondo blanco)" if info.get("transparent") else ""
+                    detalles.append(f"{info['format']}{suffix}")
                 problemas.append(", ".join(detalles) if detalles else "requiere reoptimización")
 
         n = len(images)

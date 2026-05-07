@@ -134,16 +134,11 @@ class ShopifyAPI:
 
 # ─── Procesamiento de imágenes ────────────────────────────────────────────────
 
-def check_issues(img: Image.Image) -> dict:
-    issues = {}
-    if img.size != TARGET_SIZE:
-        issues["tamaño"] = f"{img.size[0]}×{img.size[1]} → 2000×2000"
-    if img.format != "JPEG":
-        issues["formato"] = f"{img.format or '?'} → JPEG"
-    return issues
+def _has_transparency(img: Image.Image) -> bool:
+    return img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info)
 
 def _sample_bg_color(img: Image.Image) -> tuple:
-    """Muestrea el color de fondo dominante desde las esquinas."""
+    """Muestrea el color de fondo desde las esquinas de la imagen."""
     rgb = img.convert("RGB")
     w, h = rgb.size
     corners = [
@@ -157,20 +152,42 @@ def _sample_bg_color(img: Image.Image) -> tuple:
     b = sum(c[2] for c in corners) // 4
     return (r, g, b)
 
+def check_issues(img: Image.Image) -> dict:
+    issues = {}
+    if img.size != TARGET_SIZE:
+        issues["tamaño"] = f"{img.size[0]}×{img.size[1]} → 2000×2000"
+    if img.format != "JPEG":
+        issues["formato"] = f"{img.format or '?'} → JPEG"
+    return issues
+
 def process_image(img: Image.Image) -> Image.Image:
-    """Redimensiona a 2000×2000 manteniendo proporciones y fondo original."""
-    bg_color = _sample_bg_color(img)
-    img_rgb  = img.convert("RGB")
-    ratio    = img_rgb.width / img_rgb.height
+    """
+    Redimensiona a 2000×2000 y convierte a RGB/JPG.
+    - PNG con transparencia → fondo blanco
+    - Resto → fondo del color original de la imagen
+    """
+    transparent = _has_transparency(img)
+    bg_color = (255, 255, 255) if transparent else _sample_bg_color(img)
+
+    img_rgba = img.convert("RGBA") if transparent else img.convert("RGB")
+
+    ratio = img_rgba.width / img_rgba.height
     if ratio > 1:
         new_w, new_h = TARGET_SIZE[0], int(TARGET_SIZE[0] / ratio)
     else:
         new_w, new_h = int(TARGET_SIZE[1] * ratio), TARGET_SIZE[1]
-    resized    = img_rgb.resize((new_w, new_h), Image.LANCZOS)
+
+    resized    = img_rgba.resize((new_w, new_h), Image.LANCZOS)
     background = Image.new("RGB", TARGET_SIZE, bg_color)
     ox = (TARGET_SIZE[0] - new_w) // 2
     oy = (TARGET_SIZE[1] - new_h) // 2
-    background.paste(resized, (ox, oy))
+
+    if transparent:
+        background.paste(resized.convert("RGB"), (ox, oy),
+                         resized.split()[3])  # usa canal alpha como máscara
+    else:
+        background.paste(resized, (ox, oy))
+
     return background
 
 def to_b64_jpeg(img: Image.Image) -> str:
