@@ -1,41 +1,34 @@
-2026-05-07 21:33:12,238 [INFO] ============================================================
-2026-05-07 21:33:12,238 [INFO] PROCESADOR DE IMÁGENES FARMINA ND — SHOPIFY
-2026-05-07 21:33:12,238 [INFO] ============================================================
-2026-05-07 21:33:12,238 [INFO] Tienda : 7ev1zx-eg.myshopify.com
-2026-05-07 21:33:12,577 [INFO] Access token obtenido correctamente
-2026-05-07 21:33:12,579 [INFO] Modo prueba — producto ID: 15509745107331
-2026-05-07 21:33:12,815 [INFO] [1/1] FARMINA TREAT ND TROPICAL SELECTION POLLO  (ID: 15509745107331)
-2026-05-07 21:33:13,072 [INFO]   Imagen 1/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1093_51_nd-tropical-selection-dental-treat-chicken-mini_98bb9a7a-3ee2-4d0b-bf1b-1e0333f37af2.png?v=1778176626
-2026-05-07 21:33:13,179 [INFO]   Procesando → {'tamaño': '400×600 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:16,603 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:17,103 [INFO]   Imagen 2/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1094_38_nd-tropical-selection-dental-treat-chicken-medium-maxi_d6ffa860-5a54-4de5-ae8f-ad69a96a0840.png?v=1778176628
-2026-05-07 21:33:17,179 [INFO]   Procesando → {'tamaño': '400×600 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:19,530 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:20,030 [INFO]   Imagen 3/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/6_bc566016-92b8-42ee-a120-5a48ff1f4f63.png?v=1778151965
-2026-05-07 21:33:20,159 [INFO]   Procesando → {'tamaño': '4167×4167 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:24,396 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:24,896 [INFO]   Imagen 4/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1093_24_bowl-treats_0eb87eca-5d04-4235-80d2-5d25bf72073d.png?v=1778176622
-2026-05-07 21:33:24,995 [INFO]   Procesando → {'tamaño': '500×320 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:27,186 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:27,686 [INFO]   Imagen 5/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/3_fc60bfb7-2446-4f5e-af69-e33d8273e472.png?v=1778151963
-2026-05-07 21:33:27,786 [INFO]   Procesando → {'formato': 'PNG → JPEG'}
-2026-05-07 21:33:30,817 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:31,318 [INFO]   Imagen 6/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/4_c62f9e76-0c6d-4a97-8a1b-3cdf5d354c8e.png?v=1778151965
-2026-05-07 21:33:31,450 [INFO]   Procesando → {'tamaño': '4167×4167 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:34,581 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:35,081 [INFO]   Imagen 7/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/5_d5764a9a-9931-4f2a-b6e8-f20b098394f6.png?v=1778151963
-2026-05-07 21:33:35,206 [INFO]   Procesando → {'tamaño': '4167×4167 → 2000×2000', 'formato': 'PNG → JPEG'}
-2026-05-07 21:33:38,554 [INFO]   ✓ Imagen actualizada en Shopify
-2026-05-07 21:33:39,054 [INFO] 
+2026-05-07 21:51:23,321 [INFO] ============================================================
+2026-05-07 21:51:23,321 [INFO] PROCESADOR DE IMÁGENES FARMINA ND — SHOPIFY
+2026-05-07 21:51:23,321 [INFO] ============================================================
+2026-05-07 21:51:23,321 [INFO] Tienda : 7ev1zx-eg.myshopify.com
+2026-05-07 21:51:23,711 [INFO] Access token obtenido correctamente
+2026-05-07 21:51:23,712 [INFO] Modo prueba — producto ID: 15509745107331
+2026-05-07 21:51:24,038 [INFO] [1/1] FARMINA TREAT ND TROPICAL SELECTION POLLO  (ID: 15509745107331)
+2026-05-07 21:51:24,368 [INFO]   Imagen 1/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1093_51_nd-tropical-selection-dental-treat-chicken-mini_98bb9a7a-3ee2-4d0b-bf1b-1e0333f37af2.png?v=1778189596
+2026-05-07 21:51:24,489 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:24,489 [INFO]   Imagen 2/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1094_38_nd-tropical-selection-dental-treat-chicken-medium-maxi_d6ffa860-5a54-4de5-ae8f-ad69a96a0840.png?v=1778189599
+2026-05-07 21:51:24,857 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:24,857 [INFO]   Imagen 3/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/6_bc566016-92b8-42ee-a120-5a48ff1f4f63.png?v=1778189604
+2026-05-07 21:51:24,982 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:24,982 [INFO]   Imagen 4/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/1093_24_bowl-treats_0eb87eca-5d04-4235-80d2-5d25bf72073d.png?v=1778189607
+2026-05-07 21:51:25,095 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:25,095 [INFO]   Imagen 5/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/3_fc60bfb7-2446-4f5e-af69-e33d8273e472.png?v=1778189610
+2026-05-07 21:51:25,245 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:25,246 [INFO]   Imagen 6/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/4_c62f9e76-0c6d-4a97-8a1b-3cdf5d354c8e.png?v=1778189614
+2026-05-07 21:51:25,384 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:25,384 [INFO]   Imagen 7/7: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/5_d5764a9a-9931-4f2a-b6e8-f20b098394f6.png?v=1778189618
+2026-05-07 21:51:25,934 [INFO]   ✓ Ya cumple todos los requisitos — omitida
+2026-05-07 21:51:25,934 [INFO] 
 ============================================================
-2026-05-07 21:33:39,054 [INFO] RESUMEN FINAL
-2026-05-07 21:33:39,054 [INFO] ============================================================
-2026-05-07 21:33:39,054 [INFO]   Productos procesados         : 1
-2026-05-07 21:33:39,054 [INFO]   Imágenes actualizadas        : 7
-2026-05-07 21:33:39,054 [INFO]   Imágenes sin cambios         : 0
-2026-05-07 21:33:39,054 [INFO]   Imágenes nuevas (farmina.com): 0
-2026-05-07 21:33:39,054 [INFO]   Sin imagen (no encontrada)   : 0
-2026-05-07 21:33:39,054 [INFO]   Errores                      : 0
-2026-05-07 21:33:39,054 [INFO] 
+2026-05-07 21:51:25,934 [INFO] RESUMEN FINAL
+2026-05-07 21:51:25,934 [INFO] ============================================================
+2026-05-07 21:51:25,934 [INFO]   Productos procesados         : 1
+2026-05-07 21:51:25,934 [INFO]   Imágenes actualizadas        : 0
+2026-05-07 21:51:25,935 [INFO]   Imágenes sin cambios         : 7
+2026-05-07 21:51:25,935 [INFO]   Imágenes nuevas (farmina.com): 0
+2026-05-07 21:51:25,935 [INFO]   Sin imagen (no encontrada)   : 0
+2026-05-07 21:51:25,935 [INFO]   Errores                      : 0
+2026-05-07 21:51:25,935 [INFO] 
   Copias locales → imagenes_procesadas/
-2026-05-07 21:33:39,054 [INFO]   Log completo   → farmina_images.log
+2026-05-07 21:51:25,935 [INFO]   Log completo   → farmina_images.log
