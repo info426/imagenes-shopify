@@ -119,18 +119,21 @@ class ShopifyAPI:
         resp = self._get(f"/products/{product_id}/images.json")
         return resp.json().get("images", [])
 
-    def update_image(self, product_id: int, image_id: int,
-                     b64: str, filename: str) -> dict:
-        return self._put(
-            f"/products/{product_id}/images/{image_id}.json",
-            {"image": {"id": image_id, "attachment": b64, "filename": filename}},
+    def delete_image(self, product_id: int, image_id: int) -> None:
+        resp = requests.delete(
+            f"{self.base}/products/{product_id}/images/{image_id}.json",
+            headers=self.headers, timeout=30,
         )
+        resp.raise_for_status()
 
     def create_image(self, product_id: int, b64: str,
-                     filename: str, alt: str = "") -> dict:
+                     filename: str, alt: str = "", position: int = None) -> dict:
+        payload = {"attachment": b64, "filename": filename, "alt": alt}
+        if position is not None:
+            payload["position"] = position
         return self._post(
             f"/products/{product_id}/images.json",
-            {"image": {"attachment": b64, "filename": filename, "alt": alt}},
+            {"image": payload},
         )
 
 # ─── Procesamiento de imágenes ────────────────────────────────────────────────
@@ -309,8 +312,10 @@ def main():
 
             # ── Procesar imágenes existentes ──────────────────────────────
             for j, image in enumerate(images, 1):
-                iid = image["id"]
-                src = image["src"]
+                iid      = image["id"]
+                src      = image["src"]
+                alt      = image.get("alt") or ""
+                position = image.get("position", j)
                 log.info(f"  Imagen {j}/{len(images)}: {src}")
 
                 img    = download_image(src)
@@ -327,8 +332,13 @@ def main():
                 fname = f"farmina_{pid}_{iid}.jpg"
                 processed.save(OUTPUT_DIR / fname, "JPEG",
                                quality=JPEG_QUALITY, optimize=True)
-                api.update_image(pid, iid, b64, fname)
-                log.info(f"  ✓ Imagen actualizada en Shopify")
+
+                # Borrar imagen antigua y crear nueva en JPG para que la URL
+                # del CDN refleje el formato correcto (.jpg)
+                api.delete_image(pid, iid)
+                time.sleep(0.3)
+                api.create_image(pid, b64, fname, alt=alt, position=position)
+                log.info(f"  ✓ Imagen reemplazada como JPG en Shopify")
                 stats["actualizadas"] += 1
                 time.sleep(0.5)
 
