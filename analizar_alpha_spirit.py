@@ -112,15 +112,14 @@ def build_catalog() -> list:
 
             print(f"  Página {page_num}: {len(products)} productos")
             for p in products:
-                # filtrar solo productos de Alpha Spirit
-                if VENDOR_FILTER not in p.get("vendor", "").lower():
-                    continue
                 images = p.get("images", [])
+                vendor = p.get("vendor", "")
+                # log vendors distintos para diagnóstico
                 catalog.append({
                     "id":           p["id"],
                     "title":        p["title"],
                     "handle":       p["handle"],
-                    "vendor":       p.get("vendor", ""),
+                    "vendor":       vendor,
                     "product_type": p.get("product_type", ""),
                     "image_url":    images[0]["src"] if images else "",
                     "tags":         p.get("tags", []),
@@ -342,7 +341,15 @@ def main():
         sys.exit(1)
 
     catalog = build_catalog()
-    print(f"\nCatálogo Alpha Spirit (aspiritpetfood.store): {len(catalog)} productos\n")
+    vendors = {}
+    for e in catalog:
+        v = e.get("vendor", "(sin vendor)")
+        vendors[v] = vendors.get(v, 0) + 1
+    print(f"\nCatálogo aspiritpetfood.store: {len(catalog)} productos totales")
+    print("Vendors encontrados:")
+    for v, n in sorted(vendors.items(), key=lambda x: -x[1]):
+        print(f"  {n:3d}  {v}")
+    print()
 
     print(f"\n{'#':<4} {'SHOPIFY TITLE':<50} {'MATCH OFICIAL':<40} {'SCORE'}")
     print("-" * 105)
