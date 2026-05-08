@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Diagnóstico fase 2: explorar categorías Vet Life en farmina.com (PrestaShop)
+Diagnóstico fase 3: encontrar endpoints AJAX / API de farmina.com PrestaShop
 """
 
 import re
@@ -13,145 +13,135 @@ HEADERS = {
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
 BASE = "https://www.farmina.com"
 
-CAT_URLS = [
-    f"{BASE}/es/alimento-para-perros/8-farmina-vet-life.html",
-    f"{BASE}/es/alimento-para-gatos/14-farmina-vet-life.html",
-]
-
-def fetch(url):
+def fetch(url, extra_headers=None):
+    h = {**HEADERS, **(extra_headers or {})}
     try:
-        r = requests.get(url, headers=HEADERS, timeout=20)
-        print(f"  GET {url} → {r.status_code} ({len(r.content)} bytes)")
+        r = requests.get(url, headers=h, timeout=20)
+        print(f"  GET {url[:80]} → {r.status_code} ({len(r.content)} bytes)")
         return r if r.status_code == 200 else None
     except Exception as e:
         print(f"  ERROR: {e}")
         return None
 
-def scrape_category(url):
-    """Extrae todos los productos de una página de categoría PrestaShop."""
-    products = []
-    page = 1
-    while True:
-        page_url = url if page == 1 else f"{url}?page={page}"
-        r = fetch(page_url)
-        if not r:
-            break
-        soup = BeautifulSoup(r.text, "html.parser")
+def inspect_html(html, label=""):
+    soup = BeautifulSoup(html, "html.parser")
 
-        # PrestaShop: productos en .product-miniature o article.product-miniature
-        items = soup.select("article.product-miniature, .product-miniature, .js-product")
-        if not items:
-            # Intentar con otros selectores
-            items = soup.select(".product_list .product-container, li.product-type-simple")
+    # Título
+    title = soup.find("title")
+    print(f"  Título: {title.text.strip() if title else 'N/A'}")
 
-        if not items:
-            print(f"  No se encontraron productos en página {page}")
-            # Guardar HTML para inspección
-            with open(f"/tmp/cat_page{page}.html", "w", encoding="utf-8") as f:
-                f.write(r.text)
-            print(f"  HTML guardado en /tmp/cat_page{page}.html")
-            break
-
-        print(f"  Página {page}: {len(items)} productos")
-        for item in items:
-            a = item.select_one("a.product-thumbnail, h3 a, .product-name a, a")
-            img = item.select_one("img")
-            name = ""
-            href = ""
-            img_src = ""
-            if a:
-                name = a.get_text(strip=True) or a.get("title", "")
-                href = a.get("href", "")
-            if img:
-                img_src = (img.get("data-src") or img.get("src") or "")
-            products.append({"name": name, "url": href, "thumb": img_src})
-
-        # Verificar si hay página siguiente
-        next_btn = soup.select_one("a[rel='next'], .next a, li.next a")
-        if not next_btn:
-            break
-        page += 1
-
-    return products
-
-def get_product_image(product_url):
-    """Obtiene la imagen de mayor resolución de una página de producto PrestaShop."""
-    r = fetch(product_url)
-    if not r:
-        return None
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    # PrestaShop: imagen principal en .product-cover, #product-images-large
-    candidates = []
-
-    # Buscar en JSON de producto (más fiable)
+    # Buscar scripts con URLs de API / JSON con productos
+    api_patterns = [
+        r'(https?://[^\s"\']+(?:api|ajax|json|products?|catalog)[^\s"\']*)',
+        r'"url"\s*:\s*"(https?://[^"]+)"',
+        r"prestashop\s*=\s*(\{.*?\});",
+        r'var\s+\w+\s*=\s*(\{[^;]{50,}\});',
+    ]
+    found_apis = set()
+    found_json = []
     for script in soup.find_all("script"):
         text = script.string or ""
-        # PrestaShop guarda datos de producto en JSON
-        m = re.search(r'"large":\s*\{[^}]*"url"\s*:\s*"([^"]+)"', text)
+        for pat in api_patterns[:2]:
+            for m in re.findall(pat, text, re.IGNORECASE):
+                found_apis.add(m)
+        # Buscar objeto prestashop
+        m = re.search(r'prestashop\s*=\s*(\{.{20,5000}?\});', text, re.DOTALL)
         if m:
-            candidates.append(m.group(1).replace("\\/", "/"))
-        # Buscar array de imágenes
-        urls = re.findall(r'"url_zoom"\s*:\s*"([^"]+)"', text)
-        candidates.extend(u.replace("\\/", "/") for u in urls)
-        urls2 = re.findall(r'"large_image_url"\s*:\s*"([^"]+)"', text)
-        candidates.extend(u.replace("\\/", "/") for u in urls2)
+            found_json.append(('prestashop', m.group(1)[:500]))
+        # Buscar arrays de productos
+        m2 = re.search(r'"products"\s*:\s*(\[.{10,}\])', text, re.DOTALL)
+        if m2:
+            found_json.append(('products_array', m2.group(1)[:500]))
 
-    # Selectores CSS de producto principal
-    for sel in [
-        "img.zoomImg", ".product-cover img",
-        "#bigpic", ".cloudzoom",
-        ".product-image-main img",
-        "img[itemprop='image']",
-    ]:
-        el = soup.select_one(sel)
-        if el:
-            src = el.get("data-zoom-image") or el.get("data-src") or el.get("src") or ""
-            if src:
-                candidates.append(src)
+    if found_apis:
+        print(f"  URLs de API/AJAX encontradas ({len(found_apis)}):")
+        for u in list(found_apis)[:10]:
+            print(f"    {u}")
 
-    # Devolver primera URL válida de imagen grande
-    for c in candidates:
-        if c and any(ext in c.lower() for ext in [".jpg", ".jpeg", ".png", ".webp"]):
-            return c if c.startswith("http") else BASE + c
+    if found_json:
+        print(f"  JSON embebido encontrado:")
+        for name, data in found_json[:3]:
+            print(f"    [{name}]: {data[:200]}")
 
-    return None
+    # Buscar selectores alternativos de productos
+    alt_selectors = [
+        (".product", "class=product"),
+        ("[data-id-product]", "data-id-product"),
+        (".js-product-miniature", "js-product-miniature"),
+        ("li[class*='product']", "li[product class]"),
+        (".thumbnail-container", "thumbnail-container"),
+        (".product-description", "product-description"),
+    ]
+    print(f"\n  Selectores de producto encontrados en HTML:")
+    for sel, name in alt_selectors:
+        els = soup.select(sel)
+        if els:
+            print(f"    ✓ {name}: {len(els)} elementos")
+            first = els[0]
+            print(f"      Clases: {first.get('class', [])}")
+            a = first.find("a")
+            if a:
+                print(f"      Link: {a.get('href', '')[:80]}")
+        else:
+            print(f"    ✗ {name}: 0")
 
-# ─── MAIN ─────────────────────────────────────────────────────────────────────
+    # Imprimir primeros 500 chars del body para ver estructura
+    body = soup.find("body")
+    if body:
+        text = re.sub(r'\s+', ' ', body.get_text()[:800])
+        print(f"\n  Texto body (primeros 800 chars):\n    {text[:800]}")
+
+    # Buscar formularios o parámetros de paginación
+    forms = soup.find_all("form")
+    print(f"\n  Formularios: {len(forms)}")
+
+    # Imprimir todo el HTML en chunks para buscar estructura
+    print(f"\n  Primeros 2000 chars del HTML:")
+    print(html[:2000])
+
 
 print("=" * 65)
-print("DIAGNÓSTICO FASE 2 — CATEGORÍAS VET LIFE EN FARMINA.COM")
+print("DIAGNÓSTICO FASE 3 — BÚSQUEDA DE API AJAX")
 print("=" * 65)
 
-all_products = []
+# Inspeccionar categoría perros
+url = f"{BASE}/es/alimento-para-perros/8-farmina-vet-life.html"
+print(f"\n--- Categoría perros Vet Life ---")
+r = fetch(url)
+if r:
+    inspect_html(r.text, "perros")
 
-for cat_url in CAT_URLS:
-    print(f"\n{'─'*65}")
-    print(f"Categoría: {cat_url}")
-    products = scrape_category(cat_url)
-    print(f"Total productos en categoría: {len(products)}")
-    for p in products:
-        print(f"  · {p['name'][:60]}")
-        print(f"    URL: {p['url']}")
-    all_products.extend(products)
+# Intentar con parámetros de AJAX típicos de PrestaShop
+print(f"\n--- Intentos AJAX PrestaShop ---")
+ajax_attempts = [
+    f"{BASE}/es/alimento-para-perros/8-farmina-vet-life.html?ajax=1",
+    f"{BASE}/es/alimento-para-perros/8-farmina-vet-life.html?id_category=8&n=100",
+    f"{BASE}/index.php?controller=category&id_category=8&ajax=1",
+    f"{BASE}/es/index.php?controller=category&id_category=8&ajax=1",
+    f"{BASE}/api/products?category=8",
+    f"{BASE}/es/busqueda?s=vet+life+cardiac",
+    f"{BASE}/es/buscar?query=vet+life+cardiac",
+]
 
-# Guardar mapa completo
-with open("/tmp/farmina_vet_life_products.json", "w", encoding="utf-8") as f:
-    json.dump(all_products, f, ensure_ascii=False, indent=2)
-print(f"\n\nTotal productos encontrados: {len(all_products)}")
-print("Mapa guardado en /tmp/farmina_vet_life_products.json")
-
-# Probar obtener imagen de un producto de prueba
-if all_products:
-    print("\n--- PRUEBA: obtener imagen de primer producto ---")
-    test = all_products[0]
-    print(f"Producto: {test['name']}")
-    print(f"URL: {test['url']}")
-    img = get_product_image(test['url'])
-    print(f"Imagen encontrada: {img}")
+for url in ajax_attempts:
+    r = fetch(url, {"X-Requested-With": "XMLHttpRequest",
+                    "Accept": "application/json, text/javascript, */*"})
+    if r:
+        ct = r.headers.get("Content-Type", "")
+        print(f"  Content-Type: {ct}")
+        if "json" in ct:
+            try:
+                data = r.json()
+                print(f"  JSON keys: {list(data.keys())[:10]}")
+                print(f"  {json.dumps(data, ensure_ascii=False)[:500]}")
+            except Exception:
+                pass
+        else:
+            print(f"  Primeros 300 chars: {r.text[:300]}")
 
 print("\nDiagnóstico completado.")
