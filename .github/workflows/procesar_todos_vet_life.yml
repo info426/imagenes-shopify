@@ -21,6 +21,12 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Instalar Playwright + Chromium
+        run: |
+          pip install playwright
+          python -m playwright install chromium
+          python -m playwright install-deps chromium
+
       - name: Procesar todos los productos Vet Life
         env:
           SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
