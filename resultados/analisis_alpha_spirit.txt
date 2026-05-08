@@ -4,12 +4,7 @@ ANÁLISIS ALPHA SPIRIT — SHOPIFY vs aspiritpetfood.store
 
 Productos 'Alpha Spirit' en Shopify: 97
 
-Construyendo catálogo con Playwright...
-  Cargando página 1: https://www.aspiritpetfood.store/collections/alpha-spirit/products.json?limit=250&page=1
-  Página 1: 134 productos
-  Cargando página 2: https://www.aspiritpetfood.store/collections/alpha-spirit/products.json?limit=250&page=2
-  Página 2 vacía — fin del catálogo
-Catálogo guardado: 134 productos → resultados/alpha_spirit_catalog.json
+Catálogo cargado desde caché: 134 productos
 
 Catálogo Alpha Spirit (aspiritpetfood.store): 134 productos
 
@@ -18,13 +13,13 @@ Catálogo Alpha Spirit (aspiritpetfood.store): 134 productos
 ---------------------------------------------------------------------------------------------------------
 1    ALPHA SPIRIT CANINE ADULT AVES CORRAL SEMIHUMEDO   Alimento Semi-Húmedo Aves de Corral      ✓ 0.50
 2    ALPHA SPIRIT CANINE ADULT PESCADO SEMIHUMEDO       Alimento Semi-Húmedo Wild Fish           ✓ 0.33
-3    ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6  Paté de Ternera para Gatos               ~ 0.20
+3    ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6  Paté de Ternera con Melón para Perros    ~ 0.18
 4    ALPHA SPIRIT CANINE ALBONDIGAS CERDO ALCARAVEA CA  Paté de Cerdo con Manzana para Perros    ~ 0.17
-5    ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJ  Paté de Cordero para Gatos               ~ 0.20
+5    ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJ  Paté de Cordero con Pera para Perros     ~ 0.17
 6    ALPHA SPIRIT CANINE ALBONDIGAS JABALI TOMILLO 6X4  Albóndigas de Jabalí y Tomillo para Per  ✓ 0.38
 7    ALPHA SPIRIT CANINE ALBONDIGAS PAVO CILANTRO 6X40  Albóndigas de Pavo y Cilantro para Perr  ✓ 0.38
 8    ALPHA SPIRIT CANINE ALBONDIGAS POLLO CURCUMA 6X40  Albóndigas de Pollo y Cúrcuma para Perr  ✓ 0.38
-9    ALPHA SPIRIT CANINE ALBONDIGAS VENADO ROMERO 6X40  Albóndigas de Ciervo y Romero para Perr  ~ 0.22
+9    ALPHA SPIRIT CANINE ALBONDIGAS VENADO ROMERO 6X40  Albóndigas de Ciervo y Romero para Perr  ✓ 0.38
 10   ALPHA SPIRIT CANINE BARRITAS HIGADO 16X4UDS        Barritas individuales de Hígado para pe  ✓ 0.25
 11   ALPHA SPIRIT CANINE BARRITAS HIGADO 30UDS          Barritas individuales de Hígado para pe  ~ 0.22
 12   ALPHA SPIRIT CANINE BARRITAS JAMON 16X4UDS         Barritas individuales de Jamón para per  ~ 0.22
@@ -38,15 +33,15 @@ Catálogo Alpha Spirit (aspiritpetfood.store): 134 productos
 20   ALPHA SPIRIT CANINE BARRITAS POLLO 30UDS           Barritas individuales de Pollo para per  ~ 0.20
 21   ALPHA SPIRIT CANINE BOQUERON C/MANZANA ROJA LATA   Paté de Boquerón con Manzana Roja para   ✓ 0.25
 22   ALPHA SPIRIT CANINE CERDO C/MANZANA AMAR. LATA 6X  Paté de Cerdo con Manzana para Perros    ~ 0.15
-23   ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400  Paté de Conejo con Plátano para Gatos    ~ 0.20
-24   ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR  Paté de Cordero con Pera para Gatos      ~ 0.20
+23   ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400  Paté de Conejo con Plátano para Perros   ~ 0.18
+24   ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR  Paté de Cordero con Pera para Perros     ~ 0.18
 25   ALPHA SPIRIT CANINE HIGADO SNACKS 24X50GRS         Snack de Hígado para perros              ✓ 0.40
 26   ALPHA SPIRIT CANINE HUESO JAMON ESTANDAR CAJA 15X  Hueso de Jamón Estándar al Vacío         ✓ 0.30
 27   ALPHA SPIRIT CANINE HUESO JAMON GRANDE AL VACIO 1  Hueso de Jamón Estándar al Vacío         ✓ 0.36
 28   ALPHA SPIRIT CANINE JAMON CON MELON LATA 6X400GR   Paté de Jamón con Melón para Perros      ~ 0.20
 29   ALPHA SPIRIT CANINE JAMON SNACKS 24X50GRS          Snack de Jamón para perros               ✓ 0.33
 30   ALPHA SPIRIT CANINE MEDIO HUESO JAMON 20x220GR     Medio Hueso de Jamón al Vacío            ✓ 0.33
-31   ALPHA SPIRIT CANINE MULTIPROTEICO SEMIHUMEDO       Alimento Semi-Húmedo Puppies             ~ 0.20
+31   ALPHA SPIRIT CANINE MULTIPROTEICO SEMIHUMEDO       Alimento Semi-Húmedo Multiprotein        ✓ 0.40
 32   ALPHA SPIRIT CANINE PATO C/MANZANA VERDE LATA 6X4  Paté de Pato con Manzana Verde para Per  ✓ 0.25
 33   ALPHA SPIRIT CANINE PATO SNACKS 24X50GRS           Snack de Pato para perros                ✓ 0.33
 34   ALPHA SPIRIT CANINE PAVO CON PERA LATA 6X400GR     Paté de Pavo con Pera para Perros        ~ 0.20
@@ -60,14 +55,14 @@ Catálogo Alpha Spirit (aspiritpetfood.store): 134 productos
 42   ALPHA SPIRIT CANINE PRIMAL 70% WANDERLUST          — SIN MATCH —                              0.00
 43   ALPHA SPIRIT CANINE PRIMAL 70% WILD WATERS         Alimento Semi-Húmedo Wild Fish           ~ 0.12
 44   ALPHA SPIRIT CANINE PUPPY SEMIHUMEDO               Alimento Semi-Húmedo Puppies             ~ 0.20
-45   ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR    Mousse de Salmón para Gatos              ~ 0.12
-46   ALPHA SPIRIT CANINE RISTRA JAMON CAJA 12X160GR     Mousse de Jamón para Gatos               ✓ 0.25
-47   ALPHA SPIRIT CANINE RISTRA PATO CAJA 12X160GR      Paté de Pato para Gatos                  ~ 0.22
-48   ALPHA SPIRIT CANINE RISTRA PAVO CAJA 12X160GR      Mousse de Pavo para Perros               ✓ 0.25
-49   ALPHA SPIRIT CANINE RISTRA PESCADO CAJA 12X160GR   Alimento Semi-Húmedo Wild Fish           ~ 0.14
-50   ALPHA SPIRIT CANINE RISTRA POLLO CAJA 12X160GR     Mousse de Pollo para Gatos               ✓ 0.25
+45   ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR    Ristra de barritas de Hígado para perro  ~ 0.20
+46   ALPHA SPIRIT CANINE RISTRA JAMON CAJA 12X160GR     Ristra de Barritas de Jamón para perros  ~ 0.18
+47   ALPHA SPIRIT CANINE RISTRA PATO CAJA 12X160GR      Ristra de barritas de Pato para perros   ~ 0.18
+48   ALPHA SPIRIT CANINE RISTRA PAVO CAJA 12X160GR      Ristra de barritas de Pavo para perros   ~ 0.18
+49   ALPHA SPIRIT CANINE RISTRA PESCADO CAJA 12X160GR   Ristra de barritas de Pescado para perr  ~ 0.18
+50   ALPHA SPIRIT CANINE RISTRA POLLO CAJA 12X160GR     Ristra de barritas de Pollo para perros  ~ 0.18
 51   ALPHA SPIRIT CANINE SALMON CON PIÑA LATA 6X400GR   Paté de Salmón con Piña para Perros      ~ 0.22
-52   ALPHA SPIRIT CANINE SARDINA CON PLATANO LATA 6X40  Paté de Sardina con Plátano para Perros  ~ 0.22
+52   ALPHA SPIRIT CANINE SARDINA CON PLATANO LATA 6X40  Paté de Sardina con Plátano para Perros  ~ 0.20
 53   ALPHA SPIRIT CANINE SNACK HIGADO CAJA 16X35GR      Snack de Hígado para perros              ✓ 0.33
 54   ALPHA SPIRIT CANINE SNACK JAMON CAJA 16X35GR       Snack de Jamón para perros               ✓ 0.29
 55   ALPHA SPIRIT CANINE SNACK PATO CAJA 16X35GR        Snack de Pato para perros                ✓ 0.29
@@ -78,39 +73,39 @@ Catálogo Alpha Spirit (aspiritpetfood.store): 134 productos
 60   ALPHA SPIRIT FELINE CONEJO LATA CAJA 6X200GR       Paté de Conejo para Gatos                ~ 0.22
 61   ALPHA SPIRIT FELINE ESTERILIZADO PATO LATA CAJA 6  Paté de Pato para Gatos                  ~ 0.20
 62   ALPHA SPIRIT FELINE ESTERILIZADO POLLO LATA CAJA   Mousse de Pollo para Gatos               ~ 0.22
-63   ALPHA SPIRIT FELINE FREE RANGE POLLO SNACKS 24X50  Snack de Pollo para perros               ✓ 0.25
+63   ALPHA SPIRIT FELINE FREE RANGE POLLO SNACKS 24X50  Natural Snack para Gatos - Pollo         ~ 0.20
 64   ALPHA SPIRIT FELINE IBERICO LATA CAJA 6X200GR      Mousse de Salmón para Gatos              ~ 0.12
 65   ALPHA SPIRIT FELINE KITTEN POLLO LATA CAJA 6X200G  Mousse de Pollo para Gatos               ~ 0.22
 66   ALPHA SPIRIT FELINE KITTEN SALMON LATA CAJA 6X200  Mousse de Salmón para Gatos              ✓ 0.25
-67   ALPHA SPIRIT FELINE PATO SNACKS 16X35GRS           Snack de Pato para perros                ✓ 0.33
-68   ALPHA SPIRIT FELINE PATO SNACKS 24X50GRS           Snack de Pato para perros                ✓ 0.33
-69   ALPHA SPIRIT FELINE PAVO LATA CAJA 6X200GR         Mousse de Pavo para Perros               ✓ 0.25
-70   ALPHA SPIRIT FELINE PAVO SNACKS 24X50GRS           Snack de Pavo para perros                ✓ 0.33
-71   ALPHA SPIRIT FELINE PESCADO SNACKS 24X50GRS        Snack de Pescado para perros             ✓ 0.33
-72   ALPHA SPIRIT FELINE SARDINA LATA CAJA 6X200GR      Paté de Sardina para Gatos               ✓ 0.25
+67   ALPHA SPIRIT FELINE PATO SNACKS 16X35GRS           Snack de Pato para gatos                 ✓ 0.29
+68   ALPHA SPIRIT FELINE PATO SNACKS 24X50GRS           Snack de Pato para gatos                 ✓ 0.29
+69   ALPHA SPIRIT FELINE PAVO LATA CAJA 6X200GR         Mousse de Pavo para Gatos                ✓ 0.25
+70   ALPHA SPIRIT FELINE PAVO SNACKS 24X50GRS           Snack de Pavo para gatos                 ✓ 0.29
+71   ALPHA SPIRIT FELINE PESCADO SNACKS 24X50GRS        Snack de Pescado para gatos              ✓ 0.29
+72   ALPHA SPIRIT FELINE SARDINA LATA CAJA 6X200GR      Paté de Sardina para Gatos               ~ 0.22
 73   ALPHA SPIRIT FELINE SNACK AVE CORRAL CAJA 16X35GR  Snack de Ave de Corral para gatos        ✓ 0.43
-74   ALPHA SPIRIT FELINE SNACK PAVO CAJA 16X35GR        Snack de Pavo para perros                ✓ 0.29
-75   ALPHA SPIRIT FELINE SNACK PESCADO CAJA 16X35GR     Snack de Pescado para perros             ✓ 0.29
+74   ALPHA SPIRIT FELINE SNACK PAVO CAJA 16X35GR        Snack de Pavo para gatos                 ✓ 0.25
+75   ALPHA SPIRIT FELINE SNACK PESCADO CAJA 16X35GR     Snack de Pescado para gatos              ✓ 0.25
 76   ALPHA SPIRIT FELINE TERNERA LATA CAJA 6X200GR      Paté de Ternera para Gatos               ~ 0.22
 77   ALPHA SPIRIT NERVIO DE TORO 4X 12UD M              — SIN MATCH —                              0.07
 78   ALPHA SPIRIT NERVIO DE TORO 4X 8UD L               Nervio De Buey para Perros               ~ 0.15
 79   ALPHA SPIRIT NERVIO DE TORO 5U XL                  — SIN MATCH —                              0.08
 80   ALPHA SPIRIT NERVIO DE TORO INDIVIDUAL L 16UD      Nervio De Buey para Perros               ~ 0.15
-81   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL L 25UD      — SIN MATCH —                              0.09
-82   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL M 25UD      — SIN MATCH —                              0.09
-83   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL XL 25UD     — SIN MATCH —                              0.09
+81   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL L 25UD      — SIN MATCH —                              0.07
+82   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL M 25UD      — SIN MATCH —                              0.00
+83   ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL XL 25UD     — SIN MATCH —                              0.00
 84   ALPHA SPIRIT SNACK DE POLLO 16X35GR                Snack de Pollo para perros               ✓ 0.40
 85   ALPHA SPIRT CANINE REALFOOD ESTOFADO ATUN 9X280G   — SIN MATCH —                              0.00
 86   ALPHA SPIRT CANINE REALFOOD ESTOFADO CERDO 9X280G  — SIN MATCH —                              0.08
-87   ALPHA SPIRT CANINE REALFOOD ESTOFADO OREJA CERDO   — SIN MATCH —                              0.07
-88   ALPHA SPIRT CANINE REALFOOD ESTOFADO PATO 9X280G   — SIN MATCH —                              0.09
-89   ALPHA SPIRT CANINE REALFOOD ESTOFADO POLLO 9X280G  Mousse de Pollo para Gatos               ~ 0.10
-90   ALPHA SPIRT CANINE REALFOOD ESTOFADO TERNERA 9X28  — SIN MATCH —                              0.09
+87   ALPHA SPIRT CANINE REALFOOD ESTOFADO OREJA CERDO   — SIN MATCH —                              0.00
+88   ALPHA SPIRT CANINE REALFOOD ESTOFADO PATO 9X280G   — SIN MATCH —                              0.08
+89   ALPHA SPIRT CANINE REALFOOD ESTOFADO POLLO 9X280G  Mousse de Pollo para Perros              ~ 0.10
+90   ALPHA SPIRT CANINE REALFOOD ESTOFADO TERNERA 9X28  — SIN MATCH —                              0.08
 91   ALPHA THE ONLY ONE CANINE ADULT 7 DAYS             Alimento The Only One 7 Days Formula     ✓ 0.44
 92   ALPHA THE ONLY ONE CANINE ADULT AVES DE CORRAL     Alimento The Only One Aves de Corral     ✓ 0.50
 93   ALPHA THE ONLY ONE CANINE ADULT PATO               Alimento The Only One Pato               ✓ 0.38
 94   ALPHA THE ONLY ONE CANINE ADULT PESCADO            Alimento The Only One Wild Fish          ✓ 0.38
-95   ALPHA THE ONLY ONE CANINE MULTIPROTEICO            Alimento The Only One Multiprotein       ✓ 0.29
+95   ALPHA THE ONLY ONE CANINE MULTIPROTEICO            Alimento The Only One Multiprotein       ✓ 0.50
 96   ALPHA THE ONLY ONE CANINE PUPPY                    Alimento The Only One Multiprotein       ✓ 0.29
 97   HUESOS DE JAMÓN VACÍO NATURAL QUALITY 15UD         Natural Snack para Perros - Jamón        ~ 0.20
 
@@ -119,19 +114,17 @@ RESUMEN
 ======================================================================
   Productos en Shopify         : 97
   Con match (score ≥ 0.10)     : 83
-    - Score alto  (≥ 0.25)     : 44
-    - Score bajo  (0.10-0.24)  : 39
+    - Score alto  (≥ 0.25)     : 41
+    - Score bajo  (0.10-0.24)  : 42
   Sin match                    : 14
 
 Matches con score bajo (revisar manualmente):
-  [0.20] ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6X400GR
-         → Paté de Ternera para Gatos (alimento-humedo-de-ternera-200gr)
+  [0.18] ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6X400GR
+         → Paté de Ternera con Melón para Perros (alimento-humedo-de-ternera-con-melon)
   [0.17] ALPHA SPIRIT CANINE ALBONDIGAS CERDO ALCARAVEA CAJA 6X400GR
          → Paté de Cerdo con Manzana para Perros (alimento-humedo-de-cerdo-con-manzana-1)
-  [0.20] ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJA 6X400GR
-         → Paté de Cordero para Gatos (alimento-humedo-de-cordero-200gr)
-  [0.22] ALPHA SPIRIT CANINE ALBONDIGAS VENADO ROMERO 6X400GR
-         → Albóndigas de Ciervo y Romero para Perros (albondigas-de-ciervo-y-romero-400gr)
+  [0.17] ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJA 6X400GR
+         → Paté de Cordero con Pera para Perros (alimento-humedo-de-cordero-con-pera-1)
   [0.22] ALPHA SPIRIT CANINE BARRITAS HIGADO 30UDS
          → Barritas individuales de Hígado para perros (barritas-individuales-de-higado-30unds)
   [0.22] ALPHA SPIRIT CANINE BARRITAS JAMON 16X4UDS
@@ -154,14 +147,12 @@ Matches con score bajo (revisar manualmente):
          → Barritas individuales de Pollo para perros (barritas-individuales-de-pollo-30unds)
   [0.15] ALPHA SPIRIT CANINE CERDO C/MANZANA AMAR. LATA 6X400GR
          → Paté de Cerdo con Manzana para Perros (alimento-humedo-de-cerdo-con-manzana-1)
-  [0.20] ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400GR
-         → Paté de Conejo con Plátano para Gatos (alimento-humedo-de-conejo-con-platano-200gr)
-  [0.20] ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR
-         → Paté de Cordero con Pera para Gatos (alimento-humedo-de-cordero-con-pera-200gr)
+  [0.18] ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400GR
+         → Paté de Conejo con Plátano para Perros (alimento-humedo-de-conejo-con-platano-2)
+  [0.18] ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR
+         → Paté de Cordero con Pera para Perros (alimento-humedo-de-cordero-con-pera-1)
   [0.20] ALPHA SPIRIT CANINE JAMON CON MELON LATA 6X400GR
          → Paté de Jamón con Melón para Perros (alimento-humedo-de-jamon-con-melon)
-  [0.20] ALPHA SPIRIT CANINE MULTIPROTEICO SEMIHUMEDO
-         → Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
   [0.20] ALPHA SPIRIT CANINE PAVO CON PERA LATA 6X400GR
          → Paté de Pavo con Pera para Perros (alimento-humedo-de-pavo-con-pera)
   [0.20] ALPHA SPIRIT CANINE POLLO CON PIÑA LATA 6X400GR
@@ -170,15 +161,21 @@ Matches con score bajo (revisar manualmente):
          → Alimento Semi-Húmedo Wild Fish (alimento-semi-humedo-wild-fish)
   [0.20] ALPHA SPIRIT CANINE PUPPY SEMIHUMEDO
          → Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
-  [0.12] ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR
-         → Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
-  [0.22] ALPHA SPIRIT CANINE RISTRA PATO CAJA 12X160GR
-         → Paté de Pato para Gatos (alimento-humedo-de-pato-200gr)
-  [0.14] ALPHA SPIRIT CANINE RISTRA PESCADO CAJA 12X160GR
-         → Alimento Semi-Húmedo Wild Fish (alimento-semi-humedo-wild-fish)
+  [0.20] ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR
+         → Ristra de barritas de Hígado para perros (ristra-de-barritas-de-higado-16-unds)
+  [0.18] ALPHA SPIRIT CANINE RISTRA JAMON CAJA 12X160GR
+         → Ristra de Barritas de Jamón para perros (ristra-de-barritas-de-jamon-16-unds)
+  [0.18] ALPHA SPIRIT CANINE RISTRA PATO CAJA 12X160GR
+         → Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-16-unds)
+  [0.18] ALPHA SPIRIT CANINE RISTRA PAVO CAJA 12X160GR
+         → Ristra de barritas de Pavo para perros (ristra-de-barritas-de-pavo-16-unds)
+  [0.18] ALPHA SPIRIT CANINE RISTRA PESCADO CAJA 12X160GR
+         → Ristra de barritas de Pescado para perros (ristra-de-barritas-de-pescado-16-unds)
+  [0.18] ALPHA SPIRIT CANINE RISTRA POLLO CAJA 12X160GR
+         → Ristra de barritas de Pollo para perros (ristra-de-barritas-de-pollo-16-unds)
   [0.22] ALPHA SPIRIT CANINE SALMON CON PIÑA LATA 6X400GR
          → Paté de Salmón con Piña para Perros (alimento-humedo-de-salmon-con-pina)
-  [0.22] ALPHA SPIRIT CANINE SARDINA CON PLATANO LATA 6X400GR
+  [0.20] ALPHA SPIRIT CANINE SARDINA CON PLATANO LATA 6X400GR
          → Paté de Sardina con Plátano para Perros (alimento-humedo-de-sardina-con-platano)
   [0.20] ALPHA SPIRIT CANINE TERNERA CON MELON LATA 6X400GR
          → Paté de Ternera con Melón para Perros (alimento-humedo-de-ternera-con-melon)
@@ -188,10 +185,14 @@ Matches con score bajo (revisar manualmente):
          → Paté de Pato para Gatos (alimento-humedo-de-pato-200gr)
   [0.22] ALPHA SPIRIT FELINE ESTERILIZADO POLLO LATA CAJA 6X200GR
          → Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+  [0.20] ALPHA SPIRIT FELINE FREE RANGE POLLO SNACKS 24X50GRS
+         → Natural Snack para Gatos - Pollo (natural-snack-pollo-cats-80gr)
   [0.12] ALPHA SPIRIT FELINE IBERICO LATA CAJA 6X200GR
          → Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
   [0.22] ALPHA SPIRIT FELINE KITTEN POLLO LATA CAJA 6X200GR
          → Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+  [0.22] ALPHA SPIRIT FELINE SARDINA LATA CAJA 6X200GR
+         → Paté de Sardina para Gatos (alimento-humedo-de-sardina-200gr)
   [0.22] ALPHA SPIRIT FELINE TERNERA LATA CAJA 6X200GR
          → Paté de Ternera para Gatos (alimento-humedo-de-ternera-200gr)
   [0.15] ALPHA SPIRIT NERVIO DE TORO 4X 8UD L
@@ -199,7 +200,7 @@ Matches con score bajo (revisar manualmente):
   [0.15] ALPHA SPIRIT NERVIO DE TORO INDIVIDUAL L 16UD
          → Nervio De Buey para Perros (nervio-de-buey-l-8-unds-1)
   [0.10] ALPHA SPIRT CANINE REALFOOD ESTOFADO POLLO 9X280G
-         → Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+         → Mousse de Pollo para Perros (mousse-de-pollo-para-perros)
   [0.20] HUESOS DE JAMÓN VACÍO NATURAL QUALITY 15UD
          → Natural Snack para Perros - Jamón (natural-snack-jamon-80gr)
 
