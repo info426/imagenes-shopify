@@ -1,0 +1,17 @@
+2026-05-08 09:22:49,603 [INFO] ============================================================
+2026-05-08 09:22:49,603 [INFO] PROCESADOR FARMINA VET LIFE — SHOPIFY
+2026-05-08 09:22:49,603 [INFO] ============================================================
+2026-05-08 09:22:49,973 [INFO] Modo prueba — producto ID: 15509747827075
+2026-05-08 09:22:50,279 [INFO] 
+[1/1] FARMINA VET LIFE DOG CARDIAC  (ID: 15509747827075)
+2026-05-08 09:22:50,573 [INFO]   Buscando en farmina.com: 'dog cardiac'
+2026-05-08 09:22:55,893 [WARNING]   No se encontró imagen en farmina.com para: FARMINA VET LIFE DOG CARDIAC
+2026-05-08 09:22:55,894 [WARNING]   No encontrada en farmina.com — saltando
+2026-05-08 09:22:55,895 [INFO] 
+============================================================
+2026-05-08 09:22:55,895 [INFO] RESUMEN FINAL
+2026-05-08 09:22:55,895 [INFO] ============================================================
+2026-05-08 09:22:55,895 [INFO]   Productos procesados         : 1
+2026-05-08 09:22:55,895 [INFO]   Imágenes actualizadas        : 0
+2026-05-08 09:22:55,895 [INFO]   No encontradas en farmina.com: 1
+2026-05-08 09:22:55,895 [INFO]   Errores                      : 0
