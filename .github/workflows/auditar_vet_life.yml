@@ -1,0 +1,40 @@
+name: Auditoría Farmina Vet Life
+
+on:
+  workflow_dispatch:
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Ejecutar auditoría
+        env:
+          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
+          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
+          CLIENT_SECRET: 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
+        run: |
+          mkdir -p resultados
+          python3 auditar_vet_life.py 2>&1 | tee resultados/log_auditoria_vet_life.txt
+
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: auditoría Farmina Vet Life"
+          git push
