@@ -1,0 +1,296 @@
+2026-05-08 11:19:21,768 [INFO] ============================================================
+2026-05-08 11:19:21,768 [INFO] PROCESADOR FARMINA VET LIFE — SHOPIFY
+2026-05-08 11:19:21,768 [INFO] ============================================================
+2026-05-08 11:19:21,769 [INFO] Catálogo cargado desde caché: 62 productos
+2026-05-08 11:19:22,102 [INFO] Modo re-proceso — filtrando 28 IDs específicos
+2026-05-08 11:19:22,102 [INFO] Obteniendo 28 productos específicos...
+2026-05-08 11:19:29,027 [INFO] Total a procesar: 28 productos
+
+2026-05-08 11:19:29,027 [INFO] 
+[1/28] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR  (ID: 15509745664387)
+2026-05-08 11:19:29,029 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:29,029 [INFO]     [0.38] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
+2026-05-08 11:19:29,029 [INFO]     [0.29] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 11:19:29,029 [INFO]     [0.29] dental treat Struvite mini (dental-treat-struvite-mini)
+2026-05-08 11:19:29,029 [INFO]   ✓ Match: 'dental treat Hypoallergenic Fish & Potato mini' → 1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png
+2026-05-08 11:19:29,909 [INFO]   Procesada: (2000, 2000) → vetlife_15509745664387_oficial.jpg
+2026-05-08 11:19:30,824 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:33,338 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:34,338 [INFO] 
+[2/28] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR  (ID: 15509745303939)
+2026-05-08 11:19:34,339 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:34,339 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:19:34,339 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:19:34,339 [INFO]     [0.43] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+2026-05-08 11:19:34,340 [INFO]   ✓ Match: 'dental treat Gastrointestinlal medium & maxi' → 1096_14_vetlife-dental-treat-gastrointestinal-medium-maxi.png
+2026-05-08 11:19:35,285 [INFO]   Procesada: (2000, 2000) → vetlife_15509745303939_oficial.jpg
+2026-05-08 11:19:36,106 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:38,468 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:39,469 [INFO] 
+[3/28] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR  (ID: 15509745467779)
+2026-05-08 11:19:39,470 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:39,470 [INFO]     [0.44] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
+2026-05-08 11:19:39,470 [INFO]     [0.38] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:19:39,470 [INFO]     [0.38] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:19:39,471 [INFO]   ✓ Match: 'dental treat Hypoallergenic Pork & Potato medium & maxi' → 1100_56_vetlife-dental-treat-hypoallergenic-pork-medium-maxi.png
+2026-05-08 11:19:40,410 [INFO]   Procesada: (2000, 2000) → vetlife_15509745467779_oficial.jpg
+2026-05-08 11:19:41,275 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:43,626 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:44,627 [INFO] 
+[4/28] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR  (ID: 15509745500547)
+2026-05-08 11:19:44,628 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:44,628 [INFO]     [0.38] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
+2026-05-08 11:19:44,628 [INFO]     [0.29] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 11:19:44,628 [INFO]     [0.29] dental treat Struvite mini (dental-treat-struvite-mini)
+2026-05-08 11:19:44,628 [INFO]   ✓ Match: 'dental treat Hypoallergenic Pork & Potato mini' → 1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png
+2026-05-08 11:19:45,545 [INFO]   Procesada: (2000, 2000) → vetlife_15509745500547_oficial.jpg
+2026-05-08 11:19:46,339 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:48,613 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:49,614 [INFO] 
+[5/28] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR  (ID: 15509745598851)
+2026-05-08 11:19:49,615 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:49,615 [INFO]     [0.44] dental treat Hypoallergenic Fish & Potato medium & maxi (dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi)
+2026-05-08 11:19:49,615 [INFO]     [0.38] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:19:49,615 [INFO]     [0.38] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:19:49,615 [INFO]   ✓ Match: 'dental treat Hypoallergenic Fish & Potato medium & maxi' → 1098_36_vetlife-dental-treat-hypoallergenic-fish-medium-maxi.png
+2026-05-08 11:19:50,476 [INFO]   Procesada: (2000, 2000) → vetlife_15509745598851_oficial.jpg
+2026-05-08 11:19:51,322 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:53,901 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:54,901 [INFO] 
+[6/28] FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR  (ID: 15509745762691)
+2026-05-08 11:19:54,902 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:54,902 [INFO]     [0.67] dental treat Joint medium & maxi (dental-treat-joint-medium-&-maxi)
+2026-05-08 11:19:54,903 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:19:54,903 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:19:54,903 [INFO]   ✓ Match: 'dental treat Joint medium & maxi' → 1106_02_vetlife-dental-treat-joint-medium-maxi.png
+2026-05-08 11:19:55,741 [INFO]   Procesada: (2000, 2000) → vetlife_15509745762691_oficial.jpg
+2026-05-08 11:19:56,528 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:19:58,957 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:19:59,957 [INFO] 
+[7/28] FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR  (ID: 15509745860995)
+2026-05-08 11:19:59,959 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:19:59,959 [INFO]     [0.67] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+2026-05-08 11:19:59,959 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:19:59,959 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:19:59,959 [INFO]   ✓ Match: 'dental treat Obesity medium & maxi' → 1108_35_vetlife-dental-treat-obesity-medium-maxi.png
+2026-05-08 11:20:00,906 [INFO]   Procesada: (2000, 2000) → vetlife_15509745860995_oficial.jpg
+2026-05-08 11:20:01,758 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:04,146 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:05,146 [INFO] 
+[8/28] FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR  (ID: 15509746057603)
+2026-05-08 11:20:05,148 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:20:05,148 [INFO]     [0.67] dental treat Renal medium & maxi (dental-treat-renal-medium-&-maxi)
+2026-05-08 11:20:05,148 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:20:05,148 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:20:05,148 [INFO]   ✓ Match: 'dental treat Renal medium & maxi' → 1104_15_vetlife-dental-treat-renal-medium-maxi.png
+2026-05-08 11:20:06,091 [INFO]   Procesada: (2000, 2000) → vetlife_15509746057603_oficial.jpg
+2026-05-08 11:20:06,999 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:09,465 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:10,465 [INFO] 
+[9/28] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR  (ID: 15509746221443)
+2026-05-08 11:20:10,467 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:20:10,467 [INFO]     [0.67] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 11:20:10,467 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 11:20:10,467 [INFO]     [0.43] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+2026-05-08 11:20:10,467 [INFO]   ✓ Match: 'dental treat Struvite medium & maxi' → 1102_25_vetlife-dental-treat-struvite-medium-maxi.png
+2026-05-08 11:20:11,236 [INFO]   Procesada: (2000, 2000) → vetlife_15509746221443_oficial.jpg
+2026-05-08 11:20:12,135 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:14,591 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:15,591 [INFO] 
+[10/28] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR  (ID: 15509746614659)
+2026-05-08 11:20:15,592 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:15,592 [INFO]     [0.67] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:20:15,592 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:20:15,592 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
+2026-05-08 11:20:15,592 [INFO]   ✓ Match: 'Gastrointestinal Húmedo' → 382_33_vet-life-gastrointestinal-85g.png
+2026-05-08 11:20:16,429 [INFO]   Procesada: (2000, 2000) → vetlife_15509746614659_oficial.jpg
+2026-05-08 11:20:17,270 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:19,516 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:20,516 [INFO] 
+[11/28] FARMINA VET LIFE CAT RENAL CAJA 12X85GR  (ID: 15509747401091)
+2026-05-08 11:20:20,517 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:20,517 [INFO]     [0.67] Renal Húmedo (renal-húmedo)
+2026-05-08 11:20:20,517 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:20:20,517 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:20:20,517 [INFO]   ✓ Match: 'Renal Húmedo' → 381_04_vetlife-renal-85g.png
+2026-05-08 11:20:21,287 [INFO]   Procesada: (2000, 2000) → vetlife_15509747401091_oficial.jpg
+2026-05-08 11:20:22,148 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:24,585 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:25,585 [INFO] 
+[12/28] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR  (ID: 15509747532163)
+2026-05-08 11:20:25,586 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:25,586 [INFO]     [0.67] Struvite Húmedo (struvite-húmedo)
+2026-05-08 11:20:25,586 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:20:25,586 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:20:25,587 [INFO]   ✓ Match: 'Struvite Húmedo' → 380_51_vetlife-struvite-85g.png
+2026-05-08 11:20:26,439 [INFO]   Procesada: (2000, 2000) → vetlife_15509747532163_oficial.jpg
+2026-05-08 11:20:27,310 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:29,548 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:30,549 [INFO] 
+[13/28] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR  (ID: 15509748121987)
+2026-05-08 11:20:30,550 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:30,550 [INFO]     [0.67] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:20:30,550 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:20:30,550 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
+2026-05-08 11:20:30,550 [INFO]   ✓ Match: 'Gastrointestinal Húmedo' → 374_57_vetlife-gastrointestinal-300g.png
+2026-05-08 11:20:31,389 [INFO]   Procesada: (2000, 2000) → vetlife_15509748121987_oficial.jpg
+2026-05-08 11:20:32,224 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:34,699 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:35,699 [INFO] 
+[14/28] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR  (ID: 15509748253059)
+2026-05-08 11:20:35,700 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:35,700 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 11:20:35,700 [INFO]     [0.20] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:20:35,700 [INFO]     [0.20] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:20:35,701 [INFO]   ✓ Match: 'Hypoallergenic Fish & Potato Húmedo' → 379_44_vetlife-hypoallergenic-fish-&-potato-300g.png
+2026-05-08 11:20:36,655 [INFO]   Procesada: (2000, 2000) → vetlife_15509748253059_oficial.jpg
+2026-05-08 11:20:37,533 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:40,046 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:41,046 [INFO] 
+[15/28] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT  (ID: 15469438861699)
+2026-05-08 11:20:41,048 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:20:41,048 [INFO]     [0.50] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
+2026-05-08 11:20:41,048 [INFO]     [0.29] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
+2026-05-08 11:20:41,048 [INFO]     [0.25] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
+2026-05-08 11:20:41,048 [INFO]   ✓ Match: 'Hypoallergenic Pork & Potato' → 965_03_vet-life-canine-hypo-pork@web.png
+2026-05-08 11:20:42,008 [INFO]   Procesada: (2000, 2000) → vetlife_15469438861699_oficial.jpg
+2026-05-08 11:20:42,789 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:45,528 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:46,528 [INFO] 
+[16/28] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR  (ID: 15509748416899)
+2026-05-08 11:20:46,529 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:46,529 [INFO]     [0.60] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 11:20:46,529 [INFO]     [0.33] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
+2026-05-08 11:20:46,529 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 11:20:46,529 [INFO]   ✓ Match: 'Hypoallergenic Pork & Potato Húmedo' → 1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png
+2026-05-08 11:20:47,474 [INFO]   Procesada: (2000, 2000) → vetlife_15509748416899_oficial.jpg
+2026-05-08 11:20:48,279 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:50,708 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:51,709 [INFO] 
+[17/28] FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO  (ID: 15469439353219)
+2026-05-08 11:20:51,710 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:20:51,710 [INFO]     [0.50] Hypoallergenic Egg & Rice (hypoallergenic-egg-&-rice)
+2026-05-08 11:20:51,710 [INFO]     [0.20] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
+2026-05-08 11:20:51,710 [INFO]     [0.20] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
+2026-05-08 11:20:51,710 [INFO]   ✓ Match: 'Hypoallergenic Egg & Rice' → 74_43_74_42_vet-life-canine-hypoallergenic-egg-rice@web.png
+2026-05-08 11:20:52,562 [INFO]   Procesada: (2000, 2000) → vetlife_15469439353219_oficial.jpg
+2026-05-08 11:20:53,430 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:20:56,607 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:20:57,607 [INFO] 
+[18/28] FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR  (ID: 15509748547971)
+2026-05-08 11:20:57,609 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:20:57,609 [INFO]     [0.60] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
+2026-05-08 11:20:57,609 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 11:20:57,609 [INFO]     [0.33] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 11:20:57,609 [INFO]   ✓ Match: 'Hypoallergenic Duck & Potato Húmedo' → 378_26_vetlife-hypoallergenic-duck-&-potato-300g.png
+2026-05-08 11:20:58,601 [INFO]   Procesada: (2000, 2000) → vetlife_15509748547971_oficial.jpg
+2026-05-08 11:20:59,621 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:03,163 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:04,163 [INFO] 
+[19/28] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR  (ID: 15509747040643)
+2026-05-08 11:21:04,164 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:04,164 [INFO]     [0.60] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 11:21:04,164 [INFO]     [0.20] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:04,164 [INFO]     [0.20] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:04,165 [INFO]   ✓ Match: 'Hypoallergenic Pork & Potato Húmedo' → 1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png
+2026-05-08 11:21:04,896 [INFO]   Procesada: (2000, 2000) → vetlife_15509747040643_oficial.jpg
+2026-05-08 11:21:05,770 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:08,297 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:09,297 [INFO] 
+[20/28] FARMINA VET LIFE DOG RENAL CAJA 6X300GR  (ID: 15509749236099)
+2026-05-08 11:21:09,298 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:09,298 [INFO]     [0.67] Renal Húmedo (renal-húmedo)
+2026-05-08 11:21:09,298 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:09,298 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:09,298 [INFO]   ✓ Match: 'Renal Húmedo' → 376_42_vetlife-renal-300g.png
+2026-05-08 11:21:10,165 [INFO]   Procesada: (2000, 2000) → vetlife_15509749236099_oficial.jpg
+2026-05-08 11:21:11,003 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:13,389 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:14,389 [INFO] 
+[21/28] FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR  (ID: 15509750055299)
+2026-05-08 11:21:14,390 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:14,390 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
+2026-05-08 11:21:14,390 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:14,390 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:14,390 [INFO]   ✓ Match: 'Diabetic húmedo' → 968_55_vetlife-diabetic-300g.png
+2026-05-08 11:21:15,345 [INFO]   Procesada: (2000, 2000) → vetlife_15509750055299_oficial.jpg
+2026-05-08 11:21:16,167 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:18,649 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:19,650 [INFO] 
+[22/28] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR  (ID: 15509749432707)
+2026-05-08 11:21:19,651 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:19,651 [INFO]     [0.67] Struvite Húmedo (struvite-húmedo)
+2026-05-08 11:21:19,651 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:19,651 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:19,651 [INFO]   ✓ Match: 'Struvite Húmedo' → 375_27_vetlife-struvite-300g.png
+2026-05-08 11:21:20,481 [INFO]   Procesada: (2000, 2000) → vetlife_15509749432707_oficial.jpg
+2026-05-08 11:21:21,320 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:23,734 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:24,734 [INFO] 
+[23/28] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR  (ID: 15509749694851)
+2026-05-08 11:21:24,735 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:24,735 [INFO]     [0.67] UltraHypo húmedo (ultrahypo-húmedo)
+2026-05-08 11:21:24,735 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:24,735 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:24,735 [INFO]   ✓ Match: 'UltraHypo húmedo' → 1008_58_vetlife-ultrahypo-300g.png
+2026-05-08 11:21:25,592 [INFO]   Procesada: (2000, 2000) → vetlife_15509749694851_oficial.jpg
+2026-05-08 11:21:26,442 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:28,941 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:29,941 [INFO] 
+[24/28] FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR  (ID: 15509749956995)
+2026-05-08 11:21:29,942 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:29,942 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
+2026-05-08 11:21:29,942 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:29,942 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:29,942 [INFO]   ✓ Match: 'Obesity húmedo' → 972_42_vetlife-obesity-85g.png
+2026-05-08 11:21:30,799 [INFO]   Procesada: (2000, 2000) → vetlife_15509749956995_oficial.jpg
+2026-05-08 11:21:31,602 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:33,804 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:34,804 [INFO] 
+[25/28] FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR  (ID: 15509750219139)
+2026-05-08 11:21:34,805 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:34,805 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
+2026-05-08 11:21:34,805 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:34,805 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:34,805 [INFO]   ✓ Match: 'Obesity húmedo' → 969_39_vetlife-obesity-300g.png
+2026-05-08 11:21:35,664 [INFO]   Procesada: (2000, 2000) → vetlife_15509750219139_oficial.jpg
+2026-05-08 11:21:36,486 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:38,902 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:39,902 [INFO] 
+[26/28] FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT  (ID: 15469441155459)
+2026-05-08 11:21:39,904 [INFO]   [seco] Top 3 matches:
+2026-05-08 11:21:39,904 [INFO]     [0.67] Obesity Fish (obesity-fish)
+2026-05-08 11:21:39,904 [INFO]     [0.33] Obesity (obesity)
+2026-05-08 11:21:39,904 [INFO]     [0.20] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
+2026-05-08 11:21:39,904 [INFO]   ✓ Match: 'Obesity Fish' → 966_34_vet-life-canine-obesity-fish@web.png
+2026-05-08 11:21:40,762 [INFO]   Procesada: (2000, 2000) → vetlife_15469441155459_oficial.jpg
+2026-05-08 11:21:41,617 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:44,302 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:45,302 [INFO] 
+[27/28] FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR  (ID: 15509749858691)
+2026-05-08 11:21:45,303 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:45,303 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
+2026-05-08 11:21:45,303 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:45,303 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:45,303 [INFO]   ✓ Match: 'Diabetic húmedo' → 971_00_vetlife-diabetic-85g.png
+2026-05-08 11:21:46,176 [INFO]   Procesada: (2000, 2000) → vetlife_15509749858691_oficial.jpg
+2026-05-08 11:21:47,043 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:49,394 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:50,394 [INFO] 
+[28/28] FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR  (ID: 15509750120835)
+2026-05-08 11:21:50,395 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 11:21:50,395 [INFO]     [0.33] Hepatic húmedo (hepatic-húmedo)
+2026-05-08 11:21:50,396 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 11:21:50,396 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 11:21:50,396 [INFO]   ✓ Match: 'Hepatic húmedo' → 970_21_vetlife-hepatic-300g.png
+2026-05-08 11:21:51,231 [INFO]   Procesada: (2000, 2000) → vetlife_15509750120835_oficial.jpg
+2026-05-08 11:21:52,108 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 11:21:54,809 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 11:21:55,810 [INFO] 
+============================================================
+2026-05-08 11:21:55,810 [INFO] RESUMEN FINAL
+2026-05-08 11:21:55,810 [INFO] ============================================================
+2026-05-08 11:21:55,810 [INFO]   Productos procesados  : 28
+2026-05-08 11:21:55,810 [INFO]   Imágenes actualizadas : 28
+2026-05-08 11:21:55,810 [INFO]   Sin match farmina.com : 0
+2026-05-08 11:21:55,810 [INFO]   Errores               : 0
