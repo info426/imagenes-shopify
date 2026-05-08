@@ -1,0 +1,34 @@
+name: Diagnóstico web farmina.com
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Ejecutar diagnóstico
+        run: |
+          mkdir -p resultados
+          python3 diagnostico_farmina_web.py | tee resultados/diagnostico_farmina_web.txt
+
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/diagnostico_farmina_web.txt
+          git diff --cached --quiet || git commit -m "chore: diagnóstico web farmina.com"
+          git push
