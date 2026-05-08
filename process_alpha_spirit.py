@@ -132,8 +132,12 @@ class ShopifyAPI:
 def build_catalog() -> list:
     if CATALOG_FILE.exists():
         catalog = json.loads(CATALOG_FILE.read_text(encoding="utf-8"))
-        log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
-        return catalog
+        if catalog and "image_urls" not in catalog[0]:
+            log.info("Catálogo en formato antiguo (sin image_urls), reconstruyendo...")
+            CATALOG_FILE.unlink()
+        else:
+            log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
+            return catalog
 
     log.info("Construyendo catálogo con Playwright...")
     from playwright.sync_api import sync_playwright
@@ -181,6 +185,7 @@ def build_catalog() -> list:
                     "vendor":       vendor,
                     "product_type": p.get("product_type", ""),
                     "image_url":    images[0]["src"] if images else "",
+                    "image_urls":   [img["src"] for img in images],
                     "tags":         p.get("tags", []),
                 })
 
@@ -301,8 +306,9 @@ def _is_snack(title: str) -> bool:
 
 def _score(shopify_title: str, entry: dict) -> float:
     shopify_tokens = _tokenize(shopify_title)
-    catalog_text   = entry["title"] + " " + entry["handle"] + " " + entry.get("product_type", "")
-    catalog_tokens = _tokenize(catalog_text)
+    # Solo title + handle para evitar que product_type añada tokens extra (perro, seco…)
+    # que penalizan productos correctos por inflar el union sin mejorar la intersección
+    catalog_tokens = _tokenize(entry["title"] + " " + entry["handle"])
     if not catalog_tokens:
         return 0.0
     inter = shopify_tokens & catalog_tokens
@@ -357,8 +363,12 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
         if wet_candidates:
             candidates = wet_candidates
 
+    # Pequeño bonus para vendor principal "ALPHA SPIRIT" sobre "Alpha Spirit Store" (packs)
+    _PREFERRED_VENDOR = "alpha spirit"
     scored = sorted(
-        [(e, _score(shopify_title, e)) for e in candidates],
+        [(e, _score(shopify_title, e)
+          + (0.01 if e.get("vendor", "").lower() == _PREFERRED_VENDOR else 0.0))
+         for e in candidates],
         key=lambda x: x[1], reverse=True,
     )
 
@@ -366,6 +376,7 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
         return None, 0.0
 
     best_entry, best_score = scored[0]
+    best_score = min(best_score, 1.0)  # el bonus no debe superar el máximo teórico
 
     bucket = "snack" if is_snack else ("semiwet" if is_semiwet else ("wet" if is_wet else "dry"))
     log.info(f"  [{bucket}] Top 3 matches:")
@@ -429,6 +440,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--product-id", type=int, default=None,
                         help="Procesar solo este product ID (modo prueba)")
+    parser.add_argument("--search-title", type=str, default=None,
+                        help="Buscar producto por título (parcial) y procesarlo")
     parser.add_argument("--only-ids", type=str, default=None,
                         help="Lista de IDs separados por coma a re-procesar (ej: 123,456)")
     parser.add_argument("--rebuild-catalog", action="store_true",
@@ -467,6 +480,15 @@ def main():
     if args.product_id:
         log.info(f"Modo prueba — producto ID: {args.product_id}")
         products = [api.get_product(args.product_id)]
+    elif args.search_title:
+        query = args.search_title.lower()
+        log.info(f"Buscando producto por título: '{args.search_title}'")
+        all_products = api.get_products(VENDOR)
+        products = [p for p in all_products if query in p["title"].lower()]
+        if not products:
+            log.error(f"Ningún producto '{VENDOR}' contiene '{args.search_title}' en el título")
+            sys.exit(1)
+        log.info(f"Encontrado(s): {[p['title'] for p in products]}")
     elif only_ids:
         log.info(f"Obteniendo {len(only_ids)} productos específicos...")
         products = [api.get_product(pid) for pid in only_ids]
@@ -492,27 +514,45 @@ def main():
 
             log.info(f"  ✓ Match: '{match['title']}' (score={score:.2f})")
 
-            if not match["image_url"]:
-                log.warning(f"  Match sin imagen — saltando")
+            image_urls = match.get("image_urls") or (
+                [match["image_url"]] if match.get("image_url") else []
+            )
+            if not image_urls:
+                log.warning(f"  Match sin imágenes — saltando")
                 stats["sin_match"] += 1
                 continue
 
-            official_img = download_image(match["image_url"])
-            processed    = process_image(official_img)
-            b64          = to_b64_jpeg(processed)
-            fname        = f"alpha_spirit_{pid}_oficial.jpg"
-            processed.save(OUTPUT_DIR / fname, "JPEG",
-                           quality=JPEG_QUALITY, optimize=True)
-            log.info(f"  Procesada: {processed.size} → {fname}")
+            # Descargar y procesar todas las imágenes del match
+            processed_images = []
+            for img_url in image_urls:
+                try:
+                    official_img = download_image(img_url)
+                    processed_images.append((img_url, process_image(official_img)))
+                except Exception as exc:
+                    log.warning(f"  No se pudo descargar {img_url.split('/')[-1]}: {exc}")
+            if not processed_images:
+                log.warning(f"  Ninguna imagen descargada — saltando")
+                stats["errores"] += 1
+                continue
+            log.info(f"  {len(processed_images)} imagen(es) descargada(s)")
 
-            images = api.get_images(pid)
-            for j, img_data in enumerate(images):
+            # Eliminar imágenes antiguas
+            old_images = api.get_images(pid)
+            for j, img_data in enumerate(old_images):
                 api.delete_image(pid, img_data["id"])
                 time.sleep(0.2)
-                log.info(f"  Imagen antigua {j+1}/{len(images)} borrada")
+                log.info(f"  Imagen antigua {j+1}/{len(old_images)} borrada")
 
-            api.create_image(pid, b64, fname, alt=title, position=1)
-            log.info(f"  ✓ Imagen oficial subida a Shopify")
+            # Subir todas las nuevas en orden
+            for pos, (img_url, processed) in enumerate(processed_images, 1):
+                b64   = to_b64_jpeg(processed)
+                fname = f"alpha_spirit_{pid}_{pos}_oficial.jpg"
+                processed.save(OUTPUT_DIR / fname, "JPEG",
+                               quality=JPEG_QUALITY, optimize=True)
+                api.create_image(pid, b64, fname, alt=title, position=pos)
+                log.info(f"  ✓ Imagen {pos}/{len(processed_images)} subida → {fname}")
+                time.sleep(0.5)
+
             stats["actualizadas"] += 1
 
         except Exception as exc:

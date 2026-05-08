@@ -4,8 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       product_id:
-        description: 'ID del producto a procesar'
-        required: true
+        description: 'ID numérico del producto (dejar vacío si se usa search_title)'
+        required: false
+      search_title:
+        description: 'Texto parcial del título (ej: "ONLY ONE CANINE ADULT 7 DAYS")'
+        required: false
 
 jobs:
   procesar:
@@ -37,7 +40,11 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
-          python3 process_alpha_spirit.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_alpha_spirit_${{ github.event.inputs.product_id }}.txt
+          if [ -n "${{ github.event.inputs.product_id }}" ]; then
+            python3 process_alpha_spirit.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_alpha_spirit_${{ github.event.inputs.product_id }}.txt
+          else
+            python3 process_alpha_spirit.py --search-title "${{ github.event.inputs.search_title }}" 2>&1 | tee resultados/prueba_alpha_spirit_search.txt
+          fi
 
       - name: Guardar log
         if: always()
@@ -45,5 +52,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
-          git diff --cached --quiet || git commit -m "chore: log prueba Alpha Spirit ${{ github.event.inputs.product_id }}"
+          git diff --cached --quiet || git commit -m "chore: log prueba Alpha Spirit"
           git push

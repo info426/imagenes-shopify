@@ -124,6 +124,7 @@ def build_catalog() -> list:
                     "vendor":       vendor,
                     "product_type": p.get("product_type", ""),
                     "image_url":    images[0]["src"] if images else "",
+                    "image_urls":   [img["src"] for img in images],
                     "tags":         p.get("tags", []),
                 })
 
@@ -246,8 +247,7 @@ def _is_snack(title: str) -> bool:
 
 def _score(shopify_title: str, entry: dict) -> float:
     shopify_tokens = _tokenize(shopify_title)
-    catalog_text   = entry["title"] + " " + entry["handle"] + " " + entry.get("product_type", "")
-    catalog_tokens = _tokenize(catalog_text)
+    catalog_tokens = _tokenize(entry["title"] + " " + entry["handle"])
     if not catalog_tokens:
         return 0.0
     inter = shopify_tokens & catalog_tokens
@@ -304,8 +304,11 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
         if wet_candidates:
             candidates = wet_candidates
 
+    _PREFERRED_VENDOR = "alpha spirit"
     scored = sorted(
-        [(e, _score(shopify_title, e)) for e in candidates],
+        [(e, _score(shopify_title, e)
+          + (0.01 if e.get("vendor", "").lower() == _PREFERRED_VENDOR else 0.0))
+         for e in candidates],
         key=lambda x: x[1], reverse=True,
     )
 
@@ -313,6 +316,7 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
         return None, 0.0
 
     best_entry, best_score = scored[0]
+    best_score = min(best_score, 1.0)
     return (best_entry, best_score) if best_score >= 0.10 else (None, best_score)
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
