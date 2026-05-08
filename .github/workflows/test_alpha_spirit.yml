@@ -1,0 +1,49 @@
+name: Test Alpha Spirit (producto de prueba)
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'ID del producto a procesar'
+        required: true
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Instalar Playwright + Chromium
+        run: |
+          pip install playwright
+          python -m playwright install chromium
+          python -m playwright install-deps chromium
+
+      - name: Procesar producto de prueba
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 process_alpha_spirit.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_alpha_spirit_${{ github.event.inputs.product_id }}.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: log prueba Alpha Spirit ${{ github.event.inputs.product_id }}"
+          git push
