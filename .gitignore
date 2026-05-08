@@ -1,6 +1,10 @@
 .env
 imagenes_procesadas/
 farmina_images.log
+alpha_spirit_images.log
+vet_life_images.log
+imagenes_alpha_spirit/
+imagenes_vet_life/
 __pycache__/
 *.pyc
 *.pyo
