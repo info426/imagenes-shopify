@@ -282,16 +282,21 @@ def _has_transparency(img: Image.Image) -> bool:
         img.mode == "P" and "transparency" in img.info)
 
 
+PADDING = 0.05  # 5% de margen en cada lado → el producto ocupa el 90% del canvas
+
 def process_image(img: Image.Image) -> Image.Image:
-    """2000×2000, centrada, fondo blanco."""
+    """2000×2000, centrada con margen, fondo blanco."""
     transparent = _has_transparency(img)
     img_conv = img.convert("RGBA") if transparent else img.convert("RGB")
 
+    max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING))
+    max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING))
+
     ratio = img_conv.width / img_conv.height
     if ratio > 1:
-        new_w, new_h = TARGET_SIZE[0], int(TARGET_SIZE[0] / ratio)
+        new_w, new_h = max_w, int(max_w / ratio)
     else:
-        new_w, new_h = int(TARGET_SIZE[1] * ratio), TARGET_SIZE[1]
+        new_w, new_h = int(max_h * ratio), max_h
 
     resized    = img_conv.resize((new_w, new_h), Image.LANCZOS)
     background = Image.new("RGB", TARGET_SIZE, (255, 255, 255))
