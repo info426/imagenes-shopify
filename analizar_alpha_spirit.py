@@ -164,7 +164,7 @@ _ES_TO_EN = {
     "conejo":       "rabbit",
     "salmon":       "salmon",
     "trucha":       "trout",
-    "atun":         "tuna",
+    "atun":         "fish",
     "dorada":       "seabream",
     "jamon":        "ham",
     "pavo":         "turkey",
