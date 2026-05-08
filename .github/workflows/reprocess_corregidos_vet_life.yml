@@ -1,0 +1,48 @@
+name: Re-procesar 28 productos Vet Life corregidos
+
+on:
+  workflow_dispatch:
+
+jobs:
+  reprocess:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/fix-product-images-FzavA
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Procesar los 28 productos con imagen corregida
+        env:
+          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
+          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
+          CLIENT_SECRET: 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
+          PRODUCT_IDS: >-
+            15509745303939,15509745467779,15509745500547,15509745598851,
+            15509745664387,15509745762691,15509745860995,15509746057603,
+            15509746221443,15509746614659,15509747040643,15509747401091,
+            15509747532163,15509748121987,15509748253059,15469438861699,
+            15509748416899,15469439353219,15509748547971,15509749236099,
+            15509749432707,15509749694851,15469441155459,15509749858691,
+            15509749956995,15509750055299,15509750120835,15509750219139
+        run: |
+          mkdir -p resultados
+          python3 process_farmina_vet_life.py 2>&1 | tee resultados/reprocess_corregidos_vet_life.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: log re-proceso 28 productos Vet Life corregidos"
+          git push

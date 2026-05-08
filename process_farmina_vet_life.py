@@ -406,6 +406,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--product-id", type=int, default=None,
                         help="Procesar solo este product ID (modo prueba)")
+    parser.add_argument("--only-ids", type=str, default=None,
+                        help="Lista de IDs separados por coma a re-procesar (ej: 123,456)")
     parser.add_argument("--rebuild-catalog", action="store_true",
                         help="Forzar reconstrucción del catálogo farmina.com")
     args = parser.parse_args()
@@ -433,9 +435,20 @@ def main():
     token = get_token()
     api   = ShopifyAPI(token)
 
+    # Construir lista de IDs a filtrar (--only-ids o var de entorno PRODUCT_IDS)
+    only_ids_raw = args.only_ids or os.getenv("PRODUCT_IDS", "")
+    only_ids: set[int] = set()
+    if only_ids_raw:
+        only_ids = {int(x.strip()) for x in only_ids_raw.split(",") if x.strip()}
+        log.info(f"Modo re-proceso — filtrando {len(only_ids)} IDs específicos")
+
     if args.product_id:
         log.info(f"Modo prueba — producto ID: {args.product_id}")
         products = [api.get_product(args.product_id)]
+    elif only_ids:
+        log.info(f"Obteniendo {len(only_ids)} productos específicos...")
+        products = [api.get_product(pid) for pid in only_ids]
+        log.info(f"Total a procesar: {len(products)} productos\n")
     else:
         log.info(f"Obteniendo productos '{VENDOR}'...")
         products = api.get_products(VENDOR)
