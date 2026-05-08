@@ -590,6 +590,124 @@
     ]
   },
   {
+    "id": 14862918779206,
+    "title": "Estofado de Cerdo para Perros",
+    "handle": "estofado-de-cerdo-para-perros-280gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PORK_STEW.png?v=1736760774",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "real-food"
+    ]
+  },
+  {
+    "id": 14862881259846,
+    "title": "Estofado de Oreja de Cerdo para Perros",
+    "handle": "estofado-de-oreja-de-cerdo-para-perros-280gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PORK_EARS_STEW.png?v=1736760774",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "real-food"
+    ]
+  },
+  {
+    "id": 14889078587718,
+    "title": "Estofado de Pato para Perros",
+    "handle": "estofado-pato-perros-real-food",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/DUCK_STEW_32b24318-d7c8-44ae-9adf-2650d1eb1f0d.png?v=1738064686",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "pato",
+      "perros",
+      "real-food"
+    ]
+  },
+  {
+    "id": 14889131475270,
+    "title": "Estofado de Pescado para Perros",
+    "handle": "estofado-pescado-perros",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/FISH_STEW_c1c5d30e-5a74-4cc9-95c0-b8e8bec038cd.png?v=1738064686",
+    "tags": [
+      "alimento-húmedo",
+      "alpha-spirit",
+      "atún",
+      "estofados",
+      "HÚMEDO",
+      "perros",
+      "pescado",
+      "real-food"
+    ]
+  },
+  {
+    "id": 14862241530182,
+    "title": "Estofado de Pollo para Perros",
+    "handle": "estofado-de-pollo-para-perros",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CHICKEN_STEW.png?v=1736760774",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "pollo",
+      "real-food"
+    ]
+  },
+  {
+    "id": 14889133801798,
+    "title": "Estofado de Roast Beef para Perros",
+    "handle": "estofado-de-roast-beef-perros",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/ROAST_BEEF_STEW_c3aef4b1-9d91-4e9a-a185-a669dcbbb47f.png?v=1738064686",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "real-food",
+      "ternera"
+    ]
+  },
+  {
     "id": 5678477901981,
     "title": "Hueso de Jamón Estándar al Vacío",
     "handle": "hueso-de-jamon",
@@ -623,6 +741,63 @@
       "perros",
       "SNACK",
       "SNACKS PERRO_HUESO DE JAMÓN"
+    ]
+  },
+  {
+    "id": 14889144484166,
+    "title": "Mini Salchciha Curada de Cerdo para Perros",
+    "handle": "mini-salchicha-curada-de-cerdo-80gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/Minisalchichaseca_pork.png?v=1738066120",
+    "tags": [
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "perros",
+      "real-food",
+      "SALCHICHAS",
+      "SNACK",
+      "SNACKS PERRO_NATURALES"
+    ]
+  },
+  {
+    "id": 14889145172294,
+    "title": "Mini Salchicha Curada de Pescado para Perros",
+    "handle": "mini-salchicha-curada-de-pescado-80gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/Minisalchichaseca_Pesc.png?v=1738066120",
+    "tags": [
+      "alpha-spirit",
+      "perros",
+      "PESCADO",
+      "real-food",
+      "SALCHICHAS",
+      "SNACK",
+      "SNACKS PERRO_NATURALES"
+    ]
+  },
+  {
+    "id": 14890539811142,
+    "title": "Mini Salchichas Smokies para Perros",
+    "handle": "mini-salchichas-smokies-para-perros",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/latamockupmini400g_low.png?v=1738147257",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "real-food",
+      "SALCHICHAS"
     ]
   },
   {
@@ -1175,6 +1350,204 @@
       "NERVIO",
       "SNACK",
       "SNACKS PERRO_NERVIO DE BUEY"
+    ]
+  },
+  {
+    "id": 8919992271174,
+    "title": "Orygo - Alimento de Cerdo Con Brócoli para Perros",
+    "handle": "orygo-alimento-cerdo-con-brocoli",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJACERDO.png?v=1714664457",
+    "tags": [
+      "alimento-semi-húmedo",
+      "carne",
+      "cerdo-brócoli",
+      "orygo",
+      "perros",
+      "pienso"
+    ]
+  },
+  {
+    "id": 8920016257350,
+    "title": "Orygo - Alimento de Pavo Con Calabaza para Perros",
+    "handle": "orygo-alimento-cerdo-con-brocoli-1",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJAPAVO.png?v=1714664489",
+    "tags": [
+      "alimento-semi-húmedo",
+      "carne",
+      "orygo",
+      "pavo-calabaza",
+      "perros",
+      "SEMI-HÚMEDO"
+    ]
+  },
+  {
+    "id": 8920210899270,
+    "title": "Orygo - Alimento de Pollo con Legumbres para Perros Senior",
+    "handle": "orygo-alimento-pollo-con-legumbres-senior",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJASENIOR_e42ee85c-b386-4119-bc84-260eb68bbd0b.png?v=1714664522",
+    "tags": [
+      "alimento-semi-húmedo",
+      "carne",
+      "orygo",
+      "perros",
+      "pienso",
+      "pollo-legumbres",
+      "senior"
+    ]
+  },
+  {
+    "id": 8919901274438,
+    "title": "Orygo - Alimento de Pollo Con Zanahoria para Perros",
+    "handle": "orygo-alimento-pollo-con-zanahoria",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJAPOLLO_a4a1cdeb-b9ab-4aae-864a-486a97d9fc77.png?v=1714664564",
+    "tags": [
+      "alimento-semi-húmedo",
+      "carne",
+      "orygo",
+      "perros",
+      "pienso",
+      "pollo-zanahoria"
+    ]
+  },
+  {
+    "id": 8920192713030,
+    "title": "Orygo - Alimento de Salmón con Arándanos para Perros",
+    "handle": "orygo-pate-salmon-con-arandanos-1",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJASALMON_4e69aa41-b64b-4655-a7ca-a30d23cc8334.png?v=1714664609",
+    "tags": [
+      "alimento-semi-húmedo",
+      "orygo",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "salmón-arándanos"
+    ]
+  },
+  {
+    "id": 8920006820166,
+    "title": "Orygo - Alimento de Salmón con Boniato para Puppies",
+    "handle": "orygo-salmon-con-boniato",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/CAJAPUPPIES.png?v=1772626715",
+    "tags": [
+      "_preorder_",
+      "alimento-semi-húmedo",
+      "orygo",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "PUPPIES",
+      "salmón-boniato"
+    ]
+  },
+  {
+    "id": 8920179147078,
+    "title": "Orygo - Paté de Cerdo con Brócoli para Perros",
+    "handle": "orygo-pate-cerdo-con-brocoli-1",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATACERDO_a7b69ef6-10b5-469d-92a6-b8fdf2f43fe6.png?v=1714664741",
+    "tags": [
+      "alimento-húmedo",
+      "carne",
+      "cerdo-brócoli",
+      "orygo",
+      "PATÉ",
+      "perros"
+    ]
+  },
+  {
+    "id": 8920183537990,
+    "title": "Orygo - Paté de Pavo Con Calabaza para Perros",
+    "handle": "orygo-pate-pavo-con-calabaza-1",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATAPAVO_6b879258-e381-4e64-822c-54a31e2df3d5.png?v=1714664761",
+    "tags": [
+      "alimento-húmedo",
+      "carne",
+      "orygo",
+      "PATÉ",
+      "PAVO",
+      "pavo-calabaza",
+      "perros"
+    ]
+  },
+  {
+    "id": 8920189239622,
+    "title": "Orygo - Paté de Pollo con Zanahoria para Perros",
+    "handle": "orygo-pate-pollo-con-zanahoria-copia",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATAPOLLO_df1685a3-c6e2-4240-8092-c55c4d520337.png?v=1714664805",
+    "tags": [
+      "alimento-húmedo",
+      "orygo",
+      "PATÉ",
+      "perros",
+      "PESCADO",
+      "pollo-zanahoria"
+    ]
+  },
+  {
+    "id": 8920013177158,
+    "title": "Orygo - Paté de Salmón Con Arándanos para Perros",
+    "handle": "orygo-alimento-salmon-con-arandanos",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATASALMON_1df3d52b-34ea-4ce1-b374-3846f6e818c4.png?v=1714664823",
+    "tags": [
+      "alimento-húmedo",
+      "orygo",
+      "PATÉ",
+      "perros",
+      "PESCADO",
+      "salmón-arándanos"
+    ]
+  },
+  {
+    "id": 8920206082374,
+    "title": "Orygo - Paté de Salmón con Boniato para Puppies",
+    "handle": "orygo-pate-salmon-con-boniato-puppies",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATAPUPPIES_ff959fb5-ec0d-4081-9cba-1160e80dd975.png?v=1772626715",
+    "tags": [
+      "alimento-húmedo",
+      "orygo",
+      "pate",
+      "perros",
+      "PESCADO",
+      "PUPPIES",
+      "salmón-boniato"
+    ]
+  },
+  {
+    "id": 8919973298502,
+    "title": "Orygo - Paté Pollo Con Legumbres para Perros Senior",
+    "handle": "orygo-pate-pollo-legumbres-perros",
+    "vendor": "ORYGO",
+    "product_type": "ALIMENTO PERRO ORYGO SECO Y SEMIHUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/LATASENIOR_05c8f90b-cca3-4d7f-acd1-7d68444b1340.png?v=1714664781",
+    "tags": [
+      "alimento-húmedo",
+      "carne",
+      "orygo",
+      "PATÉ",
+      "perros",
+      "pollo-legumbres",
+      "senior"
     ]
   },
   {
@@ -2173,6 +2546,282 @@
     ]
   },
   {
+    "id": 5997769982109,
+    "title": "Primal 60% Wilderness Alimento para perros",
+    "handle": "primal-60-wilderness-alimento-para-perros",
+    "vendor": "PRIMAL",
+    "product_type": "ALIMENTO PERRO PRIMAL SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/WILDERNESS12.png?v=1714729816",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "carne",
+      "perros",
+      "pienso",
+      "primal-spirit",
+      "SECO",
+      "wilderness"
+    ]
+  },
+  {
+    "id": 5997657522333,
+    "title": "Primal 65% Oceanland Alimento para perros",
+    "handle": "primal-65-oceanland-alimento-para-perros",
+    "vendor": "PRIMAL",
+    "product_type": "ALIMENTO PERRO PRIMAL SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/OCEANLAND12.png?v=1714729850",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "oceanland",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "SECO"
+    ]
+  },
+  {
+    "id": 5997647167645,
+    "title": "Primal 65% Rebel Fram Alimento para perros",
+    "handle": "primal-65-rebel-fram-alimento-para-perros",
+    "vendor": "PRIMAL",
+    "product_type": "ALIMENTO PERRO PRIMAL SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/REBELFARM12.png?v=1714729885",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "carne",
+      "perros",
+      "pienso",
+      "primal-spirit",
+      "rebel-farm",
+      "SECO"
+    ]
+  },
+  {
+    "id": 5997000392861,
+    "title": "Primal 70% Wanderlust Alimento para perros",
+    "handle": "primal-70-wanderlust-dog-food",
+    "vendor": "PRIMAL",
+    "product_type": "ALIMENTO PERRO PRIMAL SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/WANDERLUST12.png?v=1714729915",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "carne",
+      "perros",
+      "pienso",
+      "primal-spirit",
+      "SECO",
+      "wanderlust"
+    ]
+  },
+  {
+    "id": 5997636976797,
+    "title": "Primal 70% Wild Waters Alimento para perros",
+    "handle": "primal-70-puppies-alimento-para-perros",
+    "vendor": "PRIMAL",
+    "product_type": "ALIMENTO PERRO PRIMAL SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/WILDWATERS12.png?v=1714729990",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "SECO",
+      "wild-waters"
+    ]
+  },
+  {
+    "id": 7872461603034,
+    "title": "Primal Iberian Cerdo para gatos esterilizados",
+    "handle": "primal-iberian-cerdo-para-gatos-esterilizados",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO GATO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANCAT_PORK1KG.png?v=1714729075",
+    "tags": [
+      "ALIMENTACIÓN GATOS_ESTERILIZADOS",
+      "ALIMENTACIÓN GATOS_SECO",
+      "alimento-seco",
+      "carne",
+      "cerdo",
+      "gatos",
+      "GATOS ESTERILIZADOS",
+      "iberian",
+      "pienso",
+      "primal-spirit",
+      "SECO"
+    ]
+  },
+  {
+    "id": 7872469401818,
+    "title": "Primal Iberian Cerdo para perros",
+    "handle": "primal-iberian-cerdo-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANDOG_PORK1KG.png?v=1714728962",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "carne",
+      "cerdo",
+      "iberian",
+      "perros",
+      "pienso",
+      "primal-spirit",
+      "SECO"
+    ]
+  },
+  {
+    "id": 7872447086810,
+    "title": "Primal Iberian Salmón para gatos esterilizados",
+    "handle": "primal-iberian-salmon-para-gatos-esterilizados",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO GATO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANCAT_SALMON1KG.png?v=1714729104",
+    "tags": [
+      "ALIMENTACIÓN GATOS_ESTERILIZADOS",
+      "ALIMENTACIÓN GATOS_SECO",
+      "alimento-seco",
+      "gatos",
+      "GATOS ESTERILIZADOS",
+      "iberian",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "salmón",
+      "SECO"
+    ]
+  },
+  {
+    "id": 7872466780378,
+    "title": "Primal Iberian Salmón para perros",
+    "handle": "primal-iberian-salmon-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANDOG_SALMON1KG.png?v=1714728978",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "iberian",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "salmón",
+      "SECO"
+    ]
+  },
+  {
+    "id": 7872464617690,
+    "title": "Primal Iberian Sardina para gatos",
+    "handle": "primal-iberian-sardina-para-gatos",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO GATO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANCAT_SARDINE1KG.png?v=1714729142",
+    "tags": [
+      "ALIMENTACIÓN GATOS_SECO",
+      "alimento-seco",
+      "gatos",
+      "iberian",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "sardina",
+      "SECO"
+    ]
+  },
+  {
+    "id": 7872472809690,
+    "title": "Primal Iberian Sardina para perros",
+    "handle": "primal-iberian-sardina-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN SECO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/IBERIANDOG_SARDINE1KG.png?v=1714729024",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SECO",
+      "alimento-seco",
+      "iberian",
+      "perros",
+      "PESCADO",
+      "pienso",
+      "primal-spirit",
+      "sardina",
+      "SECO"
+    ]
+  },
+  {
+    "id": 8896721256774,
+    "title": "Primal Mediterranean Farm - Alimento Húmedo para Perros",
+    "handle": "primal-mediterranean-farm-400gr-alimento-humedo-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/HUMEDOPERRO_MEDITERRANEANFARM_bbe91eed-dffc-40ea-aac1-0875bf53e8ae.png?v=1714729367",
+    "tags": [
+      "alimento-húmedo",
+      "carne",
+      "HÚMEDO",
+      "mediterranean-farm",
+      "PATÉ",
+      "perros",
+      "primal-spirit"
+    ]
+  },
+  {
+    "id": 8896729219398,
+    "title": "Primal Nordic Sealand - Alimento Húmedo para Perros",
+    "handle": "primal-nordic-sealand-400gr-alimento-humedo-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/HUMEDOPERRO_NORDICSEALAND_2edb593b-251a-4fbc-9639-4534a5b1965d.png?v=1714729382",
+    "tags": [
+      "alimento-húmedo",
+      "HÚMEDO",
+      "nordic-sealand",
+      "PATÉ",
+      "perros",
+      "PESCADO",
+      "primal-spirit"
+    ]
+  },
+  {
+    "id": 8886912090438,
+    "title": "Primal Paté para perros Ancestral Grassland",
+    "handle": "primal-ancestral-grassland-400gr-alimento-humedo-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/HUMEDOPERRO_ANCESTRALGRASSLAND_e7092f72-a5cb-4ff4-b2da-98c94a16c87d.png?v=1714729351",
+    "tags": [
+      "alimento-húmedo",
+      "ancestral-grassland",
+      "carne",
+      "HÚMEDO",
+      "PATÉ",
+      "perros",
+      "primal-spirit"
+    ]
+  },
+  {
+    "id": 8896726237510,
+    "title": "Primal Wild Forest - Alimento Húmedo para Perros",
+    "handle": "primal-wild-forest-400gr-alimento-humedo-para-perros",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/HUMEDOPERRO_WILDFOREST_94c43476-4c19-4499-bbf7-18983c563bbc.png?v=1714729398",
+    "tags": [
+      "alimento-húmedo",
+      "carne",
+      "HÚMEDO",
+      "PATÉ",
+      "perros",
+      "primal-spirit",
+      "wild-forest"
+    ]
+  },
+  {
     "id": 5663788662941,
     "title": "Ristra de barritas de Hígado para perros",
     "handle": "ristra-de-barritas-individualesde-de-higado-4-unds",
@@ -2374,6 +3023,138 @@
       "SNACK",
       "SNACKS PERRO_POLLO",
       "stick"
+    ]
+  },
+  {
+    "id": 14889141109062,
+    "title": "Salchicha Curada de Cerdo para Perros",
+    "handle": "salchicha-curada-de-cerdo-80gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/Salchichaseca_pork.png?v=1738066120",
+    "tags": [
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "perros",
+      "real-food",
+      "SALCHICHAS",
+      "SNACK",
+      "SNACKS PERRO_NATURALES"
+    ]
+  },
+  {
+    "id": 14889146646854,
+    "title": "Salchicha Curada de Pescado para Perros",
+    "handle": "salchicha-curada-de-pescado-80gr",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/mockup-caja_SalchichaSeca.png?v=1738066120",
+    "tags": [
+      "alpha-spirit",
+      "perros",
+      "PESCADO",
+      "real-food",
+      "SALCHICHAS",
+      "SNACK",
+      "SNACKS PERRO_NATURALES"
+    ]
+  },
+  {
+    "id": 8891267481926,
+    "title": "Salchicha Iberian Ancestral Grassland",
+    "handle": "salchicha-iberian-ancestral",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSAUSAGES1KG_ANCESTRAL.png?v=1714729474",
+    "tags": [
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "ancestral-grassland",
+      "carne",
+      "iberian",
+      "perros",
+      "primal-spirit",
+      "SALCHICHAS"
+    ]
+  },
+  {
+    "id": 8896625475910,
+    "title": "Salchicha Iberian Mediteranean Farm para Perros",
+    "handle": "salchicha-iberian-mediterranean-farm",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSAUSAGES1KG_MEDITERRANEAN.png?v=1714729518",
+    "tags": [
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "carne",
+      "iberian",
+      "mediterranean-farm",
+      "perros",
+      "primal-spirit",
+      "SALCHICHAS"
+    ]
+  },
+  {
+    "id": 8896662405446,
+    "title": "Salchicha Iberian Nordic Sealand para Perros",
+    "handle": "salchicha-iberian-nordic-sealand",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSAUSAGES1KG_NORDICSEALAND.png?v=1714729558",
+    "tags": [
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "iberian",
+      "nordic-sealand",
+      "perros",
+      "PESCADO",
+      "primal-spirit",
+      "SALCHICHAS"
+    ]
+  },
+  {
+    "id": 8896654803270,
+    "title": "Salchicha Iberian Wild Forest para Perros",
+    "handle": "salchicha-iberian-wild-forest",
+    "vendor": "IBERIAN",
+    "product_type": "ALIMENTO PERRO IBERIAN HUMEDO",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSAUSAGES1KG_WILDFOREST.png?v=1714729602",
+    "tags": [
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "carne",
+      "iberian",
+      "perros",
+      "primal-spirit",
+      "SALCHICHAS",
+      "wild-forest"
+    ]
+  },
+  {
+    "id": 14890563633478,
+    "title": "Salchichas Smokies para Perros",
+    "handle": "salchichas-smokies-para-perros-real-food",
+    "vendor": "REAL FOOD",
+    "product_type": "ALIMENTO PERRO REAL FOOD",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/lata_mockup_400_g__low.png?v=1738146583",
+    "tags": [
+      "ALIMENTACIÓN PERROS_ESTOFADOS",
+      "ALIMENTACIÓN PERROS_HÚMEDO",
+      "ALIMENTACIÓN PERROS_SALCHICHAS",
+      "alimento-húmedo",
+      "alpha-spirit",
+      "carne",
+      "cerdo",
+      "ESTOFADOS",
+      "HÚMEDO",
+      "perros",
+      "real-food",
+      "SALCHICHAS"
     ]
   },
   {
@@ -2712,6 +3493,53 @@
       "POLLO",
       "SNACK",
       "SNACKS PERRO_POLLO"
+    ]
+  },
+  {
+    "id": 8891271315782,
+    "title": "Snack Primal Iberian Ancestral Grassland",
+    "handle": "snacks-primal-iberan-ancestral-grassland",
+    "vendor": "IBERIAN",
+    "product_type": "SNACK PERRO IBERIAN",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSNACK_ANCESTRAL_5933d586-1874-4321-a0f2-bee1c67f0932.png?v=1714729645",
+    "tags": [
+      "ancestral-grassland",
+      "perros",
+      "primal-spirit",
+      "SNACK"
+    ]
+  },
+  {
+    "id": 8896696451398,
+    "title": "Snack Primal Iberian Mediterranean Farm para Perros",
+    "handle": "snack-primal-iberan-mediterranean-farm-110gr",
+    "vendor": "IBERIAN",
+    "product_type": "SNACK PERRO IBERIAN",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSNACK_MEDITERRANEAN_85fe5962-0885-47f2-9497-59e1977fe388.png?v=1714729660",
+    "tags": [
+      "SNACK"
+    ]
+  },
+  {
+    "id": 8896699498822,
+    "title": "Snack Primal Iberian Nordic Sealand para Perros",
+    "handle": "snack-primal-iberan-nordic-sealand-110gr",
+    "vendor": "IBERIAN",
+    "product_type": "SNACK PERRO IBERIAN",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSNACK_NORDICSEALAND_dda80640-c039-4765-b0da-07d5b09bff79.png?v=1714729673",
+    "tags": [
+      "SNACK"
+    ]
+  },
+  {
+    "id": 8896703037766,
+    "title": "Snack Primal Iberian Wild Forest para Perros",
+    "handle": "snack-primal-iberan-wild-forest-110gr",
+    "vendor": "IBERIAN",
+    "product_type": "SNACK PERRO IBERIAN",
+    "image_url": "https://cdn.shopify.com/s/files/1/0491/9456/5789/files/PRIMALSNACK_WILDFOREST_1f8e03df-2067-4651-a205-80d8379a5143.png?v=1714729696",
+    "tags": [
+      "SNACK"
     ]
   }
 ]
