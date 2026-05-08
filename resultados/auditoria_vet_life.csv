@@ -1,59 +1,59 @@
-id,title,estado,imagen_actual,imagen_correcta,url_farmina,farmina_id,imagen_correcta_url
-15509745303939,FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR,SIN_MATCH_WEB,vetlife_15509745303939_oficial.jpg,NO ENCONTRADA,,,
-15509745402243,FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509745402243_oficial.jpg,NO ENCONTRADA,,,
-15509745467779,FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR,SIN_MATCH_WEB,vetlife_15509745467779_oficial.jpg,NO ENCONTRADA,,,
-15509745500547,FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509745500547_oficial.jpg,NO ENCONTRADA,,,
-15509745598851,FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR,SIN_MATCH_WEB,vetlife_15509745598851_oficial.jpg,NO ENCONTRADA,,,
-15509745664387,FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509745664387_oficial.jpg,NO ENCONTRADA,,,
-15509745762691,FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR,SIN_MATCH_WEB,vetlife_15509745762691_oficial.jpg,NO ENCONTRADA,,,
-15509745828227,FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509745828227_oficial.jpg,NO ENCONTRADA,,,
-15509745860995,FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR,SIN_MATCH_WEB,vetlife_15509745860995_oficial.jpg,NO ENCONTRADA,,,
-15509745992067,FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509745992067_oficial.jpg,NO ENCONTRADA,,,
-15509746057603,FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR,SIN_MATCH_WEB,vetlife_15509746057603_oficial.jpg,NO ENCONTRADA,,,
-15509746090371,FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509746090371_oficial.jpg,NO ENCONTRADA,,,
-15509746221443,FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR,SIN_MATCH_WEB,vetlife_15509746221443_oficial.jpg,NO ENCONTRADA,,,
-15509746254211,FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR,SIN_MATCH_WEB,vetlife_15509746254211_oficial.jpg,NO ENCONTRADA,,,
-15509746286979,FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR,SIN_MATCH_WEB,vetlife_15509746286979_oficial.jpg,NO ENCONTRADA,,,
-15469437518211,FARMINA VET LIFE CAT DIABETIC,SIN_MATCH_WEB,vetlife_15469437518211_oficial.jpg,NO ENCONTRADA,,,
-15509746549123,FARMINA VET LIFE CAT GASTROINTESTINAL,SIN_MATCH_WEB,vetlife_15509746549123_oficial.jpg,NO ENCONTRADA,,,
-15509746614659,FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR,SIN_MATCH_WEB,vetlife_15509746614659_oficial.jpg,NO ENCONTRADA,,,
-15509746778499,FARMINA VET LIFE CAT HEPATIC 2KG,SIN_MATCH_WEB,vetlife_15509746778499_oficial.jpg,NO ENCONTRADA,,,
-15509746942339,"FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG",SIN_MATCH_WEB,vetlife_15509746942339_oficial.jpg,NO ENCONTRADA,,,
-15509747040643,FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR,SIN_MATCH_WEB,vetlife_15509747040643_oficial.jpg,NO ENCONTRADA,,,
-15509747073411,FARMINA VET LIFE CAT OBESITY,SIN_MATCH_WEB,vetlife_15509747073411_oficial.jpg,NO ENCONTRADA,,,
-15509747270019,FARMINA VET LIFE CAT RENAL,SIN_MATCH_WEB,vetlife_15509747270019_oficial.jpg,NO ENCONTRADA,,,
-15509747401091,FARMINA VET LIFE CAT RENAL CAJA 12X85GR,SIN_MATCH_WEB,vetlife_15509747401091_oficial.jpg,NO ENCONTRADA,,,
-15509747532163,FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR,SIN_MATCH_WEB,vetlife_15509747532163_oficial.jpg,NO ENCONTRADA,,,
-15469438140803,FARMINA VET LIFE CAT STRUVITE MANAGEMENT,SIN_MATCH_WEB,vetlife_15469438140803_oficial.jpg,NO ENCONTRADA,,,
-15469432209795,FARMINA VET LIFE CAT ULTRAHYPO,SIN_MATCH_WEB,vetlife_15469432209795_oficial.jpg,NO ENCONTRADA,,,
+id,title,estado,img_actual_fname,match_nombre,match_img_fname,match_url,match_score
+15509745303939,FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR,REVISAR,vetlife_15509745303939_oficial.jpg,Intestinal UltraCare low Fat canine,1126_25_intestinal-ultracare-low-fat-canine.png,https://www.farmina.com/fotoprodotti/1126_25_intestinal-ultracare-low-fat-canine.png,0.14
+15509745402243,FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR,REVISAR,vetlife_15509745402243_oficial.jpg,dental treat Gastrointestinlal mini,1095_06_vetlife-dental-treat-gastrointestinal-mini.png,https://www.farmina.com/fotoprodotti/1095_06_vetlife-dental-treat-gastrointestinal-mini.png,0.17
+15509745467779,FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR,REVISAR,vetlife_15509745467779_oficial.jpg,Hypoallergenic Pork & Potato,965_03_vet-life-canine-hypo-pork@web.png,https://www.farmina.com/fotoprodotti/965_03_vet-life-canine-hypo-pork@web.png,0.17
+15509745500547,FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR,REVISAR,vetlife_15509745500547_oficial.jpg,dental treat Hypoallergenic Pork & Potato mini,1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png,https://www.farmina.com/fotoprodotti/1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png,0.29
+15509745598851,FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR,REVISAR,vetlife_15509745598851_oficial.jpg,Obesity Fish,966_34_vet-life-canine-obesity-fish@web.png,https://www.farmina.com/fotoprodotti/966_34_vet-life-canine-obesity-fish@web.png,0.2
+15509745664387,FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR,REVISAR,vetlife_15509745664387_oficial.jpg,dental treat Hypoallergenic Fish & Potato mini,1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png,https://www.farmina.com/fotoprodotti/1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png,0.29
+15509745762691,FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR,OK,vetlife_15509745762691_oficial.jpg,Joint,63_21_63_53_vet-life-canine-joint@web.png,https://www.farmina.com/fotoprodotti/63_21_63_53_vet-life-canine-joint@web.png,0.33
+15509745828227,FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR,OK,vetlife_15509745828227_oficial.jpg,dental treat Joint mini,1105_55_vetlife-dental-treat-joint-mini.png,https://www.farmina.com/fotoprodotti/1105_55_vetlife-dental-treat-joint-mini.png,0.5
+15509745860995,FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR,OK,vetlife_15509745860995_oficial.jpg,Obesity,70_33_70_12_vet-life-canine-obesity@web.png,https://www.farmina.com/fotoprodotti/70_33_70_12_vet-life-canine-obesity@web.png,0.33
+15509745992067,FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR,OK,vetlife_15509745992067_oficial.jpg,dental treat Obesity mini,1109_47_vetlife-dental-treat-obesity-mini.png,https://www.farmina.com/fotoprodotti/1109_47_vetlife-dental-treat-obesity-mini.png,0.5
+15509746057603,FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR,OK,vetlife_15509746057603_oficial.jpg,Renal,69_28_69_44_vet-life-canine-renal@web.png,https://www.farmina.com/fotoprodotti/69_28_69_44_vet-life-canine-renal@web.png,0.33
+15509746090371,FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR,OK,vetlife_15509746090371_oficial.jpg,dental treat Renal mini,1103_21_vetlife-dental-treat-renal-mini.png,https://www.farmina.com/fotoprodotti/1103_21_vetlife-dental-treat-renal-mini.png,0.5
+15509746221443,FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR,OK,vetlife_15509746221443_oficial.jpg,Struvite,66_47_66_26_vet-life-canine-struvite@web.png,https://www.farmina.com/fotoprodotti/66_47_66_26_vet-life-canine-struvite@web.png,0.33
+15509746254211,FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR,OK,vetlife_15509746254211_oficial.jpg,dental treat Struvite mini,1101_57_vetlife-dental-treat-struvite-mini.png,https://www.farmina.com/fotoprodotti/1101_57_vetlife-dental-treat-struvite-mini.png,0.5
+15509746286979,FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR,REVISAR,vetlife_15509746286979_oficial.jpg,Convalescence Húmedo,383_18_vetlife-convalescence-85g.png,https://www.farmina.com/fotoprodotti/383_18_vetlife-convalescence-85g.png,0.25
+15469437518211,FARMINA VET LIFE CAT DIABETIC,OK,vetlife_15469437518211_oficial.jpg,Diabetic,84_13_84_59_vet-life-feline-diabetic@web.png,https://www.farmina.com/fotoprodotti/84_13_84_59_vet-life-feline-diabetic@web.png,0.5
+15509746549123,FARMINA VET LIFE CAT GASTROINTESTINAL,OK,vetlife_15509746549123_oficial.jpg,Gastrointestinal,79_15_vet-life-feline-gastrointestinal@web.png,https://www.farmina.com/fotoprodotti/79_15_vet-life-feline-gastrointestinal@web.png,0.5
+15509746614659,FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR,REVISAR,vetlife_15509746614659_oficial.jpg,Gastrointestinal Húmedo,382_33_vet-life-gastrointestinal-85g.png,https://www.farmina.com/fotoprodotti/382_33_vet-life-gastrointestinal-85g.png,0.25
+15509746778499,FARMINA VET LIFE CAT HEPATIC 2KG,OK,vetlife_15509746778499_oficial.jpg,Hepatic,90_41_90_27_vet-life-feline-hepatic@web.png,https://www.farmina.com/fotoprodotti/90_41_90_27_vet-life-feline-hepatic@web.png,0.5
+15509746942339,"FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG",OK,vetlife_15509746942339_oficial.jpg,Hypoallergenic Pork & Potato feline,967_54_hypo-pork-cat@web.png,https://www.farmina.com/fotoprodotti/967_54_hypo-pork-cat@web.png,0.4
+15509747040643,FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR,OK,vetlife_15509747040643_oficial.jpg,Hypoallergenic Pork & Potato Húmedo,1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png,https://www.farmina.com/fotoprodotti/1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png,0.33
+15509747073411,FARMINA VET LIFE CAT OBESITY,OK,vetlife_15509747073411_oficial.jpg,Obesity,83_48_83_42_vet-life-feline-obesity@web.png,https://www.farmina.com/fotoprodotti/83_48_83_42_vet-life-feline-obesity@web.png,0.5
+15509747270019,FARMINA VET LIFE CAT RENAL,OK,vetlife_15509747270019_oficial.jpg,Renal,82_55_82_57_vet-life-feline-renal@web.png,https://www.farmina.com/fotoprodotti/82_55_82_57_vet-life-feline-renal@web.png,0.5
+15509747401091,FARMINA VET LIFE CAT RENAL CAJA 12X85GR,REVISAR,vetlife_15509747401091_oficial.jpg,Renal Húmedo,381_04_vetlife-renal-85g.png,https://www.farmina.com/fotoprodotti/381_04_vetlife-renal-85g.png,0.25
+15509747532163,FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR,REVISAR,vetlife_15509747532163_oficial.jpg,Struvite Húmedo,380_51_vetlife-struvite-85g.png,https://www.farmina.com/fotoprodotti/380_51_vetlife-struvite-85g.png,0.25
+15469438140803,FARMINA VET LIFE CAT STRUVITE MANAGEMENT,OK,vetlife_15469438140803_oficial.jpg,Struvite Management feline,1035_28_vetlife-struvite-management-85g.png,https://www.farmina.com/fotoprodotti/1035_28_vetlife-struvite-management-85g.png,0.67
+15469432209795,FARMINA VET LIFE CAT ULTRAHYPO,OK,vetlife_15469432209795_oficial.jpg,UltraHypo,85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png,https://www.farmina.com/fotoprodotti/85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png,0.5
 15509747827075,FARMINA VET LIFE DOG CARDIAC,EXCLUIDO,,,,,
-15509747859843,FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509747859843_oficial.jpg,NO ENCONTRADA,,,
-15509747892611,FARMINA VET LIFE DOG DIABETIC,SIN_MATCH_WEB,vetlife_15509747892611_oficial.jpg,NO ENCONTRADA,,,
-15469437747587,FARMINA VET LIFE DOG GASTROINTESTINAL,SIN_MATCH_WEB,vetlife_15469437747587_oficial.jpg,NO ENCONTRADA,,,
-15509748121987,FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509748121987_oficial.jpg,NO ENCONTRADA,,,
-15538798199171,FARMINA VET LIFE DOG HEPATIC,SIN_MATCH_WEB,vetlife_15538798199171_oficial.jpg,NO ENCONTRADA,,,
-15509748253059,FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR,SIN_MATCH_WEB,8606014103953.png,NO ENCONTRADA,,,
-15469438861699,FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT,SIN_MATCH_WEB,vetlife_15469438861699_oficial.jpg,NO ENCONTRADA,,,
-15509748416899,FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509748416899_oficial.jpg,NO ENCONTRADA,,,
-15469439353219,FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO,SIN_MATCH_WEB,vetlife_15469439353219_oficial.jpg,NO ENCONTRADA,,,
-15509748547971,FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509748547971_oficial.jpg,NO ENCONTRADA,,,
-15469437583747,FARMINA VET LIFE DOG HYPOALLERGENIC PESCADO,SIN_MATCH_WEB,vetlife_15469437583747_oficial.jpg,NO ENCONTRADA,,,
-15469439615363,FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT,SIN_MATCH_WEB,vetlife_15469439615363_oficial.jpg,NO ENCONTRADA,,,
-15567198290307,FARMINA VET LIFE DOG JOINT,SIN_MATCH_WEB,vetlife_15567198290307_oficial.jpg,NO ENCONTRADA,,,
-15469433553283,FARMINA VET LIFE DOG OBESITY,SIN_MATCH_WEB,vetlife_15469433553283_oficial.jpg,NO ENCONTRADA,,,
-15469439877507,FARMINA VET LIFE DOG OXALATE,SIN_MATCH_WEB,vetlife_15469439877507_oficial.jpg,NO ENCONTRADA,,,
-15538798264707,FARMINA VET LIFE DOG PUPPY GASTROINTESTINAL,SIN_MATCH_WEB,vetlife_15538798264707_oficial.jpg,NO ENCONTRADA,,,
-15469438402947,FARMINA VET LIFE DOG RENAL,SIN_MATCH_WEB,vetlife_15469438402947_oficial.jpg,NO ENCONTRADA,,,
-15509749236099,FARMINA VET LIFE DOG RENAL CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509749236099_oficial.jpg,NO ENCONTRADA,,,
-15538798297475,FARMINA VET LIFE DOG STRUVITE,SIN_MATCH_WEB,vetlife_15538798297475_oficial.jpg,NO ENCONTRADA,,,
-15509749432707,FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509749432707_oficial.jpg,NO ENCONTRADA,,,
-15538761597315,FARMINA VET LIFE DOG STRUVITE MANAGEMENT,SIN_MATCH_WEB,vetlife_15538761597315_oficial.jpg,NO ENCONTRADA,,,
-15469438468483,FARMINA VET LIFE DOG ULTRAHYPO,SIN_MATCH_WEB,vetlife_15469438468483_oficial.jpg,NO ENCONTRADA,,,
-15509749694851,FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR,SIN_MATCH_WEB,vetlife_15509749694851_oficial.jpg,NO ENCONTRADA,,,
-15469441155459,FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT,SIN_MATCH_WEB,vetlife_15469441155459_oficial.jpg,NO ENCONTRADA,,,
-15509749858691,FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR,SIN_MATCH_WEB,vetlife_15509749858691_oficial.jpg,NO ENCONTRADA,,,
+15509747859843,FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR,REVISAR,vetlife_15509747859843_oficial.jpg,Convalescence Húmedo,373_42_vetlife-convalescence-300g.png,https://www.farmina.com/fotoprodotti/373_42_vetlife-convalescence-300g.png,0.25
+15509747892611,FARMINA VET LIFE DOG DIABETIC,OK,vetlife_15509747892611_oficial.jpg,Diabetic,71_38_71_04_vet-life-canine-diabetic@web.png,https://www.farmina.com/fotoprodotti/71_38_71_04_vet-life-canine-diabetic@web.png,0.5
+15469437747587,FARMINA VET LIFE DOG GASTROINTESTINAL,OK,vetlife_15469437747587_oficial.jpg,Gastrointestinal,65_42_65_26_vet-life-canine-gastrointestinal@web.png,https://www.farmina.com/fotoprodotti/65_42_65_26_vet-life-canine-gastrointestinal@web.png,0.5
+15509748121987,FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR,REVISAR,vetlife_15509748121987_oficial.jpg,Gastrointestinal Húmedo,374_57_vetlife-gastrointestinal-300g.png,https://www.farmina.com/fotoprodotti/374_57_vetlife-gastrointestinal-300g.png,0.25
+15538798199171,FARMINA VET LIFE DOG HEPATIC,OK,vetlife_15538798199171_oficial.jpg,Hepatic,78_00_78_25_vet-life-canine-hepatic@web copia.png,https://www.farmina.com/fotoprodotti/78_00_78_25_vet-life-canine-hepatic@web copia.png,0.5
+15509748253059,FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR,REVISAR,8606014103953.png,Hypoallergenic Fish & Potato Húmedo,379_44_vetlife-hypoallergenic-fish-&-potato-300g.png,https://www.farmina.com/fotoprodotti/379_44_vetlife-hypoallergenic-fish-&-potato-300g.png,0.14
+15469438861699,FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT,OK,vetlife_15469438861699_oficial.jpg,Hypoallergenic Pork & Potato,965_03_vet-life-canine-hypo-pork@web.png,https://www.farmina.com/fotoprodotti/965_03_vet-life-canine-hypo-pork@web.png,0.5
+15509748416899,FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR,OK,vetlife_15509748416899_oficial.jpg,Hypoallergenic Pork & Potato Húmedo,1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png,https://www.farmina.com/fotoprodotti/1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png,0.33
+15469439353219,FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO,OK,vetlife_15469439353219_oficial.jpg,Hypoallergenic Egg & Rice,74_43_74_42_vet-life-canine-hypoallergenic-egg-rice@web.png,https://www.farmina.com/fotoprodotti/74_43_74_42_vet-life-canine-hypoallergenic-egg-rice@web.png,0.5
+15509748547971,FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR,OK,vetlife_15509748547971_oficial.jpg,Hypoallergenic Duck & Potato Húmedo,378_26_vetlife-hypoallergenic-duck-&-potato-300g.png,https://www.farmina.com/fotoprodotti/378_26_vetlife-hypoallergenic-duck-&-potato-300g.png,0.33
+15469437583747,FARMINA VET LIFE DOG HYPOALLERGENIC PESCADO,OK,vetlife_15469437583747_oficial.jpg,Hypoallergenic Fish & Potato,73_46_73_59_vet-life-canine-hypoallergenic-fish-potato@web.png,https://www.farmina.com/fotoprodotti/73_46_73_59_vet-life-canine-hypoallergenic-fish-potato@web.png,0.5
+15469439615363,FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT,OK,vetlife_15469439615363_oficial.jpg,Intestinal UltraCare low Fat canine,1126_25_intestinal-ultracare-low-fat-canine.png,https://www.farmina.com/fotoprodotti/1126_25_intestinal-ultracare-low-fat-canine.png,0.8
+15567198290307,FARMINA VET LIFE DOG JOINT,OK,vetlife_15567198290307_oficial.jpg,Joint,63_21_63_53_vet-life-canine-joint@web.png,https://www.farmina.com/fotoprodotti/63_21_63_53_vet-life-canine-joint@web.png,0.5
+15469433553283,FARMINA VET LIFE DOG OBESITY,OK,vetlife_15469433553283_oficial.jpg,Obesity,70_33_70_12_vet-life-canine-obesity@web.png,https://www.farmina.com/fotoprodotti/70_33_70_12_vet-life-canine-obesity@web.png,0.5
+15469439877507,FARMINA VET LIFE DOG OXALATE,OK,vetlife_15469439877507_oficial.jpg,Oxalate,68_14_68_28_vet-life-canine-oxalate@web.png,https://www.farmina.com/fotoprodotti/68_14_68_28_vet-life-canine-oxalate@web.png,0.5
+15538798264707,FARMINA VET LIFE DOG PUPPY GASTROINTESTINAL,OK,vetlife_15538798264707_oficial.jpg,Gastrointestinal Puppy canine,630_45_vet-life-canine-gastrointestinal-puppy@web.png,https://www.farmina.com/fotoprodotti/630_45_vet-life-canine-gastrointestinal-puppy@web.png,0.67
+15469438402947,FARMINA VET LIFE DOG RENAL,OK,vetlife_15469438402947_oficial.jpg,Renal,69_28_69_44_vet-life-canine-renal@web.png,https://www.farmina.com/fotoprodotti/69_28_69_44_vet-life-canine-renal@web.png,0.5
+15509749236099,FARMINA VET LIFE DOG RENAL CAJA 6X300GR,REVISAR,vetlife_15509749236099_oficial.jpg,Renal Húmedo,376_42_vetlife-renal-300g.png,https://www.farmina.com/fotoprodotti/376_42_vetlife-renal-300g.png,0.25
+15538798297475,FARMINA VET LIFE DOG STRUVITE,OK,vetlife_15538798297475_oficial.jpg,Struvite,66_47_66_26_vet-life-canine-struvite@web.png,https://www.farmina.com/fotoprodotti/66_47_66_26_vet-life-canine-struvite@web.png,0.5
+15509749432707,FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR,REVISAR,vetlife_15509749432707_oficial.jpg,Struvite Húmedo,375_27_vetlife-struvite-300g.png,https://www.farmina.com/fotoprodotti/375_27_vetlife-struvite-300g.png,0.25
+15538761597315,FARMINA VET LIFE DOG STRUVITE MANAGEMENT,OK,vetlife_15538761597315_oficial.jpg,Struvite Management canine,1036_43_vetlife-struvite-management-300g.png,https://www.farmina.com/fotoprodotti/1036_43_vetlife-struvite-management-300g.png,0.67
+15469438468483,FARMINA VET LIFE DOG ULTRAHYPO,OK,vetlife_15469438468483_oficial.jpg,Ultrahypo,72_21_vet-life-canine-ulytrahypo@web.png,https://www.farmina.com/fotoprodotti/72_21_vet-life-canine-ulytrahypo@web.png,0.5
+15509749694851,FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR,REVISAR,vetlife_15509749694851_oficial.jpg,UltraHypo húmedo,1008_58_vetlife-ultrahypo-300g.png,https://www.farmina.com/fotoprodotti/1008_58_vetlife-ultrahypo-300g.png,0.25
+15469441155459,FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT,OK,vetlife_15469441155459_oficial.jpg,Obesity Fish,966_34_vet-life-canine-obesity-fish@web.png,https://www.farmina.com/fotoprodotti/966_34_vet-life-canine-obesity-fish@web.png,0.67
+15509749858691,FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR,OK,vetlife_15509749858691_oficial.jpg,Diabetic húmedo,971_00_vetlife-diabetic-85g.png,https://www.farmina.com/fotoprodotti/971_00_vetlife-diabetic-85g.png,0.33
 15509749924227,FARMINA VET LIFE NATURAL DIET CAT HEPATIC 12X85GR,EXCLUIDO,,,,,
-15509749956995,FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR,SIN_MATCH_WEB,vetlife_15509749956995_oficial.jpg,NO ENCONTRADA,,,
-15509750055299,FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR,SIN_MATCH_WEB,vetlife_15509750055299_oficial.jpg,NO ENCONTRADA,,,
-15509750120835,FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR,SIN_MATCH_WEB,vetlife_15509750120835_oficial.jpg,NO ENCONTRADA,,,
-15509750219139,FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR,SIN_MATCH_WEB,vetlife_15509750219139_oficial.jpg,NO ENCONTRADA,,,
+15509749956995,FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR,OK,vetlife_15509749956995_oficial.jpg,Obesity húmedo,972_42_vetlife-obesity-85g.png,https://www.farmina.com/fotoprodotti/972_42_vetlife-obesity-85g.png,0.33
+15509750055299,FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR,OK,vetlife_15509750055299_oficial.jpg,Diabetic húmedo,968_55_vetlife-diabetic-300g.png,https://www.farmina.com/fotoprodotti/968_55_vetlife-diabetic-300g.png,0.33
+15509750120835,FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR,OK,vetlife_15509750120835_oficial.jpg,Hepatic húmedo,970_21_vetlife-hepatic-300g.png,https://www.farmina.com/fotoprodotti/970_21_vetlife-hepatic-300g.png,0.33
+15509750219139,FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR,OK,vetlife_15509750219139_oficial.jpg,Obesity húmedo,969_39_vetlife-obesity-300g.png,https://www.farmina.com/fotoprodotti/969_39_vetlife-obesity-300g.png,0.33
