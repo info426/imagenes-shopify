@@ -26,8 +26,9 @@ API_VERSION   = "2024-10"
 CATALOG_FILE  = Path("resultados/alpha_spirit_catalog.json")
 
 STORE_BASE    = "https://www.aspiritpetfood.store"
-COLLECTION_SLUG = "all"          # colección completa; filtramos por vendor
-VENDOR_FILTER = "alpha spirit"   # vendor en aspiritpetfood.store (case-insensitive)
+COLLECTION_SLUG = "all"
+# Vendors de Alpha Spirit en aspiritpetfood.store (varios por línea de producto)
+VENDOR_FILTERS = {"alpha spirit", "primal", "real food", "iberian", "alpha spirit store"}
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -112,9 +113,10 @@ def build_catalog() -> list:
 
             print(f"  Página {page_num}: {len(products)} productos")
             for p in products:
-                images = p.get("images", [])
                 vendor = p.get("vendor", "")
-                # log vendors distintos para diagnóstico
+                if vendor.lower() not in VENDOR_FILTERS:
+                    continue
+                images = p.get("images", [])
                 catalog.append({
                     "id":           p["id"],
                     "title":        p["title"],
@@ -341,15 +343,7 @@ def main():
         sys.exit(1)
 
     catalog = build_catalog()
-    vendors = {}
-    for e in catalog:
-        v = e.get("vendor", "(sin vendor)")
-        vendors[v] = vendors.get(v, 0) + 1
-    print(f"\nCatálogo aspiritpetfood.store: {len(catalog)} productos totales")
-    print("Vendors encontrados:")
-    for v, n in sorted(vendors.items(), key=lambda x: -x[1]):
-        print(f"  {n:3d}  {v}")
-    print()
+    print(f"\nCatálogo Alpha Spirit (aspiritpetfood.store): {len(catalog)} productos\n")
 
     print(f"\n{'#':<4} {'SHOPIFY TITLE':<50} {'MATCH OFICIAL':<40} {'SCORE'}")
     print("-" * 105)
