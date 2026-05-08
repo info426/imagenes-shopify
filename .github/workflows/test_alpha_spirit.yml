@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: claude/alpha-spirit-images-3c4aE
 
       - uses: actions/setup-python@v5
         with:
