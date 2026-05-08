@@ -22,9 +22,9 @@ jobs:
 
       - name: Ejecutar análisis
         env:
-          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
-          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
-          CLIENT_SECRET: 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
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
           python3 analizar_farmina_vet_life.py | tee resultados/analisis_farmina_vet_life.txt
