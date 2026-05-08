@@ -1,209 +1,159 @@
 =================================================================
-DIAGNÓSTICO FASE 5 — SITEMAP + HTML COMPLETO + PLAYWRIGHT
+DIAGNÓSTICO FASE 6 — PLAYWRIGHT + SCREENSHOT + HTML COMPLETO
 =================================================================
 
-=== 1. SITEMAP XML ===
-  GET https://www.farmina.com/sitemap.xml → 404 (9 bytes)
-  GET https://www.farmina.com/sitemap_index.xml → 404 (9 bytes)
-  GET https://www.farmina.com/es/sitemap.xml → 404 (9 bytes)
-  GET https://www.farmina.com/es/sitemap_1.xml → 404 (9 bytes)
-  GET https://www.farmina.com/sitemaps/sitemap.xml → 404 (9 bytes)
-  GET https://www.farmina.com/sitemap-products.xml → 404 (9 bytes)
-  GET https://www.farmina.com/robots.txt → 404 (9 bytes)
+=== PLAYWRIGHT ===
 
-=== 2. HTML COMPLETO — BÚSQUEDA DE DATOS EN JS ===
-  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html → 200 (65755 bytes)
+--- DOG: https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html ---
+  Screenshot guardado: pw_DOG_antes.png
+  No se encontró botón de cookies
+  Screenshot guardado: pw_DOG_despues.png
+  HTML renderizado: 187263 chars → resultados/pw_DOG_html.txt
+  Links de producto encontrados: 60
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1095-dental-treat-gastrointestinlal-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1095-dental-treat-gastrointestinlal-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1096-dental-treat-gastrointestinlal-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1096-dental-treat-gastrointestinlal-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1097-dental-treat-hypoallergenic-fish-&-potato-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1097-dental-treat-hypoallergenic-fish-&-potato-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1098-dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1098-dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1099-dental-treat-hypoallergenic-pork-&-potato-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1099-dental-treat-hypoallergenic-pork-&-potato-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1100-dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1100-dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1101-dental-treat-struvite-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1101-dental-treat-struvite-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1102-dental-treat-struvite-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1102-dental-treat-struvite-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1109-dental-treat-obesity-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1109-dental-treat-obesity-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1108-dental-treat-obesity-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1108-dental-treat-obesity-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1103-dental-treat-renal-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1103-dental-treat-renal-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1104-dental-treat-renal-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1104-dental-treat-renal-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1105-dental-treat-joint-mini.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1105-dental-treat-joint-mini.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1106-dental-treat-joint-medium-&-maxi.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/1106-dental-treat-joint-medium-&-maxi.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/373-convalescence-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/373-convalescence-húmedo.html
+  Imágenes encontradas: 102
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png
+    https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png
+    https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png
+    https://www.farmina.com/images/linee/brand-head/_02_brand-nd-spirulina.png
 
-  HTML total: 65565 chars
-  Links con patrón /NNN-slug.html (vet): 3
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+  BODY TEXT (primeros 800 chars):
+Su privacidad es importante para nosotros Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Al cerrar el Banner de Cookies, haciendo clic en el símbolo "X" o negando el consentimiento, usted continuará navegando sin cookies de perfil o de marketing. Al consentir el uso de cookies de perfil y de marketing, podremos ofrecerle mensajes publicitarios que correspondan a sus necesidades. Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Necesario Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas del sitio. El sitio web no puede funcionar 
 
-  ÚLTIMOS 2000 chars:
-solicitud-de-soporte-nutricional.html" target="_blank" title="Solicitud de Soporte Nutricional">Solicitud de Soporte Nutricional</a></li><li><a href="https://www.farmina.com/es/consumer/2-¿quieres-tu-plan-nutricional.html" title="¿Quieres tu plan nutricional?">¿Quieres tu plan nutricional?</a></li>		<li><a href="https://www.farmina.com/es/e-farmina/4757-programa-de-cuidado-para-mascotas.html">Programa de Cuidado de Mascotas</a></li>
-	
-			
-				
-		<li><a href="https://www.farmina.com/es/pet-care/farminagenius/app.html">Genius App</a></li>
-	
-				
-		<li><a href="https://www.farmina.com/es/pet-care/geniustips.html">Consejos del Genius</a></li>
-						
-		<li><a href="https://www.farmina.com/es/genius-center.html" title="Genius Center">Genius Center</a></li>
-	
-					
-				
-				</ul>
-					
-			</div>
-			<div class="column-footer1">
-				<ul>
-				
-						<li class="nav-morespace"> <a href="https://www.farmina.com/es/contact.html">Contacto</a></li>
-						<li> <a href="https://www.farmina.com/es/farmina/faq/faq.html">Preguntas frecuentes</a> </li>
-						
-						
-						<li> <a href="https://www.farmina.com/es/farmina/3091-términos-y-condiciones.html">términos y condiciones</a> </li>
-						<li> <a href="https://www.farmina.com/es/farmina/2388-política-de-cookies.html">política de cookies</a> </li>
-	
-						<li> <a href="#" onclick="personalizza();">gestión de cookies</a> </li>
-	
-						<li> <a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a> </li>
+--- CAT: https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html ---
+  Screenshot guardado: pw_CAT_antes.png
+  No se encontró botón de cookies
+  Screenshot guardado: pw_CAT_despues.png
+  HTML renderizado: 120910 chars → resultados/pw_CAT_html.txt
+  Links de producto encontrados: 22
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&-tuna.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&-tuna.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&-potato-húmedo.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&-potato-húmedo.html
+    [] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&-potato-feline.html
+    [más] → https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&-potato-feline.html
+  Imágenes encontradas: 55
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/linee/brand-head/56_27_nd-quinoa-feline.png
+    https://www.farmina.com/images/linee/brand-head/15_42_nd-prime.png
+    https://www.farmina.com/images/linee/brand-head/64_50_nd-ocean@web.png
+    https://www.farmina.com/images/linee/brand-head/55_14_nd-pumpkin-feline.png
 
-		<li>&nbsp;</li>	
-					
-				</ul>
-			</div>			
-		</div>
-			
-		<div class="column">
-         <!--   Web design UpComAgency-->
-		 
-		<div style="text-align:center;"><a style="">FARMINA PET FOODS<br>CIF IT01239651217</a> - <a href="mailto:espana@farmina.com" style="">espana@farmina.com</a> 935 116 308</div>
-			<br><br><br><br>
-		</div>
-	</div>
-</div>
-<!-- chiude div container-sposta per gestione sposta tutto il contenuto sotto banner - aperto in header dopo body    -->
-</div>
-</body>
-</html>
-	
-  GET https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html → 200 (65179 bytes)
+  BODY TEXT (primeros 800 chars):
+Su privacidad es importante para nosotros Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Al cerrar el Banner de Cookies, haciendo clic en el símbolo "X" o negando el consentimiento, usted continuará navegando sin cookies de perfil o de marketing. Al consentir el uso de cookies de perfil y de marketing, podremos ofrecerle mensajes publicitarios que correspondan a sus necesidades. Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Necesario Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas del sitio. El sitio web no puede funcionar 
 
-  HTML total: 64989 chars
-  Links con patrón /NNN-slug.html (vet): 3
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
-    https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+--- IT-DOG: https://www.farmina.com/it/alimento-per-cani/8-farmina-vet-life.html ---
+  Screenshot guardado: pw_IT-DOG_antes.png
+  No se encontró botón de cookies
+  Screenshot guardado: pw_IT-DOG_despues.png
+  HTML renderizado: 201275 chars → resultados/pw_IT-DOG_html.txt
+  Links de producto encontrados: 60
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1095-dental-treat-gastrointestinal-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1095-dental-treat-gastrointestinal-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1096-dental-treat-gastrointestinlal-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1096-dental-treat-gastrointestinlal-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1097-dental-treat-hypoallergenic-fish-&-potato-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1097-dental-treat-hypoallergenic-fish-&-potato-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1098-dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1098-dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1099-dental-treat-hypoallergenic-pork-&-potato-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1099-dental-treat-hypoallergenic-pork-&-potato-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1100-dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1100-dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1101-dental-treat-struvite-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1101-dental-treat-struvite-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1102-dental-treat-struvite-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1102-dental-treat-struvite-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1109-dental-treat-obesity-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1109-dental-treat-obesity-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1108-dental-treat-obesity-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1108-dental-treat-obesity-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1103-dental-treat-renal-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1103-dental-treat-renal-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1104-dental-treat-renal-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1104-dental-treat-renal-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1105-dental-treat-joint-mini.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1105-dental-treat-joint-mini.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1106-dental-treat-joint-medium-&-maxi.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/1106-dental-treat-joint-medium-&-maxi.html
+    [] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/373-convalescence-wet-food-canine.html
+    [scopri di più] → https://www.farmina.com/it/eshop/alimenti-per-cani/farmina-vet-life-canine/373-convalescence-wet-food-canine.html
+  Imágenes encontradas: 102
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png
+    https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png
+    https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png
+    https://www.farmina.com/images/linee/brand-head/_02_brand-nd-spirulina.png
 
-  ÚLTIMOS 2000 chars:
-solicitud-de-soporte-nutricional.html" target="_blank" title="Solicitud de Soporte Nutricional">Solicitud de Soporte Nutricional</a></li><li><a href="https://www.farmina.com/es/consumer/2-¿quieres-tu-plan-nutricional.html" title="¿Quieres tu plan nutricional?">¿Quieres tu plan nutricional?</a></li>		<li><a href="https://www.farmina.com/es/e-farmina/4757-programa-de-cuidado-para-mascotas.html">Programa de Cuidado de Mascotas</a></li>
-	
-			
-				
-		<li><a href="https://www.farmina.com/es/pet-care/farminagenius/app.html">Genius App</a></li>
-	
-				
-		<li><a href="https://www.farmina.com/es/pet-care/geniustips.html">Consejos del Genius</a></li>
-						
-		<li><a href="https://www.farmina.com/es/genius-center.html" title="Genius Center">Genius Center</a></li>
-	
-					
-				
-				</ul>
-					
-			</div>
-			<div class="column-footer1">
-				<ul>
-				
-						<li class="nav-morespace"> <a href="https://www.farmina.com/es/contact.html">Contacto</a></li>
-						<li> <a href="https://www.farmina.com/es/farmina/faq/faq.html">Preguntas frecuentes</a> </li>
-						
-						
-						<li> <a href="https://www.farmina.com/es/farmina/3091-términos-y-condiciones.html">términos y condiciones</a> </li>
-						<li> <a href="https://www.farmina.com/es/farmina/2388-política-de-cookies.html">política de cookies</a> </li>
-	
-						<li> <a href="#" onclick="personalizza();">gestión de cookies</a> </li>
-	
-						<li> <a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a> </li>
+  BODY TEXT (primeros 800 chars):
+La tua privacy è importante per noi Utilizziamo cookies necessari alla elaborazione di analisi statistiche e tecnici per l'utilizzo del sito. Chiudendo il Cookie Banner, mediante il simbolo "X" o negando il consenso, continuerai a navigare in assenza di cookie di profilazione/marketing. Acconsentendo all'uso dei cookies di profilazione/marketing potremo offrirti messaggi pubblicitari corrispondenti alle tue esigenze. Utilizziamo cookies necessari alla elaborazione di analisi statistiche e tecnici per l'utilizzo del sito. Necessari I cookie necessari contribuiscono a rendere fruibile il sito web abilitandone funzionalità di base quali la navigazione sulle pagine e l'accesso alle aree protette del sito. Il sito web non è in grado di funzionare correttamente senza questi cookie. Farmina SESSI
 
-		<li>&nbsp;</li>	
-					
-				</ul>
-			</div>			
-		</div>
-			
-		<div class="column">
-         <!--   Web design UpComAgency-->
-		 
-		<div style="text-align:center;"><a style="">FARMINA PET FOODS<br>CIF IT01239651217</a> - <a href="mailto:espana@farmina.com" style="">espana@farmina.com</a> 935 116 308</div>
-			<br><br><br><br>
-		</div>
-	</div>
-</div>
-<!-- chiude div container-sposta per gestione sposta tutto il contenuto sotto banner - aperto in header dopo body    -->
-</div>
-</body>
-</html>
-	
+=== PRUEBA ESTÁTICA VERSIÓN ITALIANA ===
+  GET https://www.farmina.com/it/alimento-per-cani/8-farmina-vet-life.html → 200 (65637 bytes)
+  Links de producto: 0
 
-=== 4. PRUEBA PRODUCTO INDIVIDUAL ===
-  GET https://www.farmina.com/es/farmina/5360-farmina-vet-club.html → 200 (79161 bytes)
-  Título: Farmina Pet Foods - Farmina Vet Club
-  Imágenes: 14
-    24px: https://www.farmina.com/images/ico-instagram-w.png
-    24px: https://www.farmina.com/images/ico-facebook-w.png
-    0px: https://www.farmina.com/images/logoFarmina-footer.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/images/goto.png
-    0px: https://www.farmina.com/fotopagine/26804_36_02-600x450.jpg
-
-  ÚLTIMOS 3000 chars del HTML del producto:
-</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/91-n&d-tropical-selection-feline.html" title="N&D Tropical Selection feline">N&D Tropical Selection feline</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/71-n&d-natural.html" title="N&D Natural">N&D Natural</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html" title="Farmina Vet Life">Farmina Vet Life</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/17-matisse.html" title="Matisse">Matisse</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/21-fun-cat.html" title="Fun Cat">Fun Cat</a></li>
-						<li><a href="https://www.farmina.com/es/alimento-para-gatos/19-farmina-team-breeder.html" title="Farmina Team Breeder">Farmina Team Breeder</a></li>
-						<li>&nbsp;</li>					
-				<span>Cuidado de la mascota</span>
-				<ul>				
-										
-<li><a href="https://www.farmina.com/es/pet-care/nc-contact/solicitud-de-soporte-nutricional.html" target="_blank" title="Solicitud de Soporte Nutricional">Solicitud de Soporte Nutricional</a></li><li><a href="https://www.farmina.com/es/consumer/2-¿quieres-tu-plan-nutricional.html" title="¿Quieres tu plan nutricional?">¿Quieres tu plan nutricional?</a></li>		<li><a href="https://www.farmina.com/es/e-farmina/4757-programa-de-cuidado-para-mascotas.html">Programa de Cuidado de Mascotas</a></li>
-	
-			
-				
-		<li><a href="https://www.farmina.com/es/pet-care/farminagenius/app.html">Genius App</a></li>
-	
-				
-		<li><a href="https://www.farmina.com/es/pet-care/geniustips.html">Consejos del Genius</a></li>
-						
-		<li><a href="https://www.farmina.com/es/genius-center.html" title="Genius Center">Genius Center</a></li>
-	
-					
-				
-				</ul>
-					
-			</div>
-			<div class="column-footer1">
-				<ul>
-				
-						<li class="nav-morespace"> <a href="https://www.farmina.com/es/contact.html">Contacto</a></li>
-						<li> <a href="https://www.farmina.com/es/farmina/faq/faq.html">Preguntas frecuentes</a> </li>
-						
-						
-						<li> <a href="https://www.farmina.com/es/farmina/3091-términos-y-condiciones.html">términos y condiciones</a> </li>
-						<li> <a href="https://www.farmina.com/es/farmina/2388-política-de-cookies.html">política de cookies</a> </li>
-	
-						<li> <a href="#" onclick="personalizza();">gestión de cookies</a> </li>
-	
-						<li> <a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a> </li>
-
-		<li>&nbsp;</li>	
-					
-				</ul>
-			</div>			
-		</div>
-			
-		<div class="column">
-         <!--   Web design UpComAgency-->
-		 
-		<div style="text-align:center;"><a style="">FARMINA PET FOODS<br>CIF IT01239651217</a> - <a href="mailto:espana@farmina.com" style="">espana@farmina.com</a> 935 116 308</div>
-			<br><br><br><br>
-		</div>
-	</div>
-</div>
-<!-- chiude div container-sposta per gestione sposta tutto il contenuto sotto banner - aperto in header dopo body    -->
-</div>
-</body>
-</html>
-	
+  BODY TEXT primeros 500 chars:
+La tua privacy è importante per noi Utilizziamo cookies necessari alla elaborazione di analisi statistiche e tecnici per l'utilizzo del sito. Chiudendo il Cookie Banner, mediante il simbolo "X" o negando il consenso, continuerai a navigare in assenza di cookie di profilazione/marketing. Acconsentendo all'uso dei cookies di profilazione/marketing potremo offrirti messaggi pubblicitari corrispondenti alle tue esigenze. Utilizziamo cookies necessari alla elaborazione di analisi statistiche e tecnic
 
 Diagnóstico completado.

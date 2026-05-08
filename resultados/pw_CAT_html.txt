@@ -1,0 +1,2679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="https://www.w3.org/1999/xhtml" class=" js no-touch cssanimations csstransitions" style=""><head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmina Pet Foods - Alimento para gatos - Farmina Vet Life</title>
+<meta name="Description" content=" Farmina Vet Life">
+<meta property="og:image" content="https://www.farmina.com/images/logo-Farmina.png">
+
+<!-- Dichiarazione del dataLayer -->
+<script type="text/javascript" async="" src="https://sgtm.farmina.com/gtm.js?id=GTM-WM8GDF2&amp;gtg_health=1"></script><script type="text/javascript" async="" src="https://sgtm.farmina.com/gtag/js?id=G-921TCHBZBJ&amp;cx=c&amp;gtm=4e6562"></script><script async="" src="https://sgtm.farmina.com/ofpuirnf.js?id=GTM-WM8GDF2"></script><script>
+window.dataLayer = window.dataLayer || [];
+</script>
+
+<!-- Farmina wGTM / GA4 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://sgtm.farmina.com/ofpuirnf.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WM8GDF2');</script> 
+<!-- End Google Tag Manager -->
+
+<!-- Verifica Dominio -->
+<meta name="facebook-domain-verification" content="54v8s9myb0nyatxye7k42ss5oecv48">
+<meta name="google-site-verification" content="xE9trVcUumKrL_PdrHBaQFpYsbR6xwuY8lzT6D9VoBI">
+<!-- Canonical -->
+<link rel="canonical" href="https://www.farmina.com/es/eshop-cat/alimento-para-gatos/14-farmina-vet-life.html">
+
+<!-- Multilingua -->
+<link rel="alternate" href="https://www.farmina.com/br" hreflang="pt-br">
+<link rel="alternate" href="https://www.farmina.com/de" hreflang="de-de">
+<link rel="alternate" href="https://www.farmina.com/es" hreflang="es-es">
+<link rel="alternate" href="https://www.farmina.com/in" hreflang="en-in">
+<link rel="alternate" href="https://www.farmina.com/hu" hreflang="hu-hu">
+<link rel="alternate" href="https://www.farmina.com/at" hreflang="de-at">
+<link rel="alternate" href="https://www.farmina.com/pl" hreflang="pl-pl">
+<link rel="alternate" href="https://www.farmina.com/ro" hreflang="ro-ro">
+<link rel="alternate" href="https://www.farmina.com/ch" hreflang="de-ch">
+<link rel="alternate" href="https://www.farmina.com/si" hreflang="sl-si">
+<link rel="alternate" href="https://www.farmina.com/sk" hreflang="sk-sk">
+<link rel="alternate" href="https://www.farmina.com/sr" hreflang="sr-rs">
+<link rel="alternate" href="https://www.farmina.com/tr" hreflang="tr-tr">
+<link rel="alternate" href="https://www.farmina.com/en" hreflang="en-gb">
+<link rel="alternate" href="https://www.farmina.com/us" hreflang="en-us">
+<link rel="alternate" href="https://www.farmina.com/us" hreflang="en-ca">
+<link rel="alternate" href="https://www.farmina.com/el" hreflang="el-gr">
+<link rel="alternate" href="https://www.farmina.com/ru" hreflang="ru-ru">
+<link rel="alternate" href="https://www.farmina.com/th" hreflang="th-th">
+<link rel="alternate" href="https://www.farmina.com/it" hreflang="it-it">
+<link rel="alternate" href="https://www.farmina.com/pk" hreflang="pi-pk">
+<link rel="alternate" href="https://www.farmina.com/hr" hreflang="hr-hr">
+<link rel="alternate" href="https://www.farmina.com/ge" hreflang="ka-ge">
+
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/png" href="https://www.farmina.com/images/farmina-ico-web-site-institutional.ico">
+<!-- CSS & font -->
+	<link rel="stylesheet" href="https://www.farmina.com/css/component.css" type="text/css">
+	<link rel="stylesheet" href="https://www.farmina.com/css/normalize.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.farmina.com/css/stylenew_eshop.css?v=0.7" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.farmina.com/css/stylem2022.css?v=0.7" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.farmina.com/css/full2rf.css" type="text/css" media="all">
+	
+	
+	<link rel="stylesheet" href="https://www.farmina.com/css/superfish.css" media="screen">
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,700,500" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700,600,300" rel="stylesheet" type="text/css">	
+<!-- regole per browser IE -->
+<!-- superfish / menu -->
+<!--<script src="https://www.farmina.com/js/jquery.js"></script>
+<script src="https://www.farmina.com/js/superfish.js"></script>
+<script src="https://www.farmina.com/js/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://www.farmina.com/css/jquery.modal.min.css">
+<style>
+.blocker {
+    z-index: 1000 !important;
+}
+#bbb1.modal ul {
+    list-style: none;
+}
+#bbb1.modal {
+    text-align: left !important;
+}
+#bbb1.modal ul li {
+    display: inline-block;
+    width: 49%;
+}
+#bbb1.modal a {color: #006ab2;}
+
+@media screen and (max-width: 500px)
+{
+#bbb1.modal ul li {
+    width: 100%;
+}
+} 
+
+
+</style>-->
+
+<script>
+function setmaxmenuheight()
+{
+ var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+ mh=h-45;
+ $(".dl-menuwrapper .dl-menu.dl-menuopen").css("max-height",mh+"px");
+}
+
+function resizeshadows()
+{
+ setmaxmenuheight();
+	$('#shadows').css("height",0);
+	$('#shadows').css("height", $(document).height());
+ FitLinesButtons();
+}
+
+function attachHead()
+{
+	var st=$(document).scrollTop();
+	if (st==0) 
+	{
+		//$("#header").css('position','relative'); 
+		//$("#header").css('margin-bottom','0'); 
+		$(".mobileheadershadow").css('top','18px');
+	}
+	 else 
+	 {
+		//$("#header").css('position','fixed');
+		//$("#header").css('margin-bottom',$("#header").height()); 
+		$(".mobileheadershadow").css('display','block');
+		$(".mobileheadershadow").css('top',$("#header").height());
+	 }
+}
+function tog(p1,p2)
+{
+	$('#'+p1).toggle();
+	$('#'+p2).toggle();
+}
+
+function Hide_bk_dc_cat_dog()
+{
+ $("#bk-dc-line-cat-dog").hide();
+}
+
+function FitLinesButtons()
+{
+ w=$("#bk-dc-line-cat-dog").width();
+ h=$("#bk-dc-line-cat-dog").height();
+
+ idImg="#bk-dc-line-cat-dog #bk-dc-cat-dog-content";
+ idDogBtn="#bk-dc-line-cat-dog #dogorcat-dog";
+ idCatBtn="#bk-dc-line-cat-dog #dogorcat-cat";
+ idBtns="#bk-dc-line-cat-dog .dogorcat";
+ ff=2;
+ if (h<180) {ff=3;}
+ 
+ imw=$(idImg).width();
+ imh=$(idImg).height();
+ imar=1.0*imw/imh;
+ ipw=imw*h/imh;
+ if (ipw>(w/ff))
+ {
+  $(idImg).css("width",(w/ff)+"px");
+  $(idImg).css("height","auto");
+  atop=(h-imh/imw*(w/ff))/2;
+  $(idImg).css("top",atop+"px");
+  if (ff==3) $(idBtns).css("top",atop+"px");
+  else $(idBtns).css("top","0");
+ }
+ else 
+ {
+  $(idImg).css("width","auto");
+  $(idImg).css("height",(h-5)+"px");
+  $(idImg).css("top","0");
+ }
+ if ((ipw>(w/ff))&&(ff==2))
+ {
+  $(idDogBtn).css("display","block");
+  $(idCatBtn).css("display","block");
+  $(idDogBtn).css("margin","10px");
+  $(idCatBtn).css("margin","10px");
+ } else 
+ {
+  $(idDogBtn).css("display","inline-block");
+  $(idCatBtn).css("display","inline-block");
+  $(idDogBtn).css("margin","0");
+  $(idCatBtn).css("margin","0");
+ }
+ ll=(w-$(idImg).width()-$(idBtns).width())/2;
+ $(idImg).css("left",ll+"px");
+ $(idBtns).css("left",ll+"px");
+}
+
+		/*(function($){ //create closure so we can safely use $ as alias for jQuery
+			$(document).ready(*/
+   window.onload =
+   function(){
+    $("button.dl-trigger").click(setmaxmenuheight);
+    
+    $("p.bk-dc-logos img").click(function(event)
+    {
+     $("#bk-dc-cat-dog-content").html($(event.target).clone());
+     href=$(event.target.parentElement).attr('href');
+     linktodog=$(event.target.parentElement).attr('hc');
+     linktocat=$(event.target.parentElement).attr('hg');
+     if (href) return true;
+     $("#dogorcat-dog").attr("href",linktodog);
+     $("#dogorcat-cat").attr("href",linktocat);
+     //$("#bk-dc-line-cat-dog").show();
+	 $("#bk-dc-line-cat-dog").css("display","inline-flex");
+     FitLinesButtons();
+
+     return;
+     el=$("#lll");
+     if (el.parentElement) el.parentElement.css("z-index","0");
+     $("#lll").remove();
+     if (el.parentElement) el.parentElement.css("z-index","11");
+     img=$(event.target).attr('src');
+     href=$(event.target.parentElement).attr('href');
+     linktodog=$(event.target.parentElement).attr('hc');
+     linktocat=$(event.target.parentElement).attr('hg');
+     if (href) return true;
+     
+     var rect = event.target.getBoundingClientRect();
+     w=rect.width;
+     
+     ww=50;
+     if (w>ww) ww=w;
+     
+     ll=-12-(ww-w)/2;
+          
+     html='<div id="lll" style="left:'+ll+'px" class="dogorcatline"><div style="width:'+ww+'px"><a href="'+linktodog+'"><img src="../images/dog18.png"></a><br><img id="lll" src="'+img+'" onclick=\'$(this.parentElement.parentElement).remove()\'><br><a href="'+linktocat+'"><img src="../images/cat18.png"></a></div></div>';
+     
+     $(event.target.parentElement.parentElement).prepend(html);
+     $("#lll").fadeIn();
+     return false;
+    });
+				
+				resizeshadows();
+				$(window).resize(resizeshadows);
+			$(window).scroll(attachHead);
+				
+			}
+   /*
+   );
+		});*/
+  
+  
+</script>
+<!-- mobile menu -->
+<script src="https://www.farmina.com/js/modernizr.custom.js"></script>
+<script src="https://www.farmina.com/js/jquery-3.7.0.min.js"></script>
+<script src="https://www.farmina.com/js/jquery.dlmenu.js"></script>
+<script src="https://www.farmina.com/js/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://www.farmina.com/css/jquery.modal.min.css">
+<script>
+	$(function() {
+		$( '#dl-menu' ).dlmenu();
+		});
+</script>
+</head>
+<body class="body-eshop">
+<noscript><iframe src="https://sgtm.farmina.com/ns.html?id=GTM-WM8GDF2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- div per gestione sposta tutto il contenuto sotto banner - chiuso in footer    -->
+<div id="container-sposta">
+
+<!-- INIZIO MENU DESKTOP -->
+
+<div id="header" class="menu22">
+<!-- la classe stitch serve ad avere il menu trasparente senza la barra superiore -->
+<style>
+#cookies { 
+  width: 100%;
+  margin: 0;
+  padding: 0.5em;
+ // background: #8F8F8F;
+  background: #7DB9E8;
+  background-color:#aaa;
+  border-bottom: solid 1px rgb(225,225,225);
+}
+ 
+#cookies p {
+  font-family: sans-serif;
+  font-size: 15px;
+  //font-weight: 600;
+  //text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+  text-align: center; 
+  color:black;
+  margin: 4px;
+  z-index: 999;
+}
+
+#cookies .policy {
+  //padding-left: 10px;
+  cursor: pointer;
+  //display: inline;
+  color: rgb(255,255,250);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+}
+
+#cookies .cookie-accept {
+  //padding-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline;
+  color: orange;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+}
+
+#cookies 
+{
+     position: absolute;
+    z-index: 21;
+    max-width: min(600px, 80%);
+    left: calc(50% - min(300px, 40%) - 0px);
+    top: 100px;
+    padding: 00px;
+    border-radius: 20px;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+    background-color:white;
+    border:2px solid #006ab5;
+    border-collapse:collapse;
+}
+
+#cookies input[type="button"].closebtn {float:right;    border-radius: 15px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0 5px;
+    line-height: 20px;}
+
+#cookies>div, #cookies>p {padding:10px 20px;}
+
+#cookies input[type="button"] {margin-top:10px;border-radius:8px;}
+#cookies input[type="button"].subm {margin-right:8px;min-width:160px;padding:5px 15px; font-size: 17px; font-weight:bold;border:2px solid #006ab5;color:#006ab5;background-color:white;}
+#cookies input[type="button"].bluebtn {background-color:#006ab5;color:white;}
+
+.cookiehead {    height: 60px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    background-color:#006ab5;
+    }
+.cookiehead .logo {    
+background-image: url(/images/logo-claim-mobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;}
+
+#cookieslayer
+{
+    background-color: #0008;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:20;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+      top: -25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.cookietoggler {max-height:0;display:block;overflow:hidden;    transition: all 0.5s ease;}
+.on .cookietoggler {max-height:500px;}
+
+#cookies .arrow {
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: #888;
+    top: 15px;
+    position: relative;
+    margin-left:5px;
+}
+#cookies .on .arrow {margin-top: 11px;
+    border-bottom-color: #aaa;
+    border-top-color: transparent;top:-15px}
+    
+@media screen and (max-width: 480px) {
+ #cookies 
+ {
+     top: 20px;
+ }
+ #cookies input[type="button"].subm {width:100%;}
+}
+</style>
+
+<!--<body onscroll="return accetto();" onclick="return accetto();">-->
+
+<div id="cookieslayer" style="display: block;">
+  <div id="cookies">
+  <div class="cookiehead"><input id="cookieclosebutton" class="closebtn" type="button" name="nonaccetto" value="X" onclick="return nonaccetto();" style=""><div class="logo"></div>
+  </div>
+  <p id="informativa" style="text-align:left;">Su privacidad es importante para nosotros    
+  <br>
+  <span>
+	  <br>Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. 
+	  <br><br>Al cerrar el Banner de Cookies, haciendo clic en el símbolo "X" o negando el consentimiento, usted continuará navegando sin cookies de perfil o de marketing.	  <br><br>Al consentir el uso de cookies de perfil y de marketing, podremos ofrecerle mensajes publicitarios que correspondan a sus necesidades.	  <br>  
+	  <input type="button" name="personalizza" class="subm" value="PERSONALIZAR" onclick="return personalizza();" style="">
+	  <input type="button" name="accetto" class="subm bluebtn" value="ACEPTAR TODO" onclick="return accetto();" style="">
+  </span>			
+  </p>
+  
+ <div id="personalizza" style="display:none;text-align:left;">
+ Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. 
+  <br>
+  <br>
+  
+  <div id="necessari"><div style="color:#002c6c;font-size:1.5em;" onclick="cookietoggle('necessari');">Necesario<span class="arrow"></span></div>
+  <label style="float:right;margin-right:1em;" class="switch" onclick="obbligatori();"><input type="checkbox" name="necessari" value="y" disabled="" checked="" style=""><span class="slider round"></span></label>
+<br>Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas del sitio. El sitio web no puede funcionar correctamente sin estas cookies.<span class="cookietoggler" style="margin-left:10px;">
+	<br><span style="color:#002c6c;font-size:1.3em;">Farmina</span> <a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>SESSID:</b> Conserva el estado del usuario en las distintas páginas del sitio web y permite el acceso a las áreas restringidas.	<br>Caducidad: Session Tipo: HTTP 
+	<br>
+	<br><b>farmina_lang:</b> Guarda el idioma seleccionado.	<br>Caducidad: 1 año Tipo: HTTP 
+	<br>
+	<br><b>cookie_test:</b> Se utiliza para comprobar si el navegador del usuario admite cookies	<br>Caducidad: 60 minutos Tipo: HTTP 
+	<br>
+	<br><b>CookieConsent#:</b> Almacena el estado de consentimiento de las cookies del usuario para el dominio actual.	<br>Caducidad: 1 año Tipo: HTTP 
+</span>
+</div>
+  <br>
+  <br><div id="statistiche"><div style="color:#002c6c;font-size:1.5em;" onclick="cookietoggle('statistiche');">Estadísticas<span class="arrow"></span></div>
+  <label style="float:right;margin-right:1em;" class="switch"><input id="statistichecheckbox" type="checkbox" name="statistiche" value="y" style=""><span class="slider round"></span></label>
+	<br>Las cookies estadísticas ayudan a los propietarios de los sitios web a entender cómo interactúan los visitantes con los sitios web mediante la recopilación y transmisión de información de forma anónima. <span class="cookietoggler" style="margin-left:10px;">
+	<br><span style="color:#002c6c;font-size:1.3em;">Google</span> <a href="https://policies.google.com/privacy" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>_gid:</b> Registra un identificador único utilizado para generar datos estadísticos sobre el uso que el visitante hace del sitio web.	<br>Caducidad: 1 día Tipo: HTTP 
+
+	<br>
+	<br><b>_gat_farminaGlobal:</b> Utilizado por Google Analytics para recopilar datos sobre el número de veces que un usuario ha visitado el sitio web, así como datos de la primera visita y de la visita más reciente.	<br>Caducidad: unos segundos Tipo: HTTP 
+	<br>
+	<br><b>_dc_gtm_UA#:</b> Utilizado por Google Analytics para recopilar datos sobre el número de veces que un usuario ha visitado el sitio web, así como datos de la primera visita y de la visita más reciente.	<br>Caducidad: unos segundos Tipo: HTTP 		
+	
+	<br><br><span style="color:#002c6c;font-size:1.3em;">Google Tag Manager</span> <a href="https://policies.google.com/privacy" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>_ga:</b> Registra un identificador único utilizado para generar datos estadísticos sobre el uso que el visitante hace del sitio web.	<br>Caducidad: 2 años Tipo: HTTP 
+</span></div>
+<br>
+  <br><div id="marketing"><div style="color:#002c6c;font-size:1.5em;" onclick="cookietoggle('marketing');">Marketing<span class="arrow"></span></div>
+  <label style="float:right;margin-right:1em;" class="switch"><input id="marketingcheckbox" type="checkbox" name="marketing" value="y" style=""><span class="slider round"></span></label>
+	<br>Las cookies de marketing se utilizan para hacer un seguimiento de los visitantes del sitio web. Su objetivo es mostrar anuncios que sean relevantes y atractivos para el usuario individual y, por tanto, de mayor valor para los editores y anunciantes de terceros.
+	<span class="cookietoggler" style="margin-left:10px;">
+	<br><span style="color:#002c6c;font-size:1.3em;">Facebook</span> <a href="https://www.facebook.com/policies_center/" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>_fbp:</b> Almacenar y rastrear las visitas a través de los sitios web.	<br>Caducidad: 3 meses Tipo: HTTP 
+
+	<br><br><span style="color:#002c6c;font-size:1.3em;">Google</span> <a href="https://policies.google.com/privacy" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>ads/ga-audiences:</b> Utilizado por Google AdWords para volver a captar visitantes que probablemente se conviertan en clientes en función del comportamiento en línea del visitante en los sitios web.	<br>Caducidad: Session Tipo: Pixel
+	<br>
+	<br><b>test_coockie:</b> Se utiliza para comprobar si el navegador del usuario admite cookies	<br>Caducidad: 1 minuto Tipo: HTTP 
+
+	<br><br><span style="color:#002c6c;font-size:1.3em;">Google Tag Manager</span> <a href="https://policies.google.com/privacy" target="_blank"><img src="https://www.farmina.com/images/goto.png"></a>
+	<br>
+	<br><b>_gcl_au:</b> Utilizado por Google AdSense para probar la eficacia de la publicidad en todos los sitios web que utilizan sus servicios.	<br>Caducidad: 3 meses Tipo: HTTP 
+
+</span></div>
+
+  <br>
+  <div>
+  <input type="button" name="selezionati" class="subm" value="ACEPTAR LA SELECCIóN" onclick="return accettoselezionati(document.getElementById('statistichecheckbox').checked,document.getElementById('marketingcheckbox').checked);" style="">
+  <input type="button" name="accetto" class="subm bluebtn" value="ACEPTAR TODO" onclick="return accetto();" style="">
+  </div>
+  </div>  
+  
+  <p style="text-align:left;">
+  <a href="https://www.farmina.com/es/farmina/2388-política-de-cookies.html" style="color: #0060AA; text-decoration:none;" target="blank">Política de cookies</a>
+	<a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html" style="color: #0060AA; text-decoration:none;" target="blank">Política de privacidad</a>
+ 
+  </p>
+  
+   </div>
+  </div>
+
+<script type="text/javascript">
+
+//---
+
+function leggiCookie(nomeCookie) {
+  if (document.cookie.length > 0) {
+
+	 
+	var inizio = document.cookie.indexOf(nomeCookie + "=");
+    if (inizio != -1)
+    {
+      inizio = inizio + nomeCookie.length + 1;
+      var fine = document.cookie.indexOf(";",inizio);
+      if (fine == -1) fine = document.cookie.length;
+      return unescape(document.cookie.substring(inizio,fine)); 
+    }else{
+       return "";
+    }
+ 	 
+  }
+  return "";
+}
+
+//setto cookie iniziale
+
+let x = document.cookie; 
+const myArrx = x.split(";");
+str2='';
+contcookieconsent=0;
+for(var i=0, len=myArrx.length; i < len; i++){
+	strapp=myArrx[i];
+	myArrnomi = strapp.split("=");
+	myArrnomi['0'] = myArrnomi['0'].replace(' ', '');
+	if (myArrnomi['0']=='CookieConsent8') {
+		contcookieconsent=contcookieconsent+1;
+		str2=strapp;
+	}	
+}
+if (contcookieconsent>1) {
+	//alert('CookieConsent8'+' - '+contcookieconsent);
+	myDate = new Date();
+	myDate.setTime(myDate.getTime());	
+	document.cookie = "CookieConsent8 = ; Secure; SameSite=None; Path=/; expires = " + myDate.toGMTString(); 
+	document.cookie = "CookieConsent8 = ; Secure; SameSite=None; Path=/es; expires = " + myDate.toGMTString();
+}
+
+
+if	(document.cookie.indexOf("CookieConsent8") < 0) {
+  days = 365; //number of days to keep the cookie
+  myDate = new Date();
+  myDate.setTime(myDate.getTime()+(365*24*60*60*1000));
+  document.cookie = "CookieConsent8 =  marketing:false|statistics:false|consent:false; Secure; SameSite=None; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //creates the cookie: name|value|expiry
+}else{
+	//alert(leggiCookie('CookieConsent8'));
+}  
+
+str=leggiCookie('CookieConsent8');
+const myArr = str.split("|");
+marketingcookieval=myArr['0'];
+statisticcookieval=myArr['1'];
+consentcookieval=myArr['2'];
+
+//alert(consentcookieval);
+if (consentcookieval=='consent:false') { 
+	marketingcookieval='';
+	statisticcookieval='';
+	document.getElementById('cookieslayer').style.display='block'; 
+}
+
+if (marketingcookieval=='marketing:true') { 
+	document.getElementById('marketingcheckbox').checked=true; 
+}else{
+	eliminamarketing();  
+}
+
+if (statisticcookieval=='statistics:true') { 
+	document.getElementById('statistichecheckbox').checked=true;
+}else{
+	eliminastatistici();		
+}
+
+function accetto() {
+  days = 365; //number of days to keep the cookie
+  myDate = new Date();
+  myDate.setTime(myDate.getTime()+(365*24*60*60*1000));
+ document.cookie = "CookieConsent8 = marketing:true|statistics:true|consent:true; Secure; SameSite=None; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //creates the cookie: name|value|expiry
+  //Cookies.set('CookieConsent8', 'marketing:true|statistics:true|consent:true');
+  document.getElementById('cookieslayer').style.display='none';
+  contenutocoockie('https://www.farmina.com/a_checkcookie.php','','a_contenuto_cookie22'); 
+  
+}
+
+function eliminastatistici() {
+	myDate = new Date();
+	str=leggiCookie('_ga');
+	if (str!='') document.cookie = "_ga =; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //remove Google cookie	
+	str=leggiCookie('_gid');
+	if (str!='') document.cookie = "_gid =; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //remove Google cookie	
+}
+function eliminamarketing() {
+	myDate = new Date();
+	str=leggiCookie('_fbp');
+	if (str!='') document.cookie = "_fbp =; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //remove FB cookie
+	str=leggiCookie('_gcl_au');
+	if (str!='') document.cookie = "_gcl_au =; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //remove Google cookie	
+}
+
+function accettoselezionati(statistics,marketing) {
+  days = 365; //number of days to keep the cookie
+  myDate = new Date();
+  myDate.setTime(myDate.getTime()+(365*24*60*60*1000));
+  //alert('aa '+statistics);
+  statisticsvalue='false';
+  marketingvalue='false';
+  if (statistics===true) { 
+	statisticsvalue='true'; 
+ }else{
+	eliminastatistici();	
+ }
+ 
+  if (marketing===true) { 
+	marketingvalue='true'; 
+ }else{
+	eliminamarketing();
+ }
+  
+  myDate = new Date();
+  myDate.setTime(myDate.getTime()+(365*24*60*60*1000));
+  document.cookie = "CookieConsent8 =  marketing:"+marketingvalue+"|statistics:"+statisticsvalue+"|consent:true; Secure; SameSite=None; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //creates the cookie: name|value|expiry
+  document.getElementById('cookieslayer').style.display='none';
+  contenutocoockie('https://www.farmina.com/a_checkcookie.php','','a_contenuto_cookie22');
+  
+}
+
+function nonaccetto() {
+  days = 365; //number of days to keep the cookie
+  myDate = new Date();
+  myDate.setTime(myDate.getTime()+(365*24*60*60*1000));
+  document.cookie = "CookieConsent8 =  marketing:false|statistics:false|consent:true; Secure; SameSite=None; Path=/; domain=farmina.com; expires = " + myDate.toGMTString(); //creates the cookie: name|value|expiry
+  document.getElementById('cookieslayer').style.display='none';
+  eliminastatistici();	
+  eliminamarketing(); 
+  
+}
+
+function personalizza() {
+  document.getElementById('cookieslayer').style.display='block';	
+  document.getElementById('informativa').style.display='none';
+  document.getElementById('cookieclosebutton').style.display='none';
+  document.getElementById('personalizza').style.display='block';
+  
+	str=leggiCookie('CookieConsent8');
+	const myArr = str.split("|");
+	marketingcookieval=myArr['0'];
+	statisticcookieval=myArr['1'];
+	consentcookieval=myArr['2'];
+
+	if (consentcookieval=='consent:false') { 
+		marketingcookieval='';
+		statisticcookieval='';
+	}	
+	
+
+	if (consentcookieval=='consent:false') { 
+		document.getElementById('cookieslayer').style.display='block'; 
+	}
+
+	if (marketingcookieval=='marketing:true') { 
+		document.getElementById('marketingcheckbox').checked=true; 
+	}
+
+	if (statisticcookieval=='statistics:true') { 
+		document.getElementById('statistichecheckbox').checked=true;
+	}  
+  
+}
+
+function obbligatori()
+{
+ alert('Obligatorias - no se pueden deseleccionar. Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas del sitio. El sitio web no puede funcionar correctamente sin estas cookies.');
+}
+
+function cookietoggle(id)
+{
+ $("#"+id).toggleClass("on");
+}
+
+function contenutocoockie(pagina,selezione,elemento) {
+ $(".loading").show();
+  $.ajax({
+    type: "POST",
+    url: pagina,
+    data: selezione,
+    success: function(response){
+     $("#"+elemento).html(response);
+     $(".loading").hide();
+    }
+  });
+
+}	
+
+</script>
+<!-- MENU PRINCIPALE -->
+<div id="mlev1">
+	<ul>
+	
+
+	
+
+		<li class="active"><a href="https://www.farmina.com/es/pet-food.html">Alimento para mascotas</a></li>
+		
+		<li><a href="https://www.farmina.com/es/pet-care.html">Cuidado de la mascota</a></li>
+				
+		<li class="sub_left"><a>Compañía</a>
+			<ul>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/690-quiénes-somos.html">Quiénes somos</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/6736-trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/1257-¿por-qué-farmina.html">¿Por qué Farmina?</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/6051-genius-rewards.html">Genius Rewards</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5982-programa-protectoras-farmina-.html">Programa Protectoras Farmina </a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5956-club-criadores-farmina-breeder-.html">Club Criadores Farmina Breeder </a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5856-club-peluqueros-farmina.html">Club Peluqueros Farmina</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5360-farmina-vet-club.html">Farmina Vet Club</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5250-investigación-científica-de-farmina.html">Investigación científica de Farmina</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/732-nuestras-materias-primas.html">Nuestras Materias Primas</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/753-tecnología-y-controles-de-calidad.html">Tecnología y Controles de Calidad</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/7461-farmina-genius-ai.html">Farmina Genius AI</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/65-garantía-de-satisfacción-farmina.html">Garantía de Satisfacción Farmina</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/2410-aviso-legal.html">Aviso Legal</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/1278-detrás-de-nuestra-elección-natural.html">Detrás de nuestra elección natural</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/795-investigación-libre-de-crueldad.html">Investigación Libre de Crueldad</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5519-tu-historia-farmina.html">Tu historia Farmina</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/5791-natural-&amp;-delicious-comida-húmeda.html">Natural &amp; Delicious comida húmeda</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/6677-intestinal-ultracare-low-fat.html">Intestinal UltraCare low Fat</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/3544-la-compañía-para-la-nutrición-de-tus-mascotas.html">La compañía para la nutrición de tus mascotas</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/7824-términos-y-condiciones-de-las-promociones.html">Términos y Condiciones de las Promociones</a></li>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/7870-farmina-genius-center-club.html">Farmina Genius Center Club</a></li>
+ 			
+			</ul>
+		</li>
+		
+		
+		
+	</ul>
+</div>
+<!-- FINE MENU PRINCIPALE -->
+ 
+<!-- MENU INDEX -->
+<!-- FINE MENU INDEX -->  
+
+<!-- FINE MENU PROMO --> 
+
+<!-- MENU PET FOOD -->
+ 
+<div id="mlev2">
+	<a href="https://www.farmina.com/es" class="logo"><div class="logo">Happy pet. Happy you.</div></a>
+	<ul>
+	
+		<li><a href="https://www.farmina.com/es/eshop-d-Alimento-para-perros.html">Alimento para perros</a></li>
+		<li class="active"><a href="https://www.farmina.com/es/eshop-c-Alimento-para-gatos.html">Alimento para gatos</a></li>		
+			<li class="sub"><a>Líneas de producto</a>
+				<ul>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/2877-n&amp;d-quinoa.html">N&amp;D Quinoa</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5414-n&amp;d-spirulina.html">N&amp;D Spirulina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5447-n&amp;d-tropical-selection-.html">N&amp;D Tropical Selection </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5480-n&amp;d-white-and-brown-.html">N&amp;D White and Brown </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/2876-n&amp;d-pumpkin.html">N&amp;D Pumpkin</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/2874-n&amp;d-ancestral-grain.html">N&amp;D Ancestral Grain</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/4471-n&amp;d-ocean.html">N&amp;D Ocean</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/879-n&amp;d-prime.html">N&amp;D Prime</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6647-snacks-dentales-y-funcionales.html">Snacks Dentales y Funcionales</a>
+ 			
+				</li></ul>	
+			</li>					
+	
+		
+		<li><a href="https://www.farmina.com/es/storelocator.html">Localización del Punto de Venta</a></li>
+				
+	</ul>
+</div> 
+<!-- FINE MENU PET FOOD --> 
+<!-- FINE MENU PET CARE --> 
+
+<!-- FINE MENU DESKTOP -->
+ 
+<!-- INIZIO MENU MOBILE -->
+	<div id="mtoggler"></div> 
+	<div id="mmobile">
+		<ul>
+	
+	
+			<li class="sub  active"><a>Alimento para mascotas</a>
+				<ul style="display: block;">
+					<li><a href="https://www.farmina.com/es/pet-food.html">Alimentos para su mascota</a></li>
+	
+					<li><a href="https://www.farmina.com/es/eshop-d-Alimento-para-perros.html">Alimento para perros</a></li>
+					<li class="active"><a href="https://www.farmina.com/es/eshop-c-Alimento-para-gatos.html">Alimento para gatos</a></li>		
+
+			<li class="sub"><a>Líneas de producto</a>
+				<ul>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/2877-n&amp;d-quinoa.html">N&amp;D Quinoa</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5414-n&amp;d-spirulina.html">N&amp;D Spirulina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5447-n&amp;d-tropical-selection-.html">N&amp;D Tropical Selection </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5480-n&amp;d-white-and-brown-.html">N&amp;D White and Brown </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/2876-n&amp;d-pumpkin.html">N&amp;D Pumpkin</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/2874-n&amp;d-ancestral-grain.html">N&amp;D Ancestral Grain</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/4471-n&amp;d-ocean.html">N&amp;D Ocean</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/879-n&amp;d-prime.html">N&amp;D Prime</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6647-snacks-dentales-y-funcionales.html">Snacks Dentales y Funcionales</a>
+ 			
+				</li></ul>	
+			</li>					
+					
+					<li><a href="https://www.farmina.com/es/storelocator.html">Encuentra tu tienda Farmina</a></li>
+				</ul>				
+			</li>
+		
+			<li class="sub"><a>Cuidado de la mascota</a>
+				<ul>
+					<li><a href="https://www.farmina.com/es/pet-care.html">Soluciones para el cuidado de mascotas</a></li>
+					<li><a href="https://www.farmina.com/es/pet-care/nc-contact/solicitud-de-soporte-nutricional.html" target="_blank">Soporte nutricional</a></li>
+				
+				<li><a href="https://www.farmina.com/es/consumer/2-¿quieres-tu-plan-nutricional.html">¿Quieres tu plan nutricional?</a></li>
+		
+					<li><a href="https://www.farmina.com/es/e-farmina/4757-programa-de-cuidado-para-mascotas.html">Programa de cuidado de mascotas</a></li>
+	
+			
+						
+		<!--<li class="sub"><a>Genius</a>
+			<ul>-->
+				
+				<li><a href="https://www.farmina.com/es/pet-care/farminagenius/app.html">Genius App</a></li>
+	
+				
+				<li><a href="https://www.farmina.com/es/pet-care/geniustips.html">Consejos del Genius</a></li>
+						
+				<li><a href="https://www.farmina.com/es/genius-center.html">Genius Center</a></li>
+			<!--</ul>
+		</li>-->
+				</ul>		
+			</li>
+				
+			<li class="sub"><a>Compañía</a>
+				<ul>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/690-quiénes-somos.html">Quiénes somos</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6736-trabaja-con-nosotros.html">Trabaja con Nosotros</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/1257-¿por-qué-farmina.html">¿Por qué Farmina?</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6051-genius-rewards.html">Genius Rewards</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5982-programa-protectoras-farmina-.html">Programa Protectoras Farmina </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5956-club-criadores-farmina-breeder-.html">Club Criadores Farmina Breeder </a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5856-club-peluqueros-farmina.html">Club Peluqueros Farmina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5360-farmina-vet-club.html">Farmina Vet Club</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5250-investigación-científica-de-farmina.html">Investigación científica de Farmina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/732-nuestras-materias-primas.html">Nuestras Materias Primas</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/753-tecnología-y-controles-de-calidad.html">Tecnología y Controles de Calidad</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/7461-farmina-genius-ai.html">Farmina Genius AI</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/65-garantía-de-satisfacción-farmina.html">Garantía de Satisfacción Farmina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/2410-aviso-legal.html">Aviso Legal</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/1278-detrás-de-nuestra-elección-natural.html">Detrás de nuestra elección natural</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/795-investigación-libre-de-crueldad.html">Investigación Libre de Crueldad</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5519-tu-historia-farmina.html">Tu historia Farmina</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/5791-natural-&amp;-delicious-comida-húmeda.html">Natural &amp; Delicious comida húmeda</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/6677-intestinal-ultracare-low-fat.html">Intestinal UltraCare low Fat</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/3544-la-compañía-para-la-nutrición-de-tus-mascotas.html">La compañía para la nutrición de tus mascotas</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/7824-términos-y-condiciones-de-las-promociones.html">Términos y Condiciones de las Promociones</a>
+							
+                	</li><li><a href="https://www.farmina.com/es/farmina/7870-farmina-genius-center-club.html">Farmina Genius Center Club</a>
+ 			
+				</li></ul>	
+			</li>
+			
+		
+			
+	
+
+
+	
+		
+		</ul>
+	
+<!--	
+		<ul>
+			<li class="sub"><a>Programa de cuidado de mascotas</a>
+				<ul>
+					<li><a href="">This is a long line menu for Dog food</a></li>
+					<li class=""><a href="">Cat food</a></li>
+				</ul>
+			</li>
+			<li class="sub active"><a>Plan Genius</a>
+				<ul>
+					<li><a href="">Dog</a></li>
+					<li class="sub active"><a>Cat</a>
+						<ul>
+							<li><a href="">Dog food</a></li>
+							<li><a href="">Cat food</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="">Genius App</a></li>
+			<li><a href="">Consejos del Genius</a></li>
+			<li><a href="">Genius center</a></li>
+			<li class="sub cart"><a href=""></a></li>
+			<li class="sub user"><a>utente</a>
+				<ul>
+					<li><a href="">Dog food</a></li>
+					<li><a href="">Cat food</a></li>
+				</ul>
+			</li>
+		</ul>-->
+	</div>
+	
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (!document.getElementById("header").classList.contains("stitch"))
+  {
+   if ((prevScrollpos < currentScrollPos)&&(currentScrollPos>40)) {
+     document.getElementById("mlev1").style.top = "-40px";
+     document.getElementById("mlev2").style.top = "0";
+   } else {
+    document.getElementById("mlev1").style.top = "0";
+    document.getElementById("mlev2").style.top = "40px";
+   }
+  } else
+  {
+   if (currentScrollPos==0) document.getElementById("header").classList.remove("off");
+   if (currentScrollPos>0) document.getElementById("header").classList.add("off");
+  }
+  prevScrollpos = currentScrollPos;
+}
+doInit22();
+function doInit22()
+{
+ document.getElementById("mtoggler").addEventListener("click",toggle);
+ 
+ var subs=document.querySelectorAll("#header.menu22 #mmobile ul>li.sub");
+ for (var i=0;i<subs.length;i++)
+ {
+  var cn=subs[i].querySelector("a");
+  cn.addEventListener("click",toggle);
+  /*var cn=subs[i].querySelector("a").cloneNode(true);
+  subs[i].querySelector("a").classList.add("hideMobile");
+  var na=cn.cloneNode(true);
+  na.classList.add("onlyMobile");
+  na.removeAttribute("href");
+  na.addEventListener("click",toggle);
+  subs[i].querySelector("a").after(na);
+  var nli=document.createElement('li');
+  nli.append(cn);
+  nli.classList.add("onlyMobile");
+  subs[i].querySelector("ul").prepend(nli);*/
+ }
+ subs=document.querySelectorAll("#header.menu22 #mmobile ul>li.active>ul");
+ for (var i=0;i<subs.length;i++) subs[i].style.display="block";
+}
+function toggle(e)
+{
+ if (e.target.tagName=="A") 
+ {
+  var el=e.target.parentNode.querySelector("ul");
+  if ((el.style.display.length==0)||(el.style.display=="none")) el.style.display="block";
+  else el.style.display="none";
+  return;
+ }
+ var ison=document.querySelector("#mmobile").classList.contains("on");
+ if (ison) document.querySelector("#mmobile").classList.remove("on");
+ else document.querySelector("#mmobile").classList.add("on");
+}
+</script>	
+	
+<!-- FINE MENU MOBILE -->
+
+</div>	
+	
+
+
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ab6cc6a-1dc6-4092-853a-4291d6a54ebc"> </script>						
+<!-- End of farmina-in Zendesk Widget script -->
+
+<script>
+function toggleview(dd)
+{
+	$(dd).toggle();
+	if ($(dd).is(":visible")) 
+	{
+		$(dd+"ex").css("-ms-transform","rotate(180deg)");
+		$(dd+"ex").css("-webkit-transform","rotate(180deg)");
+		$(dd+"ex").css("transform","rotate(180deg)");
+	} else 
+	{
+		$(dd+"ex").css("-ms-transform","rotate(0deg)");
+		$(dd+"ex").css("-webkit-transform","rotate(0deg)");
+		$(dd+"ex").css("transform","rotate(0deg)");
+	}
+}
+</script>
+
+<!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+
+<script type="text/javascript">
+function contenuto(pagina,selezione,elemento) {
+ //$(".loading").show();
+  document.getElementById("attesa-1").style.display='block';
+  $.ajax({
+    type: "POST",
+    url: pagina,
+    data: selezione,
+    success: function(response){
+     $("#"+elemento).html(response);
+     //$(".loading").hide();
+    document.getElementById("attesa-1").style.display='none';
+	}
+  });
+
+}	
+</script>
+
+<!-- IMMAGINE FONDO -->
+<div id="subheader" class="fullheader" style="background-image: url(https://www.farmina.com/images/fondi/14_09_visual-head-vet-life-feline.png);">
+	<!--<div class="container">
+		<div class="column">
+			<div class="subheader1"></div>
+			<div class="subheader2">
+				<img src="images/linee/brand-head/" alt="">
+			</div>	
+		</div>
+	</div>-->
+</div>
+<!-- CONTENT TOP -->
+<div class="headshader"></div>
+<div id="content-top" class="sk-eshop-prodotto dog">
+	<div class="container">
+<span style="opacity: 0.3; display: none; position: fixed; top: 50%; left: 25%; height: 200px; padding: 0px; width: 200px; z-index: 2;" id="attesa-1"><img src="https://www.farmina.com/images/loader7.gif" width="200"></span>
+		
+		<div class="box-title">
+			<div class="content-title">
+				<div class="title">
+					<h1 class="product-title"><span class="product-title">Farmina Vet Life</span> </h1>
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="intro">
+		<p></p> 		
+		</div>-->
+<form name="formprodotti" method="POST" action="#">	
+<input type="hidden" name="idpagina" id="idpagina" value="205" style="">
+<input type="hidden" name="idlingua" id="idlingua" value="8" style="">
+<input type="hidden" name="idlinea" id="specie" value="14" style="">
+<input type="hidden" name="specie" id="specie" value="c" style="">
+		<div class="content-box">
+			<div class="box">
+			
+			<div class="nfilter-upend"></div>
+
+		<!----  INIZIO LINEE ---->
+		<br style="clear:left;">
+		<div class="nbox-filter center" style="width:100%;">
+		<div class="box-filter">Encuentra el producto ideal para tu gato</div>
+		</div>
+				<br style="clear:left;">
+
+				<div id="rlineshade" class="noshade"><div class="riga-lines"><div class="scroller"><div class="beforespacer" style="width: 552px;"></div>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/56-N&amp;D-Quinoa-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/56_27_nd-quinoa-feline.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/15-N&amp;D-Prime-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/15_42_nd-prime.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/64-N&amp;D-Ocean-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/64_50_nd-ocean@web.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/55-N&amp;D-Pumpkin-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/55_14_nd-pumpkin-feline.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/16-N&amp;D-Ancestral-Grain-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/16_53_nd-ancestral-grain-logo.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/87-N&amp;D-Spirulina-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/_20_brand-nd-spirulina.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/91-N&amp;D-Tropical-Selection-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/91_30_icona-logo-tropical-selection@web.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/71-N&amp;D-Natural.html"><img src="https://www.farmina.com/images/linee/brand-head/71_33_nd-natural-fish.png" alt=""></a>
+		
+				<a class="active" href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/14-Farmina-Vet-Life.html"><img src="https://www.farmina.com/images/linee/brand-head/14_53_vet-life-brand.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/17-Matisse.html"><img class="s33" src="https://www.farmina.com/images/linee/brand-head/17_07_matisse.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-gatos/21-Fun-Cat.html"><img class="s75" src="https://www.farmina.com/images/linee/brand-head/fun-cat.png" alt=""></a>
+			
+				<div class="afterspacer" style="width: 560.5px;"></div></div></div>		</div>
+		
+		<!--br style="clear:left;"-->
+		<!----  FINE LINEE ---->
+
+
+		<!----  INIZIO SELEZIONI ---->		
+		<!--br style="clear:left;"-->
+		<div class="nfilter-new">
+			<span id="a_specialcare">			<div class="nbox-filter">
+				<div class="filter-boxed">	
+					<p class="nfilter-filter-label">Forma de alimentación</p>
+					<div class="nfilter-buttons">
+						<input type="radio" class="radio1" id="radio91" name="drywet" value="" checked="" onclick="return contenuto('https://www.farmina.com/a_specialcare.php',$(document.forms.formprodotti).serialize(),'a_specialcare');" style=""><label class="label1" for="radio91"><p>TODO</p></label>						
+						<input type="radio" class="radio1" id="radio92" name="drywet" value="dry" onclick="return contenuto('https://www.farmina.com/a_specialcare.php',$(document.forms.formprodotti).serialize(),'a_specialcare');" style=""><label class="label1" for="radio92"><p>Seco</p></label>
+						<input type="radio" class="radio1" id="radio93" name="drywet" value="wet" onclick="return contenuto('https://www.farmina.com/a_specialcare.php',$(document.forms.formprodotti).serialize(),'a_specialcare');" style=""><label class="label1" for="radio93"><p>Humeda</p></label>
+					</div>
+				</div>	
+				
+				<div class="filter-boxed newline"></div>
+				<!--<div class="vbox-filter">Encuentra la dieta veterinaria ideal para ti gato</div>-->
+				<!--<p class="vfilter-filter-label">Patología</p>-->
+				<div class="vfilter-buttons">
+					<!--<select name="patologia" onchange="return contenuto('https://www.farmina.com/a_prodotti_eshop.php',$(document.forms.formprodotti).serialize(),'a_contenuto_elenco');">
+						<option value="">TODO</option>
+                                  <option value="27" >Alteraciones gastrointestinales</option>
+                                  <option value="141" >Apoyo al metabolismo de las articulaciones en caso de osteoartritis</option>
+                                  <option value="52" >Cálculos de estruvita</option>
+                                  <option value="79" >Castración (Macho)</option>
+                                  <option value="34" >Cistitis idiopática</option>
+                                  <option value="75" >Constipación</option>
+                                  <option value="25" >Control de las bolas de pelo</option>
+                                  <option value="87" >Control de peso</option>
+                                  <option value="96" >Convalecencia (Gato Adulto)</option>
+                                  <option value="6" >Convalecencia post quirúrgica (ortopédica)</option>
+                                  <option value="46" >Cristales de estruvita recurrentes (prevención)</option>
+                                  <option value="76" >Dermatitis</option>
+                                  <option value="5" >Dermatitis idiopática</option>
+                                  <option value="14" >Diabetes mellitus</option>
+                                  <option value="81" >Diarrea idiopática</option>
+                                  <option value="77" >Dieta de eliminación</option>
+                                  <option value="80" >Encefalopatía hepática</option>
+                                  <option value="78" >Enteritis fibro sensible</option>
+                                  <option value="83" >Fallo renal</option>
+                                  <option value="22" >Insuficiencia cardíaca</option>
+                                  <option value="12" >Insuficiencia cardíaca crónica</option>
+                                  <option value="18" >Insuficiencia hepática crónica</option>
+                                  <option value="84" >Malabsorción</option>
+                                  <option value="85" >Malnutrición</option>
+                                  <option value="82" >Patología inflamatoria intestinal</option>
+                                  <option value="23" >Reacciones adversas al alimento</option>
+                                  <option value="40" >Recuperación nutricional</option>
+                                  <option value="58" >Sobrepeso</option>
+                                  <option value="86" >Soporte para terapia farmacológica</option>
+                                  <option value="122" >Insuficiencia pancreática exocrina</option>
+			
+					</select>-->
+					<!--<input type="select" class="radio1" id="radio1" name="radio1" value="tutte">-->
+					<p>Acude a tu veterinario para que te indique la cantidad de este pienso según tus necesidades gato.</p>		
+				</div>				
+				
+			</div>
+</span>
+<script type="text/javascript">
+contenuto('https://www.farmina.com/a_specialcare.php','prima=si&'+$(document.forms.formprodotti).serialize(),'a_specialcare');
+</script>
+	
+
+		</div>
+		<br style="clear:left;">
+		<!----  FINE SELEZIONI ---->
+
+<script type="text/javascript">
+contenuto('https://www.farmina.com/a_prodotti_eshop.php','prima=si&'+$(document.forms.formprodotti).serialize(),'a_contenuto_elenco');
+</script>
+ <span id="a_contenuto_elenco">
+					<!-- inizio home -->
+					<div class="box-hp">
+ 							
+							<!--<div class="pr0">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&-tuna.html">
+										<img src="https://www.farmina.com/fotoprodotti/1200_11_VetLife Renal Bag Cream front-right@sito.png" alt="Renal • Healthy Creamy Treat with Chicken & Tuna" title="Renal • Healthy Creamy Treat with Chicken & Tuna">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&-tuna.html" class="blu title-prodotto">Renal • Healthy Creamy Treat with Chicken & Tuna</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&-tuna.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&amp;-tuna.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Renal • Healthy Creamy Treat with Chicken &amp; Tuna</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&amp;-tuna.html">
+				<img src="https://www.farmina.com/fotoprodotti/1200_11_VetLife Renal Bag Cream front-right@sito.png" alt="Renal • Healthy Creamy Treat with Chicken &amp; Tuna" title="Renal • Healthy Creamy Treat with Chicken &amp; Tuna">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1200-renal-•-healthy-creamy-treat-with-chicken-&amp;-tuna.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Renal • Healthy Creamy Treat with Chicken &amp; Tuna</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/1200_11_VetLife Renal Bag Cream front-right@sito.png" alt="Renal • Healthy Creamy Treat with Chicken &amp; Tuna" title="Renal • Healthy Creamy Treat with Chicken &amp; Tuna">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+90g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr0">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/383_18_vetlife-convalescence-85g.png" alt="Convalescence Húmedo" title="Convalescence Húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html" class="blu title-prodotto">Convalescence Húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Convalescence Húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/383_18_vetlife-convalescence-85g.png" alt="Convalescence Húmedo" title="Convalescence Húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/383-convalescence-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Convalescence Húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/383_18_vetlife-convalescence-85g.png" alt="Convalescence Húmedo" title="Convalescence Húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/382_33_vet-life-gastrointestinal-85g.png" alt="Gastrointestinal Húmedo" title="Gastrointestinal Húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html" class="blu title-prodotto">Gastrointestinal Húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Gastrointestinal Húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/382_33_vet-life-gastrointestinal-85g.png" alt="Gastrointestinal Húmedo" title="Gastrointestinal Húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/382-gastrointestinal-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Gastrointestinal Húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/382_33_vet-life-gastrointestinal-85g.png" alt="Gastrointestinal Húmedo" title="Gastrointestinal Húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/380_51_vetlife-struvite-85g.png" alt="Struvite Húmedo" title="Struvite Húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html" class="blu title-prodotto">Struvite Húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Struvite Húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/380_51_vetlife-struvite-85g.png" alt="Struvite Húmedo" title="Struvite Húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/380-struvite-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Struvite Húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/380_51_vetlife-struvite-85g.png" alt="Struvite Húmedo" title="Struvite Húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html">
+										<img src="https://www.farmina.com/fotoprodotti/1035_28_vetlife-struvite-management-85g.png" alt="Struvite Management feline" title="Struvite Management feline">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html" class="blu title-prodotto">Struvite Management feline</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Struvite Management feline</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html">
+				<img src="https://www.farmina.com/fotoprodotti/1035_28_vetlife-struvite-management-85g.png" alt="Struvite Management feline" title="Struvite Management feline">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1035-struvite-management-feline.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Struvite Management feline</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/1035_28_vetlife-struvite-management-85g.png" alt="Struvite Management feline" title="Struvite Management feline">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr0">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/381_04_vetlife-renal-85g.png" alt="Renal Húmedo" title="Renal Húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html" class="blu title-prodotto">Renal Húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Renal Húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/381_04_vetlife-renal-85g.png" alt="Renal Húmedo" title="Renal Húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Renal Húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/381_04_vetlife-renal-85g.png" alt="Renal Húmedo" title="Renal Húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/973_22_vetlife-hepatic-85g.png" alt="Hepatic húmedo" title="Hepatic húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html" class="blu title-prodotto">Hepatic húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Hepatic húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/973_22_vetlife-hepatic-85g.png" alt="Hepatic húmedo" title="Hepatic húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/973-hepatic-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Hepatic húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/973_22_vetlife-hepatic-85g.png" alt="Hepatic húmedo" title="Hepatic húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/972_42_vetlife-obesity-85g.png" alt="Obesity húmedo" title="Obesity húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html" class="blu title-prodotto">Obesity húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Obesity húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/972_42_vetlife-obesity-85g.png" alt="Obesity húmedo" title="Obesity húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/972-obesity-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Obesity húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/972_42_vetlife-obesity-85g.png" alt="Obesity húmedo" title="Obesity húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/971_00_vetlife-diabetic-85g.png" alt="Diabetic húmedo" title="Diabetic húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html" class="blu title-prodotto">Diabetic húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Diabetic húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/971_00_vetlife-diabetic-85g.png" alt="Diabetic húmedo" title="Diabetic húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/971-diabetic-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Diabetic húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/971_00_vetlife-diabetic-85g.png" alt="Diabetic húmedo" title="Diabetic húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&-potato-húmedo.html">
+										<img src="https://www.farmina.com/fotoprodotti/1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png" alt="Hypoallergenic Pork & Potato Húmedo" title="Hypoallergenic Pork & Potato Húmedo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&-potato-húmedo.html" class="blu title-prodotto">Hypoallergenic Pork & Potato Húmedo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&-potato-húmedo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&amp;-potato-húmedo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Hypoallergenic Pork &amp; Potato Húmedo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&amp;-potato-húmedo.html">
+				<img src="https://www.farmina.com/fotoprodotti/1009_12_vetlife-hypoallergenic-pork-&amp;-potato-85g.png" alt="Hypoallergenic Pork &amp; Potato Húmedo" title="Hypoallergenic Pork &amp; Potato Húmedo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/1009-hypoallergenic-pork-&amp;-potato-húmedo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Hypoallergenic Pork &amp; Potato Húmedo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/1009_12_vetlife-hypoallergenic-pork-&amp;-potato-85g.png" alt="Hypoallergenic Pork &amp; Potato Húmedo" title="Hypoallergenic Pork &amp; Potato Húmedo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+85g											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr1">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html">
+										<img src="https://www.farmina.com/fotoprodotti/79_15_vet-life-feline-gastrointestinal@web.png" alt="Gastrointestinal" title="Gastrointestinal">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html" class="blu title-prodotto">Gastrointestinal</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Gastrointestinal</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html">
+				<img src="https://www.farmina.com/fotoprodotti/79_15_vet-life-feline-gastrointestinal@web.png" alt="Gastrointestinal" title="Gastrointestinal">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/79-gastrointestinal.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Gastrointestinal</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/79_15_vet-life-feline-gastrointestinal@web.png" alt="Gastrointestinal" title="Gastrointestinal">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg - 5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr3">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/90-hepatic.html">
+										<img src="https://www.farmina.com/fotoprodotti/90_41_90_27_vet-life-feline-hepatic@web.png" alt="Hepatic" title="Hepatic">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/90-hepatic.html" class="blu title-prodotto">Hepatic</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/90-hepatic.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/90-hepatic.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Hepatic</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/90-hepatic.html">
+				<img src="https://www.farmina.com/fotoprodotti/90_41_90_27_vet-life-feline-hepatic@web.png" alt="Hepatic" title="Hepatic">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/90-hepatic.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Hepatic</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/90_41_90_27_vet-life-feline-hepatic@web.png" alt="Hepatic" title="Hepatic">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr2">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/80-struvite.html">
+										<img src="https://www.farmina.com/fotoprodotti/80_04_80_13_vet-life-feline-struvite@web.png" alt="Struvite" title="Struvite">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/80-struvite.html" class="blu title-prodotto">Struvite</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/80-struvite.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/80-struvite.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Struvite</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/80-struvite.html">
+				<img src="https://www.farmina.com/fotoprodotti/80_04_80_13_vet-life-feline-struvite@web.png" alt="Struvite" title="Struvite">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/80-struvite.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Struvite</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/80_04_80_13_vet-life-feline-struvite@web.png" alt="Struvite" title="Struvite">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr2">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/81-struvite-management.html">
+										<img src="https://www.farmina.com/fotoprodotti/81_13_81_13_vet-life-feline-struvite-management@web.png" alt="Struvite Management" title="Struvite Management">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/81-struvite-management.html" class="blu title-prodotto">Struvite Management</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/81-struvite-management.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/81-struvite-management.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Struvite Management</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/81-struvite-management.html">
+				<img src="https://www.farmina.com/fotoprodotti/81_13_81_13_vet-life-feline-struvite-management@web.png" alt="Struvite Management" title="Struvite Management">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/81-struvite-management.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Struvite Management</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/81_13_81_13_vet-life-feline-struvite-management@web.png" alt="Struvite Management" title="Struvite Management">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg - 5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr3">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/82-renal.html">
+										<img src="https://www.farmina.com/fotoprodotti/82_55_82_57_vet-life-feline-renal@web.png" alt="Renal" title="Renal">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/82-renal.html" class="blu title-prodotto">Renal</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/82-renal.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/82-renal.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Renal</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/82-renal.html">
+				<img src="https://www.farmina.com/fotoprodotti/82_55_82_57_vet-life-feline-renal@web.png" alt="Renal" title="Renal">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/82-renal.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Renal</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/82_55_82_57_vet-life-feline-renal@web.png" alt="Renal" title="Renal">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg - 5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr3">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/83-obesity.html">
+										<img src="https://www.farmina.com/fotoprodotti/83_48_83_42_vet-life-feline-obesity@web.png" alt="Obesity" title="Obesity">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/83-obesity.html" class="blu title-prodotto">Obesity</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/83-obesity.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/83-obesity.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Obesity</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/83-obesity.html">
+				<img src="https://www.farmina.com/fotoprodotti/83_48_83_42_vet-life-feline-obesity@web.png" alt="Obesity" title="Obesity">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/83-obesity.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Obesity</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/83_48_83_42_vet-life-feline-obesity@web.png" alt="Obesity" title="Obesity">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg - 5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr3">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/84-diabetic.html">
+										<img src="https://www.farmina.com/fotoprodotti/84_13_84_59_vet-life-feline-diabetic@web.png" alt="Diabetic" title="Diabetic">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/84-diabetic.html" class="blu title-prodotto">Diabetic</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/84-diabetic.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/84-diabetic.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Diabetic</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/84-diabetic.html">
+				<img src="https://www.farmina.com/fotoprodotti/84_13_84_59_vet-life-feline-diabetic@web.png" alt="Diabetic" title="Diabetic">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/84-diabetic.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Diabetic</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/84_13_84_59_vet-life-feline-diabetic@web.png" alt="Diabetic" title="Diabetic">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr2">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html">
+										<img src="https://www.farmina.com/fotoprodotti/85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png" alt="UltraHypo" title="UltraHypo">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html" class="blu title-prodotto">UltraHypo</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">UltraHypo</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html">
+				<img src="https://www.farmina.com/fotoprodotti/85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png" alt="UltraHypo" title="UltraHypo">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/85-ultrahypo.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">UltraHypo</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png" alt="UltraHypo" title="UltraHypo">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+400g - 2kg - 5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+							
+							<!--<div class="pr3">
+								<div class="img-pr">
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&-potato-feline.html">
+										<img src="https://www.farmina.com/fotoprodotti/967_54_hypo-pork-cat@web.png" alt="Hypoallergenic Pork & Potato feline" title="Hypoallergenic Pork & Potato feline">
+									</a>
+								</div>
+								<div class="line"></div>
+								<div class="link-pr">
+									<span class="sottotitle-prodotto" style="color: #;"><span>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&-potato-feline.html" class="blu title-prodotto">Hypoallergenic Pork & Potato feline</a>
+									<a href="https://www.farmina.com/es/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&-potato-feline.html" class="sottotitle-prodotto">fórmula felina</a>
+								</div>
+							</div>-->
+
+
+	<div class="pr1" data-productid="0">
+	<div class="hoverbox" onclick="location.href='https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&amp;-potato-feline.html'">
+		<div class="es-cart-line">fórmula felina</div>
+		<div class="es-product-line-title">Hypoallergenic Pork &amp; Potato feline</div>
+	<div class="img-pr">
+			<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&amp;-potato-feline.html">
+				<img src="https://www.farmina.com/fotoprodotti/967_54_hypo-pork-cat@web.png" alt="Hypoallergenic Pork &amp; Potato feline" title="Hypoallergenic Pork &amp; Potato feline">
+			</a>
+		</div>
+		<a href="https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/967-hypoallergenic-pork-&amp;-potato-feline.html" class="es-checkout-btn es-add-to-cart">más</a>
+	</div>
+	<div class="es-line-top-line" style="border-color:orange"></div>
+	<div class="es-cart-line">fórmula felina</div>
+	<div class="es-product-line-title">Hypoallergenic Pork &amp; Potato feline</div>
+		<div class="img-pr">
+			
+				<img src="https://www.farmina.com/fotoprodotti/967_54_hypo-pork-cat@web.png" alt="Hypoallergenic Pork &amp; Potato feline" title="Hypoallergenic Pork &amp; Potato feline">
+			
+		</div>
+		<div class="es-box-info">
+			<div class="es-info-left">disponible en formatos de <b>
+1.5kg											
+			</b></div>
+					
+		</div>
+		
+	</div>							
+						
+	
+<!-- SCRIPT GOOGLE TAG -->	
+<script>
+dataLayer.push({
+'event': 'impressions',
+  'ecommerce': {
+    'currencyCode': 'EUR',                       
+    'impressions': [		
+	
+ {
+       'name': 'Renal • Healthy Creamy Treat with Chicken & Tuna',       
+       'id': '1200-1-0',
+       'price': '0',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 44     }
+,	
+ {
+       'name': 'Convalescence Húmedo',       
+       'id': '383-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 45     }
+,	
+ {
+       'name': 'Gastrointestinal Húmedo',       
+       'id': '382-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 46     }
+,	
+ {
+       'name': 'Struvite Húmedo',       
+       'id': '380-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 47     }
+,	
+ {
+       'name': 'Struvite Management feline',       
+       'id': '1035-1-85',
+       'price': '0',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 48     }
+,	
+ {
+       'name': 'Renal Húmedo',       
+       'id': '381-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 49     }
+,	
+ {
+       'name': 'Hepatic húmedo',       
+       'id': '973-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 50     }
+,	
+ {
+       'name': 'Obesity húmedo',       
+       'id': '972-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 51     }
+,	
+ {
+       'name': 'Diabetic húmedo',       
+       'id': '971-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 52     }
+,	
+ {
+       'name': 'Hypoallergenic Pork & Potato Húmedo',       
+       'id': '1009-1-85',
+       'price': '2.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 53     }
+,	
+ {
+       'name': 'Gastrointestinal',       
+       'id': '79-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 54     }
+,	
+ {
+       'name': 'Hepatic',       
+       'id': '90-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 55     }
+,	
+ {
+       'name': 'Struvite',       
+       'id': '80-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 56     }
+,	
+ {
+       'name': 'Struvite Management',       
+       'id': '81-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 57     }
+,	
+ {
+       'name': 'Renal',       
+       'id': '82-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 58     }
+,	
+ {
+       'name': 'Obesity',       
+       'id': '83-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 59     }
+,	
+ {
+       'name': 'Diabetic',       
+       'id': '84-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 60     }
+,	
+ {
+       'name': 'UltraHypo',       
+       'id': '85-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 61     }
+,	
+ {
+       'name': 'Hypoallergenic Pork & Potato feline',       
+       'id': '967-1-400',
+       'price': '8.20',
+	   'discount': '',
+       'category': 'Alimento para gatos',
+       'variant': '',
+       'list': 'Farmina Vet Life',		// pagina di gategoria
+       'position': 62     }
+	
+    ]
+  }
+});
+</script>
+<!-- FINE SCRIPT GOOGLE TAG -->	
+												
+					</div>
+		<div class="content-box">
+			<div class="box">
+			
+			</div>
+		</div>			
+	</span>
+<div class="clear">&nbsp;</div>
+<!--<div class="clear">&nbsp;</div>						
+<div class="other-lines-foot">También puedes elegir entre...				<div class="other-lines">
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/56-N&D-Quinoa-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/56_27_nd-quinoa-feline.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/15-N&D-Prime-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/15_42_nd-prime.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/64-N&D-Ocean-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/64_50_nd-ocean@web.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/55-N&D-Pumpkin-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/55_14_nd-pumpkin-feline.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/16-N&D-Ancestral-Grain-Feline.html"><img src="https://www.farmina.com/images/linee/brand-head/16_53_nd-ancestral-grain-logo.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/87-N&D-Spirulina-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/_20_brand-nd-spirulina.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/91-N&D-Tropical-Selection-feline.html"><img src="https://www.farmina.com/images/linee/brand-head/91_30_icona-logo-tropical-selection@web.png" alt=""></a>
+		
+				<a href="https://www.farmina.com/es/eshop-cat/Alimento-para-perros/71-N&D-Natural.html"><img src="https://www.farmina.com/images/linee/brand-head/71_33_nd-natural-fish.png" alt=""></a>
+			
+				</div>
+			</div>-->
+					
+					<div class="clear"></div>
+			</div>
+		</div>	
+		
+	</form></div>	
+</div>
+
+<script>
+$( document ).ready(function() {
+ var as=document.querySelectorAll(".riga-lines .scroller a img");
+ for (var i=0;i<as.length;i++) as[i].addEventListener('load', function () {DoLineScroller();}); 
+ DoLineScroller();
+});
+ 
+document.querySelector("#rlineshade").addEventListener("mousemove", mmove);
+function DoLineScroller()
+{
+ var HasActive=false;
+ var as=document.querySelectorAll(".riga-lines .scroller a");
+ var totx=0;
+ for (var i=0;i<as.length;i++) 
+ {
+  if (as[i].classList.contains("active")) HasActive=true;
+  totx+=as[i].clientWidth;
+ }
+ var ww=document.querySelector(".riga-lines").clientWidth;
+ if (totx<ww)
+ {
+  document.getElementById("rlineshade").classList.add("noshade");
+  return;
+ }
+ var scrollPos=0;
+ var lw=ww/2-as[0].clientWidth/2;
+ var rw=ww/2-as[as.length-1].clientWidth/2;
+ if (!HasActive) {
+  lw=100;rw=100;
+ }
+ $(".beforespacer").width(lw+"px");
+ $(".afterspacer").width(rw+"px");
+ if (!HasActive) {
+  document.querySelector(".riga-lines").scrollTo((lw+rw+totx-ww)/2,000);
+ }
+ else
+ for (var i=0;i<as.length;i++)
+ {
+  if (as[i].classList.contains("active")) document.querySelector(".riga-lines").scrollTo(scrollPos,000);
+  scrollPos+=as[i].clientWidth/2+(i<(as.length-1)?(as[i+1].clientWidth/2):0);
+ }
+}
+var scrolltgt=0;
+function doscroll()
+{
+ var pos=document.querySelector(".riga-lines").scrollLeft;
+ var dscroll=scrolltgt-pos;
+ if (Math.abs(dscroll)<2) return;
+ if (Math.abs(dscroll)>200) dscroll/=50; 
+ else if (Math.abs(dscroll)>100) dscroll/=20; 
+ else if (Math.abs(dscroll)>20) dscroll/=10; 
+ else dscroll/=2;
+ var pos=pos+dscroll;
+ document.querySelector(".riga-lines").scrollTo(pos,000);
+ if (pos!=scrolltgt) setTimeout(doscroll,50);
+}
+function mmove(e)
+{
+ var w10=window.innerWidth/10;
+ var ww=document.querySelector("#rlineshade").clientWidth;
+ var ww2=document.querySelector(".riga-lines .scroller").clientWidth;
+ var bsp=$(".beforespacer").width();
+ var asp=$(".afterspacer").width();
+ var xsc=(e.x-w10-document.getElementById("rlineshade").getBoundingClientRect().left)/(ww-2*w10);
+ if (xsc<0) xsc=0;
+ if (xsc>1) xsc=1;
+ scrolltgt=-200+bsp+(ww2-ww-bsp-asp+400)*xsc;
+ setTimeout(doscroll,50);
+}
+</script>
+<!-- FOOTER -->
+	
+<div id="footer">
+	<div class="container color">
+			<div class="column">
+		
+			<div class="column-footer info">
+				<img src="https://www.farmina.com/images/logoFarmina-footer.png" alt=""><br><br>
+				<span>España</span>
+				<div style="height:5px;">&nbsp;</div>
+				<a href="mailto:espana@farmina.com">espana@farmina.com</a>
+				<div style="height:5px;">&nbsp;</div>
+					
+				<div class="social">
+					<a href="https://www.facebook.com/FarminaES/" target="_blank"><img src="https://www.farmina.com/images/ico-facebook-w.png" width="24" height="24"></a>										<a href="https://www.instagram.com/farminaes/" target="_blank"><img src="https://www.farmina.com/images/ico-instagram-w.png" width="24" height="24"></a>																				<!---->
+					<!--<a href="https://www.farmina.com/es/blog" title="Farmina+" target="_blank"><img src="https://www.farmina.com/images/ico-blog-w.png" width="24" height="24" /></a>-->
+				</div>
+	
+			</div>
+				
+			<div class="column-footer1">
+				<span>Farmina</span>
+				<ul>
+							
+                				<li><a href="https://www.farmina.com/es/farmina/690-quiénes-somos.html" title="Quiénes somos">Quiénes somos</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/6736-trabaja-con-nosotros.html" title="Trabaja con Nosotros">Trabaja con Nosotros</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/1257-¿por-qué-farmina.html" title="¿Por qué Farmina?">¿Por qué Farmina?</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/732-nuestras-materias-primas.html" title="Nuestras Materias Primas">Nuestras Materias Primas</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/6051-genius-rewards.html" title="Genius Rewards">Genius Rewards</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5982-programa-protectoras-farmina-.html" title="Programa Protectoras Farmina ">Programa Protectoras Farmina </a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5956-club-criadores-farmina-breeder-.html" title="Club Criadores Farmina Breeder ">Club Criadores Farmina Breeder </a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5856-club-peluqueros-farmina.html" title="Club Peluqueros Farmina">Club Peluqueros Farmina</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5250-investigación-científica-de-farmina.html" title="Investigación científica de Farmina">Investigación científica de Farmina</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5360-farmina-vet-club.html" title="Farmina Vet Club">Farmina Vet Club</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/753-tecnología-y-controles-de-calidad.html" title="Tecnología y Controles de Calidad">Tecnología y Controles de Calidad</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/7461-farmina-genius-ai.html" title="Farmina Genius AI">Farmina Genius AI</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/65-garantía-de-satisfacción-farmina.html" title="Garantía de Satisfacción Farmina">Garantía de Satisfacción Farmina</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/2410-aviso-legal.html" title="Aviso Legal">Aviso Legal</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/1278-detrás-de-nuestra-elección-natural.html" title="Detrás de nuestra elección natural">Detrás de nuestra elección natural</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/795-investigación-libre-de-crueldad.html" title="Investigación Libre de Crueldad">Investigación Libre de Crueldad</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5519-tu-historia-farmina.html" title="Tu historia Farmina">Tu historia Farmina</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5414-n&amp;d-spirulina.html" title="N&amp;D Spirulina">N&amp;D Spirulina</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5480-n&amp;d-white-and-brown-.html" title="N&amp;D White and Brown ">N&amp;D White and Brown </a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5447-n&amp;d-tropical-selection-.html" title="N&amp;D Tropical Selection ">N&amp;D Tropical Selection </a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/2877-n&amp;d-quinoa.html" title="N&amp;D Quinoa">N&amp;D Quinoa</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/2876-n&amp;d-pumpkin.html" title="N&amp;D Pumpkin">N&amp;D Pumpkin</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/4471-n&amp;d-ocean.html" title="N&amp;D Ocean">N&amp;D Ocean</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/2874-n&amp;d-ancestral-grain.html" title="N&amp;D Ancestral Grain">N&amp;D Ancestral Grain</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/879-n&amp;d-prime.html" title="N&amp;D Prime">N&amp;D Prime</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/5791-natural-&amp;-delicious-comida-húmeda.html" title="Natural &amp; Delicious comida húmeda">Natural &amp; Delicious comida húmeda</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/3544-la-compañía-para-la-nutrición-de-tus-mascotas.html" title="La compañía para la nutrición de tus mascotas">La compañía para la nutrición de tus mascotas</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html" title="Política de privacidad">Política de privacidad</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/6647-snacks-dentales-y-funcionales.html" title="Snacks Dentales y Funcionales">Snacks Dentales y Funcionales</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/6677-intestinal-ultracare-low-fat.html" title="Intestinal UltraCare low Fat">Intestinal UltraCare low Fat</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/7824-términos-y-condiciones-de-las-promociones.html" title="Términos y Condiciones de las Promociones">Términos y Condiciones de las Promociones</a>
+							
+                				</li><li><a href="https://www.farmina.com/es/farmina/7870-farmina-genius-center-club.html" title="Farmina Genius Center Club">Farmina Genius Center Club</a>
+   
+<!--<li> <a href="https://www.farmina.com/es/blog">Blog Farmina</a> </li>-->										 			
+			</li></ul>
+			</div>
+			<div class="column-footer4">
+				<span>Alimento para perros</span>
+				<ul>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/54-n&amp;d-quinoa-canine.html" title="N&amp;D Quinoa Canine">N&amp;D Quinoa Canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/10-n&amp;d-prime-canine.html" title="N&amp;D Prime Canine">N&amp;D Prime Canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/63-n&amp;d-ocean-canine.html" title="N&amp;D Ocean canine">N&amp;D Ocean canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/50-n&amp;d-pumpkin-canine.html" title="N&amp;D Pumpkin Canine">N&amp;D Pumpkin Canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/11-n&amp;d-ancestral-grain-canine.html" title="N&amp;D Ancestral Grain Canine">N&amp;D Ancestral Grain Canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/86-n&amp;d-spirulina-canine.html" title="N&amp;D Spirulina canine">N&amp;D Spirulina canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/88-n&amp;d-white.html" title="N&amp;D White">N&amp;D White</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/89-n&amp;d-brown.html" title="N&amp;D Brown">N&amp;D Brown</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/90-n&amp;d-tropical-selection-canine.html" title="N&amp;D Tropical Selection canine">N&amp;D Tropical Selection canine</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html" title="Farmina Vet Life">Farmina Vet Life</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/12-cibau.html" title="Cibau">Cibau</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/13-ecopet-natural.html" title="Ecopet Natural">Ecopet Natural</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/20-fun-dog.html" title="Fun Dog">Fun Dog</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-perros/18-farmina-team-breeder.html" title="Farmina Team Breeder">Farmina Team Breeder</a></li>
+				<li>&nbsp;</li>	
+				<span>Dónde comprar Farmina</span>
+				<ul>				
+<li><a href="https://www.farmina.com/es/storelocator.html" title="Encuentra tu tienda Farmina">Encuentra tu tienda Farmina</a></li><li><a href="https://www.farmina.com/es/distributor.html" title="Distribuidores">Distribuidores</a>  							
+				</li></ul>
+				
+			</ul></div>
+			<div class="column-footer5">
+				<span>Alimento para gatos</span>
+				<ul>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/56-n&amp;d-quinoa-feline.html" title="N&amp;D Quinoa Feline">N&amp;D Quinoa Feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/15-n&amp;d-prime-feline.html" title="N&amp;D Prime Feline">N&amp;D Prime Feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/64-n&amp;d-ocean-feline.html" title="N&amp;D Ocean feline">N&amp;D Ocean feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/55-n&amp;d-pumpkin-feline.html" title="N&amp;D Pumpkin Feline">N&amp;D Pumpkin Feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/16-n&amp;d-ancestral-grain-feline.html" title="N&amp;D Ancestral Grain Feline">N&amp;D Ancestral Grain Feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/87-n&amp;d-spirulina-feline.html" title="N&amp;D Spirulina feline">N&amp;D Spirulina feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/91-n&amp;d-tropical-selection-feline.html" title="N&amp;D Tropical Selection feline">N&amp;D Tropical Selection feline</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/71-n&amp;d-natural.html" title="N&amp;D Natural">N&amp;D Natural</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html" title="Farmina Vet Life">Farmina Vet Life</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/17-matisse.html" title="Matisse">Matisse</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/21-fun-cat.html" title="Fun Cat">Fun Cat</a></li>
+						<li><a href="https://www.farmina.com/es/alimento-para-gatos/19-farmina-team-breeder.html" title="Farmina Team Breeder">Farmina Team Breeder</a></li>
+						<li>&nbsp;</li>					
+				<span>Cuidado de la mascota</span>
+				<ul>				
+										
+<li><a href="https://www.farmina.com/es/pet-care/nc-contact/solicitud-de-soporte-nutricional.html" target="_blank" title="Solicitud de Soporte Nutricional">Solicitud de Soporte Nutricional</a></li><li><a href="https://www.farmina.com/es/consumer/2-¿quieres-tu-plan-nutricional.html" title="¿Quieres tu plan nutricional?">¿Quieres tu plan nutricional?</a></li>		<li><a href="https://www.farmina.com/es/e-farmina/4757-programa-de-cuidado-para-mascotas.html">Programa de Cuidado de Mascotas</a></li>
+	
+			
+				
+		<li><a href="https://www.farmina.com/es/pet-care/farminagenius/app.html">Genius App</a></li>
+	
+				
+		<li><a href="https://www.farmina.com/es/pet-care/geniustips.html">Consejos del Genius</a></li>
+						
+		<li><a href="https://www.farmina.com/es/genius-center.html" title="Genius Center">Genius Center</a></li>
+	
+					
+				
+				</ul>
+					
+			</ul></div>
+			<div class="column-footer1">
+				<ul>
+				
+						<li class="nav-morespace"> <a href="https://www.farmina.com/es/contact.html">Contacto</a></li>
+						<li> <a href="https://www.farmina.com/es/farmina/faq/faq.html">Preguntas frecuentes</a> </li>
+						
+						
+						<li> <a href="https://www.farmina.com/es/farmina/3091-términos-y-condiciones.html">términos y condiciones</a> </li>
+						<li> <a href="https://www.farmina.com/es/farmina/2388-política-de-cookies.html">política de cookies</a> </li>
+	
+						<li> <a href="#" onclick="personalizza();">gestión de cookies</a> </li>
+	
+						<li> <a href="https://www.farmina.com/es/farmina/6078-política-de-privacidad.html">Política de privacidad</a> </li>
+
+		<li>&nbsp;</li>	
+					
+				</ul>
+			</div>			
+		</div>
+			
+		<div class="column">
+         <!--   Web design UpComAgency-->
+		 
+		<div style="text-align:center;"><a style="">FARMINA PET FOODS<br>CIF IT01239651217</a> - <a href="mailto:espana@farmina.com" style="">espana@farmina.com</a> 935 116 308</div>
+			<br><br><br><br>
+		</div>
+	</div>
+</div>
+<!-- chiude div container-sposta per gestione sposta tutto il contenuto sotto banner - aperto in header dopo body    -->
+</div>
+
+
+	<script type="text/javascript" id="" charset="">if(google_tag_manager["rm"]["63277997"](22)===!0||google_tag_manager["rm"]["63277997"](23)==="false"&&google_tag_manager["rm"]["63277997"](24)){var cookie=google_tag_manager["rm"]["63277997"](25);if(cookie===void 0||google_tag_manager["rm"]["63277997"](26)==="false")window.setTimeout(function(){window.dataLayer.push({event:"bannerOld"})},500),google_tag_manager["rm"]["63277997"](27)(google_tag_manager["rm"]["63277997"](28),"marketing:true|statistics:true|consent:true|bOld:true",1E3,"","farmina.com")};</script><iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div style="visibility: visible;"><div></div><div><div style="display: flex; flex-direction: column; z-index: 999999; bottom: 88px; position: fixed; right: 16px; direction: ltr; align-items: end; gap: 8px;"><div style="display: flex; gap: 8px;"><iframe title="Cerrar mensaje" style="color-scheme: light; height: 40px; width: 40px; border: 0px; background-color: transparent; box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px; border-radius: 100%; vertical-align: unset; opacity: 1; align-self: end;"></iframe><iframe title="Mensaje de la compañía" style="color-scheme: light; width: 264.094px; height: 44px; max-width: 280px; overflow: auto; border: 0px; background-color: transparent; box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px; border-radius: 20px; display: inline-block; vertical-align: unset; transform-origin: right bottom; opacity: 0; transform: scale(0);"></iframe></div></div><style>
+        @-webkit-keyframes ww-19908fa9-e26b-4cb4-aada-245e6524f1cc-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-19908fa9-e26b-4cb4-aada-245e6524f1cc-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-19908fa9-e26b-4cb4-aada-245e6524f1cc-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-19908fa9-e26b-4cb4-aada-245e6524f1cc-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style><iframe title="Botón para iniciar la ventana de mensajería" id="launcher" style="color-scheme: light; height: 64px; width: 64px; position: fixed; bottom: 16px; right: 16px; border: 0px; margin-top: 0px; opacity: 0; box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px; animation: 0.2s ease-in 0.5s 1 normal forwards running ww-19908fa9-e26b-4cb4-aada-245e6524f1cc-widgetOnLoad; z-index: 999999; border-radius: 20px;"></iframe></div></div></body></html>
