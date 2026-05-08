@@ -215,15 +215,45 @@ def build_farmina_catalog() -> list:
 
 # ─── Matching Shopify ↔ farmina.com ──────────────────────────────────────────
 
+# Traducción de términos en español a inglés para mejorar el matching
+_ES_TO_EN = {
+    "pescado": "fish",
+    "cerdo":   "pork",
+    "pato":    "duck",
+    "huevo":   "egg",
+    "pollo":   "chicken",
+    "trucha":  "fish",   # trout → fish (no existe en catálogo como trucha)
+    "cachorro": "puppy",
+    "adulto":  "adult",
+    "nat":     "natural",
+    "caja":    "humedo",  # caja = formato húmedo en cajita
+    "tarro":   "humedo",
+}
+
 _STOPWORDS = {"the", "and", "for", "con", "para", "del", "los", "las",
-              "una", "que", "más", "wet", "dry", "food", "alimento"}
+              "una", "que", "más", "food", "alimento", "treat", "diet",
+              "natural", "nat"}
 _IGNORE_TOKENS = {"vetlife", "vet", "life", "farmina", "canine", "feline",
-                  "300g", "85g", "150g", "2kg", "3kg", "web", "sito", "amp"}
+                  "300g", "85g", "150g", "2kg", "3kg", "web", "sito", "amp",
+                  "adult", "adulto"}
+
+
+def _translate(text: str) -> str:
+    """Sustituye términos en español por su equivalente en inglés."""
+    words = re.split(r'(\s+)', text.lower())
+    return "".join(_ES_TO_EN.get(w, w) for w in words)
+
+
+def _is_wet(title: str) -> bool:
+    """Detecta si el título corresponde a comida húmeda (latas/cajas)."""
+    t = title.upper()
+    return any(x in t for x in ["CAJA", "TARRO", "X300", "X85", "HÚMEDO", "HUMEDO"])
 
 
 def _tokenize(text: str) -> set:
+    text = _translate(text)
     text = re.sub(r'@\w+', '', text)
-    text = re.sub(r'\d+[\.,]?\d*\s*(kg|g|gr|l|ml|tab)\b', '', text,
+    text = re.sub(r'\d+[x×]?\d*\s*(kg|g|gr|l|ml|tab|und)\b', '', text,
                   flags=re.IGNORECASE)
     text = re.sub(r'\(.*?\)', '', text)
     tokens = set(re.split(r'[\s\-_&+•\.]+', text.lower()))
@@ -249,6 +279,8 @@ def _score(shopify_title: str, entry: dict) -> float:
 
 def find_best_match(shopify_title: str, catalog: list) -> dict | None:
     title_lower = shopify_title.lower()
+
+    # Filtrar por especie
     if any(w in title_lower for w in ["canine", "perro", "dog"]):
         candidates = [e for e in catalog if e["species"] == "dog"]
     elif any(w in title_lower for w in ["feline", "gato", "cat"]):
@@ -259,13 +291,25 @@ def find_best_match(shopify_title: str, catalog: list) -> dict | None:
     if not candidates:
         return None
 
+    # Separar húmedos de secos
+    wet = _is_wet(shopify_title)
+    wet_entries  = [e for e in candidates if "húmedo" in e["name"].lower()
+                    or "300g" in e["slug"] or "85g" in e["slug"]]
+    dry_entries  = [e for e in candidates if e not in wet_entries]
+
+    if wet and wet_entries:
+        candidates = wet_entries
+    elif not wet and dry_entries:
+        candidates = dry_entries
+    # si no hay suficientes en la categoría preferida, usa todos
+
     scored = sorted(
         [(e, _score(shopify_title, e)) for e in candidates],
         key=lambda x: x[1], reverse=True,
     )
     best_entry, best_score = scored[0]
 
-    log.info(f"  Top 3 matches para '{shopify_title}':")
+    log.info(f"  [{'húmedo' if wet else 'seco'}] Top 3 matches:")
     for e, s in scored[:3]:
         log.info(f"    [{s:.2f}] {e['name']} ({e['slug']})")
 
