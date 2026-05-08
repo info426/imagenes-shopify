@@ -262,7 +262,7 @@ _STOPWORDS = {
 _IGNORE_TOKENS = {
     "alpha", "spirit", "alphaspirit", "aspiritpetfood",
     "500g", "2kg", "9kg", "14kg", "35g", "85g", "300g", "150g",
-    "gr", "kg", "g", "x", "pack",
+    "gr", "kg", "g", "x", "pack", "copia",
 }
 
 
@@ -302,6 +302,18 @@ def _is_snack(title: str) -> bool:
     return any(x in t for x in ["snack", "barrita", "bocadito", "hueso",
                                  "premio", "treat", "lonchita", "ristra",
                                  "nervio", "oreja"])
+
+
+def _extract_weight_g(text: str) -> int | None:
+    """Extract per-unit weight in grams from a title or handle (e.g. 16X35GR → 35, 50gr → 50)."""
+    t = text.lower()
+    m = re.search(r'\d+\s*[x×]\s*(\d+)\s*gr', t)
+    if m:
+        return int(m.group(1))
+    m = re.search(r'(\d+)\s*gr', t)
+    if m:
+        return int(m.group(1))
+    return None
 
 
 def _score(shopify_title: str, entry: dict) -> float:
@@ -374,6 +386,21 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
 
     if not scored:
         return None, 0.0
+
+    # Desempate por peso: si hay empate en el top, preferir entry cuyo handle contenga
+    # el mismo peso que el título de Shopify (ej. 16X35GR → 35gr en el handle)
+    shopify_weight = _extract_weight_g(shopify_title)
+    if shopify_weight is not None and len(scored) > 1:
+        top_score = scored[0][1]
+        scored_wb = []
+        for e, s in scored:
+            bonus = 0.0
+            if abs(s - top_score) < 0.02:
+                handle_weight = _extract_weight_g(e["handle"])
+                if handle_weight is not None and handle_weight == shopify_weight:
+                    bonus = 0.005
+            scored_wb.append((e, s + bonus))
+        scored = sorted(scored_wb, key=lambda x: x[1], reverse=True)
 
     best_entry, best_score = scored[0]
     best_score = min(best_score, 1.0)  # el bonus no debe superar el máximo teórico
