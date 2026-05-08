@@ -151,35 +151,40 @@ def _strip_accents(text: str) -> str:
     )
 
 _ES_TO_EN = {
-    "pollo":      "chicken",
-    "pescado":    "fish",
-    "cordero":    "lamb",
-    "pato":       "duck",
-    "ternera":    "beef",
-    "conejo":     "rabbit",
-    "salmon":     "salmon",
-    "trucha":     "trout",
-    "atun":       "tuna",
-    "dorada":     "seabream",
-    "jamon":      "ham",
-    "pavo":       "turkey",
-    "cerdo":      "pork",
-    "vaca":       "beef",
-    "buey":       "beef",
-    "ciervo":     "venison",
-    "jabali":     "boar",
-    "semihúmedo": "semiwet",
-    "semihumedo": "semiwet",
-    "humedo":     "wet",
-    "caja":       "wet",
-    "tarro":      "wet",
-    "seco":       "dry",
-    "cachorro":   "puppy",
-    "cachorros":  "puppies",
-    "adulto":     "adult",
-    "adultos":    "adult",
-    "snack":      "snack",
-    "snacks":     "snack",
+    "pollo":        "chicken",
+    "pescado":      "fish",
+    "cordero":      "lamb",
+    "pato":         "duck",
+    "ternera":      "beef",
+    "conejo":       "rabbit",
+    "salmon":       "salmon",
+    "trucha":       "trout",
+    "atun":         "tuna",
+    "dorada":       "seabream",
+    "jamon":        "ham",
+    "pavo":         "turkey",
+    "cerdo":        "pork",
+    "vaca":         "beef",
+    "buey":         "beef",
+    "ciervo":       "venison",
+    "venado":       "venison",
+    "jabali":       "boar",
+    "semihúmedo":   "semiwet",
+    "semihumedo":   "semiwet",
+    "humedo":       "wet",
+    "caja":         "wet",
+    "tarro":        "wet",
+    "seco":         "dry",
+    "cachorro":     "puppy",
+    "cachorros":    "puppies",
+    "adulto":       "adult",
+    "adultos":      "adult",
+    "snack":        "snack",
+    "snacks":       "snack",
+    "multiproteico":"multiprotein",
+    "sardina":      "sardine",
+    "boqueron":     "anchovy",
+    "iberico":      "iberian",
 }
 
 _STOPWORDS = {
@@ -227,7 +232,8 @@ def _is_semiwet(title: str) -> bool:
 def _is_snack(title: str) -> bool:
     t = title.lower()
     return any(x in t for x in ["snack", "barrita", "bocadito", "hueso",
-                                 "premio", "treat", "lonchita"])
+                                 "premio", "treat", "lonchita", "ristra",
+                                 "nervio", "oreja"])
 
 
 def _score(shopify_title: str, entry: dict) -> float:
@@ -241,25 +247,30 @@ def _score(shopify_title: str, entry: dict) -> float:
     return len(inter) / len(union) if union else 0.0
 
 
+_DOG_KW = {"perros", "perro", "canine", "canino", "dog"}
+_CAT_KW = {"gatos", "gato", "feline", "felino", "kitten", "cat"}
+
+
+def _catalog_has_species(entry: dict, keywords: set) -> bool:
+    t = entry["title"].lower()
+    h = entry["handle"].lower()
+    return any(kw in t or kw in h for kw in keywords)
+
+
 def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, float]:
     title_lower = shopify_title.lower()
 
-    # Filtrar por especie
-    if any(w in title_lower for w in ["perro", "canino", "dog"]):
-        species_tag = "dog"
-    elif any(w in title_lower for w in ["gato", "felino", "cat"]):
-        species_tag = "cat"
+    # Filtrar por especie (keywords en español e inglés)
+    if any(w in title_lower for w in ["canine", "canino", "perro"]):
+        candidates = [e for e in catalog if _catalog_has_species(e, _DOG_KW)
+                      or not _catalog_has_species(e, _CAT_KW)]
+    elif any(w in title_lower for w in ["feline", "felino", "gato"]):
+        candidates = [e for e in catalog if _catalog_has_species(e, _CAT_KW)
+                      or not _catalog_has_species(e, _DOG_KW)]
     else:
-        species_tag = None
+        candidates = catalog
 
-    if species_tag:
-        candidates = [e for e in catalog
-                      if species_tag in e["handle"].lower()
-                      or species_tag in e["title"].lower()
-                      or any(species_tag in t.lower() for t in e.get("tags", []))]
-        if not candidates:
-            candidates = catalog
-    else:
+    if not candidates:
         candidates = catalog
 
     # Separar por tipo de producto
