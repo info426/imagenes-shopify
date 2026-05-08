@@ -1,90 +1,23 @@
-2026-05-08 10:00:05,084 [INFO] ============================================================
-2026-05-08 10:00:05,085 [INFO] PROCESADOR FARMINA VET LIFE — SHOPIFY
-2026-05-08 10:00:05,085 [INFO] ============================================================
-2026-05-08 10:00:05,085 [INFO] Construyendo catálogo con Playwright...
-2026-05-08 10:00:05,778 [INFO]   Cargando categoría DOG: https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html
-2026-05-08 10:00:13,213 [INFO]   DOG: 43 productos encontrados
-2026-05-08 10:00:13,213 [INFO]     [1095] dental treat Gastrointestinlal mini → 1095_06_vetlife-dental-treat-gastrointestinal-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1096] dental treat Gastrointestinlal medium & maxi → 1096_14_vetlife-dental-treat-gastrointestinal-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1097] dental treat Hypoallergenic Fish & Potato mini → 1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1098] dental treat Hypoallergenic Fish & Potato medium & maxi → 1098_36_vetlife-dental-treat-hypoallergenic-fish-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1099] dental treat Hypoallergenic Pork & Potato mini → 1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1100] dental treat Hypoallergenic Pork & Potato medium & maxi → 1100_56_vetlife-dental-treat-hypoallergenic-pork-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1101] dental treat Struvite mini → 1101_57_vetlife-dental-treat-struvite-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1102] dental treat Struvite medium & maxi → 1102_25_vetlife-dental-treat-struvite-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1109] dental treat Obesity mini → 1109_47_vetlife-dental-treat-obesity-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1108] dental treat Obesity medium & maxi → 1108_35_vetlife-dental-treat-obesity-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1103] dental treat Renal mini → 1103_21_vetlife-dental-treat-renal-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1104] dental treat Renal medium & maxi → 1104_15_vetlife-dental-treat-renal-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [1105] dental treat Joint mini → 1105_55_vetlife-dental-treat-joint-mini.png
-2026-05-08 10:00:13,213 [INFO]     [1106] dental treat Joint medium & maxi → 1106_02_vetlife-dental-treat-joint-medium-maxi.png
-2026-05-08 10:00:13,213 [INFO]     [373] Convalescence Húmedo → 373_42_vetlife-convalescence-300g.png
-2026-05-08 10:00:13,213 [INFO]     [374] Gastrointestinal Húmedo → 374_57_vetlife-gastrointestinal-300g.png
-2026-05-08 10:00:13,213 [INFO]     [375] Struvite Húmedo → 375_27_vetlife-struvite-300g.png
-2026-05-08 10:00:13,213 [INFO]     [1036] Struvite Management canine → 1036_43_vetlife-struvite-management-300g.png
-2026-05-08 10:00:13,213 [INFO]     [376] Renal Húmedo → 376_42_vetlife-renal-300g.png
-2026-05-08 10:00:13,213 [INFO]     [1008] UltraHypo húmedo → 1008_58_vetlife-ultrahypo-300g.png
-2026-05-08 10:00:13,213 [INFO]     [378] Hypoallergenic Duck & Potato Húmedo → 378_26_vetlife-hypoallergenic-duck-&-potato-300g.png
-2026-05-08 10:00:13,213 [INFO]     [379] Hypoallergenic Fish & Potato Húmedo → 379_44_vetlife-hypoallergenic-fish-&-potato-300g.png
-2026-05-08 10:00:13,213 [INFO]     [1007] Hypoallergenic Pork & Potato Húmedo → 1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png
-2026-05-08 10:00:13,213 [INFO]     [970] Hepatic húmedo → 970_21_vetlife-hepatic-300g.png
-2026-05-08 10:00:13,213 [INFO]     [969] Obesity húmedo → 969_39_vetlife-obesity-300g.png
-2026-05-08 10:00:13,214 [INFO]     [968] Diabetic húmedo → 968_55_vetlife-diabetic-300g.png
-2026-05-08 10:00:13,214 [INFO]     [630] Gastrointestinal Puppy canine → 630_45_vet-life-canine-gastrointestinal-puppy@web.png
-2026-05-08 10:00:13,214 [INFO]     [63] Joint → 63_21_63_53_vet-life-canine-joint@web.png
-2026-05-08 10:00:13,214 [INFO]     [65] Gastrointestinal → 65_42_65_26_vet-life-canine-gastrointestinal@web.png
-2026-05-08 10:00:13,214 [INFO]     [1126] Intestinal UltraCare low Fat canine → 1126_25_intestinal-ultracare-low-fat-canine.png
-2026-05-08 10:00:13,214 [INFO]     [78] Hepatic → 78_00_78_25_vet-life-canine-hepatic@web copia.png
-2026-05-08 10:00:13,214 [INFO]     [66] Struvite → 66_47_66_26_vet-life-canine-struvite@web.png
-2026-05-08 10:00:13,214 [INFO]     [67] Struvite Management → 67_12_67_44_vet-life-canine-struvite-management@web.png
-2026-05-08 10:00:13,214 [INFO]     [68] Oxalate → 68_14_68_28_vet-life-canine-oxalate@web.png
-2026-05-08 10:00:13,214 [INFO]     [69] Renal → 69_28_69_44_vet-life-canine-renal@web.png
-2026-05-08 10:00:13,214 [INFO]     [77] Cardiac → 77_13_77_49_vet-life-canine-cardiac@web.png
-2026-05-08 10:00:13,214 [INFO]     [70] Obesity → 70_33_70_12_vet-life-canine-obesity@web.png
-2026-05-08 10:00:13,214 [INFO]     [71] Diabetic → 71_38_71_04_vet-life-canine-diabetic@web.png
-2026-05-08 10:00:13,214 [INFO]     [966] Obesity Fish → 966_34_vet-life-canine-obesity-fish@web.png
-2026-05-08 10:00:13,214 [INFO]     [72] Ultrahypo → 72_21_vet-life-canine-ulytrahypo@web.png
-2026-05-08 10:00:13,214 [INFO]     [73] Hypoallergenic Fish & Potato → 73_46_73_59_vet-life-canine-hypoallergenic-fish-potato@web.png
-2026-05-08 10:00:13,214 [INFO]     [74] Hypoallergenic Egg & Rice → 74_43_74_42_vet-life-canine-hypoallergenic-egg-rice@web.png
-2026-05-08 10:00:13,214 [INFO]     [965] Hypoallergenic Pork & Potato → 965_03_vet-life-canine-hypo-pork@web.png
-2026-05-08 10:00:13,214 [INFO]   Cargando categoría CAT: https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html
-2026-05-08 10:00:18,868 [INFO]   CAT: 19 productos encontrados
-2026-05-08 10:00:18,868 [INFO]     [1200] Renal • Healthy Creamy Treat with Chicken & Tuna → 1200_11_VetLife Renal Bag Cream front-right@sito.png
-2026-05-08 10:00:18,868 [INFO]     [383] Convalescence Húmedo → 383_18_vetlife-convalescence-85g.png
-2026-05-08 10:00:18,868 [INFO]     [382] Gastrointestinal Húmedo → 382_33_vet-life-gastrointestinal-85g.png
-2026-05-08 10:00:18,869 [INFO]     [380] Struvite Húmedo → 380_51_vetlife-struvite-85g.png
-2026-05-08 10:00:18,869 [INFO]     [1035] Struvite Management feline → 1035_28_vetlife-struvite-management-85g.png
-2026-05-08 10:00:18,869 [INFO]     [381] Renal Húmedo → 381_04_vetlife-renal-85g.png
-2026-05-08 10:00:18,869 [INFO]     [973] Hepatic húmedo → 973_22_vetlife-hepatic-85g.png
-2026-05-08 10:00:18,869 [INFO]     [972] Obesity húmedo → 972_42_vetlife-obesity-85g.png
-2026-05-08 10:00:18,869 [INFO]     [971] Diabetic húmedo → 971_00_vetlife-diabetic-85g.png
-2026-05-08 10:00:18,869 [INFO]     [1009] Hypoallergenic Pork & Potato Húmedo → 1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png
-2026-05-08 10:00:18,869 [INFO]     [79] Gastrointestinal → 79_15_vet-life-feline-gastrointestinal@web.png
-2026-05-08 10:00:18,869 [INFO]     [90] Hepatic → 90_41_90_27_vet-life-feline-hepatic@web.png
-2026-05-08 10:00:18,869 [INFO]     [80] Struvite → 80_04_80_13_vet-life-feline-struvite@web.png
-2026-05-08 10:00:18,869 [INFO]     [81] Struvite Management → 81_13_81_13_vet-life-feline-struvite-management@web.png
-2026-05-08 10:00:18,869 [INFO]     [82] Renal → 82_55_82_57_vet-life-feline-renal@web.png
-2026-05-08 10:00:18,869 [INFO]     [83] Obesity → 83_48_83_42_vet-life-feline-obesity@web.png
-2026-05-08 10:00:18,869 [INFO]     [84] Diabetic → 84_13_84_59_vet-life-feline-diabetic@web.png
-2026-05-08 10:00:18,869 [INFO]     [85] UltraHypo → 85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png
-2026-05-08 10:00:18,869 [INFO]     [967] Hypoallergenic Pork & Potato feline → 967_54_hypo-pork-cat@web.png
-2026-05-08 10:00:18,930 [INFO] Catálogo guardado: 62 productos → resultados/farmina_catalog.json
-2026-05-08 10:00:19,274 [INFO] Modo prueba — producto ID: 15509747827075
-2026-05-08 10:00:19,561 [INFO] 
+2026-05-08 10:08:43,261 [INFO] ============================================================
+2026-05-08 10:08:43,261 [INFO] PROCESADOR FARMINA VET LIFE — SHOPIFY
+2026-05-08 10:08:43,261 [INFO] ============================================================
+2026-05-08 10:08:43,261 [INFO] Catálogo cargado desde caché: 62 productos
+2026-05-08 10:08:43,566 [INFO] Modo prueba — producto ID: 15509747827075
+2026-05-08 10:08:43,819 [INFO] 
 [1/1] FARMINA VET LIFE DOG CARDIAC  (ID: 15509747827075)
-2026-05-08 10:00:19,563 [INFO]   Top 3 matches para 'FARMINA VET LIFE DOG CARDIAC':
-2026-05-08 10:00:19,563 [INFO]     [0.50] Cardiac (cardiac)
-2026-05-08 10:00:19,563 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:00:19,563 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
-2026-05-08 10:00:19,563 [INFO]   ✓ Match: 'Cardiac' → 77_13_77_49_vet-life-canine-cardiac@web.png
-2026-05-08 10:00:20,830 [INFO]   Procesada: (2000, 2000) → vetlife_15509747827075_oficial.jpg
-2026-05-08 10:00:21,817 [INFO]   Imagen antigua 1/1 borrada
-2026-05-08 10:00:24,544 [INFO]   ✓ Imagen oficial subida a Shopify
-2026-05-08 10:00:25,545 [INFO] 
+2026-05-08 10:08:43,821 [INFO]   Top 3 matches para 'FARMINA VET LIFE DOG CARDIAC':
+2026-05-08 10:08:43,821 [INFO]     [0.50] Cardiac (cardiac)
+2026-05-08 10:08:43,821 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:08:43,821 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:08:43,821 [INFO]   ✓ Match: 'Cardiac' → 77_13_77_49_vet-life-canine-cardiac@web.png
+2026-05-08 10:08:45,077 [INFO]   Procesada: (2000, 2000) → vetlife_15509747827075_oficial.jpg
+2026-05-08 10:08:45,924 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 10:08:48,521 [INFO]   ✓ Imagen oficial subida a Shopify
+2026-05-08 10:08:49,521 [INFO] 
 ============================================================
-2026-05-08 10:00:25,545 [INFO] RESUMEN FINAL
-2026-05-08 10:00:25,545 [INFO] ============================================================
-2026-05-08 10:00:25,545 [INFO]   Productos procesados  : 1
-2026-05-08 10:00:25,545 [INFO]   Imágenes actualizadas : 1
-2026-05-08 10:00:25,545 [INFO]   Sin match farmina.com : 0
-2026-05-08 10:00:25,545 [INFO]   Errores               : 0
+2026-05-08 10:08:49,522 [INFO] RESUMEN FINAL
+2026-05-08 10:08:49,522 [INFO] ============================================================
+2026-05-08 10:08:49,522 [INFO]   Productos procesados  : 1
+2026-05-08 10:08:49,522 [INFO]   Imágenes actualizadas : 1
+2026-05-08 10:08:49,522 [INFO]   Sin match farmina.com : 0
+2026-05-08 10:08:49,522 [INFO]   Errores               : 0
