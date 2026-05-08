@@ -1,23 +1,104 @@
 =================================================================
-DIAGNÓSTICO FASE 2 — CATEGORÍAS VET LIFE EN FARMINA.COM
+DIAGNÓSTICO FASE 3 — BÚSQUEDA DE API AJAX
 =================================================================
 
-─────────────────────────────────────────────────────────────────
-Categoría: https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html
+--- Categoría perros Vet Life ---
   GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html → 200 (65755 bytes)
-  No se encontraron productos en página 1
-  HTML guardado en /tmp/cat_page1.html
-Total productos en categoría: 0
+  Título: Farmina Pet Foods - Alimento para perros - Farmina Vet Life
 
-─────────────────────────────────────────────────────────────────
-Categoría: https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html
-  GET https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html → 200 (65179 bytes)
-  No se encontraron productos en página 1
-  HTML guardado en /tmp/cat_page1.html
-Total productos en categoría: 0
+  Selectores de producto encontrados en HTML:
+    ✗ class=product: 0
+    ✗ data-id-product: 0
+    ✗ js-product-miniature: 0
+    ✗ li[product class]: 0
+    ✗ thumbnail-container: 0
+    ✗ product-description: 0
 
+  Texto body (primeros 800 chars):
+     Su privacidad es importante para nosotros Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Al cerrar el Banner de Cookies, haciendo clic en el símbolo "X" o negando el consentimiento, usted continuará navegando sin cookies de perfil o de marketing. Al consentir el uso de cookies de perfil y de marketing, podremos ofrecerle mensajes publicitarios que correspondan a sus necesidades. Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Necesario Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas d
 
-Total productos encontrados: 0
-Mapa guardado en /tmp/farmina_vet_life_products.json
+  Formularios: 1
+
+  Primeros 2000 chars del HTML:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmina Pet Foods - Alimento para perros - Farmina Vet Life</title>
+<meta name="Description" CONTENT=" Farmina Vet Life">
+<meta property="og:image" content="https://www.farmina.com/images/logo-Farmina.png"/>
+
+<!-- Dichiarazione del dataLayer -->
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+
+<!-- Farmina wGTM / GA4 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://sgtm.farmina.com/ofpuirnf.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WM8GDF2');</script> 
+<!-- End Google Tag Manager -->
+
+<!-- Verifica Dominio -->
+<meta name="facebook-domain-verification" content="54v8s9myb0nyatxye7k42ss5oecv48" />
+<meta name="google-site-verification" content="xE9trVcUumKrL_PdrHBaQFpYsbR6xwuY8lzT6D9VoBI" />
+<!-- Canonical -->
+<link rel="canonical" href="https://www.farmina.com/es/eshop-dog/alimento-para-perros/8-farmina-vet-life.html">
+
+<!-- Multilingua -->
+<link rel="alternate" href="https://www.farmina.com/br" hreflang="pt-br" />
+<link rel="alternate" href="https://www.farmina.com/de" hreflang="de-de" />
+<link rel="alternate" href="https://www.farmina.com/es" hreflang="es-es" />
+<link rel="alternate" href="https://www.farmina.com/in" hreflang="en-in" />
+<link rel="alternate" href="https://www.farmina.com/hu" hreflang="hu-hu" />
+<link rel="alternate" href="https://www.farmina.com/at" hreflang="de-at" />
+<link rel="alternate" href="https://www.farmina.com/pl" hreflang="pl-pl" />
+<link rel="alternate" href="https:/
+
+--- Intentos AJAX PrestaShop ---
+  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html?ajax=1 → 200 (65755 bytes)
+  Content-Type: text/html; charset=UTF-8
+  Primeros 300 chars: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="w
+  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html?id_categ → 200 (65755 bytes)
+  Content-Type: text/html; charset=UTF-8
+  Primeros 300 chars: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="w
+  GET https://www.farmina.com/index.php?controller=category&id_category=8&ajax=1 → 200 (69308 bytes)
+  Content-Type: text/html; charset=UTF-8
+  Primeros 300 chars: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="w
+  GET https://www.farmina.com/es/index.php?controller=category&id_category=8&ajax=1 → 200 (69166 bytes)
+  Content-Type: text/html; charset=UTF-8
+  Primeros 300 chars: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="w
+  GET https://www.farmina.com/api/products?category=8 → 404 (9 bytes)
+  GET https://www.farmina.com/es/busqueda?s=vet+life+cardiac → 404 (9 bytes)
+  GET https://www.farmina.com/es/buscar?query=vet+life+cardiac → 404 (9 bytes)
 
 Diagnóstico completado.
