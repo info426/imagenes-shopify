@@ -1,4 +1,4 @@
-name: Re-procesar 13 productos Alpha Spirit corregidos
+name: Re-procesar productos Alpha Spirit corregidos (v3)
 
 on:
   workflow_dispatch:
@@ -26,16 +26,18 @@ jobs:
           python -m playwright install chromium
           python -m playwright install-deps chromium
 
-      - name: Re-procesar 13 productos con imagen corregida
+      - name: Re-procesar 23 productos con imagen corregida
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           PRODUCT_IDS: >-
-            15509625274755,15509625405827,15509625635203,15509625700739,
-            15509625733507,15509627273603,15509627339139,15509627371907,
-            15509627437443,15509627109763,15509627175299,15509627044227,
-            15509627076995
+            15509627306371,15509627208067,15509627175299,15509627142531,
+            15509627109763,15509627076995,15509626945923,15509626814851,
+            15509626519939,15509626487171,15509625078147,15509625012611,
+            15509624881539,15509624816003,15509624684931,
+            15509627634051,15509627404675,15509627044227,15509627011459,
+            15509626356099,15509625471363,15509624324483,15509624258947
         run: |
           mkdir -p resultados
           python3 process_alpha_spirit.py 2>&1 | tee resultados/reprocess_corregidos_alpha_spirit.txt
@@ -46,5 +48,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
-          git diff --cached --quiet || git commit -m "chore: log re-proceso 13 productos Alpha Spirit corregidos"
+          git diff --cached --quiet || git commit -m "chore: log re-proceso 23 productos Alpha Spirit corregidos (v3)"
           git push
