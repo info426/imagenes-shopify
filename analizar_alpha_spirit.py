@@ -26,7 +26,8 @@ API_VERSION   = "2024-10"
 CATALOG_FILE  = Path("resultados/alpha_spirit_catalog.json")
 
 STORE_BASE    = "https://www.aspiritpetfood.store"
-COLLECTION_SLUG = "alpha-spirit"
+COLLECTION_SLUG = "all"          # colección completa; filtramos por vendor
+VENDOR_FILTER = "alpha spirit"   # vendor en aspiritpetfood.store (case-insensitive)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -111,6 +112,9 @@ def build_catalog() -> list:
 
             print(f"  Página {page_num}: {len(products)} productos")
             for p in products:
+                # filtrar solo productos de Alpha Spirit
+                if VENDOR_FILTER not in p.get("vendor", "").lower():
+                    continue
                 images = p.get("images", [])
                 catalog.append({
                     "id":           p["id"],
@@ -313,11 +317,21 @@ def find_best_match(shopify_title: str, catalog: list) -> tuple[dict | None, flo
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--rebuild-catalog", action="store_true",
+                        help="Forzar reconstrucción del catálogo aspiritpetfood.store")
+    args = parser.parse_args()
+
     print("=" * 70)
     print("ANÁLISIS ALPHA SPIRIT — SHOPIFY vs aspiritpetfood.store")
     print("=" * 70)
 
     Path("resultados").mkdir(exist_ok=True)
+
+    if args.rebuild_catalog and CATALOG_FILE.exists():
+        CATALOG_FILE.unlink()
+        print("Catálogo eliminado, reconstruyendo desde /collections/all...")
 
     token    = get_token()
     products = get_shopify_products(token)
