@@ -323,6 +323,12 @@ def download_image(url: str) -> Image.Image:
     resp.raise_for_status()
     return Image.open(BytesIO(resp.content))
 
+# Productos ya procesados manualmente — se excluyen del bulk
+SKIP_IDS = {
+    15509747827075,  # FARMINA VET LIFE DOG CARDIAC (prueba inicial)
+    15509749924227,  # FARMINA VET LIFE NATURAL DIET CAT HEPATIC 12X85GR (ya trabajado)
+}
+
 # ─── Flujo principal ──────────────────────────────────────────────────────────
 
 def main():
@@ -370,6 +376,11 @@ def main():
         pid   = product["id"]
         title = product["title"]
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+
+        if pid in SKIP_IDS:
+            log.info(f"  EXCLUIDO — ya procesado manualmente")
+            stats["total"] -= 1
+            continue
 
         try:
             match = find_best_match(title, catalog)
