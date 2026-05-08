@@ -10,16 +10,9 @@ Construyendo catálogo con Playwright...
   Página 1: 196 productos
   Cargando página 2: https://www.aspiritpetfood.store/collections/all/products.json?limit=250&page=2
   Página 2 vacía — fin del catálogo
-Catálogo guardado: 196 productos → resultados/alpha_spirit_catalog.json
+Catálogo guardado: 184 productos → resultados/alpha_spirit_catalog.json
 
-Catálogo aspiritpetfood.store: 196 productos totales
-Vendors encontrados:
-  133  ALPHA SPIRIT
-   18  IBERIAN
-   16  Alpha Spirit Store
-   12  REAL FOOD
-   12  ORYGO
-    5  PRIMAL
+Catálogo Alpha Spirit (aspiritpetfood.store): 184 productos
 
 
 #    SHOPIFY TITLE                                      MATCH OFICIAL                            SCORE
@@ -68,7 +61,7 @@ Vendors encontrados:
 42   ALPHA SPIRIT CANINE PRIMAL 70% WANDERLUST          Primal 70% Wanderlust Alimento para per  ✓ 0.33
 43   ALPHA SPIRIT CANINE PRIMAL 70% WILD WATERS         Primal 70% Wild Waters Alimento para pe  ✓ 0.40
 44   ALPHA SPIRIT CANINE PUPPY SEMIHUMEDO               Alimento Semi-Húmedo Puppies             ✓ 0.50
-45   ALPHA SPIRIT CANINE REALFOOD ESTOFADO ATUN 9X280G  Estofado de Cerdo para Perros            ~ 0.11
+45   ALPHA SPIRIT CANINE REALFOOD ESTOFADO ATUN 9X280G  Estofado de Pescado para Perros          ✓ 0.25
 46   ALPHA SPIRIT CANINE REALFOOD ESTOFADO CERDO 9X280  Estofado de Cerdo para Perros            ✓ 0.25
 47   ALPHA SPIRIT CANINE REALFOOD ESTOFADO OREJA CERDO  Estofado de Oreja de Cerdo para Perros   ✓ 0.33
 48   ALPHA SPIRIT CANINE REALFOOD ESTOFADO PATO 9X280G  Estofado de Pato para Perros             ✓ 0.25
@@ -127,8 +120,8 @@ RESUMEN
 ======================================================================
   Productos en Shopify         : 97
   Con match (score ≥ 0.10)     : 97
-    - Score alto  (≥ 0.25)     : 58
-    - Score bajo  (0.10-0.24)  : 39
+    - Score alto  (≥ 0.25)     : 59
+    - Score bajo  (0.10-0.24)  : 38
   Sin match                    : 0
 
 Matches con score bajo (revisar manualmente):
@@ -164,8 +157,6 @@ Matches con score bajo (revisar manualmente):
          → Paté de Pavo con Pera para Perros (alimento-humedo-de-pavo-con-pera)
   [0.20] ALPHA SPIRIT CANINE POLLO CON PIÑA LATA 6X400GR
          → Paté de Pollo con Piña para Perros (alimento-humedo-de-pollo)
-  [0.11] ALPHA SPIRIT CANINE REALFOOD ESTOFADO ATUN 9X280G
-         → Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
   [0.20] ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR
          → Ristra de barritas de Hígado para perros (ristra-de-barritas-de-higado-16-unds)
   [0.18] ALPHA SPIRIT CANINE RISTRA JAMON CAJA 12X160GR
