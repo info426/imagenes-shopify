@@ -1,104 +1,151 @@
 =================================================================
-DIAGNÓSTICO FASE 3 — BÚSQUEDA DE API AJAX
+DIAGNÓSTICO FASE 4 — URL CANÓNICA + COOKIES + PRODUCTO INDIVIDUAL
 =================================================================
 
---- Categoría perros Vet Life ---
-  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html → 200 (65755 bytes)
-  Título: Farmina Pet Foods - Alimento para perros - Farmina Vet Life
+--- https://www.farmina.com/es/eshop-dog/alimento-para-perros/8-farmina-vet-life.html ---
+  GET https://www.farmina.com/es/eshop-dog/alimento-para-perros/8-farmina-vet-life.html → 200 (65755 bytes)
+  [8-farmina-vet-life.html] Links de producto encontrados: 140
+    [] → https://www.farmina.com/es/farmina/6078-política-de-privacidad.html
+    [Política de cookies] → https://www.farmina.com/es/farmina/2388-política-de-cookies.html
+    [Política de privacidad] → https://www.farmina.com/es/farmina/6078-política-de-privacidad.html
+    [Quiénes somos] → https://www.farmina.com/es/farmina/690-quiénes-somos.html
+    [Trabaja con Nosotros] → https://www.farmina.com/es/farmina/6736-trabaja-con-nosotros.html
+    [Genius Rewards] → https://www.farmina.com/es/farmina/6051-genius-rewards.html
+    [Programa Protectoras Farmina] → https://www.farmina.com/es/farmina/5982-programa-protectoras-farmina-.html
+    [Club Criadores Farmina Breeder] → https://www.farmina.com/es/farmina/5956-club-criadores-farmina-breeder-.html
+    [Club Peluqueros Farmina] → https://www.farmina.com/es/farmina/5856-club-peluqueros-farmina.html
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Investigación científica de Farmina] → https://www.farmina.com/es/farmina/5250-investigación-científica-de-farmina.html
+    [Nuestras Materias Primas] → https://www.farmina.com/es/farmina/732-nuestras-materias-primas.html
+    [Tecnología y Controles de Calidad] → https://www.farmina.com/es/farmina/753-tecnología-y-controles-de-calidad.html
+    [Farmina Genius AI] → https://www.farmina.com/es/farmina/7461-farmina-genius-ai.html
+    [Garantía de Satisfacción Farmina] → https://www.farmina.com/es/farmina/65-garantía-de-satisfacción-farmina.html
+    [Aviso Legal] → https://www.farmina.com/es/farmina/2410-aviso-legal.html
+    [Detrás de nuestra elección natural] → https://www.farmina.com/es/farmina/1278-detrás-de-nuestra-elección-natural.html
+    [Investigación Libre de Crueldad] → https://www.farmina.com/es/farmina/795-investigación-libre-de-crueldad.html
+    [Tu historia Farmina] → https://www.farmina.com/es/farmina/5519-tu-historia-farmina.html
+    [Natural & Delicious comida húmeda] → https://www.farmina.com/es/farmina/5791-natural-&-delicious-comida-húmeda.html
 
-  Selectores de producto encontrados en HTML:
-    ✗ class=product: 0
-    ✗ data-id-product: 0
-    ✗ js-product-miniature: 0
-    ✗ li[product class]: 0
-    ✗ thumbnail-container: 0
-    ✗ product-description: 0
+  HTML central (chars 32782-33782):
+                	<li><a href="https://www.farmina.com/es/farmina/6647-snacks-dentales-y-funcionales.html">Snacks Dentales y Funcionales</a>
+ 			
+				</ul>	
+			</li>					
+	
+		
+		<li><a href="https://www.farmina.com/es/storelocator.html">Localización del Punto de Venta</a></li>
+				
+	</ul>
+</div> 
+<!-- FINE MENU PET FOOD --> 
+<!-- FINE MENU PET CARE --> 
 
-  Texto body (primeros 800 chars):
-     Su privacidad es importante para nosotros Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Al cerrar el Banner de Cookies, haciendo clic en el símbolo "X" o negando el consentimiento, usted continuará navegando sin cookies de perfil o de marketing. Al consentir el uso de cookies de perfil y de marketing, podremos ofrecerle mensajes publicitarios que correspondan a sus necesidades. Utilizamos cookies que son necesarias para el procesamiento de análisis estadísticos y técnicos para el uso del sitio web. Necesario Las cookies necesarias ayudan a hacer que el sitio web sea utilizable al permitir funciones básicas como la navegación por las páginas y el acceso a áreas protegidas d
+<!-- FINE MENU DESKTOP -->
+ 
+<!-- INIZIO MENU MOBILE -->
+	<div id="mtoggler"></div> 
+	<div id="mmobile">
+		<ul>
+	
+	
+			<li class="sub  active"><a>Alimento para mascotas</a>
+				<ul>
+					<li><a href="https://www.farmina.com/es/pet-food.html">Alimentos para su mascota</a></li>
+	
+					<li class="active"><a href="https://www.farmina.com/es/eshop-d-Alimento-para-perros.html">Alimento para perros</a></li>
+					<li><a href="https://www.farmina.com/es/eshop-c-Alimento-para-gatos.html">Alimento para gatos</a></li>		
 
-  Formularios: 1
+			<li class="sub"><a>Líneas de producto</a>
+				<ul>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/28
 
-  Primeros 2000 chars del HTML:
+--- https://www.farmina.com/es/eshop-cat/alimento-para-gatos/14-farmina-vet-life.html ---
+  GET https://www.farmina.com/es/eshop-cat/alimento-para-gatos/14-farmina-vet-life.html → 200 (65179 bytes)
+  [14-farmina-vet-life.html] Links de producto encontrados: 138
+    [] → https://www.farmina.com/es/farmina/6078-política-de-privacidad.html
+    [Política de cookies] → https://www.farmina.com/es/farmina/2388-política-de-cookies.html
+    [Política de privacidad] → https://www.farmina.com/es/farmina/6078-política-de-privacidad.html
+    [Quiénes somos] → https://www.farmina.com/es/farmina/690-quiénes-somos.html
+    [Trabaja con Nosotros] → https://www.farmina.com/es/farmina/6736-trabaja-con-nosotros.html
+    [Genius Rewards] → https://www.farmina.com/es/farmina/6051-genius-rewards.html
+    [Programa Protectoras Farmina] → https://www.farmina.com/es/farmina/5982-programa-protectoras-farmina-.html
+    [Club Criadores Farmina Breeder] → https://www.farmina.com/es/farmina/5956-club-criadores-farmina-breeder-.html
+    [Club Peluqueros Farmina] → https://www.farmina.com/es/farmina/5856-club-peluqueros-farmina.html
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Investigación científica de Farmina] → https://www.farmina.com/es/farmina/5250-investigación-científica-de-farmina.html
+    [Nuestras Materias Primas] → https://www.farmina.com/es/farmina/732-nuestras-materias-primas.html
+    [Tecnología y Controles de Calidad] → https://www.farmina.com/es/farmina/753-tecnología-y-controles-de-calidad.html
+    [Farmina Genius AI] → https://www.farmina.com/es/farmina/7461-farmina-genius-ai.html
+    [Garantía de Satisfacción Farmina] → https://www.farmina.com/es/farmina/65-garantía-de-satisfacción-farmina.html
+    [Aviso Legal] → https://www.farmina.com/es/farmina/2410-aviso-legal.html
+    [Detrás de nuestra elección natural] → https://www.farmina.com/es/farmina/1278-detrás-de-nuestra-elección-natural.html
+    [Investigación Libre de Crueldad] → https://www.farmina.com/es/farmina/795-investigación-libre-de-crueldad.html
+    [Tu historia Farmina] → https://www.farmina.com/es/farmina/5519-tu-historia-farmina.html
+    [Natural & Delicious comida húmeda] → https://www.farmina.com/es/farmina/5791-natural-&-delicious-comida-húmeda.html
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farmina Pet Foods - Alimento para perros - Farmina Vet Life</title>
-<meta name="Description" CONTENT=" Farmina Vet Life">
-<meta property="og:image" content="https://www.farmina.com/images/logo-Farmina.png"/>
+  HTML central (chars 32494-33494):
+/farmina/2874-n&d-ancestral-grain.html">N&D Ancestral Grain</a>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/4471-n&d-ocean.html">N&D Ocean</a>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/879-n&d-prime.html">N&D Prime</a>
+							
+                	<li><a href="https://www.farmina.com/es/farmina/6647-snacks-dentales-y-funcionales.html">Snacks Dentales y Funcionales</a>
+ 			
+				</ul>	
+			</li>					
+	
+		
+		<li><a href="https://www.farmina.com/es/storelocator.html">Localización del Punto de Venta</a></li>
+				
+	</ul>
+</div> 
+<!-- FINE MENU PET FOOD --> 
+<!-- FINE MENU PET CARE --> 
 
-<!-- Dichiarazione del dataLayer -->
-<script>
-window.dataLayer = window.dataLayer || [];
-</script>
+<!-- FINE MENU DESKTOP -->
+ 
+<!-- INIZIO MENU MOBILE -->
+	<div id="mtoggler"></div> 
+	<div id="mmobile">
+		<ul>
+	
+	
+			<li class="sub  active"><a>Alimento para mascotas</a>
+				<ul>
+					<li><a href="https://www.farmina.com/es/pet-food.html">Alimentos para su mascota</a></li>
+	
+					<li><a href="https://www.farmina.com/es/eshop-d-Alimento-para-perros.html
 
-<!-- Farmina wGTM / GA4 -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://sgtm.farmina.com/ofpuirnf.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WM8GDF2');</script> 
-<!-- End Google Tag Manager -->
+--- https://www.farmina.com/es/eshop-dog/ ---
+  GET https://www.farmina.com/es/eshop-dog/ → 404 (9 bytes)
 
-<!-- Verifica Dominio -->
-<meta name="facebook-domain-verification" content="54v8s9myb0nyatxye7k42ss5oecv48" />
-<meta name="google-site-verification" content="xE9trVcUumKrL_PdrHBaQFpYsbR6xwuY8lzT6D9VoBI" />
-<!-- Canonical -->
-<link rel="canonical" href="https://www.farmina.com/es/eshop-dog/alimento-para-perros/8-farmina-vet-life.html">
+--- https://www.farmina.com/es/eshop-cat/ ---
+  GET https://www.farmina.com/es/eshop-cat/ → 404 (9 bytes)
 
-<!-- Multilingua -->
-<link rel="alternate" href="https://www.farmina.com/br" hreflang="pt-br" />
-<link rel="alternate" href="https://www.farmina.com/de" hreflang="de-de" />
-<link rel="alternate" href="https://www.farmina.com/es" hreflang="es-es" />
-<link rel="alternate" href="https://www.farmina.com/in" hreflang="en-in" />
-<link rel="alternate" href="https://www.farmina.com/hu" hreflang="hu-hu" />
-<link rel="alternate" href="https://www.farmina.com/at" hreflang="de-at" />
-<link rel="alternate" href="https://www.farmina.com/pl" hreflang="pl-pl" />
-<link rel="alternate" href="https:/
+--- PRUEBA IMAGEN PRIMER PRODUCTO ---
+  Producto: 
+  GET https://www.farmina.com/es/farmina/6078-política-de-privacidad.html → 200 (126033 bytes)
+  Título: Farmina Pet Foods - Política de privacidad
+  Imágenes encontradas: 9
+    24px: https://www.farmina.com/images/ico-instagram-w.png
+    24px: https://www.farmina.com/images/ico-facebook-w.png
+    0px: https://www.farmina.com/images/logoFarmina-footer.png
+    0px: https://www.farmina.com/images/goto.png
+    0px: https://www.farmina.com/images/goto.png
 
---- Intentos AJAX PrestaShop ---
-  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html?ajax=1 → 200 (65755 bytes)
-  Content-Type: text/html; charset=UTF-8
-  Primeros 300 chars: 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="w
-  GET https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html?id_categ → 200 (65755 bytes)
-  Content-Type: text/html; charset=UTF-8
-  Primeros 300 chars: 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="w
-  GET https://www.farmina.com/index.php?controller=category&id_category=8&ajax=1 → 200 (69308 bytes)
-  Content-Type: text/html; charset=UTF-8
-  Primeros 300 chars: 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="w
-  GET https://www.farmina.com/es/index.php?controller=category&id_category=8&ajax=1 → 200 (69166 bytes)
-  Content-Type: text/html; charset=UTF-8
-  Primeros 300 chars: 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="w
-  GET https://www.farmina.com/api/products?category=8 → 404 (9 bytes)
-  GET https://www.farmina.com/es/busqueda?s=vet+life+cardiac → 404 (9 bytes)
-  GET https://www.farmina.com/es/buscar?query=vet+life+cardiac → 404 (9 bytes)
+--- PRUEBA URLs DIRECTAS DE PRODUCTOS ---
+  GET https://www.farmina.com/es/eshop-dog/alimento-para-perros/vet-life-natural-canine-cardiac. → 404 (56694 bytes)
+  GET https://www.farmina.com/es/eshop-dog/alimento-para-perros/vet-life-dog-cardiac.html → 404 (56683 bytes)
+  GET https://www.farmina.com/es/vet-life-dog-cardiac.html → 404 (56652 bytes)
+  GET https://www.farmina.com/es/alimento-para-perros/vet-life-dog-cardiac.html → 404 (56673 bytes)
+
+--- IMAGEN SHOPIFY COMO REFERENCIA ---
+  URL actual Shopify: https://cdn.shopify.com/s/files/1/0917/7114/2531/files/8010276030344.jpg?v=1765986459
+  Nombre de archivo: 8010276030344.jpg
+  GET https://www.farmina.com/img/p/8010276030344.jpg → 404 (9 bytes)
+  GET https://www.farmina.com/images/8010276030344.jpg → 404 (9 bytes)
+  GET https://www.farmina.com/media/8010276030344.jpg → 404 (9 bytes)
 
 Diagnóstico completado.
