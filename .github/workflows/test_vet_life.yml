@@ -1,0 +1,43 @@
+name: Test Vet Life (producto de prueba)
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'ID del producto a procesar'
+        required: true
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Procesar producto de prueba
+        env:
+          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
+          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
+          CLIENT_SECRET: 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
+        run: |
+          mkdir -p resultados
+          python3 process_farmina_vet_life.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_vet_life_${{ github.event.inputs.product_id }}.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: log prueba vet life ${{ github.event.inputs.product_id }}"
+          git push
