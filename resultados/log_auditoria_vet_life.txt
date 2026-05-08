@@ -1,0 +1,527 @@
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+Catálogo cargado: 62 productos
+Obteniendo token Shopify...
+Obteniendo productos Vet Life...
+Total: 58 productos
+
+
+[1/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR  (ID: 15509745303939)
+  Imagen actual: vetlife_15509745303939_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[2/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR  (ID: 15509745402243)
+  Imagen actual: vetlife_15509745402243_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[3/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR  (ID: 15509745467779)
+  Imagen actual: vetlife_15509745467779_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[4/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR  (ID: 15509745500547)
+  Imagen actual: vetlife_15509745500547_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[5/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR  (ID: 15509745598851)
+  Imagen actual: vetlife_15509745598851_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[6/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR  (ID: 15509745664387)
+  Imagen actual: vetlife_15509745664387_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[7/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR  (ID: 15509745762691)
+  Imagen actual: vetlife_15509745762691_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[8/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR  (ID: 15509745828227)
+  Imagen actual: vetlife_15509745828227_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[9/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR  (ID: 15509745860995)
+  Imagen actual: vetlife_15509745860995_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[10/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR  (ID: 15509745992067)
+  Imagen actual: vetlife_15509745992067_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[11/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR  (ID: 15509746057603)
+  Imagen actual: vetlife_15509746057603_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[12/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR  (ID: 15509746090371)
+  Imagen actual: vetlife_15509746090371_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[13/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR  (ID: 15509746221443)
+  Imagen actual: vetlife_15509746221443_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[14/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR  (ID: 15509746254211)
+  Imagen actual: vetlife_15509746254211_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[15/58] FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR  (ID: 15509746286979)
+  Imagen actual: vetlife_15509746286979_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[16/58] FARMINA VET LIFE CAT DIABETIC  (ID: 15469437518211)
+  Imagen actual: vetlife_15469437518211_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[17/58] FARMINA VET LIFE CAT GASTROINTESTINAL  (ID: 15509746549123)
+  Imagen actual: vetlife_15509746549123_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[18/58] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR  (ID: 15509746614659)
+  Imagen actual: vetlife_15509746614659_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[19/58] FARMINA VET LIFE CAT HEPATIC 2KG  (ID: 15509746778499)
+  Imagen actual: vetlife_15509746778499_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[20/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG  (ID: 15509746942339)
+  Imagen actual: vetlife_15509746942339_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[21/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR  (ID: 15509747040643)
+  Imagen actual: vetlife_15509747040643_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[22/58] FARMINA VET LIFE CAT OBESITY  (ID: 15509747073411)
+  Imagen actual: vetlife_15509747073411_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[23/58] FARMINA VET LIFE CAT RENAL  (ID: 15509747270019)
+  Imagen actual: vetlife_15509747270019_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[24/58] FARMINA VET LIFE CAT RENAL CAJA 12X85GR  (ID: 15509747401091)
+  Imagen actual: vetlife_15509747401091_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[25/58] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR  (ID: 15509747532163)
+  Imagen actual: vetlife_15509747532163_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[26/58] FARMINA VET LIFE CAT STRUVITE MANAGEMENT  (ID: 15469438140803)
+  Imagen actual: vetlife_15469438140803_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[27/58] FARMINA VET LIFE CAT ULTRAHYPO  (ID: 15469432209795)
+  Imagen actual: vetlife_15469432209795_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[28/58] FARMINA VET LIFE DOG CARDIAC  (ID: 15509747827075)
+  EXCLUIDO
+
+[29/58] FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR  (ID: 15509747859843)
+  Imagen actual: vetlife_15509747859843_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[30/58] FARMINA VET LIFE DOG DIABETIC  (ID: 15509747892611)
+  Imagen actual: vetlife_15509747892611_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[31/58] FARMINA VET LIFE DOG GASTROINTESTINAL  (ID: 15469437747587)
+  Imagen actual: vetlife_15469437747587_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[32/58] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR  (ID: 15509748121987)
+  Imagen actual: vetlife_15509748121987_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[33/58] FARMINA VET LIFE DOG HEPATIC  (ID: 15538798199171)
+  Imagen actual: vetlife_15538798199171_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[34/58] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR  (ID: 15509748253059)
+  Imagen actual: 8606014103953.png
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[35/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT  (ID: 15469438861699)
+  Imagen actual: vetlife_15469438861699_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[36/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR  (ID: 15509748416899)
+  Imagen actual: vetlife_15509748416899_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[37/58] FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO  (ID: 15469439353219)
+  Imagen actual: vetlife_15469439353219_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[38/58] FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR  (ID: 15509748547971)
+  Imagen actual: vetlife_15509748547971_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[39/58] FARMINA VET LIFE DOG HYPOALLERGENIC PESCADO  (ID: 15469437583747)
+  Imagen actual: vetlife_15469437583747_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[40/58] FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT  (ID: 15469439615363)
+  Imagen actual: vetlife_15469439615363_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[41/58] FARMINA VET LIFE DOG JOINT  (ID: 15567198290307)
+  Imagen actual: vetlife_15567198290307_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[42/58] FARMINA VET LIFE DOG OBESITY  (ID: 15469433553283)
+  Imagen actual: vetlife_15469433553283_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[43/58] FARMINA VET LIFE DOG OXALATE  (ID: 15469439877507)
+  Imagen actual: vetlife_15469439877507_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[44/58] FARMINA VET LIFE DOG PUPPY GASTROINTESTINAL  (ID: 15538798264707)
+  Imagen actual: vetlife_15538798264707_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[45/58] FARMINA VET LIFE DOG RENAL  (ID: 15469438402947)
+  Imagen actual: vetlife_15469438402947_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[46/58] FARMINA VET LIFE DOG RENAL CAJA 6X300GR  (ID: 15509749236099)/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:94: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/home/runner/work/imagenes-shopify/imagenes-shopify/auditar_vet_life.py:103: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+
+  Imagen actual: vetlife_15509749236099_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[47/58] FARMINA VET LIFE DOG STRUVITE  (ID: 15538798297475)
+  Imagen actual: vetlife_15538798297475_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[48/58] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR  (ID: 15509749432707)
+  Imagen actual: vetlife_15509749432707_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[49/58] FARMINA VET LIFE DOG STRUVITE MANAGEMENT  (ID: 15538761597315)
+  Imagen actual: vetlife_15538761597315_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[50/58] FARMINA VET LIFE DOG ULTRAHYPO  (ID: 15469438468483)
+  Imagen actual: vetlife_15469438468483_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[51/58] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR  (ID: 15509749694851)
+  Imagen actual: vetlife_15509749694851_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[52/58] FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT  (ID: 15469441155459)
+  Imagen actual: vetlife_15469441155459_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[53/58] FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR  (ID: 15509749858691)
+  Imagen actual: vetlife_15509749858691_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[54/58] FARMINA VET LIFE NATURAL DIET CAT HEPATIC 12X85GR  (ID: 15509749924227)
+  EXCLUIDO
+
+[55/58] FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR  (ID: 15509749956995)
+  Imagen actual: vetlife_15509749956995_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[56/58] FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR  (ID: 15509750055299)
+  Imagen actual: vetlife_15509750055299_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[57/58] FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR  (ID: 15509750120835)
+  Imagen actual: vetlife_15509750120835_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+[58/58] FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR  (ID: 15509750219139)
+  Imagen actual: vetlife_15509750219139_oficial.jpg
+  Imagen correcta: NO ENCONTRADA
+  → SIN_MATCH_WEB
+
+======================================================================
+RESUMEN
+======================================================================
+  OK (imagen correcta)   : 0
+  DISCREPANCIA           : 0
+  SIN MATCH WEB          : 56
+  EXCLUIDOS              : 2
+  TOTAL                  : 58
+
+Reporte guardado: resultados/auditoria_vet_life.txt
+CSV guardado: resultados/auditoria_vet_life.csv
