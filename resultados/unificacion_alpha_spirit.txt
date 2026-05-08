@@ -1,0 +1,49 @@
+=================================================================
+UNIFICACIÓN ALPHA SPIRIT — SHOPIFY
+  *** MODO DRY RUN — sin cambios en Shopify ***
+=================================================================
+
+Obteniendo productos Alpha Spirit...
+Total: 97 productos
+
+─────────────────────────────────────────────────────────────────
+1. ELIMINAR — Huesos de jamón
+
+  Motivo: Producto eliminado del catálogo
+  Eliminar: [15509625307523] ALPHA SPIRIT CANINE HUESO JAMON ESTANDAR CAJA 15X220GR
+  Eliminar: [15509625340291] ALPHA SPIRIT CANINE HUESO JAMON GRANDE AL VACIO 12UDS
+  Eliminar: [15509625438595] ALPHA SPIRIT CANINE MEDIO HUESO JAMON 20x220GR
+  Eliminar: [15509629632899] HUESOS DE JAMÓN VACÍO NATURAL QUALITY 15UD
+  [DRY RUN] Sin cambios.
+
+─────────────────────────────────────────────────────────────────
+2. ELIMINAR — Snack de Pollo duplicado
+
+  Motivo: Duplicado de CANINE SNACK POLLO CAJA 16X35GR
+  Eliminar: [15509628813699] ALPHA SPIRIT SNACK DE POLLO 16X35GR
+  [DRY RUN] Sin cambios.
+
+─────────────────────────────────────────────────────────────────
+3. UNIFICAR — Nervio de Toro
+
+  Base: [15509627666819] ALPHA SPIRIT NERVIO DE TORO 4X 12UD M
+    → nuevo título: «ALPHA SPIRIT NERVIO DE TORO»
+    → opción base:  Formato = «4×12 ud. (M)»
+  Merge: [15509627765123] ALPHA SPIRIT NERVIO DE TORO 4X 8UD L  →  variante «4×8 ud. (L)»
+  Merge: [15509627830659] ALPHA SPIRIT NERVIO DE TORO 5U XL  →  variante «5 ud. (XL)»
+  Merge: [15509627863427] ALPHA SPIRIT NERVIO DE TORO INDIVIDUAL L 16UD  →  variante «Individual 16 ud. (L)»
+  [DRY RUN] Sin cambios.
+
+─────────────────────────────────────────────────────────────────
+4. UNIFICAR — Oreja de Cerdo
+
+  Base: [15509628223875] ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL M 25UD
+    → nuevo título: «ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL 25UD»
+    → opción base:  Tamaño = «M»
+  Merge: [15509627896195] ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL L 25UD  →  variante «L»
+  Merge: [15509628682627] ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL XL 25UD  →  variante «XL»
+  [DRY RUN] Sin cambios.
+
+=================================================================
+COMPLETADO (DRY RUN)
+=================================================================
