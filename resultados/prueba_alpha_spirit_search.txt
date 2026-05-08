@@ -1,0 +1,26 @@
+2026-05-08 21:38:52,173 [INFO] ============================================================
+2026-05-08 21:38:52,173 [INFO] PROCESADOR ALPHA SPIRIT — SHOPIFY
+2026-05-08 21:38:52,173 [INFO] ============================================================
+2026-05-08 21:38:52,174 [INFO] Catálogo cargado desde caché: 184 productos
+2026-05-08 21:38:52,558 [INFO] Buscando producto por título: 'ONLY ONE CANINE ADULT 7 DAYS'
+2026-05-08 21:38:53,045 [INFO] Encontrado(s): ['ALPHA THE ONLY ONE CANINE ADULT 7 DAYS']
+2026-05-08 21:38:53,046 [INFO] 
+[1/1] ALPHA THE ONLY ONE CANINE ADULT 7 DAYS  (ID: 15509629141379)
+2026-05-08 21:38:53,052 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:38:53,052 [INFO]     [0.58] Alimento The Only One 7 Days Formula (alimento-the-only-one-7-days-formula)
+2026-05-08 21:38:53,052 [INFO]     [0.57] Pack The Only One 7-Days Formula 12kg (pack-the-only-one-7-days-formula)
+2026-05-08 21:38:53,052 [INFO]     [0.57] Pack The Only One 7-Days Formula 3kg (pack-the-only-one-7-days-formula-3kg)
+2026-05-08 21:38:53,052 [INFO]   ✓ Match: 'Alimento The Only One 7 Days Formula' (score=0.58)
+2026-05-08 21:38:55,329 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:38:58,841 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509629141379_1_oficial.jpg
+2026-05-08 21:39:02,061 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509629141379_2_oficial.jpg
+2026-05-08 21:39:05,320 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509629141379_3_oficial.jpg
+2026-05-08 21:39:08,762 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509629141379_4_oficial.jpg
+2026-05-08 21:39:10,262 [INFO] 
+============================================================
+2026-05-08 21:39:10,262 [INFO] RESUMEN FINAL
+2026-05-08 21:39:10,262 [INFO] ============================================================
+2026-05-08 21:39:10,262 [INFO]   Productos procesados  : 1
+2026-05-08 21:39:10,262 [INFO]   Imágenes actualizadas : 1
+2026-05-08 21:39:10,262 [INFO]   Sin match             : 0
+2026-05-08 21:39:10,262 [INFO]   Errores               : 0
