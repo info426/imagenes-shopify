@@ -1,0 +1,106 @@
+2026-05-08 22:08:21,442 [INFO] ============================================================
+2026-05-08 22:08:21,442 [INFO] PROCESADOR ALPHA SPIRIT — SHOPIFY
+2026-05-08 22:08:21,442 [INFO] ============================================================
+2026-05-08 22:08:21,443 [INFO] Catálogo cargado desde caché: 184 productos
+2026-05-08 22:08:21,841 [INFO] Modo re-proceso — filtrando 9 IDs específicos
+2026-05-08 22:08:21,841 [INFO] Obteniendo 9 productos específicos...
+2026-05-08 22:08:24,090 [INFO] Total a procesar: 9 productos
+
+2026-05-08 22:08:24,090 [INFO] 
+[1/9] ALPHA SPIRIT CANINE PAVO SNACKS 24X50GRS  (ID: 15509625700739)
+2026-05-08 22:08:24,093 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:24,093 [INFO]     [0.42] Snack de Pavo para perros (snack-de-pavo-50gr)
+2026-05-08 22:08:24,093 [INFO]     [0.41] Snack de Pavo para perros (snack-de-pavo-35gr)
+2026-05-08 22:08:24,093 [INFO]     [0.34] Natural Snack para Perros - Pavo (natural-snack-pavo-80gr)
+2026-05-08 22:08:24,093 [INFO]   ✓ Match: 'Snack de Pavo para perros' (score=0.42)
+2026-05-08 22:08:24,591 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:25,475 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:27,979 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625700739_1_oficial.jpg
+2026-05-08 22:08:29,479 [INFO] 
+[2/9] ALPHA SPIRIT CANINE PESCADO SNACKS 24X50GRS  (ID: 15509625733507)
+2026-05-08 22:08:29,482 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:29,482 [INFO]     [0.42] Snack de Pescado para perros (snack-de-pescado-50gr)
+2026-05-08 22:08:29,482 [INFO]     [0.41] Snack de Pescado para perros (snack-de-pescado-35gr)
+2026-05-08 22:08:29,482 [INFO]     [0.34] Natural Snack para Perros - Atún (natural-snack-atun-80gr)
+2026-05-08 22:08:29,482 [INFO]   ✓ Match: 'Snack de Pescado para perros' (score=0.42)
+2026-05-08 22:08:30,139 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:30,942 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:33,801 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625733507_1_oficial.jpg
+2026-05-08 22:08:35,302 [INFO] 
+[3/9] ALPHA SPIRIT CANINE HIGADO SNACKS 24X50GRS  (ID: 15509625274755)
+2026-05-08 22:08:35,304 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:35,304 [INFO]     [0.52] Snack de Hígado para perros (snack-de-higado-50gr)
+2026-05-08 22:08:35,304 [INFO]     [0.51] Snack de Hígado para perros (snack-de-higado-35gr)
+2026-05-08 22:08:35,304 [INFO]     [0.18] Natural Snack para Perros - Salmón (natural-snack-salmon-80gr)
+2026-05-08 22:08:35,305 [INFO]   ✓ Match: 'Snack de Hígado para perros' (score=0.52)
+2026-05-08 22:08:35,483 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:36,293 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:39,073 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625274755_1_oficial.jpg
+2026-05-08 22:08:40,574 [INFO] 
+[4/9] ALPHA SPIRIT CANINE JAMON SNACKS 24X50GRS  (ID: 15509625405827)
+2026-05-08 22:08:40,577 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:40,577 [INFO]     [0.42] Snack de Jamón para perros (snack-de-jamon-50gr)
+2026-05-08 22:08:40,577 [INFO]     [0.41] Snack de Jamón para perros (snack-de-jamon-35gr)
+2026-05-08 22:08:40,577 [INFO]     [0.34] Natural Snack para Perros - Jamón (natural-snack-jamon-80gr)
+2026-05-08 22:08:40,577 [INFO]   ✓ Match: 'Snack de Jamón para perros' (score=0.42)
+2026-05-08 22:08:41,019 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:41,773 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:44,370 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625405827_1_oficial.jpg
+2026-05-08 22:08:45,870 [INFO] 
+[5/9] ALPHA SPIRIT CANINE PATO SNACKS 24X50GRS  (ID: 15509625635203)
+2026-05-08 22:08:45,873 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:45,873 [INFO]     [0.42] Snack de Pato para perros (snack-de-pato-50gr)
+2026-05-08 22:08:45,873 [INFO]     [0.41] Snack de Pato para perros (snack-de-pato-35gr)
+2026-05-08 22:08:45,873 [INFO]     [0.34] Natural Snack para Perros - Pato (natural-snack-pato-80gr)
+2026-05-08 22:08:45,873 [INFO]   ✓ Match: 'Snack de Pato para perros' (score=0.42)
+2026-05-08 22:08:46,234 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:47,032 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:49,723 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625635203_1_oficial.jpg
+2026-05-08 22:08:51,224 [INFO] 
+[6/9] ALPHA SPIRIT FELINE PATO SNACKS 24X50GRS  (ID: 15509627273603)
+2026-05-08 22:08:51,226 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:51,226 [INFO]     [0.35] Snack de Pato para gatos (snack-de-pato-50gr-1)
+2026-05-08 22:08:51,226 [INFO]     [0.34] Snack de Pato para gatos (snack-de-pato-35gr-1)
+2026-05-08 22:08:51,226 [INFO]     [0.30] Natural Snack para Gatos  - Pato (natural-snack-cats-pato-80gr)
+2026-05-08 22:08:51,226 [INFO]   ✓ Match: 'Snack de Pato para gatos' (score=0.35)
+2026-05-08 22:08:51,635 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:52,442 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:08:55,113 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627273603_1_oficial.jpg
+2026-05-08 22:08:56,614 [INFO] 
+[7/9] ALPHA SPIRIT FELINE PAVO SNACKS 24X50GRS  (ID: 15509627339139)
+2026-05-08 22:08:56,615 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:08:56,616 [INFO]     [0.35] Snack de Pavo para gatos (copia-de-snack-de-pavo-50gr-gato)
+2026-05-08 22:08:56,616 [INFO]     [0.34] Snack de Pavo para gatos (snack-de-pavo-35gr-1)
+2026-05-08 22:08:56,616 [INFO]     [0.30] Natural Snack para Gatos - Pavo (natural-snack-cats-pavo-80gr)
+2026-05-08 22:08:56,616 [INFO]   ✓ Match: 'Snack de Pavo para gatos' (score=0.35)
+2026-05-08 22:08:57,052 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:08:57,869 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:09:00,446 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627339139_1_oficial.jpg
+2026-05-08 22:09:01,946 [INFO] 
+[8/9] ALPHA SPIRIT FELINE PESCADO SNACKS 24X50GRS  (ID: 15509627371907)
+2026-05-08 22:09:01,948 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:09:01,948 [INFO]     [0.35] Snack de Pescado para gatos (snack-de-pescado-50gr-1)
+2026-05-08 22:09:01,948 [INFO]     [0.34] Snack de Pescado para gatos (snack-de-pescado-35gr-1)
+2026-05-08 22:09:01,948 [INFO]     [0.30] Natural Snack para Gatos - Atún (natural-snack-cats-atun-80gr)
+2026-05-08 22:09:01,949 [INFO]   ✓ Match: 'Snack de Pescado para gatos' (score=0.35)
+2026-05-08 22:09:02,582 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:09:03,415 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:09:06,719 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627371907_1_oficial.jpg
+2026-05-08 22:09:08,219 [INFO] 
+[9/9] ALPHA SPIRIT FELINE SNACK AVE CORRAL CAJA 16X35GR  (ID: 15509627437443)
+2026-05-08 22:09:08,221 [INFO]   [snack] Top 3 matches:
+2026-05-08 22:09:08,221 [INFO]     [0.52] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-35gr)
+2026-05-08 22:09:08,221 [INFO]     [0.51] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-50gr)
+2026-05-08 22:09:08,222 [INFO]     [0.12] Natural Snack para Gatos - Salmón (natural-snack-cats-salmon-80gr)
+2026-05-08 22:09:08,222 [INFO]   ✓ Match: 'Snack de Ave de Corral para gatos' (score=0.52)
+2026-05-08 22:09:08,971 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 22:09:09,816 [INFO]   Imagen antigua 1/1 borrada
+2026-05-08 22:09:12,243 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627437443_1_oficial.jpg
+2026-05-08 22:09:13,744 [INFO] 
+============================================================
+2026-05-08 22:09:13,744 [INFO] RESUMEN FINAL
+2026-05-08 22:09:13,744 [INFO] ============================================================
+2026-05-08 22:09:13,744 [INFO]   Productos procesados  : 9
+2026-05-08 22:09:13,744 [INFO]   Imágenes actualizadas : 9
+2026-05-08 22:09:13,744 [INFO]   Sin match             : 0
+2026-05-08 22:09:13,744 [INFO]   Errores               : 0
