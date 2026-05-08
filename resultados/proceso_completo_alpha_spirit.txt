@@ -1,0 +1,851 @@
+2026-05-08 21:44:38,720 [INFO] ============================================================
+2026-05-08 21:44:38,720 [INFO] PROCESADOR ALPHA SPIRIT — SHOPIFY
+2026-05-08 21:44:38,720 [INFO] ============================================================
+2026-05-08 21:44:38,721 [INFO] Catálogo cargado desde caché: 184 productos
+2026-05-08 21:44:39,093 [INFO] Obteniendo productos 'Alpha Spirit'...
+2026-05-08 21:44:39,530 [INFO] Total: 87 productos
+
+2026-05-08 21:44:39,530 [INFO] 
+[1/87] ALPHA SPIRIT CANINE ADULT AVES CORRAL SEMIHUMEDO  (ID: 15509624258947)
+2026-05-08 21:44:39,532 [INFO]   [semiwet] Top 3 matches:
+2026-05-08 21:44:39,532 [INFO]     [0.61] Alimento Semi-Húmedo Aves de Corral (alimento-semi-humedo-aves-de-corral)
+2026-05-08 21:44:39,532 [INFO]     [0.18] Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
+2026-05-08 21:44:39,532 [INFO]     [0.15] Alimento Semi-Húmedo Multiprotein (copia-de-alimento-semi-humedo-multiprotein)
+2026-05-08 21:44:39,532 [INFO]   ✓ Match: 'Alimento Semi-Húmedo Aves de Corral' (score=0.61)
+2026-05-08 21:44:42,881 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:44:45,875 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509624258947_1_oficial.jpg
+2026-05-08 21:44:49,699 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509624258947_2_oficial.jpg
+2026-05-08 21:44:53,204 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509624258947_3_oficial.jpg
+2026-05-08 21:44:56,454 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509624258947_4_oficial.jpg
+2026-05-08 21:44:57,954 [INFO] 
+[2/87] ALPHA SPIRIT CANINE ADULT PESCADO SEMIHUMEDO  (ID: 15509624324483)
+2026-05-08 21:44:57,955 [INFO]   [semiwet] Top 3 matches:
+2026-05-08 21:44:57,955 [INFO]     [0.41] Alimento Semi-Húmedo Wild Fish (alimento-semi-humedo-wild-fish)
+2026-05-08 21:44:57,955 [INFO]     [0.21] Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
+2026-05-08 21:44:57,956 [INFO]     [0.18] Alimento Semi-Húmedo Aves de Corral (alimento-semi-humedo-aves-de-corral)
+2026-05-08 21:44:57,956 [INFO]   ✓ Match: 'Alimento Semi-Húmedo Wild Fish' (score=0.41)
+2026-05-08 21:45:02,233 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:45:05,381 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509624324483_1_oficial.jpg
+2026-05-08 21:45:09,255 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509624324483_2_oficial.jpg
+2026-05-08 21:45:12,504 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509624324483_3_oficial.jpg
+2026-05-08 21:45:15,791 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509624324483_4_oficial.jpg
+2026-05-08 21:45:17,291 [INFO] 
+[3/87] ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6X400GR  (ID: 15509624390019)
+2026-05-08 21:45:17,295 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:17,295 [INFO]     [0.44] Albóndigas de Ternera y Salvia para Perros (albondigas-de-ternera-y-salvia-400gr)
+2026-05-08 21:45:17,295 [INFO]     [0.44] Albóndigas de Ternera y Salvia para Perros (albondigas-de-ternera-y-salvia-200gr)
+2026-05-08 21:45:17,295 [INFO]     [0.12] Estofado de Roast Beef para Perros (estofado-de-roast-beef-perros)
+2026-05-08 21:45:17,295 [INFO]   ✓ Match: 'Albóndigas de Ternera y Salvia para Perros' (score=0.44)
+2026-05-08 21:45:17,894 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:20,974 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624390019_1_oficial.jpg
+2026-05-08 21:45:22,474 [INFO] 
+[4/87] ALPHA SPIRIT CANINE ALBONDIGAS CERDO ALCARAVEA CAJA 6X400GR  (ID: 15509624422787)
+2026-05-08 21:45:22,478 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:22,478 [INFO]     [0.44] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:45:22,478 [INFO]     [0.44] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-200gr)
+2026-05-08 21:45:22,478 [INFO]     [0.12] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:45:22,478 [INFO]   ✓ Match: 'Albóndigas de Cerdo y Alcaravea para Perros' (score=0.44)
+2026-05-08 21:45:22,715 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:25,907 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624422787_1_oficial.jpg
+2026-05-08 21:45:27,408 [INFO] 
+[5/87] ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJA 6X400GR  (ID: 15509624455555)
+2026-05-08 21:45:27,412 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:27,412 [INFO]     [0.44] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-400gr)
+2026-05-08 21:45:27,412 [INFO]     [0.44] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-200gr)
+2026-05-08 21:45:27,412 [INFO]     [0.12] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:45:27,412 [INFO]   ✓ Match: 'Albóndigas de Cordero y Comino para Perros' (score=0.44)
+2026-05-08 21:45:27,840 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:31,118 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624455555_1_oficial.jpg
+2026-05-08 21:45:32,618 [INFO] 
+[6/87] ALPHA SPIRIT CANINE ALBONDIGAS JABALI TOMILLO 6X400GR  (ID: 15509624521091)
+2026-05-08 21:45:32,621 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:32,622 [INFO]     [0.51] Albóndigas de Jabalí y Tomillo para Perros (albondigas-de-jabali-y-tomillo-400gr)
+2026-05-08 21:45:32,622 [INFO]     [0.51] Albóndigas de Jabalí y Tomillo para Perros (albondigas-de-jabali-y-tomillo-200gr)
+2026-05-08 21:45:32,622 [INFO]     [0.14] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:45:32,622 [INFO]   ✓ Match: 'Albóndigas de Jabalí y Tomillo para Perros' (score=0.51)
+2026-05-08 21:45:33,292 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:36,374 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624521091_1_oficial.jpg
+2026-05-08 21:45:37,874 [INFO] 
+[7/87] ALPHA SPIRIT CANINE ALBONDIGAS PAVO CILANTRO 6X400GR  (ID: 15509624553859)
+2026-05-08 21:45:37,877 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:37,877 [INFO]     [0.51] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-400gr)
+2026-05-08 21:45:37,877 [INFO]     [0.51] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-200gr)
+2026-05-08 21:45:37,878 [INFO]     [0.15] Mousse de Pavo para Perros (mousse-de-pavo-para-perros)
+2026-05-08 21:45:37,878 [INFO]   ✓ Match: 'Albóndigas de Pavo y Cilantro para Perros' (score=0.51)
+2026-05-08 21:45:38,426 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:41,595 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624553859_1_oficial.jpg
+2026-05-08 21:45:43,095 [INFO] 
+[8/87] ALPHA SPIRIT CANINE ALBONDIGAS POLLO CURCUMA 6X400GR  (ID: 15509624586627)
+2026-05-08 21:45:43,099 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:43,099 [INFO]     [0.51] Albóndigas de Pollo y Cúrcuma para Perros (albondigas-de-pollo-y-curcuma-400gr)
+2026-05-08 21:45:43,099 [INFO]     [0.51] Albóndigas de Pollo y Cúrcuma para Perros (albondigas-de-pollo-y-curcuma-200gr)
+2026-05-08 21:45:43,100 [INFO]     [0.15] Mousse de Pollo para Perros (mousse-de-pollo-para-perros)
+2026-05-08 21:45:43,100 [INFO]   ✓ Match: 'Albóndigas de Pollo y Cúrcuma para Perros' (score=0.51)
+2026-05-08 21:45:43,354 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:46,493 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624586627_1_oficial.jpg
+2026-05-08 21:45:47,994 [INFO] 
+[9/87] ALPHA SPIRIT CANINE ALBONDIGAS VENADO ROMERO 6X400GR  (ID: 15509624619395)
+2026-05-08 21:45:47,997 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:45:47,997 [INFO]     [0.51] Albóndigas de Ciervo y Romero para Perros (albondigas-de-ciervo-y-romero-400gr)
+2026-05-08 21:45:47,997 [INFO]     [0.51] Albóndigas de Ciervo y Romero para Perros (albondigas-de-ciervo-y-romero-200gr)
+2026-05-08 21:45:47,997 [INFO]     [0.14] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:45:47,997 [INFO]   ✓ Match: 'Albóndigas de Ciervo y Romero para Perros' (score=0.51)
+2026-05-08 21:45:48,201 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:51,184 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624619395_1_oficial.jpg
+2026-05-08 21:45:52,684 [INFO] 
+[10/87] ALPHA SPIRIT CANINE BARRITAS HIGADO 16X4UDS  (ID: 15509624684931)
+2026-05-08 21:45:52,687 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:45:52,687 [INFO]     [0.34] Barritas individuales de Hígado para perros (barritas-individuales-de-higado-30unds)
+2026-05-08 21:45:52,687 [INFO]     [0.30] Ristra de barritas de Hígado para perros (ristra-de-barritas-de-higado-16-unds)
+2026-05-08 21:45:52,687 [INFO]     [0.26] Ristra de barritas de Hígado para perros (ristra-de-barritas-individualesde-de-higado-4-unds)
+2026-05-08 21:45:52,688 [INFO]   ✓ Match: 'Barritas individuales de Hígado para perros' (score=0.34)
+2026-05-08 21:45:53,407 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:45:56,557 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624684931_1_oficial.jpg
+2026-05-08 21:45:58,058 [INFO] 
+[11/87] ALPHA SPIRIT CANINE BARRITAS HIGADO 30UDS  (ID: 15509624717699)
+2026-05-08 21:45:58,061 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:45:58,061 [INFO]     [0.30] Barritas individuales de Hígado para perros (barritas-individuales-de-higado-30unds)
+2026-05-08 21:45:58,061 [INFO]     [0.26] Ristra de barritas de Hígado para perros (ristra-de-barritas-de-higado-16-unds)
+2026-05-08 21:45:58,061 [INFO]     [0.23] Ristra de barritas de Hígado para perros (ristra-de-barritas-individualesde-de-higado-4-unds)
+2026-05-08 21:45:58,061 [INFO]   ✓ Match: 'Barritas individuales de Hígado para perros' (score=0.30)
+2026-05-08 21:45:58,245 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:01,449 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624717699_1_oficial.jpg
+2026-05-08 21:46:02,949 [INFO] 
+[12/87] ALPHA SPIRIT CANINE BARRITAS JAMON 16X4UDS  (ID: 15509624816003)
+2026-05-08 21:46:02,952 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:02,952 [INFO]     [0.30] Barritas individuales de Jamón para perros (barritas-individuales-de-jamon-30unds)
+2026-05-08 21:46:02,952 [INFO]     [0.26] Ristra de barritas de Jamón para perros (ristra-de-barritas-de-jamon-4-unds)
+2026-05-08 21:46:02,952 [INFO]     [0.26] Ristra de Barritas de Jamón para perros (ristra-de-barritas-de-jamon-16-unds)
+2026-05-08 21:46:02,953 [INFO]   ✓ Match: 'Barritas individuales de Jamón para perros' (score=0.30)
+2026-05-08 21:46:03,522 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:06,675 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624816003_1_oficial.jpg
+2026-05-08 21:46:08,175 [INFO] 
+[13/87] ALPHA SPIRIT CANINE BARRITAS JAMON 30UDS  (ID: 15509624848771)
+2026-05-08 21:46:08,178 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:08,178 [INFO]     [0.26] Barritas individuales de Jamón para perros (barritas-individuales-de-jamon-30unds)
+2026-05-08 21:46:08,178 [INFO]     [0.23] Ristra de barritas de Jamón para perros (ristra-de-barritas-de-jamon-4-unds)
+2026-05-08 21:46:08,178 [INFO]     [0.23] Ristra de Barritas de Jamón para perros (ristra-de-barritas-de-jamon-16-unds)
+2026-05-08 21:46:08,178 [INFO]   ✓ Match: 'Barritas individuales de Jamón para perros' (score=0.26)
+2026-05-08 21:46:08,362 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:11,681 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624848771_1_oficial.jpg
+2026-05-08 21:46:13,181 [INFO] 
+[14/87] ALPHA SPIRIT CANINE BARRITAS PATO 16X4UDS  (ID: 15509624881539)
+2026-05-08 21:46:13,184 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:13,184 [INFO]     [0.30] Barritas individuales de Pato para perros (barritas-individuales-de-pato-30unds)
+2026-05-08 21:46:13,184 [INFO]     [0.26] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-4-unds)
+2026-05-08 21:46:13,184 [INFO]     [0.26] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-16-unds)
+2026-05-08 21:46:13,184 [INFO]   ✓ Match: 'Barritas individuales de Pato para perros' (score=0.30)
+2026-05-08 21:46:13,901 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:16,983 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624881539_1_oficial.jpg
+2026-05-08 21:46:18,483 [INFO] 
+[15/87] ALPHA SPIRIT CANINE BARRITAS PATO 30UDS  (ID: 15509624914307)
+2026-05-08 21:46:18,486 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:18,486 [INFO]     [0.26] Barritas individuales de Pato para perros (barritas-individuales-de-pato-30unds)
+2026-05-08 21:46:18,486 [INFO]     [0.23] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-4-unds)
+2026-05-08 21:46:18,486 [INFO]     [0.23] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-16-unds)
+2026-05-08 21:46:18,486 [INFO]   ✓ Match: 'Barritas individuales de Pato para perros' (score=0.26)
+2026-05-08 21:46:18,670 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:21,728 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624914307_1_oficial.jpg
+2026-05-08 21:46:23,228 [INFO] 
+[16/87] ALPHA SPIRIT CANINE BARRITAS PAVO 30UDS  (ID: 15509624979843)
+2026-05-08 21:46:23,231 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:23,231 [INFO]     [0.30] Barritas individuales de Pavo para perros (barritas-individuales-de-pavo-50gr)
+2026-05-08 21:46:23,231 [INFO]     [0.23] Ristra de barritas de Pavo para perros (ristra-de-barritas-de-pavo-16-unds)
+2026-05-08 21:46:23,231 [INFO]     [0.21] Ristra de barritas de Pavo para perros (ristra-de-barritas-individuales-de-pavo-4-unds)
+2026-05-08 21:46:23,231 [INFO]   ✓ Match: 'Barritas individuales de Pavo para perros' (score=0.30)
+2026-05-08 21:46:24,085 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:27,072 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509624979843_1_oficial.jpg
+2026-05-08 21:46:28,572 [INFO] 
+[17/87] ALPHA SPIRIT CANINE BARRITAS PESCADO 16X4UDS  (ID: 15509625012611)
+2026-05-08 21:46:28,575 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:28,575 [INFO]     [0.30] Barritas individuales de Pescado para perros (barritas-individuales-de-pescado-30unds)
+2026-05-08 21:46:28,575 [INFO]     [0.26] Ristra de barritas de Pescado para perros (ristra-de-barritas-de-pescado-16-unds)
+2026-05-08 21:46:28,575 [INFO]     [0.23] Ristra de barritas de Pescado para perros (ristra-de-barritas-individuales-de-pescado-4-unds)
+2026-05-08 21:46:28,576 [INFO]   ✓ Match: 'Barritas individuales de Pescado para perros' (score=0.30)
+2026-05-08 21:46:28,834 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:31,854 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625012611_1_oficial.jpg
+2026-05-08 21:46:33,355 [INFO] 
+[18/87] ALPHA SPIRIT CANINE BARRITAS PESCADO 30UDS  (ID: 15509625045379)
+2026-05-08 21:46:33,357 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:33,358 [INFO]     [0.26] Barritas individuales de Pescado para perros (barritas-individuales-de-pescado-30unds)
+2026-05-08 21:46:33,358 [INFO]     [0.23] Ristra de barritas de Pescado para perros (ristra-de-barritas-de-pescado-16-unds)
+2026-05-08 21:46:33,358 [INFO]     [0.21] Ristra de barritas de Pescado para perros (ristra-de-barritas-individuales-de-pescado-4-unds)
+2026-05-08 21:46:33,358 [INFO]   ✓ Match: 'Barritas individuales de Pescado para perros' (score=0.26)
+2026-05-08 21:46:33,541 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:36,658 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625045379_1_oficial.jpg
+2026-05-08 21:46:38,158 [INFO] 
+[19/87] ALPHA SPIRIT CANINE BARRITAS POLLO 16X4UDS  (ID: 15509625078147)
+2026-05-08 21:46:38,161 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:38,161 [INFO]     [0.30] Barritas individuales de Pollo para perros (barritas-individuales-de-pollo-30unds)
+2026-05-08 21:46:38,161 [INFO]     [0.26] Ristra de barritas de Pollo para perros (ristra-de-barritas-de-pollo-16-unds)
+2026-05-08 21:46:38,161 [INFO]     [0.23] Ristra de barritas de Pollo para perros (ristra-de-barritas-individualesde-pollo-4-unds)
+2026-05-08 21:46:38,161 [INFO]   ✓ Match: 'Barritas individuales de Pollo para perros' (score=0.30)
+2026-05-08 21:46:38,739 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:41,748 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625078147_1_oficial.jpg
+2026-05-08 21:46:43,248 [INFO] 
+[20/87] ALPHA SPIRIT CANINE BARRITAS POLLO 30UDS  (ID: 15509625110915)
+2026-05-08 21:46:43,251 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:46:43,251 [INFO]     [0.26] Barritas individuales de Pollo para perros (barritas-individuales-de-pollo-30unds)
+2026-05-08 21:46:43,251 [INFO]     [0.23] Ristra de barritas de Pollo para perros (ristra-de-barritas-de-pollo-16-unds)
+2026-05-08 21:46:43,251 [INFO]     [0.21] Ristra de barritas de Pollo para perros (ristra-de-barritas-individualesde-pollo-4-unds)
+2026-05-08 21:46:43,251 [INFO]   ✓ Match: 'Barritas individuales de Pollo para perros' (score=0.26)
+2026-05-08 21:46:43,429 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:46,448 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625110915_1_oficial.jpg
+2026-05-08 21:46:47,948 [INFO] 
+[21/87] ALPHA SPIRIT CANINE BOQUERON C/MANZANA ROJA LATA 6X400GR  (ID: 15509625143683)
+2026-05-08 21:46:47,951 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:46:47,951 [INFO]     [0.31] Paté de Boquerón con Manzana Roja para Perros 400gr (alimento-humedo-de-anchoa)
+2026-05-08 21:46:47,951 [INFO]     [0.09] Paté de Cerdo con Manzana para Perros (alimento-humedo-de-cerdo-con-manzana-1)
+2026-05-08 21:46:47,952 [INFO]     [0.09] Paté de Pato con Manzana Verde para Perros 400gr (alimento-humedo-de-pato-con-manzana)
+2026-05-08 21:46:47,952 [INFO]   ✓ Match: 'Paté de Boquerón con Manzana Roja para Perros 400gr' (score=0.31)
+2026-05-08 21:46:48,157 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:51,332 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625143683_1_oficial.jpg
+2026-05-08 21:46:52,833 [INFO] 
+[22/87] ALPHA SPIRIT CANINE CERDO C/MANZANA AMAR. LATA 6X400GR  (ID: 15509625176451)
+2026-05-08 21:46:52,836 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:46:52,836 [INFO]     [0.19] Paté de Cerdo con Manzana para Perros (alimento-humedo-de-cerdo-con-manzana-1)
+2026-05-08 21:46:52,836 [INFO]     [0.11] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:46:52,836 [INFO]     [0.11] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:46:52,837 [INFO]   ✓ Match: 'Paté de Cerdo con Manzana para Perros' (score=0.19)
+2026-05-08 21:46:53,471 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:46:56,442 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625176451_1_oficial.jpg
+2026-05-08 21:46:57,942 [INFO] 
+[23/87] ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400GR  (ID: 15509625209219)
+2026-05-08 21:46:57,946 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:46:57,946 [INFO]     [0.23] Paté de Conejo con Plátano para Perros (alimento-humedo-de-conejo-con-platano-2)
+2026-05-08 21:46:57,946 [INFO]     [0.12] Paté de Sardina con Plátano para Perros (alimento-humedo-de-sardina-con-platano)
+2026-05-08 21:46:57,946 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:46:57,946 [INFO]   ✓ Match: 'Paté de Conejo con Plátano para Perros' (score=0.23)
+2026-05-08 21:46:58,667 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:01,713 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625209219_1_oficial.jpg
+2026-05-08 21:47:03,213 [INFO] 
+[24/87] ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR  (ID: 15509625241987)
+2026-05-08 21:47:03,216 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:47:03,217 [INFO]     [0.23] Paté de Cordero con Pera para Perros (alimento-humedo-de-cordero-con-pera-1)
+2026-05-08 21:47:03,217 [INFO]     [0.14] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-400gr)
+2026-05-08 21:47:03,217 [INFO]     [0.14] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-200gr)
+2026-05-08 21:47:03,217 [INFO]   ✓ Match: 'Paté de Cordero con Pera para Perros' (score=0.23)
+2026-05-08 21:47:03,839 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:06,819 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625241987_1_oficial.jpg
+2026-05-08 21:47:08,319 [INFO] 
+[25/87] ALPHA SPIRIT CANINE HIGADO SNACKS 24X50GRS  (ID: 15509625274755)
+2026-05-08 21:47:08,322 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:47:08,322 [INFO]     [0.51] Snack de Hígado para perros (snack-de-higado-35gr)
+2026-05-08 21:47:08,322 [INFO]     [0.51] Snack de Hígado para perros (snack-de-higado-50gr)
+2026-05-08 21:47:08,322 [INFO]     [0.18] Natural Snack para Perros - Salmón (natural-snack-salmon-80gr)
+2026-05-08 21:47:08,322 [INFO]   ✓ Match: 'Snack de Hígado para perros' (score=0.51)
+2026-05-08 21:47:09,096 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:11,940 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625274755_1_oficial.jpg
+2026-05-08 21:47:13,441 [INFO] 
+[26/87] ALPHA SPIRIT CANINE JAMON CON MELON LATA 6X400GR  (ID: 15509625373059)
+2026-05-08 21:47:13,444 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:47:13,444 [INFO]     [0.26] Paté de Jamón con Melón para Perros (alimento-humedo-de-jamon-con-melon)
+2026-05-08 21:47:13,444 [INFO]     [0.14] Mousse de Jamón para Perros (pate-de-pavo)
+2026-05-08 21:47:13,445 [INFO]     [0.12] Paté de Ternera con Melón para Perros (alimento-humedo-de-ternera-con-melon)
+2026-05-08 21:47:13,445 [INFO]   ✓ Match: 'Paté de Jamón con Melón para Perros' (score=0.26)
+2026-05-08 21:47:13,635 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:16,754 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625373059_1_oficial.jpg
+2026-05-08 21:47:18,255 [INFO] 
+[27/87] ALPHA SPIRIT CANINE JAMON SNACKS 24X50GRS  (ID: 15509625405827)
+2026-05-08 21:47:18,258 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:47:18,258 [INFO]     [0.41] Snack de Jamón para perros (snack-de-jamon-35gr)
+2026-05-08 21:47:18,258 [INFO]     [0.41] Snack de Jamón para perros (snack-de-jamon-50gr)
+2026-05-08 21:47:18,258 [INFO]     [0.34] Natural Snack para Perros - Jamón (natural-snack-jamon-80gr)
+2026-05-08 21:47:18,258 [INFO]   ✓ Match: 'Snack de Jamón para perros' (score=0.41)
+2026-05-08 21:47:18,750 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:21,775 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625405827_1_oficial.jpg
+2026-05-08 21:47:23,275 [INFO] 
+[28/87] ALPHA SPIRIT CANINE MULTIPROTEICO SEMIHUMEDO  (ID: 15509625471363)
+2026-05-08 21:47:23,276 [INFO]   [semiwet] Top 3 matches:
+2026-05-08 21:47:23,277 [INFO]     [0.51] Alimento Semi-Húmedo Multiprotein (copia-de-alimento-semi-humedo-multiprotein)
+2026-05-08 21:47:23,277 [INFO]     [0.26] Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
+2026-05-08 21:47:23,277 [INFO]     [0.21] Alimento Semi-Húmedo Aves de Corral (alimento-semi-humedo-aves-de-corral)
+2026-05-08 21:47:23,277 [INFO]   ✓ Match: 'Alimento Semi-Húmedo Multiprotein' (score=0.51)
+2026-05-08 21:47:27,091 [INFO]   5 imagen(es) descargada(s)
+2026-05-08 21:47:30,206 [INFO]   ✓ Imagen 1/5 subida → alpha_spirit_15509625471363_1_oficial.jpg
+2026-05-08 21:47:33,632 [INFO]   ✓ Imagen 2/5 subida → alpha_spirit_15509625471363_2_oficial.jpg
+2026-05-08 21:47:36,880 [INFO]   ✓ Imagen 3/5 subida → alpha_spirit_15509625471363_3_oficial.jpg
+2026-05-08 21:47:40,220 [INFO]   ✓ Imagen 4/5 subida → alpha_spirit_15509625471363_4_oficial.jpg
+2026-05-08 21:47:43,478 [INFO]   ✓ Imagen 5/5 subida → alpha_spirit_15509625471363_5_oficial.jpg
+2026-05-08 21:47:44,979 [INFO] 
+[29/87] ALPHA SPIRIT CANINE PATO C/MANZANA VERDE LATA 6X400GR  (ID: 15509625569667)
+2026-05-08 21:47:44,982 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:47:44,982 [INFO]     [0.31] Paté de Pato con Manzana Verde para Perros 400gr (alimento-humedo-de-pato-con-manzana)
+2026-05-08 21:47:44,982 [INFO]     [0.10] Estofado de Pato para Perros (estofado-pato-perros-real-food)
+2026-05-08 21:47:44,982 [INFO]     [0.09] Paté de Boquerón con Manzana Roja para Perros 400gr (alimento-humedo-de-anchoa)
+2026-05-08 21:47:44,983 [INFO]   ✓ Match: 'Paté de Pato con Manzana Verde para Perros 400gr' (score=0.31)
+2026-05-08 21:47:45,434 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:48,335 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625569667_1_oficial.jpg
+2026-05-08 21:47:49,836 [INFO] 
+[30/87] ALPHA SPIRIT CANINE PATO SNACKS 24X50GRS  (ID: 15509625635203)
+2026-05-08 21:47:49,838 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:47:49,838 [INFO]     [0.41] Snack de Pato para perros (snack-de-pato-35gr)
+2026-05-08 21:47:49,839 [INFO]     [0.41] Snack de Pato para perros (snack-de-pato-50gr)
+2026-05-08 21:47:49,839 [INFO]     [0.34] Natural Snack para Perros - Pato (natural-snack-pato-80gr)
+2026-05-08 21:47:49,839 [INFO]   ✓ Match: 'Snack de Pato para perros' (score=0.41)
+2026-05-08 21:47:50,365 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:53,295 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625635203_1_oficial.jpg
+2026-05-08 21:47:54,795 [INFO] 
+[31/87] ALPHA SPIRIT CANINE PAVO CON PERA LATA 6X400GR  (ID: 15509625667971)
+2026-05-08 21:47:54,799 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:47:54,799 [INFO]     [0.26] Paté de Pavo con Pera para Perros (alimento-humedo-de-pavo-con-pera)
+2026-05-08 21:47:54,799 [INFO]     [0.15] Mousse de Pavo para Perros (mousse-de-pavo-para-perros)
+2026-05-08 21:47:54,799 [INFO]     [0.14] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-400gr)
+2026-05-08 21:47:54,799 [INFO]   ✓ Match: 'Paté de Pavo con Pera para Perros' (score=0.26)
+2026-05-08 21:47:55,402 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:47:58,387 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625667971_1_oficial.jpg
+2026-05-08 21:47:59,887 [INFO] 
+[32/87] ALPHA SPIRIT CANINE PAVO SNACKS 24X50GRS  (ID: 15509625700739)
+2026-05-08 21:47:59,890 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:47:59,890 [INFO]     [0.41] Snack de Pavo para perros (snack-de-pavo-35gr)
+2026-05-08 21:47:59,890 [INFO]     [0.41] Snack de Pavo para perros (snack-de-pavo-50gr)
+2026-05-08 21:47:59,890 [INFO]     [0.34] Natural Snack para Perros - Pavo (natural-snack-pavo-80gr)
+2026-05-08 21:47:59,890 [INFO]   ✓ Match: 'Snack de Pavo para perros' (score=0.41)
+2026-05-08 21:48:00,612 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:48:04,667 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625700739_1_oficial.jpg
+2026-05-08 21:48:06,168 [INFO] 
+[33/87] ALPHA SPIRIT CANINE PESCADO SNACKS 24X50GRS  (ID: 15509625733507)
+2026-05-08 21:48:06,171 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:48:06,171 [INFO]     [0.41] Snack de Pescado para perros (snack-de-pescado-35gr)
+2026-05-08 21:48:06,171 [INFO]     [0.41] Snack de Pescado para perros (snack-de-pescado-50gr)
+2026-05-08 21:48:06,171 [INFO]     [0.34] Natural Snack para Perros - Atún (natural-snack-atun-80gr)
+2026-05-08 21:48:06,171 [INFO]   ✓ Match: 'Snack de Pescado para perros' (score=0.41)
+2026-05-08 21:48:06,621 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:48:09,746 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625733507_1_oficial.jpg
+2026-05-08 21:48:11,247 [INFO] 
+[34/87] ALPHA SPIRIT CANINE POLLO CON PIÑA LATA 6X400GR  (ID: 15509625799043)
+2026-05-08 21:48:11,250 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:48:11,250 [INFO]     [0.26] Paté de Pollo con Piña para Perros (alimento-humedo-de-pollo)
+2026-05-08 21:48:11,250 [INFO]     [0.15] Mousse de Pollo para Perros (mousse-de-pollo-para-perros)
+2026-05-08 21:48:11,250 [INFO]     [0.14] Estofado de Pollo para Perros (estofado-de-pollo-para-perros)
+2026-05-08 21:48:11,250 [INFO]   ✓ Match: 'Paté de Pollo con Piña para Perros' (score=0.26)
+2026-05-08 21:48:11,460 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:48:14,532 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625799043_1_oficial.jpg
+2026-05-08 21:48:16,033 [INFO] 
+[35/87] ALPHA SPIRIT CANINE POLLO SNACKS 24X50GRS  (ID: 15509625831811)
+2026-05-08 21:48:16,036 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:48:16,036 [INFO]     [0.41] Snack de Pollo para perros (snack-de-pollo-50gr)
+2026-05-08 21:48:16,036 [INFO]     [0.34] Natural Snack para Perros - Pollo (natural-snack-pollo-80gr)
+2026-05-08 21:48:16,036 [INFO]     [0.34] Snack de Pollo para perros (snacks-de-pollo-35gr)
+2026-05-08 21:48:16,036 [INFO]   ✓ Match: 'Snack de Pollo para perros' (score=0.41)
+2026-05-08 21:48:16,565 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:48:19,635 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509625831811_1_oficial.jpg
+2026-05-08 21:48:21,136 [INFO] 
+[36/87] ALPHA SPIRIT CANINE PRIMAL 60% WILDERNESS  (ID: 15509625864579)
+2026-05-08 21:48:21,142 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:48:21,142 [INFO]     [0.50] Primal 60% Wilderness Alimento para perros (primal-60-wilderness-alimento-para-perros)
+2026-05-08 21:48:21,142 [INFO]     [0.14] Primal Iberian Salmón para perros (primal-iberian-salmon-para-perros)
+2026-05-08 21:48:21,142 [INFO]     [0.12] Primal 65% Oceanland Alimento para perros (primal-65-oceanland-alimento-para-perros)
+2026-05-08 21:48:21,142 [INFO]   ✓ Match: 'Primal 60% Wilderness Alimento para perros' (score=0.50)
+2026-05-08 21:48:21,590 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:48:24,304 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509625864579_1_oficial.jpg
+2026-05-08 21:48:27,231 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509625864579_2_oficial.jpg
+2026-05-08 21:48:28,732 [INFO] 
+[37/87] ALPHA SPIRIT CANINE PRIMAL 65% OCEANLAND  (ID: 15509625930115)
+2026-05-08 21:48:28,738 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:48:28,738 [INFO]     [0.50] Primal 65% Oceanland Alimento para perros (primal-65-oceanland-alimento-para-perros)
+2026-05-08 21:48:28,738 [INFO]     [0.25] Primal 65% Rebel Fram Alimento para perros (primal-65-rebel-fram-alimento-para-perros)
+2026-05-08 21:48:28,738 [INFO]     [0.14] Primal Iberian Salmón para perros (primal-iberian-salmon-para-perros)
+2026-05-08 21:48:28,738 [INFO]   ✓ Match: 'Primal 65% Oceanland Alimento para perros' (score=0.50)
+2026-05-08 21:48:29,619 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:48:32,378 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509625930115_1_oficial.jpg
+2026-05-08 21:48:35,973 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509625930115_2_oficial.jpg
+2026-05-08 21:48:37,473 [INFO] 
+[38/87] ALPHA SPIRIT CANINE PRIMAL 65% REBEL FRAM  (ID: 15509626061187)
+2026-05-08 21:48:37,479 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:48:37,479 [INFO]     [0.57] Primal 65% Rebel Fram Alimento para perros (primal-65-rebel-fram-alimento-para-perros)
+2026-05-08 21:48:37,479 [INFO]     [0.25] Primal 65% Oceanland Alimento para perros (primal-65-oceanland-alimento-para-perros)
+2026-05-08 21:48:37,479 [INFO]     [0.12] Primal Iberian Salmón para perros (primal-iberian-salmon-para-perros)
+2026-05-08 21:48:37,479 [INFO]   ✓ Match: 'Primal 65% Rebel Fram Alimento para perros' (score=0.57)
+2026-05-08 21:48:38,557 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:48:41,481 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509626061187_1_oficial.jpg
+2026-05-08 21:48:44,585 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509626061187_2_oficial.jpg
+2026-05-08 21:48:46,086 [INFO] 
+[39/87] ALPHA SPIRIT CANINE PRIMAL 70% WANDERLUST  (ID: 15509626126723)
+2026-05-08 21:48:46,091 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:48:46,092 [INFO]     [0.43] Primal 70% Wanderlust Alimento para perros (primal-70-wanderlust-dog-food)
+2026-05-08 21:48:46,092 [INFO]     [0.22] Primal 70% Wild Waters Alimento para perros (primal-70-puppies-alimento-para-perros)
+2026-05-08 21:48:46,092 [INFO]     [0.14] Primal Iberian Salmón para perros (primal-iberian-salmon-para-perros)
+2026-05-08 21:48:46,092 [INFO]   ✓ Match: 'Primal 70% Wanderlust Alimento para perros' (score=0.43)
+2026-05-08 21:48:46,452 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:48:50,128 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509626126723_1_oficial.jpg
+2026-05-08 21:48:53,153 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509626126723_2_oficial.jpg
+2026-05-08 21:48:54,653 [INFO] 
+[40/87] ALPHA SPIRIT CANINE PRIMAL 70% WILD WATERS  (ID: 15509626192259)
+2026-05-08 21:48:54,659 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:48:54,659 [INFO]     [0.50] Primal 70% Wild Waters Alimento para perros (primal-70-puppies-alimento-para-perros)
+2026-05-08 21:48:54,659 [INFO]     [0.22] Primal 70% Wanderlust Alimento para perros (primal-70-wanderlust-dog-food)
+2026-05-08 21:48:54,660 [INFO]     [0.22] Primal Wild Forest - Alimento Húmedo para Perros (primal-wild-forest-400gr-alimento-humedo-para-perros)
+2026-05-08 21:48:54,660 [INFO]   ✓ Match: 'Primal 70% Wild Waters Alimento para perros' (score=0.50)
+2026-05-08 21:48:55,826 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:48:58,788 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509626192259_1_oficial.jpg
+2026-05-08 21:49:02,011 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509626192259_2_oficial.jpg
+2026-05-08 21:49:03,512 [INFO] 
+[41/87] ALPHA SPIRIT CANINE PUPPY SEMIHUMEDO  (ID: 15509626356099)
+2026-05-08 21:49:03,513 [INFO]   [semiwet] Top 3 matches:
+2026-05-08 21:49:03,513 [INFO]     [0.68] Alimento Semi-Húmedo Puppies (alimento-semi-humedo-puppies)
+2026-05-08 21:49:03,513 [INFO]     [0.21] Alimento Semi-Húmedo Aves de Corral (alimento-semi-humedo-aves-de-corral)
+2026-05-08 21:49:03,513 [INFO]     [0.21] Alimento Semi-Húmedo Multiprotein (copia-de-alimento-semi-humedo-multiprotein)
+2026-05-08 21:49:03,513 [INFO]   ✓ Match: 'Alimento Semi-Húmedo Puppies' (score=0.68)
+2026-05-08 21:49:07,150 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:49:10,320 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509626356099_1_oficial.jpg
+2026-05-08 21:49:14,454 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509626356099_2_oficial.jpg
+2026-05-08 21:49:17,666 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509626356099_3_oficial.jpg
+2026-05-08 21:49:20,762 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509626356099_4_oficial.jpg
+2026-05-08 21:49:22,262 [INFO] 
+[42/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO ATUN 9X280G  (ID: 15509628846467)
+2026-05-08 21:49:22,266 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:49:22,266 [INFO]     [0.33] Estofado de Pescado para Perros (estofado-pescado-perros)
+2026-05-08 21:49:22,266 [INFO]     [0.18] Alimento Semi-Húmedo Wild Fish (alimento-semi-humedo-wild-fish)
+2026-05-08 21:49:22,266 [INFO]     [0.14] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:49:22,266 [INFO]   ✓ Match: 'Estofado de Pescado para Perros' (score=0.33)
+2026-05-08 21:49:23,534 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:49:26,743 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509628846467_1_oficial.jpg
+2026-05-08 21:49:30,438 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509628846467_2_oficial.jpg
+2026-05-08 21:49:31,938 [INFO] 
+[43/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO CERDO 9X280G  (ID: 15509628879235)
+2026-05-08 21:49:31,941 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:49:31,941 [INFO]     [0.33] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:49:31,942 [INFO]     [0.29] Estofado de Oreja de Cerdo para Perros (estofado-de-oreja-de-cerdo-para-perros-280gr)
+2026-05-08 21:49:31,942 [INFO]     [0.14] Estofado de Pescado para Perros (estofado-pescado-perros)
+2026-05-08 21:49:31,942 [INFO]   ✓ Match: 'Estofado de Cerdo para Perros' (score=0.33)
+2026-05-08 21:49:32,810 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:49:36,713 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509628879235_1_oficial.jpg
+2026-05-08 21:49:40,312 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509628879235_2_oficial.jpg
+2026-05-08 21:49:41,812 [INFO] 
+[44/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO OREJA CERDO 9X280G  (ID: 15509628912003)
+2026-05-08 21:49:41,816 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:49:41,816 [INFO]     [0.43] Estofado de Oreja de Cerdo para Perros (estofado-de-oreja-de-cerdo-para-perros-280gr)
+2026-05-08 21:49:41,816 [INFO]     [0.01] Barritas individuales de Hígado para perros (barritas-individuales-de-higado-30unds)
+2026-05-08 21:49:41,816 [INFO]     [0.01] Barritas individuales de Jamón para perros (barritas-individuales-de-jamon-30unds)
+2026-05-08 21:49:41,816 [INFO]   ✓ Match: 'Estofado de Oreja de Cerdo para Perros' (score=0.43)
+2026-05-08 21:49:42,972 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:49:45,976 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509628912003_1_oficial.jpg
+2026-05-08 21:49:49,473 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509628912003_2_oficial.jpg
+2026-05-08 21:49:50,974 [INFO] 
+[45/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO PATO 9X280G  (ID: 15509628944771)
+2026-05-08 21:49:50,977 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:49:50,977 [INFO]     [0.29] Estofado de Pato para Perros (estofado-pato-perros-real-food)
+2026-05-08 21:49:50,977 [INFO]     [0.14] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:49:50,977 [INFO]     [0.14] Estofado de Pescado para Perros (estofado-pescado-perros)
+2026-05-08 21:49:50,977 [INFO]   ✓ Match: 'Estofado de Pato para Perros' (score=0.29)
+2026-05-08 21:49:52,046 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:49:55,247 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509628944771_1_oficial.jpg
+2026-05-08 21:49:58,841 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509628944771_2_oficial.jpg
+2026-05-08 21:50:00,341 [INFO] 
+[46/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO POLLO 9X280G  (ID: 15509629043075)
+2026-05-08 21:50:00,345 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:50:00,345 [INFO]     [0.33] Estofado de Pollo para Perros (estofado-de-pollo-para-perros)
+2026-05-08 21:50:00,345 [INFO]     [0.15] Mousse de Pollo para Perros (mousse-de-pollo-para-perros)
+2026-05-08 21:50:00,345 [INFO]     [0.14] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:50:00,345 [INFO]   ✓ Match: 'Estofado de Pollo para Perros' (score=0.33)
+2026-05-08 21:50:01,500 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:50:04,440 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509629043075_1_oficial.jpg
+2026-05-08 21:50:07,788 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509629043075_2_oficial.jpg
+2026-05-08 21:50:09,289 [INFO] 
+[47/87] ALPHA SPIRIT CANINE REALFOOD ESTOFADO TERNERA 9X280G  (ID: 15509629108611)
+2026-05-08 21:50:09,292 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:50:09,292 [INFO]     [0.33] Estofado de Roast Beef para Perros (estofado-de-roast-beef-perros)
+2026-05-08 21:50:09,292 [INFO]     [0.14] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-08 21:50:09,292 [INFO]     [0.14] Estofado de Pescado para Perros (estofado-pescado-perros)
+2026-05-08 21:50:09,292 [INFO]   ✓ Match: 'Estofado de Roast Beef para Perros' (score=0.33)
+2026-05-08 21:50:10,209 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:50:13,372 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509629108611_1_oficial.jpg
+2026-05-08 21:50:16,882 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509629108611_2_oficial.jpg
+2026-05-08 21:50:18,383 [INFO] 
+[48/87] ALPHA SPIRIT CANINE RISTRA HIGADO CAJA 12X160GR  (ID: 15509626454403)
+2026-05-08 21:50:18,386 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:18,386 [INFO]     [0.26] Ristra de barritas de Hígado para perros (ristra-de-barritas-de-higado-16-unds)
+2026-05-08 21:50:18,386 [INFO]     [0.23] Ristra de barritas de Hígado para perros (ristra-de-barritas-individualesde-de-higado-4-unds)
+2026-05-08 21:50:18,386 [INFO]     [0.18] Snack de Hígado para perros (snack-de-higado-35gr)
+2026-05-08 21:50:18,386 [INFO]   ✓ Match: 'Ristra de barritas de Hígado para perros' (score=0.26)
+2026-05-08 21:50:18,663 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:21,753 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626454403_1_oficial.jpg
+2026-05-08 21:50:23,253 [INFO] 
+[49/87] ALPHA SPIRIT CANINE RISTRA JAMON CAJA 12X160GR  (ID: 15509626487171)
+2026-05-08 21:50:23,256 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:23,256 [INFO]     [0.23] Ristra de barritas de Jamón para perros (ristra-de-barritas-de-jamon-4-unds)
+2026-05-08 21:50:23,256 [INFO]     [0.23] Ristra de Barritas de Jamón para perros (ristra-de-barritas-de-jamon-16-unds)
+2026-05-08 21:50:23,256 [INFO]     [0.15] Snack de Jamón para perros (snack-de-jamon-35gr)
+2026-05-08 21:50:23,256 [INFO]   ✓ Match: 'Ristra de barritas de Jamón para perros' (score=0.23)
+2026-05-08 21:50:23,967 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:27,140 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626487171_1_oficial.jpg
+2026-05-08 21:50:28,640 [INFO] 
+[50/87] ALPHA SPIRIT CANINE RISTRA PATO CAJA 12X160GR  (ID: 15509626519939)
+2026-05-08 21:50:28,643 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:28,643 [INFO]     [0.23] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-4-unds)
+2026-05-08 21:50:28,644 [INFO]     [0.23] Ristra de barritas de Pato para perros (ristra-de-barritas-de-pato-16-unds)
+2026-05-08 21:50:28,644 [INFO]     [0.15] Snack de Pato para perros (snack-de-pato-35gr)
+2026-05-08 21:50:28,644 [INFO]   ✓ Match: 'Ristra de barritas de Pato para perros' (score=0.23)
+2026-05-08 21:50:29,321 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:32,690 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626519939_1_oficial.jpg
+2026-05-08 21:50:34,191 [INFO] 
+[51/87] ALPHA SPIRIT CANINE RISTRA PAVO CAJA 12X160GR  (ID: 15509626552707)
+2026-05-08 21:50:34,194 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:34,194 [INFO]     [0.23] Ristra de barritas de Pavo para perros (ristra-de-barritas-de-pavo-16-unds)
+2026-05-08 21:50:34,194 [INFO]     [0.21] Ristra de barritas de Pavo para perros (ristra-de-barritas-individuales-de-pavo-4-unds)
+2026-05-08 21:50:34,194 [INFO]     [0.15] Snack de Pavo para perros (snack-de-pavo-35gr)
+2026-05-08 21:50:34,194 [INFO]   ✓ Match: 'Ristra de barritas de Pavo para perros' (score=0.23)
+2026-05-08 21:50:34,892 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:38,718 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626552707_1_oficial.jpg
+2026-05-08 21:50:40,219 [INFO] 
+[52/87] ALPHA SPIRIT CANINE RISTRA PESCADO CAJA 12X160GR  (ID: 15509626585475)
+2026-05-08 21:50:40,222 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:40,222 [INFO]     [0.23] Ristra de barritas de Pescado para perros (ristra-de-barritas-de-pescado-16-unds)
+2026-05-08 21:50:40,222 [INFO]     [0.21] Ristra de barritas de Pescado para perros (ristra-de-barritas-individuales-de-pescado-4-unds)
+2026-05-08 21:50:40,222 [INFO]     [0.15] Snack de Pescado para perros (snack-de-pescado-35gr)
+2026-05-08 21:50:40,222 [INFO]   ✓ Match: 'Ristra de barritas de Pescado para perros' (score=0.23)
+2026-05-08 21:50:40,763 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:45,087 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626585475_1_oficial.jpg
+2026-05-08 21:50:46,588 [INFO] 
+[53/87] ALPHA SPIRIT CANINE RISTRA POLLO CAJA 12X160GR  (ID: 15509626618243)
+2026-05-08 21:50:46,591 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:50:46,591 [INFO]     [0.23] Ristra de barritas de Pollo para perros (ristra-de-barritas-de-pollo-16-unds)
+2026-05-08 21:50:46,591 [INFO]     [0.21] Ristra de barritas de Pollo para perros (ristra-de-barritas-individualesde-pollo-4-unds)
+2026-05-08 21:50:46,591 [INFO]     [0.15] Snack de Pollo para perros (snack-de-pollo-50gr)
+2026-05-08 21:50:46,591 [INFO]   ✓ Match: 'Ristra de barritas de Pollo para perros' (score=0.23)
+2026-05-08 21:50:47,274 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:50,183 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626618243_1_oficial.jpg
+2026-05-08 21:50:51,684 [INFO] 
+[54/87] ALPHA SPIRIT CANINE SALMON CON PIÑA LATA 6X400GR  (ID: 15509626651011)
+2026-05-08 21:50:51,687 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:50:51,687 [INFO]     [0.30] Paté de Salmón con Piña para Perros (alimento-humedo-de-salmon-con-pina)
+2026-05-08 21:50:51,687 [INFO]     [0.18] Mousse de Salmón para Perros (mousse-de-salmon-para-perros)
+2026-05-08 21:50:51,687 [INFO]     [0.12] Paté de Pollo con Piña para Perros (alimento-humedo-de-pollo)
+2026-05-08 21:50:51,687 [INFO]   ✓ Match: 'Paté de Salmón con Piña para Perros' (score=0.30)
+2026-05-08 21:50:52,099 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:50:56,395 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626651011_1_oficial.jpg
+2026-05-08 21:50:57,895 [INFO] 
+[55/87] ALPHA SPIRIT CANINE SARDINA CON PLATANO LATA 6X400GR  (ID: 15509626683779)
+2026-05-08 21:50:57,899 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:50:57,899 [INFO]     [0.26] Paté de Sardina con Plátano para Perros (alimento-humedo-de-sardina-con-platano)
+2026-05-08 21:50:57,899 [INFO]     [0.11] Paté de Conejo con Plátano para Perros (alimento-humedo-de-conejo-con-platano-2)
+2026-05-08 21:50:57,899 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-08 21:50:57,899 [INFO]   ✓ Match: 'Paté de Sardina con Plátano para Perros' (score=0.26)
+2026-05-08 21:50:58,410 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:01,363 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626683779_1_oficial.jpg
+2026-05-08 21:51:02,863 [INFO] 
+[56/87] ALPHA SPIRIT CANINE SNACK HIGADO CAJA 16X35GR  (ID: 15509626716547)
+2026-05-08 21:51:02,866 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:02,866 [INFO]     [0.41] Snack de Hígado para perros (snack-de-higado-35gr)
+2026-05-08 21:51:02,866 [INFO]     [0.41] Snack de Hígado para perros (snack-de-higado-50gr)
+2026-05-08 21:51:02,866 [INFO]     [0.15] Natural Snack para Perros - Salmón (natural-snack-salmon-80gr)
+2026-05-08 21:51:02,866 [INFO]   ✓ Match: 'Snack de Hígado para perros' (score=0.41)
+2026-05-08 21:51:03,037 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:05,840 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626716547_1_oficial.jpg
+2026-05-08 21:51:07,341 [INFO] 
+[57/87] ALPHA SPIRIT CANINE SNACK JAMON CAJA 16X35GR  (ID: 15509626749315)
+2026-05-08 21:51:07,344 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:07,344 [INFO]     [0.34] Snack de Jamón para perros (snack-de-jamon-35gr)
+2026-05-08 21:51:07,344 [INFO]     [0.34] Snack de Jamón para perros (snack-de-jamon-50gr)
+2026-05-08 21:51:07,344 [INFO]     [0.30] Natural Snack para Perros - Jamón (natural-snack-jamon-80gr)
+2026-05-08 21:51:07,344 [INFO]   ✓ Match: 'Snack de Jamón para perros' (score=0.34)
+2026-05-08 21:51:07,508 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:10,182 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626749315_1_oficial.jpg
+2026-05-08 21:51:11,683 [INFO] 
+[58/87] ALPHA SPIRIT CANINE SNACK PATO CAJA 16X35GR  (ID: 15509626782083)
+2026-05-08 21:51:11,686 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:11,686 [INFO]     [0.34] Snack de Pato para perros (snack-de-pato-35gr)
+2026-05-08 21:51:11,686 [INFO]     [0.34] Snack de Pato para perros (snack-de-pato-50gr)
+2026-05-08 21:51:11,686 [INFO]     [0.30] Natural Snack para Perros - Pato (natural-snack-pato-80gr)
+2026-05-08 21:51:11,686 [INFO]   ✓ Match: 'Snack de Pato para perros' (score=0.34)
+2026-05-08 21:51:11,863 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:15,217 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626782083_1_oficial.jpg
+2026-05-08 21:51:16,718 [INFO] 
+[59/87] ALPHA SPIRIT CANINE SNACK PAVO CAJA 16X35GR  (ID: 15509626814851)
+2026-05-08 21:51:16,721 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:16,721 [INFO]     [0.34] Snack de Pavo para perros (snack-de-pavo-35gr)
+2026-05-08 21:51:16,721 [INFO]     [0.34] Snack de Pavo para perros (snack-de-pavo-50gr)
+2026-05-08 21:51:16,721 [INFO]     [0.30] Natural Snack para Perros - Pavo (natural-snack-pavo-80gr)
+2026-05-08 21:51:16,721 [INFO]   ✓ Match: 'Snack de Pavo para perros' (score=0.34)
+2026-05-08 21:51:16,891 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:19,952 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626814851_1_oficial.jpg
+2026-05-08 21:51:21,452 [INFO] 
+[60/87] ALPHA SPIRIT CANINE SNACK PESCADO CAJA 16X35GR  (ID: 15509626847619)
+2026-05-08 21:51:21,455 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:21,455 [INFO]     [0.34] Snack de Pescado para perros (snack-de-pescado-35gr)
+2026-05-08 21:51:21,455 [INFO]     [0.34] Snack de Pescado para perros (snack-de-pescado-50gr)
+2026-05-08 21:51:21,455 [INFO]     [0.30] Natural Snack para Perros - Atún (natural-snack-atun-80gr)
+2026-05-08 21:51:21,455 [INFO]   ✓ Match: 'Snack de Pescado para perros' (score=0.34)
+2026-05-08 21:51:21,619 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:24,296 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626847619_1_oficial.jpg
+2026-05-08 21:51:25,796 [INFO] 
+[61/87] ALPHA SPIRIT CANINE SNACK POLLO CAJA 16X35GR  (ID: 15509626945923)
+2026-05-08 21:51:25,799 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:25,799 [INFO]     [0.34] Snack de Pollo para perros (snack-de-pollo-50gr)
+2026-05-08 21:51:25,799 [INFO]     [0.30] Natural Snack para Perros - Pollo (natural-snack-pollo-80gr)
+2026-05-08 21:51:25,799 [INFO]     [0.30] Snack de Pollo para perros (snacks-de-pollo-35gr)
+2026-05-08 21:51:25,799 [INFO]   ✓ Match: 'Snack de Pollo para perros' (score=0.34)
+2026-05-08 21:51:25,938 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:29,458 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626945923_1_oficial.jpg
+2026-05-08 21:51:30,958 [INFO] 
+[62/87] ALPHA SPIRIT CANINE TERNERA CON MELON LATA 6X400GR  (ID: 15509626978691)
+2026-05-08 21:51:30,962 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:51:30,962 [INFO]     [0.26] Paté de Ternera con Melón para Perros (alimento-humedo-de-ternera-con-melon)
+2026-05-08 21:51:30,962 [INFO]     [0.14] Estofado de Roast Beef para Perros (estofado-de-roast-beef-perros)
+2026-05-08 21:51:30,962 [INFO]     [0.14] Albóndigas de Ternera y Salvia para Perros (albondigas-de-ternera-y-salvia-400gr)
+2026-05-08 21:51:30,962 [INFO]   ✓ Match: 'Paté de Ternera con Melón para Perros' (score=0.26)
+2026-05-08 21:51:31,152 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:34,175 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509626978691_1_oficial.jpg
+2026-05-08 21:51:35,675 [INFO] 
+[63/87] ALPHA SPIRIT FELINE CONEJO LATA CAJA 6X200GR  (ID: 15509627011459)
+2026-05-08 21:51:35,678 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:51:35,678 [INFO]     [0.14] Paté de Conejo para Gatos (alimento-humedo-de-conejo-200gr)
+2026-05-08 21:51:35,678 [INFO]     [0.12] Paté de Conejo con Plátano para Gatos (alimento-humedo-de-conejo-con-platano-200gr)
+2026-05-08 21:51:35,678 [INFO]     [0.12] Paté de Conejo para Gatos Esterilizados (alimento-humedo-de-conejo-gatos-esterilizados-200gr)
+2026-05-08 21:51:35,678 [INFO]   ✓ Match: 'Paté de Conejo para Gatos' (score=0.14)
+2026-05-08 21:51:36,487 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:51:39,883 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509627011459_1_oficial.jpg
+2026-05-08 21:51:43,562 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509627011459_2_oficial.jpg
+2026-05-08 21:51:45,062 [INFO] 
+[64/87] ALPHA SPIRIT FELINE ESTERILIZADO PATO LATA CAJA 6X200GR  (ID: 15509627044227)
+2026-05-08 21:51:45,065 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:51:45,065 [INFO]     [0.12] Paté de Pato para Gatos (alimento-humedo-de-pato-200gr)
+2026-05-08 21:51:45,065 [INFO]     [0.11] Paté de Pato para Gatos Esterilizados (alimento-humedo-de-pato-gatos-esterilizados-200gr)
+2026-05-08 21:51:45,065 [INFO]     [0.10] Caja de Ristras Multisabor (caja-de-ristras-multisabor-6-sabores-x-4unds)
+2026-05-08 21:51:45,065 [INFO]   ✓ Match: 'Paté de Pato para Gatos' (score=0.12)
+2026-05-08 21:51:45,898 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:51:49,067 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509627044227_1_oficial.jpg
+2026-05-08 21:51:52,846 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509627044227_2_oficial.jpg
+2026-05-08 21:51:54,347 [INFO] 
+[65/87] ALPHA SPIRIT FELINE ESTERILIZADO POLLO LATA CAJA 6X200GR  (ID: 15509627076995)
+2026-05-08 21:51:54,350 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:51:54,350 [INFO]     [0.14] Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+2026-05-08 21:51:54,350 [INFO]     [0.12] Mousse de Pollo para Gatos Esterilizados (mousse-de-pollo-para-gatos-esterilizados)
+2026-05-08 21:51:54,350 [INFO]     [0.12] Paté de Pollo Kittens (alimento-humedo-de-pollo-kittens-200gr)
+2026-05-08 21:51:54,350 [INFO]   ✓ Match: 'Mousse de Pollo para Gatos' (score=0.14)
+2026-05-08 21:51:54,825 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:51:57,894 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627076995_1_oficial.jpg
+2026-05-08 21:51:59,395 [INFO] 
+[66/87] ALPHA SPIRIT FELINE FREE RANGE POLLO SNACKS 24X50GRS  (ID: 15509627109763)
+2026-05-08 21:51:59,397 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:51:59,397 [INFO]     [0.23] Natural Snack para Gatos - Pollo (natural-snack-pollo-cats-80gr)
+2026-05-08 21:51:59,397 [INFO]     [0.14] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-50gr)
+2026-05-08 21:51:59,397 [INFO]     [0.14] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-35gr)
+2026-05-08 21:51:59,397 [INFO]   ✓ Match: 'Natural Snack para Gatos - Pollo' (score=0.23)
+2026-05-08 21:51:59,913 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:03,105 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627109763_1_oficial.jpg
+2026-05-08 21:52:04,606 [INFO] 
+[67/87] ALPHA SPIRIT FELINE IBERICO LATA CAJA 6X200GR  (ID: 15509627142531)
+2026-05-08 21:52:04,609 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:52:04,609 [INFO]     [0.14] Salchicha Iberian Ancestral Grassland (salchicha-iberian-ancestral)
+2026-05-08 21:52:04,609 [INFO]     [0.11] Caja de Ristras Multisabor (caja-de-ristras-multisabor-6-sabores-x-4unds)
+2026-05-08 21:52:04,609 [INFO]     [0.01] Alimento Semi-Húmedo Aves de Corral (alimento-semi-humedo-aves-de-corral)
+2026-05-08 21:52:04,609 [INFO]   ✓ Match: 'Salchicha Iberian Ancestral Grassland' (score=0.14)
+2026-05-08 21:52:05,160 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:07,975 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627142531_1_oficial.jpg
+2026-05-08 21:52:09,475 [INFO] 
+[68/87] ALPHA SPIRIT FELINE KITTEN POLLO LATA CAJA 6X200GR  (ID: 15509627175299)
+2026-05-08 21:52:09,478 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:52:09,479 [INFO]     [0.14] Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+2026-05-08 21:52:09,479 [INFO]     [0.12] Mousse de Pollo para Gatos Esterilizados (mousse-de-pollo-para-gatos-esterilizados)
+2026-05-08 21:52:09,479 [INFO]     [0.12] Paté de Pollo Kittens (alimento-humedo-de-pollo-kittens-200gr)
+2026-05-08 21:52:09,479 [INFO]   ✓ Match: 'Mousse de Pollo para Gatos' (score=0.14)
+2026-05-08 21:52:09,607 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:12,778 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627175299_1_oficial.jpg
+2026-05-08 21:52:14,279 [INFO] 
+[69/87] ALPHA SPIRIT FELINE KITTEN SALMON LATA CAJA 6X200GR  (ID: 15509627208067)
+2026-05-08 21:52:14,282 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:52:14,282 [INFO]     [0.15] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-08 21:52:14,282 [INFO]     [0.14] Mousse de Salmón para Gatos Esterilizados (mousse-de-salmon-para-gatos-esterilizados)
+2026-05-08 21:52:14,282 [INFO]     [0.14] Paté de Salmón para Gatos (alimento-humedo-de-salmon-200gr)
+2026-05-08 21:52:14,282 [INFO]   ✓ Match: 'Mousse de Salmón para Gatos' (score=0.15)
+2026-05-08 21:52:14,856 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:17,895 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627208067_1_oficial.jpg
+2026-05-08 21:52:19,396 [INFO] 
+[70/87] ALPHA SPIRIT FELINE PATO SNACKS 16X35GRS  (ID: 15509627240835)
+2026-05-08 21:52:19,398 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:19,398 [INFO]     [0.34] Snack de Pato para gatos (snack-de-pato-35gr-1)
+2026-05-08 21:52:19,398 [INFO]     [0.34] Snack de Pato para gatos (snack-de-pato-50gr-1)
+2026-05-08 21:52:19,398 [INFO]     [0.30] Natural Snack para Gatos  - Pato (natural-snack-cats-pato-80gr)
+2026-05-08 21:52:19,398 [INFO]   ✓ Match: 'Snack de Pato para gatos' (score=0.34)
+2026-05-08 21:52:20,107 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:23,030 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627240835_1_oficial.jpg
+2026-05-08 21:52:24,531 [INFO] 
+[71/87] ALPHA SPIRIT FELINE PATO SNACKS 24X50GRS  (ID: 15509627273603)
+2026-05-08 21:52:24,533 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:24,533 [INFO]     [0.34] Snack de Pato para gatos (snack-de-pato-35gr-1)
+2026-05-08 21:52:24,533 [INFO]     [0.34] Snack de Pato para gatos (snack-de-pato-50gr-1)
+2026-05-08 21:52:24,533 [INFO]     [0.30] Natural Snack para Gatos  - Pato (natural-snack-cats-pato-80gr)
+2026-05-08 21:52:24,533 [INFO]   ✓ Match: 'Snack de Pato para gatos' (score=0.34)
+2026-05-08 21:52:24,714 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:27,521 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627273603_1_oficial.jpg
+2026-05-08 21:52:29,021 [INFO] 
+[72/87] ALPHA SPIRIT FELINE PAVO LATA CAJA 6X200GR  (ID: 15509627306371)
+2026-05-08 21:52:29,024 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:52:29,024 [INFO]     [0.15] Mousse de Pavo para Gatos (mousse-de-pavo-para-gatos)
+2026-05-08 21:52:29,024 [INFO]     [0.14] Paté de Pavo para Gatos (alimento-humedo-de-pavo-200gr)
+2026-05-08 21:52:29,024 [INFO]     [0.12] Paté de Pavo con Pera para Gatos (alimento-humedo-de-pavo-con-pera-200gr)
+2026-05-08 21:52:29,024 [INFO]   ✓ Match: 'Mousse de Pavo para Gatos' (score=0.15)
+2026-05-08 21:52:29,754 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:34,002 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627306371_1_oficial.jpg
+2026-05-08 21:52:35,503 [INFO] 
+[73/87] ALPHA SPIRIT FELINE PAVO SNACKS 24X50GRS  (ID: 15509627339139)
+2026-05-08 21:52:35,505 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:35,505 [INFO]     [0.34] Snack de Pavo para gatos (snack-de-pavo-35gr-1)
+2026-05-08 21:52:35,505 [INFO]     [0.30] Natural Snack para Gatos - Pavo (natural-snack-cats-pavo-80gr)
+2026-05-08 21:52:35,505 [INFO]     [0.30] Snack de Pavo para gatos (copia-de-snack-de-pavo-50gr-gato)
+2026-05-08 21:52:35,505 [INFO]   ✓ Match: 'Snack de Pavo para gatos' (score=0.34)
+2026-05-08 21:52:36,153 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:39,075 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627339139_1_oficial.jpg
+2026-05-08 21:52:40,576 [INFO] 
+[74/87] ALPHA SPIRIT FELINE PESCADO SNACKS 24X50GRS  (ID: 15509627371907)
+2026-05-08 21:52:40,577 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:40,578 [INFO]     [0.34] Snack de Pescado para gatos (snack-de-pescado-35gr-1)
+2026-05-08 21:52:40,578 [INFO]     [0.34] Snack de Pescado para gatos (snack-de-pescado-50gr-1)
+2026-05-08 21:52:40,578 [INFO]     [0.30] Natural Snack para Gatos - Atún (natural-snack-cats-atun-80gr)
+2026-05-08 21:52:40,578 [INFO]   ✓ Match: 'Snack de Pescado para gatos' (score=0.34)
+2026-05-08 21:52:41,256 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:44,908 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627371907_1_oficial.jpg
+2026-05-08 21:52:46,409 [INFO] 
+[75/87] ALPHA SPIRIT FELINE SARDINA LATA CAJA 6X200GR  (ID: 15509627404675)
+2026-05-08 21:52:46,412 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:52:46,412 [INFO]     [0.14] Paté de Sardina para Gatos (alimento-humedo-de-sardina-200gr)
+2026-05-08 21:52:46,412 [INFO]     [0.12] Paté de Sardina con Plátano para Gatos (alimento-humedo-de-sardina-con-platano-200gr)
+2026-05-08 21:52:46,412 [INFO]     [0.11] Caja de Ristras Multisabor (caja-de-ristras-multisabor-6-sabores-x-4unds)
+2026-05-08 21:52:46,412 [INFO]   ✓ Match: 'Paté de Sardina para Gatos' (score=0.14)
+2026-05-08 21:52:47,156 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:52:50,138 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509627404675_1_oficial.jpg
+2026-05-08 21:52:53,319 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509627404675_2_oficial.jpg
+2026-05-08 21:52:54,820 [INFO] 
+[76/87] ALPHA SPIRIT FELINE SNACK AVE CORRAL CAJA 16X35GR  (ID: 15509627437443)
+2026-05-08 21:52:54,821 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:54,822 [INFO]     [0.51] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-50gr)
+2026-05-08 21:52:54,822 [INFO]     [0.51] Snack de Ave de Corral para gatos (snack-de-ave-de-corral-35gr)
+2026-05-08 21:52:54,822 [INFO]     [0.12] Natural Snack para Gatos - Salmón (natural-snack-cats-salmon-80gr)
+2026-05-08 21:52:54,822 [INFO]   ✓ Match: 'Snack de Ave de Corral para gatos' (score=0.51)
+2026-05-08 21:52:55,348 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:52:58,449 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627437443_1_oficial.jpg
+2026-05-08 21:52:59,949 [INFO] 
+[77/87] ALPHA SPIRIT FELINE SNACK PAVO CAJA 16X35GR  (ID: 15509627502979)
+2026-05-08 21:52:59,951 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:52:59,951 [INFO]     [0.30] Snack de Pavo para gatos (snack-de-pavo-35gr-1)
+2026-05-08 21:52:59,951 [INFO]     [0.26] Natural Snack para Gatos - Pavo (natural-snack-cats-pavo-80gr)
+2026-05-08 21:52:59,951 [INFO]     [0.26] Snack de Pavo para gatos (copia-de-snack-de-pavo-50gr-gato)
+2026-05-08 21:52:59,951 [INFO]   ✓ Match: 'Snack de Pavo para gatos' (score=0.30)
+2026-05-08 21:53:00,126 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:53:03,013 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627502979_1_oficial.jpg
+2026-05-08 21:53:04,514 [INFO] 
+[78/87] ALPHA SPIRIT FELINE SNACK PESCADO CAJA 16X35GR  (ID: 15509627568515)
+2026-05-08 21:53:04,515 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:53:04,516 [INFO]     [0.30] Snack de Pescado para gatos (snack-de-pescado-35gr-1)
+2026-05-08 21:53:04,516 [INFO]     [0.30] Snack de Pescado para gatos (snack-de-pescado-50gr-1)
+2026-05-08 21:53:04,516 [INFO]     [0.26] Natural Snack para Gatos - Atún (natural-snack-cats-atun-80gr)
+2026-05-08 21:53:04,516 [INFO]   ✓ Match: 'Snack de Pescado para gatos' (score=0.30)
+2026-05-08 21:53:04,684 [INFO]   1 imagen(es) descargada(s)
+2026-05-08 21:53:07,787 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15509627568515_1_oficial.jpg
+2026-05-08 21:53:09,288 [INFO] 
+[79/87] ALPHA SPIRIT FELINE TERNERA LATA CAJA 6X200GR  (ID: 15509627634051)
+2026-05-08 21:53:09,290 [INFO]   [wet] Top 3 matches:
+2026-05-08 21:53:09,291 [INFO]     [0.14] Paté de Ternera para Gatos (alimento-humedo-de-ternera-200gr)
+2026-05-08 21:53:09,291 [INFO]     [0.12] Paté de Ternera con Melón para Gatos (alimento-humedo-de-ternera-con-melon-200gr)
+2026-05-08 21:53:09,291 [INFO]     [0.11] Caja de Ristras Multisabor (caja-de-ristras-multisabor-6-sabores-x-4unds)
+2026-05-08 21:53:09,291 [INFO]   ✓ Match: 'Paté de Ternera para Gatos' (score=0.14)
+2026-05-08 21:53:09,973 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:53:12,985 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509627634051_1_oficial.jpg
+2026-05-08 21:53:16,279 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509627634051_2_oficial.jpg
+2026-05-08 21:53:17,779 [INFO] 
+[80/87] ALPHA SPIRIT NERVIO DE TORO  (ID: 15509627666819)
+2026-05-08 21:53:17,783 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:53:17,783 [INFO]     [0.26] Nervio De Buey para Perros (nervio-de-buey-l-8-unds-1)
+2026-05-08 21:53:17,783 [INFO]     [0.18] Natural Snack para Perros - Ternera (natural-snack-ternera-80gr)
+2026-05-08 21:53:17,783 [INFO]     [0.15] Natural Snack para Gatos - Ternera (natural-snack-cats-ternera-80gr)
+2026-05-08 21:53:17,783 [INFO]   ✓ Match: 'Nervio De Buey para Perros' (score=0.26)
+2026-05-08 21:53:19,042 [INFO]   3 imagen(es) descargada(s)
+2026-05-08 21:53:21,963 [INFO]   ✓ Imagen 1/3 subida → alpha_spirit_15509627666819_1_oficial.jpg
+2026-05-08 21:53:25,347 [INFO]   ✓ Imagen 2/3 subida → alpha_spirit_15509627666819_2_oficial.jpg
+2026-05-08 21:53:28,604 [INFO]   ✓ Imagen 3/3 subida → alpha_spirit_15509627666819_3_oficial.jpg
+2026-05-08 21:53:30,105 [INFO] 
+[81/87] ALPHA SPIRIT OREJA DE CERDO INDIVIDUAL 25UD  (ID: 15509628223875)
+2026-05-08 21:53:30,108 [INFO]   [snack] Top 3 matches:
+2026-05-08 21:53:30,108 [INFO]     [0.29] Estofado de Oreja de Cerdo para Perros (estofado-de-oreja-de-cerdo-para-perros-280gr)
+2026-05-08 21:53:30,108 [INFO]     [0.01] Barritas individuales de Hígado para perros (barritas-individuales-de-higado-30unds)
+2026-05-08 21:53:30,108 [INFO]     [0.01] Barritas individuales de Jamón para perros (barritas-individuales-de-jamon-30unds)
+2026-05-08 21:53:30,108 [INFO]   ✓ Match: 'Estofado de Oreja de Cerdo para Perros' (score=0.29)
+2026-05-08 21:53:30,385 [INFO]   2 imagen(es) descargada(s)
+2026-05-08 21:53:33,936 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15509628223875_1_oficial.jpg
+2026-05-08 21:53:37,467 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15509628223875_2_oficial.jpg
+2026-05-08 21:53:38,967 [INFO] 
+[82/87] ALPHA THE ONLY ONE CANINE ADULT 7 DAYS  (ID: 15509629141379)
+2026-05-08 21:53:38,973 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:53:38,973 [INFO]     [0.58] Alimento The Only One 7 Days Formula (alimento-the-only-one-7-days-formula)
+2026-05-08 21:53:38,973 [INFO]     [0.57] Pack The Only One 7-Days Formula 12kg (pack-the-only-one-7-days-formula)
+2026-05-08 21:53:38,973 [INFO]     [0.57] Pack The Only One 7-Days Formula 3kg (pack-the-only-one-7-days-formula-3kg)
+2026-05-08 21:53:38,973 [INFO]   ✓ Match: 'Alimento The Only One 7 Days Formula' (score=0.58)
+2026-05-08 21:53:39,685 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:53:40,588 [INFO]   Imagen antigua 1/4 borrada
+2026-05-08 21:53:41,195 [INFO]   Imagen antigua 2/4 borrada
+2026-05-08 21:53:41,786 [INFO]   Imagen antigua 3/4 borrada
+2026-05-08 21:53:42,391 [INFO]   Imagen antigua 4/4 borrada
+2026-05-08 21:53:45,654 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509629141379_1_oficial.jpg
+2026-05-08 21:53:48,836 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509629141379_2_oficial.jpg
+2026-05-08 21:53:52,136 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509629141379_3_oficial.jpg
+2026-05-08 21:53:55,304 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509629141379_4_oficial.jpg
+2026-05-08 21:53:56,805 [INFO] 
+[83/87] ALPHA THE ONLY ONE CANINE ADULT AVES DE CORRAL  (ID: 15509629239683)
+2026-05-08 21:53:56,811 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:53:56,811 [INFO]     [0.68] Alimento The Only One Aves de Corral (alimento-the-only-one-aves-de-corral)
+2026-05-08 21:53:56,811 [INFO]     [0.67] Pack The Only One Aves de Corral 3kg (pack-the-only-one-aves-de-corral-3kg)
+2026-05-08 21:53:56,811 [INFO]     [0.44] Pack The Only One Aves de Corral 12kg (pack-only-one-free-range-poultry-12kg)
+2026-05-08 21:53:56,811 [INFO]   ✓ Match: 'Alimento The Only One Aves de Corral' (score=0.68)
+2026-05-08 21:53:58,897 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:54:02,330 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509629239683_1_oficial.jpg
+2026-05-08 21:54:05,617 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509629239683_2_oficial.jpg
+2026-05-08 21:54:08,721 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509629239683_3_oficial.jpg
+2026-05-08 21:54:12,153 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509629239683_4_oficial.jpg
+2026-05-08 21:54:13,653 [INFO] 
+[84/87] ALPHA THE ONLY ONE CANINE ADULT PATO  (ID: 15509629370755)
+2026-05-08 21:54:13,659 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:54:13,659 [INFO]     [0.51] Alimento The Only One Pato (alimento-the-only-one-pato)
+2026-05-08 21:54:13,659 [INFO]     [0.50] Pack The Only One Pato 12kg (pack-the-only-one-pato-12kg)
+2026-05-08 21:54:13,659 [INFO]     [0.50] Pack The Only One Pato 3kg (pack-the-only-one-pato-3kg)
+2026-05-08 21:54:13,659 [INFO]   ✓ Match: 'Alimento The Only One Pato' (score=0.51)
+2026-05-08 21:54:17,140 [INFO]   5 imagen(es) descargada(s)
+2026-05-08 21:54:20,055 [INFO]   ✓ Imagen 1/5 subida → alpha_spirit_15509629370755_1_oficial.jpg
+2026-05-08 21:54:23,228 [INFO]   ✓ Imagen 2/5 subida → alpha_spirit_15509629370755_2_oficial.jpg
+2026-05-08 21:54:26,672 [INFO]   ✓ Imagen 3/5 subida → alpha_spirit_15509629370755_3_oficial.jpg
+2026-05-08 21:54:29,888 [INFO]   ✓ Imagen 4/5 subida → alpha_spirit_15509629370755_4_oficial.jpg
+2026-05-08 21:54:33,189 [INFO]   ✓ Imagen 5/5 subida → alpha_spirit_15509629370755_5_oficial.jpg
+2026-05-08 21:54:34,689 [INFO] 
+[85/87] ALPHA THE ONLY ONE CANINE ADULT PESCADO  (ID: 15509629436291)
+2026-05-08 21:54:34,695 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:54:34,695 [INFO]     [0.51] Alimento The Only One Wild Fish (alimento-the-only-one-wild-fish)
+2026-05-08 21:54:34,695 [INFO]     [0.50] Pack The Only One Wild Fish 12kg (pack-only-one-wild-fish-9kg)
+2026-05-08 21:54:34,695 [INFO]     [0.50] Pack The Only One Wild Fish 3kg (pack-the-only-one-wild-fish-3kg)
+2026-05-08 21:54:34,696 [INFO]   ✓ Match: 'Alimento The Only One Wild Fish' (score=0.51)
+2026-05-08 21:54:36,334 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:54:39,420 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509629436291_1_oficial.jpg
+2026-05-08 21:54:42,541 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509629436291_2_oficial.jpg
+2026-05-08 21:54:45,711 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509629436291_3_oficial.jpg
+2026-05-08 21:54:49,145 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509629436291_4_oficial.jpg
+2026-05-08 21:54:50,645 [INFO] 
+[86/87] ALPHA THE ONLY ONE CANINE MULTIPROTEICO  (ID: 15509629534595)
+2026-05-08 21:54:50,651 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:54:50,651 [INFO]     [0.76] Alimento The Only One Multiprotein (alimento-the-only-one-multiprotein)
+2026-05-08 21:54:50,651 [INFO]     [0.75] Pack The Only One Multiprotein 12kg (pack-only-one-multiprotein-12kg)
+2026-05-08 21:54:50,651 [INFO]     [0.75] Pack The Only One Multiprotein 3kg (pack-the-only-one-multiprotein-3kg)
+2026-05-08 21:54:50,651 [INFO]   ✓ Match: 'Alimento The Only One Multiprotein' (score=0.76)
+2026-05-08 21:54:53,252 [INFO]   4 imagen(es) descargada(s)
+2026-05-08 21:54:56,613 [INFO]   ✓ Imagen 1/4 subida → alpha_spirit_15509629534595_1_oficial.jpg
+2026-05-08 21:54:59,673 [INFO]   ✓ Imagen 2/4 subida → alpha_spirit_15509629534595_2_oficial.jpg
+2026-05-08 21:55:02,923 [INFO]   ✓ Imagen 3/4 subida → alpha_spirit_15509629534595_3_oficial.jpg
+2026-05-08 21:55:06,265 [INFO]   ✓ Imagen 4/4 subida → alpha_spirit_15509629534595_4_oficial.jpg
+2026-05-08 21:55:07,765 [INFO] 
+[87/87] ALPHA THE ONLY ONE CANINE PUPPY  (ID: 15509629567363)
+2026-05-08 21:55:07,771 [INFO]   [dry] Top 3 matches:
+2026-05-08 21:55:07,771 [INFO]     [0.76] Alimento The Only One Puppies (alimento-the-only-one-puppies)
+2026-05-08 21:55:07,771 [INFO]     [0.41] Alimento The Only One Multiprotein (alimento-the-only-one-multiprotein)
+2026-05-08 21:55:07,771 [INFO]     [0.40] Pack The Only One Multiprotein 12kg (pack-only-one-multiprotein-12kg)
+2026-05-08 21:55:07,771 [INFO]   ✓ Match: 'Alimento The Only One Puppies' (score=0.76)
+2026-05-08 21:55:09,602 [INFO]   3 imagen(es) descargada(s)
+2026-05-08 21:55:12,674 [INFO]   ✓ Imagen 1/3 subida → alpha_spirit_15509629567363_1_oficial.jpg
+2026-05-08 21:55:15,874 [INFO]   ✓ Imagen 2/3 subida → alpha_spirit_15509629567363_2_oficial.jpg
+2026-05-08 21:55:19,285 [INFO]   ✓ Imagen 3/3 subida → alpha_spirit_15509629567363_3_oficial.jpg
+2026-05-08 21:55:20,785 [INFO] 
+============================================================
+2026-05-08 21:55:20,785 [INFO] RESUMEN FINAL
+2026-05-08 21:55:20,785 [INFO] ============================================================
+2026-05-08 21:55:20,785 [INFO]   Productos procesados  : 87
+2026-05-08 21:55:20,785 [INFO]   Imágenes actualizadas : 87
+2026-05-08 21:55:20,785 [INFO]   Sin match             : 0
+2026-05-08 21:55:20,786 [INFO]   Errores               : 0
