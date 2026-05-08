@@ -1,0 +1,44 @@
+name: Procesar todos Farmina ND
+
+on:
+  workflow_dispatch:
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout rama de trabajo
+        uses: actions/checkout@v4
+        with:
+          ref: claude/farmina-nd-shopify-images-idVbe
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Procesar todos los productos Farmina ND
+        env:
+          SHOP_DOMAIN: 7ev1zx-eg.myshopify.com
+          CLIENT_ID: 351cda3bbb4fd14fbda696b30792ca25
+          CLIENT_SECRET: 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
+          VENDOR_FILTER: Farmina ND
+        run: |
+          mkdir -p resultados
+          python3 process_farmina_images.py 2>&1 | tee resultados/proceso_completo_farmina_nd.txt
+
+      - name: Guardar log en el repositorio
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: log proceso completo Farmina ND"
+          git push
