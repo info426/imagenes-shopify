@@ -2,17 +2,17 @@
 """
 Procesador de imágenes Farmina Vet Life para Shopify
 ======================================================
-- Busca la imagen oficial de cada producto en farmina.com
-- La descarga en la máxima resolución disponible
-- La procesa: 2000×2000px, centrada, JPG alta calidad/bajo peso
-- PNG sin fondo → fondo blanco
-- Reemplaza la imagen en Shopify (borra la antigua, sube la nueva)
+1. Playwright carga las categorías DOG + CAT de farmina.com
+2. Extrae el catálogo de productos con sus imágenes (/fotoprodotti/)
+3. Para cada producto Shopify, busca el mejor match por nombre
+4. Descarga, procesa (2000×2000 JPG, fondo blanco) y sube a Shopify
 """
 
 import os
 import re
 import sys
 import time
+import json
 import base64
 import logging
 import argparse
@@ -33,7 +33,13 @@ API_VERSION   = "2024-10"
 TARGET_SIZE   = (2000, 2000)
 JPEG_QUALITY  = 85
 OUTPUT_DIR    = Path("imagenes_vet_life")
+CATALOG_FILE  = Path("resultados/farmina_catalog.json")
 
+FARMINA_BASE = "https://www.farmina.com"
+CATEGORY_URLS = {
+    "dog": f"{FARMINA_BASE}/es/alimento-para-perros/8-farmina-vet-life.html",
+    "cat": f"{FARMINA_BASE}/es/alimento-para-gatos/14-farmina-vet-life.html",
+}
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -41,7 +47,7 @@ HEADERS = {
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
 }
 
-# ─── Logging ─────────────────────────────────────────────────────────────────
+# ─── Logging ──────────────────────────────────────────────────────────────────
 
 logging.basicConfig(
     level=logging.INFO,
@@ -53,7 +59,7 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ─── Autenticación ───────────────────────────────────────────────────────────
+# ─── Autenticación Shopify ────────────────────────────────────────────────────
 
 def get_token() -> str:
     resp = requests.post(
@@ -83,8 +89,7 @@ class ShopifyAPI:
             resp = requests.get(url, headers=self.h, params=params, timeout=30)
             resp.raise_for_status()
             products.extend(resp.json().get("products", []))
-            params = {}
-            url = None
+            params, url = {}, None
             link = resp.headers.get("Link", "")
             if 'rel="next"' in link:
                 for part in link.split(","):
@@ -122,132 +127,153 @@ class ShopifyAPI:
         resp.raise_for_status()
         return resp.json()
 
-# ─── Búsqueda en farmina.com ──────────────────────────────────────────────────
+# ─── Catálogo farmina.com con Playwright ──────────────────────────────────────
 
-def _clean_title(title: str) -> str:
-    """Extrae palabras clave del título eliminando el prefijo de la marca."""
+def _parse_category_html(html: str, species: str) -> list:
+    """Extrae productos de la categoría renderizada por Playwright."""
+    soup = BeautifulSoup(html, "html.parser")
+    entries = []
+    seen_ids = set()
+
+    for hoverbox in soup.find_all("div", class_="hoverbox"):
+        onclick = hoverbox.get("onclick", "")
+        url_match = re.search(r"location\.href='([^']+)'", onclick)
+        if not url_match:
+            continue
+        product_url = url_match.group(1)
+
+        slug_match = re.search(r'/(\d+)-([^/]+)\.html', product_url)
+        if not slug_match:
+            continue
+        product_id = slug_match.group(1)
+        if product_id in seen_ids:
+            continue
+        seen_ids.add(product_id)
+        slug = slug_match.group(2)
+
+        name_el = hoverbox.find("div", class_="es-product-line-title")
+        name = name_el.get_text(strip=True) if name_el else slug.replace("-", " ")
+
+        img_el = hoverbox.find("img")
+        img_src = img_el.get("src", "") if img_el else ""
+        if not img_src.startswith("http"):
+            img_src = FARMINA_BASE + img_src
+
+        if "fotoprodotti" not in img_src:
+            continue
+
+        entries.append({
+            "id": product_id,
+            "name": name,
+            "slug": slug,
+            "url": product_url,
+            "image_url": img_src,
+            "species": species,
+        })
+
+    return entries
+
+
+def build_farmina_catalog() -> list:
+    """Carga el catálogo desde caché o lo construye con Playwright."""
+    if CATALOG_FILE.exists():
+        catalog = json.loads(CATALOG_FILE.read_text(encoding="utf-8"))
+        log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
+        return catalog
+
+    log.info("Construyendo catálogo con Playwright...")
+    from playwright.sync_api import sync_playwright
+
+    catalog = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
+        ctx = browser.new_context(
+            user_agent=HEADERS["User-Agent"],
+            locale="es-ES",
+            extra_http_headers={"Accept-Language": "es-ES,es;q=0.9"},
+        )
+        page = ctx.new_page()
+
+        for species, url in CATEGORY_URLS.items():
+            log.info(f"  Cargando categoría {species.upper()}: {url}")
+            page.goto(url, timeout=40000, wait_until="domcontentloaded")
+            page.wait_for_timeout(5000)
+            html = page.content()
+            entries = _parse_category_html(html, species)
+            log.info(f"  {species.upper()}: {len(entries)} productos encontrados")
+            for e in entries:
+                log.info(f"    [{e['id']}] {e['name']} → {e['image_url'].split('/')[-1]}")
+            catalog.extend(entries)
+
+        browser.close()
+
+    CATALOG_FILE.parent.mkdir(exist_ok=True)
+    CATALOG_FILE.write_text(json.dumps(catalog, ensure_ascii=False, indent=2),
+                            encoding="utf-8")
+    log.info(f"Catálogo guardado: {len(catalog)} productos → {CATALOG_FILE}")
+    return catalog
+
+# ─── Matching Shopify ↔ farmina.com ──────────────────────────────────────────
+
+_STOPWORDS = {"the", "and", "for", "con", "para", "del", "los", "las",
+              "una", "que", "más", "wet", "dry", "food", "alimento"}
+_IGNORE_TOKENS = {"vetlife", "vet", "life", "farmina", "canine", "feline",
+                  "300g", "85g", "150g", "2kg", "3kg", "web", "sito", "amp"}
+
+
+def _tokenize(text: str) -> set:
+    text = re.sub(r'@\w+', '', text)
+    text = re.sub(r'\d+[\.,]?\d*\s*(kg|g|gr|l|ml|tab)\b', '', text,
+                  flags=re.IGNORECASE)
+    text = re.sub(r'\(.*?\)', '', text)
+    tokens = set(re.split(r'[\s\-_&+•\.]+', text.lower()))
+    return tokens - _STOPWORDS - _IGNORE_TOKENS - {''}
+
+
+def _clean_shopify_title(title: str) -> str:
     t = title.upper()
     for prefix in ["FARMINA VET LIFE ", "FARMINA VETLIFE ", "FARMINA "]:
         t = t.replace(prefix, "")
-    # Quitar contenido entre paréntesis y unidades de peso
-    t = re.sub(r"\(.*?\)", "", t)
-    t = re.sub(r"\d+[\.,]?\d*\s*(KG|G|GR|L|ML)\b", "", t, flags=re.IGNORECASE)
-    return t.strip().lower()
+    return t
 
-def _extract_images_from_page(html: str, base_url: str) -> list:
-    """Extrae todas las URLs de imágenes de producto de una página HTML."""
-    soup = BeautifulSoup(html, "html.parser")
-    candidates = []
 
-    # Buscar imágenes en elementos típicos de producto
-    selectors = [
-        "img.product__image", "img.wp-post-image",
-        ".product-image img", ".woocommerce-product-gallery img",
-        ".product img", "img[class*='product']",
-        "figure img", ".entry-content img",
-    ]
-    for sel in selectors:
-        for img in soup.select(sel):
-            src = img.get("src") or img.get("data-src") or img.get("data-lazy-src")
-            if src and any(ext in src.lower() for ext in [".jpg", ".jpeg", ".png", ".webp"]):
-                # Intentar obtener versión de mayor resolución
-                srcset = img.get("srcset", "")
-                if srcset:
-                    parts = [p.strip() for p in srcset.split(",") if p.strip()]
-                    best = parts[-1].split()[0] if parts else src
-                    candidates.append(best)
-                else:
-                    candidates.append(src)
+def _score(shopify_title: str, entry: dict) -> float:
+    shopify_tokens = _tokenize(_clean_shopify_title(shopify_title))
+    farmina_tokens = _tokenize(entry["slug"] + " " + entry["name"])
+    if not farmina_tokens:
+        return 0.0
+    inter = shopify_tokens & farmina_tokens
+    union = shopify_tokens | farmina_tokens
+    return len(inter) / len(union) if union else 0.0
 
-    # También buscar en JSON-LD
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            import json
-            data = json.loads(script.string or "")
-            if isinstance(data, dict):
-                img = data.get("image") or data.get("image", {}).get("url", "")
-                if img and isinstance(img, str):
-                    candidates.append(img)
-                elif isinstance(img, list):
-                    candidates.extend(img)
-        except Exception:
-            pass
 
-    # Normalizar URLs relativas
-    from urllib.parse import urljoin
-    return [urljoin(base_url, u) for u in dict.fromkeys(candidates) if u]
+def find_best_match(shopify_title: str, catalog: list) -> dict | None:
+    title_lower = shopify_title.lower()
+    if any(w in title_lower for w in ["canine", "perro", "dog"]):
+        candidates = [e for e in catalog if e["species"] == "dog"]
+    elif any(w in title_lower for w in ["feline", "gato", "cat"]):
+        candidates = [e for e in catalog if e["species"] == "cat"]
+    else:
+        candidates = catalog
 
-def search_farmina_vet_life_image(title: str, current_img_url: str) -> str | None:
-    """
-    Busca la imagen oficial del producto en farmina.com.
-    Estrategias (en orden):
-    1. Buscar por título en farmina.com/es (versión española)
-    2. Buscar por título en farmina.com (internacional)
-    3. Intentar URL directa construida desde el título
-    """
-    keywords = _clean_title(title)
-    query    = keywords.replace(" ", "+")
-    log.info(f"  Buscando en farmina.com: '{keywords}'")
+    if not candidates:
+        return None
 
-    search_attempts = [
-        f"https://www.farmina.com/es/?s={query}",
-        f"https://www.farmina.com/?s={query}",
-        f"https://www.farmina.com/es/buscar/?q={query}",
-    ]
+    scored = sorted(
+        [(e, _score(shopify_title, e)) for e in candidates],
+        key=lambda x: x[1], reverse=True,
+    )
+    best_entry, best_score = scored[0]
 
-    for search_url in search_attempts:
-        try:
-            resp = requests.get(search_url, headers=HEADERS, timeout=20)
-            if resp.status_code != 200:
-                continue
-            soup = BeautifulSoup(resp.text, "html.parser")
+    log.info(f"  Top 3 matches para '{shopify_title}':")
+    for e, s in scored[:3]:
+        log.info(f"    [{s:.2f}] {e['name']} ({e['slug']})")
 
-            # Buscar links a páginas de producto
-            product_links = []
-            for a in soup.find_all("a", href=True):
-                href = a["href"]
-                kws = keywords.split()
-                if any(kw in href.lower() for kw in kws if len(kw) > 3):
-                    product_links.append(href)
+    if best_score < 0.10:
+        log.warning(f"  Score demasiado bajo ({best_score:.2f}) — sin match")
+        return None
 
-            # También buscar resultados de búsqueda directos
-            for sel in [".product a", ".woocommerce-loop-product a",
-                        "article a", ".entry-title a"]:
-                for a in soup.select(sel):
-                    href = a.get("href", "")
-                    if href:
-                        product_links.append(href)
-
-            # Visitar cada página de producto y buscar imagen
-            seen = set()
-            for link in product_links[:5]:  # máximo 5 páginas de producto
-                if link in seen:
-                    continue
-                seen.add(link)
-                try:
-                    from urllib.parse import urljoin
-                    full_link = urljoin("https://www.farmina.com", link)
-                    page = requests.get(full_link, headers=HEADERS, timeout=20)
-                    if page.status_code != 200:
-                        continue
-                    images = _extract_images_from_page(page.text, full_link)
-                    # Filtrar imágenes pequeñas/iconos por URL
-                    images = [u for u in images if not any(
-                        x in u.lower() for x in ["logo", "icon", "banner",
-                                                   "sprite", "avatar"])]
-                    if images:
-                        log.info(f"  Imagen encontrada en: {full_link}")
-                        return images[0]
-                    time.sleep(0.5)
-                except Exception as e:
-                    log.debug(f"  Error visitando {link}: {e}")
-
-        except Exception as e:
-            log.debug(f"  Error en búsqueda {search_url}: {e}")
-        time.sleep(1)
-
-    log.warning(f"  No se encontró imagen en farmina.com para: {title}")
-    return None
+    return best_entry
 
 # ─── Procesamiento de imágenes ────────────────────────────────────────────────
 
@@ -255,31 +281,20 @@ def _has_transparency(img: Image.Image) -> bool:
     return img.mode in ("RGBA", "LA") or (
         img.mode == "P" and "transparency" in img.info)
 
-def _sample_bg_color(img: Image.Image) -> tuple:
-    rgb = img.convert("RGB")
-    w, h = rgb.size
-    corners = [rgb.getpixel((0, 0)), rgb.getpixel((w-1, 0)),
-               rgb.getpixel((0, h-1)), rgb.getpixel((w-1, h-1))]
-    return tuple(sum(c[i] for c in corners) // 4 for i in range(3))
 
 def process_image(img: Image.Image) -> Image.Image:
-    """
-    Redimensiona a 2000×2000, centrada.
-    - Transparente → fondo blanco
-    - Con fondo → conserva color de fondo original
-    """
+    """2000×2000, centrada, fondo blanco."""
     transparent = _has_transparency(img)
-    bg_color    = (255, 255, 255) if transparent else _sample_bg_color(img)
-    img_rgb     = img.convert("RGBA") if transparent else img.convert("RGB")
+    img_conv = img.convert("RGBA") if transparent else img.convert("RGB")
 
-    ratio = img_rgb.width / img_rgb.height
+    ratio = img_conv.width / img_conv.height
     if ratio > 1:
         new_w, new_h = TARGET_SIZE[0], int(TARGET_SIZE[0] / ratio)
     else:
         new_w, new_h = int(TARGET_SIZE[1] * ratio), TARGET_SIZE[1]
 
-    resized    = img_rgb.resize((new_w, new_h), Image.LANCZOS)
-    background = Image.new("RGB", TARGET_SIZE, bg_color)
+    resized    = img_conv.resize((new_w, new_h), Image.LANCZOS)
+    background = Image.new("RGB", TARGET_SIZE, (255, 255, 255))
     ox = (TARGET_SIZE[0] - new_w) // 2
     oy = (TARGET_SIZE[1] - new_h) // 2
 
@@ -290,11 +305,13 @@ def process_image(img: Image.Image) -> Image.Image:
 
     return background
 
+
 def to_b64_jpeg(img: Image.Image) -> str:
     buf = BytesIO()
     img.save(buf, format="JPEG", quality=JPEG_QUALITY,
              optimize=True, progressive=True)
     return base64.b64encode(buf.getvalue()).decode()
+
 
 def download_image(url: str) -> Image.Image:
     resp = requests.get(url, timeout=30, headers=HEADERS)
@@ -307,6 +324,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--product-id", type=int, default=None,
                         help="Procesar solo este product ID (modo prueba)")
+    parser.add_argument("--rebuild-catalog", action="store_true",
+                        help="Forzar reconstrucción del catálogo farmina.com")
     args = parser.parse_args()
 
     if not CLIENT_ID or not CLIENT_SECRET:
@@ -314,10 +333,20 @@ def main():
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(exist_ok=True)
+    Path("resultados").mkdir(exist_ok=True)
 
     log.info("=" * 60)
     log.info("PROCESADOR FARMINA VET LIFE — SHOPIFY")
     log.info("=" * 60)
+
+    if args.rebuild_catalog and CATALOG_FILE.exists():
+        CATALOG_FILE.unlink()
+        log.info("Catálogo eliminado, reconstruyendo...")
+
+    catalog = build_farmina_catalog()
+    if not catalog:
+        log.error("Catálogo vacío — abortando")
+        sys.exit(1)
 
     token = get_token()
     api   = ShopifyAPI(token)
@@ -330,8 +359,7 @@ def main():
         products = api.get_products(VENDOR)
         log.info(f"Total: {len(products)} productos\n")
 
-    stats = dict(total=len(products), actualizadas=0,
-                 sin_imagen_web=0, errores=0)
+    stats = dict(total=len(products), actualizadas=0, sin_match=0, errores=0)
 
     for i, product in enumerate(products, 1):
         pid   = product["id"]
@@ -339,39 +367,27 @@ def main():
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
 
         try:
-            images = api.get_images(pid)
-            if not images:
-                log.warning("  Sin imágenes en Shopify — saltando")
-                stats["sin_imagen_web"] += 1
+            match = find_best_match(title, catalog)
+            if not match:
+                log.warning(f"  Sin match en farmina.com — saltando")
+                stats["sin_match"] += 1
                 continue
 
-            # Usar primera imagen actual como referencia de identificación
-            current_img_url = images[0]["src"]
+            log.info(f"  ✓ Match: '{match['name']}' → {match['image_url'].split('/')[-1]}")
 
-            # Buscar imagen oficial en farmina.com
-            official_url = search_farmina_vet_life_image(title, current_img_url)
-
-            if not official_url:
-                log.warning(f"  No encontrada en farmina.com — saltando")
-                stats["sin_imagen_web"] += 1
-                continue
-
-            # Descargar y procesar imagen oficial
-            log.info(f"  Descargando imagen oficial: {official_url}")
-            official_img = download_image(official_url)
+            official_img = download_image(match["image_url"])
             processed    = process_image(official_img)
             b64          = to_b64_jpeg(processed)
             fname        = f"vetlife_{pid}_oficial.jpg"
             processed.save(OUTPUT_DIR / fname, "JPEG",
                            quality=JPEG_QUALITY, optimize=True)
-            log.info(f"  Tamaño final: {processed.size}, guardado: {fname}")
+            log.info(f"  Procesada: {processed.size} → {fname}")
 
-            # Reemplazar TODAS las imágenes actuales con la imagen oficial
-            # Primero borrar las existentes, luego subir la nueva en posición 1
+            images = api.get_images(pid)
             for j, img_data in enumerate(images):
                 api.delete_image(pid, img_data["id"])
                 time.sleep(0.2)
-                log.info(f"  Imagen {j+1}/{len(images)} borrada")
+                log.info(f"  Imagen antigua {j+1}/{len(images)} borrada")
 
             api.create_image(pid, b64, fname, alt=title, position=1)
             log.info(f"  ✓ Imagen oficial subida a Shopify")
@@ -386,10 +402,11 @@ def main():
     log.info("\n" + "=" * 60)
     log.info("RESUMEN FINAL")
     log.info("=" * 60)
-    log.info(f"  Productos procesados         : {stats['total']}")
-    log.info(f"  Imágenes actualizadas        : {stats['actualizadas']}")
-    log.info(f"  No encontradas en farmina.com: {stats['sin_imagen_web']}")
-    log.info(f"  Errores                      : {stats['errores']}")
+    log.info(f"  Productos procesados  : {stats['total']}")
+    log.info(f"  Imágenes actualizadas : {stats['actualizadas']}")
+    log.info(f"  Sin match farmina.com : {stats['sin_match']}")
+    log.info(f"  Errores               : {stats['errores']}")
+
 
 if __name__ == "__main__":
     main()
