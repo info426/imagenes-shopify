@@ -253,6 +253,9 @@ _ES_TO_EN = {
     "iberico":       "iberian",
     "toro":          "beef",
     "puppy":         "puppies",
+    "kittens":       "kitten",
+    "esterilizado":  "sterilized",
+    "esterilizados": "sterilized",
 }
 
 _STOPWORDS = {
