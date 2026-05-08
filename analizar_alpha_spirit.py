@@ -185,6 +185,8 @@ _ES_TO_EN = {
     "sardina":      "sardine",
     "boqueron":     "anchovy",
     "iberico":      "iberian",
+    "toro":         "beef",
+    "puppy":        "puppies",
 }
 
 _STOPWORDS = {
@@ -221,7 +223,8 @@ def _is_wet(title: str) -> bool:
     t = title.upper()
     return any(x in t for x in ["CAJA", "TARRO", "HUMEDO", "HÚMEDO",
                                  "WET", "MOUSSE", "PATE", "PATÉ",
-                                 "ESTOFADO", "SALCHICHA"])
+                                 "ESTOFADO", "SALCHICHA", "LATA",
+                                 "ALBONDIG"])
 
 
 def _is_semiwet(title: str) -> bool:
