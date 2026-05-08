@@ -2,107 +2,107 @@
 AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
 ======================================================================
 
-[REVISAR] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR
+[OK] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR
   ID Shopify : 15509745303939
-  Match      : Intestinal UltraCare low Fat canine (score=0.14)
+  Match      : dental treat Gastrointestinlal medium & maxi (score=0.43)
   Img actual : vetlife_15509745303939_oficial.jpg
-  Img match  : 1126_25_intestinal-ultracare-low-fat-canine.png
+  Img match  : 1096_14_vetlife-dental-treat-gastrointestinal-medium-maxi.png
 
 
-[REVISAR] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR
+[OK] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR
   ID Shopify : 15509745402243
-  Match      : dental treat Gastrointestinlal mini (score=0.17)
+  Match      : dental treat Gastrointestinlal mini (score=0.33)
   Img actual : vetlife_15509745402243_oficial.jpg
   Img match  : 1095_06_vetlife-dental-treat-gastrointestinal-mini.png
 
 
-[REVISAR] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR
+[OK] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR
   ID Shopify : 15509745467779
-  Match      : Hypoallergenic Pork & Potato (score=0.17)
+  Match      : dental treat Hypoallergenic Pork & Potato medium & maxi (score=0.44)
   Img actual : vetlife_15509745467779_oficial.jpg
-  Img match  : 965_03_vet-life-canine-hypo-pork@web.png
+  Img match  : 1100_56_vetlife-dental-treat-hypoallergenic-pork-medium-maxi.png
 
 
-[REVISAR] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR
+[OK] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR
   ID Shopify : 15509745500547
-  Match      : dental treat Hypoallergenic Pork & Potato mini (score=0.29)
+  Match      : dental treat Hypoallergenic Pork & Potato mini (score=0.38)
   Img actual : vetlife_15509745500547_oficial.jpg
   Img match  : 1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png
 
 
-[REVISAR] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR
+[OK] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR
   ID Shopify : 15509745598851
-  Match      : Obesity Fish (score=0.2)
+  Match      : dental treat Hypoallergenic Fish & Potato medium & maxi (score=0.44)
   Img actual : vetlife_15509745598851_oficial.jpg
-  Img match  : 966_34_vet-life-canine-obesity-fish@web.png
+  Img match  : 1098_36_vetlife-dental-treat-hypoallergenic-fish-medium-maxi.png
 
 
-[REVISAR] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR
+[OK] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR
   ID Shopify : 15509745664387
-  Match      : dental treat Hypoallergenic Fish & Potato mini (score=0.29)
+  Match      : dental treat Hypoallergenic Fish & Potato mini (score=0.38)
   Img actual : vetlife_15509745664387_oficial.jpg
   Img match  : 1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR
   ID Shopify : 15509745762691
-  Match      : Joint (score=0.33)
+  Match      : dental treat Joint medium & maxi (score=0.67)
   Img actual : vetlife_15509745762691_oficial.jpg
-  Img match  : 63_21_63_53_vet-life-canine-joint@web.png
+  Img match  : 1106_02_vetlife-dental-treat-joint-medium-maxi.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR
   ID Shopify : 15509745828227
-  Match      : dental treat Joint mini (score=0.5)
+  Match      : dental treat Joint mini (score=0.6)
   Img actual : vetlife_15509745828227_oficial.jpg
   Img match  : 1105_55_vetlife-dental-treat-joint-mini.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR
   ID Shopify : 15509745860995
-  Match      : Obesity (score=0.33)
+  Match      : dental treat Obesity medium & maxi (score=0.67)
   Img actual : vetlife_15509745860995_oficial.jpg
-  Img match  : 70_33_70_12_vet-life-canine-obesity@web.png
+  Img match  : 1108_35_vetlife-dental-treat-obesity-medium-maxi.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR
   ID Shopify : 15509745992067
-  Match      : dental treat Obesity mini (score=0.5)
+  Match      : dental treat Obesity mini (score=0.6)
   Img actual : vetlife_15509745992067_oficial.jpg
   Img match  : 1109_47_vetlife-dental-treat-obesity-mini.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR
   ID Shopify : 15509746057603
-  Match      : Renal (score=0.33)
+  Match      : dental treat Renal medium & maxi (score=0.67)
   Img actual : vetlife_15509746057603_oficial.jpg
-  Img match  : 69_28_69_44_vet-life-canine-renal@web.png
+  Img match  : 1104_15_vetlife-dental-treat-renal-medium-maxi.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR
   ID Shopify : 15509746090371
-  Match      : dental treat Renal mini (score=0.5)
+  Match      : dental treat Renal mini (score=0.6)
   Img actual : vetlife_15509746090371_oficial.jpg
   Img match  : 1103_21_vetlife-dental-treat-renal-mini.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR
   ID Shopify : 15509746221443
-  Match      : Struvite (score=0.33)
+  Match      : dental treat Struvite medium & maxi (score=0.67)
   Img actual : vetlife_15509746221443_oficial.jpg
-  Img match  : 66_47_66_26_vet-life-canine-struvite@web.png
+  Img match  : 1102_25_vetlife-dental-treat-struvite-medium-maxi.png
 
 
 [OK] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR
   ID Shopify : 15509746254211
-  Match      : dental treat Struvite mini (score=0.5)
+  Match      : dental treat Struvite mini (score=0.6)
   Img actual : vetlife_15509746254211_oficial.jpg
   Img match  : 1101_57_vetlife-dental-treat-struvite-mini.png
 
 
-[REVISAR] FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR
+[OK] FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR
   ID Shopify : 15509746286979
-  Match      : Convalescence Húmedo (score=0.25)
+  Match      : Convalescence Húmedo (score=0.67)
   Img actual : vetlife_15509746286979_oficial.jpg
   Img match  : 383_18_vetlife-convalescence-85g.png
 
@@ -121,9 +121,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 79_15_vet-life-feline-gastrointestinal@web.png
 
 
-[REVISAR] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR
+[OK] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR
   ID Shopify : 15509746614659
-  Match      : Gastrointestinal Húmedo (score=0.25)
+  Match      : Gastrointestinal Húmedo (score=0.67)
   Img actual : vetlife_15509746614659_oficial.jpg
   Img match  : 382_33_vet-life-gastrointestinal-85g.png
 
@@ -137,14 +137,14 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
 
 [OK] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG
   ID Shopify : 15509746942339
-  Match      : Hypoallergenic Pork & Potato feline (score=0.4)
+  Match      : Hypoallergenic Pork & Potato feline (score=0.5)
   Img actual : vetlife_15509746942339_oficial.jpg
   Img match  : 967_54_hypo-pork-cat@web.png
 
 
 [OK] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR
   ID Shopify : 15509747040643
-  Match      : Hypoallergenic Pork & Potato Húmedo (score=0.33)
+  Match      : Hypoallergenic Pork & Potato Húmedo (score=0.6)
   Img actual : vetlife_15509747040643_oficial.jpg
   Img match  : 1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png
 
@@ -163,16 +163,16 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 82_55_82_57_vet-life-feline-renal@web.png
 
 
-[REVISAR] FARMINA VET LIFE CAT RENAL CAJA 12X85GR
+[OK] FARMINA VET LIFE CAT RENAL CAJA 12X85GR
   ID Shopify : 15509747401091
-  Match      : Renal Húmedo (score=0.25)
+  Match      : Renal Húmedo (score=0.67)
   Img actual : vetlife_15509747401091_oficial.jpg
   Img match  : 381_04_vetlife-renal-85g.png
 
 
-[REVISAR] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR
+[OK] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR
   ID Shopify : 15509747532163
-  Match      : Struvite Húmedo (score=0.25)
+  Match      : Struvite Húmedo (score=0.67)
   Img actual : vetlife_15509747532163_oficial.jpg
   Img match  : 380_51_vetlife-struvite-85g.png
 
@@ -191,9 +191,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png
 
 
-[REVISAR] FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR
   ID Shopify : 15509747859843
-  Match      : Convalescence Húmedo (score=0.25)
+  Match      : Convalescence Húmedo (score=0.67)
   Img actual : vetlife_15509747859843_oficial.jpg
   Img match  : 373_42_vetlife-convalescence-300g.png
 
@@ -212,9 +212,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 65_42_65_26_vet-life-canine-gastrointestinal@web.png
 
 
-[REVISAR] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR
   ID Shopify : 15509748121987
-  Match      : Gastrointestinal Húmedo (score=0.25)
+  Match      : Gastrointestinal Húmedo (score=0.67)
   Img actual : vetlife_15509748121987_oficial.jpg
   Img match  : 374_57_vetlife-gastrointestinal-300g.png
 
@@ -226,9 +226,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 78_00_78_25_vet-life-canine-hepatic@web copia.png
 
 
-[REVISAR] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR
   ID Shopify : 15509748253059
-  Match      : Hypoallergenic Fish & Potato Húmedo (score=0.14)
+  Match      : Hypoallergenic Fish & Potato Húmedo (score=0.33)
   Img actual : 8606014103953.png
   Img match  : 379_44_vetlife-hypoallergenic-fish-&-potato-300g.png
 
@@ -242,7 +242,7 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
 
 [OK] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR
   ID Shopify : 15509748416899
-  Match      : Hypoallergenic Pork & Potato Húmedo (score=0.33)
+  Match      : Hypoallergenic Pork & Potato Húmedo (score=0.6)
   Img actual : vetlife_15509748416899_oficial.jpg
   Img match  : 1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png
 
@@ -256,7 +256,7 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
 
 [OK] FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR
   ID Shopify : 15509748547971
-  Match      : Hypoallergenic Duck & Potato Húmedo (score=0.33)
+  Match      : Hypoallergenic Duck & Potato Húmedo (score=0.6)
   Img actual : vetlife_15509748547971_oficial.jpg
   Img match  : 378_26_vetlife-hypoallergenic-duck-&-potato-300g.png
 
@@ -310,9 +310,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 69_28_69_44_vet-life-canine-renal@web.png
 
 
-[REVISAR] FARMINA VET LIFE DOG RENAL CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG RENAL CAJA 6X300GR
   ID Shopify : 15509749236099
-  Match      : Renal Húmedo (score=0.25)
+  Match      : Renal Húmedo (score=0.67)
   Img actual : vetlife_15509749236099_oficial.jpg
   Img match  : 376_42_vetlife-renal-300g.png
 
@@ -324,9 +324,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 66_47_66_26_vet-life-canine-struvite@web.png
 
 
-[REVISAR] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR
   ID Shopify : 15509749432707
-  Match      : Struvite Húmedo (score=0.25)
+  Match      : Struvite Húmedo (score=0.67)
   Img actual : vetlife_15509749432707_oficial.jpg
   Img match  : 375_27_vetlife-struvite-300g.png
 
@@ -345,9 +345,9 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
   Img match  : 72_21_vet-life-canine-ulytrahypo@web.png
 
 
-[REVISAR] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR
+[OK] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR
   ID Shopify : 15509749694851
-  Match      : UltraHypo húmedo (score=0.25)
+  Match      : UltraHypo húmedo (score=0.67)
   Img actual : vetlife_15509749694851_oficial.jpg
   Img match  : 1008_58_vetlife-ultrahypo-300g.png
 
@@ -397,8 +397,8 @@ AUDITORÍA FARMINA VET LIFE — MATCHING MEJORADO
 ======================================================================
 RESUMEN
 ======================================================================
-  OK (confianza alta ≥0.30)  : 40
-  REVISAR (confianza baja)   : 16
+  OK (confianza alta ≥0.30)  : 56
+  REVISAR (confianza baja)   : 0
   SIN MATCH                  : 0
   EXCLUIDOS                  : 2
   TOTAL                      : 58

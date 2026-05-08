@@ -1,5 +1,5 @@
 Cargando catálogo farmina.com...
-2026-05-08 10:39:41,550 [INFO] Catálogo cargado desde caché: 62 productos
+2026-05-08 10:51:35,121 [INFO] Catálogo cargado desde caché: 62 productos
 Catálogo: 62 productos
 
 Obteniendo token Shopify...
@@ -9,244 +9,244 @@ Total: 58 productos
 
 [1/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR
   Img actual: vetlife_15509745303939_oficial.jpg
-2026-05-08 10:39:42,864 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:42,864 [INFO]     [0.14] Intestinal UltraCare low Fat canine (intestinal-ultracare-low-fat-canine)
-2026-05-08 10:39:42,864 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:42,864 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
-  Match: Intestinal UltraCare low Fat canine → 1126_25_intestinal-ultracare-low-fat-canine.png
-  → REVISAR (score=0.14)
+2026-05-08 10:51:36,504 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:36,504 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:36,504 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 10:51:36,504 [INFO]     [0.43] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+  Match: dental treat Gastrointestinlal medium & maxi → 1096_14_vetlife-dental-treat-gastrointestinal-medium-maxi.png
+  → OK (score=0.43)
 
 [2/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR
   Img actual: vetlife_15509745402243_oficial.jpg
-2026-05-08 10:39:43,166 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:43,166 [INFO]     [0.17] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:43,166 [INFO]     [0.17] dental treat Struvite mini (dental-treat-struvite-mini)
-2026-05-08 10:39:43,166 [INFO]     [0.17] dental treat Obesity mini (dental-treat-obesity-mini)
+2026-05-08 10:51:36,730 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:36,730 [INFO]     [0.33] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:36,730 [INFO]     [0.33] dental treat Struvite mini (dental-treat-struvite-mini)
+2026-05-08 10:51:36,731 [INFO]     [0.33] dental treat Obesity mini (dental-treat-obesity-mini)
   Match: dental treat Gastrointestinlal mini → 1095_06_vetlife-dental-treat-gastrointestinal-mini.png
-  → REVISAR (score=0.17)
+  → OK (score=0.33)
 
 [3/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR
   Img actual: vetlife_15509745467779_oficial.jpg
-2026-05-08 10:39:43,490 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:43,490 [INFO]     [0.17] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
-2026-05-08 10:39:43,490 [INFO]     [0.12] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
-2026-05-08 10:39:43,490 [INFO]     [0.11] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
-  Match: Hypoallergenic Pork & Potato → 965_03_vet-life-canine-hypo-pork@web.png
-  → REVISAR (score=0.17)
+2026-05-08 10:51:36,952 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:36,952 [INFO]     [0.44] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
+2026-05-08 10:51:36,952 [INFO]     [0.38] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:36,952 [INFO]     [0.38] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+  Match: dental treat Hypoallergenic Pork & Potato medium & maxi → 1100_56_vetlife-dental-treat-hypoallergenic-pork-medium-maxi.png
+  → OK (score=0.44)
 
 [4/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR
   Img actual: vetlife_15509745500547_oficial.jpg
-2026-05-08 10:39:43,784 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:43,784 [INFO]     [0.29] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
-2026-05-08 10:39:43,784 [INFO]     [0.17] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:43,784 [INFO]     [0.17] dental treat Struvite mini (dental-treat-struvite-mini)
+2026-05-08 10:51:37,176 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:37,176 [INFO]     [0.38] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
+2026-05-08 10:51:37,176 [INFO]     [0.29] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:37,177 [INFO]     [0.29] dental treat Struvite mini (dental-treat-struvite-mini)
   Match: dental treat Hypoallergenic Pork & Potato mini → 1099_49_vetlife-dental-treat-hypoallergenic-pork-mini.png
-  → REVISAR (score=0.29)
+  → OK (score=0.38)
 
 [5/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR
   Img actual: vetlife_15509745598851_oficial.jpg
-2026-05-08 10:39:44,075 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:44,075 [INFO]     [0.20] Obesity Fish (obesity-fish)
-2026-05-08 10:39:44,075 [INFO]     [0.17] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
-2026-05-08 10:39:44,075 [INFO]     [0.12] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
-  Match: Obesity Fish → 966_34_vet-life-canine-obesity-fish@web.png
-  → REVISAR (score=0.2)
+2026-05-08 10:51:37,405 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:37,405 [INFO]     [0.44] dental treat Hypoallergenic Fish & Potato medium & maxi (dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi)
+2026-05-08 10:51:37,405 [INFO]     [0.38] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:37,405 [INFO]     [0.38] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+  Match: dental treat Hypoallergenic Fish & Potato medium & maxi → 1098_36_vetlife-dental-treat-hypoallergenic-fish-medium-maxi.png
+  → OK (score=0.44)
 
 [6/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR
   Img actual: vetlife_15509745664387_oficial.jpg
-2026-05-08 10:39:44,361 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:44,361 [INFO]     [0.29] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
-2026-05-08 10:39:44,361 [INFO]     [0.20] Obesity Fish (obesity-fish)
-2026-05-08 10:39:44,361 [INFO]     [0.17] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:37,649 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:37,649 [INFO]     [0.38] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
+2026-05-08 10:51:37,649 [INFO]     [0.29] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:37,649 [INFO]     [0.29] dental treat Struvite mini (dental-treat-struvite-mini)
   Match: dental treat Hypoallergenic Fish & Potato mini → 1097_27_vetlife-dental-treat-hypoallergenic-fish-mini.png
-  → REVISAR (score=0.29)
+  → OK (score=0.38)
 
 [7/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR
   Img actual: vetlife_15509745762691_oficial.jpg
-2026-05-08 10:39:44,695 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:44,695 [INFO]     [0.33] Joint (joint)
-2026-05-08 10:39:44,695 [INFO]     [0.20] dental treat Joint mini (dental-treat-joint-mini)
-2026-05-08 10:39:44,695 [INFO]     [0.17] dental treat Joint medium & maxi (dental-treat-joint-medium-&-maxi)
-  Match: Joint → 63_21_63_53_vet-life-canine-joint@web.png
-  → OK (score=0.33)
+2026-05-08 10:51:37,880 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:37,880 [INFO]     [0.67] dental treat Joint medium & maxi (dental-treat-joint-medium-&-maxi)
+2026-05-08 10:51:37,880 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:37,880 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+  Match: dental treat Joint medium & maxi → 1106_02_vetlife-dental-treat-joint-medium-maxi.png
+  → OK (score=0.67)
 
 [8/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR
   Img actual: vetlife_15509745828227_oficial.jpg
-2026-05-08 10:39:44,990 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:44,990 [INFO]     [0.50] dental treat Joint mini (dental-treat-joint-mini)
-2026-05-08 10:39:44,990 [INFO]     [0.33] Joint (joint)
-2026-05-08 10:39:44,990 [INFO]     [0.20] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:38,136 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:38,137 [INFO]     [0.60] dental treat Joint mini (dental-treat-joint-mini)
+2026-05-08 10:51:38,137 [INFO]     [0.33] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:38,137 [INFO]     [0.33] dental treat Struvite mini (dental-treat-struvite-mini)
   Match: dental treat Joint mini → 1105_55_vetlife-dental-treat-joint-mini.png
-  → OK (score=0.5)
+  → OK (score=0.6)
 
 [9/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR
   Img actual: vetlife_15509745860995_oficial.jpg
-2026-05-08 10:39:45,306 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:45,306 [INFO]     [0.33] Obesity (obesity)
-2026-05-08 10:39:45,306 [INFO]     [0.25] Obesity Fish (obesity-fish)
-2026-05-08 10:39:45,306 [INFO]     [0.20] dental treat Obesity mini (dental-treat-obesity-mini)
-  Match: Obesity → 70_33_70_12_vet-life-canine-obesity@web.png
-  → OK (score=0.33)
+2026-05-08 10:51:38,385 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:38,385 [INFO]     [0.67] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+2026-05-08 10:51:38,385 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:38,385 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+  Match: dental treat Obesity medium & maxi → 1108_35_vetlife-dental-treat-obesity-medium-maxi.png
+  → OK (score=0.67)
 
 [10/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR
   Img actual: vetlife_15509745992067_oficial.jpg
-2026-05-08 10:39:45,605 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:45,606 [INFO]     [0.50] dental treat Obesity mini (dental-treat-obesity-mini)
-2026-05-08 10:39:45,606 [INFO]     [0.33] Obesity (obesity)
-2026-05-08 10:39:45,606 [INFO]     [0.25] Obesity Fish (obesity-fish)
+2026-05-08 10:51:38,613 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:38,613 [INFO]     [0.60] dental treat Obesity mini (dental-treat-obesity-mini)
+2026-05-08 10:51:38,613 [INFO]     [0.33] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:38,613 [INFO]     [0.33] dental treat Struvite mini (dental-treat-struvite-mini)
   Match: dental treat Obesity mini → 1109_47_vetlife-dental-treat-obesity-mini.png
-  → OK (score=0.5)
+  → OK (score=0.6)
 
 [11/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR
   Img actual: vetlife_15509746057603_oficial.jpg
-2026-05-08 10:39:45,878 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:45,878 [INFO]     [0.33] Renal (renal)
-2026-05-08 10:39:45,878 [INFO]     [0.20] dental treat Renal mini (dental-treat-renal-mini)
-2026-05-08 10:39:45,878 [INFO]     [0.17] dental treat Renal medium & maxi (dental-treat-renal-medium-&-maxi)
-  Match: Renal → 69_28_69_44_vet-life-canine-renal@web.png
-  → OK (score=0.33)
+2026-05-08 10:51:38,837 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:38,837 [INFO]     [0.67] dental treat Renal medium & maxi (dental-treat-renal-medium-&-maxi)
+2026-05-08 10:51:38,837 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:38,837 [INFO]     [0.43] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+  Match: dental treat Renal medium & maxi → 1104_15_vetlife-dental-treat-renal-medium-maxi.png
+  → OK (score=0.67)
 
 [12/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR
   Img actual: vetlife_15509746090371_oficial.jpg
-2026-05-08 10:39:46,152 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:46,152 [INFO]     [0.50] dental treat Renal mini (dental-treat-renal-mini)
-2026-05-08 10:39:46,152 [INFO]     [0.33] Renal (renal)
-2026-05-08 10:39:46,152 [INFO]     [0.20] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:39,059 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:39,059 [INFO]     [0.60] dental treat Renal mini (dental-treat-renal-mini)
+2026-05-08 10:51:39,060 [INFO]     [0.33] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:39,060 [INFO]     [0.33] dental treat Struvite mini (dental-treat-struvite-mini)
   Match: dental treat Renal mini → 1103_21_vetlife-dental-treat-renal-mini.png
-  → OK (score=0.5)
+  → OK (score=0.6)
 
 [13/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR
   Img actual: vetlife_15509746221443_oficial.jpg
-2026-05-08 10:39:46,443 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:46,444 [INFO]     [0.33] Struvite (struvite)
-2026-05-08 10:39:46,444 [INFO]     [0.25] Struvite Management canine (struvite-management-canine)
-2026-05-08 10:39:46,444 [INFO]     [0.25] Struvite Management (struvite-management)
-  Match: Struvite → 66_47_66_26_vet-life-canine-struvite@web.png
-  → OK (score=0.33)
+2026-05-08 10:51:39,307 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:39,307 [INFO]     [0.67] dental treat Struvite medium & maxi (dental-treat-struvite-medium-&-maxi)
+2026-05-08 10:51:39,308 [INFO]     [0.43] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:39,308 [INFO]     [0.43] dental treat Obesity medium & maxi (dental-treat-obesity-medium-&-maxi)
+  Match: dental treat Struvite medium & maxi → 1102_25_vetlife-dental-treat-struvite-medium-maxi.png
+  → OK (score=0.67)
 
 [14/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR
   Img actual: vetlife_15509746254211_oficial.jpg
-2026-05-08 10:39:46,738 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:46,739 [INFO]     [0.50] dental treat Struvite mini (dental-treat-struvite-mini)
-2026-05-08 10:39:46,739 [INFO]     [0.33] Struvite (struvite)
-2026-05-08 10:39:46,739 [INFO]     [0.25] Struvite Management canine (struvite-management-canine)
+2026-05-08 10:51:39,560 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:39,560 [INFO]     [0.60] dental treat Struvite mini (dental-treat-struvite-mini)
+2026-05-08 10:51:39,560 [INFO]     [0.33] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:39,560 [INFO]     [0.33] dental treat Obesity mini (dental-treat-obesity-mini)
   Match: dental treat Struvite mini → 1101_57_vetlife-dental-treat-struvite-mini.png
-  → OK (score=0.5)
+  → OK (score=0.6)
 
 [15/58] FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR
   Img actual: vetlife_15509746286979_oficial.jpg
-2026-05-08 10:39:47,037 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:47,037 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:47,037 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
-2026-05-08 10:39:47,037 [INFO]     [0.00] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:39,781 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:39,781 [INFO]     [0.67] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:39,781 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:39,781 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
   Match: Convalescence Húmedo → 383_18_vetlife-convalescence-85g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [16/58] FARMINA VET LIFE CAT DIABETIC
   Img actual: vetlife_15469437518211_oficial.jpg
-2026-05-08 10:39:47,354 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:47,355 [INFO]     [0.50] Diabetic (diabetic)
-2026-05-08 10:39:47,355 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:47,355 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:40,017 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:40,017 [INFO]     [0.50] Diabetic (diabetic)
+2026-05-08 10:51:40,017 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:40,017 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Diabetic → 84_13_84_59_vet-life-feline-diabetic@web.png
   → OK (score=0.5)
 
 [17/58] FARMINA VET LIFE CAT GASTROINTESTINAL
   Img actual: vetlife_15509746549123_oficial.jpg
-2026-05-08 10:39:47,651 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:47,651 [INFO]     [0.50] Gastrointestinal (gastrointestinal)
-2026-05-08 10:39:47,651 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:47,651 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:40,257 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:40,257 [INFO]     [0.50] Gastrointestinal (gastrointestinal)
+2026-05-08 10:51:40,257 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:40,257 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Gastrointestinal → 79_15_vet-life-feline-gastrointestinal@web.png
   → OK (score=0.5)
 
 [18/58] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR
   Img actual: vetlife_15509746614659_oficial.jpg
-2026-05-08 10:39:47,920 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:47,920 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
-2026-05-08 10:39:47,920 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:47,921 [INFO]     [0.00] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:40,507 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:40,507 [INFO]     [0.67] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:40,507 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:40,507 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
   Match: Gastrointestinal Húmedo → 382_33_vet-life-gastrointestinal-85g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [19/58] FARMINA VET LIFE CAT HEPATIC 2KG
   Img actual: vetlife_15509746778499_oficial.jpg
-2026-05-08 10:39:48,197 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:48,197 [INFO]     [0.50] Hepatic (hepatic)
-2026-05-08 10:39:48,198 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:48,198 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:40,723 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:40,723 [INFO]     [0.50] Hepatic (hepatic)
+2026-05-08 10:51:40,724 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:40,724 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Hepatic → 90_41_90_27_vet-life-feline-hepatic@web.png
   → OK (score=0.5)
 
 [20/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG
   Img actual: vetlife_15509746942339_oficial.jpg
-2026-05-08 10:39:48,506 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:48,506 [INFO]     [0.40] Hypoallergenic Pork & Potato feline (hypoallergenic-pork-&-potato-feline)
-2026-05-08 10:39:48,506 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:48,506 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:40,952 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:40,952 [INFO]     [0.50] Hypoallergenic Pork & Potato feline (hypoallergenic-pork-&-potato-feline)
+2026-05-08 10:51:40,952 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:40,952 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Hypoallergenic Pork & Potato feline → 967_54_hypo-pork-cat@web.png
-  → OK (score=0.4)
+  → OK (score=0.5)
 
 [21/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR
   Img actual: vetlife_15509747040643_oficial.jpg
-2026-05-08 10:39:48,809 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:48,809 [INFO]     [0.33] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
-2026-05-08 10:39:48,809 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:48,809 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:41,190 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:41,190 [INFO]     [0.60] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 10:51:41,190 [INFO]     [0.20] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:41,190 [INFO]     [0.20] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Hypoallergenic Pork & Potato Húmedo → 1009_12_vetlife-hypoallergenic-pork-&-potato-85g.png
-  → OK (score=0.33)
+  → OK (score=0.6)
 
 [22/58] FARMINA VET LIFE CAT OBESITY
   Img actual: vetlife_15509747073411_oficial.jpg
-2026-05-08 10:39:49,094 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:49,094 [INFO]     [0.50] Obesity (obesity)
-2026-05-08 10:39:49,094 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:49,094 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:41,798 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:41,798 [INFO]     [0.50] Obesity (obesity)
+2026-05-08 10:51:41,798 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:41,798 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Obesity → 83_48_83_42_vet-life-feline-obesity@web.png
   → OK (score=0.5)
 
 [23/58] FARMINA VET LIFE CAT RENAL
   Img actual: vetlife_15509747270019_oficial.jpg
-2026-05-08 10:39:49,387 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:49,387 [INFO]     [0.50] Renal (renal)
-2026-05-08 10:39:49,387 [INFO]     [0.14] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:49,388 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:42,034 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:42,034 [INFO]     [0.50] Renal (renal)
+2026-05-08 10:51:42,034 [INFO]     [0.12] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:42,034 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: Renal → 82_55_82_57_vet-life-feline-renal@web.png
   → OK (score=0.5)
 
 [24/58] FARMINA VET LIFE CAT RENAL CAJA 12X85GR
   Img actual: vetlife_15509747401091_oficial.jpg
-2026-05-08 10:39:49,654 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:49,655 [INFO]     [0.25] Renal Húmedo (renal-húmedo)
-2026-05-08 10:39:49,655 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:49,655 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:42,250 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:42,250 [INFO]     [0.67] Renal Húmedo (renal-húmedo)
+2026-05-08 10:51:42,250 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:42,250 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Renal Húmedo → 381_04_vetlife-renal-85g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [25/58] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR
   Img actual: vetlife_15509747532163_oficial.jpg
-2026-05-08 10:39:49,915 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:49,915 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
-2026-05-08 10:39:49,915 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:49,915 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:42,481 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:42,481 [INFO]     [0.67] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:42,481 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:42,481 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Struvite Húmedo → 380_51_vetlife-struvite-85g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [26/58] FARMINA VET LIFE CAT STRUVITE MANAGEMENT
   Img actual: vetlife_15469438140803_oficial.jpg
-2026-05-08 10:39:50,199 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:50,199 [INFO]     [0.67] Struvite Management feline (struvite-management-feline)
-2026-05-08 10:39:50,199 [INFO]     [0.67] Struvite Management (struvite-management)
-2026-05-08 10:39:50,199 [INFO]     [0.33] Struvite (struvite)
+2026-05-08 10:51:42,706 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:42,706 [INFO]     [0.67] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:42,706 [INFO]     [0.67] Struvite Management (struvite-management)
+2026-05-08 10:51:42,706 [INFO]     [0.33] Struvite (struvite)
   Match: Struvite Management feline → 1035_28_vetlife-struvite-management-85g.png
   → OK (score=0.67)
 
 [27/58] FARMINA VET LIFE CAT ULTRAHYPO
   Img actual: vetlife_15469432209795_oficial.jpg
-2026-05-08 10:39:50,487 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:50,487 [INFO]     [0.50] UltraHypo (ultrahypo)
-2026-05-08 10:39:50,487 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
-2026-05-08 10:39:50,487 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
+2026-05-08 10:51:42,928 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:42,928 [INFO]     [0.50] UltraHypo (ultrahypo)
+2026-05-08 10:51:42,928 [INFO]     [0.00] Renal • Healthy Creamy Treat with Chicken & Tuna (renal-•-healthy-creamy-treat-with-chicken-&-tuna)
+2026-05-08 10:51:42,928 [INFO]     [0.00] Struvite Management feline (struvite-management-feline)
   Match: UltraHypo → 85_04_Farmina-Vet-Life-feline-2kg-ULTRAHYPO-[3D_Front+Right]@web-2.png
   → OK (score=0.5)
 
@@ -255,226 +255,226 @@ Total: 58 productos
 
 [29/58] FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR
   Img actual: vetlife_15509747859843_oficial.jpg
-2026-05-08 10:39:50,794 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:50,794 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:50,794 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
-2026-05-08 10:39:50,794 [INFO]     [0.00] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:43,143 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:43,143 [INFO]     [0.67] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:43,143 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:43,143 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
   Match: Convalescence Húmedo → 373_42_vetlife-convalescence-300g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [30/58] FARMINA VET LIFE DOG DIABETIC
   Img actual: vetlife_15509747892611_oficial.jpg
-2026-05-08 10:39:51,078 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:51,078 [INFO]     [0.50] Diabetic (diabetic)
-2026-05-08 10:39:51,078 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:51,078 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:43,372 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:43,372 [INFO]     [0.50] Diabetic (diabetic)
+2026-05-08 10:51:43,373 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:43,373 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
   Match: Diabetic → 71_38_71_04_vet-life-canine-diabetic@web.png
   → OK (score=0.5)
 
 [31/58] FARMINA VET LIFE DOG GASTROINTESTINAL
   Img actual: vetlife_15469437747587_oficial.jpg
-2026-05-08 10:39:51,342 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:51,342 [INFO]     [0.50] Gastrointestinal (gastrointestinal)
-2026-05-08 10:39:51,342 [INFO]     [0.33] Gastrointestinal Puppy canine (gastrointestinal-puppy-canine)
-2026-05-08 10:39:51,342 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:43,595 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:43,595 [INFO]     [0.50] Gastrointestinal (gastrointestinal)
+2026-05-08 10:51:43,596 [INFO]     [0.33] Gastrointestinal Puppy canine (gastrointestinal-puppy-canine)
+2026-05-08 10:51:43,596 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
   Match: Gastrointestinal → 65_42_65_26_vet-life-canine-gastrointestinal@web.png
   → OK (score=0.5)
 
 [32/58] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR
   Img actual: vetlife_15509748121987_oficial.jpg
-2026-05-08 10:39:51,906 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:51,906 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
-2026-05-08 10:39:51,906 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:51,906 [INFO]     [0.00] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:43,810 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:43,810 [INFO]     [0.67] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:43,810 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:43,810 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
   Match: Gastrointestinal Húmedo → 374_57_vetlife-gastrointestinal-300g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [33/58] FARMINA VET LIFE DOG HEPATIC
   Img actual: vetlife_15538798199171_oficial.jpg
-2026-05-08 10:39:52,195 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:52,195 [INFO]     [0.50] Hepatic (hepatic)
-2026-05-08 10:39:52,195 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:52,195 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:44,055 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:44,055 [INFO]     [0.50] Hepatic (hepatic)
+2026-05-08 10:51:44,055 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:44,055 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
   Match: Hepatic → 78_00_78_25_vet-life-canine-hepatic@web copia.png
   → OK (score=0.5)
 
 [34/58] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR
   Img actual: 8606014103953.png
-2026-05-08 10:39:52,498 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:52,499 [INFO]     [0.14] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
-2026-05-08 10:39:52,499 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:52,499 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:44,288 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:44,288 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 10:51:44,288 [INFO]     [0.20] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:44,288 [INFO]     [0.20] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Hypoallergenic Fish & Potato Húmedo → 379_44_vetlife-hypoallergenic-fish-&-potato-300g.png
-  → REVISAR (score=0.14)
+  → OK (score=0.33)
 
 [35/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT
   Img actual: vetlife_15469438861699_oficial.jpg
-2026-05-08 10:39:52,788 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:52,788 [INFO]     [0.50] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
-2026-05-08 10:39:52,788 [INFO]     [0.33] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
-2026-05-08 10:39:52,788 [INFO]     [0.29] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
+2026-05-08 10:51:44,540 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:44,540 [INFO]     [0.50] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
+2026-05-08 10:51:44,540 [INFO]     [0.29] dental treat Hypoallergenic Pork & Potato mini (dental-treat-hypoallergenic-pork-&-potato-mini)
+2026-05-08 10:51:44,540 [INFO]     [0.25] dental treat Hypoallergenic Pork & Potato medium & maxi (dental-treat-hypoallergenic-pork-&-potato-medium-&-maxi)
   Match: Hypoallergenic Pork & Potato → 965_03_vet-life-canine-hypo-pork@web.png
   → OK (score=0.5)
 
 [36/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR
   Img actual: vetlife_15509748416899_oficial.jpg
-2026-05-08 10:39:53,072 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:53,073 [INFO]     [0.33] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
-2026-05-08 10:39:53,073 [INFO]     [0.14] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
-2026-05-08 10:39:53,073 [INFO]     [0.14] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 10:51:44,772 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:44,772 [INFO]     [0.60] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 10:51:44,772 [INFO]     [0.33] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
+2026-05-08 10:51:44,772 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
   Match: Hypoallergenic Pork & Potato Húmedo → 1007_01_vetlife-hypoallergenic-pork-&-potato-300g.png
-  → OK (score=0.33)
+  → OK (score=0.6)
 
 [37/58] FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO
   Img actual: vetlife_15469439353219_oficial.jpg
-2026-05-08 10:39:53,370 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:53,371 [INFO]     [0.50] Hypoallergenic Egg & Rice (hypoallergenic-egg-&-rice)
-2026-05-08 10:39:53,371 [INFO]     [0.20] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
-2026-05-08 10:39:53,371 [INFO]     [0.20] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
+2026-05-08 10:51:45,004 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:45,005 [INFO]     [0.50] Hypoallergenic Egg & Rice (hypoallergenic-egg-&-rice)
+2026-05-08 10:51:45,005 [INFO]     [0.20] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
+2026-05-08 10:51:45,005 [INFO]     [0.20] Hypoallergenic Pork & Potato (hypoallergenic-pork-&-potato)
   Match: Hypoallergenic Egg & Rice → 74_43_74_42_vet-life-canine-hypoallergenic-egg-rice@web.png
   → OK (score=0.5)
 
 [38/58] FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR
   Img actual: vetlife_15509748547971_oficial.jpg
-2026-05-08 10:39:53,674 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:53,674 [INFO]     [0.33] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
-2026-05-08 10:39:53,674 [INFO]     [0.14] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
-2026-05-08 10:39:53,674 [INFO]     [0.14] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
+2026-05-08 10:51:45,235 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:45,235 [INFO]     [0.60] Hypoallergenic Duck & Potato Húmedo (hypoallergenic-duck-&-potato-húmedo)
+2026-05-08 10:51:45,235 [INFO]     [0.33] Hypoallergenic Fish & Potato Húmedo (hypoallergenic-fish-&-potato-húmedo)
+2026-05-08 10:51:45,235 [INFO]     [0.33] Hypoallergenic Pork & Potato Húmedo (hypoallergenic-pork-&-potato-húmedo)
   Match: Hypoallergenic Duck & Potato Húmedo → 378_26_vetlife-hypoallergenic-duck-&-potato-300g.png
-  → OK (score=0.33)
+  → OK (score=0.6)
 
 [39/58] FARMINA VET LIFE DOG HYPOALLERGENIC PESCADO
   Img actual: vetlife_15469437583747_oficial.jpg
-2026-05-08 10:39:53,977 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:53,977 [INFO]     [0.50] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
-2026-05-08 10:39:53,977 [INFO]     [0.33] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
-2026-05-08 10:39:53,977 [INFO]     [0.29] dental treat Hypoallergenic Fish & Potato medium & maxi (dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi)
+2026-05-08 10:51:45,455 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:45,455 [INFO]     [0.50] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
+2026-05-08 10:51:45,455 [INFO]     [0.29] dental treat Hypoallergenic Fish & Potato mini (dental-treat-hypoallergenic-fish-&-potato-mini)
+2026-05-08 10:51:45,455 [INFO]     [0.25] dental treat Hypoallergenic Fish & Potato medium & maxi (dental-treat-hypoallergenic-fish-&-potato-medium-&-maxi)
   Match: Hypoallergenic Fish & Potato → 73_46_73_59_vet-life-canine-hypoallergenic-fish-potato@web.png
   → OK (score=0.5)
 
 [40/58] FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT
   Img actual: vetlife_15469439615363_oficial.jpg
-2026-05-08 10:39:54,265 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:54,265 [INFO]     [0.80] Intestinal UltraCare low Fat canine (intestinal-ultracare-low-fat-canine)
-2026-05-08 10:39:54,265 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:54,265 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:45,698 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:45,698 [INFO]     [0.80] Intestinal UltraCare low Fat canine (intestinal-ultracare-low-fat-canine)
+2026-05-08 10:51:45,698 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:45,698 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
   Match: Intestinal UltraCare low Fat canine → 1126_25_intestinal-ultracare-low-fat-canine.png
   → OK (score=0.8)
 
 [41/58] FARMINA VET LIFE DOG JOINT
   Img actual: vetlife_15567198290307_oficial.jpg
-2026-05-08 10:39:54,550 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:54,551 [INFO]     [0.50] Joint (joint)
-2026-05-08 10:39:54,551 [INFO]     [0.25] dental treat Joint mini (dental-treat-joint-mini)
-2026-05-08 10:39:54,551 [INFO]     [0.20] dental treat Joint medium & maxi (dental-treat-joint-medium-&-maxi)
+2026-05-08 10:51:45,935 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:45,936 [INFO]     [0.50] Joint (joint)
+2026-05-08 10:51:45,936 [INFO]     [0.20] dental treat Joint mini (dental-treat-joint-mini)
+2026-05-08 10:51:45,936 [INFO]     [0.17] dental treat Joint medium & maxi (dental-treat-joint-medium-&-maxi)
   Match: Joint → 63_21_63_53_vet-life-canine-joint@web.png
   → OK (score=0.5)
 
 [42/58] FARMINA VET LIFE DOG OBESITY
   Img actual: vetlife_15469433553283_oficial.jpg
-2026-05-08 10:39:54,823 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:54,823 [INFO]     [0.50] Obesity (obesity)
-2026-05-08 10:39:54,823 [INFO]     [0.33] Obesity Fish (obesity-fish)
-2026-05-08 10:39:54,823 [INFO]     [0.25] dental treat Obesity mini (dental-treat-obesity-mini)
+2026-05-08 10:51:46,165 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:46,165 [INFO]     [0.50] Obesity (obesity)
+2026-05-08 10:51:46,165 [INFO]     [0.33] Obesity Fish (obesity-fish)
+2026-05-08 10:51:46,165 [INFO]     [0.20] dental treat Obesity mini (dental-treat-obesity-mini)
   Match: Obesity → 70_33_70_12_vet-life-canine-obesity@web.png
   → OK (score=0.5)
 
 [43/58] FARMINA VET LIFE DOG OXALATE
   Img actual: vetlife_15469439877507_oficial.jpg
-2026-05-08 10:39:55,107 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:55,107 [INFO]     [0.50] Oxalate (oxalate)
-2026-05-08 10:39:55,108 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:55,108 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:46,397 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:46,397 [INFO]     [0.50] Oxalate (oxalate)
+2026-05-08 10:51:46,397 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:46,398 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
   Match: Oxalate → 68_14_68_28_vet-life-canine-oxalate@web.png
   → OK (score=0.5)
 
 [44/58] FARMINA VET LIFE DOG PUPPY GASTROINTESTINAL
   Img actual: vetlife_15538798264707_oficial.jpg
-2026-05-08 10:39:55,408 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:55,408 [INFO]     [0.67] Gastrointestinal Puppy canine (gastrointestinal-puppy-canine)
-2026-05-08 10:39:55,408 [INFO]     [0.33] Gastrointestinal (gastrointestinal)
-2026-05-08 10:39:55,408 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:46,613 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:46,613 [INFO]     [0.67] Gastrointestinal Puppy canine (gastrointestinal-puppy-canine)
+2026-05-08 10:51:46,613 [INFO]     [0.33] Gastrointestinal (gastrointestinal)
+2026-05-08 10:51:46,613 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
   Match: Gastrointestinal Puppy canine → 630_45_vet-life-canine-gastrointestinal-puppy@web.png
   → OK (score=0.67)
 
 [45/58] FARMINA VET LIFE DOG RENAL
   Img actual: vetlife_15469438402947_oficial.jpg
-2026-05-08 10:39:55,712 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:55,712 [INFO]     [0.50] Renal (renal)
-2026-05-08 10:39:55,712 [INFO]     [0.25] dental treat Renal mini (dental-treat-renal-mini)
-2026-05-08 10:39:55,712 [INFO]     [0.20] dental treat Renal medium & maxi (dental-treat-renal-medium-&-maxi)
+2026-05-08 10:51:46,847 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:46,847 [INFO]     [0.50] Renal (renal)
+2026-05-08 10:51:46,848 [INFO]     [0.20] dental treat Renal mini (dental-treat-renal-mini)
+2026-05-08 10:51:46,848 [INFO]     [0.17] dental treat Renal medium & maxi (dental-treat-renal-medium-&-maxi)
   Match: Renal → 69_28_69_44_vet-life-canine-renal@web.png
   → OK (score=0.5)
 
 [46/58] FARMINA VET LIFE DOG RENAL CAJA 6X300GR
   Img actual: vetlife_15509749236099_oficial.jpg
-2026-05-08 10:39:56,011 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:56,011 [INFO]     [0.25] Renal Húmedo (renal-húmedo)
-2026-05-08 10:39:56,011 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:56,011 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:47,071 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:47,071 [INFO]     [0.67] Renal Húmedo (renal-húmedo)
+2026-05-08 10:51:47,071 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:47,071 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Renal Húmedo → 376_42_vetlife-renal-300g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [47/58] FARMINA VET LIFE DOG STRUVITE
   Img actual: vetlife_15538798297475_oficial.jpg
-2026-05-08 10:39:56,323 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:56,323 [INFO]     [0.50] Struvite (struvite)
-2026-05-08 10:39:56,323 [INFO]     [0.33] Struvite Management canine (struvite-management-canine)
-2026-05-08 10:39:56,323 [INFO]     [0.33] Struvite Management (struvite-management)
+2026-05-08 10:51:47,339 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:47,339 [INFO]     [0.50] Struvite (struvite)
+2026-05-08 10:51:47,340 [INFO]     [0.33] Struvite Management canine (struvite-management-canine)
+2026-05-08 10:51:47,340 [INFO]     [0.33] Struvite Management (struvite-management)
   Match: Struvite → 66_47_66_26_vet-life-canine-struvite@web.png
   → OK (score=0.5)
 
 [48/58] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR
   Img actual: vetlife_15509749432707_oficial.jpg
-2026-05-08 10:39:56,609 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:56,609 [INFO]     [0.25] Struvite Húmedo (struvite-húmedo)
-2026-05-08 10:39:56,609 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:56,609 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:47,594 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:47,594 [INFO]     [0.67] Struvite Húmedo (struvite-húmedo)
+2026-05-08 10:51:47,595 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:47,595 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Struvite Húmedo → 375_27_vetlife-struvite-300g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [49/58] FARMINA VET LIFE DOG STRUVITE MANAGEMENT
   Img actual: vetlife_15538761597315_oficial.jpg
-2026-05-08 10:39:56,913 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:56,913 [INFO]     [0.67] Struvite Management canine (struvite-management-canine)
-2026-05-08 10:39:56,913 [INFO]     [0.67] Struvite Management (struvite-management)
-2026-05-08 10:39:56,914 [INFO]     [0.33] Struvite (struvite)
+2026-05-08 10:51:47,814 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:47,815 [INFO]     [0.67] Struvite Management canine (struvite-management-canine)
+2026-05-08 10:51:47,815 [INFO]     [0.67] Struvite Management (struvite-management)
+2026-05-08 10:51:47,815 [INFO]     [0.33] Struvite (struvite)
   Match: Struvite Management canine → 1036_43_vetlife-struvite-management-300g.png
   → OK (score=0.67)
 
 [50/58] FARMINA VET LIFE DOG ULTRAHYPO
   Img actual: vetlife_15469438468483_oficial.jpg
-2026-05-08 10:39:57,220 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:57,220 [INFO]     [0.50] Ultrahypo (ultrahypo)
-2026-05-08 10:39:57,221 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
-2026-05-08 10:39:57,221 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
+2026-05-08 10:51:48,051 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:48,051 [INFO]     [0.50] Ultrahypo (ultrahypo)
+2026-05-08 10:51:48,051 [INFO]     [0.00] dental treat Gastrointestinlal mini (dental-treat-gastrointestinlal-mini)
+2026-05-08 10:51:48,051 [INFO]     [0.00] dental treat Gastrointestinlal medium & maxi (dental-treat-gastrointestinlal-medium-&-maxi)
   Match: Ultrahypo → 72_21_vet-life-canine-ulytrahypo@web.png
   → OK (score=0.5)
 
 [51/58] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR
   Img actual: vetlife_15509749694851_oficial.jpg
-2026-05-08 10:39:57,486 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:57,486 [INFO]     [0.25] UltraHypo húmedo (ultrahypo-húmedo)
-2026-05-08 10:39:57,486 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:57,486 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:48,277 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:48,277 [INFO]     [0.67] UltraHypo húmedo (ultrahypo-húmedo)
+2026-05-08 10:51:48,277 [INFO]     [0.25] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:48,277 [INFO]     [0.25] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: UltraHypo húmedo → 1008_58_vetlife-ultrahypo-300g.png
-  → REVISAR (score=0.25)
+  → OK (score=0.67)
 
 [52/58] FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT
   Img actual: vetlife_15469441155459_oficial.jpg
-2026-05-08 10:39:57,796 [INFO]   [seco] Top 3 matches:
-2026-05-08 10:39:57,796 [INFO]     [0.67] Obesity Fish (obesity-fish)
-2026-05-08 10:39:57,796 [INFO]     [0.33] Obesity (obesity)
-2026-05-08 10:39:57,796 [INFO]     [0.20] dental treat Obesity mini (dental-treat-obesity-mini)
+2026-05-08 10:51:48,534 [INFO]   [seco] Top 3 matches:
+2026-05-08 10:51:48,534 [INFO]     [0.67] Obesity Fish (obesity-fish)
+2026-05-08 10:51:48,534 [INFO]     [0.33] Obesity (obesity)
+2026-05-08 10:51:48,534 [INFO]     [0.20] Hypoallergenic Fish & Potato (hypoallergenic-fish-&-potato)
   Match: Obesity Fish → 966_34_vet-life-canine-obesity-fish@web.png
   → OK (score=0.67)
 
 [53/58] FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR
   Img actual: vetlife_15509749858691_oficial.jpg
-2026-05-08 10:39:58,083 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:58,083 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
-2026-05-08 10:39:58,084 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:58,084 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:49,093 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:49,093 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
+2026-05-08 10:51:49,093 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:49,093 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Diabetic húmedo → 971_00_vetlife-diabetic-85g.png
   → OK (score=0.33)
 
@@ -483,45 +483,45 @@ Total: 58 productos
 
 [55/58] FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR
   Img actual: vetlife_15509749956995_oficial.jpg
-2026-05-08 10:39:58,346 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:58,346 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
-2026-05-08 10:39:58,346 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:58,346 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:49,318 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:49,319 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
+2026-05-08 10:51:49,319 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:49,319 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Obesity húmedo → 972_42_vetlife-obesity-85g.png
   → OK (score=0.33)
 
 [56/58] FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR
   Img actual: vetlife_15509750055299_oficial.jpg
-2026-05-08 10:39:58,638 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:58,638 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
-2026-05-08 10:39:58,639 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:58,639 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:49,547 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:49,547 [INFO]     [0.33] Diabetic húmedo (diabetic-húmedo)
+2026-05-08 10:51:49,548 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:49,548 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Diabetic húmedo → 968_55_vetlife-diabetic-300g.png
   → OK (score=0.33)
 
 [57/58] FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR
   Img actual: vetlife_15509750120835_oficial.jpg
-2026-05-08 10:39:58,932 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:58,932 [INFO]     [0.33] Hepatic húmedo (hepatic-húmedo)
-2026-05-08 10:39:58,933 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:58,933 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:49,778 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:49,779 [INFO]     [0.33] Hepatic húmedo (hepatic-húmedo)
+2026-05-08 10:51:49,779 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:49,779 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Hepatic húmedo → 970_21_vetlife-hepatic-300g.png
   → OK (score=0.33)
 
 [58/58] FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR
   Img actual: vetlife_15509750219139_oficial.jpg
-2026-05-08 10:39:59,234 [INFO]   [húmedo] Top 3 matches:
-2026-05-08 10:39:59,234 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
-2026-05-08 10:39:59,235 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
-2026-05-08 10:39:59,235 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
+2026-05-08 10:51:49,995 [INFO]   [húmedo] Top 3 matches:
+2026-05-08 10:51:49,995 [INFO]     [0.33] Obesity húmedo (obesity-húmedo)
+2026-05-08 10:51:49,995 [INFO]     [0.00] Convalescence Húmedo (convalescence-húmedo)
+2026-05-08 10:51:49,995 [INFO]     [0.00] Gastrointestinal Húmedo (gastrointestinal-húmedo)
   Match: Obesity húmedo → 969_39_vetlife-obesity-300g.png
   → OK (score=0.33)
 
 ======================================================================
 RESUMEN
 ======================================================================
-  OK (confianza alta ≥0.30)  : 40
-  REVISAR (confianza baja)   : 16
+  OK (confianza alta ≥0.30)  : 56
+  REVISAR (confianza baja)   : 0
   SIN MATCH                  : 0
   EXCLUIDOS                  : 2
   TOTAL                      : 58
