@@ -1,0 +1,55 @@
+============================================================
+DIAGNÓSTICO FARMINA.COM — ESTRUCTURA VET LIFE
+============================================================
+  GET https://www.farmina.com/es/vet-life/ → 404 (9 bytes)
+
+  GET https://www.farmina.com/vet-life/ → 404 (9 bytes)
+
+  GET https://www.farmina.com/es/producto/vet-life-dog-cardiac/ → 404 (9 bytes)
+
+  GET https://www.farmina.com/es/?s=vet+life+cardiac → 200 (68819 bytes)
+  ✓ Accesible
+  Links relevantes encontrados:
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Farmina Vet Club] → https://www.farmina.com/es/farmina/5360-farmina-vet-club.html
+    [Farmina Vet Life] → https://www.farmina.com/es/alimento-para-perros/8-farmina-vet-life.html
+    [Farmina Vet Life] → https://www.farmina.com/es/alimento-para-gatos/14-farmina-vet-life.html
+  [es] 27 imágenes encontradas:
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+  HTML guardado en /tmp/www.farmina.com_es_?s=vet+life+cardiac.html
+
+  GET https://www.farmina.com/?s=vet+life+cardiac → 200 (69306 bytes)
+  ✓ Accesible
+  Links relevantes encontrados:
+    [For Vet Professionals] → https://www.farmina.com/us/farmina/5382-for-vet-professionals.html
+    [Vetlife Bites] → https://www.farmina.com/us/farmina/7609-vetlife-bites.html
+    [For Vet Professionals] → https://www.farmina.com/us/farmina/5382-for-vet-professionals.html
+    [Vetlife Bites] → https://www.farmina.com/us/farmina/7609-vetlife-bites.html
+    [Farmina Vet Life] → https://www.farmina.com/us/farmina/1155-farmina-vet-life.html
+    [For Vet Professionals] → https://www.farmina.com/us/farmina/5382-for-vet-professionals.html
+    [Vetlife Bites] → https://www.farmina.com/us/farmina/7609-vetlife-bites.html
+    [learn more] → https://www.farmina.com/us/farmina/5382-for-professional-veterinarians.html
+    [For Vet Professionals] → https://www.farmina.com/us/farmina/5382-for-vet-professionals.html
+    [Farmina Vet Life] → https://www.farmina.com/us/farmina/1155-farmina-vet-life.html
+  [www.farmina.com] 27 imágenes encontradas:
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+    https://www.farmina.com/images/goto.png
+  HTML guardado en /tmp/www.farmina.com_?s=vet+life+cardiac.html
+
+  GET https://www.farmina.com/es/productos/?linea=vet-life → 404 (9 bytes)
+
+
+--- SITEMAP ---
+  GET https://www.farmina.com/sitemap.xml → 404 (9 bytes)
+  GET https://www.farmina.com/es/sitemap.xml → 404 (9 bytes)
+
+Diagnóstico completado.
