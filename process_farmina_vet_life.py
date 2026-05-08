@@ -215,48 +215,68 @@ def build_farmina_catalog() -> list:
 
 # ─── Matching Shopify ↔ farmina.com ──────────────────────────────────────────
 
-# Traducción de términos en español a inglés para mejorar el matching
+import unicodedata
+
+def _strip_accents(text: str) -> str:
+    return "".join(
+        c for c in unicodedata.normalize("NFD", text)
+        if unicodedata.category(c) != "Mn"
+    )
+
+# Traducción ES→EN palabra a palabra
 _ES_TO_EN = {
-    "pescado": "fish",
-    "cerdo":   "pork",
-    "pato":    "duck",
-    "huevo":   "egg",
-    "pollo":   "chicken",
-    "trucha":  "fish",   # trout → fish (no existe en catálogo como trucha)
+    "pescado":  "fish",
+    "cerdo":    "pork",
+    "pato":     "duck",
+    "huevo":    "egg",
+    "pollo":    "chicken",
+    "trucha":   "fish",
     "cachorro": "puppy",
-    "adulto":  "adult",
-    "nat":     "natural",
-    "caja":    "humedo",  # caja = formato húmedo en cajita
-    "tarro":   "humedo",
+    "adulto":   "adult",
+    "humedo":   "humedo",   # tras quitar tilde queda igual
+    "caja":     "humedo",
+    "tarro":    "humedo",
 }
 
 _STOPWORDS = {"the", "and", "for", "con", "para", "del", "los", "las",
-              "una", "que", "más", "food", "alimento", "treat", "diet",
+              "una", "que", "mas", "food", "alimento", "diet",
               "natural", "nat"}
 _IGNORE_TOKENS = {"vetlife", "vet", "life", "farmina", "canine", "feline",
                   "300g", "85g", "150g", "2kg", "3kg", "web", "sito", "amp",
-                  "adult", "adulto"}
+                  "adult", "adulto", "copia"}
 
 
-def _translate(text: str) -> str:
-    """Sustituye términos en español por su equivalente en inglés."""
-    words = re.split(r'(\s+)', text.lower())
-    return "".join(_ES_TO_EN.get(w, w) for w in words)
+def _preprocess(text: str) -> str:
+    """Normaliza el texto antes de tokenizar."""
+    t = _strip_accents(text.lower())
+    # "gastro intestinal" → "gastrointestinal"
+    t = re.sub(r'gastro\s+intestinal', 'gastrointestinal', t)
+    # "med/max" y "med/m" → "medium maxi"
+    t = re.sub(r'\bmed/ma?x?\b', 'medium maxi', t)
+    # quitar "@web", "@sito", etc.
+    t = re.sub(r'@\w+', '', t)
+    # quitar unidades de peso y formato
+    t = re.sub(r'\d+[x×]\d+\w*', '', t)
+    t = re.sub(r'\d+[\.,]?\d*\s*(kg|g|gr|l|ml|tab|und)\b', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'\(.*?\)', '', t)
+    # traducir términos ES→EN
+    words = re.split(r'(\s+)', t)
+    t = "".join(_ES_TO_EN.get(w.strip(), w) for w in words)
+    return t
 
 
 def _is_wet(title: str) -> bool:
-    """Detecta si el título corresponde a comida húmeda (latas/cajas)."""
     t = title.upper()
-    return any(x in t for x in ["CAJA", "TARRO", "X300", "X85", "HÚMEDO", "HUMEDO"])
+    return any(x in t for x in ["CAJA", "TARRO", "X300", "X85", "HUMEDO"])
+
+
+def _is_treat(title: str) -> bool:
+    return "treat" in title.lower()
 
 
 def _tokenize(text: str) -> set:
-    text = _translate(text)
-    text = re.sub(r'@\w+', '', text)
-    text = re.sub(r'\d+[x×]?\d*\s*(kg|g|gr|l|ml|tab|und)\b', '', text,
-                  flags=re.IGNORECASE)
-    text = re.sub(r'\(.*?\)', '', text)
-    tokens = set(re.split(r'[\s\-_&+•\.]+', text.lower()))
+    t = _preprocess(text)
+    tokens = set(re.split(r'[\s\-_&+•\./]+', t))
     return tokens - _STOPWORDS - _IGNORE_TOKENS - {''}
 
 
@@ -291,7 +311,14 @@ def find_best_match(shopify_title: str, catalog: list) -> dict | None:
     if not candidates:
         return None
 
-    # Separar húmedos de secos
+    # Si es TREAT → solo dental treats
+    if _is_treat(shopify_title):
+        treat_candidates = [e for e in candidates
+                            if "treat" in e["name"].lower() or "treat" in e["slug"].lower()]
+        if treat_candidates:
+            candidates = treat_candidates
+
+    # Separar húmedos de secos (solo si no es treat)
     wet = _is_wet(shopify_title)
     wet_entries  = [e for e in candidates if "húmedo" in e["name"].lower()
                     or "300g" in e["slug"] or "85g" in e["slug"]]
