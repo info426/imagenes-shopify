@@ -498,6 +498,26 @@ def main():
         log.error("Catálogo vacío — abortando")
         sys.exit(1)
 
+    # Correcciones manuales validadas: ID Shopify → handle exacto del catálogo
+    MANUAL_OVERRIDES: dict[int, str] = {
+        15509627306371: "alimento-humedo-de-pavo-200gr",                         # FELINE PAVO LATA
+        15509627208067: "alimento-humedo-de-salmon-kittens-200gr",               # FELINE KITTEN SALMON LATA
+        15509627175299: "alimento-humedo-de-pollo-kittens-200gr",                # FELINE KITTEN POLLO LATA
+        15509627142531: "copia-de-alimento-humedo-de-cerdo-con-manzana-200gr",   # FELINE IBERICO LATA
+        15509627109763: "snack-de-ave-de-corral-50gr",                           # FELINE FREE RANGE POLLO SNACKS 50GRS
+        15509627076995: "alimento-humedo-de-pollo-gatos-esterilizados-200gr",    # FELINE ESTERILIZADO POLLO LATA
+        15509626945923: "snacks-de-pollo-35gr",                                  # CANINE SNACK POLLO 16X35GR
+        15509626814851: "ristra-de-barritas-de-pavo-16-unds",                    # CANINE SNACK PAVO 16X35GR
+        15509626519939: "ristra-de-barritas-de-pato-16-unds",                    # CANINE RISTRA PATO 12X160GR
+        15509626487171: "ristra-de-barritas-de-jamon-16-unds",                   # CANINE RISTRA JAMON 12X160GR
+        15509625078147: "ristra-de-barritas-individualesde-pollo-4-unds",        # CANINE BARRITAS POLLO 16X4UDS
+        15509625012611: "ristra-de-barritas-individuales-de-pescado-4-unds",     # CANINE BARRITAS PESCADO 16X4UDS
+        15509624881539: "ristra-de-barritas-de-pato-4-unds",                     # CANINE BARRITAS PATO 16X4UDS
+        15509624816003: "ristra-de-barritas-de-jamon-4-unds",                    # CANINE BARRITAS JAMON 16X4UDS
+        15509624684931: "ristra-de-barritas-individualesde-de-higado-4-unds",    # CANINE BARRITAS HIGADO 16X4UDS
+    }
+    _catalog_by_handle = {e["handle"]: e for e in catalog}
+
     token = get_token()
     api   = ShopifyAPI(token)
 
@@ -536,7 +556,18 @@ def main():
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
 
         try:
-            match, score = find_best_match(title, catalog)
+            if pid in MANUAL_OVERRIDES:
+                handle = MANUAL_OVERRIDES[pid]
+                match  = _catalog_by_handle.get(handle)
+                if match:
+                    log.info(f"  [override] '{match['title']}' ({handle})")
+                    score = 1.0
+                else:
+                    log.warning(f"  [override] handle '{handle}' no encontrado en catálogo")
+                    match, score = find_best_match(title, catalog)
+            else:
+                match, score = find_best_match(title, catalog)
+
             if not match:
                 log.warning(f"  Sin match en catálogo (score={score:.2f}) — saltando")
                 stats["sin_match"] += 1
