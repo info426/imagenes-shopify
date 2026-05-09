@@ -1,0 +1,198 @@
+2026-05-09 09:09:57,037 [INFO] ============================================================
+2026-05-09 09:09:57,037 [INFO] PROCESADOR ALPHA SPIRIT — SHOPIFY
+2026-05-09 09:09:57,037 [INFO] ============================================================
+2026-05-09 09:09:57,037 [INFO] Catálogo eliminado, reconstruyendo...
+2026-05-09 09:09:57,037 [INFO] Construyendo catálogo con Playwright...
+2026-05-09 09:09:57,676 [INFO]   Cargando página 1: https://www.aspiritpetfood.store/collections/all/products.json?limit=250&page=1
+2026-05-09 09:10:01,384 [INFO]   Página 1: 196 productos
+2026-05-09 09:10:02,384 [INFO]   Cargando página 2: https://www.aspiritpetfood.store/collections/all/products.json?limit=250&page=2
+2026-05-09 09:10:04,689 [INFO]   Página 2 vacía — fin del catálogo
+2026-05-09 09:10:04,725 [INFO] Catálogo guardado: 184 productos → resultados/alpha_spirit_catalog.json
+2026-05-09 09:10:05,178 [INFO] Obteniendo productos 'Alpha Spirit'...
+2026-05-09 09:10:05,983 [INFO] Total: 106 productos
+
+2026-05-09 09:10:05,983 [INFO] Modo --only-no-images: 106 → 19 productos sin imagen
+2026-05-09 09:10:05,983 [INFO] 
+[1/19] ALPHA SPIRIT ALBONDIGAS CERDO CON ALCARAVEA 6X200GR  (ID: 15957141389699)
+2026-05-09 09:10:05,988 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:05,988 [INFO]     [0.61] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-200gr)
+2026-05-09 09:10:05,988 [INFO]     [0.61] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:05,988 [INFO]     [0.17] Estofado de Cerdo para Perros (estofado-de-cerdo-para-perros-280gr)
+2026-05-09 09:10:05,988 [INFO]   ✓ Match: 'Albóndigas de Cerdo y Alcaravea para Perros' (score=0.61)
+2026-05-09 09:10:06,283 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:09,864 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957141389699_1_oficial.jpg
+2026-05-09 09:10:11,364 [INFO] 
+[2/19] ALPHA SPIRIT ALBONDIGAS CIERVO CON ROMERO 6X200GR  (ID: 15957137162627)
+2026-05-09 09:10:11,369 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:11,369 [INFO]     [0.61] Albóndigas de Ciervo y Romero para Perros (albondigas-de-ciervo-y-romero-200gr)
+2026-05-09 09:10:11,369 [INFO]     [0.61] Albóndigas de Ciervo y Romero para Perros (albondigas-de-ciervo-y-romero-400gr)
+2026-05-09 09:10:11,369 [INFO]     [0.15] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:11,369 [INFO]   ✓ Match: 'Albóndigas de Ciervo y Romero para Perros' (score=0.61)
+2026-05-09 09:10:11,696 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:15,022 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957137162627_1_oficial.jpg
+2026-05-09 09:10:16,522 [INFO] 
+[3/19] ALPHA SPIRIT ALBONDIGAS CORDERO CON COMINO 6X200GR  (ID: 15957140963715)
+2026-05-09 09:10:16,527 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:16,527 [INFO]     [0.61] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-200gr)
+2026-05-09 09:10:16,527 [INFO]     [0.61] Albóndigas de Cordero y Comino para Perros (albondigas-de-cordero-y-comino-400gr)
+2026-05-09 09:10:16,527 [INFO]     [0.15] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:16,527 [INFO]   ✓ Match: 'Albóndigas de Cordero y Comino para Perros' (score=0.61)
+2026-05-09 09:10:17,002 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:20,495 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957140963715_1_oficial.jpg
+2026-05-09 09:10:21,995 [INFO] 
+[4/19] ALPHA SPIRIT ALBONDIGAS JABALI CON TOMILLO 6X200GR  (ID: 15957139030403)
+2026-05-09 09:10:21,999 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:21,999 [INFO]     [0.61] Albóndigas de Jabalí y Tomillo para Perros (albondigas-de-jabali-y-tomillo-200gr)
+2026-05-09 09:10:21,999 [INFO]     [0.61] Albóndigas de Jabalí y Tomillo para Perros (albondigas-de-jabali-y-tomillo-400gr)
+2026-05-09 09:10:21,999 [INFO]     [0.15] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:22,000 [INFO]   ✓ Match: 'Albóndigas de Jabalí y Tomillo para Perros' (score=0.61)
+2026-05-09 09:10:22,654 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:26,337 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957139030403_1_oficial.jpg
+2026-05-09 09:10:27,837 [INFO] 
+[5/19] ALPHA SPIRIT ALBONDIGAS PAVO CON CILANTRO 6X200GR  (ID: 15957140832643)
+2026-05-09 09:10:27,843 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:27,843 [INFO]     [0.61] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-200gr)
+2026-05-09 09:10:27,843 [INFO]     [0.61] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-400gr)
+2026-05-09 09:10:27,843 [INFO]     [0.18] Mousse de Pavo para Gatos (mousse-de-pavo-para-gatos)
+2026-05-09 09:10:27,843 [INFO]   ✓ Match: 'Albóndigas de Pavo y Cilantro para Perros' (score=0.61)
+2026-05-09 09:10:28,531 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:32,484 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957140832643_1_oficial.jpg
+2026-05-09 09:10:33,984 [INFO] 
+[6/19] ALPHA SPIRIT ALBONDIGAS POLLO CON CURCUMA 6X200GR  (ID: 15957137260931)
+2026-05-09 09:10:33,988 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:33,989 [INFO]     [0.61] Albóndigas de Pollo y Cúrcuma para Perros (albondigas-de-pollo-y-curcuma-200gr)
+2026-05-09 09:10:33,989 [INFO]     [0.61] Albóndigas de Pollo y Cúrcuma para Perros (albondigas-de-pollo-y-curcuma-400gr)
+2026-05-09 09:10:33,989 [INFO]     [0.18] Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+2026-05-09 09:10:33,989 [INFO]   ✓ Match: 'Albóndigas de Pollo y Cúrcuma para Perros' (score=0.61)
+2026-05-09 09:10:34,505 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:37,797 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957137260931_1_oficial.jpg
+2026-05-09 09:10:39,297 [INFO] 
+[7/19] ALPHA SPIRIT ALBONDIGAS TERNERA CON SALVIA 6X200GR  (ID: 15957141782915)
+2026-05-09 09:10:39,301 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:39,301 [INFO]     [0.61] Albóndigas de Ternera y Salvia para Perros (albondigas-de-ternera-y-salvia-200gr)
+2026-05-09 09:10:39,302 [INFO]     [0.61] Albóndigas de Ternera y Salvia para Perros (albondigas-de-ternera-y-salvia-400gr)
+2026-05-09 09:10:39,302 [INFO]     [0.17] Estofado de Roast Beef para Perros (estofado-de-roast-beef-perros)
+2026-05-09 09:10:39,302 [INFO]   ✓ Match: 'Albóndigas de Ternera y Salvia para Perros' (score=0.61)
+2026-05-09 09:10:39,913 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:10:43,368 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15957141782915_1_oficial.jpg
+2026-05-09 09:10:44,868 [INFO] 
+[8/19] ALPHA SPIRIT CANINE POUCH DORADA  (ID: 15956762329475)
+2026-05-09 09:10:44,872 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:44,872 [INFO]     [0.18] Mousse de Dorada para Perros (mousse-de-dorada-para-perros)
+2026-05-09 09:10:44,872 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:44,872 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-200gr)
+2026-05-09 09:10:44,872 [INFO]   ✓ Match: 'Mousse de Dorada para Perros' (score=0.18)
+2026-05-09 09:10:46,203 [INFO]   2 imagen(es) descargada(s)
+2026-05-09 09:10:49,449 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15956762329475_1_oficial.jpg
+2026-05-09 09:10:52,805 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15956762329475_2_oficial.jpg
+2026-05-09 09:10:54,305 [INFO] 
+[9/19] ALPHA SPIRIT CANINE POUCH JAMON  (ID: 15956768391555)
+2026-05-09 09:10:54,308 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:10:54,308 [INFO]     [0.15] Mousse de Jamón para Perros (pate-de-pavo)
+2026-05-09 09:10:54,308 [INFO]     [0.14] Paté de Jamón con Melón para Perros (alimento-humedo-de-jamon-con-melon)
+2026-05-09 09:10:54,308 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:10:54,309 [INFO]   ✓ Match: 'Mousse de Jamón para Perros' (score=0.15)
+2026-05-09 09:10:55,473 [INFO]   2 imagen(es) descargada(s)
+2026-05-09 09:10:59,132 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15956768391555_1_oficial.jpg
+2026-05-09 09:11:02,564 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15956768391555_2_oficial.jpg
+2026-05-09 09:11:04,064 [INFO] 
+[10/19] ALPHA SPIRIT CANINE POUCH PAVO  (ID: 15956770554243)
+2026-05-09 09:11:04,067 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:04,068 [INFO]     [0.18] Mousse de Pavo para Perros (mousse-de-pavo-para-perros)
+2026-05-09 09:11:04,068 [INFO]     [0.15] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-400gr)
+2026-05-09 09:11:04,068 [INFO]     [0.15] Albóndigas de Pavo y Cilantro para Perros (albondigas-de-pavo-y-cilantro-200gr)
+2026-05-09 09:11:04,068 [INFO]   ✓ Match: 'Mousse de Pavo para Perros' (score=0.18)
+2026-05-09 09:11:04,933 [INFO]   2 imagen(es) descargada(s)
+2026-05-09 09:11:08,052 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15956770554243_1_oficial.jpg
+2026-05-09 09:11:14,628 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15956770554243_2_oficial.jpg
+2026-05-09 09:11:16,129 [INFO] 
+[11/19] ALPHA SPIRIT CANINE POUCH POLLO  (ID: 15956772585859)
+2026-05-09 09:11:16,132 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:16,132 [INFO]     [0.18] Mousse de Pollo para Perros (mousse-de-pollo-para-perros)
+2026-05-09 09:11:16,132 [INFO]     [0.17] Estofado de Pollo para Perros (estofado-de-pollo-para-perros)
+2026-05-09 09:11:16,132 [INFO]     [0.15] Albóndigas de Pollo y Cúrcuma para Perros (albondigas-de-pollo-y-curcuma-400gr)
+2026-05-09 09:11:16,132 [INFO]   ✓ Match: 'Mousse de Pollo para Perros' (score=0.18)
+2026-05-09 09:11:17,576 [INFO]   2 imagen(es) descargada(s)
+2026-05-09 09:11:20,847 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15956772585859_1_oficial.jpg
+2026-05-09 09:11:24,184 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15956772585859_2_oficial.jpg
+2026-05-09 09:11:25,684 [INFO] 
+[12/19] ALPHA SPIRIT CANINE POUCH SALMON  (ID: 15956766359939)
+2026-05-09 09:11:25,687 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:25,687 [INFO]     [0.21] Mousse de Salmón para Perros (mousse-de-salmon-para-perros)
+2026-05-09 09:11:25,687 [INFO]     [0.15] Paté de Salmón con Piña para Perros (alimento-humedo-de-salmon-con-pina)
+2026-05-09 09:11:25,687 [INFO]     [0.01] Albóndigas de Cerdo y Alcaravea para Perros (albondigas-de-cerdo-y-alcaravea-400gr)
+2026-05-09 09:11:25,687 [INFO]   ✓ Match: 'Mousse de Salmón para Perros' (score=0.21)
+2026-05-09 09:11:26,192 [INFO]   2 imagen(es) descargada(s)
+2026-05-09 09:11:29,349 [INFO]   ✓ Imagen 1/2 subida → alpha_spirit_15956766359939_1_oficial.jpg
+2026-05-09 09:11:32,716 [INFO]   ✓ Imagen 2/2 subida → alpha_spirit_15956766359939_2_oficial.jpg
+2026-05-09 09:11:34,216 [INFO] 
+[13/19] ALPHA SPIRIT FELINE MOUSSE DORADA 24X85GR  (ID: 15956708393347)
+2026-05-09 09:11:34,219 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:34,219 [INFO]     [0.41] Mousse de Dorada para Gatos (mousse-de-dorada-para-gatos)
+2026-05-09 09:11:34,219 [INFO]     [0.21] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:11:34,219 [INFO]     [0.18] Mousse de Jamón para Gatos (mousse-de-jamon-para-gatos)
+2026-05-09 09:11:34,219 [INFO]   ✓ Match: 'Mousse de Dorada para Gatos' (score=0.41)
+2026-05-09 09:11:34,480 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:11:37,720 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956708393347_1_oficial.jpg
+2026-05-09 09:11:39,220 [INFO] 
+[14/19] ALPHA SPIRIT FELINE MOUSSE JAMON 24X85GR  (ID: 15956709605763)
+2026-05-09 09:11:39,223 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:39,223 [INFO]     [0.41] Mousse de Jamón para Gatos (mousse-de-jamon-para-gatos)
+2026-05-09 09:11:39,223 [INFO]     [0.21] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:11:39,223 [INFO]     [0.18] Mousse de Dorada para Gatos (mousse-de-dorada-para-gatos)
+2026-05-09 09:11:39,223 [INFO]   ✓ Match: 'Mousse de Jamón para Gatos' (score=0.41)
+2026-05-09 09:11:39,802 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:11:43,055 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956709605763_1_oficial.jpg
+2026-05-09 09:11:44,555 [INFO] 
+[15/19] ALPHA SPIRIT FELINE MOUSSE PAVO 24X85GR  (ID: 15956710162819)
+2026-05-09 09:11:44,557 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:44,557 [INFO]     [0.41] Mousse de Pavo para Gatos (mousse-de-pavo-para-gatos)
+2026-05-09 09:11:44,558 [INFO]     [0.21] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:11:44,558 [INFO]     [0.18] Mousse de Dorada para Gatos (mousse-de-dorada-para-gatos)
+2026-05-09 09:11:44,558 [INFO]   ✓ Match: 'Mousse de Pavo para Gatos' (score=0.41)
+2026-05-09 09:11:44,765 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:11:47,917 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956710162819_1_oficial.jpg
+2026-05-09 09:11:49,417 [INFO] 
+[16/19] ALPHA SPIRIT FELINE MOUSSE POLLO 24X85GR  (ID: 15956711309699)
+2026-05-09 09:11:49,419 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:49,420 [INFO]     [0.41] Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+2026-05-09 09:11:49,420 [INFO]     [0.30] Mousse de Pollo para Gatos Esterilizados (mousse-de-pollo-para-gatos-esterilizados)
+2026-05-09 09:11:49,420 [INFO]     [0.21] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:11:49,420 [INFO]   ✓ Match: 'Mousse de Pollo para Gatos' (score=0.41)
+2026-05-09 09:11:49,625 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:11:52,800 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956711309699_1_oficial.jpg
+2026-05-09 09:11:54,300 [INFO] 
+[17/19] ALPHA SPIRIT FELINE MOUSSE POLLO ESTERILIZADO 24X85GR  (ID: 15956712817027)
+2026-05-09 09:11:54,303 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:54,303 [INFO]     [0.44] Mousse de Pollo para Gatos Esterilizados (mousse-de-pollo-para-gatos-esterilizados)
+2026-05-09 09:11:54,303 [INFO]     [0.34] Mousse de Pollo para Gatos (mousse-de-pollo-para-gatos)
+2026-05-09 09:11:54,303 [INFO]     [0.30] Mousse de Salmón para Gatos Esterilizados (mousse-de-salmon-para-gatos-esterilizados)
+2026-05-09 09:11:54,303 [INFO]   ✓ Match: 'Mousse de Pollo para Gatos Esterilizados' (score=0.44)
+2026-05-09 09:11:54,870 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:11:58,070 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956712817027_1_oficial.jpg
+2026-05-09 09:11:59,570 [INFO] 
+[18/19] ALPHA SPIRIT FELINE MOUSSE SALMON 24X85GR  (ID: 15956709114243)
+2026-05-09 09:11:59,573 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:11:59,573 [INFO]     [0.51] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:11:59,573 [INFO]     [0.34] Mousse de Salmón para Gatos Esterilizados (mousse-de-salmon-para-gatos-esterilizados)
+2026-05-09 09:11:59,573 [INFO]     [0.18] Mousse de Dorada para Gatos (mousse-de-dorada-para-gatos)
+2026-05-09 09:11:59,573 [INFO]   ✓ Match: 'Mousse de Salmón para Gatos' (score=0.51)
+2026-05-09 09:12:00,967 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:12:04,111 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956709114243_1_oficial.jpg
+2026-05-09 09:12:05,612 [INFO] 
+[19/19] ALPHA SPIRIT FELINE MOUSSE SALMON ESTERILIZADO 24X85GR  (ID: 15956711997827)
+2026-05-09 09:12:05,614 [INFO]   [wet] Top 3 matches:
+2026-05-09 09:12:05,614 [INFO]     [0.51] Mousse de Salmón para Gatos Esterilizados (mousse-de-salmon-para-gatos-esterilizados)
+2026-05-09 09:12:05,614 [INFO]     [0.41] Mousse de Salmón para Gatos (mousse-de-salmon-para-gatos)
+2026-05-09 09:12:05,614 [INFO]     [0.26] Mousse de Pollo para Gatos Esterilizados (mousse-de-pollo-para-gatos-esterilizados)
+2026-05-09 09:12:05,614 [INFO]   ✓ Match: 'Mousse de Salmón para Gatos Esterilizados' (score=0.51)
+2026-05-09 09:12:06,245 [INFO]   1 imagen(es) descargada(s)
+2026-05-09 09:12:11,556 [INFO]   ✓ Imagen 1/1 subida → alpha_spirit_15956711997827_1_oficial.jpg
+2026-05-09 09:12:13,056 [INFO] 
+============================================================
+2026-05-09 09:12:13,057 [INFO] RESUMEN FINAL
+2026-05-09 09:12:13,057 [INFO] ============================================================
+2026-05-09 09:12:13,057 [INFO]   Productos procesados  : 19
+2026-05-09 09:12:13,057 [INFO]   Imágenes actualizadas : 19
+2026-05-09 09:12:13,057 [INFO]   Sin match             : 0
+2026-05-09 09:12:13,057 [INFO]   Errores               : 0
