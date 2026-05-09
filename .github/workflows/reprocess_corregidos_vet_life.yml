@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/fix-product-images-FzavA
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -36,7 +36,7 @@ jobs:
             15509749956995,15509750055299,15509750120835,15509750219139
         run: |
           mkdir -p resultados
-          python3 process_farmina_vet_life.py 2>&1 | tee resultados/reprocess_corregidos_vet_life.txt
+          python3 farmina_vet_life/process_farmina_vet_life.py 2>&1 | tee resultados/reprocess_corregidos_vet_life.txt
 
       - name: Guardar log
         if: always()

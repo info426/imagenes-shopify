@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/alpha-spirit-images-3c4aE
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -28,7 +28,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
-          python3 analizar_estado_shopify.py 2>&1 | tee resultados/log_estado_shopify.txt
+          python3 alpha_spirit/analizar_estado_shopify.py 2>&1 | tee resultados/log_estado_shopify.txt
 
       - name: Guardar resultados
         if: always()

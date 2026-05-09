@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/alpha-spirit-images-3c4aE
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -41,9 +41,9 @@ jobs:
         run: |
           mkdir -p resultados
           if [ -n "${{ github.event.inputs.product_id }}" ]; then
-            python3 process_alpha_spirit.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_alpha_spirit_${{ github.event.inputs.product_id }}.txt
+            python3 alpha_spirit/process_alpha_spirit.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_alpha_spirit_${{ github.event.inputs.product_id }}.txt
           else
-            python3 process_alpha_spirit.py --search-title "${{ github.event.inputs.search_title }}" 2>&1 | tee resultados/prueba_alpha_spirit_search.txt
+            python3 alpha_spirit/process_alpha_spirit.py --search-title "${{ github.event.inputs.search_title }}" 2>&1 | tee resultados/prueba_alpha_spirit_search.txt
           fi
 
       - name: Guardar log

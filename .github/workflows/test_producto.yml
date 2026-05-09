@@ -18,7 +18,7 @@ jobs:
       - name: Checkout rama de trabajo
         uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: main
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -36,7 +36,7 @@ jobs:
           PRODUCT_ID: ${{ github.event.inputs.product_id }}
         run: |
           mkdir -p resultados
-          python3 process_farmina_images.py --product-id "$PRODUCT_ID" 2>&1 | tee resultados/prueba_${{ github.event.inputs.product_id }}.txt
+          python3 farmina_nd/process_farmina_images.py --product-id "$PRODUCT_ID" 2>&1 | tee resultados/prueba_${{ github.event.inputs.product_id }}.txt
 
       - name: Guardar log en el repositorio
         run: |

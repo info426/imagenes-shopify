@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -37,7 +37,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
-          python3 process_farmina_vet_life.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_vet_life_${{ github.event.inputs.product_id }}.txt
+          python3 farmina_vet_life/process_farmina_vet_life.py --product-id "${{ github.event.inputs.product_id }}" 2>&1 | tee resultados/prueba_vet_life_${{ github.event.inputs.product_id }}.txt
 
       - name: Guardar log
         if: always()

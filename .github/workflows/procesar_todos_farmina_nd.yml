@@ -14,7 +14,7 @@ jobs:
       - name: Checkout rama de trabajo
         uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: main
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -32,7 +32,7 @@ jobs:
           VENDOR_FILTER: Farmina ND
         run: |
           mkdir -p resultados
-          python3 process_farmina_images.py 2>&1 | tee resultados/proceso_completo_farmina_nd.txt
+          python3 farmina_nd/process_farmina_images.py 2>&1 | tee resultados/proceso_completo_farmina_nd.txt
 
       - name: Guardar log en el repositorio
         if: always()

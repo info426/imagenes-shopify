@@ -13,7 +13,7 @@ jobs:
       - name: Checkout rama de trabajo
         uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: main
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -30,7 +30,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
-          python3 analizar_farmina_nd.py | tee resultados/analisis_farmina_nd.txt
+          python3 farmina_nd/analizar_farmina_nd.py | tee resultados/analisis_farmina_nd.txt
 
       - name: Guardar resultados en el repositorio
         run: |

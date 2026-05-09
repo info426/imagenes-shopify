@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/farmina-nd-shopify-images-idVbe
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -29,7 +29,7 @@ jobs:
       - name: Ejecutar diagnóstico
         run: |
           mkdir -p resultados
-          python3 diagnostico_farmina_web.py | tee resultados/diagnostico_farmina_web.txt
+          python3 farmina_nd/diagnostico_farmina_web.py | tee resultados/diagnostico_farmina_web.txt
 
       - name: Guardar resultados
         run: |

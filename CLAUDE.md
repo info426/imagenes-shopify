@@ -111,6 +111,71 @@ resultados/
 |---|---|---|---|
 | Farmina N&D | Farmina | Completado | 157 |
 | Farmina Vet Life | Farmina Vet Life | Completado | ~157 (28 re-procesados) |
+| Alpha Spirit | Alpha Spirit | Completado | ~107 (ver detalle abajo) |
+
+---
+
+## Alpha Spirit — Estado detallado
+
+**Vendor Shopify:** `Alpha Spirit`  
+**Web catálogo:** `https://www.aspiritpetfood.store`  
+**Rama de trabajo:** `claude/alpha-spirit-images-3c4aE`  
+**Scripts:** `process_alpha_spirit.py`, `analizar_alpha_spirit.py`
+
+### Estado actual (2026-05-09)
+- **~88 productos originales** procesados y auditados (múltiples rondas de corrección)
+- **19 productos nuevos** procesados con `--only-no-images` (7 albóndigas 200gr, 5 CANINE POUCH, 7 FELINE MOUSSE)
+- **OREJA DE CERDO** (ID 15509628223875): imagen subida manualmente por el usuario a Shopify, optimizada con `--reprocess-current-images`
+- **Pendiente:** auditoría final completa para confirmar que todos los ~107 productos están correctos
+
+### Correcciones aplicadas al algoritmo
+
+1. **Tiebreaker de peso (35gr vs 50gr):** función `_extract_weight_g()` extrae gramos del título/handle; aplica bonus 0.005 cuando el peso coincide y el score está dentro de 0.02 del top.
+2. **"copia" en IGNORE_TOKENS:** el catálogo tiene entradas con prefijo "copia-de-" que confundía el tokenizer.
+3. **kittens/esterilizado:** añadidos a `_ES_TO_EN`: `"kittens"→"kitten"`, `"esterilizado"→"sterilized"`, `"esterilizados"→"sterilized"`.
+4. **POUCH en `_is_wet()`:** añadido para que los CANINE POUCH se busquen en la categoría húmedos.
+
+### MANUAL_OVERRIDES (en `main()` de `process_alpha_spirit.py`)
+Productos donde el algoritmo falla sistemáticamente → handle hardcodeado:
+
+| Shopify ID | Handle en catálogo |
+|---|---|
+| 15509627306371 | alimento-humedo-de-pavo-200gr |
+| 15509627208067 | alimento-humedo-de-salmon-kittens-200gr |
+| 15509627175299 | alimento-humedo-de-pollo-kittens-200gr |
+| 15509627142531 | copia-de-alimento-humedo-de-cerdo-con-manzana-200gr |
+| 15509627109763 | snack-de-ave-de-corral-50gr |
+| 15509627076995 | alimento-humedo-de-pollo-gatos-esterilizados-200gr |
+| 15509626945923 | snacks-de-pollo-35gr |
+| 15509626814851 | ristra-de-barritas-de-pavo-16-unds |
+| 15509626519939 | ristra-de-barritas-de-pato-16-unds |
+| 15509626487171 | ristra-de-barritas-de-jamon-16-unds |
+| 15509625078147 | ristra-de-barritas-individualesde-pollo-4-unds |
+| 15509625012611 | ristra-de-barritas-individuales-de-pescado-4-unds |
+| 15509624881539 | ristra-de-barritas-de-pato-4-unds |
+| 15509624816003 | ristra-de-barritas-de-jamon-4-unds |
+| 15509624684931 | ristra-de-barritas-individualesde-de-higado-4-unds |
+
+### Flags especiales de `process_alpha_spirit.py`
+- `--only-no-images`: procesa solo productos sin imágenes en Shopify (para nuevos productos)
+- `--reprocess-current-images`: descarga la imagen actual de Shopify, la optimiza y la re-sube (sin catálogo). Útil cuando el usuario sube la imagen manualmente.
+- `--rebuild-catalog`: borra caché y re-scrapea el catálogo (usar si el catálogo de la marca cambia)
+
+### Workflows Alpha Spirit disponibles
+
+| Workflow | Descripción |
+|---|---|
+| `analizar_alpha_spirit.yml` | Solo análisis, sin cambios |
+| `procesar_todos_alpha_spirit.yml` | Procesado masivo de todos los productos |
+| `auditar_alpha_spirit.yml` | Auditoría post-procesado |
+| `reprocess_corregidos_alpha_spirit.yml` | Re-proceso de 23 IDs con correcciones (v3) |
+| `procesar_nuevos_alpha_spirit.yml` | Solo productos sin imagen (`--only-no-images`) |
+| `procesar_oreja_cerdo.yml` | Optimiza imagen existente del producto oreja de cerdo |
+
+### Notas importantes
+- El catálogo de Alpha Spirit tiene entradas con nombre `pate-de-pavo` que en realidad es "Mousse de Jamón para Perros" — el nombre en el handle es engañoso, está confirmado por el usuario.
+- El audit se colgó en el producto 82 por rate limit 429. Añadir `time.sleep()` entre peticiones si vuelve a pasar.
+- SKIP_IDS está vacío — el producto oreja de cerdo ya está procesado.
 
 ---
 

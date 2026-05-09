@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/alpha-spirit-images-3c4aE
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -34,9 +34,9 @@ jobs:
         run: |
           mkdir -p resultados
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            python3 unificar_alpha_spirit.py --dry-run 2>&1 | tee resultados/unificacion_alpha_spirit.txt
+            python3 alpha_spirit/unificar_alpha_spirit.py --dry-run 2>&1 | tee resultados/unificacion_alpha_spirit.txt
           else
-            python3 unificar_alpha_spirit.py 2>&1 | tee resultados/unificacion_alpha_spirit.txt
+            python3 alpha_spirit/unificar_alpha_spirit.py 2>&1 | tee resultados/unificacion_alpha_spirit.txt
           fi
 
       - name: Guardar log
