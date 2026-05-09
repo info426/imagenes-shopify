@@ -525,6 +525,7 @@ def main():
         # CANINE POUCH — si el catálogo reconstruido tiene la entrada, se usará
         # Si no existe el handle, el código hace fallback a find_best_match()
         # (se añadirá el ID real cuando se obtenga de Shopify)
+        # Nota: pate-de-pavo es el handle del "Mousse de Jamón para Perros" en aspiritpetfood.store
     }
     _catalog_by_handle = {e["handle"]: e for e in catalog}
 
