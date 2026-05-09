@@ -478,6 +478,8 @@ def main():
                         help="Forzar reconstrucción del catálogo aspiritpetfood.store")
     parser.add_argument("--only-no-images", action="store_true",
                         help="Procesar solo productos sin imágenes en Shopify (nuevos)")
+    parser.add_argument("--reprocess-current-images", action="store_true",
+                        help="Descargar, optimizar y re-subir las imágenes actuales de Shopify (sin catálogo)")
     args = parser.parse_args()
 
     if not CLIENT_ID or not CLIENT_SECRET:
@@ -500,10 +502,8 @@ def main():
         log.error("Catálogo vacío — abortando")
         sys.exit(1)
 
-    # Productos a omitir (pendientes de imagen manual externa)
-    SKIP_IDS: set[int] = {
-        15509628223875,  # OREJA DE CERDO INDIVIDUAL 25UD — pendiente imagen manual
-    }
+    # Productos a omitir en modo bulk (pendientes de imagen manual o casos especiales)
+    SKIP_IDS: set[int] = set()
 
     # Correcciones manuales validadas: ID Shopify → handle exacto del catálogo
     MANUAL_OVERRIDES: dict[int, str] = {
@@ -576,7 +576,16 @@ def main():
             continue
 
         try:
-            if pid in MANUAL_OVERRIDES:
+            if args.reprocess_current_images:
+                # Modo re-proceso: descarga las imágenes actuales de Shopify y las optimiza
+                current_images = api.get_images(pid)
+                if not current_images:
+                    log.warning(f"  Sin imágenes en Shopify — saltando")
+                    stats["sin_match"] += 1
+                    continue
+                image_urls = [img["src"] for img in current_images]
+                log.info(f"  [reprocess] {len(image_urls)} imagen(es) en Shopify")
+            elif pid in MANUAL_OVERRIDES:
                 handle = MANUAL_OVERRIDES[pid]
                 match  = _catalog_by_handle.get(handle)
                 if match:
@@ -585,25 +594,30 @@ def main():
                 else:
                     log.warning(f"  [override] handle '{handle}' no encontrado en catálogo")
                     match, score = find_best_match(title, catalog)
+                    if not match:
+                        log.warning(f"  Sin match (score={score:.2f}) — saltando")
+                        stats["sin_match"] += 1
+                        continue
+                image_urls = match.get("image_urls") or (
+                    [match["image_url"]] if match.get("image_url") else []
+                )
             else:
                 match, score = find_best_match(title, catalog)
+                if not match:
+                    log.warning(f"  Sin match en catálogo (score={score:.2f}) — saltando")
+                    stats["sin_match"] += 1
+                    continue
+                log.info(f"  ✓ Match: '{match['title']}' (score={score:.2f})")
+                image_urls = match.get("image_urls") or (
+                    [match["image_url"]] if match.get("image_url") else []
+                )
 
-            if not match:
-                log.warning(f"  Sin match en catálogo (score={score:.2f}) — saltando")
-                stats["sin_match"] += 1
-                continue
-
-            log.info(f"  ✓ Match: '{match['title']}' (score={score:.2f})")
-
-            image_urls = match.get("image_urls") or (
-                [match["image_url"]] if match.get("image_url") else []
-            )
             if not image_urls:
-                log.warning(f"  Match sin imágenes — saltando")
+                log.warning(f"  Sin imágenes disponibles — saltando")
                 stats["sin_match"] += 1
                 continue
 
-            # Descargar y procesar todas las imágenes del match
+            # Descargar y procesar todas las imágenes
             processed_images = []
             for img_url in image_urls:
                 try:
