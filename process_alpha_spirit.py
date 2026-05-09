@@ -292,7 +292,7 @@ def _is_wet(title: str) -> bool:
     return any(x in t for x in ["CAJA", "TARRO", "HUMEDO", "HÚMEDO",
                                  "WET", "MOUSSE", "PATE", "PATÉ",
                                  "ESTOFADO", "SALCHICHA", "LATA",
-                                 "ALBONDIG"])
+                                 "ALBONDIG", "POUCH"])
 
 
 def _is_semiwet(title: str) -> bool:
@@ -476,6 +476,8 @@ def main():
                         help="Lista de IDs separados por coma a re-procesar (ej: 123,456)")
     parser.add_argument("--rebuild-catalog", action="store_true",
                         help="Forzar reconstrucción del catálogo aspiritpetfood.store")
+    parser.add_argument("--only-no-images", action="store_true",
+                        help="Procesar solo productos sin imágenes en Shopify (nuevos)")
     args = parser.parse_args()
 
     if not CLIENT_ID or not CLIENT_SECRET:
@@ -498,6 +500,11 @@ def main():
         log.error("Catálogo vacío — abortando")
         sys.exit(1)
 
+    # Productos a omitir (pendientes de imagen manual externa)
+    SKIP_IDS: set[int] = {
+        15509628223875,  # OREJA DE CERDO INDIVIDUAL 25UD — pendiente imagen manual
+    }
+
     # Correcciones manuales validadas: ID Shopify → handle exacto del catálogo
     MANUAL_OVERRIDES: dict[int, str] = {
         15509627306371: "alimento-humedo-de-pavo-200gr",                         # FELINE PAVO LATA
@@ -515,6 +522,9 @@ def main():
         15509624881539: "ristra-de-barritas-de-pato-4-unds",                     # CANINE BARRITAS PATO 16X4UDS
         15509624816003: "ristra-de-barritas-de-jamon-4-unds",                    # CANINE BARRITAS JAMON 16X4UDS
         15509624684931: "ristra-de-barritas-individualesde-de-higado-4-unds",    # CANINE BARRITAS HIGADO 16X4UDS
+        # CANINE POUCH — si el catálogo reconstruido tiene la entrada, se usará
+        # Si no existe el handle, el código hace fallback a find_best_match()
+        # (se añadirá el ID real cuando se obtenga de Shopify)
     }
     _catalog_by_handle = {e["handle"]: e for e in catalog}
 
@@ -548,12 +558,21 @@ def main():
         products = api.get_products(VENDOR)
         log.info(f"Total: {len(products)} productos\n")
 
+    if args.only_no_images:
+        before = len(products)
+        products = [p for p in products if not p.get("images")]
+        log.info(f"Modo --only-no-images: {before} → {len(products)} productos sin imagen")
+
     stats = dict(total=len(products), actualizadas=0, sin_match=0, errores=0)
 
     for i, product in enumerate(products, 1):
         pid   = product["id"]
         title = product["title"]
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+
+        if pid in SKIP_IDS:
+            log.info(f"  [skip] Producto en lista de exclusión — omitido")
+            continue
 
         try:
             if pid in MANUAL_OVERRIDES:
