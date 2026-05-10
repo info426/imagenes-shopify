@@ -4,12 +4,14 @@ Procesador de imágenes Applaws para Shopify
 ============================================
 Las imágenes ya están en Shopify con alta calidad.
 El script descarga cada imagen, la procesa (2000×2000 WebP,
-fondo blanco, 5% padding) y la re-sube reemplazando la original.
+fondo blanco, 5% padding solo en imágenes de fondo blanco)
+y la re-sube reemplazando la original.
 
 Uso:
   python3 applaws/process_applaws.py                         # todos los productos
   python3 applaws/process_applaws.py --product-id 123456     # modo prueba
   python3 applaws/process_applaws.py --only-ids 123,456,789  # lista específica
+  python3 applaws/process_applaws.py --product-id 123456 --from-originals  # usar backup
   PRODUCT_IDS=123,456 python3 applaws/process_applaws.py     # via env var
 """
 
@@ -22,20 +24,23 @@ import argparse
 import requests
 from pathlib import Path
 from io import BytesIO
-from PIL import Image
+from PIL import Image, ImageFilter
 from dotenv import load_dotenv
 
 load_dotenv()
 
-SHOP_DOMAIN  = os.getenv("SHOP_DOMAIN",   "7ev1zx-eg.myshopify.com")
-CLIENT_ID    = os.getenv("CLIENT_ID",     "")
+SHOP_DOMAIN   = os.getenv("SHOP_DOMAIN",   "7ev1zx-eg.myshopify.com")
+CLIENT_ID     = os.getenv("CLIENT_ID",     "")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET", "")
-VENDOR       = "Applaws"
-API_VERSION  = "2024-10"
-TARGET_SIZE  = (2000, 2000)
-WEBP_QUALITY = 90        # alta calidad WebP sin pérdida visual apreciable
-OUTPUT_DIR   = Path("imagenes_applaws")
-PADDING      = 0.05      # 5% en cada lado
+VENDOR        = "Applaws"
+API_VERSION   = "2024-10"
+TARGET_SIZE   = (2000, 2000)
+WEBP_QUALITY  = 90
+OUTPUT_DIR    = Path("imagenes_applaws")
+ORIGINALS_DIR = Path("resultados/originals_applaws")
+PADDING       = 0.05       # 5% en cada lado (solo para fondo blanco)
+WHITE_THRESH  = 245        # umbral RGB para considerar un pixel "blanco"
+WHITE_MIN_FRAC = 0.85      # fracción mínima para clasificar como fondo blanco
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -125,41 +130,134 @@ class ShopifyAPI:
         resp.raise_for_status()
         return resp.json()
 
+# ─── Gestión de originales ────────────────────────────────────────────────────
+
+def fetch_image_raw(url: str) -> tuple[bytes, str]:
+    """Descarga imagen sin parámetros CDN. Devuelve (bytes, extensión)."""
+    clean_url = url.split("?")[0]
+    ext = clean_url.rsplit(".", 1)[-1].lower()
+    if ext not in ("jpg", "jpeg", "png", "webp", "gif"):
+        ext = "jpg"
+    resp = requests.get(clean_url, timeout=60, headers=HEADERS)
+    resp.raise_for_status()
+    return resp.content, ext
+
+
+def save_originals(pid: int, images_data: list[tuple[bytes, str]]):
+    """Guarda backups de las imágenes originales en resultados/originals_applaws/{pid}/."""
+    out = ORIGINALS_DIR / str(pid)
+    out.mkdir(parents=True, exist_ok=True)
+    for i, (raw, ext) in enumerate(images_data, 1):
+        path = out / f"img_{i:02d}.{ext}"
+        path.write_bytes(raw)
+    log.info(f"  {len(images_data)} originales guardados en {out}/")
+
+
+def load_originals(pid: int) -> list[tuple[bytes, str]]:
+    """Carga las imágenes originales del backup. Devuelve lista de (bytes, ext)."""
+    out = ORIGINALS_DIR / str(pid)
+    if not out.exists():
+        raise FileNotFoundError(f"No hay backup para producto {pid} en {out}")
+    files = sorted(out.iterdir())
+    result = []
+    for f in files:
+        result.append((f.read_bytes(), f.suffix.lstrip(".")))
+    log.info(f"  {len(result)} originales cargados desde {out}/")
+    return result
+
 # ─── Procesamiento de imágenes ────────────────────────────────────────────────
 
-def _has_transparency(img: Image.Image) -> bool:
-    return img.mode in ("RGBA", "LA") or (
-        img.mode == "P" and "transparency" in img.info)
+def _composite_on_white(img: Image.Image) -> Image.Image:
+    """Convierte cualquier modo a RGB compuesto sobre fondo blanco."""
+    if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
+        rgba = img.convert("RGBA")
+        bg = Image.new("RGB", rgba.size, (255, 255, 255))
+        bg.paste(rgba.convert("RGB"), mask=rgba.split()[3])
+        return bg
+    return img.convert("RGB")
+
+
+def _fill_transparent_with_blur(img_rgba: Image.Image) -> Image.Image:
+    """
+    Rellena las áreas transparentes con el color de los bordes adyacentes
+    mediante desenfoque gaussiano. Evita esquinas blancas en imágenes con
+    bordes redondeados (ej.: banners con esquinas transparentes).
+    """
+    alpha = img_rgba.split()[3]
+    rgb = img_rgba.convert("RGB")
+    # Difuminar fuertemente para que los colores opacos se extiendan
+    blurred = rgb.filter(ImageFilter.GaussianBlur(radius=40))
+    # Componer: blurred como base, contenido opaco encima
+    result = blurred.copy()
+    result.paste(rgb, (0, 0), mask=alpha)
+    return result
+
+
+def _is_white_background(img_rgb: Image.Image) -> bool:
+    """
+    Muestra la banda perimetral (2% del tamaño mínimo, mínimo 10px).
+    Devuelve True si ≥85% de los pixels son blancos.
+    """
+    w, h = img_rgb.size
+    band = max(10, int(min(w, h) * 0.02))
+    step = 4
+    total = 0
+    white = 0
+    # Filas superiores e inferiores
+    for x in range(0, w, step):
+        for y in list(range(0, band)) + list(range(h - band, h)):
+            r, g, b = img_rgb.getpixel((x, y))
+            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
+            total += 1
+    # Columnas izquierda y derecha (excluyendo esquinas ya contadas)
+    for y in range(band, h - band, step):
+        for x in list(range(0, band)) + list(range(w - band, w)):
+            r, g, b = img_rgb.getpixel((x, y))
+            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
+            total += 1
+    ratio = white / total if total > 0 else 0.0
+    log.info(f"    [bg check] {white}/{total} px blancos ({ratio:.0%})")
+    return ratio >= WHITE_MIN_FRAC
 
 
 def process_image(img: Image.Image) -> Image.Image:
     """
-    Redimensiona a 2000×2000 con fondo blanco y 5% de padding en cada lado.
-    Usa LANCZOS para no perder resolución en el redimensionado.
+    1. Detecta si tiene transparencia con esquinas redondeadas → blur-fill.
+    2. Compone sobre fondo blanco.
+    3. Detecta si es fondo blanco → aplica padding 5%.
+    4. Redimensiona a 2000×2000 con LANCZOS.
     """
-    transparent = _has_transparency(img)
-    img_conv = img.convert("RGBA") if transparent else img.convert("RGB")
+    has_alpha = (img.mode in ("RGBA", "LA") or
+                 (img.mode == "P" and "transparency" in img.info))
 
-    # Área disponible descontando el padding
-    max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING))  # 1900 px
-    max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING))  # 1900 px
+    if has_alpha:
+        rgba = img.convert("RGBA")
+        # Usar blur-fill para no crear esquinas blancas en imágenes con bordes redondeados
+        composited = _fill_transparent_with_blur(rgba)
+    else:
+        composited = _composite_on_white(img)
 
-    ratio = img_conv.width / img_conv.height
+    use_padding = _is_white_background(composited)
+    label = "fondo blanco -> padding 5%" if use_padding else "ilustracion -> sin padding"
+    log.info(f"    [{label}]")
+
+    if use_padding:
+        max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING))  # 1900 px
+        max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING))
+    else:
+        max_w, max_h = TARGET_SIZE                        # 2000 px
+
+    ratio = composited.width / composited.height
     if ratio > 1:
         new_w, new_h = max_w, int(max_w / ratio)
     else:
         new_w, new_h = int(max_h * ratio), max_h
 
-    resized    = img_conv.resize((new_w, new_h), Image.LANCZOS)
+    resized    = composited.resize((new_w, new_h), Image.LANCZOS)
     background = Image.new("RGB", TARGET_SIZE, (255, 255, 255))
     ox = (TARGET_SIZE[0] - new_w) // 2
     oy = (TARGET_SIZE[1] - new_h) // 2
-
-    if transparent:
-        background.paste(resized.convert("RGB"), (ox, oy), resized.split()[3])
-    else:
-        background.paste(resized, (ox, oy))
-
+    background.paste(resized, (ox, oy))
     return background
 
 
@@ -167,14 +265,6 @@ def to_b64_webp(img: Image.Image) -> str:
     buf = BytesIO()
     img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6)
     return base64.b64encode(buf.getvalue()).decode()
-
-
-def download_image(url: str) -> Image.Image:
-    # Eliminar parámetros de CDN para obtener la imagen original sin recortar
-    clean_url = url.split("?")[0]
-    resp = requests.get(clean_url, timeout=60, headers=HEADERS)
-    resp.raise_for_status()
-    return Image.open(BytesIO(resp.content))
 
 # ─── Flujo principal ──────────────────────────────────────────────────────────
 
@@ -185,6 +275,8 @@ def main():
                         help="Procesar solo este product ID (modo prueba)")
     parser.add_argument("--only-ids", type=str, default=None,
                         help="Lista de IDs separados por coma (ej: 123,456)")
+    parser.add_argument("--from-originals", action="store_true",
+                        help="Usar las imágenes guardadas en backup en lugar de descargar de Shopify")
     args = parser.parse_args()
 
     if not CLIENT_ID or not CLIENT_SECRET:
@@ -193,13 +285,16 @@ def main():
 
     OUTPUT_DIR.mkdir(exist_ok=True)
     Path("resultados").mkdir(exist_ok=True)
+    ORIGINALS_DIR.mkdir(parents=True, exist_ok=True)
 
     log.info("=" * 60)
     log.info("PROCESADOR APPLAWS — SHOPIFY")
     log.info("=" * 60)
     log.info(f"Tienda  : {SHOP_DOMAIN}")
     log.info(f"Vendor  : {VENDOR}")
-    log.info(f"Formato : WebP calidad {WEBP_QUALITY}, 2000×2000, padding {int(PADDING*100)}%")
+    log.info(f"Formato : WebP calidad {WEBP_QUALITY}, 2000×2000, padding {int(PADDING*100)}% (solo fondo blanco)")
+    if args.from_originals:
+        log.info("Modo  : --from-originals (usando backup local)")
 
     token = get_token()
     api   = ShopifyAPI(token)
@@ -235,36 +330,47 @@ def main():
 
         try:
             images = api.get_images(pid)
-            if not images:
+            if not images and not args.from_originals:
                 log.warning("  Sin imágenes en Shopify — saltando")
                 stats["sin_imagen"] += 1
                 continue
 
-            log.info(f"  {len(images)} imagen(es) en Shopify")
+            if args.from_originals:
+                # Cargar desde backup local
+                raw_images = load_originals(pid)
+                alts = [img.get("alt") or title for img in images] if images else [title] * len(raw_images)
+                # Rellenar alts si hay más originales que metadatos
+                while len(alts) < len(raw_images):
+                    alts.append(title)
+            else:
+                log.info(f"  {len(images)} imagen(es) en Shopify")
+                # Descargar originales
+                raw_images = []
+                for img_data in images:
+                    raw, ext = fetch_image_raw(img_data["src"])
+                    raw_images.append((raw, ext))
+                # Guardar backup antes de modificar nada
+                save_originals(pid, raw_images)
+                alts = [img.get("alt") or title for img in images]
 
-            # Descargar y procesar todas las imágenes del producto
+            # Procesar todas las imágenes
             processed_images = []
-            for img_data in images:
-                src = img_data["src"]
-                alt = img_data.get("alt") or title
+            for idx, (raw, ext) in enumerate(raw_images):
+                alt = alts[idx] if idx < len(alts) else title
                 try:
-                    original  = download_image(src)
-                    processed = process_image(original)
-                    processed_images.append({
-                        "processed": processed,
-                        "alt":       alt,
-                        "position":  img_data.get("position", len(processed_images) + 1),
-                    })
-                    log.info(f"  ✓ Descargada y procesada: {src.split('/')[-1].split('?')[0]}")
+                    img = Image.open(BytesIO(raw))
+                    log.info(f"  Imagen {idx+1}: modo={img.mode}, tamaño={img.size}")
+                    processed = process_image(img)
+                    processed_images.append({"processed": processed, "alt": alt})
                 except Exception as exc:
-                    log.warning(f"  No se pudo procesar {src}: {exc}")
+                    log.warning(f"  No se pudo procesar imagen {idx+1}: {exc}")
 
             if not processed_images:
                 log.warning("  Ninguna imagen procesada — saltando")
                 stats["errores"] += 1
                 continue
 
-            # Eliminar todas las imágenes antiguas
+            # Eliminar todas las imágenes antiguas de Shopify
             for img_data in images:
                 api.delete_image(pid, img_data["id"])
                 time.sleep(0.2)
