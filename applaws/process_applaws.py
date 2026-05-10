@@ -7,7 +7,7 @@ El script descarga cada imagen, la procesa (2000x2000 WebP,
 fondo blanco) y la re-sube reemplazando la original.
 
 Regla de padding:
-  - Fondo blanco (>=85% del perímetro blanco tras compositar sobre blanco) -> 5% padding
+  - Fondo blanco (>=85% de las esquinas blancas) -> 5% padding
   - Ilustraciones / fondo de color -> sin padding, rellena 2000x2000
   La detección se hace SIEMPRE sobre la imagen compuesta sobre blanco, lo que
   evita que imágenes con canal alpha decorativo (bordes redondeados, etc.) sean
@@ -51,7 +51,7 @@ OUTPUT_DIR     = Path("imagenes_applaws")
 ORIGINALS_DIR  = Path("resultados/originals_applaws")
 PADDING        = 0.05
 WHITE_THRESH   = 245   # un píxel es "blanco" si todos sus canales >= este valor
-WHITE_MIN_FRAC = 0.85  # el 85% del perímetro debe ser blanco para aplicar padding
+WHITE_MIN_FRAC = 0.85  # fraccion minima de esquinas blancas para aplicar padding
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -190,46 +190,42 @@ def _fill_transparent_with_blur(img_rgba: Image.Image) -> Image.Image:
 
 def _is_white_background(img_rgb: Image.Image) -> bool:
     """
-    Muestrea una banda perimetral del 2% del tamaño (mínimo 10 px)
-    a lo largo de los cuatro bordes de la imagen RGB.
-    Retorna True si >= WHITE_MIN_FRAC de esos píxeles son blancos.
-    Recibe siempre una imagen RGB (sin alpha) ya compuesta sobre blanco.
+    Comprueba las 4 esquinas de la imagen (parche del 5% del lado menor).
+    Las fotos de producto en fondo blanco siempre tienen esquinas blancas,
+    aunque el producto llegue a los bordes del frame. Las ilustraciones y
+    fondos de color tienen esquinas coloreadas.
+    Retorna True si >= WHITE_MIN_FRAC de los píxeles muestreados son blancos.
     """
     w, h = img_rgb.size
-    band = max(10, int(min(w, h) * 0.02))
-    step = 4
+    patch = max(20, int(min(w, h) * 0.05))
+    step = 2
     total = 0
     white = 0
 
-    for x in range(0, w, step):
-        for y in list(range(0, band)) + list(range(h - band, h)):
-            r, g, b = img_rgb.getpixel((x, y))
-            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
-            total += 1
-
-    for y in range(band, h - band, step):
-        for x in list(range(0, band)) + list(range(w - band, w)):
-            r, g, b = img_rgb.getpixel((x, y))
-            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
-            total += 1
+    corners = [
+        (0,         0,         patch,     patch),      # top-left
+        (w - patch, 0,         w,         patch),      # top-right
+        (0,         h - patch, patch,     h),          # bottom-left
+        (w - patch, h - patch, w,         h),          # bottom-right
+    ]
+    for x1, y1, x2, y2 in corners:
+        for x in range(x1, x2, step):
+            for y in range(y1, y2, step):
+                r, g, b = img_rgb.getpixel((x, y))
+                white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
+                total += 1
 
     ratio = white / total if total > 0 else 0.0
-    log.info(f"    [bg check] {white}/{total} px blancos ({ratio:.0%})")
+    log.info(f"    [bg check esquinas] {white}/{total} px blancos ({ratio:.0%})")
     return ratio >= WHITE_MIN_FRAC
 
 
 def process_image(img: Image.Image) -> Image.Image:
     """
     Redimensiona a 2000x2000 con fondo blanco.
-    - Fondo blanco (>=85% del perímetro): aplica 5% de padding en cada lado.
+    - Fondo blanco (>=85% esquinas blancas): aplica 5% de padding en cada lado.
     - Ilustraciones / fondo de color: rellena los 2000x2000 sin margen.
-
-    El check de fondo se hace SIEMPRE sobre la imagen compuesta sobre blanco,
-    independientemente de si el original tiene canal alpha o no. Esto evita
-    que canales alpha decorativos (bordes redondeados, sombras, etc.) hagan
-    saltar el padding en ilustraciones con fondo de color.
     """
-    # Para RGBA: usar blur-fill para no crear esquinas blancas en bordes redondeados
     has_alpha = (img.mode in ("RGBA", "LA") or
                  (img.mode == "P" and "transparency" in img.info))
     if has_alpha:
