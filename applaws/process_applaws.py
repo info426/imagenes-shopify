@@ -7,8 +7,11 @@ El script descarga cada imagen, la procesa (2000x2000 WebP,
 fondo blanco) y la re-sube reemplazando la original.
 
 Regla de padding:
-  - Fondo blanco (o transparente) -> 5% padding en cada lado
-  - Ilustraciones con fondo de color -> sin padding, rellena 2000x2000
+  - Fondo blanco (>=85% del perímetro blanco tras compositar sobre blanco) -> 5% padding
+  - Ilustraciones / fondo de color -> sin padding, rellena 2000x2000
+  La detección se hace SIEMPRE sobre la imagen compuesta sobre blanco, lo que
+  evita que imágenes con canal alpha decorativo (bordes redondeados, etc.) sean
+  clasificadas erróneamente como producto sobre fondo blanco.
 
 Backup automático:
   Antes de borrar las imágenes de Shopify, el script guarda los
@@ -161,42 +164,42 @@ def load_originals(pid: int) -> list[tuple[bytes, str]] | None:
 
 # --- Procesamiento de imagenes -----------------------------------------------
 
-def _has_transparency(img: Image.Image) -> bool:
-    return img.mode in ("RGBA", "LA") or (
-        img.mode == "P" and "transparency" in img.info)
+def _composite_on_white(img: Image.Image) -> Image.Image:
+    """
+    Devuelve una imagen RGB con fondo blanco.
+    Si la imagen tiene canal alpha, los píxeles transparentes se rellenan
+    con blanco antes de devolver. Si ya es RGB, se convierte directamente.
+    """
+    if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
+        rgba = img.convert("RGBA")
+        bg = Image.new("RGB", rgba.size, (255, 255, 255))
+        bg.paste(rgba.convert("RGB"), mask=rgba.split()[3])
+        return bg
+    return img.convert("RGB")
 
 
-def _is_white_background(img: Image.Image) -> bool:
+def _is_white_background(img_rgb: Image.Image) -> bool:
     """
-    Muestrea una banda perimetral del 2% del tamaño de la imagen
-    (mínimo 10 px) a lo largo de los cuatro bordes.
-    Si el 85% o más de esos píxeles son blancos (>= WHITE_THRESH
-    en los tres canales), se considera fondo blanco.
-    Esta técnica es mucho más robusta que muestrear solo 8 puntos
-    porque detecta correctamente ilustraciones que tienen esquinas
-    o franjas claras incidentales.
+    Muestrea una banda perimetral del 2% del tamaño (mínimo 10 px)
+    a lo largo de los cuatro bordes de la imagen RGB.
+    Retorna True si >= WHITE_MIN_FRAC de esos píxeles son blancos.
+    Recibe siempre una imagen RGB (sin alpha) ya compuesta sobre blanco.
     """
-    rgb = img.convert("RGB")
-    w, h = rgb.size
+    w, h = img_rgb.size
     band = max(10, int(min(w, h) * 0.02))
-
+    step = 4
     total = 0
     white = 0
 
-    # Paso de muestreo: cada 4 px para no ser demasiado lento en imágenes grandes
-    step = 4
-
-    # Banda superior e inferior
     for x in range(0, w, step):
         for y in list(range(0, band)) + list(range(h - band, h)):
-            r, g, b = rgb.getpixel((x, y))
+            r, g, b = img_rgb.getpixel((x, y))
             white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
             total += 1
 
-    # Banda izquierda y derecha (sin esquinas ya contadas)
     for y in range(band, h - band, step):
         for x in list(range(0, band)) + list(range(w - band, w)):
-            r, g, b = rgb.getpixel((x, y))
+            r, g, b = img_rgb.getpixel((x, y))
             white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
             total += 1
 
@@ -208,14 +211,19 @@ def _is_white_background(img: Image.Image) -> bool:
 def process_image(img: Image.Image) -> Image.Image:
     """
     Redimensiona a 2000x2000 con fondo blanco.
-    - Fondo blanco o transparente: aplica 5% de padding en cada lado.
-    - Ilustraciones con fondo de color: rellena los 2000x2000 sin margen.
-    Usa LANCZOS para preservar la resolucion al redimensionar.
-    """
-    transparent = _has_transparency(img)
-    img_conv = img.convert("RGBA") if transparent else img.convert("RGB")
+    - Fondo blanco (>=85% del perímetro): aplica 5% de padding en cada lado.
+    - Ilustraciones / fondo de color: rellena los 2000x2000 sin margen.
 
-    use_padding = transparent or _is_white_background(img)
+    El check de fondo se hace SIEMPRE sobre la imagen compuesta sobre blanco,
+    independientemente de si el original tiene canal alpha o no. Esto evita
+    que canales alpha decorativos (bordes redondeados, sombras, etc.) hagan
+    saltar el padding en ilustraciones con fondo de color.
+    """
+    # Compositar sobre blanco para eliminar transparencia
+    composited = _composite_on_white(img)
+
+    # Decidir padding basandose en el fondo de la imagen compuesta
+    use_padding = _is_white_background(composited)
     label = "fondo blanco -> padding 5%" if use_padding else "ilustracion -> sin padding"
     log.info(f"    [{label}]")
 
@@ -225,22 +233,17 @@ def process_image(img: Image.Image) -> Image.Image:
     else:
         max_w, max_h = TARGET_SIZE  # 2000 px
 
-    ratio = img_conv.width / img_conv.height
+    ratio = composited.width / composited.height
     if ratio > 1:
         new_w, new_h = max_w, int(max_w / ratio)
     else:
         new_w, new_h = int(max_h * ratio), max_h
 
-    resized    = img_conv.resize((new_w, new_h), Image.LANCZOS)
+    resized    = composited.resize((new_w, new_h), Image.LANCZOS)
     background = Image.new("RGB", TARGET_SIZE, (255, 255, 255))
     ox = (TARGET_SIZE[0] - new_w) // 2
     oy = (TARGET_SIZE[1] - new_h) // 2
-
-    if transparent:
-        background.paste(resized.convert("RGB"), (ox, oy), resized.split()[3])
-    else:
-        background.paste(resized, (ox, oy))
-
+    background.paste(resized, (ox, oy))
     return background
 
 
