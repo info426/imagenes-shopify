@@ -1,0 +1,55 @@
+2026-05-10 05:14:18,218 [INFO] ============================================================
+2026-05-10 05:14:18,218 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:14:18,218 [INFO] ============================================================
+2026-05-10 05:14:18,218 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:14:18,219 [INFO] Vendor  : Applaws
+2026-05-10 05:14:18,219 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:14:18,219 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:14:18,632 [INFO] Access token obtenido
+2026-05-10 05:14:18,633 [INFO] Modo prueba - producto ID: 15509630255491
+2026-05-10 05:14:18,969 [INFO] 
+[1/1] APPLAWS CAT DRY ADULTO POLLO Y SALMON  (ID: 15509630255491)
+2026-05-10 05:14:19,331 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:14:19,458 [INFO]   Descargada: 71K4G_n5TsL._AC_SL1500.jpg
+2026-05-10 05:14:19,589 [INFO]   Descargada: 717w-wt8moL._AC_SL1500.jpg
+2026-05-10 05:14:19,697 [INFO]   Descargada: 81qx0yBkDuL._AC_SL1500.jpg
+2026-05-10 05:14:19,823 [INFO]   Descargada: 81iiof2D1RL._AC_SL1500.jpg
+2026-05-10 05:14:20,045 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500_9f1e32c7-7025-4d6b-8e52-b1c5a72c8cfe.jpg
+2026-05-10 05:14:20,191 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500_7c3df089-5ab5-4247-b192-a6358ddad4e2.jpg
+2026-05-10 05:14:20,191 [INFO]   Backup original 1: img_01.jpg  (88 KB)
+2026-05-10 05:14:20,191 [INFO]   Backup original 2: img_02.jpg  (89 KB)
+2026-05-10 05:14:20,191 [INFO]   Backup original 3: img_03.jpg  (190 KB)
+2026-05-10 05:14:20,192 [INFO]   Backup original 4: img_04.jpg  (193 KB)
+2026-05-10 05:14:20,192 [INFO]   Backup original 5: img_05.jpg  (177 KB)
+2026-05-10 05:14:20,192 [INFO]   Backup original 6: img_06.jpg  (183 KB)
+2026-05-10 05:14:20,220 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:14:20,220 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:14:20,304 [INFO]     [bg check esquinas] 1880/2304 px blancos (82%)
+2026-05-10 05:14:20,305 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:14:20,373 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:14:20,373 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:14:20,474 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:14:20,474 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:14:20,573 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:14:20,573 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:14:20,670 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:14:20,670 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:14:24,973 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:14:27,974 [INFO]   Imagen 1/6 subida -> applaws_15509630255491_1.webp
+2026-05-10 05:14:31,329 [INFO]   Imagen 2/6 subida -> applaws_15509630255491_2.webp
+2026-05-10 05:14:35,789 [INFO]   Imagen 3/6 subida -> applaws_15509630255491_3.webp
+2026-05-10 05:14:40,285 [INFO]   Imagen 4/6 subida -> applaws_15509630255491_4.webp
+2026-05-10 05:14:44,621 [INFO]   Imagen 5/6 subida -> applaws_15509630255491_5.webp
+2026-05-10 05:14:49,461 [INFO]   Imagen 6/6 subida -> applaws_15509630255491_6.webp
+2026-05-10 05:14:49,961 [INFO]   Producto completado
+2026-05-10 05:14:50,962 [INFO] 
+============================================================
+2026-05-10 05:14:50,962 [INFO] RESUMEN FINAL
+2026-05-10 05:14:50,962 [INFO] ============================================================
+2026-05-10 05:14:50,962 [INFO]   Productos procesados  : 1
+2026-05-10 05:14:50,962 [INFO]   Imagenes actualizadas : 1
+2026-05-10 05:14:50,962 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 05:14:50,962 [INFO]   Errores               : 0
+2026-05-10 05:14:50,962 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:14:50,962 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:14:50,963 [INFO]   Log completo          -> applaws_images.log
