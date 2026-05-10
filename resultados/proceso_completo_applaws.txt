@@ -1,0 +1,1958 @@
+2026-05-10 05:32:35,061 [INFO] ============================================================
+2026-05-10 05:32:35,061 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:32:35,061 [INFO] ============================================================
+2026-05-10 05:32:35,061 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:32:35,061 [INFO] Vendor  : Applaws
+2026-05-10 05:32:35,061 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:32:35,062 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:32:35,450 [INFO] Access token obtenido
+2026-05-10 05:32:35,451 [INFO] Obteniendo todos los productos Applaws de Shopify...
+2026-05-10 05:32:36,473 [INFO]   Productos cargados: 80
+2026-05-10 05:32:36,474 [INFO] Total: 80 productos
+
+2026-05-10 05:32:36,474 [INFO] 
+[1/80] APPLAWS ARENA NATURES CALLING CAT 6KG  (ID: 15509629698435)
+2026-05-10 05:32:36,755 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:32:36,756 [INFO] 
+[2/80] APPLAWS CAT DRY ADULTO PESCADO Y SALMON  (ID: 15509629796739)
+2026-05-10 05:32:37,084 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:32:37,365 [INFO]   Descargada: 71NAHZpAAnL._AC_SL1500.jpg
+2026-05-10 05:32:37,605 [INFO]   Descargada: 71m8dObYZLL._AC_SL1500.jpg
+2026-05-10 05:32:37,841 [INFO]   Descargada: 811PiAPBJcL._AC_SL1500.jpg
+2026-05-10 05:32:38,094 [INFO]   Descargada: 81tFiceFmDL._AC_SL1500.jpg
+2026-05-10 05:32:38,333 [INFO]   Descargada: 819DnbAtFbL._AC_SL1500.jpg
+2026-05-10 05:32:38,596 [INFO]   Descargada: 81ciEy6T9IL._AC_SL1500.jpg
+2026-05-10 05:32:38,596 [INFO]   Backup original 1: img_01.jpg  (95 KB)
+2026-05-10 05:32:38,597 [INFO]   Backup original 2: img_02.jpg  (96 KB)
+2026-05-10 05:32:38,597 [INFO]   Backup original 3: img_03.jpg  (211 KB)
+2026-05-10 05:32:38,597 [INFO]   Backup original 4: img_04.jpg  (198 KB)
+2026-05-10 05:32:38,597 [INFO]   Backup original 5: img_05.jpg  (188 KB)
+2026-05-10 05:32:38,597 [INFO]   Backup original 6: img_06.jpg  (192 KB)
+2026-05-10 05:32:38,617 [INFO]     [bg check esquinas] 1895/2304 px blancos (82%)
+2026-05-10 05:32:38,618 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:32:38,675 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:32:38,675 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:32:38,757 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:32:38,757 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:32:38,846 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:32:38,846 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:32:38,933 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:32:38,933 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:32:39,020 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:32:39,020 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:32:43,018 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:32:45,773 [INFO]   Imagen 1/6 subida -> applaws_15509629796739_1.webp
+2026-05-10 05:32:48,960 [INFO]   Imagen 2/6 subida -> applaws_15509629796739_2.webp
+2026-05-10 05:32:53,522 [INFO]   Imagen 3/6 subida -> applaws_15509629796739_3.webp
+2026-05-10 05:32:57,694 [INFO]   Imagen 4/6 subida -> applaws_15509629796739_4.webp
+2026-05-10 05:33:02,073 [INFO]   Imagen 5/6 subida -> applaws_15509629796739_5.webp
+2026-05-10 05:33:05,989 [INFO]   Imagen 6/6 subida -> applaws_15509629796739_6.webp
+2026-05-10 05:33:06,489 [INFO]   Producto completado
+2026-05-10 05:33:07,489 [INFO] 
+[3/80] APPLAWS CAT DRY ADULTO POLLO  (ID: 15509629960579)
+2026-05-10 05:33:07,779 [INFO]   8 imagen(es) - descargando originales...
+2026-05-10 05:33:08,005 [INFO]   Descargada: 71kj_-XsCWL._AC_SL1500.jpg
+2026-05-10 05:33:08,237 [INFO]   Descargada: 71IZKsiA5pL._AC_SL1500.jpg
+2026-05-10 05:33:08,472 [INFO]   Descargada: 81_54_-ZT5L._AC_SL1500.jpg
+2026-05-10 05:33:08,683 [INFO]   Descargada: 81JoMwNHArL._AC_SL1500.jpg
+2026-05-10 05:33:08,946 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500.jpg
+2026-05-10 05:33:09,183 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500.jpg
+2026-05-10 05:33:09,422 [INFO]   Descargada: 81SfdpV7oPL._AC_SL1500.jpg
+2026-05-10 05:33:09,627 [INFO]   Descargada: 71EwOJTvrML._AC_SL1500.jpg
+2026-05-10 05:33:09,627 [INFO]   Backup original 1: img_01.jpg  (85 KB)
+2026-05-10 05:33:09,627 [INFO]   Backup original 2: img_02.jpg  (85 KB)
+2026-05-10 05:33:09,627 [INFO]   Backup original 3: img_03.jpg  (192 KB)
+2026-05-10 05:33:09,628 [INFO]   Backup original 4: img_04.jpg  (193 KB)
+2026-05-10 05:33:09,628 [INFO]   Backup original 5: img_05.jpg  (177 KB)
+2026-05-10 05:33:09,628 [INFO]   Backup original 6: img_06.jpg  (183 KB)
+2026-05-10 05:33:09,628 [INFO]   Backup original 7: img_07.jpg  (136 KB)
+2026-05-10 05:33:09,628 [INFO]   Backup original 8: img_08.jpg  (86 KB)
+2026-05-10 05:33:09,641 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:33:09,641 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:33:09,710 [INFO]     [bg check esquinas] 1883/2304 px blancos (82%)
+2026-05-10 05:33:09,710 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:33:09,766 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:09,766 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:09,855 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:09,855 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:09,942 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:09,942 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:10,029 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:10,030 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:10,116 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:10,116 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:10,200 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:10,200 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:15,501 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:33:18,266 [INFO]   Imagen 1/8 subida -> applaws_15509629960579_1.webp
+2026-05-10 05:33:21,542 [INFO]   Imagen 2/8 subida -> applaws_15509629960579_2.webp
+2026-05-10 05:33:25,562 [INFO]   Imagen 3/8 subida -> applaws_15509629960579_3.webp
+2026-05-10 05:33:29,697 [INFO]   Imagen 4/8 subida -> applaws_15509629960579_4.webp
+2026-05-10 05:33:33,521 [INFO]   Imagen 5/8 subida -> applaws_15509629960579_5.webp
+2026-05-10 05:33:37,977 [INFO]   Imagen 6/8 subida -> applaws_15509629960579_6.webp
+2026-05-10 05:33:41,577 [INFO]   Imagen 7/8 subida -> applaws_15509629960579_7.webp
+2026-05-10 05:33:45,257 [INFO]   Imagen 8/8 subida -> applaws_15509629960579_8.webp
+2026-05-10 05:33:45,757 [INFO]   Producto completado
+2026-05-10 05:33:46,758 [INFO] 
+[4/80] APPLAWS CAT DRY ADULTO POLLO Y PATO  (ID: 15509630091651)
+2026-05-10 05:33:47,089 [INFO]   7 imagen(es) - descargando originales...
+2026-05-10 05:33:47,331 [INFO]   Descargada: 71NmXmonF0L._AC_SL1500.jpg
+2026-05-10 05:33:47,576 [INFO]   Descargada: 71dywU_BDGL._AC_SL1500.jpg
+2026-05-10 05:33:47,817 [INFO]   Descargada: 81g7Y2ZYo7L._AC_SL1500.jpg
+2026-05-10 05:33:48,103 [INFO]   Descargada: 81ngYd2L_0L._AC_SL1500.jpg
+2026-05-10 05:33:48,312 [INFO]   Descargada: 81DGuleZCJL._AC_SL1500.jpg
+2026-05-10 05:33:48,547 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500_b8817bec-6196-448b-899e-c888dc62053b.jpg
+2026-05-10 05:33:48,784 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500_94ddbef6-8990-4bd7-b27e-9121a89ba288.jpg
+2026-05-10 05:33:48,785 [INFO]   Backup original 1: img_01.jpg  (89 KB)
+2026-05-10 05:33:48,785 [INFO]   Backup original 2: img_02.jpg  (89 KB)
+2026-05-10 05:33:48,785 [INFO]   Backup original 3: img_03.jpg  (161 KB)
+2026-05-10 05:33:48,785 [INFO]   Backup original 4: img_04.jpg  (189 KB)
+2026-05-10 05:33:48,785 [INFO]   Backup original 5: img_05.jpg  (195 KB)
+2026-05-10 05:33:48,785 [INFO]   Backup original 6: img_06.jpg  (177 KB)
+2026-05-10 05:33:48,786 [INFO]   Backup original 7: img_07.jpg  (183 KB)
+2026-05-10 05:33:48,793 [INFO]     [bg check esquinas] 1900/2304 px blancos (82%)
+2026-05-10 05:33:48,793 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:33:48,846 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:33:48,846 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:33:48,920 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:48,920 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:49,006 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:49,007 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:49,093 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:49,093 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:49,179 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:49,179 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:49,264 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:33:49,265 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:33:54,063 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:33:56,773 [INFO]   Imagen 1/7 subida -> applaws_15509630091651_1.webp
+2026-05-10 05:33:59,896 [INFO]   Imagen 2/7 subida -> applaws_15509630091651_2.webp
+2026-05-10 05:34:03,611 [INFO]   Imagen 3/7 subida -> applaws_15509630091651_3.webp
+2026-05-10 05:34:08,167 [INFO]   Imagen 4/7 subida -> applaws_15509630091651_4.webp
+2026-05-10 05:34:12,280 [INFO]   Imagen 5/7 subida -> applaws_15509630091651_5.webp
+2026-05-10 05:34:16,054 [INFO]   Imagen 6/7 subida -> applaws_15509630091651_6.webp
+2026-05-10 05:34:19,975 [INFO]   Imagen 7/7 subida -> applaws_15509630091651_7.webp
+2026-05-10 05:34:20,475 [INFO]   Producto completado
+2026-05-10 05:34:21,475 [INFO] 
+[5/80] APPLAWS CAT DRY ADULTO POLLO Y SALMON  (ID: 15509630255491)
+2026-05-10 05:34:21,763 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:34:22,275 [INFO]   Descargada: applaws_15509630255491_1.webp
+2026-05-10 05:34:22,852 [INFO]   Descargada: applaws_15509630255491_2.webp
+2026-05-10 05:34:23,464 [INFO]   Descargada: applaws_15509630255491_3.webp
+2026-05-10 05:34:24,380 [INFO]   Descargada: applaws_15509630255491_4.webp
+2026-05-10 05:34:24,987 [INFO]   Descargada: applaws_15509630255491_5.webp
+2026-05-10 05:34:25,777 [INFO]   Descargada: applaws_15509630255491_6.webp
+2026-05-10 05:34:25,777 [INFO]   Backup original 1: img_01.webp  (145 KB)
+2026-05-10 05:34:25,777 [INFO]   Backup original 2: img_02.webp  (150 KB)
+2026-05-10 05:34:25,778 [INFO]   Backup original 3: img_03.webp  (335 KB)
+2026-05-10 05:34:25,778 [INFO]   Backup original 4: img_04.webp  (337 KB)
+2026-05-10 05:34:25,778 [INFO]   Backup original 5: img_05.webp  (311 KB)
+2026-05-10 05:34:25,778 [INFO]   Backup original 6: img_06.webp  (323 KB)
+2026-05-10 05:34:25,796 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:34:25,796 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:34:25,888 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:34:25,888 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:34:25,985 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:34:25,985 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:26,014 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:34:26,014 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:26,039 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:34:26,039 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:26,063 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:34:26,064 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:29,789 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:34:32,440 [INFO]   Imagen 1/6 subida -> applaws_15509630255491_1.webp
+2026-05-10 05:34:36,318 [INFO]   Imagen 2/6 subida -> applaws_15509630255491_2.webp
+2026-05-10 05:34:40,378 [INFO]   Imagen 3/6 subida -> applaws_15509630255491_3.webp
+2026-05-10 05:34:44,359 [INFO]   Imagen 4/6 subida -> applaws_15509630255491_4.webp
+2026-05-10 05:34:48,292 [INFO]   Imagen 5/6 subida -> applaws_15509630255491_5.webp
+2026-05-10 05:34:52,202 [INFO]   Imagen 6/6 subida -> applaws_15509630255491_6.webp
+2026-05-10 05:34:52,702 [INFO]   Producto completado
+2026-05-10 05:34:53,702 [INFO] 
+[6/80] APPLAWS CAT DRY KITTEN POLLO  (ID: 15509630452099)
+2026-05-10 05:34:54,006 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:34:54,295 [INFO]   Descargada: 71VxcnCMNDL._AC_SL1500.jpg
+2026-05-10 05:34:54,494 [INFO]   Descargada: 718a-XVZTSL._AC_SL1500.jpg
+2026-05-10 05:34:54,704 [INFO]   Descargada: 81CfbKVwOcL._AC_SL1500.jpg
+2026-05-10 05:34:54,948 [INFO]   Descargada: 817pz5YtwFL._AC_SL1500.jpg
+2026-05-10 05:34:55,177 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500_409c610f-72e5-41d3-bed0-24d8d5a63933.jpg
+2026-05-10 05:34:55,407 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500_a0b2ad44-da43-41e2-99e7-632fcb11f0dd.jpg
+2026-05-10 05:34:55,408 [INFO]   Backup original 1: img_01.jpg  (86 KB)
+2026-05-10 05:34:55,408 [INFO]   Backup original 2: img_02.jpg  (86 KB)
+2026-05-10 05:34:55,408 [INFO]   Backup original 3: img_03.jpg  (190 KB)
+2026-05-10 05:34:55,408 [INFO]   Backup original 4: img_04.jpg  (194 KB)
+2026-05-10 05:34:55,408 [INFO]   Backup original 5: img_05.jpg  (177 KB)
+2026-05-10 05:34:55,409 [INFO]   Backup original 6: img_06.jpg  (183 KB)
+2026-05-10 05:34:55,416 [INFO]     [bg check esquinas] 1877/2304 px blancos (81%)
+2026-05-10 05:34:55,416 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:34:55,469 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:34:55,469 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:34:55,544 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:34:55,544 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:55,630 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:34:55,630 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:55,716 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:34:55,716 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:55,801 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:34:55,801 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:34:59,820 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:35:02,459 [INFO]   Imagen 1/6 subida -> applaws_15509630452099_1.webp
+2026-05-10 05:35:05,723 [INFO]   Imagen 2/6 subida -> applaws_15509630452099_2.webp
+2026-05-10 05:35:09,906 [INFO]   Imagen 3/6 subida -> applaws_15509630452099_3.webp
+2026-05-10 05:35:14,059 [INFO]   Imagen 4/6 subida -> applaws_15509630452099_4.webp
+2026-05-10 05:35:18,127 [INFO]   Imagen 5/6 subida -> applaws_15509630452099_5.webp
+2026-05-10 05:35:21,995 [INFO]   Imagen 6/6 subida -> applaws_15509630452099_6.webp
+2026-05-10 05:35:22,496 [INFO]   Producto completado
+2026-05-10 05:35:23,496 [INFO] 
+[7/80] APPLAWS CAT DRY POLLO Y CORDERO  (ID: 15509630583171)
+2026-05-10 05:35:23,788 [INFO]   7 imagen(es) - descargando originales...
+2026-05-10 05:35:24,001 [INFO]   Descargada: 71oUBDt58VL._AC_SL1500.jpg
+2026-05-10 05:35:24,235 [INFO]   Descargada: 71cKxVY29EL._AC_SL1500.jpg
+2026-05-10 05:35:24,490 [INFO]   Descargada: 81zI6OS7TqL._AC_SL1500.jpg
+2026-05-10 05:35:24,726 [INFO]   Descargada: 81nGqJmQejL._AC_SL1500.jpg
+2026-05-10 05:35:24,975 [INFO]   Descargada: 81NcEmpRQRL._AC_SL1500.jpg
+2026-05-10 05:35:25,224 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500_c8fd42b4-28d3-4804-be8e-5123c250ff35.jpg
+2026-05-10 05:35:25,460 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500_8ee9f6c3-d4e1-4fad-8873-e13a0ee0461e.jpg
+2026-05-10 05:35:25,460 [INFO]   Backup original 1: img_01.jpg  (88 KB)
+2026-05-10 05:35:25,460 [INFO]   Backup original 2: img_02.jpg  (88 KB)
+2026-05-10 05:35:25,461 [INFO]   Backup original 3: img_03.jpg  (159 KB)
+2026-05-10 05:35:25,461 [INFO]   Backup original 4: img_04.jpg  (193 KB)
+2026-05-10 05:35:25,461 [INFO]   Backup original 5: img_05.jpg  (193 KB)
+2026-05-10 05:35:25,461 [INFO]   Backup original 6: img_06.jpg  (177 KB)
+2026-05-10 05:35:25,461 [INFO]   Backup original 7: img_07.jpg  (183 KB)
+2026-05-10 05:35:25,469 [INFO]     [bg check esquinas] 1887/2304 px blancos (82%)
+2026-05-10 05:35:25,469 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:35:25,520 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:35:25,520 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:35:25,594 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:35:25,594 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:35:25,680 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:35:25,680 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:35:25,765 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:35:25,765 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:35:25,850 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:35:25,850 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:35:25,937 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:35:25,937 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:35:30,728 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:35:33,363 [INFO]   Imagen 1/7 subida -> applaws_15509630583171_1.webp
+2026-05-10 05:35:36,509 [INFO]   Imagen 2/7 subida -> applaws_15509630583171_2.webp
+2026-05-10 05:35:40,622 [INFO]   Imagen 3/7 subida -> applaws_15509630583171_3.webp
+2026-05-10 05:35:44,763 [INFO]   Imagen 4/7 subida -> applaws_15509630583171_4.webp
+2026-05-10 05:35:48,914 [INFO]   Imagen 5/7 subida -> applaws_15509630583171_5.webp
+2026-05-10 05:35:53,001 [INFO]   Imagen 6/7 subida -> applaws_15509630583171_6.webp
+2026-05-10 05:35:57,274 [INFO]   Imagen 7/7 subida -> applaws_15509630583171_7.webp
+2026-05-10 05:35:57,774 [INFO]   Producto completado
+2026-05-10 05:35:58,774 [INFO] 
+[8/80] APPLAWS CAT DRY SENIOR POLLO  (ID: 15509630714243)
+2026-05-10 05:35:59,077 [INFO]   7 imagen(es) - descargando originales...
+2026-05-10 05:35:59,319 [INFO]   Descargada: 71vEr6hc2-L._AC_SL1500.jpg
+2026-05-10 05:35:59,523 [INFO]   Descargada: 81dfsIPC0cL._AC_SL1500.jpg
+2026-05-10 05:35:59,728 [INFO]   Descargada: 71vpe9xcYWL._AC_SL1500.jpg
+2026-05-10 05:35:59,992 [INFO]   Descargada: 81EFaAxXtnL._AC_SL1500.jpg
+2026-05-10 05:36:00,258 [INFO]   Descargada: 81JoMwNHArL._AC_SL1500_da220bb9-287c-42a4-8da7-97a1b880ea81.jpg
+2026-05-10 05:36:00,476 [INFO]   Descargada: 81zIKqAAQ2L._AC_SL1500_78530db4-2cd9-442b-a0ba-831b58bed4b5.jpg
+2026-05-10 05:36:00,717 [INFO]   Descargada: 81dI4Y4yVlL._AC_SL1500_c22993bb-f36d-4b2c-b11c-49ad312df254.jpg
+2026-05-10 05:36:00,718 [INFO]   Backup original 1: img_01.jpg  (85 KB)
+2026-05-10 05:36:00,718 [INFO]   Backup original 2: img_02.jpg  (153 KB)
+2026-05-10 05:36:00,718 [INFO]   Backup original 3: img_03.jpg  (85 KB)
+2026-05-10 05:36:00,718 [INFO]   Backup original 4: img_04.jpg  (190 KB)
+2026-05-10 05:36:00,718 [INFO]   Backup original 5: img_05.jpg  (193 KB)
+2026-05-10 05:36:00,719 [INFO]   Backup original 6: img_06.jpg  (177 KB)
+2026-05-10 05:36:00,719 [INFO]   Backup original 7: img_07.jpg  (183 KB)
+2026-05-10 05:36:00,726 [INFO]     [bg check esquinas] 1882/2304 px blancos (82%)
+2026-05-10 05:36:00,726 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:36:00,780 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:00,780 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:00,864 [INFO]     [bg check esquinas] 5460/5476 px blancos (100%)
+2026-05-10 05:36:00,864 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:36:00,939 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:00,939 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:01,025 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:01,025 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:01,111 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:01,111 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:01,197 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:01,197 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:06,470 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:36:09,150 [INFO]   Imagen 1/7 subida -> applaws_15509630714243_1.webp
+2026-05-10 05:36:12,807 [INFO]   Imagen 2/7 subida -> applaws_15509630714243_2.webp
+2026-05-10 05:36:15,954 [INFO]   Imagen 3/7 subida -> applaws_15509630714243_3.webp
+2026-05-10 05:36:19,967 [INFO]   Imagen 4/7 subida -> applaws_15509630714243_4.webp
+2026-05-10 05:36:24,495 [INFO]   Imagen 5/7 subida -> applaws_15509630714243_5.webp
+2026-05-10 05:36:29,004 [INFO]   Imagen 6/7 subida -> applaws_15509630714243_6.webp
+2026-05-10 05:36:33,937 [INFO]   Imagen 7/7 subida -> applaws_15509630714243_7.webp
+2026-05-10 05:36:34,437 [INFO]   Producto completado
+2026-05-10 05:36:35,438 [INFO] 
+[9/80] APPLAWS CAT LATA ATUN CON ALGAS  (ID: 15509630845315)
+2026-05-10 05:36:35,737 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:36:35,941 [INFO]   Descargada: 51GjHgaV_ML._AC.jpg
+2026-05-10 05:36:36,153 [INFO]   Descargada: 81yywk_bPRL._AC_SL1500.jpg
+2026-05-10 05:36:36,358 [INFO]   Descargada: 71wUOdnJAkL._AC_SL1500.jpg
+2026-05-10 05:36:36,571 [INFO]   Descargada: 81zZUwIgQmL._AC_SL1500.jpg
+2026-05-10 05:36:36,792 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500.jpg
+2026-05-10 05:36:37,028 [INFO]   Descargada: 71RLWaSACyL._AC_SL1500.jpg
+2026-05-10 05:36:37,029 [INFO]   Backup original 1: img_01.jpg  (34 KB)
+2026-05-10 05:36:37,029 [INFO]   Backup original 2: img_02.jpg  (168 KB)
+2026-05-10 05:36:37,029 [INFO]   Backup original 3: img_03.jpg  (143 KB)
+2026-05-10 05:36:37,029 [INFO]   Backup original 4: img_04.jpg  (131 KB)
+2026-05-10 05:36:37,029 [INFO]   Backup original 5: img_05.jpg  (100 KB)
+2026-05-10 05:36:37,030 [INFO]   Backup original 6: img_06.jpg  (84 KB)
+2026-05-10 05:36:37,032 [INFO]     [bg check esquinas] 484/484 px blancos (100%)
+2026-05-10 05:36:37,032 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:36:37,076 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:37,076 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:37,159 [INFO]     [bg check esquinas] 2654/3844 px blancos (69%)
+2026-05-10 05:36:37,159 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:36:37,223 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:37,223 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:37,307 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:36:37,307 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:36:37,385 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:36:37,385 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:36:41,439 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:36:44,083 [INFO]   Imagen 1/6 subida -> applaws_15509630845315_1.webp
+2026-05-10 05:36:47,937 [INFO]   Imagen 2/6 subida -> applaws_15509630845315_2.webp
+2026-05-10 05:36:51,595 [INFO]   Imagen 3/6 subida -> applaws_15509630845315_3.webp
+2026-05-10 05:36:55,420 [INFO]   Imagen 4/6 subida -> applaws_15509630845315_4.webp
+2026-05-10 05:36:58,631 [INFO]   Imagen 5/6 subida -> applaws_15509630845315_5.webp
+2026-05-10 05:37:01,779 [INFO]   Imagen 6/6 subida -> applaws_15509630845315_6.webp
+2026-05-10 05:37:02,280 [INFO]   Producto completado
+2026-05-10 05:37:03,280 [INFO] 
+[10/80] APPLAWS CAT LATA ATUN CON QUESO  (ID: 15509630943619)
+2026-05-10 05:37:03,583 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:37:03,839 [INFO]   Descargada: 51CGDQjH2GL._AC.jpg
+2026-05-10 05:37:04,056 [INFO]   Descargada: 71Q57KHDFwL._AC_SL1500.jpg
+2026-05-10 05:37:04,294 [INFO]   Descargada: 71UbFfMCZSL._AC_SL1500.jpg
+2026-05-10 05:37:04,529 [INFO]   Descargada: 81Osi5iQMqL._AC_SL1500.jpg
+2026-05-10 05:37:04,777 [INFO]   Descargada: 81HatnsisFL._AC_SL1500.jpg
+2026-05-10 05:37:04,995 [INFO]   Descargada: 71TMCVl3UrL._AC_SL1500.jpg
+2026-05-10 05:37:04,996 [INFO]   Backup original 1: img_01.jpg  (36 KB)
+2026-05-10 05:37:04,996 [INFO]   Backup original 2: img_02.jpg  (85 KB)
+2026-05-10 05:37:04,996 [INFO]   Backup original 3: img_03.jpg  (101 KB)
+2026-05-10 05:37:04,996 [INFO]   Backup original 4: img_04.jpg  (165 KB)
+2026-05-10 05:37:04,996 [INFO]   Backup original 5: img_05.jpg  (160 KB)
+2026-05-10 05:37:04,996 [INFO]   Backup original 6: img_06.jpg  (87 KB)
+2026-05-10 05:37:04,999 [INFO]     [bg check esquinas] 484/484 px blancos (100%)
+2026-05-10 05:37:04,999 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:37:05,035 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:37:05,035 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:37:05,080 [INFO]     [bg check esquinas] 1381/1600 px blancos (86%)
+2026-05-10 05:37:05,080 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:37:05,128 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:05,128 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:05,215 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:05,215 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:05,301 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:05,301 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:09,393 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:37:12,092 [INFO]   Imagen 1/6 subida -> applaws_15509630943619_1.webp
+2026-05-10 05:37:15,286 [INFO]   Imagen 2/6 subida -> applaws_15509630943619_2.webp
+2026-05-10 05:37:18,608 [INFO]   Imagen 3/6 subida -> applaws_15509630943619_3.webp
+2026-05-10 05:37:22,405 [INFO]   Imagen 4/6 subida -> applaws_15509630943619_4.webp
+2026-05-10 05:37:26,195 [INFO]   Imagen 5/6 subida -> applaws_15509630943619_5.webp
+2026-05-10 05:37:29,368 [INFO]   Imagen 6/6 subida -> applaws_15509630943619_6.webp
+2026-05-10 05:37:29,868 [INFO]   Producto completado
+2026-05-10 05:37:30,869 [INFO] 
+[11/80] APPLAWS CAT LATA ATUN Y CANGREJO 24X70GR  (ID: 15509631009155)
+2026-05-10 05:37:31,168 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:37:31,364 [INFO]   Descargada: 71QvMSXDLWL._AC_SL1500.jpg
+2026-05-10 05:37:31,602 [INFO]   Descargada: 71zrZARTAnL._AC_SL1500.jpg
+2026-05-10 05:37:31,818 [INFO]   Descargada: 81w2Iukli9L._AC_SL1500.jpg
+2026-05-10 05:37:32,027 [INFO]   Descargada: 81mnkiiq1OL._AC_SL1500.jpg
+2026-05-10 05:37:32,280 [INFO]   Descargada: 71Gxt8gSXDL._AC_SL1500.jpg
+2026-05-10 05:37:32,491 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500_3f38780e-a942-4c4b-ad6c-955a1fc3c885.jpg
+2026-05-10 05:37:32,492 [INFO]   Backup original 1: img_01.jpg  (89 KB)
+2026-05-10 05:37:32,492 [INFO]   Backup original 2: img_02.jpg  (153 KB)
+2026-05-10 05:37:32,492 [INFO]   Backup original 3: img_03.jpg  (182 KB)
+2026-05-10 05:37:32,492 [INFO]   Backup original 4: img_04.jpg  (158 KB)
+2026-05-10 05:37:32,492 [INFO]   Backup original 5: img_05.jpg  (122 KB)
+2026-05-10 05:37:32,492 [INFO]   Backup original 6: img_06.jpg  (100 KB)
+2026-05-10 05:37:32,500 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:37:32,500 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:37:32,547 [INFO]     [bg check esquinas] 2203/3600 px blancos (61%)
+2026-05-10 05:37:32,547 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:37:32,610 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:32,610 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:32,694 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:32,694 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:32,779 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:32,779 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:32,861 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:37:32,861 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:37:36,702 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:37:39,424 [INFO]   Imagen 1/6 subida -> applaws_15509631009155_1.webp
+2026-05-10 05:37:43,040 [INFO]   Imagen 2/6 subida -> applaws_15509631009155_2.webp
+2026-05-10 05:37:47,305 [INFO]   Imagen 3/6 subida -> applaws_15509631009155_3.webp
+2026-05-10 05:37:51,453 [INFO]   Imagen 4/6 subida -> applaws_15509631009155_4.webp
+2026-05-10 05:37:54,914 [INFO]   Imagen 5/6 subida -> applaws_15509631009155_5.webp
+2026-05-10 05:37:58,211 [INFO]   Imagen 6/6 subida -> applaws_15509631009155_6.webp
+2026-05-10 05:37:58,712 [INFO]   Producto completado
+2026-05-10 05:37:59,712 [INFO] 
+[12/80] APPLAWS CAT LATA ATUN Y GAMBAS  (ID: 15509631074691)
+2026-05-10 05:38:00,021 [INFO]   8 imagen(es) - descargando originales...
+2026-05-10 05:38:00,513 [INFO]   Descargada: applaws_15509631074691_1.webp
+2026-05-10 05:38:01,168 [INFO]   Descargada: applaws_15509631074691_2.webp
+2026-05-10 05:38:01,928 [INFO]   Descargada: applaws_15509631074691_3.webp
+2026-05-10 05:38:02,535 [INFO]   Descargada: applaws_15509631074691_4.webp
+2026-05-10 05:38:03,149 [INFO]   Descargada: applaws_15509631074691_5.webp
+2026-05-10 05:38:03,784 [INFO]   Descargada: applaws_15509631074691_6.webp
+2026-05-10 05:38:04,464 [INFO]   Descargada: applaws_15509631074691_7.webp
+2026-05-10 05:38:05,045 [INFO]   Descargada: applaws_15509631074691_8.webp
+2026-05-10 05:38:05,046 [INFO]   Backup original 1: img_01.webp  (145 KB)
+2026-05-10 05:38:05,046 [INFO]   Backup original 2: img_02.webp  (278 KB)
+2026-05-10 05:38:05,046 [INFO]   Backup original 3: img_03.webp  (244 KB)
+2026-05-10 05:38:05,046 [INFO]   Backup original 4: img_04.webp  (190 KB)
+2026-05-10 05:38:05,047 [INFO]   Backup original 5: img_05.webp  (228 KB)
+2026-05-10 05:38:05,047 [INFO]   Backup original 6: img_06.webp  (152 KB)
+2026-05-10 05:38:05,047 [INFO]   Backup original 7: img_07.webp  (139 KB)
+2026-05-10 05:38:05,047 [INFO]   Backup original 8: img_08.webp  (157 KB)
+2026-05-10 05:38:05,065 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:38:05,065 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:05,161 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:38:05,162 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:05,186 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:38:05,186 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:05,212 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:38:05,212 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:05,235 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:38:05,235 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:05,329 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:38:05,329 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:05,422 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:38:05,422 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:05,515 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:38:05,515 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:10,527 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:38:13,127 [INFO]   Imagen 1/8 subida -> applaws_15509631074691_1.webp
+2026-05-10 05:38:16,885 [INFO]   Imagen 2/8 subida -> applaws_15509631074691_2.webp
+2026-05-10 05:38:20,632 [INFO]   Imagen 3/8 subida -> applaws_15509631074691_3.webp
+2026-05-10 05:38:24,731 [INFO]   Imagen 4/8 subida -> applaws_15509631074691_4.webp
+2026-05-10 05:38:28,231 [INFO]   Imagen 5/8 subida -> applaws_15509631074691_5.webp
+2026-05-10 05:38:31,446 [INFO]   Imagen 6/8 subida -> applaws_15509631074691_6.webp
+2026-05-10 05:38:34,466 [INFO]   Imagen 7/8 subida -> applaws_15509631074691_7.webp
+2026-05-10 05:38:37,568 [INFO]   Imagen 8/8 subida -> applaws_15509631074691_8.webp
+2026-05-10 05:38:38,068 [INFO]   Producto completado
+2026-05-10 05:38:39,068 [INFO] 
+[13/80] APPLAWS CAT LATA CABALLA Y SARDINA 24X70GR  (ID: 15509631140227)
+2026-05-10 05:38:39,359 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:38:39,590 [INFO]   Descargada: 71FJgHsHwcL._AC_SL1500.jpg
+2026-05-10 05:38:39,875 [INFO]   Descargada: 71cJf1TtS_L._AC_SL1500.jpg
+2026-05-10 05:38:40,084 [INFO]   Descargada: 81jF-SL-nkL._AC_SL1500.jpg
+2026-05-10 05:38:40,300 [INFO]   Descargada: 81Lnb47VIAL._AC_SL1500.jpg
+2026-05-10 05:38:40,510 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500_1162b5ce-1340-41bf-86b2-2ed710bc7343.jpg
+2026-05-10 05:38:40,511 [INFO]   Backup original 1: img_01.jpg  (84 KB)
+2026-05-10 05:38:40,511 [INFO]   Backup original 2: img_02.jpg  (137 KB)
+2026-05-10 05:38:40,511 [INFO]   Backup original 3: img_03.jpg  (161 KB)
+2026-05-10 05:38:40,511 [INFO]   Backup original 4: img_04.jpg  (131 KB)
+2026-05-10 05:38:40,511 [INFO]   Backup original 5: img_05.jpg  (100 KB)
+2026-05-10 05:38:40,519 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:38:40,519 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:40,567 [INFO]     [bg check esquinas] 2229/3600 px blancos (62%)
+2026-05-10 05:38:40,567 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:38:40,629 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:38:40,630 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:40,713 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:38:40,714 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:40,796 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:38:40,796 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:38:44,197 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:38:47,209 [INFO]   Imagen 1/5 subida -> applaws_15509631140227_1.webp
+2026-05-10 05:38:51,062 [INFO]   Imagen 2/5 subida -> applaws_15509631140227_2.webp
+2026-05-10 05:38:54,903 [INFO]   Imagen 3/5 subida -> applaws_15509631140227_3.webp
+2026-05-10 05:38:58,724 [INFO]   Imagen 4/5 subida -> applaws_15509631140227_4.webp
+2026-05-10 05:39:01,921 [INFO]   Imagen 5/5 subida -> applaws_15509631140227_5.webp
+2026-05-10 05:39:02,422 [INFO]   Producto completado
+2026-05-10 05:39:03,422 [INFO] 
+[14/80] APPLAWS CAT LATA FILETE ATUN  (ID: 15509631205763)
+2026-05-10 05:39:03,746 [INFO]   7 imagen(es) - descargando originales...
+2026-05-10 05:39:03,989 [INFO]   Descargada: 71HDy-wLIvL._AC_SL1500.jpg
+2026-05-10 05:39:04,204 [INFO]   Descargada: 51V4EINBgGL._AC.jpg
+2026-05-10 05:39:04,459 [INFO]   Descargada: 71g7zpqf2HL._AC_SL1500.jpg
+2026-05-10 05:39:04,714 [INFO]   Descargada: 81smLSa9CdL._AC_SL1500.jpg
+2026-05-10 05:39:04,930 [INFO]   Descargada: 81URvvU3CVL._AC_SL1500.jpg
+2026-05-10 05:39:05,139 [INFO]   Descargada: 71Rjp8Zjy-L._AC_SL1500.jpg
+2026-05-10 05:39:05,381 [INFO]   Descargada: 71Lj6UnRgDL._AC_SL1500.jpg
+2026-05-10 05:39:05,382 [INFO]   Backup original 1: img_01.jpg  (84 KB)
+2026-05-10 05:39:05,382 [INFO]   Backup original 2: img_02.jpg  (33 KB)
+2026-05-10 05:39:05,382 [INFO]   Backup original 3: img_03.jpg  (137 KB)
+2026-05-10 05:39:05,382 [INFO]   Backup original 4: img_04.jpg  (178 KB)
+2026-05-10 05:39:05,382 [INFO]   Backup original 5: img_05.jpg  (154 KB)
+2026-05-10 05:39:05,383 [INFO]   Backup original 6: img_06.jpg  (123 KB)
+2026-05-10 05:39:05,383 [INFO]   Backup original 7: img_07.jpg  (90 KB)
+2026-05-10 05:39:05,390 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:39:05,390 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:39:05,429 [INFO]     [bg check esquinas] 484/484 px blancos (100%)
+2026-05-10 05:39:05,429 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:39:05,468 [INFO]     [bg check esquinas] 2166/3600 px blancos (60%)
+2026-05-10 05:39:05,468 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:39:05,531 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:39:05,532 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:05,616 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:39:05,616 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:05,701 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:39:05,701 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:05,785 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:39:05,785 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:10,764 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:39:13,365 [INFO]   Imagen 1/7 subida -> applaws_15509631205763_1.webp
+2026-05-10 05:39:16,609 [INFO]   Imagen 2/7 subida -> applaws_15509631205763_2.webp
+2026-05-10 05:39:20,382 [INFO]   Imagen 3/7 subida -> applaws_15509631205763_3.webp
+2026-05-10 05:39:24,663 [INFO]   Imagen 4/7 subida -> applaws_15509631205763_4.webp
+2026-05-10 05:39:28,444 [INFO]   Imagen 5/7 subida -> applaws_15509631205763_5.webp
+2026-05-10 05:39:32,412 [INFO]   Imagen 6/7 subida -> applaws_15509631205763_6.webp
+2026-05-10 05:39:35,726 [INFO]   Imagen 7/7 subida -> applaws_15509631205763_7.webp
+2026-05-10 05:39:36,226 [INFO]   Producto completado
+2026-05-10 05:39:37,226 [INFO] 
+[15/80] APPLAWS CAT LATA KITTEN ATUN 24X70GR  (ID: 15509631304067)
+2026-05-10 05:39:37,524 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:39:38,006 [INFO]   Descargada: applaws_15509631304067_1.webp
+2026-05-10 05:39:38,784 [INFO]   Descargada: applaws_15509631304067_2.webp
+2026-05-10 05:39:39,448 [INFO]   Descargada: applaws_15509631304067_3.webp
+2026-05-10 05:39:40,074 [INFO]   Descargada: applaws_15509631304067_4.webp
+2026-05-10 05:39:40,614 [INFO]   Descargada: applaws_15509631304067_5.webp
+2026-05-10 05:39:40,615 [INFO]   Backup original 1: img_01.webp  (151 KB)
+2026-05-10 05:39:40,615 [INFO]   Backup original 2: img_02.webp  (321 KB)
+2026-05-10 05:39:40,615 [INFO]   Backup original 3: img_03.webp  (275 KB)
+2026-05-10 05:39:40,615 [INFO]   Backup original 4: img_04.webp  (276 KB)
+2026-05-10 05:39:40,616 [INFO]   Backup original 5: img_05.webp  (181 KB)
+2026-05-10 05:39:40,634 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:39:40,634 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:39:40,731 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:39:40,732 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:40,757 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:39:40,757 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:40,785 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:39:40,785 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:40,808 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:39:40,808 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:39:43,981 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:39:46,515 [INFO]   Imagen 1/5 subida -> applaws_15509631304067_1.webp
+2026-05-10 05:39:50,295 [INFO]   Imagen 2/5 subida -> applaws_15509631304067_2.webp
+2026-05-10 05:39:53,975 [INFO]   Imagen 3/5 subida -> applaws_15509631304067_3.webp
+2026-05-10 05:39:58,034 [INFO]   Imagen 4/5 subida -> applaws_15509631304067_4.webp
+2026-05-10 05:40:01,290 [INFO]   Imagen 5/5 subida -> applaws_15509631304067_5.webp
+2026-05-10 05:40:01,791 [INFO]   Producto completado
+2026-05-10 05:40:02,791 [INFO] 
+[16/80] APPLAWS CAT LATA KITTEN MULTIPACK 6X70GR  (ID: 15509631402371)
+2026-05-10 05:40:03,105 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:40:03,339 [INFO]   Descargada: 71fCxmWoBnL._AC_SL1500.jpg
+2026-05-10 05:40:03,544 [INFO]   Descargada: 716tE8DhRFL._AC_SL1500.jpg
+2026-05-10 05:40:03,759 [INFO]   Descargada: 71VhePCE5HL._AC_SL1500.jpg
+2026-05-10 05:40:03,962 [INFO]   Descargada: 71nNQYNDZVL._AC_SL1500.jpg
+2026-05-10 05:40:04,159 [INFO]   Descargada: 61cAJQ_zPaL._AC_SL1500.jpg
+2026-05-10 05:40:04,383 [INFO]   Descargada: 71s5NScbABL._AC_SL1500.jpg
+2026-05-10 05:40:04,383 [INFO]   Backup original 1: img_01.jpg  (93 KB)
+2026-05-10 05:40:04,384 [INFO]   Backup original 2: img_02.jpg  (101 KB)
+2026-05-10 05:40:04,384 [INFO]   Backup original 3: img_03.jpg  (100 KB)
+2026-05-10 05:40:04,384 [INFO]   Backup original 4: img_04.jpg  (135 KB)
+2026-05-10 05:40:04,384 [INFO]   Backup original 5: img_05.jpg  (68 KB)
+2026-05-10 05:40:04,384 [INFO]   Backup original 6: img_06.jpg  (103 KB)
+2026-05-10 05:40:04,394 [INFO]     [bg check esquinas] 2125/3136 px blancos (68%)
+2026-05-10 05:40:04,394 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:04,452 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:04,452 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:04,539 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:04,539 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:04,625 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:04,625 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:04,709 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:04,709 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:04,794 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:04,794 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:08,972 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:40:11,850 [INFO]   Imagen 1/6 subida -> applaws_15509631402371_1.webp
+2026-05-10 05:40:15,332 [INFO]   Imagen 2/6 subida -> applaws_15509631402371_2.webp
+2026-05-10 05:40:18,565 [INFO]   Imagen 3/6 subida -> applaws_15509631402371_3.webp
+2026-05-10 05:40:22,237 [INFO]   Imagen 4/6 subida -> applaws_15509631402371_4.webp
+2026-05-10 05:40:25,231 [INFO]   Imagen 5/6 subida -> applaws_15509631402371_5.webp
+2026-05-10 05:40:28,641 [INFO]   Imagen 6/6 subida -> applaws_15509631402371_6.webp
+2026-05-10 05:40:29,141 [INFO]   Producto completado
+2026-05-10 05:40:30,141 [INFO] 
+[17/80] APPLAWS CAT LATA KITTEN PECHUGA DE POLLO 24X70GR  (ID: 15509631500675)
+2026-05-10 05:40:30,433 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:40:30,651 [INFO]   Descargada: 1001.webp
+2026-05-10 05:40:30,888 [INFO]   Descargada: 81jnZNZBKrL._AC_SL1500.jpg
+2026-05-10 05:40:31,155 [INFO]   Descargada: 71MU9WDIkGL._AC_SL1500.jpg
+2026-05-10 05:40:31,359 [INFO]   Descargada: 71keRG7dh7L._AC_SL1500.jpg
+2026-05-10 05:40:31,359 [INFO]   Backup original 1: img_01.webp  (57 KB)
+2026-05-10 05:40:31,360 [INFO]   Backup original 2: img_02.jpg  (146 KB)
+2026-05-10 05:40:31,360 [INFO]   Backup original 3: img_03.jpg  (116 KB)
+2026-05-10 05:40:31,360 [INFO]   Backup original 4: img_04.jpg  (89 KB)
+2026-05-10 05:40:31,365 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:40:31,365 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:31,428 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:31,428 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:31,511 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:31,512 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:31,594 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:31,594 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:34,145 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:40:36,809 [INFO]   Imagen 1/4 subida -> applaws_15509631500675_1.webp
+2026-05-10 05:40:40,506 [INFO]   Imagen 2/4 subida -> applaws_15509631500675_2.webp
+2026-05-10 05:40:44,045 [INFO]   Imagen 3/4 subida -> applaws_15509631500675_3.webp
+2026-05-10 05:40:47,180 [INFO]   Imagen 4/4 subida -> applaws_15509631500675_4.webp
+2026-05-10 05:40:47,680 [INFO]   Producto completado
+2026-05-10 05:40:48,680 [INFO] 
+[18/80] APPLAWS CAT LATA PECHUGA POLLO  (ID: 15509631566211)
+2026-05-10 05:40:48,961 [INFO]   7 imagen(es) - descargando originales...
+2026-05-10 05:40:49,176 [INFO]   Descargada: 71Ti6VJgv7L._AC_SL1500.jpg
+2026-05-10 05:40:49,392 [INFO]   Descargada: 81jnZNZBKrL._AC_SL1500_841a8771-b1b2-4917-96db-752f470bcb46.jpg
+2026-05-10 05:40:49,608 [INFO]   Descargada: 71MU9WDIkGL._AC_SL1500_df2c1777-3ddd-4456-93b9-01f17ef5cdd9.jpg
+2026-05-10 05:40:49,815 [INFO]   Descargada: 71keRG7dh7L._AC_SL1500_dac8d76c-d560-4793-9465-66e057082ba3.jpg
+2026-05-10 05:40:50,058 [INFO]   Descargada: 71L-VnUkMAL._AC_SL1500.jpg
+2026-05-10 05:40:50,281 [INFO]   Descargada: 71hgWKivYsL._AC_SL1500.jpg
+2026-05-10 05:40:50,492 [INFO]   Descargada: 71hR64ki9xL._AC_SL1500.jpg
+2026-05-10 05:40:50,493 [INFO]   Backup original 1: img_01.jpg  (83 KB)
+2026-05-10 05:40:50,493 [INFO]   Backup original 2: img_02.jpg  (146 KB)
+2026-05-10 05:40:50,493 [INFO]   Backup original 3: img_03.jpg  (116 KB)
+2026-05-10 05:40:50,493 [INFO]   Backup original 4: img_04.jpg  (89 KB)
+2026-05-10 05:40:50,493 [INFO]   Backup original 5: img_05.jpg  (138 KB)
+2026-05-10 05:40:50,493 [INFO]   Backup original 6: img_06.jpg  (95 KB)
+2026-05-10 05:40:50,494 [INFO]   Backup original 7: img_07.jpg  (80 KB)
+2026-05-10 05:40:50,501 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:40:50,501 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:50,550 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:50,550 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:50,634 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:50,634 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:50,716 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:40:50,716 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:40:50,799 [INFO]     [bg check esquinas] 2168/3600 px blancos (60%)
+2026-05-10 05:40:50,799 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:50,855 [INFO]     [bg check esquinas] 1493/1764 px blancos (85%)
+2026-05-10 05:40:50,855 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:50,898 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:40:50,898 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:40:55,444 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:40:58,092 [INFO]   Imagen 1/7 subida -> applaws_15509631566211_1.webp
+2026-05-10 05:41:02,013 [INFO]   Imagen 2/7 subida -> applaws_15509631566211_2.webp
+2026-05-10 05:41:05,625 [INFO]   Imagen 3/7 subida -> applaws_15509631566211_3.webp
+2026-05-10 05:41:08,740 [INFO]   Imagen 4/7 subida -> applaws_15509631566211_4.webp
+2026-05-10 05:41:12,351 [INFO]   Imagen 5/7 subida -> applaws_15509631566211_5.webp
+2026-05-10 05:41:15,695 [INFO]   Imagen 6/7 subida -> applaws_15509631566211_6.webp
+2026-05-10 05:41:18,867 [INFO]   Imagen 7/7 subida -> applaws_15509631566211_7.webp
+2026-05-10 05:41:19,368 [INFO]   Producto completado
+2026-05-10 05:41:20,368 [INFO] 
+[19/80] APPLAWS CAT LATA PESCADO  (ID: 15509631697283)
+2026-05-10 05:41:20,661 [INFO]   8 imagen(es) - descargando originales...
+2026-05-10 05:41:20,832 [INFO]   Descargada: applaws_15509631697283_2.webp
+2026-05-10 05:41:21,376 [INFO]   Descargada: applaws_15509631697283_6_391f1695-62db-4f87-9b9f-8f3c50cddb46.webp
+2026-05-10 05:41:21,559 [INFO]   Descargada: applaws_15509631697283_8.webp
+2026-05-10 05:41:22,127 [INFO]   Descargada: applaws_15509631697283_4_dd67c8a5-5f47-437b-9a5f-2841bc585f95.webp
+2026-05-10 05:41:22,322 [INFO]   Descargada: applaws_15509631697283_1.webp
+2026-05-10 05:41:22,876 [INFO]   Descargada: applaws_15509631697283_3_428d6e77-3cd4-487a-bd85-b0d20ab55c4e.webp
+2026-05-10 05:41:23,517 [INFO]   Descargada: applaws_15509631697283_9.webp
+2026-05-10 05:41:24,054 [INFO]   Descargada: applaws_15509631697283_11.webp
+2026-05-10 05:41:24,054 [INFO]   Backup original 1: img_01.webp  (146 KB)
+2026-05-10 05:41:24,054 [INFO]   Backup original 2: img_02.webp  (298 KB)
+2026-05-10 05:41:24,054 [INFO]   Backup original 3: img_03.webp  (152 KB)
+2026-05-10 05:41:24,055 [INFO]   Backup original 4: img_04.webp  (287 KB)
+2026-05-10 05:41:24,055 [INFO]   Backup original 5: img_05.webp  (167 KB)
+2026-05-10 05:41:24,055 [INFO]   Backup original 6: img_06.webp  (182 KB)
+2026-05-10 05:41:24,055 [INFO]   Backup original 7: img_07.webp  (181 KB)
+2026-05-10 05:41:24,056 [INFO]   Backup original 8: img_08.webp  (135 KB)
+2026-05-10 05:41:24,074 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:41:24,074 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:24,170 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:41:24,170 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:41:24,191 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:41:24,192 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:24,288 [INFO]     [bg check esquinas] 4249/10000 px blancos (42%)
+2026-05-10 05:41:24,288 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:41:24,309 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:41:24,309 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:24,403 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:41:24,403 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:24,499 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:41:24,499 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:41:24,520 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:41:24,520 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:29,684 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:41:32,289 [INFO]   Imagen 1/8 subida -> applaws_15509631697283_1.webp
+2026-05-10 05:41:36,154 [INFO]   Imagen 2/8 subida -> applaws_15509631697283_2.webp
+2026-05-10 05:41:39,297 [INFO]   Imagen 3/8 subida -> applaws_15509631697283_3.webp
+2026-05-10 05:41:43,068 [INFO]   Imagen 4/8 subida -> applaws_15509631697283_4.webp
+2026-05-10 05:41:46,239 [INFO]   Imagen 5/8 subida -> applaws_15509631697283_5.webp
+2026-05-10 05:41:49,570 [INFO]   Imagen 6/8 subida -> applaws_15509631697283_6.webp
+2026-05-10 05:41:53,007 [INFO]   Imagen 7/8 subida -> applaws_15509631697283_7.webp
+2026-05-10 05:41:56,093 [INFO]   Imagen 8/8 subida -> applaws_15509631697283_8.webp
+2026-05-10 05:41:56,594 [INFO]   Producto completado
+2026-05-10 05:41:57,594 [INFO] 
+[20/80] APPLAWS CAT LATA POLLO CON CALABAZA 24X70GR  (ID: 15509631730051)
+2026-05-10 05:41:57,895 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:41:58,105 [INFO]   Descargada: 71PtSeNY-QL._AC_SL1500.jpg
+2026-05-10 05:41:58,353 [INFO]   Descargada: 71Ta7eXa7AL._AC_SL1500.jpg
+2026-05-10 05:41:58,553 [INFO]   Descargada: 81z6FFnXC_L._AC_SL1500.jpg
+2026-05-10 05:41:58,798 [INFO]   Descargada: 71RpAwPuD7L._AC_SL1500.jpg
+2026-05-10 05:41:59,228 [INFO]   Descargada: 71keRG7dh7L._AC_SL1500_b5bf4588-d5e6-4f41-92ff-94501906fc86.jpg
+2026-05-10 05:41:59,228 [INFO]   Backup original 1: img_01.jpg  (86 KB)
+2026-05-10 05:41:59,228 [INFO]   Backup original 2: img_02.jpg  (155 KB)
+2026-05-10 05:41:59,228 [INFO]   Backup original 3: img_03.jpg  (142 KB)
+2026-05-10 05:41:59,229 [INFO]   Backup original 4: img_04.jpg  (112 KB)
+2026-05-10 05:41:59,229 [INFO]   Backup original 5: img_05.jpg  (89 KB)
+2026-05-10 05:41:59,236 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:41:59,236 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:59,284 [INFO]     [bg check esquinas] 2168/3600 px blancos (60%)
+2026-05-10 05:41:59,284 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:41:59,347 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:41:59,347 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:41:59,431 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:41:59,431 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:41:59,514 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:41:59,514 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:03,146 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:42:05,861 [INFO]   Imagen 1/5 subida -> applaws_15509631730051_1.webp
+2026-05-10 05:42:09,585 [INFO]   Imagen 2/5 subida -> applaws_15509631730051_2.webp
+2026-05-10 05:42:13,309 [INFO]   Imagen 3/5 subida -> applaws_15509631730051_3.webp
+2026-05-10 05:42:16,858 [INFO]   Imagen 4/5 subida -> applaws_15509631730051_4.webp
+2026-05-10 05:42:20,080 [INFO]   Imagen 5/5 subida -> applaws_15509631730051_5.webp
+2026-05-10 05:42:20,580 [INFO]   Producto completado
+2026-05-10 05:42:21,581 [INFO] 
+[21/80] APPLAWS CAT LATA POLLO CON QUESO 24X70GR  (ID: 15509631795587)
+2026-05-10 05:42:21,877 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:42:22,151 [INFO]   Descargada: 1006.webp
+2026-05-10 05:42:22,387 [INFO]   Descargada: 714zG6fDvkL._AC_SL1500.jpg
+2026-05-10 05:42:22,614 [INFO]   Descargada: 81fFm7TohSL._AC_SL1500.jpg
+2026-05-10 05:42:23,090 [INFO]   Descargada: 71MU9WDIkGL._AC_SL1500_1d042d31-9eae-46c6-a709-54b703b81c1b.jpg
+2026-05-10 05:42:23,298 [INFO]   Descargada: 71keRG7dh7L._AC_SL1500_b891fe9e-8df3-4257-a9f5-d17edc94e496.jpg
+2026-05-10 05:42:23,299 [INFO]   Backup original 1: img_01.webp  (60 KB)
+2026-05-10 05:42:23,299 [INFO]   Backup original 2: img_02.jpg  (147 KB)
+2026-05-10 05:42:23,299 [INFO]   Backup original 3: img_03.jpg  (173 KB)
+2026-05-10 05:42:23,299 [INFO]   Backup original 4: img_04.jpg  (116 KB)
+2026-05-10 05:42:23,299 [INFO]   Backup original 5: img_05.jpg  (89 KB)
+2026-05-10 05:42:23,304 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:42:23,304 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:42:23,364 [INFO]     [bg check esquinas] 2169/3600 px blancos (60%)
+2026-05-10 05:42:23,365 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:42:23,427 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:23,427 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:23,510 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:23,511 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:23,594 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:23,594 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:26,824 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:42:29,685 [INFO]   Imagen 1/5 subida -> applaws_15509631795587_1.webp
+2026-05-10 05:42:33,219 [INFO]   Imagen 2/5 subida -> applaws_15509631795587_2.webp
+2026-05-10 05:42:37,023 [INFO]   Imagen 3/5 subida -> applaws_15509631795587_3.webp
+2026-05-10 05:42:40,542 [INFO]   Imagen 4/5 subida -> applaws_15509631795587_4.webp
+2026-05-10 05:42:43,750 [INFO]   Imagen 5/5 subida -> applaws_15509631795587_5.webp
+2026-05-10 05:42:44,250 [INFO]   Producto completado
+2026-05-10 05:42:45,251 [INFO] 
+[22/80] APPLAWS CAT LATA POLLO MULTIPACK 12X70GR  (ID: 15509631828355)
+2026-05-10 05:42:45,545 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:42:45,758 [INFO]   Descargada: 713IOnPkG3L._AC_SL1500.jpg
+2026-05-10 05:42:45,989 [INFO]   Descargada: 813Ij_xnKqL._AC_SL1500.jpg
+2026-05-10 05:42:46,237 [INFO]   Descargada: 81HizbzGzyL._AC_SL1500.jpg
+2026-05-10 05:42:46,438 [INFO]   Descargada: 81HM9Kd1m_L._AC_SL1500.jpg
+2026-05-10 05:42:46,666 [INFO]   Descargada: 71Lj6UnRgDL._AC_SL1500_707f6b5a-43cd-4506-aa42-f28d5c8673b5.jpg
+2026-05-10 05:42:46,667 [INFO]   Backup original 1: img_01.jpg  (121 KB)
+2026-05-10 05:42:46,667 [INFO]   Backup original 2: img_02.jpg  (187 KB)
+2026-05-10 05:42:46,667 [INFO]   Backup original 3: img_03.jpg  (164 KB)
+2026-05-10 05:42:46,667 [INFO]   Backup original 4: img_04.jpg  (153 KB)
+2026-05-10 05:42:46,667 [INFO]   Backup original 5: img_05.jpg  (90 KB)
+2026-05-10 05:42:46,677 [INFO]     [bg check esquinas] 2840/3136 px blancos (91%)
+2026-05-10 05:42:46,677 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:42:46,736 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:46,737 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:46,821 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:46,821 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:46,905 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:46,905 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:46,988 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:42:46,988 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:42:50,347 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:42:53,354 [INFO]   Imagen 1/5 subida -> applaws_15509631828355_1.webp
+2026-05-10 05:42:57,200 [INFO]   Imagen 2/5 subida -> applaws_15509631828355_2.webp
+2026-05-10 05:43:00,895 [INFO]   Imagen 3/5 subida -> applaws_15509631828355_3.webp
+2026-05-10 05:43:04,628 [INFO]   Imagen 4/5 subida -> applaws_15509631828355_4.webp
+2026-05-10 05:43:08,269 [INFO]   Imagen 5/5 subida -> applaws_15509631828355_5.webp
+2026-05-10 05:43:08,770 [INFO]   Producto completado
+2026-05-10 05:43:09,770 [INFO] 
+[23/80] APPLAWS CAT LATA POLLO Y PATO  (ID: 15509631992195)
+2026-05-10 05:43:10,086 [INFO]   8 imagen(es) - descargando originales...
+2026-05-10 05:43:10,335 [INFO]   Descargada: 71QhQLQaUhL._AC_SL1500.jpg
+2026-05-10 05:43:10,535 [INFO]   Descargada: 716Hvfi8mwL._AC_SL1500.jpg
+2026-05-10 05:43:10,760 [INFO]   Descargada: 81h6jSvKeyL._AC_SL1500.jpg
+2026-05-10 05:43:10,984 [INFO]   Descargada: 81OOeyq4afL._AC_SL1500.jpg
+2026-05-10 05:43:11,175 [INFO]   Descargada: 71E6GuE3bTL._AC_SL1500.jpg
+2026-05-10 05:43:11,392 [INFO]   Descargada: 71keRG7dh7L._AC_SL1500_fbfb90d1-7786-4ca8-8058-f854a8979aa4.jpg
+2026-05-10 05:43:11,603 [INFO]   Descargada: 71rOZ0_LdTL._AC_SL1500.jpg
+2026-05-10 05:43:11,818 [INFO]   Descargada: 71qOdoum3JL._AC_SL1500.jpg
+2026-05-10 05:43:11,819 [INFO]   Backup original 1: img_01.jpg  (84 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 2: img_02.jpg  (149 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 3: img_03.jpg  (175 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 4: img_04.jpg  (132 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 5: img_05.jpg  (107 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 6: img_06.jpg  (89 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 7: img_07.jpg  (82 KB)
+2026-05-10 05:43:11,819 [INFO]   Backup original 8: img_08.jpg  (101 KB)
+2026-05-10 05:43:11,827 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:43:11,827 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:43:11,875 [INFO]     [bg check esquinas] 2164/3600 px blancos (60%)
+2026-05-10 05:43:11,876 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:43:11,940 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:11,940 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:12,028 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:12,028 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:12,114 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:12,114 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:12,200 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:12,200 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:12,280 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:43:12,280 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:43:12,325 [INFO]     [bg check esquinas] 1502/1764 px blancos (85%)
+2026-05-10 05:43:12,325 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:43:17,601 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:43:20,266 [INFO]   Imagen 1/8 subida -> applaws_15509631992195_1.webp
+2026-05-10 05:43:23,955 [INFO]   Imagen 2/8 subida -> applaws_15509631992195_2.webp
+2026-05-10 05:43:27,752 [INFO]   Imagen 3/8 subida -> applaws_15509631992195_3.webp
+2026-05-10 05:43:31,387 [INFO]   Imagen 4/8 subida -> applaws_15509631992195_4.webp
+2026-05-10 05:43:35,260 [INFO]   Imagen 5/8 subida -> applaws_15509631992195_5.webp
+2026-05-10 05:43:38,427 [INFO]   Imagen 6/8 subida -> applaws_15509631992195_6.webp
+2026-05-10 05:43:41,492 [INFO]   Imagen 7/8 subida -> applaws_15509631992195_7.webp
+2026-05-10 05:43:44,995 [INFO]   Imagen 8/8 subida -> applaws_15509631992195_8.webp
+2026-05-10 05:43:45,495 [INFO]   Producto completado
+2026-05-10 05:43:46,495 [INFO] 
+[24/80] APPLAWS CAT LATA SELEC PESCADO GELATINA MULTI 12X70GR  (ID: 15509632024963)
+2026-05-10 05:43:46,788 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:43:47,059 [INFO]   Descargada: 71FG-iNAAyL._AC_SL1500.jpg
+2026-05-10 05:43:47,286 [INFO]   Descargada: 71mQmenCvyL._AC_SL1500.jpg
+2026-05-10 05:43:47,480 [INFO]   Descargada: 71LEXmDRY0L._AC_SL1500.jpg
+2026-05-10 05:43:47,727 [INFO]   Descargada: 81ZYjDzUYUL._AC_SL1500.jpg
+2026-05-10 05:43:47,946 [INFO]   Descargada: 71fpJ7OkdnL._AC_SL1500.jpg
+2026-05-10 05:43:48,148 [INFO]   Descargada: 81pNRE3JyfL._AC_SL1500.jpg
+2026-05-10 05:43:48,149 [INFO]   Backup original 1: img_01.jpg  (99 KB)
+2026-05-10 05:43:48,149 [INFO]   Backup original 2: img_02.jpg  (97 KB)
+2026-05-10 05:43:48,149 [INFO]   Backup original 3: img_03.jpg  (111 KB)
+2026-05-10 05:43:48,149 [INFO]   Backup original 4: img_04.jpg  (143 KB)
+2026-05-10 05:43:48,149 [INFO]   Backup original 5: img_05.jpg  (90 KB)
+2026-05-10 05:43:48,149 [INFO]   Backup original 6: img_06.jpg  (135 KB)
+2026-05-10 05:43:48,159 [INFO]     [bg check esquinas] 2920/3364 px blancos (87%)
+2026-05-10 05:43:48,159 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:43:48,219 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:48,219 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:48,303 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:48,303 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:48,388 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:48,388 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:48,471 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:48,471 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:48,555 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:43:48,555 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:43:52,327 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:43:54,942 [INFO]   Imagen 1/6 subida -> applaws_15509632024963_1.webp
+2026-05-10 05:43:58,769 [INFO]   Imagen 2/6 subida -> applaws_15509632024963_2.webp
+2026-05-10 05:44:02,268 [INFO]   Imagen 3/6 subida -> applaws_15509632024963_3.webp
+2026-05-10 05:44:06,094 [INFO]   Imagen 4/6 subida -> applaws_15509632024963_4.webp
+2026-05-10 05:44:09,301 [INFO]   Imagen 5/6 subida -> applaws_15509632024963_5.webp
+2026-05-10 05:44:12,853 [INFO]   Imagen 6/6 subida -> applaws_15509632024963_6.webp
+2026-05-10 05:44:13,353 [INFO]   Producto completado
+2026-05-10 05:44:14,353 [INFO] 
+[25/80] APPLAWS CAT LATA SELECCION PESCADO MULTIPACK 12X70GR  (ID: 15509632057731)
+2026-05-10 05:44:14,641 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:44:14,887 [INFO]   Descargada: 71SsskTiZjL._AC_SL1500.jpg
+2026-05-10 05:44:15,149 [INFO]   Descargada: 81NJnXJpCDL._AC_SL1500.jpg
+2026-05-10 05:44:15,383 [INFO]   Descargada: 81f2lFeEZML._AC_SL1500.jpg
+2026-05-10 05:44:15,614 [INFO]   Descargada: 71dJjeGCTtL._AC_SL1500.jpg
+2026-05-10 05:44:15,840 [INFO]   Descargada: 71OMTon2vfL._AC_SL1500.jpg
+2026-05-10 05:44:15,840 [INFO]   Backup original 1: img_01.jpg  (121 KB)
+2026-05-10 05:44:15,840 [INFO]   Backup original 2: img_02.jpg  (195 KB)
+2026-05-10 05:44:15,840 [INFO]   Backup original 3: img_03.jpg  (149 KB)
+2026-05-10 05:44:15,841 [INFO]   Backup original 4: img_04.jpg  (125 KB)
+2026-05-10 05:44:15,841 [INFO]   Backup original 5: img_05.jpg  (96 KB)
+2026-05-10 05:44:15,851 [INFO]     [bg check esquinas] 2914/3364 px blancos (87%)
+2026-05-10 05:44:15,851 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:44:15,912 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:15,912 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:15,997 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:15,997 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:16,082 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:16,082 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:16,166 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:16,166 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:19,346 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:44:22,125 [INFO]   Imagen 1/5 subida -> applaws_15509632057731_1.webp
+2026-05-10 05:44:25,986 [INFO]   Imagen 2/5 subida -> applaws_15509632057731_2.webp
+2026-05-10 05:44:29,693 [INFO]   Imagen 3/5 subida -> applaws_15509632057731_3.webp
+2026-05-10 05:44:33,326 [INFO]   Imagen 4/5 subida -> applaws_15509632057731_4.webp
+2026-05-10 05:44:36,499 [INFO]   Imagen 5/5 subida -> applaws_15509632057731_5.webp
+2026-05-10 05:44:36,999 [INFO]   Producto completado
+2026-05-10 05:44:37,999 [INFO] 
+[26/80] APPLAWS CAT LATA SELECCION SUPREMA MULTIPACK 12X70GR  (ID: 15509632090499)
+2026-05-10 05:44:38,306 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:44:38,582 [INFO]   Descargada: applaws-gato-adulto-seleccion-suprema-multipack-12x70gr.jpg
+2026-05-10 05:44:38,815 [INFO]   Descargada: 71T1KtQHALL._AC_SL1500.jpg
+2026-05-10 05:44:39,018 [INFO]   Descargada: 81trHXBnU_L._AC_SL1500.jpg
+2026-05-10 05:44:39,246 [INFO]   Descargada: 81kzfTXBz-L._AC_SL1500.jpg
+2026-05-10 05:44:39,458 [INFO]   Descargada: 71dSOlJ-ssL._AC_SL1500.jpg
+2026-05-10 05:44:39,659 [INFO]   Descargada: 71rOPuz-5IL._AC_SL1500.jpg
+2026-05-10 05:44:39,660 [INFO]   Backup original 1: img_01.jpg  (87 KB)
+2026-05-10 05:44:39,660 [INFO]   Backup original 2: img_02.jpg  (126 KB)
+2026-05-10 05:44:39,660 [INFO]   Backup original 3: img_03.jpg  (136 KB)
+2026-05-10 05:44:39,660 [INFO]   Backup original 4: img_04.jpg  (145 KB)
+2026-05-10 05:44:39,660 [INFO]   Backup original 5: img_05.jpg  (82 KB)
+2026-05-10 05:44:39,660 [INFO]   Backup original 6: img_06.jpg  (123 KB)
+2026-05-10 05:44:39,668 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:44:39,668 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:44:39,733 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:39,733 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:39,817 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:39,817 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:39,903 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:39,903 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:39,987 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:39,987 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:40,071 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:44:40,071 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:44:43,856 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:44:46,668 [INFO]   Imagen 1/6 subida -> applaws_15509632090499_1.webp
+2026-05-10 05:44:50,269 [INFO]   Imagen 2/6 subida -> applaws_15509632090499_2.webp
+2026-05-10 05:44:53,813 [INFO]   Imagen 3/6 subida -> applaws_15509632090499_3.webp
+2026-05-10 05:44:57,677 [INFO]   Imagen 4/6 subida -> applaws_15509632090499_4.webp
+2026-05-10 05:45:00,879 [INFO]   Imagen 5/6 subida -> applaws_15509632090499_5.webp
+2026-05-10 05:45:05,242 [INFO]   Imagen 6/6 subida -> applaws_15509632090499_6.webp
+2026-05-10 05:45:05,742 [INFO]   Producto completado
+2026-05-10 05:45:06,743 [INFO] 
+[27/80] APPLAWS CAT SENIOR LATA ATUN Y SALMON 24X70GR  (ID: 15509632188803)
+2026-05-10 05:45:07,030 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:45:07,298 [INFO]   Descargada: 71eK1h76GzL._AC_SL1500.jpg
+2026-05-10 05:45:07,531 [INFO]   Descargada: 81CNIorscUL._AC_SL1500.jpg
+2026-05-10 05:45:07,744 [INFO]   Descargada: 81GkGNoVovL._AC_SL1500.jpg
+2026-05-10 05:45:07,975 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500_760953da-de2a-4f37-a249-ccad8a8444d3.jpg
+2026-05-10 05:45:07,976 [INFO]   Backup original 1: img_01.jpg  (83 KB)
+2026-05-10 05:45:07,976 [INFO]   Backup original 2: img_02.jpg  (139 KB)
+2026-05-10 05:45:07,976 [INFO]   Backup original 3: img_03.jpg  (131 KB)
+2026-05-10 05:45:07,976 [INFO]   Backup original 4: img_04.jpg  (100 KB)
+2026-05-10 05:45:07,984 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:45:07,984 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:08,034 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:08,034 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:08,119 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:08,119 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:08,203 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:08,203 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:10,990 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:45:14,713 [INFO]   Imagen 1/4 subida -> applaws_15509632188803_1.webp
+2026-05-10 05:45:18,618 [INFO]   Imagen 2/4 subida -> applaws_15509632188803_2.webp
+2026-05-10 05:45:22,170 [INFO]   Imagen 3/4 subida -> applaws_15509632188803_3.webp
+2026-05-10 05:45:25,442 [INFO]   Imagen 4/4 subida -> applaws_15509632188803_4.webp
+2026-05-10 05:45:25,942 [INFO]   Producto completado
+2026-05-10 05:45:26,943 [INFO] 
+[28/80] APPLAWS CAT SENIOR LATA ATUN Y SARDINA 24X70GR  (ID: 15509632221571)
+2026-05-10 05:45:27,237 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:45:27,455 [INFO]   Descargada: applaws-lata-gatos-senior.webp
+2026-05-10 05:45:27,712 [INFO]   Descargada: 71AOZ1hqVgL._AC_SL1500.jpg
+2026-05-10 05:45:27,957 [INFO]   Descargada: 81O_HOxtjfL._AC_SL1500.jpg
+2026-05-10 05:45:28,200 [INFO]   Descargada: 81FLKsvmooL._AC_SL1500.jpg
+2026-05-10 05:45:28,465 [INFO]   Descargada: 71fpJ7OkdnL._AC_SL1500_36d93d56-55c1-464b-a0fa-6c564e05206a.jpg
+2026-05-10 05:45:28,466 [INFO]   Backup original 1: img_01.webp  (59 KB)
+2026-05-10 05:45:28,466 [INFO]   Backup original 2: img_02.jpg  (155 KB)
+2026-05-10 05:45:28,466 [INFO]   Backup original 3: img_03.jpg  (148 KB)
+2026-05-10 05:45:28,466 [INFO]   Backup original 4: img_04.jpg  (147 KB)
+2026-05-10 05:45:28,466 [INFO]   Backup original 5: img_05.jpg  (90 KB)
+2026-05-10 05:45:28,472 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:45:28,472 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:28,535 [INFO]     [bg check esquinas] 2856/4096 px blancos (70%)
+2026-05-10 05:45:28,535 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:28,600 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:28,600 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:28,691 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:28,691 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:28,774 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:28,774 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:31,944 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:45:34,667 [INFO]   Imagen 1/5 subida -> applaws_15509632221571_1.webp
+2026-05-10 05:45:38,331 [INFO]   Imagen 2/5 subida -> applaws_15509632221571_2.webp
+2026-05-10 05:45:42,043 [INFO]   Imagen 3/5 subida -> applaws_15509632221571_3.webp
+2026-05-10 05:45:46,065 [INFO]   Imagen 4/5 subida -> applaws_15509632221571_4.webp
+2026-05-10 05:45:49,198 [INFO]   Imagen 5/5 subida -> applaws_15509632221571_5.webp
+2026-05-10 05:45:49,698 [INFO]   Producto completado
+2026-05-10 05:45:50,698 [INFO] 
+[29/80] APPLAWS CAT SNACK FILETE DE ATUN LIOFILIZADO 12X10GR  (ID: 15509632254339)
+2026-05-10 05:45:51,615 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:45:51,812 [INFO]   Descargada: 617Brf3rQjL._AC_SL1500.jpg
+2026-05-10 05:45:52,052 [INFO]   Descargada: 71Qipd0TR4L._AC_SL1500.jpg
+2026-05-10 05:45:52,292 [INFO]   Descargada: 71WRQOZVQVL._AC_SL1500.jpg
+2026-05-10 05:45:52,514 [INFO]   Descargada: 71oloRdnjhL._AC_SL1500.jpg
+2026-05-10 05:45:52,742 [INFO]   Descargada: 71QbPtrUMUL._AC_SL1500.jpg
+2026-05-10 05:45:52,743 [INFO]   Backup original 1: img_01.jpg  (78 KB)
+2026-05-10 05:45:52,743 [INFO]   Backup original 2: img_02.jpg  (107 KB)
+2026-05-10 05:45:52,743 [INFO]   Backup original 3: img_03.jpg  (106 KB)
+2026-05-10 05:45:52,743 [INFO]   Backup original 4: img_04.jpg  (130 KB)
+2026-05-10 05:45:52,743 [INFO]   Backup original 5: img_05.jpg  (91 KB)
+2026-05-10 05:45:52,752 [INFO]     [bg check esquinas] 1991/3136 px blancos (63%)
+2026-05-10 05:45:52,752 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:52,808 [INFO]     [bg check esquinas] 3523/4356 px blancos (81%)
+2026-05-10 05:45:52,808 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:52,874 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:52,874 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:52,954 [INFO]     [bg check esquinas] 1156/1156 px blancos (100%)
+2026-05-10 05:45:52,955 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:45:52,995 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:45:52,995 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:45:56,497 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:45:59,150 [INFO]   Imagen 1/5 subida -> applaws_15509632254339_1.webp
+2026-05-10 05:46:02,574 [INFO]   Imagen 2/5 subida -> applaws_15509632254339_2.webp
+2026-05-10 05:46:06,209 [INFO]   Imagen 3/5 subida -> applaws_15509632254339_3.webp
+2026-05-10 05:46:09,852 [INFO]   Imagen 4/5 subida -> applaws_15509632254339_4.webp
+2026-05-10 05:46:13,226 [INFO]   Imagen 5/5 subida -> applaws_15509632254339_5.webp
+2026-05-10 05:46:13,727 [INFO]   Producto completado
+2026-05-10 05:46:14,727 [INFO] 
+[30/80] APPLAWS CAT SNACK LOMO ATUN 12X30GR  (ID: 15509632319875)
+2026-05-10 05:46:15,027 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:46:15,252 [INFO]   Descargada: 61E_3ErGNHL._AC_SL1500.jpg
+2026-05-10 05:46:15,450 [INFO]   Descargada: 71j0nolIOoL._AC_SL1500.jpg
+2026-05-10 05:46:15,674 [INFO]   Descargada: 7123Uyhg3FL._AC_SL1500.jpg
+2026-05-10 05:46:15,889 [INFO]   Descargada: 71sI9p7NAeL._AC_SL1500.jpg
+2026-05-10 05:46:16,097 [INFO]   Descargada: 71f_nKqsb5L._AC_SL1500.jpg
+2026-05-10 05:46:16,097 [INFO]   Backup original 1: img_01.jpg  (68 KB)
+2026-05-10 05:46:16,098 [INFO]   Backup original 2: img_02.jpg  (114 KB)
+2026-05-10 05:46:16,098 [INFO]   Backup original 3: img_03.jpg  (77 KB)
+2026-05-10 05:46:16,098 [INFO]   Backup original 4: img_04.jpg  (80 KB)
+2026-05-10 05:46:16,098 [INFO]   Backup original 5: img_05.jpg  (90 KB)
+2026-05-10 05:46:16,104 [INFO]     [bg check esquinas] 909/1444 px blancos (63%)
+2026-05-10 05:46:16,104 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:46:16,145 [INFO]     [bg check esquinas] 2429/3136 px blancos (77%)
+2026-05-10 05:46:16,145 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:46:16,202 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:46:16,202 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:16,285 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:46:16,286 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:16,369 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:46:16,369 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:19,725 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:46:22,234 [INFO]   Imagen 1/5 subida -> applaws_15509632319875_1.webp
+2026-05-10 05:46:26,237 [INFO]   Imagen 2/5 subida -> applaws_15509632319875_2.webp
+2026-05-10 05:46:29,737 [INFO]   Imagen 3/5 subida -> applaws_15509632319875_3.webp
+2026-05-10 05:46:32,938 [INFO]   Imagen 4/5 subida -> applaws_15509632319875_4.webp
+2026-05-10 05:46:36,271 [INFO]   Imagen 5/5 subida -> applaws_15509632319875_5.webp
+2026-05-10 05:46:36,771 [INFO]   Producto completado
+2026-05-10 05:46:37,772 [INFO] 
+[31/80] APPLAWS CAT SNACK LOMO CABALLA 12X30GR  (ID: 15509632418179)
+2026-05-10 05:46:38,059 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:46:38,262 [INFO]   Descargada: 6110u-cuXTL._AC_SL1500.jpg
+2026-05-10 05:46:38,479 [INFO]   Descargada: 71uARx_ISFL._AC_SL1500.jpg
+2026-05-10 05:46:38,699 [INFO]   Descargada: snack_natural_gatos_applaws_mackerel_APL9506ML-A_1.jpg
+2026-05-10 05:46:38,939 [INFO]   Descargada: 81xZRm3EzyL._AC_SL1500.jpg
+2026-05-10 05:46:39,179 [INFO]   Descargada: snack_natural_gatos_applaws_mackerel_APL9506ML-A_trans.png
+2026-05-10 05:46:39,180 [INFO]   Backup original 1: img_01.jpg  (60 KB)
+2026-05-10 05:46:39,180 [INFO]   Backup original 2: img_02.jpg  (87 KB)
+2026-05-10 05:46:39,180 [INFO]   Backup original 3: img_03.jpg  (70 KB)
+2026-05-10 05:46:39,180 [INFO]   Backup original 4: img_04.jpg  (128 KB)
+2026-05-10 05:46:39,180 [INFO]   Backup original 5: img_05.png  (373 KB)
+2026-05-10 05:46:39,186 [INFO]     [bg check esquinas] 1118/1444 px blancos (77%)
+2026-05-10 05:46:39,186 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:46:39,230 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:46:39,230 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:39,307 [INFO]     [bg check esquinas] 1600/1600 px blancos (100%)
+2026-05-10 05:46:39,307 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:46:39,368 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:46:39,368 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:39,449 [INFO]     [bg check esquinas] 0/1600 px blancos (0%)
+2026-05-10 05:46:39,449 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:46:42,907 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:46:46,618 [INFO]   Imagen 1/5 subida -> applaws_15509632418179_1.webp
+2026-05-10 05:46:49,890 [INFO]   Imagen 2/5 subida -> applaws_15509632418179_2.webp
+2026-05-10 05:46:53,314 [INFO]   Imagen 3/5 subida -> applaws_15509632418179_3.webp
+2026-05-10 05:46:56,939 [INFO]   Imagen 4/5 subida -> applaws_15509632418179_4.webp
+2026-05-10 05:47:00,605 [INFO]   Imagen 5/5 subida -> applaws_15509632418179_5.webp
+2026-05-10 05:47:01,105 [INFO]   Producto completado
+2026-05-10 05:47:02,106 [INFO] 
+[32/80] APPLAWS CAT SNACK LOMO SALMON 12X30GR  (ID: 15509632483715)
+2026-05-10 05:47:02,411 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:47:02,624 [INFO]   Descargada: Applaws-Cat-Snack-Lomo-Salmon-30G-APPLAWS-156807384.webp
+2026-05-10 05:47:02,840 [INFO]   Descargada: 71W9L0UfF0L._AC_SL1500.jpg
+2026-05-10 05:47:03,032 [INFO]   Descargada: 71Soph3lLhL._AC_SL1500.jpg
+2026-05-10 05:47:03,279 [INFO]   Descargada: 71qAi9yBOVL._AC_SL1500.jpg
+2026-05-10 05:47:03,524 [INFO]   Descargada: snack_gato_applaws_lomo_salmon_APL9509ML-A_trans.png
+2026-05-10 05:47:03,524 [INFO]   Backup original 1: img_01.webp  (124 KB)
+2026-05-10 05:47:03,525 [INFO]   Backup original 2: img_02.jpg  (96 KB)
+2026-05-10 05:47:03,525 [INFO]   Backup original 3: img_03.jpg  (73 KB)
+2026-05-10 05:47:03,525 [INFO]   Backup original 4: img_04.jpg  (93 KB)
+2026-05-10 05:47:03,525 [INFO]   Backup original 5: img_05.png  (362 KB)
+2026-05-10 05:47:03,554 [INFO]     [bg check esquinas] 16384/16384 px blancos (100%)
+2026-05-10 05:47:03,554 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:47:03,667 [INFO]     [bg check esquinas] 2504/2704 px blancos (93%)
+2026-05-10 05:47:03,667 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:47:03,723 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:03,723 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:03,808 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:03,808 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:03,889 [INFO]     [bg check esquinas] 0/1600 px blancos (0%)
+2026-05-10 05:47:03,889 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:07,168 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:47:09,639 [INFO]   Imagen 1/5 subida -> applaws_15509632483715_1.webp
+2026-05-10 05:47:12,883 [INFO]   Imagen 2/5 subida -> applaws_15509632483715_2.webp
+2026-05-10 05:47:17,334 [INFO]   Imagen 3/5 subida -> applaws_15509632483715_3.webp
+2026-05-10 05:47:20,684 [INFO]   Imagen 4/5 subida -> applaws_15509632483715_4.webp
+2026-05-10 05:47:24,524 [INFO]   Imagen 5/5 subida -> applaws_15509632483715_5.webp
+2026-05-10 05:47:25,024 [INFO]   Producto completado
+2026-05-10 05:47:26,024 [INFO] 
+[33/80] APPLAWS CAT SNACK PECHUGA DE POLLO LIOFILIZADO 12X10GR  (ID: 15509632549251)
+2026-05-10 05:47:26,330 [INFO]   6 imagen(es) - descargando originales...
+2026-05-10 05:47:26,646 [INFO]   Descargada: 61HV0T1UUKL._AC_SL1500.jpg
+2026-05-10 05:47:26,867 [INFO]   Descargada: 71By1L2z1hL._AC_SL1500.jpg
+2026-05-10 05:47:27,060 [INFO]   Descargada: 71-Tq0to1ZL._AC_SL1500.jpg
+2026-05-10 05:47:27,258 [INFO]   Descargada: 71j_A41fNUL._AC_SL1500.jpg
+2026-05-10 05:47:27,487 [INFO]   Descargada: 71ZRRzxhJrL._AC_SL1500.jpg
+2026-05-10 05:47:27,759 [INFO]   Descargada: 81SfdpV7oPL._AC_SL1500_44a76f1f-6af0-47fa-8c74-3dca27511f7b.jpg
+2026-05-10 05:47:27,759 [INFO]   Backup original 1: img_01.jpg  (72 KB)
+2026-05-10 05:47:27,759 [INFO]   Backup original 2: img_02.jpg  (103 KB)
+2026-05-10 05:47:27,759 [INFO]   Backup original 3: img_03.jpg  (75 KB)
+2026-05-10 05:47:27,760 [INFO]   Backup original 4: img_04.jpg  (91 KB)
+2026-05-10 05:47:27,760 [INFO]   Backup original 5: img_05.jpg  (90 KB)
+2026-05-10 05:47:27,760 [INFO]   Backup original 6: img_06.jpg  (136 KB)
+2026-05-10 05:47:27,768 [INFO]     [bg check esquinas] 1971/3136 px blancos (63%)
+2026-05-10 05:47:27,768 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:47:27,825 [INFO]     [bg check esquinas] 3509/4356 px blancos (81%)
+2026-05-10 05:47:27,825 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:47:27,892 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:27,892 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:27,976 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:27,976 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:28,060 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:28,060 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:28,145 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:28,145 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:32,213 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:47:34,731 [INFO]   Imagen 1/6 subida -> applaws_15509632549251_1.webp
+2026-05-10 05:47:38,061 [INFO]   Imagen 2/6 subida -> applaws_15509632549251_2.webp
+2026-05-10 05:47:41,260 [INFO]   Imagen 3/6 subida -> applaws_15509632549251_3.webp
+2026-05-10 05:47:44,514 [INFO]   Imagen 4/6 subida -> applaws_15509632549251_4.webp
+2026-05-10 05:47:47,597 [INFO]   Imagen 5/6 subida -> applaws_15509632549251_5.webp
+2026-05-10 05:47:51,238 [INFO]   Imagen 6/6 subida -> applaws_15509632549251_6.webp
+2026-05-10 05:47:51,738 [INFO]   Producto completado
+2026-05-10 05:47:52,739 [INFO] 
+[34/80] APPLAWS CAT SOBRE ATUN CON ANCHOA ENTERA 12X70GR  (ID: 15509632582019)
+2026-05-10 05:47:53,024 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:47:53,242 [INFO]   Descargada: 71yqCGCNATL._AC_SL1500.jpg
+2026-05-10 05:47:53,504 [INFO]   Descargada: 81yfxpJwsmL._AC_SL1500.jpg
+2026-05-10 05:47:53,714 [INFO]   Descargada: 711UgmTnZRL._AC_SL1500.webp
+2026-05-10 05:47:53,913 [INFO]   Descargada: 71g8h5ZpNbL._AC_SL1500.jpg
+2026-05-10 05:47:54,136 [INFO]   Descargada: 81FK0DWnaqL._AC_SL1500.jpg
+2026-05-10 05:47:54,137 [INFO]   Backup original 1: img_01.jpg  (103 KB)
+2026-05-10 05:47:54,137 [INFO]   Backup original 2: img_02.jpg  (161 KB)
+2026-05-10 05:47:54,137 [INFO]   Backup original 3: img_03.webp  (143 KB)
+2026-05-10 05:47:54,137 [INFO]   Backup original 4: img_04.jpg  (106 KB)
+2026-05-10 05:47:54,137 [INFO]   Backup original 5: img_05.jpg  (151 KB)
+2026-05-10 05:47:54,147 [INFO]     [bg check esquinas] 2234/2916 px blancos (77%)
+2026-05-10 05:47:54,147 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:47:54,205 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:54,205 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:54,287 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:54,287 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:54,370 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:54,370 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:54,455 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:47:54,455 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:47:57,916 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:48:01,099 [INFO]   Imagen 1/5 subida -> applaws_15509632582019_1.webp
+2026-05-10 05:48:04,847 [INFO]   Imagen 2/5 subida -> applaws_15509632582019_2.webp
+2026-05-10 05:48:08,545 [INFO]   Imagen 3/5 subida -> applaws_15509632582019_3.webp
+2026-05-10 05:48:12,252 [INFO]   Imagen 4/5 subida -> applaws_15509632582019_4.webp
+2026-05-10 05:48:15,965 [INFO]   Imagen 5/5 subida -> applaws_15509632582019_5.webp
+2026-05-10 05:48:16,465 [INFO]   Producto completado
+2026-05-10 05:48:17,465 [INFO] 
+[35/80] APPLAWS CAT SOBRE ATUN Y BESUGO 12X70GR  (ID: 15509632614787)
+2026-05-10 05:48:17,843 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:48:18,064 [INFO]   Descargada: 71XkK4oeqaL._AC_SL1500.jpg
+2026-05-10 05:48:18,298 [INFO]   Descargada: 81xhBJGYs-L._AC_SL1500.jpg
+2026-05-10 05:48:18,550 [INFO]   Descargada: 81ACv5cAmdL._AC_SL1500.jpg
+2026-05-10 05:48:18,753 [INFO]   Descargada: 71m9Ys14vJL._AC_SL1500.jpg
+2026-05-10 05:48:18,996 [INFO]   Descargada: 71OMTon2vfL._AC_SL1500_5dca3c78-abba-4f29-a100-192e54ca08da.jpg
+2026-05-10 05:48:18,997 [INFO]   Backup original 1: img_01.jpg  (99 KB)
+2026-05-10 05:48:18,997 [INFO]   Backup original 2: img_02.jpg  (163 KB)
+2026-05-10 05:48:18,997 [INFO]   Backup original 3: img_03.jpg  (152 KB)
+2026-05-10 05:48:18,997 [INFO]   Backup original 4: img_04.jpg  (115 KB)
+2026-05-10 05:48:18,997 [INFO]   Backup original 5: img_05.jpg  (96 KB)
+2026-05-10 05:48:19,006 [INFO]     [bg check esquinas] 2250/2916 px blancos (77%)
+2026-05-10 05:48:19,006 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:48:19,063 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:19,063 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:19,147 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:19,147 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:19,231 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:19,231 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:19,314 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:19,314 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:22,544 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:48:26,634 [INFO]   Imagen 1/5 subida -> applaws_15509632614787_1.webp
+2026-05-10 05:48:30,395 [INFO]   Imagen 2/5 subida -> applaws_15509632614787_2.webp
+2026-05-10 05:48:34,111 [INFO]   Imagen 3/5 subida -> applaws_15509632614787_3.webp
+2026-05-10 05:48:37,746 [INFO]   Imagen 4/5 subida -> applaws_15509632614787_4.webp
+2026-05-10 05:48:40,892 [INFO]   Imagen 5/5 subida -> applaws_15509632614787_5.webp
+2026-05-10 05:48:41,392 [INFO]   Producto completado
+2026-05-10 05:48:42,392 [INFO] 
+[36/80] APPLAWS CAT SOBRE ATUN Y CANGREJO EN CALDO 12X70GR  (ID: 15509632647555)
+2026-05-10 05:48:42,678 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:48:42,929 [INFO]   Descargada: 718Oh4fqRjL._AC_SL1500.jpg
+2026-05-10 05:48:43,143 [INFO]   Descargada: 71SLucVLMVL._AC_SL1500.jpg
+2026-05-10 05:48:43,377 [INFO]   Descargada: 81oDrw5k3jL._AC_SL1500.jpg
+2026-05-10 05:48:43,617 [INFO]   Descargada: 71vzIQCaZjL._AC_SL1500.jpg
+2026-05-10 05:48:43,618 [INFO]   Backup original 1: img_01.jpg  (97 KB)
+2026-05-10 05:48:43,618 [INFO]   Backup original 2: img_02.jpg  (133 KB)
+2026-05-10 05:48:43,618 [INFO]   Backup original 3: img_03.jpg  (158 KB)
+2026-05-10 05:48:43,618 [INFO]   Backup original 4: img_04.jpg  (122 KB)
+2026-05-10 05:48:43,627 [INFO]     [bg check esquinas] 2057/2916 px blancos (71%)
+2026-05-10 05:48:43,627 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:48:43,684 [INFO]     [bg check esquinas] 4359/5476 px blancos (80%)
+2026-05-10 05:48:43,684 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:48:43,758 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:43,758 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:43,841 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:48:43,841 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:48:46,458 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:48:49,634 [INFO]   Imagen 1/4 subida -> applaws_15509632647555_1.webp
+2026-05-10 05:48:53,099 [INFO]   Imagen 2/4 subida -> applaws_15509632647555_2.webp
+2026-05-10 05:48:56,875 [INFO]   Imagen 3/4 subida -> applaws_15509632647555_3.webp
+2026-05-10 05:49:00,487 [INFO]   Imagen 4/4 subida -> applaws_15509632647555_4.webp
+2026-05-10 05:49:00,987 [INFO]   Producto completado
+2026-05-10 05:49:01,987 [INFO] 
+[37/80] APPLAWS CAT SOBRE ATUN Y GAMBAS DEL PACIFICO 12X70GR  (ID: 15509632680323)
+2026-05-10 05:49:02,306 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:49:02,523 [INFO]   Descargada: 71yztxYPx_L._AC_SL1500.jpg
+2026-05-10 05:49:02,772 [INFO]   Descargada: 8125KR76c-L._AC_SL1500.jpg
+2026-05-10 05:49:02,965 [INFO]   Descargada: 81u8VhmXwQL._AC_SL1500.jpg
+2026-05-10 05:49:03,184 [INFO]   Descargada: 71tfIJKYnlL._AC_SL1500.jpg
+2026-05-10 05:49:03,393 [INFO]   Descargada: 71OMTon2vfL._AC_SL1500_49d29804-ac6a-446b-b345-0c5516c443b7.jpg
+2026-05-10 05:49:03,394 [INFO]   Backup original 1: img_01.jpg  (93 KB)
+2026-05-10 05:49:03,394 [INFO]   Backup original 2: img_02.jpg  (155 KB)
+2026-05-10 05:49:03,394 [INFO]   Backup original 3: img_03.jpg  (135 KB)
+2026-05-10 05:49:03,394 [INFO]   Backup original 4: img_04.jpg  (104 KB)
+2026-05-10 05:49:03,394 [INFO]   Backup original 5: img_05.jpg  (96 KB)
+2026-05-10 05:49:03,403 [INFO]     [bg check esquinas] 2243/2916 px blancos (77%)
+2026-05-10 05:49:03,403 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:49:03,461 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:03,462 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:03,546 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:03,547 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:03,631 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:03,631 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:03,714 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:03,714 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:06,925 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:49:09,624 [INFO]   Imagen 1/5 subida -> applaws_15509632680323_1.webp
+2026-05-10 05:49:13,419 [INFO]   Imagen 2/5 subida -> applaws_15509632680323_2.webp
+2026-05-10 05:49:17,042 [INFO]   Imagen 3/5 subida -> applaws_15509632680323_3.webp
+2026-05-10 05:49:20,468 [INFO]   Imagen 4/5 subida -> applaws_15509632680323_4.webp
+2026-05-10 05:49:23,708 [INFO]   Imagen 5/5 subida -> applaws_15509632680323_5.webp
+2026-05-10 05:49:24,209 [INFO]   Producto completado
+2026-05-10 05:49:25,209 [INFO] 
+[38/80] APPLAWS CAT SOBRE CALDO PESCADO MULTIPACK 12X70GR  (ID: 15509432566147)
+2026-05-10 05:49:25,503 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:49:25,707 [INFO]   Descargada: caja-applaws-seleccion-pescado-en-caldo-12-sobres-filete-atun-gatos.jpg
+2026-05-10 05:49:25,903 [INFO]   Descargada: pack-variado-12-sobres-applaws-filete-atun-en-caldo-para-gatos.jpg
+2026-05-10 05:49:26,428 [INFO]   Descargada: applaws-filete-atun-anchoa-algas-besugo-gambas-en-caldo-gatos.jpg
+2026-05-10 05:49:26,908 [INFO]   Descargada: comida-humeda-gatos-applaws-atun-natural-sin-aditivos-alta-proteina.jpg
+2026-05-10 05:49:27,424 [INFO]   Descargada: racion-diaria-sobres-comida-humeda-applaws-para-gatos-instrucciones.jpg
+2026-05-10 05:49:27,425 [INFO]   Backup original 1: img_01.jpg  (112 KB)
+2026-05-10 05:49:27,425 [INFO]   Backup original 2: img_02.jpg  (109 KB)
+2026-05-10 05:49:27,425 [INFO]   Backup original 3: img_03.jpg  (140 KB)
+2026-05-10 05:49:27,425 [INFO]   Backup original 4: img_04.jpg  (138 KB)
+2026-05-10 05:49:27,425 [INFO]   Backup original 5: img_05.jpg  (103 KB)
+2026-05-10 05:49:27,436 [INFO]     [bg check esquinas] 5776/5776 px blancos (100%)
+2026-05-10 05:49:27,436 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:49:27,505 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:27,505 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:27,585 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:27,585 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:27,665 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:27,665 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:27,744 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:27,744 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:31,270 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:49:34,059 [INFO]   Imagen 1/5 subida -> applaws_15509432566147_1.webp
+2026-05-10 05:49:37,540 [INFO]   Imagen 2/5 subida -> applaws_15509432566147_2.webp
+2026-05-10 05:49:41,194 [INFO]   Imagen 3/5 subida -> applaws_15509432566147_3.webp
+2026-05-10 05:49:45,065 [INFO]   Imagen 4/5 subida -> applaws_15509432566147_4.webp
+2026-05-10 05:49:48,300 [INFO]   Imagen 5/5 subida -> applaws_15509432566147_5.webp
+2026-05-10 05:49:48,800 [INFO]   Producto completado
+2026-05-10 05:49:49,800 [INFO] 
+[39/80] APPLAWS CAT SOBRE CALDO POLLO MULTIPACK 12X70GR  (ID: 15509632745859)
+2026-05-10 05:49:50,085 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:49:50,353 [INFO]   Descargada: 71u8P-k_y5L._AC_SL1500.jpg
+2026-05-10 05:49:51,003 [INFO]   Descargada: 71aQ9CpfdKL._AC_SL1500.jpg
+2026-05-10 05:49:51,694 [INFO]   Descargada: 71ucw6BsWWL._AC_SL1500.jpg
+2026-05-10 05:49:51,893 [INFO]   Descargada: 710mtXXc30L._AC_SL1500.jpg
+2026-05-10 05:49:51,894 [INFO]   Backup original 1: img_01.jpg  (100 KB)
+2026-05-10 05:49:51,894 [INFO]   Backup original 2: img_02.jpg  (101 KB)
+2026-05-10 05:49:51,894 [INFO]   Backup original 3: img_03.jpg  (130 KB)
+2026-05-10 05:49:51,894 [INFO]   Backup original 4: img_04.jpg  (128 KB)
+2026-05-10 05:49:51,903 [INFO]     [bg check esquinas] 2460/2916 px blancos (84%)
+2026-05-10 05:49:51,903 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:49:51,960 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:51,960 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:52,043 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:52,043 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:52,127 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:49:52,127 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:49:54,747 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:49:58,007 [INFO]   Imagen 1/4 subida -> applaws_15509632745859_1.webp
+2026-05-10 05:50:01,249 [INFO]   Imagen 2/4 subida -> applaws_15509632745859_2.webp
+2026-05-10 05:50:04,778 [INFO]   Imagen 3/4 subida -> applaws_15509632745859_3.webp
+2026-05-10 05:50:08,293 [INFO]   Imagen 4/4 subida -> applaws_15509632745859_4.webp
+2026-05-10 05:50:08,793 [INFO]   Producto completado
+2026-05-10 05:50:09,794 [INFO] 
+[40/80] APPLAWS CAT SOBRE FILETE DE ATUN CABALLA GELATINA 16X70GR  (ID: 15509632811395)
+2026-05-10 05:50:10,114 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:50:10,312 [INFO]   Descargada: applaws_gelatina-de-atun_caballa-para-gatos_APL8255CE-A.jpg
+2026-05-10 05:50:10,568 [INFO]   Descargada: applaws-sobre-de-atun-con-caballa-parar-gatos-70-gr.jpg
+2026-05-10 05:50:10,807 [INFO]   Descargada: 61olSpqlkZL._AC_SL1000.jpg
+2026-05-10 05:50:11,043 [INFO]   Descargada: 610E9V_khnL._AC_SL1000.jpg
+2026-05-10 05:50:11,274 [INFO]   Descargada: 61Khqe3pWLL._AC_SL1000.jpg
+2026-05-10 05:50:11,275 [INFO]   Backup original 1: img_01.jpg  (62 KB)
+2026-05-10 05:50:11,275 [INFO]   Backup original 2: img_02.jpg  (124 KB)
+2026-05-10 05:50:11,275 [INFO]   Backup original 3: img_03.jpg  (82 KB)
+2026-05-10 05:50:11,275 [INFO]   Backup original 4: img_04.jpg  (87 KB)
+2026-05-10 05:50:11,275 [INFO]   Backup original 5: img_05.jpg  (103 KB)
+2026-05-10 05:50:11,279 [INFO]     [bg check esquinas] 1600/1600 px blancos (100%)
+2026-05-10 05:50:11,279 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:11,333 [INFO]     [bg check esquinas] 653/1600 px blancos (41%)
+2026-05-10 05:50:11,333 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:11,396 [INFO]     [bg check esquinas] 0/2500 px blancos (0%)
+2026-05-10 05:50:11,397 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:11,465 [INFO]     [bg check esquinas] 0/2500 px blancos (0%)
+2026-05-10 05:50:11,465 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:11,532 [INFO]     [bg check esquinas] 916/1296 px blancos (71%)
+2026-05-10 05:50:11,532 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:14,833 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:50:17,653 [INFO]   Imagen 1/5 subida -> applaws_15509632811395_1.webp
+2026-05-10 05:50:21,511 [INFO]   Imagen 2/5 subida -> applaws_15509632811395_2.webp
+2026-05-10 05:50:25,079 [INFO]   Imagen 3/5 subida -> applaws_15509632811395_3.webp
+2026-05-10 05:50:28,768 [INFO]   Imagen 4/5 subida -> applaws_15509632811395_4.webp
+2026-05-10 05:50:32,638 [INFO]   Imagen 5/5 subida -> applaws_15509632811395_5.webp
+2026-05-10 05:50:33,138 [INFO]   Producto completado
+2026-05-10 05:50:34,139 [INFO] 
+[41/80] APPLAWS CAT SOBRE FILETE DE ATUN EN CALDO 12X70GR  (ID: 15509632844163)
+2026-05-10 05:50:34,414 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:50:34,898 [INFO]   Descargada: 71E-AW8qmtL._AC_SL1500.jpg
+2026-05-10 05:50:35,098 [INFO]   Descargada: 711zQFoq3pL._AC_SL1500.jpg
+2026-05-10 05:50:35,677 [INFO]   Descargada: 81YkG53yV6L._AC_SL1500.jpg
+2026-05-10 05:50:35,984 [INFO]   Descargada: 71l7oij4FqL._AC_SL1500.jpg
+2026-05-10 05:50:35,985 [INFO]   Backup original 1: img_01.jpg  (99 KB)
+2026-05-10 05:50:35,985 [INFO]   Backup original 2: img_02.jpg  (122 KB)
+2026-05-10 05:50:35,985 [INFO]   Backup original 3: img_03.jpg  (154 KB)
+2026-05-10 05:50:35,985 [INFO]   Backup original 4: img_04.jpg  (123 KB)
+2026-05-10 05:50:35,995 [INFO]     [bg check esquinas] 2096/2916 px blancos (72%)
+2026-05-10 05:50:35,995 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:36,051 [INFO]     [bg check esquinas] 4366/5476 px blancos (80%)
+2026-05-10 05:50:36,051 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:36,125 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:50:36,125 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:36,209 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:50:36,209 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:38,766 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:50:41,563 [INFO]   Imagen 1/4 subida -> applaws_15509632844163_1.webp
+2026-05-10 05:50:45,065 [INFO]   Imagen 2/4 subida -> applaws_15509632844163_2.webp
+2026-05-10 05:50:49,465 [INFO]   Imagen 3/4 subida -> applaws_15509632844163_3.webp
+2026-05-10 05:50:52,941 [INFO]   Imagen 4/4 subida -> applaws_15509632844163_4.webp
+2026-05-10 05:50:53,441 [INFO]   Producto completado
+2026-05-10 05:50:54,441 [INFO] 
+[42/80] APPLAWS CAT SOBRE FILETE DE ATUN EN GELATINA 16X70GR  (ID: 15509632876931)
+2026-05-10 05:50:54,786 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:50:55,440 [INFO]   Descargada: applaws_15509632876931_1.webp
+2026-05-10 05:50:56,064 [INFO]   Descargada: applaws_15509632876931_2.webp
+2026-05-10 05:50:56,640 [INFO]   Descargada: applaws_15509632876931_3.webp
+2026-05-10 05:50:57,255 [INFO]   Descargada: applaws_15509632876931_4.webp
+2026-05-10 05:50:57,987 [INFO]   Descargada: applaws_15509632876931_5.webp
+2026-05-10 05:50:57,987 [INFO]   Backup original 1: img_01.webp  (168 KB)
+2026-05-10 05:50:57,988 [INFO]   Backup original 2: img_02.webp  (181 KB)
+2026-05-10 05:50:57,988 [INFO]   Backup original 3: img_03.webp  (310 KB)
+2026-05-10 05:50:57,988 [INFO]   Backup original 4: img_04.webp  (287 KB)
+2026-05-10 05:50:57,988 [INFO]   Backup original 5: img_05.webp  (282 KB)
+2026-05-10 05:50:58,008 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:50:58,008 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:58,102 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:50:58,102 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:50:58,200 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:50:58,200 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:58,225 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:50:58,225 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:50:58,253 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:50:58,253 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:51:01,491 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:51:04,276 [INFO]   Imagen 1/5 subida -> applaws_15509632876931_1.webp
+2026-05-10 05:51:07,420 [INFO]   Imagen 2/5 subida -> applaws_15509632876931_2.webp
+2026-05-10 05:51:11,211 [INFO]   Imagen 3/5 subida -> applaws_15509632876931_3.webp
+2026-05-10 05:51:15,581 [INFO]   Imagen 4/5 subida -> applaws_15509632876931_4.webp
+2026-05-10 05:51:19,386 [INFO]   Imagen 5/5 subida -> applaws_15509632876931_5.webp
+2026-05-10 05:51:19,886 [INFO]   Producto completado
+2026-05-10 05:51:20,886 [INFO] 
+[43/80] APPLAWS CAT SOBRE FILETE DE ATUN Y SALMON 12X70GR  (ID: 15509632909699)
+2026-05-10 05:51:21,189 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:51:21,424 [INFO]   Descargada: 71Xj64kS-5L._AC_SL1500.jpg
+2026-05-10 05:51:21,798 [INFO]   Descargada: 714WLyTE1iL._AC_SL1500.jpg
+2026-05-10 05:51:21,997 [INFO]   Descargada: 81ihXrEayQL._AC_SL1500.jpg
+2026-05-10 05:51:22,219 [INFO]   Descargada: 71CL5GC3kOL._AC_SL1500.jpg
+2026-05-10 05:51:22,220 [INFO]   Backup original 1: img_01.jpg  (87 KB)
+2026-05-10 05:51:22,220 [INFO]   Backup original 2: img_02.jpg  (106 KB)
+2026-05-10 05:51:22,220 [INFO]   Backup original 3: img_03.jpg  (143 KB)
+2026-05-10 05:51:22,220 [INFO]   Backup original 4: img_04.jpg  (116 KB)
+2026-05-10 05:51:22,229 [INFO]     [bg check esquinas] 2065/2916 px blancos (71%)
+2026-05-10 05:51:22,229 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:51:22,285 [INFO]     [bg check esquinas] 4367/5476 px blancos (80%)
+2026-05-10 05:51:22,285 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:51:22,359 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:51:22,359 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:51:22,443 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:51:22,444 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:51:24,993 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:51:27,758 [INFO]   Imagen 1/4 subida -> applaws_15509632909699_1.webp
+2026-05-10 05:51:31,073 [INFO]   Imagen 2/4 subida -> applaws_15509632909699_2.webp
+2026-05-10 05:51:34,828 [INFO]   Imagen 3/4 subida -> applaws_15509632909699_3.webp
+2026-05-10 05:51:38,369 [INFO]   Imagen 4/4 subida -> applaws_15509632909699_4.webp
+2026-05-10 05:51:38,869 [INFO]   Producto completado
+2026-05-10 05:51:39,869 [INFO] 
+[44/80] APPLAWS CAT SOBRE FILETE DE ATUN Y SALMON GELATINA 16X70GR  (ID: 15509632942467)
+2026-05-10 05:51:40,205 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:51:40,411 [INFO]   Descargada: 8278.webp
+2026-05-10 05:51:40,631 [INFO]   Descargada: 71VRI9FvD2L._AC_SL1500.webp
+2026-05-10 05:51:40,859 [INFO]   Descargada: 818XgzS3-0L._AC_SL1500.webp
+2026-05-10 05:51:41,079 [INFO]   Descargada: 81WGbVI4B0L._AC_SL1500.webp
+2026-05-10 05:51:41,080 [INFO]   Backup original 1: img_01.webp  (95 KB)
+2026-05-10 05:51:41,080 [INFO]   Backup original 2: img_02.webp  (124 KB)
+2026-05-10 05:51:41,080 [INFO]   Backup original 3: img_03.webp  (166 KB)
+2026-05-10 05:51:41,080 [INFO]   Backup original 4: img_04.webp  (162 KB)
+2026-05-10 05:51:41,089 [INFO]     [bg check esquinas] 3844/3844 px blancos (100%)
+2026-05-10 05:51:41,089 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:51:41,154 [INFO]     [bg check esquinas] 2677/3364 px blancos (80%)
+2026-05-10 05:51:41,155 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:51:41,217 [INFO]     [bg check esquinas] 0/3844 px blancos (0%)
+2026-05-10 05:51:41,217 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:51:41,296 [INFO]     [bg check esquinas] 0/3844 px blancos (0%)
+2026-05-10 05:51:41,296 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:51:43,963 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:51:46,676 [INFO]   Imagen 1/4 subida -> applaws_15509632942467_1.webp
+2026-05-10 05:51:49,884 [INFO]   Imagen 2/4 subida -> applaws_15509632942467_2.webp
+2026-05-10 05:51:53,532 [INFO]   Imagen 3/4 subida -> applaws_15509632942467_3.webp
+2026-05-10 05:51:57,274 [INFO]   Imagen 4/4 subida -> applaws_15509632942467_4.webp
+2026-05-10 05:51:57,774 [INFO]   Producto completado
+2026-05-10 05:51:58,775 [INFO] 
+[45/80] APPLAWS CAT SOBRE HIGADO Y POLLO EN GELATINA 16X70GR  (ID: 15509632975235)
+2026-05-10 05:51:59,067 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:51:59,343 [INFO]   Descargada: 719AWZ2U7UL._AC_SL1500.jpg
+2026-05-10 05:52:00,102 [INFO]   Descargada: 71Gl6Hp4CtL._AC_SL1500.jpg
+2026-05-10 05:52:00,440 [INFO]   Descargada: 81JSpdpde0L._AC_SL1500.jpg
+2026-05-10 05:52:00,655 [INFO]   Descargada: 71X3eudt79L._AC_SL1500.jpg
+2026-05-10 05:52:00,878 [INFO]   Descargada: 81SfdpV7oPL._AC_SL1500_afdc971f-af19-4873-95de-54f5dc2f2dc4.jpg
+2026-05-10 05:52:00,878 [INFO]   Backup original 1: img_01.jpg  (102 KB)
+2026-05-10 05:52:00,878 [INFO]   Backup original 2: img_02.jpg  (125 KB)
+2026-05-10 05:52:00,878 [INFO]   Backup original 3: img_03.jpg  (143 KB)
+2026-05-10 05:52:00,879 [INFO]   Backup original 4: img_04.jpg  (95 KB)
+2026-05-10 05:52:00,879 [INFO]   Backup original 5: img_05.jpg  (136 KB)
+2026-05-10 05:52:00,888 [INFO]     [bg check esquinas] 2077/2916 px blancos (71%)
+2026-05-10 05:52:00,888 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:00,944 [INFO]     [bg check esquinas] 3884/4900 px blancos (79%)
+2026-05-10 05:52:00,944 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:01,015 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:01,015 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:01,098 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:01,098 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:01,183 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:01,183 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:04,542 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:52:07,303 [INFO]   Imagen 1/5 subida -> applaws_15509632975235_1.webp
+2026-05-10 05:52:10,808 [INFO]   Imagen 2/5 subida -> applaws_15509632975235_2.webp
+2026-05-10 05:52:14,585 [INFO]   Imagen 3/5 subida -> applaws_15509632975235_3.webp
+2026-05-10 05:52:17,781 [INFO]   Imagen 4/5 subida -> applaws_15509632975235_4.webp
+2026-05-10 05:52:21,422 [INFO]   Imagen 5/5 subida -> applaws_15509632975235_5.webp
+2026-05-10 05:52:21,922 [INFO]   Producto completado
+2026-05-10 05:52:22,923 [INFO] 
+[46/80] APPLAWS CAT SOBRE PECHUGA DE POLLO EN CALDO 12X70GR  (ID: 15509633106307)
+2026-05-10 05:52:23,225 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:52:23,447 [INFO]   Descargada: 716ulTSoeGL._AC_SL1500.jpg
+2026-05-10 05:52:23,649 [INFO]   Descargada: 71XtjsD-5VL._AC_SL1500.jpg
+2026-05-10 05:52:23,906 [INFO]   Descargada: 81ghsc-c8gL._AC_SL1500.jpg
+2026-05-10 05:52:24,155 [INFO]   Descargada: 71TzBtzqFAL._AC_SL1500.jpg
+2026-05-10 05:52:24,155 [INFO]   Backup original 1: img_01.jpg  (89 KB)
+2026-05-10 05:52:24,155 [INFO]   Backup original 2: img_02.jpg  (117 KB)
+2026-05-10 05:52:24,156 [INFO]   Backup original 3: img_03.jpg  (146 KB)
+2026-05-10 05:52:24,156 [INFO]   Backup original 4: img_04.jpg  (115 KB)
+2026-05-10 05:52:24,165 [INFO]     [bg check esquinas] 2067/2916 px blancos (71%)
+2026-05-10 05:52:24,165 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:24,221 [INFO]     [bg check esquinas] 4342/5476 px blancos (79%)
+2026-05-10 05:52:24,222 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:24,295 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:24,295 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:24,380 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:24,380 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:27,007 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:52:29,735 [INFO]   Imagen 1/4 subida -> applaws_15509633106307_1.webp
+2026-05-10 05:52:33,163 [INFO]   Imagen 2/4 subida -> applaws_15509633106307_2.webp
+2026-05-10 05:52:36,849 [INFO]   Imagen 3/4 subida -> applaws_15509633106307_3.webp
+2026-05-10 05:52:40,321 [INFO]   Imagen 4/4 subida -> applaws_15509633106307_4.webp
+2026-05-10 05:52:40,821 [INFO]   Producto completado
+2026-05-10 05:52:41,821 [INFO] 
+[47/80] APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR  (ID: 15509633204611)
+2026-05-10 05:52:42,104 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:52:42,304 [INFO]   Descargada: 71SmA58NJrL._AC_SL1500.jpg
+2026-05-10 05:52:42,540 [INFO]   Descargada: 71NrtJblP1L._AC_SL1500.jpg
+2026-05-10 05:52:42,930 [INFO]   Descargada: 813994N7JeL._AC_SL1500.jpg
+2026-05-10 05:52:43,153 [INFO]   Descargada: 71P_YxvySdL._AC_SL1500.jpg
+2026-05-10 05:52:43,154 [INFO]   Backup original 1: img_01.jpg  (91 KB)
+2026-05-10 05:52:43,154 [INFO]   Backup original 2: img_02.jpg  (127 KB)
+2026-05-10 05:52:43,154 [INFO]   Backup original 3: img_03.jpg  (134 KB)
+2026-05-10 05:52:43,154 [INFO]   Backup original 4: img_04.jpg  (103 KB)
+2026-05-10 05:52:43,163 [INFO]     [bg check esquinas] 2060/2916 px blancos (71%)
+2026-05-10 05:52:43,163 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:43,220 [INFO]     [bg check esquinas] 4357/5476 px blancos (80%)
+2026-05-10 05:52:43,220 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:52:43,294 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:43,294 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:43,378 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:52:43,378 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:52:46,369 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:52:49,028 [INFO]   Imagen 1/4 subida -> applaws_15509633204611_1.webp
+2026-05-10 05:52:52,545 [INFO]   Imagen 2/4 subida -> applaws_15509633204611_2.webp
+2026-05-10 05:52:56,093 [INFO]   Imagen 3/4 subida -> applaws_15509633204611_3.webp
+2026-05-10 05:52:59,503 [INFO]   Imagen 4/4 subida -> applaws_15509633204611_4.webp
+2026-05-10 05:53:00,003 [INFO]   Producto completado
+2026-05-10 05:53:01,004 [INFO] 
+[48/80] APPLAWS CAT SOBRE PEGUGA DE POLLO Y FILETE DE ATUN 12X70GR  (ID: 15509633237379)
+2026-05-10 05:53:01,265 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:01,265 [INFO] 
+[49/80] APPLAWS CAT SOBRE POLLO CON ARROZ 12X70GR  (ID: 15509633270147)
+2026-05-10 05:53:01,552 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:53:01,771 [INFO]   Descargada: 71j00BuanxL._AC_SL1500.jpg
+2026-05-10 05:53:02,037 [INFO]   Descargada: 81omyw-OlDL._AC_SL1500.jpg
+2026-05-10 05:53:02,242 [INFO]   Descargada: 81RBH9TuCVL._AC_SL1500.jpg
+2026-05-10 05:53:02,437 [INFO]   Descargada: 71esPY-EXqL._AC_SL1500.jpg
+2026-05-10 05:53:02,701 [INFO]   Descargada: 71X3eudt79L._AC_SL1500_4d95df9e-4de3-451e-8f8f-903313209e92.jpg
+2026-05-10 05:53:02,701 [INFO]   Backup original 1: img_01.jpg  (98 KB)
+2026-05-10 05:53:02,701 [INFO]   Backup original 2: img_02.jpg  (162 KB)
+2026-05-10 05:53:02,701 [INFO]   Backup original 3: img_03.jpg  (139 KB)
+2026-05-10 05:53:02,701 [INFO]   Backup original 4: img_04.jpg  (108 KB)
+2026-05-10 05:53:02,701 [INFO]   Backup original 5: img_05.jpg  (95 KB)
+2026-05-10 05:53:02,710 [INFO]     [bg check esquinas] 2243/2916 px blancos (77%)
+2026-05-10 05:53:02,710 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:53:02,768 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:53:02,769 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:02,853 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:53:02,853 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:02,937 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:53:02,937 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:03,020 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:53:03,020 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:06,613 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:53:09,361 [INFO]   Imagen 1/5 subida -> applaws_15509633270147_1.webp
+2026-05-10 05:53:13,139 [INFO]   Imagen 2/5 subida -> applaws_15509633270147_2.webp
+2026-05-10 05:53:16,748 [INFO]   Imagen 3/5 subida -> applaws_15509633270147_3.webp
+2026-05-10 05:53:20,293 [INFO]   Imagen 4/5 subida -> applaws_15509633270147_4.webp
+2026-05-10 05:53:23,602 [INFO]   Imagen 5/5 subida -> applaws_15509633270147_5.webp
+2026-05-10 05:53:24,103 [INFO]   Producto completado
+2026-05-10 05:53:25,103 [INFO] 
+[50/80] APPLAWS CAT SOBRE POLLO CON CALABAZA 12X70GR  (ID: 15509633335683)
+2026-05-10 05:53:25,357 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:25,357 [INFO] 
+[51/80] APPLAWS CAT SOBRE POLLO CON ESPARRAGOS 12X70GR  (ID: 15509633401219)
+2026-05-10 05:53:25,616 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:25,617 [INFO] 
+[52/80] APPLAWS CAT SOBRE POLLO Y CORDERO EN GELATINA 16X70GR  (ID: 15509633433987)
+2026-05-10 05:53:25,872 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:25,873 [INFO] 
+[53/80] APPLAWS CAT SOBRE POLLO Y TERNERA EN GELATINA 16X70GR  (ID: 15509633466755)
+2026-05-10 05:53:26,153 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:26,153 [INFO] 
+[54/80] APPLAWS CAT SOBRE SELEC PESCADO GELATINA MULTI 12X70GR  (ID: 15509633499523)
+2026-05-10 05:53:26,427 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:26,427 [INFO] 
+[55/80] APPLAWS CAT SOBRE SNACK PURE DE POLLO 10X4X15GR  (ID: 15509633565059)
+2026-05-10 05:53:26,687 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:26,687 [INFO] 
+[56/80] APPLAWS CAT TARRINA ATUN Y CANGREJO 10X60GR  (ID: 15509633663363)
+2026-05-10 05:53:26,942 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:26,942 [INFO] 
+[57/80] APPLAWS CAT TARRINA FILETE ATUN Y GAMBAS 10X60GR  (ID: 15509633696131)
+2026-05-10 05:53:27,203 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:27,203 [INFO] 
+[58/80] APPLAWS CAT TARRINA MULTI SELECCION PESCADO 8X60GR  (ID: 15509633630595)
+2026-05-10 05:53:27,471 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:27,471 [INFO] 
+[59/80] APPLAWS CAT TARRINA MULTIPACK SELECCION POLLO 8X60  (ID: 15509633794435)
+2026-05-10 05:53:27,764 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:53:27,764 [INFO] 
+[60/80] APPLAWS CAT TARRINA PECHUGA POLLO Y ARROZ 10X60GR  (ID: 15509633827203)
+2026-05-10 05:53:28,090 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:53:28,638 [INFO]   Descargada: applaws_15509633827203_1.webp
+2026-05-10 05:53:29,230 [INFO]   Descargada: applaws_15509633827203_2.webp
+2026-05-10 05:53:29,760 [INFO]   Descargada: applaws_15509633827203_3.webp
+2026-05-10 05:53:30,437 [INFO]   Descargada: applaws_15509633827203_4.webp
+2026-05-10 05:53:30,438 [INFO]   Backup original 1: img_01.webp  (193 KB)
+2026-05-10 05:53:30,438 [INFO]   Backup original 2: img_02.webp  (269 KB)
+2026-05-10 05:53:30,438 [INFO]   Backup original 3: img_03.webp  (212 KB)
+2026-05-10 05:53:30,438 [INFO]   Backup original 4: img_04.webp  (164 KB)
+2026-05-10 05:53:30,458 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:53:30,459 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:53:30,555 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:30,556 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:30,582 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:30,582 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:30,604 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:30,605 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:33,066 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:53:35,845 [INFO]   Imagen 1/4 subida -> applaws_15509633827203_1.webp
+2026-05-10 05:53:39,579 [INFO]   Imagen 2/4 subida -> applaws_15509633827203_2.webp
+2026-05-10 05:53:43,091 [INFO]   Imagen 3/4 subida -> applaws_15509633827203_3.webp
+2026-05-10 05:53:46,651 [INFO]   Imagen 4/4 subida -> applaws_15509633827203_4.webp
+2026-05-10 05:53:47,152 [INFO]   Producto completado
+2026-05-10 05:53:48,152 [INFO] 
+[61/80] APPLAWS CAT TARRINA PECHUGA POLLO Y PATO 10X60GR  (ID: 15509633859971)
+2026-05-10 05:53:48,448 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:53:49,143 [INFO]   Descargada: applaws_15509633859971_1.webp
+2026-05-10 05:53:49,787 [INFO]   Descargada: applaws_15509633859971_2.webp
+2026-05-10 05:53:50,382 [INFO]   Descargada: applaws_15509633859971_3.webp
+2026-05-10 05:53:51,148 [INFO]   Descargada: applaws_15509633859971_4.webp
+2026-05-10 05:53:51,927 [INFO]   Descargada: applaws_15509633859971_5.webp
+2026-05-10 05:53:51,928 [INFO]   Backup original 1: img_01.webp  (172 KB)
+2026-05-10 05:53:51,928 [INFO]   Backup original 2: img_02.webp  (240 KB)
+2026-05-10 05:53:51,928 [INFO]   Backup original 3: img_03.webp  (198 KB)
+2026-05-10 05:53:51,928 [INFO]   Backup original 4: img_04.webp  (164 KB)
+2026-05-10 05:53:51,928 [INFO]   Backup original 5: img_05.webp  (249 KB)
+2026-05-10 05:53:51,945 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:53:51,945 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:53:52,040 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:52,040 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:52,065 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:52,065 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:52,086 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:52,087 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:52,110 [INFO]     [bg check esquinas] 0/10000 px blancos (0%)
+2026-05-10 05:53:52,110 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:53:55,371 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:53:58,076 [INFO]   Imagen 1/5 subida -> applaws_15509633859971_1.webp
+2026-05-10 05:54:01,745 [INFO]   Imagen 2/5 subida -> applaws_15509633859971_2.webp
+2026-05-10 05:54:05,276 [INFO]   Imagen 3/5 subida -> applaws_15509633859971_3.webp
+2026-05-10 05:54:08,423 [INFO]   Imagen 4/5 subida -> applaws_15509633859971_4.webp
+2026-05-10 05:54:12,137 [INFO]   Imagen 5/5 subida -> applaws_15509633859971_5.webp
+2026-05-10 05:54:12,637 [INFO]   Producto completado
+2026-05-10 05:54:13,638 [INFO] 
+[62/80] APPLAWS DOG DRY ADULTO RAZA PEQ MEDIANAS POLLO CORDERO  (ID: 15509633958275)
+2026-05-10 05:54:13,940 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:54:14,195 [INFO]   Descargada: 61B96TQQTnL._AC_SL1500.jpg
+2026-05-10 05:54:14,393 [INFO]   Descargada: 81zQXDbB0TL._AC_SL1500.jpg
+2026-05-10 05:54:14,619 [INFO]   Descargada: 71EBV9ZBjsL._AC_SL1500.jpg
+2026-05-10 05:54:14,856 [INFO]   Descargada: 81TY5t5xEGL._AC_SL1500.jpg
+2026-05-10 05:54:14,857 [INFO]   Backup original 1: img_01.jpg  (116 KB)
+2026-05-10 05:54:14,857 [INFO]   Backup original 2: img_02.jpg  (145 KB)
+2026-05-10 05:54:14,857 [INFO]   Backup original 3: img_03.jpg  (95 KB)
+2026-05-10 05:54:14,857 [INFO]   Backup original 4: img_04.jpg  (278 KB)
+2026-05-10 05:54:14,869 [INFO]     [bg check esquinas] 5444/5476 px blancos (99%)
+2026-05-10 05:54:14,869 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:14,941 [INFO]     [bg check esquinas] 3957/4900 px blancos (81%)
+2026-05-10 05:54:14,941 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:15,003 [INFO]     [bg check esquinas] 676/676 px blancos (100%)
+2026-05-10 05:54:15,003 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:15,039 [INFO]     [bg check esquinas] 1399/1936 px blancos (72%)
+2026-05-10 05:54:15,039 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:17,603 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:54:20,556 [INFO]   Imagen 1/4 subida -> applaws_15509633958275_1.webp
+2026-05-10 05:54:24,177 [INFO]   Imagen 2/4 subida -> applaws_15509633958275_2.webp
+2026-05-10 05:54:27,665 [INFO]   Imagen 3/4 subida -> applaws_15509633958275_3.webp
+2026-05-10 05:54:32,014 [INFO]   Imagen 4/4 subida -> applaws_15509633958275_4.webp
+2026-05-10 05:54:32,514 [INFO]   Producto completado
+2026-05-10 05:54:33,515 [INFO] 
+[63/80] APPLAWS DOG DRY ADULTO RAZAS GRANDES POLLO  (ID: 15509634056579)
+2026-05-10 05:54:33,801 [INFO]   3 imagen(es) - descargando originales...
+2026-05-10 05:54:34,025 [INFO]   Descargada: 61YyESRDa3L._AC_SL1280.jpg
+2026-05-10 05:54:34,223 [INFO]   Descargada: 61X1ms8_UbL._AC_SL1000.jpg
+2026-05-10 05:54:34,418 [INFO]   Descargada: 71gkT8Jp3RL._AC_SL1500.jpg
+2026-05-10 05:54:34,419 [INFO]   Backup original 1: img_01.jpg  (77 KB)
+2026-05-10 05:54:34,419 [INFO]   Backup original 2: img_02.jpg  (49 KB)
+2026-05-10 05:54:34,419 [INFO]   Backup original 3: img_03.jpg  (125 KB)
+2026-05-10 05:54:34,425 [INFO]     [bg check esquinas] 773/1156 px blancos (67%)
+2026-05-10 05:54:34,425 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:34,461 [INFO]     [bg check esquinas] 555/676 px blancos (82%)
+2026-05-10 05:54:34,461 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:34,500 [INFO]     [bg check esquinas] 1180/1764 px blancos (67%)
+2026-05-10 05:54:34,500 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:36,588 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:54:39,485 [INFO]   Imagen 1/3 subida -> applaws_15509634056579_1.webp
+2026-05-10 05:54:42,810 [INFO]   Imagen 2/3 subida -> applaws_15509634056579_2.webp
+2026-05-10 05:54:46,448 [INFO]   Imagen 3/3 subida -> applaws_15509634056579_3.webp
+2026-05-10 05:54:46,949 [INFO]   Producto completado
+2026-05-10 05:54:47,949 [INFO] 
+[64/80] APPLAWS DOG DRY ADULTO RAZAS PEQUEÑAS Y MEDIANAS POLLO  (ID: 15509634154883)
+2026-05-10 05:54:48,247 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:54:48,440 [INFO]   Descargada: 71Z9wBZjIPL._AC_SL1500.jpg
+2026-05-10 05:54:48,643 [INFO]   Descargada: 81FL3HkN_tL._AC_SL1500.jpg
+2026-05-10 05:54:48,868 [INFO]   Descargada: 81xtfmZIttL._AC_SL1500.jpg
+2026-05-10 05:54:49,109 [INFO]   Descargada: 81ku2RoEmRL._AC_SL1500.jpg
+2026-05-10 05:54:49,344 [INFO]   Descargada: 812eOTpPuyL._AC_SL1500.jpg
+2026-05-10 05:54:49,344 [INFO]   Backup original 1: img_01.jpg  (117 KB)
+2026-05-10 05:54:49,344 [INFO]   Backup original 2: img_02.jpg  (110 KB)
+2026-05-10 05:54:49,345 [INFO]   Backup original 3: img_03.jpg  (141 KB)
+2026-05-10 05:54:49,345 [INFO]   Backup original 4: img_04.jpg  (202 KB)
+2026-05-10 05:54:49,345 [INFO]   Backup original 5: img_05.jpg  (230 KB)
+2026-05-10 05:54:49,357 [INFO]     [bg check esquinas] 5443/5476 px blancos (99%)
+2026-05-10 05:54:49,357 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:49,423 [INFO]     [bg check esquinas] 784/784 px blancos (100%)
+2026-05-10 05:54:49,423 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:49,456 [INFO]     [bg check esquinas] 1243/1764 px blancos (70%)
+2026-05-10 05:54:49,456 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:49,502 [INFO]     [bg check esquinas] 686/1600 px blancos (43%)
+2026-05-10 05:54:49,503 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:54:49,557 [INFO]     [bg check esquinas] 5473/5476 px blancos (100%)
+2026-05-10 05:54:49,557 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:54:53,108 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:54:56,146 [INFO]   Imagen 1/5 subida -> applaws_15509634154883_1.webp
+2026-05-10 05:54:59,601 [INFO]   Imagen 2/5 subida -> applaws_15509634154883_2.webp
+2026-05-10 05:55:03,361 [INFO]   Imagen 3/5 subida -> applaws_15509634154883_3.webp
+2026-05-10 05:55:07,571 [INFO]   Imagen 4/5 subida -> applaws_15509634154883_4.webp
+2026-05-10 05:55:11,924 [INFO]   Imagen 5/5 subida -> applaws_15509634154883_5.webp
+2026-05-10 05:55:12,424 [INFO]   Producto completado
+2026-05-10 05:55:13,424 [INFO] 
+[65/80] APPLAWS DOG DRY PUPPY RAZAS GRANDES POLLO  (ID: 15509634253187)
+2026-05-10 05:55:13,687 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:55:13,891 [INFO]   Descargada: 4520LBPCUK.webp
+2026-05-10 05:55:14,093 [INFO]   Descargada: 711XqDGrCTL._AC_SL1500.jpg
+2026-05-10 05:55:14,093 [INFO]   Backup original 1: img_01.webp  (77 KB)
+2026-05-10 05:55:14,093 [INFO]   Backup original 2: img_02.jpg  (95 KB)
+2026-05-10 05:55:14,099 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:55:14,099 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:14,158 [INFO]     [bg check esquinas] 1445/1764 px blancos (82%)
+2026-05-10 05:55:14,158 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:15,564 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:55:18,610 [INFO]   Imagen 1/2 subida -> applaws_15509634253187_1.webp
+2026-05-10 05:55:22,053 [INFO]   Imagen 2/2 subida -> applaws_15509634253187_2.webp
+2026-05-10 05:55:22,553 [INFO]   Producto completado
+2026-05-10 05:55:23,553 [INFO] 
+[66/80] APPLAWS DOG DRY PUPPY RAZAS PEQUEÑAS Y MEDIANAS POLLO  (ID: 15509634318723)
+2026-05-10 05:55:23,838 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:55:24,093 [INFO]   Descargada: 71XZvi4iGtL._AC_SL1500.jpg
+2026-05-10 05:55:24,355 [INFO]   Descargada: 81MfJjiJOmL._AC_SL1500.jpg
+2026-05-10 05:55:24,597 [INFO]   Descargada: 81muTagdSGL._AC_SL1500.jpg
+2026-05-10 05:55:24,855 [INFO]   Descargada: 81YaxSBKYcL._AC_SL1500.jpg
+2026-05-10 05:55:24,856 [INFO]   Backup original 1: img_01.jpg  (136 KB)
+2026-05-10 05:55:24,856 [INFO]   Backup original 2: img_02.jpg  (109 KB)
+2026-05-10 05:55:24,856 [INFO]   Backup original 3: img_03.jpg  (152 KB)
+2026-05-10 05:55:24,856 [INFO]   Backup original 4: img_04.jpg  (226 KB)
+2026-05-10 05:55:24,869 [INFO]     [bg check esquinas] 5443/5476 px blancos (99%)
+2026-05-10 05:55:24,869 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:24,936 [INFO]     [bg check esquinas] 784/784 px blancos (100%)
+2026-05-10 05:55:24,936 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:24,973 [INFO]     [bg check esquinas] 4219/5184 px blancos (81%)
+2026-05-10 05:55:24,973 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:25,049 [INFO]     [bg check esquinas] 5184/5184 px blancos (100%)
+2026-05-10 05:55:25,049 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:27,666 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:55:30,869 [INFO]   Imagen 1/4 subida -> applaws_15509634318723_1.webp
+2026-05-10 05:55:34,479 [INFO]   Imagen 2/4 subida -> applaws_15509634318723_2.webp
+2026-05-10 05:55:38,230 [INFO]   Imagen 3/4 subida -> applaws_15509634318723_3.webp
+2026-05-10 05:55:42,088 [INFO]   Imagen 4/4 subida -> applaws_15509634318723_4.webp
+2026-05-10 05:55:42,588 [INFO]   Producto completado
+2026-05-10 05:55:43,588 [INFO] 
+[67/80] APPLAWS DOG DRY SENIOR POLLO 7,5KG  (ID: 15509634417027)
+2026-05-10 05:55:43,879 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:55:44,181 [INFO]   Descargada: 71XSv7hz9PL._AC_SL1500.jpg
+2026-05-10 05:55:44,443 [INFO]   Descargada: 81Zn5FyKz_L._AC_SL1500.jpg
+2026-05-10 05:55:44,679 [INFO]   Descargada: 714jXNnHvwL._AC_SL1500.jpg
+2026-05-10 05:55:44,913 [INFO]   Descargada: 4575SUK.webp
+2026-05-10 05:55:44,913 [INFO]   Backup original 1: img_01.jpg  (134 KB)
+2026-05-10 05:55:44,913 [INFO]   Backup original 2: img_02.jpg  (295 KB)
+2026-05-10 05:55:44,913 [INFO]   Backup original 3: img_03.jpg  (105 KB)
+2026-05-10 05:55:44,914 [INFO]   Backup original 4: img_04.webp  (87 KB)
+2026-05-10 05:55:44,928 [INFO]     [bg check esquinas] 5444/5476 px blancos (99%)
+2026-05-10 05:55:44,928 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:45,002 [INFO]     [bg check esquinas] 2264/2500 px blancos (91%)
+2026-05-10 05:55:45,002 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:45,052 [INFO]     [bg check esquinas] 1024/1024 px blancos (100%)
+2026-05-10 05:55:45,052 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:45,087 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:55:45,087 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:55:47,682 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:55:50,943 [INFO]   Imagen 1/4 subida -> applaws_15509634417027_1.webp
+2026-05-10 05:55:55,368 [INFO]   Imagen 2/4 subida -> applaws_15509634417027_2.webp
+2026-05-10 05:55:58,943 [INFO]   Imagen 3/4 subida -> applaws_15509634417027_3.webp
+2026-05-10 05:56:02,228 [INFO]   Imagen 4/4 subida -> applaws_15509634417027_4.webp
+2026-05-10 05:56:02,728 [INFO]   Producto completado
+2026-05-10 05:56:03,729 [INFO] 
+[68/80] APPLAWS DOG LATA TOPPER ESTOF POLLO CORDERO VERDR 12X156GR  (ID: 15509634515331)
+2026-05-10 05:56:04,006 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:56:04,006 [INFO] 
+[69/80] APPLAWS DOG LATA TOPPER ESTOFADO POLLO VERDURAS 12X156GR  (ID: 15509634548099)
+2026-05-10 05:56:04,304 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:56:04,304 [INFO] 
+[70/80] APPLAWS DOG LATA TOPPER ESTOFADO TERNERA VERDURAS 12X156GR  (ID: 15509634449795)
+2026-05-10 05:56:04,564 [WARNING]   Sin imagenes en Shopify - saltando
+2026-05-10 05:56:04,564 [INFO] 
+[71/80] APPLAWS DOG LATA TOPPER POLLO EN CALDO 12X156GR  (ID: 15509634580867)
+2026-05-10 05:56:04,844 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:05,042 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo.webp
+2026-05-10 05:56:05,233 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo_20616436-f016-4231-8ded-35e138478226.webp
+2026-05-10 05:56:05,233 [INFO]   Backup original 1: img_01.webp  (52 KB)
+2026-05-10 05:56:05,234 [INFO]   Backup original 2: img_02.webp  (94 KB)
+2026-05-10 05:56:05,238 [INFO]     [bg check esquinas] 1600/1600 px blancos (100%)
+2026-05-10 05:56:05,238 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:05,291 [INFO]     [bg check esquinas] 828/1600 px blancos (52%)
+2026-05-10 05:56:05,291 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:06,601 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:56:09,215 [INFO]   Imagen 1/2 subida -> applaws_15509634580867_1.webp
+2026-05-10 05:56:12,951 [INFO]   Imagen 2/2 subida -> applaws_15509634580867_2.webp
+2026-05-10 05:56:13,451 [INFO]   Producto completado
+2026-05-10 05:56:14,451 [INFO] 
+[72/80] APPLAWS DOG LATA TOPPER POLLO HIGA TERN VERD CALDO 12X156GR  (ID: 15509634613635)
+2026-05-10 05:56:14,732 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:14,928 [INFO]   Descargada: 71gIpIggSWL._AC_SX679.jpg
+2026-05-10 05:56:15,131 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo-higado-y-verduras.webp
+2026-05-10 05:56:15,131 [INFO]   Backup original 1: img_01.jpg  (45 KB)
+2026-05-10 05:56:15,132 [INFO]   Backup original 2: img_02.webp  (101 KB)
+2026-05-10 05:56:15,134 [INFO]     [bg check esquinas] 400/400 px blancos (100%)
+2026-05-10 05:56:15,134 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:15,167 [INFO]     [bg check esquinas] 828/1600 px blancos (52%)
+2026-05-10 05:56:15,167 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:16,469 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:56:19,543 [INFO]   Imagen 1/2 subida -> applaws_15509634613635_1.webp
+2026-05-10 05:56:23,297 [INFO]   Imagen 2/2 subida -> applaws_15509634613635_2.webp
+2026-05-10 05:56:23,797 [INFO]   Producto completado
+2026-05-10 05:56:24,798 [INFO] 
+[73/80] APPLAWS DOG LATA TOPPER POLLO JAMON VERDRS CALDO 12X156GR  (ID: 15509634679171)
+2026-05-10 05:56:25,077 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:25,308 [INFO]   Descargada: 71iVwRYqmdL._AC_SX679.jpg
+2026-05-10 05:56:25,530 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo-jamon-y-verduras.webp
+2026-05-10 05:56:25,531 [INFO]   Backup original 1: img_01.jpg  (51 KB)
+2026-05-10 05:56:25,531 [INFO]   Backup original 2: img_02.webp  (101 KB)
+2026-05-10 05:56:25,533 [INFO]     [bg check esquinas] 400/400 px blancos (100%)
+2026-05-10 05:56:25,533 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:25,566 [INFO]     [bg check esquinas] 828/1600 px blancos (52%)
+2026-05-10 05:56:25,566 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:26,861 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:56:29,969 [INFO]   Imagen 1/2 subida -> applaws_15509634679171_1.webp
+2026-05-10 05:56:33,671 [INFO]   Imagen 2/2 subida -> applaws_15509634679171_2.webp
+2026-05-10 05:56:34,171 [INFO]   Producto completado
+2026-05-10 05:56:35,172 [INFO] 
+[74/80] APPLAWS DOG LATA TOPPER POLLO SALMON VERDRS CALDO 12X156GR  (ID: 15509634744707)
+2026-05-10 05:56:35,469 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:36,234 [INFO]   Descargada: applaws_15509634744707_1.webp
+2026-05-10 05:56:36,970 [INFO]   Descargada: applaws_15509634744707_2.webp
+2026-05-10 05:56:36,970 [INFO]   Backup original 1: img_01.webp  (173 KB)
+2026-05-10 05:56:36,970 [INFO]   Backup original 2: img_02.webp  (272 KB)
+2026-05-10 05:56:36,989 [INFO]     [bg check esquinas] 10000/10000 px blancos (100%)
+2026-05-10 05:56:36,989 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:37,087 [INFO]     [bg check esquinas] 5198/10000 px blancos (52%)
+2026-05-10 05:56:37,088 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:38,268 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:56:40,924 [INFO]   Imagen 1/2 subida -> applaws_15509634744707_1.webp
+2026-05-10 05:56:44,632 [INFO]   Imagen 2/2 subida -> applaws_15509634744707_2.webp
+2026-05-10 05:56:45,132 [INFO]   Producto completado
+2026-05-10 05:56:46,132 [INFO] 
+[75/80] APPLAWS DOG LATA TOPPER POLLO VERDURAS EN CALDO 12X156GR  (ID: 15509634777475)
+2026-05-10 05:56:46,419 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:46,623 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo-y-verduras.webp
+2026-05-10 05:56:47,088 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo-y-verduras_acba8416-01c9-4038-9eee-25cb956a22b5.webp
+2026-05-10 05:56:47,089 [INFO]   Backup original 1: img_01.webp  (55 KB)
+2026-05-10 05:56:47,089 [INFO]   Backup original 2: img_02.webp  (101 KB)
+2026-05-10 05:56:47,093 [INFO]     [bg check esquinas] 1600/1600 px blancos (100%)
+2026-05-10 05:56:47,093 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:47,146 [INFO]     [bg check esquinas] 828/1600 px blancos (52%)
+2026-05-10 05:56:47,146 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:48,467 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:56:51,069 [INFO]   Imagen 1/2 subida -> applaws_15509634777475_1.webp
+2026-05-10 05:56:54,733 [INFO]   Imagen 2/2 subida -> applaws_15509634777475_2.webp
+2026-05-10 05:56:55,233 [INFO]   Producto completado
+2026-05-10 05:56:56,233 [INFO] 
+[76/80] APPLAWS DOG LATA TOPPER POLLO Y CORDERO EN SALSA 12X156GR  (ID: 15509634843011)
+2026-05-10 05:56:56,509 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:56:56,721 [INFO]   Descargada: APPTT3413REA.webp
+2026-05-10 05:56:56,960 [INFO]   Descargada: applaws-taste-toppers-latas-en-salsa-para-perros-con-pollo-y-cordero.webp
+2026-05-10 05:56:56,961 [INFO]   Backup original 1: img_01.webp  (42 KB)
+2026-05-10 05:56:56,961 [INFO]   Backup original 2: img_02.webp  (120 KB)
+2026-05-10 05:56:56,964 [INFO]     [bg check esquinas] 1296/1296 px blancos (100%)
+2026-05-10 05:56:56,964 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:56:57,017 [INFO]     [bg check esquinas] 0/1600 px blancos (0%)
+2026-05-10 05:56:57,018 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:56:58,354 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:57:00,878 [INFO]   Imagen 1/2 subida -> applaws_15509634843011_1.webp
+2026-05-10 05:57:04,963 [INFO]   Imagen 2/2 subida -> applaws_15509634843011_2.webp
+2026-05-10 05:57:05,463 [INFO]   Producto completado
+2026-05-10 05:57:06,463 [INFO] 
+[77/80] APPLAWS DOG LATA TOPPER POLLO Y PATO EN SALSA 12X156GR  (ID: 15509634875779)
+2026-05-10 05:57:06,743 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:57:06,942 [INFO]   Descargada: 3411UK.webp
+2026-05-10 05:57:07,138 [INFO]   Descargada: applaws-taste-toppers-latas-en-salsa-para-perros-con-pollo-y-pato.webp
+2026-05-10 05:57:07,139 [INFO]   Backup original 1: img_01.webp  (78 KB)
+2026-05-10 05:57:07,139 [INFO]   Backup original 2: img_02.webp  (102 KB)
+2026-05-10 05:57:07,145 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:57:07,145 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:07,203 [INFO]     [bg check esquinas] 0/1600 px blancos (0%)
+2026-05-10 05:57:07,203 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:08,571 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:57:11,176 [INFO]   Imagen 1/2 subida -> applaws_15509634875779_1.webp
+2026-05-10 05:57:15,025 [INFO]   Imagen 2/2 subida -> applaws_15509634875779_2.webp
+2026-05-10 05:57:15,525 [INFO]   Producto completado
+2026-05-10 05:57:16,525 [INFO] 
+[78/80] APPLAWS DOG LATA TOPPER POLLO Y TERNERA EN SALSA 12X156GR  (ID: 15509634908547)
+2026-05-10 05:57:16,803 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:57:17,090 [INFO]   Descargada: 3412UK.webp
+2026-05-10 05:57:17,307 [INFO]   Descargada: applaws-taste-toppers-latas-en-salsa-para-perros-con-pollo-y-ternera_f537cee9-81f3-4442-ac53-ae926765edf9.webp
+2026-05-10 05:57:17,307 [INFO]   Backup original 1: img_01.webp  (80 KB)
+2026-05-10 05:57:17,307 [INFO]   Backup original 2: img_02.webp  (117 KB)
+2026-05-10 05:57:17,314 [INFO]     [bg check esquinas] 2500/2500 px blancos (100%)
+2026-05-10 05:57:17,314 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:17,373 [INFO]     [bg check esquinas] 0/1600 px blancos (0%)
+2026-05-10 05:57:17,373 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:18,750 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:57:21,375 [INFO]   Imagen 1/2 subida -> applaws_15509634908547_1.webp
+2026-05-10 05:57:25,510 [INFO]   Imagen 2/2 subida -> applaws_15509634908547_2.webp
+2026-05-10 05:57:26,010 [INFO]   Producto completado
+2026-05-10 05:57:27,011 [INFO] 
+[79/80] APPLAWS KITTEN SOBRE PECHUGA DE POLLO EN CALDO 12X50GR  (ID: 15509635006851)
+2026-05-10 05:57:27,285 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:57:27,521 [INFO]   Descargada: 71G0YmfAIxL._AC_SL1500.jpg
+2026-05-10 05:57:27,745 [INFO]   Descargada: 71U4YknpEqL._AC_SL1500.jpg
+2026-05-10 05:57:27,936 [INFO]   Descargada: 710shtIbqRL._AC_SL1500.jpg
+2026-05-10 05:57:28,152 [INFO]   Descargada: 714VKilTltL._AC_SL1500.jpg
+2026-05-10 05:57:28,153 [INFO]   Backup original 1: img_01.jpg  (77 KB)
+2026-05-10 05:57:28,153 [INFO]   Backup original 2: img_02.jpg  (105 KB)
+2026-05-10 05:57:28,153 [INFO]   Backup original 3: img_03.jpg  (124 KB)
+2026-05-10 05:57:28,153 [INFO]   Backup original 4: img_04.jpg  (95 KB)
+2026-05-10 05:57:28,160 [INFO]     [bg check esquinas] 1812/2304 px blancos (79%)
+2026-05-10 05:57:28,160 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:28,210 [INFO]     [bg check esquinas] 3277/4096 px blancos (80%)
+2026-05-10 05:57:28,210 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:28,275 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:57:28,275 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:28,360 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:57:28,361 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:30,874 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:57:33,521 [INFO]   Imagen 1/4 subida -> applaws_15509635006851_1.webp
+2026-05-10 05:57:36,830 [INFO]   Imagen 2/4 subida -> applaws_15509635006851_2.webp
+2026-05-10 05:57:40,394 [INFO]   Imagen 3/4 subida -> applaws_15509635006851_3.webp
+2026-05-10 05:57:43,673 [INFO]   Imagen 4/4 subida -> applaws_15509635006851_4.webp
+2026-05-10 05:57:44,173 [INFO]   Producto completado
+2026-05-10 05:57:45,174 [INFO] 
+[80/80] APPLAWS KITTEN SOBRE  FILETE DE ATUN EN CALDO 12X50GR  (ID: 15509635039619)
+2026-05-10 05:57:45,469 [INFO]   4 imagen(es) - descargando originales...
+2026-05-10 05:57:45,692 [INFO]   Descargada: APP8043MLA.webp
+2026-05-10 05:57:45,913 [INFO]   Descargada: 71SgROrNqRL._AC_SL1500.webp
+2026-05-10 05:57:46,129 [INFO]   Descargada: 81rx7jBZ5aL._AC_SL1500.jpg
+2026-05-10 05:57:46,330 [INFO]   Descargada: 81OjJC2RAkL._AC_SL1500.jpg
+2026-05-10 05:57:46,330 [INFO]   Backup original 1: img_01.webp  (49 KB)
+2026-05-10 05:57:46,330 [INFO]   Backup original 2: img_02.webp  (194 KB)
+2026-05-10 05:57:46,330 [INFO]   Backup original 3: img_03.jpg  (161 KB)
+2026-05-10 05:57:46,331 [INFO]   Backup original 4: img_04.jpg  (148 KB)
+2026-05-10 05:57:46,335 [INFO]     [bg check esquinas] 1600/1600 px blancos (100%)
+2026-05-10 05:57:46,335 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:46,398 [INFO]     [bg check esquinas] 3070/3844 px blancos (80%)
+2026-05-10 05:57:46,398 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:57:46,465 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:57:46,465 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:46,553 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:57:46,553 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:57:49,052 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:57:51,545 [INFO]   Imagen 1/4 subida -> applaws_15509635039619_1.webp
+2026-05-10 05:57:55,021 [INFO]   Imagen 2/4 subida -> applaws_15509635039619_2.webp
+2026-05-10 05:57:58,673 [INFO]   Imagen 3/4 subida -> applaws_15509635039619_3.webp
+2026-05-10 05:58:02,431 [INFO]   Imagen 4/4 subida -> applaws_15509635039619_4.webp
+2026-05-10 05:58:02,931 [INFO]   Producto completado
+2026-05-10 05:58:03,932 [INFO] 
+============================================================
+2026-05-10 05:58:03,932 [INFO] RESUMEN FINAL
+2026-05-10 05:58:03,932 [INFO] ============================================================
+2026-05-10 05:58:03,932 [INFO]   Productos procesados  : 80
+2026-05-10 05:58:03,932 [INFO]   Imagenes actualizadas : 65
+2026-05-10 05:58:03,932 [INFO]   Sin imagen en Shopify : 15
+2026-05-10 05:58:03,932 [INFO]   Errores               : 0
+2026-05-10 05:58:03,932 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:58:03,932 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:58:03,932 [INFO]   Log completo          -> applaws_images.log
