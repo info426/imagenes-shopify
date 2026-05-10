@@ -47,8 +47,8 @@ WEBP_QUALITY   = 90
 OUTPUT_DIR     = Path("imagenes_applaws")
 ORIGINALS_DIR  = Path("resultados/originals_applaws")
 PADDING        = 0.05
-WHITE_THRESH   = 245
-WHITE_MIN_FRAC = 0.75
+WHITE_THRESH   = 245   # un píxel es "blanco" si todos sus canales >= este valor
+WHITE_MIN_FRAC = 0.85  # el 85% del perímetro debe ser blanco para aplicar padding
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -141,11 +141,6 @@ class ShopifyAPI:
 # --- Backup de originales ----------------------------------------------------
 
 def save_originals(pid: int, images_bytes: list[tuple[bytes, str]]) -> Path:
-    """
-    Guarda los bytes originales de cada imagen en
-    resultados/originals_applaws/PRODUCTID/img_NN.ext
-    Retorna el directorio creado.
-    """
     folder = ORIGINALS_DIR / str(pid)
     folder.mkdir(parents=True, exist_ok=True)
     for i, (raw, ext) in enumerate(images_bytes, 1):
@@ -156,15 +151,9 @@ def save_originals(pid: int, images_bytes: list[tuple[bytes, str]]) -> Path:
 
 
 def load_originals(pid: int) -> list[tuple[bytes, str]] | None:
-    """
-    Carga los originales guardados para este producto.
-    Retorna None si no existe el backup.
-    """
     folder = ORIGINALS_DIR / str(pid)
     if not folder.exists():
         return None
-    files = sorted(folder.glob("img_*.* "))
-    # glob con espacio no funciona, hacerlo bien:
     files = sorted(f for f in folder.iterdir() if f.name.startswith("img_"))
     if not files:
         return None
@@ -179,20 +168,41 @@ def _has_transparency(img: Image.Image) -> bool:
 
 def _is_white_background(img: Image.Image) -> bool:
     """
-    Muestrea esquinas y bordes para detectar si el fondo es blanco.
-    Retorna True si al menos WHITE_MIN_FRAC de los puntos son >= WHITE_THRESH.
+    Muestrea una banda perimetral del 2% del tamaño de la imagen
+    (mínimo 10 px) a lo largo de los cuatro bordes.
+    Si el 85% o más de esos píxeles son blancos (>= WHITE_THRESH
+    en los tres canales), se considera fondo blanco.
+    Esta técnica es mucho más robusta que muestrear solo 8 puntos
+    porque detecta correctamente ilustraciones que tienen esquinas
+    o franjas claras incidentales.
     """
     rgb = img.convert("RGB")
     w, h = rgb.size
-    samples = [
-        (0, 0),      (w - 1, 0),      (0, h - 1),    (w - 1, h - 1),
-        (w // 2, 0), (w // 2, h - 1), (0, h // 2),   (w - 1, h // 2),
-    ]
-    white = sum(
-        1 for x, y in samples
-        if all(c >= WHITE_THRESH for c in rgb.getpixel((x, y)))
-    )
-    return white / len(samples) >= WHITE_MIN_FRAC
+    band = max(10, int(min(w, h) * 0.02))
+
+    total = 0
+    white = 0
+
+    # Paso de muestreo: cada 4 px para no ser demasiado lento en imágenes grandes
+    step = 4
+
+    # Banda superior e inferior
+    for x in range(0, w, step):
+        for y in list(range(0, band)) + list(range(h - band, h)):
+            r, g, b = rgb.getpixel((x, y))
+            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
+            total += 1
+
+    # Banda izquierda y derecha (sin esquinas ya contadas)
+    for y in range(band, h - band, step):
+        for x in list(range(0, band)) + list(range(w - band, w)):
+            r, g, b = rgb.getpixel((x, y))
+            white += int(r >= WHITE_THRESH and g >= WHITE_THRESH and b >= WHITE_THRESH)
+            total += 1
+
+    ratio = white / total if total > 0 else 0.0
+    log.info(f"    [bg check] {white}/{total} px blancos ({ratio:.0%})")
+    return ratio >= WHITE_MIN_FRAC
 
 
 def process_image(img: Image.Image) -> Image.Image:
@@ -265,7 +275,7 @@ def main():
     parser.add_argument("--only-ids", type=str, default=None,
                         help="Lista de IDs separados por coma (ej: 123,456)")
     parser.add_argument("--from-originals", action="store_true",
-                        help="Re-procesar desde el backup de originales guardado en resultados/originals_applaws/")
+                        help="Re-procesar desde el backup guardado en resultados/originals_applaws/")
     args = parser.parse_args()
 
     if not CLIENT_ID or not CLIENT_SECRET:
@@ -282,7 +292,7 @@ def main():
     log.info(f"Tienda  : {SHOP_DOMAIN}")
     log.info(f"Vendor  : {VENDOR}")
     log.info(f"Formato : WebP calidad {WEBP_QUALITY}, 2000x2000")
-    log.info(f"Padding : {int(PADDING*100)}% solo en imagenes con fondo blanco")
+    log.info(f"Padding : {int(PADDING*100)}% solo en imagenes con fondo blanco (umbral {int(WHITE_MIN_FRAC*100)}%)")
     if args.from_originals:
         log.info("Modo    : --from-originals (re-procesando desde backup local)")
 
@@ -320,45 +330,36 @@ def main():
 
         try:
             if args.from_originals:
-                # ---- Re-procesar desde backup local -------------------------
                 originals = load_originals(pid)
                 if not originals:
-                    log.error(f"  No hay backup de originales en {ORIGINALS_DIR / str(pid)} - saltando")
+                    log.error(f"  No hay backup en {ORIGINALS_DIR / str(pid)} - saltando")
                     stats["errores"] += 1
                     continue
                 log.info(f"  Cargando {len(originals)} original(es) desde backup local")
-                images_raw = originals
-                shopify_images = api.get_images(pid)  # para borrar las actuales
-
+                images_raw     = originals
+                shopify_images = api.get_images(pid)
             else:
-                # ---- Descarga desde Shopify ---------------------------------
                 shopify_images = api.get_images(pid)
                 if not shopify_images:
                     log.warning("  Sin imagenes en Shopify - saltando")
                     stats["sin_imagen"] += 1
                     continue
 
-                log.info(f"  {len(shopify_images)} imagen(es) en Shopify - descargando originales...")
+                log.info(f"  {len(shopify_images)} imagen(es) - descargando originales...")
                 images_raw = []
                 for img_data in shopify_images:
                     raw, ext = fetch_image_raw(img_data["src"])
                     images_raw.append((raw, ext))
                     log.info(f"  Descargada: {img_data['src'].split('/')[-1].split('?')[0]}")
 
-                # Guardar backup ANTES de borrar de Shopify
                 save_originals(pid, images_raw)
 
-            # ---- Procesar ---------------------------------------------------
             processed_images = []
             for j, (raw, _) in enumerate(images_raw):
                 try:
                     img       = image_from_bytes(raw)
                     processed = process_image(img)
-                    alt = ""
-                    if not args.from_originals and j < len(shopify_images):
-                        alt = shopify_images[j].get("alt") or title
-                    else:
-                        alt = title
+                    alt = shopify_images[j].get("alt") or title if j < len(shopify_images) else title
                     processed_images.append({"processed": processed, "alt": alt})
                 except Exception as exc:
                     log.warning(f"  No se pudo procesar imagen {j+1}: {exc}")
@@ -368,13 +369,11 @@ def main():
                 stats["errores"] += 1
                 continue
 
-            # ---- Borrar imagenes actuales de Shopify ------------------------
             for img_data in shopify_images:
                 api.delete_image(pid, img_data["id"])
                 time.sleep(0.2)
             log.info(f"  {len(shopify_images)} imagen(es) antigua(s) eliminada(s)")
 
-            # ---- Subir imagenes procesadas en WebP --------------------------
             for pos, item in enumerate(processed_images, 1):
                 b64   = to_b64_webp(item["processed"])
                 fname = f"applaws_{pid}_{pos}.webp"
@@ -387,7 +386,7 @@ def main():
                 time.sleep(0.5)
 
             stats["actualizadas"] += 1
-            log.info(f"  Producto completado")
+            log.info("  Producto completado")
 
         except Exception as exc:
             log.error(f"  ERROR: {exc}")
