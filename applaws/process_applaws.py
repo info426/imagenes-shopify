@@ -35,7 +35,7 @@ import argparse
 import requests
 from pathlib import Path
 from io import BytesIO
-from PIL import Image
+from PIL import Image, ImageFilter
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -165,17 +165,27 @@ def load_originals(pid: int) -> list[tuple[bytes, str]] | None:
 # --- Procesamiento de imagenes -----------------------------------------------
 
 def _composite_on_white(img: Image.Image) -> Image.Image:
-    """
-    Devuelve una imagen RGB con fondo blanco.
-    Si la imagen tiene canal alpha, los píxeles transparentes se rellenan
-    con blanco antes de devolver. Si ya es RGB, se convierte directamente.
-    """
+    """Devuelve RGB compuesto sobre blanco (para imágenes sin alpha)."""
     if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
         rgba = img.convert("RGBA")
         bg = Image.new("RGB", rgba.size, (255, 255, 255))
         bg.paste(rgba.convert("RGB"), mask=rgba.split()[3])
         return bg
     return img.convert("RGB")
+
+
+def _fill_transparent_with_blur(img_rgba: Image.Image) -> Image.Image:
+    """
+    Rellena las áreas transparentes (ej.: esquinas redondeadas) con el color
+    de los bordes adyacentes, usando desenfoque gaussiano. Evita esquinas
+    blancas visibles en banners/ilustraciones con bordes redondeados.
+    """
+    alpha = img_rgba.split()[3]
+    rgb = img_rgba.convert("RGB")
+    blurred = rgb.filter(ImageFilter.GaussianBlur(radius=40))
+    result = blurred.copy()
+    result.paste(rgb, (0, 0), mask=alpha)
+    return result
 
 
 def _is_white_background(img_rgb: Image.Image) -> bool:
@@ -219,10 +229,14 @@ def process_image(img: Image.Image) -> Image.Image:
     que canales alpha decorativos (bordes redondeados, sombras, etc.) hagan
     saltar el padding en ilustraciones con fondo de color.
     """
-    # Compositar sobre blanco para eliminar transparencia
-    composited = _composite_on_white(img)
+    # Para RGBA: usar blur-fill para no crear esquinas blancas en bordes redondeados
+    has_alpha = (img.mode in ("RGBA", "LA") or
+                 (img.mode == "P" and "transparency" in img.info))
+    if has_alpha:
+        composited = _fill_transparent_with_blur(img.convert("RGBA"))
+    else:
+        composited = _composite_on_white(img)
 
-    # Decidir padding basandose en el fondo de la imagen compuesta
     use_padding = _is_white_background(composited)
     label = "fondo blanco -> padding 5%" if use_padding else "ilustracion -> sin padding"
     log.info(f"    [{label}]")
