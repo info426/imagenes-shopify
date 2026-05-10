@@ -1,50 +1,59 @@
-2026-05-10 04:01:14,580 [INFO] ============================================================
-2026-05-10 04:01:14,580 [INFO] PROCESADOR APPLAWS - SHOPIFY
-2026-05-10 04:01:14,580 [INFO] ============================================================
-2026-05-10 04:01:14,580 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
-2026-05-10 04:01:14,580 [INFO] Vendor  : Applaws
-2026-05-10 04:01:14,580 [INFO] Formato : WebP calidad 90, 2000x2000
-2026-05-10 04:01:14,580 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 85%)
-2026-05-10 04:01:14,580 [INFO] Modo    : --from-originals (re-procesando desde backup local)
-2026-05-10 04:01:14,945 [INFO] Access token obtenido
-2026-05-10 04:01:14,946 [INFO] Modo prueba - producto ID: 15509631697283
-2026-05-10 04:01:15,203 [INFO] 
+2026-05-10 04:48:11,508 [INFO] ============================================================
+2026-05-10 04:48:11,508 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 04:48:11,508 [INFO] ============================================================
+2026-05-10 04:48:11,508 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 04:48:11,508 [INFO] Vendor  : Applaws
+2026-05-10 04:48:11,508 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 04:48:11,508 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 85%)
+2026-05-10 04:48:11,508 [INFO] Modo    : --from-originals (re-procesando desde backup local)
+2026-05-10 04:48:11,861 [INFO] Access token obtenido
+2026-05-10 04:48:11,862 [INFO] Modo prueba - producto ID: 15509631697283
+2026-05-10 04:48:12,098 [INFO] 
 [1/1] APPLAWS CAT LATA PESCADO  (ID: 15509631697283)
-2026-05-10 04:01:15,205 [INFO]   Cargando 8 original(es) desde backup local
-2026-05-10 04:01:15,539 [INFO]     [bg check] 78400/78400 px blancos (100%)
-2026-05-10 04:01:15,539 [INFO]     [fondo blanco -> padding 5%]
-2026-05-10 04:01:15,707 [INFO]     [bg check] 78400/78400 px blancos (100%)
-2026-05-10 04:01:15,707 [INFO]     [fondo blanco -> padding 5%]
-2026-05-10 04:01:15,874 [INFO]     [bg check] 78400/78400 px blancos (100%)
-2026-05-10 04:01:15,874 [INFO]     [fondo blanco -> padding 5%]
-2026-05-10 04:01:15,987 [INFO]     [bg check] 7908/12544 px blancos (63%)
-2026-05-10 04:01:15,987 [INFO]     [ilustracion -> sin padding]
-2026-05-10 04:01:16,096 [INFO]     [bg check] 0/44100 px blancos (0%)
-2026-05-10 04:01:16,096 [INFO]     [ilustracion -> sin padding]
-2026-05-10 04:01:16,227 [INFO]     [bg check] 0/44100 px blancos (0%)
-2026-05-10 04:01:16,228 [INFO]     [ilustracion -> sin padding]
-2026-05-10 04:01:16,356 [INFO]     [bg check] 0/44100 px blancos (0%)
-2026-05-10 04:01:16,356 [INFO]     [ilustracion -> sin padding]
-2026-05-10 04:01:16,515 [INFO]     [bg check] 78400/78400 px blancos (100%)
-2026-05-10 04:01:16,515 [INFO]     [fondo blanco -> padding 5%]
-2026-05-10 04:01:21,599 [INFO]   8 imagen(es) antigua(s) eliminada(s)
-2026-05-10 04:01:24,391 [INFO]   Imagen 1/8 subida -> applaws_15509631697283_1.webp
-2026-05-10 04:01:27,634 [INFO]   Imagen 2/8 subida -> applaws_15509631697283_2.webp
-2026-05-10 04:01:31,196 [INFO]   Imagen 3/8 subida -> applaws_15509631697283_3.webp
-2026-05-10 04:01:35,621 [INFO]   Imagen 4/8 subida -> applaws_15509631697283_4.webp
-2026-05-10 04:01:39,543 [INFO]   Imagen 5/8 subida -> applaws_15509631697283_5.webp
-2026-05-10 04:01:43,291 [INFO]   Imagen 6/8 subida -> applaws_15509631697283_6.webp
-2026-05-10 04:01:46,680 [INFO]   Imagen 7/8 subida -> applaws_15509631697283_7.webp
-2026-05-10 04:01:50,040 [INFO]   Imagen 8/8 subida -> applaws_15509631697283_8.webp
-2026-05-10 04:01:50,540 [INFO]   Producto completado
-2026-05-10 04:01:51,540 [INFO] 
+2026-05-10 04:48:12,100 [INFO]   Cargando 11 original(es) desde backup local
+2026-05-10 04:48:12,442 [INFO]     [bg check] 78400/78400 px blancos (100%)
+2026-05-10 04:48:12,442 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 04:48:12,611 [INFO]     [bg check] 78400/78400 px blancos (100%)
+2026-05-10 04:48:12,611 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 04:48:12,778 [INFO]     [bg check] 78400/78400 px blancos (100%)
+2026-05-10 04:48:12,778 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 04:48:12,943 [INFO]     [bg check] 48632/78400 px blancos (62%)
+2026-05-10 04:48:12,943 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:12,997 [INFO]     [bg check] 0/44100 px blancos (0%)
+2026-05-10 04:48:12,997 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:13,159 [INFO]     [bg check] 0/78400 px blancos (0%)
+2026-05-10 04:48:13,159 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:13,210 [INFO]     [bg check] 0/44100 px blancos (0%)
+2026-05-10 04:48:13,211 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:13,376 [INFO]     [bg check] 0/78400 px blancos (0%)
+2026-05-10 04:48:13,376 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:13,428 [INFO]     [bg check] 0/44100 px blancos (0%)
+2026-05-10 04:48:13,428 [INFO]     [ilustracion -> sin padding]
+2026-05-10 04:48:13,589 [INFO]     [bg check] 78400/78400 px blancos (100%)
+2026-05-10 04:48:13,589 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 04:48:13,752 [INFO]     [bg check] 78400/78400 px blancos (100%)
+2026-05-10 04:48:13,752 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 04:48:18,186 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 04:48:20,917 [INFO]   Imagen 1/11 subida -> applaws_15509631697283_1.webp
+2026-05-10 04:48:24,072 [INFO]   Imagen 2/11 subida -> applaws_15509631697283_2.webp
+2026-05-10 04:48:27,490 [INFO]   Imagen 3/11 subida -> applaws_15509631697283_3.webp
+2026-05-10 04:48:31,212 [INFO]   Imagen 4/11 subida -> applaws_15509631697283_4.webp
+2026-05-10 04:48:34,914 [INFO]   Imagen 5/11 subida -> applaws_15509631697283_5.webp
+2026-05-10 04:48:38,722 [INFO]   Imagen 6/11 subida -> applaws_15509631697283_6.webp
+2026-05-10 04:48:42,390 [INFO]   Imagen 7/11 subida -> applaws_15509631697283_7.webp
+2026-05-10 04:48:46,314 [INFO]   Imagen 8/11 subida -> applaws_15509631697283_8.webp
+2026-05-10 04:48:49,627 [INFO]   Imagen 9/11 subida -> applaws_15509631697283_9.webp
+2026-05-10 04:48:53,134 [INFO]   Imagen 10/11 subida -> applaws_15509631697283_10.webp
+2026-05-10 04:48:56,272 [INFO]   Imagen 11/11 subida -> applaws_15509631697283_11.webp
+2026-05-10 04:48:56,772 [INFO]   Producto completado
+2026-05-10 04:48:57,772 [INFO] 
 ============================================================
-2026-05-10 04:01:51,541 [INFO] RESUMEN FINAL
-2026-05-10 04:01:51,541 [INFO] ============================================================
-2026-05-10 04:01:51,541 [INFO]   Productos procesados  : 1
-2026-05-10 04:01:51,541 [INFO]   Imagenes actualizadas : 1
-2026-05-10 04:01:51,541 [INFO]   Sin imagen en Shopify : 0
-2026-05-10 04:01:51,541 [INFO]   Errores               : 0
-2026-05-10 04:01:51,541 [INFO]   Copias locales        -> imagenes_applaws/
-2026-05-10 04:01:51,541 [INFO]   Originales backup     -> resultados/originals_applaws/
-2026-05-10 04:01:51,541 [INFO]   Log completo          -> applaws_images.log
+2026-05-10 04:48:57,772 [INFO] RESUMEN FINAL
+2026-05-10 04:48:57,772 [INFO] ============================================================
+2026-05-10 04:48:57,773 [INFO]   Productos procesados  : 1
+2026-05-10 04:48:57,773 [INFO]   Imagenes actualizadas : 1
+2026-05-10 04:48:57,773 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 04:48:57,773 [INFO]   Errores               : 0
+2026-05-10 04:48:57,773 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 04:48:57,773 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 04:48:57,773 [INFO]   Log completo          -> applaws_images.log
