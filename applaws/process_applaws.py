@@ -7,11 +7,10 @@ El script descarga cada imagen, la procesa (2000x2000 WebP,
 fondo blanco) y la re-sube reemplazando la original.
 
 Regla de padding:
-  - Fondo blanco (>=85% de las esquinas blancas) -> 5% padding
+  - Fondo blanco (>=60% de esquinas blancas) -> 5% padding
   - Ilustraciones / fondo de color -> sin padding, rellena 2000x2000
-  La detección se hace SIEMPRE sobre la imagen compuesta sobre blanco, lo que
-  evita que imágenes con canal alpha decorativo (bordes redondeados, etc.) sean
-  clasificadas erróneamente como producto sobre fondo blanco.
+  La detección usa parches del 5% en las 4 esquinas. Las fotos de
+  producto tienen esquinas blancas (70-100%); las ilustraciones, 0%.
 
 Backup automático:
   Antes de borrar las imágenes de Shopify, el script guarda los
@@ -51,7 +50,7 @@ OUTPUT_DIR     = Path("imagenes_applaws")
 ORIGINALS_DIR  = Path("resultados/originals_applaws")
 PADDING        = 0.05
 WHITE_THRESH   = 245   # un píxel es "blanco" si todos sus canales >= este valor
-WHITE_MIN_FRAC = 0.85  # fraccion minima de esquinas blancas para aplicar padding
+WHITE_MIN_FRAC = 0.60  # fotos producto: 70-100%; ilustraciones: 0% -> umbral 60%
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -191,10 +190,9 @@ def _fill_transparent_with_blur(img_rgba: Image.Image) -> Image.Image:
 def _is_white_background(img_rgb: Image.Image) -> bool:
     """
     Comprueba las 4 esquinas de la imagen (parche del 5% del lado menor).
-    Las fotos de producto en fondo blanco siempre tienen esquinas blancas,
-    aunque el producto llegue a los bordes del frame. Las ilustraciones y
-    fondos de color tienen esquinas coloreadas.
-    Retorna True si >= WHITE_MIN_FRAC de los píxeles muestreados son blancos.
+    Las fotos de producto en fondo blanco tienen esquinas blancas (70-100%)
+    aunque el producto llegue a los bordes. Las ilustraciones tienen 0%.
+    Umbral: 60%, que crea separación clara entre ambos tipos.
     """
     w, h = img_rgb.size
     patch = max(20, int(min(w, h) * 0.05))
@@ -203,10 +201,10 @@ def _is_white_background(img_rgb: Image.Image) -> bool:
     white = 0
 
     corners = [
-        (0,         0,         patch,     patch),      # top-left
-        (w - patch, 0,         w,         patch),      # top-right
-        (0,         h - patch, patch,     h),          # bottom-left
-        (w - patch, h - patch, w,         h),          # bottom-right
+        (0,         0,         patch,     patch),
+        (w - patch, 0,         w,         patch),
+        (0,         h - patch, patch,     h),
+        (w - patch, h - patch, w,         h),
     ]
     for x1, y1, x2, y2 in corners:
         for x in range(x1, x2, step):
@@ -223,7 +221,7 @@ def _is_white_background(img_rgb: Image.Image) -> bool:
 def process_image(img: Image.Image) -> Image.Image:
     """
     Redimensiona a 2000x2000 con fondo blanco.
-    - Fondo blanco (>=85% esquinas blancas): aplica 5% de padding en cada lado.
+    - Fondo blanco (>=60% esquinas blancas): aplica 5% de padding en cada lado.
     - Ilustraciones / fondo de color: rellena los 2000x2000 sin margen.
     """
     has_alpha = (img.mode in ("RGBA", "LA") or
