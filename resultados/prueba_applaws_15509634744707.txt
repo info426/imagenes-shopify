@@ -1,0 +1,35 @@
+2026-05-10 05:30:53,921 [INFO] ============================================================
+2026-05-10 05:30:53,921 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:30:53,922 [INFO] ============================================================
+2026-05-10 05:30:53,922 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:30:53,922 [INFO] Vendor  : Applaws
+2026-05-10 05:30:53,922 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:30:53,922 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:30:54,449 [INFO] Access token obtenido
+2026-05-10 05:30:54,450 [INFO] Modo prueba - producto ID: 15509634744707
+2026-05-10 05:30:54,748 [INFO] 
+[1/1] APPLAWS DOG LATA TOPPER POLLO SALMON VERDRS CALDO 12X156GR  (ID: 15509634744707)
+2026-05-10 05:30:55,058 [INFO]   2 imagen(es) - descargando originales...
+2026-05-10 05:30:55,169 [INFO]   Descargada: 51S2dyQhOnL._AC_SX679.jpg
+2026-05-10 05:30:55,278 [INFO]   Descargada: applaws-taste-toppers-latas-en-caldo-para-perros-con-pollo-salmon-y-verduras.webp
+2026-05-10 05:30:55,279 [INFO]   Backup original 1: img_01.jpg  (36 KB)
+2026-05-10 05:30:55,279 [INFO]   Backup original 2: img_02.webp  (101 KB)
+2026-05-10 05:30:55,293 [INFO]     [bg check esquinas] 400/400 px blancos (100%)
+2026-05-10 05:30:55,293 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:30:55,336 [INFO]     [bg check esquinas] 828/1600 px blancos (52%)
+2026-05-10 05:30:55,336 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:30:56,741 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:30:59,854 [INFO]   Imagen 1/2 subida -> applaws_15509634744707_1.webp
+2026-05-10 05:31:03,897 [INFO]   Imagen 2/2 subida -> applaws_15509634744707_2.webp
+2026-05-10 05:31:04,397 [INFO]   Producto completado
+2026-05-10 05:31:05,397 [INFO] 
+============================================================
+2026-05-10 05:31:05,398 [INFO] RESUMEN FINAL
+2026-05-10 05:31:05,398 [INFO] ============================================================
+2026-05-10 05:31:05,398 [INFO]   Productos procesados  : 1
+2026-05-10 05:31:05,398 [INFO]   Imagenes actualizadas : 1
+2026-05-10 05:31:05,398 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 05:31:05,398 [INFO]   Errores               : 0
+2026-05-10 05:31:05,398 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:31:05,398 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:31:05,398 [INFO]   Log completo          -> applaws_images.log
