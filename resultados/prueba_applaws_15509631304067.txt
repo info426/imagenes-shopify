@@ -1,0 +1,50 @@
+2026-05-10 05:17:37,021 [INFO] ============================================================
+2026-05-10 05:17:37,021 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:17:37,021 [INFO] ============================================================
+2026-05-10 05:17:37,021 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:17:37,021 [INFO] Vendor  : Applaws
+2026-05-10 05:17:37,021 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:17:37,021 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:17:37,423 [INFO] Access token obtenido
+2026-05-10 05:17:37,424 [INFO] Modo prueba - producto ID: 15509631304067
+2026-05-10 05:17:37,716 [INFO] 
+[1/1] APPLAWS CAT LATA KITTEN ATUN 24X70GR  (ID: 15509631304067)
+2026-05-10 05:17:38,019 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:17:38,290 [INFO]   Descargada: 716zRp7NY4L._AC_SL1500.jpg
+2026-05-10 05:17:38,515 [INFO]   Descargada: 81uT45-Cx_L._AC_SL1500.jpg
+2026-05-10 05:17:38,770 [INFO]   Descargada: 810dV1dGg3L._AC_SL1500.jpg
+2026-05-10 05:17:39,022 [INFO]   Descargada: 81TtyK1uXBL._AC_SL1500.jpg
+2026-05-10 05:17:39,237 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500_3fa57889-53bc-4af2-bb24-82d03744c055.jpg
+2026-05-10 05:17:39,238 [INFO]   Backup original 1: img_01.jpg  (86 KB)
+2026-05-10 05:17:39,238 [INFO]   Backup original 2: img_02.jpg  (180 KB)
+2026-05-10 05:17:39,238 [INFO]   Backup original 3: img_03.jpg  (149 KB)
+2026-05-10 05:17:39,238 [INFO]   Backup original 4: img_04.jpg  (153 KB)
+2026-05-10 05:17:39,238 [INFO]   Backup original 5: img_05.jpg  (100 KB)
+2026-05-10 05:17:39,267 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:17:39,267 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:17:39,335 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:17:39,335 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:17:39,437 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:17:39,437 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:17:39,535 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:17:39,535 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:17:39,629 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:17:39,629 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:17:42,926 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:17:45,927 [INFO]   Imagen 1/5 subida -> applaws_15509631304067_1.webp
+2026-05-10 05:17:50,379 [INFO]   Imagen 2/5 subida -> applaws_15509631304067_2.webp
+2026-05-10 05:17:54,394 [INFO]   Imagen 3/5 subida -> applaws_15509631304067_3.webp
+2026-05-10 05:17:58,394 [INFO]   Imagen 4/5 subida -> applaws_15509631304067_4.webp
+2026-05-10 05:18:01,719 [INFO]   Imagen 5/5 subida -> applaws_15509631304067_5.webp
+2026-05-10 05:18:02,219 [INFO]   Producto completado
+2026-05-10 05:18:03,219 [INFO] 
+============================================================
+2026-05-10 05:18:03,220 [INFO] RESUMEN FINAL
+2026-05-10 05:18:03,220 [INFO] ============================================================
+2026-05-10 05:18:03,220 [INFO]   Productos procesados  : 1
+2026-05-10 05:18:03,220 [INFO]   Imagenes actualizadas : 1
+2026-05-10 05:18:03,220 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 05:18:03,220 [INFO]   Errores               : 0
+2026-05-10 05:18:03,220 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:18:03,220 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:18:03,220 [INFO]   Log completo          -> applaws_images.log
