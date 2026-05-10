@@ -1,0 +1,50 @@
+2026-05-10 05:29:21,238 [INFO] ============================================================
+2026-05-10 05:29:21,239 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:29:21,239 [INFO] ============================================================
+2026-05-10 05:29:21,239 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:29:21,239 [INFO] Vendor  : Applaws
+2026-05-10 05:29:21,239 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:29:21,239 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:29:21,630 [INFO] Access token obtenido
+2026-05-10 05:29:21,631 [INFO] Modo prueba - producto ID: 15509633859971
+2026-05-10 05:29:21,941 [INFO] 
+[1/1] APPLAWS CAT TARRINA PECHUGA POLLO Y PATO 10X60GR  (ID: 15509633859971)
+2026-05-10 05:29:22,233 [INFO]   5 imagen(es) - descargando originales...
+2026-05-10 05:29:22,423 [INFO]   Descargada: 71gJPgrrflL._AC_SL1500.jpg
+2026-05-10 05:29:22,543 [INFO]   Descargada: 813xAYejIgL._AC_SL1500.webp
+2026-05-10 05:29:22,646 [INFO]   Descargada: 71E6GuE3bTL._AC_SL1500_18c4ddf7-1493-48d8-b295-dcd027ceed25.jpg
+2026-05-10 05:29:22,768 [INFO]   Descargada: 71JA98ft9kL._AC_SL1500.jpg
+2026-05-10 05:29:22,898 [INFO]   Descargada: 81SfdpV7oPL._AC_SL1500_4447385b-4e8e-4755-a8b0-785d45508551.jpg
+2026-05-10 05:29:22,898 [INFO]   Backup original 1: img_01.jpg  (105 KB)
+2026-05-10 05:29:22,899 [INFO]   Backup original 2: img_02.webp  (168 KB)
+2026-05-10 05:29:22,899 [INFO]   Backup original 3: img_03.jpg  (107 KB)
+2026-05-10 05:29:22,899 [INFO]   Backup original 4: img_04.jpg  (89 KB)
+2026-05-10 05:29:22,899 [INFO]   Backup original 5: img_05.jpg  (136 KB)
+2026-05-10 05:29:22,929 [INFO]     [bg check esquinas] 5476/5476 px blancos (100%)
+2026-05-10 05:29:22,929 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:29:23,015 [INFO]     [bg check esquinas] 0/3844 px blancos (0%)
+2026-05-10 05:29:23,015 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:29:23,109 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:29:23,109 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:29:23,208 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:29:23,208 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:29:23,305 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:29:23,305 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:29:26,701 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:29:29,819 [INFO]   Imagen 1/5 subida -> applaws_15509633859971_1.webp
+2026-05-10 05:29:33,619 [INFO]   Imagen 2/5 subida -> applaws_15509633859971_2.webp
+2026-05-10 05:29:37,388 [INFO]   Imagen 3/5 subida -> applaws_15509633859971_3.webp
+2026-05-10 05:29:40,743 [INFO]   Imagen 4/5 subida -> applaws_15509633859971_4.webp
+2026-05-10 05:29:44,619 [INFO]   Imagen 5/5 subida -> applaws_15509633859971_5.webp
+2026-05-10 05:29:45,119 [INFO]   Producto completado
+2026-05-10 05:29:46,119 [INFO] 
+============================================================
+2026-05-10 05:29:46,119 [INFO] RESUMEN FINAL
+2026-05-10 05:29:46,119 [INFO] ============================================================
+2026-05-10 05:29:46,119 [INFO]   Productos procesados  : 1
+2026-05-10 05:29:46,119 [INFO]   Imagenes actualizadas : 1
+2026-05-10 05:29:46,120 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 05:29:46,120 [INFO]   Errores               : 0
+2026-05-10 05:29:46,120 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:29:46,120 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:29:46,120 [INFO]   Log completo          -> applaws_images.log
