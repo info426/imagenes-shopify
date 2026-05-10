@@ -1,39 +1,57 @@
-2026-05-10 03:16:05,291 [INFO] ============================================================
-2026-05-10 03:16:05,291 [INFO] PROCESADOR APPLAWS — SHOPIFY
-2026-05-10 03:16:05,291 [INFO] ============================================================
-2026-05-10 03:16:05,291 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
-2026-05-10 03:16:05,291 [INFO] Vendor  : Applaws
-2026-05-10 03:16:05,292 [INFO] Formato : WebP calidad 90, 2000×2000, padding 5%
-2026-05-10 03:16:05,749 [INFO] Access token obtenido
-2026-05-10 03:16:05,750 [INFO] Modo prueba — producto ID: 15509631697283
-2026-05-10 03:16:06,091 [INFO] 
+2026-05-10 03:47:59,846 [INFO] ============================================================
+2026-05-10 03:47:59,846 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 03:47:59,847 [INFO] ============================================================
+2026-05-10 03:47:59,847 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 03:47:59,847 [INFO] Vendor  : Applaws
+2026-05-10 03:47:59,847 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 03:47:59,847 [INFO] Padding : 5% solo en imagenes con fondo blanco
+2026-05-10 03:48:00,259 [INFO] Access token obtenido
+2026-05-10 03:48:00,259 [INFO] Modo prueba - producto ID: 15509631697283
+2026-05-10 03:48:00,543 [INFO] 
 [1/1] APPLAWS CAT LATA PESCADO  (ID: 15509631697283)
-2026-05-10 03:16:06,393 [INFO]   8 imagen(es) en Shopify
-2026-05-10 03:16:06,746 [INFO]   ✓ Descargada y procesada: 71n8FS-h3EL._AC_SL1500.jpg
-2026-05-10 03:16:07,092 [INFO]   ✓ Descargada y procesada: 71psKLLH9GL._AC_SL1500.jpg
-2026-05-10 03:16:07,486 [INFO]   ✓ Descargada y procesada: 81EeCJYBQDL._AC_SL1500.jpg
-2026-05-10 03:16:07,877 [INFO]   ✓ Descargada y procesada: 81HRJeBdjhL._AC_SL1500.jpg
-2026-05-10 03:16:08,214 [INFO]   ✓ Descargada y procesada: 814nC-QClqL._AC_SL1500.jpg
-2026-05-10 03:16:08,524 [INFO]   ✓ Descargada y procesada: 71LElaPlYaL._AC_SL1500_a8e910c5-53b5-4fd1-889c-751729835eff.jpg
-2026-05-10 03:16:08,831 [INFO]   ✓ Descargada y procesada: 71eIwbxkkLL._AC_SL1500.jpg
-2026-05-10 03:16:09,147 [INFO]   ✓ Descargada y procesada: 71YbAgxHKJL._AC_SL1500.jpg
-2026-05-10 03:16:14,432 [INFO]   8 imagen(es) antigua(s) eliminada(s)
-2026-05-10 03:16:17,519 [INFO]   ✓ Imagen 1/8 subida → applaws_15509631697283_1.webp
-2026-05-10 03:16:21,048 [INFO]   ✓ Imagen 2/8 subida → applaws_15509631697283_2.webp
-2026-05-10 03:16:25,534 [INFO]   ✓ Imagen 3/8 subida → applaws_15509631697283_3.webp
-2026-05-10 03:16:29,446 [INFO]   ✓ Imagen 4/8 subida → applaws_15509631697283_4.webp
-2026-05-10 03:16:33,281 [INFO]   ✓ Imagen 5/8 subida → applaws_15509631697283_5.webp
-2026-05-10 03:16:36,731 [INFO]   ✓ Imagen 6/8 subida → applaws_15509631697283_6.webp
-2026-05-10 03:16:40,493 [INFO]   ✓ Imagen 7/8 subida → applaws_15509631697283_7.webp
-2026-05-10 03:16:43,910 [INFO]   ✓ Imagen 8/8 subida → applaws_15509631697283_8.webp
-2026-05-10 03:16:44,410 [INFO]   Producto completado
-2026-05-10 03:16:45,411 [INFO] 
+2026-05-10 03:48:00,862 [INFO]   8 imagen(es) en Shopify - descargando originales...
+2026-05-10 03:48:01,032 [INFO]   Descargada: applaws_15509631697283_1.webp
+2026-05-10 03:48:01,154 [INFO]   Descargada: applaws_15509631697283_2.webp
+2026-05-10 03:48:01,756 [INFO]   Descargada: applaws_15509631697283_7.webp
+2026-05-10 03:48:02,478 [INFO]   Descargada: applaws-lata-para-gatos-de-pescado-azul.webp
+2026-05-10 03:48:02,546 [INFO]   Descargada: 81EeCJYBQDL._AC_SL1500.jpg
+2026-05-10 03:48:02,594 [INFO]   Descargada: 814nC-QClqL._AC_SL1500.jpg
+2026-05-10 03:48:02,890 [INFO]   Descargada: 71LElaPlYaL._AC_SL1500_da221ea1-d399-451c-8ce6-ded417852e74.jpg
+2026-05-10 03:48:03,414 [INFO]   Descargada: applaws_15509631697283_8.webp
+2026-05-10 03:48:03,415 [INFO]   Backup original 1: img_01.webp  (167 KB)
+2026-05-10 03:48:03,415 [INFO]   Backup original 2: img_02.webp  (146 KB)
+2026-05-10 03:48:03,415 [INFO]   Backup original 3: img_03.webp  (236 KB)
+2026-05-10 03:48:03,415 [INFO]   Backup original 4: img_04.webp  (514 KB)
+2026-05-10 03:48:03,416 [INFO]   Backup original 5: img_05.jpg  (168 KB)
+2026-05-10 03:48:03,416 [INFO]   Backup original 6: img_06.jpg  (138 KB)
+2026-05-10 03:48:03,416 [INFO]   Backup original 7: img_07.jpg  (100 KB)
+2026-05-10 03:48:03,416 [INFO]   Backup original 8: img_08.webp  (152 KB)
+2026-05-10 03:48:03,451 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 03:48:03,565 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 03:48:03,670 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 03:48:03,777 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 03:48:03,873 [INFO]     [ilustracion -> sin padding]
+2026-05-10 03:48:03,968 [INFO]     [ilustracion -> sin padding]
+2026-05-10 03:48:04,062 [INFO]     [ilustracion -> sin padding]
+2026-05-10 03:48:04,173 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 03:48:09,171 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 03:48:12,600 [INFO]   Imagen 1/8 subida -> applaws_15509631697283_1.webp
+2026-05-10 03:48:15,943 [INFO]   Imagen 2/8 subida -> applaws_15509631697283_2.webp
+2026-05-10 03:48:19,757 [INFO]   Imagen 3/8 subida -> applaws_15509631697283_3.webp
+2026-05-10 03:48:23,613 [INFO]   Imagen 4/8 subida -> applaws_15509631697283_4.webp
+2026-05-10 03:48:27,618 [INFO]   Imagen 5/8 subida -> applaws_15509631697283_5.webp
+2026-05-10 03:48:31,836 [INFO]   Imagen 6/8 subida -> applaws_15509631697283_6.webp
+2026-05-10 03:48:35,328 [INFO]   Imagen 7/8 subida -> applaws_15509631697283_7.webp
+2026-05-10 03:48:38,795 [INFO]   Imagen 8/8 subida -> applaws_15509631697283_8.webp
+2026-05-10 03:48:39,295 [INFO]   Producto completado
+2026-05-10 03:48:40,296 [INFO] 
 ============================================================
-2026-05-10 03:16:45,411 [INFO] RESUMEN FINAL
-2026-05-10 03:16:45,411 [INFO] ============================================================
-2026-05-10 03:16:45,411 [INFO]   Productos procesados  : 1
-2026-05-10 03:16:45,411 [INFO]   Imágenes actualizadas : 1
-2026-05-10 03:16:45,411 [INFO]   Sin imagen en Shopify : 0
-2026-05-10 03:16:45,411 [INFO]   Errores               : 0
-2026-05-10 03:16:45,411 [INFO]   Copias locales        → imagenes_applaws/
-2026-05-10 03:16:45,411 [INFO]   Log completo          → applaws_images.log
+2026-05-10 03:48:40,296 [INFO] RESUMEN FINAL
+2026-05-10 03:48:40,296 [INFO] ============================================================
+2026-05-10 03:48:40,296 [INFO]   Productos procesados  : 1
+2026-05-10 03:48:40,296 [INFO]   Imagenes actualizadas : 1
+2026-05-10 03:48:40,296 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 03:48:40,296 [INFO]   Errores               : 0
+2026-05-10 03:48:40,296 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 03:48:40,296 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 03:48:40,296 [INFO]   Log completo          -> applaws_images.log
