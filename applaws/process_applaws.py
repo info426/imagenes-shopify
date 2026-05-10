@@ -4,7 +4,11 @@ Procesador de imágenes Applaws para Shopify
 ============================================
 Las imágenes ya están en Shopify con alta calidad.
 El script descarga cada imagen, la procesa (2000×2000 WebP,
-fondo blanco, 5% padding) y la re-sube reemplazando la original.
+fondo blanco) y la re-sube reemplazando la original.
+
+Regla de padding:
+  - Fondo blanco (o transparente) → 5% padding en cada lado
+  - Ilustraciones con fondo de color → sin padding, rellena 2000×2000
 
 Uso:
   python3 applaws/process_applaws.py                         # todos los productos
@@ -27,15 +31,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-SHOP_DOMAIN  = os.getenv("SHOP_DOMAIN",   "7ev1zx-eg.myshopify.com")
-CLIENT_ID    = os.getenv("CLIENT_ID",     "")
+SHOP_DOMAIN   = os.getenv("SHOP_DOMAIN",   "7ev1zx-eg.myshopify.com")
+CLIENT_ID     = os.getenv("CLIENT_ID",     "")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET", "")
-VENDOR       = "Applaws"
-API_VERSION  = "2024-10"
-TARGET_SIZE  = (2000, 2000)
-WEBP_QUALITY = 90        # alta calidad WebP sin pérdida visual apreciable
-OUTPUT_DIR   = Path("imagenes_applaws")
-PADDING      = 0.05      # 5% en cada lado
+VENDOR        = "Applaws"
+API_VERSION   = "2024-10"
+TARGET_SIZE   = (2000, 2000)
+WEBP_QUALITY  = 90        # alta calidad WebP sin pérdida visual apreciable
+OUTPUT_DIR    = Path("imagenes_applaws")
+PADDING       = 0.05      # 5% en cada lado (solo fondos blancos)
+WHITE_THRESH  = 245       # umbral para considerar un píxel como blanco
+WHITE_MIN_FRAC = 0.75     # fracción mínima de puntos blancos para considerar fondo blanco
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -132,17 +138,45 @@ def _has_transparency(img: Image.Image) -> bool:
         img.mode == "P" and "transparency" in img.info)
 
 
+def _is_white_background(img: Image.Image) -> bool:
+    """
+    Muestrea esquinas y bordes para detectar si el fondo es blanco.
+    Retorna True si al menos WHITE_MIN_FRAC de los puntos muestreados
+    son >= WHITE_THRESH en los tres canales RGB.
+    """
+    rgb = img.convert("RGB")
+    w, h = rgb.size
+    samples = [
+        (0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1),  # esquinas
+        (w // 2, 0), (w // 2, h - 1),                      # bordes superior/inferior
+        (0, h // 2), (w - 1, h // 2),                      # bordes izquierdo/derecho
+    ]
+    white = sum(
+        1 for x, y in samples
+        if all(c >= WHITE_THRESH for c in rgb.getpixel((x, y)))
+    )
+    return white / len(samples) >= WHITE_MIN_FRAC
+
+
 def process_image(img: Image.Image) -> Image.Image:
     """
-    Redimensiona a 2000×2000 con fondo blanco y 5% de padding en cada lado.
-    Usa LANCZOS para no perder resolución en el redimensionado.
+    Redimensiona a 2000×2000 con fondo blanco.
+    - Fondo blanco o transparente: aplica 5% de padding en cada lado.
+    - Ilustraciones con fondo de color: rellena los 2000×2000 sin margen.
+    Usa LANCZOS para preservar la resolución al redimensionar.
     """
     transparent = _has_transparency(img)
     img_conv = img.convert("RGBA") if transparent else img.convert("RGB")
 
-    # Área disponible descontando el padding
-    max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING))  # 1900 px
-    max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING))  # 1900 px
+    use_padding = transparent or _is_white_background(img)
+    label = "fondo blanco → padding 5%" if use_padding else "ilustración → sin padding"
+    log.info(f"    [{label}]")
+
+    if use_padding:
+        max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING))  # 1900 px
+        max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING))  # 1900 px
+    else:
+        max_w, max_h = TARGET_SIZE  # 2000 px
 
     ratio = img_conv.width / img_conv.height
     if ratio > 1:
@@ -180,7 +214,7 @@ def download_image(url: str) -> Image.Image:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Procesa imágenes Applaws en Shopify: 2000×2000 WebP, fondo blanco, 5% padding")
+        description="Procesa imágenes Applaws en Shopify: 2000×2000 WebP, fondo blanco")
     parser.add_argument("--product-id", type=int, default=None,
                         help="Procesar solo este product ID (modo prueba)")
     parser.add_argument("--only-ids", type=str, default=None,
@@ -199,7 +233,8 @@ def main():
     log.info("=" * 60)
     log.info(f"Tienda  : {SHOP_DOMAIN}")
     log.info(f"Vendor  : {VENDOR}")
-    log.info(f"Formato : WebP calidad {WEBP_QUALITY}, 2000×2000, padding {int(PADDING*100)}%")
+    log.info(f"Formato : WebP calidad {WEBP_QUALITY}, 2000×2000")
+    log.info(f"Padding : {int(PADDING*100)}% solo en imágenes con fondo blanco")
 
     token = get_token()
     api   = ShopifyAPI(token)
@@ -255,7 +290,7 @@ def main():
                         "alt":       alt,
                         "position":  img_data.get("position", len(processed_images) + 1),
                     })
-                    log.info(f"  ✓ Descargada y procesada: {src.split('/')[-1].split('?')[0]}")
+                    log.info(f"  ✓ Procesada: {src.split('/')[-1].split('?')[0]}")
                 except Exception as exc:
                     log.warning(f"  No se pudo procesar {src}: {exc}")
 
