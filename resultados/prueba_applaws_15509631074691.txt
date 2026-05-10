@@ -1,0 +1,65 @@
+2026-05-10 05:19:30,246 [INFO] ============================================================
+2026-05-10 05:19:30,246 [INFO] PROCESADOR APPLAWS - SHOPIFY
+2026-05-10 05:19:30,246 [INFO] ============================================================
+2026-05-10 05:19:30,246 [INFO] Tienda  : 7ev1zx-eg.myshopify.com
+2026-05-10 05:19:30,246 [INFO] Vendor  : Applaws
+2026-05-10 05:19:30,247 [INFO] Formato : WebP calidad 90, 2000x2000
+2026-05-10 05:19:30,247 [INFO] Padding : 5% solo en imagenes con fondo blanco (umbral 60%)
+2026-05-10 05:19:30,546 [INFO] Access token obtenido
+2026-05-10 05:19:30,547 [INFO] Modo prueba - producto ID: 15509631074691
+2026-05-10 05:19:30,797 [INFO] 
+[1/1] APPLAWS CAT LATA ATUN Y GAMBAS  (ID: 15509631074691)
+2026-05-10 05:19:31,093 [INFO]   8 imagen(es) - descargando originales...
+2026-05-10 05:19:31,185 [INFO]   Descargada: 71dCzVyZyFL._AC_SL1500.jpg
+2026-05-10 05:19:31,268 [INFO]   Descargada: 81EwH0DIpIL._AC_SL1500.jpg
+2026-05-10 05:19:31,351 [INFO]   Descargada: 81AD3dCIGSL._AC_SL1500.jpg
+2026-05-10 05:19:31,433 [INFO]   Descargada: 714rQm7nfjL._AC_SL1500.jpg
+2026-05-10 05:19:31,522 [INFO]   Descargada: 71DWUrAvunL._AC_SL1500.jpg
+2026-05-10 05:19:31,607 [INFO]   Descargada: 719uc6PdphL._AC_SL1500.jpg
+2026-05-10 05:19:31,689 [INFO]   Descargada: 71QCGajbNKL._AC_SL1500.jpg
+2026-05-10 05:19:31,779 [INFO]   Descargada: 71TMCVl3UrL._AC_SL1500_511bcd80-e702-48a7-a77a-9496e390436b.jpg
+2026-05-10 05:19:31,780 [INFO]   Backup original 1: img_01.jpg  (83 KB)
+2026-05-10 05:19:31,780 [INFO]   Backup original 2: img_02.jpg  (157 KB)
+2026-05-10 05:19:31,780 [INFO]   Backup original 3: img_03.jpg  (134 KB)
+2026-05-10 05:19:31,780 [INFO]   Backup original 4: img_04.jpg  (103 KB)
+2026-05-10 05:19:31,781 [INFO]   Backup original 5: img_05.jpg  (137 KB)
+2026-05-10 05:19:31,781 [INFO]   Backup original 6: img_06.jpg  (89 KB)
+2026-05-10 05:19:31,781 [INFO]   Backup original 7: img_07.jpg  (80 KB)
+2026-05-10 05:19:31,781 [INFO]   Backup original 8: img_08.jpg  (87 KB)
+2026-05-10 05:19:31,804 [INFO]     [bg check esquinas] 1936/1936 px blancos (100%)
+2026-05-10 05:19:31,804 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:19:31,870 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:19:31,870 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:19:31,973 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:19:31,974 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:19:32,074 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:19:32,074 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:19:32,168 [INFO]     [bg check esquinas] 2202/3600 px blancos (61%)
+2026-05-10 05:19:32,168 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:19:32,231 [INFO]     [bg check esquinas] 1377/1600 px blancos (86%)
+2026-05-10 05:19:32,231 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:19:32,277 [INFO]     [bg check esquinas] 2116/2116 px blancos (100%)
+2026-05-10 05:19:32,277 [INFO]     [fondo blanco -> padding 5%]
+2026-05-10 05:19:32,335 [INFO]     [bg check esquinas] 0/5776 px blancos (0%)
+2026-05-10 05:19:32,335 [INFO]     [ilustracion -> sin padding]
+2026-05-10 05:19:37,338 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-10 05:19:40,009 [INFO]   Imagen 1/8 subida -> applaws_15509631074691_1.webp
+2026-05-10 05:19:43,885 [INFO]   Imagen 2/8 subida -> applaws_15509631074691_2.webp
+2026-05-10 05:19:47,502 [INFO]   Imagen 3/8 subida -> applaws_15509631074691_3.webp
+2026-05-10 05:19:51,093 [INFO]   Imagen 4/8 subida -> applaws_15509631074691_4.webp
+2026-05-10 05:19:54,996 [INFO]   Imagen 5/8 subida -> applaws_15509631074691_5.webp
+2026-05-10 05:19:58,217 [INFO]   Imagen 6/8 subida -> applaws_15509631074691_6.webp
+2026-05-10 05:20:01,342 [INFO]   Imagen 7/8 subida -> applaws_15509631074691_7.webp
+2026-05-10 05:20:04,604 [INFO]   Imagen 8/8 subida -> applaws_15509631074691_8.webp
+2026-05-10 05:20:05,105 [INFO]   Producto completado
+2026-05-10 05:20:06,105 [INFO] 
+============================================================
+2026-05-10 05:20:06,105 [INFO] RESUMEN FINAL
+2026-05-10 05:20:06,105 [INFO] ============================================================
+2026-05-10 05:20:06,105 [INFO]   Productos procesados  : 1
+2026-05-10 05:20:06,105 [INFO]   Imagenes actualizadas : 1
+2026-05-10 05:20:06,105 [INFO]   Sin imagen en Shopify : 0
+2026-05-10 05:20:06,105 [INFO]   Errores               : 0
+2026-05-10 05:20:06,105 [INFO]   Copias locales        -> imagenes_applaws/
+2026-05-10 05:20:06,105 [INFO]   Originales backup     -> resultados/originals_applaws/
+2026-05-10 05:20:06,106 [INFO]   Log completo          -> applaws_images.log
