@@ -379,8 +379,20 @@ def _is_white_background(img_rgb: Image.Image) -> bool:
 def process_image(img: Image.Image) -> Image.Image:
     has_alpha = (img.mode in ("RGBA", "LA") or
                  (img.mode == "P" and "transparency" in img.info))
-    composited = (_fill_transparent_with_blur(img.convert("RGBA"))
-                  if has_alpha else _composite_on_white(img))
+    if has_alpha:
+        rgba = img.convert("RGBA")
+        alpha = rgba.split()[3]
+        hist = alpha.histogram()
+        transparent_ratio = sum(hist[:128]) / (img.width * img.height)
+        log.info(f"    [alpha check] {transparent_ratio:.0%} transparente")
+        if transparent_ratio > 0.15:
+            # Producto sobre fondo transparente → componer sobre blanco
+            composited = _composite_on_white(rgba)
+        else:
+            # Imagen mayormente opaca con esquinas transparentes → blur-fill
+            composited = _fill_transparent_with_blur(rgba)
+    else:
+        composited = _composite_on_white(img)
     use_padding = _is_white_background(composited)
     log.info(f"    [{'padding 5%' if use_padding else 'sin padding'}]")
     max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING)) if use_padding else TARGET_SIZE[0]
