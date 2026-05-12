@@ -1,62 +1,29 @@
-2026-05-12 14:46:45,451 [INFO] ============================================================
-2026-05-12 14:46:45,451 [INFO] PROCESADOR ACANA — SHOPIFY
-2026-05-12 14:46:45,451 [INFO] ============================================================
-2026-05-12 14:46:45,509 [INFO] Scraping catálogo Acana con Playwright...
-2026-05-12 14:46:46,034 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-gatos
-2026-05-12 14:46:51,817 [INFO]   12 productos encontrados en cat
-2026-05-12 14:46:54,308 [INFO]     eu-aca-bountiful-catch-cat: 3 imagen(es)
-2026-05-12 14:46:57,758 [INFO]     eu-aca-first-feast-cat: 3 imagen(es)
-2026-05-12 14:47:01,429 [INFO]     eu-aca-grasslands-new-cat: 3 imagen(es)
-2026-05-12 14:47:04,827 [INFO]     eu-aca-highest-protein-indoor-cat: 3 imagen(es)
-2026-05-12 14:47:08,250 [INFO]     eu-aca-homestead-cat: 3 imagen(es)
-2026-05-12 14:47:11,726 [INFO]     eu-aca-indoor-entree-cat: 6 imagen(es)
-2026-05-12 14:47:15,167 [INFO]     eu-aca-pacifica-new-cat: 3 imagen(es)
-2026-05-12 14:47:18,576 [INFO]     eu-aca-wild-prairie-new-cat: 3 imagen(es)
-2026-05-12 14:47:21,993 [INFO]     eu-premium-pate-cat-lamb-recipe: 4 imagen(es)
-2026-05-12 14:47:25,379 [INFO]     eu-premium-pate-cat-salmon-recipe: 4 imagen(es)
-2026-05-12 14:47:28,780 [INFO]     eu-premium-pate-cat-tuna-recipe: 4 imagen(es)
-2026-05-12 14:47:32,143 [INFO]     eu-premium-pate-kitten-recipe: 4 imagen(es)
-2026-05-12 14:47:33,143 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-perros
-2026-05-12 14:47:38,631 [INFO]   12 productos encontrados en dog
-2026-05-12 14:47:41,123 [INFO]     eu-aca-adult-large: 5 imagen(es)
-2026-05-12 14:47:44,601 [INFO]     eu-aca-adult-small: 5 imagen(es)
-2026-05-12 14:47:48,033 [INFO]     eu-aca-adult: 6 imagen(es)
-2026-05-12 14:47:51,489 [INFO]     eu-aca-light-fit: 5 imagen(es)
-2026-05-12 14:47:54,983 [INFO]     eu-aca-puppy-junior: 5 imagen(es)
-2026-05-12 14:47:58,443 [INFO]     eu-aca-puppy-large: 5 imagen(es)
-2026-05-12 14:48:01,927 [INFO]     eu-aca-puppy-small: 5 imagen(es)
-2026-05-12 14:48:05,372 [INFO]     eu-aca-senior: 5 imagen(es)
-2026-05-12 14:48:08,782 [INFO]     eu-aca-singles-duck-new: 5 imagen(es)
-2026-05-12 14:48:12,199 [INFO]     eu-aca-singles-lamb-new: 5 imagen(es)
-2026-05-12 14:48:15,624 [INFO]     eu-aca-singles-pork-new: 5 imagen(es)
-2026-05-12 14:48:19,086 [INFO]     eu-aca-sport-agility: 5 imagen(es)
-2026-05-12 14:48:20,149 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
-2026-05-12 14:48:20,554 [INFO] Token obtenido
-2026-05-12 14:48:20,917 [INFO] 
+2026-05-12 15:12:16,628 [INFO] ============================================================
+2026-05-12 15:12:16,628 [INFO] PROCESADOR ACANA — SHOPIFY
+2026-05-12 15:12:16,628 [INFO] ============================================================
+2026-05-12 15:12:16,628 [INFO] Catálogo cargado desde caché: 24 productos
+2026-05-12 15:12:22,996 [INFO] Token obtenido
+2026-05-12 15:12:23,401 [INFO] 
 [1/1] ACANA FELINE ADULT WILD PRAIRIE  (ID: 15509603320195)
-2026-05-12 14:48:20,918 [INFO]   Match: eu-aca-wild-prairie-new-cat  (score=0.40, 3 imgs)
-2026-05-12 14:48:21,086 [INFO]   Descargada: acana-wholesome-grains.png
-2026-05-12 14:48:24,804 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Back 4.5kg EMEA APAC.png
-2026-05-12 14:48:28,263 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Front Right 4.5kg EMEA APAC.png
-2026-05-12 14:48:28,273 [INFO]   Imagen 1: RGBA (227, 168)
-2026-05-12 14:48:28,277 [INFO]     [bg check] 0/400 (0%)
-2026-05-12 14:48:28,277 [INFO]     [sin padding]
-2026-05-12 14:48:28,319 [INFO]   Imagen 2: RGBA (2000, 2000)
-2026-05-12 14:48:28,608 [INFO]     [bg check] 0/10000 (0%)
-2026-05-12 14:48:28,608 [INFO]     [sin padding]
-2026-05-12 14:48:28,614 [INFO]   Imagen 3: RGBA (2000, 2000)
-2026-05-12 14:48:28,901 [INFO]     [bg check] 0/10000 (0%)
-2026-05-12 14:48:28,901 [INFO]     [sin padding]
-2026-05-12 14:48:29,270 [INFO]   0 imagen(es) antigua(s) eliminada(s)
-2026-05-12 14:48:31,979 [INFO]   ✓ Imagen 1/3 subida
-2026-05-12 14:48:35,644 [INFO]   ✓ Imagen 2/3 subida
-2026-05-12 14:48:39,126 [INFO]   ✓ Imagen 3/3 subida
-2026-05-12 14:48:40,627 [INFO] 
+2026-05-12 15:12:23,402 [INFO]   Match: eu-aca-wild-prairie-new-cat  (score=0.40, 3 imgs)
+2026-05-12 15:12:23,785 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Back 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:12:24,060 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Front Right 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:12:24,244 [WARNING]   Baja resolución 227×168 — omitida: acana-wholesome-grains.png
+2026-05-12 15:12:24,247 [INFO]   Imagen 1: RGBA (2000, 2000)
+2026-05-12 15:12:24,474 [INFO]     [bg check] 0/10000 (0%)
+2026-05-12 15:12:24,474 [INFO]     [sin padding]
+2026-05-12 15:12:24,484 [INFO]   Imagen 2: RGBA (2000, 2000)
+2026-05-12 15:12:24,705 [INFO]     [bg check] 0/10000 (0%)
+2026-05-12 15:12:24,705 [INFO]     [sin padding]
+2026-05-12 15:12:29,195 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-12 15:12:38,864 [INFO]   ✓ Imagen 1/2 subida
+2026-05-12 15:12:42,705 [INFO]   ✓ Imagen 2/2 subida
+2026-05-12 15:12:44,205 [INFO] 
 ============================================================
-2026-05-12 14:48:40,627 [INFO] RESUMEN
-2026-05-12 14:48:40,627 [INFO] ============================================================
-2026-05-12 14:48:40,627 [INFO]   Total      : 1
-2026-05-12 14:48:40,627 [INFO]   Procesados : 1
-2026-05-12 14:48:40,627 [INFO]   Sin match  : 0
-2026-05-12 14:48:40,627 [INFO]   Sin imagen : 0
-2026-05-12 14:48:40,627 [INFO]   Errores    : 0
+2026-05-12 15:12:44,205 [INFO] RESUMEN
+2026-05-12 15:12:44,205 [INFO] ============================================================
+2026-05-12 15:12:44,205 [INFO]   Total      : 1
+2026-05-12 15:12:44,205 [INFO]   Procesados : 1
+2026-05-12 15:12:44,205 [INFO]   Sin match  : 0
+2026-05-12 15:12:44,205 [INFO]   Sin imagen : 0
+2026-05-12 15:12:44,205 [INFO]   Errores    : 0
