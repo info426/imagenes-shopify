@@ -41,6 +41,7 @@ WEBP_QUALITY   = 90
 PADDING        = 0.05
 WHITE_THRESH   = 245
 WHITE_MIN_FRAC = 0.60
+MIN_DIM        = 800    # mínimo px en cualquier dimensión para aceptar una imagen
 
 RESULTS_DIR    = Path("resultados")
 CATALOG_PATH   = RESULTS_DIR / "acana_catalog.json"
@@ -146,7 +147,7 @@ class ShopifyAPI:
         return r.json()
 
 
-def _extract_image_urls_from_page(page) -> list[str]:
+def _extract_image_urls_from_page(page) -> list:
     urls = set()
     for attr in ("src", "data-src", "data-lazy-src"):
         elements = page.query_selector_all(f"img[{attr}*='emea.acana.com']")
@@ -161,7 +162,7 @@ def _extract_image_urls_from_page(page) -> list[str]:
             .filter(s => s && s.includes('emea.acana.com'));
     }""")
     for style in raw_styles:
-        match = re.search(r'url\(["\']?(https://[^"\'\)\s]+)["\']?\)', style)
+        match = re.search(r'url\(["\']?(https://[^"\')\s]+)["\']?\)', style)
         if match:
             urls.add(_normalize_img_url(match.group(1)))
     try:
@@ -256,7 +257,7 @@ def _normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9\s]", " ", text)
 
 
-def _tokenize(text: str) -> set[str]:
+def _tokenize(text: str) -> set:
     tokens = set(_normalize(text).split())
     return tokens - IGNORE_TOKENS - {t for t in tokens if len(t) <= 1}
 
@@ -285,6 +286,57 @@ def download_raw(url: str) -> tuple:
     ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
     ext = "jpg" if ext not in ("jpg", "jpeg", "png", "webp") or ext == "jpeg" else ext
     return r.content, ext
+
+
+def _is_high_res(raw: bytes) -> tuple:
+    """Devuelve (ok, width, height). ok=True si ambas dimensiones >= MIN_DIM."""
+    try:
+        img = Image.open(BytesIO(raw))
+        w, h = img.size
+        return (w >= MIN_DIM and h >= MIN_DIM), w, h
+    except Exception:
+        return False, 0, 0
+
+
+def search_web_images(product_name: str, exclude_domain: str = "emea.acana.com",
+                      max_results: int = 5) -> list:
+    """
+    Busca en DuckDuckGo imágenes de alta resolución del producto en fuentes
+    distintas a exclude_domain. Devuelve lista de (bytes, ext).
+    """
+    try:
+        from duckduckgo_search import DDGS
+    except ImportError:
+        log.warning("  [DDG] duckduckgo-search no instalado — omitiendo búsqueda web")
+        return []
+
+    query = f"Acana {product_name} product"
+    log.info(f"  [DDG] Buscando: «{query}»")
+    found = []
+    try:
+        with DDGS() as ddgs:
+            hits = list(ddgs.images(query, max_results=max_results * 4, size="Large"))
+        for r in hits:
+            img_url = r.get("image", "")
+            if not img_url or exclude_domain in img_url:
+                continue
+            try:
+                raw, ext = download_raw(img_url)
+                ok, w, h = _is_high_res(raw)
+                domain = img_url.split("/")[2] if img_url.startswith("http") else "?"
+                if ok:
+                    log.info(f"  [DDG] ✓ {domain}  {w}×{h}")
+                    found.append((raw, ext))
+                    if len(found) >= max_results:
+                        break
+                else:
+                    log.info(f"  [DDG] baja res {w}×{h} — omitida ({domain})")
+            except Exception as e:
+                log.debug(f"  [DDG] Error descargando {img_url}: {e}")
+            time.sleep(0.5)
+    except Exception as e:
+        log.warning(f"  [DDG] Error en búsqueda: {e}")
+    return found
 
 
 def _composite_on_white(img: Image.Image) -> Image.Image:
@@ -418,13 +470,22 @@ def main():
         for img_url in entry["images"]:
             try:
                 raw, ext = download_raw(img_url)
-                raw_images.append((raw, ext))
-                log.info(f"  Descargada: {img_url.split('/')[-1].split('?')[0]}")
+                ok, w, h = _is_high_res(raw)
+                fname = img_url.split('/')[-1].split('?')[0]
+                if ok:
+                    raw_images.append((raw, ext))
+                    log.info(f"  Descargada: {fname}  {w}×{h}")
+                else:
+                    log.warning(f"  Baja resolución {w}×{h} — omitida: {fname}")
             except Exception as e:
                 log.warning(f"  Error descargando {img_url}: {e}")
 
         if not raw_images:
-            log.warning("  No se pudo descargar ninguna imagen — saltando")
+            log.warning("  Sin imágenes de alta resolución en web oficial — buscando en internet...")
+            raw_images = search_web_images(title)
+
+        if not raw_images:
+            log.warning("  No se encontraron imágenes de alta resolución — saltando")
             stats["sin_imagen"] += 1
             continue
 
