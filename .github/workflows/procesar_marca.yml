@@ -1,0 +1,104 @@
+name: Procesar imágenes por marca
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      vendor:
+        description: 'Vendor exacto en Shopify (ej: Applaws, Royal Canin, Acana)'
+        required: true
+
+      fuente:
+        description: 'Fuente de imágenes'
+        required: true
+        type: choice
+        options:
+          - shopify          # Las imágenes ya están en Shopify → descargar, convertir y re-subir
+          - web_oficial      # Sin imágenes en Shopify → scraping del sitio oficial del fabricante
+          - web_y_amazon     # Sin imágenes en Shopify → sitio oficial + Amazon como fuente adicional
+
+      web_url:
+        description: 'URL del sitio oficial del fabricante (obligatorio si fuente ≠ shopify)'
+        required: false
+        default: ''
+
+      product_id:
+        description: 'ID de producto concreto (dejar vacío para procesar TODOS los productos del vendor)'
+        required: false
+        default: ''
+
+      rebuild_catalog:
+        description: 'Forzar re-scraping del catálogo web (ignora caché). Solo aplica si fuente ≠ shopify'
+        required: false
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+        default: 'false'
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Validar parámetros
+        run: |
+          FUENTE="${{ github.event.inputs.fuente }}"
+          WEB_URL="${{ github.event.inputs.web_url }}"
+          if [ "$FUENTE" != "shopify" ] && [ -z "$WEB_URL" ]; then
+            echo "ERROR: web_url es obligatorio cuando fuente='$FUENTE'"
+            exit 1
+          fi
+
+      - name: Procesar imágenes
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+
+          VENDOR="${{ github.event.inputs.vendor }}"
+          FUENTE="${{ github.event.inputs.fuente }}"
+          WEB_URL="${{ github.event.inputs.web_url }}"
+          PRODUCT_ID="${{ github.event.inputs.product_id }}"
+          REBUILD="${{ github.event.inputs.rebuild_catalog }}"
+
+          VENDOR_SLUG=$(echo "$VENDOR" | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
+          LOG_FILE="resultados/proceso_${VENDOR_SLUG}.txt"
+
+          ARGS="--vendor \"$VENDOR\" --fuente $FUENTE"
+
+          if [ -n "$WEB_URL" ]; then
+            ARGS="$ARGS --web-url \"$WEB_URL\""
+          fi
+          if [ -n "$PRODUCT_ID" ]; then
+            ARGS="$ARGS --product-id $PRODUCT_ID"
+          fi
+          if [ "$REBUILD" = "true" ]; then
+            ARGS="$ARGS --rebuild-catalog"
+          fi
+
+          eval python3 scripts/process_generic.py $ARGS 2>&1 | tee "$LOG_FILE"
+
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "chore: proceso imágenes ${{ github.event.inputs.vendor }} (${{ github.event.inputs.fuente }})"
+          git push
