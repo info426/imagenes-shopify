@@ -1,0 +1,58 @@
+2026-05-12 15:01:34,811 [INFO] ============================================================
+2026-05-12 15:01:34,811 [INFO] PROCESADOR ACANA — SHOPIFY
+2026-05-12 15:01:34,811 [INFO] ============================================================
+2026-05-12 15:01:34,873 [INFO] Scraping catálogo Acana con Playwright...
+2026-05-12 15:01:35,391 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-gatos
+2026-05-12 15:01:41,261 [INFO]   12 productos encontrados en cat
+2026-05-12 15:01:43,671 [INFO]     eu-aca-bountiful-catch-cat: 3 imagen(es)
+2026-05-12 15:01:46,969 [INFO]     eu-aca-first-feast-cat: 3 imagen(es)
+2026-05-12 15:01:50,344 [INFO]     eu-aca-grasslands-new-cat: 3 imagen(es)
+2026-05-12 15:01:53,661 [INFO]     eu-aca-highest-protein-indoor-cat: 3 imagen(es)
+2026-05-12 15:01:57,096 [INFO]     eu-aca-homestead-cat: 3 imagen(es)
+2026-05-12 15:02:00,383 [INFO]     eu-aca-indoor-entree-cat: 6 imagen(es)
+2026-05-12 15:02:03,718 [INFO]     eu-aca-pacifica-new-cat: 3 imagen(es)
+2026-05-12 15:02:06,974 [INFO]     eu-aca-wild-prairie-new-cat: 3 imagen(es)
+2026-05-12 15:02:10,247 [INFO]     eu-premium-pate-cat-lamb-recipe: 4 imagen(es)
+2026-05-12 15:02:13,529 [INFO]     eu-premium-pate-cat-salmon-recipe: 4 imagen(es)
+2026-05-12 15:02:16,807 [INFO]     eu-premium-pate-cat-tuna-recipe: 4 imagen(es)
+2026-05-12 15:02:20,082 [INFO]     eu-premium-pate-kitten-recipe: 4 imagen(es)
+2026-05-12 15:02:21,083 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-perros
+2026-05-12 15:02:26,434 [INFO]   12 productos encontrados en dog
+2026-05-12 15:02:28,717 [INFO]     eu-aca-adult-large: 5 imagen(es)
+2026-05-12 15:02:32,043 [INFO]     eu-aca-adult-small: 5 imagen(es)
+2026-05-12 15:02:35,334 [INFO]     eu-aca-adult: 6 imagen(es)
+2026-05-12 15:02:38,769 [INFO]     eu-aca-light-fit: 5 imagen(es)
+2026-05-12 15:02:42,081 [INFO]     eu-aca-puppy-junior: 5 imagen(es)
+2026-05-12 15:02:45,393 [INFO]     eu-aca-puppy-large: 5 imagen(es)
+2026-05-12 15:02:48,661 [INFO]     eu-aca-puppy-small: 5 imagen(es)
+2026-05-12 15:02:51,961 [INFO]     eu-aca-senior: 5 imagen(es)
+2026-05-12 15:02:55,251 [INFO]     eu-aca-singles-duck-new: 5 imagen(es)
+2026-05-12 15:02:58,585 [INFO]     eu-aca-singles-lamb-new: 5 imagen(es)
+2026-05-12 15:03:01,865 [INFO]     eu-aca-singles-pork-new: 5 imagen(es)
+2026-05-12 15:03:05,206 [INFO]     eu-aca-sport-agility: 5 imagen(es)
+2026-05-12 15:03:06,265 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
+2026-05-12 15:03:06,601 [INFO] Token obtenido
+2026-05-12 15:03:06,910 [INFO] 
+[1/1] ACANA FELINE ADULT WILD PRAIRIE  (ID: 15509603320195)
+2026-05-12 15:03:06,911 [INFO]   Match: eu-aca-wild-prairie-new-cat  (score=0.40, 3 imgs)
+2026-05-12 15:03:07,602 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Back 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:03:07,984 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Front Right 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:03:08,189 [WARNING]   Baja resolución 227×168 — omitida: acana-wholesome-grains.png
+2026-05-12 15:03:08,191 [INFO]   Imagen 1: RGBA (2000, 2000)
+2026-05-12 15:03:08,474 [INFO]     [bg check] 0/10000 (0%)
+2026-05-12 15:03:08,474 [INFO]     [sin padding]
+2026-05-12 15:03:08,481 [INFO]   Imagen 2: RGBA (2000, 2000)
+2026-05-12 15:03:08,760 [INFO]     [bg check] 0/10000 (0%)
+2026-05-12 15:03:08,760 [INFO]     [sin padding]
+2026-05-12 15:03:10,242 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-12 15:03:13,344 [INFO]   ✓ Imagen 1/2 subida
+2026-05-12 15:03:16,546 [INFO]   ✓ Imagen 2/2 subida
+2026-05-12 15:03:18,046 [INFO] 
+============================================================
+2026-05-12 15:03:18,047 [INFO] RESUMEN
+2026-05-12 15:03:18,047 [INFO] ============================================================
+2026-05-12 15:03:18,047 [INFO]   Total      : 1
+2026-05-12 15:03:18,047 [INFO]   Procesados : 1
+2026-05-12 15:03:18,047 [INFO]   Sin match  : 0
+2026-05-12 15:03:18,047 [INFO]   Sin imagen : 0
+2026-05-12 15:03:18,047 [INFO]   Errores    : 0
