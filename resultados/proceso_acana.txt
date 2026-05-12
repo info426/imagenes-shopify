@@ -1,26 +1,40 @@
-2026-05-12 14:12:26,320 [INFO] ============================================================
-2026-05-12 14:12:26,320 [INFO] PROCESADOR GENÉRICO — SHOPIFY
-2026-05-12 14:12:26,320 [INFO] ============================================================
-2026-05-12 14:12:26,320 [INFO] Vendor  : Acana
-2026-05-12 14:12:26,320 [INFO] Fuente  : web_y_amazon
-2026-05-12 14:12:26,320 [INFO] Web URL : emea.acana.com
-2026-05-12 14:12:26,627 [INFO] Token obtenido
-2026-05-12 14:12:26,627 [INFO] Construyendo catálogo web...
-2026-05-12 14:12:26,627 [WARNING]   build_catalog() no implementado para acana.
-2026-05-12 14:12:26,627 [WARNING]   Implementa el scraping de emea.acana.com en scripts/process_generic.py
-2026-05-12 14:12:26,627 [INFO] Modo prueba — producto ID: 15509603320195
-2026-05-12 14:12:26,889 [INFO] 
-[1/1] ID 15509603320195
-2026-05-12 14:12:26,889 [INFO]   Título : ACANA FELINE ADULT WILD PRAIRIE
-2026-05-12 14:12:26,889 [WARNING]   [web_oficial] Scraping no implementado para este vendor.
-2026-05-12 14:12:26,889 [WARNING]   Adapta get_images_from_web() en scripts/process_generic.py
-2026-05-12 14:12:26,889 [WARNING]   [web_y_amazon] Búsqueda en Amazon no implementada.
-2026-05-12 14:12:26,889 [WARNING]   Sin imágenes encontradas (web + Amazon) — saltando
-2026-05-12 14:12:27,889 [INFO] 
+2026-05-12 15:26:28,928 [INFO] ============================================================
+2026-05-12 15:26:28,928 [INFO] PROCESADOR GENÉRICO — SHOPIFY
+2026-05-12 15:26:28,928 [INFO] ============================================================
+2026-05-12 15:26:28,928 [INFO] Vendor  : Acana
+2026-05-12 15:26:28,928 [INFO] Fuente  : shopify
+2026-05-12 15:26:29,242 [INFO] Token obtenido
+2026-05-12 15:26:29,243 [INFO] Modo prueba — producto ID: 15509599551875
+2026-05-12 15:26:29,566 [INFO] 
+[1/1] ID 15509599551875
+2026-05-12 15:26:29,566 [INFO]   Título : ACANA CANINE ADULT
+2026-05-12 15:26:31,341 [INFO]   5 imagen(es) obtenida(s)
+2026-05-12 15:26:31,351 [INFO]   Imagen 1: RGBA (450, 450)
+2026-05-12 15:26:31,368 [INFO]     [bg check] 0/484 (0%)
+2026-05-12 15:26:31,368 [INFO]     [sin padding]
+2026-05-12 15:26:31,438 [INFO]   Imagen 2: RGBA (450, 450)
+2026-05-12 15:26:31,454 [INFO]     [bg check] 0/484 (0%)
+2026-05-12 15:26:31,454 [INFO]     [sin padding]
+2026-05-12 15:26:31,524 [INFO]   Imagen 3: RGB (450, 450)
+2026-05-12 15:26:31,527 [INFO]     [bg check] 0/484 (0%)
+2026-05-12 15:26:31,527 [INFO]     [sin padding]
+2026-05-12 15:26:31,594 [INFO]   Imagen 4: RGB (450, 450)
+2026-05-12 15:26:31,598 [INFO]     [bg check] 0/484 (0%)
+2026-05-12 15:26:31,598 [INFO]     [sin padding]
+2026-05-12 15:26:31,663 [INFO]   Imagen 5: RGB (450, 450)
+2026-05-12 15:26:31,666 [INFO]     [bg check] 0/484 (0%)
+2026-05-12 15:26:31,666 [INFO]     [sin padding]
+2026-05-12 15:26:35,055 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-12 15:26:37,418 [INFO]   Imagen 1/5 subida
+2026-05-12 15:26:40,486 [INFO]   Imagen 2/5 subida
+2026-05-12 15:26:43,871 [INFO]   Imagen 3/5 subida
+2026-05-12 15:26:47,473 [INFO]   Imagen 4/5 subida
+2026-05-12 15:26:52,251 [INFO]   Imagen 5/5 subida
+2026-05-12 15:26:53,754 [INFO] 
 ============================================================
-2026-05-12 14:12:27,889 [INFO] RESUMEN
-2026-05-12 14:12:27,889 [INFO] ============================================================
-2026-05-12 14:12:27,889 [INFO]   Total     : 1
-2026-05-12 14:12:27,889 [INFO]   Procesados: 0
-2026-05-12 14:12:27,890 [INFO]   Sin imagen: 1
-2026-05-12 14:12:27,890 [INFO]   Errores   : 0
+2026-05-12 15:26:53,754 [INFO] RESUMEN
+2026-05-12 15:26:53,754 [INFO] ============================================================
+2026-05-12 15:26:53,754 [INFO]   Total     : 1
+2026-05-12 15:26:53,754 [INFO]   Procesados: 1
+2026-05-12 15:26:53,754 [INFO]   Sin imagen: 0
+2026-05-12 15:26:53,754 [INFO]   Errores   : 0
