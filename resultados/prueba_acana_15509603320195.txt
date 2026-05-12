@@ -1,29 +1,31 @@
-2026-05-12 15:12:16,628 [INFO] ============================================================
-2026-05-12 15:12:16,628 [INFO] PROCESADOR ACANA — SHOPIFY
-2026-05-12 15:12:16,628 [INFO] ============================================================
-2026-05-12 15:12:16,628 [INFO] Catálogo cargado desde caché: 24 productos
-2026-05-12 15:12:22,996 [INFO] Token obtenido
-2026-05-12 15:12:23,401 [INFO] 
+2026-05-12 15:19:23,338 [INFO] ============================================================
+2026-05-12 15:19:23,339 [INFO] PROCESADOR ACANA — SHOPIFY
+2026-05-12 15:19:23,339 [INFO] ============================================================
+2026-05-12 15:19:23,339 [INFO] Catálogo cargado desde caché: 24 productos
+2026-05-12 15:19:23,698 [INFO] Token obtenido
+2026-05-12 15:19:23,988 [INFO] 
 [1/1] ACANA FELINE ADULT WILD PRAIRIE  (ID: 15509603320195)
-2026-05-12 15:12:23,402 [INFO]   Match: eu-aca-wild-prairie-new-cat  (score=0.40, 3 imgs)
-2026-05-12 15:12:23,785 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Back 4.5kg EMEA APAC.png  2000×2000
-2026-05-12 15:12:24,060 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Front Right 4.5kg EMEA APAC.png  2000×2000
-2026-05-12 15:12:24,244 [WARNING]   Baja resolución 227×168 — omitida: acana-wholesome-grains.png
-2026-05-12 15:12:24,247 [INFO]   Imagen 1: RGBA (2000, 2000)
-2026-05-12 15:12:24,474 [INFO]     [bg check] 0/10000 (0%)
-2026-05-12 15:12:24,474 [INFO]     [sin padding]
-2026-05-12 15:12:24,484 [INFO]   Imagen 2: RGBA (2000, 2000)
-2026-05-12 15:12:24,705 [INFO]     [bg check] 0/10000 (0%)
-2026-05-12 15:12:24,705 [INFO]     [sin padding]
-2026-05-12 15:12:29,195 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-12 15:12:38,864 [INFO]   ✓ Imagen 1/2 subida
-2026-05-12 15:12:42,705 [INFO]   ✓ Imagen 2/2 subida
-2026-05-12 15:12:44,205 [INFO] 
+2026-05-12 15:19:23,988 [INFO]   Match: eu-aca-wild-prairie-new-cat  (score=0.40, 3 imgs)
+2026-05-12 15:19:24,401 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Back 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:19:24,694 [INFO]   Descargada: ACANA Cat Highest Protein Wild Prairie Front Right 4.5kg EMEA APAC.png  2000×2000
+2026-05-12 15:19:24,909 [WARNING]   Baja resolución 227×168 — omitida: acana-wholesome-grains.png
+2026-05-12 15:19:24,911 [INFO]   Imagen 1: RGBA (2000, 2000)
+2026-05-12 15:19:25,010 [INFO]     [alpha check] 58% transparente
+2026-05-12 15:19:25,048 [INFO]     [bg check] 10000/10000 (100%)
+2026-05-12 15:19:25,048 [INFO]     [padding 5%]
+2026-05-12 15:19:25,135 [INFO]   Imagen 2: RGBA (2000, 2000)
+2026-05-12 15:19:25,235 [INFO]     [alpha check] 64% transparente
+2026-05-12 15:19:25,270 [INFO]     [bg check] 10000/10000 (100%)
+2026-05-12 15:19:25,270 [INFO]     [padding 5%]
+2026-05-12 15:19:26,979 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-12 15:19:30,205 [INFO]   ✓ Imagen 1/2 subida
+2026-05-12 15:19:33,404 [INFO]   ✓ Imagen 2/2 subida
+2026-05-12 15:19:34,905 [INFO] 
 ============================================================
-2026-05-12 15:12:44,205 [INFO] RESUMEN
-2026-05-12 15:12:44,205 [INFO] ============================================================
-2026-05-12 15:12:44,205 [INFO]   Total      : 1
-2026-05-12 15:12:44,205 [INFO]   Procesados : 1
-2026-05-12 15:12:44,205 [INFO]   Sin match  : 0
-2026-05-12 15:12:44,205 [INFO]   Sin imagen : 0
-2026-05-12 15:12:44,205 [INFO]   Errores    : 0
+2026-05-12 15:19:34,905 [INFO] RESUMEN
+2026-05-12 15:19:34,905 [INFO] ============================================================
+2026-05-12 15:19:34,905 [INFO]   Total      : 1
+2026-05-12 15:19:34,905 [INFO]   Procesados : 1
+2026-05-12 15:19:34,905 [INFO]   Sin match  : 0
+2026-05-12 15:19:34,905 [INFO]   Sin imagen : 0
+2026-05-12 15:19:34,905 [INFO]   Errores    : 0
