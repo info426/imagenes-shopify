@@ -1,26 +1,20 @@
-2026-05-13 16:13:42,056 [INFO] ============================================================
-2026-05-13 16:13:42,056 [INFO] PROCESADOR GENÉRICO — SHOPIFY
-2026-05-13 16:13:42,056 [INFO] ============================================================
-2026-05-13 16:13:42,056 [INFO] Vendor  : Affinity
-2026-05-13 16:13:42,057 [INFO] Fuente  : web_y_amazon
-2026-05-13 16:13:42,057 [INFO] Web URL : https://www.advance-affinity.com/es/es/home
-2026-05-13 16:13:42,341 [INFO] Token obtenido
-2026-05-13 16:13:42,341 [INFO] Construyendo catálogo web...
-2026-05-13 16:13:42,341 [WARNING]   build_catalog() no implementado para affinity.
-2026-05-13 16:13:42,341 [WARNING]   Implementa el scraping de https://www.advance-affinity.com/es/es/home en scripts/process_generic.py
-2026-05-13 16:13:42,341 [INFO] Modo prueba — producto ID: 15509604204931
-2026-05-13 16:13:42,713 [INFO] 
+2026-05-13 16:16:25,098 [INFO] ============================================================
+2026-05-13 16:16:25,098 [INFO] PROCESADOR GENÉRICO — SHOPIFY
+2026-05-13 16:16:25,098 [INFO] ============================================================
+2026-05-13 16:16:25,098 [INFO] Vendor  : Affinity
+2026-05-13 16:16:25,098 [INFO] Fuente  : shopify
+2026-05-13 16:16:25,098 [INFO] Web URL : https://www.advance-affinity.com/es/es/home
+2026-05-13 16:16:25,473 [INFO] Token obtenido
+2026-05-13 16:16:25,473 [INFO] Modo prueba — producto ID: 15509604204931
+2026-05-13 16:16:25,767 [INFO] 
 [1/1] ID 15509604204931
-2026-05-13 16:13:42,713 [INFO]   Título : ADVANCE CANINE ADULT LIGHT MEDIUM POLLO 3KG P (NDR)
-2026-05-13 16:13:42,714 [WARNING]   [web_oficial] Scraping no implementado para este vendor.
-2026-05-13 16:13:42,714 [WARNING]   Adapta get_images_from_web() en scripts/process_generic.py
-2026-05-13 16:13:42,714 [WARNING]   [web_y_amazon] Búsqueda en Amazon no implementada.
-2026-05-13 16:13:42,714 [WARNING]   Sin imágenes encontradas (web + Amazon) — saltando
-2026-05-13 16:13:43,714 [INFO] 
+2026-05-13 16:16:25,767 [INFO]   Título : ADVANCE CANINE ADULT LIGHT MEDIUM POLLO 3KG P (NDR)
+2026-05-13 16:16:26,065 [WARNING]   Sin imágenes en Shopify — saltando
+2026-05-13 16:16:27,066 [INFO] 
 ============================================================
-2026-05-13 16:13:43,714 [INFO] RESUMEN
-2026-05-13 16:13:43,714 [INFO] ============================================================
-2026-05-13 16:13:43,714 [INFO]   Total     : 1
-2026-05-13 16:13:43,714 [INFO]   Procesados: 0
-2026-05-13 16:13:43,714 [INFO]   Sin imagen: 1
-2026-05-13 16:13:43,714 [INFO]   Errores   : 0
+2026-05-13 16:16:27,066 [INFO] RESUMEN
+2026-05-13 16:16:27,066 [INFO] ============================================================
+2026-05-13 16:16:27,066 [INFO]   Total     : 1
+2026-05-13 16:16:27,066 [INFO]   Procesados: 0
+2026-05-13 16:16:27,066 [INFO]   Sin imagen: 1
+2026-05-13 16:16:27,066 [INFO]   Errores   : 0
