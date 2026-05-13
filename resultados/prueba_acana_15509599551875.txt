@@ -1,46 +1,17 @@
-2026-05-12 15:31:05,968 [INFO] ============================================================
-2026-05-12 15:31:05,968 [INFO] PROCESADOR ACANA — SHOPIFY
-2026-05-12 15:31:05,968 [INFO] ============================================================
-2026-05-12 15:31:06,025 [INFO] Scraping catálogo Acana con Playwright...
-2026-05-12 15:31:06,654 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-gatos
-2026-05-12 15:31:12,572 [INFO]   12 productos encontrados en cat
-2026-05-12 15:31:15,017 [INFO]     eu-aca-bountiful-catch-cat: 3 imagen(es)
-2026-05-12 15:31:18,486 [INFO]     eu-aca-first-feast-cat: 3 imagen(es)
-2026-05-12 15:31:21,896 [INFO]     eu-aca-grasslands-new-cat: 3 imagen(es)
-2026-05-12 15:31:25,305 [INFO]     eu-aca-highest-protein-indoor-cat: 3 imagen(es)
-2026-05-12 15:31:28,808 [INFO]     eu-aca-homestead-cat: 3 imagen(es)
-2026-05-12 15:31:32,320 [INFO]     eu-aca-indoor-entree-cat: 6 imagen(es)
-2026-05-12 15:31:35,816 [INFO]     eu-aca-pacifica-new-cat: 3 imagen(es)
-2026-05-12 15:31:39,277 [INFO]     eu-aca-wild-prairie-new-cat: 3 imagen(es)
-2026-05-12 15:31:42,721 [INFO]     eu-premium-pate-cat-lamb-recipe: 4 imagen(es)
-2026-05-12 15:31:46,121 [INFO]     eu-premium-pate-cat-salmon-recipe: 4 imagen(es)
-2026-05-12 15:31:49,516 [INFO]     eu-premium-pate-cat-tuna-recipe: 4 imagen(es)
-2026-05-12 15:31:52,894 [INFO]     eu-premium-pate-kitten-recipe: 4 imagen(es)
-2026-05-12 15:31:53,895 [INFO]   Cargando categoría: https://emea.acana.com/es-ES/para-perros
-2026-05-12 15:31:59,406 [INFO]   12 productos encontrados en dog
-2026-05-12 15:32:01,865 [INFO]     eu-aca-adult-large: 5 imagen(es)
-2026-05-12 15:32:05,458 [INFO]     eu-aca-adult-small: 5 imagen(es)
-2026-05-12 15:32:08,912 [INFO]     eu-aca-adult: 6 imagen(es)
-2026-05-12 15:32:12,429 [INFO]     eu-aca-light-fit: 5 imagen(es)
-2026-05-12 15:32:15,872 [INFO]     eu-aca-puppy-junior: 5 imagen(es)
-2026-05-12 15:32:19,313 [INFO]     eu-aca-puppy-large: 5 imagen(es)
-2026-05-12 15:32:22,750 [INFO]     eu-aca-puppy-small: 5 imagen(es)
-2026-05-12 15:32:26,275 [INFO]     eu-aca-senior: 5 imagen(es)
-2026-05-12 15:32:29,775 [INFO]     eu-aca-singles-duck-new: 5 imagen(es)
-2026-05-12 15:32:33,249 [INFO]     eu-aca-singles-lamb-new: 5 imagen(es)
-2026-05-12 15:32:36,703 [INFO]     eu-aca-singles-pork-new: 5 imagen(es)
-2026-05-12 15:32:40,229 [INFO]     eu-aca-sport-agility: 5 imagen(es)
-2026-05-12 15:32:41,294 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
-2026-05-12 15:32:41,753 [INFO] Token obtenido
-2026-05-12 15:32:42,094 [INFO] 
+2026-05-13 15:12:13,199 [INFO] ============================================================
+2026-05-13 15:12:13,199 [INFO] PROCESADOR ACANA — SHOPIFY
+2026-05-13 15:12:13,199 [INFO] ============================================================
+2026-05-13 15:12:13,200 [INFO] Catálogo cargado desde caché: 24 productos
+2026-05-13 15:12:13,592 [INFO] Token obtenido
+2026-05-13 15:12:13,889 [INFO] 
 [1/1] ACANA CANINE ADULT  (ID: 15509599551875)
-2026-05-12 15:32:42,095 [WARNING]   Sin match (score=0.00) — saltando
-2026-05-12 15:32:42,095 [INFO] 
+2026-05-13 15:12:13,890 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-13 15:12:13,890 [INFO] 
 ============================================================
-2026-05-12 15:32:42,095 [INFO] RESUMEN
-2026-05-12 15:32:42,095 [INFO] ============================================================
-2026-05-12 15:32:42,095 [INFO]   Total      : 1
-2026-05-12 15:32:42,095 [INFO]   Procesados : 0
-2026-05-12 15:32:42,095 [INFO]   Sin match  : 1
-2026-05-12 15:32:42,095 [INFO]   Sin imagen : 0
-2026-05-12 15:32:42,095 [INFO]   Errores    : 0
+2026-05-13 15:12:13,890 [INFO] RESUMEN
+2026-05-13 15:12:13,890 [INFO] ============================================================
+2026-05-13 15:12:13,890 [INFO]   Total      : 1
+2026-05-13 15:12:13,890 [INFO]   Procesados : 0
+2026-05-13 15:12:13,890 [INFO]   Sin match  : 1
+2026-05-13 15:12:13,890 [INFO]   Sin imagen : 0
+2026-05-13 15:12:13,890 [INFO]   Errores    : 0
