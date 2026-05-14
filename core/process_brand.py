@@ -120,6 +120,8 @@ def _replace_images(api: ShopifyAPI, pid: int, title: str,
         pos = img_data.get("position", 0)
         src = img_data.get("src", "").split("?")[0]
         stem = src.split("/")[-1].rsplit(".", 1)[0] if src else ""
+        # Eliminar UUID de Shopify: _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        stem = re.sub(r"_[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$", "", stem)
         orig_meta[pos] = {
             "alt":      img_data.get("alt") or title,
             "filename": f"{stem}.webp" if stem else f"{slug}_{pid}_{pos}.webp",
@@ -185,6 +187,7 @@ def run_backup(api: ShopifyAPI, vendor: str):
                 path = folder / f"{key}.{ext}"
                 path.write_bytes(raw)
                 stem = src.split("/")[-1].rsplit(".", 1)[0]
+                stem = re.sub(r"_[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$", "", stem)
                 metadata[key] = {
                     "alt":      img_data.get("alt") or "",
                     "filename": f"{stem}.webp" if stem else f"{slug}_{pid}_{j}.webp",
