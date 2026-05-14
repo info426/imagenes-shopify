@@ -63,17 +63,53 @@ def load_sr_model(scale: int = 2):
     return sr
 
 
-def upscale_pil(img: Image.Image, sr, scale: int) -> Image.Image:
-    """Aplica EDSR super-resolución a una imagen PIL."""
+def upscale_pil(img: Image.Image, sr, scale: int,
+                tile_size: int = 256, overlap: int = 16) -> Image.Image:
+    """
+    Aplica EDSR en tiles para evitar OOM en CPU con imágenes grandes.
+    tile_size: tamaño del tile en píxeles (input)
+    overlap: píxeles de solapamiento para evitar artefactos en bordes
+    """
     img_np  = np.array(img.convert("RGB"))
     img_bgr = cv2.cvtColor(img_np, cv2.COLOR_RGB2BGR)
+    h, w    = img_bgr.shape[:2]
+    out_h, out_w = h * scale, w * scale
+    output  = np.zeros((out_h, out_w, 3), dtype=np.uint8)
 
-    log.info(f"    [EDSR x{scale}] {img.size} → procesando en CPU...")
-    upscaled_bgr = sr.upsample(img_bgr)
+    tiles_x = (w + tile_size - 1) // tile_size
+    tiles_y = (h + tile_size - 1) // tile_size
+    total   = tiles_x * tiles_y
+    n       = 0
 
-    upscaled_rgb = cv2.cvtColor(upscaled_bgr, cv2.COLOR_BGR2RGB)
-    result = Image.fromarray(upscaled_rgb)
-    log.info(f"    [EDSR] {img.size} → {result.size}")
+    for ty in range(tiles_y):
+        for tx in range(tiles_x):
+            n += 1
+            # Tile con overlap
+            x1 = max(0, tx * tile_size - overlap)
+            y1 = max(0, ty * tile_size - overlap)
+            x2 = min(w, (tx + 1) * tile_size + overlap)
+            y2 = min(h, (ty + 1) * tile_size + overlap)
+
+            tile_in = img_bgr[y1:y2, x1:x2]
+            tile_up = sr.upsample(tile_in)
+
+            # Coordenadas de la parte útil (sin overlap) en el tile escalado
+            cx1 = (tx * tile_size - x1) * scale
+            cy1 = (ty * tile_size - y1) * scale
+            cx2 = cx1 + (min(w, (tx + 1) * tile_size) - tx * tile_size) * scale
+            cy2 = cy1 + (min(h, (ty + 1) * tile_size) - ty * tile_size) * scale
+
+            # Coordenadas en la imagen de salida
+            ox1 = tx * tile_size * scale
+            oy1 = ty * tile_size * scale
+            ox2 = ox1 + (cx2 - cx1)
+            oy2 = oy1 + (cy2 - cy1)
+
+            output[oy1:oy2, ox1:ox2] = tile_up[cy1:cy2, cx1:cx2]
+            log.info(f"    [EDSR] tile {n}/{total} ✓")
+
+    result = Image.fromarray(cv2.cvtColor(output, cv2.COLOR_BGR2RGB))
+    log.info(f"    [EDSR x{scale}] {img.size} → {result.size}")
     return result
 
 
