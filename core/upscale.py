@@ -1,21 +1,21 @@
 """
-Super-resolución con Real-ESRGAN ncnn-vulkan (binario precompilado).
+Super-resolución con OpenCV DNN + modelo EDSR.
 
-Sin dependencias PyTorch/basicsr — usa el binario oficial de xinntao.
-Mismo modelo y calidad que la versión Python, sin conflictos de librerías.
+Funciona en CPU puro, sin GPU ni Vulkan. EDSR (Enhanced Deep Residual
+Networks) es un modelo de super-resolución de referencia en la industria:
+mejora nitidez, elimina artefactos JPG y recupera detalles finos.
 """
 
 import argparse
 import logging
 import os
-import subprocess
 import sys
-import tempfile
 import time
-import zipfile
 from io import BytesIO
 from pathlib import Path
 
+import cv2
+import numpy as np
 import requests
 from dotenv import load_dotenv
 from PIL import Image
@@ -28,13 +28,12 @@ from core.process_brand import vendor_slug, _replace_images
 load_dotenv()
 
 BACKUPS_DIR = Path("backups")
-TOOLS_DIR   = Path(".tools")
+MODELS_DIR  = Path("models")
 
-NCNN_URL = (
-    "https://github.com/xinntao/Real-ESRGAN/releases/download/"
-    "v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip"
-)
-NCNN_BIN = TOOLS_DIR / "realesrgan-ncnn-vulkan"
+EDSR_MODELS = {
+    2: "https://github.com/Saafke/EDSR_Tensorflow/raw/master/models/EDSR_x2.pb",
+    4: "https://github.com/Saafke/EDSR_Tensorflow/raw/master/models/EDSR_x4.pb",
+}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -44,59 +43,42 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
-def setup_ncnn() -> Path:
-    """Descarga y prepara el binario Real-ESRGAN ncnn."""
-    if NCNN_BIN.exists():
-        return NCNN_BIN
+def load_sr_model(scale: int = 2):
+    """Descarga si hace falta y carga el modelo EDSR."""
+    MODELS_DIR.mkdir(exist_ok=True)
+    model_path = MODELS_DIR / f"EDSR_x{scale}.pb"
 
-    TOOLS_DIR.mkdir(exist_ok=True)
-    zip_path = TOOLS_DIR / "realesrgan-ncnn.zip"
+    if not model_path.exists():
+        url = EDSR_MODELS[scale]
+        log.info(f"Descargando modelo EDSR x{scale} (~150 MB)...")
+        r = requests.get(url, stream=True, timeout=300)
+        r.raise_for_status()
+        model_path.write_bytes(r.content)
+        log.info("Modelo descargado.")
 
-    log.info("Descargando Real-ESRGAN ncnn-vulkan...")
-    r = requests.get(NCNN_URL, stream=True, timeout=120)
-    r.raise_for_status()
-    zip_path.write_bytes(r.content)
-
-    with zipfile.ZipFile(zip_path) as zf:
-        zf.extractall(TOOLS_DIR)
-    zip_path.unlink()
-
-    NCNN_BIN.chmod(0o755)
-    log.info(f"Binario listo: {NCNN_BIN}")
-    return NCNN_BIN
+    sr = cv2.dnn_superres.DnnSuperResImpl_create()
+    sr.readModel(str(model_path))
+    sr.setModel("edsr", scale)
+    log.info(f"Modelo EDSR x{scale} cargado (CPU).")
+    return sr
 
 
-def upscale_image_ncnn(img: Image.Image, ncnn_bin: Path,
-                       outscale: int = 2) -> Image.Image:
-    """Aplica Real-ESRGAN al imagen PIL usando el binario ncnn."""
-    with tempfile.TemporaryDirectory() as tmp:
-        inp = Path(tmp) / "input.png"
-        out = Path(tmp) / "output.png"
+def upscale_pil(img: Image.Image, sr, scale: int) -> Image.Image:
+    """Aplica EDSR super-resolución a una imagen PIL."""
+    img_np  = np.array(img.convert("RGB"))
+    img_bgr = cv2.cvtColor(img_np, cv2.COLOR_RGB2BGR)
 
-        img.convert("RGB").save(str(inp), format="PNG")
+    log.info(f"    [EDSR x{scale}] {img.size} → procesando en CPU...")
+    upscaled_bgr = sr.upsample(img_bgr)
 
-        cmd = [
-            str(ncnn_bin),
-            "-i", str(inp),
-            "-o", str(out),
-            "-n", "realesrgan-x4plus",
-            "-s", str(outscale),
-            "-f", "png",
-        ]
-        log.info(f"    [ESRGAN ncnn] {img.size} outscale x{outscale}...")
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
-
-        if result.returncode != 0:
-            log.warning(f"    [ESRGAN] stderr: {result.stderr[:300]}")
-            raise RuntimeError(f"Real-ESRGAN falló (code {result.returncode})")
-
-        upscaled = Image.open(str(out)).convert("RGB")
-        log.info(f"    [ESRGAN] {img.size} → {upscaled.size}")
-        return upscaled
+    upscaled_rgb = cv2.cvtColor(upscaled_bgr, cv2.COLOR_BGR2RGB)
+    result = Image.fromarray(upscaled_rgb)
+    log.info(f"    [EDSR] {img.size} → {result.size}")
+    return result
 
 
 def run_upscale(api: ShopifyAPI, vendor: str,
-                product_ids: list, outscale: int = 2):
+                product_ids: list, scale: int = 2):
     slug        = vendor_slug(vendor)
     backup_root = BACKUPS_DIR / slug
 
@@ -104,7 +86,7 @@ def run_upscale(api: ShopifyAPI, vendor: str,
         log.error(f"No existe backup para '{vendor}'.")
         sys.exit(1)
 
-    ncnn_bin = setup_ncnn()
+    sr = load_sr_model(scale)
 
     for pid in product_ids:
         product = api.get_product(pid)
@@ -125,7 +107,7 @@ def run_upscale(api: ShopifyAPI, vendor: str,
                 img = Image.open(BytesIO(raw)).convert("RGB")
                 log.info(f"  {img_path.name}: {img.size}")
 
-                upscaled = upscale_image_ncnn(img, ncnn_bin, outscale=outscale)
+                upscaled = upscale_pil(img, sr, scale)
                 final    = process_image(upscaled)
                 processed.append(final)
             except Exception as e:
@@ -144,20 +126,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--vendor",      required=True)
     parser.add_argument("--product-ids", required=True)
-    parser.add_argument("--outscale",    type=int, default=2)
+    parser.add_argument("--scale",       type=int, default=2, choices=[2, 4])
     args = parser.parse_args()
 
     product_ids = [int(x.strip()) for x in args.product_ids.split(",") if x.strip()]
 
     log.info("=" * 60)
-    log.info(f"  Vendor   : {args.vendor}")
-    log.info(f"  IDs      : {product_ids}")
-    log.info(f"  Outscale : x{args.outscale}")
+    log.info(f"  Vendor : {args.vendor}")
+    log.info(f"  IDs    : {product_ids}")
+    log.info(f"  Scale  : x{args.scale}")
     log.info("=" * 60)
 
     token = get_token()
     api   = ShopifyAPI(token)
-    run_upscale(api, args.vendor, product_ids, outscale=args.outscale)
+    run_upscale(api, args.vendor, product_ids, scale=args.scale)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-name: Mejorar resolución con IA (Real-ESRGAN)
+name: Mejorar resolución con IA (EDSR)
 
 on:
   workflow_dispatch:
@@ -9,8 +9,8 @@ on:
       product_ids:
         description: 'IDs de productos separados por coma'
         required: true
-      outscale:
-        description: 'Factor de mejora (2 = calidad alta, 4 = máxima calidad, más lento)'
+      scale:
+        description: 'Factor de mejora (2 recomendado, 4 = máxima calidad, más lento)'
         required: false
         type: choice
         options:
@@ -38,13 +38,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Instalar dependencias base
-        run: pip install -r requirements.txt
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+          pip install opencv-contrib-python
 
-      - name: Instalar librerías Vulkan (necesarias para ncnn)
-        run: sudo apt-get install -y libvulkan1 libgomp1
-
-      - name: Mejorar resolución con Real-ESRGAN
+      - name: Mejorar resolución con EDSR
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
@@ -53,7 +52,7 @@ jobs:
           python3 core/upscale.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --product-ids "${{ github.event.inputs.product_ids }}" \
-            --outscale "${{ github.event.inputs.outscale }}" \
+            --scale "${{ github.event.inputs.scale }}" \
             2>&1 | tee resultados/upscale_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log
