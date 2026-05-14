@@ -1,0 +1,66 @@
+name: Mejorar resolución con IA (Real-ESRGAN)
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify'
+        required: true
+      product_ids:
+        description: 'IDs de productos separados por coma'
+        required: true
+      outscale:
+        description: 'Factor de mejora (2 = calidad alta, 4 = máxima calidad, más lento)'
+        required: false
+        type: choice
+        options:
+          - '2'
+          - '4'
+        default: '2'
+
+jobs:
+  upscale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+
+      - name: Configurar Git LFS
+        run: git lfs install
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias base
+        run: pip install -r requirements.txt
+
+      - name: Instalar Real-ESRGAN y dependencias IA
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install realesrgan basicsr
+
+      - name: Mejorar resolución con Real-ESRGAN
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          python3 core/upscale.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --product-ids "${{ github.event.inputs.product_ids }}" \
+            --outscale "${{ github.event.inputs.outscale }}" \
+            2>&1 | tee resultados/upscale_${{ github.event.inputs.vendor }}.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "upscale: ${{ github.event.inputs.vendor }}"
+          git push
