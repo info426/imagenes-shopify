@@ -1,97 +1,802 @@
-2026-05-14 15:07:35,015 [INFO] ============================================================
-2026-05-14 15:07:35,015 [INFO]   Vendor   : VIRBAC
-2026-05-14 15:07:35,015 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-14 15:07:35,015 [INFO]   Pipeline : webp_only
-2026-05-14 15:07:35,015 [INFO] ============================================================
-2026-05-14 15:07:35,422 [INFO] Token obtenido
-2026-05-14 15:07:36,217 [INFO] 
+2026-05-14 15:19:47,645 [INFO] ============================================================
+2026-05-14 15:19:47,645 [INFO]   Vendor   : VIRBAC
+2026-05-14 15:19:47,646 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-14 15:19:47,646 [INFO]   Pipeline : webp_only
+2026-05-14 15:19:47,646 [INFO] ============================================================
+2026-05-14 15:19:47,963 [INFO] Token obtenido
+2026-05-14 15:19:48,694 [INFO] 
 [1/61] ALLERDERM CHAMPU PIEL NORMAL 250 ML  (ID: 15391464587651)
-2026-05-14 15:07:36,231 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:07:36,252 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:07:36,271 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:07:36,299 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:07:36,325 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:07:36,361 [INFO]   img_06.jpg: RGB (2000, 2000)
-2026-05-14 15:07:41,108 [INFO]   6 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:07:43,383 [INFO]   ✓ 1/6 subida
-2026-05-14 15:07:46,464 [INFO]   ✓ 2/6 subida
-2026-05-14 15:07:50,181 [INFO]   ✓ 3/6 subida
-2026-05-14 15:07:53,402 [INFO]   ✓ 4/6 subida
-2026-05-14 15:07:57,623 [INFO]   ✓ 5/6 subida
-2026-05-14 15:08:00,417 [INFO]   ✓ 6/6 subida
-2026-05-14 15:08:01,918 [INFO] 
+2026-05-14 15:19:48,694 [INFO]   Ya procesado — saltando
+2026-05-14 15:19:48,694 [INFO] 
 [2/61] ALLERDERM CHAMPÚ PIEL SECA Y ESCAMOSA 250 ML  (ID: 15401406628227)
-2026-05-14 15:08:01,919 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:08:01,935 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:08:01,951 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:08:01,976 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:08:02,009 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:08:02,035 [INFO]   img_06.jpg: RGB (2000, 2000)
-2026-05-14 15:08:06,724 [INFO]   6 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:08:09,054 [INFO]   ✓ 1/6 subida
-2026-05-14 15:08:12,091 [INFO]   ✓ 2/6 subida
-2026-05-14 15:08:15,964 [INFO]   ✓ 3/6 subida
-2026-05-14 15:08:20,596 [INFO]   ✓ 4/6 subida
-2026-05-14 15:08:27,797 [INFO]   ✓ 5/6 subida
-2026-05-14 15:08:30,756 [INFO]   ✓ 6/6 subida
-2026-05-14 15:08:32,257 [INFO] 
+2026-05-14 15:19:48,694 [INFO]   Ya procesado — saltando
+2026-05-14 15:19:48,694 [INFO] 
 [3/61] ALLERDERM CHAMPÚ PIEL SENSIBLE 250 ML  (ID: 15391341838723)
-2026-05-14 15:08:32,259 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:08:32,278 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:08:32,297 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:08:32,322 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:08:32,346 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:08:32,379 [INFO]   img_06.jpg: RGB (2000, 2000)
-2026-05-14 15:08:36,395 [INFO]   6 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:08:38,850 [INFO]   ✓ 1/6 subida
-2026-05-14 15:08:41,978 [INFO]   ✓ 2/6 subida
-2026-05-14 15:08:45,604 [INFO]   ✓ 3/6 subida
-2026-05-14 15:08:48,946 [INFO]   ✓ 4/6 subida
-2026-05-14 15:08:53,218 [INFO]   ✓ 5/6 subida
-2026-05-14 15:08:56,079 [INFO]   ✓ 6/6 subida
-2026-05-14 15:08:57,579 [INFO] 
+2026-05-14 15:19:48,694 [INFO]   Ya procesado — saltando
+2026-05-14 15:19:48,694 [INFO] 
 [4/61] ALLERDERM FOAM 100ML  (ID: 15400436203907)
-2026-05-14 15:08:57,580 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:08:57,599 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:08:57,625 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:08:57,654 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:09:00,761 [INFO]   4 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:09:03,021 [INFO]   ✓ 1/4 subida
-2026-05-14 15:09:06,976 [INFO]   ✓ 2/4 subida
-2026-05-14 15:09:10,809 [INFO]   ✓ 3/4 subida
-2026-05-14 15:09:13,526 [INFO]   ✓ 4/4 subida
-2026-05-14 15:09:15,027 [INFO] 
+2026-05-14 15:19:48,694 [INFO]   Ya procesado — saltando
+2026-05-14 15:19:48,694 [INFO] 
 [5/61] ALLERDERM SPOT-ON 2 ml 6 pip < 10 Kg  (ID: 15391503581571)
-2026-05-14 15:09:15,027 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:09:15,046 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:09:15,059 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:09:15,084 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:09:15,108 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:09:18,944 [INFO]   5 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:09:21,680 [INFO]   ✓ 1/5 subida
-2026-05-14 15:09:24,818 [INFO]   ✓ 2/5 subida
-2026-05-14 15:09:28,298 [INFO]   ✓ 3/5 subida
-2026-05-14 15:09:32,482 [INFO]   ✓ 4/5 subida
-2026-05-14 15:09:35,070 [INFO]   ✓ 5/5 subida
-2026-05-14 15:09:36,571 [INFO] 
+2026-05-14 15:19:48,707 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:19:48,730 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:19:48,746 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:19:48,775 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:19:48,804 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:19:52,131 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:19:54,862 [INFO]   ✓ 1/5 subida  [virbac_15391503581571_1.webp]
+2026-05-14 15:19:57,989 [INFO]   ✓ 2/5 subida  [virbac_15391503581571_2.webp]
+2026-05-14 15:20:01,492 [INFO]   ✓ 3/5 subida  [virbac_15391503581571_3.webp]
+2026-05-14 15:20:05,146 [INFO]   ✓ 4/5 subida  [virbac_15391503581571_4.webp]
+2026-05-14 15:20:07,726 [INFO]   ✓ 5/5 subida  [virbac_15391503581571_5.webp]
+2026-05-14 15:20:09,227 [INFO] 
 [6/61] ALLERDERM SPOT-ON 4 ml 6 pip >10KG  (ID: 15400450294147)
-2026-05-14 15:09:36,572 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:09:36,589 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:09:36,602 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:09:36,627 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:09:36,650 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:09:40,453 [INFO]   5 imagen(es) antigua(s) eliminada(s)
-2026-05-14 15:09:43,118 [INFO]   ✓ 1/5 subida
-2026-05-14 15:09:46,540 [INFO]   ✓ 2/5 subida
-2026-05-14 15:09:50,062 [INFO]   ✓ 3/5 subida
-2026-05-14 15:09:53,987 [INFO]   ✓ 4/5 subida
-2026-05-14 15:09:56,703 [INFO]   ✓ 5/5 subida
-2026-05-14 15:09:58,203 [INFO] 
-[7/61] Allermyl Champú Dermatológico para Perros y Gatos con Picor y Piel Sensible  (ID: 15391341117827)
-2026-05-14 15:09:58,204 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-14 15:09:58,221 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-14 15:09:58,233 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-14 15:09:58,260 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-14 15:09:58,282 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-14 15:09:58,310 [INFO]   img_06.jpg: RGB (2000, 2000)
-2026-05-14 15:10:02,966 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:20:09,228 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:20:09,245 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:20:09,258 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:20:09,282 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:20:09,306 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:20:12,980 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:20:15,802 [INFO]   ✓ 1/5 subida  [virbac_15400450294147_1.webp]
+2026-05-14 15:20:19,039 [INFO]   ✓ 2/5 subida  [virbac_15400450294147_2.webp]
+2026-05-14 15:20:22,530 [INFO]   ✓ 3/5 subida  [virbac_15400450294147_3.webp]
+2026-05-14 15:20:26,218 [INFO]   ✓ 4/5 subida  [virbac_15400450294147_4.webp]
+2026-05-14 15:20:28,740 [INFO]   ✓ 5/5 subida  [virbac_15400450294147_5.webp]
+2026-05-14 15:20:30,241 [INFO] 
+[7/61] ALLERMYL CHAMPU 250 ML  (ID: 15391341117827)
+2026-05-14 15:20:30,243 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:20:30,260 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:20:30,272 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:20:30,299 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:20:30,324 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:20:30,354 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:20:31,223 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:20:33,653 [INFO]   ✓ 1/6 subida  [virbac_15391341117827_1.webp]
+2026-05-14 15:20:36,749 [INFO]   ✓ 2/6 subida  [virbac_15391341117827_2.webp]
+2026-05-14 15:20:40,282 [INFO]   ✓ 3/6 subida  [virbac_15391341117827_3.webp]
+2026-05-14 15:20:43,805 [INFO]   ✓ 4/6 subida  [virbac_15391341117827_4.webp]
+2026-05-14 15:20:47,747 [INFO]   ✓ 5/6 subida  [virbac_15391341117827_5.webp]
+2026-05-14 15:20:50,386 [INFO]   ✓ 6/6 subida  [virbac_15391341117827_6.webp]
+2026-05-14 15:20:51,887 [INFO] 
+[8/61] ANXITANE M/L 30CPD  (ID: 15391281217923)
+2026-05-14 15:20:51,889 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:20:51,900 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:20:51,925 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:20:51,959 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:20:54,581 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:20:56,987 [INFO]   ✓ 1/4 subida  [anxitane-ml-virbac-comprimidos-calmantes-perros-medianos-grandes-30cp.webp]
+2026-05-14 15:21:00,525 [INFO]   ✓ 2/4 subida  [anxitane-virbac-gato-persa-blanco-relajado-l-teanina-te-verde.webp]
+2026-05-14 15:21:04,540 [INFO]   ✓ 3/4 subida  [anxitane-virbac-perro-mestizo-durmiendo-sofa-ansiedad-calmante.webp]
+2026-05-14 15:21:07,630 [INFO]   ✓ 4/4 subida  [anxitane-virbac-94-por-ciento-tutores-satisfechos-comportamiento_c1231297-a6a1-45fe-858a-f27f848e1bf6.webp]
+2026-05-14 15:21:09,131 [INFO] 
+[9/61] ANXITANE S 30 cp  (ID: 15400432337283)
+2026-05-14 15:21:09,132 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:21:09,147 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:21:09,160 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:21:09,184 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:21:09,218 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:21:09,231 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:21:12,955 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:21:15,407 [INFO]   ✓ 1/6 subida  [anxitane-s-virbac-comprimidos-te-verde-perros-gatos-pequenos-30cp.webp]
+2026-05-14 15:21:18,677 [INFO]   ✓ 2/6 subida  [anxitane-virbac-gama-comportamiento-gatos-zenifel.webp]
+2026-05-14 15:21:22,142 [INFO]   ✓ 3/6 subida  [anxitane-virbac-gato-blanco-relajado-extracto-te-verde.webp]
+2026-05-14 15:21:26,264 [INFO]   ✓ 4/6 subida  [anxitane-virbac-perro-mestizo-relajado-sofa-efecto-calmante.webp]
+2026-05-14 15:21:29,225 [INFO]   ✓ 5/6 subida  [anxitane-virbac-94-por-ciento-tutores-satisfechos-comportamiento.webp]
+2026-05-14 15:21:32,540 [INFO]   ✓ 6/6 subida  [anxitane-ml-virbac-comprimidos-te-verde-perros-medianos-grandes-30cp.webp]
+2026-05-14 15:21:34,040 [INFO] 
+[10/61] EPIOTIC FORMULA AVANZADA 125ML  (ID: 15391290491267)
+2026-05-14 15:21:34,042 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:21:34,061 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:21:34,088 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:21:34,114 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:21:34,149 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:21:37,573 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:21:39,917 [INFO]   ✓ 1/5 subida  [epiotic-virbac-limpiador-auricular-perros-gatos-125ml-envase.webp]
+2026-05-14 15:21:43,392 [INFO]   ✓ 2/5 subida  [epiotic-virbac-limpieza-oidos-perro-boyero-berna.webp]
+2026-05-14 15:21:46,790 [INFO]   ✓ 3/5 subida  [epiotic-virbac-ingredientes-activos-glicotecnologia-acido-salicilico.webp]
+2026-05-14 15:21:51,042 [INFO]   ✓ 4/5 subida  [epiotic-virbac-aplicacion-limpieza-oidos-gato-negro-blanco.webp]
+2026-05-14 15:21:53,700 [INFO]   ✓ 5/5 subida  [epiotic-virbac-ph-neutro-ultrasuave-uso-regular.webp]
+2026-05-14 15:21:55,201 [INFO] 
+[11/61] FELURO 60 ML  (ID: 15391323160963)
+2026-05-14 15:21:55,202 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:21:55,217 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:21:55,246 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:21:55,270 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:21:55,291 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:21:58,373 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:22:01,071 [INFO]   ✓ 1/5 subida  [feluro-virbac-suplemento-urinario-gatos-60ml-caja-verde_04ecc4cf-e91b-4ab3-926e-75455f10b6b5.webp]
+2026-05-14 15:22:04,640 [INFO]   ✓ 2/5 subida  [feluro-virbac-administracion-jeringuilla-gato-scottish-fold-gris.webp]
+2026-05-14 15:22:08,135 [INFO]   ✓ 3/5 subida  [feluro-virbac-ingredientes-hibisco-glucosamina-aceites-oliva-copra.webp]
+2026-05-14 15:22:11,730 [INFO]   ✓ 4/5 subida  [feluro-virbac-gato-scottish-fold-gris-relamiendose-junto-caja.webp]
+2026-05-14 15:22:14,762 [INFO]   ✓ 5/5 subida  [feluro-virbac-92-por-ciento-gatos-aceptaron-mezclado-comida.webp]
+2026-05-14 15:22:16,263 [INFO] 
+[12/61] LIMPIADOR AURICULAR 100ML VIRBAC  (ID: 15391474057603)
+2026-05-14 15:22:16,264 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:22:16,284 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:22:16,312 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:22:16,338 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:22:16,373 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:22:19,832 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:22:22,522 [INFO]   ✓ 1/5 subida  [epiotic-virbac-limpiador-auricular-perros-gatos.webp]
+2026-05-14 15:22:26,177 [INFO]   ✓ 2/5 subida  [epiotic-virbac-bernes-montana-limpieza-oidos-cera-bacterias.webp]
+2026-05-14 15:22:29,854 [INFO]   ✓ 3/5 subida  [epiotic-virbac-ingredientes-glicotecnologia-acido-salicilico-anti-olor.webp]
+2026-05-14 15:22:36,233 [INFO]   ✓ 4/5 subida  [epiotic-virbac-gato-negro-blanco-limpieza-oido-aplicacion.webp]
+2026-05-14 15:22:38,830 [INFO]   ✓ 5/5 subida  [epiotic-virbac-ph-neutro-ultrasuave-uso-regular-oidos.webp]
+2026-05-14 15:22:40,331 [INFO] 
+[13/61] MOVOFLEX GATO 30 CHEWS  (ID: 15391327814019)
+2026-05-14 15:22:40,332 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:22:40,347 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:22:40,372 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:22:40,397 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:22:40,425 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:22:44,147 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:22:46,268 [INFO]   ✓ 1/5 subida  [movoflex-virbac-soft-chews-articular-gatos-30-masticables-bote.webp]
+2026-05-14 15:22:49,687 [INFO]   ✓ 2/5 subida  [movoflex-virbac-dos-gatos-burmese-recibiendo-masticable-articular-sofa.webp]
+2026-05-14 15:22:52,983 [INFO]   ✓ 3/5 subida  [movoflex-virbac-gatos-ingredientes-membrana-cascara-huevo-krill-hialuronico-astaxantina.webp]
+2026-05-14 15:22:58,099 [INFO]   ✓ 4/5 subida  [movoflex-virbac-gato-atigrado-oliendo-masticable-articular-exterior.webp]
+2026-05-14 15:23:00,963 [INFO]   ✓ 5/5 subida  [movoflex-virbac-92-por-ciento-gatos-les-encanto-masticable-articular.webp]
+2026-05-14 15:23:02,464 [INFO] 
+[14/61] MOVOFLEX L 6G X30 CHEWS  (ID: 15391286100355)
+2026-05-14 15:23:02,465 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:23:02,479 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:23:02,492 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:23:02,515 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:23:02,539 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:23:02,573 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:23:06,659 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:23:09,256 [INFO]   ✓ 1/6 subida  [movoflex-virbac-soft-chews-articular-perros-l-mas35kg-30ud.webp]
+2026-05-14 15:23:12,427 [INFO]   ✓ 2/6 subida  [movoflex-virbac-3-tallas-s-m-l-articular-perros-todas-razas_5839e8db-b7ae-4cc3-9e97-5d24f77df98d.webp]
+2026-05-14 15:23:15,868 [INFO]   ✓ 3/6 subida  [movoflex-virbac-samoyedo-snack-articular-movilidad-estructura-flexibilidad_d258db40-329b-44f8-a577-c680cce39a70.webp]
+2026-05-14 15:23:19,401 [INFO]   ✓ 4/6 subida  [movoflex-virbac-ingredientes-membrana-cascara-huevo-boswellia-omega3-hialuronico-astaxantina_2697eb81-88d3-4c05-9a9c-1cc3931de133.webp]
+2026-05-14 15:23:23,622 [INFO]   ✓ 5/6 subida  [movoflex-virbac-boyero-berna-recibiendo-masticable-articular-exterior_7ee29502-0d8a-4ede-9f8f-b6ebccf1de6c.webp]
+2026-05-14 15:23:26,948 [INFO]   ✓ 6/6 subida  [movoflex-virbac-94-por-ciento-perros-les-encanto-snack-articular_a010cf3b-49cf-43f5-ac4e-33bb6b23dfd7.webp]
+2026-05-14 15:23:28,449 [INFO] 
+[15/61] MOVOFLEX M 4G X30 CHEWS  (ID: 15391284101507)
+2026-05-14 15:23:28,451 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:23:28,465 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:23:28,478 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:23:28,502 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:23:28,527 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:23:28,561 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:23:32,923 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:23:35,267 [INFO]   ✓ 1/6 subida  [movoflex-virbac-soft-chews-articular-perros-m-15-35kg-30ud.webp]
+2026-05-14 15:23:38,503 [INFO]   ✓ 2/6 subida  [movoflex-virbac-3-tallas-s-m-l-articular-perros-todas-razas_1f79bc44-277e-4317-b480-c365247a57b2.webp]
+2026-05-14 15:23:41,861 [INFO]   ✓ 3/6 subida  [movoflex-virbac-samoyedo-snack-articular-movilidad-estructura-flexibilidad_589b1d76-fc2f-4ec9-ac70-7922a265b107.webp]
+2026-05-14 15:23:45,358 [INFO]   ✓ 4/6 subida  [movoflex-virbac-ingredientes-membrana-cascara-huevo-boswellia-omega3-hialuronico-astaxantina_d808d18f-e7ba-4e95-be88-65c36c696d98.webp]
+2026-05-14 15:23:49,466 [INFO]   ✓ 5/6 subida  [movoflex-virbac-boyero-berna-recibiendo-masticable-articular-exterior_e328f92c-c5df-4e26-8853-0676bd5c9efc.webp]
+2026-05-14 15:23:52,201 [INFO]   ✓ 6/6 subida  [movoflex-virbac-94-por-ciento-perros-les-encanto-snack-articular_a3efc632-e013-4d5b-99ca-8b8e4e2d2c8a.webp]
+2026-05-14 15:23:53,702 [INFO] 
+[16/61] MOVOFLEX S 2G X30 CHEWS  (ID: 15391292326275)
+2026-05-14 15:23:53,704 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:23:53,721 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:23:53,734 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:23:53,759 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:23:53,785 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:23:53,820 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:23:58,171 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:24:00,622 [INFO]   ✓ 1/6 subida  [movoflex-virbac-soft-chews-articular-perros-s-menos15kg-30ud.webp]
+2026-05-14 15:24:04,221 [INFO]   ✓ 2/6 subida  [movoflex-virbac-3-tallas-s-m-l-articular-perros-todas-razas.webp]
+2026-05-14 15:24:07,614 [INFO]   ✓ 3/6 subida  [movoflex-virbac-samoyedo-snack-articular-movilidad-estructura-flexibilidad.webp]
+2026-05-14 15:24:11,146 [INFO]   ✓ 4/6 subida  [movoflex-virbac-ingredientes-membrana-cascara-huevo-boswellia-omega3-hialuronico-astaxantina.webp]
+2026-05-14 15:24:15,418 [INFO]   ✓ 5/6 subida  [movoflex-virbac-boyero-berna-recibiendo-masticable-articular-exterior.webp]
+2026-05-14 15:24:18,222 [INFO]   ✓ 6/6 subida  [movoflex-virbac-94-por-ciento-perros-les-encanto-snack-articular.webp]
+2026-05-14 15:24:19,723 [INFO] 
+[17/61] NUTRIBOUND GATOS 3 BOTELLAS 150ML  (ID: 15400477163907)
+2026-05-14 15:24:19,724 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:24:19,745 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:24:19,764 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:24:19,795 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:24:22,353 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:24:25,000 [INFO]   ✓ 1/4 subida  [nutribound-virbac-suplemento-recuperacion-gatos-3x150ml-caja.webp]
+2026-05-14 15:24:28,399 [INFO]   ✓ 2/4 subida  [nutribound-virbac-apto-perros-gatos-todas-edades-tamanos-razas_bb63dd86-ffdd-4617-9dce-d44402415ae5.webp]
+2026-05-14 15:24:32,224 [INFO]   ✓ 3/4 subida  [nutribound-virbac-gato-atigrado-saltando-energia-suplemento-recuperacion.webp]
+2026-05-14 15:24:34,960 [INFO]   ✓ 4/4 subida  [nutribound-virbac-rico-nutrientes-vitaminas-esenciales-perros-gatos_ade9cf69-6561-439b-9ebe-86d91df018d4.webp]
+2026-05-14 15:24:36,460 [INFO] 
+[18/61] NUTRIBOUND PERROS 3 BOTELLAS 150ML  (ID: 15391515935107)
+2026-05-14 15:24:36,461 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:24:36,484 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:24:36,501 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:24:36,536 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:24:39,413 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:24:41,990 [INFO]   ✓ 1/4 subida  [nutribound-virbac-suplemento-recuperacion-perros-3x150ml-caja.webp]
+2026-05-14 15:24:45,353 [INFO]   ✓ 2/4 subida  [nutribound-virbac-apto-perros-gatos-todas-edades-tamanos-razas.webp]
+2026-05-14 15:24:49,697 [INFO]   ✓ 3/4 subida  [nutribound-virbac-dos-pastores-australianos-corriendo-campo-vitalidad.webp]
+2026-05-14 15:24:52,325 [INFO]   ✓ 4/4 subida  [nutribound-virbac-rico-nutrientes-vitaminas-esenciales-perros-gatos.webp]
+2026-05-14 15:24:53,826 [INFO] 
+[19/61] NUTRIPLUS GEL 120GR  (ID: 15391339872643)
+2026-05-14 15:24:53,827 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:24:53,846 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:24:53,870 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:24:53,894 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:24:53,923 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:24:57,196 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:24:59,564 [INFO]   ✓ 1/5 subida  [nutri-plus-gel-virbac-suplemento-energetico-perros-gatos-120g-tubo-caja.webp]
+2026-05-14 15:25:03,309 [INFO]   ✓ 2/5 subida  [nutri-plus-gel-virbac-administracion-perro-pastor-belga-alta-energia.webp]
+2026-05-14 15:25:06,752 [INFO]   ✓ 3/5 subida  [nutri-plus-gel-virbac-vitaminas-a-d3-e-b6-b12-minerales-calcio-magnesio.webp]
+2026-05-14 15:25:10,767 [INFO]   ✓ 4/5 subida  [nutri-plus-gel-virbac-labrador-dorado-lamiendo-gel-tubo-exterior.webp]
+2026-05-14 15:25:13,748 [INFO]   ✓ 5/5 subida  [nutri-plus-gel-virbac-refuerza-energia-nutrientes-mascotas.webp]
+2026-05-14 15:25:15,249 [INFO] 
+[20/61] PRONEFRA 180ML  (ID: 15391299371395)
+2026-05-14 15:25:15,250 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,270 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,290 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,313 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,340 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,362 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:25:15,374 [INFO]   img_07.jpg: RGB (2000, 2000)
+2026-05-14 15:25:20,335 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:25:23,114 [INFO]   ✓ 1/7 subida  [pronefra-virbac-suplemento-renal-perros-gatos-180ml-caja.webp]
+2026-05-14 15:25:26,194 [INFO]   ✓ 2/7 subida  [pronefra-virbac-disponible-2-formatos-60ml-180ml.webp]
+2026-05-14 15:25:29,802 [INFO]   ✓ 3/7 subida  [pronefra-virbac-administracion-jeringuilla-perro-funcion-renal.webp]
+2026-05-14 15:25:33,374 [INFO]   ✓ 4/7 subida  [pronefra-virbac-ingredientes-quitosan-proteina-pescado-magnesio-carbonato.webp]
+2026-05-14 15:25:36,790 [INFO]   ✓ 5/7 subida  [pronefra-virbac-perro-mestizo-esperando-dosis-jeringuilla.webp]
+2026-05-14 15:25:39,536 [INFO]   ✓ 6/7 subida  [pronefra-virbac-facil-administrar-perros-gatos-encanta.webp]
+2026-05-14 15:25:42,546 [INFO]   ✓ 7/7 subida  [pronefra-virbac-suplemento-renal-60ml-formato-pequeno-gatos-perros.webp]
+2026-05-14 15:25:44,046 [INFO] 
+[21/61] Pyoderm Champú Dermatológico para Perros y Gatos  (ID: 15391337578883)
+2026-05-14 15:25:44,048 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:25:44,062 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:25:44,075 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:25:44,101 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:25:44,126 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:25:44,152 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:25:48,054 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:25:50,263 [INFO]   ✓ 1/6 subida  [pyoderm-virbac-champu-clorhexidina-piel-infectada-perros-gatos-250ml.webp]
+2026-05-14 15:25:53,251 [INFO]   ✓ 2/6 subida  [pyoderm-virbac-gama-champus-sis-allermyl-sebomild-dermatologia.webp]
+2026-05-14 15:25:56,721 [INFO]   ✓ 3/6 subida  [pyoderm-virbac-golden-retriever-banado-piel-infectada-clorhexidina.webp]
+2026-05-14 15:26:00,093 [INFO]   ✓ 4/6 subida  [pyoderm-virbac-ingredientes-clorhexidina-glicotecnologia-quitosanida.webp]
+2026-05-14 15:26:05,275 [INFO]   ✓ 5/6 subida  [pyoderm-virbac-gato-pelo-largo-gris-banado-piel-bacteriana.webp]
+2026-05-14 15:26:08,130 [INFO]   ✓ 6/6 subida  [pyoderm-virbac-equilibrio-microbiano-piel-mascota.webp]
+2026-05-14 15:26:09,630 [INFO] 
+[22/61] SEBOMILD CHAMPÚ 250 ML  (ID: 15391454724483)
+2026-05-14 15:26:09,632 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:26:09,646 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:26:09,659 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:26:09,684 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:26:09,713 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:26:09,744 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:26:14,101 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:26:16,574 [INFO]   ✓ 1/6 subida  [sebomild-k-virbac-champu-piel-grasa-descamacion-perros-gatos-250ml.webp]
+2026-05-14 15:26:19,734 [INFO]   ✓ 2/6 subida  [sebomild-virbac-gama-champus-allermyl-sebomild-pyoderm-problemas-piel.webp]
+2026-05-14 15:26:23,368 [INFO]   ✓ 3/6 subida  [sebomild-virbac-golden-retriever-bano-piel-grasa-descamada-mal-olor.webp]
+2026-05-14 15:26:26,982 [INFO]   ✓ 4/6 subida  [sebomild-k-virbac-ingredientes-acido-salicilico-piroctona-zinc-te.webp]
+2026-05-14 15:26:30,902 [INFO]   ✓ 5/6 subida  [sebomild-virbac-gato-siberiano-gris-banera-champu-seborreico.webp]
+2026-05-14 15:26:33,966 [INFO]   ✓ 6/6 subida  [sebomild-virbac-combinacion-ingredientes-piel-grasa-descamada.webp]
+2026-05-14 15:26:35,466 [INFO] 
+[23/61] VEGGIEDENT FRESH L  (ID: 15391268897155)
+2026-05-14 15:26:35,468 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:26:35,485 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:26:35,504 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:26:35,532 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:26:35,550 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:26:35,587 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:26:39,828 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:26:42,990 [INFO]   ✓ 1/6 subida  [veggiedent-fresh-virbac-snack-dental-perros-l-mas30kg-15ud.webp]
+2026-05-14 15:26:46,397 [INFO]   ✓ 2/6 subida  [veggiedent-fresh-virbac-4-tallas-xs-s-m-l-todas-razas_2896b595-e86b-40e6-8fae-8931487f9040.webp]
+2026-05-14 15:26:49,992 [INFO]   ✓ 3/6 subida  [veggiedent-fresh-virbac-triple-accion-cachorro-beagle-snack-dental_2a958a9d-219d-4094-a28c-2df843037660.webp]
+2026-05-14 15:26:53,545 [INFO]   ✓ 4/6 subida  [veggiedent-fresh-virbac-tecnologia-fr3sh-granada-eritritol-inulina_56fc438c-20c9-4a17-9159-5cdedc409600.webp]
+2026-05-14 15:26:57,928 [INFO]   ✓ 5/6 subida  [veggiedent-fresh-virbac-boyero-berna-mordiendo-snack-dental-exterior_e3baa1fd-9861-4329-917b-982c41027ad6.webp]
+2026-05-14 15:27:00,648 [INFO]   ✓ 6/6 subida  [veggiedent-fresh-virbac-90-por-ciento-tutores-aliento-fresco-perro_f69a20b7-5c1f-4481-9198-e47078ed18d2.webp]
+2026-05-14 15:27:02,148 [INFO] 
+[24/61] VEGGIEDENT FRESH M  (ID: 15391261262211)
+2026-05-14 15:27:02,150 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:27:02,165 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:27:02,183 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:27:02,210 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:27:02,226 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:27:02,262 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:27:06,625 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:27:09,354 [INFO]   ✓ 1/6 subida  [veggiedent-fresh-virbac-snack-dental-perros-m-10-30kg-15ud.webp]
+2026-05-14 15:27:12,869 [INFO]   ✓ 2/6 subida  [veggiedent-fresh-virbac-4-tallas-xs-s-m-l-todas-razas_06af4747-2c62-4b67-9486-7604c80191ff.webp]
+2026-05-14 15:27:16,388 [INFO]   ✓ 3/6 subida  [veggiedent-fresh-virbac-triple-accion-cachorro-beagle-snack-dental_624db567-2150-46eb-a1ac-905752e4b81d.webp]
+2026-05-14 15:27:19,529 [INFO]   ✓ 4/6 subida  [veggiedent-fresh-virbac-tecnologia-fr3sh-granada-eritritol-inulina_bbfd95ca-63fe-468f-8f5d-ec3884888787.webp]
+2026-05-14 15:27:23,717 [INFO]   ✓ 5/6 subida  [veggiedent-fresh-virbac-boyero-berna-mordiendo-snack-dental-exterior_f0329a2d-3f61-4a0f-b26c-2bd6e8b87c0c.webp]
+2026-05-14 15:27:26,487 [INFO]   ✓ 6/6 subida  [veggiedent-fresh-virbac-90-por-ciento-tutores-aliento-fresco-perro_11cbbe56-3161-47c4-912a-2d248783a36a.webp]
+2026-05-14 15:27:27,988 [INFO] 
+[25/61] VEGGIEDENT FRESH S  (ID: 15391254053251)
+2026-05-14 15:27:27,989 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:27:28,004 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:27:28,023 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:27:28,049 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:27:28,065 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:27:28,101 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:27:32,086 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:27:34,968 [INFO]   ✓ 1/6 subida  [veggiedent-fresh-virbac-snack-dental-perros-s-5-10kg-15ud.webp]
+2026-05-14 15:27:38,517 [INFO]   ✓ 2/6 subida  [veggiedent-fresh-virbac-4-tallas-xs-s-m-l-todas-razas_274de666-b9cd-49a0-90f9-4d325c0deda0.webp]
+2026-05-14 15:27:42,211 [INFO]   ✓ 3/6 subida  [veggiedent-fresh-virbac-triple-accion-cachorro-beagle-snack-dental_c00b880c-1ba1-45bc-aa3a-95dd7afbf0f2.webp]
+2026-05-14 15:27:45,991 [INFO]   ✓ 4/6 subida  [veggiedent-fresh-virbac-tecnologia-fr3sh-granada-eritritol-inulina_afa1dee0-9363-49c3-aa18-45bb8ebb6ee2.webp]
+2026-05-14 15:27:50,242 [INFO]   ✓ 5/6 subida  [veggiedent-fresh-virbac-boyero-berna-mordiendo-snack-dental-exterior_5d833024-8a66-45fe-bff3-8f61ff0b2a25.webp]
+2026-05-14 15:27:53,009 [INFO]   ✓ 6/6 subida  [veggiedent-fresh-virbac-90-por-ciento-tutores-aliento-fresco-perro_a3653612-4c00-437d-892d-1fb5c469c8e4.webp]
+2026-05-14 15:27:54,509 [INFO] 
+[26/61] VEGGIEDENT FRESH XS  (ID: 15391264670083)
+2026-05-14 15:27:54,511 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:27:54,527 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:27:54,545 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:27:54,572 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:27:54,588 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:27:54,624 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:27:58,249 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:28:00,923 [INFO]   ✓ 1/6 subida  [veggiedent-fresh-virbac-snack-dental-perros-xs-menos5kg-15ud.webp]
+2026-05-14 15:28:04,439 [INFO]   ✓ 2/6 subida  [veggiedent-fresh-virbac-4-tallas-xs-s-m-l-todas-razas.webp]
+2026-05-14 15:28:07,947 [INFO]   ✓ 3/6 subida  [veggiedent-fresh-virbac-triple-accion-cachorro-beagle-snack-dental.webp]
+2026-05-14 15:28:11,112 [INFO]   ✓ 4/6 subida  [veggiedent-fresh-virbac-tecnologia-fr3sh-granada-eritritol-inulina.webp]
+2026-05-14 15:28:15,447 [INFO]   ✓ 5/6 subida  [veggiedent-fresh-virbac-boyero-berna-mordiendo-snack-dental-exterior.webp]
+2026-05-14 15:28:18,135 [INFO]   ✓ 6/6 subida  [veggiedent-fresh-virbac-90-por-ciento-tutores-aliento-fresco-perro.webp]
+2026-05-14 15:28:19,635 [INFO] 
+[27/61] VEGGIEDENT ZEN L >30KG  (ID: 15391447122307)
+2026-05-14 15:28:19,637 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:28:19,654 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:28:19,675 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:28:19,697 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:28:19,715 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:28:19,741 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:28:23,753 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:28:26,914 [INFO]   ✓ 1/6 subida  [veggiedent-zen-virbac-snack-dental-calmante-perros-l-mas30kg-15ud.webp]
+2026-05-14 15:28:30,505 [INFO]   ✓ 2/6 subida  [veggiedent-zen-virbac-4-tallas-xs-s-m-l-todas-razas_6f806573-22b1-4baf-8c78-95a3d4619dcb.webp]
+2026-05-14 15:28:33,826 [INFO]   ✓ 3/6 subida  [veggiedent-zen-virbac-aliento-fresco-relajacion-dos-perros-malinois_3d6c3d94-c601-42d9-a895-a491a8edb490.webp]
+2026-05-14 15:28:36,955 [INFO]   ✓ 4/6 subida  [veggiedent-zen-virbac-tecnologia-fr3sh-te-verde-granada-eritritol-inulina_196a930a-ca68-4ad0-b305-66d9a50d7deb.webp]
+2026-05-14 15:28:40,413 [INFO]   ✓ 5/6 subida  [veggiedent-zen-virbac-malinois-esperando-snack-dental-calmante_bda8b705-4d62-479b-a8a6-7cc2e575bffa.webp]
+2026-05-14 15:28:43,776 [INFO]   ✓ 6/6 subida  [veggiedent-zen-virbac-triple-accion-fr3sh-dientes-sanos-desde-dia-1_9ae6760a-ebc6-4090-ab4d-17b3d92247d3.webp]
+2026-05-14 15:28:45,276 [INFO] 
+[28/61] VEGGIEDENT ZEN M 10-30KG  (ID: 15391335678339)
+2026-05-14 15:28:45,278 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:28:45,293 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:28:45,312 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:28:45,332 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:28:45,349 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:28:45,373 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:28:48,987 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:28:51,473 [INFO]   ✓ 1/6 subida  [veggiedent-zen-virbac-snack-dental-calmante-perros-m-10-30kg-15ud.webp]
+2026-05-14 15:28:54,885 [INFO]   ✓ 2/6 subida  [veggiedent-zen-virbac-4-tallas-xs-s-m-l-todas-razas_02d25601-534d-45f6-bb5c-8141f775e1ad.webp]
+2026-05-14 15:28:58,100 [INFO]   ✓ 3/6 subida  [veggiedent-zen-virbac-aliento-fresco-relajacion-dos-perros-malinois_2eb4755d-6173-48b5-a28d-0317d69bfd26.webp]
+2026-05-14 15:29:01,318 [INFO]   ✓ 4/6 subida  [veggiedent-zen-virbac-tecnologia-fr3sh-te-verde-granada-eritritol-inulina_bfb55eee-966d-4e06-8c2a-f8745ba21740.webp]
+2026-05-14 15:29:05,078 [INFO]   ✓ 5/6 subida  [veggiedent-zen-virbac-malinois-esperando-snack-dental-calmante_0bfb46d4-238c-4a3d-903d-daae332979fd.webp]
+2026-05-14 15:29:07,977 [INFO]   ✓ 6/6 subida  [veggiedent-zen-virbac-triple-accion-fr3sh-dientes-sanos-desde-dia-1_d1b2ede2-1433-4d70-b742-3519d077d0a8.webp]
+2026-05-14 15:29:09,478 [INFO] 
+[29/61] VEGGIEDENT ZEN S 5-10KG  (ID: 15391276761475)
+2026-05-14 15:29:09,479 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:29:09,496 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:29:09,517 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:29:09,539 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:29:09,557 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:29:09,584 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:29:13,405 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:29:15,931 [INFO]   ✓ 1/6 subida  [veggiedent-zen-virbac-snack-dental-calmante-perros-s-5-10kg-15ud.webp]
+2026-05-14 15:29:19,339 [INFO]   ✓ 2/6 subida  [veggiedent-zen-virbac-4-tallas-xs-s-m-l-todas-razas_9352fbac-49ad-4d22-ade3-e0d5c93a24d3.webp]
+2026-05-14 15:29:22,668 [INFO]   ✓ 3/6 subida  [veggiedent-zen-virbac-aliento-fresco-relajacion-dos-perros-malinois_45b166bb-50d6-4d24-beeb-5b2feca37b39.webp]
+2026-05-14 15:29:25,779 [INFO]   ✓ 4/6 subida  [veggiedent-zen-virbac-tecnologia-fr3sh-te-verde-granada-eritritol-inulina_d13c51f7-b952-49f7-9e1f-603351ede7e4.webp]
+2026-05-14 15:29:29,315 [INFO]   ✓ 5/6 subida  [veggiedent-zen-virbac-malinois-esperando-snack-dental-calmante_fef4909b-b312-4e46-ab19-665f3934f6f1.webp]
+2026-05-14 15:29:32,226 [INFO]   ✓ 6/6 subida  [veggiedent-zen-virbac-triple-accion-fr3sh-dientes-sanos-desde-dia-1_f179eddd-fbdc-425d-9a48-478127fa7ed4.webp]
+2026-05-14 15:29:33,727 [INFO] 
+[30/61] VEGGIEDENT ZEN XS <5KG  (ID: 15391294947715)
+2026-05-14 15:29:33,729 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:29:33,750 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:29:33,770 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:29:33,793 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:29:33,811 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:29:33,837 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:29:38,186 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:29:40,903 [INFO]   ✓ 1/6 subida  [veggiedent-zen-virbac-snack-dental-calmante-perros-xs-menos5kg-15ud.webp]
+2026-05-14 15:29:44,337 [INFO]   ✓ 2/6 subida  [veggiedent-zen-virbac-4-tallas-xs-s-m-l-todas-razas.webp]
+2026-05-14 15:29:47,639 [INFO]   ✓ 3/6 subida  [veggiedent-zen-virbac-aliento-fresco-relajacion-dos-perros-malinois.webp]
+2026-05-14 15:29:50,797 [INFO]   ✓ 4/6 subida  [veggiedent-zen-virbac-tecnologia-fr3sh-te-verde-granada-eritritol-inulina.webp]
+2026-05-14 15:29:54,275 [INFO]   ✓ 5/6 subida  [veggiedent-zen-virbac-malinois-esperando-snack-dental-calmante.webp]
+2026-05-14 15:29:57,250 [INFO]   ✓ 6/6 subida  [veggiedent-zen-virbac-triple-accion-fr3sh-dientes-sanos-desde-dia-1.webp]
+2026-05-14 15:29:58,750 [INFO] 
+[31/61] VET HPM ADULT SENSITIVE NEUTERED DOG LARGE & MEDIUM  (ID: 15510143205763)
+2026-05-14 15:29:58,752 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,768 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,801 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,818 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,840 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,858 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:29:58,889 [INFO]   img_07.jpg: RGB (2000, 2000)
+2026-05-14 15:30:03,475 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:30:06,518 [INFO]   ✓ 1/7 subida  [01_front_packaging_c6c60b67-afd1-42fd-a057-e1aedd523d82.webp]
+2026-05-14 15:30:10,202 [INFO]   ✓ 2/7 subida  [02_back_3kg_c390ad64-ed31-42ae-b057-058fd89611b1.webp]
+2026-05-14 15:30:13,329 [INFO]   ✓ 3/7 subida  [03_before_after_be92f637-f124-4a81-a6b3-b915d09a4fed.webp]
+2026-05-14 15:30:17,168 [INFO]   ✓ 4/7 subida  [04_detail_1_9d9d4020-6e92-4f3c-8fe6-18f4af99f53c.webp]
+2026-05-14 15:30:20,080 [INFO]   ✓ 5/7 subida  [05_detail_2_f23d6169-3980-428b-9b89-402bebd17b19.webp]
+2026-05-14 15:30:24,930 [INFO]   ✓ 6/7 subida  [06_detail_3_2d3aa141-437d-442b-b9dd-a5a4bdc85af6.webp]
+2026-05-14 15:30:28,036 [INFO]   ✓ 7/7 subida  [07_detail_4_faf38dea-6563-406a-88ec-a19fcb0ceea3.webp]
+2026-05-14 15:30:29,537 [INFO] 
+[32/61] VETAQUADENT FRESH  (ID: 15391309726083)
+2026-05-14 15:30:29,539 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,550 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,561 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,582 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,599 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,627 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:30:29,639 [INFO]   img_07.jpg: RGB (2000, 2000)
+2026-05-14 15:30:34,259 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:30:36,632 [INFO]   ✓ 1/7 subida  [vet-aquadent-fr3sh-virbac-solucion-dental-perros-gatos-250ml.webp]
+2026-05-14 15:30:39,492 [INFO]   ✓ 2/7 subida  [vet-aquadent-fr3sh-virbac-disponible-250ml-500ml-dos-formatos.webp]
+2026-05-14 15:30:42,864 [INFO]   ✓ 3/7 subida  [vet-aquadent-fr3sh-virbac-dachshund-bebiendo-placa-sarro-menta.webp]
+2026-05-14 15:30:46,140 [INFO]   ✓ 4/7 subida  [vet-aquadent-fr3sh-virbac-ingredientes-granada-inulina-eritritol.webp]
+2026-05-14 15:30:49,872 [INFO]   ✓ 5/7 subida  [vet-aquadent-fr3sh-virbac-gato-bicolor-bebiendo-vasito-medidor.webp]
+2026-05-14 15:30:52,804 [INFO]   ✓ 6/7 subida  [vet-aquadent-fr3sh-virbac-80-por-ciento-tutores-aliento-bueno-excelente.webp]
+2026-05-14 15:30:55,799 [INFO]   ✓ 7/7 subida  [vet-aquadent-fr3sh-virbac-solucion-dental-perros-gatos-500ml.webp]
+2026-05-14 15:30:57,300 [INFO] 
+[33/61] Virbac C.E.T. Pasta de Dientes Enzimática para Perros y Gatos 70 g  (ID: 15391288131971)
+2026-05-14 15:30:57,302 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:30:57,316 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:30:57,327 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:30:57,348 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:30:57,370 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:30:57,391 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:31:01,680 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:31:04,181 [INFO]   ✓ 1/6 subida  [cet-pasta-dental-enzimatica-virbac-perros-gatos-aves-corral-70g.webp]
+2026-05-14 15:31:07,042 [INFO]   ✓ 2/6 subida  [cet-virbac-combo-cepillo-pasta-dental-perros-gatos.webp]
+2026-05-14 15:31:10,229 [INFO]   ✓ 3/6 subida  [cet-pasta-virbac-gato-persa-cepillado-dental-refresca-aliento.webp]
+2026-05-14 15:31:13,483 [INFO]   ✓ 4/6 subida  [cet-pasta-virbac-tecnologia-enzimatica-placa-sarro-prevencion.webp]
+2026-05-14 15:31:16,765 [INFO]   ✓ 5/6 subida  [cet-pasta-virbac-schnauzer-miniatura-cepillo-dental-azul.webp]
+2026-05-14 15:31:19,482 [INFO]   ✓ 6/6 subida  [cet-pasta-virbac-sabor-aves-corral-palatabilidad.webp]
+2026-05-14 15:31:20,983 [INFO] 
+[34/61] Virbac CET Kit Cepillo + Dentífrico Enzimático 70 gr  (ID: 15391484969347)
+2026-05-14 15:31:20,985 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:31:20,997 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:31:21,010 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:31:21,034 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:31:21,057 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:31:24,806 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:31:27,415 [INFO]   ✓ 1/5 subida  [cet-kit-dental-virbac-cepillo-doble-cabezal-dedo-pasta-enzimatica-70g.webp]
+2026-05-14 15:31:30,382 [INFO]   ✓ 2/5 subida  [cet-kit-virbac-combo-cepillo-pasta-dental-salud-bucal-mascota.webp]
+2026-05-14 15:31:33,821 [INFO]   ✓ 3/5 subida  [cet-kit-virbac-gato-persa-cepillado-dental-ergonomico-facil.webp]
+2026-05-14 15:31:37,485 [INFO]   ✓ 4/5 subida  [cet-kit-virbac-schnauzer-cepillo-pasta-dental-perro.webp]
+2026-05-14 15:31:40,508 [INFO]   ✓ 5/5 subida  [cet-kit-virbac-estadistica-enfermedad-periodontal-perros-gatos.webp]
+2026-05-14 15:31:42,009 [INFO] 
+[35/61] VIRBAC HPM CANINE ALLERGY HYPOALLERGENIC A1  (ID: 15400481718659)
+2026-05-14 15:31:42,010 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:31:42,026 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:31:42,048 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:31:42,065 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:31:44,982 [INFO]   4 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:31:47,433 [INFO]   ✓ 1/4 subida  [pienso-hipoalergenico-virbac-hpm-hypoallergy-a1-perros.webp]
+2026-05-14 15:31:51,144 [INFO]   ✓ 2/4 subida  [croquetas-hpm-hypoallergy-a1-canine-cuenco-cenital.webp]
+2026-05-14 15:31:54,268 [INFO]   ✓ 3/4 subida  [croquetas-hpm-hypoallergy-canine-a1-primer-plano.webp]
+2026-05-14 15:31:58,597 [INFO]   ✓ 4/4 subida  [textura-croquetas-pienso-hpm-hypoallergy-a1-canine.webp]
+2026-05-14 15:32:00,098 [INFO] 
+[36/61] VIRBAC HPM CANINE ALLERGY HYPOALLERGENIC A2  (ID: 15401430319491)
+2026-05-14 15:32:00,099 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:32:00,116 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:32:00,152 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:32:00,175 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:32:00,193 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:32:03,499 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:32:05,894 [INFO]   ✓ 1/5 subida  [01_front_packaging_3a672578-1e92-41d0-9d80-be1cd7973ca2.webp]
+2026-05-14 15:32:09,744 [INFO]   ✓ 2/5 subida  [02_back_3kg_e0874c3f-77f6-45d6-becb-07e39add6e1f.webp]
+2026-05-14 15:32:13,373 [INFO]   ✓ 3/5 subida  [03_detail_1_6421f1b0-fb21-443a-aa09-08e706f4f46a.webp]
+2026-05-14 15:32:16,286 [INFO]   ✓ 4/5 subida  [04_detail_2_295109a3-ecc4-4f0b-8ae9-d1c0a602a5b6.webp]
+2026-05-14 15:32:20,652 [INFO]   ✓ 5/5 subida  [05_detail_3_91305fe9-a1e8-46df-b8d3-e8d55e17b2ad.webp]
+2026-05-14 15:32:22,153 [INFO] 
+[37/61] VIRBAC HPM CANINE DERMATOLOGY SUPPORT D1  (ID: 15510146580867)
+2026-05-14 15:32:22,155 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:32:22,171 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:32:22,206 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:32:22,227 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:32:22,243 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:32:25,550 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:32:27,873 [INFO]   ✓ 1/5 subida  [01_front_packaging_4821169d-8c83-47f1-af47-090072f64523.webp]
+2026-05-14 15:32:31,775 [INFO]   ✓ 2/5 subida  [02_back_3kg_e2dbee0d-8def-4a5d-958f-30168b35e139.webp]
+2026-05-14 15:32:35,434 [INFO]   ✓ 3/5 subida  [03_detail_1_09afc453-4d0f-48f7-9f52-bbd5cd6ec1a4.webp]
+2026-05-14 15:32:38,348 [INFO]   ✓ 4/5 subida  [04_detail_2_238b6410-12c1-448b-ba98-7fe3390ac76b.webp]
+2026-05-14 15:32:42,530 [INFO]   ✓ 5/5 subida  [05_detail_3_82988a54-509f-410c-9cec-03c8fa4d09f2.webp]
+2026-05-14 15:32:44,031 [INFO] 
+[38/61] VIRBAC HPM CANINE DIGESTIVE SUPPORT G1  (ID: 15401423470979)
+2026-05-14 15:32:44,032 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:32:44,048 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:32:44,083 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:32:44,105 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:32:44,121 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:32:47,276 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:32:49,708 [INFO]   ✓ 1/5 subida  [01_front_packaging_4079bfd9-4b1c-4b84-bd5c-c7c3561b91a6.webp]
+2026-05-14 15:32:53,603 [INFO]   ✓ 2/5 subida  [02_back_3kg_dd7a299f-4339-4b13-a2fa-36e8004d2630.webp]
+2026-05-14 15:32:57,127 [INFO]   ✓ 3/5 subida  [03_detail_1_4f9fbac3-82e7-45d2-a3c6-9afa9ace9054.webp]
+2026-05-14 15:33:00,178 [INFO]   ✓ 4/5 subida  [04_detail_2_7f702d18-951c-4a2e-b541-fe61fbb1201f.webp]
+2026-05-14 15:33:04,466 [INFO]   ✓ 5/5 subida  [05_detail_3_aee7a889-6dbe-4db7-b45d-ba8aa6c9d7b6.webp]
+2026-05-14 15:33:05,966 [INFO] 
+[39/61] VIRBAC HPM CANINE DIGESTIVE SUPPORT WET 9x300GR  (ID: 15510146810243)
+2026-05-14 15:33:05,968 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:33:05,983 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:33:06,000 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:33:08,260 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:33:10,715 [INFO]   ✓ 1/3 subida  [01_bag_face.webp]
+2026-05-14 15:33:13,673 [INFO]   ✓ 2/3 subida  [02_packshot_9x_d20e557d-4b1f-470f-b9cb-045a611094c7.webp]
+2026-05-14 15:33:17,011 [INFO]   ✓ 3/3 subida  [03_bag_back.webp]
+2026-05-14 15:33:18,512 [INFO] 
+[40/61] VIRBAC HPM CANINE JOINT MOBILITY J1  (ID: 15401507553667)
+2026-05-14 15:33:18,513 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:33:18,529 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:33:18,562 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:33:18,584 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:33:18,600 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:33:18,622 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:33:22,589 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:33:24,860 [INFO]   ✓ 1/6 subida  [01_front_packaging_4e2cf464-2f71-414d-8356-0e6b16b54d73.webp]
+2026-05-14 15:33:28,637 [INFO]   ✓ 2/6 subida  [02_back_3kg_1fca769f-802e-4caa-83a9-f5000e62bcda.webp]
+2026-05-14 15:33:32,311 [INFO]   ✓ 3/6 subida  [03_detail_1_e8d258cb-a182-483b-ad5e-517008021c5b.webp]
+2026-05-14 15:33:35,692 [INFO]   ✓ 4/6 subida  [04_detail_2_8815ce2d-2b21-47db-8232-f90ecd4ed081.webp]
+2026-05-14 15:33:39,069 [INFO]   ✓ 5/6 subida  [05_detail_3_981387a5-256d-4df2-b056-b827bfea5613.webp]
+2026-05-14 15:33:43,279 [INFO]   ✓ 6/6 subida  [06_detail_4_0c90996f-f481-4058-a4e2-e48740bb3a00.webp]
+2026-05-14 15:33:44,780 [INFO] 
+[41/61] VIRBAC HPM CANINE KIDNEY SUPPORT K1  (ID: 15401470656899)
+2026-05-14 15:33:44,782 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:33:44,798 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:33:44,834 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:33:44,855 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:33:44,873 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:33:48,314 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:33:50,841 [INFO]   ✓ 1/5 subida  [01_front_packaging_909c47ce-f581-4204-bcea-56fbf76e76c2.webp]
+2026-05-14 15:33:54,529 [INFO]   ✓ 2/5 subida  [02_back_3kg_daf7edb6-1b92-489f-bad9-6d1a78ab8e8a.webp]
+2026-05-14 15:33:58,032 [INFO]   ✓ 3/5 subida  [03_detail_1_e9fe80a1-bb82-4550-b1e6-7003dd053a90.webp]
+2026-05-14 15:34:00,998 [INFO]   ✓ 4/5 subida  [04_detail_2_aeaac398-7361-4e26-ad6c-7929c0ca640a.webp]
+2026-05-14 15:34:05,395 [INFO]   ✓ 5/5 subida  [05_detail_3_ff0bc761-f6fe-4124-9516-918a2e6ad2b0.webp]
+2026-05-14 15:34:06,896 [INFO] 
+[42/61] VIRBAC HPM CANINE SENIOR NEUTERED LARGE MEDIUM 3KG  (ID: 15401431302531)
+2026-05-14 15:34:06,897 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:34:06,914 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:34:06,948 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:34:06,966 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:34:06,989 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:34:07,008 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:34:07,040 [INFO]   img_07.jpg: RGB (2000, 2000)
+2026-05-14 15:34:11,129 [INFO]   7 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:34:13,944 [INFO]   ✓ 1/7 subida  [virbac_15401431302531_1.webp]
+2026-05-14 15:34:17,668 [INFO]   ✓ 2/7 subida  [virbac_15401431302531_2.webp]
+2026-05-14 15:34:20,834 [INFO]   ✓ 3/7 subida  [virbac_15401431302531_3.webp]
+2026-05-14 15:34:24,368 [INFO]   ✓ 4/7 subida  [virbac_15401431302531_4.webp]
+2026-05-14 15:34:27,258 [INFO]   ✓ 5/7 subida  [virbac_15401431302531_5.webp]
+2026-05-14 15:34:31,467 [INFO]   ✓ 6/7 subida  [virbac_15401431302531_6.webp]
+2026-05-14 15:34:34,600 [INFO]   ✓ 7/7 subida  [virbac_15401431302531_7.webp]
+2026-05-14 15:34:36,101 [INFO] 
+[43/61] VIRBAC HPM CANINE UROLOGY DISSOLUTION PREVENTION U1  (ID: 15401485304195)
+2026-05-14 15:34:36,103 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:34:36,119 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:34:36,154 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:34:36,175 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:34:36,191 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:34:39,395 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:34:41,769 [INFO]   ✓ 1/5 subida  [01_front_packaging_713e53ec-df05-4a6d-8aad-9cb69799f8c0.webp]
+2026-05-14 15:34:45,608 [INFO]   ✓ 2/5 subida  [02_back_3kg_0be1ec84-fb0a-4ad8-b304-f287f248bdb5.webp]
+2026-05-14 15:34:49,207 [INFO]   ✓ 3/5 subida  [03_detail_1_5767471d-a1f4-41ae-afc5-211c12abc154.webp]
+2026-05-14 15:34:52,199 [INFO]   ✓ 4/5 subida  [04_detail_2_0aebbab7-1b37-4440-8c70-a36323413aee.webp]
+2026-05-14 15:34:56,787 [INFO]   ✓ 5/5 subida  [05_detail_3_249eab69-17dd-47ce-9f41-b840a486ad0b.webp]
+2026-05-14 15:34:58,288 [INFO] 
+[44/61] VIRBAC HPM CANINE WEIGHT LOSS CONTROL W2  (ID: 15510147301763)
+2026-05-14 15:34:58,290 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:34:58,306 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:34:58,341 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:34:58,362 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:34:58,378 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:35:01,542 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:35:03,952 [INFO]   ✓ 1/5 subida  [01_front_packaging_d45e4c52-e535-4ebd-946b-7b1b965f4f3e.webp]
+2026-05-14 15:35:07,680 [INFO]   ✓ 2/5 subida  [02_back_3kg_a263540c-1594-4f99-a729-42d539755bbb.webp]
+2026-05-14 15:35:11,286 [INFO]   ✓ 3/5 subida  [03_detail_1_564606ee-e5a3-4944-a0f0-5bcf890889dd.webp]
+2026-05-14 15:35:14,217 [INFO]   ✓ 4/5 subida  [04_detail_2_587161ef-5903-4e55-a65d-b76b8e66b261.webp]
+2026-05-14 15:35:18,643 [INFO]   ✓ 5/5 subida  [05_detail_3_2739c5e6-d2c6-40c5-989f-e04969f36725.webp]
+2026-05-14 15:35:20,143 [INFO] 
+[45/61] VIRBAC HPM CANINE WEIGHT LOSS DIABETES W1  (ID: 15401498542467)
+2026-05-14 15:35:20,145 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:35:20,161 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:35:20,196 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:35:20,218 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:35:20,234 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:35:23,396 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:35:25,622 [INFO]   ✓ 1/5 subida  [01_front_packaging_3d8167ac-6da8-4568-ad83-a1162ad825ef.webp]
+2026-05-14 15:35:29,322 [INFO]   ✓ 2/5 subida  [02_back_3kg_9cf16d7e-1bf8-4b3f-89bd-214c0483514e.webp]
+2026-05-14 15:35:35,048 [INFO]   ✓ 3/5 subida  [03_detail_1_4c5db94d-3dec-4932-b999-410d412e327e.webp]
+2026-05-14 15:35:38,000 [INFO]   ✓ 4/5 subida  [04_detail_2_93bfae69-8ec2-49ac-be7e-0eeb2c2f8373.webp]
+2026-05-14 15:35:42,198 [INFO]   ✓ 5/5 subida  [05_detail_3_19441386-b231-45ee-a12e-0706e5e2017d.webp]
+2026-05-14 15:35:43,698 [INFO] 
+[46/61] VIRBAC HPM FEELINE DIGESTIVE SUPPORT HUMEDO 12x85GR  (ID: 15401413869955)
+2026-05-14 15:35:43,699 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:35:43,715 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:35:43,732 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:35:43,754 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:35:43,775 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:35:47,648 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:35:50,336 [INFO]   ✓ 1/5 subida  [comida-humeda-virbac-hpm-feline-digestive-support.webp]
+2026-05-14 15:35:53,558 [INFO]   ✓ 2/5 subida  [virbac-hpm-digestive-support-humedo-sobre-caja12u.webp]
+2026-05-14 15:35:57,070 [INFO]   ✓ 3/5 subida  [virbac-hpm-feline-digestive-humedo-reverso-raciones.webp]
+2026-05-14 15:36:00,760 [INFO]   ✓ 4/5 subida  [comida-humeda-hpm-digestive-support-cuenco-gato.webp]
+2026-05-14 15:36:06,035 [INFO]   ✓ 5/5 subida  [gato-comiendo-comida-humeda-hpm-digestive-support.webp]
+2026-05-14 15:36:07,536 [INFO] 
+[47/61] VIRBAC HPM FELINE ADULT NEUTERED 7KG  (ID: 15401421472131)
+2026-05-14 15:36:07,536 [WARNING]   Sin backup — saltando
+2026-05-14 15:36:07,537 [INFO] 
+[48/61] VIRBAC HPM FELINE ADVANCED KIDNEY & JOINT KJ3  (ID: 15401482092931)
+2026-05-14 15:36:07,538 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:36:07,554 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:36:07,589 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:36:07,612 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:36:07,629 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:36:11,094 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:36:13,910 [INFO]   ✓ 1/5 subida  [01_front_packaging_a9248acc-75d3-4c02-8beb-fe35f3e50b02.webp]
+2026-05-14 15:36:17,819 [INFO]   ✓ 2/5 subida  [02_back_3kg_1de35805-6fdf-48da-8ae8-c12d5aa36720.webp]
+2026-05-14 15:36:21,445 [INFO]   ✓ 3/5 subida  [03_detail_1_dfbd8ada-a448-4727-a8f5-a86afdf7492d.webp]
+2026-05-14 15:36:24,420 [INFO]   ✓ 4/5 subida  [04_detail_2_5b832886-1723-4576-974a-54900b89ec17.webp]
+2026-05-14 15:36:28,586 [INFO]   ✓ 5/5 subida  [05_detail_3_318c674a-38ed-4559-84a1-734449e589c4.webp]
+2026-05-14 15:36:30,087 [INFO] 
+[49/61] VIRBAC HPM FELINE ALLERGY HYPOALLERGENIC A1 3KG  (ID: 15391434899843)
+2026-05-14 15:36:30,088 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:36:30,103 [INFO]   img_02.png: RGBA (1500, 1500)
+2026-05-14 15:36:30,167 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:36:30,188 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:36:30,204 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:36:33,842 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:36:36,517 [INFO]   ✓ 1/5 subida  [pienso-hipoalergenico-virbac-hpm-feline-a1-frontal.webp]
+2026-05-14 15:36:39,350 [INFO]   ✓ 2/5 subida  [saco-pienso-virbac-hpm-feline-a1-3kg-angulo.webp]
+2026-05-14 15:36:43,111 [INFO]   ✓ 3/5 subida  [croquetas-hpm-feline-a1-cuenco-inox-cenital.webp]
+2026-05-14 15:36:46,108 [INFO]   ✓ 4/5 subida  [croquetas-virbac-hpm-a1-primer-plano-detalle.webp]
+2026-05-14 15:36:50,500 [INFO]   ✓ 5/5 subida  [textura-croquetas-pienso-hpm-feline-a1-macro.webp]
+2026-05-14 15:36:52,000 [INFO] 
+[50/61] VIRBAC HPM FELINE ALLERGY HYPOALLERGENIC A2 3KG  (ID: 15400531460483)
+2026-05-14 15:36:52,002 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:36:52,017 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:36:52,051 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:36:52,073 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:36:52,089 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:36:55,876 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:36:58,496 [INFO]   ✓ 1/5 subida  [pienso-hipoalergenico-hpm-hypoallergy-a2-virbac-frontal.webp]
+2026-05-14 15:37:02,373 [INFO]   ✓ 2/5 subida  [virbac-hpm-hypoallergy-a2-reverso-envase-ingredientes.webp]
+2026-05-14 15:37:05,984 [INFO]   ✓ 3/5 subida  [croquetas-hpm-hypoallergy-a2-cuenco-inox-cenital.webp]
+2026-05-14 15:37:09,122 [INFO]   ✓ 4/5 subida  [croquetas-hpm-hypoallergy-a2-primer-plano-oval.webp]
+2026-05-14 15:37:13,387 [INFO]   ✓ 5/5 subida  [textura-croquetas-hpm-hypoallergy-a2-macro.webp]
+2026-05-14 15:37:14,888 [INFO] 
+[51/61] VIRBAC HPM FELINE DERMATOLOGY SUPPORT D1 3KG  (ID: 15510147891587)
+2026-05-14 15:37:14,889 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:37:14,905 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:37:14,940 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:37:14,961 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:37:14,978 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:37:18,154 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:37:20,933 [INFO]   ✓ 1/5 subida  [01_front_packaging_8fd75c31-1f07-495d-81b5-d73d17cbc9cd.webp]
+2026-05-14 15:37:24,682 [INFO]   ✓ 2/5 subida  [02_back_3kg_ac91a807-5791-4218-90a6-d2c5afb03d66.webp]
+2026-05-14 15:37:28,357 [INFO]   ✓ 3/5 subida  [03_detail_1_8658dd46-30a5-4685-8418-ee4764b25ace.webp]
+2026-05-14 15:37:31,367 [INFO]   ✓ 4/5 subida  [04_detail_2_a898d7f6-16cc-4a8c-bd6f-1ee9de749df2.webp]
+2026-05-14 15:37:36,106 [INFO]   ✓ 5/5 subida  [05_detail_3_486dda4c-d367-4326-82ab-d9fc45bde3e9.webp]
+2026-05-14 15:37:37,607 [INFO] 
+[52/61] VIRBAC HPM FELINE DIGESTIVE SUPPORT G1  (ID: 15401397191043)
+2026-05-14 15:37:37,609 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:37:37,624 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:37:37,659 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:37:37,681 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:37:37,697 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:37:41,548 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:37:44,379 [INFO]   ✓ 1/5 subida  [pienso-digestivo-virbac-hpm-feline-g1-frontal.webp]
+2026-05-14 15:37:48,185 [INFO]   ✓ 2/5 subida  [virbac-hpm-feline-g1-reverso-envase-ingredientes.webp]
+2026-05-14 15:37:52,173 [INFO]   ✓ 3/5 subida  [croquetas-pienso-digestivo-virbac-g1-cuenco-inox.webp]
+2026-05-14 15:37:55,365 [INFO]   ✓ 4/5 subida  [croquetas-hpm-feline-g1-primer-plano-oval.webp]
+2026-05-14 15:37:59,699 [INFO]   ✓ 5/5 subida  [textura-croquetas-pienso-hpm-feline-g1-macro.webp]
+2026-05-14 15:38:01,200 [INFO] 
+[53/61] VIRBAC HPM FELINE EARLY KIDNEY & JOINT KJ1  (ID: 15510148088195)
+2026-05-14 15:38:01,201 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:38:01,218 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:38:01,254 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:38:01,276 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:38:01,294 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:38:04,511 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:38:06,965 [INFO]   ✓ 1/5 subida  [01_front_packaging_760807f2-ca14-458f-958d-be9089df59bb.webp]
+2026-05-14 15:38:10,652 [INFO]   ✓ 2/5 subida  [02_back_3kg_c96f8608-1fea-4288-a4bd-14f436e7538d.webp]
+2026-05-14 15:38:14,242 [INFO]   ✓ 3/5 subida  [03_detail_1_960c3500-c59a-449e-9207-3aa5da1a43bb.webp]
+2026-05-14 15:38:17,163 [INFO]   ✓ 4/5 subida  [04_detail_2_a8e3dd0b-492b-4936-aed3-f78ece2f0527.webp]
+2026-05-14 15:38:21,318 [INFO]   ✓ 5/5 subida  [05_detail_3_8f4b439d-9fdc-4f36-921a-d3a71f2cc42d.webp]
+2026-05-14 15:38:22,819 [INFO] 
+[54/61] VIRBAC HPM FELINE EARLY KIDNEY JOINT HUMEDO KJ1 12X85GR  (ID: 15401453781379)
+2026-05-14 15:38:22,820 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:38:22,836 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:38:22,853 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:38:22,877 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:38:22,897 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:38:26,116 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:38:28,644 [INFO]   ✓ 1/5 subida  [01_pouch_face.webp]
+2026-05-14 15:38:31,873 [INFO]   ✓ 2/5 subida  [02_packshot_face.webp]
+2026-05-14 15:38:35,255 [INFO]   ✓ 3/5 subida  [03_pouch_back.webp]
+2026-05-14 15:38:38,782 [INFO]   ✓ 4/5 subida  [04_detail_1_4d35d099-cb94-4911-ace0-08929bac37ce.webp]
+2026-05-14 15:38:42,365 [INFO]   ✓ 5/5 subida  [05_detail_2_14985c81-6b17-4e41-b3ca-54e8f2f6db07.webp]
+2026-05-14 15:38:43,866 [INFO] 
+[55/61] VIRBAC HPM FELINE KIDNEY & JOINT KJ2  (ID: 15510148350339)
+2026-05-14 15:38:43,867 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:38:43,882 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:38:43,917 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:38:43,939 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:38:43,955 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:38:47,068 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:38:49,409 [INFO]   ✓ 1/5 subida  [01_front_packaging_7612d1ca-b744-4d90-a5a1-3a7c5025f6dc.webp]
+2026-05-14 15:38:53,142 [INFO]   ✓ 2/5 subida  [02_back_3kg_1883ee5a-f45a-4bc6-b5f4-46ee3cd4027d.webp]
+2026-05-14 15:38:56,735 [INFO]   ✓ 3/5 subida  [03_detail_1_4be62b29-ddbb-44e0-8cf7-6d6da807ae3d.webp]
+2026-05-14 15:38:59,645 [INFO]   ✓ 4/5 subida  [04_detail_2_850316c8-2041-4d62-9b05-963eec7028ad.webp]
+2026-05-14 15:39:03,974 [INFO]   ✓ 5/5 subida  [05_detail_3_a8db1bed-bfe2-4858-aab3-9a88eb66ac94.webp]
+2026-05-14 15:39:05,475 [INFO] 
+[56/61] VIRBAC HPM FELINE UROLOGY DISSOL&PREVENTION EN SALSA 12X85GR  (ID: 15510148481411)
+2026-05-14 15:39:05,477 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:39:05,494 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:39:05,514 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:39:05,540 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:39:05,562 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:39:08,757 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:39:11,350 [INFO]   ✓ 1/5 subida  [01_pouch_face_a86456c7-6573-4b50-931b-fc6915ccceef.webp]
+2026-05-14 15:39:14,193 [INFO]   ✓ 2/5 subida  [02_box_face.webp]
+2026-05-14 15:39:17,658 [INFO]   ✓ 3/5 subida  [03_pouch_back_322f2ea8-0481-4b9e-af4e-258e61e13008.webp]
+2026-05-14 15:39:21,014 [INFO]   ✓ 4/5 subida  [04_detail_1_d3f12e26-c717-4fe0-bf5f-dc7767dc9eac.webp]
+2026-05-14 15:39:24,498 [INFO]   ✓ 5/5 subida  [05_detail_2_56d3f819-bc8a-436b-9779-23915dac6aad.webp]
+2026-05-14 15:39:25,999 [INFO] 
+[57/61] VIRBAC HPM FELINE UROLOGY DISSOLUTION PREVENTION U2  (ID: 15510148645251)
+2026-05-14 15:39:26,000 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:39:26,018 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:39:26,053 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:39:26,079 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:39:26,101 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:39:26,120 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:39:29,769 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:39:32,334 [INFO]   ✓ 1/6 subida  [01_front_packaging_39e59606-f429-41e7-a892-bcfc6d9c3e01.webp]
+2026-05-14 15:39:36,135 [INFO]   ✓ 2/6 subida  [02_back_3kg_201dfea8-1d81-46a8-be0b-9c14304302e2.webp]
+2026-05-14 15:39:39,613 [INFO]   ✓ 3/6 subida  [03_detail_1_f1eed322-f872-47c1-85fc-210ba717cbee.webp]
+2026-05-14 15:39:43,182 [INFO]   ✓ 4/6 subida  [04_detail_2_45f78301-d618-4efb-bcfd-ef87a7a69161.webp]
+2026-05-14 15:39:46,107 [INFO]   ✓ 5/6 subida  [05_detail_3_4dff980a-bed4-4f12-951b-16abe5191c40.webp]
+2026-05-14 15:39:50,319 [INFO]   ✓ 6/6 subida  [06_detail_4_8d00c8cc-5700-456c-ba23-3f62eac70c73.webp]
+2026-05-14 15:39:51,820 [INFO] 
+[58/61] VIRBAC HPM FELINE UROLOGY STRUVITE DISSOLUTION U1  (ID: 15401493987715)
+2026-05-14 15:39:51,822 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:39:51,839 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:39:51,877 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:39:51,903 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:39:51,926 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:39:51,946 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:39:55,707 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:39:57,946 [INFO]   ✓ 1/6 subida  [01_front_packaging_cb8c712b-4335-4316-9944-414684ce5b76.webp]
+2026-05-14 15:40:01,780 [INFO]   ✓ 2/6 subida  [02_back_3kg_54880ed8-3aa9-4948-9b1c-c490958c397e.webp]
+2026-05-14 15:40:05,245 [INFO]   ✓ 3/6 subida  [03_detail_1_f51e9a23-efe1-48b5-8eed-fab12c8d6323.webp]
+2026-05-14 15:40:08,751 [INFO]   ✓ 4/6 subida  [04_detail_2_27867793-5f1e-4f7e-833c-28f59e582f20.webp]
+2026-05-14 15:40:11,741 [INFO]   ✓ 5/6 subida  [05_detail_3_c137a700-c8bc-4766-b6c8-64ea1474963b.webp]
+2026-05-14 15:40:15,945 [INFO]   ✓ 6/6 subida  [06_detail_4_1aa4f890-8168-4663-b07b-b98ef46c7e38.webp]
+2026-05-14 15:40:17,446 [INFO] 
+[59/61] VIRBAC HPM FELINE UROLOGY URINARY WIB U3  (ID: 15401411084675)
+2026-05-14 15:40:17,448 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:40:17,464 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:40:17,499 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:40:17,523 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:40:17,545 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:40:17,567 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-14 15:40:21,333 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:40:23,670 [INFO]   ✓ 1/6 subida  [01_front_packaging_997529e4-2ecb-4b2b-8357-df7ab5ebb95c.webp]
+2026-05-14 15:40:28,500 [INFO]   ✓ 2/6 subida  [02_back_3kg_3599cc0f-b732-480a-a855-b3465fa81fb6.webp]
+2026-05-14 15:40:31,853 [INFO]   ✓ 3/6 subida  [03_detail_1_cc65f605-643c-40bc-b1d6-42d3c70eea51.webp]
+2026-05-14 15:40:37,238 [INFO]   ✓ 4/6 subida  [04_detail_2_4cbb4408-6892-4af0-bcd7-54d8d2092410.webp]
+2026-05-14 15:40:40,636 [INFO]   ✓ 5/6 subida  [05_detail_3_c133f518-bbc2-4d51-8677-0a8bba576fc1.webp]
+2026-05-14 15:40:44,981 [INFO]   ✓ 6/6 subida  [06_detail_4_4fd9a483-7d9e-4c0d-b990-0382ce04f143.webp]
+2026-05-14 15:40:46,482 [INFO] 
+[60/61] VIRBAC HPM FELINE WEIGHT LOSS CONTROL W2  (ID: 15510148972931)
+2026-05-14 15:40:46,484 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:40:46,499 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:40:46,534 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:40:46,555 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:40:46,572 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:40:50,052 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:40:52,372 [INFO]   ✓ 1/5 subida  [01_front_packaging_9007cab0-b0fc-4684-9ea3-3e879f8fbb17.webp]
+2026-05-14 15:40:56,109 [INFO]   ✓ 2/5 subida  [02_back_3kg_afd748ce-e55a-452d-bcbd-2c50d5b8e9a9.webp]
+2026-05-14 15:40:59,722 [INFO]   ✓ 3/5 subida  [03_detail_1_55f1414a-47f4-4c32-9d74-d19c011450d0.webp]
+2026-05-14 15:41:02,667 [INFO]   ✓ 4/5 subida  [04_detail_2_c72c7738-559c-462b-9d89-7c1edb73be52.webp]
+2026-05-14 15:41:06,878 [INFO]   ✓ 5/5 subida  [05_detail_3_5b5bc5df-e323-4729-be04-fc1c00d02ec1.webp]
+2026-05-14 15:41:08,379 [INFO] 
+[61/61] VIRBAC HPM FELINE WEIGHT LOSS DIABETES W1  (ID: 15510149104003)
+2026-05-14 15:41:08,381 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-14 15:41:08,397 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-14 15:41:08,432 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-14 15:41:08,455 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-14 15:41:08,473 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-14 15:41:11,725 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-14 15:41:14,130 [INFO]   ✓ 1/5 subida  [01_front_packaging_512311a1-907d-4643-a27f-460b690beb4c.webp]
+2026-05-14 15:41:17,958 [INFO]   ✓ 2/5 subida  [02_back_3kg_9dc391b3-2a97-493a-9a13-d34566c6dfd0.webp]
+2026-05-14 15:41:21,648 [INFO]   ✓ 3/5 subida  [03_detail_1_f5553d42-2a03-4098-9b08-0c66c7e7ac47.webp]
+2026-05-14 15:41:24,694 [INFO]   ✓ 4/5 subida  [04_detail_2_3b807865-2458-46d6-879d-6ba7deb26e0c.webp]
+2026-05-14 15:41:29,104 [INFO]   ✓ 5/5 subida  [05_detail_3_90a235a4-ce42-43bf-abf1-40a036eb85e6.webp]
+2026-05-14 15:41:30,605 [INFO] 
+============================================================
+2026-05-14 15:41:30,605 [INFO] RESUMEN
+2026-05-14 15:41:30,605 [INFO] ============================================================
+2026-05-14 15:41:30,605 [INFO]   total         : 61
+2026-05-14 15:41:30,605 [INFO]   ok            : 56
+2026-05-14 15:41:30,605 [INFO]   saltados      : 4
+2026-05-14 15:41:30,605 [INFO]   sin_backup    : 1
+2026-05-14 15:41:30,605 [INFO]   errores       : 0
