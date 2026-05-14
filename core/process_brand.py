@@ -27,6 +27,8 @@ import time
 from io import BytesIO
 from pathlib import Path
 
+import unicodedata
+
 import requests
 from dotenv import load_dotenv
 from PIL import Image
@@ -58,6 +60,13 @@ log = logging.getLogger(__name__)
 
 def vendor_slug(vendor: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", vendor.lower()).strip("_")
+
+
+def title_slug(title: str) -> str:
+    """Convierte el título del producto en un slug SEO-friendly con guiones."""
+    normalized = unicodedata.normalize("NFD", title.lower())
+    ascii_str = normalized.encode("ascii", "ignore").decode()
+    return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", ascii_str)).strip("-")
 
 
 def download_raw(url: str) -> tuple:
@@ -115,20 +124,12 @@ def _replace_images(api: ShopifyAPI, pid: int, title: str,
     """Elimina las imágenes existentes y sube las procesadas."""
     existing = api.get_images(pid)
 
-    # Capturar metadata original (alt + nombre de archivo) antes de borrar
+    # Capturar alt original antes de borrar; el nombre se genera desde el título
+    t_slug = title_slug(title)
     orig_meta = {}
     for img_data in existing:
         pos = img_data.get("position", 0)
-        src = img_data.get("src", "").split("?")[0]
-        stem = src.split("/")[-1].rsplit(".", 1)[0] if src else ""
-        # Eliminar UUID de Shopify: _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-        stem = re.sub(r"_[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$", "", stem)
-        # Añadir pid+pos para garantizar unicidad global entre productos
-        fname = f"{stem}_{pid}_{pos}.webp" if stem else f"{slug}_{pid}_{pos}.webp"
-        orig_meta[pos] = {
-            "alt":      img_data.get("alt") or title,
-            "filename": fname,
-        }
+        orig_meta[pos] = {"alt": img_data.get("alt") or title}
 
     for img_data in existing:
         api.delete_image(pid, img_data["id"])
@@ -137,7 +138,7 @@ def _replace_images(api: ShopifyAPI, pid: int, title: str,
 
     for pos, img in enumerate(processed, 1):
         meta  = orig_meta.get(pos, {})
-        fname = meta.get("filename") or f"{slug}_{pid}_{pos}.webp"
+        fname = f"{t_slug}_{pos}.webp"
         alt   = meta.get("alt") or title
         api.upload_image(pid, to_webp_b64(img), fname, alt=alt, position=pos)
         log.info(f"  ✓ {pos}/{len(processed)} subida  [{fname}]")
