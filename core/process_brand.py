@@ -33,7 +33,7 @@ from PIL import Image
 # Añadir raíz del repo al path para que los imports funcionen
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from core.image_utils import is_high_res, process_image, to_webp_b64
+from core.image_utils import is_high_res, process_image, process_image_webp_only, to_webp_b64
 from core.shopify_api import ShopifyAPI, get_token
 
 load_dotenv()
@@ -181,7 +181,8 @@ def run_backup(api: ShopifyAPI, vendor: str):
 # ─── Modo shopify_backup ───────────────────────────────────────────────────────
 
 def run_shopify_backup(api: ShopifyAPI, vendor: str,
-                       product_id: int = None, only_ids: set = None):
+                       product_id: int = None, only_ids: set = None,
+                       pipeline: str = "standard"):
     """Lee imágenes de backups/<slug>/, las procesa y las sube a Shopify."""
     slug = vendor_slug(vendor)
     backup_root = BACKUPS_DIR / slug
@@ -219,7 +220,8 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
                 raw = img_path.read_bytes()
                 img = Image.open(BytesIO(raw))
                 log.info(f"  {img_path.name}: {img.mode} {img.size}")
-                processed.append(process_image(img))
+                fn = process_image_webp_only if pipeline == "webp_only" else process_image
+                processed.append(fn(img))
             except Exception as e:
                 log.warning(f"  Error procesando {img_path.name}: {e}")
 
@@ -341,6 +343,9 @@ def main():
     parser.add_argument("--only-ids",        default="")
     parser.add_argument("--rebuild-catalog", action="store_true")
     parser.add_argument("--backup",          action="store_true")
+    parser.add_argument("--pipeline",
+                        choices=["standard", "webp_only"],
+                        default="standard")
     args = parser.parse_args()
 
     if not os.getenv("CLIENT_ID") or not os.getenv("CLIENT_SECRET"):
@@ -349,8 +354,9 @@ def main():
 
     log.info("=" * 60)
     mode = "BACKUP" if args.backup else (args.fuente or "?").upper()
-    log.info(f"  Vendor : {args.vendor}")
-    log.info(f"  Modo   : {mode}")
+    log.info(f"  Vendor   : {args.vendor}")
+    log.info(f"  Modo     : {mode}")
+    log.info(f"  Pipeline : {args.pipeline}")
     if args.web_url:
         log.info(f"  Web    : {args.web_url}")
     log.info("=" * 60)
@@ -367,7 +373,8 @@ def main():
     if args.backup:
         run_backup(api, args.vendor)
     elif args.fuente == "shopify_backup":
-        run_shopify_backup(api, args.vendor, args.product_id, only_ids or None)
+        run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
+                           pipeline=args.pipeline)
     elif args.fuente in ("web_oficial", "web_y_amazon"):
         if not args.web_url:
             log.error("--web-url requerido para fuente web_oficial / web_y_amazon")
