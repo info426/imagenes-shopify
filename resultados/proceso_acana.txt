@@ -1,26 +1,25 @@
-2026-05-13 15:15:03,088 [INFO] ============================================================
-2026-05-13 15:15:03,088 [INFO] PROCESADOR GENÉRICO — SHOPIFY
-2026-05-13 15:15:03,088 [INFO] ============================================================
-2026-05-13 15:15:03,088 [INFO] Vendor  : Acana
-2026-05-13 15:15:03,088 [INFO] Fuente  : web_y_amazon
-2026-05-13 15:15:03,088 [INFO] Web URL : emea.acana.com/es-ES
-2026-05-13 15:15:03,510 [INFO] Token obtenido
-2026-05-13 15:15:03,511 [INFO] Construyendo catálogo web...
-2026-05-13 15:15:03,511 [WARNING]   build_catalog() no implementado para acana.
-2026-05-13 15:15:03,511 [WARNING]   Implementa el scraping de emea.acana.com/es-ES en scripts/process_generic.py
-2026-05-13 15:15:03,511 [INFO] Modo prueba — producto ID: 15509599551875
-2026-05-13 15:15:03,803 [INFO] 
+2026-05-14 13:22:45,701 [INFO] ============================================================
+2026-05-14 13:22:45,701 [INFO] PROCESADOR GENÉRICO — SHOPIFY
+2026-05-14 13:22:45,701 [INFO] ============================================================
+2026-05-14 13:22:45,701 [INFO] Vendor  : Acana
+2026-05-14 13:22:45,701 [INFO] Fuente  : web_oficial
+2026-05-14 13:22:45,701 [INFO] Web URL : https://emea.acana.com/es-ES
+2026-05-14 13:22:46,087 [INFO] Token obtenido
+2026-05-14 13:22:46,088 [INFO] Construyendo catálogo web...
+2026-05-14 13:22:46,088 [WARNING]   build_catalog() no implementado para acana.
+2026-05-14 13:22:46,088 [WARNING]   Implementa el scraping de https://emea.acana.com/es-ES en scripts/process_generic.py
+2026-05-14 13:22:46,088 [INFO] Modo prueba — producto ID: 15509599551875
+2026-05-14 13:22:46,378 [INFO] 
 [1/1] ID 15509599551875
-2026-05-13 15:15:03,803 [INFO]   Título : ACANA CANINE ADULT
-2026-05-13 15:15:03,803 [WARNING]   [web_oficial] Scraping no implementado para este vendor.
-2026-05-13 15:15:03,803 [WARNING]   Adapta get_images_from_web() en scripts/process_generic.py
-2026-05-13 15:15:03,803 [WARNING]   [web_y_amazon] Búsqueda en Amazon no implementada.
-2026-05-13 15:15:03,803 [WARNING]   Sin imágenes encontradas (web + Amazon) — saltando
-2026-05-13 15:15:04,803 [INFO] 
+2026-05-14 13:22:46,378 [INFO]   Título : ACANA CANINE ADULT
+2026-05-14 13:22:46,378 [WARNING]   [web_oficial] Scraping no implementado para este vendor.
+2026-05-14 13:22:46,378 [WARNING]   Adapta get_images_from_web() en scripts/process_generic.py
+2026-05-14 13:22:46,378 [WARNING]   Sin imágenes encontradas en web oficial — saltando
+2026-05-14 13:22:47,378 [INFO] 
 ============================================================
-2026-05-13 15:15:04,803 [INFO] RESUMEN
-2026-05-13 15:15:04,803 [INFO] ============================================================
-2026-05-13 15:15:04,803 [INFO]   Total     : 1
-2026-05-13 15:15:04,803 [INFO]   Procesados: 0
-2026-05-13 15:15:04,804 [INFO]   Sin imagen: 1
-2026-05-13 15:15:04,804 [INFO]   Errores   : 0
+2026-05-14 13:22:47,378 [INFO] RESUMEN
+2026-05-14 13:22:47,378 [INFO] ============================================================
+2026-05-14 13:22:47,378 [INFO]   Total     : 1
+2026-05-14 13:22:47,378 [INFO]   Procesados: 0
+2026-05-14 13:22:47,378 [INFO]   Sin imagen: 1
+2026-05-14 13:22:47,378 [INFO]   Errores   : 0
