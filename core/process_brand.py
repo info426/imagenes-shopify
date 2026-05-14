@@ -18,6 +18,7 @@ Argumentos:
 
 import argparse
 import importlib
+import json
 import logging
 import os
 import re
@@ -112,15 +113,29 @@ def _replace_images(api: ShopifyAPI, pid: int, title: str,
                     slug: str, processed: list):
     """Elimina las imágenes existentes y sube las procesadas."""
     existing = api.get_images(pid)
+
+    # Capturar metadata original (alt + nombre de archivo) antes de borrar
+    orig_meta = {}
+    for img_data in existing:
+        pos = img_data.get("position", 0)
+        src = img_data.get("src", "").split("?")[0]
+        stem = src.split("/")[-1].rsplit(".", 1)[0] if src else ""
+        orig_meta[pos] = {
+            "alt":      img_data.get("alt") or title,
+            "filename": f"{stem}.webp" if stem else f"{slug}_{pid}_{pos}.webp",
+        }
+
     for img_data in existing:
         api.delete_image(pid, img_data["id"])
         time.sleep(0.2)
     log.info(f"  {len(existing)} imagen(es) antigua(s) eliminada(s)")
 
     for pos, img in enumerate(processed, 1):
-        fname = f"{slug}_{pid}_{pos}.webp"
-        api.upload_image(pid, to_webp_b64(img), fname, alt=title, position=pos)
-        log.info(f"  ✓ {pos}/{len(processed)} subida")
+        meta  = orig_meta.get(pos, {})
+        fname = meta.get("filename") or f"{slug}_{pid}_{pos}.webp"
+        alt   = meta.get("alt") or title
+        api.upload_image(pid, to_webp_b64(img), fname, alt=alt, position=pos)
+        log.info(f"  ✓ {pos}/{len(processed)} subida  [{fname}]")
         time.sleep(0.5)
 
 
@@ -158,21 +173,31 @@ def run_backup(api: ShopifyAPI, vendor: str):
         folder = backup_root / str(pid)
         folder.mkdir(exist_ok=True)
 
+        metadata = {}
         for j, img_data in enumerate(images, 1):
             src = img_data.get("src", "")
             if not src:
                 continue
-            # Eliminar parámetros de resize de Shopify para obtener original
             src = src.split("?")[0]
             try:
                 raw, ext = download_raw(src)
-                path = folder / f"img_{j:02d}.{ext}"
+                key  = f"img_{j:02d}"
+                path = folder / f"{key}.{ext}"
                 path.write_bytes(raw)
-                log.info(f"  [{pid}] img_{j:02d}.{ext}")
+                stem = src.split("/")[-1].rsplit(".", 1)[0]
+                metadata[key] = {
+                    "alt":      img_data.get("alt") or "",
+                    "filename": f"{stem}.webp" if stem else f"{slug}_{pid}_{j}.webp",
+                    "position": img_data.get("position", j),
+                }
+                log.info(f"  [{pid}] {key}.{ext}")
             except Exception as e:
                 log.warning(f"  [{pid}] Error img {j}: {e}")
             time.sleep(0.15)
 
+        (folder / "metadata.json").write_text(
+            json.dumps(metadata, ensure_ascii=False, indent=2)
+        )
         backed_up += 1
 
     log.info(f"\nBackup: {backed_up} con imágenes, {skipped} sin imágenes")
