@@ -1,57 +1,42 @@
-2026-05-14 19:21:35,356 [INFO] ============================================================
-2026-05-14 19:21:35,356 [INFO]   Vendor   : ALPHA SPIRIT
-2026-05-14 19:21:35,356 [INFO]   IDs      : [15509629239683]
-2026-05-14 19:21:35,356 [INFO]   Outscale : x2.0
-2026-05-14 19:21:35,356 [INFO] ============================================================
-2026-05-14 19:21:35,685 [INFO] Descargando modelo realesr-general-x4v3.pth (~60 MB)...
-2026-05-14 19:21:35,880 [INFO] Modelo descargado.
+2026-05-14 19:28:46,414 [INFO] ============================================================
+2026-05-14 19:28:46,414 [INFO]   Vendor   : ALPHA SPIRIT
+2026-05-14 19:28:46,414 [INFO]   IDs      : [15509629239683]
+2026-05-14 19:28:46,414 [INFO]   Outscale : x2
+2026-05-14 19:28:46,414 [INFO] ============================================================
+2026-05-14 19:28:46,789 [INFO] Descargando Real-ESRGAN ncnn-vulkan...
+2026-05-14 19:28:48,004 [INFO] Binario listo: .tools/realesrgan-ncnn-vulkan
+2026-05-14 19:28:48,291 [INFO] 
+[15509629239683] ALPHA THE ONLY ONE CANINE ADULT AVES DE CORRAL
+2026-05-14 19:28:48,325 [INFO]   img_01.jpg: (2000, 2000)
+2026-05-14 19:28:48,603 [INFO]     [ESRGAN ncnn] (2000, 2000) outscale x2...
+2026-05-14 19:28:48,758 [WARNING]     [ESRGAN] stderr: vkCreateInstance failed -9
+vkCreateInstance failed -9
+vkCreateInstance failed -9
+invalid gpu device
 
-A module that was compiled using NumPy 1.x cannot be run in
-NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
-versions of NumPy, modules must be compiled with NumPy 2.0.
-Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+2026-05-14 19:28:48,759 [WARNING]   Error en img_01.jpg: Real-ESRGAN falló (code 255)
+2026-05-14 19:28:48,779 [INFO]   img_02.jpg: (2000, 2000)
+2026-05-14 19:28:48,995 [INFO]     [ESRGAN ncnn] (2000, 2000) outscale x2...
+2026-05-14 19:28:48,998 [WARNING]     [ESRGAN] stderr: vkCreateInstance failed -9
+vkCreateInstance failed -9
+vkCreateInstance failed -9
+invalid gpu device
 
-If you are a user of the module, the easiest solution will be to
-downgrade to 'numpy<2' or try to upgrade the affected module.
-We expect that some modules will need time to support NumPy 2.
+2026-05-14 19:28:48,998 [WARNING]   Error en img_02.jpg: Real-ESRGAN falló (code 255)
+2026-05-14 19:28:49,020 [INFO]   img_03.jpg: (2000, 2000)
+2026-05-14 19:28:49,270 [INFO]     [ESRGAN ncnn] (2000, 2000) outscale x2...
+2026-05-14 19:28:49,273 [WARNING]     [ESRGAN] stderr: vkCreateInstance failed -9
+vkCreateInstance failed -9
+vkCreateInstance failed -9
+invalid gpu device
 
-Traceback (most recent call last):  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 174, in <module>
-    main()
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 170, in main
-    run_upscale(api, args.vendor, product_ids, outscale=args.outscale)
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 111, in run_upscale
-    upsampler  = load_upscaler(model_path)
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 62, in load_upscaler
-    import torch
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/__init__.py", line 1382, in <module>
-    from .functional import *  # noqa: F403
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/functional.py", line 7, in <module>
-    import torch.nn.functional as F
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/nn/__init__.py", line 1, in <module>
-    from .modules import *  # noqa: F403
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
-    from .transformer import TransformerEncoder, TransformerDecoder, \
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
-    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
-/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:84.)
-  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
-Traceback (most recent call last):
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 174, in <module>
-    main()
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 170, in main
-    run_upscale(api, args.vendor, product_ids, outscale=args.outscale)
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 111, in run_upscale
-    upsampler  = load_upscaler(model_path)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/upscale.py", line 63, in load_upscaler
-    from basicsr.archs.srvgg_arch import SRVGGNetCompact
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/basicsr/__init__.py", line 3, in <module>
-    from .archs import *
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/basicsr/archs/__init__.py", line 5, in <module>
-    from basicsr.utils import get_root_logger, scandir
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/basicsr/utils/__init__.py", line 2, in <module>
-    from .diffjpeg import DiffJPEG
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/basicsr/utils/diffjpeg.py", line 19, in <module>
-    y_table = nn.Parameter(torch.from_numpy(y_table))
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: Numpy is not available
+2026-05-14 19:28:49,273 [WARNING]   Error en img_03.jpg: Real-ESRGAN falló (code 255)
+2026-05-14 19:28:49,295 [INFO]   img_04.jpg: (2000, 2000)
+2026-05-14 19:28:49,587 [INFO]     [ESRGAN ncnn] (2000, 2000) outscale x2...
+2026-05-14 19:28:49,590 [WARNING]     [ESRGAN] stderr: vkCreateInstance failed -9
+vkCreateInstance failed -9
+vkCreateInstance failed -9
+invalid gpu device
+
+2026-05-14 19:28:49,591 [WARNING]   Error en img_04.jpg: Real-ESRGAN falló (code 255)
+2026-05-14 19:28:49,591 [WARNING]   Ninguna imagen procesada — saltando
