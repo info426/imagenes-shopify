@@ -1,4 +1,4 @@
-name: Procesar imágenes de marca
+name: Test marca (producto de prueba)
 
 on:
   workflow_dispatch:
@@ -18,9 +18,9 @@ on:
       web_url:
         description: 'URL web fabricante (si fuente != shopify_backup)'
         required: false
-      product_ids:
-        description: 'IDs específicos separados por coma (vacío = todos los productos)'
-        required: false
+      product_id:
+        description: 'ID del producto a procesar'
+        required: true
       rebuild_catalog:
         description: 'Forzar re-scraping del catálogo web'
         required: false
@@ -29,9 +29,9 @@ on:
         default: 'false'
 
 jobs:
-  procesar:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -54,7 +54,7 @@ jobs:
         if: github.event.inputs.fuente != 'shopify_backup'
         run: playwright install chromium --with-deps
 
-      - name: Procesar imágenes
+      - name: Procesar producto de prueba
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
@@ -63,21 +63,21 @@ jobs:
           mkdir -p resultados
           EXTRA=""
           WEB=""
-          IDS=""
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
-          [ -n "${{ github.event.inputs.web_url }}" ]     && WEB="--web-url ${{ github.event.inputs.web_url }}"
-          [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
+          [ -n "${{ github.event.inputs.web_url }}" ] && WEB="--web-url ${{ github.event.inputs.web_url }}"
           python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --fuente "${{ github.event.inputs.fuente }}" \
-            $WEB $IDS $EXTRA \
-            2>&1 | tee resultados/proceso_${{ github.event.inputs.vendor }}.txt
+            $WEB \
+            --product-id "${{ github.event.inputs.product_id }}" \
+            $EXTRA \
+            2>&1 | tee resultados/test_${{ github.event.inputs.vendor }}_${{ github.event.inputs.product_id }}.txt
 
-      - name: Guardar log y catálogos
+      - name: Guardar log
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
-          git diff --cached --quiet || git commit -m "proceso: ${{ github.event.inputs.vendor }}"
+          git diff --cached --quiet || git commit -m "test: ${{ github.event.inputs.vendor }} #${{ github.event.inputs.product_id }}"
           git push

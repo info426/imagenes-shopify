@@ -1,0 +1,6 @@
+# Git LFS — imágenes originales de backup
+backups/**/*.jpg  filter=lfs diff=lfs merge=lfs -text
+backups/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+backups/**/*.png  filter=lfs diff=lfs merge=lfs -text
+backups/**/*.webp filter=lfs diff=lfs merge=lfs -text
+backups/**/*.gif  filter=lfs diff=lfs merge=lfs -text
