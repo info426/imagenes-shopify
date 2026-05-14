@@ -109,6 +109,7 @@ def search_ddg_images(query: str, exclude_domain: str = "",
     return found
 
 
+
 def _replace_images(api: ShopifyAPI, pid: int, title: str,
                     slug: str, processed: list):
     """Elimina las imágenes existentes y sube las procesadas."""
