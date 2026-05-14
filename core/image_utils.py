@@ -114,6 +114,18 @@ def process_image(img: Image.Image) -> Image.Image:
     return canvas
 
 
+def process_image_webp_only(img: Image.Image) -> Image.Image:
+    """
+    Conversión mínima a WebP: elimina transparencia (composite sobre blanco)
+    y convierte a RGB. Mantiene tamaño y resolución originales.
+    """
+    has_alpha = (img.mode in ("RGBA", "LA") or
+                 (img.mode == "P" and "transparency" in img.info))
+    if has_alpha:
+        return composite_on_white(img)
+    return img.convert("RGB")
+
+
 def to_webp_b64(img: Image.Image) -> str:
     """Convierte imagen PIL a WebP base64 listo para Shopify API."""
     buf = BytesIO()

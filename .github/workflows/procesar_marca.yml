@@ -27,6 +27,14 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      pipeline:
+        description: 'Pipeline de procesamiento de imagen'
+        required: false
+        type: choice
+        options:
+          - standard
+          - webp_only
+        default: standard
 
 jobs:
   procesar:
@@ -70,6 +78,7 @@ jobs:
           python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --fuente "${{ github.event.inputs.fuente }}" \
+            --pipeline "${{ github.event.inputs.pipeline }}" \
             $WEB $IDS $EXTRA \
             2>&1 | tee resultados/proceso_${{ github.event.inputs.vendor }}.txt
 
