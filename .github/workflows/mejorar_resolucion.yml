@@ -43,8 +43,8 @@ jobs:
 
       - name: Instalar Real-ESRGAN y dependencias IA
         run: |
-          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-          pip install realesrgan basicsr
+          pip install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cpu
+          pip install realesrgan basicsr==1.4.2
 
       - name: Mejorar resolución con Real-ESRGAN
         env:
