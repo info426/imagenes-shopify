@@ -1,20 +1,18 @@
 """
-Super-resolución con Real-ESRGAN.
+Super-resolución con Real-ESRGAN ncnn-vulkan (binario precompilado).
 
-Mejora la calidad de píxeles de imágenes de producto:
-- Elimina artefactos de compresión JPG
-- Afila bordes y recupera detalles finos
-- El resultado exportado a WebP 80 ocupa peso similar o menor al original
-
-Uso:
-    python3 core/upscale.py --vendor "Alpha Spirit" --product-ids 15509626356099
+Sin dependencias PyTorch/basicsr — usa el binario oficial de xinntao.
+Mismo modelo y calidad que la versión Python, sin conflictos de librerías.
 """
 
 import argparse
 import logging
 import os
+import subprocess
 import sys
+import tempfile
 import time
+import zipfile
 from io import BytesIO
 from pathlib import Path
 
@@ -25,16 +23,18 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from core.image_utils import process_image, to_webp_b64
 from core.shopify_api import ShopifyAPI, get_token
-from core.process_brand import vendor_slug, title_slug, _replace_images
+from core.process_brand import vendor_slug, _replace_images
 
 load_dotenv()
 
 BACKUPS_DIR = Path("backups")
-MODELS_DIR  = Path("models")
+TOOLS_DIR   = Path(".tools")
 
-# Modelo más ligero de Real-ESRGAN, equilibrio calidad/velocidad en CPU
-MODEL_URL  = "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
-MODEL_NAME = "realesr-general-x4v3.pth"
+NCNN_URL = (
+    "https://github.com/xinntao/Real-ESRGAN/releases/download/"
+    "v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip"
+)
+NCNN_BIN = TOOLS_DIR / "realesrgan-ncnn-vulkan"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -44,72 +44,67 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
-def download_model() -> Path:
-    """Descarga el modelo Real-ESRGAN si no existe."""
-    MODELS_DIR.mkdir(exist_ok=True)
-    model_path = MODELS_DIR / MODEL_NAME
-    if not model_path.exists():
-        log.info(f"Descargando modelo {MODEL_NAME} (~60 MB)...")
-        r = requests.get(MODEL_URL, stream=True, timeout=120)
-        r.raise_for_status()
-        model_path.write_bytes(r.content)
-        log.info("Modelo descargado.")
-    return model_path
+def setup_ncnn() -> Path:
+    """Descarga y prepara el binario Real-ESRGAN ncnn."""
+    if NCNN_BIN.exists():
+        return NCNN_BIN
+
+    TOOLS_DIR.mkdir(exist_ok=True)
+    zip_path = TOOLS_DIR / "realesrgan-ncnn.zip"
+
+    log.info("Descargando Real-ESRGAN ncnn-vulkan...")
+    r = requests.get(NCNN_URL, stream=True, timeout=120)
+    r.raise_for_status()
+    zip_path.write_bytes(r.content)
+
+    with zipfile.ZipFile(zip_path) as zf:
+        zf.extractall(TOOLS_DIR)
+    zip_path.unlink()
+
+    NCNN_BIN.chmod(0o755)
+    log.info(f"Binario listo: {NCNN_BIN}")
+    return NCNN_BIN
 
 
-def load_upscaler(model_path: Path):
-    """Inicializa Real-ESRGAN para CPU."""
-    import torch
-    from basicsr.archs.srvgg_arch import SRVGGNetCompact
-    from realesrgan import RealESRGANer
+def upscale_image_ncnn(img: Image.Image, ncnn_bin: Path,
+                       outscale: int = 2) -> Image.Image:
+    """Aplica Real-ESRGAN al imagen PIL usando el binario ncnn."""
+    with tempfile.TemporaryDirectory() as tmp:
+        inp = Path(tmp) / "input.png"
+        out = Path(tmp) / "output.png"
 
-    model = SRVGGNetCompact(
-        num_in_ch=3, num_out_ch=3,
-        num_feat=64, num_conv=32,
-        upscale=4, act_type="prelu",
-    )
-    return RealESRGANer(
-        scale=4,
-        model_path=str(model_path),
-        model=model,
-        tile=256,       # procesa en tiles para no agotar RAM en CPU
-        tile_pad=10,
-        pre_pad=0,
-        half=False,     # CPU no soporta FP16
-        device=torch.device("cpu"),
-    )
+        img.convert("RGB").save(str(inp), format="PNG")
 
+        cmd = [
+            str(ncnn_bin),
+            "-i", str(inp),
+            "-o", str(out),
+            "-n", "realesrgan-x4plus",
+            "-s", str(outscale),
+            "-f", "png",
+        ]
+        log.info(f"    [ESRGAN ncnn] {img.size} outscale x{outscale}...")
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
 
-def upscale_pil(img: Image.Image, upsampler, outscale: float = 2.0) -> Image.Image:
-    """Aplica super-resolución Real-ESRGAN a una imagen PIL."""
-    import cv2
-    import numpy as np
+        if result.returncode != 0:
+            log.warning(f"    [ESRGAN] stderr: {result.stderr[:300]}")
+            raise RuntimeError(f"Real-ESRGAN falló (code {result.returncode})")
 
-    img_np  = np.array(img.convert("RGB"))
-    img_bgr = cv2.cvtColor(img_np, cv2.COLOR_RGB2BGR)
-
-    log.info(f"    [ESRGAN] procesando {img.size} → outscale x{outscale}...")
-    output_bgr, _ = upsampler.enhance(img_bgr, outscale=outscale)
-
-    output_rgb = cv2.cvtColor(output_bgr, cv2.COLOR_BGR2RGB)
-    result = Image.fromarray(output_rgb)
-    log.info(f"    [ESRGAN] {img.size} → {result.size}")
-    return result
+        upscaled = Image.open(str(out)).convert("RGB")
+        log.info(f"    [ESRGAN] {img.size} → {upscaled.size}")
+        return upscaled
 
 
 def run_upscale(api: ShopifyAPI, vendor: str,
-                product_ids: list, outscale: float = 2.0):
-    """Descarga originales del backup, aplica ESRGAN y sube a Shopify."""
-    slug     = vendor_slug(vendor)
+                product_ids: list, outscale: int = 2):
+    slug        = vendor_slug(vendor)
     backup_root = BACKUPS_DIR / slug
 
     if not backup_root.exists():
         log.error(f"No existe backup para '{vendor}'.")
         sys.exit(1)
 
-    model_path = download_model()
-    upsampler  = load_upscaler(model_path)
-    log.info("Modelo Real-ESRGAN cargado.")
+    ncnn_bin = setup_ncnn()
 
     for pid in product_ids:
         product = api.get_product(pid)
@@ -130,11 +125,8 @@ def run_upscale(api: ShopifyAPI, vendor: str,
                 img = Image.open(BytesIO(raw)).convert("RGB")
                 log.info(f"  {img_path.name}: {img.size}")
 
-                # 1. Super-resolución
-                upscaled = upscale_pil(img, upsampler, outscale=outscale)
-
-                # 2. Pipeline estándar (autocrop + padding + 2000×2000)
-                final = process_image(upscaled)
+                upscaled = upscale_image_ncnn(img, ncnn_bin, outscale=outscale)
+                final    = process_image(upscaled)
                 processed.append(final)
             except Exception as e:
                 log.warning(f"  Error en {img_path.name}: {e}")
@@ -151,10 +143,8 @@ def run_upscale(api: ShopifyAPI, vendor: str,
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--vendor",      required=True)
-    parser.add_argument("--product-ids", required=True,
-                        help="IDs separados por coma")
-    parser.add_argument("--outscale",    type=float, default=2.0,
-                        help="Factor de escala ESRGAN (default: 2)")
+    parser.add_argument("--product-ids", required=True)
+    parser.add_argument("--outscale",    type=int, default=2)
     args = parser.parse_args()
 
     product_ids = [int(x.strip()) for x in args.product_ids.split(",") if x.strip()]
