@@ -109,19 +109,6 @@ def search_ddg_images(query: str, exclude_domain: str = "",
     return found
 
 
-_UUID_RE = re.compile(r"_[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}(?=\.)")
-
-
-def _already_processed(images: list) -> bool:
-    """True si todas las imágenes son WebP sin UUID en el nombre."""
-    if not images:
-        return False
-    return all(
-        img.get("src", "").split("?")[0].lower().endswith(".webp")
-        and not _UUID_RE.search(img.get("src", ""))
-        for img in images
-    )
-
 
 def _replace_images(api: ShopifyAPI, pid: int, title: str,
                     slug: str, processed: list):
@@ -259,16 +246,7 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
 
         if pid in done_ids:
-            log.info("  Ya procesado (log) — saltando")
-            stats["saltados"] += 1
-            continue
-
-        # Detección automática: WebP sin UUID → ya está correcto
-        current_images = api.get_images(pid)
-        if _already_processed(current_images):
-            log.info("  Imágenes ya en WebP sin UUID — saltando y registrando")
-            done_ids.add(pid)
-            log_path.write_text(json.dumps(sorted(done_ids)))
+            log.info("  Ya procesado — saltando")
             stats["saltados"] += 1
             continue
 
