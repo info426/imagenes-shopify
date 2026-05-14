@@ -12,16 +12,29 @@ import base64
 import logging
 from io import BytesIO
 
-from PIL import Image, ImageFilter
+from PIL import Image, ImageChops, ImageFilter
 
 log = logging.getLogger(__name__)
 
 TARGET_SIZE    = (2000, 2000)
-WEBP_QUALITY   = 90
+WEBP_QUALITY   = 80
 PADDING        = 0.05
 WHITE_THRESH   = 245
 WHITE_MIN_FRAC = 0.60
 MIN_DIM        = 800    # px mínimo en cualquier dimensión para aceptar imagen web
+
+
+def autocrop_white(img: Image.Image, thresh: int = 15) -> Image.Image:
+    """Elimina márgenes blancos del producto detectando el bounding box del contenido."""
+    bg   = Image.new("RGB", img.size, (255, 255, 255))
+    diff = ImageChops.difference(img, bg)
+    mask = diff.point(lambda x: 0 if x < thresh else 255).convert("L")
+    bbox = mask.getbbox()
+    if bbox:
+        cropped = img.crop(bbox)
+        log.info(f"    [autocrop] {img.size} → {cropped.size}")
+        return cropped
+    return img
 
 
 def composite_on_white(img: Image.Image) -> Image.Image:
@@ -100,6 +113,9 @@ def process_image(img: Image.Image) -> Image.Image:
 
     use_padding = is_white_background(composited)
     log.info(f"    [{'padding 5%' if use_padding else 'sin padding'}]")
+
+    if use_padding:
+        composited = autocrop_white(composited)
 
     max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING)) if use_padding else TARGET_SIZE[0]
     max_h = int(TARGET_SIZE[1] * (1 - 2 * PADDING)) if use_padding else TARGET_SIZE[1]
