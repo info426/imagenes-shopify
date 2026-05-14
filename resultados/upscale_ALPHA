@@ -1,10 +1,10 @@
-2026-05-14 19:17:19,170 [INFO] ============================================================
-2026-05-14 19:17:19,170 [INFO]   Vendor   : ALPHA SPIRIT
-2026-05-14 19:17:19,170 [INFO]   IDs      : [15509629239683]
-2026-05-14 19:17:19,170 [INFO]   Outscale : x2.0
-2026-05-14 19:17:19,170 [INFO] ============================================================
-2026-05-14 19:17:19,606 [INFO] Descargando modelo realesr-general-x4v3.pth (~60 MB)...
-2026-05-14 19:17:20,027 [INFO] Modelo descargado.
+2026-05-14 19:21:35,356 [INFO] ============================================================
+2026-05-14 19:21:35,356 [INFO]   Vendor   : ALPHA SPIRIT
+2026-05-14 19:21:35,356 [INFO]   IDs      : [15509629239683]
+2026-05-14 19:21:35,356 [INFO]   Outscale : x2.0
+2026-05-14 19:21:35,356 [INFO] ============================================================
+2026-05-14 19:21:35,685 [INFO] Descargando modelo realesr-general-x4v3.pth (~60 MB)...
+2026-05-14 19:21:35,880 [INFO] Modelo descargado.
 
 A module that was compiled using NumPy 1.x cannot be run in
 NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
