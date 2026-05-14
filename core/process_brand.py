@@ -224,12 +224,27 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
     else:
         products = api.get_products(vendor)
 
-    stats = dict(total=len(products), ok=0, sin_backup=0, errores=0)
+    # Registro de productos ya procesados (persiste entre ejecuciones via git)
+    RESULTS_DIR.mkdir(exist_ok=True)
+    log_path = RESULTS_DIR / f"{slug}_processed.json"
+    done_ids: set = set()
+    if log_path.exists():
+        try:
+            done_ids = set(json.loads(log_path.read_text()))
+        except Exception:
+            pass
+
+    stats = dict(total=len(products), ok=0, saltados=0, sin_backup=0, errores=0)
 
     for i, product in enumerate(products, 1):
         pid   = product["id"]
         title = product["title"]
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+
+        if pid in done_ids:
+            log.info("  Ya procesado — saltando")
+            stats["saltados"] += 1
+            continue
 
         folder = backup_root / str(pid)
         if not folder.exists() or not any(folder.iterdir()):
@@ -256,6 +271,8 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
             continue
 
         _replace_images(api, pid, title, slug, processed)
+        done_ids.add(pid)
+        log_path.write_text(json.dumps(sorted(done_ids)))
         stats["ok"] += 1
         time.sleep(1)
 
