@@ -19,7 +19,7 @@ on:
         description: 'URL web fabricante (si fuente != shopify_backup)'
         required: false
       product_ids:
-        description: 'IDs específicos separados por coma (vacío = todos los productos)'
+        description: 'Un ID para test, varios separados por coma para batch, vacío = todos'
         required: false
       rebuild_catalog:
         description: 'Forzar re-scraping del catálogo web'
