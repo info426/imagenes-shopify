@@ -168,20 +168,17 @@ def process_image_webp_only(img: Image.Image) -> Image.Image:
 
 
 def to_webp_b64(img: Image.Image) -> str:
-    """Convierte imagen PIL a WebP base64 listo para Shopify API."""
+    """Convierte imagen PIL a WebP base64 con perfil ICC sRGB embebido."""
+    from PIL import ImageCms
+    icc_bytes = ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes()
     buf = BytesIO()
-    img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6)
+    img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6, icc_profile=icc_bytes)
     return base64.b64encode(buf.getvalue()).decode()
 
 
 def to_webp_srgb_b64(img: Image.Image) -> str:
-    """Convierte imagen PIL a WebP base64 con perfil ICC sRGB embebido."""
-    from PIL import ImageCms
-    srgb_profile = ImageCms.createProfile("sRGB")
-    icc_bytes = ImageCms.ImageCmsProfile(srgb_profile).tobytes()
-    buf = BytesIO()
-    img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6, icc_profile=icc_bytes)
-    return base64.b64encode(buf.getvalue()).decode()
+    """Alias de to_webp_b64 — sRGB ya es el estándar por defecto."""
+    return to_webp_b64(img)
 
 
 def is_high_res(raw: bytes) -> tuple:
