@@ -48,11 +48,34 @@ STOPWORDS = {"de", "para", "con", "and", "for", "with", "gr", "g", "kg",
 def normalize(text: str) -> set:
     """Convierte texto a tokens normalizados para comparación."""
     text = unicodedata.normalize("NFD", text.lower()).encode("ascii", "ignore").decode()
-    # Separar números pegados a letras: "15x60gr" → "15 x 60 gr"
+    # Normalizar coma decimal → punto: "1,5" → "1.5"
+    text = re.sub(r"(\d),(\d)", r"\1.\2", text)
+    # Separar números pegados a letras (preservando decimales)
     text = re.sub(r"(\d)([a-z])", r"\1 \2", text)
     text = re.sub(r"([a-z])(\d)", r"\1 \2", text)
-    tokens = set(re.findall(r"[a-z0-9]+", text))
+    # Extraer tokens: decimales como un solo token (ej: "1.5"), enteros y palabras
+    tokens = set(re.findall(r"\d+\.\d+|\d+|[a-z]+", text))
     return tokens - STOPWORDS
+
+
+def weight_score(variant_title: str, raw_text: str) -> float:
+    """
+    Busca el peso del título de variante en el texto OCR crudo.
+    Retorna 1.0 si encuentra número+unidad ("5 kg", "1,5 kg"),
+    0.3 si encuentra el número solo como token aislado.
+    """
+    raw = unicodedata.normalize("NFD", raw_text.lower()).encode("ascii", "ignore").decode()
+    m = re.search(r"(\d+[.,]\d+|\d+)\s*(?:kg|kilo)", variant_title, re.IGNORECASE)
+    if not m:
+        return 0.0
+    num = m.group(1).replace(",", ".")
+    # Patrón que acepta punto o coma como separador decimal
+    num_pat = re.escape(num).replace(r"\.", r"[.,]")
+    if re.search(rf"\b{num_pat}\s*(?:kg|kilo|lb)\b", raw, re.IGNORECASE):
+        return 1.0
+    if re.search(rf"\b{num_pat}\b", raw):
+        return 0.3
+    return 0.0
 
 
 def preprocess_for_ocr(img: Image.Image) -> Image.Image:
@@ -110,8 +133,11 @@ def match_images_to_variants(variants: list, images_ocr: list) -> dict:
         best_score = -1.0
         best_img   = None
         for img in images_ocr:
-            score = jaccard(vtoks, img["tokens"])
-            log.info(f"    img pos{img['position']}: score={score:.3f}  tokens={img['tokens']}")
+            w = weight_score(title, img["raw_text"])
+            j = jaccard(vtoks, img["tokens"])
+            # El score de peso domina sobre Jaccard (×5)
+            score = w * 5 + j
+            log.info(f"    img pos{img['position']}: score={score:.3f}  (weight={w:.1f} jaccard={j:.3f})")
             if score > best_score:
                 best_score = score
                 best_img   = img
