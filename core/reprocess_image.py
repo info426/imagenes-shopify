@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from core.image_utils import process_image, process_image_webp_only, to_webp_b64
+from core.image_utils import process_image, process_image_webp_only, to_webp_b64, to_webp_srgb_b64
 from core.shopify_api import ShopifyAPI, get_token
 from core.process_brand import vendor_slug, title_slug
 
@@ -71,7 +71,8 @@ def load_image_from_shopify(api: ShopifyAPI, product_id: int, position: int) -> 
 
 
 def replace_single_image(api: ShopifyAPI, product_id: int, position: int,
-                          new_img: Image.Image, title: str, slug: str):
+                          new_img: Image.Image, title: str, slug: str,
+                          srgb: bool = False):
     images = api.get_images(product_id)
     images_sorted = sorted(images, key=lambda x: x.get("position", 999))
 
@@ -90,29 +91,37 @@ def replace_single_image(api: ShopifyAPI, product_id: int, position: int,
 
     t_slug = title_slug(title)
     fname = f"{t_slug}_{position}.webp"
-    api.upload_image(product_id, to_webp_b64(new_img), fname, alt=alt, position=position)
-    log.info(f"  ✓ Subida: {fname} en posición {position}")
+    encoder = to_webp_srgb_b64 if srgb else to_webp_b64
+    api.upload_image(product_id, encoder(new_img), fname, alt=alt, position=position)
+    log.info(f"  ✓ Subida: {fname} en posición {position} {'[sRGB]' if srgb else ''}")
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vendor",      required=True)
-    parser.add_argument("--product-id",  type=int, required=True)
-    parser.add_argument("--position",    type=int, required=True,
-                        help="Posición de la imagen (1-based)")
-    parser.add_argument("--padding",     choices=["auto", "si", "no"], default="auto",
-                        help="auto=detectar, si=forzar padding, no=forzar sin padding")
-    parser.add_argument("--pipeline",    choices=["standard", "webp_only"], default="standard")
+    parser.add_argument("--vendor",        required=True)
+    parser.add_argument("--product-id",    type=int, required=True)
+    parser.add_argument("--position",      type=int, default=None,
+                        help="Posición de la imagen (1-based). Omitir con --all-positions")
+    parser.add_argument("--all-positions", action="store_true",
+                        help="Reprocesar todas las imágenes del producto")
+    parser.add_argument("--padding",       choices=["auto", "si", "no"], default="auto")
+    parser.add_argument("--pipeline",      choices=["standard", "webp_only"], default="standard")
+    parser.add_argument("--srgb",          action="store_true",
+                        help="Embeber perfil de color sRGB en el WebP")
     args = parser.parse_args()
+
+    if not args.all_positions and args.position is None:
+        parser.error("Especifica --position N o --all-positions")
 
     force_padding = None if args.padding == "auto" else (args.padding == "si")
 
     log.info("=" * 60)
-    log.info(f"  Vendor   : {args.vendor}")
-    log.info(f"  Producto : {args.product_id}")
-    log.info(f"  Posición : {args.position}")
-    log.info(f"  Padding  : {args.padding}")
-    log.info(f"  Pipeline : {args.pipeline}")
+    log.info(f"  Vendor    : {args.vendor}")
+    log.info(f"  Producto  : {args.product_id}")
+    log.info(f"  Posición  : {'todas' if args.all_positions else args.position}")
+    log.info(f"  Padding   : {args.padding}")
+    log.info(f"  Pipeline  : {args.pipeline}")
+    log.info(f"  sRGB      : {'sí' if args.srgb else 'no'}")
     log.info("=" * 60)
 
     token = get_token()
@@ -123,21 +132,42 @@ def main():
     title   = product["title"]
     log.info(f"\n[{args.product_id}] {title}")
 
-    img = load_image_from_backup(slug, args.product_id, args.position)
-    if img is None:
-        img = load_image_from_shopify(api, args.product_id, args.position)
-    if img is None:
-        log.error("No se pudo obtener la imagen")
-        sys.exit(1)
-
-    log.info(f"  Imagen cargada: {img.mode} {img.size}")
-
-    if args.pipeline == "webp_only":
-        processed = process_image_webp_only(img)
+    if args.all_positions:
+        # Obtener posiciones desde backup o desde Shopify
+        folder = BACKUPS_DIR / slug / str(args.product_id)
+        if folder.exists():
+            positions = sorted([
+                int(p.stem.split("_")[1])
+                for p in folder.iterdir()
+                if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
+                and p.stem.startswith("img_")
+            ])
+        else:
+            images = api.get_images(args.product_id)
+            positions = [img["position"] for img in sorted(images, key=lambda x: x.get("position", 999))]
+        log.info(f"  Posiciones a procesar: {positions}")
     else:
-        processed = process_image(img, force_padding=force_padding)
+        positions = [args.position]
 
-    replace_single_image(api, args.product_id, args.position, processed, title, slug)
+    for pos in positions:
+        log.info(f"\n  — Posición {pos} —")
+        img = load_image_from_backup(slug, args.product_id, pos)
+        if img is None:
+            img = load_image_from_shopify(api, args.product_id, pos)
+        if img is None:
+            log.warning(f"  No se pudo obtener imagen en posición {pos} — saltando")
+            continue
+
+        log.info(f"  Imagen cargada: {img.mode} {img.size}")
+
+        if args.pipeline == "webp_only":
+            processed = process_image_webp_only(img)
+        else:
+            processed = process_image(img, force_padding=force_padding)
+
+        replace_single_image(api, args.product_id, pos, processed, title, slug, srgb=args.srgb)
+        time.sleep(0.5)
+
     log.info("\n✓ Completado")
 
 
