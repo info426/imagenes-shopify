@@ -119,12 +119,27 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
         use_padding = force_padding
         log.info(f"    [bg] forzado: {'padding 5%' if use_padding else 'sin padding'}")
 
+    # Fills-frame detection: si el fondo parece blanco pero el contenido ya
+    # llena >85% del frame (foto de plato, lifestyle), no hay márgenes útiles
+    # que quitar — tratar como sin padding para evitar recorte asimétrico.
+    already_cropped = False
+    if use_padding and force_padding is None:
+        trial = autocrop_white(composited)
+        fill_w = trial.width  / composited.width
+        fill_h = trial.height / composited.height
+        if fill_w > 0.85 and fill_h > 0.85:
+            log.info(f"    [fills-frame {fill_w:.0%}×{fill_h:.0%}] → sin padding")
+            use_padding = False
+        else:
+            composited = trial
+            already_cropped = True
+
     log.info(f"    [{'padding 5%' if use_padding else 'sin padding'}]")
 
-    # Autocrop cuando: se añade padding (bordes limpios) o se fuerza sin padding
-    # sobre una imagen que SÍ tiene fondo blanco (quitar padding previo).
-    # Nunca se hace autocrop si el fondo no es blanco (evita recorte asimétrico).
-    if use_padding or (force_padding is False and detected_white):
+    # Autocrop si aún no se hizo: padding normal, o forzar sin padding sobre fondo blanco
+    if use_padding and not already_cropped:
+        composited = autocrop_white(composited)
+    elif force_padding is False and detected_white:
         composited = autocrop_white(composited)
 
     max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING)) if use_padding else TARGET_SIZE[0]
