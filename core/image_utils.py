@@ -119,7 +119,9 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
 
     log.info(f"    [{'padding 5%' if use_padding else 'sin padding'}]")
 
-    if use_padding:
+    # Autocrop siempre que haya padding (para añadirlo limpio) o cuando se
+    # fuerza sin padding (para quitar bordes blancos existentes antes de rellenar)
+    if use_padding or force_padding is False:
         composited = autocrop_white(composited)
 
     max_w = int(TARGET_SIZE[0] * (1 - 2 * PADDING)) if use_padding else TARGET_SIZE[0]
