@@ -1,43 +1,52 @@
-2026-05-15 21:05:33,208 [INFO] ============================================================
-2026-05-15 21:05:33,208 [INFO]   Vendor   : CHURU
-2026-05-15 21:05:33,208 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-15 21:05:33,208 [INFO]   Pipeline : standard
-2026-05-15 21:05:33,208 [INFO]   Padding  : true
-2026-05-15 21:05:33,208 [INFO] ============================================================
-2026-05-15 21:05:33,472 [INFO] Token obtenido
-2026-05-15 21:05:33,704 [INFO] 
-[1/1] CHURU CAT HAIRBALL RECETA DE ATUN 12X56GR  (ID: 15509701034371)
-2026-05-15 21:05:33,715 [INFO]   img_01.webp: RGB (2254, 2560)
-2026-05-15 21:05:33,758 [INFO]     [bg] 12544/12544 (100%)
-2026-05-15 21:05:33,758 [INFO]     [bg] forzado: padding 5%
-2026-05-15 21:05:33,758 [INFO]     [padding 5%]
-2026-05-15 21:05:33,799 [INFO]     [autocrop] (2254, 2560) → (1134, 2136)
-2026-05-15 21:05:33,851 [INFO]   img_02.jpg: RGB (952, 1500)
-2026-05-15 21:05:33,862 [INFO]     [bg] 2304/2304 (100%)
-2026-05-15 21:05:33,863 [INFO]     [bg] forzado: padding 5%
-2026-05-15 21:05:33,863 [INFO]     [padding 5%]
-2026-05-15 21:05:33,871 [INFO]     [autocrop] (952, 1500) → (951, 1499)
-2026-05-15 21:05:33,916 [INFO]   img_03.jpg: RGB (509, 1177)
-2026-05-15 21:05:33,922 [INFO]     [bg] 344/676 (51%)
-2026-05-15 21:05:33,922 [INFO]     [bg] forzado: padding 5%
-2026-05-15 21:05:33,922 [INFO]     [padding 5%]
-2026-05-15 21:05:33,926 [INFO]     [autocrop] (509, 1177) → (509, 1171)
-2026-05-15 21:05:33,953 [INFO]   img_04.jpg: RGB (795, 1500)
-2026-05-15 21:05:33,971 [INFO]     [bg] 1600/1600 (100%)
-2026-05-15 21:05:33,971 [INFO]     [bg] forzado: padding 5%
-2026-05-15 21:05:33,971 [INFO]     [padding 5%]
-2026-05-15 21:05:33,981 [INFO]     [autocrop] (795, 1500) → (794, 1500)
-2026-05-15 21:05:36,451 [INFO]   4 imagen(es) antigua(s) eliminada(s)
-2026-05-15 21:05:38,977 [INFO]   ✓ 1/4 subida  [churu-cat-hairball-receta-de-atun-12x56gr_1.webp]
-2026-05-15 21:05:41,823 [INFO]   ✓ 2/4 subida  [churu-cat-hairball-receta-de-atun-12x56gr_2.webp]
-2026-05-15 21:05:44,621 [INFO]   ✓ 3/4 subida  [churu-cat-hairball-receta-de-atun-12x56gr_3.webp]
-2026-05-15 21:05:48,166 [INFO]   ✓ 4/4 subida  [churu-cat-hairball-receta-de-atun-12x56gr_4.webp]
-2026-05-15 21:05:49,666 [INFO] 
+2026-05-15 21:10:39,228 [INFO] ============================================================
+2026-05-15 21:10:39,228 [INFO]   Vendor   : CHURU
+2026-05-15 21:10:39,228 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-15 21:10:39,228 [INFO]   Pipeline : standard
+2026-05-15 21:10:39,228 [INFO]   Padding  : auto
+2026-05-15 21:10:39,228 [INFO] ============================================================
+2026-05-15 21:10:39,522 [INFO] Token obtenido
+2026-05-15 21:10:39,744 [INFO] 
+[1/1] CHURU DOG BITES RECETA DE POLLO DISPLAY 8X96GR  (ID: 15509704376707)
+2026-05-15 21:10:39,755 [INFO]   img_01.jpg: RGB (1200, 1500)
+2026-05-15 21:10:39,777 [INFO]     [bg] 49/3600 (1%)
+2026-05-15 21:10:39,777 [INFO]     [sin padding]
+2026-05-15 21:10:39,845 [INFO]   img_02.jpg: RGB (1500, 1406)
+2026-05-15 21:10:39,865 [INFO]     [bg] 4900/4900 (100%)
+2026-05-15 21:10:39,879 [INFO]     [autocrop] (1500, 1406) → (1190, 1336)
+2026-05-15 21:10:39,879 [INFO]     [padding 5%]
+2026-05-15 21:10:39,937 [INFO]   img_03.jpg: RGB (1500, 1500)
+2026-05-15 21:10:39,957 [INFO]     [bg] 0/5776 (0%)
+2026-05-15 21:10:39,957 [INFO]     [sin padding]
+2026-05-15 21:10:40,039 [INFO]   img_04.jpg: RGB (1500, 1500)
+2026-05-15 21:10:40,061 [INFO]     [bg] 0/5776 (0%)
+2026-05-15 21:10:40,061 [INFO]     [sin padding]
+2026-05-15 21:10:40,144 [INFO]   img_05.jpg: RGB (1500, 1500)
+2026-05-15 21:10:40,162 [INFO]     [bg] 114/5776 (2%)
+2026-05-15 21:10:40,162 [INFO]     [sin padding]
+2026-05-15 21:10:40,242 [INFO]   img_06.jpg: RGB (1500, 1500)
+2026-05-15 21:10:40,262 [INFO]     [bg] 0/5776 (0%)
+2026-05-15 21:10:40,262 [INFO]     [sin padding]
+2026-05-15 21:10:40,343 [INFO]   img_07.jpg: RGB (1500, 1500)
+2026-05-15 21:10:40,362 [INFO]     [bg] 0/5776 (0%)
+2026-05-15 21:10:40,363 [INFO]     [sin padding]
+2026-05-15 21:10:40,442 [INFO]   img_08.jpg: RGB (1500, 1500)
+2026-05-15 21:10:40,460 [INFO]     [bg] 0/5776 (0%)
+2026-05-15 21:10:40,460 [INFO]     [sin padding]
+2026-05-15 21:10:45,554 [INFO]   8 imagen(es) antigua(s) eliminada(s)
+2026-05-15 21:10:48,337 [INFO]   ✓ 1/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_1.webp]
+2026-05-15 21:10:51,587 [INFO]   ✓ 2/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_2.webp]
+2026-05-15 21:10:54,589 [INFO]   ✓ 3/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_3.webp]
+2026-05-15 21:10:57,791 [INFO]   ✓ 4/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_4.webp]
+2026-05-15 21:11:00,768 [INFO]   ✓ 5/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_5.webp]
+2026-05-15 21:11:04,110 [INFO]   ✓ 6/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_6.webp]
+2026-05-15 21:11:07,297 [INFO]   ✓ 7/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_7.webp]
+2026-05-15 21:11:10,286 [INFO]   ✓ 8/8 subida  [churu-dog-bites-receta-de-pollo-display-8x96gr_8.webp]
+2026-05-15 21:11:11,787 [INFO] 
 ============================================================
-2026-05-15 21:05:49,666 [INFO] RESUMEN
-2026-05-15 21:05:49,666 [INFO] ============================================================
-2026-05-15 21:05:49,666 [INFO]   total         : 1
-2026-05-15 21:05:49,667 [INFO]   ok            : 1
-2026-05-15 21:05:49,667 [INFO]   saltados      : 0
-2026-05-15 21:05:49,667 [INFO]   sin_backup    : 0
-2026-05-15 21:05:49,667 [INFO]   errores       : 0
+2026-05-15 21:11:11,787 [INFO] RESUMEN
+2026-05-15 21:11:11,787 [INFO] ============================================================
+2026-05-15 21:11:11,787 [INFO]   total         : 1
+2026-05-15 21:11:11,787 [INFO]   ok            : 1
+2026-05-15 21:11:11,787 [INFO]   saltados      : 0
+2026-05-15 21:11:11,787 [INFO]   sin_backup    : 0
+2026-05-15 21:11:11,787 [INFO]   errores       : 0
