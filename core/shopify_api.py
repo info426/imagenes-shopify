@@ -1,12 +1,13 @@
 """Cliente Shopify REST Admin API 2024-10."""
 
 import os
+import time
 import requests
 
-SHOP_DOMAIN = os.getenv("SHOP_DOMAIN", "7ev1zx-eg.myshopify.com")
-CLIENT_ID   = os.getenv("CLIENT_ID", "")
+SHOP_DOMAIN   = os.getenv("SHOP_DOMAIN", "7ev1zx-eg.myshopify.com")
+CLIENT_ID     = os.getenv("CLIENT_ID", "")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET", "")
-API_VERSION = "2024-10"
+API_VERSION   = "2024-10"
 
 
 def get_token() -> str:
@@ -23,6 +24,22 @@ def get_token() -> str:
     return token
 
 
+def _request(method: str, url: str, **kwargs) -> requests.Response:
+    """Wrapper con reintentos automáticos ante rate limit (429)."""
+    wait = 5
+    for attempt in range(6):
+        r = requests.request(method, url, **kwargs)
+        if r.status_code == 429:
+            retry_after = int(r.headers.get("Retry-After", wait))
+            time.sleep(retry_after)
+            wait = min(wait * 2, 60)
+            continue
+        r.raise_for_status()
+        return r
+    r.raise_for_status()
+    return r
+
+
 class ShopifyAPI:
     def __init__(self, token: str):
         self.base = f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}"
@@ -33,8 +50,7 @@ class ShopifyAPI:
         products, params = [], {"limit": 250, "vendor": vendor}
         url = f"{self.base}/products.json"
         while url:
-            r = requests.get(url, headers=self.h, params=params, timeout=30)
-            r.raise_for_status()
+            r = _request("GET", url, headers=self.h, params=params, timeout=30)
             products.extend(r.json().get("products", []))
             params, url = {}, None
             link = r.headers.get("Link", "")
@@ -45,31 +61,24 @@ class ShopifyAPI:
         return products
 
     def get_product(self, pid: int) -> dict:
-        r = requests.get(f"{self.base}/products/{pid}.json",
-                         headers=self.h, timeout=30)
-        r.raise_for_status()
+        r = _request("GET", f"{self.base}/products/{pid}.json",
+                     headers=self.h, timeout=30)
         return r.json()["product"]
 
     def get_images(self, pid: int) -> list:
-        r = requests.get(f"{self.base}/products/{pid}/images.json",
-                         headers=self.h, timeout=30)
-        r.raise_for_status()
+        r = _request("GET", f"{self.base}/products/{pid}/images.json",
+                     headers=self.h, timeout=30)
         return r.json().get("images", [])
 
     def delete_image(self, pid: int, img_id: int):
-        requests.delete(
-            f"{self.base}/products/{pid}/images/{img_id}.json",
-            headers=self.h, timeout=30,
-        ).raise_for_status()
+        _request("DELETE", f"{self.base}/products/{pid}/images/{img_id}.json",
+                 headers=self.h, timeout=30)
 
     def upload_image(self, pid: int, b64: str, filename: str,
                      alt: str = "", position: int = None) -> dict:
         payload = {"attachment": b64, "filename": filename, "alt": alt}
         if position is not None:
             payload["position"] = position
-        r = requests.post(
-            f"{self.base}/products/{pid}/images.json",
-            headers=self.h, json={"image": payload}, timeout=60,
-        )
-        r.raise_for_status()
+        r = _request("POST", f"{self.base}/products/{pid}/images.json",
+                     headers=self.h, json={"image": payload}, timeout=60)
         return r.json()
