@@ -1,23 +1,488 @@
-2026-05-15 08:53:53,540 [INFO] ============================================================
-2026-05-15 08:53:53,540 [INFO]   Vendor   : FARMINA VET LIFE
-2026-05-15 08:53:53,540 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-15 08:53:53,540 [INFO]   Pipeline : standard
-2026-05-15 08:53:53,541 [INFO] ============================================================
-2026-05-15 08:53:53,840 [INFO] Token obtenido
-2026-05-15 08:53:54,051 [INFO] 
-[1/1] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR  (ID: 15509747040643)
-2026-05-15 08:53:54,062 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-15 08:53:54,090 [INFO]     [bg] 10000/10000 (100%)
-2026-05-15 08:53:54,090 [INFO]     [padding 5%]
-2026-05-15 08:53:54,120 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
-2026-05-15 08:53:54,953 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-05-15 08:53:57,310 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-hypoallergenic-cerdo-caja-12x85gr_1.webp]
-2026-05-15 08:53:58,811 [INFO] 
+2026-05-15 09:02:38,129 [INFO] ============================================================
+2026-05-15 09:02:38,130 [INFO]   Vendor   : FARMINA VET LIFE
+2026-05-15 09:02:38,130 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-15 09:02:38,130 [INFO]   Pipeline : standard
+2026-05-15 09:02:38,130 [INFO] ============================================================
+2026-05-15 09:02:38,460 [INFO] Token obtenido
+2026-05-15 09:02:38,968 [INFO] 
+[1/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MED/M 15X110GR  (ID: 15509745303939)
+2026-05-15 09:02:38,980 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:02:39,006 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:02:39,006 [INFO]     [padding 5%]
+2026-05-15 09:02:39,036 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:02:39,924 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:02:42,269 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-gastro-intestinal-med-m-15x110gr_1.webp]
+2026-05-15 09:02:43,769 [INFO] 
+[2/58] FARMINA TREAT VET LIFE DOG GASTRO INTESTINAL MINI 15X60GR  (ID: 15509745402243)
+2026-05-15 09:02:43,770 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:02:43,793 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:02:43,793 [INFO]     [padding 5%]
+2026-05-15 09:02:43,821 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:02:44,679 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:02:46,792 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-gastro-intestinal-mini-15x60gr_1.webp]
+2026-05-15 09:02:48,293 [INFO] 
+[3/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MED/MAX 15X110GR  (ID: 15509745467779)
+2026-05-15 09:02:48,295 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:02:48,320 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:02:48,320 [INFO]     [padding 5%]
+2026-05-15 09:02:48,348 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:02:49,181 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:02:51,312 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-hypo-cerdo-adult-med-max-15x110gr_1.webp]
+2026-05-15 09:02:52,813 [INFO] 
+[4/58] FARMINA TREAT VET LIFE DOG HYPO CERDO ADULT MINI 15X60GR  (ID: 15509745500547)
+2026-05-15 09:02:52,815 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:02:52,839 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:02:52,839 [INFO]     [padding 5%]
+2026-05-15 09:02:52,867 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:02:53,739 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:02:55,863 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-hypo-cerdo-adult-mini-15x60gr_1.webp]
+2026-05-15 09:02:57,364 [INFO] 
+[5/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MED/M 15X110GR  (ID: 15509745598851)
+2026-05-15 09:02:57,365 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:02:57,391 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:02:57,391 [INFO]     [padding 5%]
+2026-05-15 09:02:57,418 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:02:58,465 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:00,665 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-hypo-pescado-adult-med-m-15x110gr_1.webp]
+2026-05-15 09:03:02,166 [INFO] 
+[6/58] FARMINA TREAT VET LIFE DOG HYPO PESCADO ADULT MINI 15X60GR  (ID: 15509745664387)
+2026-05-15 09:03:02,167 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:02,192 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:02,192 [INFO]     [padding 5%]
+2026-05-15 09:03:02,219 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:03:03,109 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:05,279 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-hypo-pescado-adult-mini-15x60gr_1.webp]
+2026-05-15 09:03:06,780 [INFO] 
+[7/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MED/MAX 15X110GR  (ID: 15509745762691)
+2026-05-15 09:03:06,781 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:06,807 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:06,807 [INFO]     [padding 5%]
+2026-05-15 09:03:06,834 [INFO]     [autocrop] (2000, 2000) → (903, 1599)
+2026-05-15 09:03:07,639 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:09,767 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-joint-adult-med-max-15x110gr_1.webp]
+2026-05-15 09:03:11,268 [INFO] 
+[8/58] FARMINA TREAT VET LIFE DOG JOINT ADULT MINI 15X60GR  (ID: 15509745828227)
+2026-05-15 09:03:11,269 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:11,295 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:11,295 [INFO]     [padding 5%]
+2026-05-15 09:03:11,322 [INFO]     [autocrop] (2000, 2000) → (903, 1599)
+2026-05-15 09:03:12,163 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:14,531 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-joint-adult-mini-15x60gr_1.webp]
+2026-05-15 09:03:16,032 [INFO] 
+[9/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MED/MAX 15X110GR  (ID: 15509745860995)
+2026-05-15 09:03:16,034 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:16,058 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:16,058 [INFO]     [padding 5%]
+2026-05-15 09:03:16,085 [INFO]     [autocrop] (2000, 2000) → (903, 1599)
+2026-05-15 09:03:16,933 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:19,213 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-obesity-adult-med-max-15x110gr_1.webp]
+2026-05-15 09:03:20,714 [INFO] 
+[10/58] FARMINA TREAT VET LIFE DOG OBESITY ADULT MINI 15X60GR  (ID: 15509745992067)
+2026-05-15 09:03:20,715 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:20,739 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:20,740 [INFO]     [padding 5%]
+2026-05-15 09:03:20,767 [INFO]     [autocrop] (2000, 2000) → (903, 1599)
+2026-05-15 09:03:21,583 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:23,687 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-obesity-adult-mini-15x60gr_1.webp]
+2026-05-15 09:03:25,187 [INFO] 
+[11/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MED/MAX 15X110GR  (ID: 15509746057603)
+2026-05-15 09:03:25,189 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:25,214 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:25,214 [INFO]     [padding 5%]
+2026-05-15 09:03:25,241 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:03:26,111 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:28,178 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-renal-adult-med-max-15x110gr_1.webp]
+2026-05-15 09:03:29,678 [INFO] 
+[12/58] FARMINA TREAT VET LIFE DOG RENAL ADULT MINI 15X60GR  (ID: 15509746090371)
+2026-05-15 09:03:29,680 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:29,705 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:29,705 [INFO]     [padding 5%]
+2026-05-15 09:03:29,732 [INFO]     [autocrop] (2000, 2000) → (903, 1599)
+2026-05-15 09:03:30,570 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:32,610 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-renal-adult-mini-15x60gr_1.webp]
+2026-05-15 09:03:34,111 [INFO] 
+[13/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MED/MAX 15X110GR  (ID: 15509746221443)
+2026-05-15 09:03:34,113 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:34,137 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:34,137 [INFO]     [padding 5%]
+2026-05-15 09:03:34,164 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:03:35,038 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:37,317 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-struvite-adult-med-max-15x110gr_1.webp]
+2026-05-15 09:03:38,818 [INFO] 
+[14/58] FARMINA TREAT VET LIFE DOG STRUVITE ADULT MINI 15X60GR  (ID: 15509746254211)
+2026-05-15 09:03:38,819 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:38,845 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:38,845 [INFO]     [padding 5%]
+2026-05-15 09:03:38,872 [INFO]     [autocrop] (2000, 2000) → (903, 1602)
+2026-05-15 09:03:39,698 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:41,960 [INFO]   ✓ 1/1 subida  [farmina-treat-vet-life-dog-struvite-adult-mini-15x60gr_1.webp]
+2026-05-15 09:03:43,461 [INFO] 
+[15/58] FARMINA VET LIFE CAT CONVALESCENCE CAJA 12X85GR  (ID: 15509746286979)
+2026-05-15 09:03:43,462 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:43,486 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:43,486 [INFO]     [padding 5%]
+2026-05-15 09:03:43,513 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:03:44,327 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:46,779 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-convalescence-caja-12x85gr_1.webp]
+2026-05-15 09:03:48,280 [INFO] 
+[16/58] FARMINA VET LIFE CAT DIABETIC  (ID: 15469437518211)
+2026-05-15 09:03:48,281 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:48,306 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:48,306 [INFO]     [padding 5%]
+2026-05-15 09:03:48,334 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:03:49,207 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:52,036 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-diabetic_1.webp]
+2026-05-15 09:03:53,536 [INFO] 
+[17/58] FARMINA VET LIFE CAT GASTROINTESTINAL  (ID: 15509746549123)
+2026-05-15 09:03:53,538 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:53,564 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:53,565 [INFO]     [padding 5%]
+2026-05-15 09:03:53,592 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:03:54,443 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:03:57,258 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-gastrointestinal_1.webp]
+2026-05-15 09:03:58,759 [INFO] 
+[18/58] FARMINA VET LIFE CAT GASTROINTESTINAL CAJA 12X85GR  (ID: 15509746614659)
+2026-05-15 09:03:58,761 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:03:58,785 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:03:58,785 [INFO]     [padding 5%]
+2026-05-15 09:03:58,812 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:03:59,665 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:01,970 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-gastrointestinal-caja-12x85gr_1.webp]
+2026-05-15 09:04:03,470 [INFO] 
+[19/58] FARMINA VET LIFE CAT HEPATIC 2KG  (ID: 15509746778499)
+2026-05-15 09:04:03,472 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:03,498 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:03,498 [INFO]     [padding 5%]
+2026-05-15 09:04:03,526 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:04,338 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:06,725 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-hepatic-2kg_1.webp]
+2026-05-15 09:04:08,225 [INFO] 
+[20/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO ADULT 1,5KG  (ID: 15509746942339)
+2026-05-15 09:04:08,227 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:08,253 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:08,253 [INFO]     [padding 5%]
+2026-05-15 09:04:08,280 [INFO]     [autocrop] (2000, 2000) → (1068, 1725)
+2026-05-15 09:04:09,163 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:11,577 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-hypoallergenic-cerdo-adult-1-5kg_1.webp]
+2026-05-15 09:04:13,077 [INFO] 
+[21/58] FARMINA VET LIFE CAT HYPOALLERGENIC CERDO CAJA 12X85GR  (ID: 15509747040643)
+2026-05-15 09:04:13,077 [INFO]   Ya procesado — saltando
+2026-05-15 09:04:13,077 [INFO] 
+[22/58] FARMINA VET LIFE CAT OBESITY  (ID: 15509747073411)
+2026-05-15 09:04:13,079 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:13,104 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:13,104 [INFO]     [padding 5%]
+2026-05-15 09:04:13,132 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:13,950 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:16,671 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-obesity_1.webp]
+2026-05-15 09:04:18,172 [INFO] 
+[23/58] FARMINA VET LIFE CAT RENAL  (ID: 15509747270019)
+2026-05-15 09:04:18,173 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:18,199 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:18,199 [INFO]     [padding 5%]
+2026-05-15 09:04:18,227 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:19,070 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:21,491 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-renal_1.webp]
+2026-05-15 09:04:22,992 [INFO] 
+[24/58] FARMINA VET LIFE CAT RENAL CAJA 12X85GR  (ID: 15509747401091)
+2026-05-15 09:04:22,993 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:23,017 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:23,017 [INFO]     [padding 5%]
+2026-05-15 09:04:23,044 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:04:23,879 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:26,111 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-renal-caja-12x85gr_1.webp]
+2026-05-15 09:04:27,612 [INFO] 
+[25/58] FARMINA VET LIFE CAT STRUVITE CAJA 12X85GR  (ID: 15509747532163)
+2026-05-15 09:04:27,614 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:27,639 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:27,639 [INFO]     [padding 5%]
+2026-05-15 09:04:27,666 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:04:28,487 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:30,838 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-struvite-caja-12x85gr_1.webp]
+2026-05-15 09:04:32,339 [INFO] 
+[26/58] FARMINA VET LIFE CAT STRUVITE MANAGEMENT  (ID: 15469438140803)
+2026-05-15 09:04:32,340 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:32,364 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:32,364 [INFO]     [padding 5%]
+2026-05-15 09:04:32,392 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:04:33,228 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:35,958 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-struvite-management_1.webp]
+2026-05-15 09:04:37,458 [INFO] 
+[27/58] FARMINA VET LIFE CAT ULTRAHYPO  (ID: 15469432209795)
+2026-05-15 09:04:37,460 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:37,485 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:37,485 [INFO]     [padding 5%]
+2026-05-15 09:04:37,512 [INFO]     [autocrop] (2000, 2000) → (1009, 1697)
+2026-05-15 09:04:38,352 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:41,465 [INFO]   ✓ 1/1 subida  [farmina-vet-life-cat-ultrahypo_1.webp]
+2026-05-15 09:04:42,965 [INFO] 
+[28/58] FARMINA VET LIFE DOG CARDIAC  (ID: 15509747827075)
+2026-05-15 09:04:42,967 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:42,992 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:42,992 [INFO]     [padding 5%]
+2026-05-15 09:04:43,020 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:43,867 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:46,312 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-cardiac_1.webp]
+2026-05-15 09:04:47,813 [INFO] 
+[29/58] FARMINA VET LIFE DOG CONVALESCENCE CAJA 6X300GR  (ID: 15509747859843)
+2026-05-15 09:04:47,814 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:47,840 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:47,840 [INFO]     [padding 5%]
+2026-05-15 09:04:47,868 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:04:48,706 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:51,215 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-convalescence-caja-6x300gr_1.webp]
+2026-05-15 09:04:52,715 [INFO] 
+[30/58] FARMINA VET LIFE DOG DIABETIC  (ID: 15509747892611)
+2026-05-15 09:04:52,717 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:52,744 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:52,744 [INFO]     [padding 5%]
+2026-05-15 09:04:52,771 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:53,670 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:04:56,280 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-diabetic_1.webp]
+2026-05-15 09:04:57,781 [INFO] 
+[31/58] FARMINA VET LIFE DOG GASTROINTESTINAL  (ID: 15469437747587)
+2026-05-15 09:04:57,783 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:04:57,808 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:04:57,808 [INFO]     [padding 5%]
+2026-05-15 09:04:57,836 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:04:58,714 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:01,396 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-gastrointestinal_1.webp]
+2026-05-15 09:05:02,896 [INFO] 
+[32/58] FARMINA VET LIFE DOG GASTROINTESTINAL CAJA 6X300GR  (ID: 15509748121987)
+2026-05-15 09:05:02,898 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:02,924 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:02,924 [INFO]     [padding 5%]
+2026-05-15 09:05:02,952 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:05:03,866 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:06,376 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-gastrointestinal-caja-6x300gr_1.webp]
+2026-05-15 09:05:07,877 [INFO] 
+[33/58] FARMINA VET LIFE DOG HEPATIC  (ID: 15538798199171)
+2026-05-15 09:05:07,878 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:07,904 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:07,904 [INFO]     [padding 5%]
+2026-05-15 09:05:07,931 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:08,834 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:11,592 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hepatic_1.webp]
+2026-05-15 09:05:13,093 [INFO] 
+[34/58] FARMINA VET LIFE DOG HYPOALLERGENI TRUCHA CAJA 6X300GR  (ID: 15509748253059)
+2026-05-15 09:05:13,094 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:13,120 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:13,121 [INFO]     [padding 5%]
+2026-05-15 09:05:13,148 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:05:14,027 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:16,504 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hypoallergeni-trucha-caja-6x300gr_1.webp]
+2026-05-15 09:05:18,004 [INFO] 
+[35/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO ADULT  (ID: 15469438861699)
+2026-05-15 09:05:18,005 [INFO]   Ya procesado — saltando
+2026-05-15 09:05:18,005 [INFO] 
+[36/58] FARMINA VET LIFE DOG HYPOALLERGENIC CERDO CAJA 6X300GR  (ID: 15509748416899)
+2026-05-15 09:05:18,006 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:18,033 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:18,033 [INFO]     [padding 5%]
+2026-05-15 09:05:18,060 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:05:18,988 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:21,462 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hypoallergenic-cerdo-caja-6x300gr_1.webp]
+2026-05-15 09:05:22,963 [INFO] 
+[37/58] FARMINA VET LIFE DOG HYPOALLERGENIC HUEVO  (ID: 15469439353219)
+2026-05-15 09:05:22,964 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:22,986 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:22,986 [INFO]     [padding 5%]
+2026-05-15 09:05:23,014 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:23,922 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:26,652 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hypoallergenic-huevo_1.webp]
+2026-05-15 09:05:28,153 [INFO] 
+[38/58] FARMINA VET LIFE DOG HYPOALLERGENIC PATO CAJA 6X300GR  (ID: 15509748547971)
+2026-05-15 09:05:28,155 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:28,180 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:28,180 [INFO]     [padding 5%]
+2026-05-15 09:05:28,207 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:05:29,089 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:31,639 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hypoallergenic-pato-caja-6x300gr_1.webp]
+2026-05-15 09:05:33,140 [INFO] 
+[39/58] FARMINA VET LIFE DOG HYPOALLERGENIC PESCADO  (ID: 15469437583747)
+2026-05-15 09:05:33,141 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:33,164 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:33,164 [INFO]     [padding 5%]
+2026-05-15 09:05:33,192 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:34,072 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:36,833 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-hypoallergenic-pescado_1.webp]
+2026-05-15 09:05:38,333 [INFO] 
+[40/58] FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT  (ID: 15469439615363)
+2026-05-15 09:05:38,335 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:38,359 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:38,360 [INFO]     [padding 5%]
+2026-05-15 09:05:38,387 [INFO]     [autocrop] (2000, 2000) → (1010, 1707)
+2026-05-15 09:05:39,195 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:41,945 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-intestinal-ultracare-low-fat_1.webp]
+2026-05-15 09:05:43,445 [INFO] 
+[41/58] FARMINA VET LIFE DOG JOINT  (ID: 15567198290307)
+2026-05-15 09:05:43,447 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:43,472 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:43,472 [INFO]     [padding 5%]
+2026-05-15 09:05:43,499 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:44,369 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:47,125 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-joint_1.webp]
+2026-05-15 09:05:48,626 [INFO] 
+[42/58] FARMINA VET LIFE DOG OBESITY  (ID: 15469433553283)
+2026-05-15 09:05:48,628 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:48,652 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:48,652 [INFO]     [padding 5%]
+2026-05-15 09:05:48,679 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:49,493 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:51,954 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-obesity_1.webp]
+2026-05-15 09:05:53,454 [INFO] 
+[43/58] FARMINA VET LIFE DOG OXALATE  (ID: 15469439877507)
+2026-05-15 09:05:53,456 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:53,480 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:53,480 [INFO]     [padding 5%]
+2026-05-15 09:05:53,508 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:54,356 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:05:57,122 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-oxalate_1.webp]
+2026-05-15 09:05:58,622 [INFO] 
+[44/58] FARMINA VET LIFE DOG PUPPY GASTROINTESTINAL  (ID: 15538798264707)
+2026-05-15 09:05:58,624 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:05:58,650 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:05:58,650 [INFO]     [padding 5%]
+2026-05-15 09:05:58,677 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:05:59,536 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:02,232 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-puppy-gastrointestinal_1.webp]
+2026-05-15 09:06:03,732 [INFO] 
+[45/58] FARMINA VET LIFE DOG RENAL  (ID: 15469438402947)
+2026-05-15 09:06:03,734 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:03,760 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:03,760 [INFO]     [padding 5%]
+2026-05-15 09:06:03,787 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:06:04,649 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:07,349 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-renal_1.webp]
+2026-05-15 09:06:08,850 [INFO] 
+[46/58] FARMINA VET LIFE DOG RENAL CAJA 6X300GR  (ID: 15509749236099)
+2026-05-15 09:06:08,851 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:08,876 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:08,877 [INFO]     [padding 5%]
+2026-05-15 09:06:08,903 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:06:09,751 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:12,276 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-renal-caja-6x300gr_1.webp]
+2026-05-15 09:06:13,777 [INFO] 
+[47/58] FARMINA VET LIFE DOG STRUVITE  (ID: 15538798297475)
+2026-05-15 09:06:13,779 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:13,804 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:13,804 [INFO]     [padding 5%]
+2026-05-15 09:06:13,831 [INFO]     [autocrop] (2000, 2000) → (1012, 1765)
+2026-05-15 09:06:14,713 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:17,340 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-struvite_1.webp]
+2026-05-15 09:06:18,840 [INFO] 
+[48/58] FARMINA VET LIFE DOG STRUVITE CAJA 6X300GR  (ID: 15509749432707)
+2026-05-15 09:06:18,842 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:18,866 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:18,866 [INFO]     [padding 5%]
+2026-05-15 09:06:18,893 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:06:19,751 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:22,351 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-struvite-caja-6x300gr_1.webp]
+2026-05-15 09:06:23,852 [INFO] 
+[49/58] FARMINA VET LIFE DOG STRUVITE MANAGEMENT  (ID: 15538761597315)
+2026-05-15 09:06:23,854 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:23,879 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:23,879 [INFO]     [padding 5%]
+2026-05-15 09:06:23,906 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:06:24,735 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:27,428 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-struvite-management_1.webp]
+2026-05-15 09:06:28,929 [INFO] 
+[50/58] FARMINA VET LIFE DOG ULTRAHYPO  (ID: 15469438468483)
+2026-05-15 09:06:28,931 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:28,956 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:28,956 [INFO]     [padding 5%]
+2026-05-15 09:06:28,983 [INFO]     [autocrop] (2000, 2000) → (1068, 1724)
+2026-05-15 09:06:29,797 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:32,559 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-ultrahypo_1.webp]
+2026-05-15 09:06:34,059 [INFO] 
+[51/58] FARMINA VET LIFE DOG ULTRAHYPO CAJA 6X300GR  (ID: 15509749694851)
+2026-05-15 09:06:34,061 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:34,087 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:34,087 [INFO]     [padding 5%]
+2026-05-15 09:06:34,114 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:06:34,959 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:37,452 [INFO]   ✓ 1/1 subida  [farmina-vet-life-dog-ultrahypo-caja-6x300gr_1.webp]
+2026-05-15 09:06:38,953 [INFO] 
+[52/58] FARMINA VET LIFE NAT DOG OBESITY PESCADO ADULT  (ID: 15469441155459)
+2026-05-15 09:06:38,955 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:38,979 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:38,979 [INFO]     [padding 5%]
+2026-05-15 09:06:39,006 [INFO]     [autocrop] (2000, 2000) → (1068, 1729)
+2026-05-15 09:06:39,896 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:42,728 [INFO]   ✓ 1/1 subida  [farmina-vet-life-nat-dog-obesity-pescado-adult_1.webp]
+2026-05-15 09:06:44,229 [INFO] 
+[53/58] FARMINA VET LIFE NATURAL DIET CAT DIABETIC 12X85GR  (ID: 15509749858691)
+2026-05-15 09:06:44,230 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:06:44,256 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:06:44,256 [INFO]     [padding 5%]
+2026-05-15 09:06:44,283 [INFO]     [autocrop] (2000, 2000) → (1138, 669)
+2026-05-15 09:06:45,102 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:47,496 [INFO]   ✓ 1/1 subida  [farmina-vet-life-natural-diet-cat-diabetic-12x85gr_1.webp]
+2026-05-15 09:06:48,997 [INFO] 
+[54/58] FARMINA VET LIFE NATURAL DIET CAT HEPATIC 12X85GR  (ID: 15509749924227)
+2026-05-15 09:06:48,999 [INFO]   img_01.jpg: RGB (1500, 1500)
+2026-05-15 09:06:49,018 [INFO]     [bg] 5776/5776 (100%)
+2026-05-15 09:06:49,018 [INFO]     [padding 5%]
+2026-05-15 09:06:49,035 [INFO]     [autocrop] (1500, 1500) → (1170, 1342)
+2026-05-15 09:06:49,105 [INFO]   img_02.jpg: RGB (1500, 1500)
+2026-05-15 09:06:49,116 [INFO]     [bg] 5776/5776 (100%)
+2026-05-15 09:06:49,116 [INFO]     [padding 5%]
+2026-05-15 09:06:49,132 [INFO]     [autocrop] (1500, 1500) → (1419, 836)
+2026-05-15 09:06:49,178 [INFO]   img_03.jpg: RGB (1500, 1500)
+2026-05-15 09:06:49,188 [INFO]     [bg] 5776/5776 (100%)
+2026-05-15 09:06:49,189 [INFO]     [padding 5%]
+2026-05-15 09:06:49,203 [INFO]     [autocrop] (1500, 1500) → (1433, 684)
+2026-05-15 09:06:49,241 [INFO]   img_04.jpg: RGB (1500, 1500)
+2026-05-15 09:06:49,255 [INFO]     [bg] 5776/5776 (100%)
+2026-05-15 09:06:49,255 [INFO]     [padding 5%]
+2026-05-15 09:06:49,270 [INFO]     [autocrop] (1500, 1500) → (1480, 682)
+2026-05-15 09:06:49,307 [INFO]   img_05.jpg: RGB (1500, 1500)
+2026-05-15 09:06:49,324 [INFO]     [bg] 251/5776 (4%)
+2026-05-15 09:06:49,324 [INFO]     [sin padding]
+2026-05-15 09:06:53,476 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:06:56,519 [INFO]   ✓ 1/5 subida  [farmina-vet-life-natural-diet-cat-hepatic-12x85gr_1.webp]
+2026-05-15 09:06:59,279 [INFO]   ✓ 2/5 subida  [farmina-vet-life-natural-diet-cat-hepatic-12x85gr_2.webp]
+2026-05-15 09:07:02,090 [INFO]   ✓ 3/5 subida  [farmina-vet-life-natural-diet-cat-hepatic-12x85gr_3.webp]
+2026-05-15 09:07:04,790 [INFO]   ✓ 4/5 subida  [farmina-vet-life-natural-diet-cat-hepatic-12x85gr_4.webp]
+2026-05-15 09:07:08,137 [INFO]   ✓ 5/5 subida  [farmina-vet-life-natural-diet-cat-hepatic-12x85gr_5.webp]
+2026-05-15 09:07:09,638 [INFO] 
+[55/58] FARMINA VET LIFE NATURAL DIET CAT OBESITY 12X85GR  (ID: 15509749956995)
+2026-05-15 09:07:09,641 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:07:09,665 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:07:09,665 [INFO]     [padding 5%]
+2026-05-15 09:07:09,692 [INFO]     [autocrop] (2000, 2000) → (1138, 668)
+2026-05-15 09:07:10,534 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:07:12,948 [INFO]   ✓ 1/1 subida  [farmina-vet-life-natural-diet-cat-obesity-12x85gr_1.webp]
+2026-05-15 09:07:14,448 [INFO] 
+[56/58] FARMINA VET LIFE NATURAL DIET DOG DIABETIC 6X300GR  (ID: 15509750055299)
+2026-05-15 09:07:14,450 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:07:14,474 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:07:14,474 [INFO]     [padding 5%]
+2026-05-15 09:07:14,501 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:07:15,319 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:07:18,313 [INFO]   ✓ 1/1 subida  [farmina-vet-life-natural-diet-dog-diabetic-6x300gr_1.webp]
+2026-05-15 09:07:19,814 [INFO] 
+[57/58] FARMINA VET LIFE NATURAL DIET DOG HEPATIC 6X300GR  (ID: 15509750120835)
+2026-05-15 09:07:19,816 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:07:19,842 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:07:19,842 [INFO]     [padding 5%]
+2026-05-15 09:07:19,868 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:07:20,720 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:07:23,226 [INFO]   ✓ 1/1 subida  [farmina-vet-life-natural-diet-dog-hepatic-6x300gr_1.webp]
+2026-05-15 09:07:24,727 [INFO] 
+[58/58] FARMINA VET LIFE NATURAL DIET DOG OBESITY 6X300GR  (ID: 15509750219139)
+2026-05-15 09:07:24,729 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:07:24,753 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:07:24,753 [INFO]     [padding 5%]
+2026-05-15 09:07:24,780 [INFO]     [autocrop] (2000, 2000) → (1050, 1236)
+2026-05-15 09:07:25,664 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:07:28,285 [INFO]   ✓ 1/1 subida  [farmina-vet-life-natural-diet-dog-obesity-6x300gr_1.webp]
+2026-05-15 09:07:29,786 [INFO] 
 ============================================================
-2026-05-15 08:53:58,811 [INFO] RESUMEN
-2026-05-15 08:53:58,811 [INFO] ============================================================
-2026-05-15 08:53:58,811 [INFO]   total         : 1
-2026-05-15 08:53:58,811 [INFO]   ok            : 1
-2026-05-15 08:53:58,811 [INFO]   saltados      : 0
-2026-05-15 08:53:58,811 [INFO]   sin_backup    : 0
-2026-05-15 08:53:58,811 [INFO]   errores       : 0
+2026-05-15 09:07:29,786 [INFO] RESUMEN
+2026-05-15 09:07:29,786 [INFO] ============================================================
+2026-05-15 09:07:29,786 [INFO]   total         : 58
+2026-05-15 09:07:29,786 [INFO]   ok            : 56
+2026-05-15 09:07:29,786 [INFO]   saltados      : 2
+2026-05-15 09:07:29,786 [INFO]   sin_backup    : 0
+2026-05-15 09:07:29,786 [INFO]   errores       : 0
