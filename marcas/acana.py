@@ -36,11 +36,15 @@ HEADERS = {
 
 IGNORE_TOKENS = {
     "acana", "eu", "aca", "new", "emea", "apac",
-    "cat", "dog", "feline", "canine",
+    # cat/dog/feline/canine se mantienen como tokens para distinguir categorías
     "para", "de", "el", "la", "los", "las", "con", "sin",
     "kg", "gr", "g", "lb", "x",
     "adult", "adulto", "adultos",
 }
+
+# Umbral mínimo específico de Acana — más alto que el global (0.10) para evitar
+# falsos matches en productos de la línea Regionals que no están en emea.acana.com
+MIN_SCORE = 0.20
 
 
 # ─── Utilidades internas ──────────────────────────────────────────────────────
@@ -255,7 +259,11 @@ def _tokenize(text: str) -> set:
 
 
 def find_best_match(shopify_title: str, catalog: dict) -> tuple:
-    """Jaccard entre tokens del título Shopify y tokens handle+nombre del catálogo."""
+    """
+    Jaccard entre tokens del título Shopify y tokens handle+nombre del catálogo.
+    Devuelve (None, 0.0) si el mejor score no supera MIN_SCORE (0.20) para
+    evitar falsos positivos con productos Regionals que no existen en emea.acana.com.
+    """
     title_tokens = _tokenize(shopify_title)
     best_handle, best_score = None, 0.0
     for handle, entry in catalog.items():
@@ -267,4 +275,6 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
         if score > best_score:
             best_score = score
             best_handle = handle
+    if best_score < MIN_SCORE:
+        return None, best_score
     return best_handle, best_score
