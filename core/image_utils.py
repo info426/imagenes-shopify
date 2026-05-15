@@ -174,6 +174,16 @@ def to_webp_b64(img: Image.Image) -> str:
     return base64.b64encode(buf.getvalue()).decode()
 
 
+def to_webp_srgb_b64(img: Image.Image) -> str:
+    """Convierte imagen PIL a WebP base64 con perfil ICC sRGB embebido."""
+    from PIL import ImageCms
+    srgb_profile = ImageCms.createProfile("sRGB")
+    icc_bytes = ImageCms.ImageCmsProfile(srgb_profile).tobytes()
+    buf = BytesIO()
+    img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6, icc_profile=icc_bytes)
+    return base64.b64encode(buf.getvalue()).decode()
+
+
 def is_high_res(raw: bytes) -> tuple:
     """
     Comprueba si la imagen cumple resolución mínima.

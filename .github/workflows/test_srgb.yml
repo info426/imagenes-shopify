@@ -1,0 +1,65 @@
+name: Test sRGB — prueba en un producto
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify'
+        required: true
+      product_id:
+        description: 'ID del producto a probar'
+        required: true
+      pipeline:
+        description: 'Pipeline de procesamiento'
+        required: false
+        type: choice
+        options:
+          - standard
+          - webp_only
+        default: standard
+
+jobs:
+  test-srgb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+
+      - name: Configurar Git LFS
+        run: git lfs install
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Procesar con sRGB
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 core/reprocess_image.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --product-id "${{ github.event.inputs.product_id }}" \
+            --pipeline "${{ github.event.inputs.pipeline }}" \
+            --srgb \
+            --all-positions \
+            2>&1 | tee resultados/test_srgb_${{ github.event.inputs.product_id }}.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "test-srgb: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }}"
+          git push
