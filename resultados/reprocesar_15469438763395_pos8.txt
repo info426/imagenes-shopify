@@ -1,18 +1,15 @@
-2026-05-15 09:41:28,195 [INFO] ============================================================
-2026-05-15 09:41:28,195 [INFO]   Vendor   : FARMINA ND
-2026-05-15 09:41:28,195 [INFO]   Producto : 15469438763395
-2026-05-15 09:41:28,195 [INFO]   Posición : 8
-2026-05-15 09:41:28,195 [INFO]   Padding  : no
-2026-05-15 09:41:28,195 [INFO]   Pipeline : standard
-2026-05-15 09:41:28,195 [INFO] ============================================================
-2026-05-15 09:41:29,016 [INFO] 
+2026-05-15 09:50:29,817 [INFO] ============================================================
+2026-05-15 09:50:29,817 [INFO]   Vendor   : FARMINA ND
+2026-05-15 09:50:29,817 [INFO]   Producto : 15469438763395
+2026-05-15 09:50:29,817 [INFO]   Posición : 8
+2026-05-15 09:50:29,817 [INFO]   Padding  : auto
+2026-05-15 09:50:29,817 [INFO]   Pipeline : webp_only
+2026-05-15 09:50:29,817 [INFO] ============================================================
+2026-05-15 09:50:30,404 [INFO] 
 [15469438763395] FARMINA ND CAT TROPICAL SELECTION NEUTERED CORDERO
-2026-05-15 09:41:29,016 [INFO]   Fuente: backup → backups/farmina_nd/15469438763395/img_08.jpg
-2026-05-15 09:41:29,023 [INFO]   Imagen cargada: RGB (2000, 2000)
-2026-05-15 09:41:29,058 [INFO]     [bg] forzado: sin padding
-2026-05-15 09:41:29,059 [INFO]     [sin padding]
-2026-05-15 09:41:29,090 [INFO]     [autocrop] (2000, 2000) → (1860, 1859)
-2026-05-15 09:41:29,940 [INFO]   Imagen anterior en posición 8 eliminada
-2026-05-15 09:41:33,705 [INFO]   ✓ Subida: farmina-nd-cat-tropical-selection-neutered-cordero_8.webp en posición 8
-2026-05-15 09:41:33,705 [INFO] 
+2026-05-15 09:50:30,405 [INFO]   Fuente: backup → backups/farmina_nd/15469438763395/img_08.jpg
+2026-05-15 09:50:30,413 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 09:50:31,119 [INFO]   Imagen anterior en posición 8 eliminada
+2026-05-15 09:50:34,700 [INFO]   ✓ Subida: farmina-nd-cat-tropical-selection-neutered-cordero_8.webp en posición 8
+2026-05-15 09:50:34,700 [INFO] 
 ✓ Completado
