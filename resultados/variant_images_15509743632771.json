@@ -2,17 +2,17 @@
   {
     "variant_id": 57116216230275,
     "variant": "1.5 KG",
-    "image_id": 83968751141251,
-    "image_pos": 5,
-    "score": 0.02564102564102564,
-    "fallback": false
+    "image_id": 83968748192131,
+    "image_pos": 1,
+    "score": -1.0,
+    "fallback": true
   },
   {
     "variant_id": 57116216263043,
     "variant": "5 KG",
-    "image_id": 83968751141251,
-    "image_pos": 5,
-    "score": 0.01282051282051282,
-    "fallback": false
+    "image_id": 83968749764995,
+    "image_pos": 2,
+    "score": -1.0,
+    "fallback": true
   }
 ]
