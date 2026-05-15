@@ -1,0 +1,7 @@
+2026-05-15 08:42:43,627 [INFO] ============================================================
+2026-05-15 08:42:43,627 [INFO]   Vendor   : FARMINA VET LIFE
+2026-05-15 08:42:43,627 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-15 08:42:43,627 [INFO]   Pipeline : standard
+2026-05-15 08:42:43,627 [INFO] ============================================================
+2026-05-15 08:42:43,902 [INFO] Token obtenido
+2026-05-15 08:42:43,903 [ERROR] No existe backup para 'FARMINA VET LIFE'. Ejecuta primero 'Backup imágenes de marca'.
