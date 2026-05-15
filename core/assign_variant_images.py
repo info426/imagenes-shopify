@@ -122,12 +122,18 @@ def match_images_to_variants(variants: list, images_ocr: list) -> dict:
         else:
             log.warning(f"  → Sin match para variante «{title}»")
 
-    # Fallback por posición si OCR no discriminó nada
-    all_zero = all(score == 0 for _, _, score in assignments.values())
-    missing  = len(assignments) < len(variants)
-    if (all_zero or missing) and len(images_ocr) >= len(variants):
+    # Detectar si OCR no discriminó: todos score=0, alguna variante sin match,
+    # o varias variantes asignadas a la misma imagen (colisión)
+    assigned_images = [img_id for img_id, _, _ in assignments.values()]
+    collision = len(assigned_images) != len(set(assigned_images))
+    all_zero  = all(score == 0 for _, _, score in assignments.values())
+    missing   = len(assignments) < len(variants)
+
+    if (all_zero or missing or collision) and len(images_ocr) >= len(variants):
+        reason = ("colisión" if collision else
+                  "scores=0" if all_zero else "variante sin match")
         log.warning(
-            "\n  ⚠ OCR sin resultados discriminativos — "
+            f"\n  ⚠ OCR no discriminativo ({reason}) — "
             "usando fallback por orden de posición"
         )
         sorted_imgs = sorted(images_ocr, key=lambda x: x["position"])
