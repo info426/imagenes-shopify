@@ -61,11 +61,8 @@ def fill_transparent_with_blur(img_rgba: Image.Image) -> Image.Image:
     return result
 
 
-def is_white_background(img_rgb: Image.Image) -> bool:
-    """
-    Comprueba las 4 esquinas (parche 5%) para determinar si el fondo es blanco.
-    Devuelve True si ≥60% de los píxeles muestreados son blancos (≥245,245,245).
-    """
+def white_background_ratio(img_rgb: Image.Image) -> float:
+    """Ratio de píxeles blancos (≥245,245,245) en los 4 parches de esquina (5%)."""
     w, h = img_rgb.size
     patch = max(20, int(min(w, h) * 0.05))
     step = 2
@@ -83,7 +80,11 @@ def is_white_background(img_rgb: Image.Image) -> bool:
                 total += 1
     ratio = white / total if total else 0.0
     log.info(f"    [bg] {white}/{total} ({ratio:.0%})")
-    return ratio >= WHITE_MIN_FRAC
+    return ratio
+
+
+def is_white_background(img_rgb: Image.Image) -> bool:
+    return white_background_ratio(img_rgb) >= WHITE_MIN_FRAC
 
 
 def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.Image:
@@ -111,7 +112,8 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
     else:
         composited = composite_on_white(img)
 
-    detected_white = is_white_background(composited)
+    white_ratio = white_background_ratio(composited)
+    detected_white = white_ratio >= WHITE_MIN_FRAC
 
     if force_padding is None:
         use_padding = detected_white
@@ -119,12 +121,10 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
         use_padding = force_padding
         log.info(f"    [bg] forzado: {'padding 5%' if use_padding else 'sin padding'}")
 
-    # Fills-frame detection: si el fondo parece blanco pero el contenido ya
-    # llena >85% del frame (foto de plato, lifestyle), no hay márgenes útiles
-    # que quitar — tratar como sin padding para evitar recorte asimétrico.
-    # IMPORTANTE: solo aplica si autocrop eliminó un margen significativo (>3%
-    # del tamaño lineal). Si casi no eliminó nada, la imagen ya venía recortada
-    # al ras (ej. Amazon _AC_SL1500_) y sigue necesitando padding.
+    # Fills-frame detection: fondo blanco pero contenido ocupa >85% del frame
+    # (foto lifestyle, ilustración) → sin padding.
+    # Excepción: fondo ≥95% blanco con crop mínimo (<3%) = foto de producto
+    # recortada al ras (ej. Amazon _AC_SL1500_) → sí necesita padding.
     already_cropped = False
     if use_padding and force_padding is None:
         trial = autocrop_white(composited)
@@ -132,7 +132,8 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
         fill_h = trial.height / composited.height
         removed_frac = ((composited.width - trial.width) +
                         (composited.height - trial.height)) / (composited.width + composited.height)
-        if removed_frac > 0.03 and fill_w > 0.85 and fill_h > 0.85:
+        tight_product_shot = removed_frac <= 0.03 and white_ratio >= 0.95
+        if fill_w > 0.85 and fill_h > 0.85 and not tight_product_shot:
             log.info(f"    [fills-frame {fill_w:.0%}×{fill_h:.0%}] → sin padding")
             use_padding = False
         else:
