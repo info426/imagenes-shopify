@@ -197,14 +197,24 @@ def run(api: ShopifyAPI, product_id: int, dry_run: bool):
         vtitle = variant["title"]
         if vid in assignments:
             img_id, img_pos, score = assignments[vid]
-            mode   = "FALLBACK" if score < 0 else ("DRY-RUN" if dry_run else "ASIGNADO")
-            score_str = "pos-order" if score < 0 else f"{score:.3f}"
-            log.info(f"  [{mode}] «{vtitle}» → imagen pos{img_pos} (score={score_str})")
-            if not dry_run:
-                api.set_variant_image(vid, img_id)
+            is_fallback = score < 0
+            score_str   = "pos-order" if is_fallback else f"{score:.3f}"
+            if dry_run:
+                mode = "FALLBACK→DRY-RUN" if is_fallback else "DRY-RUN"
+                log.info(f"  [{mode}] «{vtitle}» → imagen pos{img_pos} (score={score_str})")
+            else:
+                mode = "FALLBACK→ASIGNADO" if is_fallback else "ASIGNADO"
+                log.info(f"  [{mode}] «{vtitle}» → imagen pos{img_pos} (image_id={img_id})")
+                try:
+                    resp = api.set_variant_image(vid, img_id)
+                    assigned = resp.get("variant", {}).get("image_id")
+                    log.info(f"    ✓ API OK — variant.image_id={assigned}")
+                except Exception as e:
+                    log.error(f"    ✗ API ERROR: {e}")
+                    raise
             result.append({"variant_id": vid, "variant": vtitle,
                            "image_id": img_id, "image_pos": img_pos,
-                           "score": score, "fallback": score < 0})
+                           "score": score, "fallback": is_fallback})
         else:
             log.warning(f"  [SIN MATCH] «{vtitle}»")
             result.append({"variant_id": vid, "variant": vtitle,
