@@ -215,7 +215,7 @@ def run_backup(api: ShopifyAPI, vendor: str):
 
 def run_shopify_backup(api: ShopifyAPI, vendor: str,
                        product_id: int = None, only_ids: set = None,
-                       pipeline: str = "standard"):
+                       pipeline: str = "standard", force_padding: bool | None = None):
     """Lee imágenes de backups/<slug>/, las procesa y las sube a Shopify."""
     slug = vendor_slug(vendor)
     backup_root = BACKUPS_DIR / slug
@@ -269,7 +269,8 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
                 img = Image.open(BytesIO(raw))
                 log.info(f"  {img_path.name}: {img.mode} {img.size}")
                 fn = process_image_webp_only if pipeline == "webp_only" else process_image
-                processed.append(fn(img))
+                kwargs = {} if pipeline == "webp_only" else {"force_padding": force_padding}
+                processed.append(fn(img, **kwargs))
             except Exception as e:
                 log.warning(f"  Error procesando {img_path.name}: {e}")
 
@@ -396,17 +397,23 @@ def main():
     parser.add_argument("--pipeline",
                         choices=["standard", "webp_only"],
                         default="standard")
+    parser.add_argument("--force-padding",
+                        choices=["auto", "true", "false"],
+                        default="auto")
     args = parser.parse_args()
 
     if not os.getenv("CLIENT_ID") or not os.getenv("CLIENT_SECRET"):
         log.error("Faltan CLIENT_ID / CLIENT_SECRET")
         sys.exit(1)
 
+    force_padding: bool | None = {"true": True, "false": False, "auto": None}[args.force_padding]
+
     log.info("=" * 60)
     mode = "BACKUP" if args.backup else (args.fuente or "?").upper()
     log.info(f"  Vendor   : {args.vendor}")
     log.info(f"  Modo     : {mode}")
     log.info(f"  Pipeline : {args.pipeline}")
+    log.info(f"  Padding  : {args.force_padding}")
     if args.web_url:
         log.info(f"  Web    : {args.web_url}")
     log.info("=" * 60)
@@ -424,7 +431,7 @@ def main():
         run_backup(api, args.vendor)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
-                           pipeline=args.pipeline)
+                           pipeline=args.pipeline, force_padding=force_padding)
     elif args.fuente in ("web_oficial", "web_y_amazon"):
         if not args.web_url:
             log.error("--web-url requerido para fuente web_oficial / web_y_amazon")

@@ -35,6 +35,15 @@ on:
           - standard
           - webp_only
         default: standard
+      force_padding:
+        description: 'Forzar padding (auto=detección automática, true=siempre, false=nunca)'
+        required: false
+        type: choice
+        options:
+          - auto
+          - 'true'
+          - 'false'
+        default: auto
 
 jobs:
   procesar:
@@ -75,11 +84,12 @@ jobs:
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
           [ -n "${{ github.event.inputs.web_url }}" ]     && WEB="--web-url ${{ github.event.inputs.web_url }}"
           [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
+          PADDING="--force-padding ${{ github.event.inputs.force_padding || 'auto' }}"
           python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --fuente "${{ github.event.inputs.fuente }}" \
             --pipeline "${{ github.event.inputs.pipeline }}" \
-            $WEB $IDS $EXTRA \
+            $PADDING $WEB $IDS $EXTRA \
             2>&1 | tee resultados/proceso_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log y catálogos
