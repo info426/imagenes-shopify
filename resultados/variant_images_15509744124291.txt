@@ -1,42 +1,44 @@
-2026-05-15 19:41:55,881 [INFO] ============================================================
-2026-05-15 19:41:55,881 [INFO]   Producto : 15509744124291
-2026-05-15 19:41:55,882 [INFO]   Modo     : DRY-RUN
-2026-05-15 19:41:55,882 [INFO] ============================================================
-2026-05-15 19:41:56,687 [INFO] 
+2026-05-15 19:52:13,510 [INFO] ============================================================
+2026-05-15 19:52:13,510 [INFO]   Producto : 15509744124291
+2026-05-15 19:52:13,510 [INFO]   Modo     : APLICAR
+2026-05-15 19:52:13,510 [INFO] ============================================================
+2026-05-15 19:52:14,311 [INFO] 
 [15509744124291] FARMINA TREAT ND PUMPKIN DOG POLLO ADULT
-2026-05-15 19:41:56,687 [INFO]   2 variante(s), 3 imagen(es)
-2026-05-15 19:41:56,687 [INFO] 
+2026-05-15 19:52:14,311 [INFO]   2 variante(s), 3 imagen(es)
+2026-05-15 19:52:14,311 [INFO] 
   Analizando imagen pos1: farmina-treat-nd-pumpkin-dog-pollo-adult_1.webp
-2026-05-15 19:41:58,420 [INFO]     OCR tokens: {'2', 'e', 'ya', 'ng', 'as', 'sl', 'y', '00', 'treat', 'dental', 'cots', 'ws', '5', '7', '3', '1', 'qu', 'pelo', 'carpe', 'ae', 'ye', 'cl', 'a', 'chicken', 'sar', 'pumpkin', 'pomegranate', 'oo', 'fe', 'cre'}
-2026-05-15 19:41:58,421 [INFO] 
+2026-05-15 19:52:16,070 [INFO]     OCR tokens: {'3', 'cre', 'dental', 'a', 'ya', 'cots', 'pomegranate', 'qu', 'ae', 'e', '7', 'treat', 'cl', 'sar', 'oo', '5', 'pelo', 'ws', 'carpe', 'ye', 'chicken', 'pumpkin', '00', '2', 'ng', 'y', 'as', '1', 'sl', 'fe'}
+2026-05-15 19:52:16,070 [INFO] 
   Analizando imagen pos2: farmina-treat-nd-pumpkin-dog-pollo-adult_2.webp
-2026-05-15 19:42:00,102 [INFO]     OCR tokens: {'en', 'os', 'j', 'eee', '2', 'e', 'medium', 'ts', 'ya', 'opry', 'cre', 'ip', 'sw', 'dy', 'as', 'dera', 'y', 'iis', 'fi', '00', 'adult', 'ite', 'treat', 'bar', 'dogs', 'dental', 'chi', '4', 'ls', 'i', '7', '1', 'ss', 'carpe', 'bm', 'so', 'a', 'chicken', 'crtd', 'ine', 'q', 'pomegranate', '9', 'pumpkin', 'fl', 'nena', 'ef', 'ge'}
-2026-05-15 19:42:00,102 [INFO] 
+2026-05-15 19:52:17,815 [INFO]     OCR tokens: {'chi', 'fl', 'opry', 'cre', 'dental', 'a', 'bar', 'ya', 'pomegranate', 'ge', 'dy', 'ts', 'j', 'e', '7', 'treat', 'ip', 'medium', '4', 'eee', 'so', 'en', 'sw', 'nena', 'iis', 'adult', 'ss', 'ite', 'dogs', 'fi', 'carpe', 'os', 'chicken', '00', 'pumpkin', 'ine', 'ef', 'y', '2', 'as', 'crtd', 'dera', '9', 'ls', '1', 'q', 'i', 'bm'}
+2026-05-15 19:52:17,815 [INFO] 
   Analizando imagen pos3: farmina-treat-nd-pumpkin-dog-pollo-adult_3.webp
-2026-05-15 19:42:01,746 [INFO]     OCR tokens: {'e', 'om', 'rr', 'as', 'y', 'pof', 'ew', 'la', 'ye', 'ae', 'tt', 'ft', 'we', 'itt', 'pa', 'te', 'a', 'war', 'pp', 'rl', 'vw', 'oe'}
-2026-05-15 19:42:01,746 [INFO] 
+2026-05-15 19:52:19,571 [INFO]     OCR tokens: {'we', 'ft', 'pof', 'a', 'ew', 'vw', 'ae', 'e', 'pp', 'itt', 'om', 'war', 'rr', 'tt', 'ye', 'te', 'as', 'rl', 'y', 'la', 'oe', 'pa'}
+2026-05-15 19:52:19,571 [INFO] 
   ── Matching ──
-2026-05-15 19:42:01,746 [INFO] 
-  Variante: «MINI 15X60GR» → tokens: {'15', '60', 'mini'}
-2026-05-15 19:42:01,746 [INFO]     img pos1: score=0.000  tokens={'2', 'e', 'ya', 'ng', 'as', 'sl', 'y', '00', 'treat', 'dental', 'cots', 'ws', '5', '7', '3', '1', 'qu', 'pelo', 'carpe', 'ae', 'ye', 'cl', 'a', 'chicken', 'sar', 'pumpkin', 'pomegranate', 'oo', 'fe', 'cre'}
-2026-05-15 19:42:01,746 [INFO]     img pos2: score=0.000  tokens={'en', 'os', 'j', 'eee', '2', 'e', 'medium', 'ts', 'ya', 'opry', 'cre', 'ip', 'sw', 'dy', 'as', 'dera', 'y', 'iis', 'fi', '00', 'adult', 'ite', 'treat', 'bar', 'dogs', 'dental', 'chi', '4', 'ls', 'i', '7', '1', 'ss', 'carpe', 'bm', 'so', 'a', 'chicken', 'crtd', 'ine', 'q', 'pomegranate', '9', 'pumpkin', 'fl', 'nena', 'ef', 'ge'}
-2026-05-15 19:42:01,746 [INFO]     img pos3: score=0.000  tokens={'e', 'om', 'rr', 'as', 'y', 'pof', 'ew', 'la', 'ye', 'ae', 'tt', 'ft', 'we', 'itt', 'pa', 'te', 'a', 'war', 'pp', 'rl', 'vw', 'oe'}
-2026-05-15 19:42:01,746 [WARNING]   → Sin match para variante «MINI 15X60GR»
-2026-05-15 19:42:01,746 [INFO] 
-  Variante: «MED/MAX 15X110GR» → tokens: {'110', '15', 'med', 'max'}
-2026-05-15 19:42:01,746 [INFO]     img pos1: score=0.000  tokens={'2', 'e', 'ya', 'ng', 'as', 'sl', 'y', '00', 'treat', 'dental', 'cots', 'ws', '5', '7', '3', '1', 'qu', 'pelo', 'carpe', 'ae', 'ye', 'cl', 'a', 'chicken', 'sar', 'pumpkin', 'pomegranate', 'oo', 'fe', 'cre'}
-2026-05-15 19:42:01,746 [INFO]     img pos2: score=0.000  tokens={'en', 'os', 'j', 'eee', '2', 'e', 'medium', 'ts', 'ya', 'opry', 'cre', 'ip', 'sw', 'dy', 'as', 'dera', 'y', 'iis', 'fi', '00', 'adult', 'ite', 'treat', 'bar', 'dogs', 'dental', 'chi', '4', 'ls', 'i', '7', '1', 'ss', 'carpe', 'bm', 'so', 'a', 'chicken', 'crtd', 'ine', 'q', 'pomegranate', '9', 'pumpkin', 'fl', 'nena', 'ef', 'ge'}
-2026-05-15 19:42:01,746 [INFO]     img pos3: score=0.000  tokens={'e', 'om', 'rr', 'as', 'y', 'pof', 'ew', 'la', 'ye', 'ae', 'tt', 'ft', 'we', 'itt', 'pa', 'te', 'a', 'war', 'pp', 'rl', 'vw', 'oe'}
-2026-05-15 19:42:01,746 [WARNING]   → Sin match para variante «MED/MAX 15X110GR»
-2026-05-15 19:42:01,746 [WARNING] 
+2026-05-15 19:52:19,571 [INFO] 
+  Variante: «MINI 15X60GR» → tokens: {'mini', '60', '15'}
+2026-05-15 19:52:19,571 [INFO]     img pos1: score=0.000  tokens={'3', 'cre', 'dental', 'a', 'ya', 'cots', 'pomegranate', 'qu', 'ae', 'e', '7', 'treat', 'cl', 'sar', 'oo', '5', 'pelo', 'ws', 'carpe', 'ye', 'chicken', 'pumpkin', '00', '2', 'ng', 'y', 'as', '1', 'sl', 'fe'}
+2026-05-15 19:52:19,571 [INFO]     img pos2: score=0.000  tokens={'chi', 'fl', 'opry', 'cre', 'dental', 'a', 'bar', 'ya', 'pomegranate', 'ge', 'dy', 'ts', 'j', 'e', '7', 'treat', 'ip', 'medium', '4', 'eee', 'so', 'en', 'sw', 'nena', 'iis', 'adult', 'ss', 'ite', 'dogs', 'fi', 'carpe', 'os', 'chicken', '00', 'pumpkin', 'ine', 'ef', 'y', '2', 'as', 'crtd', 'dera', '9', 'ls', '1', 'q', 'i', 'bm'}
+2026-05-15 19:52:19,571 [INFO]     img pos3: score=0.000  tokens={'we', 'ft', 'pof', 'a', 'ew', 'vw', 'ae', 'e', 'pp', 'itt', 'om', 'war', 'rr', 'tt', 'ye', 'te', 'as', 'rl', 'y', 'la', 'oe', 'pa'}
+2026-05-15 19:52:19,571 [WARNING]   → Sin match para variante «MINI 15X60GR»
+2026-05-15 19:52:19,571 [INFO] 
+  Variante: «MED/MAX 15X110GR» → tokens: {'110', 'max', 'med', '15'}
+2026-05-15 19:52:19,571 [INFO]     img pos1: score=0.000  tokens={'3', 'cre', 'dental', 'a', 'ya', 'cots', 'pomegranate', 'qu', 'ae', 'e', '7', 'treat', 'cl', 'sar', 'oo', '5', 'pelo', 'ws', 'carpe', 'ye', 'chicken', 'pumpkin', '00', '2', 'ng', 'y', 'as', '1', 'sl', 'fe'}
+2026-05-15 19:52:19,571 [INFO]     img pos2: score=0.000  tokens={'chi', 'fl', 'opry', 'cre', 'dental', 'a', 'bar', 'ya', 'pomegranate', 'ge', 'dy', 'ts', 'j', 'e', '7', 'treat', 'ip', 'medium', '4', 'eee', 'so', 'en', 'sw', 'nena', 'iis', 'adult', 'ss', 'ite', 'dogs', 'fi', 'carpe', 'os', 'chicken', '00', 'pumpkin', 'ine', 'ef', 'y', '2', 'as', 'crtd', 'dera', '9', 'ls', '1', 'q', 'i', 'bm'}
+2026-05-15 19:52:19,571 [INFO]     img pos3: score=0.000  tokens={'we', 'ft', 'pof', 'a', 'ew', 'vw', 'ae', 'e', 'pp', 'itt', 'om', 'war', 'rr', 'tt', 'ye', 'te', 'as', 'rl', 'y', 'la', 'oe', 'pa'}
+2026-05-15 19:52:19,571 [WARNING]   → Sin match para variante «MED/MAX 15X110GR»
+2026-05-15 19:52:19,571 [WARNING] 
   ⚠ OCR sin resultados discriminativos — usando fallback por orden de posición
-2026-05-15 19:42:01,746 [INFO]   [FALLBACK] «MINI 15X60GR» → img pos1
-2026-05-15 19:42:01,746 [INFO]   [FALLBACK] «MED/MAX 15X110GR» → img pos2
-2026-05-15 19:42:01,746 [INFO] 
+2026-05-15 19:52:19,571 [INFO]   [FALLBACK] «MINI 15X60GR» → img pos1
+2026-05-15 19:52:19,571 [INFO]   [FALLBACK] «MED/MAX 15X110GR» → img pos2
+2026-05-15 19:52:19,571 [INFO] 
   ── Resultado ──
-2026-05-15 19:42:01,746 [INFO]   [FALLBACK] «MINI 15X60GR» → imagen pos1 (score=pos-order)
-2026-05-15 19:42:01,746 [INFO]   [FALLBACK] «MED/MAX 15X110GR» → imagen pos2 (score=pos-order)
-2026-05-15 19:42:01,747 [INFO] 
+2026-05-15 19:52:19,572 [INFO]   [FALLBACK→ASIGNADO] «MINI 15X60GR» → imagen pos1 (image_id=83968775684483)
+2026-05-15 19:52:19,957 [INFO]     ✓ API OK — variant.image_id=83968775684483
+2026-05-15 19:52:19,957 [INFO]   [FALLBACK→ASIGNADO] «MED/MAX 15X110GR» → imagen pos2 (image_id=83968775848323)
+2026-05-15 19:52:20,383 [INFO]     ✓ API OK — variant.image_id=83968775848323
+2026-05-15 19:52:20,384 [INFO] 
   Log guardado: resultados/variant_images_15509744124291.json
-2026-05-15 19:42:01,748 [INFO] 
+2026-05-15 19:52:20,385 [INFO] 
 ✓ Completado
