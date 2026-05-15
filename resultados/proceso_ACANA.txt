@@ -1,0 +1,39 @@
+2026-05-15 22:34:41,151 [INFO] ============================================================
+2026-05-15 22:34:41,151 [INFO]   Vendor   : ACANA
+2026-05-15 22:34:41,151 [INFO]   Modo     : WEB_OFICIAL
+2026-05-15 22:34:41,151 [INFO]   Pipeline : standard
+2026-05-15 22:34:41,151 [INFO]   Padding  : auto
+2026-05-15 22:34:41,152 [INFO]   Web    : https://emea.acana.com
+2026-05-15 22:34:41,152 [INFO] ============================================================
+2026-05-15 22:34:41,520 [INFO] Token obtenido
+2026-05-15 22:34:41,589 [INFO] Scraping catálogo Acana con Playwright...
+2026-05-15 22:34:42,103 [INFO]   Cargando: https://emea.acana.com/es-ES/para-gatos
+2026-05-15 22:34:47,862 [INFO]   12 productos en cat
+2026-05-15 22:34:50,165 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-bountiful-catch-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:34:52,460 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-first-feast-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:34:54,834 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-grasslands-new-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:34:57,122 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-highest-protein-indoor-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:34:59,409 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-homestead-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:01,699 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-indoor-entree-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:04,001 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-pacifica-new-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:06,254 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-aca-wild-prairie-new-cat.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:08,532 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-premium-pate-cat-lamb-recipe.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:10,786 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-premium-pate-cat-salmon-recipe.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:13,050 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-premium-pate-cat-tuna-recipe.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:15,327 [WARNING]     Error en https://emea.acana.com/es-ES/para-gatos/eu-premium-pate-kitten-recipe.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:15,327 [INFO]   Cargando: https://emea.acana.com/es-ES/para-perros
+2026-05-15 22:35:20,662 [INFO]   12 productos en dog
+2026-05-15 22:35:22,963 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-adult-large.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:25,249 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-adult-small.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:27,605 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-adult.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:29,929 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-light-fit.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:32,204 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-junior.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:34,501 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-large.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:36,809 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-small.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:39,132 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-senior.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:41,463 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-singles-duck-new.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:43,750 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-singles-lamb-new.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:46,069 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-singles-pork-new.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:48,373 [WARNING]     Error en https://emea.acana.com/es-ES/para-perros/eu-aca-sport-agility.html: unbalanced parenthesis at position 34
+2026-05-15 22:35:48,439 [INFO] Catálogo guardado: 0 productos → resultados/acana_catalog.json
+2026-05-15 22:35:48,439 [ERROR] Catálogo vacío — revisa el scraping
