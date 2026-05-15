@@ -86,12 +86,14 @@ def is_white_background(img_rgb: Image.Image) -> bool:
     return ratio >= WHITE_MIN_FRAC
 
 
-def process_image(img: Image.Image) -> Image.Image:
+def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.Image:
     """
     Procesa una imagen al estándar de la tienda:
     - Fondo blanco (transparencia → composite o blur-fill según tipo)
     - Padding 5% si fondo blanco detectado, sin padding si ilustración
     - Canvas 2000×2000 blanco, imagen centrada
+
+    force_padding: None=auto-detectar, True=siempre padding, False=nunca padding
     """
     has_alpha = (img.mode in ("RGBA", "LA") or
                  (img.mode == "P" and "transparency" in img.info))
@@ -103,15 +105,18 @@ def process_image(img: Image.Image) -> Image.Image:
         transparent_ratio = sum(hist[:128]) / (img.width * img.height)
         log.info(f"    [alpha] {transparent_ratio:.0%} transparente")
         if transparent_ratio > 0.15:
-            # Producto sobre fondo transparente → fondo blanco
             composited = composite_on_white(rgba)
         else:
-            # Imagen opaca con esquinas transparentes → blur-fill
             composited = fill_transparent_with_blur(rgba)
     else:
         composited = composite_on_white(img)
 
-    use_padding = is_white_background(composited)
+    if force_padding is None:
+        use_padding = is_white_background(composited)
+    else:
+        use_padding = force_padding
+        log.info(f"    [bg] forzado: {'padding 5%' if use_padding else 'sin padding'}")
+
     log.info(f"    [{'padding 5%' if use_padding else 'sin padding'}]")
 
     if use_padding:

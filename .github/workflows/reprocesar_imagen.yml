@@ -1,0 +1,78 @@
+name: Reprocesar imagen individual
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify'
+        required: true
+      product_id:
+        description: 'ID del producto'
+        required: true
+      position:
+        description: 'Posición de la imagen (1, 2, 3...)'
+        required: true
+        default: '1'
+      padding:
+        description: 'Padding — auto=detectar automáticamente, no=forzar sin padding, si=forzar con padding'
+        required: false
+        type: choice
+        options:
+          - auto
+          - 'no'
+          - 'si'
+        default: auto
+      pipeline:
+        description: 'Pipeline de procesamiento'
+        required: false
+        type: choice
+        options:
+          - standard
+          - webp_only
+        default: standard
+
+jobs:
+  reprocesar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+
+      - name: Configurar Git LFS
+        run: git lfs install
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Reprocesar imagen
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 core/reprocess_image.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --product-id "${{ github.event.inputs.product_id }}" \
+            --position "${{ github.event.inputs.position }}" \
+            --padding "${{ github.event.inputs.padding }}" \
+            --pipeline "${{ github.event.inputs.pipeline }}" \
+            2>&1 | tee resultados/reprocesar_${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }} pos${{ github.event.inputs.position }}"
+          git push
