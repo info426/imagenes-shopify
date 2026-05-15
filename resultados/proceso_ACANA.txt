@@ -1,9 +1,50 @@
-2026-05-15 23:07:09,504 [INFO] ============================================================
-2026-05-15 23:07:09,504 [INFO]   Vendor   : ACANA
-2026-05-15 23:07:09,504 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-15 23:07:09,504 [INFO]   Pipeline : standard
-2026-05-15 23:07:09,504 [INFO]   Padding  : auto
-2026-05-15 23:07:09,504 [INFO]   Web    : https://emea.acana.com
-2026-05-15 23:07:09,504 [INFO] ============================================================
-2026-05-15 23:07:09,900 [INFO] Token obtenido
-2026-05-15 23:07:09,901 [ERROR] No existe backup para 'ACANA'. Ejecuta primero 'Backup imágenes de marca'.
+2026-05-15 23:13:48,414 [INFO] ============================================================
+2026-05-15 23:13:48,414 [INFO]   Vendor   : ACANA
+2026-05-15 23:13:48,414 [INFO]   Modo     : WEB_OFICIAL
+2026-05-15 23:13:48,414 [INFO]   Pipeline : standard
+2026-05-15 23:13:48,414 [INFO]   Padding  : auto
+2026-05-15 23:13:48,414 [INFO]   Web    : https://emea.acana.com
+2026-05-15 23:13:48,414 [INFO] ============================================================
+2026-05-15 23:13:48,716 [INFO] Token obtenido
+2026-05-15 23:13:48,822 [INFO] Scraping catálogo Acana con Playwright...
+2026-05-15 23:13:49,318 [INFO]   Cargando: https://emea.acana.com/es-ES/para-gatos
+2026-05-15 23:13:55,302 [INFO]   12 productos en cat
+2026-05-15 23:13:59,619 [INFO]     eu-aca-bountiful-catch-cat: 4 imagen(es)
+2026-05-15 23:14:04,898 [INFO]     eu-aca-first-feast-cat: 4 imagen(es)
+2026-05-15 23:14:10,193 [INFO]     eu-aca-grasslands-new-cat: 4 imagen(es)
+2026-05-15 23:14:15,491 [INFO]     eu-aca-highest-protein-indoor-cat: 4 imagen(es)
+2026-05-15 23:14:20,792 [INFO]     eu-aca-homestead-cat: 4 imagen(es)
+2026-05-15 23:14:26,106 [INFO]     eu-aca-indoor-entree-cat: 7 imagen(es)
+2026-05-15 23:14:31,387 [INFO]     eu-aca-pacifica-new-cat: 4 imagen(es)
+2026-05-15 23:14:36,685 [INFO]     eu-aca-wild-prairie-new-cat: 4 imagen(es)
+2026-05-15 23:14:42,019 [INFO]     eu-premium-pate-cat-lamb-recipe: 5 imagen(es)
+2026-05-15 23:14:47,293 [INFO]     eu-premium-pate-cat-salmon-recipe: 5 imagen(es)
+2026-05-15 23:14:52,571 [INFO]     eu-premium-pate-cat-tuna-recipe: 5 imagen(es)
+2026-05-15 23:14:57,855 [INFO]     eu-premium-pate-kitten-recipe: 5 imagen(es)
+2026-05-15 23:14:58,856 [INFO]   Cargando: https://emea.acana.com/es-ES/para-perros
+2026-05-15 23:15:04,415 [INFO]   12 productos en dog
+2026-05-15 23:15:08,720 [INFO]     eu-aca-adult-large: 6 imagen(es)
+2026-05-15 23:15:14,018 [INFO]     eu-aca-adult-small: 6 imagen(es)
+2026-05-15 23:15:19,326 [INFO]     eu-aca-adult: 7 imagen(es)
+2026-05-15 23:15:24,634 [INFO]     eu-aca-light-fit: 6 imagen(es)
+2026-05-15 23:15:29,937 [INFO]     eu-aca-puppy-junior: 6 imagen(es)
+2026-05-15 23:15:35,288 [INFO]     eu-aca-puppy-large: 6 imagen(es)
+2026-05-15 23:15:40,607 [INFO]     eu-aca-puppy-small: 6 imagen(es)
+2026-05-15 23:15:45,900 [INFO]     eu-aca-senior: 6 imagen(es)
+2026-05-15 23:15:51,243 [INFO]     eu-aca-singles-duck-new: 6 imagen(es)
+2026-05-15 23:15:56,585 [INFO]     eu-aca-singles-lamb-new: 6 imagen(es)
+2026-05-15 23:16:01,901 [INFO]     eu-aca-singles-pork-new: 6 imagen(es)
+2026-05-15 23:16:07,194 [INFO]     eu-aca-sport-agility: 6 imagen(es)
+2026-05-15 23:16:08,255 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
+2026-05-15 23:16:08,498 [INFO] 
+[1/1] ACANA CANINE ADULT  (ID: 15509599551875)
+2026-05-15 23:16:08,500 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-15 23:16:08,500 [INFO] 
+============================================================
+2026-05-15 23:16:08,500 [INFO] RESUMEN
+2026-05-15 23:16:08,500 [INFO] ============================================================
+2026-05-15 23:16:08,500 [INFO]   total         : 1
+2026-05-15 23:16:08,500 [INFO]   ok            : 0
+2026-05-15 23:16:08,500 [INFO]   sin_match     : 1
+2026-05-15 23:16:08,500 [INFO]   sin_imagen    : 0
+2026-05-15 23:16:08,500 [INFO]   errores       : 0
