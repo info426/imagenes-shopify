@@ -82,3 +82,10 @@ class ShopifyAPI:
         r = _request("POST", f"{self.base}/products/{pid}/images.json",
                      headers=self.h, json={"image": payload}, timeout=60)
         return r.json()
+
+    def set_variant_image(self, variant_id: int, image_id: int) -> dict:
+        r = _request("PUT", f"{self.base}/variants/{variant_id}.json",
+                     headers=self.h,
+                     json={"variant": {"id": variant_id, "image_id": image_id}},
+                     timeout=30)
+        return r.json()
