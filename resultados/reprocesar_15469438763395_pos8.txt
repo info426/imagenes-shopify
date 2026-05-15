@@ -1,0 +1,18 @@
+2026-05-15 09:38:16,182 [INFO] ============================================================
+2026-05-15 09:38:16,183 [INFO]   Vendor   : FARMINA ND
+2026-05-15 09:38:16,183 [INFO]   Producto : 15469438763395
+2026-05-15 09:38:16,183 [INFO]   Posición : 8
+2026-05-15 09:38:16,183 [INFO]   Padding  : no
+2026-05-15 09:38:16,183 [INFO]   Pipeline : standard
+2026-05-15 09:38:16,183 [INFO] ============================================================
+2026-05-15 09:38:16,926 [INFO] 
+[15469438763395] FARMINA ND CAT TROPICAL SELECTION NEUTERED CORDERO
+2026-05-15 09:38:16,926 [INFO]   Fuente: backup → backups/farmina_nd/15469438763395/img_08.jpg
+2026-05-15 09:38:16,934 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 09:38:16,967 [INFO]     [bg] forzado: sin padding
+2026-05-15 09:38:16,967 [INFO]     [sin padding]
+2026-05-15 09:38:16,996 [INFO]     [autocrop] (2000, 2000) → (1860, 1859)
+2026-05-15 09:38:17,903 [INFO]   Imagen anterior en posición 8 eliminada
+2026-05-15 09:38:21,745 [INFO]   ✓ Subida: farmina-nd-cat-tropical-selection-neutered-cordero_8.webp en posición 8
+2026-05-15 09:38:21,745 [INFO] 
+✓ Completado
