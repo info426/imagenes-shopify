@@ -1,0 +1,38 @@
+2026-05-15 19:17:33,823 [INFO] ============================================================
+2026-05-15 19:17:33,823 [INFO]   Producto : 15509744124291
+2026-05-15 19:17:33,823 [INFO]   Modo     : DRY-RUN
+2026-05-15 19:17:33,823 [INFO] ============================================================
+2026-05-15 19:17:34,953 [INFO] 
+[15509744124291] FARMINA TREAT ND PUMPKIN DOG POLLO ADULT
+2026-05-15 19:17:34,953 [INFO]   2 variante(s), 3 imagen(es)
+2026-05-15 19:17:34,954 [INFO] 
+  Analizando imagen pos1: farmina-treat-nd-pumpkin-dog-pollo-adult_1.webp
+2026-05-15 19:17:36,813 [INFO]     OCR tokens: {'ore', '5', '00', 'treat', 'pumpkin', 'owed', 'pomegranate', 'as', 'od', 'chicken', 'ere', 'dental'}
+2026-05-15 19:17:36,813 [INFO] 
+  Analizando imagen pos2: farmina-treat-nd-pumpkin-dog-pollo-adult_2.webp
+2026-05-15 19:17:37,602 [INFO]     OCR tokens: {'i', '00', 'treat', 'cred', 'pumpkin', 'pomegranate', 'farmina', 'ean', 'as', 're', '1', 'chicken', 'y', 'ere', 'eo', 'ss', 'dental'}
+2026-05-15 19:17:37,602 [INFO] 
+  Analizando imagen pos3: farmina-treat-nd-pumpkin-dog-pollo-adult_3.webp
+2026-05-15 19:17:38,637 [INFO]     OCR tokens: {'oe', 'sa', 'aa', 'cea', 'po', 'a'}
+2026-05-15 19:17:38,637 [INFO] 
+  ── Matching ──
+2026-05-15 19:17:38,637 [INFO] 
+  Variante: «MINI 15X60GR» → tokens: {'mini', '60', '15'}
+2026-05-15 19:17:38,637 [INFO]     img pos1: score=0.000  tokens={'ore', '5', '00', 'treat', 'pumpkin', 'owed', 'pomegranate', 'as', 'od', 'chicken', 'ere', 'dental'}
+2026-05-15 19:17:38,637 [INFO]     img pos2: score=0.000  tokens={'i', '00', 'treat', 'cred', 'pumpkin', 'pomegranate', 'farmina', 'ean', 'as', 're', '1', 'chicken', 'y', 'ere', 'eo', 'ss', 'dental'}
+2026-05-15 19:17:38,637 [INFO]     img pos3: score=0.000  tokens={'oe', 'sa', 'aa', 'cea', 'po', 'a'}
+2026-05-15 19:17:38,637 [WARNING]   → Sin match para variante «MINI 15X60GR»
+2026-05-15 19:17:38,637 [INFO] 
+  Variante: «MED/MAX 15X110GR» → tokens: {'110', 'max', '15', 'med'}
+2026-05-15 19:17:38,637 [INFO]     img pos1: score=0.000  tokens={'ore', '5', '00', 'treat', 'pumpkin', 'owed', 'pomegranate', 'as', 'od', 'chicken', 'ere', 'dental'}
+2026-05-15 19:17:38,637 [INFO]     img pos2: score=0.000  tokens={'i', '00', 'treat', 'cred', 'pumpkin', 'pomegranate', 'farmina', 'ean', 'as', 're', '1', 'chicken', 'y', 'ere', 'eo', 'ss', 'dental'}
+2026-05-15 19:17:38,637 [INFO]     img pos3: score=0.000  tokens={'oe', 'sa', 'aa', 'cea', 'po', 'a'}
+2026-05-15 19:17:38,637 [WARNING]   → Sin match para variante «MED/MAX 15X110GR»
+2026-05-15 19:17:38,637 [INFO] 
+  ── Resultado ──
+2026-05-15 19:17:38,637 [WARNING]   [SIN MATCH] «MINI 15X60GR»
+2026-05-15 19:17:38,637 [WARNING]   [SIN MATCH] «MED/MAX 15X110GR»
+2026-05-15 19:17:38,638 [INFO] 
+  Log guardado: resultados/variant_images_15509744124291.json
+2026-05-15 19:17:38,639 [INFO] 
+✓ Completado
