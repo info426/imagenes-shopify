@@ -75,4 +75,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
           git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }} pos${{ github.event.inputs.position }}"
-          git push
+          git pull --rebase && git push
