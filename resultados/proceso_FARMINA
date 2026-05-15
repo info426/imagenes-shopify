@@ -1,66 +1,67 @@
-2026-05-15 09:22:12,972 [INFO] ============================================================
-2026-05-15 09:22:12,972 [INFO]   Vendor   : FARMINA ND
-2026-05-15 09:22:12,973 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-15 09:22:12,973 [INFO]   Pipeline : standard
-2026-05-15 09:22:12,973 [INFO] ============================================================
-2026-05-15 09:22:13,255 [INFO] Token obtenido
-2026-05-15 09:22:13,519 [INFO] 
-[1/1] FARMINA ND CAT TROPICAL SELECTION NEUTERED CORDERO  (ID: 15469438763395)
-2026-05-15 09:22:13,530 [INFO]   img_01.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,568 [INFO]     [bg] 10000/10000 (100%)
-2026-05-15 09:22:13,568 [INFO]     [padding 5%]
-2026-05-15 09:22:13,599 [INFO]     [autocrop] (2000, 2000) → (918, 1802)
-2026-05-15 09:22:13,643 [INFO]   img_02.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,675 [INFO]     [bg] 10000/10000 (100%)
-2026-05-15 09:22:13,676 [INFO]     [padding 5%]
-2026-05-15 09:22:13,703 [INFO]     [autocrop] (2000, 2000) → (1056, 1820)
-2026-05-15 09:22:13,748 [INFO]   img_03.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,781 [INFO]     [bg] 10000/10000 (100%)
-2026-05-15 09:22:13,781 [INFO]     [padding 5%]
-2026-05-15 09:22:13,809 [INFO]     [autocrop] (2000, 2000) → (1118, 1780)
-2026-05-15 09:22:13,859 [INFO]   img_04.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,891 [INFO]     [bg] 0/10000 (0%)
-2026-05-15 09:22:13,892 [INFO]     [sin padding]
-2026-05-15 09:22:13,898 [INFO]   img_05.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,949 [INFO]     [bg] 0/10000 (0%)
-2026-05-15 09:22:13,950 [INFO]     [sin padding]
-2026-05-15 09:22:13,955 [INFO]   img_06.jpg: RGB (2000, 2000)
-2026-05-15 09:22:13,986 [INFO]     [bg] 710/10000 (7%)
-2026-05-15 09:22:13,987 [INFO]     [sin padding]
-2026-05-15 09:22:13,993 [INFO]   img_07.jpg: RGB (2000, 2000)
-2026-05-15 09:22:14,035 [INFO]     [bg] 707/10000 (7%)
-2026-05-15 09:22:14,035 [INFO]     [sin padding]
-2026-05-15 09:22:14,041 [INFO]   img_08.jpg: RGB (2000, 2000)
-2026-05-15 09:22:14,075 [INFO]     [bg] 7500/10000 (75%)
-2026-05-15 09:22:14,076 [INFO]     [padding 5%]
-2026-05-15 09:22:14,100 [INFO]     [autocrop] (2000, 2000) → (1860, 1859)
-2026-05-15 09:22:14,178 [INFO]   img_09.jpg: RGB (2000, 2000)
-2026-05-15 09:22:14,213 [INFO]     [bg] 5000/10000 (50%)
-2026-05-15 09:22:14,213 [INFO]     [sin padding]
-2026-05-15 09:22:14,220 [INFO]   img_10.jpg: RGB (2000, 2000)
-2026-05-15 09:22:14,254 [INFO]     [bg] 0/10000 (0%)
-2026-05-15 09:22:14,254 [INFO]     [sin padding]
-2026-05-15 09:22:14,259 [INFO]   img_11.jpg: RGB (2000, 2000)
-2026-05-15 09:22:14,299 [INFO]     [bg] 0/10000 (0%)
-2026-05-15 09:22:14,299 [INFO]     [sin padding]
-2026-05-15 09:22:21,228 [INFO]   11 imagen(es) antigua(s) eliminada(s)
-2026-05-15 09:22:23,888 [INFO]   ✓ 1/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_1.webp]
-2026-05-15 09:22:27,012 [INFO]   ✓ 2/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_2.webp]
-2026-05-15 09:22:30,279 [INFO]   ✓ 3/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_3.webp]
-2026-05-15 09:22:33,733 [INFO]   ✓ 4/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_4.webp]
-2026-05-15 09:22:36,812 [INFO]   ✓ 5/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_5.webp]
-2026-05-15 09:22:40,152 [INFO]   ✓ 6/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_6.webp]
-2026-05-15 09:22:44,228 [INFO]   ✓ 7/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_7.webp]
-2026-05-15 09:22:47,761 [INFO]   ✓ 8/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_8.webp]
-2026-05-15 09:22:51,087 [INFO]   ✓ 9/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_9.webp]
-2026-05-15 09:22:54,460 [INFO]   ✓ 10/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_10.webp]
-2026-05-15 09:22:58,143 [INFO]   ✓ 11/11 subida  [farmina-nd-cat-tropical-selection-neutered-cordero_11.webp]
-2026-05-15 09:22:59,643 [INFO] 
+2026-05-15 09:57:31,518 [INFO] ============================================================
+2026-05-15 09:57:31,518 [INFO]   Vendor   : FARMINA ND
+2026-05-15 09:57:31,518 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-15 09:57:31,518 [INFO]   Pipeline : standard
+2026-05-15 09:57:31,518 [INFO] ============================================================
+2026-05-15 09:57:31,927 [INFO] Token obtenido
+2026-05-15 09:57:32,231 [INFO] 
+[1/1] FARMINA ND CAT PRIME ADULT POLLO  (ID: 15469437845891)
+2026-05-15 09:57:32,242 [INFO]   img_01.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,277 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:57:32,306 [INFO]     [autocrop] (2000, 2000) → (938, 1838)
+2026-05-15 09:57:32,307 [INFO]     [padding 5%]
+2026-05-15 09:57:32,349 [INFO]   img_02.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,382 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:57:32,407 [INFO]     [autocrop] (2000, 2000) → (1138, 1724)
+2026-05-15 09:57:32,407 [INFO]     [padding 5%]
+2026-05-15 09:57:32,456 [INFO]   img_03.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,485 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 09:57:32,509 [INFO]     [autocrop] (2000, 2000) → (1055, 1822)
+2026-05-15 09:57:32,509 [INFO]     [padding 5%]
+2026-05-15 09:57:32,553 [INFO]   img_04.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,584 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 09:57:32,584 [INFO]     [sin padding]
+2026-05-15 09:57:32,589 [INFO]   img_05.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,619 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 09:57:32,619 [INFO]     [sin padding]
+2026-05-15 09:57:32,624 [INFO]   img_06.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,653 [INFO]     [bg] 710/10000 (7%)
+2026-05-15 09:57:32,653 [INFO]     [sin padding]
+2026-05-15 09:57:32,658 [INFO]   img_07.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,698 [INFO]     [bg] 707/10000 (7%)
+2026-05-15 09:57:32,698 [INFO]     [sin padding]
+2026-05-15 09:57:32,705 [INFO]   img_08.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,743 [INFO]     [bg] 7500/10000 (75%)
+2026-05-15 09:57:32,767 [INFO]     [autocrop] (2000, 2000) → (1876, 1859)
+2026-05-15 09:57:32,768 [INFO]     [fills-frame 94%×93%] → sin padding
+2026-05-15 09:57:32,768 [INFO]     [sin padding]
+2026-05-15 09:57:32,773 [INFO]   img_09.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,807 [INFO]     [bg] 5000/10000 (50%)
+2026-05-15 09:57:32,807 [INFO]     [sin padding]
+2026-05-15 09:57:32,811 [INFO]   img_10.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,844 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 09:57:32,845 [INFO]     [sin padding]
+2026-05-15 09:57:32,850 [INFO]   img_11.jpg: RGB (2000, 2000)
+2026-05-15 09:57:32,887 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 09:57:32,887 [INFO]     [sin padding]
+2026-05-15 09:57:41,281 [INFO]   11 imagen(es) antigua(s) eliminada(s)
+2026-05-15 09:57:44,091 [INFO]   ✓ 1/11 subida  [farmina-nd-cat-prime-adult-pollo_1.webp]
+2026-05-15 09:57:47,242 [INFO]   ✓ 2/11 subida  [farmina-nd-cat-prime-adult-pollo_2.webp]
+2026-05-15 09:57:51,263 [INFO]   ✓ 3/11 subida  [farmina-nd-cat-prime-adult-pollo_3.webp]
+2026-05-15 09:57:54,427 [INFO]   ✓ 4/11 subida  [farmina-nd-cat-prime-adult-pollo_4.webp]
+2026-05-15 09:57:57,473 [INFO]   ✓ 5/11 subida  [farmina-nd-cat-prime-adult-pollo_5.webp]
+2026-05-15 09:58:00,890 [INFO]   ✓ 6/11 subida  [farmina-nd-cat-prime-adult-pollo_6.webp]
+2026-05-15 09:58:04,784 [INFO]   ✓ 7/11 subida  [farmina-nd-cat-prime-adult-pollo_7.webp]
+2026-05-15 09:58:08,878 [INFO]   ✓ 8/11 subida  [farmina-nd-cat-prime-adult-pollo_8.webp]
+2026-05-15 09:58:12,424 [INFO]   ✓ 9/11 subida  [farmina-nd-cat-prime-adult-pollo_9.webp]
+2026-05-15 09:58:15,898 [INFO]   ✓ 10/11 subida  [farmina-nd-cat-prime-adult-pollo_10.webp]
+2026-05-15 09:58:19,558 [INFO]   ✓ 11/11 subida  [farmina-nd-cat-prime-adult-pollo_11.webp]
+2026-05-15 09:58:21,059 [INFO] 
 ============================================================
-2026-05-15 09:22:59,644 [INFO] RESUMEN
-2026-05-15 09:22:59,644 [INFO] ============================================================
-2026-05-15 09:22:59,644 [INFO]   total         : 1
-2026-05-15 09:22:59,644 [INFO]   ok            : 1
-2026-05-15 09:22:59,644 [INFO]   saltados      : 0
-2026-05-15 09:22:59,644 [INFO]   sin_backup    : 0
-2026-05-15 09:22:59,644 [INFO]   errores       : 0
+2026-05-15 09:58:21,059 [INFO] RESUMEN
+2026-05-15 09:58:21,059 [INFO] ============================================================
+2026-05-15 09:58:21,059 [INFO]   total         : 1
+2026-05-15 09:58:21,059 [INFO]   ok            : 1
+2026-05-15 09:58:21,059 [INFO]   saltados      : 0
+2026-05-15 09:58:21,059 [INFO]   sin_backup    : 0
+2026-05-15 09:58:21,059 [INFO]   errores       : 0
