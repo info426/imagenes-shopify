@@ -1,0 +1,88 @@
+name: Test marca (un producto)
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify (ej: Acana)'
+        required: true
+      fuente:
+        description: 'Fuente de imágenes'
+        required: true
+        type: choice
+        options:
+          - web_oficial
+          - shopify_backup
+          - web_y_amazon
+        default: web_oficial
+      product_id:
+        description: 'ID del producto a procesar (Shopify product ID)'
+        required: true
+      web_url:
+        description: 'URL web fabricante (si fuente = web_oficial / web_y_amazon)'
+        required: false
+      rebuild_catalog:
+        description: 'Forzar re-scraping del catálogo web'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
+      force_padding:
+        description: 'Padding (auto=detección automática, true=siempre, false=nunca)'
+        required: false
+        type: choice
+        options:
+          - auto
+          - 'true'
+          - 'false'
+        default: auto
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Instalar Playwright (solo para fuentes web)
+        if: github.event.inputs.fuente != 'shopify_backup'
+        run: playwright install chromium --with-deps
+
+      - name: Procesar producto de prueba
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          EXTRA=""
+          WEB=""
+          [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
+          [ -n "${{ github.event.inputs.web_url }}" ] && WEB="--web-url ${{ github.event.inputs.web_url }}"
+          PADDING="--force-padding ${{ github.event.inputs.force_padding || 'auto' }}"
+          python3 core/process_brand.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --fuente "${{ github.event.inputs.fuente }}" \
+            --product-id "${{ github.event.inputs.product_id }}" \
+            $PADDING $WEB $EXTRA \
+            2>&1 | tee resultados/test_${{ github.event.inputs.vendor }}_${{ github.event.inputs.product_id }}.txt
+
+      - name: Subir log como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-log-${{ github.event.inputs.vendor }}-${{ github.event.inputs.product_id }}
+          path: resultados/test_*.txt
+          retention-days: 7

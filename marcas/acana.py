@@ -26,7 +26,11 @@ CATEGORY_URLS = [
 ]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
 }
 
@@ -42,43 +46,159 @@ IGNORE_TOKENS = {
 # ─── Utilidades internas ──────────────────────────────────────────────────────
 
 def _normalize_img_url(url: str) -> str:
-    return f"{url.split('?')[0]}?sw={IMAGE_WIDTH}"
+    """Solicita la máxima resolución disponible en el CDN Demandware."""
+    base = url.split("?")[0]
+    return f"{base}?sw={IMAGE_WIDTH}&q=100"
+
+
+def _is_product_img(url: str) -> bool:
+    return bool(url and (
+        "emea.acana.com/dw/image" in url
+        or "demandware.net" in url
+        or (
+            "emea.acana.com" in url
+            and any(ext in url.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
+        )
+    ))
 
 
 def _extract_image_urls(page) -> list:
-    urls = set()
+    """Extrae todas las URLs de imágenes de producto de la página actual."""
+    urls: set[str] = set()
 
-    for attr in ("src", "data-src", "data-lazy-src"):
-        for el in page.query_selector_all(f"img[{attr}*='emea.acana.com']"):
+    # 1. src / data-src / lazy-loading y atributos de zoom
+    for attr in ("src", "data-src", "data-lazy-src", "data-zoom-image",
+                 "data-full", "data-image-url", "data-zoom-src"):
+        for el in page.query_selector_all(f"img[{attr}]"):
             src = el.get_attribute(attr) or ""
-            if src and "demandware" in src:
+            if _is_product_img(src):
+                urls.add(_normalize_img_url(src))
+        # también en elementos no-img que contengan la URL
+        for el in page.query_selector_all(f"[{attr}*='acana.com']"):
+            src = el.get_attribute(attr) or ""
+            if _is_product_img(src):
                 urls.add(_normalize_img_url(src))
 
-    raw_styles = page.evaluate("""() => {
-        const els = document.querySelectorAll('[style*="background-image"]');
-        return Array.from(els)
-            .map(e => e.getAttribute('style'))
-            .filter(s => s && s.includes('emea.acana.com'));
+    # 2. srcset (imágenes responsivas — quedarse con la URL sin descriptor)
+    for el in page.query_selector_all("img[srcset]"):
+        srcset = el.get_attribute("srcset") or ""
+        for part in srcset.split(","):
+            src = part.strip().split()[0] if part.strip() else ""
+            if _is_product_img(src):
+                urls.add(_normalize_img_url(src))
+
+    # 3. background-image en estilos inline
+    raw_styles: list = page.evaluate("""() => {
+        return Array.from(document.querySelectorAll('[style*="background-image"]'))
+            .map(e => e.getAttribute('style') || '')
+            .filter(s => s.includes('acana.com') || s.includes('demandware'));
     }""")
     for style in raw_styles:
-        m = re.search(r'url\(["\'\]?(https://[^"\'\'\)\s]+)["\'\'\]?\)', style)
-        if m:
+        m = re.search(r'url\(["\']?(https://[^"\')\s]+)["\']?\)', style)
+        if m and _is_product_img(m.group(1)):
             urls.add(_normalize_img_url(m.group(1)))
 
+    # 4. JSON-LD (schema.org Product)
     try:
-        json_data = page.evaluate("""() => {
-            const el = document.querySelector('[data-product-images]') ||
-                       document.querySelector('.product-images');
-            return el ? el.getAttribute('data-product-images') || el.textContent : null;
+        scripts: list = page.evaluate("""() =>
+            Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+                .map(s => s.textContent || '')
+        """)
+        for script in scripts:
+            if not script:
+                continue
+            try:
+                data = json.loads(script)
+                images = data.get("image", []) if isinstance(data, dict) else []
+                if isinstance(images, str):
+                    images = [images]
+                for img_url in images:
+                    if _is_product_img(img_url):
+                        urls.add(_normalize_img_url(img_url))
+            except (json.JSONDecodeError, Exception):
+                pass
+            # Fallback: extraer URLs de imagen del texto crudo
+            for img_url in re.findall(
+                r'https://[^\s"\'\\<>]+(?:dw/image)[^\s"\'\\<>]*', script
+            ):
+                urls.add(_normalize_img_url(img_url))
+    except Exception:
+        pass
+
+    # 5. Variables JS embebidas (SFCC product data en scripts inline)
+    try:
+        js_text: str = page.evaluate("""() => {
+            const out = [];
+            for (const s of document.querySelectorAll('script:not([src])')) {
+                const t = s.textContent || '';
+                if (t.includes('dw/image') || t.includes('demandware.net')) {
+                    out.push(t);
+                }
+            }
+            return out.join('\\n');
         }""")
-        if json_data:
-            for url in re.findall(r'https://emea\.acana\.com/dw/image[^"\'\\ s]+',
-                                  json_data):
-                urls.add(_normalize_img_url(url))
+        for img_url in re.findall(
+            r'https://[^\s"\'\\<>]+(?:dw/image|demandware\.net)[^\s"\'\\<>]*',
+            js_text,
+        ):
+            if _is_product_img(img_url):
+                urls.add(_normalize_img_url(img_url))
     except Exception:
         pass
 
     return list(urls)
+
+
+def _collect_product_urls(page, cat_url: str, cat_segment: str) -> set:
+    """Carga la categoría activando scroll/paginación y recoge las URLs de producto."""
+    product_urls: set[str] = set()
+
+    log.info(f"  Cargando: {cat_url}")
+    try:
+        page.goto(cat_url, timeout=45000, wait_until="domcontentloaded")
+        page.wait_for_timeout(4000)
+    except Exception as e:
+        log.warning(f"  Error cargando {cat_url}: {e}")
+        return product_urls
+
+    # Scroll progresivo + clic en "cargar más" hasta agotar productos
+    prev_count = 0
+    for attempt in range(8):
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(2000)
+
+        clicked = False
+        for selector in (
+            "button.load-more", ".btn-load-more", "[data-action='more']",
+            "a.show-more", ".show-more-button",
+            "button:has-text('Ver más')", "button:has-text('Load more')",
+            "button:has-text('Mostrar más')",
+        ):
+            try:
+                btn = page.query_selector(selector)
+                if btn and btn.is_visible():
+                    btn.click()
+                    page.wait_for_timeout(3000)
+                    log.info(f"    Cargados más productos (intento {attempt + 1})")
+                    clicked = True
+                    break
+            except Exception:
+                pass
+
+        # Contar productos actuales para detectar si ya no hay más
+        current_links = page.query_selector_all(f"a[href*='{cat_segment}'][href$='.html']")
+        if len(current_links) == prev_count and not clicked:
+            break
+        prev_count = len(current_links)
+
+    for link in page.query_selector_all("a[href]"):
+        href = link.get_attribute("href") or ""
+        if href and cat_segment in href and href.endswith(".html"):
+            full = href if href.startswith("http") else BASE_URL + href
+            product_urls.add(full.split("?")[0])
+
+    log.info(f"  → {len(product_urls)} productos en /{cat_segment}")
+    return product_urls
 
 
 # ─── Interfaz pública ─────────────────────────────────────────────────────────
@@ -101,60 +221,59 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
                   "playwright install chromium")
         return {}
 
-    catalog = {}
+    catalog: dict = {}
     log.info("Scraping catálogo Acana con Playwright...")
 
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True, args=["--no-sandbox"])
+        browser = pw.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox",
+                  "--disable-dev-shm-usage", "--disable-gpu"],
+        )
         ctx = browser.new_context(
             user_agent=HEADERS["User-Agent"],
             locale="es-ES",
+            viewport={"width": 1440, "height": 900},
             extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
         )
         page = ctx.new_page()
 
         for cat_url in CATEGORY_URLS:
-            category = "cat" if "gatos" in cat_url else "dog"
-            log.info(f"  Cargando: {cat_url}")
-            try:
-                page.goto(cat_url, timeout=30000, wait_until="domcontentloaded")
-                page.wait_for_timeout(3000)
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(2000)
+            category   = "cat" if "gatos" in cat_url else "dog"
+            cat_segment = "para-gatos" if category == "cat" else "para-perros"
+            product_urls = _collect_product_urls(page, cat_url, cat_segment)
 
-                cat_segment = "para-gatos" if category == "cat" else "para-perros"
-                product_urls = set()
-                for link in page.query_selector_all('a[href$=".html"]'):
-                    href = link.get_attribute("href") or ""
-                    if href and cat_segment in href:
-                        product_urls.add(
-                            href if href.startswith("http") else BASE_URL + href
-                        )
+            for prod_url in sorted(product_urls):
+                handle = prod_url.rstrip("/").split("/")[-1].replace(".html", "")
+                try:
+                    page.goto(prod_url, timeout=45000, wait_until="domcontentloaded")
+                    page.wait_for_timeout(3000)
 
-                log.info(f"  {len(product_urls)} productos en {category}")
+                    # Scroll completo para activar lazy-load de imágenes
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    page.wait_for_timeout(1500)
+                    page.evaluate("window.scrollTo(0, 0)")
+                    page.wait_for_timeout(1000)
 
-                for prod_url in sorted(product_urls):
-                    handle = prod_url.rstrip("/").split("/")[-1].replace(".html", "")
-                    try:
-                        page.goto(prod_url, timeout=30000,
-                                  wait_until="domcontentloaded")
-                        page.wait_for_timeout(2000)
-                        name_el = (page.query_selector("h1.product-name") or
-                                   page.query_selector("h1") or
-                                   page.query_selector(".product-name"))
-                        name   = name_el.inner_text().strip() if name_el else handle
-                        images = _extract_image_urls(page)
-                        catalog[handle] = {
-                            "name": name, "url": prod_url,
-                            "category": category, "images": images,
-                        }
-                        log.info(f"    {handle}: {len(images)} imagen(es)")
-                        time.sleep(1)
-                    except Exception as e:
-                        log.warning(f"    Error en {prod_url}: {e}")
+                    name_el = (
+                        page.query_selector("h1.product-name")
+                        or page.query_selector("[itemprop='name']")
+                        or page.query_selector("h1")
+                        or page.query_selector(".product-name")
+                    )
+                    name   = name_el.inner_text().strip() if name_el else handle
+                    images = _extract_image_urls(page)
 
-            except Exception as e:
-                log.warning(f"  Error cargando {cat_url}: {e}")
+                    catalog[handle] = {
+                        "name": name,
+                        "url": prod_url,
+                        "category": category,
+                        "images": images,
+                    }
+                    log.info(f"    {handle}: {len(images)} imagen(es)")
+                    time.sleep(1.5)
+                except Exception as e:
+                    log.warning(f"    Error en {prod_url}: {e}")
 
         browser.close()
 
@@ -165,6 +284,8 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     log.info(f"Catálogo guardado: {len(catalog)} productos → {CATALOG_PATH}")
     return catalog
 
+
+# ─── Matching ─────────────────────────────────────────────────────────────────
 
 def _normalize(text: str) -> str:
     text = unicodedata.normalize("NFD", text.lower())
@@ -182,8 +303,9 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     title_tokens = _tokenize(shopify_title)
     best_handle, best_score = None, 0.0
     for handle, entry in catalog.items():
-        cat_tokens = (_tokenize(handle.replace("-", " ")) |
-                      _tokenize(entry.get("name", "")))
+        cat_tokens = (
+            _tokenize(handle.replace("-", " ")) | _tokenize(entry.get("name", ""))
+        )
         union = title_tokens | cat_tokens
         score = len(title_tokens & cat_tokens) / len(union) if union else 0.0
         if score > best_score:
