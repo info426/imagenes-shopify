@@ -1,0 +1,106 @@
+2026-05-15 10:08:02,505 [INFO] ============================================================
+2026-05-15 10:08:02,505 [INFO]   Vendor    : FARMINA ND
+2026-05-15 10:08:02,505 [INFO]   Producto  : 15469437845891
+2026-05-15 10:08:02,505 [INFO]   Posición  : todas
+2026-05-15 10:08:02,505 [INFO]   Padding   : auto
+2026-05-15 10:08:02,505 [INFO]   Pipeline  : standard
+2026-05-15 10:08:02,505 [INFO]   sRGB      : sí
+2026-05-15 10:08:02,505 [INFO] ============================================================
+2026-05-15 10:08:03,199 [INFO] 
+[15469437845891] FARMINA ND CAT PRIME ADULT POLLO
+2026-05-15 10:08:03,200 [INFO]   Posiciones a procesar: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+2026-05-15 10:08:03,200 [INFO] 
+  — Posición 1 —
+2026-05-15 10:08:03,200 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_01.jpg
+2026-05-15 10:08:03,206 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:03,233 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 10:08:03,256 [INFO]     [autocrop] (2000, 2000) → (938, 1838)
+2026-05-15 10:08:03,257 [INFO]     [padding 5%]
+2026-05-15 10:08:03,995 [INFO]   Imagen anterior en posición 1 eliminada
+2026-05-15 10:08:07,270 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_1.webp en posición 1 [sRGB]
+2026-05-15 10:08:07,770 [INFO] 
+  — Posición 2 —
+2026-05-15 10:08:07,771 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_02.jpg
+2026-05-15 10:08:07,771 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:07,797 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 10:08:07,818 [INFO]     [autocrop] (2000, 2000) → (1138, 1724)
+2026-05-15 10:08:07,819 [INFO]     [padding 5%]
+2026-05-15 10:08:08,581 [INFO]   Imagen anterior en posición 2 eliminada
+2026-05-15 10:08:13,144 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_2.webp en posición 2 [sRGB]
+2026-05-15 10:08:13,644 [INFO] 
+  — Posición 3 —
+2026-05-15 10:08:13,645 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_03.jpg
+2026-05-15 10:08:13,645 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:13,668 [INFO]     [bg] 10000/10000 (100%)
+2026-05-15 10:08:13,687 [INFO]     [autocrop] (2000, 2000) → (1055, 1822)
+2026-05-15 10:08:13,687 [INFO]     [padding 5%]
+2026-05-15 10:08:14,431 [INFO]   Imagen anterior en posición 3 eliminada
+2026-05-15 10:08:17,650 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_3.webp en posición 3 [sRGB]
+2026-05-15 10:08:18,151 [INFO] 
+  — Posición 4 —
+2026-05-15 10:08:18,151 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_04.jpg
+2026-05-15 10:08:18,151 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:18,175 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 10:08:18,175 [INFO]     [sin padding]
+2026-05-15 10:08:18,867 [INFO]   Imagen anterior en posición 4 eliminada
+2026-05-15 10:08:21,988 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_4.webp en posición 4 [sRGB]
+2026-05-15 10:08:22,488 [INFO] 
+  — Posición 5 —
+2026-05-15 10:08:22,488 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_05.jpg
+2026-05-15 10:08:22,488 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:22,511 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 10:08:22,511 [INFO]     [sin padding]
+2026-05-15 10:08:23,213 [INFO]   Imagen anterior en posición 5 eliminada
+2026-05-15 10:08:26,508 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_5.webp en posición 5 [sRGB]
+2026-05-15 10:08:27,008 [INFO] 
+  — Posición 6 —
+2026-05-15 10:08:27,008 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_06.jpg
+2026-05-15 10:08:27,008 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:27,033 [INFO]     [bg] 710/10000 (7%)
+2026-05-15 10:08:27,033 [INFO]     [sin padding]
+2026-05-15 10:08:27,699 [INFO]   Imagen anterior en posición 6 eliminada
+2026-05-15 10:08:31,198 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_6.webp en posición 6 [sRGB]
+2026-05-15 10:08:31,698 [INFO] 
+  — Posición 7 —
+2026-05-15 10:08:31,698 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_07.jpg
+2026-05-15 10:08:31,699 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:31,732 [INFO]     [bg] 707/10000 (7%)
+2026-05-15 10:08:31,732 [INFO]     [sin padding]
+2026-05-15 10:08:32,416 [INFO]   Imagen anterior en posición 7 eliminada
+2026-05-15 10:08:36,541 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_7.webp en posición 7 [sRGB]
+2026-05-15 10:08:37,041 [INFO] 
+  — Posición 8 —
+2026-05-15 10:08:37,041 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_08.jpg
+2026-05-15 10:08:37,042 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:37,074 [INFO]     [bg] 7500/10000 (75%)
+2026-05-15 10:08:37,094 [INFO]     [autocrop] (2000, 2000) → (1876, 1859)
+2026-05-15 10:08:37,094 [INFO]     [fills-frame 94%×93%] → sin padding
+2026-05-15 10:08:37,094 [INFO]     [sin padding]
+2026-05-15 10:08:37,785 [INFO]   Imagen anterior en posición 8 eliminada
+2026-05-15 10:08:41,939 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_8.webp en posición 8 [sRGB]
+2026-05-15 10:08:42,440 [INFO] 
+  — Posición 9 —
+2026-05-15 10:08:42,440 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_09.jpg
+2026-05-15 10:08:42,440 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:42,469 [INFO]     [bg] 5000/10000 (50%)
+2026-05-15 10:08:42,469 [INFO]     [sin padding]
+2026-05-15 10:08:43,154 [INFO]   Imagen anterior en posición 9 eliminada
+2026-05-15 10:08:46,534 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_9.webp en posición 9 [sRGB]
+2026-05-15 10:08:47,034 [INFO] 
+  — Posición 10 —
+2026-05-15 10:08:47,034 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_10.jpg
+2026-05-15 10:08:47,035 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:47,062 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 10:08:47,062 [INFO]     [sin padding]
+2026-05-15 10:08:47,765 [INFO]   Imagen anterior en posición 10 eliminada
+2026-05-15 10:08:51,131 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_10.webp en posición 10 [sRGB]
+2026-05-15 10:08:51,631 [INFO] 
+  — Posición 11 —
+2026-05-15 10:08:51,631 [INFO]   Fuente: backup → backups/farmina_nd/15469437845891/img_11.jpg
+2026-05-15 10:08:51,632 [INFO]   Imagen cargada: RGB (2000, 2000)
+2026-05-15 10:08:51,662 [INFO]     [bg] 0/10000 (0%)
+2026-05-15 10:08:51,662 [INFO]     [sin padding]
+2026-05-15 10:08:52,336 [INFO]   Imagen anterior en posición 11 eliminada
+2026-05-15 10:08:56,113 [INFO]   ✓ Subida: farmina-nd-cat-prime-adult-pollo_11.webp en posición 11 [sRGB]
+2026-05-15 10:08:56,613 [INFO] 
+✓ Completado
