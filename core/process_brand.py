@@ -165,7 +165,7 @@ def run_backup(api: ShopifyAPI, vendor: str):
     products = api.get_products(vendor)
     log.info(f"Total: {len(products)} productos")
 
-    backed_up = skipped = 0
+    backed_up = skipped = already = 0
     for product in products:
         pid    = product["id"]
         title  = product["title"]
@@ -177,6 +177,12 @@ def run_backup(api: ShopifyAPI, vendor: str):
             continue
 
         folder = backup_root / str(pid)
+        if folder.exists() and any(f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
+                                   for f in folder.iterdir()):
+            log.info(f"  [{pid}] {title[:50]} — backup existente, saltando")
+            already += 1
+            continue
+
         folder.mkdir(exist_ok=True)
 
         metadata = {}
@@ -208,7 +214,7 @@ def run_backup(api: ShopifyAPI, vendor: str):
         )
         backed_up += 1
 
-    log.info(f"\nBackup: {backed_up} con imágenes, {skipped} sin imágenes")
+    log.info(f"\nBackup: {backed_up} nuevos, {already} ya existían (no sobreescritos), {skipped} sin imágenes")
 
 
 # ─── Modo shopify_backup ───────────────────────────────────────────────────────
