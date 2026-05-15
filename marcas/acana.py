@@ -47,158 +47,95 @@ IGNORE_TOKENS = {
 
 def _normalize_img_url(url: str) -> str:
     """Solicita la máxima resolución disponible en el CDN Demandware."""
-    base = url.split("?")[0]
-    return f"{base}?sw={IMAGE_WIDTH}&q=100"
-
-
-def _is_product_img(url: str) -> bool:
-    return bool(url and (
-        "emea.acana.com/dw/image" in url
-        or "demandware.net" in url
-        or (
-            "emea.acana.com" in url
-            and any(ext in url.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
-        )
-    ))
+    return f"{url.split('?')[0]}?sw={IMAGE_WIDTH}&q=100"
 
 
 def _extract_image_urls(page) -> list:
-    """Extrae todas las URLs de imágenes de producto de la página actual."""
-    urls: set[str] = set()
+    """Extrae URLs de imágenes de producto de la página actual."""
+    urls: set = set()
 
-    # 1. src / data-src / lazy-loading y atributos de zoom
-    for attr in ("src", "data-src", "data-lazy-src", "data-zoom-image",
-                 "data-full", "data-image-url", "data-zoom-src"):
-        for el in page.query_selector_all(f"img[{attr}]"):
-            src = el.get_attribute(attr) or ""
-            if _is_product_img(src):
-                urls.add(_normalize_img_url(src))
-        # también en elementos no-img que contengan la URL
-        for el in page.query_selector_all(f"[{attr}*='acana.com']"):
-            src = el.get_attribute(attr) or ""
-            if _is_product_img(src):
-                urls.add(_normalize_img_url(src))
+    # 1. Atributos src / data-src / lazy-loading en <img> con URL de emea.acana.com
+    for attr in ("src", "data-src", "data-lazy-src", "data-zoom-image"):
+        try:
+            for el in page.query_selector_all(f"img[{attr}*='emea.acana.com']"):
+                src = el.get_attribute(attr) or ""
+                if src and "demandware" in src:
+                    urls.add(_normalize_img_url(src))
+        except Exception:
+            pass
 
-    # 2. srcset (imágenes responsivas — quedarse con la URL sin descriptor)
-    for el in page.query_selector_all("img[srcset]"):
-        srcset = el.get_attribute("srcset") or ""
-        for part in srcset.split(","):
-            src = part.strip().split()[0] if part.strip() else ""
-            if _is_product_img(src):
-                urls.add(_normalize_img_url(src))
+    # 2. srcset (imágenes responsivas) — filtramos en Python para evitar
+    #    selectores CSS complejos que pueden fallar en algunos entornos
+    try:
+        for el in page.query_selector_all("img[srcset]"):
+            srcset = el.get_attribute("srcset") or ""
+            for part in srcset.split(","):
+                src = part.strip().split()[0] if part.strip() else ""
+                if "emea.acana.com" in src and "demandware" in src:
+                    urls.add(_normalize_img_url(src))
+    except Exception:
+        pass
 
     # 3. background-image en estilos inline
-    raw_styles: list = page.evaluate("""() => {
-        return Array.from(document.querySelectorAll('[style*="background-image"]'))
-            .map(e => e.getAttribute('style') || '')
-            .filter(s => s.includes('acana.com') || s.includes('demandware'));
-    }""")
-    for style in raw_styles:
-        m = re.search(r'url\(["\']?(https://[^"\')\s]+)["\']?\)', style)
-        if m and _is_product_img(m.group(1)):
-            urls.add(_normalize_img_url(m.group(1)))
-
-    # 4. JSON-LD (schema.org Product)
     try:
-        scripts: list = page.evaluate("""() =>
-            Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-                .map(s => s.textContent || '')
-        """)
-        for script in scripts:
-            if not script:
-                continue
-            try:
-                data = json.loads(script)
-                images = data.get("image", []) if isinstance(data, dict) else []
-                if isinstance(images, str):
-                    images = [images]
-                for img_url in images:
-                    if _is_product_img(img_url):
-                        urls.add(_normalize_img_url(img_url))
-            except (json.JSONDecodeError, Exception):
-                pass
-            # Fallback: extraer URLs de imagen del texto crudo
-            for img_url in re.findall(
-                r'https://[^\s"\'\\<>]+(?:dw/image)[^\s"\'\\<>]*', script
-            ):
+        raw_styles = page.evaluate("""() => {
+            var els = document.querySelectorAll('[style]');
+            var result = [];
+            for (var i = 0; i < els.length; i++) {
+                var s = els[i].getAttribute('style') || '';
+                if (s.indexOf('background-image') !== -1 && s.indexOf('emea.acana.com') !== -1) {
+                    result.push(s);
+                }
+            }
+            return result;
+        }""")
+        for style in (raw_styles or []):
+            m = re.search(r'url\(["\']?(https://emea\.acana\.com[^"\')\s]+)["\']?\)', style)
+            if m:
+                urls.add(_normalize_img_url(m.group(1)))
+    except Exception:
+        pass
+
+    # 4. JSON-LD (schema.org Product) — buscar URLs en texto crudo de los scripts
+    try:
+        ld_texts = page.evaluate("""() => {
+            var scripts = document.querySelectorAll('script');
+            var result = [];
+            for (var i = 0; i < scripts.length; i++) {
+                var t = scripts[i].getAttribute('type') || '';
+                if (t === 'application/ld+json') {
+                    result.push(scripts[i].textContent || '');
+                }
+            }
+            return result;
+        }""")
+        for text in (ld_texts or []):
+            for img_url in re.findall(r'https://emea\.acana\.com/dw/image[^"\'<>\s\\]+', text):
                 urls.add(_normalize_img_url(img_url))
     except Exception:
         pass
 
-    # 5. Variables JS embebidas (SFCC product data en scripts inline)
+    # 5. Variables JS embebidas con URLs de imágenes Demandware
     try:
-        js_text: str = page.evaluate("""() => {
-            const out = [];
-            for (const s of document.querySelectorAll('script:not([src])')) {
-                const t = s.textContent || '';
-                if (t.includes('dw/image') || t.includes('demandware.net')) {
-                    out.push(t);
+        js_texts = page.evaluate("""() => {
+            var scripts = document.querySelectorAll('script');
+            var result = [];
+            for (var i = 0; i < scripts.length; i++) {
+                if (scripts[i].src) continue;
+                var t = scripts[i].textContent || '';
+                if (t.indexOf('dw/image') !== -1) {
+                    result.push(t);
                 }
             }
-            return out.join('\\n');
+            return result;
         }""")
-        for img_url in re.findall(
-            r'https://[^\s"\'\\<>]+(?:dw/image|demandware\.net)[^\s"\'\\<>]*',
-            js_text,
-        ):
-            if _is_product_img(img_url):
+        for text in (js_texts or []):
+            for img_url in re.findall(r'https://emea\.acana\.com/dw/image[^"\'<>\s\\]+', text):
                 urls.add(_normalize_img_url(img_url))
     except Exception:
         pass
 
     return list(urls)
-
-
-def _collect_product_urls(page, cat_url: str, cat_segment: str) -> set:
-    """Carga la categoría activando scroll/paginación y recoge las URLs de producto."""
-    product_urls: set[str] = set()
-
-    log.info(f"  Cargando: {cat_url}")
-    try:
-        page.goto(cat_url, timeout=45000, wait_until="domcontentloaded")
-        page.wait_for_timeout(4000)
-    except Exception as e:
-        log.warning(f"  Error cargando {cat_url}: {e}")
-        return product_urls
-
-    # Scroll progresivo + clic en "cargar más" hasta agotar productos
-    prev_count = 0
-    for attempt in range(8):
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(2000)
-
-        clicked = False
-        for selector in (
-            "button.load-more", ".btn-load-more", "[data-action='more']",
-            "a.show-more", ".show-more-button",
-            "button:has-text('Ver más')", "button:has-text('Load more')",
-            "button:has-text('Mostrar más')",
-        ):
-            try:
-                btn = page.query_selector(selector)
-                if btn and btn.is_visible():
-                    btn.click()
-                    page.wait_for_timeout(3000)
-                    log.info(f"    Cargados más productos (intento {attempt + 1})")
-                    clicked = True
-                    break
-            except Exception:
-                pass
-
-        # Contar productos actuales para detectar si ya no hay más
-        current_links = page.query_selector_all(f"a[href*='{cat_segment}'][href$='.html']")
-        if len(current_links) == prev_count and not clicked:
-            break
-        prev_count = len(current_links)
-
-    for link in page.query_selector_all("a[href]"):
-        href = link.get_attribute("href") or ""
-        if href and cat_segment in href and href.endswith(".html"):
-            full = href if href.startswith("http") else BASE_URL + href
-            product_urls.add(full.split("?")[0])
-
-    log.info(f"  → {len(product_urls)} productos en /{cat_segment}")
-    return product_urls
 
 
 # ─── Interfaz pública ─────────────────────────────────────────────────────────
@@ -239,25 +176,44 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
         page = ctx.new_page()
 
         for cat_url in CATEGORY_URLS:
-            category   = "cat" if "gatos" in cat_url else "dog"
+            category    = "cat" if "gatos" in cat_url else "dog"
             cat_segment = "para-gatos" if category == "cat" else "para-perros"
-            product_urls = _collect_product_urls(page, cat_url, cat_segment)
+
+            log.info(f"  Cargando: {cat_url}")
+            try:
+                page.goto(cat_url, timeout=45000, wait_until="domcontentloaded")
+                page.wait_for_timeout(3000)
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2000)
+            except Exception as e:
+                log.warning(f"  Error cargando {cat_url}: {e}")
+                continue
+
+            # Recoger enlaces de producto — filtrar en Python por cat_segment
+            product_urls: set = set()
+            try:
+                for link in page.query_selector_all("a[href]"):
+                    href = link.get_attribute("href") or ""
+                    if cat_segment in href and href.endswith(".html"):
+                        full = href if href.startswith("http") else BASE_URL + href
+                        product_urls.add(full.split("?")[0])
+            except Exception as e:
+                log.warning(f"  Error recogiendo enlaces: {e}")
+
+            log.info(f"  {len(product_urls)} productos en {category}")
 
             for prod_url in sorted(product_urls):
                 handle = prod_url.rstrip("/").split("/")[-1].replace(".html", "")
                 try:
                     page.goto(prod_url, timeout=45000, wait_until="domcontentloaded")
-                    page.wait_for_timeout(3000)
-
-                    # Scroll completo para activar lazy-load de imágenes
+                    page.wait_for_timeout(2000)
                     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     page.wait_for_timeout(1500)
                     page.evaluate("window.scrollTo(0, 0)")
-                    page.wait_for_timeout(1000)
+                    page.wait_for_timeout(500)
 
                     name_el = (
                         page.query_selector("h1.product-name")
-                        or page.query_selector("[itemprop='name']")
                         or page.query_selector("h1")
                         or page.query_selector(".product-name")
                     )
@@ -271,7 +227,7 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
                         "images": images,
                     }
                     log.info(f"    {handle}: {len(images)} imagen(es)")
-                    time.sleep(1.5)
+                    time.sleep(1)
                 except Exception as e:
                     log.warning(f"    Error en {prod_url}: {e}")
 
