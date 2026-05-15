@@ -122,12 +122,17 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
     # Fills-frame detection: si el fondo parece blanco pero el contenido ya
     # llena >85% del frame (foto de plato, lifestyle), no hay márgenes útiles
     # que quitar — tratar como sin padding para evitar recorte asimétrico.
+    # IMPORTANTE: solo aplica si autocrop eliminó un margen significativo (>3%
+    # del tamaño lineal). Si casi no eliminó nada, la imagen ya venía recortada
+    # al ras (ej. Amazon _AC_SL1500_) y sigue necesitando padding.
     already_cropped = False
     if use_padding and force_padding is None:
         trial = autocrop_white(composited)
         fill_w = trial.width  / composited.width
         fill_h = trial.height / composited.height
-        if fill_w > 0.85 and fill_h > 0.85:
+        removed_frac = ((composited.width - trial.width) +
+                        (composited.height - trial.height)) / (composited.width + composited.height)
+        if removed_frac > 0.03 and fill_w > 0.85 and fill_h > 0.85:
             log.info(f"    [fills-frame {fill_w:.0%}×{fill_h:.0%}] → sin padding")
             use_padding = False
         else:
