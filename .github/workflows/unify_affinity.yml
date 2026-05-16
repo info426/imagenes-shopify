@@ -1,0 +1,50 @@
+name: Unificar productos AFFINITY
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Simular sin aplicar cambios'
+        required: false
+        type: choice
+        options: ['true', 'false']
+        default: 'true'
+      group:
+        description: 'Grupo concreto (1-33, A-D) o vacío para todos'
+        required: false
+        default: ''
+
+jobs:
+  unify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests python-dotenv
+
+      - name: Ejecutar unificación
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          ARGS=""
+          [ "${{ github.event.inputs.dry_run }}" = "true" ] && ARGS="--dry-run"
+          [ -n "${{ github.event.inputs.group }}" ] && ARGS="$ARGS --group ${{ github.event.inputs.group }}"
+          python3 scripts/unify_affinity.py $ARGS 2>&1 | tee resultados/unify_affinity.log
+
+      - name: Subir log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unify-affinity-log
+          path: resultados/unify_affinity.log
+          retention-days: 7
