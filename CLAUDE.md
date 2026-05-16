@@ -137,6 +137,7 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Alpha Spirit | Alpha Spirit | Completado | — |
 | Applaws | Applaws | Completado | — |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
+| AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Scraper creado | web_y_amazon → marcas/affinity.py |
 | Virbac | Virbac | Pendiente backup | shopify_backup |
 | Alpha Spirit | Alpha Spirit | Pendiente backup | shopify_backup |
 | Churu | Churu | Pendiente backup | shopify_backup |
