@@ -84,37 +84,50 @@ def search_ddg_images(query: str, exclude_domain: str = "",
                       max_results: int = 5) -> list:
     """Busca imágenes de alta resolución en DuckDuckGo."""
     try:
-        from duckduckgo_search import DDGS
+        from ddgs import DDGS
     except ImportError:
-        log.warning("  [DDG] duckduckgo-search no instalado")
-        return []
+        try:
+            from duckduckgo_search import DDGS
+        except ImportError:
+            log.warning("  [DDG] Instala ddgs: pip install ddgs")
+            return []
 
     log.info(f"  [DDG] «{query}»")
+    hits = []
+    for attempt in range(3):
+        try:
+            with DDGS() as ddgs:
+                hits = list(ddgs.images(query, max_results=max_results * 4,
+                                        size="Large"))
+            break
+        except Exception as e:
+            wait = 3 * (2 ** attempt)  # 3s, 6s, 12s
+            if attempt < 2:
+                log.warning(f"  [DDG] Error (intento {attempt+1}/3): {e} — reintentando en {wait}s")
+                time.sleep(wait)
+            else:
+                log.warning(f"  [DDG] Error tras 3 intentos: {e}")
+                return []
+
     found = []
-    try:
-        with DDGS() as ddgs:
-            hits = list(ddgs.images(query, max_results=max_results * 4,
-                                    size="Large"))
-        for r in hits:
-            img_url = r.get("image", "")
-            if not img_url or (exclude_domain and exclude_domain in img_url):
-                continue
-            try:
-                raw, ext = download_raw(img_url)
-                ok, w, h = is_high_res(raw)
-                domain = img_url.split("/")[2] if img_url.startswith("http") else "?"
-                if ok:
-                    log.info(f"  [DDG] ✓ {domain}  {w}×{h}")
-                    found.append((raw, ext))
-                    if len(found) >= max_results:
-                        break
-                else:
-                    log.debug(f"  [DDG] baja res {w}×{h} ({domain})")
-            except Exception as e:
-                log.debug(f"  [DDG] {e}")
-            time.sleep(0.5)
-    except Exception as e:
-        log.warning(f"  [DDG] Error: {e}")
+    for r in hits:
+        img_url = r.get("image", "")
+        if not img_url or (exclude_domain and exclude_domain in img_url):
+            continue
+        try:
+            raw, ext = download_raw(img_url)
+            ok, w, h = is_high_res(raw)
+            domain = img_url.split("/")[2] if img_url.startswith("http") else "?"
+            if ok:
+                log.info(f"  [DDG] ✓ {domain}  {w}×{h}")
+                found.append((raw, ext))
+                if len(found) >= max_results:
+                    break
+            else:
+                log.debug(f"  [DDG] baja res {w}×{h} ({domain})")
+        except Exception as e:
+            log.debug(f"  [DDG] {e}")
+        time.sleep(0.5)
     return found
 
 
@@ -352,7 +365,9 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
                 stats["sin_match"] += 1
                 continue
             log.warning(f"  Sin match web (score={score:.2f}) — buscando en DDG directamente")
-            ddg_query = _clean_title_for_ddg(title)
+            ddg_query = (scraper.get_ddg_query(title)
+                         if hasattr(scraper, "get_ddg_query")
+                         else _clean_title_for_ddg(title))
             raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
             if not raw_images:
                 log.warning("  Sin resultados DDG — saltando")
@@ -379,7 +394,9 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
 
             if not raw_images and fuente == "web_y_amazon":
                 log.warning("  Sin imágenes web oficial — buscando en internet...")
-                ddg_query = _clean_title_for_ddg(title)
+                ddg_query = (scraper.get_ddg_query(title)
+                             if hasattr(scraper, "get_ddg_query")
+                             else _clean_title_for_ddg(title))
                 raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
 
         if not raw_images:

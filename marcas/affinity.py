@@ -1,14 +1,15 @@
 """
-Scraper para AFFINITY — agrupa 5 sub-marcas:
-  ADVANCE / ADVANCE VET  → advance-pet.com/es/
-  LIBRA                  → libra-petfood.com/es/
-  BREKKIES               → brekkies.es/
-  NATURAL TRAINER        → naturaltrainer.es/
+Scraper para AFFINITY — agrupa 6 sub-marcas:
+  ADVANCE / ADVANCE VET  → advance-affinity.com/es/es/
+  LIBRA                  → libra-affinity.com/es/es/
+  BREKKIES               → brekkies-affinity.com/es/es/
+  NATURAL TRAINER        → naturaltrainer.com/es/es/
   NATURE'S VARIETY       → naturesvariety.com/es/
 
 Interfaz estándar (requerida por core/process_brand.py):
   scrape_catalog(web_url, rebuild=False) -> dict
   find_best_match(shopify_title, catalog) -> (handle, score)
+  get_ddg_query(shopify_title) -> str
 """
 
 import json
@@ -27,45 +28,61 @@ MIN_SCORE    = 0.12
 
 BRAND_CONFIG = {
     "advance": {
-        "base": "https://www.advance-pet.com",
+        "base": "https://www.advance-affinity.com",
         "categories": [
-            "https://www.advance-pet.com/es/perro/",
-            "https://www.advance-pet.com/es/gato/",
+            "https://www.advance-affinity.com/es/es/perro",
+            "https://www.advance-affinity.com/es/es/gato",
         ],
-        "link_must_contain": ["/es/perro/", "/es/gato/"],
-        "link_must_not_contain": ["#", "javascript:", "mailto:"],
+        "link_must_contain": ["/comida-perro/", "/comida-gato/"],
+        "link_must_not_contain": ["veterinary", "consejos", "#", "javascript:", "mailto:"],
+        "min_segments": 5,
+        "link_require_html": True,
     },
     "advance_vet": {
-        "base": "https://www.advance-pet.com",
+        "base": "https://www.advance-affinity.com",
         "categories": [
-            "https://www.advance-pet.com/es/veterinaria/",
+            "https://www.advance-affinity.com/es/es/perro/dietas-veterinarias",
+            "https://www.advance-affinity.com/es/es/gato/dietas-veterinarias",
         ],
-        "link_must_contain": ["/es/veterinaria/"],
-        "link_must_not_contain": ["#", "javascript:", "mailto:"],
+        "link_must_contain": ["veterinary"],
+        "link_must_not_contain": ["#", "javascript:", "mailto:", "consejos"],
+        "min_segments": 5,
+        "link_require_html": True,
     },
     "libra": {
-        "base": "https://www.libra-petfood.com",
+        "base": "https://www.libra-affinity.com",
         "categories": [
-            "https://www.libra-petfood.com/es/",
+            "https://www.libra-affinity.com/es/es/comida-perro/",
+            "https://www.libra-affinity.com/es/es/comida-gato/",
         ],
-        "link_must_contain": ["/es/"],
-        "link_must_not_contain": ["#", "javascript:", "mailto:", "/es/$", "/contacto", "/sobre"],
+        "link_must_contain": ["/comida-perro/", "/comida-gato/"],
+        "link_must_not_contain": ["#", "javascript:", "mailto:", "/donde-comprar", "/legal", "/nutricion"],
+        "min_segments": 4,
+        "link_require_html": True,
     },
     "brekkies": {
-        "base": "https://www.brekkies.es",
+        "base": "https://brekkies-affinity.com",
         "categories": [
-            "https://www.brekkies.es/",
+            "https://brekkies-affinity.com/es/es/perro",
+            "https://brekkies-affinity.com/es/es/gato",
         ],
-        "link_must_contain": ["brekkies.es"],
-        "link_must_not_contain": ["#", "javascript:", "mailto:", "/contacto", "/sobre"],
+        "link_must_contain": ["/es/es/perro/", "/es/es/gato/"],
+        "link_must_not_contain": ["#", "javascript:", "mailto:", "/saber-mas/", "consejos"],
+        "min_segments": 4,
+        "link_require_html": True,
     },
     "natural_trainer": {
-        "base": "https://www.naturaltrainer.es",
+        "base": "https://www.naturaltrainer.com",
         "categories": [
-            "https://www.naturaltrainer.es/",
+            "https://www.naturaltrainer.com/es/es/perro/",
+            "https://www.naturaltrainer.com/es/es/gato/",
         ],
-        "link_must_contain": ["naturaltrainer.es"],
-        "link_must_not_contain": ["#", "javascript:", "mailto:", "/contacto", "/tienda", "/sobre"],
+        "link_must_contain": [],
+        "link_must_not_contain": ["javascript:", "mailto:", "/ingredientes", "/alimentacion-",
+                                   "/homepage", "/my-natural-trainer", "/legal", "/saber-mas",
+                                   "consejos", "/perro/", "/gato/"],
+        "min_segments": 3,
+        "link_require_html": True,
     },
     "natures_variety": {
         "base": "https://www.naturesvariety.com",
@@ -75,6 +92,8 @@ BRAND_CONFIG = {
         ],
         "link_must_contain": ["/es/perros/", "/es/gatos/"],
         "link_must_not_contain": ["#", "javascript:", "mailto:"],
+        "min_segments": 3,
+        "link_require_html": False,
     },
 }
 
@@ -93,7 +112,7 @@ def _detect_sub_brand(title: str) -> str:
     t = title.upper().strip()
     if t.startswith(("ADVANCE VET", "ADVANCE DIETS", "ADVANCE VETERINARY")):
         return "advance_vet"
-    if t.startswith("ADVANCE"):
+    if t.startswith(("ADVANCE", "AD ")):
         return "advance"
     if t.startswith("BREKKIES"):
         return "brekkies"
@@ -106,13 +125,43 @@ def _detect_sub_brand(title: str) -> str:
     return "unknown"
 
 
+# ─── DDG query builder ─────────────────────────────────────────────────────────
+
+_TITLE_NOISE = re.compile(r'\s*\((?:NDR|PV|NV|ONLINE)\)\s*', re.IGNORECASE)
+
+_BRAND_NAMES = {
+    "advance":       "Advance",
+    "advance_vet":   "Advance Veterinary Diets",
+    "libra":         "Libra",
+    "brekkies":      "Brekkies",
+    "natural_trainer": "Natural Trainer",
+    "natures_variety": "Nature's Variety",
+}
+
+
+def get_ddg_query(shopify_title: str) -> str:
+    """Builds an optimized DuckDuckGo image query for an AFFINITY product."""
+    clean = _TITLE_NOISE.sub(" ", shopify_title).strip()
+    sub_brand = _detect_sub_brand(shopify_title)
+
+    if sub_brand != "unknown":
+        brand_name = _BRAND_NAMES[sub_brand]
+        first_word = brand_name.split()[0].upper()
+        if not clean.upper().startswith(first_word):
+            clean = f"{brand_name} {clean}"
+    else:
+        # "AD " prefix is the AFFINITY abbreviation for Advance
+        if re.match(r'^AD\s', clean, re.IGNORECASE):
+            clean = "Advance " + clean[3:].strip()
+
+    return clean + " product image"
+
+
 # ─── Extracción de imágenes (genérica) ────────────────────────────────────────
 
 def _bump_resolution(url: str) -> str:
     """Intenta pedir la máxima resolución a CDNs comunes."""
-    # Shopify/Cloudinary: _{width}x → quitar para obtener original
     url_clean = re.sub(r'_\d+x(\d*)\.', '.', url)
-    # Añadir width grande si el CDN lo soporta (Demandware, Cloudinary)
     if "sw=" not in url_clean and "w=" not in url_clean:
         sep = "&" if "?" in url_clean else "?"
         url_clean = f"{url_clean}{sep}w=2000"
@@ -129,7 +178,6 @@ def _extract_images(page) -> list:
             src = el.get_attribute("src") or ""
             if not src or src.startswith("data:"):
                 continue
-            # Filtrar por ancho natural si disponible
             try:
                 w = page.evaluate("el => el.naturalWidth", el) or 0
                 if w > 0 and w < 200:
@@ -151,7 +199,6 @@ def _extract_images(page) -> list:
             srcset = el.get_attribute("srcset") or ""
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
-                # El último descriptor es el mayor
                 candidate = parts[-1].split()[0]
                 if candidate and not candidate.startswith("data:"):
                     full = candidate if candidate.startswith("http") else f"https:{candidate}"
@@ -179,7 +226,6 @@ def _extract_images(page) -> list:
         for text in (ld_texts or []):
             try:
                 data = json.loads(text)
-                # Product.image puede ser str o list
                 imgs = data.get("image", [])
                 if isinstance(imgs, str):
                     imgs = [imgs]
@@ -216,9 +262,11 @@ def _extract_images(page) -> list:
 
 def _find_product_links(page, config: dict) -> set:
     """Recoge hrefs de la página que parecen ser páginas de producto."""
-    base      = config["base"]
-    must_have = config.get("link_must_contain", [])
-    must_not  = config.get("link_must_not_contain", [])
+    base          = config["base"]
+    must_have     = config.get("link_must_contain", [])
+    must_not      = config.get("link_must_not_contain", [])
+    min_segs      = config.get("min_segments", 3)
+    require_html  = config.get("link_require_html", False)
 
     found: set = set()
     try:
@@ -227,21 +275,29 @@ def _find_product_links(page, config: dict) -> set:
             if not href:
                 continue
 
-            # Convertir a absoluta
+            # Convertir a absoluta y verificar dominio
             if href.startswith("/"):
                 href = base + href
-            elif not href.startswith("http"):
+            elif href.startswith("http"):
+                if not href.startswith(base):
+                    continue
+            else:
                 continue
 
-            # Filtros
+            # Filtro de extensión HTML (para sitios Affinity-platform)
+            if require_html and not href.split("?")[0].endswith(".html"):
+                continue
+
+            # Filtros de contenido
             if any(x in href for x in must_not):
                 continue
             if must_have and not any(x in href for x in must_have):
                 continue
-            # Excluir la propia página de categoría (sin segmento final)
+
+            # Mínimo de segmentos de ruta (evitar páginas de categoría cortas)
             path = href.rstrip("/").split("?")[0]
             segments = [s for s in path.split("/") if s]
-            if len(segments) < 3:
+            if len(segments) < min_segs:
                 continue
 
             found.add(href.split("?")[0])
@@ -262,7 +318,6 @@ def _scrape_brand(page, brand_key: str, config: dict) -> dict:
         try:
             page.goto(cat_url, timeout=45000, wait_until="domcontentloaded")
             page.wait_for_timeout(3000)
-            # Scroll para cargar lazy-load
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(2000)
             page.evaluate("window.scrollTo(0, 0)")
@@ -275,7 +330,6 @@ def _scrape_brand(page, brand_key: str, config: dict) -> dict:
         log.info(f"  [{brand_key}] {len(product_urls)} productos encontrados en {cat_url}")
 
         for prod_url in sorted(product_urls):
-            # Handle único: brand_key + slug de la URL
             slug = prod_url.rstrip("/").split("/")[-1].replace(".html", "")
             handle = f"{brand_key}__{slug}"
 
@@ -317,7 +371,7 @@ def _scrape_brand(page, brand_key: str, config: dict) -> dict:
 
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     """
-    Scrapea las 5 webs de AFFINITY con Playwright y construye un catálogo unificado.
+    Scrapea las 6 webs de AFFINITY con Playwright y construye un catálogo unificado.
     Devuelve: { handle: { name, url, brand, images: [url, ...] } }
     Cachea en resultados/affinity_catalog.json.
     El parámetro web_url se ignora (las URLs están hardcodeadas por sub-marca).
@@ -337,7 +391,8 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
         return {}
 
     catalog: dict = {}
-    log.info("Scraping catálogo AFFINITY con Playwright (5 sub-marcas)...")
+    n_brands = len(BRAND_CONFIG)
+    log.info(f"Scraping catálogo AFFINITY con Playwright ({n_brands} sub-marcas)...")
 
     with sync_playwright() as pw:
         browser = pw.chromium.launch(
@@ -350,6 +405,7 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
             locale="es-ES",
             viewport={"width": 1440, "height": 900},
             extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
+            ignore_https_errors=True,
         )
         page = ctx.new_page()
 
@@ -374,7 +430,6 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
 
 # ─── Matching ─────────────────────────────────────────────────────────────────
 
-# Sinónimos ES↔EN para que "POLLO" matchee con "CHICKEN", etc.
 _SYNONYMS: dict[str, set] = {
     "pollo":       {"chicken"},
     "chicken":     {"pollo"},
@@ -443,7 +498,7 @@ _SYNONYMS: dict[str, set] = {
 IGNORE_TOKENS = {
     "affinity", "advance", "libra", "brekkies", "naturaltrainer",
     "natural", "trainer", "natures", "variety", "nature",
-    "ndr", "pv", "ndr", "online",
+    "ndr", "pv", "nv", "online",
     "de", "el", "la", "los", "las", "con", "sin", "y",
     "kg", "gr", "g", "lb", "x", "ml",
     "a", "e", "o",
@@ -465,7 +520,6 @@ def _tokenize(text: str) -> set:
 
 
 def _expand_synonyms(tokens: set) -> set:
-    """Añade sinónimos a un conjunto de tokens."""
     expanded = set(tokens)
     for t in tokens:
         expanded |= _SYNONYMS.get(t, set())
@@ -484,7 +538,6 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     best_handle, best_score = None, 0.0
 
     for handle, entry in catalog.items():
-        # Filtrar por sub-marca cuando sea posible
         entry_brand = entry.get("brand", "")
         if sub_brand != "unknown" and entry_brand and entry_brand != sub_brand:
             continue
