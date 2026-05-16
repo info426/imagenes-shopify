@@ -1,50 +1,67 @@
-2026-05-15 23:41:25,396 [INFO] ============================================================
-2026-05-15 23:41:25,396 [INFO]   Vendor   : ACANA
-2026-05-15 23:41:25,396 [INFO]   Modo     : WEB_OFICIAL
-2026-05-15 23:41:25,396 [INFO]   Pipeline : standard
-2026-05-15 23:41:25,396 [INFO]   Padding  : auto
-2026-05-15 23:41:25,396 [INFO]   Web    : https://emea.acana.com/es-ES/
-2026-05-15 23:41:25,396 [INFO] ============================================================
-2026-05-15 23:41:25,833 [INFO] Token obtenido
-2026-05-15 23:41:25,904 [INFO] Scraping catálogo Acana con Playwright...
-2026-05-15 23:41:27,037 [INFO]   Cargando: https://emea.acana.com/es-ES/para-gatos
-2026-05-15 23:41:33,275 [INFO]   12 productos en cat
-2026-05-15 23:41:37,792 [INFO]     eu-aca-bountiful-catch-cat: 4 imagen(es)
-2026-05-15 23:41:43,538 [INFO]     eu-aca-first-feast-cat: 4 imagen(es)
-2026-05-15 23:41:49,032 [INFO]     eu-aca-grasslands-new-cat: 4 imagen(es)
-2026-05-15 23:41:54,453 [INFO]     eu-aca-highest-protein-indoor-cat: 4 imagen(es)
-2026-05-15 23:41:59,884 [INFO]     eu-aca-homestead-cat: 4 imagen(es)
-2026-05-15 23:42:05,400 [INFO]     eu-aca-indoor-entree-cat: 7 imagen(es)
-2026-05-15 23:42:10,817 [INFO]     eu-aca-pacifica-new-cat: 4 imagen(es)
-2026-05-15 23:42:16,221 [INFO]     eu-aca-wild-prairie-new-cat: 4 imagen(es)
-2026-05-15 23:42:21,672 [INFO]     eu-premium-pate-cat-lamb-recipe: 5 imagen(es)
-2026-05-15 23:42:27,092 [INFO]     eu-premium-pate-cat-salmon-recipe: 5 imagen(es)
-2026-05-15 23:42:32,522 [INFO]     eu-premium-pate-cat-tuna-recipe: 5 imagen(es)
-2026-05-15 23:42:38,023 [INFO]     eu-premium-pate-kitten-recipe: 5 imagen(es)
-2026-05-15 23:42:39,024 [INFO]   Cargando: https://emea.acana.com/es-ES/para-perros
-2026-05-15 23:42:44,741 [INFO]   12 productos en dog
-2026-05-15 23:42:49,199 [INFO]     eu-aca-adult-large: 6 imagen(es)
-2026-05-15 23:42:54,645 [INFO]     eu-aca-adult-small: 6 imagen(es)
-2026-05-15 23:43:00,106 [INFO]     eu-aca-adult: 7 imagen(es)
-2026-05-15 23:43:05,609 [INFO]     eu-aca-light-fit: 6 imagen(es)
-2026-05-15 23:43:11,068 [INFO]     eu-aca-puppy-junior: 6 imagen(es)
-2026-05-15 23:43:16,552 [INFO]     eu-aca-puppy-large: 6 imagen(es)
-2026-05-15 23:43:21,992 [INFO]     eu-aca-puppy-small: 6 imagen(es)
-2026-05-15 23:43:27,434 [INFO]     eu-aca-senior: 6 imagen(es)
-2026-05-15 23:43:32,882 [INFO]     eu-aca-singles-duck-new: 6 imagen(es)
-2026-05-15 23:43:38,329 [INFO]     eu-aca-singles-lamb-new: 6 imagen(es)
-2026-05-15 23:43:43,863 [INFO]     eu-aca-singles-pork-new: 6 imagen(es)
-2026-05-15 23:43:49,324 [INFO]     eu-aca-sport-agility: 6 imagen(es)
-2026-05-15 23:43:50,384 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
-2026-05-15 23:43:50,702 [INFO] 
-[1/1] ACANA CANINE ADULT REGIONALS RANCHLANDS PRAIRIE  (ID: 15509600665987)
-2026-05-15 23:43:50,704 [WARNING]   Sin match (score=0.11) — saltando
-2026-05-15 23:43:50,704 [INFO] 
+2026-05-16 00:07:53,999 [INFO] ============================================================
+2026-05-16 00:07:53,999 [INFO]   Vendor   : ACANA
+2026-05-16 00:07:53,999 [INFO]   Modo     : WEB_OFICIAL
+2026-05-16 00:07:53,999 [INFO]   Pipeline : standard
+2026-05-16 00:07:53,999 [INFO]   Padding  : auto
+2026-05-16 00:07:53,999 [INFO]   Web    : https://emea.acana.com/es-ES/para-gatos/eu-aca-first-feast-cat.html
+2026-05-16 00:07:53,999 [INFO] ============================================================
+2026-05-16 00:07:54,353 [INFO] Token obtenido
+2026-05-16 00:07:54,429 [INFO] Scraping catálogo Acana con Playwright...
+2026-05-16 00:07:54,965 [INFO]   Cargando: https://emea.acana.com/es-ES/para-gatos
+2026-05-16 00:08:00,969 [INFO]   12 productos en cat
+2026-05-16 00:08:05,348 [INFO]     eu-aca-bountiful-catch-cat: 4 imagen(es)
+2026-05-16 00:08:10,675 [INFO]     eu-aca-first-feast-cat: 4 imagen(es)
+2026-05-16 00:08:15,962 [INFO]     eu-aca-grasslands-new-cat: 4 imagen(es)
+2026-05-16 00:08:21,259 [INFO]     eu-aca-highest-protein-indoor-cat: 4 imagen(es)
+2026-05-16 00:08:26,579 [INFO]     eu-aca-homestead-cat: 4 imagen(es)
+2026-05-16 00:08:31,963 [INFO]     eu-aca-indoor-entree-cat: 7 imagen(es)
+2026-05-16 00:08:37,262 [INFO]     eu-aca-pacifica-new-cat: 4 imagen(es)
+2026-05-16 00:08:42,580 [INFO]     eu-aca-wild-prairie-new-cat: 4 imagen(es)
+2026-05-16 00:08:47,909 [INFO]     eu-premium-pate-cat-lamb-recipe: 5 imagen(es)
+2026-05-16 00:08:53,210 [INFO]     eu-premium-pate-cat-salmon-recipe: 5 imagen(es)
+2026-05-16 00:08:58,512 [INFO]     eu-premium-pate-cat-tuna-recipe: 5 imagen(es)
+2026-05-16 00:09:03,835 [INFO]     eu-premium-pate-kitten-recipe: 5 imagen(es)
+2026-05-16 00:09:04,836 [INFO]   Cargando: https://emea.acana.com/es-ES/para-perros
+2026-05-16 00:09:10,410 [INFO]   12 productos en dog
+2026-05-16 00:09:14,853 [INFO]     eu-aca-adult-large: 6 imagen(es)
+2026-05-16 00:09:20,200 [INFO]     eu-aca-adult-small: 6 imagen(es)
+2026-05-16 00:09:25,538 [INFO]     eu-aca-adult: 7 imagen(es)
+2026-05-16 00:09:30,876 [INFO]     eu-aca-light-fit: 6 imagen(es)
+2026-05-16 00:09:36,214 [INFO]     eu-aca-puppy-junior: 6 imagen(es)
+2026-05-16 00:09:41,557 [INFO]     eu-aca-puppy-large: 6 imagen(es)
+2026-05-16 00:09:46,904 [INFO]     eu-aca-puppy-small: 6 imagen(es)
+2026-05-16 00:09:52,232 [INFO]     eu-aca-senior: 6 imagen(es)
+2026-05-16 00:09:57,581 [INFO]     eu-aca-singles-duck-new: 6 imagen(es)
+2026-05-16 00:10:02,906 [INFO]     eu-aca-singles-lamb-new: 6 imagen(es)
+2026-05-16 00:10:08,271 [INFO]     eu-aca-singles-pork-new: 6 imagen(es)
+2026-05-16 00:10:13,609 [INFO]     eu-aca-sport-agility: 6 imagen(es)
+2026-05-16 00:10:14,666 [INFO] Catálogo guardado: 24 productos → resultados/acana_catalog.json
+2026-05-16 00:10:14,897 [INFO] 
+[1/1] ACANA FELINE KITTEN FIRST FEAST  (ID: 15509603385731)
+2026-05-16 00:10:14,899 [INFO]   Match: eu-aca-first-feast-cat  (score=0.25, 4 imgs)
+2026-05-16 00:10:21,434 [INFO]   Descargada: ACANA Kitten First Feast Chicken with Herring Front Right 1.8kg EMEA APAC.png  2000×2000
+2026-05-16 00:10:21,544 [WARNING]   Error descargando: 400 Client Error: Bad Request for url: https://emea.acana.com/dw/image/v2/BFDW_PRD/on/demandware.static/-/Sites-acana-eu-master-catalog/default/dwa016adb6/ACANA?sw=2000&q=100
+2026-05-16 00:10:21,615 [WARNING]   Baja res 227×168 — omitida: acana-wholesome-grains.png
+2026-05-16 00:10:27,159 [INFO]   Descargada: ACANA Kitten First Feast Chicken with Herring Back 1.8kg EMEA APAC.png  2000×2000
+2026-05-16 00:10:27,160 [INFO]   Imagen 1: RGBA (2000, 2000)
+2026-05-16 00:10:27,260 [INFO]     [alpha] 62% transparente
+2026-05-16 00:10:27,298 [INFO]     [bg] 10000/10000 (100%)
+2026-05-16 00:10:27,326 [INFO]     [autocrop] (2000, 2000) → (1195, 1582)
+2026-05-16 00:10:27,326 [INFO]     [padding 5%]
+2026-05-16 00:10:27,380 [INFO]   Imagen 2: RGBA (2000, 2000)
+2026-05-16 00:10:27,477 [INFO]     [alpha] 61% transparente
+2026-05-16 00:10:27,511 [INFO]     [bg] 10000/10000 (100%)
+2026-05-16 00:10:27,536 [INFO]     [autocrop] (2000, 2000) → (1197, 1539)
+2026-05-16 00:10:27,537 [INFO]     [padding 5%]
+2026-05-16 00:10:27,800 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-05-16 00:10:30,316 [INFO]   ✓ 1/2 subida  [acana-feline-kitten-first-feast_1.webp]
+2026-05-16 00:10:33,644 [INFO]   ✓ 2/2 subida  [acana-feline-kitten-first-feast_2.webp]
+2026-05-16 00:10:35,144 [INFO] 
 ============================================================
-2026-05-15 23:43:50,704 [INFO] RESUMEN
-2026-05-15 23:43:50,704 [INFO] ============================================================
-2026-05-15 23:43:50,704 [INFO]   total         : 1
-2026-05-15 23:43:50,704 [INFO]   ok            : 0
-2026-05-15 23:43:50,704 [INFO]   sin_match     : 1
-2026-05-15 23:43:50,704 [INFO]   sin_imagen    : 0
-2026-05-15 23:43:50,704 [INFO]   errores       : 0
+2026-05-16 00:10:35,144 [INFO] RESUMEN
+2026-05-16 00:10:35,144 [INFO] ============================================================
+2026-05-16 00:10:35,145 [INFO]   total         : 1
+2026-05-16 00:10:35,145 [INFO]   ok            : 1
+2026-05-16 00:10:35,145 [INFO]   sin_match     : 0
+2026-05-16 00:10:35,145 [INFO]   sin_imagen    : 0
+2026-05-16 00:10:35,145 [INFO]   errores       : 0
