@@ -296,6 +296,15 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
 
 # ─── Modo web_oficial / web_y_amazon ──────────────────────────────────────────
 
+# Marcadores internos que degradan las búsquedas DDG
+_TITLE_NOISE = re.compile(r'\s*\((?:NDR|PV|NV|ONLINE)\)\s*', re.IGNORECASE)
+
+
+def _clean_title_for_ddg(title: str) -> str:
+    """Limpia el título Shopify para usarlo como query DDG (elimina marcadores internos)."""
+    return _TITLE_NOISE.sub(" ", title).strip() + " product image"
+
+
 def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
             rebuild: bool, product_id: int = None, only_ids: set = None):
     """Scrapea el catálogo web del fabricante, procesa y sube a Shopify."""
@@ -311,8 +320,10 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     RESULTS_DIR.mkdir(exist_ok=True)
     catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
     if not catalog:
-        log.error("Catálogo vacío — revisa el scraping")
-        sys.exit(1)
+        if fuente != "web_y_amazon":
+            log.error("Catálogo vacío — revisa el scraping")
+            sys.exit(1)
+        log.warning("Catálogo vacío — se usará DDG para todos los productos")
 
     if product_id:
         products = [api.get_product(product_id)]
@@ -333,35 +344,43 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
 
         handle, score = scraper.find_best_match(title, catalog)
+
+        # Sin match en catálogo web: si es web_y_amazon, intentar DDG directamente
         if handle is None or score < 0.10:
-            log.warning(f"  Sin match (score={score:.2f}) — saltando")
-            stats["sin_match"] += 1
-            continue
+            if fuente != "web_y_amazon":
+                log.warning(f"  Sin match (score={score:.2f}) — saltando")
+                stats["sin_match"] += 1
+                continue
+            log.warning(f"  Sin match web (score={score:.2f}) — buscando en DDG directamente")
+            ddg_query = _clean_title_for_ddg(title)
+            raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
+            if not raw_images:
+                log.warning("  Sin resultados DDG — saltando")
+                stats["sin_match"] += 1
+                continue
+        else:
+            entry = catalog[handle]
+            log.info(f"  Match: {handle}  (score={score:.2f}, "
+                     f"{len(entry.get('images', []))} imgs)")
 
-        entry = catalog[handle]
-        log.info(f"  Match: {handle}  (score={score:.2f}, "
-                 f"{len(entry.get('images', []))} imgs)")
+            raw_images = []
+            for img_url in entry.get("images", []):
+                try:
+                    raw, ext = download_raw(img_url)
+                    ok, w, h = is_high_res(raw)
+                    fname = img_url.split("/")[-1].split("?")[0]
+                    if ok:
+                        raw_images.append((raw, ext))
+                        log.info(f"  Descargada: {fname}  {w}×{h}")
+                    else:
+                        log.warning(f"  Baja res {w}×{h} — omitida: {fname}")
+                except Exception as e:
+                    log.warning(f"  Error descargando: {e}")
 
-        raw_images = []
-        for img_url in entry.get("images", []):
-            try:
-                raw, ext = download_raw(img_url)
-                ok, w, h = is_high_res(raw)
-                fname = img_url.split("/")[-1].split("?")[0]
-                if ok:
-                    raw_images.append((raw, ext))
-                    log.info(f"  Descargada: {fname}  {w}×{h}")
-                else:
-                    log.warning(f"  Baja res {w}×{h} — omitida: {fname}")
-            except Exception as e:
-                log.warning(f"  Error descargando: {e}")
-
-        if not raw_images and fuente == "web_y_amazon":
-            log.warning("  Sin imágenes web oficial — buscando en internet...")
-            raw_images = search_ddg_images(
-                f"{vendor} {title} product",
-                exclude_domain=exclude_domain,
-            )
+            if not raw_images and fuente == "web_y_amazon":
+                log.warning("  Sin imágenes web oficial — buscando en internet...")
+                ddg_query = _clean_title_for_ddg(title)
+                raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
 
         if not raw_images:
             log.warning("  Sin imágenes de alta resolución — saltando")
