@@ -1,0 +1,9 @@
+2026-05-16 15:54:16,610 [INFO] ============================================================
+2026-05-16 15:54:16,610 [INFO]   Vendor   : AFFINITY
+2026-05-16 15:54:16,610 [INFO]   Modo     : WEB_Y_AMAZON
+2026-05-16 15:54:16,610 [INFO]   Pipeline : standard
+2026-05-16 15:54:16,610 [INFO]   Padding  : auto
+2026-05-16 15:54:16,610 [INFO]   Web    : libra-affinity.com
+2026-05-16 15:54:16,610 [INFO] ============================================================
+2026-05-16 15:54:17,125 [INFO] Token obtenido
+2026-05-16 15:54:17,126 [ERROR] No existe scraper para 'AFFINITY'. Crea marcas/affinity.py con scrape_catalog() y find_best_match().
