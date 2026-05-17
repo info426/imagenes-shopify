@@ -168,8 +168,9 @@ def _print_stats(stats: dict):
 
 # ─── Modo backup ──────────────────────────────────────────────────────────────
 
-def run_backup(api: ShopifyAPI, vendor: str):
+def run_backup(api: ShopifyAPI, vendor: str, force: bool = False):
     """Descarga todas las imágenes del vendor de Shopify a backups/<slug>/."""
+    import shutil
     slug = vendor_slug(vendor)
     backup_root = BACKUPS_DIR / slug
     backup_root.mkdir(parents=True, exist_ok=True)
@@ -192,9 +193,12 @@ def run_backup(api: ShopifyAPI, vendor: str):
         folder = backup_root / str(pid)
         if folder.exists() and any(f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
                                    for f in folder.iterdir()):
-            log.info(f"  [{pid}] {title[:50]} — backup existente, saltando")
-            already += 1
-            continue
+            if not force:
+                log.info(f"  [{pid}] {title[:50]} — backup existente, saltando")
+                already += 1
+                continue
+            shutil.rmtree(folder)
+            log.info(f"  [{pid}] {title[:50]} — backup anterior eliminado (force)")
 
         folder.mkdir(exist_ok=True)
 
@@ -436,6 +440,8 @@ def main():
     parser.add_argument("--only-ids",        default="")
     parser.add_argument("--rebuild-catalog", action="store_true")
     parser.add_argument("--backup",          action="store_true")
+    parser.add_argument("--force-backup",    action="store_true",
+                        help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
                         choices=["standard", "webp_only"],
                         default="standard")
@@ -470,7 +476,7 @@ def main():
             only_ids |= {int(x.strip()) for x in raw.split(",") if x.strip()}
 
     if args.backup:
-        run_backup(api, args.vendor)
+        run_backup(api, args.vendor, force=args.force_backup)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)

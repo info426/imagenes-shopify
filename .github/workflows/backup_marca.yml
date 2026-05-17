@@ -6,6 +6,12 @@ on:
       vendor:
         description: 'Vendor exacto en Shopify (ej: VIRBAC, CHURU, FARMINA ND)'
         required: true
+      force_backup:
+        description: 'Sobreescribir backups existentes'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
 
 jobs:
   backup:
@@ -35,9 +41,11 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
+          FORCE=""
+          [ "${{ github.event.inputs.force_backup }}" = "true" ] && FORCE="--force-backup"
           python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
-            --backup
+            --backup $FORCE
 
       - name: Guardar backup con Git LFS
         run: |
