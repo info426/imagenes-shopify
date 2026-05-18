@@ -1,0 +1,4687 @@
+[
+  {
+    "id": 15509672296835,
+    "title": "CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G",
+    "handle": "calibra-cat-adult-pouch-multipak-caja-12x100g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012350851,
+        "title": "Default Title",
+        "sku": "8594062084860",
+        "barcode": "8594062084860",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672395139,
+    "title": "CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR",
+    "handle": "calibra-cat-adult-pouch-pato-pollo-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012416387,
+        "title": "Default Title",
+        "sku": "8594062085591",
+        "barcode": "8594062085591",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672460675,
+    "title": "CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR",
+    "handle": "calibra-cat-adult-pouch-trucha-salmon-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012481923,
+        "title": "Default Title",
+        "sku": "8594062085584",
+        "barcode": "8594062085584",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672526211,
+    "title": "CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR",
+    "handle": "calibra-cat-kitten-pouch-multipack-caja-12x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012547459,
+        "title": "Default Title",
+        "sku": "8594062084877",
+        "barcode": "8594062084877",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672558979,
+    "title": "CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR",
+    "handle": "calibra-cat-kitten-pouch-pavo-pollo-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012580227,
+        "title": "Default Title",
+        "sku": "8594062085607",
+        "barcode": "8594062085607",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672624515,
+    "title": "CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR",
+    "handle": "calibra-cat-kitten-pouch-salmon-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012645763,
+        "title": "Default Title",
+        "sku": "8594062085676",
+        "barcode": "8594062085676",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672755587,
+    "title": "CALIBRA CAT LIFE ADULT ARENQUE",
+    "handle": "calibra-cat-life-adult-arenque-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974012744067,
+        "title": "6KG",
+        "sku": "8595706700382",
+        "barcode": "8595706700382",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "50.38",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830884704643,
+        "title": "1,5KG",
+        "sku": "8595706700375",
+        "barcode": "8595706700375",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.32",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672853891,
+    "title": "CALIBRA CAT LIFE ADULT CORDERO",
+    "handle": "calibra-cat-life-adult-cordero-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974012842371,
+        "title": "6KG",
+        "sku": "8595706700429",
+        "barcode": "8595706700429",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "50.43",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830886179203,
+        "title": "1,5KG",
+        "sku": "8595706700412",
+        "barcode": "8595706700412",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.15",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672886659,
+    "title": "CALIBRA CAT LIFE ADULT POLLO 6KG",
+    "handle": "calibra-cat-life-adult-pollo-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012907907,
+        "title": "Default Title",
+        "sku": "8595706700405",
+        "barcode": "8595706700405",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.43",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509672919427,
+    "title": "CALIBRA CAT LIFE ESTERILIZADO POLLO 60GR FORMATO PRUEBA NDR",
+    "handle": "calibra-cat-life-esterilizado-pollo-60gr-formato-prueba-ndr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974012940675,
+        "title": "Default Title",
+        "sku": "8595706701075",
+        "barcode": "8595706701075",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "6.01",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673083267,
+    "title": "CALIBRA CAT LIFE KITTEN POLLO",
+    "handle": "calibra-cat-life-kitten-pollo-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974013137283,
+        "title": "6KG",
+        "sku": "8595706700443",
+        "barcode": "8595706700443",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "46.69",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830886932867,
+        "title": "1,5KG",
+        "sku": "8595706700436",
+        "barcode": "8595706700436",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.45",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673148803,
+    "title": "CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR",
+    "handle": "calibra-cat-life-lata-adult-pollo-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013202819,
+        "title": "Default Title",
+        "sku": "8595706700122",
+        "barcode": "8595706700122",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673181571,
+    "title": "CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR",
+    "handle": "calibra-cat-life-lata-adult-salmon-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013235587,
+        "title": "Default Title",
+        "sku": "8595706700146",
+        "barcode": "8595706700146",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673279875,
+    "title": "CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR",
+    "handle": "calibra-cat-life-lata-adult-ternera-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013301123,
+        "title": "Default Title",
+        "sku": "8595706700139",
+        "barcode": "8595706700139",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.35",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673312643,
+    "title": "CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR",
+    "handle": "calibra-cat-life-lata-kitten-pollo-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013366659,
+        "title": "Default Title",
+        "sku": "8595706700115",
+        "barcode": "8595706700115",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.35",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673345411,
+    "title": "CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR",
+    "handle": "calibra-cat-life-lata-sensitive-conejo-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013399427,
+        "title": "Default Title",
+        "sku": "8595706700153",
+        "barcode": "8595706700153",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673443715,
+    "title": "CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR",
+    "handle": "calibra-cat-life-lata-sensitive-cordero-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013464963,
+        "title": "Default Title",
+        "sku": "8595706700160",
+        "barcode": "8595706700160",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673476483,
+    "title": "CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR",
+    "handle": "calibra-cat-life-lata-sterilised-pato-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013563267,
+        "title": "Default Title",
+        "sku": "8595706700184",
+        "barcode": "8595706700184",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673509251,
+    "title": "CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR",
+    "handle": "calibra-cat-life-lata-sterilised-pavo-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013596035,
+        "title": "Default Title",
+        "sku": "8595706700177",
+        "barcode": "8595706700177",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673574787,
+    "title": "CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-adult-buey-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013628803,
+        "title": "Default Title",
+        "sku": "8595706700917",
+        "barcode": "8595706700917",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673673091,
+    "title": "CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR",
+    "handle": "calibra-cat-life-pouch-adult-multipack-12x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013694339,
+        "title": "Default Title",
+        "sku": "8595706700993",
+        "barcode": "8595706700993",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.48",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673705859,
+    "title": "CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-adult-pato-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013759875,
+        "title": "Default Title",
+        "sku": "8595706700924",
+        "barcode": "8595706700924",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673738627,
+    "title": "CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-adult-pavo-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013792643,
+        "title": "Default Title",
+        "sku": "8595706700931",
+        "barcode": "8595706700931",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673804163,
+    "title": "CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-adult-ternera-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013858179,
+        "title": "Default Title",
+        "sku": "8595706700948",
+        "barcode": "8595706700948",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673836931,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR",
+    "handle": "calibra-cat-life-pouch-kitten-multipack-12x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013923715,
+        "title": "Default Title",
+        "sku": "8595706701006",
+        "barcode": "8595706701006",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.48",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509673869699,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-kitten-pavo-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974013956483,
+        "title": "Default Title",
+        "sku": "8595706700962",
+        "barcode": "8595706700962",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674000771,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-kitten-salmon-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014087555,
+        "title": "Default Title",
+        "sku": "8595706700955",
+        "barcode": "8595706700955",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674033539,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR",
+    "handle": "calibra-cat-life-pouch-sterilised-multipack-12x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014153091,
+        "title": "Default Title",
+        "sku": "8595706701013",
+        "barcode": "8595706701013",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.48",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674066307,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-sterilised-pato-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014185859,
+        "title": "Default Title",
+        "sku": "8595706700979",
+        "barcode": "8595706700979",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674099075,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR",
+    "handle": "calibra-cat-life-pouch-sterilised-salmon-en-salsa-28x85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014218627,
+        "title": "Default Title",
+        "sku": "8595706700986",
+        "barcode": "8595706700986",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "33.19",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674230147,
+    "title": "CALIBRA CAT LIFE STERILISED POLLO",
+    "handle": "calibra-cat-life-sterilised-pollo-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974014382467,
+        "title": "6KG",
+        "sku": "8595706700481",
+        "barcode": "8595706700481",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "44.18",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830887817603,
+        "title": "1,5KG",
+        "sku": "8595706700474",
+        "barcode": "8595706700474",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.96",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674393987,
+    "title": "CALIBRA CAT LIFE STERILISED TERNERA",
+    "handle": "calibra-cat-life-sterilised-ternera-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974014579075,
+        "title": "6KG",
+        "sku": "8595706700467",
+        "barcode": "8595706700467",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "48.36",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830888636803,
+        "title": "1,5KG",
+        "sku": "8595706700450",
+        "barcode": "8595706700450",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.15",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674426755,
+    "title": "CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR",
+    "handle": "calibra-cat-pouch-adult-cordero-pollo-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014644611,
+        "title": "Default Title",
+        "sku": "8594062085577",
+        "barcode": "8594062085577",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674459523,
+    "title": "CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR",
+    "handle": "calibra-cat-pouch-pollo-ternera-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974014677379,
+        "title": "Default Title",
+        "sku": "8594062085560",
+        "barcode": "8594062085560",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674525059,
+    "title": "CALIBRA CAT PREMIUM ADULT CARNE DE AVE",
+    "handle": "calibra-cat-premium-adult-carne-de-ave-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974014742915,
+        "title": "10KG",
+        "sku": "8595706703307",
+        "barcode": "8595706703307",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.04",
+        "inventory_quantity": 0,
+        "option1": "10KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830891716995,
+        "title": "2KG",
+        "sku": "8595706703314",
+        "barcode": "8595706703314",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.71",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674688899,
+    "title": "CALIBRA CAT PREMIUM ADULT CARNE VACUNO",
+    "handle": "calibra-cat-premium-adult-carne-vacuno-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974014906755,
+        "title": "10KG",
+        "sku": "8595706703284",
+        "barcode": "8595706703284",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.04",
+        "inventory_quantity": 0,
+        "option1": "10KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830892470659,
+        "title": "2KG",
+        "sku": "8595706703291",
+        "barcode": "8595706703291",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.71",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509674885507,
+    "title": "CALIBRA CAT PREMIUM ADULT PAVO",
+    "handle": "calibra-cat-premium-adult-pavo-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974015037827,
+        "title": "10KG",
+        "sku": "8595706703321",
+        "barcode": "8595706703321",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.04",
+        "inventory_quantity": 0,
+        "option1": "10KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830893322627,
+        "title": "2KG",
+        "sku": "8595706703338",
+        "barcode": "8595706703338",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.71",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675016579,
+    "title": "CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE",
+    "handle": "calibra-cat-premium-esterlizado-carne-de-ave-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974015168899,
+        "title": "10KG",
+        "sku": "8595706703369",
+        "barcode": "8595706703369",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.04",
+        "inventory_quantity": 0,
+        "option1": "10KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830895288707,
+        "title": "2KG",
+        "sku": "8595706703376",
+        "barcode": "8595706703376",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.71",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675213187,
+    "title": "CALIBRA CAT PREMIUM KITTEN CARNE DE AVE",
+    "handle": "calibra-cat-premium-kitten-carne-de-ave-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974015398275,
+        "title": "10KG",
+        "sku": "8595706703345",
+        "barcode": "8595706703345",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "46.12",
+        "inventory_quantity": 0,
+        "option1": "10KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830896501123,
+        "title": "2KG",
+        "sku": "8595706703352",
+        "barcode": "8595706703352",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.93",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675311491,
+    "title": "CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR",
+    "handle": "calibra-cat-sterilised-pouch-higado-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974015529347,
+        "title": "Default Title",
+        "sku": "8594062085645",
+        "barcode": "8594062085645",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675377027,
+    "title": "CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR",
+    "handle": "calibra-cat-sterilised-pouch-multipack-caja-12x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974015627651,
+        "title": "Default Title",
+        "sku": "8594062084884",
+        "barcode": "8594062084884",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675409795,
+    "title": "CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR",
+    "handle": "calibra-cat-sterilised-pouch-salmon-caja-24x100gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974015660419,
+        "title": "Default Title",
+        "sku": "8594062085669",
+        "barcode": "8594062085669",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "24.93",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675442563,
+    "title": "CALIBRA DOG EXPERT NUTRITION ENERGY 12KG",
+    "handle": "calibra-dog-expert-nutrition-energy-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974015693187,
+        "title": "Default Title",
+        "sku": "8594062086727",
+        "barcode": "8594062086727",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "65.63",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675508099,
+    "title": "CALIBRA DOG EXPERT NUTRITION LIGHT",
+    "handle": "calibra-dog-expert-nutrition-light-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974015758723,
+        "title": "12KG",
+        "sku": "8594062086741",
+        "barcode": "8594062086741",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "61.83",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830897648003,
+        "title": "2KG",
+        "sku": "8594062086734",
+        "barcode": "8594062086734",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.50",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675671939,
+    "title": "CALIBRA DOG EXPERT NUTRITION MOBILITY",
+    "handle": "calibra-dog-expert-nutrition-mobility-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974015955331,
+        "title": "12KG",
+        "sku": "8594062086765",
+        "barcode": "8594062086765",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "63.89",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830905938307,
+        "title": "2KG",
+        "sku": "8594062086758",
+        "barcode": "8594062086758",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.88",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675835779,
+    "title": "CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG",
+    "handle": "calibra-dog-expert-nutrition-neutered-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016381315,
+        "title": "Default Title",
+        "sku": "8594062086833",
+        "barcode": "8594062086833",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.87",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675868547,
+    "title": "CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON",
+    "handle": "calibra-dog-expert-nutrition-sensitive-salmon-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974016414083,
+        "title": "12KG",
+        "sku": "8594062086802",
+        "barcode": "8594062086802",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "75.69",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830906823043,
+        "title": "2KG",
+        "sku": "8594062086796",
+        "barcode": "8594062086796",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.83",
+        "inventory_quantity": 0,
+        "option1": "2KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509675966851,
+    "title": "CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON 12KG+2KG",
+    "handle": "calibra-dog-expert-nutrition-sensitive-salmon-12kg-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016512387,
+        "title": "Default Title",
+        "sku": "8594062089568",
+        "barcode": "8594062089568",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "75.69",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676065155,
+    "title": "CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-adult-cerdo-y-venado-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016643459,
+        "title": "Default Title",
+        "sku": "8594062089483",
+        "barcode": "8594062089483",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676130691,
+    "title": "CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-adult-jabali-y-ternera-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016708995,
+        "title": "Default Title",
+        "sku": "8594062089490",
+        "barcode": "8594062089490",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676163459,
+    "title": "CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-adult-pollo-y-pato-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016774531,
+        "title": "Default Title",
+        "sku": "8594062089476",
+        "barcode": "8594062089476",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676228995,
+    "title": "CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-adult-salmon-y-pavo-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016840067,
+        "title": "Default Title",
+        "sku": "8594062089506",
+        "barcode": "8594062089506",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676294531,
+    "title": "CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR",
+    "handle": "calibra-dog-gf-verve-adult-small-pato-y-pavo-caja-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016905603,
+        "title": "Default Title",
+        "sku": "8594062089537",
+        "barcode": "8594062089537",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.67",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676327299,
+    "title": "CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR",
+    "handle": "calibra-dog-gf-verve-adult-small-ternera-pollo-caja-6x200gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974016971139,
+        "title": "Default Title",
+        "sku": "8594062089520",
+        "barcode": "8594062089520",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.67",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676392835,
+    "title": "CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-junior-pavo-y-cordero-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017036675,
+        "title": "Default Title",
+        "sku": "8594062089469",
+        "barcode": "8594062089469",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676425603,
+    "title": "CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR",
+    "handle": "calibra-dog-gf-verve-senior-pavo-y-cordero-caja-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017069443,
+        "title": "Default Title",
+        "sku": "8594062089513",
+        "barcode": "8594062089513",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.07",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676523907,
+    "title": "CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG",
+    "handle": "calibra-dog-life-adult-large-breed-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017134979,
+        "title": "Default Title",
+        "sku": "8594062086666",
+        "barcode": "8594062086666",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "69.82",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676589443,
+    "title": "CALIBRA DOG LIFE ADULT LARGE BREED POLLO 12KG",
+    "handle": "calibra-dog-life-adult-large-breed-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017266051,
+        "title": "Default Title",
+        "sku": "8594062086642",
+        "barcode": "8594062086642",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "55.63",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676654979,
+    "title": "CALIBRA DOG LIFE ADULT LARGE BREED POLLO 12KG+2KG",
+    "handle": "calibra-dog-life-adult-large-breed-pollo-12kg-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017331587,
+        "title": "Default Title",
+        "sku": "8594062089544",
+        "barcode": "8594062089544",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "55.63",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676720515,
+    "title": "CALIBRA DOG LIFE ADULT LARGE FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-adult-large-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017397123,
+        "title": "Default Title",
+        "sku": "8595706701235",
+        "barcode": "8595706701235",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "68.62",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676786051,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO",
+    "handle": "calibra-dog-life-adult-medium-breed-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974017495427,
+        "title": "12KG",
+        "sku": "8594062086628",
+        "barcode": "8594062086628",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "69.17",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830908166531,
+        "title": "2,5KG",
+        "sku": "8594062086611",
+        "barcode": "8594062086611",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "20.26",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509676949891,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO",
+    "handle": "calibra-dog-life-adult-medium-breed-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974017626499,
+        "title": "12KG",
+        "sku": "8594062086604",
+        "barcode": "8594062086604",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "55.96",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830909247875,
+        "title": "2,5KG",
+        "sku": "8594062086598",
+        "barcode": "8594062086598",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.62",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677015427,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO 12KG+2KG",
+    "handle": "calibra-dog-life-adult-medium-breed-pollo-12kg-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017692035,
+        "title": "Default Title",
+        "sku": "8594062089551",
+        "barcode": "8594062089551",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "55.91",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677146499,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-adult-medium-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974017855875,
+        "title": "Default Title",
+        "sku": "8595706701211",
+        "barcode": "8595706701211",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "68.62",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677310339,
+    "title": "CALIBRA DOG LIFE ADULT SMALL BREED CORDERO",
+    "handle": "calibra-dog-life-adult-small-breed-cordero-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974018118019,
+        "title": "6KG",
+        "sku": "8594062086581",
+        "barcode": "8594062086581",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "39.18",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830910886275,
+        "title": "1,5KG",
+        "sku": "8594062086574",
+        "barcode": "8594062086574",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.26",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677408643,
+    "title": "CALIBRA DOG LIFE ADULT SMALL BREED POLLO",
+    "handle": "calibra-dog-life-adult-small-breed-pollo-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974018183555,
+        "title": "6KG",
+        "sku": "8594062086567",
+        "barcode": "8594062086567",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "35.16",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830911213955,
+        "title": "1,5KG",
+        "sku": "8594062086550",
+        "barcode": "8594062086550",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.95",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677474179,
+    "title": "CALIBRA DOG LIFE ADULT SMALL FRESH BEEF 6KG",
+    "handle": "calibra-dog-life-adult-small-fresh-beef-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018249091,
+        "title": "Default Title",
+        "sku": "8595706701389",
+        "barcode": "8595706701389",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "37.06",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677539715,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG",
+    "handle": "calibra-dog-life-junior-large-breed-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018347395,
+        "title": "Default Title",
+        "sku": "8594062086543",
+        "barcode": "8594062086543",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "73.84",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677638019,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG",
+    "handle": "calibra-dog-life-junior-large-breed-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018412931,
+        "title": "Default Title",
+        "sku": "8594062086529",
+        "barcode": "8594062086529",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "59.92",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677703555,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-junior-large-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018478467,
+        "title": "Default Title",
+        "sku": "8595706701198",
+        "barcode": "8595706701198",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "72.10",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677736323,
+    "title": "CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO",
+    "handle": "calibra-dog-life-junior-medium-breed-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974018544003,
+        "title": "12KG",
+        "sku": "8594062086482",
+        "barcode": "8594062086482",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "58.57",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830913802627,
+        "title": "2,5KG",
+        "sku": "8594062086475",
+        "barcode": "8594062086475",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.70",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677834627,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-junior-small-medium-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018642307,
+        "title": "Default Title",
+        "sku": "8595706701174",
+        "barcode": "8595706701174",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "72.10",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677932931,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG",
+    "handle": "calibra-dog-life-junior-small-breed-pollo-1-5kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018740611,
+        "title": "Default Title",
+        "sku": "8594062086451",
+        "barcode": "8594062086451",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "14.95",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509677965699,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO",
+    "handle": "calibra-dog-life-junior-small-medium-breed-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974018806147,
+        "title": "12KG",
+        "sku": "8594062086505",
+        "barcode": "8594062086505",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "73.84",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830914883971,
+        "title": "2,5KG",
+        "sku": "8594062086499",
+        "barcode": "8594062086499",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "20.80",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678064003,
+    "title": "CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-cordero-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018904451,
+        "title": "Default Title",
+        "sku": "8595706700047",
+        "barcode": "8595706700047",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.94",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678129539,
+    "title": "CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-jabali-con-arandanos-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974018969987,
+        "title": "Default Title",
+        "sku": "8595706700061",
+        "barcode": "8595706700061",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "20.10",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678162307,
+    "title": "CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-pato-y-arroz-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019035523,
+        "title": "Default Title",
+        "sku": "8595706700078",
+        "barcode": "8595706700078",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.28",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678227843,
+    "title": "CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-pavo-con-manzanas-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019101059,
+        "title": "Default Title",
+        "sku": "8595706700085",
+        "barcode": "8595706700085",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.98",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678293379,
+    "title": "CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-pollo-y-arroz-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019133827,
+        "title": "Default Title",
+        "sku": "8595706700030",
+        "barcode": "8595706700030",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.55",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678326147,
+    "title": "CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR",
+    "handle": "calibra-dog-life-lata-adult-ternera-con-zanahorias-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019199363,
+        "title": "Default Title",
+        "sku": "8595706700054",
+        "barcode": "8595706700054",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "20.10",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678391683,
+    "title": "CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR",
+    "handle": "calibra-dog-life-lata-puppy-junior-cordero-y-arroz-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019297667,
+        "title": "Default Title",
+        "sku": "8595706700016",
+        "barcode": "8595706700016",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.89",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678457219,
+    "title": "CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR",
+    "handle": "calibra-dog-life-lata-puppy-junior-pollo-y-arroz-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974019330435,
+        "title": "Default Title",
+        "sku": "8595706700023",
+        "barcode": "8595706700023",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.98",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678522755,
+    "title": "CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR",
+    "handle": "calibra-dog-life-lata-sensitive-conejo-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974021362051,
+        "title": "Default Title",
+        "sku": "8595706700108",
+        "barcode": "8595706700108",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "23.24",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678555523,
+    "title": "CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR",
+    "handle": "calibra-dog-life-lata-sensitive-salmon-y-arroz-6x400gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974021427587,
+        "title": "Default Title",
+        "sku": "8595706700092",
+        "barcode": "8595706700092",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.98",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678653827,
+    "title": "CALIBRA DOG LIFE SENIOR LARGE FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-senior-large-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974021525891,
+        "title": "Default Title",
+        "sku": "8595706701273",
+        "barcode": "8595706701273",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "70.96",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678686595,
+    "title": "CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO",
+    "handle": "calibra-dog-life-senior-medium-large-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974021558659,
+        "title": "12KG",
+        "sku": "8594062086703",
+        "barcode": "8594062086703",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "55.91",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830915834243,
+        "title": "2,5KG",
+        "sku": "8594062086697",
+        "barcode": "8594062086697",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.68",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678784899,
+    "title": "CALIBRA DOG LIFE SENIOR MEDIUM FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-senior-medium-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974021689731,
+        "title": "Default Title",
+        "sku": "8595706701259",
+        "barcode": "8595706701259",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "70.96",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678850435,
+    "title": "CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG",
+    "handle": "calibra-dog-life-senior-small-breed-cordero-1-5kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974021755267,
+        "title": "Default Title",
+        "sku": "8594062086673",
+        "barcode": "8594062086673",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "16.36",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509678948739,
+    "title": "CALIBRA DOG LIFE SENIOR SMALL FRESH BEEF",
+    "handle": "calibra-dog-life-senior-small-fresh-beef-6kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974021853571,
+        "title": "6KG",
+        "sku": "8595706701402",
+        "barcode": "8595706701402",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "39.40",
+        "inventory_quantity": 0,
+        "option1": "6KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830916522371,
+        "title": "1,5KG",
+        "sku": "8595706701396",
+        "barcode": "8595706701396",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "15.71",
+        "inventory_quantity": 0,
+        "option1": "1,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679014275,
+    "title": "CALIBRA DOG LIFE STARTER & PUPPY CORDERO",
+    "handle": "calibra-dog-life-starter-puppy-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974021951875,
+        "title": "12KG",
+        "sku": "8594062086444",
+        "barcode": "8594062086444",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "74.49",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830917341571,
+        "title": "2,5KG",
+        "sku": "8594062086437",
+        "barcode": "8594062086437",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "21.28",
+        "inventory_quantity": 0,
+        "option1": "2,5KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679112579,
+    "title": "CALIBRA DOG LIFE STARTER & PUPPY FRESH BEEF 12KG",
+    "handle": "calibra-dog-life-starter-puppy-fresh-beef-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022050179,
+        "title": "Default Title",
+        "sku": "8595706701143",
+        "barcode": "8595706701143",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "74.39",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679178115,
+    "title": "CALIBRA DOG LIFE POUCH ADULT BEEF 10X150G",
+    "handle": "calibra-dog-life-pouch-adult-beef-10x150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022148483,
+        "title": "Default Title",
+        "sku": "8595706703550",
+        "barcode": "8595706703550",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.56",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679243651,
+    "title": "CALIBRA DOG LIFE POUCH ADULT CHICKEN 10X150G",
+    "handle": "calibra-dog-life-pouch-adult-chicken-10x150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022377859,
+        "title": "Default Title",
+        "sku": "8595706703567",
+        "barcode": "8595706703567",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.56",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679309187,
+    "title": "CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G",
+    "handle": "calibra-dog-life-pouch-puppy-junior-beef-10x150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022443395,
+        "title": "Default Title",
+        "sku": "8595706703574",
+        "barcode": "8595706703574",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.88",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679374723,
+    "title": "CALIBRA DOG LIFE POUCH PUPPY&JUNIOR CHICKEN 10X150G",
+    "handle": "calibra-dog-life-pouch-puppy-junior-chicken-10x150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022541699,
+        "title": "Default Title",
+        "sku": "8595706703536",
+        "barcode": "8595706703536",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.88",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679407491,
+    "title": "CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G",
+    "handle": "calibra-dog-premium-con-cordero-y-pollo-lata-12x1240g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022574467,
+        "title": "Default Title",
+        "sku": "08595706701778",
+        "barcode": "08595706701778",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "37.91",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679538563,
+    "title": "CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G",
+    "handle": "calibra-dog-premium-con-vacuno-jelly-lata-12x1240g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974022967683,
+        "title": "Default Title",
+        "sku": "08595706701785",
+        "barcode": "08595706701785",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "37.91",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679636867,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO 12+2KG",
+    "handle": "calibra-dog-premium-line-adult-large-pollo-12-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023000451,
+        "title": "Default Title",
+        "sku": "8595706700214",
+        "barcode": "8595706700214",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "41.83",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679735171,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO 12KG",
+    "handle": "calibra-dog-premium-line-adult-large-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023065987,
+        "title": "Default Title",
+        "sku": "8594062088868",
+        "barcode": "8594062088868",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "41.83",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679833475,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT POLLO",
+    "handle": "calibra-dog-premium-line-adult-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974023131523,
+        "title": "12KG",
+        "sku": "8594062088844",
+        "barcode": "8594062088844",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "41.83",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830917505411,
+        "title": "3KG",
+        "sku": "8594062088851",
+        "barcode": "8594062088851",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "15.48",
+        "inventory_quantity": 0,
+        "option1": "3KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679800707,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT POLLO 12+2KG",
+    "handle": "calibra-dog-premium-line-adult-pollo-12-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023098755,
+        "title": "Default Title",
+        "sku": "8595706700191",
+        "barcode": "8595706700191",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "41.83",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509679964547,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO",
+    "handle": "calibra-dog-premium-line-adult-sensitive-cordero-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974023262595,
+        "title": "12KG",
+        "sku": "8594062088967",
+        "barcode": "8594062088967",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "59.05",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830918193539,
+        "title": "3KG",
+        "sku": "8594062088974",
+        "barcode": "8594062088974",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "19.61",
+        "inventory_quantity": 0,
+        "option1": "3KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680030083,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT TERNERA 12+2KG",
+    "handle": "calibra-dog-premium-line-adult-ternera-12-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023328131,
+        "title": "Default Title",
+        "sku": "8595706700207",
+        "barcode": "8595706700207",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "49.00",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680128387,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT TERNERA 12KG",
+    "handle": "calibra-dog-premium-line-adult-ternera-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023426435,
+        "title": "Default Title",
+        "sku": "8594062088981",
+        "barcode": "8594062088981",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "49.00",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680161155,
+    "title": "CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG",
+    "handle": "calibra-dog-premium-line-junior-large-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023491971,
+        "title": "Default Title",
+        "sku": "8594062088905",
+        "barcode": "8594062088905",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "45.36",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680193923,
+    "title": "CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO",
+    "handle": "calibra-dog-premium-line-puppy-junior-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974023524739,
+        "title": "12KG",
+        "sku": "8594062088929",
+        "barcode": "8594062088929",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "49.65",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830918783363,
+        "title": "3KG",
+        "sku": "8594062088936",
+        "barcode": "8594062088936",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "17.81",
+        "inventory_quantity": 0,
+        "option1": "3KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680357763,
+    "title": "CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO",
+    "handle": "calibra-dog-premium-line-senior-light-pollo-12kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Peso"
+    ],
+    "variants": [
+      {
+        "id": 56974023819651,
+        "title": "12KG",
+        "sku": "8594062088943",
+        "barcode": "8594062088943",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "42.43",
+        "inventory_quantity": 0,
+        "option1": "12KG",
+        "option2": null,
+        "option3": null
+      },
+      {
+        "id": 57830919438723,
+        "title": "3KG",
+        "sku": "8594062088950",
+        "barcode": "8594062088950",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "15.09",
+        "inventory_quantity": 0,
+        "option1": "3KG",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680324995,
+    "title": "CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO 12+2KG",
+    "handle": "calibra-dog-premium-line-senior-light-pollo-12-2kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023754115,
+        "title": "Default Title",
+        "sku": "8595706700221",
+        "barcode": "8595706700221",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "42.43",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680456067,
+    "title": "CALIBRA DOG SNACK ED. LIMITADA CARNE DE VACUNO Y POLLO 80GR",
+    "handle": "calibra-dog-snack-ed-limitada-carne-de-vacuno-y-pollo-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974023885187,
+        "title": "Default Title",
+        "sku": "8595706703260",
+        "barcode": "8595706703260",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.90",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680554371,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G",
+    "handle": "calibra-dog-verve-snack-semihumedo-arenque-fresco-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024212867,
+        "title": "Default Title",
+        "sku": "8595706700627",
+        "barcode": "8595706700627",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.17",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680587139,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G",
+    "handle": "calibra-dog-verve-crunchy-snack-insectos-y-cordero-fres-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024278403,
+        "title": "Default Title",
+        "sku": "8595706700566",
+        "barcode": "8595706700566",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "9.59",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680619907,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESC 150G",
+    "handle": "calibra-dog-verve-crunchy-snack-insectos-y-salmon-fresc-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024311171,
+        "title": "Default Title",
+        "sku": "8595706700573",
+        "barcode": "8595706700573",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "9.59",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680718211,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G",
+    "handle": "calibra-dog-verve-crunchy-snack-pato-fresco-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024409475,
+        "title": "Default Title",
+        "sku": "8595706700580",
+        "barcode": "8595706700580",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.17",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680783747,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G",
+    "handle": "calibra-dog-verve-crunchy-snack-salmon-fresco-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024704387,
+        "title": "Default Title",
+        "sku": "8595706700597",
+        "barcode": "8595706700597",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.17",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680816515,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G",
+    "handle": "calibra-dog-verve-snack-semihumedo-pato-fresco-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024737155,
+        "title": "Default Title",
+        "sku": "8595706700610",
+        "barcode": "8595706700610",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.17",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680849283,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G",
+    "handle": "calibra-dog-verve-snack-semihumedo-pollo-fresco-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024769923,
+        "title": "Default Title",
+        "sku": "8595706700634",
+        "barcode": "8595706700634",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.17",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509680947587,
+    "title": "CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G",
+    "handle": "calibra-dog6-premium-con-pollo-y-vacuno-lata-12x1240g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024835459,
+        "title": "Default Title",
+        "sku": "8595706701808",
+        "barcode": "8595706701808",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "37.91",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681013123,
+    "title": "CALIBRA EAZZY ARENA GATO FINE 10KG",
+    "handle": "calibra-eazzy-arena-gato-fine-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974024999299,
+        "title": "Default Title",
+        "sku": "8594062086390",
+        "barcode": "8594062086390",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "18.45",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681045891,
+    "title": "CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG",
+    "handle": "calibra-eazzy-arena-gato-ultra-fine-10kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025032067,
+        "title": "Default Title",
+        "sku": "8594062086406",
+        "barcode": "8594062086406",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "20.84",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681078659,
+    "title": "CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR",
+    "handle": "calibra-joy-cat-classic-sticks-salmon-70gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025064835,
+        "title": "Default Title",
+        "sku": "8594062084907",
+        "barcode": "8594062084907",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681176963,
+    "title": "CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR",
+    "handle": "calibra-joy-cat-classic-strips-pescado-70gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025163139,
+        "title": "Default Title",
+        "sku": "8594062084891",
+        "barcode": "8594062084891",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681209731,
+    "title": "CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G",
+    "handle": "calibra-joy-dog-chewy-hueso-s-tripa-y-calabaza-40uds-900g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025228675,
+        "title": "Default Title",
+        "sku": "8595706703123",
+        "barcode": "8595706703123",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "31.60",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681242499,
+    "title": "CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG",
+    "handle": "calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025261443,
+        "title": "Default Title",
+        "sku": "8595706703147",
+        "barcode": "8595706703147",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "27.88",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681308035,
+    "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR",
+    "handle": "calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025326979,
+        "title": "Default Title",
+        "sku": "8595706703130",
+        "barcode": "8595706703130",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "28.73",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681373571,
+    "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR",
+    "handle": "calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025425283,
+        "title": "Default Title",
+        "sku": "8595706703154",
+        "barcode": "8595706703154",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "25.01",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681406339,
+    "title": "CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR",
+    "handle": "calibra-joy-dog-chewy-sticks-vacuno-y-arandano-50uds-700gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025458051,
+        "title": "Default Title",
+        "sku": "8595706703161",
+        "barcode": "8595706703161",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "40.14",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681439107,
+    "title": "CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR",
+    "handle": "calibra-joy-dog-chewy-sticks-vacuno-y-spirulina-50uds-700gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025490819,
+        "title": "Default Title",
+        "sku": "8595706703116",
+        "barcode": "8595706703116",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "40.14",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681504643,
+    "title": "CALIBRA JOY DOG CLASSIC AROS POLLO 80GR",
+    "handle": "calibra-joy-dog-classic-aros-pollo-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025556355,
+        "title": "Default Title",
+        "sku": "8594062084976",
+        "barcode": "8594062084976",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681537411,
+    "title": "CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR",
+    "handle": "calibra-joy-dog-classic-bacalao-pollo-sushi-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025621891,
+        "title": "Default Title",
+        "sku": "8594062085003",
+        "barcode": "8594062085003",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681635715,
+    "title": "CALIBRA JOY DOG CLASSIC CORDERO STRIPS 250GR",
+    "handle": "calibra-joy-dog-classic-cordero-strips-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025687427,
+        "title": "Default Title",
+        "sku": "8594062088493",
+        "barcode": "8594062088493",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "11.00",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681701251,
+    "title": "CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR",
+    "handle": "calibra-joy-dog-classic-dental-brushes-85gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025720195,
+        "title": "Default Title",
+        "sku": "8594062087250",
+        "barcode": "8594062087250",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681766787,
+    "title": "CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR",
+    "handle": "calibra-joy-dog-classic-large-fillet-cordero-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025785731,
+        "title": "Default Title",
+        "sku": "8594062084969",
+        "barcode": "8594062084969",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681799555,
+    "title": "CALIBRA JOY DOG CLASSIC PATO STRIPS 250GR",
+    "handle": "calibra-joy-dog-classic-pato-strips-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025851267,
+        "title": "Default Title",
+        "sku": "8594062088479",
+        "barcode": "8594062088479",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "11.00",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681897859,
+    "title": "CALIBRA JOY DOG CLASSIC PECHUGA POLLO 250GR",
+    "handle": "calibra-joy-dog-classic-pechuga-pollo-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974025982339,
+        "title": "Default Title",
+        "sku": "8594062089223",
+        "barcode": "8594062089223",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "11.00",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681963395,
+    "title": "CALIBRA JOY DOG CLASSIC PESCADO POLLO SANDWICH 250GR",
+    "handle": "calibra-joy-dog-classic-pescado-pollo-sandwich-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026047875,
+        "title": "Default Title",
+        "sku": "8594062088486",
+        "barcode": "8594062088486",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "10.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509681996163,
+    "title": "CALIBRA JOY DOG CLASSIC SALMON STICKS 250GR",
+    "handle": "calibra-joy-dog-classic-salmon-sticks-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026113411,
+        "title": "Default Title",
+        "sku": "8594062088509",
+        "barcode": "8594062088509",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "10.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682061699,
+    "title": "CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO 80GR",
+    "handle": "calibra-joy-dog-classic-sandwich-pescado-pollo-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026178947,
+        "title": "Default Title",
+        "sku": "8594062084990",
+        "barcode": "8594062084990",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682160003,
+    "title": "CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR",
+    "handle": "calibra-joy-dog-classic-slice-pescado-pollo-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026342787,
+        "title": "Default Title",
+        "sku": "8594062084921",
+        "barcode": "8594062084921",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682192771,
+    "title": "CALIBRA JOY DOG CLASSIC STICKS SALMON 80GR",
+    "handle": "calibra-joy-dog-classic-sticks-salmon-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026408323,
+        "title": "Default Title",
+        "sku": "8594062084983",
+        "barcode": "8594062084983",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682291075,
+    "title": "CALIBRA JOY DOG CLASSIC STICKS TERNERA 80GR",
+    "handle": "calibra-joy-dog-classic-sticks-ternera-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026506627,
+        "title": "Default Title",
+        "sku": "8594062087687",
+        "barcode": "8594062087687",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682389379,
+    "title": "CALIBRA JOY DOG CLASSIC STRIPS CORDERO 80GR",
+    "handle": "calibra-joy-dog-classic-strips-cordero-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026604931,
+        "title": "Default Title",
+        "sku": "8594062084952",
+        "barcode": "8594062084952",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682454915,
+    "title": "CALIBRA JOY DOG CLASSIC STRIPS PATO 80GR",
+    "handle": "calibra-joy-dog-classic-strips-pato-80gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026637699,
+        "title": "Default Title",
+        "sku": "8594062084945",
+        "barcode": "8594062084945",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.57",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682487683,
+    "title": "CALIBRA JOY DOG CLASSIC TERNERA STICKS 250GR",
+    "handle": "calibra-joy-dog-classic-ternera-sticks-250gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026703235,
+        "title": "Default Title",
+        "sku": "8594062088455",
+        "barcode": "8594062088455",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "10.30",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682553219,
+    "title": "CALIBRA JOY DOG MINI DADOS SALMON 70GR",
+    "handle": "calibra-joy-dog-mini-dados-salmon-70gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026801539,
+        "title": "Default Title",
+        "sku": "8594062085072",
+        "barcode": "8594062085072",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682585987,
+    "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR",
+    "handle": "calibra-joy-dog-mini-sandwich-bacalao-pato-70gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026834307,
+        "title": "Default Title",
+        "sku": "8594062085058",
+        "barcode": "8594062085058",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682651523,
+    "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR",
+    "handle": "calibra-joy-dog-mini-sandwich-bacalao-pollo-70gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026899843,
+        "title": "Default Title",
+        "sku": "8594062085065",
+        "barcode": "8594062085065",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.02",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682684291,
+    "title": "CALIBRA JOY DOG TRAINING M&L DUCK&CHICKEN 300G",
+    "handle": "calibra-joy-dog-training-m-l-duck-chicken-300g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974026965379,
+        "title": "Default Title",
+        "sku": "8595706701495",
+        "barcode": "8595706701495",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "10.78",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682749827,
+    "title": "CALIBRA JOY DOG TRAINING M&L VENISON&DUCK 300G",
+    "handle": "calibra-joy-dog-training-m-l-venison-duck-300g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027030915,
+        "title": "Default Title",
+        "sku": "8595706701488",
+        "barcode": "8595706701488",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "10.78",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682782595,
+    "title": "CALIBRA JOY DOG TRAINING PUPPY&ADULT S CHICKEN 150G",
+    "handle": "calibra-joy-dog-training-puppy-adult-s-chicken-150g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027063683,
+        "title": "Default Title",
+        "sku": "8595706701501",
+        "barcode": "8595706701501",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.33",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682848131,
+    "title": "CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR",
+    "handle": "calibra-joy-dog-training-puppy-adult-s-salmon-150gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027129219,
+        "title": "Default Title",
+        "sku": "8595706701464",
+        "barcode": "8595706701464",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.33",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682946435,
+    "title": "CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR",
+    "handle": "calibra-joy-dog-training-s-m-salmon-insect-150gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027260291,
+        "title": "Default Title",
+        "sku": "8595706701471",
+        "barcode": "8595706701471",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.33",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682880899,
+    "title": "CALIBRA JOY DOG TRAINING S&M TERNERA 150GR",
+    "handle": "calibra-joy-dog-training-s-m-beef-150gr",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027194755,
+        "title": "Default Title",
+        "sku": "8595706701518",
+        "barcode": "8595706701518",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.33",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509682979203,
+    "title": "CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G",
+    "handle": "calibra-rockets-chinchillas-y-degus-900g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027293059,
+        "title": "Default Title",
+        "sku": "8595706703680",
+        "barcode": "8595706703680",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.94",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683044739,
+    "title": "CALIBRA ROCKETS COBAYAS 900G",
+    "handle": "calibra-rockets-cobayas-900g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027358595,
+        "title": "Default Title",
+        "sku": "8595706703673",
+        "barcode": "8595706703673",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.94",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683143043,
+    "title": "CALIBRA ROCKETS CONEJOS 900G",
+    "handle": "calibra-rockets-conejos-900g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027489667,
+        "title": "Default Title",
+        "sku": "8595706703697",
+        "barcode": "8595706703697",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.94",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683175811,
+    "title": "CALIBRA ROCKETS HAMSTER Y PEQ. ROEDORES 900G",
+    "handle": "calibra-rockets-hamster-y-peq-roedores-900g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027555203,
+        "title": "Default Title",
+        "sku": "8595706703703",
+        "barcode": "8595706703703",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "8.94",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683241347,
+    "title": "CALIBRA ROCKETS STICKS CONEJ - ROEDOR - FRUTA SILVESTRE 120G",
+    "handle": "calibra-rockets-sticks-conej-roedor-fruta-silvestre-120g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027620739,
+        "title": "Default Title",
+        "sku": "8595706703727",
+        "barcode": "8595706703727",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.09",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683274115,
+    "title": "CALIBRA ROCKETS STICKS CONEJ - ROEDOR - FRUTAS 120G",
+    "handle": "calibra-rockets-sticks-conej-roedor-frutas-120g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027653507,
+        "title": "Default Title",
+        "sku": "8595706703710",
+        "barcode": "8595706703710",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.09",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683405187,
+    "title": "CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G",
+    "handle": "calibra-rockets-sticks-conejos-y-roedores-verduras-120g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974027751811,
+        "title": "Default Title",
+        "sku": "8595706703734",
+        "barcode": "8595706703734",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.09",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683470723,
+    "title": "CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G",
+    "handle": "calibra-rockets-sticks-roedores-nuez-y-coco-120g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974028046723,
+        "title": "Default Title",
+        "sku": "8595706703741",
+        "barcode": "8595706703741",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.09",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  },
+  {
+    "id": 15509683569027,
+    "title": "CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G",
+    "handle": "calibra-rockets-sticks-roedores-verduras-y-nueces-120g",
+    "vendor": "CALIBRA",
+    "product_type": "",
+    "tags": "",
+    "status": "draft",
+    "options": [
+      "Title"
+    ],
+    "variants": [
+      {
+        "id": 56974028177795,
+        "title": "Default Title",
+        "sku": "8595706703758",
+        "barcode": "8595706703758",
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "price": "7.09",
+        "inventory_quantity": 0,
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null
+      }
+    ]
+  }
+]
