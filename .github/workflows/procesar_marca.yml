@@ -56,9 +56,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-          lfs: true
+          # LFS solo necesario para shopify_backup (lee de backups/{slug}/ en LFS).
+          # Para fuentes web evitamos LFS para no consumir presupuesto.
+          lfs: ${{ github.event.inputs.fuente == 'shopify_backup' }}
 
       - name: Configurar Git LFS
+        if: github.event.inputs.fuente == 'shopify_backup'
         run: git lfs install
 
       - uses: actions/setup-python@v5
@@ -95,6 +98,14 @@ jobs:
       - name: Guardar log y catálogos
         if: always()
         run: |
+          if [ ! -d .git ]; then
+            echo "No hay workspace git (checkout falló). Nada que commitear."
+            exit 0
+          fi
+          if [ ! -d resultados ] || [ -z "$(ls -A resultados 2>/dev/null)" ]; then
+            echo "resultados/ vacío o ausente. Nada que commitear."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
