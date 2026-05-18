@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install requests
+      - run: pip install -r requirements.txt
 
       - name: Actualizar EANs CALIBRA Joy Classic en Shopify
         env:
@@ -30,9 +30,9 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
           python3 - << 'PYEOF'
-          import os, sys, time, json
+          import os, sys, time, requests as _req
           sys.path.insert(0, ".")
-          from core.shopify_api import get_token, _request, SHOP_DOMAIN, API_VERSION
+          from core.shopify_api import SHOP_DOMAIN, CLIENT_ID, CLIENT_SECRET, API_VERSION
 
           DRY_RUN = os.getenv("DRY_RUN", "false").lower() == "true"
           if DRY_RUN:
@@ -54,7 +54,26 @@ jobs:
           ]
 
           if not DRY_RUN:
-              token = get_token()
+              # Obtener token — diagnóstico explícito si falla
+              print(f"Autenticando contra {SHOP_DOMAIN} ...")
+              if not CLIENT_ID or not CLIENT_SECRET:
+                  print("ERROR: CLIENT_ID o CLIENT_SECRET vacíos. Comprueba los secrets del repositorio.")
+                  sys.exit(1)
+              resp = _req.post(
+                  f"https://{SHOP_DOMAIN}/admin/oauth/access_token",
+                  data={"grant_type": "client_credentials",
+                        "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET},
+                  timeout=15,
+              )
+              if not resp.ok:
+                  print(f"ERROR al obtener token: HTTP {resp.status_code}")
+                  print(resp.text[:500])
+                  sys.exit(1)
+              token = resp.json().get("access_token")
+              if not token:
+                  print(f"ERROR: respuesta sin access_token: {resp.text[:300]}")
+                  sys.exit(1)
+              print("Token obtenido correctamente.\n")
               headers = {"X-Shopify-Access-Token": token, "Content-Type": "application/json"}
               base = f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}"
 
@@ -66,17 +85,22 @@ jobs:
                   continue
               try:
                   payload = {"variant": {"id": vid, "barcode": ean_nuevo, "sku": ean_nuevo}}
-                  r = _request("PUT", f"{base}/variants/{vid}.json",
-                                headers=headers, json=payload, timeout=15)
+                  r = _req.put(f"{base}/variants/{vid}.json",
+                               headers=headers, json=payload, timeout=15)
+                  if not r.ok:
+                      print(f"  ✗ variant {vid} HTTP {r.status_code}: {r.text[:300]}")
+                      fail += 1
+                      time.sleep(0.5)
+                      continue
                   v = r.json()["variant"]
                   if v["barcode"] == ean_nuevo:
                       print(f"  ✓ variant {vid}: {ean_viejo} → {ean_nuevo}  ({desc})")
                       ok += 1
                   else:
-                      print(f"  ✗ variant {vid}: barcode resultante={v['barcode']} (esperado {ean_nuevo})")
+                      print(f"  ✗ variant {vid}: barcode={v['barcode']} (esperado {ean_nuevo})")
                       fail += 1
               except Exception as e:
-                  print(f"  ✗ variant {vid} ERROR: {e}")
+                  print(f"  ✗ variant {vid} EXCEPCIÓN: {e}")
                   fail += 1
               time.sleep(0.4)
 
