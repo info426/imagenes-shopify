@@ -1,17 +1,89 @@
-=== DRY RUN — no se realizarán cambios en Shopify ===
+============================================================
+GRUPO A — Bundles → variante del producto base
+============================================================
 
-Grupo A:
-  base=15509679833475 + bundle=15509679800707 → añadir '12+2KG'
-  base=15509680357763 + bundle=15509680324995 → añadir '12+2KG'
-  base=15509676949891 + bundle=15509677015427 → añadir '12+2KG'
-  base=15509675868547 + bundle=15509675966851 → añadir '12+2KG'
-  base=15509679735171 + bundle=15509679636867 → añadir '12+2KG'
-  base=15509680128387 + bundle=15509680030083 → añadir '12+2KG'
-  base=15509676589443 + bundle=15509676654979 → añadir '12+2KG'
+[A] base=15509679833475 + bundle=15509679800707 → añadir variante '12+2KG'
+  opción existente: 'Peso' — añadiendo variante directamente
+  ✓ variante añadida: id=58072433525123 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509679800707 eliminado
 
-Grupo B:
-  15509682389379 (80g) + 15509681635715 (250g) → 'CALIBRA JOY DOG CLASSIC STRIPS CORDERO'
-  15509682454915 (80g) + 15509681799555 (250g) → 'CALIBRA JOY DOG CLASSIC STRIPS PATO'
-  15509682061699 (80g) + 15509681963395 (250g) → 'CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO'
-  15509682192771 (80g) + 15509681996163 (250g) → 'CALIBRA JOY DOG CLASSIC STICKS SALMON'
-  15509682291075 (80g) + 15509682487683 (250g) → 'CALIBRA JOY DOG CLASSIC STICKS TERNERA'
+[A] base=15509680357763 + bundle=15509680324995 → añadir variante '12+2KG'
+  opción existente: 'Peso' — añadiendo variante directamente
+  ✓ variante añadida: id=58072435032451 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509680324995 eliminado
+
+[A] base=15509676949891 + bundle=15509677015427 → añadir variante '12+2KG'
+  opción existente: 'Peso' — añadiendo variante directamente
+  ✓ variante añadida: id=58072436277635 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509677015427 eliminado
+
+[A] base=15509675868547 + bundle=15509675966851 → añadir variante '12+2KG'
+  opción existente: 'Peso' — añadiendo variante directamente
+  ✓ variante añadida: id=58072439849347 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509675966851 eliminado
+
+[A] base=15509679735171 + bundle=15509679636867 → añadir variante '12+2KG'
+  convirtiendo opción Title→Peso y título→'CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO'
+  ✓ producto actualizado
+  ✓ variante añadida: id=58072441454979 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509679636867 eliminado
+
+[A] base=15509680128387 + bundle=15509680030083 → añadir variante '12+2KG'
+  convirtiendo opción Title→Peso y título→'CALIBRA DOG PREMIUM LINE ADULT TERNERA'
+  ✓ producto actualizado
+  ✓ variante añadida: id=58072444502403 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509680030083 eliminado
+
+[A] base=15509676589443 + bundle=15509676654979 → añadir variante '12+2KG'
+  convirtiendo opción Title→Peso y título→'CALIBRA DOG LIFE ADULT LARGE BREED POLLO'
+  ✓ producto actualizado
+  ✓ variante añadida: id=58072446108035 option1=12+2KG
+  ✓ 1 imagen(es) copiada(s) del bundle al producto base
+  ✓ producto bundle 15509676654979 eliminado
+
+============================================================
+GRUPO B — 80g + 250g → producto unificado
+============================================================
+
+[B] 15509682389379 (80g) + 15509681635715 (250g) → 'CALIBRA JOY DOG CLASSIC STRIPS CORDERO'
+  ✓ producto actualizado: título='CALIBRA JOY DOG CLASSIC STRIPS CORDERO', variante 80GR
+  ✓ variante añadida: id=58072447549827 option1=250GR EAN=8594062088493
+  ✓ imagen base asignada a variante 80GR (img_id=84026907885955)
+  ✓ 1 imagen(es) copiada(s) del 250g al producto unificado
+  ✓ producto 250g 15509681635715 eliminado
+
+[B] 15509682454915 (80g) + 15509681799555 (250g) → 'CALIBRA JOY DOG CLASSIC STRIPS PATO'
+  ✓ producto actualizado: título='CALIBRA JOY DOG CLASSIC STRIPS PATO', variante 80GR
+  ✓ variante añadida: id=58072449384835 option1=250GR EAN=8594062088479
+  ✓ imagen base asignada a variante 80GR (img_id=84026908279171)
+  ✓ 1 imagen(es) copiada(s) del 250g al producto unificado
+  ✓ producto 250g 15509681799555 eliminado
+
+[B] 15509682061699 (80g) + 15509681963395 (250g) → 'CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO'
+  ✓ producto actualizado: título='CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO', variante 80GR
+  ✓ variante añadida: id=58072451383683 option1=250GR EAN=8594062088486
+  ✓ imagen base asignada a variante 80GR (img_id=84026904904067)
+  ✓ 1 imagen(es) copiada(s) del 250g al producto unificado
+  ✓ producto 250g 15509681963395 eliminado
+
+[B] 15509682192771 (80g) + 15509681996163 (250g) → 'CALIBRA JOY DOG CLASSIC STICKS SALMON'
+  ✓ producto actualizado: título='CALIBRA JOY DOG CLASSIC STICKS SALMON', variante 80GR
+  ✓ variante añadida: id=58072452628867 option1=250GR EAN=8594062088509
+  ✓ imagen base asignada a variante 80GR (img_id=84026905854339)
+  ✓ 1 imagen(es) copiada(s) del 250g al producto unificado
+  ✓ producto 250g 15509681996163 eliminado
+
+[B] 15509682291075 (80g) + 15509682487683 (250g) → 'CALIBRA JOY DOG CLASSIC STICKS TERNERA'
+  ✓ producto actualizado: título='CALIBRA JOY DOG CLASSIC STICKS TERNERA', variante 80GR
+  ✓ variante añadida: id=58072454496643 option1=250GR EAN=8594062088455
+  ✓ imagen base asignada a variante 80GR (img_id=84026906935683)
+  ✓ 1 imagen(es) copiada(s) del 250g al producto unificado
+  ✓ producto 250g 15509682487683 eliminado
+
+✓ Proceso completado
