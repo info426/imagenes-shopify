@@ -66,6 +66,25 @@ def add_variant(api, pid, variant_payload):
 def delete_product(api, pid):
     _request("DELETE", f"{api.base}/products/{pid}.json", headers=api.h, timeout=30)
 
+def get_images(api, pid):
+    r = _request("GET", f"{api.base}/products/{pid}/images.json", headers=api.h, timeout=30)
+    return r.json().get("images", [])
+
+def copy_images(api, src_pid, dst_pid, variant_ids=None):
+    """Copia todas las imágenes de src_pid a dst_pid, asignándolas a variant_ids si se indica."""
+    images = get_images(api, src_pid)
+    copied = []
+    for img in images:
+        payload = {"src": img["src"], "alt": img.get("alt") or ""}
+        if variant_ids:
+            payload["variant_ids"] = variant_ids
+        r = _request("POST", f"{api.base}/products/{dst_pid}/images.json",
+                     headers=api.h, json={"image": payload}, timeout=30)
+        new_img = r.json().get("image", {})
+        copied.append(new_img.get("id"))
+        pause()
+    return copied
+
 def pause():
     time.sleep(0.5)   # evitar rate limit
 
@@ -133,6 +152,10 @@ def procesar_grupo_a(api, base_id, bundle_id, bundle_label):
 
     pause()
 
+    # Copiar imágenes del bundle al producto base, asignadas a la nueva variante
+    copied = copy_images(api, bundle_id, base_id, variant_ids=[new_variant["id"]])
+    print(f"  ✓ {len(copied)} imagen(es) copiada(s) del bundle al producto base")
+
     # Eliminar producto bundle
     delete_product(api, bundle_id)
     print(f"  ✓ producto bundle {bundle_id} eliminado")
@@ -179,6 +202,23 @@ def procesar_grupo_b(api, id_80g, id_250g, titulo_unificado):
     })
     print(f"  ✓ variante añadida: id={new_variant['id']} option1=250GR EAN={new_variant['barcode']}")
     pause()
+
+    # Guardar IDs de imágenes existentes del 80g (antes de copiar las del 250g)
+    imgs_base = get_images(api, id_80g)
+
+    # Asignar imagen principal del 80g a su variante
+    if imgs_base:
+        img_80g = imgs_base[0]
+        _request("PUT", f"{api.base}/variants/{v80['id']}.json",
+                 headers=api.h,
+                 json={"variant": {"id": v80["id"], "image_id": img_80g["id"]}},
+                 timeout=30)
+        pause()
+        print(f"  ✓ imagen base asignada a variante 80GR (img_id={img_80g['id']})")
+
+    # Copiar imágenes del 250g al producto unificado, asignadas a la variante 250GR
+    copied = copy_images(api, id_250g, id_80g, variant_ids=[new_variant["id"]])
+    print(f"  ✓ {len(copied)} imagen(es) copiada(s) del 250g al producto unificado")
 
     # Eliminar producto 250g
     delete_product(api, id_250g)
