@@ -1,0 +1,86 @@
+name: Actualizar EAN CALIBRA
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (no escribe en Shopify, solo muestra qué cambiaría)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+jobs:
+  actualizar-ean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Actualizar EANs CALIBRA Joy Classic en Shopify
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          python3 - << 'PYEOF'
+          import os, sys, time, json
+          sys.path.insert(0, ".")
+          from core.shopify_api import get_token, _request, SHOP_DOMAIN, API_VERSION
+
+          DRY_RUN = os.getenv("DRY_RUN", "false").lower() == "true"
+          if DRY_RUN:
+              print("=== DRY RUN — no se escribirá nada en Shopify ===\n")
+
+          # Los 9 cambios confirmados (EAN viejo → EAN nuevo)
+          # Fuente: resultados/CALIBRA_ean_discrepancias.md
+          CAMBIOS = [
+              # variant_id, ean_viejo, ean_nuevo, descripcion
+              (56974022541699, "8595706703536", "8595706703581", "DOG LIFE POUCH PUPPY&JUNIOR CHICKEN→POLLO 10X150G"),
+              (56974025687427, "8594062088493", "8595706703949", "JOY DOG CLASSIC CORDERO STRIPS 250GR"),
+              (56974025851267, "8594062088479", "8595706703895", "JOY DOG CLASSIC PATO STRIPS 250GR"),
+              (56974026047875, "8594062088486", "8595706703918", "JOY DOG CLASSIC PESCADO POLLO SANDWICH 250GR"),
+              (56974026113411, "8594062088509", "8595706703970", "JOY DOG CLASSIC SALMON STICKS 250GR"),
+              (56974026408323, "8594062084983", "8595706703963", "JOY DOG CLASSIC STICKS SALMON 80GR"),
+              (56974026506627, "8594062087687", "8595706703857", "JOY DOG CLASSIC STICKS TERNERA 80GR"),
+              (56974026604931, "8594062084952", "8595706703932", "JOY DOG CLASSIC STRIPS CORDERO 80GR"),
+              (56974026703235, "8594062088455", "8595706703864", "JOY DOG CLASSIC TERNERA STICKS 250GR"),
+          ]
+
+          if not DRY_RUN:
+              token = get_token()
+              headers = {"X-Shopify-Access-Token": token, "Content-Type": "application/json"}
+              base = f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}"
+
+          ok, fail = 0, 0
+          for vid, ean_viejo, ean_nuevo, desc in CAMBIOS:
+              if DRY_RUN:
+                  print(f"  [DRY] variant {vid}: {ean_viejo} → {ean_nuevo}  ({desc})")
+                  ok += 1
+                  continue
+              try:
+                  payload = {"variant": {"id": vid, "barcode": ean_nuevo, "sku": ean_nuevo}}
+                  r = _request("PUT", f"{base}/variants/{vid}.json",
+                                headers=headers, json=payload, timeout=15)
+                  v = r.json()["variant"]
+                  if v["barcode"] == ean_nuevo:
+                      print(f"  ✓ variant {vid}: {ean_viejo} → {ean_nuevo}  ({desc})")
+                      ok += 1
+                  else:
+                      print(f"  ✗ variant {vid}: barcode resultante={v['barcode']} (esperado {ean_nuevo})")
+                      fail += 1
+              except Exception as e:
+                  print(f"  ✗ variant {vid} ERROR: {e}")
+                  fail += 1
+              time.sleep(0.4)
+
+          print(f"\nResultado: {ok} OK  |  {fail} errores")
+          if fail:
+              sys.exit(1)
+          PYEOF
