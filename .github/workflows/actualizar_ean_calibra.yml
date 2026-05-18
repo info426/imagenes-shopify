@@ -53,36 +53,73 @@ jobs:
               (56974026703235, "8594062088455", "8595706703864", "JOY DOG CLASSIC TERNERA STICKS 250GR"),
           ]
 
-          if not DRY_RUN:
-              # Obtener token — diagnóstico explícito si falla
-              print(f"Autenticando contra {SHOP_DOMAIN} ...")
-              if not CLIENT_ID or not CLIENT_SECRET:
-                  print("ERROR: CLIENT_ID o CLIENT_SECRET vacíos. Comprueba los secrets del repositorio.")
-                  sys.exit(1)
-              resp = _req.post(
-                  f"https://{SHOP_DOMAIN}/admin/oauth/access_token",
-                  data={"grant_type": "client_credentials",
-                        "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET},
-                  timeout=15,
-              )
-              if not resp.ok:
-                  print(f"ERROR al obtener token: HTTP {resp.status_code}")
-                  print(resp.text[:500])
-                  sys.exit(1)
-              token = resp.json().get("access_token")
-              if not token:
-                  print(f"ERROR: respuesta sin access_token: {resp.text[:300]}")
-                  sys.exit(1)
-              print("Token obtenido correctamente.\n")
-              headers = {"X-Shopify-Access-Token": token, "Content-Type": "application/json"}
-              base = f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}"
+          # Obtener token — diagnóstico explícito si falla
+          print(f"Autenticando contra {SHOP_DOMAIN} ...")
+          if not CLIENT_ID or not CLIENT_SECRET:
+              print("ERROR: CLIENT_ID o CLIENT_SECRET vacíos.")
+              sys.exit(1)
+          resp = _req.post(
+              f"https://{SHOP_DOMAIN}/admin/oauth/access_token",
+              data={"grant_type": "client_credentials",
+                    "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET},
+              timeout=15,
+          )
+          if not resp.ok:
+              print(f"ERROR al obtener token: HTTP {resp.status_code}\n{resp.text[:500]}")
+              sys.exit(1)
+          token = resp.json().get("access_token")
+          if not token:
+              print(f"ERROR: respuesta sin access_token: {resp.text[:300]}")
+              sys.exit(1)
+          print("Token obtenido.\n")
+
+          headers = {"X-Shopify-Access-Token": token, "Content-Type": "application/json"}
+          base = f"https://{SHOP_DOMAIN}/admin/api/{API_VERSION}"
+
+          def find_variant_by_sku(sku):
+              """Busca el variant_id actual en Shopify por SKU/barcode."""
+              r = _req.get(f"{base}/variants.json",
+                           headers=headers, params={"limit": 1}, timeout=15)
+              # Shopify no permite buscar variante por SKU directamente en REST;
+              # usamos la búsqueda de producto por SKU
+              r = _req.get(f"{base}/products.json",
+                           headers=headers,
+                           params={"limit": 250, "vendor": "CALIBRA"},
+                           timeout=30)
+              products = r.json().get("products", [])
+              link = r.headers.get("Link", "")
+              while 'rel="next"' in link:
+                  next_url = [p.strip().strip("<>") for p in link.split(",")
+                              if 'rel="next"' in p][0].split(";")[0].strip()
+                  r = _req.get(next_url, headers=headers, timeout=30)
+                  products.extend(r.json().get("products", []))
+                  link = r.headers.get("Link", "")
+              for p in products:
+                  for v in p.get("variants", []):
+                      if v.get("sku") == sku or v.get("barcode") == sku:
+                          return v["id"], p["title"]
+              return None, None
 
           ok, fail = 0, 0
           for vid, ean_viejo, ean_nuevo, desc in CAMBIOS:
               if DRY_RUN:
-                  print(f"  [DRY] variant {vid}: {ean_viejo} → {ean_nuevo}  ({desc})")
+                  print(f"  [DRY] {ean_viejo} → {ean_nuevo}  ({desc})")
                   ok += 1
                   continue
+
+              # Intentar con el variant_id conocido; si 404, buscar por SKU
+              url = f"{base}/variants/{vid}.json"
+              probe = _req.get(url, headers=headers, timeout=15)
+              if probe.status_code == 404:
+                  print(f"  ⚠ variant {vid} no encontrado (posible reID tras unificación) — buscando por SKU {ean_viejo}...")
+                  vid_actual, titulo = find_variant_by_sku(ean_viejo)
+                  if vid_actual is None:
+                      print(f"  ✗ EAN {ean_viejo} no encontrado en ninguna variante CALIBRA — saltando")
+                      fail += 1
+                      continue
+                  print(f"    → Encontrado: variant {vid_actual} en «{titulo}»")
+                  vid = vid_actual
+
               try:
                   payload = {"variant": {"id": vid, "barcode": ean_nuevo, "sku": ean_nuevo}}
                   r = _req.put(f"{base}/variants/{vid}.json",
