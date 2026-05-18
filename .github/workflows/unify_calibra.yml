@@ -1,0 +1,51 @@
+name: Unificar productos CALIBRA
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Simular sin hacer cambios (true = solo mostrar plan)'
+        required: false
+        type: choice
+        options: ['true', 'false']
+        default: 'true'
+
+jobs:
+  unify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Ejecutar unificación
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          DRY=""
+          [ "${{ github.event.inputs.dry_run }}" = "true" ] && DRY="--dry-run"
+          python3 tools/unify_calibra.py $DRY \
+            2>&1 | tee resultados/unify_CALIBRA.txt
+
+      - name: Guardar log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/unify_CALIBRA.txt
+          git diff --cached --quiet || git commit -m "unify: CALIBRA grupos A+B"
+          git pull --rebase && git push
