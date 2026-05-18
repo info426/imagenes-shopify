@@ -1,8 +1,394 @@
-2026-05-18 21:30:49,563 [INFO] ============================================================
-2026-05-18 21:30:49,563 [INFO]   Vendor   : CALIBRA
-2026-05-18 21:30:49,563 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-18 21:30:49,563 [INFO]   Pipeline : standard
-2026-05-18 21:30:49,563 [INFO]   Padding  : auto
-2026-05-18 21:30:49,563 [INFO] ============================================================
-2026-05-18 21:30:49,969 [INFO] Token obtenido
-2026-05-18 21:30:49,969 [ERROR] No existe backup para 'CALIBRA'. Ejecuta primero 'Backup imágenes de marca'.
+2026-05-18 21:36:06,479 [INFO] ============================================================
+2026-05-18 21:36:06,479 [INFO]   Vendor   : CALIBRA
+2026-05-18 21:36:06,479 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-18 21:36:06,479 [INFO]   Pipeline : standard
+2026-05-18 21:36:06,479 [INFO]   Padding  : auto
+2026-05-18 21:36:06,479 [INFO] ============================================================
+2026-05-18 21:36:06,814 [INFO] Token obtenido
+2026-05-18 21:36:17,537 [INFO] 
+[1/43] CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G  (ID: 15509683569027)
+2026-05-18 21:36:17,548 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:17,566 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:17,580 [INFO]     [autocrop] (1300, 1300) → (487, 1004)
+2026-05-18 21:36:17,581 [INFO]     [padding 5%]
+2026-05-18 21:36:18,427 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:20,752 [INFO]   ✓ 1/1 subida  [calibra-rockets-sticks-roedores-verduras-y-nueces-120g_1.webp]
+2026-05-18 21:36:22,253 [INFO] 
+[2/43] CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G  (ID: 15509683470723)
+2026-05-18 21:36:22,254 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:22,270 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:22,283 [INFO]     [autocrop] (1300, 1300) → (487, 1002)
+2026-05-18 21:36:22,283 [INFO]     [padding 5%]
+2026-05-18 21:36:23,147 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:25,335 [INFO]   ✓ 1/1 subida  [calibra-rockets-sticks-roedores-nuez-y-coco-120g_1.webp]
+2026-05-18 21:36:26,836 [INFO] 
+[3/43] CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G  (ID: 15509683405187)
+2026-05-18 21:36:26,838 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:26,853 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:26,866 [INFO]     [autocrop] (1300, 1300) → (488, 1002)
+2026-05-18 21:36:26,866 [INFO]     [padding 5%]
+2026-05-18 21:36:27,704 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:30,002 [INFO]   ✓ 1/1 subida  [calibra-rockets-sticks-conejos-y-roedores-verduras-120g_1.webp]
+2026-05-18 21:36:31,503 [INFO] 
+[4/43] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G  (ID: 15509683274115)
+2026-05-18 21:36:31,505 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:31,521 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:31,535 [INFO]     [autocrop] (1300, 1300) → (487, 1002)
+2026-05-18 21:36:31,535 [INFO]     [padding 5%]
+2026-05-18 21:36:32,353 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:35,107 [INFO]   ✓ 1/1 subida  [calibra-rockets-sticks-conejo-roedor-frutas-120g_1.webp]
+2026-05-18 21:36:36,608 [INFO] 
+[5/43] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G  (ID: 15509683241347)
+2026-05-18 21:36:36,610 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:36,626 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:36,639 [INFO]     [autocrop] (1300, 1300) → (488, 1002)
+2026-05-18 21:36:36,639 [INFO]     [padding 5%]
+2026-05-18 21:36:37,507 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:39,843 [INFO]   ✓ 1/1 subida  [calibra-rockets-sticks-conejo-roedor-fruta-silvestre-120g_1.webp]
+2026-05-18 21:36:41,344 [INFO] 
+[6/43] CALIBRA ROCKETS CONEJOS 900G  (ID: 15509683143043)
+2026-05-18 21:36:41,346 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:41,361 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:41,375 [INFO]     [autocrop] (1300, 1300) → (509, 962)
+2026-05-18 21:36:41,375 [INFO]     [padding 5%]
+2026-05-18 21:36:42,221 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:44,616 [INFO]   ✓ 1/1 subida  [calibra-rockets-conejos-900g_1.webp]
+2026-05-18 21:36:46,117 [INFO] 
+[7/43] CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G  (ID: 15509683175811)
+2026-05-18 21:36:46,119 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:46,135 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:46,149 [INFO]     [autocrop] (1300, 1300) → (508, 966)
+2026-05-18 21:36:46,149 [INFO]     [padding 5%]
+2026-05-18 21:36:46,995 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:49,366 [INFO]   ✓ 1/1 subida  [calibra-rockets-hamster-y-pequenos-roedores-900g_1.webp]
+2026-05-18 21:36:50,867 [INFO] 
+[8/43] CALIBRA ROCKETS COBAYAS 900G  (ID: 15509683044739)
+2026-05-18 21:36:50,869 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:50,885 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:50,898 [INFO]     [autocrop] (1300, 1300) → (508, 963)
+2026-05-18 21:36:50,898 [INFO]     [padding 5%]
+2026-05-18 21:36:51,762 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:54,231 [INFO]   ✓ 1/1 subida  [calibra-rockets-cobayas-900g_1.webp]
+2026-05-18 21:36:55,732 [INFO] 
+[9/43] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G  (ID: 15509682979203)
+2026-05-18 21:36:55,734 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:36:55,749 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:36:55,764 [INFO]     [autocrop] (1300, 1300) → (509, 965)
+2026-05-18 21:36:55,764 [INFO]     [padding 5%]
+2026-05-18 21:36:56,611 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:36:59,093 [INFO]   ✓ 1/1 subida  [calibra-rockets-chinchillas-y-degus-900g_1.webp]
+2026-05-18 21:37:00,594 [INFO] 
+[10/43] CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR  (ID: 15509672460675)
+2026-05-18 21:37:00,596 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:37:00,614 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:37:00,627 [INFO]     [autocrop] (1300, 1300) → (602, 893)
+2026-05-18 21:37:00,627 [INFO]     [padding 5%]
+2026-05-18 21:37:01,473 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:04,049 [INFO]   ✓ 1/1 subida  [calibra-cat-adult-pouch-trucha-salmon-caja-24x100gr_1.webp]
+2026-05-18 21:37:05,550 [INFO] 
+[11/43] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG  (ID: 15509675835779)
+2026-05-18 21:37:05,552 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:37:05,567 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:37:05,582 [INFO]     [autocrop] (1300, 1300) → (855, 1077)
+2026-05-18 21:37:05,582 [INFO]     [padding 5%]
+2026-05-18 21:37:06,447 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:08,858 [INFO]   ✓ 1/1 subida  [calibra-dog-expert-nutrition-neutered-2kg_1.webp]
+2026-05-18 21:37:10,358 [INFO] 
+[12/43] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG  (ID: 15509677146499)
+2026-05-18 21:37:10,361 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:37:10,386 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:37:10,413 [INFO]     [autocrop] (2000, 2000) → (843, 1800)
+2026-05-18 21:37:10,414 [INFO]     [padding 5%]
+2026-05-18 21:37:11,187 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:13,484 [INFO]   ✓ 1/1 subida  [calibra-dog-life-adult-medium-fresh-ternera-12kg_1.webp]
+2026-05-18 21:37:14,984 [INFO] 
+[13/43] CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG  (ID: 15509679112579)
+2026-05-18 21:37:14,986 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:37:15,009 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:37:15,036 [INFO]     [autocrop] (2000, 2000) → (848, 1800)
+2026-05-18 21:37:15,036 [INFO]     [padding 5%]
+2026-05-18 21:37:15,839 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:18,082 [INFO]   ✓ 1/1 subida  [calibra-dog-life-starter-puppy-fresh-ternera-12kg_1.webp]
+2026-05-18 21:37:19,583 [INFO] 
+[14/43] CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  (ID: 15509679243651)
+2026-05-18 21:37:19,584 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:37:19,609 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:37:19,636 [INFO]     [autocrop] (2000, 2000) → (1168, 1800)
+2026-05-18 21:37:19,636 [INFO]     [padding 5%]
+2026-05-18 21:37:20,445 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:22,719 [INFO]   ✓ 1/1 subida  [calibra-dog-lifepouch-adult-pollo-10x150g_1.webp]
+2026-05-18 21:37:24,220 [INFO] 
+[15/43] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G  (ID: 15509680554371)
+2026-05-18 21:37:24,221 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:37:24,233 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:37:24,247 [INFO]     [autocrop] (1300, 1300) → (797, 892)
+2026-05-18 21:37:24,247 [INFO]     [padding 5%]
+2026-05-18 21:37:25,111 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:27,483 [INFO]   ✓ 1/1 subida  [calibra-dog-verve-snack-semihumedo-arenque-fresco-150g_1.webp]
+2026-05-18 21:37:28,984 [INFO] 
+[16/43] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G  (ID: 15509680947587)
+2026-05-18 21:37:28,986 [INFO]   img_01.webp: RGBA (972, 1300)
+2026-05-18 21:37:29,016 [INFO]     [alpha] 52% transparente
+2026-05-18 21:37:29,028 [INFO]     [bg] 2304/2304 (100%)
+2026-05-18 21:37:29,037 [INFO]     [autocrop] (972, 1300) → (633, 1028)
+2026-05-18 21:37:29,037 [INFO]     [padding 5%]
+2026-05-18 21:37:29,892 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:32,329 [INFO]   ✓ 1/1 subida  [calibra-dog6-premium-con-pollo-y-vacuno-lata-12x1240g_1.webp]
+2026-05-18 21:37:33,830 [INFO] 
+[17/43] CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  (ID: 15509681078659)
+2026-05-18 21:37:33,832 [INFO]   img_01.webp: RGB (450, 450)
+2026-05-18 21:37:33,834 [INFO]     [bg] 484/484 (100%)
+2026-05-18 21:37:33,835 [INFO]     [autocrop] (450, 450) → (269, 409)
+2026-05-18 21:37:33,835 [INFO]     [padding 5%]
+2026-05-18 21:37:34,643 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:36,898 [INFO]   ✓ 1/1 subida  [calibra-joy-cat-classic-sticks-salmon-70gr_1.webp]
+2026-05-18 21:37:38,399 [INFO] 
+[18/43] CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G  (ID: 15509681209731)
+2026-05-18 21:37:38,400 [INFO]   img_01.webp: RGB (800, 800)
+2026-05-18 21:37:38,410 [INFO]     [bg] 1600/1600 (100%)
+2026-05-18 21:37:38,416 [INFO]     [autocrop] (800, 800) → (766, 633)
+2026-05-18 21:37:38,416 [INFO]     [padding 5%]
+2026-05-18 21:37:38,469 [INFO]   img_02.webp: RGB (2000, 2000)
+2026-05-18 21:37:38,496 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:37:38,523 [INFO]     [autocrop] (2000, 2000) → (1339, 1797)
+2026-05-18 21:37:38,523 [INFO]     [padding 5%]
+2026-05-18 21:37:38,587 [INFO]   img_03.webp: RGB (2000, 2000)
+2026-05-18 21:37:38,611 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:37:38,636 [INFO]     [autocrop] (2000, 2000) → (1761, 1799)
+2026-05-18 21:37:38,636 [INFO]     [fills-frame 88%×90%] → sin padding
+2026-05-18 21:37:38,636 [INFO]     [sin padding]
+2026-05-18 21:37:40,501 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:42,784 [INFO]   ✓ 1/3 subida  [calibra-joy-dog-chewy-hueso-s-tripa-y-calabaza-40uds-900g_1.webp]
+2026-05-18 21:37:45,909 [INFO]   ✓ 2/3 subida  [calibra-joy-dog-chewy-hueso-s-tripa-y-calabaza-40uds-900g_2.webp]
+2026-05-18 21:37:49,094 [INFO]   ✓ 3/3 subida  [calibra-joy-dog-chewy-hueso-s-tripa-y-calabaza-40uds-900g_3.webp]
+2026-05-18 21:37:50,595 [INFO] 
+[19/43] CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR  (ID: 15509673312643)
+2026-05-18 21:37:50,598 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:37:50,613 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:37:50,626 [INFO]     [autocrop] (1300, 1300) → (735, 544)
+2026-05-18 21:37:50,626 [INFO]     [padding 5%]
+2026-05-18 21:37:51,460 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:53,840 [INFO]   ✓ 1/1 subida  [calibra-cat-life-lata-kitten-pollo-6x200gr_1.webp]
+2026-05-18 21:37:55,340 [INFO] 
+[20/43] CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR  (ID: 15509673574787)
+2026-05-18 21:37:55,343 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:37:55,361 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:37:55,375 [INFO]     [autocrop] (1300, 1300) → (754, 967)
+2026-05-18 21:37:55,375 [INFO]     [padding 5%]
+2026-05-18 21:37:56,181 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:37:58,858 [INFO]   ✓ 1/1 subida  [calibra-cat-life-pouch-adult-buey-en-salsa-28x85gr_1.webp]
+2026-05-18 21:38:00,359 [INFO] 
+[21/43] CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR  (ID: 15509674066307)
+2026-05-18 21:38:00,361 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:38:00,377 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:38:00,391 [INFO]     [autocrop] (1300, 1300) → (754, 969)
+2026-05-18 21:38:00,391 [INFO]     [padding 5%]
+2026-05-18 21:38:01,197 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:03,580 [INFO]   ✓ 1/1 subida  [calibra-cat-life-pouch-sterilised-pato-en-salsa-28x85gr_1.webp]
+2026-05-18 21:38:05,081 [INFO] 
+[22/43] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR  (ID: 15509674426755)
+2026-05-18 21:38:05,083 [INFO]   img_01.webp: RGB (800, 800)
+2026-05-18 21:38:05,088 [INFO]     [bg] 1600/1600 (100%)
+2026-05-18 21:38:05,094 [INFO]     [autocrop] (800, 800) → (458, 677)
+2026-05-18 21:38:05,094 [INFO]     [padding 5%]
+2026-05-18 21:38:05,932 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:08,289 [INFO]   ✓ 1/1 subida  [calibra-cat-pouch-adult-cordero-pollo-caja-24x100gr_1.webp]
+2026-05-18 21:38:09,789 [INFO] 
+[23/43] CALIBRA CAT PREMIUM ADULT CARNE DE AVE  (ID: 15509674525059)
+2026-05-18 21:38:09,791 [INFO]   img_01.webp: RGB (1123, 1300)
+2026-05-18 21:38:09,805 [INFO]     [bg] 3136/3136 (100%)
+2026-05-18 21:38:09,817 [INFO]     [autocrop] (1123, 1300) → (545, 993)
+2026-05-18 21:38:09,817 [INFO]     [padding 5%]
+2026-05-18 21:38:10,643 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:12,862 [INFO]   ✓ 1/1 subida  [calibra-cat-premium-adult-carne-de-ave_1.webp]
+2026-05-18 21:38:14,363 [INFO] 
+[24/43] CALIBRA CAT PREMIUM ADULT CARNE VACUNO  (ID: 15509674688899)
+2026-05-18 21:38:14,365 [INFO]   img_01.webp: RGB (1123, 1300)
+2026-05-18 21:38:14,377 [INFO]     [bg] 3136/3136 (100%)
+2026-05-18 21:38:14,389 [INFO]     [autocrop] (1123, 1300) → (524, 987)
+2026-05-18 21:38:14,389 [INFO]     [padding 5%]
+2026-05-18 21:38:15,200 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:17,448 [INFO]   ✓ 1/1 subida  [calibra-cat-premium-adult-carne-vacuno_1.webp]
+2026-05-18 21:38:18,949 [INFO] 
+[25/43] CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE  (ID: 15509675016579)
+2026-05-18 21:38:18,951 [INFO]   img_01.webp: RGBA (1123, 1300)
+2026-05-18 21:38:18,988 [INFO]     [alpha] 68% transparente
+2026-05-18 21:38:19,002 [INFO]     [bg] 3136/3136 (100%)
+2026-05-18 21:38:19,012 [INFO]     [autocrop] (1123, 1300) → (547, 994)
+2026-05-18 21:38:19,012 [INFO]     [padding 5%]
+2026-05-18 21:38:19,838 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:22,070 [INFO]   ✓ 1/1 subida  [calibra-cat-premium-esterlizado-carne-de-ave_1.webp]
+2026-05-18 21:38:23,571 [INFO] 
+[26/43] CALIBRA CAT PREMIUM KITTEN CARNE DE AVE  (ID: 15509675213187)
+2026-05-18 21:38:23,573 [INFO]   img_01.webp: RGB (1123, 1300)
+2026-05-18 21:38:23,585 [INFO]     [bg] 3136/3136 (100%)
+2026-05-18 21:38:23,597 [INFO]     [autocrop] (1123, 1300) → (545, 994)
+2026-05-18 21:38:23,597 [INFO]     [padding 5%]
+2026-05-18 21:38:24,414 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:26,655 [INFO]   ✓ 1/1 subida  [calibra-cat-premium-kitten-carne-de-ave_1.webp]
+2026-05-18 21:38:28,156 [INFO] 
+[27/43] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR  (ID: 15509673148803)
+2026-05-18 21:38:28,158 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:38:28,173 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:38:28,186 [INFO]     [autocrop] (1300, 1300) → (735, 544)
+2026-05-18 21:38:28,186 [INFO]     [padding 5%]
+2026-05-18 21:38:29,028 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:31,357 [INFO]   ✓ 1/1 subida  [calibra-cat-life-lata-adult-pollo-6x200gr_1.webp]
+2026-05-18 21:38:32,857 [INFO] 
+[28/43] CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR  (ID: 15509675377027)
+2026-05-18 21:38:32,860 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:38:32,878 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:38:32,891 [INFO]     [autocrop] (1300, 1300) → (1038, 888)
+2026-05-18 21:38:32,891 [INFO]     [padding 5%]
+2026-05-18 21:38:33,754 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:36,342 [INFO]   ✓ 1/1 subida  [calibra-cat-sterilised-pouch-multipack-caja-12x100gr_1.webp]
+2026-05-18 21:38:37,842 [INFO] 
+[29/43] CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG  (ID: 15509677703555)
+2026-05-18 21:38:37,844 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:38:37,871 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:38:37,899 [INFO]     [autocrop] (2000, 2000) → (848, 1798)
+2026-05-18 21:38:37,899 [INFO]     [padding 5%]
+2026-05-18 21:38:38,685 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:40,893 [INFO]   ✓ 1/1 subida  [calibra-dog-life-junior-large-fresh-ternera-12kg_1.webp]
+2026-05-18 21:38:42,393 [INFO] 
+[30/43] CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG  (ID: 15509677834627)
+2026-05-18 21:38:42,395 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:38:42,420 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:38:42,448 [INFO]     [autocrop] (2000, 2000) → (842, 1800)
+2026-05-18 21:38:42,448 [INFO]     [padding 5%]
+2026-05-18 21:38:43,210 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:45,494 [INFO]   ✓ 1/1 subida  [calibra-dog-life-junior-small-medium-fresh-ternera-12kg_1.webp]
+2026-05-18 21:38:46,995 [INFO] 
+[31/43] CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G  (ID: 15509679538563)
+2026-05-18 21:38:46,997 [INFO]   img_01.webp: RGBA (972, 1300)
+2026-05-18 21:38:47,025 [INFO]     [alpha] 52% transparente
+2026-05-18 21:38:47,038 [INFO]     [bg] 2304/2304 (100%)
+2026-05-18 21:38:47,048 [INFO]     [autocrop] (972, 1300) → (633, 1028)
+2026-05-18 21:38:47,048 [INFO]     [padding 5%]
+2026-05-18 21:38:47,885 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:50,311 [INFO]   ✓ 1/1 subida  [calibra-dog-premium-con-vacuno-jelly-lata-12x1240g_1.webp]
+2026-05-18 21:38:51,811 [INFO] 
+[32/43] CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG  (ID: 15509681242499)
+2026-05-18 21:38:51,813 [INFO]   img_01.webp: RGB (800, 800)
+2026-05-18 21:38:51,820 [INFO]     [bg] 1600/1600 (100%)
+2026-05-18 21:38:51,824 [INFO]     [autocrop] (800, 800) → (596, 614)
+2026-05-18 21:38:51,824 [INFO]     [padding 5%]
+2026-05-18 21:38:51,883 [INFO]   img_02.webp: RGB (1024, 768)
+2026-05-18 21:38:51,888 [INFO]     [bg] 1444/1444 (100%)
+2026-05-18 21:38:51,894 [INFO]     [autocrop] (1024, 768) → (528, 534)
+2026-05-18 21:38:51,894 [INFO]     [padding 5%]
+2026-05-18 21:38:53,312 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:38:55,598 [INFO]   ✓ 1/2 subida  [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_1.webp]
+2026-05-18 21:38:58,388 [INFO]   ✓ 2/2 subida  [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_2.webp]
+2026-05-18 21:38:59,889 [INFO] 
+[33/43] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG  (ID: 15509677474179)
+2026-05-18 21:38:59,890 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:38:59,917 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:38:59,945 [INFO]     [autocrop] (2000, 2000) → (919, 1800)
+2026-05-18 21:38:59,945 [INFO]     [padding 5%]
+2026-05-18 21:39:00,771 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:02,987 [INFO]   ✓ 1/1 subida  [calibra-dog-life-adult-small-fresh-ternera-6kg_1.webp]
+2026-05-18 21:39:04,488 [INFO] 
+[34/43] CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR  (ID: 15509678129539)
+2026-05-18 21:39:04,490 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:39:04,504 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:39:04,517 [INFO]     [autocrop] (1300, 1300) → (736, 1100)
+2026-05-18 21:39:04,517 [INFO]     [padding 5%]
+2026-05-18 21:39:05,403 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:07,648 [INFO]   ✓ 1/1 subida  [calibra-dog-life-lata-adult-jabali-con-arandanos-6x400gr_1.webp]
+2026-05-18 21:39:09,149 [INFO] 
+[35/43] CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG  (ID: 15509678653827)
+2026-05-18 21:39:09,150 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:39:09,177 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:39:09,205 [INFO]     [autocrop] (2000, 2000) → (860, 1800)
+2026-05-18 21:39:09,205 [INFO]     [padding 5%]
+2026-05-18 21:39:10,262 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:12,551 [INFO]   ✓ 1/1 subida  [calibra-dog-life-senior-large-fresh-ternera-12kg_1.webp]
+2026-05-18 21:39:14,051 [INFO] 
+[36/43] CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG  (ID: 15509678784899)
+2026-05-18 21:39:14,053 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:39:14,080 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:39:14,108 [INFO]     [autocrop] (2000, 2000) → (847, 1799)
+2026-05-18 21:39:14,109 [INFO]     [padding 5%]
+2026-05-18 21:39:14,909 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:17,118 [INFO]   ✓ 1/1 subida  [calibra-dog-life-senior-medium-fresh-ternera-12kg_1.webp]
+2026-05-18 21:39:18,619 [INFO] 
+[37/43] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G  (ID: 15509679178115)
+2026-05-18 21:39:18,620 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:39:18,648 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:39:18,676 [INFO]     [autocrop] (2000, 2000) → (1168, 1800)
+2026-05-18 21:39:18,676 [INFO]     [padding 5%]
+2026-05-18 21:39:19,471 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:21,825 [INFO]   ✓ 1/1 subida  [calibra-dog-lifepouch-adult-ternera-10x150g_1.webp]
+2026-05-18 21:39:23,326 [INFO] 
+[38/43] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESC 150G  (ID: 15509680619907)
+2026-05-18 21:39:23,328 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-18 21:39:23,342 [INFO]     [bg] 4356/4356 (100%)
+2026-05-18 21:39:23,354 [INFO]     [autocrop] (1300, 1300) → (790, 957)
+2026-05-18 21:39:23,355 [INFO]     [padding 5%]
+2026-05-18 21:39:24,196 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:26,587 [INFO]   ✓ 1/1 subida  [calibra-dog-vervecrunchy-snack-insectos-y-salmon-fresc-150g_1.webp]
+2026-05-18 21:39:28,088 [INFO] 
+[39/43] CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR  (ID: 15509681406339)
+2026-05-18 21:39:28,089 [INFO]   img_01.webp: RGB (400, 400)
+2026-05-18 21:39:28,091 [INFO]     [bg] 400/400 (100%)
+2026-05-18 21:39:28,092 [INFO]     [autocrop] (400, 400) → (374, 279)
+2026-05-18 21:39:28,092 [INFO]     [padding 5%]
+2026-05-18 21:39:28,134 [INFO]   img_02.png: P (1920, 1920)
+2026-05-18 21:39:28,153 [INFO]     [bg] 9216/9216 (100%)
+2026-05-18 21:39:28,179 [INFO]     [autocrop] (1920, 1920) → (1093, 1124)
+2026-05-18 21:39:28,180 [INFO]     [padding 5%]
+2026-05-18 21:39:29,649 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:31,783 [INFO]   ✓ 1/2 subida  [calibra-joy-dog-chewy-sticks-vacuno-y-arandano-50uds-700gr_1.webp]
+2026-05-18 21:39:34,517 [INFO]   ✓ 2/2 subida  [calibra-joy-dog-chewy-sticks-vacuno-y-arandano-50uds-700gr_2.webp]
+2026-05-18 21:39:36,017 [INFO] 
+[40/43] CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG  (ID: 15509676720515)
+2026-05-18 21:39:36,019 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:39:36,042 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:39:36,070 [INFO]     [autocrop] (2000, 2000) → (845, 1799)
+2026-05-18 21:39:36,070 [INFO]     [padding 5%]
+2026-05-18 21:39:36,861 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:39,192 [INFO]   ✓ 1/1 subida  [calibra-dog-life-adult-large-fresh-ternera-12kg_1.webp]
+2026-05-18 21:39:40,693 [INFO] 
+[41/43] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA  (ID: 15509678948739)
+2026-05-18 21:39:40,694 [INFO]   img_01.webp: RGB (2000, 2000)
+2026-05-18 21:39:40,721 [INFO]     [bg] 10000/10000 (100%)
+2026-05-18 21:39:40,748 [INFO]     [autocrop] (2000, 2000) → (921, 1797)
+2026-05-18 21:39:40,748 [INFO]     [padding 5%]
+2026-05-18 21:39:41,568 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:43,979 [INFO]   ✓ 1/1 subida  [calibra-dog-life-senior-small-fresh-ternera_1.webp]
+2026-05-18 21:39:45,480 [INFO] 
+[42/43] CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR  (ID: 15509681176963)
+2026-05-18 21:39:45,481 [INFO]   img_01.webp: RGB (1000, 1000)
+2026-05-18 21:39:45,492 [INFO]     [bg] 2500/2500 (100%)
+2026-05-18 21:39:45,501 [INFO]     [autocrop] (1000, 1000) → (616, 703)
+2026-05-18 21:39:45,501 [INFO]     [padding 5%]
+2026-05-18 21:39:46,351 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:48,829 [INFO]   ✓ 1/1 subida  [calibra-joy-cat-classic-strips-pescado-70gr_1.webp]
+2026-05-18 21:39:50,330 [INFO] 
+[43/43] CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR  (ID: 15509681308035)
+2026-05-18 21:39:50,332 [INFO]   img_01.webp: RGB (800, 800)
+2026-05-18 21:39:50,338 [INFO]     [bg] 1600/1600 (100%)
+2026-05-18 21:39:50,342 [INFO]     [autocrop] (800, 800) → (761, 638)
+2026-05-18 21:39:50,342 [INFO]     [padding 5%]
+2026-05-18 21:39:50,397 [INFO]   img_02.jpg: RGB (800, 800)
+2026-05-18 21:39:50,404 [INFO]     [bg] 1600/1600 (100%)
+2026-05-18 21:39:50,408 [INFO]     [autocrop] (800, 800) → (581, 762)
+2026-05-18 21:39:50,408 [INFO]     [padding 5%]
+2026-05-18 21:39:50,456 [INFO]   img_03.png: P (1920, 1920)
+2026-05-18 21:39:50,474 [INFO]     [bg] 9216/9216 (100%)
+2026-05-18 21:39:50,502 [INFO]     [autocrop] (1920, 1920) → (1080, 1107)
+2026-05-18 21:39:50,502 [INFO]     [padding 5%]
+2026-05-18 21:39:52,478 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-18 21:39:55,126 [INFO]   ✓ 1/3 subida  [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_1.webp]
+2026-05-18 21:39:58,002 [INFO]   ✓ 2/3 subida  [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_2.webp]
+2026-05-18 21:40:00,685 [INFO]   ✓ 3/3 subida  [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_3.webp]
+2026-05-18 21:40:02,185 [INFO] 
+============================================================
+2026-05-18 21:40:02,185 [INFO] RESUMEN
+2026-05-18 21:40:02,186 [INFO] ============================================================
+2026-05-18 21:40:02,186 [INFO]   total         : 43
+2026-05-18 21:40:02,186 [INFO]   ok            : 43
+2026-05-18 21:40:02,186 [INFO]   saltados      : 0
+2026-05-18 21:40:02,186 [INFO]   sin_backup    : 0
+2026-05-18 21:40:02,186 [INFO]   errores       : 0
