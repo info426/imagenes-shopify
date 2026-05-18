@@ -1,0 +1,46 @@
+name: Dump productos de marca
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify'
+        required: true
+        default: 'CALIBRA'
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Descargar productos
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 tools/dump_products.py "${{ github.event.inputs.vendor }}" \
+            "resultados/${{ github.event.inputs.vendor }}_productos.json"
+
+      - name: Guardar JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "dump productos: ${{ github.event.inputs.vendor }}"
+          git pull --rebase && git push
