@@ -318,6 +318,13 @@ _CACHE_RE  = re.compile(
 )
 _BANNER_HEX_RE = re.compile(r'[0-9a-f]{40,}')
 
+# Hash de Magento que genera las imágenes de galería a tamaño completo
+# (~1100×1100) en artero.com. Las demás variantes de hash son thumbnails
+# que pueden llegar a 110×110 o 265×265. Cuando el scraper solo encuentra
+# una URL con hash desconocido (thumbnail), sintetizamos también la URL
+# con este hash para intentar obtener la versión de alta resolución.
+_ARTERO_FULLSIZE_HASH = "7c9c60b8f976989d414fc48458336f45"
+
 
 def _should_keep_url(url: str) -> bool:
     """Filtra URLs no-producto (banners, logos, badges, video thumbs)."""
@@ -338,8 +345,13 @@ def _should_keep_url(url: str) -> bool:
 
 def _augment_with_wysiwyg(urls: list) -> list:
     """
-    Filtra URLs no-producto y, para cada /cache/ URL, añade su contraparte
-    /wysiwyg/ inmediatamente después (preserva orden). Idempotente.
+    Filtra URLs no-producto y, para cada /cache/ URL, añade inmediatamente
+    después (preserva orden):
+      1. La contraparte /wysiwyg/ (imagen original sin recortar)
+      2. La URL de cache con el hash de tamaño completo de Artero
+         (_ARTERO_FULLSIZE_HASH ≈ 1100×1100), para el caso en que solo
+         tengamos la URL de un thumbnail y el wysiwyg no exista.
+    Idempotente.
     """
     ordered: list = []
     seen: set = set()
@@ -353,10 +365,20 @@ def _augment_with_wysiwyg(urls: list) -> list:
         ordered.append(clean)
         m = _CACHE_RE.match(clean)
         if m:
-            wysiwyg = f"{m.group(1)}/wysiwyg/{m.group(2)}"
+            base, filename = m.group(1), m.group(2)
+            # 1. wysiwyg
+            wysiwyg = f"{base}/wysiwyg/{filename}"
             if wysiwyg not in seen:
                 seen.add(wysiwyg)
                 ordered.append(wysiwyg)
+            # 2. Cache full-size (si el filename tiene ≥2 chars para los subdirs)
+            if len(filename) >= 2:
+                f1, f2 = filename[0].lower(), filename[1].lower()
+                full_cache = (f"{base}/catalog/product/cache/"
+                              f"{_ARTERO_FULLSIZE_HASH}/{f1}/{f2}/{filename}")
+                if full_cache not in seen:
+                    seen.add(full_cache)
+                    ordered.append(full_cache)
     return ordered
 
 
