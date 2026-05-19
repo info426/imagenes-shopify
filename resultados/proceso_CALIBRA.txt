@@ -1,37 +1,107 @@
-2026-05-19 08:58:01,750 [INFO] ============================================================
-2026-05-19 08:58:01,750 [INFO]   Vendor   : CALIBRA
-2026-05-19 08:58:01,751 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-19 08:58:01,751 [INFO]   Pipeline : standard
-2026-05-19 08:58:01,751 [INFO]   Padding  : auto
-2026-05-19 08:58:01,751 [INFO] ============================================================
-2026-05-19 08:58:02,014 [INFO] Token obtenido
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:05:59,265 [INFO] ============================================================
+2026-05-19 09:05:59,265 [INFO]   Vendor   : CALIBRA
+2026-05-19 09:05:59,265 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-19 09:05:59,265 [INFO]   Pipeline : standard
+2026-05-19 09:05:59,266 [INFO]   Padding  : auto
+2026-05-19 09:05:59,266 [INFO] ============================================================
+2026-05-19 09:05:59,690 [INFO] Token obtenido
+2026-05-19 09:06:01,707 [INFO] 
 [1/7] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID: 15509679735171)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:06:01,718 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:01,735 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:01,750 [INFO]     [autocrop] (1300, 1300) → (861, 1082)
+2026-05-19 09:06:01,751 [INFO]     [padding 5%]
+2026-05-19 09:06:01,801 [INFO]   img_02.jpg: RGB (594, 1188)
+2026-05-19 09:06:01,807 [INFO]     [bg] 900/900 (100%)
+2026-05-19 09:06:01,812 [INFO]     [autocrop] (594, 1188) → (565, 1178)
+2026-05-19 09:06:01,812 [INFO]     [padding 5%]
+2026-05-19 09:06:03,634 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:06,217 [INFO]   ✓ 1/2 subida  [calibra-dog-premium-line-adult-large-pollo_1.webp]
+2026-05-19 09:06:09,297 [INFO]   ✓ 2/2 subida  [calibra-dog-premium-line-adult-large-pollo_2.webp]
+2026-05-19 09:06:10,798 [INFO] 
 [2/7] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID: 15509675868547)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:06:10,799 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:10,815 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:10,828 [INFO]     [autocrop] (1300, 1300) → (855, 1075)
+2026-05-19 09:06:10,828 [INFO]     [padding 5%]
+2026-05-19 09:06:10,876 [INFO]   img_02.jpg: RGB (900, 900)
+2026-05-19 09:06:10,883 [INFO]     [bg] 2116/2116 (100%)
+2026-05-19 09:06:10,888 [INFO]     [autocrop] (900, 900) → (581, 777)
+2026-05-19 09:06:10,888 [INFO]     [padding 5%]
+2026-05-19 09:06:12,774 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:15,143 [INFO]   ✓ 1/2 subida  [calibra-dog-expert-nutrition-sensitive-salmon_1.webp]
+2026-05-19 09:06:18,155 [INFO]   ✓ 2/2 subida  [calibra-dog-expert-nutrition-sensitive-salmon_2.webp]
+2026-05-19 09:06:19,656 [INFO] 
 [3/7] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID: 15509676949891)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:06:19,658 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:19,674 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:19,687 [INFO]     [autocrop] (1300, 1300) → (867, 1089)
+2026-05-19 09:06:19,687 [INFO]     [padding 5%]
+2026-05-19 09:06:19,735 [INFO]   img_02.png: P (1542, 1542)
+2026-05-19 09:06:19,749 [INFO]     [bg] 6040/6084 (99%)
+2026-05-19 09:06:19,764 [INFO]     [autocrop] (1542, 1542) → (1143, 1491)
+2026-05-19 09:06:19,764 [INFO]     [padding 5%]
+2026-05-19 09:06:21,332 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:23,650 [INFO]   ✓ 1/2 subida  [calibra-dog-life-adult-medium-breed-pollo_1.webp]
+2026-05-19 09:06:26,853 [INFO]   ✓ 2/2 subida  [calibra-dog-life-adult-medium-breed-pollo_2.webp]
+2026-05-19 09:06:28,354 [INFO] 
 [4/7] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID: 15509680357763)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:06:28,357 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:28,372 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:28,385 [INFO]     [autocrop] (1300, 1300) → (855, 1077)
+2026-05-19 09:06:28,385 [INFO]     [padding 5%]
+2026-05-19 09:06:28,432 [INFO]   img_02.webp: RGB (800, 800)
+2026-05-19 09:06:28,437 [INFO]     [bg] 1600/1600 (100%)
+2026-05-19 09:06:28,441 [INFO]     [autocrop] (800, 800) → (320, 663)
+2026-05-19 09:06:28,441 [INFO]     [padding 5%]
+2026-05-19 09:06:30,003 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:32,398 [INFO]   ✓ 1/2 subida  [calibra-dog-premium-line-senior-light-pollo_1.webp]
+2026-05-19 09:06:35,189 [INFO]   ✓ 2/2 subida  [calibra-dog-premium-line-senior-light-pollo_2.webp]
+2026-05-19 09:06:36,690 [INFO] 
 [5/7] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID: 15509679833475)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,605 [INFO] 
+2026-05-19 09:06:36,692 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:36,708 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:36,720 [INFO]     [autocrop] (1300, 1300) → (852, 1074)
+2026-05-19 09:06:36,720 [INFO]     [padding 5%]
+2026-05-19 09:06:36,768 [INFO]   img_02.webp: RGB (992, 1418)
+2026-05-19 09:06:36,779 [INFO]     [bg] 2500/2500 (100%)
+2026-05-19 09:06:36,787 [INFO]     [autocrop] (992, 1418) → (568, 1177)
+2026-05-19 09:06:36,787 [INFO]     [padding 5%]
+2026-05-19 09:06:38,596 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:41,078 [INFO]   ✓ 1/2 subida  [calibra-dog-premium-line-adult-pollo_1.webp]
+2026-05-19 09:06:44,044 [INFO]   ✓ 2/2 subida  [calibra-dog-premium-line-adult-pollo_2.webp]
+2026-05-19 09:06:45,545 [INFO] 
 [6/7] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID: 15509680128387)
-2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,606 [INFO] 
+2026-05-19 09:06:45,547 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:45,562 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:45,574 [INFO]     [autocrop] (1300, 1300) → (859, 1081)
+2026-05-19 09:06:45,574 [INFO]     [padding 5%]
+2026-05-19 09:06:45,622 [INFO]   img_02.webp: RGB (800, 800)
+2026-05-19 09:06:45,627 [INFO]     [bg] 1600/1600 (100%)
+2026-05-19 09:06:45,631 [INFO]     [autocrop] (800, 800) → (319, 666)
+2026-05-19 09:06:45,631 [INFO]     [padding 5%]
+2026-05-19 09:06:47,183 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:49,605 [INFO]   ✓ 1/2 subida  [calibra-dog-premium-line-adult-ternera_1.webp]
+2026-05-19 09:06:52,499 [INFO]   ✓ 2/2 subida  [calibra-dog-premium-line-adult-ternera_2.webp]
+2026-05-19 09:06:54,000 [INFO] 
 [7/7] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID: 15509676589443)
-2026-05-19 08:58:03,606 [INFO]   Ya procesado — saltando
-2026-05-19 08:58:03,606 [INFO] 
+2026-05-19 09:06:54,002 [INFO]   img_01.webp: RGB (1300, 1300)
+2026-05-19 09:06:54,018 [INFO]     [bg] 4356/4356 (100%)
+2026-05-19 09:06:54,031 [INFO]     [autocrop] (1300, 1300) → (855, 1077)
+2026-05-19 09:06:54,031 [INFO]     [padding 5%]
+2026-05-19 09:06:54,079 [INFO]   img_02.jpg: RGB (780, 780)
+2026-05-19 09:06:54,084 [INFO]     [bg] 1600/1600 (100%)
+2026-05-19 09:06:54,088 [INFO]     [autocrop] (780, 780) → (505, 679)
+2026-05-19 09:06:54,088 [INFO]     [padding 5%]
+2026-05-19 09:06:55,645 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 09:06:58,038 [INFO]   ✓ 1/2 subida  [calibra-dog-life-adult-large-breed-pollo_1.webp]
+2026-05-19 09:07:00,906 [INFO]   ✓ 2/2 subida  [calibra-dog-life-adult-large-breed-pollo_2.webp]
+2026-05-19 09:07:02,406 [INFO] 
 ============================================================
-2026-05-19 08:58:03,606 [INFO] RESUMEN
-2026-05-19 08:58:03,606 [INFO] ============================================================
-2026-05-19 08:58:03,606 [INFO]   total         : 7
-2026-05-19 08:58:03,606 [INFO]   ok            : 0
-2026-05-19 08:58:03,606 [INFO]   saltados      : 7
-2026-05-19 08:58:03,606 [INFO]   sin_backup    : 0
-2026-05-19 08:58:03,606 [INFO]   errores       : 0
+2026-05-19 09:07:02,407 [INFO] RESUMEN
+2026-05-19 09:07:02,407 [INFO] ============================================================
+2026-05-19 09:07:02,407 [INFO]   total         : 7
+2026-05-19 09:07:02,407 [INFO]   ok            : 7
+2026-05-19 09:07:02,407 [INFO]   saltados      : 0
+2026-05-19 09:07:02,407 [INFO]   sin_backup    : 0
+2026-05-19 09:07:02,407 [INFO]   errores       : 0
