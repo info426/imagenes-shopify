@@ -136,14 +136,21 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
 | Applaws | Applaws | Completado | — |
+| CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
 | Virbac | Virbac | Pendiente backup | shopify_backup |
-| Alpha Spirit | Alpha Spirit | Pendiente backup | shopify_backup |
 | Churu | Churu | Pendiente backup | shopify_backup |
 | Farmina ND | Farmina | Pendiente backup | shopify_backup |
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
+
+### CALIBRA — notas de finalización
+
+- **EANs corregidos** (workflow `Actualizar EAN CALIBRA`): 9 variantes Joy Classic con prefijo cambiado 8594062→8595706. Ver `resultados/CALIBRA_ean_discrepancias.md`.
+- **Imágenes**: todos los productos procesados con `shopify_backup`. Log en `resultados/calibra_processed.json` (50 productos).
+- **Pendiente revisar manualmente** (3 productos): Joy Classic LARGE FILLET CORDERO / AROS POLLO / PECHUGA POLLO → renombrados como BITS en Distrivet; verificar si el EAN ha cambiado también.
+- **Sin equivalente en Distrivet** (13 productos): Joy CAT, Joy Mini, Verve Snack, Expert Energy — decidir si desactivar o buscar proveedor alternativo.
 
 ---
 
