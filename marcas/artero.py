@@ -41,6 +41,13 @@ IGNORE_TOKENS = {
     "a", "e", "o",
 }
 
+# Slugs de título Shopify → slug real de artero.com cuando difieren
+# (el título Shopify incluye categorías o descripciones que la web omite)
+_SLUG_CORRECTIONS: dict[str, str] = {
+    "artero-higiene-perfume-violet-90ml":    "artero-perfume-violet-90ml",
+    "artero-espuma-acondicionador-zoom":     "artero-espuma-voluminizadora-zoom-150ml",
+}
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -233,11 +240,17 @@ def _try_url(page, url: str, title_tokens: set) -> tuple:
         if not name:
             return None, []
 
-        # Sanity check: el h1 debe compartir tokens con el título Shopify
+        # Sanity check: el h1 debe compartir tokens con el título Shopify.
+        # Para títulos con ≥3 tokens significativos exigimos ≥2 coincidencias
+        # (evita falsos positivos tipo VIOLET → CLASSIC compartiendo solo "perfume").
         name_tokens = _tokenize(name)
-        if title_tokens and not (title_tokens & name_tokens):
-            log.debug(f"  Sin overlap de tokens: '{name}'")
-            return None, []
+        if title_tokens:
+            overlap = title_tokens & name_tokens
+            min_req = 2 if len(title_tokens) >= 3 else 1
+            if len(overlap) < min_req:
+                log.info(f"  Sanity check falla ({len(overlap)}/{min_req} tokens "
+                         f"de {sorted(title_tokens)} ∩ {sorted(name_tokens)}): '{name}'")
+                return None, []
 
         images = _extract_images(page)
         return name, images
@@ -311,10 +324,14 @@ def _should_keep_url(url: str) -> bool:
     low = url.lower()
     if any(kw in low for kw in (".svg", "logo", "icon", "banner",
                                  "sprite", "placeholder", "favicon",
-                                 "_bnd", "/static/", "/.renditions/")):
+                                 "_bnd", "/static/", "/.renditions/",
+                                 "hqdefault", "maxresdefault", "sddefault")):
         return False
     filename = url.rstrip("/").split("/")[-1].rsplit(".", 1)[0].lower()
     if _BANNER_HEX_RE.search(filename):
+        return False
+    # Miniaturas de vídeo Vimeo: {id}-{hash}-d_{w}x{h}
+    if re.search(r'-d_\d+x\d+$', filename):
         return False
     return True
 
@@ -370,41 +387,67 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     return {}
 
 
+def _slug_candidates(title: str) -> list[str]:
+    """
+    Genera la lista de slugs a probar antes de DDG, en orden de prioridad:
+      1. Corrección manual de _SLUG_CORRECTIONS si existe
+      2. Slug derivado del título
+      3. Variante sin 'higiene' (la web omite este prefijo de categoría)
+    """
+    primary = _title_to_slug(title)
+    candidates: list[str] = []
+    if primary in _SLUG_CORRECTIONS:
+        candidates.append(_SLUG_CORRECTIONS[primary])
+    candidates.append(primary)
+    if "higiene" in primary.split("-"):
+        without = "-".join(t for t in primary.split("-") if t != "higiene")
+        if without and without not in candidates:
+            candidates.append(without)
+    # Quitar duplicados preservando orden
+    seen, ordered = set(), []
+    for s in candidates:
+        if s and s not in seen:
+            seen.add(s); ordered.append(s)
+    return ordered
+
+
 def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     """
     Resolución por producto sin Jaccard contra el catálogo entero
     (causaba falsos positivos: 'CHAMPU DETOX' matcheaba 'CHAMPU BLANC' por
     compartir 'champu'). Estrategia:
 
-      1. Slug esperado (derivado del título) en catálogo → match exacto
-      2. Slug directo: URL artero.com/es/petcare/<slug>
+      1. Buscar cada slug candidato en el catálogo (cache hit)
+      2. Probar URL directa para cada candidato
       3. DDG con site:artero.com/es/petcare/
-      4. Resultado se cachea bajo el slug del título Y el slug de la URL
-         (alias) para evitar re-buscar en ejecuciones futuras
+      4. Cachear bajo todos los alias para futuras ejecuciones
     """
     title_tokens = _tokenize(shopify_title)
     expected_slug = _title_to_slug(shopify_title)
+    candidates = _slug_candidates(shopify_title)
 
-    # 1. Match exacto por slug esperado (cache hit limpio)
-    if expected_slug in catalog:
-        log.info(f"  Match caché exacto: {expected_slug}")
-        return expected_slug, 1.0
+    # 1. Cache exacto en cualquier candidato
+    for slug in candidates:
+        if slug in catalog:
+            log.info(f"  Match caché exacto: {slug}")
+            return slug, 1.0
 
     page = _get_page()
     if page is None:
         return None, 0.0
 
-    # 2. Slug directo
-    direct_url = f"{BASE_URL}/{expected_slug}"
-    log.info(f"  [slug] {direct_url}")
-    name, images = _try_url(page, direct_url, title_tokens)
-    if name:
-        catalog[expected_slug] = {
-            "name": name, "url": direct_url, "images": images,
-        }
-        _save_catalog(catalog)
-        log.info(f"  ✓ Resuelto vía slug directo: {expected_slug} ({len(images)} imgs)")
-        return expected_slug, 1.0
+    # 2. Slug directo para cada candidato
+    for slug in candidates:
+        direct_url = f"{BASE_URL}/{slug}"
+        log.info(f"  [slug] {direct_url}")
+        name, images = _try_url(page, direct_url, title_tokens)
+        if name:
+            entry = {"name": name, "url": direct_url, "images": images}
+            for alias in candidates:
+                catalog[alias] = entry
+            _save_catalog(catalog)
+            log.info(f"  ✓ Resuelto vía slug directo: {slug} ({len(images)} imgs)")
+            return slug, 1.0
 
     # 3. Fallback DDG
     ddg_url = _ddg_find_product_url(shopify_title)
@@ -414,9 +457,9 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
             ddg_slug = ddg_url.rstrip("/").split("/")[-1]
             entry = {"name": name, "url": ddg_url, "images": images}
             catalog[ddg_slug] = entry
-            # Alias bajo el slug derivado del título para futuros lookups directos
-            if ddg_slug != expected_slug:
-                catalog[expected_slug] = entry
+            for alias in candidates:
+                if alias != ddg_slug:
+                    catalog[alias] = entry
             _save_catalog(catalog)
             log.info(f"  ✓ Resuelto vía DDG: {ddg_slug} ({len(images)} imgs)")
             return ddg_slug, 1.0
