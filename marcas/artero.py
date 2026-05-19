@@ -1,12 +1,21 @@
 """
 Scraper para Artero — artero.com/es/petcare/
-Usa Playwright porque el sitio bloquea requests directos (403).
+
+El listado se carga vía JS y no es fiable de scrapear. En su lugar usamos
+una estrategia híbrida que busca la URL de cada producto bajo demanda:
+
+  1. Match Jaccard contra el catálogo ya cacheado
+  2. Construir slug a partir del título Shopify y probar la URL directa
+     (ARTERO ACONDICIONADOR FLASH 300 ML → artero-acondicionador-flash-300ml)
+  3. Fallback: DuckDuckGo con filtro site:artero.com/es/petcare/
+  4. Cuando se encuentra una URL válida → cachear en resultados/artero_catalog.json
 
 Interfaz estándar (requerida por core/process_brand.py):
   scrape_catalog(web_url, rebuild=False) -> dict
   find_best_match(shopify_title, catalog) -> (handle, score)
 """
 
+import atexit
 import json
 import logging
 import re
@@ -17,91 +26,109 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 CATALOG_PATH = Path("resultados/artero_catalog.json")
+BASE_URL     = "https://artero.com/es/petcare"
+BASE_DOMAIN  = "artero.com"
 MIN_SCORE    = 0.10
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
-}
+# Marcadores internos que añade la tienda a los títulos
+_TITLE_NOISE = re.compile(r'\s*\((?:NDR|PV|NV|ONLINE)\)\s*', re.IGNORECASE)
 
 IGNORE_TOKENS = {
     "artero", "professional", "pet",
     "de", "el", "la", "los", "las", "con", "sin", "y", "para",
     "ml", "gr", "g", "kg", "l", "x", "oz", "ud", "uds",
+    "ndr", "pv", "nv", "online",
     "a", "e", "o",
 }
 
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/120.0.0.0 Safari/537.36"
+)
 
-# ─── Extracción de imágenes ────────────────────────────────────────────────────
-
-def _bump_resolution(url: str) -> str:
-    """Intenta pedir la máxima resolución eliminando parámetros de tamaño pequeño."""
-    url_clean = re.sub(r'-\d+x\d+\.', '.', url)  # elimina sufijos -300x300
-    url_clean = url_clean.split("?")[0]            # quita parámetros de CDN
-    return url_clean
+# Estado Playwright reutilizado entre llamadas a find_best_match()
+_PW = {"pw": None, "browser": None, "ctx": None, "page": None}
 
 
-def _extract_images(page, base_domain: str) -> list:
-    """Extrae URLs de imágenes de producto de la página actual (múltiples estrategias)."""
-    urls: set = set()
+# ─── Utilidades de texto ──────────────────────────────────────────────────────
 
-    # 1. <img> con src del mismo dominio (producto, no icono)
+def _normalize(text: str) -> str:
+    text = unicodedata.normalize("NFD", text.lower())
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9\s]", " ", text)
+
+
+def _clean_title(title: str) -> str:
+    return _TITLE_NOISE.sub(" ", title).strip()
+
+
+def _title_to_slug(title: str) -> str:
+    """ARTERO ACONDICIONADOR FLASH 300 ML (NDR) → artero-acondicionador-flash-300ml"""
+    norm = _normalize(_clean_title(title))
+    # "300 ml" → "300ml" (la web concatena número y unidad)
+    norm = re.sub(r'(\d+)\s+(ml|gr|kg|g|l|oz)\b', r'\1\2', norm)
+    slug = re.sub(r'\s+', '-', norm.strip())
+    return slug.strip('-')
+
+
+def _tokenize(text: str) -> set:
+    tokens = set(_normalize(text).split())
+    tokens -= IGNORE_TOKENS
+    tokens -= {t for t in tokens if len(t) <= 1}
+    return tokens
+
+
+def _jaccard(a: set, b: set) -> float:
+    u = a | b
+    return len(a & b) / len(u) if u else 0.0
+
+
+# ─── Playwright lazy init ─────────────────────────────────────────────────────
+
+def _get_page():
+    """Inicializa Playwright en el primer uso. Se cierra al final del proceso."""
+    if _PW["page"] is not None:
+        return _PW["page"]
     try:
-        for el in page.query_selector_all("img[src]"):
-            src = el.get_attribute("src") or ""
-            if not src or src.startswith("data:"):
-                continue
-            full = src if src.startswith("http") else (
-                f"https:{src}" if src.startswith("//") else f"https://{base_domain}{src}"
-            )
-            # Sólo imágenes del dominio principal (no SVG ni iconos pequeños)
-            if base_domain not in full:
-                continue
-            if any(kw in full.lower() for kw in (".svg", "logo", "icon", "banner",
-                                                   "sprite", "arrow", "placeholder")):
-                continue
-            try:
-                w = page.evaluate("el => el.naturalWidth", el) or 0
-                if 0 < w < 100:
-                    continue
-            except Exception:
-                pass
-            urls.add(_bump_resolution(full))
-    except Exception:
-        pass
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        log.error("Playwright no instalado: pip install playwright && "
+                  "playwright install chromium")
+        return None
 
-    # 2. srcset — tomar la URL de mayor resolución (último elemento)
-    try:
-        for el in page.query_selector_all("img[srcset]"):
-            srcset = el.get_attribute("srcset") or ""
-            parts  = [p.strip() for p in srcset.split(",") if p.strip()]
-            if parts:
-                candidate = parts[-1].split()[0]
-                if candidate and not candidate.startswith("data:"):
-                    full = candidate if candidate.startswith("http") else f"https:{candidate}"
-                    if base_domain in full:
-                        urls.add(_bump_resolution(full))
-    except Exception:
-        pass
+    pw = sync_playwright().start()
+    browser = pw.chromium.launch(
+        headless=True,
+        args=["--no-sandbox", "--disable-setuid-sandbox",
+              "--disable-dev-shm-usage", "--disable-gpu"],
+    )
+    ctx = browser.new_context(
+        user_agent=USER_AGENT,
+        locale="es-ES",
+        viewport={"width": 1440, "height": 900},
+        extra_http_headers={"Accept-Language": "es-ES,es;q=0.9,en;q=0.8"},
+        ignore_https_errors=True,
+    )
+    page = ctx.new_page()
+    _PW.update({"pw": pw, "browser": browser, "ctx": ctx, "page": page})
 
-    # 3. data-src / lazy loading
-    for attr in ("data-src", "data-lazy-src", "data-original", "data-zoom-image",
-                 "data-large-image", "data-full-url"):
+    def _cleanup():
         try:
-            for el in page.query_selector_all(f"img[{attr}]"):
-                src = el.get_attribute(attr) or ""
-                if src and not src.startswith("data:"):
-                    full = src if src.startswith("http") else f"https:{src}"
-                    if base_domain in full:
-                        urls.add(_bump_resolution(full))
+            browser.close()
+            pw.stop()
         except Exception:
             pass
+    atexit.register(_cleanup)
+    return page
 
-    # 4. JSON-LD (schema.org Product / ImageObject)
+
+# ─── Extracción de imágenes ──────────────────────────────────────────────────
+
+def _extract_images(page) -> list:
+    urls: set = set()
+
+    # 1. JSON-LD (más fiable)
     try:
         ld_texts = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -117,253 +144,227 @@ def _extract_images(page, base_domain: str) -> list:
                         imgs = [imgs]
                     for img in imgs:
                         if isinstance(img, str) and img.startswith("http"):
-                            urls.add(_bump_resolution(img))
+                            urls.add(img.split("?")[0])
                         elif isinstance(img, dict):
-                            url_field = img.get("url") or img.get("contentUrl") or ""
-                            if url_field:
-                                urls.add(_bump_resolution(url_field))
+                            u = img.get("url") or img.get("contentUrl") or ""
+                            if u.startswith("http"):
+                                urls.add(u.split("?")[0])
             except Exception:
                 pass
     except Exception:
         pass
 
-    # 5. Variables JS con URLs de imágenes (WooCommerce gallery, etc.)
+    # 2. srcset (mayor resolución)
     try:
-        js_texts = page.evaluate("""() => {
-            return Array.from(document.querySelectorAll('script:not([src])'))
-                        .map(s => s.textContent || '')
-                        .filter(t => t.includes('gallery') || t.includes('"image"')
-                                  || t.includes('product_image') || t.includes('wc-product'));
-        }""")
-        for text in (js_texts or []):
-            for m in re.finditer(
-                r'https?://[^\s"\'<>\\]+\.(?:jpg|jpeg|png|webp)(?:[^\s"\'<>\\]*)?',
-                text
-            ):
-                url = m.group(0).rstrip("\\,;}")
-                if base_domain in url and len(url) < 500:
-                    urls.add(_bump_resolution(url))
+        for el in page.query_selector_all("img[srcset]"):
+            srcset = el.get_attribute("srcset") or ""
+            parts  = [p.strip() for p in srcset.split(",") if p.strip()]
+            if parts:
+                cand = parts[-1].split()[0]
+                if cand and not cand.startswith("data:"):
+                    full = cand if cand.startswith("http") else f"https:{cand}"
+                    if BASE_DOMAIN in full:
+                        urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
     except Exception:
         pass
 
-    # Filtrar imágenes claramente no-producto
-    filtered = {
-        u for u in urls
-        if not any(kw in u.lower() for kw in ("logo", "icon", "banner", "sprite",
-                                               "arrow", "placeholder", "favicon",
-                                               "thumbnail-placeholder"))
-    }
-    return list(filtered)
+    # 3. <img src>
+    try:
+        for el in page.query_selector_all("img[src]"):
+            src = el.get_attribute("src") or ""
+            if not src or src.startswith("data:"):
+                continue
+            full = src if src.startswith("http") else (
+                f"https:{src}" if src.startswith("//") else ""
+            )
+            if not full or BASE_DOMAIN not in full:
+                continue
+            low = full.lower()
+            if any(kw in low for kw in (".svg", "logo", "icon", "banner",
+                                         "sprite", "placeholder", "favicon")):
+                continue
+            urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
+    except Exception:
+        pass
 
-
-# ─── Paginación ───────────────────────────────────────────────────────────────
-
-def _collect_product_links(page, base_url: str, base_domain: str) -> set:
-    """
-    Recorre la página de categoría (y las siguientes vía paginación) y
-    devuelve todos los hrefs que parecen páginas de producto individual.
-    """
-    product_urls: set = set()
-    visited_pages: set = set()
-    current_url = base_url
-
-    while current_url and current_url not in visited_pages:
-        visited_pages.add(current_url)
-        log.info(f"  Cargando categoría: {current_url}")
+    # 4. data-src / data-zoom-image
+    for attr in ("data-src", "data-lazy-src", "data-zoom-image",
+                 "data-large-image", "data-full-url"):
         try:
-            page.goto(current_url, timeout=45000, wait_until="domcontentloaded")
-            page.wait_for_timeout(3000)
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            page.wait_for_timeout(2000)
-        except Exception as e:
-            log.warning(f"  Error cargando {current_url}: {e}")
-            break
-
-        # Recoger enlaces de producto: más profundos que la URL base y con extensión o slug
-        try:
-            for el in page.query_selector_all("a[href]"):
-                href = (el.get_attribute("href") or "").split("?")[0].rstrip("/")
-                if not href:
-                    continue
-                if href.startswith("/"):
-                    href = f"https://{base_domain}{href}"
-                elif not href.startswith("http"):
-                    continue
-                if base_domain not in href:
-                    continue
-                # El enlace debe ser más profundo que la URL base (más segmentos)
-                base_segments = [s for s in base_url.rstrip("/").split("/") if s]
-                href_segments = [s for s in href.split("/") if s]
-                if len(href_segments) <= len(base_segments):
-                    continue
-                # Excluir páginas de navegación, carrito, etc.
-                if any(kw in href.lower() for kw in ("#", "javascript:", "mailto:",
-                                                       "cart", "checkout", "account",
-                                                       "login", "register", "contact",
-                                                       "about", "blog", "news",
-                                                       "privacy", "legal", "terms",
-                                                       "search", "wishlist", "compare")):
-                    continue
-                product_urls.add(href)
-        except Exception as e:
-            log.debug(f"  Error recogiendo enlaces: {e}")
-
-        # Paginación: buscar botón/enlace "siguiente"
-        next_url = None
-        try:
-            for selector in (
-                "a.next", "a[rel='next']", ".pagination a.next",
-                "a:has-text('Siguiente')", "a:has-text('>')",
-                "a:has-text('→')", ".woocommerce-pagination a.next",
-                "li.next a", ".nav-next a",
-            ):
-                try:
-                    next_el = page.query_selector(selector)
-                    if next_el:
-                        href = (next_el.get_attribute("href") or "").strip()
-                        if href and href not in visited_pages:
-                            if href.startswith("/"):
-                                href = f"https://{base_domain}{href}"
-                            next_url = href
-                            break
-                except Exception:
-                    continue
+            for el in page.query_selector_all(f"img[{attr}]"):
+                src = el.get_attribute(attr) or ""
+                if src and not src.startswith("data:"):
+                    full = src if src.startswith("http") else f"https:{src}"
+                    if BASE_DOMAIN in full:
+                        urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
         except Exception:
             pass
 
-        current_url = next_url
-
-    log.info(f"  Total enlaces recogidos: {len(product_urls)}")
-    return product_urls
+    return list(urls)
 
 
-# ─── Interfaz pública: scrape_catalog ─────────────────────────────────────────
+def _try_url(page, url: str, title_tokens: set) -> tuple:
+    """
+    Visita la URL y devuelve (name, images) si es una página de producto válida.
+    Si la página no existe, no es producto, o no comparte tokens con el título,
+    devuelve (None, []).
+    """
+    try:
+        resp = page.goto(url, timeout=30000, wait_until="domcontentloaded")
+        if resp and resp.status >= 400:
+            log.debug(f"  HTTP {resp.status} en {url}")
+            return None, []
+        page.wait_for_timeout(2000)
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(1500)
+
+        name_el = (
+            page.query_selector("h1.product_title")
+            or page.query_selector("h1.product-title")
+            or page.query_selector("h1.entry-title")
+            or page.query_selector("h1")
+        )
+        name = name_el.inner_text().strip() if name_el else ""
+        if not name:
+            return None, []
+
+        # Sanity check: el h1 debe compartir tokens con el título Shopify
+        name_tokens = _tokenize(name)
+        if title_tokens and not (title_tokens & name_tokens):
+            log.debug(f"  Sin overlap de tokens: '{name}'")
+            return None, []
+
+        images = _extract_images(page)
+        return name, images
+    except Exception as e:
+        log.debug(f"  _try_url error: {e}")
+        return None, []
+
+
+# ─── Búsqueda DDG con filtro site: ────────────────────────────────────────────
+
+def _ddg_find_product_url(title: str) -> str | None:
+    try:
+        from ddgs import DDGS
+    except ImportError:
+        try:
+            from duckduckgo_search import DDGS
+        except ImportError:
+            log.warning("  [DDG] ddgs no instalado")
+            return None
+
+    clean = _clean_title(title)
+    query = f"site:artero.com/es/petcare/ {clean}"
+    log.info(f"  [DDG] {query}")
+    for attempt in range(3):
+        try:
+            with DDGS() as ddgs:
+                for r in ddgs.text(query, max_results=10):
+                    url = r.get("href") or r.get("url") or ""
+                    if "artero.com/es/petcare/" not in url:
+                        continue
+                    url = url.split("?")[0].split("#")[0].rstrip("/")
+                    # Excluir la propia categoría
+                    if url.rstrip("/").endswith("/petcare"):
+                        continue
+                    log.info(f"  [DDG] → {url}")
+                    return url
+            break
+        except Exception as e:
+            wait = 3 * (2 ** attempt)
+            if attempt < 2:
+                log.warning(f"  [DDG] error ({attempt+1}/3): {e} — reintento en {wait}s")
+                time.sleep(wait)
+            else:
+                log.warning(f"  [DDG] error final: {e}")
+    return None
+
+
+# ─── Persistencia del catálogo ────────────────────────────────────────────────
+
+def _save_catalog(catalog: dict):
+    try:
+        CATALOG_PATH.parent.mkdir(exist_ok=True)
+        CATALOG_PATH.write_text(
+            json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    except Exception as e:
+        log.warning(f"No se pudo guardar catálogo: {e}")
+
+
+# ─── Interfaz pública ─────────────────────────────────────────────────────────
 
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     """
-    Scrapea artero.com con Playwright y construye el catálogo de productos.
-    Devuelve: { handle: { name, url, images: [url, ...] } }
-    Cachea en resultados/artero_catalog.json.
+    Carga el catálogo cacheado. NO realiza scraping bulk del listado.
+    El catálogo se rellena bajo demanda en find_best_match().
+    Con rebuild=True se borra el caché para forzar nueva resolución de cada producto.
     """
-    if not rebuild and CATALOG_PATH.exists():
+    if rebuild and CATALOG_PATH.exists():
+        CATALOG_PATH.unlink()
+        log.info("Catálogo borrado (rebuild) — se reconstruirá bajo demanda")
+        return {}
+    if CATALOG_PATH.exists():
         try:
             catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
             log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
             return catalog
         except Exception:
             pass
-
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        log.error("Playwright no instalado: pip install playwright && "
-                  "playwright install chromium")
-        return {}
-
-    base_domain = web_url.split("/")[2] if web_url.startswith("http") else "artero.com"
-    catalog: dict = {}
-
-    log.info(f"Scraping catálogo Artero con Playwright desde {web_url}...")
-
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-setuid-sandbox",
-                  "--disable-dev-shm-usage", "--disable-gpu"],
-        )
-        ctx = browser.new_context(
-            user_agent=HEADERS["User-Agent"],
-            locale="es-ES",
-            viewport={"width": 1440, "height": 900},
-            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
-            ignore_https_errors=True,
-        )
-        page = ctx.new_page()
-
-        # Recoger URLs de productos desde la página de categoría (con paginación)
-        product_urls = _collect_product_links(page, web_url, base_domain)
-
-        log.info(f"Procesando {len(product_urls)} páginas de producto...")
-        for prod_url in sorted(product_urls):
-            handle = prod_url.rstrip("/").split("/")[-1]
-            if handle in catalog:
-                continue
-
-            try:
-                page.goto(prod_url, timeout=45000, wait_until="domcontentloaded")
-                page.wait_for_timeout(2000)
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(1500)
-                page.evaluate("window.scrollTo(0, 0)")
-                page.wait_for_timeout(500)
-
-                name_el = (
-                    page.query_selector("h1.product_title")
-                    or page.query_selector("h1.product-title")
-                    or page.query_selector("h1.entry-title")
-                    or page.query_selector("h1")
-                )
-                name   = name_el.inner_text().strip() if name_el else handle
-                images = _extract_images(page, base_domain)
-
-                catalog[handle] = {
-                    "name":   name,
-                    "url":    prod_url,
-                    "images": images,
-                }
-                log.info(f"  {handle}: {len(images)} imagen(es) — {name[:60]}")
-                time.sleep(0.8)
-
-            except Exception as e:
-                log.warning(f"  Error en {prod_url}: {e}")
-
-        browser.close()
-
-    CATALOG_PATH.parent.mkdir(exist_ok=True)
-    CATALOG_PATH.write_text(
-        json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-    log.info(f"Catálogo guardado: {len(catalog)} productos → {CATALOG_PATH}")
-    return catalog
-
-
-# ─── Matching ─────────────────────────────────────────────────────────────────
-
-def _normalize(text: str) -> str:
-    text = unicodedata.normalize("NFD", text.lower())
-    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
-    text = re.sub(r"[^a-z0-9\s]", " ", text)
-    return text
-
-
-def _tokenize(text: str) -> set:
-    tokens = set(_normalize(text).split())
-    tokens -= IGNORE_TOKENS
-    tokens -= {t for t in tokens if len(t) <= 1}
-    return tokens
+    log.info("Catálogo vacío — se rellenará bajo demanda")
+    return {}
 
 
 def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     """
-    Jaccard entre tokens del título Shopify y tokens handle+nombre del catálogo.
-    Devuelve (handle, score). Si score < MIN_SCORE → (None, score).
+    Estrategia híbrida:
+      1. Jaccard contra catálogo cacheado
+      2. Si no hay match: slug directo (ARTERO <X> 300 ML → artero-<x>-300ml)
+      3. Si la URL directa falla: DDG site:artero.com/es/petcare/
+      4. URL válida → fetch + extracción → entry añadida al catálogo (mutación)
     """
     title_tokens = _tokenize(shopify_title)
+
+    # 1. Match en catálogo cacheado
     best_handle, best_score = None, 0.0
-
     for handle, entry in catalog.items():
-        cat_tokens = (
-            _tokenize(handle.replace("-", " "))
-            | _tokenize(entry.get("name", ""))
-        )
-        union = title_tokens | cat_tokens
-        if not union:
-            continue
-        score = len(title_tokens & cat_tokens) / len(union)
+        cat_tokens = (_tokenize(handle.replace("-", " "))
+                      | _tokenize(entry.get("name", "")))
+        score = _jaccard(title_tokens, cat_tokens)
         if score > best_score:
-            best_score = score
-            best_handle = handle
+            best_score, best_handle = score, handle
 
-    if best_score < MIN_SCORE:
+    if best_score >= MIN_SCORE:
+        log.info(f"  Match caché: {best_handle} (score={best_score:.2f})")
+        return best_handle, best_score
+
+    log.info(f"  Sin match en caché — búsqueda directa de URL")
+
+    page = _get_page()
+    if page is None:
         return None, best_score
-    return best_handle, best_score
+
+    # 2. Slug directo
+    slug = _title_to_slug(shopify_title)
+    direct_url = f"{BASE_URL}/{slug}"
+    log.info(f"  [slug] {direct_url}")
+    name, images = _try_url(page, direct_url, title_tokens)
+    found_url = direct_url if name else None
+
+    # 3. Fallback DDG
+    if not name:
+        ddg_url = _ddg_find_product_url(shopify_title)
+        if ddg_url:
+            name, images = _try_url(page, ddg_url, title_tokens)
+            if name:
+                slug = ddg_url.rstrip("/").split("/")[-1]
+                found_url = ddg_url
+
+    if not name or not found_url:
+        return None, best_score
+
+    # 4. Cachear y devolver match
+    catalog[slug] = {"name": name, "url": found_url, "images": images}
+    _save_catalog(catalog)
+    log.info(f"  ✓ Resuelto: {slug} ({len(images)} imágenes)")
+    return slug, 1.0
