@@ -220,7 +220,7 @@ def _hamming(a: int, b: int) -> int:
     return bin(a ^ b).count("1")
 
 
-def dedupe_images(raw_images: list, hamming_threshold: int = 5) -> list:
+def dedupe_images(raw_images: list, hamming_threshold: int = 8) -> list:
     """
     Filtra duplicados perceptuales de una lista [(raw_bytes, ext), ...].
     Agrupa imágenes con distancia Hamming ≤ threshold (sobre pHash 8×8) y
@@ -265,15 +265,16 @@ def dedupe_images(raw_images: list, hamming_threshold: int = 5) -> list:
             groups[target].append(i)
             assigned[i] = target
 
-    # De cada grupo, conservar la de mejor calidad:
-    # Criterio 1: mayor área en píxeles (más resolución)
-    # Criterio 2 (desempate): mayor tamaño de archivo en bytes
-    #   → una imagen original tiene más bytes que una cacheada/recomprimida
-    #     aunque ambas tengan los mismos píxeles (Magento cache, thumbnails, etc.)
+    # De cada grupo, conservar la de mejor calidad.
+    # Criterio 1: mayor tamaño de archivo en bytes
+    #   → bytes acumulan información; una imagen original tiene más bytes
+    #     que una versión cacheada/recomprimida (Magento cache, thumbnails)
+    #     incluso cuando la cacheada se ha subescalado a más píxeles.
+    # Criterio 2 (desempate): mayor área en píxeles
     kept = []
     for g in groups:
         best = max((entries[i] for i in g),
-                   key=lambda e: (e["area"], e["nbytes"]))
+                   key=lambda e: (e["nbytes"], e["area"]))
         kept.append(best)
         if len(g) > 1:
             dropped = [entries[i] for i in g if i != best["idx"]]
