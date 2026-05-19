@@ -235,13 +235,15 @@ def dedupe_images(raw_images: list, hamming_threshold: int = 5) -> list:
     for idx, (raw, ext) in enumerate(raw_images):
         try:
             img = Image.open(BytesIO(raw))
+            w, h = img.size
             entries.append({
-                "idx":  idx,
-                "raw":  raw,
-                "ext":  ext,
-                "area": img.size[0] * img.size[1],
-                "size": img.size,
-                "hash": _phash(img),
+                "idx":     idx,
+                "raw":     raw,
+                "ext":     ext,
+                "area":    w * h,
+                "size":    (w, h),
+                "nbytes":  len(raw),
+                "hash":    _phash(img),
             })
         except Exception as e:
             log.warning(f"  [dedupe] no pude abrir imagen {idx}: {e}")
@@ -263,15 +265,23 @@ def dedupe_images(raw_images: list, hamming_threshold: int = 5) -> list:
             groups[target].append(i)
             assigned[i] = target
 
-    # De cada grupo, conservar la entrada de mayor área
+    # De cada grupo, conservar la de mejor calidad:
+    # Criterio 1: mayor área en píxeles (más resolución)
+    # Criterio 2 (desempate): mayor tamaño de archivo en bytes
+    #   → una imagen original tiene más bytes que una cacheada/recomprimida
+    #     aunque ambas tengan los mismos píxeles (Magento cache, thumbnails, etc.)
     kept = []
     for g in groups:
-        best = max((entries[i] for i in g), key=lambda e: e["area"])
+        best = max((entries[i] for i in g),
+                   key=lambda e: (e["area"], e["nbytes"]))
         kept.append(best)
         if len(g) > 1:
             dropped = [entries[i] for i in g if i != best["idx"]]
             for d in dropped:
-                log.info(f"  [dedupe] descartada {d['size']} (queda {best['size']})")
+                log.info(
+                    f"  [dedupe] descartada {d['size']} {d['nbytes']//1024}KB"
+                    f" → queda {best['size']} {best['nbytes']//1024}KB"
+                )
 
     # Conservar el orden original de aparición
     kept.sort(key=lambda e: e["idx"])
