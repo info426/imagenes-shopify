@@ -162,6 +162,8 @@ El listado de `artero.com/es/petcare/` se carga vía JS dinámico y no es fiable
 - `fuente`: `web_oficial`
 - `web_url`: `https://artero.com/es/petcare/`
 - `rebuild_catalog`: `false` (reutiliza los productos ya resueltos en el test)
+- `pipeline`: `standard`
+- `force_padding`: `auto`
 
 ### CALIBRA — notas de finalización
 
