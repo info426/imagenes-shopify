@@ -138,6 +138,7 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Applaws | Applaws | Completado | — |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
+| ARTERO | ARTERO | En proceso — scraper creado, pendiente test | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
 | Virbac | Virbac | Pendiente backup | shopify_backup |
 | Churu | Churu | Pendiente backup | shopify_backup |
