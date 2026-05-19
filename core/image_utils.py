@@ -198,3 +198,82 @@ def is_high_res(raw: bytes) -> tuple:
         return (w >= MIN_DIM and h >= MIN_DIM), w, h
     except Exception:
         return False, 0, 0
+
+
+def _phash(img: Image.Image, size: int = 8) -> int:
+    """
+    Perceptual hash sencillo (average-hash). Detecta imágenes visualmente
+    equivalentes aunque tengan distinto tamaño, formato o compresión.
+    Devuelve un entero de 64 bits (size=8) — distancia Hamming = similitud.
+    """
+    g = img.convert("L").resize((size, size), Image.Resampling.LANCZOS)
+    pixels = list(g.getdata())
+    avg = sum(pixels) / len(pixels)
+    bits = 0
+    for i, p in enumerate(pixels):
+        if p >= avg:
+            bits |= 1 << i
+    return bits
+
+
+def _hamming(a: int, b: int) -> int:
+    return bin(a ^ b).count("1")
+
+
+def dedupe_images(raw_images: list, hamming_threshold: int = 5) -> list:
+    """
+    Filtra duplicados perceptuales de una lista [(raw_bytes, ext), ...].
+    Agrupa imágenes con distancia Hamming ≤ threshold (sobre pHash 8×8) y
+    de cada grupo mantiene la de mayor área (ancho × alto). Conserva el
+    orden de aparición de la primera imagen de cada grupo.
+    Devuelve la lista filtrada [(raw_bytes, ext), ...].
+    """
+    if len(raw_images) <= 1:
+        return raw_images
+
+    entries = []
+    for idx, (raw, ext) in enumerate(raw_images):
+        try:
+            img = Image.open(BytesIO(raw))
+            entries.append({
+                "idx":  idx,
+                "raw":  raw,
+                "ext":  ext,
+                "area": img.size[0] * img.size[1],
+                "size": img.size,
+                "hash": _phash(img),
+            })
+        except Exception as e:
+            log.warning(f"  [dedupe] no pude abrir imagen {idx}: {e}")
+
+    # Agrupar por similitud perceptual (transitiva via union-find sencillo)
+    groups: list[list[int]] = []
+    assigned: dict[int, int] = {}
+    for i, e in enumerate(entries):
+        target = None
+        for g_idx, g in enumerate(groups):
+            ref = entries[g[0]]
+            if _hamming(e["hash"], ref["hash"]) <= hamming_threshold:
+                target = g_idx
+                break
+        if target is None:
+            groups.append([i])
+            assigned[i] = len(groups) - 1
+        else:
+            groups[target].append(i)
+            assigned[i] = target
+
+    # De cada grupo, conservar la entrada de mayor área
+    kept = []
+    for g in groups:
+        best = max((entries[i] for i in g), key=lambda e: e["area"])
+        kept.append(best)
+        if len(g) > 1:
+            dropped = [entries[i] for i in g if i != best["idx"]]
+            for d in dropped:
+                log.info(f"  [dedupe] descartada {d['size']} (queda {best['size']})")
+
+    # Conservar el orden original de aparición
+    kept.sort(key=lambda e: e["idx"])
+    log.info(f"  [dedupe] {len(raw_images)} → {len(kept)} imágenes únicas")
+    return [(e["raw"], e["ext"]) for e in kept]

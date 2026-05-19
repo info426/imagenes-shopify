@@ -36,7 +36,8 @@ from PIL import Image
 # Añadir raíz del repo al path para que los imports funcionen
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from core.image_utils import is_high_res, process_image, process_image_webp_only, to_webp_b64
+from core.image_utils import (dedupe_images, is_high_res, process_image,
+                              process_image_webp_only, to_webp_b64)
 from core.shopify_api import ShopifyAPI, get_token
 
 load_dotenv()
@@ -404,6 +405,8 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
             log.warning("  Sin imágenes de alta resolución — saltando")
             stats["sin_imagen"] += 1
             continue
+
+        raw_images = dedupe_images(raw_images)
 
         processed = []
         for j, (raw, _) in enumerate(raw_images, 1):
