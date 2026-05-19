@@ -138,13 +138,30 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Applaws | Applaws | Completado | — |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
-| ARTERO | ARTERO | En proceso — scraper creado, pendiente test | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
+| ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
 | Virbac | Virbac | Pendiente backup | shopify_backup |
 | Churu | Churu | Pendiente backup | shopify_backup |
 | Farmina ND | Farmina | Pendiente backup | shopify_backup |
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
+
+### ARTERO — notas de estrategia
+
+El listado de `artero.com/es/petcare/` se carga vía JS dinámico y no es fiable de scrapear en bloque. El scraper usa **búsqueda bajo demanda** por producto:
+
+1. **Caché** — si el producto ya fue resuelto en una ejecución anterior (`resultados/artero_catalog.json`), se usa directamente.
+2. **Slug directo** — se genera la URL desde el título Shopify:
+   - `ARTERO ACONDICIONADOR FLASH 300 ML (NDR)` → `artero.com/es/petcare/artero-acondicionador-flash-300ml`
+3. **Fallback DDG** — si el slug directo devuelve 404, se busca con DuckDuckGo `site:artero.com/es/petcare/ <título limpio>`.
+4. **Sanity check** — el h1 de la página encontrada debe compartir tokens con el título Shopify para evitar falsos positivos.
+5. Cada hallazgo se guarda en `artero_catalog.json` para no repetir la búsqueda.
+
+**Para el proceso masivo** (`Procesar imágenes de marca`):
+- `vendor`: `ARTERO`
+- `fuente`: `web_oficial`
+- `web_url`: `https://artero.com/es/petcare/`
+- `rebuild_catalog`: `false` (reutiliza los productos ya resueltos en el test)
 
 ### CALIBRA — notas de finalización
 
