@@ -337,10 +337,7 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     RESULTS_DIR.mkdir(exist_ok=True)
     catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
     if not catalog:
-        if fuente != "web_y_amazon":
-            log.error("Catálogo vacío — revisa el scraping")
-            sys.exit(1)
-        log.warning("Catálogo vacío — se usará DDG para todos los productos")
+        log.warning("Catálogo vacío — el scraper deberá resolver cada producto bajo demanda")
 
     if product_id:
         products = [api.get_product(product_id)]
