@@ -1,9 +1,1996 @@
-2026-05-19 14:28:21,280 [INFO] ============================================================
-2026-05-19 14:28:21,280 [INFO]   Vendor   : ARTERO
-2026-05-19 14:28:21,280 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-19 14:28:21,280 [INFO]   Pipeline : standard
-2026-05-19 14:28:21,280 [INFO]   Padding  : auto
-2026-05-19 14:28:21,280 [INFO]   Web    : https://artero.com/es/petcare/
-2026-05-19 14:28:21,280 [INFO] ============================================================
-2026-05-19 14:28:21,589 [INFO] Token obtenido
-2026-05-19 14:28:21,590 [ERROR] No existe backup para 'ARTERO'. Ejecuta primero 'Backup imágenes de marca'.
+2026-05-19 14:30:46,523 [INFO] ============================================================
+2026-05-19 14:30:46,523 [INFO]   Vendor   : ARTERO
+2026-05-19 14:30:46,523 [INFO]   Modo     : WEB_OFICIAL
+2026-05-19 14:30:46,523 [INFO]   Pipeline : standard
+2026-05-19 14:30:46,523 [INFO]   Padding  : auto
+2026-05-19 14:30:46,523 [INFO]   Web    : https://artero.com/es/petcare/
+2026-05-19 14:30:46,523 [INFO] ============================================================
+2026-05-19 14:30:46,934 [INFO] Token obtenido
+2026-05-19 14:30:46,939 [INFO] Catálogo borrado (rebuild) — se reconstruirá bajo demanda
+2026-05-19 14:30:46,939 [WARNING] Catálogo vacío — el scraper deberá resolver cada producto bajo demanda
+2026-05-19 14:30:47,602 [INFO] 
+[1/44] ARTERO ACONDICIONADOR FLASH 300 ML (NDR)  (ID: 15509635072387)
+2026-05-19 14:30:48,608 [INFO]   [slug] https://artero.com/es/petcare/artero-acondicionador-flash-300ml
+2026-05-19 14:30:56,234 [INFO]   ✓ Resuelto vía slug directo: artero-acondicionador-flash-300ml (33 imgs)
+2026-05-19 14:30:56,234 [INFO]   Match: artero-acondicionador-flash-300ml  (score=1.00, 33 imgs)
+2026-05-19 14:30:56,546 [WARNING]   Baja res 265×265 — omitida: h634_25.jpg
+2026-05-19 14:30:56,789 [INFO]   Descargada: h634_25.jpg  900×900
+2026-05-19 14:30:57,051 [INFO]   Descargada: h634_25.jpg  1100×1100
+2026-05-19 14:30:57,299 [INFO]   Descargada: h634_25.jpg  900×900
+2026-05-19 14:30:57,547 [INFO]   Descargada: 05_cierre_h634_25_es.jpg  1100×1100
+2026-05-19 14:30:57,782 [WARNING]   Baja res 300×300 — omitida: 05_cierre_h634_25_es.jpg
+2026-05-19 14:30:58,109 [INFO]   Descargada: 02_funciones_h634_25_es.jpg  1100×1100
+2026-05-19 14:30:58,332 [WARNING]   Baja res 300×300 — omitida: 02_funciones_h634_25_es.jpg
+2026-05-19 14:30:58,586 [WARNING]   Baja res 110×110 — omitida: h634_25.jpg
+2026-05-19 14:30:58,847 [WARNING]   Baja res 110×110 — omitida: 02_funciones_h634_25_es.jpg
+2026-05-19 14:30:59,090 [WARNING]   Baja res 110×110 — omitida: 03_pasos_h634_25_es.jpg
+2026-05-19 14:30:59,320 [WARNING]   Baja res 300×300 — omitida: 03_pasos_h634_25_es.jpg
+2026-05-19 14:30:59,591 [INFO]   Descargada: 03_pasos_h634_25_es.jpg  1100×1100
+2026-05-19 14:30:59,835 [WARNING]   Baja res 110×110 — omitida: 01_imagen_principal_h634_25_es.jpg
+2026-05-19 14:31:00,059 [WARNING]   Baja res 300×300 — omitida: 01_imagen_principal_h634_25_es.jpg
+2026-05-19 14:31:00,312 [INFO]   Descargada: 01_imagen_principal_h634_25_es.jpg  1100×1100
+2026-05-19 14:31:00,570 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h634_25_es.jpg
+2026-05-19 14:31:01,131 [INFO]   Descargada: 02_Funciones_H634_25_ES.jpg  900×900
+2026-05-19 14:31:01,371 [INFO]   Descargada: 03_Pasos_H634.jpg  1000×1000
+2026-05-19 14:31:01,446 [INFO]   Descargada: WhatsApp_Image_2020-07-10_at_20.04.05_2_.jpeg  1023×1024
+2026-05-19 14:31:01,659 [INFO]   Descargada: 01_Imagen_Principal_H634_25_ES.jpg  900×900
+2026-05-19 14:31:01,957 [INFO]   Descargada: 05_Cierre_H634.jpg  1000×1000
+2026-05-19 14:31:02,245 [WARNING]   Baja res 152×190 — omitida: p781.jpg
+2026-05-19 14:31:02,520 [WARNING]   Baja res 300×300 — omitida: p781.jpg
+2026-05-19 14:31:02,755 [INFO]   Descargada: p781.jpg  1100×1100
+2026-05-19 14:31:02,979 [WARNING]   Baja res 152×190 — omitida: h647.jpg
+2026-05-19 14:31:03,207 [INFO]   Descargada: h647.jpg  900×900
+2026-05-19 14:31:03,459 [INFO]   Descargada: h647.jpg  1100×1100
+2026-05-19 14:31:03,713 [WARNING]   Baja res 152×190 — omitida: 00_imagen_principal_h626_es_25.jpg
+2026-05-19 14:31:03,941 [INFO]   Descargada: 00_imagen_principal_h626_es_25.jpg  1000×1000
+2026-05-19 14:31:04,169 [INFO]   Descargada: 00_imagen_principal_h626_es_25.jpg  1100×1100
+2026-05-19 14:31:04,397 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:31:04,665 [WARNING]   Baja res 80×80 — omitida: h634_25.jpg
+2026-05-19 14:31:04,818 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (900, 900) 26KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1100, 1100) 33KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1000, 1000) 22KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1100, 1100) 26KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1100, 1100) 120KB → queda (1000, 1000) 171KB (posición 4)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (900, 900) 52KB → queda (1100, 1100) 65KB (posición 5)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (1100, 1100) 125KB → queda (1000, 1000) 127KB (posición 6)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 58KB (posición 7)
+2026-05-19 14:31:04,819 [INFO]   [dedupe] 17 → 6 imágenes únicas
+2026-05-19 14:31:04,819 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:31:04,826 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:31:04,835 [INFO]     [autocrop] (1100, 1100) → (248, 956)
+2026-05-19 14:31:04,836 [INFO]     [padding 5%]
+2026-05-19 14:31:04,857 [INFO]   Imagen 2: RGB (1000, 1000)
+2026-05-19 14:31:04,874 [INFO]     [bg] 0/2500 (0%)
+2026-05-19 14:31:04,874 [INFO]     [sin padding]
+2026-05-19 14:31:04,958 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:31:04,966 [INFO]     [bg] 2223/3136 (71%)
+2026-05-19 14:31:04,976 [INFO]     [autocrop] (1100, 1100) → (971, 1100)
+2026-05-19 14:31:04,976 [INFO]     [fills-frame 88%×100%] → sin padding
+2026-05-19 14:31:04,976 [INFO]     [sin padding]
+2026-05-19 14:31:05,060 [INFO]   Imagen 4: RGB (1000, 1000)
+2026-05-19 14:31:05,070 [INFO]     [bg] 0/2500 (0%)
+2026-05-19 14:31:05,070 [INFO]     [sin padding]
+2026-05-19 14:31:05,150 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:31:05,158 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:31:05,166 [INFO]     [autocrop] (1100, 1100) → (825, 870)
+2026-05-19 14:31:05,166 [INFO]     [padding 5%]
+2026-05-19 14:31:05,228 [INFO]   Imagen 6: RGB (1023, 1024)
+2026-05-19 14:31:05,238 [INFO]     [bg] 0/2704 (0%)
+2026-05-19 14:31:05,238 [INFO]     [sin padding]
+2026-05-19 14:31:09,701 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:31:12,002 [INFO]   ✓ 1/6 subida  [artero-acondicionador-flash-300-ml-ndr_1.webp]
+2026-05-19 14:31:15,609 [INFO]   ✓ 2/6 subida  [artero-acondicionador-flash-300-ml-ndr_2.webp]
+2026-05-19 14:31:18,437 [INFO]   ✓ 3/6 subida  [artero-acondicionador-flash-300-ml-ndr_3.webp]
+2026-05-19 14:31:21,952 [INFO]   ✓ 4/6 subida  [artero-acondicionador-flash-300-ml-ndr_4.webp]
+2026-05-19 14:31:24,880 [INFO]   ✓ 5/6 subida  [artero-acondicionador-flash-300-ml-ndr_5.webp]
+2026-05-19 14:31:28,118 [INFO]   ✓ 6/6 subida  [artero-acondicionador-flash-300-ml-ndr_6.webp]
+2026-05-19 14:31:29,618 [INFO] 
+[2/44] ARTERO ACONDICIONADOR KERATIN VITAL (NDR)  (ID: 15509635137923)
+2026-05-19 14:31:29,619 [INFO]   [slug] https://artero.com/es/petcare/artero-acondicionador-keratin-vital
+2026-05-19 14:31:32,105 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO ACONDICIONADOR KERATIN VITAL
+2026-05-19 14:31:32,652 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20ACONDICIONADOR%20KERATIN%20VITAL 200
+2026-05-19 14:31:32,706 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+KERATIN+VITAL&limit=1 200
+2026-05-19 14:31:33,004 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:31:33,919 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:31:34,466 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+KERATIN+VITAL&source=web 200
+2026-05-19 14:31:34,474 [INFO]   [DDG] → https://artero.com/es/petcare/blog/post/reparar-el-pelo-del-perro
+2026-05-19 14:31:40,076 [INFO]   Sanity check falla (0/2 tokens de ['acondicionador', 'keratin', 'vital'] ∩ ['como', 'del', 'experto', 'hidrata', 'pelo', 'perro', 'un']): 'Hidrata el pelo del perro como un experto'
+2026-05-19 14:31:40,076 [WARNING]   Sin resolución para slug esperado 'artero-acondicionador-keratin-vital'
+2026-05-19 14:31:40,076 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:31:40,076 [INFO] 
+[3/44] ARTERO ACONDICIONADOR PROTEIN VITAL (NDR)  (ID: 15509635203459)
+2026-05-19 14:31:40,076 [INFO]   [slug] https://artero.com/es/petcare/artero-acondicionador-protein-vital
+2026-05-19 14:31:41,845 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO ACONDICIONADOR PROTEIN VITAL
+2026-05-19 14:31:42,037 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20ACONDICIONADOR%20PROTEIN%20VITAL 200
+2026-05-19 14:31:42,234 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&limit=1 200
+2026-05-19 14:31:42,422 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:31:43,639 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&web=1&searchid=8336405 200
+2026-05-19 14:31:44,013 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:31:45,090 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&source=web 200
+2026-05-19 14:31:45,096 [INFO]   [DDG] → https://artero.com/es/petcare/artero-acondicionador-protein-vital-100
+2026-05-19 14:31:46,420 [WARNING]   Sin resolución para slug esperado 'artero-acondicionador-protein-vital'
+2026-05-19 14:31:46,420 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:31:46,420 [INFO] 
+[4/44] ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)  (ID: 15509635301763)
+2026-05-19 14:31:46,420 [INFO]   [slug] https://artero.com/es/petcare/artero-auriclean-polvo-oidos-30gr
+2026-05-19 14:31:47,751 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO AURICLEAN POLVO OIDOS 30GR
+2026-05-19 14:31:47,982 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20AURICLEAN%20POLVO%20OIDOS%2030GR 200
+2026-05-19 14:31:47,997 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+AURICLEAN+POLVO+OIDOS+30GR&limit=1 200
+2026-05-19 14:31:48,173 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:31:49,097 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+AURICLEAN+POLVO+OIDOS+30GR&web=1&searchid=1953452 200
+2026-05-19 14:31:49,340 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:31:49,644 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:31:50,175 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+AURICLEAN+POLVO+OIDOS+30GR&source=web 200
+2026-05-19 14:31:50,182 [INFO]   [DDG] → https://artero.com/es/petcare/artero-auroclean-polvo-oidos-30-gr
+2026-05-19 14:31:58,151 [INFO]   ✓ Resuelto vía DDG: artero-auroclean-polvo-oidos-30-gr (19 imgs)
+2026-05-19 14:31:58,151 [INFO]   Match: artero-auroclean-polvo-oidos-30-gr  (score=1.00, 19 imgs)
+2026-05-19 14:31:58,735 [WARNING]   Baja res 265×265 — omitida: h926_25.jpg
+2026-05-19 14:31:59,156 [WARNING]   Baja res 300×300 — omitida: h926_25.jpg
+2026-05-19 14:31:59,385 [INFO]   Descargada: h926_25.jpg  1100×1100
+2026-05-19 14:31:59,621 [INFO]   Descargada: h926_25.jpg  900×900
+2026-05-19 14:31:59,839 [INFO]   Descargada: 05_cierre_h926_es.jpg  1100×1100
+2026-05-19 14:32:00,284 [WARNING]   Baja res 300×300 — omitida: 05_cierre_h926_es.jpg
+2026-05-19 14:32:00,517 [WARNING]   Baja res 110×110 — omitida: h926_25.jpg
+2026-05-19 14:32:00,755 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h926_es.jpg
+2026-05-19 14:32:00,975 [WARNING]   Baja res 152×190 — omitida: y330.jpg
+2026-05-19 14:32:01,240 [WARNING]   Baja res 150×150 — omitida: y330.jpg
+2026-05-19 14:32:01,476 [INFO]   Descargada: y330.jpg  1100×1100
+2026-05-19 14:32:01,698 [WARNING]   Baja res 152×190 — omitida: h687_25.jpg
+2026-05-19 14:32:02,119 [WARNING]   Baja res 300×300 — omitida: h687_25.jpg
+2026-05-19 14:32:02,352 [INFO]   Descargada: h687_25.jpg  1100×1100
+2026-05-19 14:32:02,622 [WARNING]   Baja res 152×190 — omitida: h262.jpg
+2026-05-19 14:32:03,050 [WARNING]   Baja res 300×300 — omitida: h262.jpg
+2026-05-19 14:32:03,314 [INFO]   Descargada: h262.jpg  1100×1100
+2026-05-19 14:32:03,379 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:32:03,610 [WARNING]   Baja res 80×80 — omitida: h926_25.jpg
+2026-05-19 14:32:03,657 [INFO]   [dedupe] descartada (900, 900) 22KB → queda (1100, 1100) 28KB (posición 1)
+2026-05-19 14:32:03,657 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 42KB (posición 5)
+2026-05-19 14:32:03,658 [INFO]   [dedupe] 6 → 4 imágenes únicas
+2026-05-19 14:32:03,658 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:32:03,663 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:32:03,670 [INFO]     [autocrop] (1100, 1100) → (278, 967)
+2026-05-19 14:32:03,670 [INFO]     [padding 5%]
+2026-05-19 14:32:03,693 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:32:03,703 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:32:03,703 [INFO]     [sin padding]
+2026-05-19 14:32:03,786 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:32:03,791 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:32:03,798 [INFO]     [autocrop] (1100, 1100) → (557, 956)
+2026-05-19 14:32:03,798 [INFO]     [padding 5%]
+2026-05-19 14:32:03,839 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:32:03,846 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:32:03,853 [INFO]     [autocrop] (1100, 1100) → (684, 734)
+2026-05-19 14:32:03,854 [INFO]     [padding 5%]
+2026-05-19 14:32:05,510 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:32:07,667 [INFO]   ✓ 1/4 subida  [artero-auriclean-polvo-oidos-30gr-ndr_1.webp]
+2026-05-19 14:32:10,897 [INFO]   ✓ 2/4 subida  [artero-auriclean-polvo-oidos-30gr-ndr_2.webp]
+2026-05-19 14:32:13,239 [INFO]   ✓ 3/4 subida  [artero-auriclean-polvo-oidos-30gr-ndr_3.webp]
+2026-05-19 14:32:15,985 [INFO]   ✓ 4/4 subida  [artero-auriclean-polvo-oidos-30gr-ndr_4.webp]
+2026-05-19 14:32:17,486 [INFO] 
+[5/44] ARTERO CHAMPU BABY (NDR)  (ID: 15509635432835)
+2026-05-19 14:32:17,486 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-baby
+2026-05-19 14:32:18,833 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BABY
+2026-05-19 14:32:19,053 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BABY 200
+2026-05-19 14:32:19,198 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BABY&limit=1 200
+2026-05-19 14:32:19,464 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:32:19,866 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:32:20,972 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BABY&web=1&searchid=8886159 200
+2026-05-19 14:32:21,546 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BABY&source=web 200
+2026-05-19 14:32:21,552 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-hidratante-250ml
+2026-05-19 14:32:29,938 [INFO]   ✓ Resuelto vía DDG: artero-champu-hidratante-250ml (24 imgs)
+2026-05-19 14:32:29,938 [INFO]   Match: artero-champu-hidratante-250ml  (score=1.00, 24 imgs)
+2026-05-19 14:32:30,189 [WARNING]   Baja res 265×265 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:32:30,423 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:32:30,662 [INFO]   Descargada: bodegon_hidratante_web.jpg  1100×1100
+2026-05-19 14:32:30,881 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:32:31,107 [INFO]   Descargada: 06_cierre_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:32:31,341 [WARNING]   Baja res 300×300 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:32:31,572 [INFO]   Descargada: 02_funciones_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:32:31,802 [WARNING]   Baja res 300×300 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:32:32,025 [WARNING]   Baja res 110×110 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:32:32,251 [WARNING]   Baja res 110×110 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:32:32,484 [WARNING]   Baja res 110×110 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:32:32,719 [WARNING]   Baja res 300×300 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:32:32,981 [INFO]   Descargada: 03_pasos_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:32:33,212 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:32:33,431 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:32:33,668 [INFO]   Descargada: 04_ingredientes_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:32:33,893 [WARNING]   Baja res 110×110 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:32:34,118 [INFO]   Descargada: 02_Funciones_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:32:34,352 [INFO]   Descargada: 03_Pasos_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:32:34,580 [INFO]   Descargada: 05_Bodegon_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:32:34,824 [INFO]   Descargada: 04_Ingredientes_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:32:35,081 [INFO]   Descargada: 06_Cierre_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:32:35,149 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:32:35,399 [WARNING]   Baja res 80×80 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 4)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 60KB (posición 5)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 72KB → queda (1100, 1100) 92KB (posición 6)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] descartada (900, 900) 67KB → queda (1100, 1100) 86KB (posición 7)
+2026-05-19 14:32:35,491 [INFO]   [dedupe] 12 → 6 imágenes únicas
+2026-05-19 14:32:35,491 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:32:35,497 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:32:35,504 [INFO]     [autocrop] (1100, 1100) → (750, 874)
+2026-05-19 14:32:35,505 [INFO]     [padding 5%]
+2026-05-19 14:32:35,560 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:32:35,569 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:32:35,569 [INFO]     [sin padding]
+2026-05-19 14:32:35,651 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:32:35,657 [INFO]     [bg] 2172/3136 (69%)
+2026-05-19 14:32:35,665 [INFO]     [autocrop] (1100, 1100) → (1014, 1100)
+2026-05-19 14:32:35,665 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:32:35,665 [INFO]     [sin padding]
+2026-05-19 14:32:35,746 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:32:35,755 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:32:35,755 [INFO]     [sin padding]
+2026-05-19 14:32:35,837 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:32:35,846 [INFO]     [bg] 1516/3136 (48%)
+2026-05-19 14:32:35,846 [INFO]     [sin padding]
+2026-05-19 14:32:35,928 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:32:35,933 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:32:35,933 [INFO]     [sin padding]
+2026-05-19 14:32:39,989 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:32:42,212 [INFO]   ✓ 1/6 subida  [artero-champu-baby-ndr_1.webp]
+2026-05-19 14:32:45,530 [INFO]   ✓ 2/6 subida  [artero-champu-baby-ndr_2.webp]
+2026-05-19 14:32:48,373 [INFO]   ✓ 3/6 subida  [artero-champu-baby-ndr_3.webp]
+2026-05-19 14:32:51,463 [INFO]   ✓ 4/6 subida  [artero-champu-baby-ndr_4.webp]
+2026-05-19 14:32:54,580 [INFO]   ✓ 5/6 subida  [artero-champu-baby-ndr_5.webp]
+2026-05-19 14:32:57,403 [INFO]   ✓ 6/6 subida  [artero-champu-baby-ndr_6.webp]
+2026-05-19 14:32:58,903 [INFO] 
+[6/44] ARTERO CHAMPU BASIC (NDR)  (ID: 15509635531139)
+2026-05-19 14:32:58,904 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-basic
+2026-05-19 14:33:00,662 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BASIC
+2026-05-19 14:33:00,900 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BASIC 200
+2026-05-19 14:33:01,036 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&limit=1 200
+2026-05-19 14:33:01,424 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:33:02,045 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&source=web 200
+2026-05-19 14:33:02,051 [INFO]   [DDG] → https://artero.com/es/petcare/creative-team/georgia-ashton-fuller
+2026-05-19 14:33:08,026 [WARNING]   Sin resolución para slug esperado 'artero-champu-basic'
+2026-05-19 14:33:08,026 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:33:08,026 [INFO] 
+[7/44] ARTERO CHAMPU BLANC (NDR)  (ID: 15509635727747)
+2026-05-19 14:33:08,026 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-blanc
+2026-05-19 14:33:09,395 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BLANC
+2026-05-19 14:33:09,746 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BLANC&limit=1 200
+2026-05-19 14:33:09,889 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BLANC 200
+2026-05-19 14:33:10,840 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BLANC&web=1&searchid=8250439 200
+2026-05-19 14:33:11,095 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:33:11,966 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:33:12,004 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-blanc-300-ml
+2026-05-19 14:33:20,279 [INFO]   ✓ Resuelto vía DDG: artero-champu-blanc-300-ml (27 imgs)
+2026-05-19 14:33:20,279 [INFO]   Match: artero-champu-blanc-300-ml  (score=1.00, 27 imgs)
+2026-05-19 14:33:20,525 [WARNING]   Baja res 265×265 — omitida: bodegon_blanc_web.jpg
+2026-05-19 14:33:20,750 [WARNING]   Baja res 300×300 — omitida: bodegon_blanc_web.jpg
+2026-05-19 14:33:20,984 [INFO]   Descargada: bodegon_blanc_web.jpg  1100×1100
+2026-05-19 14:33:21,232 [INFO]   Descargada: bodegon_blanc_web.jpg  900×900
+2026-05-19 14:33:21,468 [INFO]   Descargada: 06_cierre_h648_blanc_es_1.jpg  1100×1100
+2026-05-19 14:33:21,704 [WARNING]   Baja res 300×300 — omitida: 06_cierre_h648_blanc_es_1.jpg
+2026-05-19 14:33:21,922 [INFO]   Descargada: 01_imagen_principal_h648_blanc_es_1.jpg  1100×1100
+2026-05-19 14:33:22,151 [INFO]   Descargada: 01_imagen_principal_h648_blanc_es_1.jpg  900×900
+2026-05-19 14:33:22,367 [WARNING]   Baja res 110×110 — omitida: bodegon_blanc_web.jpg
+2026-05-19 14:33:22,590 [WARNING]   Baja res 110×110 — omitida: 01_imagen_principal_h648_blanc_es_1.jpg
+2026-05-19 14:33:22,814 [WARNING]   Baja res 110×110 — omitida: 02_funciones_h648_blanc_es_1.jpg
+2026-05-19 14:33:23,046 [WARNING]   Baja res 300×300 — omitida: 02_funciones_h648_blanc_es_1.jpg
+2026-05-19 14:33:23,310 [INFO]   Descargada: 02_funciones_h648_blanc_es_1.jpg  1100×1100
+2026-05-19 14:33:23,519 [WARNING]   Baja res 110×110 — omitida: 03_pasos_h648_blanc_es_1.jpg
+2026-05-19 14:33:23,755 [WARNING]   Baja res 300×300 — omitida: 03_pasos_h648_blanc_es_1.jpg
+2026-05-19 14:33:24,022 [INFO]   Descargada: 03_pasos_h648_blanc_es_1.jpg  1100×1100
+2026-05-19 14:33:24,249 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_h648_blanc_es_1.jpg
+2026-05-19 14:33:24,467 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_h648_blanc_es_1.jpg
+2026-05-19 14:33:24,721 [INFO]   Descargada: 04_ingredientes_h648_blanc_es_1.jpg  1100×1100
+2026-05-19 14:33:25,003 [WARNING]   Baja res 110×110 — omitida: 06_cierre_h648_blanc_es_1.jpg
+2026-05-19 14:33:25,217 [INFO]   Descargada: 01_Imagen_Principal_H648_BLANC_ES_5.jpg  900×900
+2026-05-19 14:33:25,454 [INFO]   Descargada: 03_Pasos_H648_BLANC_ES_4.jpg  900×900
+2026-05-19 14:33:25,682 [INFO]   Descargada: 02_Funciones_H648_BLANC_ES_2.jpg  900×900
+2026-05-19 14:33:25,902 [INFO]   Descargada: 04_Ingredientes_H648_BLANC_ES_3.jpg  900×900
+2026-05-19 14:33:26,132 [INFO]   Descargada: 06_Cierre_H648_BLANC_ES_2.jpg  900×900
+2026-05-19 14:33:26,211 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:33:26,460 [WARNING]   Baja res 80×80 — omitida: bodegon_blanc_web.jpg
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 36KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 96KB → queda (1100, 1100) 120KB (posición 3)
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 48KB → queda (1100, 1100) 60KB (posición 4)
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 48KB → queda (1100, 1100) 60KB (posición 4)
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 50KB → queda (1100, 1100) 61KB (posición 6)
+2026-05-19 14:33:26,570 [INFO]   [dedupe] descartada (900, 900) 100KB → queda (1100, 1100) 125KB (posición 7)
+2026-05-19 14:33:26,571 [INFO]   [dedupe] descartada (900, 900) 63KB → queda (1100, 1100) 82KB (posición 8)
+2026-05-19 14:33:26,571 [INFO]   [dedupe] 13 → 6 imágenes únicas
+2026-05-19 14:33:26,571 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:33:26,577 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:33:26,584 [INFO]     [autocrop] (1100, 1100) → (695, 829)
+2026-05-19 14:33:26,584 [INFO]     [padding 5%]
+2026-05-19 14:33:26,638 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:33:26,648 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:33:26,648 [INFO]     [sin padding]
+2026-05-19 14:33:26,729 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:33:26,737 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:33:26,745 [INFO]     [autocrop] (1100, 1100) → (830, 874)
+2026-05-19 14:33:26,745 [INFO]     [padding 5%]
+2026-05-19 14:33:26,806 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:33:26,814 [INFO]     [bg] 1839/3136 (59%)
+2026-05-19 14:33:26,814 [INFO]     [sin padding]
+2026-05-19 14:33:26,896 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:33:26,906 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:33:26,906 [INFO]     [sin padding]
+2026-05-19 14:33:26,988 [INFO]   Imagen 6: RGB (1100, 1100)
+2026-05-19 14:33:26,997 [INFO]     [bg] 701/3136 (22%)
+2026-05-19 14:33:26,997 [INFO]     [sin padding]
+2026-05-19 14:33:31,205 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:33:33,460 [INFO]   ✓ 1/6 subida  [artero-champu-blanc-ndr_1.webp]
+2026-05-19 14:33:36,750 [INFO]   ✓ 2/6 subida  [artero-champu-blanc-ndr_2.webp]
+2026-05-19 14:33:39,678 [INFO]   ✓ 3/6 subida  [artero-champu-blanc-ndr_3.webp]
+2026-05-19 14:33:42,503 [INFO]   ✓ 4/6 subida  [artero-champu-blanc-ndr_4.webp]
+2026-05-19 14:33:45,813 [INFO]   ✓ 5/6 subida  [artero-champu-blanc-ndr_5.webp]
+2026-05-19 14:33:48,909 [INFO]   ✓ 6/6 subida  [artero-champu-blanc-ndr_6.webp]
+2026-05-19 14:33:50,409 [INFO] 
+[8/44] ARTERO CHAMPU BLANCO 5L (NDR)  (ID: 15509635793283)
+2026-05-19 14:33:50,409 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-blanco-5l
+2026-05-19 14:33:52,144 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BLANCO 5L
+2026-05-19 14:33:52,373 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BLANCO%205L 200
+2026-05-19 14:33:52,382 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BLANCO+5L&limit=1 200
+2026-05-19 14:33:53,424 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BLANCO+5L&web=1&searchid=6155308 200
+2026-05-19 14:33:53,596 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:33:54,344 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BLANCO+5L&source=web 200
+2026-05-19 14:33:54,350 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-blanc-300-ml
+2026-05-19 14:33:58,586 [INFO]   Sanity check falla (1/2 tokens de ['5l', 'blanco', 'champu'] ∩ ['blanc', 'champu']): 'Artero Champú Blanc'
+2026-05-19 14:33:58,586 [WARNING]   Sin resolución para slug esperado 'artero-champu-blanco-5l'
+2026-05-19 14:33:58,586 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:33:58,586 [INFO] 
+[9/44] ARTERO CHAMPU BYE BYE (NDR)  (ID: 15509635924355)
+2026-05-19 14:33:58,586 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-bye-bye
+2026-05-19 14:33:59,981 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BYE BYE
+2026-05-19 14:34:00,234 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BYE%20BYE 200
+2026-05-19 14:34:00,279 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BYE+BYE&limit=1 200
+2026-05-19 14:34:00,506 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:34:00,791 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:34:01,046 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BYE+BYE&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:34:02,074 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BYE+BYE&web=1&searchid=3030737 200
+2026-05-19 14:34:02,596 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BYE+BYE 403
+2026-05-19 14:34:03,122 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BYE+BYE&source=web 200
+2026-05-19 14:34:03,128 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-bye-bye-antiparasitario-250-ml
+2026-05-19 14:34:11,206 [INFO]   ✓ Resuelto vía DDG: artero-champu-bye-bye-antiparasitario-250-ml (11 imgs)
+2026-05-19 14:34:11,206 [INFO]   Match: artero-champu-bye-bye-antiparasitario-250-ml  (score=1.00, 11 imgs)
+2026-05-19 14:34:11,446 [WARNING]   Baja res 265×265 — omitida: bodegon_bye_bye_web.jpg
+2026-05-19 14:34:11,874 [WARNING]   Baja res 300×300 — omitida: bodegon_bye_bye_web.jpg
+2026-05-19 14:34:12,106 [INFO]   Descargada: bodegon_bye_bye_web.jpg  1100×1100
+2026-05-19 14:34:12,403 [INFO]   Descargada: bodegon_bye_bye_web.jpg  900×900
+2026-05-19 14:34:12,627 [WARNING]   Baja res 679×770 — omitida: 61kyfhamq2s._ac_sx679_.jpg
+2026-05-19 14:34:12,703 [WARNING]   Baja res 679×679 — omitida: 61x0rszxd-s._ac_sx679_.jpg
+2026-05-19 14:34:12,939 [WARNING]   Baja res 679×715 — omitida: 61artn_kmas._ac_sx679_.jpg
+2026-05-19 14:34:12,995 [WARNING]   Baja res 679×679 — omitida: 61bhugaaq3s._ac_sx679_.jpg
+2026-05-19 14:34:13,057 [WARNING]   Baja res 679×679 — omitida: 61jatnp-lus._ac_sx679_.jpg
+2026-05-19 14:34:13,129 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:34:13,357 [WARNING]   Baja res 80×80 — omitida: bodegon_bye_bye_web.jpg
+2026-05-19 14:34:13,376 [INFO]   [dedupe] descartada (1100, 1100) 48KB → queda (900, 900) 108KB (posición 1)
+2026-05-19 14:34:13,376 [INFO]   [dedupe] 2 → 1 imágenes únicas
+2026-05-19 14:34:13,376 [INFO]   Imagen 1: RGB (900, 900)
+2026-05-19 14:34:13,386 [INFO]     [bg] 2116/2116 (100%)
+2026-05-19 14:34:13,391 [INFO]     [autocrop] (900, 900) → (568, 679)
+2026-05-19 14:34:13,391 [INFO]     [padding 5%]
+2026-05-19 14:34:17,548 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:34:19,997 [INFO]   ✓ 1/1 subida  [artero-champu-bye-bye-ndr_1.webp]
+2026-05-19 14:34:21,497 [INFO] 
+[10/44] ARTERO CHAMPU DETOX 100ML (NDR)  (ID: 15509635957123)
+2026-05-19 14:34:21,498 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-detox-100ml
+2026-05-19 14:34:22,920 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU DETOX 100ML
+2026-05-19 14:34:23,182 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20DETOX%20100ML 200
+2026-05-19 14:34:23,257 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+100ML&limit=1 200
+2026-05-19 14:34:23,496 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:34:24,037 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:34:24,592 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+100ML 403
+2026-05-19 14:34:24,826 [INFO] response: https://search.yahoo.com/search;_ylt=0yfaUghnKhJbw_IBCRoqo8gc;_ylu=_K5YnDpL34upqHufu91BI14PpqbGvaCi3AU2fwdrEpJAYC8?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+100ML 200
+2026-05-19 14:34:25,228 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-detox-carbon-activo-250-ml
+2026-05-19 14:34:33,482 [INFO]   ✓ Resuelto vía DDG: artero-champu-detox-carbon-activo-250-ml (24 imgs)
+2026-05-19 14:34:33,482 [INFO]   Match: artero-champu-detox-carbon-activo-250-ml  (score=1.00, 24 imgs)
+2026-05-19 14:34:33,708 [WARNING]   Baja res 265×265 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:34:33,938 [WARNING]   Baja res 300×300 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:34:34,157 [INFO]   Descargada: bodegon_detox_champu_web.jpg  1100×1100
+2026-05-19 14:34:34,389 [INFO]   Descargada: bodegon_detox_champu_web.jpg  900×900
+2026-05-19 14:34:34,652 [INFO]   Descargada: 06_cierre_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:34:34,877 [WARNING]   Baja res 300×300 — omitida: 06_cierre_detox_25_es_3.jpg
+2026-05-19 14:34:35,147 [INFO]   Descargada: 02_funciones_detox_25_es_4.jpg  1100×1100
+2026-05-19 14:34:35,373 [WARNING]   Baja res 300×300 — omitida: 02_funciones_detox_25_es_4.jpg
+2026-05-19 14:34:35,602 [WARNING]   Baja res 110×110 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:34:35,809 [WARNING]   Baja res 110×110 — omitida: 02_funciones_detox_25_es_4.jpg
+2026-05-19 14:34:36,027 [WARNING]   Baja res 110×110 — omitida: 03_pasos_detox_25_es_3.jpg
+2026-05-19 14:34:36,254 [WARNING]   Baja res 300×300 — omitida: 03_pasos_detox_25_es_3.jpg
+2026-05-19 14:34:36,499 [INFO]   Descargada: 03_pasos_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:34:36,718 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_detox_25_es_3.jpg
+2026-05-19 14:34:36,938 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_detox_25_es_3.jpg
+2026-05-19 14:34:37,172 [INFO]   Descargada: 04_ingredientes_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:34:37,405 [WARNING]   Baja res 110×110 — omitida: 06_cierre_detox_25_es_3.jpg
+2026-05-19 14:34:37,646 [INFO]   Descargada: 02_Funciones_DETOX_25_ES_2.jpg  900×900
+2026-05-19 14:34:37,899 [INFO]   Descargada: 03_Pasos_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:34:38,140 [INFO]   Descargada: 05_Bodegon_DETOX_25_ES_3.jpg  900×900
+2026-05-19 14:34:38,382 [INFO]   Descargada: 04_Ingredientes_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:34:38,633 [INFO]   Descargada: 06_Cierre_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:34:38,872 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:34:39,102 [WARNING]   Baja res 80×80 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:34:39,188 [INFO]   [dedupe] descartada (900, 900) 43KB → queda (1100, 1100) 54KB (posición 1)
+2026-05-19 14:34:39,188 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 3)
+2026-05-19 14:34:39,188 [INFO]   [dedupe] descartada (900, 900) 48KB → queda (1100, 1100) 58KB (posición 4)
+2026-05-19 14:34:39,188 [INFO]   [dedupe] descartada (900, 900) 87KB → queda (1100, 1100) 109KB (posición 5)
+2026-05-19 14:34:39,188 [INFO]   [dedupe] descartada (900, 900) 57KB → queda (1100, 1100) 71KB (posición 6)
+2026-05-19 14:34:39,188 [INFO]   [dedupe] 11 → 6 imágenes únicas
+2026-05-19 14:34:39,188 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:34:39,194 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:34:39,201 [INFO]     [autocrop] (1100, 1100) → (752, 873)
+2026-05-19 14:34:39,201 [INFO]     [padding 5%]
+2026-05-19 14:34:39,257 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:34:39,266 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:34:39,266 [INFO]     [sin padding]
+2026-05-19 14:34:39,347 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:34:39,355 [INFO]     [bg] 2260/3136 (72%)
+2026-05-19 14:34:39,362 [INFO]     [autocrop] (1100, 1100) → (1014, 1100)
+2026-05-19 14:34:39,362 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:34:39,362 [INFO]     [sin padding]
+2026-05-19 14:34:39,444 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:34:39,453 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:34:39,453 [INFO]     [sin padding]
+2026-05-19 14:34:39,534 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:34:39,541 [INFO]     [bg] 2333/3136 (74%)
+2026-05-19 14:34:39,549 [INFO]     [autocrop] (1100, 1100) → (1100, 1002)
+2026-05-19 14:34:39,549 [INFO]     [fills-frame 100%×91%] → sin padding
+2026-05-19 14:34:39,549 [INFO]     [sin padding]
+2026-05-19 14:34:39,632 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:34:39,638 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:34:39,638 [INFO]     [sin padding]
+2026-05-19 14:34:43,759 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:34:46,069 [INFO]   ✓ 1/6 subida  [artero-champu-detox-100ml-ndr_1.webp]
+2026-05-19 14:34:49,288 [INFO]   ✓ 2/6 subida  [artero-champu-detox-100ml-ndr_2.webp]
+2026-05-19 14:34:52,060 [INFO]   ✓ 3/6 subida  [artero-champu-detox-100ml-ndr_3.webp]
+2026-05-19 14:34:55,176 [INFO]   ✓ 4/6 subida  [artero-champu-detox-100ml-ndr_4.webp]
+2026-05-19 14:34:58,128 [INFO]   ✓ 5/6 subida  [artero-champu-detox-100ml-ndr_5.webp]
+2026-05-19 14:35:00,784 [INFO]   ✓ 6/6 subida  [artero-champu-detox-100ml-ndr_6.webp]
+2026-05-19 14:35:02,284 [INFO] 
+[11/44] ARTERO CHAMPU DETOX CARBON ACTIVO (NDR)  (ID: 15509636088195)
+2026-05-19 14:35:02,285 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-detox-carbon-activo
+2026-05-19 14:35:04,880 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU DETOX CARBON ACTIVO
+2026-05-19 14:35:05,140 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+CARBON+ACTIVO&limit=1 200
+2026-05-19 14:35:05,184 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20DETOX%20CARBON%20ACTIVO 200
+2026-05-19 14:35:05,456 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+CARBON+ACTIVO&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:35:05,641 [INFO] response: https://search.yahoo.com/search;_ylt=QdUV_ce5fSOy8fRBSjHij-aM;_ylu=cGZmgLgyg77zmx8lxPoUiV_MmbJMd-AZy_spYFrZrqdgnsU?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+CARBON+ACTIVO 200
+2026-05-19 14:35:06,337 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:35:06,779 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:35:07,337 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+CARBON+ACTIVO 403
+2026-05-19 14:35:08,345 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+DETOX+CARBON+ACTIVO&web=1&searchid=8479127 200
+2026-05-19 14:35:08,364 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-detox-carbon-activo-250-ml
+2026-05-19 14:35:14,200 [INFO]   ✓ Resuelto vía DDG: artero-champu-detox-carbon-activo-250-ml (24 imgs)
+2026-05-19 14:35:14,200 [INFO]   Match: artero-champu-detox-carbon-activo-250-ml  (score=1.00, 24 imgs)
+2026-05-19 14:35:14,267 [WARNING]   Baja res 265×265 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:35:14,337 [WARNING]   Baja res 300×300 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:35:14,408 [INFO]   Descargada: bodegon_detox_champu_web.jpg  1100×1100
+2026-05-19 14:35:14,481 [INFO]   Descargada: bodegon_detox_champu_web.jpg  900×900
+2026-05-19 14:35:14,556 [INFO]   Descargada: 06_cierre_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:35:14,632 [WARNING]   Baja res 300×300 — omitida: 06_cierre_detox_25_es_3.jpg
+2026-05-19 14:35:14,701 [INFO]   Descargada: 02_funciones_detox_25_es_4.jpg  1100×1100
+2026-05-19 14:35:14,764 [WARNING]   Baja res 300×300 — omitida: 02_funciones_detox_25_es_4.jpg
+2026-05-19 14:35:14,822 [WARNING]   Baja res 110×110 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:35:14,881 [WARNING]   Baja res 110×110 — omitida: 02_funciones_detox_25_es_4.jpg
+2026-05-19 14:35:14,944 [WARNING]   Baja res 110×110 — omitida: 03_pasos_detox_25_es_3.jpg
+2026-05-19 14:35:15,010 [WARNING]   Baja res 300×300 — omitida: 03_pasos_detox_25_es_3.jpg
+2026-05-19 14:35:15,083 [INFO]   Descargada: 03_pasos_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:35:15,186 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_detox_25_es_3.jpg
+2026-05-19 14:35:15,261 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_detox_25_es_3.jpg
+2026-05-19 14:35:15,335 [INFO]   Descargada: 04_ingredientes_detox_25_es_3.jpg  1100×1100
+2026-05-19 14:35:15,410 [WARNING]   Baja res 110×110 — omitida: 06_cierre_detox_25_es_3.jpg
+2026-05-19 14:35:15,487 [INFO]   Descargada: 02_Funciones_DETOX_25_ES_2.jpg  900×900
+2026-05-19 14:35:15,557 [INFO]   Descargada: 03_Pasos_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:35:15,618 [INFO]   Descargada: 05_Bodegon_DETOX_25_ES_3.jpg  900×900
+2026-05-19 14:35:15,698 [INFO]   Descargada: 04_Ingredientes_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:35:15,768 [INFO]   Descargada: 06_Cierre_DETOX_25_ES_1.jpg  900×900
+2026-05-19 14:35:15,842 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:35:15,924 [WARNING]   Baja res 80×80 — omitida: bodegon_detox_champu_web.jpg
+2026-05-19 14:35:16,014 [INFO]   [dedupe] descartada (900, 900) 43KB → queda (1100, 1100) 54KB (posición 1)
+2026-05-19 14:35:16,014 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 3)
+2026-05-19 14:35:16,014 [INFO]   [dedupe] descartada (900, 900) 48KB → queda (1100, 1100) 58KB (posición 4)
+2026-05-19 14:35:16,014 [INFO]   [dedupe] descartada (900, 900) 87KB → queda (1100, 1100) 109KB (posición 5)
+2026-05-19 14:35:16,014 [INFO]   [dedupe] descartada (900, 900) 57KB → queda (1100, 1100) 71KB (posición 6)
+2026-05-19 14:35:16,014 [INFO]   [dedupe] 11 → 6 imágenes únicas
+2026-05-19 14:35:16,014 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:35:16,020 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:35:16,028 [INFO]     [autocrop] (1100, 1100) → (752, 873)
+2026-05-19 14:35:16,028 [INFO]     [padding 5%]
+2026-05-19 14:35:16,083 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:35:16,093 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:35:16,093 [INFO]     [sin padding]
+2026-05-19 14:35:16,176 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:35:16,184 [INFO]     [bg] 2260/3136 (72%)
+2026-05-19 14:35:16,191 [INFO]     [autocrop] (1100, 1100) → (1014, 1100)
+2026-05-19 14:35:16,191 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:35:16,191 [INFO]     [sin padding]
+2026-05-19 14:35:16,276 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:35:16,285 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:35:16,285 [INFO]     [sin padding]
+2026-05-19 14:35:16,367 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:35:16,375 [INFO]     [bg] 2333/3136 (74%)
+2026-05-19 14:35:16,383 [INFO]     [autocrop] (1100, 1100) → (1100, 1002)
+2026-05-19 14:35:16,383 [INFO]     [fills-frame 100%×91%] → sin padding
+2026-05-19 14:35:16,383 [INFO]     [sin padding]
+2026-05-19 14:35:16,467 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:35:16,472 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:35:16,472 [INFO]     [sin padding]
+2026-05-19 14:35:20,888 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:35:23,525 [INFO]   ✓ 1/6 subida  [artero-champu-detox-carbon-activo-ndr_1.webp]
+2026-05-19 14:35:26,845 [INFO]   ✓ 2/6 subida  [artero-champu-detox-carbon-activo-ndr_2.webp]
+2026-05-19 14:35:29,534 [INFO]   ✓ 3/6 subida  [artero-champu-detox-carbon-activo-ndr_3.webp]
+2026-05-19 14:35:32,750 [INFO]   ✓ 4/6 subida  [artero-champu-detox-carbon-activo-ndr_4.webp]
+2026-05-19 14:35:35,844 [INFO]   ✓ 5/6 subida  [artero-champu-detox-carbon-activo-ndr_5.webp]
+2026-05-19 14:35:38,707 [INFO]   ✓ 6/6 subida  [artero-champu-detox-carbon-activo-ndr_6.webp]
+2026-05-19 14:35:40,208 [INFO] 
+[12/44] ARTERO CHAMPU GATO (NDR)  (ID: 15509636153731)
+2026-05-19 14:35:40,208 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-gato
+2026-05-19 14:35:41,555 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU GATO
+2026-05-19 14:35:41,780 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20GATO 200
+2026-05-19 14:35:41,900 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+GATO&limit=1 200
+2026-05-19 14:35:42,510 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+GATO 403
+2026-05-19 14:35:42,701 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:35:43,000 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:35:43,304 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:35:44,283 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+GATO&web=1&searchid=9556745 200
+2026-05-19 14:35:44,509 [INFO] response: https://search.yahoo.com/search;_ylt=MMi2uHTuHPNcp6yi8xhgo1Oa;_ylu=hveAuQRQJCJZG20j0A2acELjIfyuY0KN6_QwA7oBITaespY?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+GATO 200
+2026-05-19 14:35:44,931 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-gato-250-ml
+2026-05-19 14:35:52,995 [INFO]   ✓ Resuelto vía DDG: artero-champu-gato-250-ml (11 imgs)
+2026-05-19 14:35:52,995 [INFO]   Match: artero-champu-gato-250-ml  (score=1.00, 11 imgs)
+2026-05-19 14:35:53,273 [WARNING]   Baja res 265×265 — omitida: bodegon_4_cats_web_1.jpg
+2026-05-19 14:35:53,504 [WARNING]   Baja res 300×300 — omitida: bodegon_4_cats_web_1.jpg
+2026-05-19 14:35:53,732 [INFO]   Descargada: bodegon_4_cats_web_1.jpg  1100×1100
+2026-05-19 14:35:53,954 [INFO]   Descargada: bodegon_4_cats_web_1.jpg  900×900
+2026-05-19 14:35:54,201 [INFO]   Descargada: 01_Imagen_Principal_H657.jpg  1000×1000
+2026-05-19 14:35:54,433 [INFO]   Descargada: 03_Pasos_H657.jpg  1000×1000
+2026-05-19 14:35:54,668 [INFO]   Descargada: 02_Funciones_H657.jpg  1000×1000
+2026-05-19 14:35:54,894 [INFO]   Descargada: 04_Ingredientes_H657.jpg  1000×1000
+2026-05-19 14:35:55,181 [INFO]   Descargada: 05_Cierre_H657.jpg  1000×1000
+2026-05-19 14:35:55,259 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:35:55,502 [WARNING]   Baja res 80×80 — omitida: bodegon_4_cats_web_1.jpg
+2026-05-19 14:35:55,562 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 56KB (posición 1)
+2026-05-19 14:35:55,563 [INFO]   [dedupe] 7 → 6 imágenes únicas
+2026-05-19 14:35:55,563 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:35:55,568 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:35:55,576 [INFO]     [autocrop] (1100, 1100) → (567, 898)
+2026-05-19 14:35:55,576 [INFO]     [padding 5%]
+2026-05-19 14:35:55,617 [INFO]   Imagen 2: RGB (1000, 1000)
+2026-05-19 14:35:55,623 [INFO]     [bg] 2500/2500 (100%)
+2026-05-19 14:35:55,629 [INFO]     [autocrop] (1000, 1000) → (626, 873)
+2026-05-19 14:35:55,629 [INFO]     [padding 5%]
+2026-05-19 14:35:55,676 [INFO]   Imagen 3: RGB (1000, 1000)
+2026-05-19 14:35:55,686 [INFO]     [bg] 251/2500 (10%)
+2026-05-19 14:35:55,686 [INFO]     [sin padding]
+2026-05-19 14:35:55,765 [INFO]   Imagen 4: RGB (1000, 1000)
+2026-05-19 14:35:55,770 [INFO]     [bg] 1764/2500 (71%)
+2026-05-19 14:35:55,777 [INFO]     [autocrop] (1000, 1000) → (887, 1000)
+2026-05-19 14:35:55,777 [INFO]     [fills-frame 89%×100%] → sin padding
+2026-05-19 14:35:55,777 [INFO]     [sin padding]
+2026-05-19 14:35:55,856 [INFO]   Imagen 5: RGB (1000, 1000)
+2026-05-19 14:35:55,865 [INFO]     [bg] 568/2500 (23%)
+2026-05-19 14:35:55,865 [INFO]     [sin padding]
+2026-05-19 14:35:55,944 [INFO]   Imagen 6: RGB (1000, 1000)
+2026-05-19 14:35:55,954 [INFO]     [bg] 1250/2500 (50%)
+2026-05-19 14:35:55,954 [INFO]     [sin padding]
+2026-05-19 14:36:00,165 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:36:02,386 [INFO]   ✓ 1/6 subida  [artero-champu-gato-ndr_1.webp]
+2026-05-19 14:36:05,070 [INFO]   ✓ 2/6 subida  [artero-champu-gato-ndr_2.webp]
+2026-05-19 14:36:08,441 [INFO]   ✓ 3/6 subida  [artero-champu-gato-ndr_3.webp]
+2026-05-19 14:36:11,370 [INFO]   ✓ 4/6 subida  [artero-champu-gato-ndr_4.webp]
+2026-05-19 14:36:14,453 [INFO]   ✓ 5/6 subida  [artero-champu-gato-ndr_5.webp]
+2026-05-19 14:36:17,718 [INFO]   ✓ 6/6 subida  [artero-champu-gato-ndr_6.webp]
+2026-05-19 14:36:19,219 [INFO] 
+[13/44] ARTERO CHAMPU HIDRATANTE (NDR)  (ID: 15509636284803)
+2026-05-19 14:36:19,219 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-hidratante
+2026-05-19 14:36:20,612 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU HIDRATANTE
+2026-05-19 14:36:20,830 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20HIDRATANTE 200
+2026-05-19 14:36:20,932 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE&limit=1 200
+2026-05-19 14:36:21,111 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:36:21,332 [INFO] response: https://search.yahoo.com/search;_ylt=-eMwnaJ7UdZI8pl5Bti_UbkZ;_ylu=Ts2uyOTobLGM2aQSMDhUj-oq6Vs6XJY-ddFSwXWMTDSKJHM?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE 200
+2026-05-19 14:36:21,948 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:36:23,079 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE&web=1&searchid=9302112 200
+2026-05-19 14:36:23,207 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE&source=web 429
+2026-05-19 14:36:23,699 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+HIDRATANTE 403
+2026-05-19 14:36:23,699 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-hidratante-250ml
+2026-05-19 14:36:29,806 [INFO]   ✓ Resuelto vía DDG: artero-champu-hidratante-250ml (24 imgs)
+2026-05-19 14:36:29,807 [INFO]   Match: artero-champu-hidratante-250ml  (score=1.00, 24 imgs)
+2026-05-19 14:36:29,943 [WARNING]   Baja res 265×265 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:36:30,005 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:36:30,077 [INFO]   Descargada: bodegon_hidratante_web.jpg  1100×1100
+2026-05-19 14:36:30,150 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:36:30,237 [INFO]   Descargada: 06_cierre_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:36:30,307 [WARNING]   Baja res 300×300 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,376 [INFO]   Descargada: 02_funciones_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:36:30,438 [WARNING]   Baja res 300×300 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,508 [WARNING]   Baja res 110×110 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:36:30,578 [WARNING]   Baja res 110×110 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,652 [WARNING]   Baja res 110×110 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,715 [WARNING]   Baja res 300×300 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,793 [INFO]   Descargada: 03_pasos_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:36:30,878 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:36:30,942 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:36:31,015 [INFO]   Descargada: 04_ingredientes_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:36:31,092 [WARNING]   Baja res 110×110 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:36:31,166 [INFO]   Descargada: 02_Funciones_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:36:31,252 [INFO]   Descargada: 03_Pasos_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:36:31,331 [INFO]   Descargada: 05_Bodegon_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:36:31,404 [INFO]   Descargada: 04_Ingredientes_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:36:31,487 [INFO]   Descargada: 06_Cierre_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:36:31,557 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:36:31,618 [WARNING]   Baja res 80×80 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 4)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 60KB (posición 5)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 72KB → queda (1100, 1100) 92KB (posición 6)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] descartada (900, 900) 67KB → queda (1100, 1100) 86KB (posición 7)
+2026-05-19 14:36:31,712 [INFO]   [dedupe] 12 → 6 imágenes únicas
+2026-05-19 14:36:31,712 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:36:31,718 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:36:31,726 [INFO]     [autocrop] (1100, 1100) → (750, 874)
+2026-05-19 14:36:31,726 [INFO]     [padding 5%]
+2026-05-19 14:36:31,781 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:36:31,791 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:36:31,791 [INFO]     [sin padding]
+2026-05-19 14:36:31,872 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:36:31,878 [INFO]     [bg] 2172/3136 (69%)
+2026-05-19 14:36:31,886 [INFO]     [autocrop] (1100, 1100) → (1014, 1100)
+2026-05-19 14:36:31,886 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:36:31,886 [INFO]     [sin padding]
+2026-05-19 14:36:31,971 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:36:31,980 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:36:31,980 [INFO]     [sin padding]
+2026-05-19 14:36:32,062 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:36:32,070 [INFO]     [bg] 1516/3136 (48%)
+2026-05-19 14:36:32,070 [INFO]     [sin padding]
+2026-05-19 14:36:32,153 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:36:32,158 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:36:32,158 [INFO]     [sin padding]
+2026-05-19 14:36:36,535 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:36:38,842 [INFO]   ✓ 1/6 subida  [artero-champu-hidratante-ndr_1.webp]
+2026-05-19 14:36:42,034 [INFO]   ✓ 2/6 subida  [artero-champu-hidratante-ndr_2.webp]
+2026-05-19 14:36:44,728 [INFO]   ✓ 3/6 subida  [artero-champu-hidratante-ndr_3.webp]
+2026-05-19 14:36:47,787 [INFO]   ✓ 4/6 subida  [artero-champu-hidratante-ndr_4.webp]
+2026-05-19 14:36:51,461 [INFO]   ✓ 5/6 subida  [artero-champu-hidratante-ndr_5.webp]
+2026-05-19 14:36:54,139 [INFO]   ✓ 6/6 subida  [artero-champu-hidratante-ndr_6.webp]
+2026-05-19 14:36:55,640 [INFO] 
+[14/44] ARTERO CHAMPU HIDRATANTE 5LT (NDR)  (ID: 15509636383107)
+2026-05-19 14:36:55,640 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-hidratante-5lt
+2026-05-19 14:37:01,859 [INFO]   ✓ Resuelto vía slug directo: artero-champu-hidratante-5lt (24 imgs)
+2026-05-19 14:37:01,859 [INFO]   Match: artero-champu-hidratante-5lt  (score=1.00, 24 imgs)
+2026-05-19 14:37:01,923 [WARNING]   Baja res 265×265 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:37:01,994 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:37:02,192 [INFO]   Descargada: bodegon_hidratante_web.jpg  1100×1100
+2026-05-19 14:37:02,281 [INFO]   Descargada: bodegon_hidratante_web.jpg  900×900
+2026-05-19 14:37:02,359 [INFO]   Descargada: 06_cierre_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:37:02,426 [WARNING]   Baja res 300×300 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:37:02,512 [INFO]   Descargada: 02_funciones_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:37:02,590 [WARNING]   Baja res 300×300 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:37:02,674 [WARNING]   Baja res 110×110 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:37:02,743 [WARNING]   Baja res 110×110 — omitida: 02_funciones_hidratante_25_es_3.jpg
+2026-05-19 14:37:02,814 [WARNING]   Baja res 110×110 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:37:02,880 [WARNING]   Baja res 300×300 — omitida: 03_pasos_hidratante_25_es_3.jpg
+2026-05-19 14:37:02,951 [INFO]   Descargada: 03_pasos_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:37:03,028 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:37:03,087 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_hidratante_25_es_3.jpg
+2026-05-19 14:37:03,169 [INFO]   Descargada: 04_ingredientes_hidratante_25_es_3.jpg  1100×1100
+2026-05-19 14:37:03,233 [WARNING]   Baja res 110×110 — omitida: 06_cierre_hidratante_25_es_3.jpg
+2026-05-19 14:37:03,350 [INFO]   Descargada: 02_Funciones_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:37:03,421 [INFO]   Descargada: 03_Pasos_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:37:03,488 [INFO]   Descargada: 05_Bodegon_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:37:03,571 [INFO]   Descargada: 04_Ingredientes_HIDRATANTE_25_ES_2.jpg  900×900
+2026-05-19 14:37:03,667 [INFO]   Descargada: 06_Cierre_HIDRATANTE_25_ES_1.jpg  900×900
+2026-05-19 14:37:03,753 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:37:03,821 [WARNING]   Baja res 80×80 — omitida: bodegon_hidratante_web.jpg
+2026-05-19 14:37:03,916 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] descartada (900, 900) 46KB → queda (1100, 1100) 58KB (posición 1)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 4)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 60KB (posición 5)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] descartada (900, 900) 72KB → queda (1100, 1100) 92KB (posición 6)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] descartada (900, 900) 67KB → queda (1100, 1100) 86KB (posición 7)
+2026-05-19 14:37:03,917 [INFO]   [dedupe] 12 → 6 imágenes únicas
+2026-05-19 14:37:03,917 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:37:03,923 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:37:03,930 [INFO]     [autocrop] (1100, 1100) → (750, 874)
+2026-05-19 14:37:03,930 [INFO]     [padding 5%]
+2026-05-19 14:37:03,986 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:37:03,995 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:37:03,995 [INFO]     [sin padding]
+2026-05-19 14:37:04,077 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:37:04,084 [INFO]     [bg] 2172/3136 (69%)
+2026-05-19 14:37:04,091 [INFO]     [autocrop] (1100, 1100) → (1014, 1100)
+2026-05-19 14:37:04,091 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:37:04,091 [INFO]     [sin padding]
+2026-05-19 14:37:04,174 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:37:04,183 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:37:04,183 [INFO]     [sin padding]
+2026-05-19 14:37:04,278 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:37:04,293 [INFO]     [bg] 1516/3136 (48%)
+2026-05-19 14:37:04,293 [INFO]     [sin padding]
+2026-05-19 14:37:04,378 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:37:04,384 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:37:04,384 [INFO]     [sin padding]
+2026-05-19 14:37:08,637 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:37:11,061 [INFO]   ✓ 1/6 subida  [artero-champu-hidratante-5lt-ndr_1.webp]
+2026-05-19 14:37:14,234 [INFO]   ✓ 2/6 subida  [artero-champu-hidratante-5lt-ndr_2.webp]
+2026-05-19 14:37:17,060 [INFO]   ✓ 3/6 subida  [artero-champu-hidratante-5lt-ndr_3.webp]
+2026-05-19 14:37:20,126 [INFO]   ✓ 4/6 subida  [artero-champu-hidratante-5lt-ndr_4.webp]
+2026-05-19 14:37:23,153 [INFO]   ✓ 5/6 subida  [artero-champu-hidratante-5lt-ndr_5.webp]
+2026-05-19 14:37:25,853 [INFO]   ✓ 6/6 subida  [artero-champu-hidratante-5lt-ndr_6.webp]
+2026-05-19 14:37:27,353 [INFO] 
+[15/44] ARTERO CHAMPU RELAX (NDR)  (ID: 15509636415875)
+2026-05-19 14:37:27,354 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-relax
+2026-05-19 14:37:28,716 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU RELAX
+2026-05-19 14:37:28,997 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+RELAX&limit=1 200
+2026-05-19 14:37:29,185 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20RELAX 200
+2026-05-19 14:37:29,348 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:37:29,609 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:37:29,995 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:37:30,234 [INFO] response: https://search.yahoo.com/search;_ylt=zc6kctG-s4lkIYuKRDEQCYfR;_ylu=0cFma-pjjH6Crc8AmZWFy_et4doDdhmrPJH_fmRPC7MWS9I?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+RELAX 200
+2026-05-19 14:37:31,700 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+RELAX&web=1&searchid=5515162 200
+2026-05-19 14:37:31,722 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-relax-para-pieles-sensibles-250-ml
+2026-05-19 14:37:39,932 [INFO]   ✓ Resuelto vía DDG: artero-champu-relax-para-pieles-sensibles-250-ml (23 imgs)
+2026-05-19 14:37:39,932 [INFO]   Match: artero-champu-relax-para-pieles-sensibles-250-ml  (score=1.00, 23 imgs)
+2026-05-19 14:37:40,169 [WARNING]   Baja res 265×265 — omitida: bodegon_relax_web_1.jpg
+2026-05-19 14:37:40,390 [WARNING]   Baja res 300×300 — omitida: bodegon_relax_web_1.jpg
+2026-05-19 14:37:40,624 [INFO]   Descargada: bodegon_relax_web_1.jpg  1100×1100
+2026-05-19 14:37:40,850 [INFO]   Descargada: bodegon_relax_web_1.jpg  900×900
+2026-05-19 14:37:41,098 [INFO]   Descargada: hero_champu_relax_05_cierre_es.jpg  1100×1100
+2026-05-19 14:37:41,327 [WARNING]   Baja res 300×300 — omitida: hero_champu_relax_05_cierre_es.jpg
+2026-05-19 14:37:41,560 [INFO]   Descargada: hero_champu_relax_02_caracterisiticias_es.jpg  1100×1100
+2026-05-19 14:37:41,795 [WARNING]   Baja res 300×300 — omitida: hero_champu_relax_02_caracterisiticias_es.jpg
+2026-05-19 14:37:42,022 [WARNING]   Baja res 110×110 — omitida: bodegon_relax_web_1.jpg
+2026-05-19 14:37:42,273 [WARNING]   Baja res 110×110 — omitida: hero_champu_relax_02_caracterisiticias_es.jpg
+2026-05-19 14:37:42,495 [WARNING]   Baja res 110×110 — omitida: hero_champu_relax_03_recomendado_es.jpg
+2026-05-19 14:37:42,736 [WARNING]   Baja res 300×300 — omitida: hero_champu_relax_03_recomendado_es.jpg
+2026-05-19 14:37:42,990 [INFO]   Descargada: hero_champu_relax_03_recomendado_es.jpg  1100×1100
+2026-05-19 14:37:43,232 [WARNING]   Baja res 110×110 — omitida: hero_champu_relax_04_ingredientes_es.jpg
+2026-05-19 14:37:43,460 [WARNING]   Baja res 300×300 — omitida: hero_champu_relax_04_ingredientes_es.jpg
+2026-05-19 14:37:43,700 [INFO]   Descargada: hero_champu_relax_04_ingredientes_es.jpg  1100×1100
+2026-05-19 14:37:43,941 [WARNING]   Baja res 110×110 — omitida: hero_champu_relax_05_cierre_es.jpg
+2026-05-19 14:37:44,161 [INFO]   Descargada: HERO_Champu_Relax_03_Recomendado_ES.jpg  900×900
+2026-05-19 14:37:44,396 [INFO]   Descargada: HERO_Champu_Relax_02_Caracterisiticias_ES.jpg  900×900
+2026-05-19 14:37:44,628 [INFO]   Descargada: HERO_Champu_Relax_04_Ingredientes_ES.jpg  900×900
+2026-05-19 14:37:44,876 [INFO]   Descargada: HERO_Champu_Relax_05_Cierre_ES.jpg  900×900
+2026-05-19 14:37:44,938 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:37:45,168 [WARNING]   Baja res 80×80 — omitida: bodegon_relax_web_1.jpg
+2026-05-19 14:37:45,248 [INFO]   [dedupe] descartada (900, 900) 36KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:37:45,248 [INFO]   [dedupe] descartada (900, 900) 95KB → queda (1100, 1100) 118KB (posición 3)
+2026-05-19 14:37:45,248 [INFO]   [dedupe] descartada (900, 900) 56KB → queda (1100, 1100) 69KB (posición 4)
+2026-05-19 14:37:45,248 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 60KB (posición 5)
+2026-05-19 14:37:45,248 [INFO]   [dedupe] descartada (900, 900) 54KB → queda (1100, 1100) 67KB (posición 6)
+2026-05-19 14:37:45,248 [INFO]   [dedupe] 10 → 5 imágenes únicas
+2026-05-19 14:37:45,248 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:37:45,254 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:37:45,262 [INFO]     [autocrop] (1100, 1100) → (695, 829)
+2026-05-19 14:37:45,262 [INFO]     [padding 5%]
+2026-05-19 14:37:45,315 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:37:45,324 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:37:45,324 [INFO]     [sin padding]
+2026-05-19 14:37:45,406 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:37:45,414 [INFO]     [bg] 779/3136 (25%)
+2026-05-19 14:37:45,414 [INFO]     [sin padding]
+2026-05-19 14:37:45,496 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:37:45,503 [INFO]     [bg] 2470/3136 (79%)
+2026-05-19 14:37:45,511 [INFO]     [autocrop] (1100, 1100) → (1100, 976)
+2026-05-19 14:37:45,511 [INFO]     [fills-frame 100%×89%] → sin padding
+2026-05-19 14:37:45,511 [INFO]     [sin padding]
+2026-05-19 14:37:45,593 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:37:45,601 [INFO]     [bg] 1256/3136 (40%)
+2026-05-19 14:37:45,601 [INFO]     [sin padding]
+2026-05-19 14:37:49,292 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:37:51,491 [INFO]   ✓ 1/5 subida  [artero-champu-relax-ndr_1.webp]
+2026-05-19 14:37:54,780 [INFO]   ✓ 2/5 subida  [artero-champu-relax-ndr_2.webp]
+2026-05-19 14:37:57,980 [INFO]   ✓ 3/5 subida  [artero-champu-relax-ndr_3.webp]
+2026-05-19 14:38:00,750 [INFO]   ✓ 4/5 subida  [artero-champu-relax-ndr_4.webp]
+2026-05-19 14:38:03,551 [INFO]   ✓ 5/5 subida  [artero-champu-relax-ndr_5.webp]
+2026-05-19 14:38:05,051 [INFO] 
+[16/44] ARTERO CHAMPU TSUNAMI 100 ML (NDR)  (ID: 15509636579715)
+2026-05-19 14:38:05,051 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-tsunami-100ml
+2026-05-19 14:38:06,426 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU TSUNAMI 100 ML
+2026-05-19 14:38:06,699 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20TSUNAMI%20100%20ML 200
+2026-05-19 14:38:06,851 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&limit=1 200
+2026-05-19 14:38:07,100 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:38:07,265 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:38:07,979 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&web=1&searchid=2260442 200
+2026-05-19 14:38:08,077 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&source=web 429
+2026-05-19 14:38:08,628 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML 403
+2026-05-19 14:38:08,829 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:38:09,172 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:38:09,377 [INFO] response: https://search.yahoo.com/search;_ylt=x8Z9CGoYnKUXhnQQ1LxZCSuH;_ylu=Bz8zwzPNjgHre3n6QolJ3VkgzJB0iysv4OTcUMAzlzcb4MQ?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML 200
+2026-05-19 14:38:10,175 [WARNING]   [DDG] error (1/3): No results found. — reintento en 3s
+2026-05-19 14:38:13,250 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20TSUNAMI%20100%20ML 200
+2026-05-19 14:38:13,418 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&limit=1 200
+2026-05-19 14:38:13,495 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&source=web 429
+2026-05-19 14:38:13,709 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:38:14,178 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:38:14,427 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:38:15,462 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+TSUNAMI+100+ML&web=1&searchid=3931664 200
+2026-05-19 14:38:15,480 [INFO]   [DDG] → https://artero.com/es/petcare/champu-tsunami
+2026-05-19 14:38:23,767 [INFO]   ✓ Resuelto vía DDG: champu-tsunami (19 imgs)
+2026-05-19 14:38:23,767 [INFO]   Match: champu-tsunami  (score=1.00, 19 imgs)
+2026-05-19 14:38:23,980 [WARNING]   Baja res 265×265 — omitida: bodegon_tsunami_web.jpg
+2026-05-19 14:38:24,211 [WARNING]   Baja res 300×300 — omitida: bodegon_tsunami_web.jpg
+2026-05-19 14:38:24,439 [INFO]   Descargada: bodegon_tsunami_web.jpg  1100×1100
+2026-05-19 14:38:24,671 [INFO]   Descargada: bodegon_tsunami_web.jpg  900×900
+2026-05-19 14:38:24,921 [INFO]   Descargada: hero_champu_tsunami_05_cierre_es.jpg  1100×1100
+2026-05-19 14:38:25,170 [WARNING]   Baja res 300×300 — omitida: hero_champu_tsunami_05_cierre_es.jpg
+2026-05-19 14:38:25,424 [INFO]   Descargada: hero_champu_tsunami_02_caracterisiticias_es.jpg  1100×1100
+2026-05-19 14:38:25,690 [WARNING]   Baja res 300×300 — omitida: hero_champu_tsunami_02_caracterisiticias_es.jpg
+2026-05-19 14:38:25,917 [WARNING]   Baja res 110×110 — omitida: bodegon_tsunami_web.jpg
+2026-05-19 14:38:26,143 [WARNING]   Baja res 110×110 — omitida: hero_champu_tsunami_02_caracterisiticias_es.jpg
+2026-05-19 14:38:26,367 [WARNING]   Baja res 110×110 — omitida: hero_champu_tsunami_03_recomendado_es.jpg
+2026-05-19 14:38:26,610 [WARNING]   Baja res 300×300 — omitida: hero_champu_tsunami_03_recomendado_es.jpg
+2026-05-19 14:38:26,868 [INFO]   Descargada: hero_champu_tsunami_03_recomendado_es.jpg  1100×1100
+2026-05-19 14:38:27,103 [WARNING]   Baja res 110×110 — omitida: hero_champu_tsunami_04_ingredientes_es.jpg
+2026-05-19 14:38:27,328 [WARNING]   Baja res 300×300 — omitida: hero_champu_tsunami_04_ingredientes_es.jpg
+2026-05-19 14:38:27,551 [INFO]   Descargada: hero_champu_tsunami_04_ingredientes_es.jpg  1100×1100
+2026-05-19 14:38:27,783 [WARNING]   Baja res 110×110 — omitida: hero_champu_tsunami_05_cierre_es.jpg
+2026-05-19 14:38:27,852 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:38:28,073 [WARNING]   Baja res 80×80 — omitida: bodegon_tsunami_web.jpg
+2026-05-19 14:38:28,129 [INFO]   [dedupe] descartada (900, 900) 30KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:38:28,129 [INFO]   [dedupe] 6 → 5 imágenes únicas
+2026-05-19 14:38:28,130 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:38:28,136 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:38:28,143 [INFO]     [autocrop] (1100, 1100) → (662, 806)
+2026-05-19 14:38:28,143 [INFO]     [padding 5%]
+2026-05-19 14:38:28,195 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:38:28,205 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:38:28,206 [INFO]     [sin padding]
+2026-05-19 14:38:28,287 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:38:28,296 [INFO]     [bg] 735/3136 (23%)
+2026-05-19 14:38:28,296 [INFO]     [sin padding]
+2026-05-19 14:38:28,378 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:38:28,386 [INFO]     [bg] 3/3136 (0%)
+2026-05-19 14:38:28,387 [INFO]     [sin padding]
+2026-05-19 14:38:28,468 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:38:28,477 [INFO]     [bg] 1242/3136 (40%)
+2026-05-19 14:38:28,477 [INFO]     [sin padding]
+2026-05-19 14:38:32,054 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:38:34,322 [INFO]   ✓ 1/5 subida  [artero-champu-tsunami-100-ml-ndr_1.webp]
+2026-05-19 14:38:37,428 [INFO]   ✓ 2/5 subida  [artero-champu-tsunami-100-ml-ndr_2.webp]
+2026-05-19 14:38:40,338 [INFO]   ✓ 3/5 subida  [artero-champu-tsunami-100-ml-ndr_3.webp]
+2026-05-19 14:38:43,275 [INFO]   ✓ 4/5 subida  [artero-champu-tsunami-100-ml-ndr_4.webp]
+2026-05-19 14:38:46,395 [INFO]   ✓ 5/5 subida  [artero-champu-tsunami-100-ml-ndr_5.webp]
+2026-05-19 14:38:47,895 [INFO] 
+[17/44] ARTERO CHAMPU VITALIZANTE (NDR)  (ID: 15509636776323)
+2026-05-19 14:38:47,896 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-vitalizante
+2026-05-19 14:38:49,280 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU VITALIZANTE
+2026-05-19 14:38:49,514 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20VITALIZANTE 200
+2026-05-19 14:38:49,562 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+VITALIZANTE&limit=1 200
+2026-05-19 14:38:49,756 [INFO] response: https://search.yahoo.com/search;_ylt=tG8Xensf1gGU4ESVYxyx6Fqq;_ylu=cu6pG-udA34iQGZr8_pTw3SmWNbmP2MwUy3mdVMlqqlcB8M?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+VITALIZANTE 200
+2026-05-19 14:38:50,376 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:38:51,365 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+VITALIZANTE&web=1&searchid=8578686 200
+2026-05-19 14:38:51,573 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:38:52,194 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:38:52,297 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-vitalizante-250ml
+2026-05-19 14:38:58,359 [INFO]   ✓ Resuelto vía DDG: artero-champu-vitalizante-250ml (24 imgs)
+2026-05-19 14:38:58,359 [INFO]   Match: artero-champu-vitalizante-250ml  (score=1.00, 24 imgs)
+2026-05-19 14:38:58,591 [WARNING]   Baja res 265×265 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:38:58,818 [INFO]   Descargada: bodegon_vitalizante_web.jpg  900×900
+2026-05-19 14:38:59,039 [INFO]   Descargada: bodegon_vitalizante_web.jpg  1100×1100
+2026-05-19 14:38:59,272 [INFO]   Descargada: bodegon_vitalizante_web.jpg  900×900
+2026-05-19 14:38:59,505 [INFO]   Descargada: 06_cierre_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:38:59,736 [WARNING]   Baja res 300×300 — omitida: 06_cierre_vitalizante_25_es_1.jpg
+2026-05-19 14:38:59,972 [INFO]   Descargada: 02_funciones_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:00,224 [WARNING]   Baja res 300×300 — omitida: 02_funciones_vitalizante_25_es_1.jpg
+2026-05-19 14:39:00,460 [WARNING]   Baja res 110×110 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:39:00,676 [WARNING]   Baja res 110×110 — omitida: 02_funciones_vitalizante_25_es_1.jpg
+2026-05-19 14:39:00,894 [WARNING]   Baja res 110×110 — omitida: 03_pasos_vitalizante_25_es_1.jpg
+2026-05-19 14:39:01,105 [WARNING]   Baja res 300×300 — omitida: 03_pasos_vitalizante_25_es_1.jpg
+2026-05-19 14:39:01,361 [INFO]   Descargada: 03_pasos_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:01,586 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_vitalizante_25_es_1.jpg
+2026-05-19 14:39:01,847 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_vitalizante_25_es_1.jpg
+2026-05-19 14:39:02,070 [INFO]   Descargada: 04_ingredientes_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:02,305 [WARNING]   Baja res 110×110 — omitida: 06_cierre_vitalizante_25_es_1.jpg
+2026-05-19 14:39:02,537 [INFO]   Descargada: 02_Funciones_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:02,790 [INFO]   Descargada: 03_Pasos_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:03,002 [INFO]   Descargada: 05_Bodegon_VITALIZANTE_25_ES_2.jpg  900×900
+2026-05-19 14:39:03,228 [INFO]   Descargada: 04_Ingredientes_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:03,466 [INFO]   Descargada: 06_Cierre_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:03,537 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:39:03,767 [WARNING]   Baja res 80×80 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 57KB (posición 1)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 57KB (posición 1)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 95KB → queda (1100, 1100) 119KB (posición 4)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 61KB (posición 5)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 6)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] descartada (900, 900) 62KB → queda (1100, 1100) 78KB (posición 7)
+2026-05-19 14:39:03,859 [INFO]   [dedupe] 12 → 6 imágenes únicas
+2026-05-19 14:39:03,859 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:39:03,865 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:39:03,872 [INFO]     [autocrop] (1100, 1100) → (758, 871)
+2026-05-19 14:39:03,872 [INFO]     [padding 5%]
+2026-05-19 14:39:03,929 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:39:03,937 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:03,938 [INFO]     [sin padding]
+2026-05-19 14:39:04,020 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:39:04,027 [INFO]     [bg] 2217/3136 (71%)
+2026-05-19 14:39:04,034 [INFO]     [autocrop] (1100, 1100) → (1013, 1100)
+2026-05-19 14:39:04,035 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:39:04,035 [INFO]     [sin padding]
+2026-05-19 14:39:04,117 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:39:04,126 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:04,126 [INFO]     [sin padding]
+2026-05-19 14:39:04,207 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:39:04,216 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:04,216 [INFO]     [sin padding]
+2026-05-19 14:39:04,298 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:39:04,303 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:39:04,303 [INFO]     [sin padding]
+2026-05-19 14:39:08,471 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:39:10,719 [INFO]   ✓ 1/6 subida  [artero-champu-vitalizante-ndr_1.webp]
+2026-05-19 14:39:13,895 [INFO]   ✓ 2/6 subida  [artero-champu-vitalizante-ndr_2.webp]
+2026-05-19 14:39:16,567 [INFO]   ✓ 3/6 subida  [artero-champu-vitalizante-ndr_3.webp]
+2026-05-19 14:39:19,698 [INFO]   ✓ 4/6 subida  [artero-champu-vitalizante-ndr_4.webp]
+2026-05-19 14:39:22,625 [INFO]   ✓ 5/6 subida  [artero-champu-vitalizante-ndr_5.webp]
+2026-05-19 14:39:25,384 [INFO]   ✓ 6/6 subida  [artero-champu-vitalizante-ndr_6.webp]
+2026-05-19 14:39:26,884 [INFO] 
+[18/44] Artero Champú Vitalizante Perro y Gato - Piel Sensible y Pelo Duro  (ID: 15509636645251)
+2026-05-19 14:39:26,885 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro
+2026-05-19 14:39:29,125 [INFO]   [DDG] site:artero.com/es/petcare/ Artero Champú Vitalizante Perro y Gato - Piel Sensible y Pelo Duro
+2026-05-19 14:39:29,353 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20Artero%20Champ%C3%BA%20Vitalizante%20Perro%20y%20Gato%20-%20Piel%20Sensible%20y%20Pelo%20Duro 200
+2026-05-19 14:39:29,676 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Champ%C3%BA+Vitalizante+Perro+y+Gato+-+Piel+Sensible+y+Pelo+Duro&limit=1 200
+2026-05-19 14:39:30,290 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Champ%C3%BA+Vitalizante+Perro+y+Gato+-+Piel+Sensible+y+Pelo+Duro&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:39:30,800 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Champ%C3%BA+Vitalizante+Perro+y+Gato+-+Piel+Sensible+y+Pelo+Duro 403
+2026-05-19 14:39:31,090 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:39:31,521 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:39:31,829 [INFO] response: https://search.yahoo.com/search;_ylt=0hfSxrTdW4b2iGdtUshDr638;_ylu=ElkhzBOTWapB78MYn1xzmtqxXGP414Ww6UOjX-3j1AYb_Gg?p=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Champ%C3%BA+Vitalizante+Perro+y+Gato+-+Piel+Sensible+y+Pelo+Duro 200
+2026-05-19 14:39:33,390 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Champ%C3%BA+Vitalizante+Perro+y+Gato+-+Piel+Sensible+y+Pelo+Duro&web=1&searchid=9550339 200
+2026-05-19 14:39:33,407 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-vitalizante-250ml
+2026-05-19 14:39:39,655 [INFO]   ✓ Resuelto vía DDG: artero-champu-vitalizante-250ml (24 imgs)
+2026-05-19 14:39:39,655 [INFO]   Match: artero-champu-vitalizante-250ml  (score=1.00, 24 imgs)
+2026-05-19 14:39:39,733 [WARNING]   Baja res 265×265 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:39:39,796 [INFO]   Descargada: bodegon_vitalizante_web.jpg  900×900
+2026-05-19 14:39:39,858 [INFO]   Descargada: bodegon_vitalizante_web.jpg  1100×1100
+2026-05-19 14:39:39,927 [INFO]   Descargada: bodegon_vitalizante_web.jpg  900×900
+2026-05-19 14:39:40,001 [INFO]   Descargada: 06_cierre_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:40,066 [WARNING]   Baja res 300×300 — omitida: 06_cierre_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,140 [INFO]   Descargada: 02_funciones_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:40,209 [WARNING]   Baja res 300×300 — omitida: 02_funciones_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,283 [WARNING]   Baja res 110×110 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:39:40,364 [WARNING]   Baja res 110×110 — omitida: 02_funciones_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,429 [WARNING]   Baja res 110×110 — omitida: 03_pasos_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,496 [WARNING]   Baja res 300×300 — omitida: 03_pasos_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,577 [INFO]   Descargada: 03_pasos_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:40,651 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,724 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,803 [INFO]   Descargada: 04_ingredientes_vitalizante_25_es_1.jpg  1100×1100
+2026-05-19 14:39:40,869 [WARNING]   Baja res 110×110 — omitida: 06_cierre_vitalizante_25_es_1.jpg
+2026-05-19 14:39:40,930 [INFO]   Descargada: 02_Funciones_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:40,998 [INFO]   Descargada: 03_Pasos_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:41,069 [INFO]   Descargada: 05_Bodegon_VITALIZANTE_25_ES_2.jpg  900×900
+2026-05-19 14:39:41,135 [INFO]   Descargada: 04_Ingredientes_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:41,210 [INFO]   Descargada: 06_Cierre_VITALIZANTE_25_ES.jpg  900×900
+2026-05-19 14:39:41,280 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:39:41,345 [WARNING]   Baja res 80×80 — omitida: bodegon_vitalizante_web.jpg
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 57KB (posición 1)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 45KB → queda (1100, 1100) 57KB (posición 1)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 95KB → queda (1100, 1100) 119KB (posición 4)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 49KB → queda (1100, 1100) 61KB (posición 5)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 92KB → queda (1100, 1100) 116KB (posición 6)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] descartada (900, 900) 62KB → queda (1100, 1100) 78KB (posición 7)
+2026-05-19 14:39:41,444 [INFO]   [dedupe] 12 → 6 imágenes únicas
+2026-05-19 14:39:41,444 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:39:41,450 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:39:41,458 [INFO]     [autocrop] (1100, 1100) → (758, 871)
+2026-05-19 14:39:41,458 [INFO]     [padding 5%]
+2026-05-19 14:39:41,514 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:39:41,523 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:41,523 [INFO]     [sin padding]
+2026-05-19 14:39:41,605 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:39:41,613 [INFO]     [bg] 2217/3136 (71%)
+2026-05-19 14:39:41,621 [INFO]     [autocrop] (1100, 1100) → (1013, 1100)
+2026-05-19 14:39:41,621 [INFO]     [fills-frame 92%×100%] → sin padding
+2026-05-19 14:39:41,621 [INFO]     [sin padding]
+2026-05-19 14:39:41,703 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:39:41,713 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:41,713 [INFO]     [sin padding]
+2026-05-19 14:39:41,796 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:39:41,805 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:39:41,805 [INFO]     [sin padding]
+2026-05-19 14:39:41,887 [INFO]   Imagen 6: RGB (900, 900)
+2026-05-19 14:39:41,892 [INFO]     [bg] 1058/2116 (50%)
+2026-05-19 14:39:41,892 [INFO]     [sin padding]
+2026-05-19 14:39:46,626 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:39:49,160 [INFO]   ✓ 1/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_1.webp]
+2026-05-19 14:39:52,501 [INFO]   ✓ 2/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_2.webp]
+2026-05-19 14:39:55,834 [INFO]   ✓ 3/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_3.webp]
+2026-05-19 14:39:59,203 [INFO]   ✓ 4/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_4.webp]
+2026-05-19 14:40:02,264 [INFO]   ✓ 5/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_5.webp]
+2026-05-19 14:40:05,166 [INFO]   ✓ 6/6 subida  [artero-champu-vitalizante-perro-y-gato-piel-sensible-y-pelo-duro_6.webp]
+2026-05-19 14:40:06,667 [INFO] 
+[19/44] ARTERO CORREA DOG CONTROL 360 M 25KG (NDR)  (ID: 15509636874627)
+2026-05-19 14:40:06,667 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-dog-control-360-m-25kg
+2026-05-19 14:40:08,262 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA DOG CONTROL 360 M 25KG
+2026-05-19 14:40:08,481 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20DOG%20CONTROL%20360%20M%2025KG 200
+2026-05-19 14:40:08,500 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG&limit=1 200
+2026-05-19 14:40:08,672 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:40:08,870 [INFO] response: https://search.yahoo.com/search;_ylt=toU_qV81DfU175pVgeuFlPRa;_ylu=Tmt4rceJK8GascjcEHzW_ntfpzWpBlg2MwFdfv-pxofL8Zc?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG 200
+2026-05-19 14:40:09,599 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:40:10,106 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:40:10,249 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG&source=web 429
+2026-05-19 14:40:10,622 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:40:11,602 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG&web=1&searchid=7570636 200
+2026-05-19 14:40:12,114 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+M+25KG 403
+2026-05-19 14:40:12,115 [INFO]   [DDG] → https://artero.com/es/petcare/artero-correa-dog-control
+2026-05-19 14:40:20,282 [INFO]   ✓ Resuelto vía DDG: artero-correa-dog-control (13 imgs)
+2026-05-19 14:40:20,282 [INFO]   Match: artero-correa-dog-control  (score=1.00, 13 imgs)
+2026-05-19 14:40:20,554 [WARNING]   Baja res 265×265 — omitida: s295_1_1.jpg
+2026-05-19 14:40:20,788 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:21,017 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:21,251 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:21,477 [INFO]   Descargada: s295_3_1_1.jpg  1100×1100
+2026-05-19 14:40:21,702 [WARNING]   Baja res 300×300 — omitida: s295_3_1_1.jpg
+2026-05-19 14:40:21,954 [INFO]   Descargada: s295_2_1_1.jpg  1100×1100
+2026-05-19 14:40:22,184 [WARNING]   Baja res 300×300 — omitida: s295_2_1_1.jpg
+2026-05-19 14:40:22,419 [WARNING]   Baja res 110×110 — omitida: s295_1_1.jpg
+2026-05-19 14:40:22,642 [WARNING]   Baja res 110×110 — omitida: s295_2_1_1.jpg
+2026-05-19 14:40:22,877 [WARNING]   Baja res 110×110 — omitida: s295_3_1_1.jpg
+2026-05-19 14:40:22,956 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:40:23,192 [WARNING]   Baja res 80×80 — omitida: s295_1_1.jpg
+2026-05-19 14:40:23,238 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:40:23,238 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:40:23,238 [INFO]   [dedupe] 5 → 3 imágenes únicas
+2026-05-19 14:40:23,238 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:40:23,245 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:40:23,252 [INFO]     [autocrop] (1100, 1100) → (895, 734)
+2026-05-19 14:40:23,252 [INFO]     [padding 5%]
+2026-05-19 14:40:23,306 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:40:23,312 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:40:23,319 [INFO]     [autocrop] (1100, 1100) → (887, 605)
+2026-05-19 14:40:23,319 [INFO]     [padding 5%]
+2026-05-19 14:40:23,364 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:40:23,373 [INFO]     [bg] 2888/3136 (92%)
+2026-05-19 14:40:23,380 [INFO]     [autocrop] (1100, 1100) → (1100, 578)
+2026-05-19 14:40:23,380 [INFO]     [padding 5%]
+2026-05-19 14:40:25,628 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:40:27,933 [INFO]   ✓ 1/3 subida  [artero-correa-dog-control-360-m-25kg-ndr_1.webp]
+2026-05-19 14:40:30,821 [INFO]   ✓ 2/3 subida  [artero-correa-dog-control-360-m-25kg-ndr_2.webp]
+2026-05-19 14:40:33,723 [INFO]   ✓ 3/3 subida  [artero-correa-dog-control-360-m-25kg-ndr_3.webp]
+2026-05-19 14:40:35,224 [INFO] 
+[20/44] ARTERO CORREA DOG CONTROL 360 S 15KG (NDR)  (ID: 15509636940163)
+2026-05-19 14:40:35,224 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-dog-control-360-s-15kg
+2026-05-19 14:40:36,988 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA DOG CONTROL 360 S 15KG
+2026-05-19 14:40:37,209 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20DOG%20CONTROL%20360%20S%2015KG 200
+2026-05-19 14:40:37,278 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+S+15KG&limit=1 200
+2026-05-19 14:40:37,480 [INFO] response: https://search.yahoo.com/search;_ylt=1oTH3n-W6Y-ruIgonpAVWP8e;_ylu=K4n4IKXhMqlFM8bbzbIjDFRBEmbr3CKLK2d5jlU0V1M3VyU?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+S+15KG 200
+2026-05-19 14:40:38,048 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+S+15KG&source=web 429
+2026-05-19 14:40:38,339 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:40:39,143 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:40:39,214 [INFO]   [DDG] → https://artero.com/es/petcare/artero-correa-dog-control
+2026-05-19 14:40:44,171 [INFO]   ✓ Resuelto vía DDG: artero-correa-dog-control (13 imgs)
+2026-05-19 14:40:44,171 [INFO]   Match: artero-correa-dog-control  (score=1.00, 13 imgs)
+2026-05-19 14:40:44,236 [WARNING]   Baja res 265×265 — omitida: s295_1_1.jpg
+2026-05-19 14:40:44,300 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:44,392 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:44,463 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:40:44,528 [INFO]   Descargada: s295_3_1_1.jpg  1100×1100
+2026-05-19 14:40:44,593 [WARNING]   Baja res 300×300 — omitida: s295_3_1_1.jpg
+2026-05-19 14:40:44,723 [INFO]   Descargada: s295_2_1_1.jpg  1100×1100
+2026-05-19 14:40:44,785 [WARNING]   Baja res 300×300 — omitida: s295_2_1_1.jpg
+2026-05-19 14:40:44,860 [WARNING]   Baja res 110×110 — omitida: s295_1_1.jpg
+2026-05-19 14:40:44,921 [WARNING]   Baja res 110×110 — omitida: s295_2_1_1.jpg
+2026-05-19 14:40:44,989 [WARNING]   Baja res 110×110 — omitida: s295_3_1_1.jpg
+2026-05-19 14:40:45,054 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:40:45,120 [WARNING]   Baja res 80×80 — omitida: s295_1_1.jpg
+2026-05-19 14:40:45,167 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:40:45,167 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:40:45,167 [INFO]   [dedupe] 5 → 3 imágenes únicas
+2026-05-19 14:40:45,167 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:40:45,174 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:40:45,182 [INFO]     [autocrop] (1100, 1100) → (895, 734)
+2026-05-19 14:40:45,182 [INFO]     [padding 5%]
+2026-05-19 14:40:45,237 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:40:45,243 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:40:45,251 [INFO]     [autocrop] (1100, 1100) → (887, 605)
+2026-05-19 14:40:45,251 [INFO]     [padding 5%]
+2026-05-19 14:40:45,296 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:40:45,305 [INFO]     [bg] 2888/3136 (92%)
+2026-05-19 14:40:45,312 [INFO]     [autocrop] (1100, 1100) → (1100, 578)
+2026-05-19 14:40:45,312 [INFO]     [padding 5%]
+2026-05-19 14:40:47,552 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:40:49,883 [INFO]   ✓ 1/3 subida  [artero-correa-dog-control-360-s-15kg-ndr_1.webp]
+2026-05-19 14:40:52,700 [INFO]   ✓ 2/3 subida  [artero-correa-dog-control-360-s-15kg-ndr_2.webp]
+2026-05-19 14:40:55,534 [INFO]   ✓ 3/3 subida  [artero-correa-dog-control-360-s-15kg-ndr_3.webp]
+2026-05-19 14:40:57,035 [INFO] 
+[21/44] ARTERO CORREA DOG CONTROL 360 XS 12KG (NDR)  (ID: 15509636809091)
+2026-05-19 14:40:57,035 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-dog-control-360-xs-12kg
+2026-05-19 14:40:58,441 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA DOG CONTROL 360 XS 12KG
+2026-05-19 14:40:58,673 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20DOG%20CONTROL%20360%20XS%2012KG 200
+2026-05-19 14:40:58,721 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+XS+12KG&limit=1 200
+2026-05-19 14:40:58,983 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+XS+12KG&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:40:59,536 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+XS+12KG 403
+2026-05-19 14:41:00,547 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+XS+12KG&web=1&searchid=8958564 200
+2026-05-19 14:41:00,715 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:41:00,909 [INFO] response: https://search.yahoo.com/search;_ylt=XN3L6X6fw6Q6wpiCEKBorA2F;_ylu=1jGC8bKORXHU8eDwFG-YTo7oUaFnyv3-a-TWDBNfDvmpAR8?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360+XS+12KG 200
+2026-05-19 14:41:01,355 [INFO]   [DDG] → https://artero.com/es/petcare/artero-correa-dog-control
+2026-05-19 14:41:06,334 [INFO]   ✓ Resuelto vía DDG: artero-correa-dog-control (13 imgs)
+2026-05-19 14:41:06,334 [INFO]   Match: artero-correa-dog-control  (score=1.00, 13 imgs)
+2026-05-19 14:41:06,455 [WARNING]   Baja res 265×265 — omitida: s295_1_1.jpg
+2026-05-19 14:41:06,523 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:41:06,588 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:41:06,682 [INFO]   Descargada: s295_1_1.jpg  1100×1100
+2026-05-19 14:41:06,752 [INFO]   Descargada: s295_3_1_1.jpg  1100×1100
+2026-05-19 14:41:06,820 [WARNING]   Baja res 300×300 — omitida: s295_3_1_1.jpg
+2026-05-19 14:41:06,884 [INFO]   Descargada: s295_2_1_1.jpg  1100×1100
+2026-05-19 14:41:06,945 [WARNING]   Baja res 300×300 — omitida: s295_2_1_1.jpg
+2026-05-19 14:41:07,021 [WARNING]   Baja res 110×110 — omitida: s295_1_1.jpg
+2026-05-19 14:41:07,088 [WARNING]   Baja res 110×110 — omitida: s295_2_1_1.jpg
+2026-05-19 14:41:07,169 [WARNING]   Baja res 110×110 — omitida: s295_3_1_1.jpg
+2026-05-19 14:41:07,235 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:41:07,328 [WARNING]   Baja res 80×80 — omitida: s295_1_1.jpg
+2026-05-19 14:41:07,374 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:41:07,374 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:41:07,375 [INFO]   [dedupe] 5 → 3 imágenes únicas
+2026-05-19 14:41:07,375 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:41:07,382 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:41:07,393 [INFO]     [autocrop] (1100, 1100) → (895, 734)
+2026-05-19 14:41:07,393 [INFO]     [padding 5%]
+2026-05-19 14:41:07,449 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:41:07,455 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:41:07,463 [INFO]     [autocrop] (1100, 1100) → (887, 605)
+2026-05-19 14:41:07,463 [INFO]     [padding 5%]
+2026-05-19 14:41:07,509 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:41:07,518 [INFO]     [bg] 2888/3136 (92%)
+2026-05-19 14:41:07,525 [INFO]     [autocrop] (1100, 1100) → (1100, 578)
+2026-05-19 14:41:07,525 [INFO]     [padding 5%]
+2026-05-19 14:41:09,826 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:41:12,075 [INFO]   ✓ 1/3 subida  [artero-correa-dog-control-360-xs-12kg-ndr_1.webp]
+2026-05-19 14:41:14,872 [INFO]   ✓ 2/3 subida  [artero-correa-dog-control-360-xs-12kg-ndr_2.webp]
+2026-05-19 14:41:17,648 [INFO]   ✓ 3/3 subida  [artero-correa-dog-control-360-xs-12kg-ndr_3.webp]
+2026-05-19 14:41:19,148 [INFO] 
+[22/44] ARTERO CORREA PELUQUERIA AMARILLO 50CM (NDR)  (ID: 15509636972931)
+2026-05-19 14:41:19,148 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-peluqueria-amarillo-50cm
+2026-05-19 14:41:20,544 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PELUQUERIA AMARILLO 50CM
+2026-05-19 14:41:20,838 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PELUQUERIA%20AMARILLO%2050CM 200
+2026-05-19 14:41:20,908 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM&limit=1 200
+2026-05-19 14:41:21,121 [INFO] response: https://search.yahoo.com/search;_ylt=OWD8L-K5yjlfFrXVA0L3lgeD;_ylu=ZFEIbKR3hz-otuezZJZFWZttaD6FPzic6vDbwUnMIoTb15M?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM 200
+2026-05-19 14:41:21,772 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:41:22,081 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:41:22,348 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:41:22,888 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM 403
+2026-05-19 14:41:23,030 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM&source=web 429
+2026-05-19 14:41:24,029 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AMARILLO+50CM&web=1&searchid=3359970 200
+2026-05-19 14:41:24,052 [INFO]   [DDG] → https://artero.com/es/petcare/correa-sena-cinta-elastica
+2026-05-19 14:41:32,322 [INFO]   ✓ Resuelto vía DDG: correa-sena-cinta-elastica (10 imgs)
+2026-05-19 14:41:32,322 [INFO]   Match: correa-sena-cinta-elastica  (score=1.00, 10 imgs)
+2026-05-19 14:41:32,609 [WARNING]   Baja res 265×265 — omitida: y570_1.jpg
+2026-05-19 14:41:33,024 [WARNING]   Baja res 300×300 — omitida: y570_1.jpg
+2026-05-19 14:41:33,261 [INFO]   Descargada: y570_1.jpg  1100×1100
+2026-05-19 14:41:33,519 [INFO]   Descargada: y570_1.jpg  900×900
+2026-05-19 14:41:33,760 [INFO]   Descargada: y571_1.jpg  1100×1100
+2026-05-19 14:41:34,154 [WARNING]   Baja res 300×300 — omitida: y571_1.jpg
+2026-05-19 14:41:34,371 [WARNING]   Baja res 110×110 — omitida: y570_1.jpg
+2026-05-19 14:41:34,605 [WARNING]   Baja res 110×110 — omitida: y571_1.jpg
+2026-05-19 14:41:34,671 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:41:34,895 [WARNING]   Baja res 80×80 — omitida: y570_1.jpg
+2026-05-19 14:41:34,917 [INFO]   [dedupe] descartada (1100, 1100) 42KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:41:34,917 [INFO]   [dedupe] descartada (900, 900) 34KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:41:34,917 [INFO]   [dedupe] 3 → 1 imágenes únicas
+2026-05-19 14:41:34,917 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:41:34,923 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:41:34,931 [INFO]     [autocrop] (1100, 1100) → (892, 506)
+2026-05-19 14:41:34,931 [INFO]     [padding 5%]
+2026-05-19 14:41:35,854 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:41:38,148 [INFO]   ✓ 1/1 subida  [artero-correa-peluqueria-amarillo-50cm-ndr_1.webp]
+2026-05-19 14:41:39,648 [INFO] 
+[23/44] ARTERO CORREA PELUQUERIA AZUL 50CM (NDR)  (ID: 15509637005699)
+2026-05-19 14:41:39,648 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-peluqueria-azul-50cm
+2026-05-19 14:41:41,007 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PELUQUERIA AZUL 50CM
+2026-05-19 14:41:41,222 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PELUQUERIA%20AZUL%2050CM 200
+2026-05-19 14:41:41,319 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM&limit=1 200
+2026-05-19 14:41:42,351 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM&web=1&searchid=8807816 200
+2026-05-19 14:41:42,530 [INFO] response: https://search.yahoo.com/search;_ylt=l2-9T3aMPpkye6QOwSs0j2DI;_ylu=x5O8Qeg9j8gAfrQv6GGbpYovznFr8SPe2Wd-aroSEpmykNc?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM 200
+2026-05-19 14:41:43,182 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:41:43,572 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:41:44,135 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM 403
+2026-05-19 14:41:44,212 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM&source=web 429
+2026-05-19 14:41:45,651 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+AZUL+50CM&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:41:45,668 [INFO]   [DDG] → https://artero.com/es/petcare/correa-con-pinza-para-peluqueria-canina
+2026-05-19 14:41:51,397 [INFO]   ✓ Resuelto vía DDG: correa-con-pinza-para-peluqueria-canina (10 imgs)
+2026-05-19 14:41:51,397 [INFO]   Match: correa-con-pinza-para-peluqueria-canina  (score=1.00, 10 imgs)
+2026-05-19 14:41:51,660 [WARNING]   Baja res 265×265 — omitida: y512_1_1_1.jpg
+2026-05-19 14:41:51,891 [WARNING]   Baja res 300×300 — omitida: y512_1_1_1.jpg
+2026-05-19 14:41:52,108 [INFO]   Descargada: y512_1_1_1.jpg  1100×1100
+2026-05-19 14:41:52,341 [INFO]   Descargada: y512_1_1_1.jpg  900×900
+2026-05-19 14:41:52,562 [INFO]   Descargada: y509_1_1_1.jpg  1100×1100
+2026-05-19 14:41:52,805 [WARNING]   Baja res 300×300 — omitida: y509_1_1_1.jpg
+2026-05-19 14:41:53,041 [WARNING]   Baja res 110×110 — omitida: y512_1_1_1.jpg
+2026-05-19 14:41:53,279 [WARNING]   Baja res 110×110 — omitida: y509_1_1_1.jpg
+2026-05-19 14:41:53,344 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:41:53,570 [WARNING]   Baja res 80×80 — omitida: y512_1_1_1.jpg
+2026-05-19 14:41:53,595 [INFO]   [dedupe] descartada (900, 900) 30KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:41:53,595 [INFO]   [dedupe] 3 → 2 imágenes únicas
+2026-05-19 14:41:53,595 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:41:53,602 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:41:53,612 [INFO]     [autocrop] (1100, 1100) → (891, 556)
+2026-05-19 14:41:53,612 [INFO]     [padding 5%]
+2026-05-19 14:41:53,655 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:41:53,662 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:41:53,671 [INFO]     [autocrop] (1100, 1100) → (893, 589)
+2026-05-19 14:41:53,671 [INFO]     [padding 5%]
+2026-05-19 14:41:55,236 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:41:57,424 [INFO]   ✓ 1/2 subida  [artero-correa-peluqueria-azul-50cm-ndr_1.webp]
+2026-05-19 14:42:00,155 [INFO]   ✓ 2/2 subida  [artero-correa-peluqueria-azul-50cm-ndr_2.webp]
+2026-05-19 14:42:01,655 [INFO] 
+[24/44] ARTERO CORREA PELUQUERIA ROSA 50CM (NDR)  (ID: 15509637104003)
+2026-05-19 14:42:01,656 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-peluqueria-rosa-50cm
+2026-05-19 14:42:03,050 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PELUQUERIA ROSA 50CM
+2026-05-19 14:42:03,399 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PELUQUERIA%20ROSA%2050CM 200
+2026-05-19 14:42:03,440 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+ROSA+50CM&limit=1 200
+2026-05-19 14:42:03,516 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+ROSA+50CM&source=web 429
+2026-05-19 14:42:04,519 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+ROSA+50CM&web=1&searchid=3310517 200
+2026-05-19 14:42:04,773 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:42:05,284 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:42:05,353 [INFO]   [DDG] → https://artero.com/es/petcare/correa-sena-cinta-elastica
+2026-05-19 14:42:10,477 [INFO]   ✓ Resuelto vía DDG: correa-sena-cinta-elastica (10 imgs)
+2026-05-19 14:42:10,477 [INFO]   Match: correa-sena-cinta-elastica  (score=1.00, 10 imgs)
+2026-05-19 14:42:10,544 [WARNING]   Baja res 265×265 — omitida: y570_1.jpg
+2026-05-19 14:42:10,608 [WARNING]   Baja res 300×300 — omitida: y570_1.jpg
+2026-05-19 14:42:10,698 [INFO]   Descargada: y570_1.jpg  1100×1100
+2026-05-19 14:42:10,761 [INFO]   Descargada: y570_1.jpg  900×900
+2026-05-19 14:42:10,825 [INFO]   Descargada: y571_1.jpg  1100×1100
+2026-05-19 14:42:10,903 [WARNING]   Baja res 300×300 — omitida: y571_1.jpg
+2026-05-19 14:42:10,985 [WARNING]   Baja res 110×110 — omitida: y570_1.jpg
+2026-05-19 14:42:11,062 [WARNING]   Baja res 110×110 — omitida: y571_1.jpg
+2026-05-19 14:42:11,151 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:42:11,219 [WARNING]   Baja res 80×80 — omitida: y570_1.jpg
+2026-05-19 14:42:11,242 [INFO]   [dedupe] descartada (1100, 1100) 42KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:42:11,242 [INFO]   [dedupe] descartada (900, 900) 34KB → queda (1100, 1100) 45KB (posición 1)
+2026-05-19 14:42:11,242 [INFO]   [dedupe] 3 → 1 imágenes únicas
+2026-05-19 14:42:11,242 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:42:11,248 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:42:11,256 [INFO]     [autocrop] (1100, 1100) → (892, 506)
+2026-05-19 14:42:11,256 [INFO]     [padding 5%]
+2026-05-19 14:42:12,815 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:42:15,032 [INFO]   ✓ 1/1 subida  [artero-correa-peluqueria-rosa-50cm-ndr_1.webp]
+2026-05-19 14:42:16,532 [INFO] 
+[25/44] ARTERO CORREA PINZA ROSA (NDR)  (ID: 15509637169539)
+2026-05-19 14:42:16,532 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-pinza-rosa
+2026-05-19 14:42:17,905 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PINZA ROSA
+2026-05-19 14:42:18,107 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&limit=1 200
+2026-05-19 14:42:18,136 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PINZA%20ROSA 200
+2026-05-19 14:42:18,391 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:42:18,826 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:42:19,191 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:42:19,684 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA 403
+2026-05-19 14:42:19,760 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&source=web 429
+2026-05-19 14:42:20,788 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&web=1&searchid=3023997 200
+2026-05-19 14:42:20,986 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:42:21,182 [INFO] response: https://search.yahoo.com/search;_ylt=MyGp_uv7xAfLXwM4oV6vOERn;_ylu=wA9d0xKO68VRMS_rtxogKThzrlDKMZsPihR8fMNtvMfdsIE?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA 200
+2026-05-19 14:42:21,574 [INFO]   [DDG] → https://artero.com/es/petcare/utillaje/correas
+2026-05-19 14:42:26,225 [INFO]   Sanity check falla (0/2 tokens de ['correa', 'pinza', 'rosa'] ∩ ['arneses', 'correas', 'perros']): 'Arneses y Correas para Perros'
+2026-05-19 14:42:26,225 [WARNING]   Sin resolución para slug esperado 'artero-correa-pinza-rosa'
+2026-05-19 14:42:26,226 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:42:26,226 [INFO] 
+[26/44] ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)  (ID: 15509637202307)
+2026-05-19 14:42:26,226 [INFO]   [slug] https://artero.com/es/petcare/artero-espuma-voluminizadora-zoom-150ml
+2026-05-19 14:42:32,189 [INFO]   ✓ Resuelto vía slug directo: artero-espuma-voluminizadora-zoom-150ml (13 imgs)
+2026-05-19 14:42:32,189 [INFO]   Match: artero-espuma-voluminizadora-zoom-150ml  (score=1.00, 13 imgs)
+2026-05-19 14:42:32,438 [WARNING]   Baja res 265×265 — omitida: h689.jpg
+2026-05-19 14:42:32,654 [WARNING]   Baja res 70×70 — omitida: h689.jpg
+2026-05-19 14:42:32,885 [INFO]   Descargada: h689.jpg  1100×1100
+2026-05-19 14:42:33,101 [INFO]   Descargada: h689.jpg  900×900
+2026-05-19 14:42:33,313 [WARNING]   Baja res 110×110 — omitida: h689.jpg
+2026-05-19 14:42:33,541 [WARNING]   Baja res 152×190 — omitida: s317.jpg
+2026-05-19 14:42:33,779 [WARNING]   Baja res 375×375 — omitida: s317.jpg
+2026-05-19 14:42:34,012 [INFO]   Descargada: s317.jpg  1100×1100
+2026-05-19 14:42:34,226 [WARNING]   Baja res 152×190 — omitida: p273_1_.jpg
+2026-05-19 14:42:34,455 [INFO]   Descargada: p273_1_.jpg  900×900
+2026-05-19 14:42:34,681 [INFO]   Descargada: p273_1_.jpg  1100×1100
+2026-05-19 14:42:34,752 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:42:35,011 [WARNING]   Baja res 80×80 — omitida: h689.jpg
+2026-05-19 14:42:35,047 [INFO]   [dedupe] descartada (1100, 1100) 29KB → queda (1100, 1100) 32KB (posición 1)
+2026-05-19 14:42:35,047 [INFO]   [dedupe] descartada (900, 900) 23KB → queda (1100, 1100) 32KB (posición 1)
+2026-05-19 14:42:35,047 [INFO]   [dedupe] descartada (900, 900) 25KB → queda (1100, 1100) 32KB (posición 1)
+2026-05-19 14:42:35,047 [INFO]   [dedupe] 5 → 2 imágenes únicas
+2026-05-19 14:42:35,047 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:42:35,054 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:42:35,064 [INFO]     [autocrop] (1100, 1100) → (183, 958)
+2026-05-19 14:42:35,064 [INFO]     [padding 5%]
+2026-05-19 14:42:35,079 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:42:35,087 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:42:35,097 [INFO]     [autocrop] (1100, 1100) → (891, 864)
+2026-05-19 14:42:35,097 [INFO]     [padding 5%]
+2026-05-19 14:42:36,741 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:42:38,807 [INFO]   ✓ 1/2 subida  [artero-espuma-acondicionador-zoom-ndr_1.webp]
+2026-05-19 14:42:41,541 [INFO]   ✓ 2/2 subida  [artero-espuma-acondicionador-zoom-ndr_2.webp]
+2026-05-19 14:42:43,041 [INFO] 
+[27/44] ARTERO EXPOSITOR PROTEIN Y KERATIN 12UD (NDR)  (ID: 15509637267843)
+2026-05-19 14:42:43,042 [INFO]   [slug] https://artero.com/es/petcare/artero-expositor-protein-y-keratin-12ud
+2026-05-19 14:42:44,467 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO EXPOSITOR PROTEIN Y KERATIN 12UD
+2026-05-19 14:42:44,686 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20EXPOSITOR%20PROTEIN%20Y%20KERATIN%2012UD 200
+2026-05-19 14:42:44,727 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+EXPOSITOR+PROTEIN+Y+KERATIN+12UD&limit=1 200
+2026-05-19 14:42:44,910 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:42:45,397 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:42:45,569 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+EXPOSITOR+PROTEIN+Y+KERATIN+12UD&source=web 429
+2026-05-19 14:42:46,559 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+EXPOSITOR+PROTEIN+Y+KERATIN+12UD&web=1&searchid=4471234 200
+2026-05-19 14:42:46,576 [INFO]   [DDG] → https://artero.com/es/petcare/utillaje/expositor-complementos
+2026-05-19 14:42:52,682 [INFO]   Sanity check falla (0/2 tokens de ['12ud', 'expositor', 'keratin', 'protein'] ∩ ['expositores', 'perros', 'productos']): 'Expositores Artero de Productos de Perros'
+2026-05-19 14:42:52,682 [WARNING]   Sin resolución para slug esperado 'artero-expositor-protein-y-keratin-12ud'
+2026-05-19 14:42:52,682 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:42:52,682 [INFO] 
+[28/44] ARTERO HIGIENE PERFUME BABY 90 ML (NDR)  (ID: 15509637333379)
+2026-05-19 14:42:52,682 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-perfume-baby-90ml
+2026-05-19 14:42:54,011 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-baby-90ml
+2026-05-19 14:42:55,560 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO HIGIENE PERFUME BABY 90 ML
+2026-05-19 14:42:55,773 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20HIGIENE%20PERFUME%20BABY%2090%20ML 200
+2026-05-19 14:42:55,818 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML&limit=1 200
+2026-05-19 14:42:55,973 [INFO] response: https://search.yahoo.com/search;_ylt=xx881Orc1IGvN3lZIZNTmZAh;_ylu=ZnTiOqr_ENuEvAzIxcRTLVlhEdejcyUc3vwcFShBSKsabGo?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML 200
+2026-05-19 14:42:56,760 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:42:56,964 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:42:57,515 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:42:57,585 [INFO]   [DDG] → https://artero.com/es/petcare/cosmetica/perfumes
+2026-05-19 14:43:01,754 [INFO]   Sanity check falla (0/2 tokens de ['90', 'baby', 'higiene', 'perfume'] ∩ ['colonia', 'perros']): 'Colonia para Perros'
+2026-05-19 14:43:01,754 [WARNING]   Sin resolución para slug esperado 'artero-higiene-perfume-baby-90ml'
+2026-05-19 14:43:01,754 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:43:01,754 [INFO] 
+[29/44] ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)  (ID: 15509637366147)
+2026-05-19 14:43:01,754 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-perfume-fresh-90ml
+2026-05-19 14:43:03,163 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-fresh-90ml
+2026-05-19 14:43:09,869 [INFO]   ✓ Resuelto vía slug directo: artero-perfume-fresh-90ml (26 imgs)
+2026-05-19 14:43:09,869 [INFO]   Match: artero-perfume-fresh-90ml  (score=1.00, 26 imgs)
+2026-05-19 14:43:10,127 [WARNING]   Baja res 265×265 — omitida: h693_2.jpg
+2026-05-19 14:43:10,351 [INFO]   Descargada: h693_2.jpg  900×900
+2026-05-19 14:43:10,575 [INFO]   Descargada: h693_2.jpg  1100×1100
+2026-05-19 14:43:10,806 [INFO]   Descargada: h693_2.jpg  900×900
+2026-05-19 14:43:11,051 [INFO]   Descargada: h693_2_1_1.jpg  1100×1100
+2026-05-19 14:43:11,267 [WARNING]   Baja res 300×300 — omitida: h693_2_1_1.jpg
+2026-05-19 14:43:11,523 [WARNING]   Baja res 110×110 — omitida: h693_2_1_1.jpg
+2026-05-19 14:43:11,735 [WARNING]   Baja res 110×110 — omitida: h693_2.jpg
+2026-05-19 14:43:11,996 [WARNING]   Baja res 450×450 — omitida: h693_2_1_.jpg
+2026-05-19 14:43:12,203 [WARNING]   Baja res 152×190 — omitida: h673_25.jpg
+2026-05-19 14:43:12,422 [WARNING]   Baja res 300×300 — omitida: h673_25.jpg
+2026-05-19 14:43:12,657 [INFO]   Descargada: h673_25.jpg  1100×1100
+2026-05-19 14:43:12,886 [WARNING]   Baja res 152×190 — omitida: h655.jpg
+2026-05-19 14:43:13,121 [WARNING]   Baja res 450×450 — omitida: h655.jpg
+2026-05-19 14:43:13,355 [INFO]   Descargada: h655.jpg  1100×1100
+2026-05-19 14:43:13,571 [WARNING]   Baja res 152×190 — omitida: h654.jpg
+2026-05-19 14:43:13,801 [WARNING]   Baja res 300×300 — omitida: h654.jpg
+2026-05-19 14:43:14,036 [INFO]   Descargada: h654.jpg  1100×1100
+2026-05-19 14:43:14,275 [WARNING]   Baja res 152×190 — omitida: h652.jpg
+2026-05-19 14:43:14,515 [WARNING]   Baja res 300×300 — omitida: h652.jpg
+2026-05-19 14:43:14,772 [INFO]   Descargada: h652.jpg  1100×1100
+2026-05-19 14:43:14,996 [WARNING]   Baja res 152×190 — omitida: h765.jpg
+2026-05-19 14:43:15,232 [INFO]   Descargada: h765.jpg  900×900
+2026-05-19 14:43:15,555 [INFO]   Descargada: h765.jpg  1100×1100
+2026-05-19 14:43:15,620 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:43:15,699 [WARNING]   Baja res 80×80 — omitida: h693_2.jpg
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (900, 900) 117KB → queda (1100, 1100) 136KB (posición 1)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (900, 900) 27KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (1100, 1100) 31KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (1100, 1100) 36KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (900, 900) 24KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] descartada (1100, 1100) 30KB → queda (1100, 1100) 39KB (posición 2)
+2026-05-19 14:43:15,781 [INFO]   [dedupe] 10 → 2 imágenes únicas
+2026-05-19 14:43:15,781 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:43:15,793 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:43:15,802 [INFO]     [autocrop] (1100, 1100) → (1100, 957)
+2026-05-19 14:43:15,802 [INFO]     [fills-frame 100%×87%] → sin padding
+2026-05-19 14:43:15,802 [INFO]     [sin padding]
+2026-05-19 14:43:15,887 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:43:15,893 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:43:15,901 [INFO]     [autocrop] (1100, 1100) → (209, 953)
+2026-05-19 14:43:15,901 [INFO]     [padding 5%]
+2026-05-19 14:43:17,504 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:43:20,354 [INFO]   ✓ 1/2 subida  [artero-higiene-perfume-fresh-90-ml-ndr_1.webp]
+2026-05-19 14:43:22,969 [INFO]   ✓ 2/2 subida  [artero-higiene-perfume-fresh-90-ml-ndr_2.webp]
+2026-05-19 14:43:24,469 [INFO] 
+[30/44] ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)  (ID: 15509637398915)
+2026-05-19 14:43:24,469 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-perfume-impact-90ml
+2026-05-19 14:43:25,918 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-impact-90ml
+2026-05-19 14:43:31,605 [INFO]   ✓ Resuelto vía slug directo: artero-perfume-impact-90ml (29 imgs)
+2026-05-19 14:43:31,605 [INFO]   Match: artero-perfume-impact-90ml  (score=1.00, 29 imgs)
+2026-05-19 14:43:31,845 [WARNING]   Baja res 265×265 — omitida: h653_1.jpg
+2026-05-19 14:43:32,069 [WARNING]   Baja res 300×300 — omitida: h653_1.jpg
+2026-05-19 14:43:32,290 [INFO]   Descargada: h653_1.jpg  1100×1100
+2026-05-19 14:43:32,525 [INFO]   Descargada: h653_1.jpg  900×900
+2026-05-19 14:43:32,769 [INFO]   Descargada: h653_2_1.jpg  1100×1100
+2026-05-19 14:43:33,002 [WARNING]   Baja res 300×300 — omitida: h653_2_1.jpg
+2026-05-19 14:43:33,227 [WARNING]   Baja res 110×110 — omitida: h653_2_1.jpg
+2026-05-19 14:43:33,465 [WARNING]   Baja res 110×110 — omitida: h653_1.jpg
+2026-05-19 14:43:33,683 [WARNING]   Baja res 450×450 — omitida: thumbnail_h653_2.jpg
+2026-05-19 14:43:33,749 [WARNING]   Baja res 152×190 — omitida: h765.jpg
+2026-05-19 14:43:33,816 [INFO]   Descargada: h765.jpg  900×900
+2026-05-19 14:43:33,879 [INFO]   Descargada: h765.jpg  1100×1100
+2026-05-19 14:43:34,123 [WARNING]   Baja res 152×190 — omitida: h693_2.jpg
+2026-05-19 14:43:34,206 [INFO]   Descargada: h693_2.jpg  900×900
+2026-05-19 14:43:34,272 [INFO]   Descargada: h693_2.jpg  1100×1100
+2026-05-19 14:43:34,337 [WARNING]   Baja res 152×190 — omitida: h652.jpg
+2026-05-19 14:43:34,403 [WARNING]   Baja res 300×300 — omitida: h652.jpg
+2026-05-19 14:43:34,464 [INFO]   Descargada: h652.jpg  1100×1100
+2026-05-19 14:43:34,541 [WARNING]   Baja res 152×190 — omitida: h654.jpg
+2026-05-19 14:43:34,606 [WARNING]   Baja res 300×300 — omitida: h654.jpg
+2026-05-19 14:43:34,698 [INFO]   Descargada: h654.jpg  1100×1100
+2026-05-19 14:43:34,762 [WARNING]   Baja res 152×190 — omitida: h655.jpg
+2026-05-19 14:43:34,820 [WARNING]   Baja res 450×450 — omitida: h655.jpg
+2026-05-19 14:43:34,884 [INFO]   Descargada: h655.jpg  1100×1100
+2026-05-19 14:43:34,957 [WARNING]   Baja res 152×190 — omitida: h673_25.jpg
+2026-05-19 14:43:35,029 [WARNING]   Baja res 300×300 — omitida: h673_25.jpg
+2026-05-19 14:43:35,102 [INFO]   Descargada: h673_25.jpg  1100×1100
+2026-05-19 14:43:35,174 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:43:35,393 [WARNING]   Baja res 80×80 — omitida: h653_1.jpg
+2026-05-19 14:43:35,479 [INFO]   [dedupe] descartada (1100, 1100) 37KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (900, 900) 24KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (1100, 1100) 30KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (1100, 1100) 36KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] descartada (1100, 1100) 31KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:35,480 [INFO]   [dedupe] 11 → 3 imágenes únicas
+2026-05-19 14:43:35,480 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:43:35,487 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:43:35,494 [INFO]     [autocrop] (1100, 1100) → (209, 953)
+2026-05-19 14:43:35,494 [INFO]     [padding 5%]
+2026-05-19 14:43:35,510 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:43:35,519 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:43:35,519 [INFO]     [sin padding]
+2026-05-19 14:43:35,603 [INFO]   Imagen 3: RGB (900, 900)
+2026-05-19 14:43:35,612 [INFO]     [bg] 2116/2116 (100%)
+2026-05-19 14:43:35,618 [INFO]     [autocrop] (900, 900) → (900, 783)
+2026-05-19 14:43:35,618 [INFO]     [fills-frame 100%×87%] → sin padding
+2026-05-19 14:43:35,618 [INFO]     [sin padding]
+2026-05-19 14:43:37,891 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:43:39,998 [INFO]   ✓ 1/3 subida  [artero-higiene-perfume-impact-90-ml-ndr_1.webp]
+2026-05-19 14:43:43,142 [INFO]   ✓ 2/3 subida  [artero-higiene-perfume-impact-90-ml-ndr_2.webp]
+2026-05-19 14:43:46,482 [INFO]   ✓ 3/3 subida  [artero-higiene-perfume-impact-90-ml-ndr_3.webp]
+2026-05-19 14:43:47,982 [INFO] 
+[31/44] ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)  (ID: 15509637464451)
+2026-05-19 14:43:47,982 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-perfume-tierra-90ml
+2026-05-19 14:43:49,323 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-tierra-90ml
+2026-05-19 14:43:55,273 [INFO]   ✓ Resuelto vía slug directo: artero-perfume-tierra-90ml (26 imgs)
+2026-05-19 14:43:55,273 [INFO]   Match: artero-perfume-tierra-90ml  (score=1.00, 26 imgs)
+2026-05-19 14:43:55,492 [WARNING]   Baja res 265×265 — omitida: h655.jpg
+2026-05-19 14:43:55,554 [WARNING]   Baja res 450×450 — omitida: h655.jpg
+2026-05-19 14:43:55,612 [INFO]   Descargada: h655.jpg  1100×1100
+2026-05-19 14:43:55,840 [INFO]   Descargada: h655.jpg  900×900
+2026-05-19 14:43:56,083 [INFO]   Descargada: h655_2_1.jpg  1100×1100
+2026-05-19 14:43:56,330 [INFO]   Descargada: h655_2_1.jpg  900×900
+2026-05-19 14:43:56,539 [WARNING]   Baja res 110×110 — omitida: h655.jpg
+2026-05-19 14:43:56,761 [WARNING]   Baja res 110×110 — omitida: h655_2_1.jpg
+2026-05-19 14:43:56,968 [WARNING]   Baja res 450×450 — omitida: h655_2_1_.jpg
+2026-05-19 14:43:57,024 [WARNING]   Baja res 152×190 — omitida: h693_2.jpg
+2026-05-19 14:43:57,096 [INFO]   Descargada: h693_2.jpg  900×900
+2026-05-19 14:43:57,156 [INFO]   Descargada: h693_2.jpg  1100×1100
+2026-05-19 14:43:57,216 [WARNING]   Baja res 152×190 — omitida: h673_25.jpg
+2026-05-19 14:43:57,274 [WARNING]   Baja res 300×300 — omitida: h673_25.jpg
+2026-05-19 14:43:57,351 [INFO]   Descargada: h673_25.jpg  1100×1100
+2026-05-19 14:43:57,427 [WARNING]   Baja res 152×190 — omitida: h654.jpg
+2026-05-19 14:43:57,488 [WARNING]   Baja res 300×300 — omitida: h654.jpg
+2026-05-19 14:43:57,555 [INFO]   Descargada: h654.jpg  1100×1100
+2026-05-19 14:43:57,642 [WARNING]   Baja res 152×190 — omitida: h652.jpg
+2026-05-19 14:43:57,706 [WARNING]   Baja res 300×300 — omitida: h652.jpg
+2026-05-19 14:43:57,774 [INFO]   Descargada: h652.jpg  1100×1100
+2026-05-19 14:43:57,868 [WARNING]   Baja res 152×190 — omitida: h765.jpg
+2026-05-19 14:43:57,929 [INFO]   Descargada: h765.jpg  900×900
+2026-05-19 14:43:58,000 [INFO]   Descargada: h765.jpg  1100×1100
+2026-05-19 14:43:58,063 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:43:58,317 [WARNING]   Baja res 80×80 — omitida: h655.jpg
+2026-05-19 14:43:58,403 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,403 [INFO]   [dedupe] descartada (900, 900) 27KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (1100, 1100) 31KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (1100, 1100) 36KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (900, 900) 24KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (1100, 1100) 30KB → queda (1100, 1100) 39KB (posición 1)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] descartada (900, 900) 171KB → queda (1100, 1100) 193KB (posición 3)
+2026-05-19 14:43:58,404 [INFO]   [dedupe] 11 → 3 imágenes únicas
+2026-05-19 14:43:58,404 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:43:58,410 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:43:58,418 [INFO]     [autocrop] (1100, 1100) → (209, 953)
+2026-05-19 14:43:58,418 [INFO]     [padding 5%]
+2026-05-19 14:43:58,434 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:43:58,443 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:43:58,443 [INFO]     [sin padding]
+2026-05-19 14:43:58,525 [INFO]   Imagen 3: RGB (900, 900)
+2026-05-19 14:43:58,534 [INFO]     [bg] 2116/2116 (100%)
+2026-05-19 14:43:58,540 [INFO]     [autocrop] (900, 900) → (900, 783)
+2026-05-19 14:43:58,540 [INFO]     [fills-frame 100%×87%] → sin padding
+2026-05-19 14:43:58,540 [INFO]     [sin padding]
+2026-05-19 14:44:00,779 [INFO]   3 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:44:02,982 [INFO]   ✓ 1/3 subida  [artero-higiene-perfume-tierra-90-ml-ndr_1.webp]
+2026-05-19 14:44:06,696 [INFO]   ✓ 2/3 subida  [artero-higiene-perfume-tierra-90-ml-ndr_2.webp]
+2026-05-19 14:44:10,241 [INFO]   ✓ 3/3 subida  [artero-higiene-perfume-tierra-90-ml-ndr_3.webp]
+2026-05-19 14:44:11,741 [INFO] 
+[32/44] ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)  (ID: 15509637529987)
+2026-05-19 14:44:11,742 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-violet-90ml
+2026-05-19 14:44:17,714 [INFO]   ✓ Resuelto vía slug directo: artero-perfume-violet-90ml (26 imgs)
+2026-05-19 14:44:17,714 [INFO]   Match: artero-perfume-violet-90ml  (score=1.00, 26 imgs)
+2026-05-19 14:44:17,948 [WARNING]   Baja res 265×265 — omitida: h654.jpg
+2026-05-19 14:44:18,020 [WARNING]   Baja res 300×300 — omitida: h654.jpg
+2026-05-19 14:44:18,080 [INFO]   Descargada: h654.jpg  1100×1100
+2026-05-19 14:44:18,333 [INFO]   Descargada: h654.jpg  900×900
+2026-05-19 14:44:18,546 [INFO]   Descargada: h654_2.jpg  1100×1100
+2026-05-19 14:44:18,777 [WARNING]   Baja res 300×300 — omitida: h654_2.jpg
+2026-05-19 14:44:19,000 [WARNING]   Baja res 110×110 — omitida: h654.jpg
+2026-05-19 14:44:19,290 [WARNING]   Baja res 110×110 — omitida: h654_2.jpg
+2026-05-19 14:44:19,515 [WARNING]   Baja res 450×450 — omitida: thumbnail_h654_2_1_.jpg
+2026-05-19 14:44:19,575 [WARNING]   Baja res 152×190 — omitida: h693_2.jpg
+2026-05-19 14:44:19,653 [INFO]   Descargada: h693_2.jpg  900×900
+2026-05-19 14:44:19,725 [INFO]   Descargada: h693_2.jpg  1100×1100
+2026-05-19 14:44:19,803 [WARNING]   Baja res 152×190 — omitida: h673_25.jpg
+2026-05-19 14:44:19,870 [WARNING]   Baja res 300×300 — omitida: h673_25.jpg
+2026-05-19 14:44:19,934 [INFO]   Descargada: h673_25.jpg  1100×1100
+2026-05-19 14:44:19,998 [WARNING]   Baja res 152×190 — omitida: h655.jpg
+2026-05-19 14:44:20,065 [WARNING]   Baja res 450×450 — omitida: h655.jpg
+2026-05-19 14:44:20,130 [INFO]   Descargada: h655.jpg  1100×1100
+2026-05-19 14:44:20,191 [WARNING]   Baja res 152×190 — omitida: h652.jpg
+2026-05-19 14:44:20,252 [WARNING]   Baja res 300×300 — omitida: h652.jpg
+2026-05-19 14:44:20,327 [INFO]   Descargada: h652.jpg  1100×1100
+2026-05-19 14:44:20,395 [WARNING]   Baja res 152×190 — omitida: h765.jpg
+2026-05-19 14:44:20,462 [INFO]   Descargada: h765.jpg  900×900
+2026-05-19 14:44:20,529 [INFO]   Descargada: h765.jpg  1100×1100
+2026-05-19 14:44:20,781 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:44:20,995 [WARNING]   Baja res 80×80 — omitida: h654.jpg
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 36KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 31KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 39KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (900, 900) 24KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] descartada (1100, 1100) 30KB → queda (1100, 1100) 52KB (posición 1)
+2026-05-19 14:44:21,071 [INFO]   [dedupe] 10 → 2 imágenes únicas
+2026-05-19 14:44:21,071 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:44:21,077 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:44:21,085 [INFO]     [autocrop] (1100, 1100) → (1100, 1067)
+2026-05-19 14:44:21,085 [INFO]     [padding 5%]
+2026-05-19 14:44:21,152 [INFO]   Imagen 2: RGB (900, 900)
+2026-05-19 14:44:21,161 [INFO]     [bg] 2116/2116 (100%)
+2026-05-19 14:44:21,167 [INFO]     [autocrop] (900, 900) → (900, 783)
+2026-05-19 14:44:21,167 [INFO]     [fills-frame 100%×87%] → sin padding
+2026-05-19 14:44:21,167 [INFO]     [sin padding]
+2026-05-19 14:44:22,789 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:44:24,904 [INFO]   ✓ 1/2 subida  [artero-higiene-perfume-violet-90-ml-ndr_1.webp]
+2026-05-19 14:44:28,347 [INFO]   ✓ 2/2 subida  [artero-higiene-perfume-violet-90-ml-ndr_2.webp]
+2026-05-19 14:44:29,848 [INFO] 
+[33/44] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)  (ID: 15509637562755)
+2026-05-19 14:44:29,848 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-speedchampu-seco-300ml
+2026-05-19 14:44:31,289 [INFO]   [slug] https://artero.com/es/petcare/artero-speedchampu-seco-300ml
+2026-05-19 14:44:32,718 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML
+2026-05-19 14:44:32,963 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20HIGIENE%20SPEEDCHAMPU%20SECO%20300%20ML 200
+2026-05-19 14:44:32,969 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML&limit=1 200
+2026-05-19 14:44:33,167 [INFO] response: https://search.yahoo.com/search;_ylt=6A7EJdcHbDn_qUEasd6jIFnn;_ylu=B6MkdwDGv4vn-Xiv-HZ5nuC4bau27gIfsAy-qXW6MAJEcGg?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML 200
+2026-05-19 14:44:34,730 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML&web=1&searchid=5631706 200
+2026-05-19 14:44:34,852 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML&source=web 429
+2026-05-19 14:44:35,081 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:44:35,649 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:44:35,752 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-en-seco-speed-300ml
+2026-05-19 14:44:43,577 [INFO]   Sanity check falla (1/2 tokens de ['300', 'higiene', 'seco', 'speedchampu'] ∩ ['champu', 'seco', 'speed']): 'Artero Speed - Champú seco'
+2026-05-19 14:44:43,577 [WARNING]   Sin resolución para slug esperado 'artero-higiene-speedchampu-seco-300ml'
+2026-05-19 14:44:43,577 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:44:43,577 [INFO] 
+[34/44] ARTERO INTENSIFYNG 1LT (NDR)  (ID: 15509637595523)
+2026-05-19 14:44:43,577 [INFO]   [slug] https://artero.com/es/petcare/artero-intensifyng-1lt
+2026-05-19 14:44:44,986 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO INTENSIFYNG 1LT
+2026-05-19 14:44:45,210 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20INTENSIFYNG%201LT 200
+2026-05-19 14:44:45,318 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT&limit=1 200
+2026-05-19 14:44:45,519 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:44:45,999 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:44:46,103 [INFO]   [DDG] → https://artero.com/es/petcare/cosmetica/especial-color
+2026-05-19 14:44:53,663 [INFO]   Sanity check falla (0/1 tokens de ['1lt', 'intensifyng'] ∩ ['perros', 'tintes']): 'Tintes para Perros'
+2026-05-19 14:44:53,663 [WARNING]   Sin resolución para slug esperado 'artero-intensifyng-1lt'
+2026-05-19 14:44:53,663 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:44:53,663 [INFO] 
+[35/44] ARTERO LACA PODIUM DRY HOLD 500 ML (NDR)  (ID: 15509637628291)
+2026-05-19 14:44:53,663 [INFO]   [slug] https://artero.com/es/petcare/artero-laca-podium-dry-hold-500ml
+2026-05-19 14:44:55,108 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO LACA PODIUM DRY HOLD 500 ML
+2026-05-19 14:44:55,328 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20LACA%20PODIUM%20DRY%20HOLD%20500%20ML 200
+2026-05-19 14:44:55,501 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&limit=1 200
+2026-05-19 14:44:55,854 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:44:55,959 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&source=web 429
+2026-05-19 14:44:56,174 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:44:56,360 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:44:56,854 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:44:57,385 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML 403
+2026-05-19 14:44:57,542 [INFO] response: https://search.yahoo.com/search;_ylt=GWdmZs7wbXX24Za5JXl17WIX;_ylu=3LliGvxTzVy1O1hd1zK0MM0DWywldMOCdjIvtIovbZw_ezM?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML 200
+2026-05-19 14:44:58,970 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&web=1&searchid=8006122 200
+2026-05-19 14:44:58,988 [INFO]   [DDG] → https://artero.com/es/petcare/cosmetica/fijacion-y-volumen
+2026-05-19 14:45:03,328 [INFO]   Sanity check falla (0/2 tokens de ['500', 'dry', 'hold', 'laca', 'podium'] ∩ ['lacas', 'perros']): 'Lacas para Perros'
+2026-05-19 14:45:03,328 [WARNING]   Sin resolución para slug esperado 'artero-laca-podium-dry-hold-500ml'
+2026-05-19 14:45:03,328 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:45:03,328 [INFO] 
+[36/44] ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)  (ID: 15509637661059)
+2026-05-19 14:45:03,328 [INFO]   [slug] https://artero.com/es/petcare/artero-laca-podium-strong-hold-500ml
+2026-05-19 14:45:05,109 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO LACA PODIUM STRONG HOLD 500 ML
+2026-05-19 14:45:05,324 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20LACA%20PODIUM%20STRONG%20HOLD%20500%20ML 200
+2026-05-19 14:45:05,472 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+STRONG+HOLD+500+ML&limit=1 200
+2026-05-19 14:45:05,634 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:45:05,901 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:45:06,640 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:45:06,710 [INFO]   [DDG] → https://artero.com/es/petcare/artero-laca-podium-strong-hold-285gr
+2026-05-19 14:45:12,460 [INFO]   ✓ Resuelto vía DDG: artero-laca-podium-strong-hold-285gr (9 imgs)
+2026-05-19 14:45:12,460 [INFO]   Match: artero-laca-podium-strong-hold-285gr  (score=1.00, 9 imgs)
+2026-05-19 14:45:12,703 [WARNING]   Baja res 265×265 — omitida: h663_1.jpg
+2026-05-19 14:45:12,934 [WARNING]   Baja res 300×300 — omitida: h663_1.jpg
+2026-05-19 14:45:13,158 [INFO]   Descargada: h663_1.jpg  1100×1100
+2026-05-19 14:45:13,395 [INFO]   Descargada: h663_1.jpg  900×900
+2026-05-19 14:45:13,620 [WARNING]   Baja res 152×190 — omitida: h662_1.jpg
+2026-05-19 14:45:13,846 [WARNING]   Baja res 300×300 — omitida: h662_1.jpg
+2026-05-19 14:45:14,088 [INFO]   Descargada: h662_1.jpg  1100×1100
+2026-05-19 14:45:14,168 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:45:14,393 [WARNING]   Baja res 80×80 — omitida: h663_1.jpg
+2026-05-19 14:45:14,414 [INFO]   [dedupe] descartada (1100, 1100) 28KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:45:14,414 [INFO]   [dedupe] descartada (900, 900) 23KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:45:14,414 [INFO]   [dedupe] 3 → 1 imágenes únicas
+2026-05-19 14:45:14,414 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:45:14,420 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:45:14,428 [INFO]     [autocrop] (1100, 1100) → (233, 952)
+2026-05-19 14:45:14,428 [INFO]     [padding 5%]
+2026-05-19 14:45:15,417 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:45:17,582 [INFO]   ✓ 1/1 subida  [artero-laca-podium-strong-hold-500-ml-ndr_1.webp]
+2026-05-19 14:45:19,083 [INFO] 
+[37/44] ARTERO LAZOS VARIADOS 10 UNI (NDR)  (ID: 15509637726595)
+2026-05-19 14:45:19,083 [INFO]   [slug] https://artero.com/es/petcare/artero-lazos-variados-10-uni
+2026-05-19 14:45:20,547 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO LAZOS VARIADOS 10 UNI
+2026-05-19 14:45:20,777 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20LAZOS%20VARIADOS%2010%20UNI 200
+2026-05-19 14:45:20,808 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&limit=1 200
+2026-05-19 14:45:20,900 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&source=web 429
+2026-05-19 14:45:21,070 [INFO] response: https://search.yahoo.com/search;_ylt=hTSFV8ysz1XBlGVrb-xE02wm;_ylu=FLqX-CF66lSzg2OQmLujAgdQzoSFh0By5bPD8uI6ItX4fw4?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI 200
+2026-05-19 14:45:22,107 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI 403
+2026-05-19 14:45:22,395 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:45:22,791 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:45:22,979 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:45:23,198 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-19 14:45:24,250 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&web=1&searchid=3074100 200
+2026-05-19 14:45:24,255 [INFO]   [DDG] → https://artero.com/es/petcare/utillaje/gomitas-lazos
+2026-05-19 14:45:54,264 [WARNING]   Sin resolución para slug esperado 'artero-lazos-variados-10-uni'
+2026-05-19 14:45:54,264 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:45:54,264 [INFO] 
+[38/44] ARTERO MATT-X (NDR)  (ID: 15509637759363)
+2026-05-19 14:45:54,264 [INFO]   [slug] https://artero.com/es/petcare/artero-matt-x
+2026-05-19 14:45:55,811 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO MATT-X
+2026-05-19 14:45:56,048 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20MATT-X 200
+2026-05-19 14:45:56,061 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MATT-X&limit=1 200
+2026-05-19 14:45:56,215 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:45:56,448 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:45:56,988 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:45:57,648 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MATT-X&source=web 429
+2026-05-19 14:45:58,144 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MATT-X 403
+2026-05-19 14:45:58,300 [INFO] response: https://search.yahoo.com/search;_ylt=zIP750z4l8-Yi2_fCauV2nYR;_ylu=CuBvW2DY1ifO40RGro2OsL6ly4-Ch7cQlw4tykqnLQG8Hfg?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MATT-X 200
+2026-05-19 14:45:59,822 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MATT-X&web=1&searchid=6300697 200
+2026-05-19 14:45:59,845 [INFO]   [DDG] → https://artero.com/es/petcare/artero-matt-x-desenredante-para-perros-y-gatos
+2026-05-19 14:46:06,185 [INFO]   ✓ Resuelto vía DDG: artero-matt-x-desenredante-para-perros-y-gatos (38 imgs)
+2026-05-19 14:46:06,185 [INFO]   Match: artero-matt-x-desenredante-para-perros-y-gatos  (score=1.00, 38 imgs)
+2026-05-19 14:46:06,436 [WARNING]   Baja res 265×265 — omitida: h647.jpg
+2026-05-19 14:46:06,555 [INFO]   Descargada: h647.jpg  900×900
+2026-05-19 14:46:06,623 [INFO]   Descargada: h647.jpg  1100×1100
+2026-05-19 14:46:06,865 [INFO]   Descargada: h647.jpg  900×900
+2026-05-19 14:46:07,095 [INFO]   Descargada: 05_cierre_h647.jpg  1100×1100
+2026-05-19 14:46:07,330 [INFO]   Descargada: 05_cierre_h647.jpg  900×900
+2026-05-19 14:46:07,575 [WARNING]   Baja res 110×110 — omitida: h647.jpg
+2026-05-19 14:46:07,797 [WARNING]   Baja res 110×110 — omitida: 61hpp4rgz6l._ac_sx569_.jpg
+2026-05-19 14:46:08,025 [WARNING]   Baja res 511×700 — omitida: 61hpp4rgz6l._ac_sx569_.jpg
+2026-05-19 14:46:08,253 [INFO]   Descargada: 61hpp4rgz6l._ac_sx569_.jpg  802×1100
+2026-05-19 14:46:08,485 [WARNING]   Baja res 110×110 — omitida: 02_funciones_h647.jpg
+2026-05-19 14:46:08,708 [INFO]   Descargada: 02_funciones_h647.jpg  900×900
+2026-05-19 14:46:08,970 [INFO]   Descargada: 02_funciones_h647.jpg  1100×1100
+2026-05-19 14:46:09,201 [WARNING]   Baja res 110×110 — omitida: 03_pasos_h647.jpg
+2026-05-19 14:46:09,445 [INFO]   Descargada: 03_pasos_h647.jpg  1100×1100
+2026-05-19 14:46:09,686 [INFO]   Descargada: 03_pasos_h647.jpg  1100×1100
+2026-05-19 14:46:09,910 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h647_en_1.jpg
+2026-05-19 14:46:10,304 [WARNING]   Baja res 300×300 — omitida: 05_cierre_h647_en_1.jpg
+2026-05-19 14:46:10,545 [INFO]   Descargada: 05_cierre_h647_en_1.jpg  1100×1100
+2026-05-19 14:46:10,763 [WARNING]   Baja res 110×110 — omitida: 04_cualidades_h647.jpg
+2026-05-19 14:46:11,176 [WARNING]   Baja res 300×300 — omitida: 04_cualidades_h647.jpg
+2026-05-19 14:46:11,427 [INFO]   Descargada: 04_cualidades_h647.jpg  1100×1100
+2026-05-19 14:46:11,650 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h647.jpg
+2026-05-19 14:46:11,729 [WARNING]   Baja res 569×569 — omitida: 61blrkgqzpl._ac_sx569__1.jpg
+2026-05-19 14:46:11,967 [WARNING]   Baja res 152×190 — omitida: h634_25.jpg
+2026-05-19 14:46:12,042 [INFO]   Descargada: h634_25.jpg  900×900
+2026-05-19 14:46:12,119 [INFO]   Descargada: h634_25.jpg  1100×1100
+2026-05-19 14:46:12,389 [WARNING]   Baja res 152×190 — omitida: p949_1.jpg
+2026-05-19 14:46:12,807 [WARNING]   Baja res 300×300 — omitida: p949_1.jpg
+2026-05-19 14:46:13,077 [INFO]   Descargada: p949_1.jpg  1100×1100
+2026-05-19 14:46:13,301 [WARNING]   Baja res 152×190 — omitida: p941_1.jpg
+2026-05-19 14:46:13,545 [WARNING]   Baja res 300×300 — omitida: p941_1.jpg
+2026-05-19 14:46:13,810 [INFO]   Descargada: p941_1.jpg  1100×1100
+2026-05-19 14:46:14,051 [WARNING]   Baja res 152×190 — omitida: p948.png
+2026-05-19 14:46:14,309 [WARNING]   Baja res 375×375 — omitida: p948.png
+2026-05-19 14:46:14,614 [INFO]   Descargada: p948.png  801×1100
+2026-05-19 14:46:14,672 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:46:14,889 [WARNING]   Baja res 80×80 — omitida: h647.jpg
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (900, 900) 26KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (1100, 1100) 33KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (900, 900) 26KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (1100, 1100) 34KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (1100, 1100) 30KB → queda (1100, 1100) 69KB (posición 1)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (1100, 1100) 120KB → queda (1100, 1100) 128KB (posición 4)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (900, 900) 94KB → queda (1100, 1100) 128KB (posición 4)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (900, 900) 42KB → queda (1100, 1100) 52KB (posición 7)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] descartada (1100, 1100) 91KB → queda (1100, 1100) 91KB (posición 9)
+2026-05-19 14:46:15,066 [INFO]   [dedupe] 17 → 7 imágenes únicas
+2026-05-19 14:46:15,067 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:46:15,079 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:46:15,086 [INFO]     [autocrop] (1100, 1100) → (195, 954)
+2026-05-19 14:46:15,086 [INFO]     [padding 5%]
+2026-05-19 14:46:15,101 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:46:15,113 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:46:15,113 [INFO]     [sin padding]
+2026-05-19 14:46:15,199 [INFO]   Imagen 3: RGB (802, 1100)
+2026-05-19 14:46:15,207 [INFO]     [bg] 1255/1600 (78%)
+2026-05-19 14:46:15,213 [INFO]     [autocrop] (802, 1100) → (798, 1093)
+2026-05-19 14:46:15,213 [INFO]     [fills-frame 100%×99%] → sin padding
+2026-05-19 14:46:15,213 [INFO]     [sin padding]
+2026-05-19 14:46:15,274 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:46:15,282 [INFO]     [bg] 2175/3136 (69%)
+2026-05-19 14:46:15,290 [INFO]     [autocrop] (1100, 1100) → (928, 1100)
+2026-05-19 14:46:15,290 [INFO]     [padding 5%]
+2026-05-19 14:46:15,350 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:46:15,363 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:46:15,363 [INFO]     [sin padding]
+2026-05-19 14:46:15,445 [INFO]   Imagen 6: RGB (1100, 1100)
+2026-05-19 14:46:15,459 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:46:15,459 [INFO]     [sin padding]
+2026-05-19 14:46:15,542 [INFO]   Imagen 7: RGBA (801, 1100)
+2026-05-19 14:46:15,559 [INFO]     [alpha] 88% transparente
+2026-05-19 14:46:15,566 [INFO]     [bg] 1600/1600 (100%)
+2026-05-19 14:46:15,571 [INFO]     [autocrop] (801, 1100) → (258, 955)
+2026-05-19 14:46:15,571 [INFO]     [padding 5%]
+2026-05-19 14:46:19,169 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:46:21,170 [INFO]   ✓ 1/7 subida  [artero-matt-x-ndr_1.webp]
+2026-05-19 14:46:24,585 [INFO]   ✓ 2/7 subida  [artero-matt-x-ndr_2.webp]
+2026-05-19 14:46:27,807 [INFO]   ✓ 3/7 subida  [artero-matt-x-ndr_3.webp]
+2026-05-19 14:46:30,479 [INFO]   ✓ 4/7 subida  [artero-matt-x-ndr_4.webp]
+2026-05-19 14:46:33,478 [INFO]   ✓ 5/7 subida  [artero-matt-x-ndr_5.webp]
+2026-05-19 14:46:37,043 [INFO]   ✓ 6/7 subida  [artero-matt-x-ndr_6.webp]
+2026-05-19 14:46:39,654 [INFO]   ✓ 7/7 subida  [artero-matt-x-ndr_7.webp]
+2026-05-19 14:46:41,155 [INFO] 
+[39/44] ARTERO MIX ACONDICIONADOR SPRAY (NDR)  (ID: 15509637824899)
+2026-05-19 14:46:41,155 [INFO]   [slug] https://artero.com/es/petcare/artero-mix-acondicionador-spray
+2026-05-19 14:46:43,061 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO MIX ACONDICIONADOR SPRAY
+2026-05-19 14:46:43,298 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20MIX%20ACONDICIONADOR%20SPRAY 200
+2026-05-19 14:46:43,358 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&limit=1 200
+2026-05-19 14:46:43,518 [INFO] response: https://search.yahoo.com/search;_ylt=oQSAUorQA7WCDTkb1QYhiK8v;_ylu=ZpkiP_EgN1jlQQiR3JktHMtrihFLpHDHPR9l8sap1OCWEVY?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY 200
+2026-05-19 14:46:44,459 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aartero.com%252Fes%252Fpetcare%252F%2BARTERO%2BMIX%2BACONDICIONADOR%2BSPRAY%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgSstsOCGNPvsdAGIjB5WDAYX_zRWufu5Ipdr4XSbhQ3s0cMbFPKdCQEaMoK76FwKMVhaA8xRneqf6_cr4AyAnJSWgFD 429
+2026-05-19 14:46:44,533 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&source=web 429
+2026-05-19 14:46:45,561 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&web=1&searchid=1358706 200
+2026-05-19 14:46:45,755 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:46:46,249 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY 403
+2026-05-19 14:46:46,513 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:46:46,903 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:46:46,938 [INFO]   [DDG] → https://artero.com/es/petcare/artero-acondicionador-mix
+2026-05-19 14:46:48,226 [WARNING]   Sin resolución para slug esperado 'artero-mix-acondicionador-spray'
+2026-05-19 14:46:48,226 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:46:48,226 [INFO] 
+[40/44] ARTERO PRETTY EYES (NDR)  (ID: 15509637890435)
+2026-05-19 14:46:48,226 [INFO]   [slug] https://artero.com/es/petcare/artero-pretty-eyes
+2026-05-19 14:46:56,936 [INFO]   ✓ Resuelto vía slug directo: artero-pretty-eyes (22 imgs)
+2026-05-19 14:46:56,936 [INFO]   Match: artero-pretty-eyes  (score=1.00, 22 imgs)
+2026-05-19 14:46:57,202 [WARNING]   Baja res 265×265 — omitida: h646_25.jpg
+2026-05-19 14:46:57,435 [WARNING]   Baja res 300×300 — omitida: h646_25.jpg
+2026-05-19 14:46:57,648 [INFO]   Descargada: h646_25.jpg  1100×1100
+2026-05-19 14:46:57,889 [INFO]   Descargada: h646_25.jpg  900×900
+2026-05-19 14:46:58,110 [INFO]   Descargada: 05_cierre_h646_es_25.jpg  1100×1100
+2026-05-19 14:46:58,337 [WARNING]   Baja res 300×300 — omitida: 05_cierre_h646_es_25.jpg
+2026-05-19 14:46:58,562 [INFO]   Descargada: 02_funciones_h646_es_25.jpg  1100×1100
+2026-05-19 14:46:58,800 [WARNING]   Baja res 300×300 — omitida: 02_funciones_h646_es_25.jpg
+2026-05-19 14:46:59,022 [WARNING]   Baja res 110×110 — omitida: h646_25.jpg
+2026-05-19 14:46:59,247 [WARNING]   Baja res 110×110 — omitida: 02_funciones_h646_es_25.jpg
+2026-05-19 14:46:59,463 [WARNING]   Baja res 110×110 — omitida: 03_pasos_h646_es_25.jpg
+2026-05-19 14:46:59,692 [WARNING]   Baja res 300×300 — omitida: 03_pasos_h646_es_25.jpg
+2026-05-19 14:46:59,955 [INFO]   Descargada: 03_pasos_h646_es_25.jpg  1100×1100
+2026-05-19 14:47:00,168 [WARNING]   Baja res 110×110 — omitida: 04_ingredientes_h646_es_25.jpg
+2026-05-19 14:47:00,380 [WARNING]   Baja res 300×300 — omitida: 04_ingredientes_h646_es_25.jpg
+2026-05-19 14:47:00,615 [INFO]   Descargada: 04_ingredientes_h646_es_25.jpg  1100×1100
+2026-05-19 14:47:00,852 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h646_es_25.jpg
+2026-05-19 14:47:01,093 [WARNING]   Baja res 152×190 — omitida: h686_25.jpg
+2026-05-19 14:47:01,338 [WARNING]   Baja res 300×300 — omitida: h686_25.jpg
+2026-05-19 14:47:01,570 [INFO]   Descargada: h686_25.jpg  1100×1100
+2026-05-19 14:47:01,656 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:47:01,906 [WARNING]   Baja res 80×80 — omitida: h646_25.jpg
+2026-05-19 14:47:01,968 [INFO]   [dedupe] descartada (900, 900) 30KB → queda (1100, 1100) 37KB (posición 1)
+2026-05-19 14:47:01,968 [INFO]   [dedupe] 7 → 6 imágenes únicas
+2026-05-19 14:47:01,969 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:47:01,974 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:47:01,981 [INFO]     [autocrop] (1100, 1100) → (313, 954)
+2026-05-19 14:47:01,981 [INFO]     [padding 5%]
+2026-05-19 14:47:02,004 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:47:02,015 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:47:02,015 [INFO]     [sin padding]
+2026-05-19 14:47:02,097 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:47:02,105 [INFO]     [bg] 2254/3136 (72%)
+2026-05-19 14:47:02,112 [INFO]     [autocrop] (1100, 1100) → (955, 1100)
+2026-05-19 14:47:02,112 [INFO]     [fills-frame 87%×100%] → sin padding
+2026-05-19 14:47:02,112 [INFO]     [sin padding]
+2026-05-19 14:47:02,196 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:47:02,204 [INFO]     [bg] 2329/3136 (74%)
+2026-05-19 14:47:02,212 [INFO]     [autocrop] (1100, 1100) → (1100, 1009)
+2026-05-19 14:47:02,212 [INFO]     [fills-frame 100%×92%] → sin padding
+2026-05-19 14:47:02,212 [INFO]     [sin padding]
+2026-05-19 14:47:02,295 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:47:02,305 [INFO]     [bg] 601/3136 (19%)
+2026-05-19 14:47:02,305 [INFO]     [sin padding]
+2026-05-19 14:47:02,388 [INFO]   Imagen 6: RGB (1100, 1100)
+2026-05-19 14:47:02,395 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:47:02,402 [INFO]     [autocrop] (1100, 1100) → (685, 734)
+2026-05-19 14:47:02,402 [INFO]     [padding 5%]
+2026-05-19 14:47:06,613 [INFO]   6 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:47:08,908 [INFO]   ✓ 1/6 subida  [artero-pretty-eyes-ndr_1.webp]
+2026-05-19 14:47:12,015 [INFO]   ✓ 2/6 subida  [artero-pretty-eyes-ndr_2.webp]
+2026-05-19 14:47:14,746 [INFO]   ✓ 3/6 subida  [artero-pretty-eyes-ndr_3.webp]
+2026-05-19 14:47:17,705 [INFO]   ✓ 4/6 subida  [artero-pretty-eyes-ndr_4.webp]
+2026-05-19 14:47:20,813 [INFO]   ✓ 5/6 subida  [artero-pretty-eyes-ndr_5.webp]
+2026-05-19 14:47:23,470 [INFO]   ✓ 6/6 subida  [artero-pretty-eyes-ndr_6.webp]
+2026-05-19 14:47:24,971 [INFO] 
+[41/44] Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes  (ID: 15415511908739)
+2026-05-19 14:47:24,971 [INFO]   [slug] https://artero.com/es/petcare/artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes
+2026-05-19 14:47:26,932 [INFO]   [DDG] site:artero.com/es/petcare/ Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes
+2026-05-19 14:47:27,150 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20Artero%20Samba%20-%20Bayeta%20Ultra%20Absorbente%20para%20Perros%20Medianos%20y%20Grandes 200
+2026-05-19 14:47:27,214 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Samba+-+Bayeta+Ultra+Absorbente+para+Perros+Medianos+y+Grandes&limit=1 200
+2026-05-19 14:47:27,384 [INFO] response: https://search.yahoo.com/search;_ylt=ZyR1_WnAhOcseEMvdk79Xk3m;_ylu=W1ktwBwr9X-lIh_WBVqaShl3ql-gRAfwhmZFOe0Ke837cIc?p=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Samba+-+Bayeta+Ultra+Absorbente+para+Perros+Medianos+y+Grandes 200
+2026-05-19 14:47:28,094 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:47:28,443 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:47:28,577 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Samba+-+Bayeta+Ultra+Absorbente+para+Perros+Medianos+y+Grandes&source=web 429
+2026-05-19 14:47:29,076 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Samba+-+Bayeta+Ultra+Absorbente+para+Perros+Medianos+y+Grandes 403
+2026-05-19 14:47:29,265 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:47:30,303 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+Artero+Samba+-+Bayeta+Ultra+Absorbente+para+Perros+Medianos+y+Grandes&web=1&searchid=6686503 200
+2026-05-19 14:47:30,593 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aartero.com%252Fes%252Fpetcare%252F%2BArtero%2BSamba%2B-%2BBayeta%2BUltra%2BAbsorbente%2Bpara%2BPerros%2BMedianos%2By%2BGrandes%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgSstsOCGILwsdAGIjCRLkRblbFkb6SbBiee3zEpCS5X7-jE8pcYkR89-3HrnMaWg_26JR7lfvMqqzowWZoyAnJSWgFD 429
+2026-05-19 14:47:30,594 [INFO]   [DDG] → https://artero.com/es/petcare/artero-samba
+2026-05-19 14:47:39,494 [INFO]   ✓ Resuelto vía DDG: artero-samba (19 imgs)
+2026-05-19 14:47:39,494 [INFO]   Match: artero-samba  (score=1.00, 19 imgs)
+2026-05-19 14:47:39,717 [WARNING]   Baja res 265×265 — omitida: a418.jpg
+2026-05-19 14:47:39,946 [WARNING]   Baja res 300×300 — omitida: a418.jpg
+2026-05-19 14:47:40,180 [INFO]   Descargada: a418.jpg  1100×1100
+2026-05-19 14:47:40,433 [INFO]   Descargada: a418.jpg  900×900
+2026-05-19 14:47:40,671 [INFO]   Descargada: 05_cierre_a418_2.jpg  1100×1100
+2026-05-19 14:47:40,897 [WARNING]   Baja res 300×300 — omitida: 05_cierre_a418_2.jpg
+2026-05-19 14:47:41,136 [WARNING]   Baja res 110×110 — omitida: a418.jpg
+2026-05-19 14:47:41,374 [WARNING]   Baja res 110×110 — omitida: 02_caracteristicas_a418_1.jpg
+2026-05-19 14:47:41,610 [WARNING]   Baja res 300×300 — omitida: 02_caracteristicas_a418_1.jpg
+2026-05-19 14:47:41,835 [INFO]   Descargada: 02_caracteristicas_a418_1.jpg  1100×1100
+2026-05-19 14:47:42,052 [WARNING]   Baja res 110×110 — omitida: 03_material_a418_1.jpg
+2026-05-19 14:47:42,289 [WARNING]   Baja res 300×300 — omitida: 03_material_a418_1.jpg
+2026-05-19 14:47:42,513 [INFO]   Descargada: 03_material_a418_1.jpg  1100×1100
+2026-05-19 14:47:42,743 [WARNING]   Baja res 110×110 — omitida: 04_medidas_a418_1.jpg
+2026-05-19 14:47:42,974 [WARNING]   Baja res 300×300 — omitida: 04_medidas_a418_1.jpg
+2026-05-19 14:47:43,520 [INFO]   Descargada: 04_medidas_a418_1.jpg  1100×1100
+2026-05-19 14:47:43,733 [WARNING]   Baja res 110×110 — omitida: 05_cierre_a418_2.jpg
+2026-05-19 14:47:43,793 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:47:44,020 [WARNING]   Baja res 80×80 — omitida: a418.jpg
+2026-05-19 14:47:44,077 [INFO]   [dedupe] descartada (900, 900) 76KB → queda (1100, 1100) 91KB (posición 1)
+2026-05-19 14:47:44,078 [INFO]   [dedupe] 6 → 5 imágenes únicas
+2026-05-19 14:47:44,078 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:47:44,086 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:47:44,093 [INFO]     [autocrop] (1100, 1100) → (687, 733)
+2026-05-19 14:47:44,093 [INFO]     [padding 5%]
+2026-05-19 14:47:44,150 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:47:44,160 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:47:44,160 [INFO]     [sin padding]
+2026-05-19 14:47:44,243 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:47:44,248 [INFO]     [bg] 2260/3136 (72%)
+2026-05-19 14:47:44,256 [INFO]     [autocrop] (1100, 1100) → (1024, 1100)
+2026-05-19 14:47:44,256 [INFO]     [fills-frame 93%×100%] → sin padding
+2026-05-19 14:47:44,256 [INFO]     [sin padding]
+2026-05-19 14:47:44,337 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:47:44,347 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:47:44,347 [INFO]     [sin padding]
+2026-05-19 14:47:44,429 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:47:44,436 [INFO]     [bg] 2260/3136 (72%)
+2026-05-19 14:47:44,443 [INFO]     [autocrop] (1100, 1100) → (1037, 1100)
+2026-05-19 14:47:44,444 [INFO]     [fills-frame 94%×100%] → sin padding
+2026-05-19 14:47:44,444 [INFO]     [sin padding]
+2026-05-19 14:47:48,230 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:47:51,443 [INFO]   ✓ 1/5 subida  [artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes_1.webp]
+2026-05-19 14:47:54,729 [INFO]   ✓ 2/5 subida  [artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes_2.webp]
+2026-05-19 14:47:57,652 [INFO]   ✓ 3/5 subida  [artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes_3.webp]
+2026-05-19 14:48:01,254 [INFO]   ✓ 4/5 subida  [artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes_4.webp]
+2026-05-19 14:48:04,310 [INFO]   ✓ 5/5 subida  [artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes_5.webp]
+2026-05-19 14:48:05,811 [INFO] 
+[42/44] ARTERO SPRAY BALSAM 250 ML (NDR)  (ID: 15509637955971)
+2026-05-19 14:48:05,811 [INFO]   [slug] https://artero.com/es/petcare/artero-spray-balsam-250ml
+2026-05-19 14:48:07,146 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO SPRAY BALSAM 250 ML
+2026-05-19 14:48:07,389 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20SPRAY%20BALSAM%20250%20ML 200
+2026-05-19 14:48:07,614 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+SPRAY+BALSAM+250+ML&limit=1 200
+2026-05-19 14:48:07,813 [INFO] response: https://search.yahoo.com/search;_ylt=qLylJCem5j0PrgtUQ3PO0Mol;_ylu=bWpch62jr-FOjIER5WwaJ6mkuBCuAeBm1_B_HIcbvHS0nLM?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+SPRAY+BALSAM+250+ML 200
+2026-05-19 14:48:09,158 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+SPRAY+BALSAM+250+ML&web=1&searchid=4794113 200
+2026-05-19 14:48:09,176 [INFO]   [DDG] → https://artero.com/es/petcare/artero-spray-balsam-250-ml
+2026-05-19 14:48:17,596 [INFO]   ✓ Resuelto vía DDG: artero-spray-balsam-250-ml (7 imgs)
+2026-05-19 14:48:17,596 [INFO]   Match: artero-spray-balsam-250-ml  (score=1.00, 7 imgs)
+2026-05-19 14:48:17,824 [WARNING]   Baja res 265×265 — omitida: h699_1_1.jpg
+2026-05-19 14:48:18,050 [WARNING]   Baja res 300×300 — omitida: h699_1_1.jpg
+2026-05-19 14:48:18,276 [INFO]   Descargada: h699_1_1.jpg  1100×1100
+2026-05-19 14:48:18,511 [INFO]   Descargada: h699_1_1.jpg  900×900
+2026-05-19 14:48:18,754 [WARNING]   Baja res 110×110 — omitida: h699_1_1.jpg
+2026-05-19 14:48:18,817 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:48:19,046 [WARNING]   Baja res 80×80 — omitida: h699_1_1.jpg
+2026-05-19 14:48:19,060 [INFO]   [dedupe] descartada (900, 900) 23KB → queda (1100, 1100) 29KB (posición 1)
+2026-05-19 14:48:19,060 [INFO]   [dedupe] 2 → 1 imágenes únicas
+2026-05-19 14:48:19,060 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:48:19,066 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:48:19,074 [INFO]     [autocrop] (1100, 1100) → (269, 957)
+2026-05-19 14:48:19,074 [INFO]     [padding 5%]
+2026-05-19 14:48:20,039 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:48:22,088 [INFO]   ✓ 1/1 subida  [artero-spray-balsam-250-ml-ndr_1.webp]
+2026-05-19 14:48:23,588 [INFO] 
+[43/44] ARTERO STATIC CONTROL 150 ML (NDR)  (ID: 15509637988739)
+2026-05-19 14:48:23,588 [INFO]   [slug] https://artero.com/es/petcare/artero-static-control-150ml
+2026-05-19 14:48:24,938 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO STATIC CONTROL 150 ML
+2026-05-19 14:48:25,165 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20STATIC%20CONTROL%20150%20ML 200
+2026-05-19 14:48:25,209 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+STATIC+CONTROL+150+ML&limit=1 200
+2026-05-19 14:48:25,466 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:48:26,169 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:48:26,272 [INFO]   [DDG] → https://artero.com/es/petcare/artero-static-control-300ml
+2026-05-19 14:48:32,159 [INFO]   ✓ Resuelto vía DDG: artero-static-control-300ml (22 imgs)
+2026-05-19 14:48:32,159 [INFO]   Match: artero-static-control-300ml  (score=1.00, 22 imgs)
+2026-05-19 14:48:32,383 [WARNING]   Baja res 265×265 — omitida: h674_1.jpg
+2026-05-19 14:48:32,607 [WARNING]   Baja res 300×300 — omitida: h674_1.jpg
+2026-05-19 14:48:32,837 [INFO]   Descargada: h674_1.jpg  1100×1100
+2026-05-19 14:48:33,055 [INFO]   Descargada: h674_1.jpg  900×900
+2026-05-19 14:48:33,332 [INFO]   Descargada: 05_cierre_h674_25_es.jpg  1100×1100
+2026-05-19 14:48:33,558 [WARNING]   Baja res 300×300 — omitida: 05_cierre_h674_25_es.jpg
+2026-05-19 14:48:33,780 [INFO]   Descargada: 01_imagen_principal_h674_25_de.jpg  1100×1100
+2026-05-19 14:48:34,017 [WARNING]   Baja res 300×300 — omitida: 01_imagen_principal_h674_25_de.jpg
+2026-05-19 14:48:34,263 [WARNING]   Baja res 110×110 — omitida: h674_1.jpg
+2026-05-19 14:48:34,493 [WARNING]   Baja res 110×110 — omitida: 01_imagen_principal_h674_25_de.jpg
+2026-05-19 14:48:34,716 [WARNING]   Baja res 110×110 — omitida: 02_funciones_h674_25_es.jpg
+2026-05-19 14:48:34,938 [WARNING]   Baja res 300×300 — omitida: 02_funciones_h674_25_es.jpg
+2026-05-19 14:48:35,156 [INFO]   Descargada: 02_funciones_h674_25_es.jpg  1100×1100
+2026-05-19 14:48:35,377 [WARNING]   Baja res 110×110 — omitida: 03_pasos_h674_25_es.jpg
+2026-05-19 14:48:35,605 [WARNING]   Baja res 300×300 — omitida: 03_pasos_h674_25_es.jpg
+2026-05-19 14:48:36,021 [INFO]   Descargada: 03_pasos_h674_25_es.jpg  1100×1100
+2026-05-19 14:48:36,247 [WARNING]   Baja res 110×110 — omitida: 05_cierre_h674_25_es.jpg
+2026-05-19 14:48:36,470 [WARNING]   Baja res 152×190 — omitida: h663_1.jpg
+2026-05-19 14:48:36,531 [WARNING]   Baja res 300×300 — omitida: h663_1.jpg
+2026-05-19 14:48:36,604 [INFO]   Descargada: h663_1.jpg  1100×1100
+2026-05-19 14:48:36,663 [WARNING]   Baja res 50×42 — omitida: WhatsApp_Artero.png
+2026-05-19 14:48:36,881 [WARNING]   Baja res 80×80 — omitida: h674_1.jpg
+2026-05-19 14:48:36,944 [INFO]   [dedupe] descartada (900, 900) 28KB → queda (1100, 1100) 36KB (posición 1)
+2026-05-19 14:48:36,945 [INFO]   [dedupe] descartada (1100, 1100) 28KB → queda (1100, 1100) 36KB (posición 1)
+2026-05-19 14:48:36,945 [INFO]   [dedupe] 7 → 5 imágenes únicas
+2026-05-19 14:48:36,945 [INFO]   Imagen 1: RGB (1100, 1100)
+2026-05-19 14:48:36,951 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:48:36,958 [INFO]     [autocrop] (1100, 1100) → (321, 956)
+2026-05-19 14:48:36,958 [INFO]     [padding 5%]
+2026-05-19 14:48:36,982 [INFO]   Imagen 2: RGB (1100, 1100)
+2026-05-19 14:48:36,992 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:48:36,992 [INFO]     [sin padding]
+2026-05-19 14:48:37,079 [INFO]   Imagen 3: RGB (1100, 1100)
+2026-05-19 14:48:37,086 [INFO]     [bg] 3136/3136 (100%)
+2026-05-19 14:48:37,094 [INFO]     [autocrop] (1100, 1100) → (765, 796)
+2026-05-19 14:48:37,094 [INFO]     [padding 5%]
+2026-05-19 14:48:37,156 [INFO]   Imagen 4: RGB (1100, 1100)
+2026-05-19 14:48:37,164 [INFO]     [bg] 2185/3136 (70%)
+2026-05-19 14:48:37,171 [INFO]     [autocrop] (1100, 1100) → (960, 1100)
+2026-05-19 14:48:37,171 [INFO]     [fills-frame 87%×100%] → sin padding
+2026-05-19 14:48:37,171 [INFO]     [sin padding]
+2026-05-19 14:48:37,256 [INFO]   Imagen 5: RGB (1100, 1100)
+2026-05-19 14:48:37,266 [INFO]     [bg] 0/3136 (0%)
+2026-05-19 14:48:37,266 [INFO]     [sin padding]
+2026-05-19 14:48:40,798 [INFO]   5 imagen(es) antigua(s) eliminada(s)
+2026-05-19 14:48:42,938 [INFO]   ✓ 1/5 subida  [artero-static-control-150-ml-ndr_1.webp]
+2026-05-19 14:48:46,183 [INFO]   ✓ 2/5 subida  [artero-static-control-150-ml-ndr_2.webp]
+2026-05-19 14:48:49,124 [INFO]   ✓ 3/5 subida  [artero-static-control-150-ml-ndr_3.webp]
+2026-05-19 14:48:51,732 [INFO]   ✓ 4/5 subida  [artero-static-control-150-ml-ndr_4.webp]
+2026-05-19 14:48:54,899 [INFO]   ✓ 5/5 subida  [artero-static-control-150-ml-ndr_5.webp]
+2026-05-19 14:48:56,399 [INFO] 
+[44/44] EXPOSITOR CON 9 CHAMPUS DE VIAJE 100ML (NDR)  (ID: 15509638054275)
+2026-05-19 14:48:56,399 [INFO]   [slug] https://artero.com/es/petcare/expositor-con-9-champus-de-viaje-100ml
+2026-05-19 14:48:57,854 [INFO]   [DDG] site:artero.com/es/petcare/ EXPOSITOR CON 9 CHAMPUS DE VIAJE 100ML
+2026-05-19 14:48:58,131 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20EXPOSITOR%20CON%209%20CHAMPUS%20DE%20VIAJE%20100ML 200
+2026-05-19 14:48:58,132 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+EXPOSITOR+CON+9+CHAMPUS+DE+VIAJE+100ML&limit=1 200
+2026-05-19 14:48:58,232 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+EXPOSITOR+CON+9+CHAMPUS+DE+VIAJE+100ML&source=web 429
+2026-05-19 14:48:58,430 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-19 14:48:59,265 [INFO] response: https://yandex.com/showcaptcha?cc=1&form-fb-hint=8.148&mt=CF01EDCDD17FBCF87A24B86F0ADB487F6DBBE248B442F345B7340BBDD2DE9E0381407DC0C02FF98933A8171143431F8DBFE475606003D81C33A70DCD626E1374BDC3FF996439EB1DF329AC399963CFA562BFEF7CD3A949EB85B9B59336AB5E9D30C8EBBBCA77F09E339A61ECEA9A5096B20D6FD2CAB0AEDFE16BF5C3512936137EF620D7191E048B738D21CCC24B1A09787856120CDD9FF49CC2D73255A87EC89248B909E265EB5F1B93628F117EE876092120B5C97A9622F4765EAABADE63CEBE0863636F5D0D6B06A751AA2C28FADFA4F83C802442736A33697ED9AA424372975C1702FE666E86DD22BA1786A90D9F2D95B600A6&retpath=aHR0cHM6Ly95YW5kZXguY29tL3NlYXJjaC9zaXRlP3RleHQ9c2l0ZSUzQWFydGVyby5jb20lMkZlcyUyRnBldGNhcmUlMkYrRVhQT1NJVE9SK0NPTis5K0NIQU1QVVMrREUrVklBSkUrMTAwTUwmd2ViPTEmc2VhcmNoaWQ9NjkwMTMyOQ%2C%2C_e9399af40ccf40ede52ffda8c8c64f41&t=2%252F1779202138%252F68f1e6211a9e9c4d6762e16d460561c7&u=8719769926767636600&s=51b9edc2e278c08b26f917e69ac2447c 200
+2026-05-19 14:48:59,548 [INFO] response: https://www.startpage.com/ 200
+2026-05-19 14:49:00,054 [INFO] response: https://www.startpage.com/sp/search 200
+2026-05-19 14:49:00,298 [INFO] response: https://search.yahoo.com/search;_ylt=BitznCUnxuNzHOJ9KL9AnSx2;_ylu=Wh6fcHLA-sJlsRuJ6voVXUjFmhZ8JrG66jGJ_s5QOTCbce4?p=site%3Aartero.com%2Fes%2Fpetcare%2F+EXPOSITOR+CON+9+CHAMPUS+DE+VIAJE+100ML 200
+2026-05-19 14:49:01,181 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+EXPOSITOR+CON+9+CHAMPUS+DE+VIAJE+100ML 403
+2026-05-19 14:49:01,515 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aartero.com%252Fes%252Fpetcare%252F%2BEXPOSITOR%2BCON%2B9%2BCHAMPUS%2BDE%2BVIAJE%2B100ML%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgSstsOCGN3wsdAGIjDyJO8BX9eXyPQyUtALo1j-isL0gXI0gaGVJSdCGabFcCJK_Z22fisLmflVFqusCY8yAnJSWgFD 429
+2026-05-19 14:49:01,516 [INFO]   [DDG] → https://artero.com/es/petcare/expositor-pixel-acondicionadores-8-uds
+2026-05-19 14:49:09,531 [INFO]   Sanity check falla (1/2 tokens de ['100ml', 'champus', 'expositor', 'viaje'] ∩ ['acondicionadores', 'expositor', 'pixel']): 'Artero Expositor Pixel Acondicionadores 8 Uds'
+2026-05-19 14:49:09,531 [WARNING]   Sin resolución para slug esperado 'expositor-con-9-champus-de-viaje-100ml'
+2026-05-19 14:49:09,531 [WARNING]   Sin match (score=0.00) — saltando
+2026-05-19 14:49:09,531 [INFO] 
+============================================================
+2026-05-19 14:49:09,531 [INFO] RESUMEN
+2026-05-19 14:49:09,531 [INFO] ============================================================
+2026-05-19 14:49:09,531 [INFO]   total         : 44
+2026-05-19 14:49:09,531 [INFO]   ok            : 31
+2026-05-19 14:49:09,531 [INFO]   sin_match     : 13
+2026-05-19 14:49:09,531 [INFO]   sin_imagen    : 0
+2026-05-19 14:49:09,531 [INFO]   errores       : 0
