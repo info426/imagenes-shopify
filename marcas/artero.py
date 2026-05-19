@@ -126,9 +126,43 @@ def _get_page():
 # ─── Extracción de imágenes ──────────────────────────────────────────────────
 
 def _extract_images(page) -> list:
-    urls: set = set()
+    """
+    Extrae URLs de imágenes en orden de aparición en la página.
+    La imagen principal (og:image) siempre va primero; el resto en orden DOM.
+    """
+    ordered: list = []
+    seen: set = set()
 
-    # 1. JSON-LD (más fiable)
+    def _add(url: str):
+        if not url:
+            return
+        full = url if url.startswith("http") else (
+            f"https:{url}" if url.startswith("//") else ""
+        )
+        if not full or BASE_DOMAIN not in full:
+            return
+        low = full.lower()
+        if any(kw in low for kw in (".svg", "logo", "icon", "banner",
+                                     "sprite", "placeholder", "favicon")):
+            return
+        clean = re.sub(r'-\d+x\d+\.', '.', full).split("?")[0]
+        if clean in seen:
+            return
+        seen.add(clean)
+        ordered.append(clean)
+
+    # 1. og:image — imagen principal canónica del producto
+    try:
+        og = page.query_selector("meta[property='og:image']")
+        if og:
+            _add(og.get_attribute("content") or "")
+        og_alt = page.query_selector("meta[property='og:image:secure_url']")
+        if og_alt:
+            _add(og_alt.get_attribute("content") or "")
+    except Exception:
+        pass
+
+    # 2. JSON-LD (schema.org Product) — orden tal como aparece en el array
     try:
         ld_texts = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -143,64 +177,39 @@ def _extract_images(page) -> list:
                     if isinstance(imgs, str):
                         imgs = [imgs]
                     for img in imgs:
-                        if isinstance(img, str) and img.startswith("http"):
-                            urls.add(img.split("?")[0])
+                        if isinstance(img, str):
+                            _add(img)
                         elif isinstance(img, dict):
-                            u = img.get("url") or img.get("contentUrl") or ""
-                            if u.startswith("http"):
-                                urls.add(u.split("?")[0])
+                            _add(img.get("url") or img.get("contentUrl") or "")
             except Exception:
                 pass
     except Exception:
         pass
 
-    # 2. srcset (mayor resolución)
+    # 3. <img> en orden DOM (galería del producto)
+    #    Cada <img> aporta srcset (mejor res) → data-* → src en ese orden.
     try:
-        for el in page.query_selector_all("img[srcset]"):
+        for el in page.query_selector_all("img"):
             srcset = el.get_attribute("srcset") or ""
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
                 cand = parts[-1].split()[0]
                 if cand and not cand.startswith("data:"):
-                    full = cand if cand.startswith("http") else f"https:{cand}"
-                    if BASE_DOMAIN in full:
-                        urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
-    except Exception:
-        pass
+                    _add(cand)
 
-    # 3. <img src>
-    try:
-        for el in page.query_selector_all("img[src]"):
+            for attr in ("data-src", "data-lazy-src", "data-zoom-image",
+                         "data-large-image", "data-full-url"):
+                val = el.get_attribute(attr) or ""
+                if val and not val.startswith("data:"):
+                    _add(val)
+
             src = el.get_attribute("src") or ""
-            if not src or src.startswith("data:"):
-                continue
-            full = src if src.startswith("http") else (
-                f"https:{src}" if src.startswith("//") else ""
-            )
-            if not full or BASE_DOMAIN not in full:
-                continue
-            low = full.lower()
-            if any(kw in low for kw in (".svg", "logo", "icon", "banner",
-                                         "sprite", "placeholder", "favicon")):
-                continue
-            urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
+            if src and not src.startswith("data:"):
+                _add(src)
     except Exception:
         pass
 
-    # 4. data-src / data-zoom-image
-    for attr in ("data-src", "data-lazy-src", "data-zoom-image",
-                 "data-large-image", "data-full-url"):
-        try:
-            for el in page.query_selector_all(f"img[{attr}]"):
-                src = el.get_attribute(attr) or ""
-                if src and not src.startswith("data:"):
-                    full = src if src.startswith("http") else f"https:{src}"
-                    if BASE_DOMAIN in full:
-                        urls.add(re.sub(r'-\d+x\d+\.', '.', full).split("?")[0])
-        except Exception:
-            pass
-
-    return list(urls)
+    return ordered
 
 
 def _try_url(page, url: str, title_tokens: set) -> tuple:

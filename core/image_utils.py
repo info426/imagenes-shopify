@@ -271,20 +271,25 @@ def dedupe_images(raw_images: list, hamming_threshold: int = 8) -> list:
     #     que una versión cacheada/recomprimida (Magento cache, thumbnails)
     #     incluso cuando la cacheada se ha subescalado a más píxeles.
     # Criterio 2 (desempate): mayor área en píxeles
+    # Posición: la del miembro MÁS TEMPRANO del grupo (preserva orden DOM
+    # de la web: si la imagen principal aparece primero, se queda primera
+    # aunque otra duplicada con más bytes apareciera más tarde).
     kept = []
     for g in groups:
         best = max((entries[i] for i in g),
                    key=lambda e: (e["nbytes"], e["area"]))
-        kept.append(best)
+        earliest_idx = min(entries[i]["idx"] for i in g)
+        kept.append({**best, "idx": earliest_idx})
         if len(g) > 1:
             dropped = [entries[i] for i in g if i != best["idx"]]
             for d in dropped:
                 log.info(
                     f"  [dedupe] descartada {d['size']} {d['nbytes']//1024}KB"
                     f" → queda {best['size']} {best['nbytes']//1024}KB"
+                    f" (posición {earliest_idx+1})"
                 )
 
-    # Conservar el orden original de aparición
+    # Ordenar por posición de aparición → respeta orden DOM original
     kept.sort(key=lambda e: e["idx"])
     log.info(f"  [dedupe] {len(raw_images)} → {len(kept)} imágenes únicas")
     return [(e["raw"], e["ext"]) for e in kept]
