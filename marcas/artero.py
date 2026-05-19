@@ -129,9 +129,11 @@ def _extract_images(page) -> list:
     """
     Extrae URLs de imágenes en orden de aparición en la página.
     La imagen principal (og:image) siempre va primero; el resto en orden DOM.
+    El filtrado de banners y la síntesis de URLs /wysiwyg/ se aplican al final
+    vía _augment_with_wysiwyg().
     """
-    ordered: list = []
-    seen: set = set()
+    raw_order: list = []
+    seen_raw: set = set()
 
     def _add(url: str):
         if not url:
@@ -141,15 +143,10 @@ def _extract_images(page) -> list:
         )
         if not full or BASE_DOMAIN not in full:
             return
-        low = full.lower()
-        if any(kw in low for kw in (".svg", "logo", "icon", "banner",
-                                     "sprite", "placeholder", "favicon")):
+        if full in seen_raw:
             return
-        clean = re.sub(r'-\d+x\d+\.', '.', full).split("?")[0]
-        if clean in seen:
-            return
-        seen.add(clean)
-        ordered.append(clean)
+        seen_raw.add(full)
+        raw_order.append(full)
 
     # 1. og:image — imagen principal canónica del producto
     try:
@@ -187,7 +184,6 @@ def _extract_images(page) -> list:
         pass
 
     # 3. <img> en orden DOM (galería del producto)
-    #    Cada <img> aporta srcset (mejor res) → data-* → src en ese orden.
     try:
         for el in page.query_selector_all("img"):
             srcset = el.get_attribute("srcset") or ""
@@ -209,7 +205,7 @@ def _extract_images(page) -> list:
     except Exception:
         pass
 
-    return ordered
+    return _augment_with_wysiwyg(raw_order)
 
 
 def _try_url(page, url: str, title_tokens: set) -> tuple:
@@ -303,11 +299,58 @@ def _save_catalog(catalog: dict):
 
 # ─── Interfaz pública ─────────────────────────────────────────────────────────
 
+_CACHE_RE  = re.compile(
+    r'^(https?://[^/]+/media)/catalog/product/cache/[0-9a-f]+/'
+    r'(?:[^/]+/[^/]+/)?([^?]+)$'
+)
+_BANNER_HEX_RE = re.compile(r'[0-9a-f]{40,}')
+
+
+def _should_keep_url(url: str) -> bool:
+    """Filtra URLs no-producto (banners, logos, badges, video thumbs)."""
+    low = url.lower()
+    if any(kw in low for kw in (".svg", "logo", "icon", "banner",
+                                 "sprite", "placeholder", "favicon",
+                                 "_bnd", "/static/", "/.renditions/")):
+        return False
+    filename = url.rstrip("/").split("/")[-1].rsplit(".", 1)[0].lower()
+    if _BANNER_HEX_RE.search(filename):
+        return False
+    return True
+
+
+def _augment_with_wysiwyg(urls: list) -> list:
+    """
+    Filtra URLs no-producto y, para cada /cache/ URL, añade su contraparte
+    /wysiwyg/ inmediatamente después (preserva orden). Idempotente.
+    """
+    ordered: list = []
+    seen: set = set()
+    for u in urls:
+        if not u or not _should_keep_url(u):
+            continue
+        clean = re.sub(r'-\d+x\d+\.', '.', u).split("?")[0]
+        if clean in seen:
+            continue
+        seen.add(clean)
+        ordered.append(clean)
+        m = _CACHE_RE.match(clean)
+        if m:
+            wysiwyg = f"{m.group(1)}/wysiwyg/{m.group(2)}"
+            if wysiwyg not in seen:
+                seen.add(wysiwyg)
+                ordered.append(wysiwyg)
+    return ordered
+
+
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     """
     Carga el catálogo cacheado. NO realiza scraping bulk del listado.
     El catálogo se rellena bajo demanda en find_best_match().
     Con rebuild=True se borra el caché para forzar nueva resolución de cada producto.
+
+    Al cargar, rehidrata las entradas existentes: filtra banners y añade las
+    contrapartes /wysiwyg/ que las versiones antiguas del scraper no incluían.
     """
     if rebuild and CATALOG_PATH.exists():
         CATALOG_PATH.unlink()
@@ -316,7 +359,10 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     if CATALOG_PATH.exists():
         try:
             catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
-            log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
+            for entry in catalog.values():
+                entry["images"] = _augment_with_wysiwyg(entry.get("images", []))
+            log.info(f"Catálogo cargado desde caché: {len(catalog)} productos "
+                     f"(URLs rehidratadas con /wysiwyg/)")
             return catalog
         except Exception:
             pass
@@ -326,54 +372,54 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
 
 def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     """
-    Estrategia híbrida:
-      1. Jaccard contra catálogo cacheado
-      2. Si no hay match: slug directo (ARTERO <X> 300 ML → artero-<x>-300ml)
-      3. Si la URL directa falla: DDG site:artero.com/es/petcare/
-      4. URL válida → fetch + extracción → entry añadida al catálogo (mutación)
+    Resolución por producto sin Jaccard contra el catálogo entero
+    (causaba falsos positivos: 'CHAMPU DETOX' matcheaba 'CHAMPU BLANC' por
+    compartir 'champu'). Estrategia:
+
+      1. Slug esperado (derivado del título) en catálogo → match exacto
+      2. Slug directo: URL artero.com/es/petcare/<slug>
+      3. DDG con site:artero.com/es/petcare/
+      4. Resultado se cachea bajo el slug del título Y el slug de la URL
+         (alias) para evitar re-buscar en ejecuciones futuras
     """
     title_tokens = _tokenize(shopify_title)
+    expected_slug = _title_to_slug(shopify_title)
 
-    # 1. Match en catálogo cacheado
-    best_handle, best_score = None, 0.0
-    for handle, entry in catalog.items():
-        cat_tokens = (_tokenize(handle.replace("-", " "))
-                      | _tokenize(entry.get("name", "")))
-        score = _jaccard(title_tokens, cat_tokens)
-        if score > best_score:
-            best_score, best_handle = score, handle
-
-    if best_score >= MIN_SCORE:
-        log.info(f"  Match caché: {best_handle} (score={best_score:.2f})")
-        return best_handle, best_score
-
-    log.info(f"  Sin match en caché — búsqueda directa de URL")
+    # 1. Match exacto por slug esperado (cache hit limpio)
+    if expected_slug in catalog:
+        log.info(f"  Match caché exacto: {expected_slug}")
+        return expected_slug, 1.0
 
     page = _get_page()
     if page is None:
-        return None, best_score
+        return None, 0.0
 
     # 2. Slug directo
-    slug = _title_to_slug(shopify_title)
-    direct_url = f"{BASE_URL}/{slug}"
+    direct_url = f"{BASE_URL}/{expected_slug}"
     log.info(f"  [slug] {direct_url}")
     name, images = _try_url(page, direct_url, title_tokens)
-    found_url = direct_url if name else None
+    if name:
+        catalog[expected_slug] = {
+            "name": name, "url": direct_url, "images": images,
+        }
+        _save_catalog(catalog)
+        log.info(f"  ✓ Resuelto vía slug directo: {expected_slug} ({len(images)} imgs)")
+        return expected_slug, 1.0
 
     # 3. Fallback DDG
-    if not name:
-        ddg_url = _ddg_find_product_url(shopify_title)
-        if ddg_url:
-            name, images = _try_url(page, ddg_url, title_tokens)
-            if name:
-                slug = ddg_url.rstrip("/").split("/")[-1]
-                found_url = ddg_url
+    ddg_url = _ddg_find_product_url(shopify_title)
+    if ddg_url:
+        name, images = _try_url(page, ddg_url, title_tokens)
+        if name:
+            ddg_slug = ddg_url.rstrip("/").split("/")[-1]
+            entry = {"name": name, "url": ddg_url, "images": images}
+            catalog[ddg_slug] = entry
+            # Alias bajo el slug derivado del título para futuros lookups directos
+            if ddg_slug != expected_slug:
+                catalog[expected_slug] = entry
+            _save_catalog(catalog)
+            log.info(f"  ✓ Resuelto vía DDG: {ddg_slug} ({len(images)} imgs)")
+            return ddg_slug, 1.0
 
-    if not name or not found_url:
-        return None, best_score
-
-    # 4. Cachear y devolver match
-    catalog[slug] = {"name": name, "url": found_url, "images": images}
-    _save_catalog(catalog)
-    log.info(f"  ✓ Resuelto: {slug} ({len(images)} imágenes)")
-    return slug, 1.0
+    log.warning(f"  Sin resolución para slug esperado '{expected_slug}'")
+    return None, 0.0
