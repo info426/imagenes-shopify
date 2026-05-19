@@ -1,72 +1,37 @@
-2026-05-19 08:32:42,821 [INFO] ============================================================
-2026-05-19 08:32:42,821 [INFO]   Vendor   : CALIBRA
-2026-05-19 08:32:42,821 [INFO]   Modo     : SHOPIFY_BACKUP
-2026-05-19 08:32:42,821 [INFO]   Pipeline : standard
-2026-05-19 08:32:42,821 [INFO]   Padding  : auto
-2026-05-19 08:32:42,821 [INFO] ============================================================
-2026-05-19 08:32:43,133 [INFO] Token obtenido
-2026-05-19 08:32:44,823 [INFO] 
+2026-05-19 08:58:01,750 [INFO] ============================================================
+2026-05-19 08:58:01,750 [INFO]   Vendor   : CALIBRA
+2026-05-19 08:58:01,751 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-05-19 08:58:01,751 [INFO]   Pipeline : standard
+2026-05-19 08:58:01,751 [INFO]   Padding  : auto
+2026-05-19 08:58:01,751 [INFO] ============================================================
+2026-05-19 08:58:02,014 [INFO] Token obtenido
+2026-05-19 08:58:03,605 [INFO] 
 [1/7] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID: 15509679735171)
-2026-05-19 08:32:44,832 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:32:44,857 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:32:44,881 [INFO]     [autocrop] (2000, 2000) → (1432, 1800)
-2026-05-19 08:32:44,882 [INFO]     [padding 5%]
-2026-05-19 08:32:46,252 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:32:48,577 [INFO]   ✓ 1/1 subida  [calibra-dog-premium-line-adult-large-pollo_1.webp]
-2026-05-19 08:32:50,078 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,605 [INFO] 
 [2/7] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID: 15509675868547)
-2026-05-19 08:32:50,079 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:32:50,098 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:32:50,120 [INFO]     [autocrop] (2000, 2000) → (1431, 1800)
-2026-05-19 08:32:50,120 [INFO]     [padding 5%]
-2026-05-19 08:32:51,491 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:32:53,760 [INFO]   ✓ 1/1 subida  [calibra-dog-expert-nutrition-sensitive-salmon_1.webp]
-2026-05-19 08:32:55,260 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,605 [INFO] 
 [3/7] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID: 15509676949891)
-2026-05-19 08:32:55,261 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:32:55,282 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:32:55,304 [INFO]     [autocrop] (2000, 2000) → (1428, 1800)
-2026-05-19 08:32:55,304 [INFO]     [padding 5%]
-2026-05-19 08:32:56,590 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:32:58,774 [INFO]   ✓ 1/1 subida  [calibra-dog-life-adult-medium-breed-pollo_1.webp]
-2026-05-19 08:33:00,274 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,605 [INFO] 
 [4/7] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID: 15509680357763)
-2026-05-19 08:33:00,275 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:33:00,295 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:33:00,317 [INFO]     [autocrop] (2000, 2000) → (1427, 1798)
-2026-05-19 08:33:00,317 [INFO]     [padding 5%]
-2026-05-19 08:33:01,898 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:33:04,059 [INFO]   ✓ 1/1 subida  [calibra-dog-premium-line-senior-light-pollo_1.webp]
-2026-05-19 08:33:05,559 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,605 [INFO] 
 [5/7] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID: 15509679833475)
-2026-05-19 08:33:05,561 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:33:05,582 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:33:05,603 [INFO]     [autocrop] (2000, 2000) → (1429, 1799)
-2026-05-19 08:33:05,603 [INFO]     [padding 5%]
-2026-05-19 08:33:06,914 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:33:09,191 [INFO]   ✓ 1/1 subida  [calibra-dog-premium-line-adult-pollo_1.webp]
-2026-05-19 08:33:10,692 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,605 [INFO] 
 [6/7] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID: 15509680128387)
-2026-05-19 08:33:10,693 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:33:10,715 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:33:10,737 [INFO]     [autocrop] (2000, 2000) → (1429, 1799)
-2026-05-19 08:33:10,737 [INFO]     [padding 5%]
-2026-05-19 08:33:12,221 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:33:14,532 [INFO]   ✓ 1/1 subida  [calibra-dog-premium-line-adult-ternera_1.webp]
-2026-05-19 08:33:16,032 [INFO] 
+2026-05-19 08:58:03,605 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,606 [INFO] 
 [7/7] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID: 15509676589443)
-2026-05-19 08:33:16,033 [INFO]   img_01.webp: RGB (2000, 2000)
-2026-05-19 08:33:16,052 [INFO]     [bg] 10000/10000 (100%)
-2026-05-19 08:33:16,074 [INFO]     [autocrop] (2000, 2000) → (1427, 1800)
-2026-05-19 08:33:16,074 [INFO]     [padding 5%]
-2026-05-19 08:33:18,148 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-05-19 08:33:20,499 [INFO]   ✓ 1/1 subida  [calibra-dog-life-adult-large-breed-pollo_1.webp]
-2026-05-19 08:33:22,000 [INFO] 
+2026-05-19 08:58:03,606 [INFO]   Ya procesado — saltando
+2026-05-19 08:58:03,606 [INFO] 
 ============================================================
-2026-05-19 08:33:22,000 [INFO] RESUMEN
-2026-05-19 08:33:22,000 [INFO] ============================================================
-2026-05-19 08:33:22,000 [INFO]   total         : 7
-2026-05-19 08:33:22,000 [INFO]   ok            : 7
-2026-05-19 08:33:22,000 [INFO]   saltados      : 0
-2026-05-19 08:33:22,000 [INFO]   sin_backup    : 0
-2026-05-19 08:33:22,000 [INFO]   errores       : 0
+2026-05-19 08:58:03,606 [INFO] RESUMEN
+2026-05-19 08:58:03,606 [INFO] ============================================================
+2026-05-19 08:58:03,606 [INFO]   total         : 7
+2026-05-19 08:58:03,606 [INFO]   ok            : 0
+2026-05-19 08:58:03,606 [INFO]   saltados      : 7
+2026-05-19 08:58:03,606 [INFO]   sin_backup    : 0
+2026-05-19 08:58:03,606 [INFO]   errores       : 0
