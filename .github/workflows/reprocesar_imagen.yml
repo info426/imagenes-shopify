@@ -7,34 +7,34 @@ on:
         description: 'Vendor exacto en Shopify'
         required: true
       product_id:
-        description: 'ID del producto'
-        required: true
-      position:
-        description: 'Posición de la imagen (1, 2, 3...)'
-        required: true
-        default: '1'
-      padding:
-        description: 'Padding — auto=detectar automáticamente, no=forzar sin padding, si=forzar con padding'
+        description: 'ID del producto. VACÍO = escanear TODA la marca y reprocesar solo las no optimizadas (no WebP / no 2000×2000)'
         required: false
-        type: choice
-        options:
-          - auto
-          - 'no'
-          - 'si'
-        default: auto
+      position:
+        description: 'Posición de la imagen (solo modo individual; 1, 2, 3...)'
+        required: false
+        default: '1'
       pipeline:
-        description: 'Pipeline de procesamiento'
+        description: 'Pipeline de procesamiento de imagen'
         required: false
         type: choice
         options:
           - standard
           - webp_only
         default: standard
+      force_padding:
+        description: 'Forzar padding (auto=detección automática, true=siempre, false=nunca)'
+        required: false
+        type: choice
+        options:
+          - auto
+          - 'true'
+          - 'false'
+        default: auto
 
 jobs:
   reprocesar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     permissions:
       contents: write
 
@@ -53,20 +53,26 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Reprocesar imagen
+      - name: Reprocesar
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
+          if [ -n "${{ github.event.inputs.product_id }}" ]; then
+            TARGET="--product-id ${{ github.event.inputs.product_id }} --position ${{ github.event.inputs.position }}"
+            TAG="${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}"
+          else
+            TARGET=""
+            TAG="marca_$(echo '${{ github.event.inputs.vendor }}' | tr ' /' '__')"
+          fi
           python3 core/reprocess_image.py \
             --vendor "${{ github.event.inputs.vendor }}" \
-            --product-id "${{ github.event.inputs.product_id }}" \
-            --position "${{ github.event.inputs.position }}" \
-            --padding "${{ github.event.inputs.padding }}" \
             --pipeline "${{ github.event.inputs.pipeline }}" \
-            2>&1 | tee resultados/reprocesar_${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}.txt
+            --force-padding "${{ github.event.inputs.force_padding || 'auto' }}" \
+            $TARGET \
+            2>&1 | tee "resultados/reprocesar_${TAG}.txt"
 
       - name: Guardar log
         if: always()
@@ -74,5 +80,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
-          git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }} pos${{ github.event.inputs.position }}"
+          git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }}"
           git pull --rebase && git push
