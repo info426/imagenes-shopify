@@ -1,0 +1,5 @@
+usage: reprocess_image.py [-h] --vendor VENDOR [--product-id PRODUCT_ID]
+                          [--position POSITION] [--all-positions]
+                          [--force-padding {auto,true,false}]
+                          [--pipeline {standard,webp_only}] [--srgb]
+reprocess_image.py: error: argument --position: invalid int value: '1,2,3,4,5,6,7,'
