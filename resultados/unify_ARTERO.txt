@@ -1,54 +1,15 @@
-=== DRY RUN — no se realizarán cambios en Shopify ===
 
 ============================================================
 [G1] CORREA DOG CONTROL 360
 ============================================================
-  Título unificado : 'ARTERO CORREA DOG CONTROL 360'
-  Opción           : 'Talla'
-  Base             : 15509636809091 → variante 'XS'
-  Fusionar         : 15509636940163 → variante 'S'
-  Fusionar         : 15509636874627 → variante 'M'
-
-============================================================
-[G2] CORREA PELUQUERIA 50CM
-============================================================
-  Título unificado : 'ARTERO CORREA PELUQUERIA 50CM'
-  Opción           : 'Color'
-  Base             : 15509636972931 → variante 'Amarillo'
-  Fusionar         : 15509637005699 → variante 'Azul'
-  Fusionar         : 15509637104003 → variante 'Rosa'
-
-============================================================
-[G4] CHAMPU HIDRATANTE
-============================================================
-  Título unificado : 'ARTERO CHAMPU HIDRATANTE'
-  Opción           : 'Tamaño'
-  Base             : 15509636284803 → variante 'Estándar'
-  Fusionar         : 15509636383107 → variante '5 Litros'
-
-============================================================
-[G5] CHAMPU BLANC
-============================================================
-  Título unificado : 'ARTERO CHAMPU BLANC'
-  Opción           : 'Tamaño'
-  Base             : 15509635727747 → variante 'Estándar'
-  Fusionar         : 15509635793283 → variante '5 Litros'
-
-============================================================
-[G6] CHAMPU VITALIZANTE
-============================================================
-  Título unificado : 'ARTERO CHAMPU VITALIZANTE'
-  Opción           : 'Tamaño'
-  Base             : 15509636776323 → variante 'Estándar'
-  Fusionar         : 15509636645251 → variante '100ML'
-
-============================================================
-[G8] CHAMPU DETOX CARBON ACTIVO
-============================================================
-  Título unificado : 'ARTERO CHAMPU DETOX CARBON ACTIVO'
-  Opción           : 'Tamaño'
-  Base             : 15509636088195 → variante 'Estándar'
-  Fusionar         : 15509635957123 → variante '100ML'
+  ✓ base actualizado: 'ARTERO CORREA DOG CONTROL 360', variante 'XS'
+  ✓ imagen base asignada a variante 'XS'
+  ✓ variante añadida: 'S' (id=58097772265859)
+  ✓ 3 imagen(es) copiada(s) de 15509636940163 (ARTERO CORREA DOG CONTROL 360 S 15KG (NDR))
+  ✓ producto eliminado: 15509636940163 (ARTERO CORREA DOG CONTROL 360 S 15KG (NDR))
+  ✓ variante añadida: 'M' (id=58097774199171)
+  ✓ 3 imagen(es) copiada(s) de 15509636874627 (ARTERO CORREA DOG CONTROL 360 M 25KG (NDR))
+  ✓ producto eliminado: 15509636874627 (ARTERO CORREA DOG CONTROL 360 M 25KG (NDR))
 
 ============================================================
 ✓ Proceso completado
