@@ -143,12 +143,50 @@ def reprocess_in_place(api: ShopifyAPI, pid: int, img_meta: dict, title: str,
     log.info(f"    ✓ reprocesada y subida [{fname}] en posición {pos}")
 
 
+def _scan_product_images(api: ShopifyAPI, pid: int, title: str, pipeline: str,
+                         force_padding: bool | None, srgb: bool) -> dict:
+    """
+    Escanea todas las imágenes de un producto y reprocesa solo las no optimizadas.
+    Respeta el orden existente. Devuelve contadores {reprocesadas, omitidas, errores}.
+    """
+    images = sorted(api.get_images(pid), key=lambda x: x.get("position", 999))
+    counts = dict(reprocesadas=0, omitidas=0, errores=0)
+    for img_meta in images:
+        pos = img_meta.get("position")
+        ok, desc = is_optimized(img_meta)
+        if ok:
+            log.info(f"  pos {pos}: ya optimizada ({desc}) — omitida")
+            counts["omitidas"] += 1
+            continue
+        log.info(f"  pos {pos}: NO optimizada ({desc}) — reprocesando")
+        try:
+            reprocess_in_place(api, pid, img_meta, title, pipeline, force_padding, srgb)
+            counts["reprocesadas"] += 1
+        except Exception as e:
+            log.warning(f"  pos {pos}: error — {e}")
+            counts["errores"] += 1
+        time.sleep(0.5)
+    return counts
+
+
+def run_scan_product(api: ShopifyAPI, pid: int, pipeline: str,
+                     force_padding: bool | None, srgb: bool):
+    """Escanea todas las imágenes de un producto concreto."""
+    product = api.get_product(pid)
+    title   = product["title"]
+    images  = api.get_images(pid)
+    log.info(f"[{pid}] {title} — {len(images)} imágenes")
+    counts = _scan_product_images(api, pid, title, pipeline, force_padding, srgb)
+    log.info("=" * 60)
+    for k, v in counts.items():
+        log.info(f"  {k:<14}: {v}")
+
+
 def run_scan_brand(api: ShopifyAPI, vendor: str, pipeline: str,
                    force_padding: bool | None, srgb: bool):
     """
-    Recorre todos los productos del vendor y, producto por producto, reprocesa
-    únicamente las imágenes que no cumplen el estándar (WebP 2000×2000),
-    omitiendo las ya optimizadas y respetando el orden existente.
+    Recorre todos los productos del vendor y reprocesa únicamente las imágenes
+    que no cumplen el estándar (WebP 2000×2000), respetando el orden existente.
     """
     products = api.get_products(vendor)
     log.info(f"Total productos de '{vendor}': {len(products)}")
@@ -157,34 +195,19 @@ def run_scan_brand(api: ShopifyAPI, vendor: str, pipeline: str,
                  sin_imagenes=0, errores=0)
 
     for i, product in enumerate(products, 1):
-        pid    = product["id"]
-        title  = product["title"]
-        images = sorted(api.get_images(pid), key=lambda x: x.get("position", 999))
+        pid   = product["id"]
+        title = product["title"]
+        images = api.get_images(pid)
         log.info(f"\n[{i}/{len(products)}] {title}  (ID {pid}) — {len(images)} imágenes")
 
         if not images:
             stats["sin_imagenes"] += 1
             continue
 
-        # Posiciones capturadas al inicio. Como cada sustitución borra+re-sube en
-        # la misma posición (operación neutra para el resto), las posiciones de
-        # las imágenes pendientes siguen siendo válidas en iteraciones posteriores.
-        for img_meta in images:
-            pos = img_meta.get("position")
-            ok, desc = is_optimized(img_meta)
-            if ok:
-                log.info(f"  pos {pos}: ya optimizada ({desc}) — omitida")
-                stats["omitidas"] += 1
-                continue
-            log.info(f"  pos {pos}: NO optimizada ({desc}) — reprocesando")
-            try:
-                reprocess_in_place(api, pid, img_meta, title,
-                                   pipeline, force_padding, srgb)
-                stats["reprocesadas"] += 1
-            except Exception as e:
-                log.warning(f"  pos {pos}: error — {e}")
-                stats["errores"] += 1
-            time.sleep(0.5)
+        counts = _scan_product_images(api, pid, title, pipeline, force_padding, srgb)
+        stats["reprocesadas"] += counts["reprocesadas"]
+        stats["omitidas"]     += counts["omitidas"]
+        stats["errores"]      += counts["errores"]
 
     log.info("\n" + "=" * 60)
     log.info("RESUMEN")
@@ -212,7 +235,13 @@ def main():
 
     log.info("=" * 60)
     log.info(f"  Vendor    : {args.vendor}")
-    log.info(f"  Modo      : {'ESCANEO MARCA' if args.product_id is None else 'individual'}")
+    if args.product_id is None:
+        modo = "ESCANEO MARCA"
+    elif args.position is None and not args.all_positions:
+        modo = "ESCANEO PRODUCTO"
+    else:
+        modo = "individual"
+    log.info(f"  Modo      : {modo}")
     log.info(f"  Pipeline  : {args.pipeline}")
     log.info(f"  Padding   : {args.force_padding}")
     log.info(f"  sRGB      : {'sí' if args.srgb else 'no'}")
@@ -222,15 +251,16 @@ def main():
     api   = ShopifyAPI(token)
     slug  = vendor_slug(args.vendor)
 
-    # Sin product_id → escaneo de marca: reprocesa solo las imágenes no optimizadas.
     if args.product_id is None:
         run_scan_brand(api, args.vendor, args.pipeline, force_padding, args.srgb)
         log.info("\n✓ Completado")
         return
 
-    if not args.all_positions and args.position is None:
-        parser.error("Especifica --position N o --all-positions "
-                     "(o deja --product-id vacío para escanear toda la marca)")
+    # product_id sin position → escaneo del producto: reprocesa solo las no optimizadas.
+    if args.position is None and not args.all_positions:
+        run_scan_product(api, args.product_id, args.pipeline, force_padding, args.srgb)
+        log.info("\n✓ Completado")
+        return
 
     log.info(f"  Producto  : {args.product_id}")
     log.info(f"  Posición  : {'todas' if args.all_positions else args.position}")

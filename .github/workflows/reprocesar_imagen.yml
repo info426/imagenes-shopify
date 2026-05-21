@@ -10,9 +10,8 @@ on:
         description: 'ID del producto. VACÍO = escanear TODA la marca y reprocesar solo las no optimizadas (no WebP / no 2000×2000)'
         required: false
       position:
-        description: 'Posición de la imagen (solo modo individual; 1, 2, 3...)'
+        description: 'Posición de la imagen (solo modo individual: 1, 2, 3...). VACÍO = analizar todas las imágenes del producto'
         required: false
-        default: '1'
       pipeline:
         description: 'Pipeline de procesamiento de imagen'
         required: false
@@ -61,8 +60,13 @@ jobs:
         run: |
           mkdir -p resultados
           if [ -n "${{ github.event.inputs.product_id }}" ]; then
-            TARGET="--product-id ${{ github.event.inputs.product_id }} --position ${{ github.event.inputs.position }}"
-            TAG="${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}"
+            if [ -n "${{ github.event.inputs.position }}" ]; then
+              TARGET="--product-id ${{ github.event.inputs.product_id }} --position ${{ github.event.inputs.position }}"
+              TAG="${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}"
+            else
+              TARGET="--product-id ${{ github.event.inputs.product_id }}"
+              TAG="producto_${{ github.event.inputs.product_id }}"
+            fi
           else
             TARGET=""
             TAG="marca_$(echo '${{ github.event.inputs.vendor }}' | tr ' /' '__')"
