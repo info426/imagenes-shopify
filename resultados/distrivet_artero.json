@@ -1,0 +1,380 @@
+[
+  {
+    "ref": "H622",
+    "desc": "ARTERO CHAMPU VITALIZANTE 250ML (NDR)",
+    "ean": "8435037100010",
+    "price": "8,09",
+    "stock": "50+"
+  },
+  {
+    "ref": "H623",
+    "desc": "ARTERO CHAMPU VITALIZANTE 5L (NDR)",
+    "ean": "8435037100027",
+    "price": "53,89",
+    "stock": "11"
+  },
+  {
+    "ref": "H624",
+    "desc": "ARTERO CHAMPU HIDRATANTE 300ML (NDR)",
+    "ean": "8435037100034",
+    "price": "8,74",
+    "stock": "50+"
+  },
+  {
+    "ref": "H625",
+    "desc": "ARTERO CHAMPU HIDRATANTE 5LT (NDR)",
+    "ean": "8435037100041",
+    "price": "64,14",
+    "stock": "0"
+  },
+  {
+    "ref": "H626",
+    "desc": "ARTERO ACONDICIONADOR PROTEIN VITAL 100ML (NDR)",
+    "ean": "8435037100065",
+    "price": "10,94",
+    "stock": "50+"
+  },
+  {
+    "ref": "H629",
+    "desc": "ARTERO INTENSIFYNG 1LT (NDR)",
+    "ean": "8435037100096",
+    "price": "35,54",
+    "stock": "7"
+  },
+  {
+    "ref": "H630",
+    "desc": "ARTERO ACONDICIONADOR PROTEIN VITAL 650ML (NDR)",
+    "ean": "8435037100188",
+    "price": "41,94",
+    "stock": "12"
+  },
+  {
+    "ref": "H633",
+    "desc": "ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)",
+    "ean": "8435037100102",
+    "price": "11,94",
+    "stock": "50+"
+  },
+  {
+    "ref": "H634",
+    "desc": "ARTERO ACONDICIONADOR FLASH 300 ML (NDR)",
+    "ean": "8435037100119",
+    "price": "13,79",
+    "stock": "50+"
+  },
+  {
+    "ref": "H635",
+    "desc": "ARTERO CHAMPU BASIC 5L (NDR)",
+    "ean": "8435037100058",
+    "price": "37,74",
+    "stock": "11"
+  },
+  {
+    "ref": "H646",
+    "desc": "ARTERO PRETTY EYES (NDR)",
+    "ean": "8435037100201",
+    "price": "10,84",
+    "stock": "50+"
+  },
+  {
+    "ref": "H647",
+    "desc": "ARTERO MATT-X (NDR)",
+    "ean": "8435037100218",
+    "price": "15,29",
+    "stock": "20"
+  },
+  {
+    "ref": "H648",
+    "desc": "ARTERO CHAMPU BLANC 300 ML (NDR)",
+    "ean": "8435037100225",
+    "price": "10,59",
+    "stock": "50+"
+  },
+  {
+    "ref": "H649",
+    "desc": "ARTERO CHAMPU BLANCO 5L (NDR)",
+    "ean": "8435037100249",
+    "price": "62,39",
+    "stock": "8"
+  },
+  {
+    "ref": "H653",
+    "desc": "ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)",
+    "ean": "8435037100256",
+    "price": "11,79",
+    "stock": "12"
+  },
+  {
+    "ref": "H654",
+    "desc": "ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)",
+    "ean": "8435037100263",
+    "price": "13,34",
+    "stock": "30"
+  },
+  {
+    "ref": "H655",
+    "desc": "ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)",
+    "ean": "8435037100270",
+    "price": "13,34",
+    "stock": "21"
+  },
+  {
+    "ref": "H657",
+    "desc": "ARTERO CHAMPU GATO 250 ML (NDR)",
+    "ean": "8435037160601",
+    "price": "7,44",
+    "stock": "17"
+  },
+  {
+    "ref": "H658",
+    "desc": "ARTERO CHAMPU GATO 650L (NDR)",
+    "ean": "8435037160618",
+    "price": "18,79",
+    "stock": "3"
+  },
+  {
+    "ref": "H659",
+    "desc": "ARTERO ACONDICIONADOR KERATIN VITAL 650ML (NDR)",
+    "ean": "8435037164739",
+    "price": "42,49",
+    "stock": "4"
+  },
+  {
+    "ref": "H662",
+    "desc": "ARTERO LACA PODIUM DRY HOLD 500 ML (NDR)",
+    "ean": "8435037165941",
+    "price": "14,39",
+    "stock": "0"
+  },
+  {
+    "ref": "H663",
+    "desc": "ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)",
+    "ean": "8435037165958",
+    "price": "14,44",
+    "stock": "11"
+  },
+  {
+    "ref": "H664",
+    "desc": "ARTERO CHAMPU BABY 300 ML (NDR)",
+    "ean": "8435037169215",
+    "price": "8,54",
+    "stock": "49"
+  },
+  {
+    "ref": "H665",
+    "desc": "ARTERO CHAMPU RELAX 300 ML (NDR)",
+    "ean": "8435037169222",
+    "price": "10,19",
+    "stock": "5"
+  },
+  {
+    "ref": "H666",
+    "desc": "ARTERO CHAMPU BYE BYE 300 ML (NDR)",
+    "ean": "8435037169239",
+    "price": "9,34",
+    "stock": "4"
+  },
+  {
+    "ref": "H667",
+    "desc": "ARTERO CHAMPU RELAX 5L (NDR)",
+    "ean": "8435037169246",
+    "price": "76,79",
+    "stock": "2"
+  },
+  {
+    "ref": "H668",
+    "desc": "ARTERO CHAMPU BYE BYE 5L (NDR)",
+    "ean": "8435037169253",
+    "price": "72,09",
+    "stock": "2"
+  },
+  {
+    "ref": "H672",
+    "desc": "ARTERO ACONDICIONADOR KERATIN VITAL 100ML (NDR)",
+    "ean": "8435037164746",
+    "price": "10,09",
+    "stock": "41"
+  },
+  {
+    "ref": "H673",
+    "desc": "ARTERO HIGIENE PERFUME BABY 90 ML (NDR)",
+    "ean": "8435037164753",
+    "price": "13,34",
+    "stock": "39"
+  },
+  {
+    "ref": "H689",
+    "desc": "ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)",
+    "ean": "8435037175308",
+    "price": "13,84",
+    "stock": "8"
+  },
+  {
+    "ref": "H693",
+    "desc": "ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)",
+    "ean": "8435037176763",
+    "price": "13,34",
+    "stock": "7"
+  },
+  {
+    "ref": "H695",
+    "desc": "ARTERO MIX ACONDICIONADOR SPRAY (NDR)",
+    "ean": "8435037177913",
+    "price": "9,69",
+    "stock": "48"
+  },
+  {
+    "ref": "H699",
+    "desc": "ARTERO SPRAY BALSAM 300 ML (NDR)",
+    "ean": "8435037173106",
+    "price": "9,14",
+    "stock": "25"
+  },
+  {
+    "ref": "H706",
+    "desc": "ARTERO EXPOSITOR PROTEIN Y KERATIN 12UD (NDR)",
+    "ean": "8435037167143",
+    "price": "97,39",
+    "stock": "3"
+  },
+  {
+    "ref": "H712",
+    "desc": "ARTERO CHAMPU DETOX CARBON ACTIVO 250 ML (NDR)",
+    "ean": "8435037188339",
+    "price": "7,34",
+    "stock": "26"
+  },
+  {
+    "ref": "H715",
+    "desc": "ARTERO CHAMPU DETOX CARBON ACTIVO 5L (NDR)",
+    "ean": "8435037188346",
+    "price": "55,34",
+    "stock": "5"
+  },
+  {
+    "ref": "H772",
+    "desc": "EXPOSITOR CON 9 CHAMPUS DE VIAJE 100ML (NDR)",
+    "ean": "8435037106647",
+    "price": "34,89",
+    "stock": "0"
+  },
+  {
+    "ref": "H8429949193925",
+    "desc": "PACIFEEL 150 ML JARABE (NDR)",
+    "ean": "8429949193925",
+    "price": "15,39",
+    "stock": "16"
+  },
+  {
+    "ref": "H926",
+    "desc": "ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)",
+    "ean": "8435037188308",
+    "price": "9,49",
+    "stock": "24"
+  },
+  {
+    "ref": "HS622",
+    "desc": "ARTERO CHAMPU VITALIZANTE 100ML (NDR)",
+    "ean": "8435037193838",
+    "price": "4,69",
+    "stock": "6"
+  },
+  {
+    "ref": "HS624",
+    "desc": "ARTERO CHAMPU HIDRATANTE 100ML (NDR)",
+    "ean": "8435037193821",
+    "price": "5,69",
+    "stock": "38"
+  },
+  {
+    "ref": "HS635",
+    "desc": "ARTERO CHAMPU BASIC 100ML (NDR)",
+    "ean": "8435037193852",
+    "price": "4,79",
+    "stock": "17"
+  },
+  {
+    "ref": "HS648",
+    "desc": "ARTERO CHAMPU BLANC 100ML (NDR)",
+    "ean": "8435037193845",
+    "price": "5,89",
+    "stock": "29"
+  },
+  {
+    "ref": "HS664",
+    "desc": "ARTERO CHAMPU BABY 100 ML (NDR)",
+    "ean": "8435037106562",
+    "price": "5,59",
+    "stock": "14"
+  },
+  {
+    "ref": "HS665",
+    "desc": "ARTERO CHAMPU RELAX 100ML (NDR)",
+    "ean": "8435037193876",
+    "price": "6,69",
+    "stock": "11"
+  },
+  {
+    "ref": "HS666",
+    "desc": "ARTERO CHAMPU BYE BYE 100ML (NDR)",
+    "ean": "8435037193869",
+    "price": "6,94",
+    "stock": "10"
+  },
+  {
+    "ref": "HS712",
+    "desc": "ARTERO CHAMPU DETOX 100ML (NDR)",
+    "ean": "8435037193814",
+    "price": "5,39",
+    "stock": "22"
+  },
+  {
+    "ref": "HS764",
+    "desc": "ARTERO CHAMPU TSUNAMI 100 ML (NDR)",
+    "ean": "8435037106555",
+    "price": "4,39",
+    "stock": "19"
+  },
+  {
+    "ref": "S295",
+    "desc": "ARTERO CORREA DOG CONTROL 360 M 25KG (NDR)",
+    "ean": "8435037172017",
+    "price": "9,94",
+    "stock": "1"
+  },
+  {
+    "ref": "S296",
+    "desc": "ARTERO CORREA DOG CONTROL 360 XS 12KG (NDR)",
+    "ean": "8435037172062",
+    "price": "7,44",
+    "stock": "0"
+  },
+  {
+    "ref": "Y501",
+    "desc": "ARTERO CORREA PELUQUERIA AZUL 50CM (NDR)",
+    "ean": "8435037180289",
+    "price": "7,19",
+    "stock": "0"
+  },
+  {
+    "ref": "Y502",
+    "desc": "ARTERO CORREA PELUQUERIA AMARILLO 50CM (NDR)",
+    "ean": "8435037180296",
+    "price": "7,24",
+    "stock": "0"
+  },
+  {
+    "ref": "Y503",
+    "desc": "ARTERO CORREA PELUQUERIA ROSA 50CM (NDR)",
+    "ean": "8435037180302",
+    "price": "7,19",
+    "stock": "0"
+  },
+  {
+    "ref": "Y509",
+    "desc": "ARTERO CORREA PINZA AMARILLA (NDR)",
+    "ean": "8435037182436",
+    "price": "7,04",
+    "stock": "2"
+  }
+]
