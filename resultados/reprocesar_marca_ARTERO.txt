@@ -1,511 +1,323 @@
-2026-05-21 10:19:12,664 [INFO] ============================================================
-2026-05-21 10:19:12,664 [INFO]   Vendor    : ARTERO
-2026-05-21 10:19:12,665 [INFO]   Modo      : ESCANEO MARCA
-2026-05-21 10:19:12,665 [INFO]   Pipeline  : standard
-2026-05-21 10:19:12,665 [INFO]   Padding   : auto
-2026-05-21 10:19:12,665 [INFO]   sRGB      : no
-2026-05-21 10:19:12,665 [INFO] ============================================================
-2026-05-21 10:19:13,633 [INFO] Total productos de 'ARTERO': 44
-2026-05-21 10:19:13,855 [INFO] 
-[1/44] ARTERO ACONDICIONADOR FLASH 300 ML (NDR)  (ID 15509635072387) — 6 imágenes
-2026-05-21 10:19:13,855 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:19:13,960 [INFO]     cargada RGB (1100, 1100) ← h634_25_2bb1fda0-af46-40e6-b05c-233b9db33d5a.webp
-2026-05-21 10:19:13,975 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:19:13,986 [INFO]     [autocrop] (1100, 1100) → (283, 958)
-2026-05-21 10:19:13,987 [INFO]     [padding 5%]
-2026-05-21 10:19:16,923 [INFO]     ✓ reprocesada y subida [artero-acondicionador-flash-300-ml-ndr_1.webp] en posición 1
-2026-05-21 10:19:17,425 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,425 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,425 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,425 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,425 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,663 [INFO] 
-[2/44] ARTERO ACONDICIONADOR KERATIN VITAL (NDR)  (ID 15509635137923) — 7 imágenes
-2026-05-21 10:19:17,663 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,663 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,663 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,664 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,664 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,664 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,664 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:17,889 [INFO] 
-[3/44] ARTERO ACONDICIONADOR PROTEIN VITAL (NDR)  (ID 15509635203459) — 8 imágenes
-2026-05-21 10:19:17,890 [INFO]   pos 1: NO optimizada (jpg 1100×1100) — reprocesando
-2026-05-21 10:19:17,954 [INFO]     cargada RGB (1100, 1100) ← 00_imagen_principal_h626_es_25.jpg
-2026-05-21 10:19:17,965 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:19:17,974 [INFO]     [autocrop] (1100, 1100) → (268, 862)
-2026-05-21 10:19:17,974 [INFO]     [padding 5%]
-2026-05-21 10:19:20,728 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_1.webp] en posición 1
-2026-05-21 10:19:21,231 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:19:21,299 [INFO]     cargada RGB (1500, 1500) ← 61BKvaWaBLL._AC_SL1500.jpg
-2026-05-21 10:19:21,316 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:19:21,316 [INFO]     [sin padding]
-2026-05-21 10:19:24,088 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_2.webp] en posición 2
-2026-05-21 10:19:24,591 [INFO]   pos 3: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:19:24,651 [INFO]     cargada RGB (1000, 1000) ← 01_Imagen_Principal_H626_ES_25.jpg
-2026-05-21 10:19:24,659 [INFO]     [bg] 2047/2500 (82%)
-2026-05-21 10:19:24,669 [INFO]     [autocrop] (1000, 1000) → (1000, 966)
-2026-05-21 10:19:24,669 [INFO]     [fills-frame 100%×97%] → sin padding
-2026-05-21 10:19:24,669 [INFO]     [sin padding]
-2026-05-21 10:19:27,669 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_3.webp] en posición 3
-2026-05-21 10:19:28,173 [INFO]   pos 4: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:19:28,269 [INFO]     cargada RGB (1000, 1000) ← 03_Pasos_H626_ES_25.jpg
-2026-05-21 10:19:28,282 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:19:28,282 [INFO]     [sin padding]
-2026-05-21 10:19:31,552 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_4.webp] en posición 4
-2026-05-21 10:19:32,055 [INFO]   pos 5: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:19:32,118 [INFO]     cargada RGB (1000, 1000) ← 02_Funciones_H626_ES_25.jpg
-2026-05-21 10:19:32,125 [INFO]     [bg] 1783/2500 (71%)
-2026-05-21 10:19:32,134 [INFO]     [autocrop] (1000, 1000) → (883, 1000)
-2026-05-21 10:19:32,134 [INFO]     [fills-frame 88%×100%] → sin padding
-2026-05-21 10:19:32,135 [INFO]     [sin padding]
-2026-05-21 10:19:35,019 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_5.webp] en posición 5
-2026-05-21 10:19:35,523 [INFO]   pos 6: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:19:35,584 [INFO]     cargada RGB (1000, 1000) ← 04_Ingredientes_H626_ES_25.jpg
-2026-05-21 10:19:35,593 [INFO]     [bg] 575/2500 (23%)
-2026-05-21 10:19:35,594 [INFO]     [sin padding]
-2026-05-21 10:19:38,841 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_6.webp] en posición 6
-2026-05-21 10:19:39,344 [INFO]   pos 7: NO optimizada (jpg 2000×2000) — reprocesando
-2026-05-21 10:19:39,422 [INFO]     cargada RGB (2000, 2000) ← 04_Cierre_H246_ES_25.jpg
-2026-05-21 10:19:39,452 [INFO]     [bg] 0/10000 (0%)
-2026-05-21 10:19:39,452 [INFO]     [sin padding]
-2026-05-21 10:19:42,742 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_7.webp] en posición 7
-2026-05-21 10:19:43,244 [INFO]   pos 8: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:19:43,323 [INFO]     cargada RGB (1100, 1100) ← h630.webp
-2026-05-21 10:19:43,334 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:19:43,343 [INFO]     [autocrop] (1100, 1100) → (446, 954)
-2026-05-21 10:19:43,343 [INFO]     [padding 5%]
-2026-05-21 10:19:45,974 [INFO]     ✓ reprocesada y subida [artero-acondicionador-protein-vital-ndr_8.webp] en posición 8
-2026-05-21 10:19:46,688 [INFO] 
-[4/44] ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)  (ID 15509635301763) — 4 imágenes
-2026-05-21 10:19:46,689 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:46,689 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:46,689 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:46,689 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:19:46,934 [INFO] 
-[5/44] ARTERO CHAMPU BABY (NDR)  (ID 15509635432835) — 10 imágenes
-2026-05-21 10:19:46,934 [INFO]   pos 1: NO optimizada (jpg 1100×1100) — reprocesando
-2026-05-21 10:19:46,992 [INFO]     cargada RGB (1100, 1100) ← bodegon_baby_web_2.jpg
-2026-05-21 10:19:47,005 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:19:47,014 [INFO]     [autocrop] (1100, 1100) → (446, 751)
-2026-05-21 10:19:47,014 [INFO]     [padding 5%]
-2026-05-21 10:19:50,282 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_1.webp] en posición 1
-2026-05-21 10:19:50,785 [INFO]   pos 2: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:19:50,846 [INFO]     cargada RGB (900, 900) ← 02_Imagen_Principal_H664_baby_25_ES_1.webp
-2026-05-21 10:19:50,855 [INFO]     [bg] 2116/2116 (100%)
-2026-05-21 10:19:50,863 [INFO]     [autocrop] (900, 900) → (469, 692)
-2026-05-21 10:19:50,864 [INFO]     [padding 5%]
-2026-05-21 10:19:53,644 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_2.webp] en posición 2
-2026-05-21 10:19:54,147 [INFO]   pos 3: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:19:54,212 [INFO]     cargada RGB (900, 900) ← 03_Funciones_H664_25_ES_1.webp
-2026-05-21 10:19:54,221 [INFO]     [bg] 2116/2116 (100%)
-2026-05-21 10:19:54,229 [INFO]     [autocrop] (900, 900) → (641, 715)
-2026-05-21 10:19:54,230 [INFO]     [padding 5%]
-2026-05-21 10:19:57,349 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_3.webp] en posición 3
-2026-05-21 10:19:57,852 [INFO]   pos 4: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:19:57,913 [INFO]     cargada RGB (900, 900) ← 03_Pasos_H664_25_ES_1.webp
-2026-05-21 10:19:57,923 [INFO]     [bg] 0/2116 (0%)
-2026-05-21 10:19:57,923 [INFO]     [sin padding]
-2026-05-21 10:20:01,273 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_4.webp] en posición 4
-2026-05-21 10:20:01,776 [INFO]   pos 5: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:20:01,854 [INFO]     cargada RGB (900, 900) ← 04_Ingredientes_H664_25_ES_1.webp
-2026-05-21 10:20:01,866 [INFO]     [bg] 434/2116 (21%)
-2026-05-21 10:20:01,866 [INFO]     [sin padding]
-2026-05-21 10:20:04,994 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_5.webp] en posición 5
-2026-05-21 10:20:05,497 [INFO]   pos 6: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:20:05,576 [INFO]     cargada RGB (900, 900) ← 05_Cierre_H664_25_ES_1.webp
-2026-05-21 10:20:05,587 [INFO]     [bg] 0/2116 (0%)
-2026-05-21 10:20:05,587 [INFO]     [sin padding]
-2026-05-21 10:20:09,030 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_6.webp] en posición 6
-2026-05-21 10:20:09,532 [INFO]   pos 7: NO optimizada (jpg 1012×1500) — reprocesando
-2026-05-21 10:20:09,595 [INFO]     cargada RGB (1012, 1500) ← 61KeW9TkFdL._AC_SL1500.jpg
-2026-05-21 10:20:09,611 [INFO]     [bg] 2500/2500 (100%)
-2026-05-21 10:20:09,624 [INFO]     [autocrop] (1012, 1500) → (1004, 1475)
-2026-05-21 10:20:09,624 [INFO]     [padding 5%]
-2026-05-21 10:20:13,006 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_7.webp] en posición 7
-2026-05-21 10:20:13,510 [INFO]   pos 8: NO optimizada (jpg 1343×1500) — reprocesando
-2026-05-21 10:20:13,573 [INFO]     cargada RGB (1343, 1500) ← 71t1dAmBVJL._AC_SL1500.jpg
-2026-05-21 10:20:13,593 [INFO]     [bg] 4624/4624 (100%)
-2026-05-21 10:20:13,609 [INFO]     [autocrop] (1343, 1500) → (1340, 1475)
-2026-05-21 10:20:13,609 [INFO]     [padding 5%]
-2026-05-21 10:20:16,816 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_8.webp] en posición 8
-2026-05-21 10:20:17,319 [INFO]   pos 9: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:20:17,389 [INFO]     cargada RGB (1500, 1500) ← 71M0rEmOJrL._AC_SL1500.jpg
-2026-05-21 10:20:17,409 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:20:17,409 [INFO]     [sin padding]
-2026-05-21 10:20:20,580 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_9.webp] en posición 9
-2026-05-21 10:20:21,083 [INFO]   pos 10: NO optimizada (jpg 1500×1493) — reprocesando
-2026-05-21 10:20:21,153 [INFO]     cargada RGB (1500, 1493) ← 71zJGfcyjnL._AC_SL1500.jpg
-2026-05-21 10:20:21,173 [INFO]     [bg] 966/5476 (18%)
-2026-05-21 10:20:21,173 [INFO]     [sin padding]
-2026-05-21 10:20:24,632 [INFO]     ✓ reprocesada y subida [artero-champu-baby-ndr_10.webp] en posición 10
-2026-05-21 10:20:25,365 [INFO] 
-[6/44] ARTERO CHAMPU BASIC (NDR)  (ID 15509635531139) — 5 imágenes
-2026-05-21 10:20:25,365 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:25,365 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:25,365 [INFO]   pos 3: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:20:25,428 [INFO]     cargada RGB (1500, 1500) ← 81tWppu_d-L._AC_SL1500.jpg
-2026-05-21 10:20:25,454 [INFO]     [bg] 1/5776 (0%)
-2026-05-21 10:20:25,454 [INFO]     [sin padding]
-2026-05-21 10:20:29,232 [INFO]     ✓ reprocesada y subida [artero-champu-basic-ndr_3.webp] en posición 3
-2026-05-21 10:20:29,735 [INFO]   pos 4: NO optimizada (jpg 1500×1493) — reprocesando
-2026-05-21 10:20:29,798 [INFO]     cargada RGB (1500, 1493) ← 71OkndlplUL._AC_SL1500.jpg
-2026-05-21 10:20:29,819 [INFO]     [bg] 973/5476 (18%)
-2026-05-21 10:20:29,819 [INFO]     [sin padding]
-2026-05-21 10:20:33,050 [INFO]     ✓ reprocesada y subida [artero-champu-basic-ndr_4.webp] en posición 4
-2026-05-21 10:20:33,553 [INFO]   pos 5: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:20:33,618 [INFO]     cargada RGB (1500, 1500) ← 81svelfwu2L._AC_SL1500.jpg
-2026-05-21 10:20:33,640 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:20:33,640 [INFO]     [sin padding]
-2026-05-21 10:20:37,170 [INFO]     ✓ reprocesada y subida [artero-champu-basic-ndr_5.webp] en posición 5
-2026-05-21 10:20:37,896 [INFO] 
-[7/44] ARTERO CHAMPU BLANC (NDR)  (ID 15509635727747) — 6 imágenes
-2026-05-21 10:20:37,896 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:37,896 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:37,896 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:37,896 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:37,896 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:37,896 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO] 
-[8/44] ARTERO CHAMPU BLANCO 5L (NDR)  (ID 15509635793283) — 6 imágenes
-2026-05-21 10:20:38,113 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,113 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,346 [INFO] 
-[9/44] ARTERO CHAMPU BYE BYE (NDR)  (ID 15509635924355) — 5 imágenes
-2026-05-21 10:20:38,346 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:38,346 [INFO]   pos 2: NO optimizada (jpg 949×1000) — reprocesando
-2026-05-21 10:20:38,404 [INFO]     cargada RGB (949, 1000) ← 61ArTN_KmaS._AC_SL1000.jpg
-2026-05-21 10:20:38,415 [INFO]     [bg] 1604/2304 (70%)
-2026-05-21 10:20:38,423 [INFO]     [autocrop] (949, 1000) → (948, 1000)
-2026-05-21 10:20:38,423 [INFO]     [fills-frame 100%×100%] → sin padding
-2026-05-21 10:20:38,423 [INFO]     [sin padding]
-2026-05-21 10:20:41,626 [INFO]     ✓ reprocesada y subida [artero-champu-bye-bye-ndr_2.webp] en posición 2
-2026-05-21 10:20:42,129 [INFO]   pos 3: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:20:42,188 [INFO]     cargada RGB (1000, 1000) ← 61x0rSzXd-S._AC_SL1000.jpg
-2026-05-21 10:20:42,199 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:20:42,199 [INFO]     [sin padding]
-2026-05-21 10:20:45,707 [INFO]     ✓ reprocesada y subida [artero-champu-bye-bye-ndr_3.webp] en posición 3
-2026-05-21 10:20:46,210 [INFO]   pos 4: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:20:46,271 [INFO]     cargada RGB (1000, 1000) ← 61bHUGaAQ3S._AC_SL1000.jpg
-2026-05-21 10:20:46,282 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:20:46,282 [INFO]     [sin padding]
-2026-05-21 10:20:49,334 [INFO]     ✓ reprocesada y subida [artero-champu-bye-bye-ndr_4.webp] en posición 4
-2026-05-21 10:20:49,837 [INFO]   pos 5: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:20:49,897 [INFO]     cargada RGB (1000, 1000) ← 61JatnP-LUS._AC_SL1000.jpg
-2026-05-21 10:20:49,908 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:20:49,908 [INFO]     [sin padding]
-2026-05-21 10:20:53,232 [INFO]     ✓ reprocesada y subida [artero-champu-bye-bye-ndr_5.webp] en posición 5
-2026-05-21 10:20:53,969 [INFO] 
-[10/44] ARTERO CHAMPU DETOX 100ML (NDR)  (ID 15509635957123) — 6 imágenes
-2026-05-21 10:20:53,969 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:53,969 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:53,969 [INFO]   pos 3: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:20:54,031 [INFO]     cargada RGB (1000, 1000) ← 61N1Gl419hL._AC_SL1000.jpg
-2026-05-21 10:20:54,042 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:20:54,042 [INFO]     [sin padding]
-2026-05-21 10:20:57,243 [INFO]     ✓ reprocesada y subida [artero-champu-detox-100ml-ndr_3.webp] en posición 3
-2026-05-21 10:20:57,746 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:20:57,746 [INFO]   pos 5: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:20:57,808 [INFO]     cargada RGB (1000, 1000) ← 61FcqO6TAIL._AC_SL1000.jpg
-2026-05-21 10:20:57,820 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:20:57,820 [INFO]     [sin padding]
-2026-05-21 10:21:01,040 [INFO]     ✓ reprocesada y subida [artero-champu-detox-100ml-ndr_5.webp] en posición 5
-2026-05-21 10:21:01,542 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,771 [INFO] 
-[11/44] ARTERO CHAMPU DETOX CARBON ACTIVO (NDR)  (ID 15509636088195) — 6 imágenes
-2026-05-21 10:21:01,771 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,772 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,772 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,772 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,772 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:01,772 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO] 
-[12/44] ARTERO CHAMPU GATO (NDR)  (ID 15509636153731) — 6 imágenes
-2026-05-21 10:21:02,003 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,003 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,232 [INFO] 
-[13/44] ARTERO CHAMPU HIDRATANTE (NDR)  (ID 15509636284803) — 6 imágenes
-2026-05-21 10:21:02,232 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,232 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,232 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,232 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,233 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,233 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,476 [INFO] 
-[14/44] ARTERO CHAMPU HIDRATANTE 5LT (NDR)  (ID 15509636383107) — 6 imágenes
-2026-05-21 10:21:02,477 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,477 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,477 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,477 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,477 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,477 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,716 [INFO] 
-[15/44] ARTERO CHAMPU RELAX (NDR)  (ID 15509636415875) — 5 imágenes
-2026-05-21 10:21:02,716 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,716 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,716 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,716 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,716 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,933 [INFO] 
-[16/44] ARTERO CHAMPU TSUNAMI 100 ML (NDR)  (ID 15509636579715) — 5 imágenes
-2026-05-21 10:21:02,933 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,933 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,933 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,933 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:02,933 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO] 
-[17/44] ARTERO CHAMPU VITALIZANTE (NDR)  (ID 15509636776323) — 6 imágenes
-2026-05-21 10:21:03,157 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,157 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO] 
-[18/44] ARTERO CHAMPU VITALIZANTE 100ML (NDR)  (ID 15509636645251) — 6 imágenes
-2026-05-21 10:21:03,399 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,399 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,619 [INFO] 
-[19/44] ARTERO CORREA DOG CONTROL 360 M 25KG (NDR)  (ID 15509636874627) — 3 imágenes
-2026-05-21 10:21:03,620 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,620 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,620 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,846 [INFO] 
-[20/44] ARTERO CORREA DOG CONTROL 360 S 15KG (NDR)  (ID 15509636940163) — 3 imágenes
-2026-05-21 10:21:03,846 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,846 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:03,846 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:04,067 [INFO] 
-[21/44] ARTERO CORREA DOG CONTROL 360 XS 12KG (NDR)  (ID 15509636809091) — 3 imágenes
-2026-05-21 10:21:04,068 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:04,068 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:04,068 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:04,281 [INFO] 
-[22/44] ARTERO CORREA PELUQUERIA AMARILLO 50CM (NDR)  (ID 15509636972931) — 1 imágenes
-2026-05-21 10:21:04,281 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:04,351 [INFO]     cargada RGB (1100, 1100) ← y502_1_1.webp
-2026-05-21 10:21:04,365 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:04,377 [INFO]     [autocrop] (1100, 1100) → (892, 573)
-2026-05-21 10:21:04,377 [INFO]     [padding 5%]
-2026-05-21 10:21:07,468 [INFO]     ✓ reprocesada y subida [artero-correa-peluqueria-amarillo-50cm-ndr_1.webp] en posición 1
-2026-05-21 10:21:08,183 [INFO] 
-[23/44] ARTERO CORREA PELUQUERIA AZUL 50CM (NDR)  (ID 15509637005699) — 1 imágenes
-2026-05-21 10:21:08,183 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:08,259 [INFO]     cargada RGB (1100, 1100) ← y501_1_1.webp
-2026-05-21 10:21:08,272 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:08,281 [INFO]     [autocrop] (1100, 1100) → (892, 560)
-2026-05-21 10:21:08,281 [INFO]     [padding 5%]
-2026-05-21 10:21:11,359 [INFO]     ✓ reprocesada y subida [artero-correa-peluqueria-azul-50cm-ndr_1.webp] en posición 1
-2026-05-21 10:21:12,068 [INFO] 
-[24/44] ARTERO CORREA PELUQUERIA ROSA 50CM (NDR)  (ID 15509637104003) — 1 imágenes
-2026-05-21 10:21:12,068 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:12,133 [INFO]     cargada RGB (1100, 1100) ← y503_1_1.webp
-2026-05-21 10:21:12,146 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:12,156 [INFO]     [autocrop] (1100, 1100) → (891, 543)
-2026-05-21 10:21:12,156 [INFO]     [padding 5%]
-2026-05-21 10:21:15,166 [INFO]     ✓ reprocesada y subida [artero-correa-peluqueria-rosa-50cm-ndr_1.webp] en posición 1
-2026-05-21 10:21:15,885 [INFO] 
-[25/44] ARTERO CORREA PINZA ROSA (NDR)  (ID 15509637169539) — 1 imágenes
-2026-05-21 10:21:15,885 [INFO]   pos 1: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:21:15,963 [INFO]     cargada RGB (900, 900) ← y512_1_1_1.webp
-2026-05-21 10:21:15,971 [INFO]     [bg] 2116/2116 (100%)
-2026-05-21 10:21:15,979 [INFO]     [autocrop] (900, 900) → (730, 457)
-2026-05-21 10:21:15,979 [INFO]     [padding 5%]
-2026-05-21 10:21:18,639 [INFO]     ✓ reprocesada y subida [artero-correa-pinza-rosa-ndr_1.webp] en posición 1
-2026-05-21 10:21:19,346 [INFO] 
-[26/44] ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)  (ID 15509637202307) — 1 imágenes
-2026-05-21 10:21:19,346 [INFO]   pos 1: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:21:19,417 [INFO]     cargada RGB (900, 900) ← h689.webp
-2026-05-21 10:21:19,426 [INFO]     [bg] 2116/2116 (100%)
-2026-05-21 10:21:19,433 [INFO]     [autocrop] (900, 900) → (174, 780)
-2026-05-21 10:21:19,433 [INFO]     [padding 5%]
-2026-05-21 10:21:22,079 [INFO]     ✓ reprocesada y subida [artero-espuma-acondicionador-zoom-ndr_1.webp] en posición 1
-2026-05-21 10:21:22,806 [INFO] 
-[27/44] ARTERO EXPOSITOR PROTEIN Y KERATIN 12UD (NDR)  (ID 15509637267843) — 1 imágenes
-2026-05-21 10:21:22,806 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:23,028 [INFO] 
-[28/44] ARTERO HIGIENE PERFUME BABY 90 ML (NDR)  (ID 15509637333379) — 2 imágenes
-2026-05-21 10:21:23,029 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:23,029 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:23,240 [INFO] 
-[29/44] ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)  (ID 15509637366147) — 2 imágenes
-2026-05-21 10:21:23,240 [INFO]   pos 1: NO optimizada (jpg 213×958) — reprocesando
-2026-05-21 10:21:23,303 [INFO]     cargada RGB (213, 958) ← 51Xm05rxDuL._AC_SL1100.jpg
-2026-05-21 10:21:23,307 [INFO]     [bg] 193/400 (48%)
-2026-05-21 10:21:23,307 [INFO]     [sin padding]
-2026-05-21 10:21:25,932 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-fresh-90-ml-ndr_1.webp] en posición 1
-2026-05-21 10:21:26,434 [INFO]   pos 2: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:26,521 [INFO]     cargada RGB (1100, 1100) ← h693_2_1_1.webp
-2026-05-21 10:21:26,537 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:26,547 [INFO]     [autocrop] (1100, 1100) → (1100, 958)
-2026-05-21 10:21:26,547 [INFO]     [fills-frame 100%×87%] → sin padding
-2026-05-21 10:21:26,547 [INFO]     [sin padding]
-2026-05-21 10:21:29,930 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-fresh-90-ml-ndr_2.webp] en posición 2
-2026-05-21 10:21:30,661 [INFO] 
-[30/44] ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)  (ID 15509637398915) — 2 imágenes
-2026-05-21 10:21:30,661 [INFO]   pos 1: NO optimizada (jpg 212×957) — reprocesando
-2026-05-21 10:21:30,719 [INFO]     cargada RGB (212, 957) ← 51W64LYuYZL._AC_SL1100.jpg
-2026-05-21 10:21:30,722 [INFO]     [bg] 192/400 (48%)
-2026-05-21 10:21:30,722 [INFO]     [sin padding]
-2026-05-21 10:21:33,427 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-impact-90-ml-ndr_1.webp] en posición 1
-2026-05-21 10:21:33,930 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:34,145 [INFO] 
-[31/44] ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)  (ID 15509637464451) — 2 imágenes
-2026-05-21 10:21:34,146 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:34,215 [INFO]     cargada RGB (1100, 1100) ← h655.webp
-2026-05-21 10:21:34,226 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:34,235 [INFO]     [autocrop] (1100, 1100) → (210, 953)
-2026-05-21 10:21:34,236 [INFO]     [padding 5%]
-2026-05-21 10:21:36,924 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-tierra-90-ml-ndr_1.webp] en posición 1
-2026-05-21 10:21:37,427 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:37,643 [INFO] 
-[32/44] ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)  (ID 15509637529987) — 2 imágenes
-2026-05-21 10:21:37,643 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:37,716 [INFO]     cargada RGB (1100, 1100) ← h654.webp
-2026-05-21 10:21:37,727 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:37,737 [INFO]     [autocrop] (1100, 1100) → (211, 952)
-2026-05-21 10:21:37,737 [INFO]     [padding 5%]
-2026-05-21 10:21:40,468 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-violet-90-ml-ndr_1.webp] en posición 1
-2026-05-21 10:21:40,970 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:41,222 [INFO] 
-[33/44] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)  (ID 15509637562755) — 3 imágenes
-2026-05-21 10:21:41,222 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:41,223 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:41,223 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:41,426 [INFO] 
-[34/44] ARTERO INTENSIFYNG 1LT (NDR)  (ID 15509637595523) — 1 imágenes
-2026-05-21 10:21:41,426 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:41,632 [INFO] 
-[35/44] ARTERO LACA PODIUM DRY HOLD 500 ML (NDR)  (ID 15509637628291) — 1 imágenes
-2026-05-21 10:21:41,633 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:41,699 [INFO]     cargada RGB (1100, 1100) ← h662_1.webp
-2026-05-21 10:21:41,711 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:41,720 [INFO]     [autocrop] (1100, 1100) → (233, 951)
-2026-05-21 10:21:41,720 [INFO]     [padding 5%]
-2026-05-21 10:21:44,504 [INFO]     ✓ reprocesada y subida [artero-laca-podium-dry-hold-500-ml-ndr_1.webp] en posición 1
-2026-05-21 10:21:45,222 [INFO] 
-[36/44] ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)  (ID 15509637661059) — 1 imágenes
-2026-05-21 10:21:45,223 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:21:45,425 [INFO] 
-[37/44] ARTERO LAZOS VARIADOS 10 UNI (NDR)  (ID 15509637726595) — 0 imágenes
-2026-05-21 10:21:45,642 [INFO] 
-[38/44] ARTERO MATT-X (NDR)  (ID 15509637759363) — 5 imágenes
-2026-05-21 10:21:45,642 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
-2026-05-21 10:21:45,723 [INFO]     cargada RGB (1100, 1100) ← h647.webp
-2026-05-21 10:21:45,735 [INFO]     [bg] 3136/3136 (100%)
-2026-05-21 10:21:45,744 [INFO]     [autocrop] (1100, 1100) → (190, 956)
-2026-05-21 10:21:45,744 [INFO]     [padding 5%]
-2026-05-21 10:21:48,395 [INFO]     ✓ reprocesada y subida [artero-matt-x-ndr_1.webp] en posición 1
-2026-05-21 10:21:48,897 [INFO]   pos 2: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:21:48,961 [INFO]     cargada RGB (900, 900) ← 02_funciones_h647.webp
-2026-05-21 10:21:48,968 [INFO]     [bg] 1458/2116 (69%)
-2026-05-21 10:21:48,976 [INFO]     [autocrop] (900, 900) → (759, 900)
-2026-05-21 10:21:48,976 [INFO]     [padding 5%]
-2026-05-21 10:21:51,756 [INFO]     ✓ reprocesada y subida [artero-matt-x-ndr_2.webp] en posición 2
-2026-05-21 10:21:52,258 [INFO]   pos 3: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:21:52,314 [INFO]     cargada RGB (1000, 1000) ← 61zQq4Y6W9L._AC_SL1000.jpg
-2026-05-21 10:21:52,324 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:21:52,324 [INFO]     [sin padding]
-2026-05-21 10:21:55,415 [INFO]     ✓ reprocesada y subida [artero-matt-x-ndr_3.webp] en posición 3
-2026-05-21 10:21:55,918 [INFO]   pos 4: NO optimizada (jpg 1000×1000) — reprocesando
-2026-05-21 10:21:55,979 [INFO]     cargada RGB (1000, 1000) ← 71tnAgovDOL._AC_SL1000.jpg
-2026-05-21 10:21:55,992 [INFO]     [bg] 0/2500 (0%)
-2026-05-21 10:21:55,992 [INFO]     [sin padding]
-2026-05-21 10:21:59,644 [INFO]     ✓ reprocesada y subida [artero-matt-x-ndr_4.webp] en posición 4
-2026-05-21 10:22:00,146 [INFO]   pos 5: NO optimizada (webp 900×900) — reprocesando
-2026-05-21 10:22:00,217 [INFO]     cargada RGB (900, 900) ← 05_cierre_h647.webp
-2026-05-21 10:22:00,228 [INFO]     [bg] 0/2116 (0%)
-2026-05-21 10:22:00,228 [INFO]     [sin padding]
-2026-05-21 10:22:03,399 [INFO]     ✓ reprocesada y subida [artero-matt-x-ndr_5.webp] en posición 5
-2026-05-21 10:22:04,154 [INFO] 
-[39/44] ARTERO MIX ACONDICIONADOR SPRAY (NDR)  (ID 15509637824899) — 7 imágenes
-2026-05-21 10:22:04,154 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,154 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,387 [INFO] 
-[40/44] ARTERO PRETTY EYES (NDR)  (ID 15509637890435) — 6 imágenes
-2026-05-21 10:22:04,387 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:04,387 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:22:04,449 [INFO]     cargada RGB (1500, 1500) ← 61GSS2MxmSL._AC_SL1500.jpg
-2026-05-21 10:22:04,468 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:22:04,468 [INFO]     [sin padding]
-2026-05-21 10:22:07,240 [INFO]     ✓ reprocesada y subida [artero-pretty-eyes-ndr_2.webp] en posición 2
-2026-05-21 10:22:07,743 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,743 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,743 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,743 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,958 [INFO] 
-[41/44] Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes  (ID 15415511908739) — 5 imágenes
-2026-05-21 10:22:07,958 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,958 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,958 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,958 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:07,958 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:08,185 [INFO] 
-[42/44] ARTERO SPRAY BALSAM 250 ML (NDR)  (ID 15509637955971) — 6 imágenes
-2026-05-21 10:22:08,185 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:08,185 [INFO]   pos 2: NO optimizada (jpg 902×1500) — reprocesando
-2026-05-21 10:22:08,246 [INFO]     cargada RGB (902, 1500) ← 61895g3r_VL._AC_SL1500.jpg
-2026-05-21 10:22:08,258 [INFO]     [bg] 2116/2116 (100%)
-2026-05-21 10:22:08,269 [INFO]     [autocrop] (902, 1500) → (902, 1492)
-2026-05-21 10:22:08,269 [INFO]     [padding 5%]
-2026-05-21 10:22:10,939 [INFO]     ✓ reprocesada y subida [artero-spray-balsam-250-ml-ndr_2.webp] en posición 2
-2026-05-21 10:22:11,440 [INFO]   pos 3: NO optimizada (jpg 1188×1500) — reprocesando
-2026-05-21 10:22:11,500 [INFO]     cargada RGB (1188, 1500) ← 71TzybI78bL._AC_SL1500.jpg
-2026-05-21 10:22:11,512 [INFO]     [bg] 2574/3600 (72%)
-2026-05-21 10:22:11,522 [INFO]     [autocrop] (1188, 1500) → (1182, 1500)
-2026-05-21 10:22:11,522 [INFO]     [fills-frame 99%×100%] → sin padding
-2026-05-21 10:22:11,522 [INFO]     [sin padding]
-2026-05-21 10:22:14,483 [INFO]     ✓ reprocesada y subida [artero-spray-balsam-250-ml-ndr_3.webp] en posición 3
-2026-05-21 10:22:14,986 [INFO]   pos 4: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:22:15,053 [INFO]     cargada RGB (1500, 1500) ← 719BpzyuyBL._AC_SL1500.jpg
-2026-05-21 10:22:15,075 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:22:15,075 [INFO]     [sin padding]
-2026-05-21 10:22:18,674 [INFO]     ✓ reprocesada y subida [artero-spray-balsam-250-ml-ndr_4.webp] en posición 4
-2026-05-21 10:22:19,177 [INFO]   pos 5: NO optimizada (jpg 1500×1498) — reprocesando
-2026-05-21 10:22:19,241 [INFO]     cargada RGB (1500, 1498) ← 71n4ujiQSoL._AC_SL1500.jpg
-2026-05-21 10:22:19,261 [INFO]     [bg] 1181/5476 (22%)
-2026-05-21 10:22:19,261 [INFO]     [sin padding]
-2026-05-21 10:22:22,276 [INFO]     ✓ reprocesada y subida [artero-spray-balsam-250-ml-ndr_5.webp] en posición 5
-2026-05-21 10:22:22,779 [INFO]   pos 6: NO optimizada (jpg 1500×1500) — reprocesando
-2026-05-21 10:22:22,848 [INFO]     cargada RGB (1500, 1500) ← 71gOB3Gkp2L._AC_SL1500.jpg
-2026-05-21 10:22:22,868 [INFO]     [bg] 0/5776 (0%)
-2026-05-21 10:22:22,868 [INFO]     [sin padding]
-2026-05-21 10:22:26,193 [INFO]     ✓ reprocesada y subida [artero-spray-balsam-250-ml-ndr_6.webp] en posición 6
-2026-05-21 10:22:26,910 [INFO] 
-[43/44] ARTERO STATIC CONTROL 150 ML (NDR)  (ID 15509637988739) — 5 imágenes
-2026-05-21 10:22:26,910 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:26,910 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:26,910 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:26,910 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:26,910 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:27,118 [INFO] 
-[44/44] EXPOSITOR CON 9 CHAMPUS DE VIAJE 100ML (NDR)  (ID 15509638054275) — 1 imágenes
-2026-05-21 10:22:27,118 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
-2026-05-21 10:22:27,118 [INFO] 
+2026-05-21 14:48:43,650 [INFO] ============================================================
+2026-05-21 14:48:43,650 [INFO]   Vendor    : ARTERO
+2026-05-21 14:48:43,650 [INFO]   Modo      : ESCANEO MARCA
+2026-05-21 14:48:43,650 [INFO]   Pipeline  : standard
+2026-05-21 14:48:43,650 [INFO]   Padding   : auto
+2026-05-21 14:48:43,650 [INFO]   sRGB      : no
+2026-05-21 14:48:43,650 [INFO] ============================================================
+2026-05-21 14:48:44,596 [INFO] Total productos de 'ARTERO': 34
+2026-05-21 14:48:44,827 [INFO] 
+[1/34] ARTERO ACONDICIONADOR FLASH 300 ML (NDR)  (ID 15509635072387) — 6 imágenes
+2026-05-21 14:48:45,031 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,032 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,032 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,032 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,032 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,032 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,256 [INFO] 
+[2/34] ARTERO ACONDICIONADOR KERATIN VITAL (NDR)  (ID 15509635137923) — 7 imágenes
+2026-05-21 14:48:45,463 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,463 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,463 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,463 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,463 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,463 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,464 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,683 [INFO] 
+[3/34] ARTERO ACONDICIONADOR PROTEIN VITAL (NDR)  (ID 15509635203459) — 8 imágenes
+2026-05-21 14:48:45,903 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,903 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,903 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,903 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,904 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,904 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,904 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:45,904 [INFO]   pos 8: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:46,138 [INFO] 
+[4/34] ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)  (ID 15509635301763) — 6 imágenes
+2026-05-21 14:48:46,344 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:48:46,345 [INFO]   pos 2: NO optimizada (jpg 1308×1500) — reprocesando
+2026-05-21 14:48:46,441 [INFO]     cargada RGB (1308, 1500) ← 71Q3IxsQW6L._AC_SL1500.jpg
+2026-05-21 14:48:46,458 [INFO]     [bg] 3067/4356 (70%)
+2026-05-21 14:48:46,473 [INFO]     [autocrop] (1308, 1500) → (1288, 1500)
+2026-05-21 14:48:46,473 [INFO]     [fills-frame 98%×100%] → sin padding
+2026-05-21 14:48:46,473 [INFO]     [sin padding]
+2026-05-21 14:48:49,549 [INFO]     ✓ reprocesada y subida [artero-auriclean-polvo-oidos-30gr-ndr_2.webp] en posición 2
+2026-05-21 14:48:50,050 [INFO]   pos 3: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-21 14:48:50,122 [INFO]     cargada RGB (1500, 1500) ← 81aVPkFKXZL._AC_SL1500.jpg
+2026-05-21 14:48:50,144 [INFO]     [bg] 0/5776 (0%)
+2026-05-21 14:48:50,144 [INFO]     [sin padding]
+2026-05-21 14:48:53,501 [INFO]     ✓ reprocesada y subida [artero-auriclean-polvo-oidos-30gr-ndr_3.webp] en posición 3
+2026-05-21 14:48:54,004 [INFO]   pos 4: NO optimizada (jpg 1349×1500) — reprocesando
+2026-05-21 14:48:54,075 [INFO]     cargada RGB (1349, 1500) ← 61mDhlLC-fL._AC_SL1500_c93cb2d7-4933-40b7-98c4-4afe856b5354.jpg
+2026-05-21 14:48:54,090 [INFO]     [bg] 4624/4624 (100%)
+2026-05-21 14:48:54,105 [INFO]     [autocrop] (1349, 1500) → (1336, 1482)
+2026-05-21 14:48:54,105 [INFO]     [padding 5%]
+2026-05-21 14:48:56,898 [INFO]     ✓ reprocesada y subida [artero-auriclean-polvo-oidos-30gr-ndr_4.webp] en posición 4
+2026-05-21 14:48:57,400 [INFO]   pos 5: NO optimizada (jpg 1500×1498) — reprocesando
+2026-05-21 14:48:57,465 [INFO]     cargada RGB (1500, 1498) ← 71alLlHfxcL._AC_SL1500.jpg
+2026-05-21 14:48:57,483 [INFO]     [bg] 1117/5476 (20%)
+2026-05-21 14:48:57,483 [INFO]     [sin padding]
+2026-05-21 14:49:00,450 [INFO]     ✓ reprocesada y subida [artero-auriclean-polvo-oidos-30gr-ndr_5.webp] en posición 5
+2026-05-21 14:49:00,953 [INFO]   pos 6: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-21 14:49:01,025 [INFO]     cargada RGB (1500, 1500) ← 81cTRA_542L._AC_SL1500.jpg
+2026-05-21 14:49:01,046 [INFO]     [bg] 0/5776 (0%)
+2026-05-21 14:49:01,046 [INFO]     [sin padding]
+2026-05-21 14:49:04,472 [INFO]     ✓ reprocesada y subida [artero-auriclean-polvo-oidos-30gr-ndr_6.webp] en posición 6
+2026-05-21 14:49:05,245 [INFO] 
+[5/34] ARTERO CHAMPU BABY (NDR)  (ID 15509635432835) — 6 imágenes
+2026-05-21 14:49:05,451 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,451 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,451 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,451 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,451 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,451 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,667 [INFO] 
+[6/34] ARTERO CHAMPU BASIC (NDR)  (ID 15509635531139) — 5 imágenes
+2026-05-21 14:49:05,871 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,871 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,871 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,872 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:05,872 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,091 [INFO] 
+[7/34] ARTERO CHAMPU BLANC  (ID 15509635727747) — 6 imágenes
+2026-05-21 14:49:06,292 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,293 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,293 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,293 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,293 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,293 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,516 [INFO] 
+[8/34] ARTERO CHAMPU BYE BYE (NDR)  (ID 15509635924355) — 5 imágenes
+2026-05-21 14:49:06,732 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,732 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,732 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,732 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,732 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:06,951 [INFO] 
+[9/34] ARTERO CHAMPU DETOX CARBON ACTIVO  (ID 15509636088195) — 5 imágenes
+2026-05-21 14:49:07,162 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,162 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,162 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,162 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,162 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,387 [INFO] 
+[10/34] ARTERO CHAMPU GATO (NDR)  (ID 15509636153731) — 6 imágenes
+2026-05-21 14:49:07,596 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,596 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,596 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,596 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,596 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,596 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:07,810 [INFO] 
+[11/34] ARTERO CHAMPU HIDRATANTE  (ID 15509636284803) — 5 imágenes
+2026-05-21 14:49:08,018 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,018 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,018 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,018 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,018 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,428 [INFO] 
+[12/34] ARTERO CHAMPU RELAX (NDR)  (ID 15509636415875) — 5 imágenes
+2026-05-21 14:49:08,643 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,643 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,643 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,643 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,643 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:08,878 [INFO] 
+[13/34] ARTERO CHAMPU TSUNAMI 100 ML (NDR)  (ID 15509636579715) — 5 imágenes
+2026-05-21 14:49:09,095 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,095 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,095 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,095 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,095 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,499 [INFO] 
+[14/34] ARTERO CHAMPU VITALIZANTE  (ID 15509636776323) — 5 imágenes
+2026-05-21 14:49:09,703 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,703 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,703 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,703 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,703 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:09,901 [INFO] 
+[15/34] ARTERO CORREA DOG CONTROL 360  (ID 15509636809091) — 3 imágenes
+2026-05-21 14:49:10,128 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,129 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,129 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,351 [INFO] 
+[16/34] ARTERO CORREA PELUQUERIA 50CM  (ID 15509636972931) — 3 imágenes
+2026-05-21 14:49:10,552 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,552 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,552 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:10,780 [INFO] 
+[17/34] ARTERO CORREA PINZA ROSA (NDR)  (ID 15509637169539) — 1 imágenes
+2026-05-21 14:49:10,995 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:11,208 [INFO] 
+[18/34] ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)  (ID 15509637202307) — 1 imágenes
+2026-05-21 14:49:11,433 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:11,654 [INFO] 
+[19/34] ARTERO HIGIENE PERFUME BABY 90 ML (NDR)  (ID 15509637333379) — 6 imágenes
+2026-05-21 14:49:11,875 [INFO]   pos 1: NO optimizada (jpg 338×1500) — reprocesando
+2026-05-21 14:49:11,943 [INFO]     cargada RGB (338, 1500) ← 61FcvFj3zVL._AC_SL1500.jpg
+2026-05-21 14:49:11,948 [INFO]     [bg] 387/400 (97%)
+2026-05-21 14:49:11,954 [INFO]     [autocrop] (338, 1500) → (335, 1490)
+2026-05-21 14:49:11,954 [INFO]     [padding 5%]
+2026-05-21 14:49:14,658 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_1.webp] en posición 1
+2026-05-21 14:49:15,161 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-21 14:49:15,229 [INFO]     cargada RGB (1500, 1500) ← 61v8Bz8mWiL._AC_SL1500.jpg
+2026-05-21 14:49:15,246 [INFO]     [bg] 2291/5776 (40%)
+2026-05-21 14:49:15,246 [INFO]     [sin padding]
+2026-05-21 14:49:18,092 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_2.webp] en posición 2
+2026-05-21 14:49:18,594 [INFO]   pos 3: NO optimizada (jpg 1500×1374) — reprocesando
+2026-05-21 14:49:18,660 [INFO]     cargada RGB (1500, 1374) ← 710sKDPYtDL._AC_SL1500.jpg
+2026-05-21 14:49:18,677 [INFO]     [bg] 3649/4624 (79%)
+2026-05-21 14:49:18,692 [INFO]     [autocrop] (1500, 1374) → (1500, 1356)
+2026-05-21 14:49:18,693 [INFO]     [fills-frame 100%×99%] → sin padding
+2026-05-21 14:49:18,693 [INFO]     [sin padding]
+2026-05-21 14:49:21,721 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_3.webp] en posición 3
+2026-05-21 14:49:22,223 [INFO]   pos 4: NO optimizada (jpg 1500×1340) — reprocesando
+2026-05-21 14:49:22,285 [INFO]     cargada RGB (1500, 1340) ← 71r_msDxvPL._AC_SL1500.jpg
+2026-05-21 14:49:22,303 [INFO]     [bg] 3650/4624 (79%)
+2026-05-21 14:49:22,318 [INFO]     [autocrop] (1500, 1340) → (1500, 1332)
+2026-05-21 14:49:22,318 [INFO]     [fills-frame 100%×99%] → sin padding
+2026-05-21 14:49:22,318 [INFO]     [sin padding]
+2026-05-21 14:49:25,370 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_4.webp] en posición 4
+2026-05-21 14:49:25,873 [INFO]   pos 5: NO optimizada (jpg 929×1500) — reprocesando
+2026-05-21 14:49:25,959 [INFO]     cargada RGB (929, 1500) ← 61R3dd1YkvL._AC_SL1500.jpg
+2026-05-21 14:49:25,971 [INFO]     [bg] 2005/2116 (95%)
+2026-05-21 14:49:25,981 [INFO]     [autocrop] (929, 1500) → (923, 1478)
+2026-05-21 14:49:25,982 [INFO]     [fills-frame 99%×99%] → sin padding
+2026-05-21 14:49:25,982 [INFO]     [sin padding]
+2026-05-21 14:49:28,932 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_5.webp] en posición 5
+2026-05-21 14:49:29,434 [INFO]   pos 6: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-21 14:49:29,502 [INFO]     cargada RGB (1500, 1500) ← 81TO4WXOOvL._AC_SL1500.jpg
+2026-05-21 14:49:29,523 [INFO]     [bg] 0/5776 (0%)
+2026-05-21 14:49:29,523 [INFO]     [sin padding]
+2026-05-21 14:49:33,039 [INFO]     ✓ reprocesada y subida [artero-higiene-perfume-baby-90-ml-ndr_6.webp] en posición 6
+2026-05-21 14:49:33,754 [INFO] 
+[20/34] ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)  (ID 15509637366147) — 2 imágenes
+2026-05-21 14:49:33,974 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:33,974 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:34,176 [INFO] 
+[21/34] ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)  (ID 15509637398915) — 2 imágenes
+2026-05-21 14:49:34,389 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:34,389 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:34,605 [INFO] 
+[22/34] ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)  (ID 15509637464451) — 2 imágenes
+2026-05-21 14:49:34,814 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:34,814 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,033 [INFO] 
+[23/34] ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)  (ID 15509637529987) — 2 imágenes
+2026-05-21 14:49:35,230 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,230 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,436 [INFO] 
+[24/34] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)  (ID 15509637562755) — 7 imágenes
+2026-05-21 14:49:35,648 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,648 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:35,853 [INFO] 
+[25/34] ARTERO INTENSIFYNG 1LT (NDR)  (ID 15509637595523) — 1 imágenes
+2026-05-21 14:49:36,053 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:36,267 [INFO] 
+[26/34] ARTERO LACA PODIUM DRY HOLD 500 ML (NDR)  (ID 15509637628291) — 1 imágenes
+2026-05-21 14:49:36,477 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:36,690 [INFO] 
+[27/34] ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)  (ID 15509637661059) — 1 imágenes
+2026-05-21 14:49:36,889 [INFO]   pos 1: NO optimizada (webp 900×900) — reprocesando
+2026-05-21 14:49:36,961 [INFO]     cargada RGB (900, 900) ← h663_1.webp
+2026-05-21 14:49:36,969 [INFO]     [bg] 2116/2116 (100%)
+2026-05-21 14:49:36,976 [INFO]     [autocrop] (900, 900) → (190, 781)
+2026-05-21 14:49:36,976 [INFO]     [padding 5%]
+2026-05-21 14:49:39,631 [INFO]     ✓ reprocesada y subida [artero-laca-podium-strong-hold-500-ml-ndr_1.webp] en posición 1
+2026-05-21 14:49:40,340 [INFO] 
+[28/34] ARTERO LAZOS VARIADOS 10 UNI (NDR)  (ID 15509637726595) — 0 imágenes
+2026-05-21 14:49:40,563 [INFO] 
+[29/34] ARTERO MATT-X (NDR)  (ID 15509637759363) — 5 imágenes
+2026-05-21 14:49:40,953 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:40,953 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:40,953 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:40,953 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:40,953 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:49:41,195 [INFO] 
+[30/34] ARTERO MIX ACONDICIONADOR SPRAY (NDR)  (ID 15509637824899) — 7 imágenes
+2026-05-21 14:49:41,414 [INFO]   pos 1: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 14:49:41,486 [INFO]     cargada RGB (1100, 1100) ← 01_imagen_principal_h695_en_25.webp
+2026-05-21 14:49:41,495 [INFO]     [bg] 3136/3136 (100%)
+2026-05-21 14:49:41,505 [INFO]     [autocrop] (1100, 1100) → (325, 974)
+2026-05-21 14:49:41,505 [INFO]     [padding 5%]
+2026-05-21 14:49:44,276 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_1.webp] en posición 1
+2026-05-21 14:49:44,778 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-21 14:49:44,837 [INFO]     cargada RGB (1500, 1500) ← 61laSwHwX2L._AC_SL1500.jpg
+2026-05-21 14:49:44,855 [INFO]     [bg] 0/5776 (0%)
+2026-05-21 14:49:44,855 [INFO]     [sin padding]
+2026-05-21 14:49:47,607 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_2.webp] en posición 2
+2026-05-21 14:49:48,109 [INFO]   pos 3: NO optimizada (jpg 1100×1100) — reprocesando
+2026-05-21 14:49:48,273 [INFO]     cargada RGB (1100, 1100) ← 01bis_imagen_principal_h695_es_25.jpg
+2026-05-21 14:49:48,288 [INFO]     [bg] 1813/3136 (58%)
+2026-05-21 14:49:48,288 [INFO]     [sin padding]
+2026-05-21 14:49:51,418 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_3.webp] en posición 3
+2026-05-21 14:49:51,920 [INFO]   pos 4: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 14:49:51,984 [INFO]     cargada RGB (1100, 1100) ← 02_funciones_h695_es_25.webp
+2026-05-21 14:49:51,995 [INFO]     [bg] 2253/3136 (72%)
+2026-05-21 14:49:52,005 [INFO]     [autocrop] (1100, 1100) → (979, 1100)
+2026-05-21 14:49:52,005 [INFO]     [fills-frame 89%×100%] → sin padding
+2026-05-21 14:49:52,005 [INFO]     [sin padding]
+2026-05-21 14:49:55,839 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_4.webp] en posición 4
+2026-05-21 14:49:56,342 [INFO]   pos 5: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 14:49:56,406 [INFO]     cargada RGB (1100, 1100) ← 03_pasos_h695_es_25.webp
+2026-05-21 14:49:56,422 [INFO]     [bg] 0/3136 (0%)
+2026-05-21 14:49:56,422 [INFO]     [sin padding]
+2026-05-21 14:50:00,003 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_5.webp] en posición 5
+2026-05-21 14:50:00,506 [INFO]   pos 6: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 14:50:00,575 [INFO]     cargada RGB (1100, 1100) ← 04_ingredientes_h695_es_25.webp
+2026-05-21 14:50:00,589 [INFO]     [bg] 720/3136 (23%)
+2026-05-21 14:50:00,589 [INFO]     [sin padding]
+2026-05-21 14:50:03,611 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_6.webp] en posición 6
+2026-05-21 14:50:04,113 [INFO]   pos 7: NO optimizada (jpg 1100×1100) — reprocesando
+2026-05-21 14:50:04,180 [INFO]     cargada RGB (1100, 1100) ← 05_cierre_h695_es_25.jpg
+2026-05-21 14:50:04,197 [INFO]     [bg] 0/3136 (0%)
+2026-05-21 14:50:04,197 [INFO]     [sin padding]
+2026-05-21 14:50:07,327 [INFO]     ✓ reprocesada y subida [artero-mix-acondicionador-spray-ndr_7.webp] en posición 7
+2026-05-21 14:50:08,066 [INFO] 
+[31/34] ARTERO PRETTY EYES (NDR)  (ID 15509637890435) — 6 imágenes
+2026-05-21 14:50:08,269 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,269 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,269 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,269 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,269 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,270 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,490 [INFO] 
+[32/34] Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes  (ID 15415511908739) — 5 imágenes
+2026-05-21 14:50:08,695 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,696 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,696 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,696 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,696 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:08,907 [INFO] 
+[33/34] ARTERO SPRAY BALSAM 250 ML (NDR)  (ID 15509637955971) — 6 imágenes
+2026-05-21 14:50:09,134 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,134 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,134 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,134 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,134 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,134 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,347 [INFO] 
+[34/34] ARTERO STATIC CONTROL 150 ML (NDR)  (ID 15509637988739) — 5 imágenes
+2026-05-21 14:50:09,562 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,563 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,563 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,563 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,563 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 14:50:09,563 [INFO] 
 ============================================================
-2026-05-21 10:22:27,118 [INFO] RESUMEN
-2026-05-21 10:22:27,118 [INFO] ============================================================
-2026-05-21 10:22:27,118 [INFO]   productos     : 44
-2026-05-21 10:22:27,118 [INFO]   reprocesadas  : 50
-2026-05-21 10:22:27,118 [INFO]   omitidas      : 125
-2026-05-21 10:22:27,118 [INFO]   sin_imagenes  : 1
-2026-05-21 10:22:27,118 [INFO]   errores       : 0
-2026-05-21 10:22:27,119 [INFO] 
+2026-05-21 14:50:09,563 [INFO] RESUMEN
+2026-05-21 14:50:09,563 [INFO] ============================================================
+2026-05-21 14:50:09,563 [INFO]   productos     : 34
+2026-05-21 14:50:09,563 [INFO]   reprocesadas  : 19
+2026-05-21 14:50:09,563 [INFO]   omitidas      : 127
+2026-05-21 14:50:09,563 [INFO]   sin_imagenes  : 1
+2026-05-21 14:50:09,563 [INFO]   errores       : 0
+2026-05-21 14:50:09,563 [INFO] 
 ✓ Completado
