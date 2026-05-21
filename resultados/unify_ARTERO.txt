@@ -4,12 +4,55 @@
 ============================================================
   ✓ base actualizado: 'ARTERO CORREA DOG CONTROL 360', variante 'XS'
   ✓ imagen base asignada a variante 'XS'
-  ✓ variante añadida: 'S' (id=58097772265859)
-  ✓ 3 imagen(es) copiada(s) de 15509636940163 (ARTERO CORREA DOG CONTROL 360 S 15KG (NDR))
-  ✓ producto eliminado: 15509636940163 (ARTERO CORREA DOG CONTROL 360 S 15KG (NDR))
-  ✓ variante añadida: 'M' (id=58097774199171)
-  ✓ 3 imagen(es) copiada(s) de 15509636874627 (ARTERO CORREA DOG CONTROL 360 M 25KG (NDR))
-  ✓ producto eliminado: 15509636874627 (ARTERO CORREA DOG CONTROL 360 M 25KG (NDR))
+  ✗ ERROR en G1: 404 Client Error: Not Found for url: https://7ev1zx-eg.myshopify.com/admin/api/2024-10/products/15509636940163.json
+
+============================================================
+[G2] CORREA PELUQUERIA 50CM
+============================================================
+  ✓ base actualizado: 'ARTERO CORREA PELUQUERIA 50CM', variante 'Amarillo'
+  ✓ imagen base asignada a variante 'Amarillo'
+  ✓ variante añadida: 'Azul' (id=58097812799875)
+  ✓ 1 imagen(es) copiada(s) de 15509637005699 (ARTERO CORREA PELUQUERIA AZUL 50CM (NDR))
+  ✓ producto eliminado: 15509637005699 (ARTERO CORREA PELUQUERIA AZUL 50CM (NDR))
+  ✓ variante añadida: 'Rosa' (id=58097814962563)
+  ✓ 1 imagen(es) copiada(s) de 15509637104003 (ARTERO CORREA PELUQUERIA ROSA 50CM (NDR))
+  ✓ producto eliminado: 15509637104003 (ARTERO CORREA PELUQUERIA ROSA 50CM (NDR))
+
+============================================================
+[G4] CHAMPU HIDRATANTE
+============================================================
+  ✓ base actualizado: 'ARTERO CHAMPU HIDRATANTE', variante 'Estándar'
+  ✓ imagen base asignada a variante 'Estándar'
+  ✓ variante añadida: '5 Litros' (id=58097817158019)
+  ✓ 6 imagen(es) copiada(s) de 15509636383107 (ARTERO CHAMPU HIDRATANTE 5LT (NDR))
+  ✓ producto eliminado: 15509636383107 (ARTERO CHAMPU HIDRATANTE 5LT (NDR))
+
+============================================================
+[G5] CHAMPU BLANC
+============================================================
+  ✓ base actualizado: 'ARTERO CHAMPU BLANC', variante 'Estándar'
+  ✓ imagen base asignada a variante 'Estándar'
+  ✓ variante añadida: '5 Litros' (id=58097819615619)
+  ✓ 6 imagen(es) copiada(s) de 15509635793283 (ARTERO CHAMPU BLANCO 5L (NDR))
+  ✓ producto eliminado: 15509635793283 (ARTERO CHAMPU BLANCO 5L (NDR))
+
+============================================================
+[G6] CHAMPU VITALIZANTE
+============================================================
+  ✓ base actualizado: 'ARTERO CHAMPU VITALIZANTE', variante 'Estándar'
+  ✓ imagen base asignada a variante 'Estándar'
+  ✓ variante añadida: '100ML' (id=58097822433667)
+  ✓ 6 imagen(es) copiada(s) de 15509636645251 (ARTERO CHAMPU VITALIZANTE 100ML (NDR))
+  ✓ producto eliminado: 15509636645251 (ARTERO CHAMPU VITALIZANTE 100ML (NDR))
+
+============================================================
+[G8] CHAMPU DETOX CARBON ACTIVO
+============================================================
+  ✓ base actualizado: 'ARTERO CHAMPU DETOX CARBON ACTIVO', variante 'Estándar'
+  ✓ imagen base asignada a variante 'Estándar'
+  ✓ variante añadida: '100ML' (id=58097823940995)
+  ✓ 6 imagen(es) copiada(s) de 15509635957123 (ARTERO CHAMPU DETOX 100ML (NDR))
+  ✓ producto eliminado: 15509635957123 (ARTERO CHAMPU DETOX 100ML (NDR))
 
 ============================================================
 ✓ Proceso completado
