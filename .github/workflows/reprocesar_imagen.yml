@@ -7,30 +7,12 @@ on:
         description: 'Vendor exacto en Shopify'
         required: true
       product_id:
-        description: 'ID del producto'
-        required: true
+        description: 'ID del producto. VACÍO = escanear TODA la marca y reprocesar solo las no optimizadas (no WebP / no 2000×2000)'
+        required: false
       position:
-        description: 'Posición de la imagen (1, 2, 3...)'
-        required: true
+        description: 'Posición de la imagen (solo modo individual; 1, 2, 3...)'
+        required: false
         default: '1'
-      fuente:
-        description: 'Fuente de imágenes'
-        required: false
-        type: choice
-        options:
-          - shopify_backup
-          - web_oficial
-          - web_y_amazon
-        default: shopify_backup
-      web_url:
-        description: 'URL web fabricante (si fuente != shopify_backup)'
-        required: false
-      rebuild_catalog:
-        description: 'Forzar re-scraping del catálogo web'
-        required: false
-        type: choice
-        options: ['false', 'true']
-        default: 'false'
       pipeline:
         description: 'Pipeline de procesamiento de imagen'
         required: false
@@ -52,7 +34,7 @@ on:
 jobs:
   reprocesar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     permissions:
       contents: write
 
@@ -60,10 +42,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-          lfs: ${{ github.event.inputs.fuente == 'shopify_backup' || github.event.inputs.fuente == '' }}
+          lfs: true
 
       - name: Configurar Git LFS
-        if: github.event.inputs.fuente == 'shopify_backup' || github.event.inputs.fuente == ''
         run: git lfs install
 
       - uses: actions/setup-python@v5
@@ -72,30 +53,26 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Instalar Playwright (solo para fuentes web)
-        if: github.event.inputs.fuente != 'shopify_backup' && github.event.inputs.fuente != ''
-        run: playwright install chromium --with-deps
-
-      - name: Reprocesar imagen
+      - name: Reprocesar
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p resultados
-          EXTRA=""
-          WEB=""
-          [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
-          [ -n "${{ github.event.inputs.web_url }}" ] && WEB="--web-url ${{ github.event.inputs.web_url }}"
-          PADDING="--force-padding ${{ github.event.inputs.force_padding || 'auto' }}"
+          if [ -n "${{ github.event.inputs.product_id }}" ]; then
+            TARGET="--product-id ${{ github.event.inputs.product_id }} --position ${{ github.event.inputs.position }}"
+            TAG="${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}"
+          else
+            TARGET=""
+            TAG="marca_$(echo '${{ github.event.inputs.vendor }}' | tr ' /' '__')"
+          fi
           python3 core/reprocess_image.py \
             --vendor "${{ github.event.inputs.vendor }}" \
-            --product-id "${{ github.event.inputs.product_id }}" \
-            --position "${{ github.event.inputs.position }}" \
-            --fuente "${{ github.event.inputs.fuente || 'shopify_backup' }}" \
             --pipeline "${{ github.event.inputs.pipeline }}" \
-            $PADDING $WEB $EXTRA \
-            2>&1 | tee resultados/reprocesar_${{ github.event.inputs.product_id }}_pos${{ github.event.inputs.position }}.txt
+            --force-padding "${{ github.event.inputs.force_padding || 'auto' }}" \
+            $TARGET \
+            2>&1 | tee "resultados/reprocesar_${TAG}.txt"
 
       - name: Guardar log
         if: always()
@@ -103,5 +80,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resultados/
-          git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }} pos${{ github.event.inputs.position }}"
+          git diff --cached --quiet || git commit -m "reprocesar: ${{ github.event.inputs.vendor }} ${{ github.event.inputs.product_id }}"
           git pull --rebase && git push
