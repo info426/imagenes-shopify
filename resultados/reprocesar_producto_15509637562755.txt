@@ -1,0 +1,50 @@
+2026-05-21 10:38:05,206 [INFO] ============================================================
+2026-05-21 10:38:05,206 [INFO]   Vendor    : ARTERO
+2026-05-21 10:38:05,206 [INFO]   Modo      : ESCANEO PRODUCTO
+2026-05-21 10:38:05,206 [INFO]   Pipeline  : standard
+2026-05-21 10:38:05,206 [INFO]   Padding   : auto
+2026-05-21 10:38:05,207 [INFO]   sRGB      : no
+2026-05-21 10:38:05,207 [INFO] ============================================================
+2026-05-21 10:38:06,256 [INFO] [15509637562755] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR) — 7 imágenes
+2026-05-21 10:38:06,543 [INFO]   pos 1: NO optimizada (jpg 1100×1100) — reprocesando
+2026-05-21 10:38:06,776 [INFO]     cargada RGB (1100, 1100) ← h633.jpg
+2026-05-21 10:38:06,790 [INFO]     [bg] 3136/3136 (100%)
+2026-05-21 10:38:06,800 [INFO]     [autocrop] (1100, 1100) → (187, 953)
+2026-05-21 10:38:06,800 [INFO]     [padding 5%]
+2026-05-21 10:38:10,011 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_1.webp] en posición 1
+2026-05-21 10:38:10,512 [INFO]   pos 2: NO optimizada (webp 1000×1000) — reprocesando
+2026-05-21 10:38:10,643 [INFO]     cargada RGB (1000, 1000) ← speed4.webp
+2026-05-21 10:38:10,655 [INFO]     [bg] 1923/2500 (77%)
+2026-05-21 10:38:10,665 [INFO]     [autocrop] (1000, 1000) → (854, 933)
+2026-05-21 10:38:10,665 [INFO]     [fills-frame 85%×93%] → sin padding
+2026-05-21 10:38:10,665 [INFO]     [sin padding]
+2026-05-21 10:38:14,290 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_2.webp] en posición 2
+2026-05-21 10:38:14,792 [INFO]   pos 3: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 10:38:14,943 [INFO]     cargada RGB (1100, 1100) ← 02_funciones_h633.webp
+2026-05-21 10:38:14,955 [INFO]     [bg] 2192/3136 (70%)
+2026-05-21 10:38:14,965 [INFO]     [autocrop] (1100, 1100) → (949, 1100)
+2026-05-21 10:38:14,965 [INFO]     [fills-frame 86%×100%] → sin padding
+2026-05-21 10:38:14,965 [INFO]     [sin padding]
+2026-05-21 10:38:18,020 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_3.webp] en posición 3
+2026-05-21 10:38:18,521 [INFO]   pos 4: NO optimizada (jpg 1100×1100) — reprocesando
+2026-05-21 10:38:18,663 [INFO]     cargada RGB (1100, 1100) ← 03_pasos_h633.jpg
+2026-05-21 10:38:18,681 [INFO]     [bg] 0/3136 (0%)
+2026-05-21 10:38:18,681 [INFO]     [sin padding]
+2026-05-21 10:38:22,103 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_4.webp] en posición 4
+2026-05-21 10:38:22,605 [INFO]   pos 5: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 10:38:22,758 [INFO]     cargada RGB (1100, 1100) ← 04_ingredientes_h663.webp
+2026-05-21 10:38:22,774 [INFO]     [bg] 653/3136 (21%)
+2026-05-21 10:38:22,774 [INFO]     [sin padding]
+2026-05-21 10:38:26,096 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_5.webp] en posición 5
+2026-05-21 10:38:26,598 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-05-21 10:38:26,598 [INFO]   pos 7: NO optimizada (webp 1100×1100) — reprocesando
+2026-05-21 10:38:26,742 [INFO]     cargada RGB (1100, 1100) ← 05_cierre_h633_1.webp
+2026-05-21 10:38:26,757 [INFO]     [bg] 0/3136 (0%)
+2026-05-21 10:38:26,757 [INFO]     [sin padding]
+2026-05-21 10:38:30,329 [INFO]     ✓ reprocesada y subida [artero-higiene-speedchampu-seco-300-ml-ndr_7.webp] en posición 7
+2026-05-21 10:38:30,831 [INFO] ============================================================
+2026-05-21 10:38:30,831 [INFO]   reprocesadas  : 6
+2026-05-21 10:38:30,831 [INFO]   omitidas      : 1
+2026-05-21 10:38:30,831 [INFO]   errores       : 0
+2026-05-21 10:38:30,831 [INFO] 
+✓ Completado
