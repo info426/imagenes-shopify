@@ -169,6 +169,29 @@ def _strip_size_suffix(url: str) -> str:
     return re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})(?:\?.*)?$', r'\1', url.split("?")[0])
 
 
+def _filter_by_ean(images: list) -> list:
+    """Beaphar's CDN names files after the EAN: .../8711231199877.jpg,
+    .../8711231199877_1.jpg, etc. Related-product images from the same CDN have
+    different EANs. Extract the EAN from the first (og:image) URL and discard
+    CDN images whose filename doesn't start with that EAN."""
+    if not images:
+        return images
+    ean_match = re.search(r'/(\d{13})(?:_\d+)?\.[a-zA-Z]', images[0])
+    if not ean_match:
+        return images
+    ean = ean_match.group(1)
+    cdn_host = urlparse(images[0]).netloc
+    filtered = []
+    for url in images:
+        if urlparse(url).netloc == cdn_host:
+            if re.search(rf'/{ean}(?:_\d+)?\.[a-zA-Z]', url):
+                filtered.append(url)
+        else:
+            filtered.append(url)
+    log.info(f"    EAN filter ({ean}): {len(images)} → {len(filtered)} imgs")
+    return filtered
+
+
 # ─── Extracción de imágenes ───────────────────────────────────────────────────
 
 def _extract_images(page, page_url: str) -> list:
@@ -276,8 +299,9 @@ def _extract_images(page, page_url: str) -> list:
     except Exception as e:
         log.info(f"    DOM imgs error: {e}")
 
-    log.info(f"    Imágenes extraídas: {len(ordered)}")
-    return ordered
+    result = _filter_by_ean(ordered)
+    log.info(f"    Imágenes extraídas: {len(result)}")
+    return result
 
 
 def _try_url(page, url: str) -> tuple:
