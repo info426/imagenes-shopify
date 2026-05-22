@@ -177,25 +177,19 @@ def _extract_images(page, page_url: str) -> list:
     JSON-LD, luego <img> del DOM. Descarta thumbnails reduciendo el sufijo
     -WxH de WordPress.
 
-    og:image y JSON-LD se aceptan de cualquier dominio (el sitio los declara
-    explícitamente; pueden venir de Jetpack CDN i0.wp.com u otros).
-    Los <img> del DOM sí se filtran por host para evitar tracking pixels.
+    No filtra por host: beaphar.es usa CloudFront (d7rh5s3nxmpy4.cloudfront.net)
+    tanto para og:image como para la galería, y el dominio no contiene "beaphar".
+    El filtro de junk lo hace _should_keep_url (logos, icons, banners, pixels...).
     """
-    host = urlparse(page_url).netloc.lower()
-    base_domain = ".".join(host.split(".")[-2:]) if host.count(".") >= 1 else host
     ordered: list = []
     seen: set = set()
 
-    def _add(raw_url: str, check_host: bool = False):
+    def _add(raw_url: str):
         if not raw_url or raw_url.startswith("data:"):
             return
         full = urljoin(page_url, raw_url)
         if not full.startswith("http"):
             return
-        if check_host:
-            netloc = urlparse(full).netloc.lower()
-            if netloc != host and base_domain not in netloc and "beaphar" not in netloc:
-                return
         if not _should_keep_url(full):
             return
         clean = _strip_size_suffix(full)
@@ -204,7 +198,7 @@ def _extract_images(page, page_url: str) -> list:
         seen.add(clean)
         ordered.append(clean)
 
-    # 1. og:image — imagen principal canónica del producto (sin filtro de host)
+    # 1. og:image — imagen principal canónica del producto
     try:
         for sel in ("meta[property='og:image']",
                     "meta[property='og:image:secure_url']",
@@ -214,11 +208,11 @@ def _extract_images(page, page_url: str) -> list:
                 val = el.get_attribute("content") or ""
                 if val:
                     log.info(f"    og:image: {val}")
-                _add(val, check_host=False)
+                _add(val)
     except Exception as e:
         log.info(f"    og:image error: {e}")
 
-    # 2. JSON-LD (schema.org Product) — sin filtro de host
+    # 2. JSON-LD (schema.org Product)
     try:
         ld_texts = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -238,16 +232,15 @@ def _extract_images(page, page_url: str) -> list:
                         imgs = [imgs]
                     for img in imgs:
                         if isinstance(img, str):
-                            _add(img, check_host=False)
+                            _add(img)
                         elif isinstance(img, dict):
-                            _add(img.get("url") or img.get("contentUrl") or "",
-                                 check_host=False)
+                            _add(img.get("url") or img.get("contentUrl") or "")
             except Exception:
                 pass
     except Exception:
         pass
 
-    # 3. <img> en orden DOM (galería del producto) — con filtro de host
+    # 3. <img> en orden DOM (galería del producto)
     try:
         imgs_found = page.query_selector_all("img")
         log.info(f"    DOM imgs total: {len(imgs_found)}")
@@ -256,10 +249,10 @@ def _extract_images(page, page_url: str) -> list:
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
                 cand = parts[-1].split()[0]   # mayor resolución del srcset
-                _add(cand, check_host=True)
+                _add(cand)
             for attr in ("data-src", "data-lazy-src", "data-large_image",
                          "data-zoom-image", "data-full-url", "src"):
-                _add(el.get_attribute(attr) or "", check_host=True)
+                _add(el.get_attribute(attr) or "")
     except Exception as e:
         log.info(f"    DOM imgs error: {e}")
 
