@@ -145,6 +145,25 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Farmina ND | Farmina | Pendiente backup | shopify_backup |
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
+| Beaphar | BEAPHAR | Productos unificados (grupos B, C, E, L, M vía API) — scraper listo para proceso masivo | web_oficial → marcas/beaphar.py (beaphar.es) |
+
+### Beaphar — notas de estrategia
+
+beaphar.es usa URLs de producto con **ID numérico interno** no derivable del
+título (`/product/{id}-{slug}/`), y bloquea peticiones sin navegador (HTTP 403).
+Por eso el scraper:
+
+1. **No** construye slug directo (a diferencia de Artero) — el ID es desconocido.
+2. Resuelve cada producto **bajo demanda** vía DuckDuckGo con filtro
+   `site:beaphar.es/product/`.
+3. Navega con **Playwright** (UA de Chrome) para esquivar el 403.
+4. **Sanity check**: el h1 de la página debe compartir tokens con el título Shopify.
+5. Filtra imágenes al propio dominio beaphar y reduce thumbnails `-WxH` de WordPress.
+6. Cachea cada hallazgo en `resultados/beaphar_catalog.json`.
+
+Unificaciones aplicadas en Shopify (vía API, EANs y precios preservados):
+Pipetas Repulsivas Perro (B), Cat Comfort Spray (C), Multifresh Neutralizador
+Olores Gato (E), No Stress Gato (L), Calming No Stress Perro (M).
 
 ### ARTERO — notas de estrategia
 
