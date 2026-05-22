@@ -1,7 +1,17 @@
 {
   "img_01": {
-    "alt": "",
-    "filename": "y502_1_1_15509636972931_1.webp",
+    "alt": "ARTERO CORREA PELUQUERIA AMARILLO 50CM (NDR)",
+    "filename": "artero-correa-peluqueria-amarillo-50cm-ndr_1_15509636972931_1.webp",
     "position": 1
+  },
+  "img_02": {
+    "alt": "ARTERO CORREA PELUQUERIA AZUL 50CM (NDR)",
+    "filename": "artero-correa-peluqueria-azul-50cm-ndr_1_15509636972931_2.webp",
+    "position": 2
+  },
+  "img_03": {
+    "alt": "ARTERO CORREA PELUQUERIA ROSA 50CM (NDR)",
+    "filename": "artero-correa-peluqueria-rosa-50cm-ndr_1_15509636972931_3.webp",
+    "position": 3
   }
 }
