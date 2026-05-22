@@ -82,6 +82,35 @@ def _tokenize(text: str) -> set:
     return tokens
 
 
+def _stem(token: str) -> str:
+    """Stemming mínimo para plurales españoles: 'gatos'→'gato', 'perros'→'perro'.
+    Permite que 'gato' (título Shopify) case con 'gatos' (web)."""
+    if len(token) > 4 and token.endswith("es"):
+        return token[:-2]
+    if len(token) > 3 and token.endswith("s"):
+        return token[:-1]
+    return token
+
+
+def _stem_set(tokens: set) -> set:
+    return {_stem(t) for t in tokens}
+
+
+def _similarity(title_tokens: set, name_tokens: set) -> float:
+    """Jaccard sobre tokens con stemming. Penaliza tanto tokens del título que
+    faltan como tokens extra en el nombre web (evita que 'champu repelente perro
+    gato' gane a 'champu gatos' al matchear 'champu gato')."""
+    a = _stem_set(title_tokens)
+    b = _stem_set(name_tokens)
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+# Umbral mínimo de similitud para aceptar un candidato DDG
+MATCH_THRESHOLD = 0.34
+
+
 # ─── Playwright lazy init ─────────────────────────────────────────────────────
 
 def _get_page():
@@ -238,10 +267,11 @@ def _extract_images(page, page_url: str) -> list:
     return ordered
 
 
-def _try_url(page, url: str, title_tokens: set) -> tuple:
+def _try_url(page, url: str) -> tuple:
     """
-    Visita la URL y devuelve (name, images) si es una página de producto válida
-    cuyo h1 comparte tokens con el título Shopify. Si no, (None, []).
+    Visita la URL y devuelve (name, images) de la página de producto.
+    No decide el match aquí: la puntuación/ranking se hace en find_best_match().
+    Devuelve (None, []) solo si la página no es válida (sin h1, error HTTP).
     """
     try:
         resp = page.goto(url, timeout=30000, wait_until="domcontentloaded")
@@ -268,20 +298,6 @@ def _try_url(page, url: str, title_tokens: set) -> tuple:
         if not name:
             return None, []
 
-        name_tokens = _tokenize(name)
-        if title_tokens:
-            overlap = title_tokens & name_tokens
-            # Exigimos que la proporción de overlap sea alta para evitar falsos
-            # positivos entre productos similares (ej. champu gato vs champu repelente).
-            # Jaccard mínimo 0.5: la mitad de los tokens del título deben coincidir.
-            jaccard = len(overlap) / len(title_tokens | name_tokens) if (title_tokens | name_tokens) else 0
-            min_overlap = max(2, len(title_tokens) - 1) if len(title_tokens) >= 3 else 1
-            if len(overlap) < min_overlap:
-                log.info(f"  Sanity check falla ({len(overlap)}/{min_overlap} tokens, "
-                         f"jaccard={jaccard:.2f}) "
-                         f"{sorted(title_tokens)} ∩ {sorted(name_tokens)}: '{name}'")
-                return None, []
-
         images = _extract_images(page, page.url)
         return name, images
     except Exception as e:
@@ -296,7 +312,9 @@ def get_ddg_query(title: str) -> str:
     return f"beaphar {_clean_title(title)} product image"
 
 
-def _ddg_find_product_url(title: str) -> str | None:
+def _ddg_find_product_urls(title: str, max_urls: int = 6) -> list:
+    """Devuelve hasta `max_urls` URLs candidatas de beaphar.es/product/ (orden DDG,
+    deduplicadas). El ranking del mejor candidato se hace luego con _similarity()."""
     try:
         from ddgs import DDGS
     except ImportError:
@@ -304,11 +322,13 @@ def _ddg_find_product_url(title: str) -> str | None:
             from duckduckgo_search import DDGS
         except ImportError:
             log.warning("  [DDG] ddgs no instalado")
-            return None
+            return []
 
     clean = _clean_title(title)
     query = f"site:beaphar.es/product/ {clean}"
     log.info(f"  [DDG] {query}")
+    urls: list = []
+    seen: set = set()
     for attempt in range(3):
         try:
             with DDGS() as ddgs:
@@ -317,8 +337,12 @@ def _ddg_find_product_url(title: str) -> str | None:
                     if PRODUCT_PATH not in url:
                         continue
                     url = url.split("?")[0].split("#")[0].rstrip("/") + "/"
-                    log.info(f"  [DDG] → {url}")
-                    return url
+                    if url in seen:
+                        continue
+                    seen.add(url)
+                    urls.append(url)
+                    if len(urls) >= max_urls:
+                        break
             break
         except Exception as e:
             wait = 3 * (2 ** attempt)
@@ -327,7 +351,8 @@ def _ddg_find_product_url(title: str) -> str | None:
                 time.sleep(wait)
             else:
                 log.warning(f"  [DDG] error final: {e}")
-    return None
+    log.info(f"  [DDG] {len(urls)} candidatos: {urls}")
+    return urls
 
 
 # ─── Persistencia del catálogo ────────────────────────────────────────────────
@@ -370,7 +395,8 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     """
     Resolución por producto:
       1. Cache hit por clave de título normalizada
-      2. DDG con site:beaphar.es/product/ + sanity check del h1
+      2. DDG con site:beaphar.es/product/ → recolecta varios candidatos,
+         puntúa cada h1 con _similarity() y elige el de mayor score
       3. Cachear bajo la clave de título y el slug de la URL
     Devuelve (handle, score) donde handle es una clave de `catalog`.
     """
@@ -386,19 +412,33 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     if page is None:
         return None, 0.0
 
-    # 2. DDG
-    url = _ddg_find_product_url(shopify_title)
-    if url:
-        name, images = _try_url(page, url, title_tokens)
-        if name:
-            entry = {"name": name, "url": url, "images": images}
-            catalog[title_key] = entry
-            slug = url.rstrip("/").split("/")[-1]
-            if slug and slug != title_key:
-                catalog[slug] = entry
-            _save_catalog(catalog)
-            log.info(f"  ✓ Resuelto vía DDG: {name} ({len(images)} imgs)")
-            return title_key, 1.0
+    # 2. DDG: recolectar candidatos y elegir el de mayor similitud
+    urls = _ddg_find_product_urls(shopify_title)
+    best = None   # (score, name, images, url)
+    for url in urls:
+        name, images = _try_url(page, url)
+        if not name:
+            continue
+        score = _similarity(title_tokens, _tokenize(name))
+        log.info(f"  [cand] score={score:.2f} '{name}' ({len(images)} imgs) {url}")
+        if best is None or score > best[0]:
+            best = (score, name, images, url)
+        if score >= 0.85:   # match casi perfecto: no seguir probando
+            break
 
+    if best and best[0] >= MATCH_THRESHOLD:
+        score, name, images, url = best
+        entry = {"name": name, "url": url, "images": images}
+        catalog[title_key] = entry
+        slug = url.rstrip("/").split("/")[-1]
+        if slug and slug != title_key:
+            catalog[slug] = entry
+        _save_catalog(catalog)
+        log.info(f"  ✓ Resuelto vía DDG: {name} (score={score:.2f}, {len(images)} imgs)")
+        return title_key, score
+
+    if best:
+        log.warning(f"  Mejor candidato score={best[0]:.2f} < {MATCH_THRESHOLD} "
+                    f"— descartado: '{best[1]}'")
     log.warning(f"  Sin resolución para '{shopify_title}'")
     return None, 0.0
