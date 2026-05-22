@@ -1,9 +1,9 @@
-2026-05-16 00:28:26,996 [INFO] ============================================================
-2026-05-16 00:28:26,996 [INFO]   Vendor   : BEAPHAR
-2026-05-16 00:28:26,996 [INFO]   Modo     : WEB_OFICIAL
-2026-05-16 00:28:26,996 [INFO]   Pipeline : standard
-2026-05-16 00:28:26,996 [INFO]   Padding  : auto
-2026-05-16 00:28:26,996 [INFO]   Web    : beaphar.es
-2026-05-16 00:28:26,996 [INFO] ============================================================
-2026-05-16 00:28:27,299 [INFO] Token obtenido
-2026-05-16 00:28:27,300 [ERROR] No existe scraper para 'BEAPHAR'. Crea marcas/beaphar.py con scrape_catalog() y find_best_match().
+2026-05-22 07:51:10,118 [INFO] ============================================================
+2026-05-22 07:51:10,119 [INFO]   Vendor   : BEAPHAR
+2026-05-22 07:51:10,119 [INFO]   Modo     : WEB_OFICIAL
+2026-05-22 07:51:10,119 [INFO]   Pipeline : standard
+2026-05-22 07:51:10,119 [INFO]   Padding  : auto
+2026-05-22 07:51:10,119 [INFO]   Web    : https://www.beaphar.es/
+2026-05-22 07:51:10,119 [INFO] ============================================================
+2026-05-22 07:51:10,535 [INFO] Token obtenido
+2026-05-22 07:51:10,535 [ERROR] No existe scraper para 'BEAPHAR'. Crea marcas/beaphar.py con scrape_catalog() y find_best_match().
