@@ -18,6 +18,7 @@ Argumentos:
 
 import argparse
 import importlib
+import inspect
 import json
 import logging
 import os
@@ -358,7 +359,19 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
         title = product["title"]
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
 
-        handle, score = scraper.find_best_match(title, catalog)
+        # Extraer primer barcode no vacío (EAN) para scrapers que lo admitan
+        barcode = next(
+            (str(v.get("barcode", "")).strip()
+             for v in product.get("variants", [])
+             if v.get("barcode")),
+            ""
+        )
+        sig = inspect.signature(scraper.find_best_match)
+        if "barcode" in sig.parameters:
+            handle, score = scraper.find_best_match(title, catalog,
+                                                     barcode=barcode)
+        else:
+            handle, score = scraper.find_best_match(title, catalog)
 
         # Sin match en catálogo web: si es web_y_amazon, intentar DDG directamente
         if handle is None or score < 0.10:

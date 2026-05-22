@@ -349,23 +349,16 @@ def get_ddg_query(title: str) -> str:
     return f"beaphar {_clean_title(title)} product image"
 
 
-def _ddg_find_product_urls(title: str, max_urls: int = 6) -> list:
-    """Devuelve hasta `max_urls` URLs candidatas de beaphar.es/product/ (orden DDG,
-    deduplicadas). El ranking del mejor candidato se hace luego con _similarity()."""
+def _ddg_query_urls(query: str, max_urls: int, seen: set) -> list:
+    """Ejecuta una query DDG y devuelve URLs de producto nuevas (no en seen)."""
     try:
         from ddgs import DDGS
     except ImportError:
         try:
             from duckduckgo_search import DDGS
         except ImportError:
-            log.warning("  [DDG] ddgs no instalado")
             return []
-
-    clean = _clean_title(title)
-    query = f"site:beaphar.es/product/ {clean}"
-    log.info(f"  [DDG] {query}")
     urls: list = []
-    seen: set = set()
     for attempt in range(3):
         try:
             with DDGS() as ddgs:
@@ -388,6 +381,43 @@ def _ddg_find_product_urls(title: str, max_urls: int = 6) -> list:
                 time.sleep(wait)
             else:
                 log.warning(f"  [DDG] error final: {e}")
+    return urls
+
+
+def _ddg_find_product_urls(title: str, barcode: str = "",
+                           max_urls: int = 6) -> list:
+    """Devuelve hasta `max_urls` URLs candidatas de beaphar.es/product/.
+
+    Estrategia en cascada:
+      1. Query con título completo (incluye 'BEAPHAR')
+      2. Si faltan candidatos: query sin prefijo 'BEAPHAR/BEAPHARM'
+      3. Si barcode dado y aún faltan: query por EAN
+    """
+    seen: set = set()
+    urls: list = []
+
+    clean = _clean_title(title)
+
+    # 1. Query con título completo
+    q1 = f"site:beaphar.es/product/ {clean}"
+    log.info(f"  [DDG] {q1}")
+    urls += _ddg_query_urls(q1, max_urls - len(urls), seen)
+
+    # 2. Sin prefijo de marca si quedan huecos
+    if len(urls) < max_urls:
+        no_brand = re.sub(r'^(?:BEAPHAR|BEAPHARM)\s+', '', clean,
+                          flags=re.IGNORECASE).strip()
+        if no_brand != clean:
+            q2 = f"site:beaphar.es/product/ {no_brand}"
+            log.info(f"  [DDG fallback sin marca] {q2}")
+            urls += _ddg_query_urls(q2, max_urls - len(urls), seen)
+
+    # 3. Fallback por EAN si se proporcionó y aún faltan candidatos
+    if len(urls) < 2 and barcode:
+        q3 = f"site:beaphar.es/product/ {barcode}"
+        log.info(f"  [DDG fallback EAN] {q3}")
+        urls += _ddg_query_urls(q3, max_urls - len(urls), seen)
+
     log.info(f"  [DDG] {len(urls)} candidatos: {urls}")
     return urls
 
@@ -428,11 +458,13 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     return {}
 
 
-def find_best_match(shopify_title: str, catalog: dict) -> tuple:
+def find_best_match(shopify_title: str, catalog: dict,
+                    barcode: str = "") -> tuple:
     """
     Resolución por producto:
       1. Cache hit por clave de título normalizada
-      2. DDG con site:beaphar.es/product/ → recolecta varios candidatos,
+      2. DDG con site:beaphar.es/product/ → recolecta varios candidatos
+         (con fallback sin prefijo marca y por EAN si barcode dado),
          puntúa cada h1 con _similarity() y elige el de mayor score
       3. Cachear bajo la clave de título y el slug de la URL
     Devuelve (handle, score) donde handle es una clave de `catalog`.
@@ -450,7 +482,7 @@ def find_best_match(shopify_title: str, catalog: dict) -> tuple:
         return None, 0.0
 
     # 2. DDG: recolectar candidatos y elegir el de mayor similitud
-    urls = _ddg_find_product_urls(shopify_title)
+    urls = _ddg_find_product_urls(shopify_title, barcode=barcode)
     best = None   # (score, name, images, url)
     for url in urls:
         name, images = _try_url(page, url)
