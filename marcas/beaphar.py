@@ -150,6 +150,8 @@ def _extract_images(page, page_url: str) -> list:
     el sufijo -WxH de WordPress.
     """
     host = urlparse(page_url).netloc.lower()
+    # Dominio base sin subdominio (ej. "beaphar.es") para aceptar CDN propio
+    base_domain = ".".join(host.split(".")[-2:]) if host.count(".") >= 1 else host
     ordered: list = []
     seen: set = set()
 
@@ -160,8 +162,8 @@ def _extract_images(page, page_url: str) -> list:
         if not full.startswith("http"):
             return
         netloc = urlparse(full).netloc.lower()
-        # Solo imágenes del propio sitio (mismo host o CDN de beaphar)
-        if netloc != host and "beaphar" not in netloc:
+        # Aceptar mismo host, subdominios del sitio y CDNs que contengan "beaphar"
+        if netloc != host and base_domain not in netloc and "beaphar" not in netloc:
             return
         if not _should_keep_url(full):
             return
@@ -178,9 +180,11 @@ def _extract_images(page, page_url: str) -> list:
                     "meta[name='twitter:image']"):
             el = page.query_selector(sel)
             if el:
-                _add(el.get_attribute("content") or "")
-    except Exception:
-        pass
+                val = el.get_attribute("content") or ""
+                log.debug(f"    og:image raw: {val}")
+                _add(val)
+    except Exception as e:
+        log.debug(f"    og:image error: {e}")
 
     # 2. JSON-LD (schema.org Product)
     try:
@@ -212,7 +216,9 @@ def _extract_images(page, page_url: str) -> list:
 
     # 3. <img> en orden DOM (galería del producto)
     try:
-        for el in page.query_selector_all("img"):
+        imgs_found = page.query_selector_all("img")
+        log.debug(f"    DOM imgs total: {len(imgs_found)}")
+        for el in imgs_found:
             srcset = el.get_attribute("srcset") or ""
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
@@ -221,9 +227,10 @@ def _extract_images(page, page_url: str) -> list:
             for attr in ("data-src", "data-lazy-src", "data-large_image",
                          "data-zoom-image", "data-full-url", "src"):
                 _add(el.get_attribute(attr) or "")
-    except Exception:
-        pass
+    except Exception as e:
+        log.debug(f"    DOM imgs error: {e}")
 
+    log.debug(f"    Imágenes extraídas: {len(ordered)}")
     return ordered
 
 
@@ -237,7 +244,12 @@ def _try_url(page, url: str, title_tokens: set) -> tuple:
         if resp and resp.status >= 400:
             log.debug(f"  HTTP {resp.status} en {url}")
             return None, []
-        page.wait_for_timeout(2000)
+
+        # Esperar network idle para que WordPress/WooCommerce cargue imágenes lazy
+        try:
+            page.wait_for_load_state("networkidle", timeout=8000)
+        except Exception:
+            pass
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         page.wait_for_timeout(1500)
 
@@ -252,16 +264,18 @@ def _try_url(page, url: str, title_tokens: set) -> tuple:
         if not name:
             return None, []
 
-        # Sanity check: el h1 debe compartir tokens con el título Shopify.
-        # Con ≥3 tokens significativos exigimos ≥2 coincidencias para evitar
-        # falsos positivos (p.ej. dos champús que solo comparten 'champu').
         name_tokens = _tokenize(name)
         if title_tokens:
             overlap = title_tokens & name_tokens
-            min_req = 2 if len(title_tokens) >= 3 else 1
-            if len(overlap) < min_req:
-                log.info(f"  Sanity check falla ({len(overlap)}/{min_req} tokens "
-                         f"de {sorted(title_tokens)} ∩ {sorted(name_tokens)}): '{name}'")
+            # Exigimos que la proporción de overlap sea alta para evitar falsos
+            # positivos entre productos similares (ej. champu gato vs champu repelente).
+            # Jaccard mínimo 0.5: la mitad de los tokens del título deben coincidir.
+            jaccard = len(overlap) / len(title_tokens | name_tokens) if (title_tokens | name_tokens) else 0
+            min_overlap = max(2, len(title_tokens) - 1) if len(title_tokens) >= 3 else 1
+            if len(overlap) < min_overlap:
+                log.info(f"  Sanity check falla ({len(overlap)}/{min_overlap} tokens, "
+                         f"jaccard={jaccard:.2f}) "
+                         f"{sorted(title_tokens)} ∩ {sorted(name_tokens)}: '{name}'")
                 return None, []
 
         images = _extract_images(page, page.url)
