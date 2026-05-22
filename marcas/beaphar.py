@@ -145,26 +145,28 @@ def _strip_size_suffix(url: str) -> str:
 def _extract_images(page, page_url: str) -> list:
     """
     Extrae URLs de imágenes en orden de aparición: og:image primero, luego
-    JSON-LD, luego <img> del DOM. Solo conserva imágenes del propio dominio
-    beaphar (resolviendo URLs relativas) y descarta thumbnails reduciendo
-    el sufijo -WxH de WordPress.
+    JSON-LD, luego <img> del DOM. Descarta thumbnails reduciendo el sufijo
+    -WxH de WordPress.
+
+    og:image y JSON-LD se aceptan de cualquier dominio (el sitio los declara
+    explícitamente; pueden venir de Jetpack CDN i0.wp.com u otros).
+    Los <img> del DOM sí se filtran por host para evitar tracking pixels.
     """
     host = urlparse(page_url).netloc.lower()
-    # Dominio base sin subdominio (ej. "beaphar.es") para aceptar CDN propio
     base_domain = ".".join(host.split(".")[-2:]) if host.count(".") >= 1 else host
     ordered: list = []
     seen: set = set()
 
-    def _add(raw_url: str):
+    def _add(raw_url: str, check_host: bool = False):
         if not raw_url or raw_url.startswith("data:"):
             return
         full = urljoin(page_url, raw_url)
         if not full.startswith("http"):
             return
-        netloc = urlparse(full).netloc.lower()
-        # Aceptar mismo host, subdominios del sitio y CDNs que contengan "beaphar"
-        if netloc != host and base_domain not in netloc and "beaphar" not in netloc:
-            return
+        if check_host:
+            netloc = urlparse(full).netloc.lower()
+            if netloc != host and base_domain not in netloc and "beaphar" not in netloc:
+                return
         if not _should_keep_url(full):
             return
         clean = _strip_size_suffix(full)
@@ -173,7 +175,7 @@ def _extract_images(page, page_url: str) -> list:
         seen.add(clean)
         ordered.append(clean)
 
-    # 1. og:image — imagen principal canónica del producto
+    # 1. og:image — imagen principal canónica del producto (sin filtro de host)
     try:
         for sel in ("meta[property='og:image']",
                     "meta[property='og:image:secure_url']",
@@ -181,12 +183,13 @@ def _extract_images(page, page_url: str) -> list:
             el = page.query_selector(sel)
             if el:
                 val = el.get_attribute("content") or ""
-                log.debug(f"    og:image raw: {val}")
-                _add(val)
+                if val:
+                    log.info(f"    og:image: {val}")
+                _add(val, check_host=False)
     except Exception as e:
-        log.debug(f"    og:image error: {e}")
+        log.info(f"    og:image error: {e}")
 
-    # 2. JSON-LD (schema.org Product)
+    # 2. JSON-LD (schema.org Product) — sin filtro de host
     try:
         ld_texts = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -206,31 +209,32 @@ def _extract_images(page, page_url: str) -> list:
                         imgs = [imgs]
                     for img in imgs:
                         if isinstance(img, str):
-                            _add(img)
+                            _add(img, check_host=False)
                         elif isinstance(img, dict):
-                            _add(img.get("url") or img.get("contentUrl") or "")
+                            _add(img.get("url") or img.get("contentUrl") or "",
+                                 check_host=False)
             except Exception:
                 pass
     except Exception:
         pass
 
-    # 3. <img> en orden DOM (galería del producto)
+    # 3. <img> en orden DOM (galería del producto) — con filtro de host
     try:
         imgs_found = page.query_selector_all("img")
-        log.debug(f"    DOM imgs total: {len(imgs_found)}")
+        log.info(f"    DOM imgs total: {len(imgs_found)}")
         for el in imgs_found:
             srcset = el.get_attribute("srcset") or ""
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
                 cand = parts[-1].split()[0]   # mayor resolución del srcset
-                _add(cand)
+                _add(cand, check_host=True)
             for attr in ("data-src", "data-lazy-src", "data-large_image",
                          "data-zoom-image", "data-full-url", "src"):
-                _add(el.get_attribute(attr) or "")
+                _add(el.get_attribute(attr) or "", check_host=True)
     except Exception as e:
-        log.debug(f"    DOM imgs error: {e}")
+        log.info(f"    DOM imgs error: {e}")
 
-    log.debug(f"    Imágenes extraídas: {len(ordered)}")
+    log.info(f"    Imágenes extraídas: {len(ordered)}")
     return ordered
 
 
