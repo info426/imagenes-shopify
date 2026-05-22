@@ -240,19 +240,39 @@ def _extract_images(page, page_url: str) -> list:
     except Exception:
         pass
 
-    # 3. <img> en orden DOM (galería del producto)
+    # 3. <img> en orden DOM — solo galería del producto, excluye relacionados/upsells
     try:
-        imgs_found = page.query_selector_all("img")
-        log.info(f"    DOM imgs total: {len(imgs_found)}")
-        for el in imgs_found:
-            srcset = el.get_attribute("srcset") or ""
+        img_data = page.evaluate("""() => {
+            return Array.from(document.querySelectorAll('img'))
+                .filter(img =>
+                    !img.closest('.related') &&
+                    !img.closest('.upsells') &&
+                    !img.closest('.cross-sells') &&
+                    !img.closest('[class*="related-product"]') &&
+                    !img.closest('[id*="related"]') &&
+                    !img.closest('footer') &&
+                    !img.closest('header') &&
+                    !img.closest('nav')
+                )
+                .map(img => ({
+                    srcset:           img.getAttribute('srcset')           || '',
+                    dataSrc:          img.getAttribute('data-src')         || '',
+                    dataLazySrc:      img.getAttribute('data-lazy-src')    || '',
+                    dataLargeImage:   img.getAttribute('data-large_image') || '',
+                    dataZoomImage:    img.getAttribute('data-zoom-image')  || '',
+                    dataFullUrl:      img.getAttribute('data-full-url')    || '',
+                    src:              img.getAttribute('src')              || ''
+                }));
+        }""")
+        log.info(f"    DOM imgs (excl. relacionados): {len(img_data or [])}")
+        for item in (img_data or []):
+            srcset = item.get("srcset", "")
             parts  = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
-                cand = parts[-1].split()[0]   # mayor resolución del srcset
-                _add(cand)
-            for attr in ("data-src", "data-lazy-src", "data-large_image",
-                         "data-zoom-image", "data-full-url", "src"):
-                _add(el.get_attribute(attr) or "")
+                _add(parts[-1].split()[0])
+            for key in ("dataSrc", "dataLazySrc", "dataLargeImage",
+                        "dataZoomImage", "dataFullUrl", "src"):
+                _add(item.get(key, ""))
     except Exception as e:
         log.info(f"    DOM imgs error: {e}")
 
