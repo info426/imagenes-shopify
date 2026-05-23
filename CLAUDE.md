@@ -155,11 +155,36 @@ Por eso el scraper:
 
 1. **No** construye slug directo (a diferencia de Artero) — el ID es desconocido.
 2. Resuelve cada producto **bajo demanda** vía DuckDuckGo con filtro
-   `site:beaphar.es/product/`.
-3. Navega con **Playwright** (UA de Chrome) para esquivar el 403.
-4. **Sanity check**: el h1 de la página debe compartir tokens con el título Shopify.
-5. Filtra imágenes al propio dominio beaphar y reduce thumbnails `-WxH` de WordPress.
-6. Cachea cada hallazgo en `resultados/beaphar_catalog.json`.
+   `site:beaphar.es/product/`. Cascada de queries: título completo → sin prefijo
+   "BEAPHAR" → por EAN/barcode (si faltan candidatos).
+3. Navega con **Playwright** (UA de Chrome) para esquivar el 403, esperando
+   `networkidle` para que WooCommerce cargue las imágenes lazy.
+4. **Ranking de candidatos**: recolecta hasta 6 URLs, puntúa cada h1 con Jaccard
+   + stemming de plurales ES (`gato`≈`gatos`), elige el de mayor score.
+   Umbral `MATCH_THRESHOLD=0.34`. Evita falsos positivos entre productos similares.
+5. **Imágenes**: og:image + JSON-LD + galería DOM (excluye .related/.upsells).
+   beaphar.es sirve desde CloudFront (`d7rh5s3nxmpy4.cloudfront.net`), no filtra
+   por host. **Filtro por EAN**: el CDN nombra los ficheros con el EAN del
+   producto (`8711231199877.jpg`, `_1.jpg`...); descarta imágenes del CDN cuyo
+   EAN no coincida (elimina las de "Productos relacionados").
+6. Cachea cada hallazgo en `resultados/beaphar_catalog.json` (efímero en el runner).
+
+El paso del barcode lo hace `core/process_brand.py` (extrae el primer EAN del
+producto y lo pasa a `find_best_match` vía `inspect.signature`).
+
+**Estado del proceso masivo (web_oficial):**
+- Run #68 (todos): 126 productos → **99 OK, 26 sin match, 1 sin imagen**.
+- Re-run de los 27 fallidos con `product_ids` (lote) tras añadir fallbacks
+  sin-marca + EAN. *(Pendiente revisar resumen del re-run.)*
+- IDs del lote de reintento: 15509650997635,15509650080131,15509649686915,
+  15509649621379,15509649588611,15509649326467,15509649195395,15509649031555,
+  15509648081283,15509645099395,15509644837251,15509644444035,15509644247427,
+  15509644050819,15509643100547,15509643133315,15509643002243,15509642871171,
+  15509641953667,15509641822595,15509641331075,15509641232771,15509641036163,
+  15509640970627,15509640774019,15981868876163,15981869105539
+- Probable resto irreducible: 3 productos `*DX*` (descatalogados) y 2 con EAN
+  `8710729*` (Vitamina A pájaros, Rojo intensivo canarios) — puede que no estén
+  en beaphar.es; valorar fuente alternativa (Amazon) o dejarlos sin imagen.
 
 Unificaciones aplicadas en Shopify (vía API, EANs y precios preservados):
 Pipetas Repulsivas Perro (B), Cat Comfort Spray (C), Multifresh Neutralizador
