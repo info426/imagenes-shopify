@@ -128,6 +128,114 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 
 ---
 
+## Experiencia técnica acumulada
+
+Esta sección se actualiza con cada marca procesada. Consultar siempre al escribir
+un nuevo scraper o diagnosticar fallos.
+
+### CMS detectados y patrones de URL de producto
+
+| CMS | Patrón URL producto | Ejemplo | Cómo detectar |
+|---|---|---|---|
+| WooCommerce | `/{slug}/` o `/producto/{slug}/` | `menforsan.com/producto/champu-perros-400ml/` | URL sin extensión, path corto |
+| PrestaShop | `/es/{categoria}/{id}-{slug}.html` | `menforsan.com/es/champus/248-champu-biotina.html` | Extensión `.html`, segmento `{numero}-{texto}` |
+| PrestaShop (EN) | `/en/{category}/{id}-{slug}.html` | igual pero `/en/` | Mismo patrón, idioma diferente |
+| WooCommerce multidioma | `/es/producto/{slug}/` | artero.com/es/petcare/{slug}/ | Prefijo de idioma + `/producto/` |
+
+**Regla para `_is_product_url()`:** hacer el filtro lo más estricto posible.
+DDG devuelve páginas de categoría, marca y blog mezcladas con productos.
+Cada URL que pasa el filtro cuesta una navegación Playwright (lenta y costosa).
+- PrestaShop: `re.match(r'^\d+-.+\.html$', last_segment)` — probado en menforsan.com
+- WooCommerce: comprobar que el path tiene el prefijo correcto Y no es categoría/tag/blog
+
+### Protección anti-bot y cómo superarla
+
+| Sitio / patrón | Protección | Solución probada | Resultado |
+|---|---|---|---|
+| beaphar.es | HTTP 403 sin navegador | Playwright + Chrome UA + `wait_until="networkidle"` | ✅ Funciona |
+| menforsan.com | HTTP 403 sin navegador (PrestaShop) | Playwright + Chrome UA + headers Sec-Fetch-* + bypass `navigator.webdriver` + warm-up homepage | ⏳ En prueba (test 2) |
+| artero.com | Sin protección significativa | requests / Playwright básico | ✅ Funciona |
+
+**Técnicas anti-bot (de menor a mayor agresividad):**
+1. Chrome User-Agent en headers
+2. `Accept-Language`, `Accept`, `Accept-Encoding` realistas
+3. Headers `Sec-Fetch-*` (`Dest: document`, `Mode: navigate`, `Site: none`, `User: ?1`)
+4. `ctx.add_init_script()` para ocultar `navigator.webdriver` y simular `window.chrome`
+5. Warm-up: visitar la homepage primero para establecer cookies antes de navegar a productos
+6. Si todo lo anterior falla: probar `playwright-stealth` (librería externa) o rotar UA
+
+**Plantilla `_get_page()` con anti-bot completo** (usar como base para nuevos scrapers):
+```python
+ctx = browser.new_context(
+    user_agent=USER_AGENT,
+    locale="es-ES",
+    viewport={"width": 1440, "height": 900},
+    extra_http_headers={
+        "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+    ignore_https_errors=True,
+)
+ctx.add_init_script("""
+    Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+    Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+    Object.defineProperty(navigator, 'languages', {get: () => ['es-ES', 'es', 'en']});
+    window.chrome = {runtime: {}, loadTimes: function(){}, csi: function(){}, app: {}};
+""")
+page = ctx.new_page()
+# Warm-up para establecer cookies
+page.goto("https://www.{dominio}/", timeout=20000, wait_until="domcontentloaded")
+page.wait_for_timeout(2000)
+```
+
+### Estrategia DDG por tipo de sitio
+
+| Situación | Estrategia | Query |
+|---|---|---|
+| Sitio con slug derivable del título | Slug directo → fallback DDG si 404 | `site:{dominio} {título}` |
+| ID numérico no derivable (PrestaShop) | Solo DDG | `site:{dominio} {título}` |
+| Título con prefijo de marca redundante | Cascada: título completo → sin prefijo | `site:{dominio} {título sin marca}` |
+| Sin resultados (producto oscuro) | Fallback por EAN/barcode | `site:{dominio} {EAN}` |
+
+**Lección aprendida (menforsan test 1):** DDG encontró la URL correcta en posición 2,
+pero también devolvió 4 páginas de categoría que pasaron el filtro `_is_product_url()`.
+Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
+
+### Matching Jaccard — thresholds por marca
+
+| Marca | MATCH_THRESHOLD | Observaciones |
+|---|---|---|
+| Beaphar | 0.34 | Productos similares (pipetas, sprays) requieren threshold alto para evitar falsos positivos |
+| Menforsan | 0.30 | Punto de partida; ajustar si hay muchos sin-match o falsos positivos |
+| Artero | N/A | Slug directo; el score solo valida el sanity-check del h1 |
+
+**Cuándo bajar el threshold:** muchos productos sin match, scores reales entre 0.20-0.29.
+**Cuándo subir el threshold:** falsos positivos (producto equivocado asignado).
+
+### Extracción de imágenes — lecciones
+
+- **Orden de prioridad:** `og:image` > JSON-LD > DOM `<img>` — `og:image` suele ser la imagen principal en buena resolución.
+- **Excluir relacionados:** en WooCommerce filtrar `.related`, `.upsells`, `.cross-sells` del DOM scan.
+- **Filtro EAN (Beaphar):** el CDN nombra los ficheros con el EAN (`8711231199877.jpg`). Aplicar `_filter_by_ean()` elimina imágenes de "productos relacionados" del CDN.
+- **Sufijo WordPress `-WxH`:** quitar con `re.sub(r'-\d+x\d+(\.[a-z]{3,4})', r'\1', url)` para obtener la imagen original en máxima resolución.
+- **PrestaShop:** las imágenes suelen estar en `/img/p/{carpetas}/{id}-{lang}.jpg`. La `og:image` las referencia directamente; es suficiente en la mayoría de casos.
+
+### Logging — qué nivel usar
+
+- `log.info` para todo lo que ayuda a diagnosticar desde el artefacto del workflow (HTTP status, candidatos DDG, scores, imágenes extraídas)
+- `log.debug` solo para errores de bajo nivel que no afectan al flujo (excepciones internas de Playwright, etc.)
+- **Lección (menforsan test 1):** los HTTP 403 estaban en `log.debug` → invisibles en el artefacto. Cambiar siempre los errores de navegación a `log.info`.
+
+---
+
 ## Estado de marcas
 
 | Marca | Vendor Shopify | Estado | Fuente |
@@ -154,22 +262,24 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 (scraper web). La web `menforsan.com` devuelve **HTTP 403** a peticiones sin
 navegador (igual que beaphar.es).
 
-**Estado actual:**
-- `marcas/menforsan.py` **CREADO y en `main`** (commit `0433c76`) — listo para test.
-- Basado en beaphar.py: Playwright + Chrome UA, DDG bajo demanda, Jaccard + stemming ES,
-  fallbacks sin-marca + por EAN, filtro de galería sin relacionados.
-- `PRODUCT_PATH = "menforsan.com"` (amplio) + `_is_product_url()` descarta categorías/blog.
-- `MATCH_THRESHOLD = 0.30` (ligeramente más bajo que Beaphar 0.34 para empezar).
-- `CATALOG_PATH = resultados/menforsan_catalog.json`.
+**Estado actual (commit `f429d72`):**
+- `marcas/menforsan.py` en `main` con anti-bot completo.
+- CMS: **PrestaShop** — URLs `/es/{categoria}/{id}-{slug}.html`.
+- `_is_product_url()` corregido: solo acepta patrón `\d+-.+\.html` (evita categorías).
+- Playwright con headers Sec-Fetch-*, bypass `navigator.webdriver`, warm-up homepage.
+- `MATCH_THRESHOLD = 0.30`. `CATALOG_PATH = resultados/menforsan_catalog.json`.
+
+**Log del test 1 (producto: CHAMPU BIOTINA PARA CABALLO 1L, ID: 15509651259779):**
+- DDG encontró la URL correcta (`248-champu-de-biotina-para-caballos-1l.html`) en pos. 2.
+- `score=0.00` → `_try_url()` devolvió `(None, [])` para todos los candidatos.
+- Causa probable: HTTP 403 inmediato (6 URLs en ~4s con Playwright → todas rechazadas).
+- Los 403 no eran visibles porque estaban en `log.debug` → corregido a `log.info`.
+- Filtro de URL también devolvía 4 páginas de categoría innecesarias → corregido.
 
 **Próximos pasos:**
-1. **Test marca** (1 producto) con los parámetros de abajo → analizar el log:
-   - ¿Qué URLs devuelve DDG? → confirma el patrón real de URL (¿`/producto/` o `/product/`?).
-   - `score=X.XX` → si el matching es correcto; ajustar `MATCH_THRESHOLD` si hace falta.
-   - `Imágenes extraídas: N` → si extrae bien la galería o solo og:image.
-   - Si hay `HTTP 403` a pesar de Playwright → revisar UA / headers.
-2. **Ajustar `marcas/menforsan.py`** según lo que muestre el log (selectores h1,
-   patrón URL, MATCH_THRESHOLD, filtro EAN si el CDN lo permite).
+1. **Test marca** (mismos parámetros) → el log ahora mostrará `Warm-up menforsan.com OK`
+   y, si sigue bloqueando, `HTTP 403` explícitos para diagnosticar.
+2. Si sigue con 403 tras el warm-up → probar `playwright-stealth` o esperar entre requests.
 3. **Proceso masivo** tras confirmar que el test funciona.
 
 **Parámetros workflow `Test marca`:**
