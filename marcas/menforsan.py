@@ -388,9 +388,14 @@ def _try_url(page, url: str, barcode: str = "") -> tuple:
 
 def _is_product_url(url: str) -> bool:
     """Descarta URLs de categorías, blog, etc.
-    menforsan.com usa PrestaShop: /es/{categoria}/{id}-{slug}.html"""
+    menforsan.com usa PrestaShop: /es/{categoria}/{id}-{slug}.html
+    Solo acepta sección española (/es/) para evitar falsos positivos con /en/."""
     parsed = urlparse(url)
     if PRODUCT_PATH not in url:
+        return False
+    # Exigir sección española — la sección /en/ da scores bajos (títulos en inglés)
+    # y puede no coincidir bien con el título Shopify en español.
+    if "/es/" not in parsed.path:
         return False
     if _NON_PRODUCT_PATHS.search(parsed.path):
         return False
@@ -449,8 +454,9 @@ def _ddg_find_product_urls(title: str, barcode: str = "",
     urls: list = []
     clean = _clean_title(title)
 
-    # 1. Título completo con dominio
-    q1 = f"site:menforsan.com {clean}"
+    # 1. Título completo — restringir a /es/ para evitar URLs en inglés (/en/)
+    #    que dan scores bajos y pueden causar falsos positivos con otros productos.
+    q1 = f"site:menforsan.com/es/ {clean}"
     log.info(f"  [DDG] {q1}")
     urls += _ddg_query_urls(q1, max_urls - len(urls), seen)
 
@@ -458,13 +464,13 @@ def _ddg_find_product_urls(title: str, barcode: str = "",
     if len(urls) < max_urls:
         no_brand = re.sub(r'^MENFORSAN\s+', '', clean, flags=re.IGNORECASE).strip()
         if no_brand != clean:
-            q2 = f"site:menforsan.com {no_brand}"
+            q2 = f"site:menforsan.com/es/ {no_brand}"
             log.info(f"  [DDG fallback sin marca] {q2}")
             urls += _ddg_query_urls(q2, max_urls - len(urls), seen)
 
     # 3. Fallback por EAN
     if len(urls) < 2 and barcode:
-        q3 = f"site:menforsan.com {barcode}"
+        q3 = f"site:menforsan.com/es/ {barcode}"
         log.info(f"  [DDG fallback EAN] {q3}")
         urls += _ddg_query_urls(q3, max_urls - len(urls), seen)
 

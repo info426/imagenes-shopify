@@ -219,13 +219,16 @@ def search_amazon_image_urls(title: str, barcode: str = "",
     Devuelve URLs de imágenes de producto Amazon en máxima resolución.
     Busca fichas vía DDG, navega con Playwright y extrae la galería principal.
     """
+    # Inicializar Playwright ANTES de llamar a DDGS (que usa asyncio internamente).
+    # Si se invierte el orden, el Sync API de Playwright detecta el loop asyncio
+    # de DDGS y falla con "Please use the Async API instead".
+    page = _get_page()
+    if page is None:
+        return []
+
     product_urls = _ddg_amazon_product_urls(title, barcode=barcode,
                                              max_urls=max_products)
     if not product_urls:
-        return []
-
-    page = _get_page()
-    if page is None:
         return []
 
     all_imgs: list = []
