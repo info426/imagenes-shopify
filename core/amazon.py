@@ -162,13 +162,19 @@ def _search_via_ddg_images(title: str, barcode: str = "") -> list:
             img_url = r.get("image") or r.get("thumbnail") or ""
             if not _is_amazon_product_image(img_url) or _is_ui_sprite(img_url):
                 continue
+            result_title = r.get("title") or ""
+            if result_title:
+                sim = _title_sim(title, result_title)
+                if sim < AMAZON_MATCH_THRESHOLD:
+                    log.info(f"  [amazon img] skip (sim={sim:.2f}) «{result_title[:55]}»")
+                    continue
             orig = strip_size_token(img_url)
             iid = _image_id(orig)
             if iid in seen_ids:
                 continue
             seen_ids.add(iid)
             out.append(orig)
-            log.info(f"  [amazon img] + {iid}  «{(r.get('title') or '')[:55]}»")
+            log.info(f"  [amazon img] + {iid}  «{result_title[:55]}»")
 
         if out:
             break  # la primera query con resultados basta; el EAN es respaldo
