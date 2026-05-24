@@ -119,13 +119,17 @@ def _get_page():
     if _PW["page"] is not None:
         return _PW["page"]
     try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        log.error("Playwright no instalado: pip install playwright && "
-                  "playwright install chromium")
-        return None
+        from core.playwright_shared import get_playwright
+        pw = get_playwright()
+    except Exception:
+        try:
+            from playwright.sync_api import sync_playwright
+            pw = sync_playwright().start()
+        except ImportError:
+            log.error("Playwright no instalado: pip install playwright && "
+                      "playwright install chromium")
+            return None
 
-    pw = sync_playwright().start()
     browser = pw.chromium.launch(
         headless=True,
         args=["--no-sandbox", "--disable-setuid-sandbox",
@@ -156,12 +160,11 @@ def _get_page():
         window.chrome = {runtime: {}, loadTimes: function(){}, csi: function(){}, app: {}};
     """)
     page = ctx.new_page()
-    _PW.update({"pw": pw, "browser": browser, "ctx": ctx, "page": page})
+    _PW.update({"browser": browser, "ctx": ctx, "page": page})
 
     def _cleanup():
         try:
             browser.close()
-            pw.stop()
         except Exception:
             pass
     atexit.register(_cleanup)
