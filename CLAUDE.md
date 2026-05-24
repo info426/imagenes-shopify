@@ -146,6 +146,45 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
+| Menforsan | MENFORSAN *(confirmar)* | **Pendiente — sin imágenes en Shopify.** Crear marcas/menforsan.py (Caso B). Ver notas de estrategia. | web_oficial → menforsan.com |
+
+### Menforsan — notas de estrategia (PENDIENTE, sesión nueva)
+
+**Situación:** los productos MENFORSAN no tienen imágenes en Shopify → Caso B
+(scraper web). La web `menforsan.com` devuelve **HTTP 403** a peticiones sin
+navegador (igual que beaphar.es), así que el scraper necesita **Playwright +
+UA de Chrome**. Por eso **`marcas/beaphar.py` es la mejor plantilla de partida**
+(no `artero.py`).
+
+**Plan para la nueva sesión:**
+1. **Descubrir el patrón de URL de producto** de menforsan.com (no se pudo
+   inspeccionar desde la sesión anterior: 403 directo y en buscadores vía
+   WebFetch). Hacerlo desde el runner con Playwright o un test DDG
+   `site:menforsan.com <producto>`. Determinar:
+   - ¿El slug se puede derivar del título (como Artero) o hace falta resolución
+     DDG bajo demanda (como Beaphar, por ID interno)?
+   - ¿CMS? (WooCommerce / PrestaShop / custom) → define selectores de h1 y galería.
+   - ¿CDN de imágenes? ¿el nombre de fichero contiene el EAN? (en Beaphar sí,
+     y permitió filtrar "productos relacionados").
+2. **Crear `marcas/menforsan.py`** copiando la estructura de beaphar.py:
+   `scrape_catalog()`, `find_best_match(title, catalog, barcode="")`,
+   `get_ddg_query()`. Reutilizar: Playwright lazy-init, `networkidle`, ranking
+   de candidatos con Jaccard + stemming ES, fallbacks (sin marca + por EAN),
+   filtro de galería (excluir relacionados; por EAN si el CDN lo permite).
+   Ajustar `IGNORE_TOKENS` (quitar "menforsan" y unidades), `PRODUCT_PATH`,
+   `CATALOG_PATH = resultados/menforsan_catalog.json`.
+3. **Validar vendor exacto en Shopify** (¿"MENFORSAN", "Menforsan"?) antes de
+   los workflows — `vendor_slug()` lo normaliza a `menforsan` para el módulo.
+4. **Test marca** (1 producto) → afinar extracción/matching iterando con el log
+   (mismo ciclo que en Beaphar: og:image, nº imgs galería, candidatos/score).
+5. **Proceso masivo** `Procesar imágenes de marca`: vendor=MENFORSAN,
+   fuente=web_oficial, web_url=https://www.menforsan.com/, rebuild_catalog=false,
+   pipeline=standard, force_padding=auto. Reintentar fallidos por lote con
+   `product_ids` si quedan sin match (como en Beaphar run #68 → re-run 27/27).
+
+**Recordatorio de infra:** los workflows hacen checkout de `main`, así que el
+scraper debe estar en `main` para que el runner lo encuentre (en Beaphar hubo
+que mergear/cherry-pick desde la rama de feature a main antes del primer test).
 
 ### Beaphar — notas de estrategia
 
