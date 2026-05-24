@@ -402,7 +402,9 @@ def _ddg_query_urls(query: str, max_urls: int, seen: set) -> list:
                     url = r.get("href") or r.get("url") or ""
                     if not _is_product_url(url):
                         continue
-                    url = url.split("?")[0].split("#")[0].rstrip("/") + "/"
+                    url = url.split("?")[0].split("#")[0].rstrip("/")
+                    if not url.lower().endswith(".html"):
+                        url += "/"
                     if url in seen:
                         continue
                     seen.add(url)

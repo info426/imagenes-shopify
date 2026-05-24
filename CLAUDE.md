@@ -153,7 +153,7 @@ Cada URL que pasa el filtro cuesta una navegación Playwright (lenta y costosa).
 | Sitio / patrón | Protección | Solución probada | Resultado |
 |---|---|---|---|
 | beaphar.es | HTTP 403 sin navegador | Playwright + Chrome UA + `wait_until="networkidle"` | ✅ Funciona |
-| menforsan.com | HTTP 403 sin navegador (PrestaShop) | Playwright + Chrome UA + headers Sec-Fetch-* + bypass `navigator.webdriver` + warm-up homepage | ⏳ En prueba (test 2) |
+| menforsan.com | HTTP 403 sin navegador (PrestaShop) | Playwright + Chrome UA + headers Sec-Fetch-* + bypass `navigator.webdriver` + warm-up homepage | ✅ Funciona (test 2: warm-up OK, sin 403) |
 | artero.com | Sin protección significativa | requests / Playwright básico | ✅ Funciona |
 
 **Técnicas anti-bot (de menor a mayor agresividad):**
@@ -227,6 +227,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **Filtro EAN (Beaphar):** el CDN nombra los ficheros con el EAN (`8711231199877.jpg`). Aplicar `_filter_by_ean()` elimina imágenes de "productos relacionados" del CDN.
 - **Sufijo WordPress `-WxH`:** quitar con `re.sub(r'-\d+x\d+(\.[a-z]{3,4})', r'\1', url)` para obtener la imagen original en máxima resolución.
 - **PrestaShop:** las imágenes suelen estar en `/img/p/{carpetas}/{id}-{lang}.jpg`. La `og:image` las referencia directamente; es suficiente en la mayoría de casos.
+- **PrestaShop — NO trailing slash en `.html`:** PrestaShop devuelve HTTP 404 si la URL termina en `.html/`. WooCommerce sí espera trailing slash. En `_ddg_query_urls`: `if not url.lower().endswith(".html"): url += "/"`
 
 ### Logging — qué nivel usar
 
@@ -269,17 +270,17 @@ navegador (igual que beaphar.es).
 - Playwright con headers Sec-Fetch-*, bypass `navigator.webdriver`, warm-up homepage.
 - `MATCH_THRESHOLD = 0.30`. `CATALOG_PATH = resultados/menforsan_catalog.json`.
 
-**Log del test 1 (producto: CHAMPU BIOTINA PARA CABALLO 1L, ID: 15509651259779):**
-- DDG encontró la URL correcta (`248-champu-de-biotina-para-caballos-1l.html`) en pos. 2.
-- `score=0.00` → `_try_url()` devolvió `(None, [])` para todos los candidatos.
-- Causa probable: HTTP 403 inmediato (6 URLs en ~4s con Playwright → todas rechazadas).
-- Los 403 no eran visibles porque estaban en `log.debug` → corregido a `log.info`.
-- Filtro de URL también devolvía 4 páginas de categoría innecesarias → corregido.
+**Historial de tests (ID: 15509651259779 — CHAMPU BIOTINA PARA CABALLO 1L):**
+
+| Test | Problema | Fix aplicado |
+|---|---|---|
+| Test 1 | HTTP 403 a Playwright (todos los candidatos) + filtro URL pasaba categorías | Anti-bot completo (headers Sec-Fetch-*, bypass webdriver, warm-up) + filtro `\d+-.+\.html` |
+| Test 2 | Warm-up OK, sin 403. **HTTP 404** en todos — trailing slash tras `.html` | `_ddg_query_urls`: no añadir `/` si URL termina en `.html` |
+| Test 3 | Pendiente | — |
 
 **Próximos pasos:**
-1. **Test marca** (mismos parámetros) → el log ahora mostrará `Warm-up menforsan.com OK`
-   y, si sigue bloqueando, `HTTP 403` explícitos para diagnosticar.
-2. Si sigue con 403 tras el warm-up → probar `playwright-stealth` o esperar entre requests.
+1. **Test marca** (mismos parámetros) → debería resolver el producto y extraer imágenes.
+2. Verificar score y número de imágenes extraídas en el log.
 3. **Proceso masivo** tras confirmar que el test funciona.
 
 **Parámetros workflow `Test marca`:**
