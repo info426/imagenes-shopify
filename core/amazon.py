@@ -174,7 +174,58 @@ def _ddg_amazon_product_urls(title: str, barcode: str = "",
 # ─── Extracción de imágenes de una ficha ──────────────────────────────────────
 
 def _extract_amazon_images(page) -> list:
-    """Extrae URLs de la galería principal y las sube a resolución original."""
+    """
+    Extrae URLs de la galería completa de un producto Amazon.
+
+    Estrategia (por orden de fiabilidad):
+    1. colorImages JSON embebido en <script> → clave 'hiRes' (~2000px)
+       Amazon inyecta este objeto con todas las imágenes del carrusel antes
+       de que el JS de la galería renderice, por lo que es la fuente más
+       completa y de mayor resolución.
+    2. DOM fallback — data-a-dynamic-image tomando la URL de mayor resolución
+       del dict {url: [w, h]} que Amazon usa para el zoom.
+    3. data-old-hires y src como último recurso.
+    """
+    seen_ids: set = set()
+    out: list = []
+
+    def _add(url: str):
+        if not url or not _is_amazon_product_image(url):
+            return
+        orig = strip_size_token(url)
+        iid = _image_id(orig)
+        if iid in seen_ids:
+            return
+        seen_ids.add(iid)
+        out.append(orig)
+
+    # 1. colorImages JSON: Amazon embebe en un <script> la galería completa,
+    #    incluyendo 'hiRes' que apunta a la imagen original sin token de tamaño.
+    try:
+        color_images = page.evaluate(r"""() => {
+            for (const s of document.querySelectorAll('script')) {
+                const m = s.textContent.match(/"colorImages"\s*:\s*\{"initial"\s*:\s*(\[[\s\S]*?\])\s*\}/);
+                if (m) {
+                    try { return JSON.parse(m[1]); } catch(e) {}
+                }
+            }
+            return null;
+        }""")
+        if color_images:
+            for item in (color_images or []):
+                if not isinstance(item, dict):
+                    continue
+                # hiRes = imagen original · large = ~1500px · mainUrl = tamaño medio
+                for key in ('hiRes', 'large', 'mainUrl'):
+                    url = item.get(key) or ''
+                    if url:
+                        _add(url)
+                        break
+            log.info(f"  [amazon] {len(out)} imgs vía colorImages")
+    except Exception as e:
+        log.debug(f"  [amazon] colorImages error: {e}")
+
+    # 2. DOM fallback — data-a-dynamic-image seleccionando la URL de mayor px
     try:
         raw = page.evaluate("""() => {
             const urls = new Set();
@@ -187,30 +238,25 @@ def _extract_amazon_images(page) -> list:
             document.querySelectorAll(sel).forEach(img => {
                 const dyn = img.getAttribute('data-a-dynamic-image');
                 if (dyn) {
-                    try { Object.keys(JSON.parse(dyn)).forEach(u => urls.add(u)); }
-                    catch(e) {}
+                    try {
+                        const parsed = JSON.parse(dyn);
+                        // URL con mayor resolución (ancho × alto)
+                        const best = Object.entries(parsed)
+                            .sort((a, b) => b[1][0] * b[1][1] - a[1][0] * a[1][1])[0];
+                        if (best) urls.add(best[0]);
+                    } catch(e) {}
                 }
                 const hires = img.getAttribute('data-old-hires');
                 if (hires) urls.add(hires);
-                if (img.src) urls.add(img.src);
+                if (img.src && !img.src.startsWith('data:')) urls.add(img.src);
             });
             return Array.from(urls);
         }""")
+        for u in (raw or []):
+            _add(u)
     except Exception as e:
-        log.info(f"  [amazon] error extrayendo DOM: {e}")
-        return []
+        log.debug(f"  [amazon] DOM error: {e}")
 
-    out: list = []
-    seen_ids: set = set()
-    for u in (raw or []):
-        if not _is_amazon_product_image(u):
-            continue
-        orig = strip_size_token(u)
-        iid = _image_id(orig)
-        if iid in seen_ids:
-            continue
-        seen_ids.add(iid)
-        out.append(orig)
     return out
 
 
