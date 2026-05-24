@@ -327,14 +327,32 @@ def search_amazon_image_urls(title: str, barcode: str = "",
                 pass
             page.wait_for_timeout(1000)
 
-            # Verificar que la página Amazon es el producto buscado.
-            # DDG puede devolver ASINs de productos de la misma marca pero
-            # diferente referencia; el Jaccard descarta los que no coinciden.
+            # Detectar CAPTCHA / bot-detection antes de intentar extraer.
+            # Amazon sirve páginas simples muy rápido (~1-2s) cuando detecta bots;
+            # las páginas reales de producto tardan 5-10s en cargar.
+            try:
+                is_captcha = page.query_selector(
+                    '#captchacharacters, '
+                    'form[action*="validateCaptcha"], '
+                    '.a-box-inner h4'   # "Introduce los caracteres que ves..."
+                )
+                if is_captcha:
+                    log.info(f"  [amazon] CAPTCHA detectado en {purl} — saltando")
+                    continue
+            except Exception:
+                pass
+
+            # Verificar que el ASIN corresponde al producto buscado.
+            # DDG puede devolver ASINs de la misma marca pero distinta referencia.
             asin_title = ""
             try:
-                title_el = (page.query_selector("span#productTitle") or
-                            page.query_selector("#productTitle") or
-                            page.query_selector("h1#title span"))
+                title_el = (
+                    page.query_selector("span#productTitle") or
+                    page.query_selector("#productTitle") or
+                    page.query_selector("#title span") or
+                    page.query_selector("h1#title span") or
+                    page.query_selector("h1.a-size-large")
+                )
                 if title_el:
                     asin_title = title_el.inner_text().strip()
             except Exception:
@@ -348,7 +366,11 @@ def search_amazon_image_urls(title: str, barcode: str = "",
                              f"(sim={sim:.2f} < {AMAZON_MATCH_THRESHOLD})")
                     continue
             else:
-                log.info(f"  [amazon] #productTitle no encontrado en {purl}")
+                # Sin título: podría ser bot-detection o producto sin título visible.
+                # Intentar igualmente la extracción de imágenes; si colorImages
+                # está presente, la página cargó bien aunque el título no sea visible.
+                log.info(f"  [amazon] título no encontrado en {purl} "
+                         f"(posible bot-detection si también 0 imgs)")
 
             imgs = _extract_amazon_images(page)
             log.info(f"  [amazon] {len(imgs)} imgs en {purl}")
