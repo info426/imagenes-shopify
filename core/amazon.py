@@ -19,8 +19,41 @@ import json
 import logging
 import re
 import time
+import unicodedata
 
 log = logging.getLogger(__name__)
+
+# ─── Matching de título ───────────────────────────────────────────────────────
+
+_STOPWORDS = {
+    "de", "el", "la", "los", "las", "con", "sin", "y", "e", "o", "a", "para",
+    "un", "una", "al", "en", "por", "su", "se", "que",
+    "ml", "gr", "g", "kg", "l", "cm", "mm", "x", "ud", "uds",
+    "the", "for", "and", "or", "of", "with",
+}
+# Similitud mínima entre el título Shopify y el título de la página Amazon
+# para aceptar el ASIN. Descarta productos de la misma marca pero distinta
+# referencia (ej. "Champú Intensificador de Color" ≠ "Champú de Biotina").
+AMAZON_MATCH_THRESHOLD = 0.40
+
+
+def _norm(text: str) -> str:
+    text = unicodedata.normalize("NFD", text.lower())
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9\s]", " ", text)
+
+
+def _tok(text: str) -> set:
+    tokens = set(_norm(text).split())
+    tokens -= _STOPWORDS
+    return {t for t in tokens if len(t) > 1}
+
+
+def _title_sim(a: str, b: str) -> float:
+    ta, tb = _tok(a), _tok(b)
+    if not ta or not tb:
+        return 0.0
+    return len(ta & tb) / len(ta | tb)
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -293,6 +326,29 @@ def search_amazon_image_urls(title: str, barcode: str = "",
             except Exception:
                 pass
             page.wait_for_timeout(1000)
+
+            # Verificar que la página Amazon es el producto buscado.
+            # DDG puede devolver ASINs de productos de la misma marca pero
+            # diferente referencia; el Jaccard descarta los que no coinciden.
+            asin_title = ""
+            try:
+                title_el = (page.query_selector("span#productTitle") or
+                            page.query_selector("#productTitle") or
+                            page.query_selector("h1#title span"))
+                if title_el:
+                    asin_title = title_el.inner_text().strip()
+            except Exception:
+                pass
+
+            if asin_title:
+                sim = _title_sim(title, asin_title)
+                log.info(f"  [amazon] '{asin_title[:70]}' sim={sim:.2f}")
+                if sim < AMAZON_MATCH_THRESHOLD:
+                    log.info(f"  [amazon] ASIN descartado — título no coincide "
+                             f"(sim={sim:.2f} < {AMAZON_MATCH_THRESHOLD})")
+                    continue
+            else:
+                log.info(f"  [amazon] #productTitle no encontrado en {purl}")
 
             imgs = _extract_amazon_images(page)
             log.info(f"  [amazon] {len(imgs)} imgs en {purl}")
