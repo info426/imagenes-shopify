@@ -1,0 +1,1285 @@
+2026-05-24 20:56:38,556 [INFO] ============================================================
+2026-05-24 20:56:38,556 [INFO]   Vendor    : MENFORSAN
+2026-05-24 20:56:38,556 [INFO]   Modo      : ESCANEO MARCA
+2026-05-24 20:56:38,556 [INFO]   Pipeline  : standard
+2026-05-24 20:56:38,556 [INFO]   Padding   : auto
+2026-05-24 20:56:38,556 [INFO]   sRGB      : no
+2026-05-24 20:56:38,556 [INFO] ============================================================
+2026-05-24 20:56:39,463 [INFO] Total productos de 'MENFORSAN': 35
+2026-05-24 20:56:39,787 [INFO] 
+[1/35] CHAMPU ACONDICIONADOR 5L MENFORSAN  (ID 15509651194243) — 8 imágenes
+2026-05-24 20:56:40,074 [INFO]   pos 1: NO optimizada (jpg 1040×982) — reprocesando
+2026-05-24 20:56:40,264 [INFO]     cargada RGB (1040, 982) ← 61lHU0P_fZL._AC_SL1080.jpg
+2026-05-24 20:56:40,276 [INFO]     [bg] 2500/2500 (100%)
+2026-05-24 20:56:40,286 [INFO]     [autocrop] (1040, 982) → (1038, 979)
+2026-05-24 20:56:40,286 [INFO]     [padding 5%]
+2026-05-24 20:56:44,057 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_1.webp] en posición 1
+2026-05-24 20:56:44,558 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:56:44,720 [INFO]     cargada RGB (1080, 1080) ← 61D_JNXYAkL._AC_SL1080.jpg
+2026-05-24 20:56:44,731 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:56:44,731 [INFO]     [sin padding]
+2026-05-24 20:56:48,484 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_2.webp] en posición 2
+2026-05-24 20:56:48,986 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 20:56:49,114 [INFO]     cargada RGB (1080, 1050) ← 61P4FfSt0tL._AC_SL1080.jpg
+2026-05-24 20:56:49,125 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 20:56:49,125 [INFO]     [sin padding]
+2026-05-24 20:56:52,647 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_3.webp] en posición 3
+2026-05-24 20:56:53,148 [INFO]   pos 4: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 20:56:53,302 [INFO]     cargada RGB (1053, 1080) ← 61W_Z_CNPnL._AC_SL1080.jpg
+2026-05-24 20:56:53,314 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 20:56:53,325 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 20:56:53,325 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 20:56:53,325 [INFO]     [sin padding]
+2026-05-24 20:56:56,808 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_4.webp] en posición 4
+2026-05-24 20:56:57,310 [INFO]   pos 5: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:56:57,486 [INFO]     cargada RGB (1032, 1080) ← 61AbCtpykgL._AC_SL1080.jpg
+2026-05-24 20:56:57,497 [INFO]     [bg] 2573/2704 (95%)
+2026-05-24 20:56:57,507 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 20:56:57,507 [INFO]     [padding 5%]
+2026-05-24 20:57:00,795 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_5.webp] en posición 5
+2026-05-24 20:57:01,297 [INFO]   pos 6: NO optimizada (jpg 1080×1033) — reprocesando
+2026-05-24 20:57:01,421 [INFO]     cargada RGB (1080, 1033) ← 51HVDnosvgL._AC_SL1080.jpg
+2026-05-24 20:57:01,432 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 20:57:01,432 [INFO]     [sin padding]
+2026-05-24 20:57:04,819 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_6.webp] en posición 6
+2026-05-24 20:57:05,321 [INFO]   pos 7: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:05,436 [INFO]     cargada RGB (1080, 1080) ← 51ycyy3RsRL._AC_SL1080.jpg
+2026-05-24 20:57:05,446 [INFO]     [bg] 729/2916 (25%)
+2026-05-24 20:57:05,447 [INFO]     [sin padding]
+2026-05-24 20:57:08,540 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_7.webp] en posición 7
+2026-05-24 20:57:09,042 [INFO]   pos 8: NO optimizada (jpg 1359×1180) — reprocesando
+2026-05-24 20:57:09,184 [INFO]     cargada RGB (1359, 1180) ← 81Lfnfpx0FL._AC_SL1442.jpg
+2026-05-24 20:57:09,205 [INFO]     [bg] 2459/3600 (68%)
+2026-05-24 20:57:09,222 [INFO]     [autocrop] (1359, 1180) → (1359, 1179)
+2026-05-24 20:57:09,222 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 20:57:09,222 [INFO]     [sin padding]
+2026-05-24 20:57:13,604 [INFO]     ✓ reprocesada y subida [champu-acondicionador-5l-menforsan_8.webp] en posición 8
+2026-05-24 20:57:14,402 [INFO] 
+[2/35] CHAMPU PROTEINAS SEDA+ACEITE ARGAN 300ML MENFORSAN  (ID 15509651456387) — 6 imágenes
+2026-05-24 20:57:14,695 [INFO]   pos 1: NO optimizada (jpg 963×1037) — reprocesando
+2026-05-24 20:57:14,820 [INFO]     cargada RGB (963, 1037) ← 61CBilmL77L._AC_SL1080.jpg
+2026-05-24 20:57:14,831 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 20:57:14,841 [INFO]     [autocrop] (963, 1037) → (962, 1035)
+2026-05-24 20:57:14,841 [INFO]     [padding 5%]
+2026-05-24 20:57:18,283 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_1.webp] en posición 1
+2026-05-24 20:57:18,785 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:18,939 [INFO]     cargada RGB (1080, 1080) ← 61BShcNU7YL._AC_SL1080.jpg
+2026-05-24 20:57:18,952 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:57:18,952 [INFO]     [sin padding]
+2026-05-24 20:57:22,627 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_2.webp] en posición 2
+2026-05-24 20:57:23,129 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 20:57:23,264 [INFO]     cargada RGB (1080, 1050) ← 61XiSqBcb1L._AC_SL1080_966c0dbf-e3c8-4052-b5ef-e9b09fc6e774.jpg
+2026-05-24 20:57:23,275 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 20:57:23,275 [INFO]     [sin padding]
+2026-05-24 20:57:26,611 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_3.webp] en posición 3
+2026-05-24 20:57:27,113 [INFO]   pos 4: NO optimizada (jpg 1071×1080) — reprocesando
+2026-05-24 20:57:27,235 [INFO]     cargada RGB (1071, 1080) ← 61pm_VWeNrL._AC_SL1080.jpg
+2026-05-24 20:57:27,247 [INFO]     [bg] 2916/2916 (100%)
+2026-05-24 20:57:27,257 [INFO]     [autocrop] (1071, 1080) → (1069, 1080)
+2026-05-24 20:57:27,257 [INFO]     [padding 5%]
+2026-05-24 20:57:30,803 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_4.webp] en posición 4
+2026-05-24 20:57:31,305 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:31,465 [INFO]     cargada RGB (1080, 1080) ← 61MqwlW38cL._AC_SL1080.jpg
+2026-05-24 20:57:31,478 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:57:31,478 [INFO]     [sin padding]
+2026-05-24 20:57:35,252 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_5.webp] en posición 5
+2026-05-24 20:57:35,754 [INFO]   pos 6: NO optimizada (jpg 1500×1398) — reprocesando
+2026-05-24 20:57:35,924 [INFO]     cargada RGB (1500, 1398) ← 91N0KcfunxL._AC_SL1500.jpg
+2026-05-24 20:57:35,950 [INFO]     [bg] 3451/4900 (70%)
+2026-05-24 20:57:35,971 [INFO]     [autocrop] (1500, 1398) → (1500, 1361)
+2026-05-24 20:57:35,971 [INFO]     [fills-frame 100%×97%] → sin padding
+2026-05-24 20:57:35,971 [INFO]     [sin padding]
+2026-05-24 20:57:40,187 [INFO]     ✓ reprocesada y subida [champu-proteinas-seda-aceite-argan-300ml-menforsan_6.webp] en posición 6
+2026-05-24 20:57:41,015 [INFO] 
+[3/35] MENFORSAN AGUA DE COLONIA FRESH GATOS 125ML  (ID 15509651751299) — 6 imágenes
+2026-05-24 20:57:41,334 [INFO]   pos 1: NO optimizada (jpg 773×948) — reprocesando
+2026-05-24 20:57:41,502 [INFO]     cargada RGB (773, 948) ← 61CDDMBvwaL._AC_SL1080.jpg
+2026-05-24 20:57:41,510 [INFO]     [bg] 1444/1444 (100%)
+2026-05-24 20:57:41,517 [INFO]     [autocrop] (773, 948) → (772, 945)
+2026-05-24 20:57:41,517 [INFO]     [padding 5%]
+2026-05-24 20:57:45,380 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_1.webp] en posición 1
+2026-05-24 20:57:45,882 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:46,019 [INFO]     cargada RGB (1080, 1080) ← 61WnXzHYxRL._AC_SL1080.jpg
+2026-05-24 20:57:46,031 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:57:46,031 [INFO]     [sin padding]
+2026-05-24 20:57:49,586 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_2.webp] en posición 2
+2026-05-24 20:57:50,088 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:50,210 [INFO]     cargada RGB (1080, 1080) ← 612d72t6vRL._AC_SL1080.jpg
+2026-05-24 20:57:50,222 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:57:50,222 [INFO]     [sin padding]
+2026-05-24 20:57:53,719 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_3.webp] en posición 3
+2026-05-24 20:57:54,221 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:57:54,372 [INFO]     cargada RGB (1032, 1080) ← 61H49Fy3BOL._AC_SL1080.jpg
+2026-05-24 20:57:54,388 [INFO]     [bg] 2570/2704 (95%)
+2026-05-24 20:57:54,398 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 20:57:54,398 [INFO]     [padding 5%]
+2026-05-24 20:57:57,875 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_4.webp] en posición 4
+2026-05-24 20:57:58,378 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:57:58,491 [INFO]     cargada RGB (1080, 1080) ← 61IOK4mO4bL._AC_SL1080.jpg
+2026-05-24 20:57:58,502 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:57:58,502 [INFO]     [sin padding]
+2026-05-24 20:58:01,724 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_5.webp] en posición 5
+2026-05-24 20:58:02,226 [INFO]   pos 6: NO optimizada (jpg 866×616) — reprocesando
+2026-05-24 20:58:02,390 [INFO]     cargada RGB (866, 616) ← 61bE2R8SgiL._AC.jpg
+2026-05-24 20:58:02,398 [INFO]     [bg] 308/900 (34%)
+2026-05-24 20:58:02,398 [INFO]     [sin padding]
+2026-05-24 20:58:06,169 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-fresh-gatos-125ml_6.webp] en posición 6
+2026-05-24 20:58:06,994 [INFO] 
+[4/35] MENFORSAN AGUA DE COLONIA PERROS COCO 125ML  (ID 15509651882371) — 7 imágenes
+2026-05-24 20:58:07,303 [INFO]   pos 1: NO optimizada (jpg 947×967) — reprocesando
+2026-05-24 20:58:07,426 [INFO]     cargada RGB (947, 967) ← 61BQa2F_iFL._AC_SL1080.jpg
+2026-05-24 20:58:07,436 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 20:58:07,445 [INFO]     [autocrop] (947, 967) → (942, 965)
+2026-05-24 20:58:07,445 [INFO]     [padding 5%]
+2026-05-24 20:58:10,937 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_1.webp] en posición 1
+2026-05-24 20:58:11,439 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:58:11,578 [INFO]     cargada RGB (1080, 1080) ← 61pWF3wgRUL._AC_SL1080.jpg
+2026-05-24 20:58:11,591 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:58:11,591 [INFO]     [sin padding]
+2026-05-24 20:58:15,471 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_2.webp] en posición 2
+2026-05-24 20:58:15,973 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:58:16,139 [INFO]     cargada RGB (1080, 1080) ← 61gD-WO_wTL._AC_SL1080.jpg
+2026-05-24 20:58:16,151 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:58:16,152 [INFO]     [sin padding]
+2026-05-24 20:58:19,702 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_3.webp] en posición 3
+2026-05-24 20:58:20,205 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:58:20,329 [INFO]     cargada RGB (1032, 1080) ← 61ermvTZoEL._AC_SL1080.jpg
+2026-05-24 20:58:20,340 [INFO]     [bg] 2570/2704 (95%)
+2026-05-24 20:58:20,351 [INFO]     [autocrop] (1032, 1080) → (1030, 1080)
+2026-05-24 20:58:20,351 [INFO]     [padding 5%]
+2026-05-24 20:58:23,733 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_4.webp] en posición 4
+2026-05-24 20:58:24,235 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:58:24,379 [INFO]     cargada RGB (1080, 1080) ← 617DP6fHSZL._AC_SL1080.jpg
+2026-05-24 20:58:24,392 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:58:24,392 [INFO]     [sin padding]
+2026-05-24 20:58:28,002 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_5.webp] en posición 5
+2026-05-24 20:58:28,504 [INFO]   pos 6: NO optimizada (jpg 806×773) — reprocesando
+2026-05-24 20:58:28,676 [INFO]     cargada RGB (806, 773) ← 51rRKTNjUjL._AC_SL1087.jpg
+2026-05-24 20:58:28,683 [INFO]     [bg] 1299/1444 (90%)
+2026-05-24 20:58:28,690 [INFO]     [autocrop] (806, 773) → (804, 771)
+2026-05-24 20:58:28,690 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 20:58:28,690 [INFO]     [sin padding]
+2026-05-24 20:58:32,245 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_6.webp] en posición 6
+2026-05-24 20:58:32,748 [INFO]   pos 7: NO optimizada (jpg 866×613) — reprocesando
+2026-05-24 20:58:32,871 [INFO]     cargada RGB (866, 613) ← 61zsalbW1DL._AC.jpg
+2026-05-24 20:58:32,879 [INFO]     [bg] 314/900 (35%)
+2026-05-24 20:58:32,879 [INFO]     [sin padding]
+2026-05-24 20:58:36,749 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-coco-125ml_7.webp] en posición 7
+2026-05-24 20:58:37,579 [INFO] 
+[5/35] MENFORSAN AGUA DE COLONIA PERROS FRESA 125ML  (ID 15509651915139) — 6 imágenes
+2026-05-24 20:58:37,875 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 20:58:37,875 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 20:58:37,875 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:58:38,034 [INFO]     cargada RGB (1080, 1080) ← 61qVo_i20PL._AC_SL1080.jpg
+2026-05-24 20:58:38,047 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:58:38,047 [INFO]     [sin padding]
+2026-05-24 20:58:41,664 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresa-125ml_3.webp] en posición 3
+2026-05-24 20:58:42,166 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:58:42,298 [INFO]     cargada RGB (1032, 1080) ← 61cvj3j-pSL._AC_SL1080.jpg
+2026-05-24 20:58:42,310 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 20:58:42,320 [INFO]     [autocrop] (1032, 1080) → (1030, 1080)
+2026-05-24 20:58:42,320 [INFO]     [padding 5%]
+2026-05-24 20:58:45,690 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresa-125ml_4.webp] en posición 4
+2026-05-24 20:58:46,192 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:58:46,361 [INFO]     cargada RGB (1080, 1080) ← 61drgipXTsL._AC_SL1080.jpg
+2026-05-24 20:58:46,372 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:58:46,372 [INFO]     [sin padding]
+2026-05-24 20:58:49,813 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresa-125ml_5.webp] en posición 5
+2026-05-24 20:58:50,314 [INFO]   pos 6: NO optimizada (jpg 868×614) — reprocesando
+2026-05-24 20:58:50,465 [INFO]     cargada RGB (868, 614) ← 61vtaHgZd8L._AC.jpg
+2026-05-24 20:58:50,473 [INFO]     [bg] 314/900 (35%)
+2026-05-24 20:58:50,473 [INFO]     [sin padding]
+2026-05-24 20:58:54,428 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresa-125ml_6.webp] en posición 6
+2026-05-24 20:58:55,254 [INFO] 
+[6/35] MENFORSAN AGUA DE COLONIA PERROS FRESH 125ML  (ID 15509652046211) — 6 imágenes
+2026-05-24 20:58:55,548 [INFO]   pos 1: NO optimizada (jpg 977×977) — reprocesando
+2026-05-24 20:58:55,690 [INFO]     cargada RGB (977, 977) ← 61SRywRkGEL._AC_SL1080.jpg
+2026-05-24 20:58:55,701 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 20:58:55,711 [INFO]     [autocrop] (977, 977) → (974, 977)
+2026-05-24 20:58:55,711 [INFO]     [padding 5%]
+2026-05-24 20:58:59,322 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_1.webp] en posición 1
+2026-05-24 20:58:59,824 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:00,014 [INFO]     cargada RGB (1080, 1080) ← 6144KzUxgDL._AC_SL1080.jpg
+2026-05-24 20:59:00,028 [INFO]     [bg] 61/2916 (2%)
+2026-05-24 20:59:00,028 [INFO]     [sin padding]
+2026-05-24 20:59:03,658 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_2.webp] en posición 2
+2026-05-24 20:59:04,160 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:04,318 [INFO]     cargada RGB (1080, 1080) ← 61toZXNGPcL._AC_SL1080.jpg
+2026-05-24 20:59:04,331 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:04,331 [INFO]     [sin padding]
+2026-05-24 20:59:08,156 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_3.webp] en posición 3
+2026-05-24 20:59:08,657 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:59:08,784 [INFO]     cargada RGB (1032, 1080) ← 61eh3uj7utL._AC_SL1080_2a5989e5-3bda-408c-9d00-178265f21bb3.jpg
+2026-05-24 20:59:08,796 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 20:59:08,805 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 20:59:08,805 [INFO]     [padding 5%]
+2026-05-24 20:59:12,291 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_4.webp] en posición 4
+2026-05-24 20:59:12,794 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:12,929 [INFO]     cargada RGB (1080, 1080) ← 617TQZ3Q6iL._AC_SL1080.jpg
+2026-05-24 20:59:12,942 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:12,942 [INFO]     [sin padding]
+2026-05-24 20:59:16,758 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_5.webp] en posición 5
+2026-05-24 20:59:17,260 [INFO]   pos 6: NO optimizada (jpg 863×645) — reprocesando
+2026-05-24 20:59:17,400 [INFO]     cargada RGB (863, 645) ← 61pX321dcmL._AC.jpg
+2026-05-24 20:59:17,409 [INFO]     [bg] 646/1024 (63%)
+2026-05-24 20:59:17,415 [INFO]     [autocrop] (863, 645) → (863, 645)
+2026-05-24 20:59:17,415 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 20:59:17,415 [INFO]     [sin padding]
+2026-05-24 20:59:21,323 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-fresh-125ml_6.webp] en posición 6
+2026-05-24 20:59:22,412 [INFO] 
+[7/35] MENFORSAN AGUA DE COLONIA PERROS TALCO 125ML  (ID 15509652111747) — 6 imágenes
+2026-05-24 20:59:22,705 [INFO]   pos 1: NO optimizada (jpg 773×953) — reprocesando
+2026-05-24 20:59:22,833 [INFO]     cargada RGB (773, 953) ← 61rI1aJribL._AC_SL1080.jpg
+2026-05-24 20:59:22,841 [INFO]     [bg] 1444/1444 (100%)
+2026-05-24 20:59:22,848 [INFO]     [autocrop] (773, 953) → (771, 950)
+2026-05-24 20:59:22,848 [INFO]     [padding 5%]
+2026-05-24 20:59:26,419 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_1.webp] en posición 1
+2026-05-24 20:59:26,921 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:27,083 [INFO]     cargada RGB (1080, 1080) ← 617wEp3_-YL._AC_SL1080.jpg
+2026-05-24 20:59:27,095 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:27,095 [INFO]     [sin padding]
+2026-05-24 20:59:30,606 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_2.webp] en posición 2
+2026-05-24 20:59:31,108 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:31,280 [INFO]     cargada RGB (1080, 1080) ← 61hrmOddyZL._AC_SL1080.jpg
+2026-05-24 20:59:31,293 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:31,293 [INFO]     [sin padding]
+2026-05-24 20:59:34,937 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_3.webp] en posición 3
+2026-05-24 20:59:35,439 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 20:59:35,644 [INFO]     cargada RGB (1032, 1080) ← 61eh3uj7utL._AC_SL1080.jpg
+2026-05-24 20:59:35,655 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 20:59:35,665 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 20:59:35,665 [INFO]     [padding 5%]
+2026-05-24 20:59:38,967 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_4.webp] en posición 4
+2026-05-24 20:59:39,469 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:39,589 [INFO]     cargada RGB (1080, 1080) ← 51S1klxZbdL._AC_SL1080.jpg
+2026-05-24 20:59:39,600 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:39,601 [INFO]     [sin padding]
+2026-05-24 20:59:43,057 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_5.webp] en posición 5
+2026-05-24 20:59:43,560 [INFO]   pos 6: NO optimizada (jpg 866×615) — reprocesando
+2026-05-24 20:59:43,739 [INFO]     cargada RGB (866, 615) ← 61Y_vy8ymGL._AC.jpg
+2026-05-24 20:59:43,747 [INFO]     [bg] 308/900 (34%)
+2026-05-24 20:59:43,747 [INFO]     [sin padding]
+2026-05-24 20:59:47,642 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-perros-talco-125ml_6.webp] en posición 6
+2026-05-24 20:59:48,562 [INFO] 
+[8/35] MENFORSAN AGUA DE COLONIA TALCO GATOS 125ML  (ID 15509652144515) — 6 imágenes
+2026-05-24 20:59:48,862 [INFO]   pos 1: NO optimizada (jpg 773×948) — reprocesando
+2026-05-24 20:59:49,005 [INFO]     cargada RGB (773, 948) ← 61CDDMBvwaL._AC_SL1080_e1342c68-0252-4e85-b876-cb50fae2f492.jpg
+2026-05-24 20:59:49,014 [INFO]     [bg] 1444/1444 (100%)
+2026-05-24 20:59:49,021 [INFO]     [autocrop] (773, 948) → (772, 945)
+2026-05-24 20:59:49,022 [INFO]     [padding 5%]
+2026-05-24 20:59:52,465 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_1.webp] en posición 1
+2026-05-24 20:59:52,967 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:53,134 [INFO]     cargada RGB (1080, 1080) ← 61WnXzHYxRL._AC_SL1080_c647404b-e09a-4010-931a-e0d070379823.jpg
+2026-05-24 20:59:53,146 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:53,146 [INFO]     [sin padding]
+2026-05-24 20:59:56,745 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_2.webp] en posición 2
+2026-05-24 20:59:57,247 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 20:59:57,411 [INFO]     cargada RGB (1080, 1080) ← 612d72t6vRL._AC_SL1080_f784f265-54a4-4456-9738-7fe508a4e3ce.jpg
+2026-05-24 20:59:57,423 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 20:59:57,423 [INFO]     [sin padding]
+2026-05-24 21:00:01,030 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_3.webp] en posición 3
+2026-05-24 21:00:01,532 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:00:01,687 [INFO]     cargada RGB (1032, 1080) ← 61H49Fy3BOL._AC_SL1080_7f099aa4-11d4-4b33-a651-bb5660c09619.jpg
+2026-05-24 21:00:01,705 [INFO]     [bg] 2570/2704 (95%)
+2026-05-24 21:00:01,716 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 21:00:01,716 [INFO]     [padding 5%]
+2026-05-24 21:00:05,470 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_4.webp] en posición 4
+2026-05-24 21:00:05,972 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:06,112 [INFO]     cargada RGB (1080, 1080) ← 61IOK4mO4bL._AC_SL1080_a9e7e71b-de54-4e43-86aa-0daf3f3305e8.jpg
+2026-05-24 21:00:06,123 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:06,123 [INFO]     [sin padding]
+2026-05-24 21:00:09,579 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_5.webp] en posición 5
+2026-05-24 21:00:10,081 [INFO]   pos 6: NO optimizada (jpg 866×616) — reprocesando
+2026-05-24 21:00:10,271 [INFO]     cargada RGB (866, 616) ← 61bE2R8SgiL._AC_f8cc5386-a870-4a3b-a3f0-9a6b7f207c23.jpg
+2026-05-24 21:00:10,279 [INFO]     [bg] 308/900 (34%)
+2026-05-24 21:00:10,279 [INFO]     [sin padding]
+2026-05-24 21:00:14,344 [INFO]     ✓ reprocesada y subida [menforsan-agua-de-colonia-talco-gatos-125ml_6.webp] en posición 6
+2026-05-24 21:00:15,186 [INFO] 
+[9/35] MENFORSAN ANTIMANCHAS OJOS PERROS Y GATOS 125ML  (ID 15509652242819) — 7 imágenes
+2026-05-24 21:00:15,505 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 21:00:15,505 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:15,635 [INFO]     cargada RGB (1080, 1080) ← 61OQUekzdOL._AC_SL1080_a5fb3630-c6b6-492e-b6db-79d3330d11f8.jpg
+2026-05-24 21:00:15,650 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:15,650 [INFO]     [sin padding]
+2026-05-24 21:00:19,396 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_2.webp] en posición 2
+2026-05-24 21:00:19,898 [INFO]   pos 3: NO optimizada (jpg 1057×1080) — reprocesando
+2026-05-24 21:00:20,034 [INFO]     cargada RGB (1057, 1080) ← 616PvV-90mL._AC_SL1080_2739e199-d56f-4ab0-bf91-5a626a4f6374.jpg
+2026-05-24 21:00:20,046 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:00:20,056 [INFO]     [autocrop] (1057, 1080) → (1055, 1080)
+2026-05-24 21:00:20,056 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:00:20,056 [INFO]     [sin padding]
+2026-05-24 21:00:23,654 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_3.webp] en posición 3
+2026-05-24 21:00:24,156 [INFO]   pos 4: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:00:24,316 [INFO]     cargada RGB (1080, 1055) ← 61Gvgl_r51L._AC_SL1080_c6874bec-e629-4258-b367-52822bc3fa17.jpg
+2026-05-24 21:00:24,328 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:00:24,328 [INFO]     [sin padding]
+2026-05-24 21:00:28,118 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_4.webp] en posición 4
+2026-05-24 21:00:28,620 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:28,742 [INFO]     cargada RGB (1080, 1080) ← 51oKScpdVKL._AC_SL1080.jpg
+2026-05-24 21:00:28,754 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:28,754 [INFO]     [sin padding]
+2026-05-24 21:00:32,297 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_5.webp] en posición 5
+2026-05-24 21:00:32,798 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:32,971 [INFO]     cargada RGB (1080, 1080) ← 51AfCVA3ApL._AC_SL1080.jpg
+2026-05-24 21:00:32,981 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:32,981 [INFO]     [sin padding]
+2026-05-24 21:00:36,415 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_6.webp] en posición 6
+2026-05-24 21:00:36,917 [INFO]   pos 7: NO optimizada (jpg 864×615) — reprocesando
+2026-05-24 21:00:37,065 [INFO]     cargada RGB (864, 615) ← 71HDxX0mTxL._AC.jpg
+2026-05-24 21:00:37,074 [INFO]     [bg] 330/900 (37%)
+2026-05-24 21:00:37,074 [INFO]     [sin padding]
+2026-05-24 21:00:41,235 [INFO]     ✓ reprocesada y subida [menforsan-antimanchas-ojos-perros-y-gatos-125ml_7.webp] en posición 7
+2026-05-24 21:00:42,080 [INFO] 
+[10/35] MENFORSAN ANTIORINES PERROS Y GATOS  (ID 15509652439427) — 7 imágenes
+2026-05-24 21:00:42,401 [INFO]   pos 1: NO optimizada (jpg 480×1022) — reprocesando
+2026-05-24 21:00:42,559 [INFO]     cargada RGB (480, 1022) ← 41Y-VCoYVNL._AC_SL1080.jpg
+2026-05-24 21:00:42,564 [INFO]     [bg] 576/576 (100%)
+2026-05-24 21:00:42,569 [INFO]     [autocrop] (480, 1022) → (392, 1020)
+2026-05-24 21:00:42,569 [INFO]     [padding 5%]
+2026-05-24 21:00:46,285 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_1.webp] en posición 1
+2026-05-24 21:00:46,788 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:46,917 [INFO]     cargada RGB (1080, 1080) ← 61fh5vOddPL._AC_SL1080.jpg
+2026-05-24 21:00:46,931 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:46,931 [INFO]     [sin padding]
+2026-05-24 21:00:51,374 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_2.webp] en posición 2
+2026-05-24 21:00:51,876 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:00:51,999 [INFO]     cargada RGB (1080, 1080) ← 61EaM94LiXL._AC_SL1080.jpg
+2026-05-24 21:00:52,011 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:00:52,011 [INFO]     [sin padding]
+2026-05-24 21:00:55,755 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_3.webp] en posición 3
+2026-05-24 21:00:56,257 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:00:56,413 [INFO]     cargada RGB (1032, 1080) ← 61HcKYcxMVL._AC_SL1080.jpg
+2026-05-24 21:00:56,424 [INFO]     [bg] 2573/2704 (95%)
+2026-05-24 21:00:56,435 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 21:00:56,435 [INFO]     [padding 5%]
+2026-05-24 21:00:59,977 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_4.webp] en posición 4
+2026-05-24 21:01:00,479 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:01:00,638 [INFO]     cargada RGB (1080, 1080) ← 61WiNtUL79L._AC_SL1080.jpg
+2026-05-24 21:01:00,655 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:01:00,655 [INFO]     [sin padding]
+2026-05-24 21:01:04,573 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_5.webp] en posición 5
+2026-05-24 21:01:05,075 [INFO]   pos 6: NO optimizada (jpg 1347×1134) — reprocesando
+2026-05-24 21:01:05,222 [INFO]     cargada RGB (1347, 1134) ← 81BayPuUpSL._AC_SL1441.jpg
+2026-05-24 21:01:05,243 [INFO]     [bg] 1042/3136 (33%)
+2026-05-24 21:01:05,243 [INFO]     [sin padding]
+2026-05-24 21:01:09,775 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_6.webp] en posición 6
+2026-05-24 21:01:10,277 [INFO]   pos 7: NO optimizada (jpg 591×926) — reprocesando
+2026-05-24 21:01:10,423 [INFO]     cargada RGB (591, 926) ← 512ijTJYqWL._AC_SL1080.jpg
+2026-05-24 21:01:10,429 [INFO]     [bg] 900/900 (100%)
+2026-05-24 21:01:10,435 [INFO]     [autocrop] (591, 926) → (504, 920)
+2026-05-24 21:01:10,435 [INFO]     [fills-frame 85%×99%] → sin padding
+2026-05-24 21:01:10,435 [INFO]     [sin padding]
+2026-05-24 21:01:14,051 [INFO]     ✓ reprocesada y subida [menforsan-antiorines-perros-y-gatos_7.webp] en posición 7
+2026-05-24 21:01:14,879 [INFO] 
+[11/35] MENFORSAN ATRAYENTE DE MICCIONES 125ML  (ID 15509652504963) — 6 imágenes
+2026-05-24 21:01:15,231 [INFO]   pos 1: NO optimizada (jpg 380×1500) — reprocesando
+2026-05-24 21:01:15,418 [INFO]     cargada RGB (380, 1500) ← 61PZ3-4B1eL._AC_SL1500.jpg
+2026-05-24 21:01:15,423 [INFO]     [bg] 400/400 (100%)
+2026-05-24 21:01:15,428 [INFO]     [autocrop] (380, 1500) → (377, 1496)
+2026-05-24 21:01:15,429 [INFO]     [padding 5%]
+2026-05-24 21:01:18,564 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_1.webp] en posición 1
+2026-05-24 21:01:19,066 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:01:19,263 [INFO]     cargada RGB (1080, 1080) ← 61oo3bdE63L._AC_SL1080.jpg
+2026-05-24 21:01:19,275 [INFO]     [bg] 27/2916 (1%)
+2026-05-24 21:01:19,275 [INFO]     [sin padding]
+2026-05-24 21:01:22,800 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_2.webp] en posición 2
+2026-05-24 21:01:23,302 [INFO]   pos 3: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:01:23,418 [INFO]     cargada RGB (1080, 1055) ← 5154LbyxUGL._AC_SL1080.jpg
+2026-05-24 21:01:23,429 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:01:23,429 [INFO]     [sin padding]
+2026-05-24 21:01:26,815 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_3.webp] en posición 3
+2026-05-24 21:01:27,317 [INFO]   pos 4: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:01:27,463 [INFO]     cargada RGB (1032, 1080) ← 610Qdhf1yiL._AC_SL1080.jpg
+2026-05-24 21:01:27,477 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 21:01:27,487 [INFO]     [autocrop] (1032, 1080) → (1030, 1080)
+2026-05-24 21:01:27,487 [INFO]     [padding 5%]
+2026-05-24 21:01:30,923 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_4.webp] en posición 4
+2026-05-24 21:01:31,425 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:01:31,558 [INFO]     cargada RGB (1080, 1080) ← 61IpoJ_xy8L._AC_SL1080.jpg
+2026-05-24 21:01:31,570 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:01:31,570 [INFO]     [sin padding]
+2026-05-24 21:01:35,196 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_5.webp] en posición 5
+2026-05-24 21:01:35,698 [INFO]   pos 6: NO optimizada (jpg 1080×824) — reprocesando
+2026-05-24 21:01:35,841 [INFO]     cargada RGB (1080, 824) ← 71dS1qBZ_aS._AC_SL1080.jpg
+2026-05-24 21:01:35,852 [INFO]     [bg] 1316/1764 (75%)
+2026-05-24 21:01:35,862 [INFO]     [autocrop] (1080, 824) → (1078, 822)
+2026-05-24 21:01:35,862 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:01:35,862 [INFO]     [sin padding]
+2026-05-24 21:01:39,805 [INFO]     ✓ reprocesada y subida [menforsan-atrayente-de-micciones-125ml_6.webp] en posición 6
+2026-05-24 21:01:40,651 [INFO] 
+[12/35] MENFORSAN CHAMPU ACEITE DE VISON 300ML  (ID 15509652603267) — 6 imágenes
+2026-05-24 21:01:40,951 [INFO]   pos 1: NO optimizada (jpg 930×1039) — reprocesando
+2026-05-24 21:01:41,076 [INFO]     cargada RGB (930, 1039) ← 61Qj9D_lsEL._AC_SL1080.jpg
+2026-05-24 21:01:41,086 [INFO]     [bg] 2116/2116 (100%)
+2026-05-24 21:01:41,095 [INFO]     [autocrop] (930, 1039) → (928, 1039)
+2026-05-24 21:01:41,095 [INFO]     [padding 5%]
+2026-05-24 21:01:44,806 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_1.webp] en posición 1
+2026-05-24 21:01:45,308 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:01:45,427 [INFO]     cargada RGB (1080, 1080) ← 61VFStxyNCL._AC_SL1080.jpg
+2026-05-24 21:01:45,440 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:01:45,440 [INFO]     [sin padding]
+2026-05-24 21:01:49,224 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_2.webp] en posición 2
+2026-05-24 21:01:49,726 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:01:49,885 [INFO]     cargada RGB (1080, 1050) ← 61XiSqBcb1L._AC_SL1080.jpg
+2026-05-24 21:01:49,897 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:01:49,897 [INFO]     [sin padding]
+2026-05-24 21:01:53,412 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_3.webp] en posición 3
+2026-05-24 21:01:53,914 [INFO]   pos 4: NO optimizada (jpg 1047×1080) — reprocesando
+2026-05-24 21:01:54,043 [INFO]     cargada RGB (1047, 1080) ← 6193dsD1Q1L._AC_SL1080.jpg
+2026-05-24 21:01:54,055 [INFO]     [bg] 2667/2704 (99%)
+2026-05-24 21:01:54,065 [INFO]     [autocrop] (1047, 1080) → (1045, 1080)
+2026-05-24 21:01:54,065 [INFO]     [padding 5%]
+2026-05-24 21:01:57,743 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_4.webp] en posición 4
+2026-05-24 21:01:58,246 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:01:58,409 [INFO]     cargada RGB (1080, 1080) ← 61ALagatm-L._AC_SL1080.jpg
+2026-05-24 21:01:58,421 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:01:58,421 [INFO]     [sin padding]
+2026-05-24 21:02:01,999 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_5.webp] en posición 5
+2026-05-24 21:02:02,501 [INFO]   pos 6: NO optimizada (jpg 1500×1245) — reprocesando
+2026-05-24 21:02:02,645 [INFO]     cargada RGB (1500, 1245) ← 81nxpu2StNL._AC_SL1500.jpg
+2026-05-24 21:02:02,668 [INFO]     [bg] 1939/3844 (50%)
+2026-05-24 21:02:02,668 [INFO]     [sin padding]
+2026-05-24 21:02:06,653 [INFO]     ✓ reprocesada y subida [menforsan-champu-aceite-de-vison-300ml_6.webp] en posición 6
+2026-05-24 21:02:07,477 [INFO] 
+[13/35] MENFORSAN CHAMPU ACONDICIONADOR 300ML  (ID 15509652701571) — 7 imágenes
+2026-05-24 21:02:07,774 [INFO]   pos 1: NO optimizada (jpg 963×1040) — reprocesando
+2026-05-24 21:02:07,901 [INFO]     cargada RGB (963, 1040) ← 61EqGqo495L._AC_SL1080.jpg
+2026-05-24 21:02:07,912 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 21:02:07,921 [INFO]     [autocrop] (963, 1040) → (961, 1039)
+2026-05-24 21:02:07,921 [INFO]     [padding 5%]
+2026-05-24 21:02:11,532 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_1.webp] en posición 1
+2026-05-24 21:02:12,034 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:02:12,163 [INFO]     cargada RGB (1080, 1080) ← 61jCxQO-igL._AC_SL1080.jpg
+2026-05-24 21:02:12,176 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:02:12,176 [INFO]     [sin padding]
+2026-05-24 21:02:15,917 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_2.webp] en posición 2
+2026-05-24 21:02:16,420 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:02:16,583 [INFO]     cargada RGB (1080, 1050) ← 61P4FfSt0tL._AC_SL1080_d544882c-cb59-454c-bb5b-ee1b7183aa9d.jpg
+2026-05-24 21:02:16,598 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:02:16,598 [INFO]     [sin padding]
+2026-05-24 21:02:20,347 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_3.webp] en posición 3
+2026-05-24 21:02:20,850 [INFO]   pos 4: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:02:21,004 [INFO]     cargada RGB (1053, 1080) ← 61W_Z_CNPnL._AC_SL1080_13349fc8-eb43-4897-a2c2-417ba5378345.jpg
+2026-05-24 21:02:21,015 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:02:21,026 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:02:21,026 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:02:21,026 [INFO]     [sin padding]
+2026-05-24 21:02:24,668 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_4.webp] en posición 4
+2026-05-24 21:02:25,171 [INFO]   pos 5: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:02:25,310 [INFO]     cargada RGB (1032, 1080) ← 61AbCtpykgL._AC_SL1080_d42dfa0e-bdcc-412f-913e-08e9e9b8333e.jpg
+2026-05-24 21:02:25,321 [INFO]     [bg] 2573/2704 (95%)
+2026-05-24 21:02:25,331 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 21:02:25,332 [INFO]     [padding 5%]
+2026-05-24 21:02:29,054 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_5.webp] en posición 5
+2026-05-24 21:02:29,556 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:02:29,682 [INFO]     cargada RGB (1080, 1080) ← 61v7xRyf25L._AC_SL1080.jpg
+2026-05-24 21:02:29,694 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:02:29,694 [INFO]     [sin padding]
+2026-05-24 21:02:33,149 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_6.webp] en posición 6
+2026-05-24 21:02:33,651 [INFO]   pos 7: NO optimizada (jpg 1500×1256) — reprocesando
+2026-05-24 21:02:33,837 [INFO]     cargada RGB (1500, 1256) ← 81Nxm1dbuYL._AC_SL1500.jpg
+2026-05-24 21:02:33,865 [INFO]     [bg] 2129/3844 (55%)
+2026-05-24 21:02:33,865 [INFO]     [sin padding]
+2026-05-24 21:02:38,273 [INFO]     ✓ reprocesada y subida [menforsan-champu-acondicionador-300ml_7.webp] en posición 7
+2026-05-24 21:02:39,112 [INFO] 
+[14/35] MENFORSAN CHAMPU ALOE VERA  (ID 15509652865411) — 9 imágenes
+2026-05-24 21:02:39,418 [INFO]   pos 1: NO optimizada (jpg 947×1037) — reprocesando
+2026-05-24 21:02:39,541 [INFO]     cargada RGB (947, 1037) ← 61v8ZT_j_LL._AC_SL1080.jpg
+2026-05-24 21:02:39,551 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 21:02:39,560 [INFO]     [autocrop] (947, 1037) → (945, 1035)
+2026-05-24 21:02:39,560 [INFO]     [padding 5%]
+2026-05-24 21:02:43,300 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_1.webp] en posición 1
+2026-05-24 21:02:43,802 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:02:43,931 [INFO]     cargada RGB (1080, 1080) ← 71NR0JmU5CL._AC_SL1080.jpg
+2026-05-24 21:02:43,946 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:02:43,946 [INFO]     [sin padding]
+2026-05-24 21:02:48,102 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_2.webp] en posición 2
+2026-05-24 21:02:48,604 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:02:48,767 [INFO]     cargada RGB (1080, 1050) ← 61E587bfChL._AC_SL1080.jpg
+2026-05-24 21:02:48,779 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:02:48,779 [INFO]     [sin padding]
+2026-05-24 21:02:52,547 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_3.webp] en posición 3
+2026-05-24 21:02:53,049 [INFO]   pos 4: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:02:53,220 [INFO]     cargada RGB (1053, 1080) ← 615jn9gFqcL._AC_SL1080.jpg
+2026-05-24 21:02:53,232 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:02:53,242 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:02:53,242 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:02:53,242 [INFO]     [sin padding]
+2026-05-24 21:02:56,753 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_4.webp] en posición 4
+2026-05-24 21:02:57,255 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:02:57,422 [INFO]     cargada RGB (1080, 1080) ← 61JeaBTT7NL._AC_SL1080.jpg
+2026-05-24 21:02:57,435 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:02:57,435 [INFO]     [sin padding]
+2026-05-24 21:03:01,179 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_5.webp] en posición 5
+2026-05-24 21:03:01,684 [INFO]   pos 6: NO optimizada (jpg 1500×1237) — reprocesando
+2026-05-24 21:03:01,832 [INFO]     cargada RGB (1500, 1237) ← 81cN9DSdjcL._AC_SL1500.jpg
+2026-05-24 21:03:01,856 [INFO]     [bg] 1763/3844 (46%)
+2026-05-24 21:03:01,856 [INFO]     [sin padding]
+2026-05-24 21:03:06,169 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_6.webp] en posición 6
+2026-05-24 21:03:06,671 [INFO]   pos 7: NO optimizada (jpg 1050×982) — reprocesando
+2026-05-24 21:03:06,804 [INFO]     cargada RGB (1050, 982) ← 61xuCL9X7uL._AC_SL1080.jpg
+2026-05-24 21:03:06,816 [INFO]     [bg] 2500/2500 (100%)
+2026-05-24 21:03:06,826 [INFO]     [autocrop] (1050, 982) → (1047, 979)
+2026-05-24 21:03:06,826 [INFO]     [padding 5%]
+2026-05-24 21:03:10,413 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_7.webp] en posición 7
+2026-05-24 21:03:10,915 [INFO]   pos 8: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:03:11,064 [INFO]     cargada RGB (1080, 1080) ← 51MXKafVCAL._AC_SL1080.jpg
+2026-05-24 21:03:11,075 [INFO]     [bg] 729/2916 (25%)
+2026-05-24 21:03:11,075 [INFO]     [sin padding]
+2026-05-24 21:03:14,259 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_8.webp] en posición 8
+2026-05-24 21:03:14,761 [INFO]   pos 9: NO optimizada (jpg 1080×1033) — reprocesando
+2026-05-24 21:03:14,903 [INFO]     cargada RGB (1080, 1033) ← 51x9IZA8kvL._AC_SL1080.jpg
+2026-05-24 21:03:14,914 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:03:14,914 [INFO]     [sin padding]
+2026-05-24 21:03:18,360 [INFO]     ✓ reprocesada y subida [menforsan-champu-aloe-vera_9.webp] en posición 9
+2026-05-24 21:03:19,173 [INFO] 
+[15/35] MENFORSAN CHAMPU ARBOL DE TE 300ML  (ID 15509652930947) — 7 imágenes
+2026-05-24 21:03:19,516 [INFO]   pos 1: NO optimizada (jpg 984×1048) — reprocesando
+2026-05-24 21:03:19,642 [INFO]     cargada RGB (984, 1048) ← 61ZKnLxmEbL._AC_SL1080.jpg
+2026-05-24 21:03:19,654 [INFO]     [bg] 2500/2500 (100%)
+2026-05-24 21:03:19,663 [INFO]     [autocrop] (984, 1048) → (982, 1046)
+2026-05-24 21:03:19,663 [INFO]     [padding 5%]
+2026-05-24 21:03:23,489 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_1.webp] en posición 1
+2026-05-24 21:03:23,991 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:03:24,118 [INFO]     cargada RGB (1080, 1080) ← 71yYwL5iRjL._AC_SL1080.jpg
+2026-05-24 21:03:24,132 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:03:24,132 [INFO]     [sin padding]
+2026-05-24 21:03:28,323 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_2.webp] en posición 2
+2026-05-24 21:03:28,825 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:03:28,951 [INFO]     cargada RGB (1080, 1050) ← 61MgoOZ2T1L._AC_SL1080.jpg
+2026-05-24 21:03:28,963 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:03:28,963 [INFO]     [sin padding]
+2026-05-24 21:03:32,506 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_3.webp] en posición 3
+2026-05-24 21:03:33,008 [INFO]   pos 4: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:03:33,159 [INFO]     cargada RGB (1053, 1080) ← 61dMIA6rcNL._AC_SL1080.jpg
+2026-05-24 21:03:33,170 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:03:33,181 [INFO]     [autocrop] (1053, 1080) → (1052, 1080)
+2026-05-24 21:03:33,181 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:03:33,181 [INFO]     [sin padding]
+2026-05-24 21:03:36,774 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_4.webp] en posición 4
+2026-05-24 21:03:37,276 [INFO]   pos 5: NO optimizada (jpg 1071×1080) — reprocesando
+2026-05-24 21:03:37,408 [INFO]     cargada RGB (1071, 1080) ← 61PvbLTZ6oL._AC_SL1080.jpg
+2026-05-24 21:03:37,421 [INFO]     [bg] 2916/2916 (100%)
+2026-05-24 21:03:37,432 [INFO]     [autocrop] (1071, 1080) → (1070, 1080)
+2026-05-24 21:03:37,432 [INFO]     [padding 5%]
+2026-05-24 21:03:41,026 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_5.webp] en posición 5
+2026-05-24 21:03:41,528 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:03:41,663 [INFO]     cargada RGB (1080, 1080) ← 61oKGp7V_lL._AC_SL1080.jpg
+2026-05-24 21:03:41,676 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:03:41,676 [INFO]     [sin padding]
+2026-05-24 21:03:45,240 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_6.webp] en posición 6
+2026-05-24 21:03:45,742 [INFO]   pos 7: NO optimizada (jpg 1500×1242) — reprocesando
+2026-05-24 21:03:45,935 [INFO]     cargada RGB (1500, 1242) ← 81Hp5PJBS8L._AC_SL1500.jpg
+2026-05-24 21:03:45,958 [INFO]     [bg] 1783/3844 (46%)
+2026-05-24 21:03:45,958 [INFO]     [sin padding]
+2026-05-24 21:03:49,997 [INFO]     ✓ reprocesada y subida [menforsan-champu-arbol-de-te-300ml_7.webp] en posición 7
+2026-05-24 21:03:50,842 [INFO] 
+[16/35] MENFORSAN CHAMPU BIOTINA PARA CABALLO 1L  (ID 15509651259779) — 8 imágenes
+2026-05-24 21:03:51,133 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 21:03:51,133 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:03:51,295 [INFO]     cargada RGB (1500, 1500) ← 81QOV2jF23L._AC_SL1500.jpg
+2026-05-24 21:03:51,316 [INFO]     [bg] 0/5776 (0%)
+2026-05-24 21:03:51,316 [INFO]     [sin padding]
+2026-05-24 21:03:55,227 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_2.webp] en posición 2
+2026-05-24 21:03:55,729 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:03:55,867 [INFO]     cargada RGB (1080, 1080) ← 61e0B3psilL._AC_SL1080.jpg
+2026-05-24 21:03:55,879 [INFO]     [bg] 58/2916 (2%)
+2026-05-24 21:03:55,879 [INFO]     [sin padding]
+2026-05-24 21:03:59,493 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_3.webp] en posición 3
+2026-05-24 21:03:59,995 [INFO]   pos 4: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:04:00,165 [INFO]     cargada RGB (1500, 1500) ← 61QSAH5pDVL._AC_SL1500.jpg
+2026-05-24 21:04:00,184 [INFO]     [bg] 0/5776 (0%)
+2026-05-24 21:04:00,184 [INFO]     [sin padding]
+2026-05-24 21:04:03,671 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_4.webp] en posición 4
+2026-05-24 21:04:04,173 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:04:04,333 [INFO]     cargada RGB (1080, 1080) ← 61VwFds7gEL._AC_SL1080.jpg
+2026-05-24 21:04:04,346 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:04:04,346 [INFO]     [sin padding]
+2026-05-24 21:04:09,254 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_5.webp] en posición 5
+2026-05-24 21:04:09,755 [INFO]   pos 6: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:04:09,932 [INFO]     cargada RGB (1500, 1500) ← 819CELsjt2L._AC_SL1500.jpg
+2026-05-24 21:04:09,955 [INFO]     [bg] 0/5776 (0%)
+2026-05-24 21:04:09,955 [INFO]     [sin padding]
+2026-05-24 21:04:13,862 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_6.webp] en posición 6
+2026-05-24 21:04:14,364 [INFO]   pos 7: NO optimizada (jpg 1500×1229) — reprocesando
+2026-05-24 21:04:14,506 [INFO]     cargada RGB (1500, 1229) ← 71ibud1bNJL._AC_SL1500.jpg
+2026-05-24 21:04:14,527 [INFO]     [bg] 84/3844 (2%)
+2026-05-24 21:04:14,527 [INFO]     [sin padding]
+2026-05-24 21:04:18,654 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_7.webp] en posición 7
+2026-05-24 21:04:19,157 [INFO]   pos 8: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:04:19,328 [INFO]     cargada RGB (1500, 1500) ← 71toKtou3ML._AC_SL1500.jpg
+2026-05-24 21:04:19,351 [INFO]     [bg] 0/5776 (0%)
+2026-05-24 21:04:19,351 [INFO]     [sin padding]
+2026-05-24 21:04:23,311 [INFO]     ✓ reprocesada y subida [menforsan-champu-biotina-para-caballo-1l_8.webp] en posición 8
+2026-05-24 21:04:24,119 [INFO] 
+[17/35] MENFORSAN CHAMPU ELIMINADOR DE OLORES TALCO 300ML  (ID 15509652963715) — 6 imágenes
+2026-05-24 21:04:24,415 [INFO]   pos 1: NO optimizada (jpg 912×1049) — reprocesando
+2026-05-24 21:04:24,579 [INFO]     cargada RGB (912, 1049) ← 61rBlp3cVHL._AC_SL1080.jpg
+2026-05-24 21:04:24,589 [INFO]     [bg] 2116/2116 (100%)
+2026-05-24 21:04:24,599 [INFO]     [autocrop] (912, 1049) → (909, 1049)
+2026-05-24 21:04:24,599 [INFO]     [padding 5%]
+2026-05-24 21:04:28,161 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_1.webp] en posición 1
+2026-05-24 21:04:28,663 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:04:28,796 [INFO]     cargada RGB (1080, 1080) ← 61zLJKqd9gL._AC_SL1080.jpg
+2026-05-24 21:04:28,808 [INFO]     [bg] 6/2916 (0%)
+2026-05-24 21:04:28,808 [INFO]     [sin padding]
+2026-05-24 21:04:32,466 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_2.webp] en posición 2
+2026-05-24 21:04:32,968 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:04:33,108 [INFO]     cargada RGB (1080, 1050) ← 61Iwp0mz9BL._AC_SL1080.jpg
+2026-05-24 21:04:33,120 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:04:33,120 [INFO]     [sin padding]
+2026-05-24 21:04:36,599 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_3.webp] en posición 3
+2026-05-24 21:04:37,101 [INFO]   pos 4: NO optimizada (jpg 1047×1080) — reprocesando
+2026-05-24 21:04:37,233 [INFO]     cargada RGB (1047, 1080) ← 619lPz5lIhL._AC_SL1080.jpg
+2026-05-24 21:04:37,244 [INFO]     [bg] 2667/2704 (99%)
+2026-05-24 21:04:37,255 [INFO]     [autocrop] (1047, 1080) → (1045, 1080)
+2026-05-24 21:04:37,255 [INFO]     [padding 5%]
+2026-05-24 21:04:40,728 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_4.webp] en posición 4
+2026-05-24 21:04:41,230 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:04:41,410 [INFO]     cargada RGB (1080, 1080) ← 61BHmZ2PCkL._AC_SL1080.jpg
+2026-05-24 21:04:41,423 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:04:41,423 [INFO]     [sin padding]
+2026-05-24 21:04:45,173 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_5.webp] en posición 5
+2026-05-24 21:04:45,675 [INFO]   pos 6: NO optimizada (jpg 1500×1293) — reprocesando
+2026-05-24 21:04:45,861 [INFO]     cargada RGB (1500, 1293) ← 81ugXAAzdSL._AC_SL1500.jpg
+2026-05-24 21:04:45,886 [INFO]     [bg] 3091/4096 (75%)
+2026-05-24 21:04:45,905 [INFO]     [autocrop] (1500, 1293) → (1500, 1293)
+2026-05-24 21:04:45,905 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:04:45,905 [INFO]     [sin padding]
+2026-05-24 21:04:50,618 [INFO]     ✓ reprocesada y subida [menforsan-champu-eliminador-de-olores-talco-300ml_6.webp] en posición 6
+2026-05-24 21:04:51,458 [INFO] 
+[18/35] MENFORSAN CHAMPU EN ESPUMA CON ALOE VERA GATOS 200ML  (ID 15509652996483) — 6 imágenes
+2026-05-24 21:04:51,744 [INFO]   pos 1: NO optimizada (webp 600×713) — reprocesando
+2026-05-24 21:04:51,930 [INFO]     cargada RGBA (600, 713) ← champu-en-espuma-con-aloe-vera-para-gatos-200ml.webp
+2026-05-24 21:04:51,940 [INFO]     [alpha] 81% transparente
+2026-05-24 21:04:51,945 [INFO]     [bg] 900/900 (100%)
+2026-05-24 21:04:51,948 [INFO]     [autocrop] (600, 713) → (381, 535)
+2026-05-24 21:04:51,948 [INFO]     [padding 5%]
+2026-05-24 21:04:55,095 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_1.webp] en posición 1
+2026-05-24 21:04:55,597 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:04:55,726 [INFO]     cargada RGB (1080, 1080) ← 61vv_z-q8dL._AC_SL1080.jpg
+2026-05-24 21:04:55,738 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:04:55,738 [INFO]     [sin padding]
+2026-05-24 21:04:59,650 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_2.webp] en posición 2
+2026-05-24 21:05:00,152 [INFO]   pos 3: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:05:00,310 [INFO]     cargada RGB (1053, 1080) ← 61qECf1ccyL._AC_SL1080.jpg
+2026-05-24 21:05:00,323 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:05:00,333 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:05:00,333 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:00,334 [INFO]     [sin padding]
+2026-05-24 21:05:04,345 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_3.webp] en posición 3
+2026-05-24 21:05:04,847 [INFO]   pos 4: NO optimizada (jpg 1056×1080) — reprocesando
+2026-05-24 21:05:04,988 [INFO]     cargada RGB (1056, 1080) ← 61UpER9vfkL._AC_SL1080.jpg
+2026-05-24 21:05:05,001 [INFO]     [bg] 2044/2704 (76%)
+2026-05-24 21:05:05,012 [INFO]     [autocrop] (1056, 1080) → (1054, 1080)
+2026-05-24 21:05:05,012 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:05,012 [INFO]     [sin padding]
+2026-05-24 21:05:08,644 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_4.webp] en posición 4
+2026-05-24 21:05:09,147 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:05:09,275 [INFO]     cargada RGB (1080, 1080) ← 61It3xgZb2L._AC_SL1080.jpg
+2026-05-24 21:05:09,287 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:05:09,287 [INFO]     [sin padding]
+2026-05-24 21:05:12,745 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_5.webp] en posición 5
+2026-05-24 21:05:13,247 [INFO]   pos 6: NO optimizada (jpg 1047×915) — reprocesando
+2026-05-24 21:05:13,418 [INFO]     cargada RGB (1047, 915) ← 71CyLvVZSpL._AC_SL1119.jpg
+2026-05-24 21:05:13,432 [INFO]     [bg] 1344/2116 (64%)
+2026-05-24 21:05:13,443 [INFO]     [autocrop] (1047, 915) → (1047, 915)
+2026-05-24 21:05:13,443 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:13,443 [INFO]     [sin padding]
+2026-05-24 21:05:17,631 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-con-aloe-vera-gatos-200ml_6.webp] en posición 6
+2026-05-24 21:05:18,466 [INFO] 
+[19/35] MENFORSAN CHAMPU EN ESPUMA PARA PERROS 200ML  (ID 15509653062019) — 6 imágenes
+2026-05-24 21:05:18,776 [INFO]   pos 1: NO optimizada (jpg 756×980) — reprocesando
+2026-05-24 21:05:18,920 [INFO]     cargada RGB (756, 980) ← 51XdyZmkoTL._AC_SL1080.jpg
+2026-05-24 21:05:18,927 [INFO]     [bg] 1444/1444 (100%)
+2026-05-24 21:05:18,934 [INFO]     [autocrop] (756, 980) → (701, 966)
+2026-05-24 21:05:18,934 [INFO]     [fills-frame 93%×99%] → sin padding
+2026-05-24 21:05:18,934 [INFO]     [sin padding]
+2026-05-24 21:05:22,200 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_1.webp] en posición 1
+2026-05-24 21:05:22,702 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:05:22,828 [INFO]     cargada RGB (1080, 1080) ← 61olwW-IbBL._AC_SL1080.jpg
+2026-05-24 21:05:22,840 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:05:22,840 [INFO]     [sin padding]
+2026-05-24 21:05:26,796 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_2.webp] en posición 2
+2026-05-24 21:05:27,298 [INFO]   pos 3: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:05:27,449 [INFO]     cargada RGB (1053, 1080) ← 61AnHsGLm7L._AC_SL1080.jpg
+2026-05-24 21:05:27,461 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:05:27,471 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:05:27,471 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:27,471 [INFO]     [sin padding]
+2026-05-24 21:05:30,975 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_3.webp] en posición 3
+2026-05-24 21:05:31,478 [INFO]   pos 4: NO optimizada (jpg 1040×1080) — reprocesando
+2026-05-24 21:05:31,638 [INFO]     cargada RGB (1040, 1080) ← 61l3fwjz-BL._AC_SL1080.jpg
+2026-05-24 21:05:31,650 [INFO]     [bg] 2665/2704 (99%)
+2026-05-24 21:05:31,659 [INFO]     [autocrop] (1040, 1080) → (1036, 1080)
+2026-05-24 21:05:31,659 [INFO]     [padding 5%]
+2026-05-24 21:05:35,142 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_4.webp] en posición 4
+2026-05-24 21:05:35,644 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:05:35,813 [INFO]     cargada RGB (1080, 1080) ← 618EvtwqfBL._AC_SL1080.jpg
+2026-05-24 21:05:35,824 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:05:35,824 [INFO]     [sin padding]
+2026-05-24 21:05:39,447 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_5.webp] en posición 5
+2026-05-24 21:05:39,949 [INFO]   pos 6: NO optimizada (jpg 1047×914) — reprocesando
+2026-05-24 21:05:40,086 [INFO]     cargada RGB (1047, 914) ← 71rN3TayVuL._AC_SL1119.jpg
+2026-05-24 21:05:40,099 [INFO]     [bg] 1335/2116 (63%)
+2026-05-24 21:05:40,110 [INFO]     [autocrop] (1047, 914) → (1047, 912)
+2026-05-24 21:05:40,110 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:40,110 [INFO]     [sin padding]
+2026-05-24 21:05:44,168 [INFO]     ✓ reprocesada y subida [menforsan-champu-en-espuma-para-perros-200ml_6.webp] en posición 6
+2026-05-24 21:05:44,995 [INFO] 
+[20/35] MENFORSAN CHAMPU GERMEN DE TRIGO CACHORROS 300ML  (ID 15509653127555) — 7 imágenes
+2026-05-24 21:05:45,277 [INFO]   pos 1: NO optimizada (jpg 1006×1003) — reprocesando
+2026-05-24 21:05:45,434 [INFO]     cargada RGB (1006, 1003) ← 61BnyVmOGML._AC_SL1080.jpg
+2026-05-24 21:05:45,445 [INFO]     [bg] 2500/2500 (100%)
+2026-05-24 21:05:45,455 [INFO]     [autocrop] (1006, 1003) → (1005, 1002)
+2026-05-24 21:05:45,455 [INFO]     [padding 5%]
+2026-05-24 21:05:49,032 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_1.webp] en posición 1
+2026-05-24 21:05:49,534 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:05:49,666 [INFO]     cargada RGB (1080, 1080) ← 61aKPiNUyHL._AC_SL1080.jpg
+2026-05-24 21:05:49,678 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:05:49,678 [INFO]     [sin padding]
+2026-05-24 21:05:53,603 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_2.webp] en posición 2
+2026-05-24 21:05:54,105 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:05:54,244 [INFO]     cargada RGB (1080, 1050) ← 61O2YlnvAgL._AC_SL1080.jpg
+2026-05-24 21:05:54,255 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:05:54,255 [INFO]     [sin padding]
+2026-05-24 21:05:57,602 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_3.webp] en posición 3
+2026-05-24 21:05:58,104 [INFO]   pos 4: NO optimizada (jpg 1064×1080) — reprocesando
+2026-05-24 21:05:58,241 [INFO]     cargada RGB (1064, 1080) ← 613QRKwYGbL._AC_SL1080.jpg
+2026-05-24 21:05:58,253 [INFO]     [bg] 2187/2916 (75%)
+2026-05-24 21:05:58,264 [INFO]     [autocrop] (1064, 1080) → (1064, 1080)
+2026-05-24 21:05:58,264 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:05:58,264 [INFO]     [sin padding]
+2026-05-24 21:06:01,737 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_4.webp] en posición 4
+2026-05-24 21:06:02,239 [INFO]   pos 5: NO optimizada (jpg 1071×1080) — reprocesando
+2026-05-24 21:06:02,413 [INFO]     cargada RGB (1071, 1080) ← 615yu0NjfYL._AC_SL1080.jpg
+2026-05-24 21:06:02,425 [INFO]     [bg] 2916/2916 (100%)
+2026-05-24 21:06:02,436 [INFO]     [autocrop] (1071, 1080) → (1070, 1080)
+2026-05-24 21:06:02,436 [INFO]     [padding 5%]
+2026-05-24 21:06:05,884 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_5.webp] en posición 5
+2026-05-24 21:06:06,387 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:06:06,550 [INFO]     cargada RGB (1080, 1080) ← 61H8ouVYSfL._AC_SL1080.jpg
+2026-05-24 21:06:06,563 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:06:06,563 [INFO]     [sin padding]
+2026-05-24 21:06:10,540 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_6.webp] en posición 6
+2026-05-24 21:06:11,042 [INFO]   pos 7: NO optimizada (jpg 1500×1220) — reprocesando
+2026-05-24 21:06:11,230 [INFO]     cargada RGB (1500, 1220) ← 919rg9OSA0L._AC_SL1500.jpg
+2026-05-24 21:06:11,253 [INFO]     [bg] 1928/3844 (50%)
+2026-05-24 21:06:11,253 [INFO]     [sin padding]
+2026-05-24 21:06:15,571 [INFO]     ✓ reprocesada y subida [menforsan-champu-germen-de-trigo-cachorros-300ml_7.webp] en posición 7
+2026-05-24 21:06:16,399 [INFO] 
+[21/35] MENFORSAN CHAMPU MUY SUAVE GATOS 300ML  (ID 15509653225859) — 7 imágenes
+2026-05-24 21:06:16,703 [INFO]   pos 1: NO optimizada (jpg 979×1030) — reprocesando
+2026-05-24 21:06:16,882 [INFO]     cargada RGB (979, 1030) ← 61-RY9itt3L._AC_SL1080.jpg
+2026-05-24 21:06:16,893 [INFO]     [bg] 2304/2304 (100%)
+2026-05-24 21:06:16,902 [INFO]     [autocrop] (979, 1030) → (975, 1028)
+2026-05-24 21:06:16,902 [INFO]     [padding 5%]
+2026-05-24 21:06:20,512 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_1.webp] en posición 1
+2026-05-24 21:06:21,014 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:06:21,171 [INFO]     cargada RGB (1080, 1080) ← 61ftQgVKeTL._AC_SL1080.jpg
+2026-05-24 21:06:21,184 [INFO]     [bg] 27/2916 (1%)
+2026-05-24 21:06:21,184 [INFO]     [sin padding]
+2026-05-24 21:06:25,094 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_2.webp] en posición 2
+2026-05-24 21:06:25,596 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:06:25,738 [INFO]     cargada RGB (1080, 1050) ← 5171yLf5X5L._AC_SL1080.jpg
+2026-05-24 21:06:25,749 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:06:25,749 [INFO]     [sin padding]
+2026-05-24 21:06:29,057 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_3.webp] en posición 3
+2026-05-24 21:06:29,559 [INFO]   pos 4: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:06:29,718 [INFO]     cargada RGB (1053, 1080) ← 61-N-avMk4L._AC_SL1080.jpg
+2026-05-24 21:06:29,730 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:06:29,741 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:06:29,741 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:06:29,741 [INFO]     [sin padding]
+2026-05-24 21:06:33,237 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_4.webp] en posición 4
+2026-05-24 21:06:33,739 [INFO]   pos 5: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:06:33,883 [INFO]     cargada RGB (1032, 1080) ← 61-_q7s6OEL._AC_SL1080.jpg
+2026-05-24 21:06:33,895 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 21:06:33,905 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 21:06:33,905 [INFO]     [padding 5%]
+2026-05-24 21:06:37,378 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_5.webp] en posición 5
+2026-05-24 21:06:37,880 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:06:38,015 [INFO]     cargada RGB (1080, 1080) ← 61wlOBM154L._AC_SL1080.jpg
+2026-05-24 21:06:38,026 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:06:38,026 [INFO]     [sin padding]
+2026-05-24 21:06:41,892 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_6.webp] en posición 6
+2026-05-24 21:06:42,394 [INFO]   pos 7: NO optimizada (jpg 1500×1305) — reprocesando
+2026-05-24 21:06:42,554 [INFO]     cargada RGB (1500, 1305) ← 91yVaAWVXiL._AC_SL1500.jpg
+2026-05-24 21:06:42,577 [INFO]     [bg] 3941/4356 (90%)
+2026-05-24 21:06:42,596 [INFO]     [autocrop] (1500, 1305) → (1498, 1303)
+2026-05-24 21:06:42,596 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:06:42,596 [INFO]     [sin padding]
+2026-05-24 21:06:46,664 [INFO]     ✓ reprocesada y subida [menforsan-champu-muy-suave-gatos-300ml_7.webp] en posición 7
+2026-05-24 21:06:47,499 [INFO] 
+[22/35] MENFORSAN CHAMPU PELO BLANCO  (ID 15509653324163) — 9 imágenes
+2026-05-24 21:06:47,814 [INFO]   pos 1: NO optimizada (jpg 850×1023) — reprocesando
+2026-05-24 21:06:47,957 [INFO]     cargada RGB (850, 1023) ← 61q8-cXxXqL._AC_SL1080.jpg
+2026-05-24 21:06:47,967 [INFO]     [bg] 1764/1764 (100%)
+2026-05-24 21:06:47,975 [INFO]     [autocrop] (850, 1023) → (846, 1022)
+2026-05-24 21:06:47,975 [INFO]     [padding 5%]
+2026-05-24 21:06:51,697 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_1.webp] en posición 1
+2026-05-24 21:06:52,199 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:06:52,335 [INFO]     cargada RGB (1080, 1080) ← 612Vy4Ur7DL._AC_SL1080.jpg
+2026-05-24 21:06:52,347 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:06:52,347 [INFO]     [sin padding]
+2026-05-24 21:06:55,973 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_2.webp] en posición 2
+2026-05-24 21:06:56,476 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:06:56,636 [INFO]     cargada RGB (1080, 1050) ← 61v399GfjhL._AC_SL1080.jpg
+2026-05-24 21:06:56,648 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:06:56,648 [INFO]     [sin padding]
+2026-05-24 21:07:00,432 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_3.webp] en posición 3
+2026-05-24 21:07:00,934 [INFO]   pos 4: NO optimizada (jpg 1038×1080) — reprocesando
+2026-05-24 21:07:01,123 [INFO]     cargada RGB (1038, 1080) ← 61tCiREAcQL._AC_SL1080.jpg
+2026-05-24 21:07:01,135 [INFO]     [bg] 2665/2704 (99%)
+2026-05-24 21:07:01,146 [INFO]     [autocrop] (1038, 1080) → (1034, 1080)
+2026-05-24 21:07:01,146 [INFO]     [padding 5%]
+2026-05-24 21:07:04,630 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_4.webp] en posición 4
+2026-05-24 21:07:05,132 [INFO]   pos 5: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:07:05,268 [INFO]     cargada RGB (1053, 1080) ← 61RYJaCT2qL._AC_SL1080.jpg
+2026-05-24 21:07:05,279 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:07:05,290 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:07:05,290 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:07:05,290 [INFO]     [sin padding]
+2026-05-24 21:07:08,783 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_5.webp] en posición 5
+2026-05-24 21:07:09,285 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:07:09,452 [INFO]     cargada RGB (1080, 1080) ← 61CS24e52NL._AC_SL1080.jpg
+2026-05-24 21:07:09,463 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:07:09,463 [INFO]     [sin padding]
+2026-05-24 21:07:13,016 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_6.webp] en posición 6
+2026-05-24 21:07:13,517 [INFO]   pos 7: NO optimizada (jpg 1500×1242) — reprocesando
+2026-05-24 21:07:13,698 [INFO]     cargada RGB (1500, 1242) ← 81W2H0gPScL._AC_SL1500.jpg
+2026-05-24 21:07:13,727 [INFO]     [bg] 1879/3844 (49%)
+2026-05-24 21:07:13,727 [INFO]     [sin padding]
+2026-05-24 21:07:17,971 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_7.webp] en posición 7
+2026-05-24 21:07:18,473 [INFO]   pos 8: NO optimizada (jpg 1045×1032) — reprocesando
+2026-05-24 21:07:18,661 [INFO]     cargada RGB (1045, 1032) ← 61Pt13IL4rL._AC_SL1080.jpg
+2026-05-24 21:07:18,673 [INFO]     [bg] 2704/2704 (100%)
+2026-05-24 21:07:18,682 [INFO]     [autocrop] (1045, 1032) → (1043, 1029)
+2026-05-24 21:07:18,682 [INFO]     [padding 5%]
+2026-05-24 21:07:22,320 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_8.webp] en posición 8
+2026-05-24 21:07:22,826 [INFO]   pos 9: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:07:22,948 [INFO]     cargada RGB (1080, 1080) ← 518U625ljuL._AC_SL1080.jpg
+2026-05-24 21:07:22,959 [INFO]     [bg] 729/2916 (25%)
+2026-05-24 21:07:22,959 [INFO]     [sin padding]
+2026-05-24 21:07:26,403 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-blanco_9.webp] en posición 9
+2026-05-24 21:07:27,224 [INFO] 
+[23/35] MENFORSAN CHAMPU PELO HIDRATANTE 300ML  (ID 15509651390851) — 6 imágenes
+2026-05-24 21:07:27,522 [INFO]   pos 1: NO optimizada (jpg 899×1027) — reprocesando
+2026-05-24 21:07:27,654 [INFO]     cargada RGB (899, 1027) ← 614Um-6_5lL._AC_SL1080.jpg
+2026-05-24 21:07:27,663 [INFO]     [bg] 1936/1936 (100%)
+2026-05-24 21:07:27,671 [INFO]     [autocrop] (899, 1027) → (897, 1025)
+2026-05-24 21:07:27,671 [INFO]     [padding 5%]
+2026-05-24 21:07:31,041 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_1.webp] en posición 1
+2026-05-24 21:07:31,543 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:07:31,716 [INFO]     cargada RGB (1080, 1080) ← 61WUxteJ6EL._AC_SL1080.jpg
+2026-05-24 21:07:31,729 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:07:31,729 [INFO]     [sin padding]
+2026-05-24 21:07:35,839 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_2.webp] en posición 2
+2026-05-24 21:07:36,341 [INFO]   pos 3: NO optimizada (jpg 1053×1080) — reprocesando
+2026-05-24 21:07:36,468 [INFO]     cargada RGB (1053, 1080) ← 61OQGM_9cEL._AC_SL1080.jpg
+2026-05-24 21:07:36,479 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:07:36,489 [INFO]     [autocrop] (1053, 1080) → (1051, 1080)
+2026-05-24 21:07:36,489 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:07:36,489 [INFO]     [sin padding]
+2026-05-24 21:07:39,887 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_3.webp] en posición 3
+2026-05-24 21:07:40,390 [INFO]   pos 4: NO optimizada (jpg 1047×1080) — reprocesando
+2026-05-24 21:07:40,532 [INFO]     cargada RGB (1047, 1080) ← 61DDfm-wfML._AC_SL1080.jpg
+2026-05-24 21:07:40,544 [INFO]     [bg] 2665/2704 (99%)
+2026-05-24 21:07:40,554 [INFO]     [autocrop] (1047, 1080) → (1044, 1080)
+2026-05-24 21:07:40,554 [INFO]     [padding 5%]
+2026-05-24 21:07:44,470 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_4.webp] en posición 4
+2026-05-24 21:07:44,972 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:07:45,134 [INFO]     cargada RGB (1080, 1080) ← 61Zsb9Wx1oL._AC_SL1080.jpg
+2026-05-24 21:07:45,146 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:07:45,146 [INFO]     [sin padding]
+2026-05-24 21:07:48,900 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_5.webp] en posición 5
+2026-05-24 21:07:49,402 [INFO]   pos 6: NO optimizada (jpg 1500×1242) — reprocesando
+2026-05-24 21:07:49,569 [INFO]     cargada RGB (1500, 1242) ← 812es7kDfML._AC_SL1500.jpg
+2026-05-24 21:07:49,593 [INFO]     [bg] 1886/3844 (49%)
+2026-05-24 21:07:49,593 [INFO]     [sin padding]
+2026-05-24 21:07:53,670 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-hidratante-300ml_6.webp] en posición 6
+2026-05-24 21:07:54,487 [INFO] 
+[24/35] MENFORSAN CHAMPU PELO NEGRO 300ML  (ID 15509653455235) — 6 imágenes
+2026-05-24 21:07:54,802 [INFO]   pos 1: NO optimizada (jpg 876×1040) — reprocesando
+2026-05-24 21:07:54,963 [INFO]     cargada RGB (876, 1040) ← 61nETRNmLvL._AC_SL1080.jpg
+2026-05-24 21:07:54,973 [INFO]     [bg] 1936/1936 (100%)
+2026-05-24 21:07:54,982 [INFO]     [autocrop] (876, 1040) → (873, 1038)
+2026-05-24 21:07:54,982 [INFO]     [padding 5%]
+2026-05-24 21:07:58,633 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_1.webp] en posición 1
+2026-05-24 21:07:59,135 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:07:59,272 [INFO]     cargada RGB (1080, 1080) ← 61FaSYRp3xL._AC_SL1080.jpg
+2026-05-24 21:07:59,286 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:07:59,286 [INFO]     [sin padding]
+2026-05-24 21:08:03,208 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_2.webp] en posición 2
+2026-05-24 21:08:03,710 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:08:03,861 [INFO]     cargada RGB (1080, 1050) ← 51K6tJHypVL._AC_SL1080.jpg
+2026-05-24 21:08:03,872 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:08:03,872 [INFO]     [sin padding]
+2026-05-24 21:08:07,253 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_3.webp] en posición 3
+2026-05-24 21:08:07,754 [INFO]   pos 4: NO optimizada (jpg 1038×1080) — reprocesando
+2026-05-24 21:08:07,895 [INFO]     cargada RGB (1038, 1080) ← 61tlTyTPRYL._AC_SL1080.jpg
+2026-05-24 21:08:07,907 [INFO]     [bg] 2665/2704 (99%)
+2026-05-24 21:08:07,917 [INFO]     [autocrop] (1038, 1080) → (1034, 1080)
+2026-05-24 21:08:07,917 [INFO]     [padding 5%]
+2026-05-24 21:08:11,318 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_4.webp] en posición 4
+2026-05-24 21:08:11,820 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:08:11,996 [INFO]     cargada RGB (1080, 1080) ← 61Q6RmDwveL._AC_SL1080.jpg
+2026-05-24 21:08:12,008 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:08:12,008 [INFO]     [sin padding]
+2026-05-24 21:08:15,499 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_5.webp] en posición 5
+2026-05-24 21:08:16,001 [INFO]   pos 6: NO optimizada (jpg 1500×1242) — reprocesando
+2026-05-24 21:08:16,149 [INFO]     cargada RGB (1500, 1242) ← 81L5l1J9rJL._AC_SL1500.jpg
+2026-05-24 21:08:16,173 [INFO]     [bg] 1952/3844 (51%)
+2026-05-24 21:08:16,173 [INFO]     [sin padding]
+2026-05-24 21:08:20,381 [INFO]     ✓ reprocesada y subida [menforsan-champu-pelo-negro-300ml_6.webp] en posición 6
+2026-05-24 21:08:21,206 [INFO] 
+[25/35] MENFORSAN CHAMPU REPELENTE CON CITRONELA  (ID 15509653520771) — 7 imágenes
+2026-05-24 21:08:21,509 [INFO]   pos 1: NO optimizada (jpg 900×1027) — reprocesando
+2026-05-24 21:08:21,673 [INFO]     cargada RGB (900, 1027) ← 617JFhDBvbL._AC_SL1080.jpg
+2026-05-24 21:08:21,683 [INFO]     [bg] 2116/2116 (100%)
+2026-05-24 21:08:21,692 [INFO]     [autocrop] (900, 1027) → (898, 1025)
+2026-05-24 21:08:21,692 [INFO]     [padding 5%]
+2026-05-24 21:08:25,294 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_1.webp] en posición 1
+2026-05-24 21:08:25,796 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:08:25,921 [INFO]     cargada RGB (1080, 1080) ← 61IxjYscp4L._AC_SL1080.jpg
+2026-05-24 21:08:25,934 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:08:25,934 [INFO]     [sin padding]
+2026-05-24 21:08:29,924 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_2.webp] en posición 2
+2026-05-24 21:08:30,426 [INFO]   pos 3: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:08:30,584 [INFO]     cargada RGB (1080, 1050) ← 61TBhvDI3TL._AC_SL1080.jpg
+2026-05-24 21:08:30,596 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:08:30,596 [INFO]     [sin padding]
+2026-05-24 21:08:34,151 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_3.webp] en posición 3
+2026-05-24 21:08:34,653 [INFO]   pos 4: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:08:34,792 [INFO]     cargada RGB (1080, 1080) ← 61JZU_7HloL._AC_SL1080.jpg
+2026-05-24 21:08:34,803 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:08:34,803 [INFO]     [sin padding]
+2026-05-24 21:08:38,280 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_4.webp] en posición 4
+2026-05-24 21:08:38,782 [INFO]   pos 5: NO optimizada (jpg 1032×1080) — reprocesando
+2026-05-24 21:08:38,934 [INFO]     cargada RGB (1032, 1080) ← 61O3Ahr-2-L._AC_SL1080.jpg
+2026-05-24 21:08:38,945 [INFO]     [bg] 2572/2704 (95%)
+2026-05-24 21:08:38,955 [INFO]     [autocrop] (1032, 1080) → (1029, 1080)
+2026-05-24 21:08:38,955 [INFO]     [padding 5%]
+2026-05-24 21:08:42,330 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_5.webp] en posición 5
+2026-05-24 21:08:42,832 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:08:43,070 [INFO]     cargada RGB (1080, 1080) ← 61bnEf1TatL._AC_SL1080.jpg
+2026-05-24 21:08:43,083 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:08:43,083 [INFO]     [sin padding]
+2026-05-24 21:08:46,855 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_6.webp] en posición 6
+2026-05-24 21:08:47,357 [INFO]   pos 7: NO optimizada (jpg 1500×1247) — reprocesando
+2026-05-24 21:08:47,553 [INFO]     cargada RGB (1500, 1247) ← 81Qmt4LhlNL._AC_SL1500.jpg
+2026-05-24 21:08:47,579 [INFO]     [bg] 1806/3844 (47%)
+2026-05-24 21:08:47,579 [INFO]     [sin padding]
+2026-05-24 21:08:52,064 [INFO]     ✓ reprocesada y subida [menforsan-champu-repelente-con-citronela_7.webp] en posición 7
+2026-05-24 21:08:52,866 [INFO] 
+[26/35] MENFORSAN CREMA SUAVIZANTE DESENREDANTE PARA PERROS 300ML  (ID 15509653684611) — 5 imágenes
+2026-05-24 21:08:53,155 [INFO]   pos 1: NO optimizada (jpg 663×964) — reprocesando
+2026-05-24 21:08:53,280 [INFO]     cargada RGB (663, 964) ← 51hVcZrMxcL._AC_SL1080.jpg
+2026-05-24 21:08:53,286 [INFO]     [bg] 1156/1156 (100%)
+2026-05-24 21:08:53,293 [INFO]     [autocrop] (663, 964) → (659, 952)
+2026-05-24 21:08:53,293 [INFO]     [padding 5%]
+2026-05-24 21:08:56,474 [INFO]     ✓ reprocesada y subida [menforsan-crema-suavizante-desenredante-para-perros-300ml_1.webp] en posición 1
+2026-05-24 21:08:56,976 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:08:57,099 [INFO]     cargada RGB (1080, 1080) ← 61aRa0kr8EL._AC_SL1080.jpg
+2026-05-24 21:08:57,116 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:08:57,116 [INFO]     [sin padding]
+2026-05-24 21:09:00,763 [INFO]     ✓ reprocesada y subida [menforsan-crema-suavizante-desenredante-para-perros-300ml_2.webp] en posición 2
+2026-05-24 21:09:01,265 [INFO]   pos 3: NO optimizada (jpg 1069×1080) — reprocesando
+2026-05-24 21:09:01,428 [INFO]     cargada RGB (1069, 1080) ← 61ZBl2dNl9L._AC_SL1080.jpg
+2026-05-24 21:09:01,440 [INFO]     [bg] 2187/2916 (75%)
+2026-05-24 21:09:01,450 [INFO]     [autocrop] (1069, 1080) → (1068, 1080)
+2026-05-24 21:09:01,450 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:09:01,450 [INFO]     [sin padding]
+2026-05-24 21:09:05,034 [INFO]     ✓ reprocesada y subida [menforsan-crema-suavizante-desenredante-para-perros-300ml_3.webp] en posición 3
+2026-05-24 21:09:05,537 [INFO]   pos 4: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:09:05,690 [INFO]     cargada RGB (1080, 1055) ← 515EoBAkdhL._AC_SL1080.jpg
+2026-05-24 21:09:05,701 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:09:05,701 [INFO]     [sin padding]
+2026-05-24 21:09:08,966 [INFO]     ✓ reprocesada y subida [menforsan-crema-suavizante-desenredante-para-perros-300ml_4.webp] en posición 4
+2026-05-24 21:09:09,468 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:09:09,627 [INFO]     cargada RGB (1080, 1080) ← 61I7QAdzeFL._AC_SL1080.jpg
+2026-05-24 21:09:09,638 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:09:09,638 [INFO]     [sin padding]
+2026-05-24 21:09:13,021 [INFO]     ✓ reprocesada y subida [menforsan-crema-suavizante-desenredante-para-perros-300ml_5.webp] en posición 5
+2026-05-24 21:09:13,845 [INFO] 
+[27/35] MENFORSAN ELIMINADOR ENZIMATICO DE ORIN Y MANCHAS 500ML  (ID 15509653750147) — 6 imágenes
+2026-05-24 21:09:14,134 [INFO]   pos 1: NO optimizada (jpg 532×1500) — reprocesando
+2026-05-24 21:09:14,317 [INFO]     cargada RGB (532, 1500) ← 61ZjGrwUHIL._AC_SL1500.jpg
+2026-05-24 21:09:14,324 [INFO]     [bg] 671/676 (99%)
+2026-05-24 21:09:14,331 [INFO]     [autocrop] (532, 1500) → (531, 1498)
+2026-05-24 21:09:14,332 [INFO]     [padding 5%]
+2026-05-24 21:09:17,418 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_1.webp] en posición 1
+2026-05-24 21:09:17,920 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:09:18,108 [INFO]     cargada RGB (1500, 1500) ← 91w_Y2KjDYL._AC_SL1500.jpg
+2026-05-24 21:09:18,134 [INFO]     [bg] 75/5776 (1%)
+2026-05-24 21:09:18,134 [INFO]     [sin padding]
+2026-05-24 21:09:22,757 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_2.webp] en posición 2
+2026-05-24 21:09:23,259 [INFO]   pos 3: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:09:23,388 [INFO]     cargada RGB (1500, 1500) ← 7100I9Luj-L._AC_SL1500.jpg
+2026-05-24 21:09:23,410 [INFO]     [bg] 1444/5776 (25%)
+2026-05-24 21:09:23,410 [INFO]     [sin padding]
+2026-05-24 21:09:26,876 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_3.webp] en posición 3
+2026-05-24 21:09:27,378 [INFO]   pos 4: NO optimizada (jpg 1500×1475) — reprocesando
+2026-05-24 21:09:27,512 [INFO]     cargada RGB (1500, 1475) ← 81hNwzGm9yL._AC_SL1500.jpg
+2026-05-24 21:09:27,534 [INFO]     [bg] 3699/5476 (68%)
+2026-05-24 21:09:27,552 [INFO]     [autocrop] (1500, 1475) → (1499, 1473)
+2026-05-24 21:09:27,552 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:09:27,552 [INFO]     [sin padding]
+2026-05-24 21:09:31,317 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_4.webp] en posición 4
+2026-05-24 21:09:31,819 [INFO]   pos 5: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-24 21:09:31,977 [INFO]     cargada RGB (1500, 1500) ← 81Ifhh1oWQL._AC_SL1500.jpg
+2026-05-24 21:09:31,998 [INFO]     [bg] 62/5776 (1%)
+2026-05-24 21:09:31,998 [INFO]     [sin padding]
+2026-05-24 21:09:35,535 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_5.webp] en posición 5
+2026-05-24 21:09:36,036 [INFO]   pos 6: NO optimizada (jpg 1500×1294) — reprocesando
+2026-05-24 21:09:36,210 [INFO]     cargada RGB (1500, 1294) ← 91fk1M6pB2L._AC_SL1500.jpg
+2026-05-24 21:09:36,232 [INFO]     [bg] 3308/4096 (81%)
+2026-05-24 21:09:36,250 [INFO]     [autocrop] (1500, 1294) → (1500, 1294)
+2026-05-24 21:09:36,250 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:09:36,250 [INFO]     [sin padding]
+2026-05-24 21:09:40,347 [INFO]     ✓ reprocesada y subida [menforsan-eliminador-enzimatico-de-orin-y-manchas-500ml_6.webp] en posición 6
+2026-05-24 21:09:41,163 [INFO] 
+[28/35] MENFORSAN FRAGANCIA ELIMINADOR DE OLORES 250ML  (ID 15509653782915) — 5 imágenes
+2026-05-24 21:09:41,454 [INFO]   pos 1: NO optimizada (jpg 705×1060) — reprocesando
+2026-05-24 21:09:41,619 [INFO]     cargada RGB (705, 1060) ← 51alu3Du77L._AC_SL1080.jpg
+2026-05-24 21:09:41,627 [INFO]     [bg] 1296/1296 (100%)
+2026-05-24 21:09:41,634 [INFO]     [autocrop] (705, 1060) → (701, 1039)
+2026-05-24 21:09:41,634 [INFO]     [padding 5%]
+2026-05-24 21:09:44,895 [INFO]     ✓ reprocesada y subida [menforsan-fragancia-eliminador-de-olores-250ml_1.webp] en posición 1
+2026-05-24 21:09:45,397 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:09:45,582 [INFO]     cargada RGB (1080, 1080) ← 61fgj4yiLmL._AC_SL1080.jpg
+2026-05-24 21:09:45,593 [INFO]     [bg] 6/2916 (0%)
+2026-05-24 21:09:45,593 [INFO]     [sin padding]
+2026-05-24 21:09:49,106 [INFO]     ✓ reprocesada y subida [menforsan-fragancia-eliminador-de-olores-250ml_2.webp] en posición 2
+2026-05-24 21:09:49,607 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:09:49,772 [INFO]     cargada RGB (1080, 1080) ← 61TZVYiZ4NL._AC_SL1080.jpg
+2026-05-24 21:09:49,783 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:09:49,783 [INFO]     [sin padding]
+2026-05-24 21:09:53,112 [INFO]     ✓ reprocesada y subida [menforsan-fragancia-eliminador-de-olores-250ml_3.webp] en posición 3
+2026-05-24 21:09:53,614 [INFO]   pos 4: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:09:53,773 [INFO]     cargada RGB (1080, 1080) ← 61Xew3llcqL._AC_SL1080.jpg
+2026-05-24 21:09:53,784 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:09:53,784 [INFO]     [sin padding]
+2026-05-24 21:09:57,154 [INFO]     ✓ reprocesada y subida [menforsan-fragancia-eliminador-de-olores-250ml_4.webp] en posición 4
+2026-05-24 21:09:57,656 [INFO]   pos 5: NO optimizada (jpg 1500×1041) — reprocesando
+2026-05-24 21:09:57,844 [INFO]     cargada RGB (1500, 1041) ← 91mNPv2m1-L._AC_SL1500.jpg
+2026-05-24 21:09:57,864 [INFO]     [bg] 2293/2704 (85%)
+2026-05-24 21:09:57,879 [INFO]     [autocrop] (1500, 1041) → (1500, 1040)
+2026-05-24 21:09:57,880 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:09:57,880 [INFO]     [sin padding]
+2026-05-24 21:10:01,939 [INFO]     ✓ reprocesada y subida [menforsan-fragancia-eliminador-de-olores-250ml_5.webp] en posición 5
+2026-05-24 21:10:02,735 [INFO] 
+[29/35] MENFORSAN INSECTICIDA AVES SPRAY 250ML  (ID 15509653815683) — 5 imágenes
+2026-05-24 21:10:03,045 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 21:10:03,045 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:03,212 [INFO]     cargada RGB (1080, 1080) ← 61CWsyVZ8xL._AC_SL1080.jpg
+2026-05-24 21:10:03,223 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:03,224 [INFO]     [sin padding]
+2026-05-24 21:10:06,806 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-aves-spray-250ml_2.webp] en posición 2
+2026-05-24 21:10:07,308 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:07,482 [INFO]     cargada RGB (1080, 1080) ← 519Gp1ORR5L._AC_SL1080.jpg
+2026-05-24 21:10:07,493 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:07,493 [INFO]     [sin padding]
+2026-05-24 21:10:10,920 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-aves-spray-250ml_3.webp] en posición 3
+2026-05-24 21:10:11,422 [INFO]   pos 4: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:10:11,538 [INFO]     cargada RGB (1080, 1050) ← 51TMmMll0TL._AC_SL1080.jpg
+2026-05-24 21:10:11,548 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:10:11,548 [INFO]     [sin padding]
+2026-05-24 21:10:14,602 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-aves-spray-250ml_4.webp] en posición 4
+2026-05-24 21:10:15,104 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:15,225 [INFO]     cargada RGB (1080, 1080) ← 61hQ-UwI5tL._AC_SL1080.jpg
+2026-05-24 21:10:15,237 [INFO]     [bg] 33/2916 (1%)
+2026-05-24 21:10:15,237 [INFO]     [sin padding]
+2026-05-24 21:10:19,175 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-aves-spray-250ml_5.webp] en posición 5
+2026-05-24 21:10:20,001 [INFO] 
+[30/35] MENFORSAN INSECTICIDA ROEDORES CONEJOS Y HURONES 125ML  (ID 15509653848451) — 6 imágenes
+2026-05-24 21:10:20,301 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-05-24 21:10:20,301 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:20,495 [INFO]     cargada RGB (1080, 1080) ← 61mQgKL-v9L._AC_SL1080.jpg
+2026-05-24 21:10:20,507 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:20,507 [INFO]     [sin padding]
+2026-05-24 21:10:24,161 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-roedores-conejos-y-hurones-125ml_2.webp] en posición 2
+2026-05-24 21:10:24,663 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:24,824 [INFO]     cargada RGB (1080, 1080) ← 61QxaQho1RL._AC_SL1080.jpg
+2026-05-24 21:10:24,837 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:24,837 [INFO]     [sin padding]
+2026-05-24 21:10:28,228 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-roedores-conejos-y-hurones-125ml_3.webp] en posición 3
+2026-05-24 21:10:28,730 [INFO]   pos 4: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:10:28,843 [INFO]     cargada RGB (1080, 1050) ← 51SC1xfDC-L._AC_SL1080.jpg
+2026-05-24 21:10:28,853 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:10:28,853 [INFO]     [sin padding]
+2026-05-24 21:10:32,190 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-roedores-conejos-y-hurones-125ml_4.webp] en posición 4
+2026-05-24 21:10:32,692 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:32,839 [INFO]     cargada RGB (1080, 1080) ← 61t-YFgWgUL._AC_SL1080.jpg
+2026-05-24 21:10:32,850 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:32,850 [INFO]     [sin padding]
+2026-05-24 21:10:36,200 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-roedores-conejos-y-hurones-125ml_5.webp] en posición 5
+2026-05-24 21:10:36,702 [INFO]   pos 6: NO optimizada (jpg 1500×1032) — reprocesando
+2026-05-24 21:10:36,866 [INFO]     cargada RGB (1500, 1032) ← 91wNxEtqPuS._AC_SL1500.jpg
+2026-05-24 21:10:36,887 [INFO]     [bg] 1261/2704 (47%)
+2026-05-24 21:10:36,887 [INFO]     [sin padding]
+2026-05-24 21:10:41,196 [INFO]     ✓ reprocesada y subida [menforsan-insecticida-roedores-conejos-y-hurones-125ml_6.webp] en posición 6
+2026-05-24 21:10:42,028 [INFO] 
+[31/35] MENFORSAN LIMPIADOR DESINFECTANTE BP2 1L  (ID 15509651620227) — 5 imágenes
+2026-05-24 21:10:42,327 [INFO]   pos 1: NO optimizada (jpg 526×1058) — reprocesando
+2026-05-24 21:10:42,458 [INFO]     cargada RGB (526, 1058) ← 51H6QcYe0zL._AC_SL1080.jpg
+2026-05-24 21:10:42,463 [INFO]     [bg] 676/676 (100%)
+2026-05-24 21:10:42,468 [INFO]     [autocrop] (526, 1058) → (408, 1056)
+2026-05-24 21:10:42,468 [INFO]     [padding 5%]
+2026-05-24 21:10:45,595 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-desinfectante-bp2-1l_1.webp] en posición 1
+2026-05-24 21:10:46,097 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:46,269 [INFO]     cargada RGB (1080, 1080) ← 61aue90sDWL._AC_SL1080.jpg
+2026-05-24 21:10:46,280 [INFO]     [bg] 3/2916 (0%)
+2026-05-24 21:10:46,280 [INFO]     [sin padding]
+2026-05-24 21:10:49,774 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-desinfectante-bp2-1l_2.webp] en posición 2
+2026-05-24 21:10:50,276 [INFO]   pos 3: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:10:50,449 [INFO]     cargada RGB (1080, 1055) ← 41wOd5WCX2L._AC_SL1080.jpg
+2026-05-24 21:10:50,459 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:10:50,459 [INFO]     [sin padding]
+2026-05-24 21:10:53,422 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-desinfectante-bp2-1l_3.webp] en posición 3
+2026-05-24 21:10:53,924 [INFO]   pos 4: NO optimizada (jpg 1055×1056) — reprocesando
+2026-05-24 21:10:54,079 [INFO]     cargada RGB (1055, 1056) ← 616U6XEL1VL._AC_SL1080.jpg
+2026-05-24 21:10:54,091 [INFO]     [bg] 2180/2704 (81%)
+2026-05-24 21:10:54,100 [INFO]     [autocrop] (1055, 1056) → (1054, 1054)
+2026-05-24 21:10:54,100 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:10:54,100 [INFO]     [sin padding]
+2026-05-24 21:10:57,587 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-desinfectante-bp2-1l_4.webp] en posición 4
+2026-05-24 21:10:58,089 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:10:58,265 [INFO]     cargada RGB (1080, 1080) ← 61cyKn2JogL._AC_SL1080.jpg
+2026-05-24 21:10:58,277 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:10:58,277 [INFO]     [sin padding]
+2026-05-24 21:11:01,705 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-desinfectante-bp2-1l_5.webp] en posición 5
+2026-05-24 21:11:02,537 [INFO] 
+[32/35] MENFORSAN LIMPIADOR OCULAR 125ML  (ID 15509653913987) — 7 imágenes
+2026-05-24 21:11:02,842 [INFO]   pos 1: NO optimizada (jpg 914×1010) — reprocesando
+2026-05-24 21:11:02,967 [INFO]     cargada RGB (914, 1010) ← 61h2ibc5oNL._AC_SL1080.jpg
+2026-05-24 21:11:02,977 [INFO]     [bg] 2116/2116 (100%)
+2026-05-24 21:11:02,986 [INFO]     [autocrop] (914, 1010) → (910, 998)
+2026-05-24 21:11:02,986 [INFO]     [padding 5%]
+2026-05-24 21:11:06,446 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_1.webp] en posición 1
+2026-05-24 21:11:06,948 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:11:07,130 [INFO]     cargada RGB (1080, 1080) ← 61uKNNotqQL._AC_SL1080.jpg
+2026-05-24 21:11:07,144 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:11:07,144 [INFO]     [sin padding]
+2026-05-24 21:11:10,981 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_2.webp] en posición 2
+2026-05-24 21:11:11,483 [INFO]   pos 3: NO optimizada (jpg 1059×1080) — reprocesando
+2026-05-24 21:11:11,634 [INFO]     cargada RGB (1059, 1080) ← 51T3gNoT3RL._AC_SL1080.jpg
+2026-05-24 21:11:11,645 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:11:11,655 [INFO]     [autocrop] (1059, 1080) → (1056, 1080)
+2026-05-24 21:11:11,655 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:11:11,655 [INFO]     [sin padding]
+2026-05-24 21:11:15,131 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_3.webp] en posición 3
+2026-05-24 21:11:15,633 [INFO]   pos 4: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:11:15,822 [INFO]     cargada RGB (1080, 1055) ← 61b-b1OyAgL._AC_SL1080.jpg
+2026-05-24 21:11:15,835 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:11:15,836 [INFO]     [sin padding]
+2026-05-24 21:11:19,240 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_4.webp] en posición 4
+2026-05-24 21:11:19,742 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:11:19,894 [INFO]     cargada RGB (1080, 1080) ← 61CG5Fv5xvL._AC_SL1080.jpg
+2026-05-24 21:11:19,906 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:11:19,906 [INFO]     [sin padding]
+2026-05-24 21:11:23,429 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_5.webp] en posición 5
+2026-05-24 21:11:23,931 [INFO]   pos 6: NO optimizada (jpg 1500×1453) — reprocesando
+2026-05-24 21:11:24,100 [INFO]     cargada RGB (1500, 1453) ← 81jNrgrCZXL._AC_SL1500.jpg
+2026-05-24 21:11:24,119 [INFO]     [bg] 4863/5184 (94%)
+2026-05-24 21:11:24,137 [INFO]     [autocrop] (1500, 1453) → (1499, 1453)
+2026-05-24 21:11:24,137 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:11:24,137 [INFO]     [sin padding]
+2026-05-24 21:11:27,684 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_6.webp] en posición 6
+2026-05-24 21:11:28,186 [INFO]   pos 7: NO optimizada (jpg 867×649) — reprocesando
+2026-05-24 21:11:28,335 [INFO]     cargada RGB (867, 649) ← 717dW0ihMEL._AC.jpg
+2026-05-24 21:11:28,344 [INFO]     [bg] 630/1024 (62%)
+2026-05-24 21:11:28,351 [INFO]     [autocrop] (867, 649) → (867, 649)
+2026-05-24 21:11:28,351 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:11:28,351 [INFO]     [sin padding]
+2026-05-24 21:11:32,364 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-ocular-125ml_7.webp] en posición 7
+2026-05-24 21:11:33,216 [INFO] 
+[33/35] MENFORSAN LIMPIADOR OTICO 125ML  (ID 15509653946755) — 6 imágenes
+2026-05-24 21:11:33,499 [INFO]   pos 1: NO optimizada (jpg 791×914) — reprocesando
+2026-05-24 21:11:33,633 [INFO]     cargada RGB (791, 914) ← 61bVgg7s2ZL._AC_SL1080.jpg
+2026-05-24 21:11:33,641 [INFO]     [bg] 1600/1600 (100%)
+2026-05-24 21:11:33,649 [INFO]     [autocrop] (791, 914) → (789, 900)
+2026-05-24 21:11:33,649 [INFO]     [padding 5%]
+2026-05-24 21:11:37,004 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_1.webp] en posición 1
+2026-05-24 21:11:37,506 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:11:37,647 [INFO]     cargada RGB (1080, 1080) ← 61a7VUKrCcL._AC_SL1080.jpg
+2026-05-24 21:11:37,661 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:11:37,661 [INFO]     [sin padding]
+2026-05-24 21:11:41,542 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_2.webp] en posición 2
+2026-05-24 21:11:42,043 [INFO]   pos 3: NO optimizada (jpg 1059×1080) — reprocesando
+2026-05-24 21:11:42,164 [INFO]     cargada RGB (1059, 1080) ← 51z_dPs8vKL._AC_SL1080.jpg
+2026-05-24 21:11:42,176 [INFO]     [bg] 2028/2704 (75%)
+2026-05-24 21:11:42,187 [INFO]     [autocrop] (1059, 1080) → (1056, 1080)
+2026-05-24 21:11:42,187 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:11:42,187 [INFO]     [sin padding]
+2026-05-24 21:11:45,615 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_3.webp] en posición 3
+2026-05-24 21:11:46,118 [INFO]   pos 4: NO optimizada (jpg 1080×1055) — reprocesando
+2026-05-24 21:11:46,283 [INFO]     cargada RGB (1080, 1055) ← 61YEl8GA7SL._AC_SL1080.jpg
+2026-05-24 21:11:46,294 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:11:46,294 [INFO]     [sin padding]
+2026-05-24 21:11:49,710 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_4.webp] en posición 4
+2026-05-24 21:11:50,212 [INFO]   pos 5: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:11:50,337 [INFO]     cargada RGB (1080, 1080) ← 51RLu1VjVsL._AC_SL1080.jpg
+2026-05-24 21:11:50,348 [INFO]     [bg] 676/2916 (23%)
+2026-05-24 21:11:50,348 [INFO]     [sin padding]
+2026-05-24 21:11:53,819 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_5.webp] en posición 5
+2026-05-24 21:11:54,321 [INFO]   pos 6: NO optimizada (jpg 867×649) — reprocesando
+2026-05-24 21:11:54,487 [INFO]     cargada RGB (867, 649) ← 71Jzxi0HcaL._AC.jpg
+2026-05-24 21:11:54,496 [INFO]     [bg] 672/1024 (66%)
+2026-05-24 21:11:54,502 [INFO]     [autocrop] (867, 649) → (867, 649)
+2026-05-24 21:11:54,502 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:11:54,502 [INFO]     [sin padding]
+2026-05-24 21:11:58,530 [INFO]     ✓ reprocesada y subida [menforsan-limpiador-otico-125ml_6.webp] en posición 6
+2026-05-24 21:11:59,349 [INFO] 
+[34/35] MENFORSAN PIPETAS ANTIINS. ROEDORES, CONEJOS Y HURONES 2UDS  (ID 15509654012291) — 7 imágenes
+2026-05-24 21:11:59,634 [INFO]   pos 1: NO optimizada (jpg 1069×538) — reprocesando
+2026-05-24 21:11:59,747 [INFO]     cargada RGB (1069, 538) ← 61MyeXllCqL._AC_SL1080.jpg
+2026-05-24 21:11:59,753 [INFO]     [bg] 673/676 (100%)
+2026-05-24 21:11:59,758 [INFO]     [autocrop] (1069, 538) → (1067, 533)
+2026-05-24 21:11:59,758 [INFO]     [padding 5%]
+2026-05-24 21:12:03,302 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_1.webp] en posición 1
+2026-05-24 21:12:03,804 [INFO]   pos 2: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:12:03,940 [INFO]     cargada RGB (1080, 1080) ← 61MSe4gkIxL._AC_SL1080.jpg
+2026-05-24 21:12:03,953 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:12:03,953 [INFO]     [sin padding]
+2026-05-24 21:12:07,999 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_2.webp] en posición 2
+2026-05-24 21:12:08,501 [INFO]   pos 3: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:12:08,630 [INFO]     cargada RGB (1080, 1080) ← 61qRXi0LxCL._AC_SL1080.jpg
+2026-05-24 21:12:08,642 [INFO]     [bg] 0/2916 (0%)
+2026-05-24 21:12:08,642 [INFO]     [sin padding]
+2026-05-24 21:12:12,400 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_3.webp] en posición 3
+2026-05-24 21:12:12,902 [INFO]   pos 4: NO optimizada (jpg 1080×1050) — reprocesando
+2026-05-24 21:12:13,021 [INFO]     cargada RGB (1080, 1050) ← 51kKVVaojTL._AC_SL1080.jpg
+2026-05-24 21:12:13,031 [INFO]     [bg] 1352/2704 (50%)
+2026-05-24 21:12:13,031 [INFO]     [sin padding]
+2026-05-24 21:12:16,213 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_4.webp] en posición 4
+2026-05-24 21:12:16,715 [INFO]   pos 5: NO optimizada (jpg 1043×1080) — reprocesando
+2026-05-24 21:12:16,876 [INFO]     cargada RGB (1043, 1080) ← 61S8a3jIzoL._AC_SL1080.jpg
+2026-05-24 21:12:16,888 [INFO]     [bg] 2327/2704 (86%)
+2026-05-24 21:12:16,898 [INFO]     [autocrop] (1043, 1080) → (1040, 1080)
+2026-05-24 21:12:16,898 [INFO]     [fills-frame 100%×100%] → sin padding
+2026-05-24 21:12:16,898 [INFO]     [sin padding]
+2026-05-24 21:12:20,422 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_5.webp] en posición 5
+2026-05-24 21:12:20,925 [INFO]   pos 6: NO optimizada (jpg 1080×1080) — reprocesando
+2026-05-24 21:12:21,044 [INFO]     cargada RGB (1080, 1080) ← 61tT9BmRx3L._AC_SL1080.jpg
+2026-05-24 21:12:21,059 [INFO]     [bg] 179/2916 (6%)
+2026-05-24 21:12:21,059 [INFO]     [sin padding]
+2026-05-24 21:12:24,613 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_6.webp] en posición 6
+2026-05-24 21:12:25,115 [INFO]   pos 7: NO optimizada (jpg 1500×1247) — reprocesando
+2026-05-24 21:12:25,301 [INFO]     cargada RGB (1500, 1247) ← 91njMWXOYJL._AC_SL1500.jpg
+2026-05-24 21:12:25,330 [INFO]     [bg] 929/3844 (24%)
+2026-05-24 21:12:25,330 [INFO]     [sin padding]
+2026-05-24 21:12:31,068 [INFO]     ✓ reprocesada y subida [menforsan-pipetas-antiins-roedores-conejos-y-hurones-2uds_7.webp] en posición 7
+2026-05-24 21:12:31,862 [INFO] 
+[35/35] MENFORSAN PROTECTOR SOLAR FACTOR 30 60ML  (ID 15509654077827) — 0 imágenes
+2026-05-24 21:12:31,863 [INFO] 
+============================================================
+2026-05-24 21:12:31,863 [INFO] RESUMEN
+2026-05-24 21:12:31,863 [INFO] ============================================================
+2026-05-24 21:12:31,863 [INFO]   productos     : 35
+2026-05-24 21:12:31,863 [INFO]   reprocesadas  : 214
+2026-05-24 21:12:31,863 [INFO]   omitidas      : 6
+2026-05-24 21:12:31,863 [INFO]   sin_imagenes  : 1
+2026-05-24 21:12:31,863 [INFO]   errores       : 0
+2026-05-24 21:12:31,863 [INFO] 
+✓ Completado
