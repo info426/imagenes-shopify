@@ -244,6 +244,11 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **PrestaShop — upgrade de tamaño antes de descargar:** las imágenes de galería se sirven como `medium_default` (~452px) en el DOM → fallan el mínimo de 800px. Solución: `_upgrade_prestashop_url()` convierte `medium/small/home/category_default` → `large_default` (~800-1000px) antes de añadir a la lista de descarga. Implementado en `_add()` antes del dedup.
 - **TRAMPA**: no normalizar la URL PrestaShop quitando el tamaño (`/924/img.jpg`) en la lista de descarga — esa URL no existe en el servidor. Solo subir el tamaño (medium→large), nunca quitar el sufijo completamente. El `_strip_size_suffix` debe tocar solo el patrón WordPress `-WxH`.
 
+### Pipeline de imagen — lecciones
+
+- **fills-width (padding solo vertical):** imágenes PrestaShop son 1000×1188 donde el producto toca los bordes laterales pero tiene espacio blanco arriba/abajo. `autocrop_white` quita el blanco vertical (`fill_h ≈ 0.84 < 0.85`) pero `fill_w = 1.0`. La condición `fills-frame` (`fill_w > 0.85 AND fill_h > 0.85`) no se cumple → antes se añadía 5% de padding en TODOS los lados. Fix en `image_utils.py`: nuevo caso `elif fill_w >= 0.98` → `use_padding = False` + usa imagen croppeada. El centrado en canvas 2000×2000 ya proporciona el margen vertical natural.
+- **Umbral fills-width:** `0.98` (solo 2% de margen de tolerancia). Si el ancho cambia más del 2% tras autocrop, el producto no toca los laterales y el padding uniforme es correcto.
+
 ### Amazon como fuente (web_y_amazon) — `core/amazon.py`
 
 **Orden de métodos de búsqueda de imagen:**
@@ -300,53 +305,65 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
-| Menforsan | MENFORSAN | **Listo para proceso masivo** — test OK (score=1.00, 2 imgs). Anti-bot + filtros PrestaShop confirmados. | web_oficial → marcas/menforsan.py (menforsan.com) |
+| Menforsan | MENFORSAN | **En proceso** — fuente `web_y_amazon` probada, fixes aplicados, pendiente proceso masivo | web_y_amazon → marcas/menforsan.py (menforsan.com) |
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
-**Situación:** los productos MENFORSAN no tienen imágenes en Shopify → Caso B
-(scraper web). La web `menforsan.com` devuelve **HTTP 403** a peticiones sin
+**Situación:** los productos MENFORSAN no tienen imágenes en Shopify → Caso C
+(web oficial + Amazon). La web `menforsan.com` devuelve **HTTP 403** a peticiones sin
 navegador (igual que beaphar.es).
 
-**Estado actual (commit `f429d72`):**
+**Estado del scraper:**
 - `marcas/menforsan.py` en `main` con anti-bot completo.
 - CMS: **PrestaShop** — URLs `/es/{categoria}/{id}-{slug}.html`.
-- `_is_product_url()` corregido: solo acepta patrón `\d+-.+\.html` (evita categorías).
+- `_is_product_url()` requiere `/es/` en el path (evita URLs en inglés) + patrón `\d+-.+\.html`.
 - Playwright con headers Sec-Fetch-*, bypass `navigator.webdriver`, warm-up homepage.
+- DDG text search con `site:menforsan.com/es/` (no `site:menforsan.com` para evitar `/en/`).
 - `MATCH_THRESHOLD = 0.30`. `CATALOG_PATH = resultados/menforsan_catalog.json`.
 
-**Historial de tests (ID: 15509651259779 — CHAMPU BIOTINA PARA CABALLO 1L):**
+**Fuente activa: `web_y_amazon`**
 
-| Test | Problema | Fix aplicado |
-|---|---|---|
-| Test 1 | HTTP 403 a Playwright (todos los candidatos) + filtro URL pasaba categorías | Anti-bot completo (headers Sec-Fetch-*, bypass webdriver, warm-up) + filtro `\d+-.+\.html` |
-| Test 2 | Warm-up OK, sin 403. **HTTP 404** en todos — trailing slash tras `.html` | `_ddg_query_urls`: no añadir `/` si URL termina en `.html` |
-| Test 3 | **ÉXITO** score=1.00, 2 imgs subidas. 44 thumbnails 322×383 descartados por baja res (DOM filter WooCommerce no aplica a PrestaShop) | DOM filter añade clases PrestaShop (`.product-miniature`, etc.) + filtro `naturalWidth < 200` |
+**Historial de fixes (todos en `main`):**
 
-**Estado: listo para proceso masivo.**
+| Fix | Descripción |
+|---|---|
+| DDG query `/es/` | Evita que DDG devuelva páginas en inglés (score 0.12 → descartadas) |
+| Trailing slash `.html` | PrestaShop da 404 si URL termina en `.html/` |
+| DOM filter PrestaShop | `.product-miniature` + `naturalWidth < 200` elimina thumbnails 322×383 |
+| Amazon DDG title filter | `AMAZON_MATCH_THRESHOLD = 0.35`; skip si sim < umbral |
+| Tokenización número+unidad | `"250ml"` → `"250 ml"` en `_norm()` para que coincida con `"250 ml"` del DDG title |
+| Google CSE primario | Cuando `GOOGLE_API_KEY` + `GOOGLE_CSE_ID` definidos, usa Google en vez de Bing |
+| fills-width sin padding | Si autocrop no elimina ancho (≥98%) pero sí altura → sin padding lateral |
+
+**Tests exitosos:**
+- `15509651259779` CHAMPU BIOTINA PARA CABALLO 1L: score=1.00, 6 imgs web
+- `15509653815683` INSECTICIDA AVES SPRAY 250ML: score=0.43, 6 imgs web, Amazon filter OK
+- `15509653848451` (pendiente verificar resultado tras fix padding lateral)
 
 **Próximos pasos:**
-1. **Proceso masivo** → `Procesar imágenes de marca` con los parámetros de abajo.
+1. **Verificar test** con producto `15509653848451` para confirmar fix padding
+2. **Activar Google CSE** (opcional): añadir `GOOGLE_API_KEY` + `GOOGLE_CSE_ID` a secrets de GitHub para mejores resultados Amazon
+3. **Proceso masivo** → `Procesar imágenes de marca`
 
 **Parámetros workflow `Test marca`:**
 
 | Campo | Valor |
 |---|---|
-| `vendor` | `MENFORSAN` *(confirmar mayúsculas exactas en Shopify)* |
-| `fuente` | `web_oficial` |
+| `vendor` | `MENFORSAN` |
+| `fuente` | `web_y_amazon` |
 | `web_url` | `https://www.menforsan.com/` |
 | `product_id` | *(cualquier ID de producto MENFORSAN)* |
 | `rebuild_catalog` | `false` |
 | `pipeline` | `standard` |
 | `force_padding` | `auto` |
 
-**Parámetros workflow `Procesar imágenes de marca` (cuando test OK):**
-vendor=MENFORSAN, fuente=web_oficial, web_url=https://www.menforsan.com/,
+**Parámetros workflow `Procesar imágenes de marca`:**
+vendor=MENFORSAN, fuente=web_y_amazon, web_url=https://www.menforsan.com/,
 rebuild_catalog=false, pipeline=standard, force_padding=auto.
 Reintentar fallidos por lote con `product_ids` si quedan sin match.
 
-**Recordatorio de infra:** los workflows hacen checkout de `main`. El scraper
-ya está en `main` — no hace falta cherry-pick antes del primer test.
+**Recordatorio de infra:** los workflows hacen checkout de `main`. Todos los fixes
+ya están en `main` — no hace falta cherry-pick.
 
 ### Beaphar — notas de estrategia
 
