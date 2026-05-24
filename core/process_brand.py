@@ -40,6 +40,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from core.image_utils import (dedupe_images, is_high_res, process_image,
                               process_image_webp_only, to_webp_b64)
 from core.shopify_api import ShopifyAPI, get_token
+from core import amazon
 
 load_dotenv()
 
@@ -324,6 +325,25 @@ def _clean_title_for_ddg(title: str) -> str:
     return _TITLE_NOISE.sub(" ", title).strip() + " product image"
 
 
+def _download_hires(urls: list, label: str) -> list:
+    """Descarga URLs y conserva solo las que cumplen la resolución mínima (800px).
+    Devuelve lista [(raw_bytes, ext), ...]."""
+    out = []
+    for url in urls:
+        try:
+            raw, ext = download_raw(url)
+            ok, w, h = is_high_res(raw)
+            fname = url.split("/")[-1].split("?")[0]
+            if ok:
+                out.append((raw, ext))
+                log.info(f"  [{label}] ✓ {fname}  {w}×{h}")
+            else:
+                log.warning(f"  [{label}] baja res {w}×{h} — omitida: {fname}")
+        except Exception as e:
+            log.warning(f"  [{label}] error descargando: {e}")
+    return out
+
+
 def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
             rebuild: bool, product_id: int = None, only_ids: set = None):
     """Scrapea el catálogo web del fabricante, procesa y sube a Shopify."""
@@ -373,52 +393,46 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
         else:
             handle, score = scraper.find_best_match(title, catalog)
 
-        # Sin match en catálogo web: si es web_y_amazon, intentar DDG directamente
-        if handle is None or score < 0.10:
-            if fuente != "web_y_amazon":
-                log.warning(f"  Sin match (score={score:.2f}) — saltando")
-                stats["sin_match"] += 1
-                continue
-            log.warning(f"  Sin match web (score={score:.2f}) — buscando en DDG directamente")
+        web_matched = handle is not None and score >= 0.10
+        raw_images = []
+
+        # Fuente 1 — web oficial (si hay match en el catálogo)
+        if web_matched:
+            entry = catalog[handle]
+            log.info(f"  Match: {handle}  (score={score:.2f}, "
+                     f"{len(entry.get('images', []))} imgs)")
+            raw_images += _download_hires(entry.get("images", []), "web")
+        else:
+            log.warning(f"  Sin match web (score={score:.2f})")
+
+        # Fuente 2 — Amazon (solo en web_y_amazon; se combina con la web)
+        if fuente == "web_y_amazon":
+            try:
+                amazon_urls = amazon.search_amazon_image_urls(title, barcode=barcode)
+                raw_images += _download_hires(amazon_urls, "amazon")
+            except Exception as e:
+                log.warning(f"  [amazon] fallo: {e}")
+
+        # web_oficial sin match → no hay nada más que probar
+        if not web_matched and fuente == "web_oficial":
+            stats["sin_match"] += 1
+            continue
+
+        # Fuente 3 — último recurso: DDG genérico (solo web_y_amazon)
+        if not raw_images and fuente == "web_y_amazon":
+            log.warning("  Sin imágenes web/amazon — DDG genérico")
             ddg_query = (scraper.get_ddg_query(title)
                          if hasattr(scraper, "get_ddg_query")
                          else _clean_title_for_ddg(title))
             raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
-            if not raw_images:
-                log.warning("  Sin resultados DDG — saltando")
-                stats["sin_match"] += 1
-                continue
-        else:
-            entry = catalog[handle]
-            log.info(f"  Match: {handle}  (score={score:.2f}, "
-                     f"{len(entry.get('images', []))} imgs)")
-
-            raw_images = []
-            for img_url in entry.get("images", []):
-                try:
-                    raw, ext = download_raw(img_url)
-                    ok, w, h = is_high_res(raw)
-                    fname = img_url.split("/")[-1].split("?")[0]
-                    if ok:
-                        raw_images.append((raw, ext))
-                        log.info(f"  Descargada: {fname}  {w}×{h}")
-                    else:
-                        log.warning(f"  Baja res {w}×{h} — omitida: {fname}")
-                except Exception as e:
-                    log.warning(f"  Error descargando: {e}")
-
-            if not raw_images and fuente == "web_y_amazon":
-                log.warning("  Sin imágenes web oficial — buscando en internet...")
-                ddg_query = (scraper.get_ddg_query(title)
-                             if hasattr(scraper, "get_ddg_query")
-                             else _clean_title_for_ddg(title))
-                raw_images = search_ddg_images(ddg_query, exclude_domain=exclude_domain)
 
         if not raw_images:
             log.warning("  Sin imágenes de alta resolución — saltando")
             stats["sin_imagen"] += 1
             continue
 
+        # Dedup perceptual entre fuentes: ante la misma imagen, conserva la
+        # de mayor resolución (más bytes/área). Ver core.image_utils.dedupe_images
         raw_images = dedupe_images(raw_images)
 
         processed = []

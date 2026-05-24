@@ -58,11 +58,23 @@ imagenes-shopify/
 2. **Test** → ejecutar `Test marca` con fuente `web_oficial` + `web_url`
 3. **Proceso masivo** → ejecutar `Procesar imágenes de marca`
 
-### Caso C — Web oficial + otras fuentes (Amazon, etc.)
+### Caso C — Web oficial + Amazon (mejor resolución)
 
-Igual que B pero con fuente `web_y_amazon`. Si la web oficial no tiene
-imágenes de alta resolución para un producto, el script busca en DuckDuckGo
-imágenes externas de alta resolución (≥800px).
+Con fuente `web_y_amazon` el script recolecta imágenes de **ambas** fuentes
+para cada producto y combina los resultados:
+
+1. **Web oficial** — vía el scraper `marcas/{slug}.py` (igual que Caso B).
+2. **Amazon.es** — `core/amazon.py` busca la ficha del producto vía DDG
+   (`site:amazon.es {título}`, fallback por EAN), navega con Playwright y
+   extrae la galería principal. Sube cada URL a su **resolución original**
+   quitando el token de tamaño de Amazon (`._AC_SX679_` → original ~1500px+).
+3. **Dedup perceptual (pHash)** — `dedupe_images()` agrupa la misma imagen
+   entre fuentes y **conserva la de mayor resolución**. Así, si Amazon tiene
+   una versión mejor que la web oficial (o viceversa), se queda la mejor.
+4. **DDG genérico** — último recurso solo si web + Amazon no dan nada.
+
+Todas las imágenes pasan el filtro de resolución mínima (≥800px) antes del
+dedup. **No** se baja el mínimo: preferimos menos imágenes pero de calidad.
 
 ---
 
@@ -231,6 +243,26 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **PrestaShop — thumbnails del carrusel:** el DOM scan captura thumbnails 322×383 de productos del carrusel lateral. Los filtros WooCommerce (`.related`, `.upsells`) no aplican. Añadir en el JS: `.product-miniature`, `.js-product-miniature`, `[class*="miniature"]`, `[class*="product-list"]` + filtro `naturalWidth < 200`.
 - **PrestaShop — upgrade de tamaño antes de descargar:** las imágenes de galería se sirven como `medium_default` (~452px) en el DOM → fallan el mínimo de 800px. Solución: `_upgrade_prestashop_url()` convierte `medium/small/home/category_default` → `large_default` (~800-1000px) antes de añadir a la lista de descarga. Implementado en `_add()` antes del dedup.
 - **TRAMPA**: no normalizar la URL PrestaShop quitando el tamaño (`/924/img.jpg`) en la lista de descarga — esa URL no existe en el servidor. Solo subir el tamaño (medium→large), nunca quitar el sufijo completamente. El `_strip_size_suffix` debe tocar solo el patrón WordPress `-WxH`.
+
+### Amazon como fuente (web_y_amazon) — `core/amazon.py`
+
+- **Descubrimiento de ficha:** DDG `site:amazon.es {título}` → filtra URLs con
+  `/(dp|gp/product)/([A-Z0-9]{10})` (ASIN). Fallback por EAN. Normaliza a
+  `https://www.amazon.es/dp/{ASIN}`.
+- **Resolución original:** Amazon sirve con token de tamaño en la URL
+  (`._AC_SX679_`, `._SL1500_`, `._AC_UL320_,SX320_`...). Quitarlo con
+  `re.sub(r'\._[A-Z0-9][A-Z0-9_,]*_\.', '.', url)` da la imagen original
+  (normalmente ≥1500px). **Truco clave** para máxima resolución.
+- **Extracción DOM:** `data-a-dynamic-image` (JSON url→[w,h]) + `data-old-hires`
+  + `src` de `#imgTagWrapperId`, `#landingImage`, `#altImages`. Dedup por ID de
+  imagen (`/images/I/{ID}`) para no repetir main+thumbnail de la misma foto.
+- **Anti-bot:** mismo patrón que los scrapers (Chrome UA, Sec-Fetch-*, bypass
+  webdriver, warm-up en amazon.es). Amazon puede mostrar CAPTCHA — si pasa, los
+  HTTP ≥400 se loguean y se salta la ficha.
+- **Comparación entre fuentes = pHash, no Google Lens.** El dedup perceptual
+  (`dedupe_images`) ya identifica la misma imagen entre web y Amazon y conserva
+  la de mayor resolución, sin coste de API. Si en el futuro se necesita buscar
+  la imagen en MÁS sitios, valorar SerpAPI/Google Vision (API de pago + secret).
 
 ### Logging — qué nivel usar
 
