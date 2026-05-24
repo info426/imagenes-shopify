@@ -191,8 +191,12 @@ def _should_keep_url(url: str) -> bool:
 
 
 def _strip_size_suffix(url: str) -> str:
-    """Quita sufijo WordPress -WxH para obtener imagen original."""
-    return re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})(?:\?.*)?$', r'\1', url.split("?")[0])
+    """Quita sufijos de tamaño WordPress (-WxH) y PrestaShop (-{size_name}) para deduplicar."""
+    url = url.split("?")[0]
+    url = re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})$', r'\1', url)
+    # PrestaShop: /2694-large_default/img.jpg → /2694/img.jpg (normaliza para deduplicar)
+    url = re.sub(r'/(\d+)-(?:cart|small|medium|large|home|thickbox|category)_default/', r'/\1/', url)
+    return url
 
 
 def _filter_by_ean(images: list, barcode: str = "") -> list:
@@ -288,21 +292,28 @@ def _extract_images(page, page_url: str, barcode: str = "") -> list:
     except Exception:
         pass
 
-    # 3. DOM — excluye secciones de relacionados/upsells/footer
+    # 3. DOM — excluye relacionados/upsells/footer y thumbnails pequeños (PrestaShop)
     try:
         img_data = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('img'))
-                .filter(img =>
-                    !img.closest('.related') &&
-                    !img.closest('.upsells') &&
-                    !img.closest('.cross-sells') &&
-                    !img.closest('[class*="related"]') &&
-                    !img.closest('[class*="upsell"]') &&
-                    !img.closest('[id*="related"]') &&
-                    !img.closest('footer') &&
-                    !img.closest('header') &&
-                    !img.closest('nav')
-                )
+                .filter(img => {
+                    if (img.closest('.related') || img.closest('.upsells') ||
+                        img.closest('.cross-sells') ||
+                        img.closest('[class*="related"]') ||
+                        img.closest('[class*="upsell"]') ||
+                        img.closest('[id*="related"]') ||
+                        img.closest('footer') || img.closest('header') ||
+                        img.closest('nav')) return false;
+                    // PrestaShop: descartar miniaturas de productos del carrusel
+                    if (img.closest('.product-miniature') ||
+                        img.closest('.js-product-miniature') ||
+                        img.closest('[class*="miniature"]') ||
+                        img.closest('[class*="product-list"]') ||
+                        img.closest('[class*="products-grid"]')) return false;
+                    // Descartar por tamaño renderizado (thumbnails < 200px)
+                    if (img.naturalWidth > 0 && img.naturalWidth < 200) return false;
+                    return true;
+                })
                 .map(img => ({
                     srcset:           img.getAttribute('srcset')           || '',
                     dataSrc:          img.getAttribute('data-src')         || '',

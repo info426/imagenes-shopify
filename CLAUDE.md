@@ -228,6 +228,8 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **Sufijo WordPress `-WxH`:** quitar con `re.sub(r'-\d+x\d+(\.[a-z]{3,4})', r'\1', url)` para obtener la imagen original en máxima resolución.
 - **PrestaShop:** las imágenes suelen estar en `/img/p/{carpetas}/{id}-{lang}.jpg`. La `og:image` las referencia directamente; es suficiente en la mayoría de casos.
 - **PrestaShop — NO trailing slash en `.html`:** PrestaShop devuelve HTTP 404 si la URL termina en `.html/`. WooCommerce sí espera trailing slash. En `_ddg_query_urls`: `if not url.lower().endswith(".html"): url += "/"`
+- **PrestaShop — thumbnails del carrusel:** el DOM scan captura ~44 thumbnails 322×383 de productos del carrusel lateral. Los filtros WooCommerce (`.related`, `.upsells`) no aplican. Añadir en el JS: `.product-miniature`, `.js-product-miniature`, `[class*="miniature"]`, `[class*="product-list"]` + filtro `naturalWidth < 200`.
+- **PrestaShop — normalización de URL para deduplicar:** `/2694-large_default/img.jpg` y `/2694-thickbox_default/img.jpg` son el mismo producto en distinto tamaño. Normalizar con `re.sub(r'/(\d+)-(?:cart|small|medium|large|home|thickbox|category)_default/', r'/\1/', url)` para evitar duplicados en el set `seen`.
 
 ### Logging — qué nivel usar
 
@@ -255,7 +257,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
-| Menforsan | MENFORSAN *(confirmar)* | **En proceso** — scraper creado (`marcas/menforsan.py` en main). Pendiente: ejecutar Test marca y proceso masivo. | web_oficial → marcas/menforsan.py (menforsan.com) |
+| Menforsan | MENFORSAN | **Listo para proceso masivo** — test OK (score=1.00, 2 imgs). Anti-bot + filtros PrestaShop confirmados. | web_oficial → marcas/menforsan.py (menforsan.com) |
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
@@ -276,12 +278,12 @@ navegador (igual que beaphar.es).
 |---|---|---|
 | Test 1 | HTTP 403 a Playwright (todos los candidatos) + filtro URL pasaba categorías | Anti-bot completo (headers Sec-Fetch-*, bypass webdriver, warm-up) + filtro `\d+-.+\.html` |
 | Test 2 | Warm-up OK, sin 403. **HTTP 404** en todos — trailing slash tras `.html` | `_ddg_query_urls`: no añadir `/` si URL termina en `.html` |
-| Test 3 | Pendiente | — |
+| Test 3 | **ÉXITO** score=1.00, 2 imgs subidas. 44 thumbnails 322×383 descartados por baja res (DOM filter WooCommerce no aplica a PrestaShop) | DOM filter añade clases PrestaShop (`.product-miniature`, etc.) + filtro `naturalWidth < 200` |
+
+**Estado: listo para proceso masivo.**
 
 **Próximos pasos:**
-1. **Test marca** (mismos parámetros) → debería resolver el producto y extraer imágenes.
-2. Verificar score y número de imágenes extraídas en el log.
-3. **Proceso masivo** tras confirmar que el test funciona.
+1. **Proceso masivo** → `Procesar imágenes de marca` con los parámetros de abajo.
 
 **Parámetros workflow `Test marca`:**
 
