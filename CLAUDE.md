@@ -246,23 +246,33 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 
 ### Amazon como fuente (web_y_amazon) — `core/amazon.py`
 
-- **Descubrimiento de ficha:** DDG `site:amazon.es {título}` → filtra URLs con
-  `/(dp|gp/product)/([A-Z0-9]{10})` (ASIN). Fallback por EAN. Normaliza a
-  `https://www.amazon.es/dp/{ASIN}`.
-- **Resolución original:** Amazon sirve con token de tamaño en la URL
-  (`._AC_SX679_`, `._SL1500_`, `._AC_UL320_,SX320_`...). Quitarlo con
-  `re.sub(r'\._[A-Z0-9][A-Z0-9_,]*_\.', '.', url)` da la imagen original
-  (normalmente ≥1500px). **Truco clave** para máxima resolución.
-- **Extracción DOM:** `data-a-dynamic-image` (JSON url→[w,h]) + `data-old-hires`
-  + `src` de `#imgTagWrapperId`, `#landingImage`, `#altImages`. Dedup por ID de
-  imagen (`/images/I/{ID}`) para no repetir main+thumbnail de la misma foto.
-- **Anti-bot:** mismo patrón que los scrapers (Chrome UA, Sec-Fetch-*, bypass
-  webdriver, warm-up en amazon.es). Amazon puede mostrar CAPTCHA — si pasa, los
-  HTTP ≥400 se loguean y se salta la ficha.
-- **Comparación entre fuentes = pHash, no Google Lens.** El dedup perceptual
-  (`dedupe_images`) ya identifica la misma imagen entre web y Amazon y conserva
-  la de mayor resolución, sin coste de API. Si en el futuro se necesita buscar
-  la imagen en MÁS sitios, valorar SerpAPI/Google Vision (API de pago + secret).
+**Orden de métodos de búsqueda de imagen:**
+
+1. **Google Custom Search API** (primario, cuando `GOOGLE_API_KEY` + `GOOGLE_CSE_ID` definidos):
+   - 100 queries/día gratis. Resultados de Google, más precisos que Bing/DDG.
+   - Setup: https://programmablesearchengine.google.com/ → crear CSE (cx) +
+     Google Cloud Console → habilitar "Custom Search API" → crear API key.
+   - Añadir `GOOGLE_API_KEY` y `GOOGLE_CSE_ID` a los secrets de GitHub Actions.
+   - Query: `site:amazon.es {título}` con `searchType=image&imgSize=large`.
+   - Las URLs devueltas son del CDN de Amazon → `strip_size_token()` → original.
+2. **DDG image search** (secundario, sin API key, cualquier IP):
+   - Usa Bing como backend. Devuelve URLs del CDN de Amazon directamente.
+   - `AMAZON_MATCH_THRESHOLD = 0.35` filtra imágenes de productos distintos.
+3. **Playwright** (opt-in `AMAZON_USE_PLAYWRIGHT=1`, solo IP residencial).
+
+**Lecciones de matching de imagen Amazon:**
+- **Tokenización número+unidad:** "250ml" en Shopify vs "250 ml" en DDG title → `ml`
+  desaparece como stopword y los tokens son "250ml" ≠ "250" → similitud reducida.
+  Fix en `_norm()`: `re.sub(r'(\d+)(ml|gr|kg|mg|cl|l|cm|mm|g)\b', r'\1 \2', text)`.
+  Convierte "250ml" → "250 ml" antes del split → ambos normalizan a "250" → coinciden.
+- **Resolución original:** token de tamaño `._AC_SX679_`, `._SL1500_`, `._AC_UL320_`...
+  Quitar con `re.sub(r'\._[A-Z0-9][A-Z0-9_,]*_\.', '.', url)` → imagen original (≥1500px).
+- **Extracción DOM (Playwright):** `data-a-dynamic-image` (JSON url→[w,h]) + `data-old-hires`
+  + `src` de `#imgTagWrapperId`, `#landingImage`, `#altImages`. Dedup por ID de imagen.
+- **Anti-bot Playwright:** mismo patrón (Chrome UA, Sec-Fetch-*, bypass webdriver, warm-up).
+  Amazon puede mostrar CAPTCHA desde IPs de datacenter — por eso DDG/Google CSE son preferibles.
+- **Comparación entre fuentes = pHash.** `dedupe_images` identifica la misma imagen entre
+  web y Amazon y conserva la de mayor resolución, sin coste de API.
 
 ### Logging — qué nivel usar
 

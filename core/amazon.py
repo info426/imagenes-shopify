@@ -1,19 +1,23 @@
 """
 Búsqueda de imágenes de producto en Amazon.es (fuente web_y_amazon).
 
-ESTRATEGIA PRINCIPAL — DuckDuckGo Image Search (sin CAPTCHA):
-  En lugar de navegar la página /dp/{ASIN} (que Amazon protege con CAPTCHA
-  desde IPs de datacenter como las de GitHub Actions), usamos la búsqueda de
-  IMÁGENES de DDG restringida a amazon.es. DDG devuelve URLs directas del CDN
-  de Amazon (m.media-amazon.com/images/I/...), que NO está protegido. Quitando
-  el token de tamaño de cada URL (._AC_SL1500_ → original) se obtiene la imagen
-  en máxima resolución. Funciona desde cualquier IP.
+ESTRATEGIA PRINCIPAL — Google Custom Search API (cuando GOOGLE_API_KEY + GOOGLE_CSE_ID):
+  Busca imágenes en amazon.es usando la API de búsqueda de Google. 100 queries/día
+  gratis. Devuelve URLs del CDN de Amazon directamente. Resultados más precisos que
+  Bing/DDG. Requiere dos secrets en GitHub: GOOGLE_API_KEY y GOOGLE_CSE_ID.
+  Setup: https://programmablesearchengine.google.com/ + Google Cloud Console.
 
-ESTRATEGIA SECUNDARIA — Playwright (opt-in con AMAZON_USE_PLAYWRIGHT=1):
+ESTRATEGIA SECUNDARIA — DuckDuckGo Image Search (sin CAPTCHA):
+  DDG image search usa Bing como backend. Funciona sin API key desde cualquier IP.
+  Devuelve URLs del CDN de Amazon (m.media-amazon.com/images/I/...). Quitando el
+  token de tamaño (._AC_SL1500_ → original) se obtiene la imagen en máxima
+  resolución. Filtro por similitud de título (AMAZON_MATCH_THRESHOLD) para descartar
+  productos de otra marca/referencia.
+
+ESTRATEGIA TERCIARIA — Playwright (opt-in con AMAZON_USE_PLAYWRIGHT=1):
   Navega la página de producto y extrae la galería completa vía colorImages
   (clave 'hiRes'). Solo fiable desde IP residencial (uso local); en GitHub
-  Actions normalmente da CAPTCHA. Se usa como fallback cuando DDG image search
-  no devuelve nada.
+  Actions normalmente da CAPTCHA.
 
 Las imágenes se combinan con las de la web oficial y el dedup perceptual
 (core.image_utils.dedupe_images) elige, ante la misma imagen, la de mayor
@@ -44,12 +48,15 @@ _STOPWORDS = {
 # Similitud mínima entre el título Shopify y el título de la página/imagen Amazon.
 # Descarta productos de la misma marca pero distinta referencia
 # (ej. "Champú Intensificador de Color" ≠ "Champú de Biotina").
-AMAZON_MATCH_THRESHOLD = 0.40
+AMAZON_MATCH_THRESHOLD = 0.35
 
 
 def _norm(text: str) -> str:
     text = unicodedata.normalize("NFD", text.lower())
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    # split glued number+unit: "250ml" → "250 ml" so the unit (stopword) is
+    # removed and the number matches regardless of whether there's a space
+    text = re.sub(r"(\d+)(ml|gr|kg|mg|cl|l|cm|mm|g)\b", r"\1 \2", text)
     return re.sub(r"[^a-z0-9\s]", " ", text)
 
 
@@ -107,7 +114,78 @@ def _is_ui_sprite(url: str) -> bool:
     ))
 
 
-# ─── Método principal: DDG image search ───────────────────────────────────────
+# ─── Método principal: Google Custom Search API ──────────────────────────────
+
+def _search_via_google_cse(title: str, barcode: str = "") -> list:
+    """
+    Google Custom Search API — imagen search.
+
+    Requiere variables de entorno GOOGLE_API_KEY y GOOGLE_CSE_ID.
+    100 queries/día gratis. Devuelve URLs del CDN de Amazon filtradas por
+    similitud de título.
+
+    Setup:
+      1. https://programmablesearchengine.google.com/ → crear CSE, anotar el ID (cx)
+      2. Google Cloud Console → habilitar "Custom Search API" → crear API key
+      3. Añadir GOOGLE_API_KEY y GOOGLE_CSE_ID a los secrets de GitHub Actions
+    """
+    import urllib.request
+    import urllib.parse
+
+    key = os.getenv("GOOGLE_API_KEY", "")
+    cx = os.getenv("GOOGLE_CSE_ID", "")
+    if not key or not cx:
+        return []
+
+    queries = [f"site:amazon.es {title}"]
+    if barcode:
+        queries.append(f"site:amazon.es {barcode}")
+
+    seen_ids: set = set()
+    out: list = []
+    for q in queries:
+        if out:
+            break
+        log.info(f"  [amazon google] {q}")
+        try:
+            params = urllib.parse.urlencode({
+                "key": key, "cx": cx, "q": q,
+                "searchType": "image", "num": 10,
+                "hl": "es", "gl": "es", "imgSize": "large",
+            })
+            req = urllib.request.Request(
+                f"https://www.googleapis.com/customsearch/v1?{params}",
+                headers={"Accept": "application/json"},
+            )
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read())
+        except Exception as e:
+            log.warning(f"  [amazon google] error: {e}")
+            continue
+
+        for item in data.get("items", []):
+            img_url = item.get("link", "")
+            if not _is_amazon_product_image(img_url) or _is_ui_sprite(img_url):
+                continue
+            result_title = item.get("title") or item.get("snippet") or ""
+            if result_title:
+                sim = _title_sim(title, result_title)
+                if sim < AMAZON_MATCH_THRESHOLD:
+                    log.info(f"  [amazon google] skip (sim={sim:.2f}) «{result_title[:55]}»")
+                    continue
+            orig = strip_size_token(img_url)
+            iid = _image_id(orig)
+            if iid in seen_ids:
+                continue
+            seen_ids.add(iid)
+            out.append(orig)
+            log.info(f"  [amazon google] + {iid}  «{result_title[:55]}»")
+
+    log.info(f"  [amazon] {len(out)} imágenes vía Google CSE")
+    return out
+
+
+# ─── Método secundario: DDG image search ─────────────────────────────────────
 
 def _ddgs():
     try:
@@ -449,14 +527,24 @@ def search_amazon_image_urls(title: str, barcode: str = "",
     """
     Devuelve URLs de imágenes de producto Amazon en máxima resolución.
 
-    Método principal: DDG image search (sin CAPTCHA, funciona en cualquier IP).
-    Fallback opt-in (AMAZON_USE_PLAYWRIGHT=1): navega la página de producto
-    con Playwright — solo recomendado en local (IP residencial).
+    Orden de prioridad:
+      1. Google Custom Search API (si GOOGLE_API_KEY + GOOGLE_CSE_ID están definidos)
+      2. DDG image search (Bing backend; sin CAPTCHA, sin API key, cualquier IP)
+      3. Playwright opt-in (AMAZON_USE_PLAYWRIGHT=1) — solo IP residencial
     """
+    # 1. Google CSE (mejor relevancia; requiere API keys en secrets)
+    if os.getenv("GOOGLE_API_KEY") and os.getenv("GOOGLE_CSE_ID"):
+        urls = _search_via_google_cse(title, barcode=barcode)
+        if urls:
+            return urls
+        log.info("  [amazon] Google CSE sin resultados — fallback DDG")
+
+    # 2. DDG image search (funciona desde cualquier IP sin configuración)
     urls = _search_via_ddg_images(title, barcode=barcode)
     if urls:
         return urls
 
+    # 3. Playwright (opt-in; solo recomendado en local)
     if os.getenv("AMAZON_USE_PLAYWRIGHT", "").lower() in ("1", "true", "yes"):
         log.info("  [amazon] DDG image search sin resultados — fallback Playwright")
         return _search_via_playwright(title, barcode=barcode,
