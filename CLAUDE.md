@@ -145,7 +145,7 @@ Compara tokens del título Shopify con tokens del handle+nombre del catálogo we
 | Farmina ND | Farmina | Pendiente backup | shopify_backup |
 | Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
-| Beaphar | BEAPHAR | Productos unificados (grupos B, C, E, L, M vía API) — scraper listo para proceso masivo | web_oficial → marcas/beaphar.py (beaphar.es) |
+| Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
 
 ### Beaphar — notas de estrategia
 
@@ -172,19 +172,17 @@ Por eso el scraper:
 El paso del barcode lo hace `core/process_brand.py` (extrae el primer EAN del
 producto y lo pasa a `find_best_match` vía `inspect.signature`).
 
-**Estado del proceso masivo (web_oficial):**
-- Run #68 (todos): 126 productos → **99 OK, 26 sin match, 1 sin imagen**.
+**Estado del proceso masivo (web_oficial): COMPLETADO — 126/126 con imágenes.**
+- Run #68 (todos): 126 productos → 99 OK, 26 sin match, 1 sin imagen.
 - Re-run de los 27 fallidos con `product_ids` (lote) tras añadir fallbacks
-  sin-marca + EAN. *(Pendiente revisar resumen del re-run.)*
-- IDs del lote de reintento: 15509650997635,15509650080131,15509649686915,
-  15509649621379,15509649588611,15509649326467,15509649195395,15509649031555,
-  15509648081283,15509645099395,15509644837251,15509644444035,15509644247427,
-  15509644050819,15509643100547,15509643133315,15509643002243,15509642871171,
-  15509641953667,15509641822595,15509641331075,15509641232771,15509641036163,
-  15509640970627,15509640774019,15981868876163,15981869105539
-- Probable resto irreducible: 3 productos `*DX*` (descatalogados) y 2 con EAN
-  `8710729*` (Vitamina A pájaros, Rojo intensivo canarios) — puede que no estén
-  en beaphar.es; valorar fuente alternativa (Amazon) o dejarlos sin imagen.
+  sin-marca + EAN → **27/27 OK, 0 sin match, 0 sin imagen**. Los fallbacks
+  recuperaron incluso los `*DX*` y los de EAN `8710729*`.
+- IDs del lote de reintento (referencia): 15509650997635,15509650080131,
+  15509649686915,15509649621379,15509649588611,15509649326467,15509649195395,
+  15509649031555,15509648081283,15509645099395,15509644837251,15509644444035,
+  15509644247427,15509644050819,15509643100547,15509643133315,15509643002243,
+  15509642871171,15509641953667,15509641822595,15509641331075,15509641232771,
+  15509641036163,15509640970627,15509640774019,15981868876163,15981869105539
 
 Unificaciones aplicadas en Shopify (vía API, EANs y precios preservados):
 Pipetas Repulsivas Perro (B), Cat Comfort Spray (C), Multifresh Neutralizador
