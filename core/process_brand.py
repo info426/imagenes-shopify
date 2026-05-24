@@ -408,11 +408,10 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
         # Fuente 2 — Amazon (solo en web_y_amazon; se combina con la web)
         if fuente == "web_y_amazon":
             # Usar caché del catálogo cuando exista para evitar re-scraping.
-            # Las URLs de Amazon son permanentes (CDN con hash en el nombre)
-            # y se guardan en el catálogo tras la primera búsqueda exitosa.
+            # Las URLs de Amazon (CDN con hash en el nombre) son permanentes.
             cached_amazon = (catalog.get(handle, {}).get("amazon_images")
                              if web_matched else None)
-            if cached_amazon is not None:
+            if cached_amazon:
                 log.info(f"  [amazon] caché: {len(cached_amazon)} URLs")
                 raw_images += _download_hires(cached_amazon, "amazon")
             else:
@@ -420,8 +419,10 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
                     amazon_urls = amazon.search_amazon_image_urls(
                         title, barcode=barcode)
                     raw_images += _download_hires(amazon_urls, "amazon")
-                    # Persistir en catálogo (incluso lista vacía = "ya se buscó")
-                    if web_matched and handle in catalog:
+                    # Cachear SOLO si hay resultados reales. Una lista vacía suele
+                    # ser un fallo transitorio (CAPTCHA / sin índice DDG); cachearla
+                    # impediría reintentar en ejecuciones futuras.
+                    if amazon_urls and web_matched and handle in catalog:
                         catalog[handle]["amazon_images"] = amazon_urls
                         if hasattr(scraper, "save_catalog"):
                             scraper.save_catalog(catalog)

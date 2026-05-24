@@ -1,14 +1,23 @@
 """
 Búsqueda de imágenes de producto en Amazon.es (fuente web_y_amazon).
 
-Amazon sirve cada imagen con un token de tamaño en la URL
-(p.ej. `._AC_SX679_`, `._SL1500_`, `._AC_UL320_`). Eliminando ese token se
-obtiene la imagen ORIGINAL en su máxima resolución (normalmente 1500px+),
-que suele superar a la de muchas webs de fabricante.
+ESTRATEGIA PRINCIPAL — DuckDuckGo Image Search (sin CAPTCHA):
+  En lugar de navegar la página /dp/{ASIN} (que Amazon protege con CAPTCHA
+  desde IPs de datacenter como las de GitHub Actions), usamos la búsqueda de
+  IMÁGENES de DDG restringida a amazon.es. DDG devuelve URLs directas del CDN
+  de Amazon (m.media-amazon.com/images/I/...), que NO está protegido. Quitando
+  el token de tamaño de cada URL (._AC_SL1500_ → original) se obtiene la imagen
+  en máxima resolución. Funciona desde cualquier IP.
 
-Las imágenes de Amazon se combinan con las de la web oficial y el dedup
-perceptual (`core.image_utils.dedupe_images`) elige, ante la misma imagen,
-la de mayor resolución.
+ESTRATEGIA SECUNDARIA — Playwright (opt-in con AMAZON_USE_PLAYWRIGHT=1):
+  Navega la página de producto y extrae la galería completa vía colorImages
+  (clave 'hiRes'). Solo fiable desde IP residencial (uso local); en GitHub
+  Actions normalmente da CAPTCHA. Se usa como fallback cuando DDG image search
+  no devuelve nada.
+
+Las imágenes se combinan con las de la web oficial y el dedup perceptual
+(core.image_utils.dedupe_images) elige, ante la misma imagen, la de mayor
+resolución; las imágenes únicas de Amazon enriquecen el carrusel.
 
 Interfaz pública:
   search_amazon_image_urls(title, barcode="", max_products=3) -> list[str]
@@ -17,6 +26,7 @@ Interfaz pública:
 import atexit
 import json
 import logging
+import os
 import re
 import time
 import unicodedata
@@ -31,9 +41,9 @@ _STOPWORDS = {
     "ml", "gr", "g", "kg", "l", "cm", "mm", "x", "ud", "uds",
     "the", "for", "and", "or", "of", "with",
 }
-# Similitud mínima entre el título Shopify y el título de la página Amazon
-# para aceptar el ASIN. Descarta productos de la misma marca pero distinta
-# referencia (ej. "Champú Intensificador de Color" ≠ "Champú de Biotina").
+# Similitud mínima entre el título Shopify y el título de la página/imagen Amazon.
+# Descarta productos de la misma marca pero distinta referencia
+# (ej. "Champú Intensificador de Color" ≠ "Champú de Biotina").
 AMAZON_MATCH_THRESHOLD = 0.40
 
 
@@ -55,6 +65,7 @@ def _title_sim(a: str, b: str) -> float:
         return 0.0
     return len(ta & tb) / len(ta | tb)
 
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -66,7 +77,7 @@ _SIZE_TOKEN = re.compile(r'\._[A-Z0-9][A-Z0-9_,]*_\.')
 _ASIN_RE    = re.compile(r'/(?:dp|gp/product)/([A-Z0-9]{10})')
 _IMG_ID_RE  = re.compile(r'/images/I/([^./]+)')
 
-# Estado Playwright reutilizado entre llamadas
+# Estado Playwright (solo para el fallback opt-in)
 _PW = {"pw": None, "browser": None, "ctx": None, "page": None}
 
 
@@ -87,7 +98,86 @@ def _is_amazon_product_image(url: str) -> bool:
     return "media-amazon.com/images/I/" in url or "images-amazon.com/images/I/" in url
 
 
-# ─── Playwright lazy init ─────────────────────────────────────────────────────
+def _is_ui_sprite(url: str) -> bool:
+    """Descarta iconos/overlays de UI de Amazon (play-icon, sprites, etc.)."""
+    low = url.lower()
+    return any(kw in low for kw in (
+        "play-icon", "overlay", "sprite", "gno/", "/x-locale/",
+        "transparent-pixel", "grey-pixel",
+    ))
+
+
+# ─── Método principal: DDG image search ───────────────────────────────────────
+
+def _ddgs():
+    try:
+        from ddgs import DDGS
+        return DDGS
+    except ImportError:
+        try:
+            from duckduckgo_search import DDGS
+            return DDGS
+        except ImportError:
+            log.warning("  [amazon] ddgs no instalado")
+            return None
+
+
+def _search_via_ddg_images(title: str, barcode: str = "") -> list:
+    """
+    Busca imágenes de producto Amazon vía DDG image search.
+
+    No navega la página de producto → no hay CAPTCHA posible. Filtra a imágenes
+    alojadas en el CDN de Amazon, quita el token de tamaño (→ original) y
+    deduplica por ID de imagen. Cascada: título → EAN.
+    """
+    DDGS = _ddgs()
+    if DDGS is None:
+        return []
+
+    queries = [f"site:amazon.es {title}"]
+    if barcode:
+        queries.append(f"site:amazon.es {barcode}")
+
+    seen_ids: set = set()
+    out: list = []
+    for q in queries:
+        log.info(f"  [amazon img] {q}")
+        hits: list = []
+        for attempt in range(3):
+            try:
+                with DDGS() as ddgs:
+                    # size="Large" sesga hacia imágenes de alta resolución
+                    hits = list(ddgs.images(q, max_results=60, size="Large"))
+                break
+            except Exception as e:
+                wait = 3 * (2 ** attempt)
+                if attempt < 2:
+                    log.warning(f"  [amazon img] error ({attempt+1}/3): {e} "
+                                f"— reintento {wait}s")
+                    time.sleep(wait)
+                else:
+                    log.warning(f"  [amazon img] error final: {e}")
+
+        for r in hits:
+            img_url = r.get("image") or r.get("thumbnail") or ""
+            if not _is_amazon_product_image(img_url) or _is_ui_sprite(img_url):
+                continue
+            orig = strip_size_token(img_url)
+            iid = _image_id(orig)
+            if iid in seen_ids:
+                continue
+            seen_ids.add(iid)
+            out.append(orig)
+            log.info(f"  [amazon img] + {iid}  «{(r.get('title') or '')[:55]}»")
+
+        if out:
+            break  # la primera query con resultados basta; el EAN es respaldo
+
+    log.info(f"  [amazon] {len(out)} imágenes vía DDG image search")
+    return out
+
+
+# ─── Fallback opt-in: Playwright (navegación de página de producto) ────────────
 
 def _get_page():
     if _PW["page"] is not None:
@@ -140,7 +230,6 @@ def _get_page():
             pass
     atexit.register(_cleanup)
 
-    # Warm-up en amazon.es para establecer cookies
     try:
         page.goto("https://www.amazon.es/", timeout=20000,
                   wait_until="domcontentloaded")
@@ -152,19 +241,12 @@ def _get_page():
     return page
 
 
-# ─── Búsqueda DDG de fichas Amazon ────────────────────────────────────────────
-
 def _ddg_amazon_product_urls(title: str, barcode: str = "",
                               max_urls: int = 3) -> list:
     """Busca fichas /dp/{ASIN} en amazon.es vía DDG. Cascada: título → EAN."""
-    try:
-        from ddgs import DDGS
-    except ImportError:
-        try:
-            from duckduckgo_search import DDGS
-        except ImportError:
-            log.warning("  [amazon] ddgs no instalado")
-            return []
+    DDGS = _ddgs()
+    if DDGS is None:
+        return []
 
     seen_asin: set = set()
     urls: list = []
@@ -195,7 +277,8 @@ def _ddg_amazon_product_urls(title: str, barcode: str = "",
             except Exception as e:
                 wait = 3 * (2 ** attempt)
                 if attempt < 2:
-                    log.warning(f"  [amazon DDG] error ({attempt+1}/3): {e} — reintento {wait}s")
+                    log.warning(f"  [amazon DDG] error ({attempt+1}/3): {e} "
+                                f"— reintento {wait}s")
                     time.sleep(wait)
                 else:
                     log.warning(f"  [amazon DDG] error final: {e}")
@@ -204,26 +287,19 @@ def _ddg_amazon_product_urls(title: str, barcode: str = "",
     return urls
 
 
-# ─── Extracción de imágenes de una ficha ──────────────────────────────────────
-
 def _extract_amazon_images(page) -> list:
     """
     Extrae URLs de la galería completa de un producto Amazon.
 
-    Estrategia (por orden de fiabilidad):
-    1. colorImages JSON embebido en <script> → clave 'hiRes' (~2000px)
-       Amazon inyecta este objeto con todas las imágenes del carrusel antes
-       de que el JS de la galería renderice, por lo que es la fuente más
-       completa y de mayor resolución.
-    2. DOM fallback — data-a-dynamic-image tomando la URL de mayor resolución
-       del dict {url: [w, h]} que Amazon usa para el zoom.
+    1. colorImages JSON embebido en <script> → clave 'hiRes' (~2000px).
+    2. DOM fallback — data-a-dynamic-image tomando la URL de mayor resolución.
     3. data-old-hires y src como último recurso.
     """
     seen_ids: set = set()
     out: list = []
 
     def _add(url: str):
-        if not url or not _is_amazon_product_image(url):
+        if not url or not _is_amazon_product_image(url) or _is_ui_sprite(url):
             return
         orig = strip_size_token(url)
         iid = _image_id(orig)
@@ -232,8 +308,6 @@ def _extract_amazon_images(page) -> list:
         seen_ids.add(iid)
         out.append(orig)
 
-    # 1. colorImages JSON: Amazon embebe en un <script> la galería completa,
-    #    incluyendo 'hiRes' que apunta a la imagen original sin token de tamaño.
     try:
         color_images = page.evaluate(r"""() => {
             for (const s of document.querySelectorAll('script')) {
@@ -248,7 +322,6 @@ def _extract_amazon_images(page) -> list:
             for item in (color_images or []):
                 if not isinstance(item, dict):
                     continue
-                # hiRes = imagen original · large = ~1500px · mainUrl = tamaño medio
                 for key in ('hiRes', 'large', 'mainUrl'):
                     url = item.get(key) or ''
                     if url:
@@ -258,7 +331,6 @@ def _extract_amazon_images(page) -> list:
     except Exception as e:
         log.debug(f"  [amazon] colorImages error: {e}")
 
-    # 2. DOM fallback — data-a-dynamic-image seleccionando la URL de mayor px
     try:
         raw = page.evaluate("""() => {
             const urls = new Set();
@@ -273,7 +345,6 @@ def _extract_amazon_images(page) -> list:
                 if (dyn) {
                     try {
                         const parsed = JSON.parse(dyn);
-                        // URL con mayor resolución (ancho × alto)
                         const best = Object.entries(parsed)
                             .sort((a, b) => b[1][0] * b[1][1] - a[1][0] * a[1][1])[0];
                         if (best) urls.add(best[0]);
@@ -293,17 +364,10 @@ def _extract_amazon_images(page) -> list:
     return out
 
 
-# ─── Interfaz pública ─────────────────────────────────────────────────────────
-
-def search_amazon_image_urls(title: str, barcode: str = "",
-                              max_products: int = 3) -> list:
-    """
-    Devuelve URLs de imágenes de producto Amazon en máxima resolución.
-    Busca fichas vía DDG, navega con Playwright y extrae la galería principal.
-    """
-    # Inicializar Playwright ANTES de llamar a DDGS (que usa asyncio internamente).
-    # Si se invierte el orden, el Sync API de Playwright detecta el loop asyncio
-    # de DDGS y falla con "Please use the Async API instead".
+def _search_via_playwright(title: str, barcode: str = "",
+                            max_products: int = 3) -> list:
+    """Fallback: navega la página de producto y extrae la galería completa.
+    Solo fiable desde IP residencial (uso local)."""
     page = _get_page()
     if page is None:
         return []
@@ -327,31 +391,22 @@ def search_amazon_image_urls(title: str, barcode: str = "",
                 pass
             page.wait_for_timeout(1000)
 
-            # Detectar CAPTCHA / bot-detection antes de intentar extraer.
-            # Amazon sirve páginas simples muy rápido (~1-2s) cuando detecta bots;
-            # las páginas reales de producto tardan 5-10s en cargar.
             try:
                 is_captcha = page.query_selector(
-                    '#captchacharacters, '
-                    'form[action*="validateCaptcha"], '
-                    '.a-box-inner h4'   # "Introduce los caracteres que ves..."
-                )
+                    '#captchacharacters, form[action*="validateCaptcha"]')
                 if is_captcha:
-                    log.info(f"  [amazon] CAPTCHA detectado en {purl} — saltando")
+                    log.info(f"  [amazon] CAPTCHA en {purl} — saltando")
                     time.sleep(3)
                     continue
             except Exception:
                 pass
 
-            # Verificar que el ASIN corresponde al producto buscado.
-            # DDG puede devolver ASINs de la misma marca pero distinta referencia.
             asin_title = ""
             try:
                 title_el = (
                     page.query_selector("span#productTitle") or
                     page.query_selector("#productTitle") or
                     page.query_selector("#title span") or
-                    page.query_selector("h1#title span") or
                     page.query_selector("h1.a-size-large")
                 )
                 if title_el:
@@ -363,15 +418,8 @@ def search_amazon_image_urls(title: str, barcode: str = "",
                 sim = _title_sim(title, asin_title)
                 log.info(f"  [amazon] '{asin_title[:70]}' sim={sim:.2f}")
                 if sim < AMAZON_MATCH_THRESHOLD:
-                    log.info(f"  [amazon] ASIN descartado — título no coincide "
-                             f"(sim={sim:.2f} < {AMAZON_MATCH_THRESHOLD})")
+                    log.info(f"  [amazon] ASIN descartado — título no coincide")
                     continue
-            else:
-                # Sin título: podría ser bot-detection o producto sin título visible.
-                # Intentar igualmente la extracción de imágenes; si colorImages
-                # está presente, la página cargó bien aunque el título no sea visible.
-                log.info(f"  [amazon] título no encontrado en {purl} "
-                         f"(posible bot-detection si también 0 imgs)")
 
             imgs = _extract_amazon_images(page)
             log.info(f"  [amazon] {len(imgs)} imgs en {purl}")
@@ -384,5 +432,27 @@ def search_amazon_image_urls(title: str, barcode: str = "",
         except Exception as e:
             log.info(f"  [amazon] error en {purl}: {e}")
 
-    log.info(f"  [amazon] total {len(all_imgs)} imágenes candidatas")
+    log.info(f"  [amazon] total {len(all_imgs)} imágenes candidatas (Playwright)")
     return all_imgs
+
+
+# ─── Interfaz pública ─────────────────────────────────────────────────────────
+
+def search_amazon_image_urls(title: str, barcode: str = "",
+                              max_products: int = 3) -> list:
+    """
+    Devuelve URLs de imágenes de producto Amazon en máxima resolución.
+
+    Método principal: DDG image search (sin CAPTCHA, funciona en cualquier IP).
+    Fallback opt-in (AMAZON_USE_PLAYWRIGHT=1): navega la página de producto
+    con Playwright — solo recomendado en local (IP residencial).
+    """
+    urls = _search_via_ddg_images(title, barcode=barcode)
+    if urls:
+        return urls
+
+    if os.getenv("AMAZON_USE_PLAYWRIGHT", "").lower() in ("1", "true", "yes"):
+        log.info("  [amazon] DDG image search sin resultados — fallback Playwright")
+        return _search_via_playwright(title, barcode=barcode,
+                                      max_products=max_products)
+    return []
