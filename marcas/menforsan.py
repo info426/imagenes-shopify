@@ -135,9 +135,26 @@ def _get_page():
         user_agent=USER_AGENT,
         locale="es-ES",
         viewport={"width": 1440, "height": 900},
-        extra_http_headers={"Accept-Language": "es-ES,es;q=0.9,en;q=0.8"},
+        extra_http_headers={
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
+            "Sec-Fetch-User": "?1",
+            "Upgrade-Insecure-Requests": "1",
+        },
         ignore_https_errors=True,
     )
+    ctx.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+        Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+        Object.defineProperty(navigator, 'languages', {get: () => ['es-ES', 'es', 'en']});
+        window.chrome = {runtime: {}, loadTimes: function(){}, csi: function(){}, app: {}};
+    """)
     page = ctx.new_page()
     _PW.update({"pw": pw, "browser": browser, "ctx": ctx, "page": page})
 
@@ -148,6 +165,16 @@ def _get_page():
         except Exception:
             pass
     atexit.register(_cleanup)
+
+    # Warm-up en homepage para establecer cookies y parecer navegador real
+    try:
+        page.goto("https://www.menforsan.com/", timeout=20000,
+                  wait_until="domcontentloaded")
+        page.wait_for_timeout(2000)
+        log.info("Warm-up menforsan.com OK")
+    except Exception as e:
+        log.debug(f"Warm-up failed: {e}")
+
     return page
 
 
@@ -308,7 +335,7 @@ def _try_url(page, url: str, barcode: str = "") -> tuple:
     try:
         resp = page.goto(url, timeout=30000, wait_until="domcontentloaded")
         if resp and resp.status >= 400:
-            log.debug(f"  HTTP {resp.status} en {url}")
+            log.info(f"  HTTP {resp.status} en {url}")
             return None, []
 
         try:
@@ -327,6 +354,7 @@ def _try_url(page, url: str, barcode: str = "") -> tuple:
         )
         name = name_el.inner_text().strip() if name_el else ""
         if not name:
+            log.info(f"  h1 vacío/no encontrado en {url}")
             return None, []
 
         images = _extract_images(page, page.url, barcode=barcode)
@@ -339,15 +367,16 @@ def _try_url(page, url: str, barcode: str = "") -> tuple:
 # ─── URL helpers ──────────────────────────────────────────────────────────────
 
 def _is_product_url(url: str) -> bool:
-    """Descarta URLs de categorías, blog, etc."""
+    """Descarta URLs de categorías, blog, etc.
+    menforsan.com usa PrestaShop: /es/{categoria}/{id}-{slug}.html"""
     parsed = urlparse(url)
     if PRODUCT_PATH not in url:
         return False
     if _NON_PRODUCT_PATHS.search(parsed.path):
         return False
-    # Debe tener al menos un segmento de path con contenido
-    parts = [p for p in parsed.path.strip("/").split("/") if p]
-    return len(parts) >= 1
+    # Solo aceptar páginas de producto PrestaShop: último segmento = {id}-{slug}.html
+    last = parsed.path.rstrip("/").rsplit("/", 1)[-1]
+    return bool(re.match(r'^\d+-.+\.html$', last, re.IGNORECASE))
 
 
 # ─── Búsqueda DDG ─────────────────────────────────────────────────────────────
