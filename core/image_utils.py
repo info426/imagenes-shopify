@@ -136,6 +136,14 @@ def process_image(img: Image.Image, force_padding: bool | None = None) -> Image.
         if fill_w > 0.85 and fill_h > 0.85 and not tight_product_shot:
             log.info(f"    [fills-frame {fill_w:.0%}×{fill_h:.0%}] → sin padding")
             use_padding = False
+        elif fill_w >= 0.98 and not tight_product_shot:
+            # Rellena el ancho pero tenía espaciado solo vertical (ej. PrestaShop
+            # 1000×1188 con producto a ras de los bordes laterales). No añadir
+            # padding lateral; el centrado vertical en el canvas ya da el margen.
+            log.info(f"    [fills-width {fill_w:.0%}×{fill_h:.0%}] → sin padding lateral")
+            use_padding = False
+            composited = trial
+            already_cropped = True
         else:
             composited = trial
             already_cropped = True
