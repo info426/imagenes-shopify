@@ -228,8 +228,9 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **Sufijo WordPress `-WxH`:** quitar con `re.sub(r'-\d+x\d+(\.[a-z]{3,4})', r'\1', url)` para obtener la imagen original en máxima resolución.
 - **PrestaShop:** las imágenes suelen estar en `/img/p/{carpetas}/{id}-{lang}.jpg`. La `og:image` las referencia directamente; es suficiente en la mayoría de casos.
 - **PrestaShop — NO trailing slash en `.html`:** PrestaShop devuelve HTTP 404 si la URL termina en `.html/`. WooCommerce sí espera trailing slash. En `_ddg_query_urls`: `if not url.lower().endswith(".html"): url += "/"`
-- **PrestaShop — thumbnails del carrusel:** el DOM scan captura ~44 thumbnails 322×383 de productos del carrusel lateral. Los filtros WooCommerce (`.related`, `.upsells`) no aplican. Añadir en el JS: `.product-miniature`, `.js-product-miniature`, `[class*="miniature"]`, `[class*="product-list"]` + filtro `naturalWidth < 200`.
-- **PrestaShop — normalización de URL para deduplicar:** `/2694-large_default/img.jpg` y `/2694-thickbox_default/img.jpg` son el mismo producto en distinto tamaño. Normalizar con `re.sub(r'/(\d+)-(?:cart|small|medium|large|home|thickbox|category)_default/', r'/\1/', url)` para evitar duplicados en el set `seen`.
+- **PrestaShop — thumbnails del carrusel:** el DOM scan captura thumbnails 322×383 de productos del carrusel lateral. Los filtros WooCommerce (`.related`, `.upsells`) no aplican. Añadir en el JS: `.product-miniature`, `.js-product-miniature`, `[class*="miniature"]`, `[class*="product-list"]` + filtro `naturalWidth < 200`.
+- **PrestaShop — upgrade de tamaño antes de descargar:** las imágenes de galería se sirven como `medium_default` (~452px) en el DOM → fallan el mínimo de 800px. Solución: `_upgrade_prestashop_url()` convierte `medium/small/home/category_default` → `large_default` (~800-1000px) antes de añadir a la lista de descarga. Implementado en `_add()` antes del dedup.
+- **TRAMPA**: no normalizar la URL PrestaShop quitando el tamaño (`/924/img.jpg`) en la lista de descarga — esa URL no existe en el servidor. Solo subir el tamaño (medium→large), nunca quitar el sufijo completamente. El `_strip_size_suffix` debe tocar solo el patrón WordPress `-WxH`.
 
 ### Logging — qué nivel usar
 

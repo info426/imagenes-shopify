@@ -191,12 +191,19 @@ def _should_keep_url(url: str) -> bool:
 
 
 def _strip_size_suffix(url: str) -> str:
-    """Quita sufijos de tamaño WordPress (-WxH) y PrestaShop (-{size_name}) para deduplicar."""
+    """Quita sufijo WordPress -WxH para obtener imagen original (clave de deduplicación)."""
     url = url.split("?")[0]
-    url = re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})$', r'\1', url)
-    # PrestaShop: /2694-large_default/img.jpg → /2694/img.jpg (normaliza para deduplicar)
-    url = re.sub(r'/(\d+)-(?:cart|small|medium|large|home|thickbox|category)_default/', r'/\1/', url)
-    return url
+    return re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})$', r'\1', url)
+
+
+# Tamaños PrestaShop pequeños que se deben subir a large_default
+_PS_UPGRADE = re.compile(
+    r'/(\d+)-(?:cart|small|medium|home|category)_default/'
+)
+
+def _upgrade_prestashop_url(url: str) -> str:
+    """Sube variantes pequeñas PrestaShop a large_default (~800-1000px)."""
+    return _PS_UPGRADE.sub(r'/\1-large_default/', url)
 
 
 def _filter_by_ean(images: list, barcode: str = "") -> list:
@@ -244,11 +251,13 @@ def _extract_images(page, page_url: str, barcode: str = "") -> list:
             return
         if not _should_keep_url(full):
             return
+        # Subir miniaturas PrestaShop (medium/small/...) a large_default
+        full = _upgrade_prestashop_url(full)
         clean = _strip_size_suffix(full)
         if clean in seen:
             return
         seen.add(clean)
-        ordered.append(clean)
+        ordered.append(full)  # URL real (large_default), no la clave de dedup
 
     # 1. og:image
     try:
