@@ -338,6 +338,7 @@ def search_amazon_image_urls(title: str, barcode: str = "",
                 )
                 if is_captcha:
                     log.info(f"  [amazon] CAPTCHA detectado en {purl} — saltando")
+                    time.sleep(3)
                     continue
             except Exception:
                 pass

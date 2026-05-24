@@ -493,6 +493,12 @@ def _save_catalog(catalog: dict):
         log.warning(f"No se pudo guardar catálogo: {e}")
 
 
+def save_catalog(catalog: dict):
+    """Interfaz pública — permite que process_brand persista datos adicionales
+    (p. ej. amazon_images) sin acceso directo a la ruta interna del catálogo."""
+    _save_catalog(catalog)
+
+
 # ─── Interfaz pública ─────────────────────────────────────────────────────────
 
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
