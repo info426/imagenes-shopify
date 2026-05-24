@@ -374,6 +374,15 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     except Exception:
         exclude_domain = ""
 
+    # web_y_amazon: pre-inicializar Playwright de Amazon ANTES del bucle.
+    # Los scrapers usan DDG (asyncio) dentro de find_best_match(), y Playwright
+    # sync_api no puede arrancarse después de que asyncio ya haya corrido en
+    # el mismo hilo. Pre-inicializar aquí garantiza que el contexto Playwright
+    # se crea antes de que cualquier loop asyncio esté activo.
+    if fuente == "web_y_amazon":
+        log.info("Pre-inicializando Amazon Playwright…")
+        amazon._get_page()
+
     for i, product in enumerate(products, 1):
         pid   = product["id"]
         title = product["title"]
