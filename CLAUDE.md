@@ -104,6 +104,7 @@ de Shopify. Sirve tanto al workflow de imágenes como al futuro de descripciones
 | Metacampo | Tipo | Para qué |
 |---|---|---|
 | `fuentes.url_fabricante` | `url` | URL **activa** que leen los workflows |
+| `fuentes.url_fabricante_2` | `url` | URL **alternativa** opcional (otra versión, idioma o web extendida del mismo producto) |
 | `fuentes.historico` | `json` | Registro append-only `[{url, fecha, workflow, resultado}]` |
 
 **Por qué metacampo y no la descripción (`body_html`):** la descripción es
@@ -111,12 +112,18 @@ visible al cliente, es HTML libre (parseo frágil) y la sobrescribiría el futur
 workflow de descripciones. El metacampo es estructurado, tipado, invisible al
 storefront y accesible por API (`/products/{id}/metafields.json`).
 
+**Crear las definiciones** (workflow `Crear metacampos fuente` / `--crear-metacampos`):
+crea vía GraphQL las definiciones de los tres metacampos para que aparezcan en el
+admin del producto y se puedan pegar las URLs a mano. Ejecutar una sola vez.
+
 **Cómo funciona** (en `core/process_brand.py` → `run_web`):
-1. Antes del matching se lee `fuentes.url_fabricante`. Si existe **y** el scraper
-   expone `scrape_product_url(url, barcode)` → se scrapea esa URL directamente,
-   **saltando DDG/matching** (override sobre cualquier fuente web).
+1. Antes del matching se leen `fuentes.url_fabricante` y `url_fabricante_2`. Si
+   hay alguna **y** el scraper expone `scrape_product_url(url, barcode)` → se
+   scrapean esas URLs directamente, **saltando DDG/matching** (override sobre
+   cualquier fuente web). Con dos URLs se combinan las imágenes y el dedup
+   perceptual conserva la de mayor resolución.
 2. Si no hay URL → flujo normal (DDG/`find_best_match`), y al resolverla se
-   **escribe** en el metacampo (auto-aprendizaje) + entrada en el histórico.
+   **escribe** `url_fabricante` (auto-aprendizaje) + entrada en el histórico.
 
 **Backfill inicial** (workflow `Backfill URLs fabricante` / `--backfill-urls`):
 importa las URLs ya cacheadas en `resultados/{slug}_catalog.json` a los

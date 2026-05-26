@@ -175,22 +175,31 @@ def _print_stats(stats: dict):
 # Guardamos la fuente oficial de cada producto en metacampos de Shopify para que
 # los workflows (imágenes y, en el futuro, descripciones) no tengan que buscarla
 # por DDG cada vez:
-#   fuentes.url_fabricante (url)  → URL activa que leen los workflows
-#   fuentes.historico      (json) → registro append-only [{url, fecha, workflow, resultado}]
+#   fuentes.url_fabricante   (url)  → URL activa que leen los workflows
+#   fuentes.url_fabricante_2 (url)  → URL alternativa (otra versión/idioma/web)
+#   fuentes.historico        (json) → registro append-only [{url, fecha, workflow, resultado}]
 
 MF_NAMESPACE = "fuentes"
 MF_KEY_URL   = "url_fabricante"
+MF_KEY_URL_2 = "url_fabricante_2"
+MF_KEYS_URL  = (MF_KEY_URL, MF_KEY_URL_2)
 MF_KEY_HIST  = "historico"
 
 
-def _read_source_url(api: ShopifyAPI, pid: int) -> str:
-    """Lee la URL del fabricante guardada en fuentes.url_fabricante (o '')."""
-    try:
-        mf = api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL)
-        return (mf or {}).get("value") or ""
-    except Exception as e:
-        log.debug(f"  [metacampo] no se pudo leer url_fabricante: {e}")
-        return ""
+def _read_source_urls(api: ShopifyAPI, pid: int) -> list:
+    """Lee las URLs del fabricante (url_fabricante + url_fabricante_2).
+    Devuelve la lista de URLs no vacías, sin duplicados, conservando el orden."""
+    urls = []
+    for key in MF_KEYS_URL:
+        try:
+            mf = api.get_metafield(pid, MF_NAMESPACE, key)
+            val = (mf or {}).get("value") or ""
+        except Exception as e:
+            log.debug(f"  [metacampo] no se pudo leer {key}: {e}")
+            val = ""
+        if val and val not in urls:
+            urls.append(val)
+    return urls
 
 
 def _save_source_url(api: ShopifyAPI, pid: int, url: str,
@@ -447,25 +456,29 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
         raw_images = []
 
         # Fuente 1a — Override por metacampo: si el producto tiene
-        # fuentes.url_fabricante, scrapeamos esa URL directamente y nos
-        # saltamos DDG/matching (más rápido y sin falsos positivos).
-        source_url = (_read_source_url(api, pid)
-                      if hasattr(scraper, "scrape_product_url") else "")
-        if source_url:
-            log.info(f"  URL fabricante (metacampo): {source_url}")
-            try:
-                entry = scraper.scrape_product_url(source_url, barcode=barcode)
-            except Exception as e:
-                log.warning(f"  [metacampo] error scrapeando URL: {e}")
-                entry = None
-            if entry and entry.get("images"):
-                web_matched = True
-                log.info(f"  Match directo (metacampo): {len(entry['images'])} imgs")
-                raw_images += _download_hires(entry["images"], "web")
-                _save_source_url(api, pid, source_url, "imagenes",
-                                 f"{len(entry['images'])} imgs")
-            else:
-                log.warning("  [metacampo] URL no dio imágenes — fallback a matching")
+        # fuentes.url_fabricante (y/o url_fabricante_2), scrapeamos esas URLs
+        # directamente y nos saltamos DDG/matching (más rápido y sin falsos
+        # positivos). Con dos URLs (p. ej. versión ES + EN del mismo producto)
+        # se combinan las imágenes; dedupe_images conserva la de mayor resolución.
+        source_urls = (_read_source_urls(api, pid)
+                       if hasattr(scraper, "scrape_product_url") else [])
+        if source_urls:
+            log.info(f"  URLs fabricante (metacampo): {source_urls}")
+            for su in source_urls:
+                try:
+                    entry = scraper.scrape_product_url(su, barcode=barcode)
+                except Exception as e:
+                    log.warning(f"  [metacampo] error scrapeando {su}: {e}")
+                    entry = None
+                if entry and entry.get("images"):
+                    web_matched = True
+                    log.info(f"  Match directo (metacampo): "
+                             f"{len(entry['images'])} imgs — {su}")
+                    raw_images += _download_hires(entry["images"], "web")
+                else:
+                    log.warning(f"  [metacampo] sin imágenes en {su}")
+            if not web_matched:
+                log.warning("  [metacampo] ninguna URL dio imágenes — fallback a matching")
 
         # Fuente 1b — matching estándar (DDG) si el override no resolvió
         if not web_matched:
@@ -558,6 +571,46 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     _print_stats(stats)
 
 
+# ─── Modo crear definiciones de metacampo ───────────────────────────────────────
+
+def run_create_metafield_defs(api: ShopifyAPI):
+    """Crea las definiciones de metacampo en Shopify para que aparezcan en el
+    admin del producto y se puedan editar a mano (pegar las URLs)."""
+    defs = [
+        ("URL fabricante",       MF_KEY_URL,   "url",
+         "URL oficial del producto en la web del fabricante (fuente activa)."),
+        ("URL fabricante (2)",   MF_KEY_URL_2, "url",
+         "URL alternativa del mismo producto (otra versión, idioma o web extendida)."),
+        ("Histórico de fuentes", MF_KEY_HIST,  "json",
+         "Registro de URLs de fuente usadas por los workflows (no editar a mano)."),
+    ]
+    mutation = """
+    mutation CreateDef($definition: MetafieldDefinitionInput!) {
+      metafieldDefinitionCreate(definition: $definition) {
+        createdDefinition { id name namespace key }
+        userErrors { field message code }
+      }
+    }
+    """
+    for name, key, mtype, desc in defs:
+        variables = {"definition": {
+            "name": name, "namespace": MF_NAMESPACE, "key": key,
+            "type": mtype, "ownerType": "PRODUCT", "description": desc,
+        }}
+        try:
+            res = api.graphql(mutation, variables).get("metafieldDefinitionCreate", {})
+            errs = res.get("userErrors", [])
+            if errs:
+                if any(e.get("code") == "TAKEN" for e in errs):
+                    log.info(f"  ✓ {MF_NAMESPACE}.{key} — ya existía")
+                else:
+                    log.warning(f"  ✗ {MF_NAMESPACE}.{key}: {errs}")
+            else:
+                log.info(f"  ✓ creada {MF_NAMESPACE}.{key} ({mtype})")
+        except Exception as e:
+            log.warning(f"  ✗ {MF_NAMESPACE}.{key}: {e}")
+
+
 # ─── Modo backfill de URLs ──────────────────────────────────────────────────────
 
 def run_backfill_urls(api: ShopifyAPI, vendor: str):
@@ -602,7 +655,7 @@ def run_backfill_urls(api: ShopifyAPI, vendor: str):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vendor",          required=True)
+    parser.add_argument("--vendor",          default="")
     parser.add_argument("--fuente",
                         choices=["shopify_backup", "web_oficial", "web_y_amazon"])
     parser.add_argument("--web-url",         default="")
@@ -610,6 +663,8 @@ def main():
     parser.add_argument("--only-ids",        default="")
     parser.add_argument("--rebuild-catalog", action="store_true")
     parser.add_argument("--backup",          action="store_true")
+    parser.add_argument("--crear-metacampos", action="store_true",
+                        help="Crear las definiciones de metacampo fuentes.* en Shopify")
     parser.add_argument("--backfill-urls",   action="store_true",
                         help="Importar URLs cacheadas a metacampos fuentes.url_fabricante")
     parser.add_argument("--force-backup",    action="store_true",
@@ -626,10 +681,15 @@ def main():
         log.error("Faltan CLIENT_ID / CLIENT_SECRET")
         sys.exit(1)
 
+    if not args.crear_metacampos and not args.vendor:
+        log.error("--vendor requerido")
+        sys.exit(1)
+
     force_padding: bool | None = {"true": True, "false": False, "auto": None}[args.force_padding]
 
     log.info("=" * 60)
     mode = ("BACKUP" if args.backup else
+            "CREAR-METACAMPOS" if args.crear_metacampos else
             "BACKFILL-URLS" if args.backfill_urls else
             (args.fuente or "?").upper())
     log.info(f"  Vendor   : {args.vendor}")
@@ -651,6 +711,8 @@ def main():
 
     if args.backup:
         run_backup(api, args.vendor, force=args.force_backup)
+    elif args.crear_metacampos:
+        run_create_metafield_defs(api)
     elif args.backfill_urls:
         run_backfill_urls(api, args.vendor)
     elif args.fuente == "shopify_backup":

@@ -114,3 +114,14 @@ class ShopifyAPI:
                                              "value": value, "type": mtype}},
                          timeout=30)
         return r.json().get("metafield", {})
+
+    def graphql(self, query: str, variables: dict = None) -> dict:
+        """Ejecuta una consulta GraphQL Admin. Necesario para crear definiciones
+        de metacampo (no soportado por la REST API)."""
+        r = _request("POST", f"{self.base}/graphql.json", headers=self.h,
+                     json={"query": query, "variables": variables or {}},
+                     timeout=30)
+        data = r.json()
+        if data.get("errors"):
+            raise ValueError(f"GraphQL errors: {data['errors']}")
+        return data.get("data", {})
