@@ -25,6 +25,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 
@@ -167,6 +168,60 @@ def _print_stats(stats: dict):
     log.info("=" * 60)
     for k, v in stats.items():
         log.info(f"  {k:<14}: {v}")
+
+
+# ─── Metacampos de fuente (URL del fabricante) ──────────────────────────────────
+#
+# Guardamos la fuente oficial de cada producto en metacampos de Shopify para que
+# los workflows (imágenes y, en el futuro, descripciones) no tengan que buscarla
+# por DDG cada vez:
+#   fuentes.url_fabricante (url)  → URL activa que leen los workflows
+#   fuentes.historico      (json) → registro append-only [{url, fecha, workflow, resultado}]
+
+MF_NAMESPACE = "fuentes"
+MF_KEY_URL   = "url_fabricante"
+MF_KEY_HIST  = "historico"
+
+
+def _read_source_url(api: ShopifyAPI, pid: int) -> str:
+    """Lee la URL del fabricante guardada en fuentes.url_fabricante (o '')."""
+    try:
+        mf = api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL)
+        return (mf or {}).get("value") or ""
+    except Exception as e:
+        log.debug(f"  [metacampo] no se pudo leer url_fabricante: {e}")
+        return ""
+
+
+def _save_source_url(api: ShopifyAPI, pid: int, url: str,
+                     workflow: str, resultado: str):
+    """Guarda la URL activa y la añade al histórico JSON (append-only)."""
+    if not url:
+        return
+    try:
+        api.set_metafield(pid, MF_NAMESPACE, MF_KEY_URL, url, "url")
+        hist = []
+        hist_mf = api.get_metafield(pid, MF_NAMESPACE, MF_KEY_HIST)
+        if hist_mf and hist_mf.get("value"):
+            try:
+                hist = json.loads(hist_mf["value"])
+                if not isinstance(hist, list):
+                    hist = []
+            except Exception:
+                hist = []
+        # No duplicar la última entrada si la URL no ha cambiado
+        if not hist or hist[-1].get("url") != url:
+            hist.append({
+                "url":       url,
+                "fecha":     datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                "workflow":  workflow,
+                "resultado": resultado,
+            })
+            api.set_metafield(pid, MF_NAMESPACE, MF_KEY_HIST,
+                              json.dumps(hist, ensure_ascii=False), "json")
+        log.info(f"  [metacampo] url_fabricante guardada: {url}")
+    except Exception as e:
+        log.warning(f"  [metacampo] no se pudo guardar url_fabricante: {e}")
 
 
 # ─── Modo backup ──────────────────────────────────────────────────────────────
@@ -386,24 +441,54 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
              if v.get("barcode")),
             ""
         )
-        sig = inspect.signature(scraper.find_best_match)
-        if "barcode" in sig.parameters:
-            handle, score = scraper.find_best_match(title, catalog,
-                                                     barcode=barcode)
-        else:
-            handle, score = scraper.find_best_match(title, catalog)
 
-        web_matched = handle is not None and score >= 0.10
+        handle, score = None, 0.0
+        web_matched = False
         raw_images = []
 
-        # Fuente 1 — web oficial (si hay match en el catálogo)
-        if web_matched:
-            entry = catalog[handle]
-            log.info(f"  Match: {handle}  (score={score:.2f}, "
-                     f"{len(entry.get('images', []))} imgs)")
-            raw_images += _download_hires(entry.get("images", []), "web")
-        else:
-            log.warning(f"  Sin match web (score={score:.2f})")
+        # Fuente 1a — Override por metacampo: si el producto tiene
+        # fuentes.url_fabricante, scrapeamos esa URL directamente y nos
+        # saltamos DDG/matching (más rápido y sin falsos positivos).
+        source_url = (_read_source_url(api, pid)
+                      if hasattr(scraper, "scrape_product_url") else "")
+        if source_url:
+            log.info(f"  URL fabricante (metacampo): {source_url}")
+            try:
+                entry = scraper.scrape_product_url(source_url, barcode=barcode)
+            except Exception as e:
+                log.warning(f"  [metacampo] error scrapeando URL: {e}")
+                entry = None
+            if entry and entry.get("images"):
+                web_matched = True
+                log.info(f"  Match directo (metacampo): {len(entry['images'])} imgs")
+                raw_images += _download_hires(entry["images"], "web")
+                _save_source_url(api, pid, source_url, "imagenes",
+                                 f"{len(entry['images'])} imgs")
+            else:
+                log.warning("  [metacampo] URL no dio imágenes — fallback a matching")
+
+        # Fuente 1b — matching estándar (DDG) si el override no resolvió
+        if not web_matched:
+            sig = inspect.signature(scraper.find_best_match)
+            if "barcode" in sig.parameters:
+                handle, score = scraper.find_best_match(title, catalog,
+                                                         barcode=barcode)
+            else:
+                handle, score = scraper.find_best_match(title, catalog)
+
+            web_matched = handle is not None and score >= 0.10
+            if web_matched:
+                entry = catalog[handle]
+                log.info(f"  Match: {handle}  (score={score:.2f}, "
+                         f"{len(entry.get('images', []))} imgs)")
+                raw_images += _download_hires(entry.get("images", []), "web")
+                # Auto-aprendizaje: persistir la URL resuelta para próximas veces
+                resolved_url = entry.get("url")
+                if resolved_url:
+                    _save_source_url(api, pid, resolved_url, "imagenes",
+                                     f"ddg score={score:.2f}")
+            else:
+                log.warning(f"  Sin match web (score={score:.2f})")
 
         # Fuente 2 — Amazon (solo en web_y_amazon; se combina con la web)
         if fuente == "web_y_amazon":
@@ -473,6 +558,46 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     _print_stats(stats)
 
 
+# ─── Modo backfill de URLs ──────────────────────────────────────────────────────
+
+def run_backfill_urls(api: ShopifyAPI, vendor: str):
+    """Importa las URLs ya resueltas en resultados/<slug>_catalog.json a los
+    metacampos fuentes.url_fabricante de cada producto, sin lanzar DDG."""
+    slug = vendor_slug(vendor)
+    try:
+        scraper = importlib.import_module(f"marcas.{slug}")
+    except ImportError:
+        log.error(f"No existe scraper para '{vendor}'.")
+        sys.exit(1)
+
+    key_fn = getattr(scraper, "title_cache_key", None)
+    if key_fn is None:
+        log.error(f"marcas/{slug}.py no expone title_cache_key(); no se puede "
+                  f"mapear título Shopify → URL cacheada.")
+        sys.exit(1)
+
+    catalog = scraper.scrape_catalog("", rebuild=False)
+    if not catalog:
+        log.warning("Catálogo vacío — nada que importar.")
+        return
+
+    products = api.get_products(vendor)
+    stats = dict(total=len(products), guardadas=0, sin_url=0)
+    for i, product in enumerate(products, 1):
+        pid, title = product["id"], product["title"]
+        entry = catalog.get(key_fn(title))
+        url = entry.get("url") if isinstance(entry, dict) else None
+        if url:
+            _save_source_url(api, pid, url, "backfill", "catalogo")
+            stats["guardadas"] += 1
+            log.info(f"[{i}/{len(products)}] {title[:50]} → {url}")
+        else:
+            stats["sin_url"] += 1
+            log.info(f"[{i}/{len(products)}] {title[:50]} — sin URL cacheada")
+        time.sleep(0.3)
+    _print_stats(stats)
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -485,6 +610,8 @@ def main():
     parser.add_argument("--only-ids",        default="")
     parser.add_argument("--rebuild-catalog", action="store_true")
     parser.add_argument("--backup",          action="store_true")
+    parser.add_argument("--backfill-urls",   action="store_true",
+                        help="Importar URLs cacheadas a metacampos fuentes.url_fabricante")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -502,7 +629,9 @@ def main():
     force_padding: bool | None = {"true": True, "false": False, "auto": None}[args.force_padding]
 
     log.info("=" * 60)
-    mode = "BACKUP" if args.backup else (args.fuente or "?").upper()
+    mode = ("BACKUP" if args.backup else
+            "BACKFILL-URLS" if args.backfill_urls else
+            (args.fuente or "?").upper())
     log.info(f"  Vendor   : {args.vendor}")
     log.info(f"  Modo     : {mode}")
     log.info(f"  Pipeline : {args.pipeline}")
@@ -522,6 +651,8 @@ def main():
 
     if args.backup:
         run_backup(api, args.vendor, force=args.force_backup)
+    elif args.backfill_urls:
+        run_backfill_urls(api, args.vendor)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)

@@ -95,6 +95,35 @@ dedup. **No** se baja el mínimo: preferimos menos imágenes pero de calidad.
 
 ---
 
+## Metacampos de fuente (URL del fabricante)
+
+Para que los workflows no busquen la fuente por DDG en cada ejecución (lento y
+propenso a falsos positivos), cada producto guarda su URL oficial en metacampos
+de Shopify. Sirve tanto al workflow de imágenes como al futuro de descripciones.
+
+| Metacampo | Tipo | Para qué |
+|---|---|---|
+| `fuentes.url_fabricante` | `url` | URL **activa** que leen los workflows |
+| `fuentes.historico` | `json` | Registro append-only `[{url, fecha, workflow, resultado}]` |
+
+**Por qué metacampo y no la descripción (`body_html`):** la descripción es
+visible al cliente, es HTML libre (parseo frágil) y la sobrescribiría el futuro
+workflow de descripciones. El metacampo es estructurado, tipado, invisible al
+storefront y accesible por API (`/products/{id}/metafields.json`).
+
+**Cómo funciona** (en `core/process_brand.py` → `run_web`):
+1. Antes del matching se lee `fuentes.url_fabricante`. Si existe **y** el scraper
+   expone `scrape_product_url(url, barcode)` → se scrapea esa URL directamente,
+   **saltando DDG/matching** (override sobre cualquier fuente web).
+2. Si no hay URL → flujo normal (DDG/`find_best_match`), y al resolverla se
+   **escribe** en el metacampo (auto-aprendizaje) + entrada en el histórico.
+
+**Backfill inicial** (workflow `Backfill URLs fabricante` / `--backfill-urls`):
+importa las URLs ya cacheadas en `resultados/{slug}_catalog.json` a los
+metacampos sin lanzar DDG. Requiere que el scraper exponga `title_cache_key(title)`.
+
+---
+
 ## Estándar de imagen
 
 Todas las imágenes se procesan con:
@@ -123,6 +152,18 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
 def find_best_match(shopify_title: str, catalog: dict) -> tuple:
     """Devuelve (handle, score). score mínimo aceptable: 0.10"""
     ...
+```
+
+Opcionales para aprovechar los metacampos de fuente:
+
+```python
+def scrape_product_url(url: str, barcode: str = "") -> dict | None:
+    """Extrae imágenes de una URL exacta (sin DDG). {name, url, images} o None.
+    Habilita el override por metacampo fuentes.url_fabricante."""
+    ...
+
+title_cache_key = _title_key   # alias público: título Shopify → clave de caché
+                               # (lo usa --backfill-urls para importar URLs)
 ```
 
 2. Ejecutar `Test marca` con `fuente: web_oficial` para validar

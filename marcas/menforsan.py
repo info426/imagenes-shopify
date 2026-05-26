@@ -522,6 +522,24 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     return {}
 
 
+# Alias público: mapea un título Shopify a la clave de caché del catálogo.
+# Lo usa el backfill de metacampos (core/process_brand.py) para importar URLs.
+title_cache_key = _title_key
+
+
+def scrape_product_url(url: str, barcode: str = "") -> dict | None:
+    """Extrae imágenes de una URL de producto exacta, sin DDG ni matching.
+    Usado por el override de metacampo (core/process_brand.py).
+    Devuelve {name, url, images} o None si la página no da imágenes."""
+    page = _get_page()
+    if page is None:
+        return None
+    name, images = _try_url(page, url, barcode=barcode)
+    if not images:
+        return None
+    return {"name": name or "", "url": url, "images": images}
+
+
 def find_best_match(shopify_title: str, catalog: dict,
                     barcode: str = "") -> tuple:
     """

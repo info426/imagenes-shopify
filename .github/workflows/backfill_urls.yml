@@ -1,0 +1,46 @@
+name: Backfill URLs fabricante (metacampos)
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify'
+        required: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Importar URLs cacheadas a metacampos
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          python3 core/process_brand.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --backfill-urls \
+            2>&1 | tee resultados/backfill_urls_${{ github.event.inputs.vendor }}.txt
+
+      - name: Subir log como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backfill-urls-${{ github.event.inputs.vendor }}
+          path: resultados/backfill_urls_*.txt
+          retention-days: 7

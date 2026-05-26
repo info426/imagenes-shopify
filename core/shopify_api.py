@@ -89,3 +89,28 @@ class ShopifyAPI:
                      json={"variant": {"id": variant_id, "image_id": image_id}},
                      timeout=30)
         return r.json()
+
+    def get_metafield(self, pid: int, namespace: str, key: str) -> dict | None:
+        r = _request("GET", f"{self.base}/products/{pid}/metafields.json",
+                     headers=self.h,
+                     params={"namespace": namespace, "key": key}, timeout=30)
+        mfs = r.json().get("metafields", [])
+        return mfs[0] if mfs else None
+
+    def set_metafield(self, pid: int, namespace: str, key: str,
+                      value: str, mtype: str) -> dict:
+        """Crea o actualiza un metacampo de producto (upsert por namespace+key)."""
+        existing = self.get_metafield(pid, namespace, key)
+        if existing:
+            r = _request("PUT", f"{self.base}/metafields/{existing['id']}.json",
+                         headers=self.h,
+                         json={"metafield": {"id": existing["id"],
+                                             "value": value, "type": mtype}},
+                         timeout=30)
+        else:
+            r = _request("POST", f"{self.base}/products/{pid}/metafields.json",
+                         headers=self.h,
+                         json={"metafield": {"namespace": namespace, "key": key,
+                                             "value": value, "type": mtype}},
+                         timeout=30)
+        return r.json().get("metafield", {})
