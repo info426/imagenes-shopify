@@ -434,6 +434,31 @@ El listado de `artero.com/es/petcare/` se carga vía JS dinámico y no es fiable
 
 ---
 
+## Trabajo pendiente / ideas descartadas temporalmente
+
+### Restaurar calidad de imágenes degradadas (PENDIENTE)
+
+**Objetivo:** workflow para recuperar nitidez en imágenes que perdieron calidad
+por compresión, reescalado o ediciones repetidas.
+
+**Pipeline diseñado (implementado y revertido — demasiado lento en Actions):**
+1. Denoise — `cv2.fastNlMeansDenoisingColored` elimina ruido/artefactos JPG *antes* de ampliar
+2. Super-resolución EDSR x2/x4 — elimina pixelado, recupera detalle (`core/upscale.py` ya lo tiene)
+3. Unsharp mask — `PIL.ImageFilter.UnsharpMask(radius=2, percent=150, threshold=3)` sube nitidez
+4. `process_image` → estándar 2000×2000 WebP
+
+**Motivo del revert:** ejecución muy lenta en GitHub Actions + resultado no satisfactorio.
+
+**Próximo paso cuando se retome:**
+- Probar **Real-ESRGAN** en lugar de EDSR: está entrenado en degradación real
+  (compresión, ruido), recupera más detalle en imágenes realmente degradadas.
+  Paquete: `basicsr` + `realesrgan` (PyTorch CPU) o binario `realesrgan-ncnn-vulkan`.
+- Origen: descarga imagen viva de Shopify por vendor + product_ids.
+- Destino: reemplaza en la misma posición conservando alt.
+- Módulo de referencia a recrear: `core/restore_image.py` (eliminado del repo).
+
+---
+
 ## Autenticación Shopify
 
 ```
