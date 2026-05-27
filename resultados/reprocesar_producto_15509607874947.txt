@@ -1,0 +1,68 @@
+2026-05-27 10:37:07,343 [INFO] ============================================================
+2026-05-27 10:37:07,343 [INFO]   Vendor    : AFFINITY
+2026-05-27 10:37:07,343 [INFO]   Modo      : ESCANEO PRODUCTO
+2026-05-27 10:37:07,343 [INFO]   Pipeline  : standard
+2026-05-27 10:37:07,343 [INFO]   Padding   : auto
+2026-05-27 10:37:07,343 [INFO]   sRGB      : no
+2026-05-27 10:37:07,343 [INFO] ============================================================
+2026-05-27 10:37:08,269 [INFO] [15509607874947] ADVANCE FELINE ADULT STERILIZED PAVO (NDR) — 10 imágenes
+2026-05-27 10:37:08,542 [INFO]   pos 1: NO optimizada (jpg 1098×1500) — reprocesando
+2026-05-27 10:37:08,650 [INFO]     cargada RGB (1098, 1500) ← 71n9pd6ImwL._AC_SL1500_c4d1d2c9-43a5-42a4-bed8-19eba2806379.jpg
+2026-05-27 10:37:08,664 [INFO]     [bg] 2688/2916 (92%)
+2026-05-27 10:37:08,675 [INFO]     [autocrop] (1098, 1500) → (1058, 1494)
+2026-05-27 10:37:08,676 [INFO]     [fills-frame 96%×100%] → sin padding
+2026-05-27 10:37:08,676 [INFO]     [sin padding]
+2026-05-27 10:37:12,242 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_1.webp] en posición 1
+2026-05-27 10:37:12,744 [INFO]   pos 2: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-27 10:37:12,780 [INFO]     cargada RGB (1500, 1500) ← 81DFX1PomeL._AC_SL1500.jpg
+2026-05-27 10:37:12,796 [INFO]     [bg] 2850/5776 (49%)
+2026-05-27 10:37:12,796 [INFO]     [sin padding]
+2026-05-27 10:37:16,623 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_2.webp] en posición 2
+2026-05-27 10:37:17,125 [INFO]   pos 3: NO optimizada (jpg 1500×1364) — reprocesando
+2026-05-27 10:37:17,168 [INFO]     cargada RGB (1500, 1364) ← 71jx-ORHehL._AC_SL1500_c563071e-749c-491e-a4a0-d857e519ce05.jpg
+2026-05-27 10:37:17,182 [INFO]     [bg] 2312/4624 (50%)
+2026-05-27 10:37:17,182 [INFO]     [sin padding]
+2026-05-27 10:37:20,326 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_3.webp] en posición 3
+2026-05-27 10:37:20,828 [INFO]   pos 4: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-27 10:37:20,887 [INFO]     cargada RGB (1500, 1500) ← 71iwCH4zPTL._AC_SL1500_5699fd71-60fa-4af2-96c9-cd758e0ffcb7.jpg
+2026-05-27 10:37:20,904 [INFO]     [bg] 0/5776 (0%)
+2026-05-27 10:37:20,904 [INFO]     [sin padding]
+2026-05-27 10:37:24,378 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_4.webp] en posición 4
+2026-05-27 10:37:24,880 [INFO]   pos 5: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-27 10:37:24,928 [INFO]     cargada RGB (1500, 1500) ← 71UcP4AkPgL._AC_SL1500.jpg
+2026-05-27 10:37:24,944 [INFO]     [bg] 0/5776 (0%)
+2026-05-27 10:37:24,944 [INFO]     [sin padding]
+2026-05-27 10:37:28,354 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_5.webp] en posición 5
+2026-05-27 10:37:28,856 [INFO]   pos 6: NO optimizada (jpg 1500×1279) — reprocesando
+2026-05-27 10:37:28,994 [INFO]     cargada RGB (1500, 1279) ← 81n8PHw3CkL._AC_SL1500_c32f2919-744f-4306-b4af-e64069089ada.jpg
+2026-05-27 10:37:29,009 [INFO]     [bg] 2048/4096 (50%)
+2026-05-27 10:37:29,009 [INFO]     [sin padding]
+2026-05-27 10:37:32,686 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_6.webp] en posición 6
+2026-05-27 10:37:33,188 [INFO]   pos 7: NO optimizada (webp 1200×1200) — reprocesando
+2026-05-27 10:37:33,233 [INFO]     cargada RGB (1200, 1200) ← 00149510302349____23__1200x1200_207161bf-8983-471f-9813-f741b2ca97ac.webp
+2026-05-27 10:37:33,249 [INFO]     [bg] 3600/3600 (100%)
+2026-05-27 10:37:33,259 [INFO]     [autocrop] (1200, 1200) → (1084, 777)
+2026-05-27 10:37:33,259 [INFO]     [padding 5%]
+2026-05-27 10:37:37,058 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_7.webp] en posición 7
+2026-05-27 10:37:37,561 [INFO]   pos 8: NO optimizada (avif 1200×1200) — reprocesando
+2026-05-27 10:37:37,670 [INFO]     cargada RGB (1200, 1200) ← 00149510302349____17__1200x1200_959f4817-7e82-4319-8d8b-2235dc3587bf.avif
+2026-05-27 10:37:37,685 [INFO]     [bg] 3600/3600 (100%)
+2026-05-27 10:37:37,695 [INFO]     [autocrop] (1200, 1200) → (485, 1029)
+2026-05-27 10:37:37,695 [INFO]     [padding 5%]
+2026-05-27 10:37:40,883 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_8.webp] en posición 8
+2026-05-27 10:37:41,385 [INFO]   pos 9: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-27 10:37:41,434 [INFO]     cargada RGB (1500, 1500) ← 711Gm6nkzrL._AC_SL1500_d563d405-2590-49e4-8e37-141ce12b3299.jpg
+2026-05-27 10:37:41,449 [INFO]     [bg] 0/5776 (0%)
+2026-05-27 10:37:41,449 [INFO]     [sin padding]
+2026-05-27 10:37:44,504 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_9.webp] en posición 9
+2026-05-27 10:37:45,007 [INFO]   pos 10: NO optimizada (jpg 1500×1500) — reprocesando
+2026-05-27 10:37:45,038 [INFO]     cargada RGB (1500, 1500) ← 71-yiQ7xlJL._AC_SL1500_2d8b7084-ce98-41e3-9412-4b0b3ad5d2b2.jpg
+2026-05-27 10:37:45,055 [INFO]     [bg] 0/5776 (0%)
+2026-05-27 10:37:45,055 [INFO]     [sin padding]
+2026-05-27 10:37:48,044 [INFO]     ✓ reprocesada y subida [advance-feline-adult-sterilized-pavo-ndr_10.webp] en posición 10
+2026-05-27 10:37:48,546 [INFO] ============================================================
+2026-05-27 10:37:48,546 [INFO]   reprocesadas  : 10
+2026-05-27 10:37:48,546 [INFO]   omitidas      : 0
+2026-05-27 10:37:48,546 [INFO]   errores       : 0
+2026-05-27 10:37:48,546 [INFO] 
+✓ Completado
