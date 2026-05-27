@@ -401,6 +401,19 @@ del lote completo. Escribe solo el metacampo, no toca imágenes.
 **Infra:** el workflow hace checkout de `main`; el scraper + el modo `--resolver-urls`
 deben estar en `main` antes de lanzarlo.
 
+**⏳ PENDIENTE DE VERIFICAR (próxima sesión — RECORDAR AL USUARIO):**
+- Workflow `Resolver URLs fabricante` lanzado en modo **test** con
+  `product_ids=15509630452099` (APPLAWS CAT DRY KITTEN POLLO). Estaba **en progreso**
+  al cerrar la sesión.
+- **Qué revisar al volver:** Actions → run de `Resolver URLs fabricante` → log/artefacto
+  (`resultados/resolver_urls_Applaws.txt`). Confirmar que escribió
+  `https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-2kg/` (o equivalente)
+  en `fuentes.url_fabricante` del producto y que el score ≥ 0.30.
+- **Si el test fue OK:** lanzar el lote completo (mismo workflow, `product_ids` vacío
+  = todos los Applaws, ~80 productos).
+- **Si falló:** revisar si fue 403 (ajustar anti-bot/warm-up), DDG sin candidatos
+  (revisar query/threshold) o slug directo erróneo. Ver el log para diagnosticar.
+
 ### Menforsan — notas de estrategia (EN PROCESO)
 
 **Situación:** los productos MENFORSAN no tienen imágenes en Shopify → Caso C
