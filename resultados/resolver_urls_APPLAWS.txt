@@ -1,0 +1,35 @@
+2026-05-27 14:38:40,633 [INFO] ============================================================
+2026-05-27 14:38:40,633 [INFO]   Vendor   : APPLAWS
+2026-05-27 14:38:40,633 [INFO]   Modo     : RESOLVER-URLS
+2026-05-27 14:38:40,633 [INFO]   Pipeline : standard
+2026-05-27 14:38:40,633 [INFO]   Padding  : auto
+2026-05-27 14:38:40,633 [INFO]   Web    : https://applaws.pet/
+2026-05-27 14:38:40,633 [INFO] ============================================================
+2026-05-27 14:38:40,930 [INFO] Token obtenido
+2026-05-27 14:38:40,936 [INFO] Catálogo cargado desde caché: 1 entradas
+2026-05-27 14:38:41,265 [INFO] 
+[1/1] APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR  (ID: 15509633204611)
+2026-05-27 14:38:48,421 [INFO]   [slug directo] https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/ → 'APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR'
+2026-05-27 14:38:48,421 [INFO]   [DDG] site:applaws.pet/producto/ APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR
+2026-05-27 14:38:48,851 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aapplaws.pet/producto/%20APPLAWS%20CAT%20SOBRE%20PECHUGA%20DE%20POLLO%20Y%20SALMON%2012X70GR 200
+2026-05-27 14:38:48,898 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+SOBRE+PECHUGA+DE+POLLO+Y+SALMON+12X70GR&limit=1 200
+2026-05-27 14:38:49,724 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-05-27 14:38:49,727 [INFO]   [DDG] 6 candidatos: ['https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/', 'https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-en-caldo-12x70gr/', 'https://applaws.pet/producto/applaws-cat-sobre-caldo-pollo-multipack-12x70gr/', 'https://applaws.pet/producto/applaws-cat-sobre-pollo-con-esparragos-12x70gr/', 'https://applaws.pet/producto/applaws-cat-lata-pollo-multipack-12x70gr/', 'https://applaws.pet/producto/applaws-cat-lata-seleccion-suprema-multipack-12x70gr/']
+2026-05-27 14:38:54,130 [INFO]   [cand] score=1.00 'APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR' https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   [cand] score=0.62 'APPLAWS CAT SOBRE PECHUGA DE POLLO EN CALDO 12X70GR' https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-en-caldo-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   [cand] score=0.50 'APPLAWS CAT SOBRE CALDO POLLO MULTIPACK 12X70GR' https://applaws.pet/producto/applaws-cat-sobre-caldo-pollo-multipack-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   [cand] score=0.57 'APPLAWS CAT SOBRE POLLO CON ESPARRAGOS 12X70GR' https://applaws.pet/producto/applaws-cat-sobre-pollo-con-esparragos-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   [cand] score=0.38 'APPLAWS CAT LATA POLLO MULTIPACK 12X70GR' https://applaws.pet/producto/applaws-cat-lata-pollo-multipack-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   [cand] score=0.20 'APPLAWS CAT LATA SELECCION SUPREMA MULTIPACK 12X70GR' https://applaws.pet/producto/applaws-cat-lata-seleccion-suprema-multipack-12x70gr/
+2026-05-27 14:38:54,130 [INFO]   Extrayendo imágenes del ganador: https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/
+2026-05-27 14:38:57,560 [INFO]     Imágenes extraídas: 1
+2026-05-27 14:38:57,561 [INFO]   ✓ Resuelto: APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR (score=1.00, 1 imgs) https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/
+2026-05-27 14:38:58,811 [INFO]   [metacampo] url_fabricante guardada: https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/
+2026-05-27 14:38:58,811 [INFO]   → https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/  (score=1.00)
+2026-05-27 14:38:59,311 [INFO] 
+============================================================
+2026-05-27 14:38:59,311 [INFO] RESUMEN
+2026-05-27 14:38:59,311 [INFO] ============================================================
+2026-05-27 14:38:59,311 [INFO]   total         : 1
+2026-05-27 14:38:59,311 [INFO]   guardadas     : 1
+2026-05-27 14:38:59,311 [INFO]   sin_match     : 0
