@@ -1,17 +1,22 @@
 {
   "img_01": {
     "alt": "",
-    "filename": "61Bf2FyGQoL._AC_SL1001_15509619147139_1.webp",
+    "filename": "DC6673D4182C84858616260EEF34ED880CDB9D47BBD4_Resized_15509619147139_1.webp",
     "position": 1
   },
   "img_02": {
     "alt": "",
-    "filename": "818qII9KgPL._AC_SL1500_15509619147139_2.webp",
+    "filename": "61Bf2FyGQoL._AC_SL1001_15509619147139_2.webp",
     "position": 2
   },
   "img_03": {
     "alt": "",
-    "filename": "71yBHUVtCvL._AC_SL1500_15509619147139_3.webp",
+    "filename": "818qII9KgPL._AC_SL1500_15509619147139_3.webp",
     "position": 3
+  },
+  "img_04": {
+    "alt": "",
+    "filename": "D97D7C29D0547DC41ABBCA1D0DD3236C1BE8DFBDA247_Resized_15509619147139_4.webp",
+    "position": 4
   }
 }
