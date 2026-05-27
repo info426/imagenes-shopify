@@ -7,6 +7,21 @@ Tienda: `7ev1zx-eg.myshopify.com`
 
 ---
 
+## Regla de desarrollo — SIEMPRE mergear a main
+
+**Todos los cambios deben mergearse a `main` antes de cualquier otra cosa.**
+Los workflows de GitHub Actions hacen `checkout ref: main`, por lo que cualquier
+código en una rama de desarrollo no llega a los workflows hasta que esté en main.
+
+**Flujo obligatorio al final de cada tarea:**
+1. Commitear los cambios en la rama de desarrollo
+2. `git checkout main && git pull origin main`
+3. `git merge <rama-desarrollo> --no-edit`
+4. `git push origin main`
+5. Borrar la rama temporal si ya no hace falta
+
+---
+
 ## Estructura del repositorio
 
 ```
