@@ -1,0 +1,311 @@
+2026-05-27 18:36:53,610 [INFO] ============================================================
+2026-05-27 18:36:53,610 [INFO]   Vendor   : ARTERO
+2026-05-27 18:36:53,610 [INFO]   Modo     : RESOLVER-URLS
+2026-05-27 18:36:53,610 [INFO]   Pipeline : standard
+2026-05-27 18:36:53,610 [INFO]   Padding  : auto
+2026-05-27 18:36:53,610 [INFO]   Web    : https://artero.com/es/petcare/
+2026-05-27 18:36:53,610 [INFO] ============================================================
+2026-05-27 18:36:53,991 [INFO] Token obtenido
+2026-05-27 18:36:54,001 [INFO] Catálogo cargado desde caché: 53 productos (URLs rehidratadas con /wysiwyg/)
+2026-05-27 18:36:55,322 [INFO] 
+[1/34] ARTERO ACONDICIONADOR FLASH 300 ML (NDR)  (ID: 15509635072387)
+2026-05-27 18:36:55,341 [INFO]   Match caché exacto: artero-acondicionador-flash-300ml
+2026-05-27 18:36:56,786 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-acondicionador-flash-300ml
+2026-05-27 18:36:56,786 [INFO]   → https://artero.com/es/petcare/artero-acondicionador-flash-300ml  (score=1.00)
+2026-05-27 18:36:57,286 [INFO] 
+[2/34] ARTERO ACONDICIONADOR KERATIN VITAL (NDR)  (ID: 15509635137923)
+2026-05-27 18:36:59,031 [INFO]   [slug] https://artero.com/es/petcare/artero-acondicionador-keratin-vital
+2026-05-27 18:37:01,488 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO ACONDICIONADOR KERATIN VITAL
+2026-05-27 18:37:02,103 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20ACONDICIONADOR%20KERATIN%20VITAL 200
+2026-05-27 18:37:04,468 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+KERATIN+VITAL&limit=1 200
+2026-05-27 18:37:05,002 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+KERATIN+VITAL&source=web 200
+2026-05-27 18:37:05,009 [INFO]   [DDG] → https://artero.com/es/petcare/blog/post/reparar-el-pelo-del-perro
+2026-05-27 18:37:10,800 [INFO]   Sanity check falla (0/2 tokens de ['acondicionador', 'keratin', 'vital'] ∩ ['como', 'del', 'experto', 'hidrata', 'pelo', 'perro', 'un']): 'Hidrata el pelo del perro como un experto'
+2026-05-27 18:37:10,800 [WARNING]   Sin resolución para slug esperado 'artero-acondicionador-keratin-vital'
+2026-05-27 18:37:10,800 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:37:11,300 [INFO] 
+[3/34] ARTERO ACONDICIONADOR PROTEIN VITAL (NDR)  (ID: 15509635203459)
+2026-05-27 18:37:11,300 [INFO]   [slug] https://artero.com/es/petcare/artero-acondicionador-protein-vital
+2026-05-27 18:37:13,161 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO ACONDICIONADOR PROTEIN VITAL
+2026-05-27 18:37:13,304 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20ACONDICIONADOR%20PROTEIN%20VITAL 200
+2026-05-27 18:37:13,368 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&limit=1 200
+2026-05-27 18:37:13,885 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL 403
+2026-05-27 18:37:13,938 [INFO] Error in engine duckduckgo: DDGSException("ConnectError: ConnectError('[Errno 104] Connection reset by peer')")
+2026-05-27 18:37:14,114 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:37:14,247 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:37:14,736 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+ACONDICIONADOR+PROTEIN+VITAL&source=web 200
+2026-05-27 18:37:14,742 [INFO]   [DDG] → https://artero.com/es/petcare/blog/post/reparar-el-pelo-del-perro
+2026-05-27 18:37:18,847 [INFO]   Sanity check falla (0/2 tokens de ['acondicionador', 'protein', 'vital'] ∩ ['como', 'del', 'experto', 'hidrata', 'pelo', 'perro', 'un']): 'Hidrata el pelo del perro como un experto'
+2026-05-27 18:37:18,847 [WARNING]   Sin resolución para slug esperado 'artero-acondicionador-protein-vital'
+2026-05-27 18:37:18,847 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:37:19,347 [INFO] 
+[4/34] ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)  (ID: 15509635301763)
+2026-05-27 18:37:19,348 [INFO]   Match caché exacto: artero-auriclean-polvo-oidos-30gr
+2026-05-27 18:37:20,805 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-auroclean-polvo-oidos-30-gr
+2026-05-27 18:37:20,805 [INFO]   → https://artero.com/es/petcare/artero-auroclean-polvo-oidos-30-gr  (score=1.00)
+2026-05-27 18:37:21,305 [INFO] 
+[5/34] ARTERO CHAMPU BABY (NDR)  (ID: 15509635432835)
+2026-05-27 18:37:21,305 [INFO]   Match caché exacto: artero-champu-baby
+2026-05-27 18:37:22,785 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-hidratante-250ml
+2026-05-27 18:37:22,785 [INFO]   → https://artero.com/es/petcare/artero-champu-hidratante-250ml  (score=1.00)
+2026-05-27 18:37:23,285 [INFO] 
+[6/34] ARTERO CHAMPU BASIC (NDR)  (ID: 15509635531139)
+2026-05-27 18:37:23,286 [INFO]   [slug] https://artero.com/es/petcare/artero-champu-basic
+2026-05-27 18:37:24,520 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CHAMPU BASIC
+2026-05-27 18:37:24,691 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CHAMPU%20BASIC 200
+2026-05-27 18:37:24,904 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&limit=1 200
+2026-05-27 18:37:25,435 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC 403
+2026-05-27 18:37:26,614 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&web=1&searchid=1870492 200
+2026-05-27 18:37:27,107 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CHAMPU+BASIC&source=web 200
+2026-05-27 18:37:27,113 [INFO]   [DDG] → https://artero.com/es/petcare/champu-basic-cien-ml
+2026-05-27 18:37:35,760 [INFO]   ✓ Resuelto vía DDG: champu-basic-cien-ml (23 imgs)
+2026-05-27 18:37:37,170 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/champu-basic-cien-ml
+2026-05-27 18:37:37,170 [INFO]   → https://artero.com/es/petcare/champu-basic-cien-ml  (score=1.00)
+2026-05-27 18:37:37,670 [INFO] 
+[7/34] ARTERO CHAMPU BLANC  (ID: 15509635727747)
+2026-05-27 18:37:37,670 [INFO]   Match caché exacto: artero-champu-blanc
+2026-05-27 18:37:39,829 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-blanc-300-ml
+2026-05-27 18:37:39,830 [INFO]   → https://artero.com/es/petcare/artero-champu-blanc-300-ml  (score=1.00)
+2026-05-27 18:37:40,330 [INFO] 
+[8/34] ARTERO CHAMPU BYE BYE (NDR)  (ID: 15509635924355)
+2026-05-27 18:37:40,330 [INFO]   Match caché exacto: artero-champu-bye-bye
+2026-05-27 18:37:41,776 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-bye-bye-antiparasitario-250-ml
+2026-05-27 18:37:41,776 [INFO]   → https://artero.com/es/petcare/artero-champu-bye-bye-antiparasitario-250-ml  (score=1.00)
+2026-05-27 18:37:42,276 [INFO] 
+[9/34] ARTERO CHAMPU DETOX CARBON ACTIVO  (ID: 15509636088195)
+2026-05-27 18:37:42,277 [INFO]   Match caché exacto: artero-champu-detox-carbon-activo
+2026-05-27 18:37:43,690 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-detox-carbon-activo-250-ml
+2026-05-27 18:37:43,690 [INFO]   → https://artero.com/es/petcare/artero-champu-detox-carbon-activo-250-ml  (score=1.00)
+2026-05-27 18:37:44,190 [INFO] 
+[10/34] ARTERO CHAMPU GATO (NDR)  (ID: 15509636153731)
+2026-05-27 18:37:44,191 [INFO]   Match caché exacto: artero-champu-gato
+2026-05-27 18:37:45,662 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-gato-250-ml
+2026-05-27 18:37:45,663 [INFO]   → https://artero.com/es/petcare/artero-champu-gato-250-ml  (score=1.00)
+2026-05-27 18:37:46,163 [INFO] 
+[11/34] ARTERO CHAMPU HIDRATANTE  (ID: 15509636284803)
+2026-05-27 18:37:46,163 [INFO]   Match caché exacto: artero-champu-hidratante
+2026-05-27 18:37:47,561 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-hidratante-250ml
+2026-05-27 18:37:47,561 [INFO]   → https://artero.com/es/petcare/artero-champu-hidratante-250ml  (score=1.00)
+2026-05-27 18:37:48,062 [INFO] 
+[12/34] ARTERO CHAMPU RELAX (NDR)  (ID: 15509636415875)
+2026-05-27 18:37:48,062 [INFO]   Match caché exacto: artero-champu-relax
+2026-05-27 18:37:49,806 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-relax-para-pieles-sensibles-250-ml
+2026-05-27 18:37:49,807 [INFO]   → https://artero.com/es/petcare/artero-champu-relax-para-pieles-sensibles-250-ml  (score=1.00)
+2026-05-27 18:37:50,307 [INFO] 
+[13/34] ARTERO CHAMPU TSUNAMI 100 ML (NDR)  (ID: 15509636579715)
+2026-05-27 18:37:50,307 [INFO]   Match caché exacto: artero-champu-tsunami-100ml
+2026-05-27 18:37:51,776 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/champu-tsunami
+2026-05-27 18:37:51,777 [INFO]   → https://artero.com/es/petcare/champu-tsunami  (score=1.00)
+2026-05-27 18:37:52,277 [INFO] 
+[14/34] ARTERO CHAMPU VITALIZANTE  (ID: 15509636776323)
+2026-05-27 18:37:52,277 [INFO]   Match caché exacto: artero-champu-vitalizante
+2026-05-27 18:37:53,706 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-vitalizante-250ml
+2026-05-27 18:37:53,706 [INFO]   → https://artero.com/es/petcare/artero-champu-vitalizante-250ml  (score=1.00)
+2026-05-27 18:37:54,207 [INFO] 
+[15/34] ARTERO CORREA DOG CONTROL 360  (ID: 15509636809091)
+2026-05-27 18:37:54,207 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-dog-control-360
+2026-05-27 18:37:55,419 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA DOG CONTROL 360
+2026-05-27 18:37:55,615 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20DOG%20CONTROL%20360 200
+2026-05-27 18:37:55,728 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360&limit=1 200
+2026-05-27 18:37:56,686 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360&web=1&searchid=2340121 200
+2026-05-27 18:37:56,878 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:37:57,013 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:37:57,062 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360&source=web 429
+2026-05-27 18:37:57,179 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:37:57,479 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:37:58,115 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360 403
+2026-05-27 18:37:58,303 [INFO] response: https://search.yahoo.com/search;_ylt=o8d6B4y78AgoYP6IYpWy8lhh;_ylu=7Wjf76x-MWxud_ZoKb_DtuOX1yjCRqyrjz0c_mw5p1ZzX04?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+DOG+CONTROL+360 200
+2026-05-27 18:37:58,349 [INFO]   [DDG] → https://artero.com/es/petcare/artero-correa-dog-control
+2026-05-27 18:38:06,705 [INFO]   ✓ Resuelto vía DDG: artero-correa-dog-control (13 imgs)
+2026-05-27 18:38:08,172 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-correa-dog-control
+2026-05-27 18:38:08,172 [INFO]   → https://artero.com/es/petcare/artero-correa-dog-control  (score=1.00)
+2026-05-27 18:38:08,672 [INFO] 
+[16/34] ARTERO CORREA PELUQUERIA 50CM  (ID: 15509636972931)
+2026-05-27 18:38:08,672 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-peluqueria-50cm
+2026-05-27 18:38:09,909 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PELUQUERIA 50CM
+2026-05-27 18:38:10,087 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM&limit=1 200
+2026-05-27 18:38:10,117 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PELUQUERIA%2050CM 200
+2026-05-27 18:38:10,268 [INFO] response: https://search.yahoo.com/search;_ylt=a6Rdm52edTy_uIwhXr-thtIK;_ylu=GNznDdBWHprCJQm3_AYWuO7tSsJQaXf8KXVYe1uGnJZIs4s?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM 200
+2026-05-27 18:38:10,611 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM&source=web 429
+2026-05-27 18:38:10,745 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:38:11,706 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM&web=1&searchid=1778580 200
+2026-05-27 18:38:12,245 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM 403
+2026-05-27 18:38:12,459 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:38:12,589 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:38:12,822 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PELUQUERIA+50CM&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:38:12,836 [INFO]   [DDG] → https://artero.com/es/petcare/utillaje
+2026-05-27 18:38:17,577 [INFO]   Sanity check falla (0/2 tokens de ['50cm', 'correa', 'peluqueria'] ∩ ['complementos', 'perros']): 'Complementos para Perros'
+2026-05-27 18:38:17,577 [WARNING]   Sin resolución para slug esperado 'artero-correa-peluqueria-50cm'
+2026-05-27 18:38:17,577 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:38:18,077 [INFO] 
+[17/34] ARTERO CORREA PINZA ROSA (NDR)  (ID: 15509637169539)
+2026-05-27 18:38:18,077 [INFO]   [slug] https://artero.com/es/petcare/artero-correa-pinza-rosa
+2026-05-27 18:38:19,354 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO CORREA PINZA ROSA
+2026-05-27 18:38:19,529 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20CORREA%20PINZA%20ROSA 200
+2026-05-27 18:38:19,604 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&limit=1 200
+2026-05-27 18:38:19,707 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:38:19,883 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:38:20,026 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:38:20,526 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA 403
+2026-05-27 18:38:20,677 [INFO] response: https://search.yahoo.com/search;_ylt=msqnPcPPtPr7TYp88ozl2yVe;_ylu=greyNeMPIB3iXzt3seIw5DN1CYwYaBWOVQuopvf6j9fTmr0?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA 200
+2026-05-27 18:38:20,925 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:38:20,987 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&source=web 429
+2026-05-27 18:38:21,980 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+CORREA+PINZA+ROSA&web=1&searchid=1590431 200
+2026-05-27 18:38:22,011 [INFO]   [DDG] → https://artero.com/es/petcare/correa-de-exposicion-con-pinza
+2026-05-27 18:38:29,907 [INFO]   ✓ Resuelto vía DDG: correa-de-exposicion-con-pinza (13 imgs)
+2026-05-27 18:38:31,525 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/correa-de-exposicion-con-pinza
+2026-05-27 18:38:31,525 [INFO]   → https://artero.com/es/petcare/correa-de-exposicion-con-pinza  (score=1.00)
+2026-05-27 18:38:32,025 [INFO] 
+[18/34] ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)  (ID: 15509637202307)
+2026-05-27 18:38:32,026 [INFO]   Match caché exacto: artero-espuma-voluminizadora-zoom-150ml
+2026-05-27 18:38:33,562 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-espuma-voluminizadora-zoom-150ml
+2026-05-27 18:38:33,562 [INFO]   → https://artero.com/es/petcare/artero-espuma-voluminizadora-zoom-150ml  (score=1.00)
+2026-05-27 18:38:34,063 [INFO] 
+[19/34] ARTERO HIGIENE PERFUME BABY 90 ML (NDR)  (ID: 15509637333379)
+2026-05-27 18:38:34,063 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-perfume-baby-90ml
+2026-05-27 18:38:35,449 [INFO]   [slug] https://artero.com/es/petcare/artero-perfume-baby-90ml
+2026-05-27 18:38:36,692 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO HIGIENE PERFUME BABY 90 ML
+2026-05-27 18:38:36,875 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20HIGIENE%20PERFUME%20BABY%2090%20ML 200
+2026-05-27 18:38:36,976 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML&limit=1 200
+2026-05-27 18:38:37,952 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML&web=1&searchid=9445427 200
+2026-05-27 18:38:38,104 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:38:38,654 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+PERFUME+BABY+90+ML&source=web 200
+2026-05-27 18:38:38,660 [INFO]   [DDG] → https://artero.com/es/petcare/seis-parfum-pack
+2026-05-27 18:38:45,658 [INFO]   Sanity check falla (0/2 tokens de ['90', 'baby', 'higiene', 'perfume'] ∩ ['pack', 'perfumes']): 'Artero Pack 6 Perfumes'
+2026-05-27 18:38:45,658 [WARNING]   Sin resolución para slug esperado 'artero-higiene-perfume-baby-90ml'
+2026-05-27 18:38:45,658 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:38:46,158 [INFO] 
+[20/34] ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)  (ID: 15509637366147)
+2026-05-27 18:38:46,159 [INFO]   Match caché exacto: artero-higiene-perfume-fresh-90ml
+2026-05-27 18:38:47,624 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-perfume-fresh-90ml
+2026-05-27 18:38:47,625 [INFO]   → https://artero.com/es/petcare/artero-perfume-fresh-90ml  (score=1.00)
+2026-05-27 18:38:48,125 [INFO] 
+[21/34] ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)  (ID: 15509637398915)
+2026-05-27 18:38:48,125 [INFO]   Match caché exacto: artero-higiene-perfume-impact-90ml
+2026-05-27 18:38:49,543 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-perfume-impact-90ml
+2026-05-27 18:38:49,543 [INFO]   → https://artero.com/es/petcare/artero-perfume-impact-90ml  (score=1.00)
+2026-05-27 18:38:50,043 [INFO] 
+[22/34] ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)  (ID: 15509637464451)
+2026-05-27 18:38:50,044 [INFO]   Match caché exacto: artero-higiene-perfume-tierra-90ml
+2026-05-27 18:38:51,485 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-perfume-tierra-90ml
+2026-05-27 18:38:51,485 [INFO]   → https://artero.com/es/petcare/artero-perfume-tierra-90ml  (score=1.00)
+2026-05-27 18:38:51,985 [INFO] 
+[23/34] ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)  (ID: 15509637529987)
+2026-05-27 18:38:51,985 [INFO]   Match caché exacto: artero-perfume-violet-90ml
+2026-05-27 18:38:53,373 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-perfume-violet-90ml
+2026-05-27 18:38:53,373 [INFO]   → https://artero.com/es/petcare/artero-perfume-violet-90ml  (score=1.00)
+2026-05-27 18:38:53,873 [INFO] 
+[24/34] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)  (ID: 15509637562755)
+2026-05-27 18:38:53,874 [INFO]   [slug] https://artero.com/es/petcare/artero-higiene-speedchampu-seco-300ml
+2026-05-27 18:38:55,189 [INFO]   [slug] https://artero.com/es/petcare/artero-speedchampu-seco-300ml
+2026-05-27 18:38:56,439 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML
+2026-05-27 18:38:56,619 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20HIGIENE%20SPEEDCHAMPU%20SECO%20300%20ML 200
+2026-05-27 18:38:56,722 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML&limit=1 200
+2026-05-27 18:38:57,204 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+HIGIENE+SPEEDCHAMPU+SECO+300+ML&source=web 200
+2026-05-27 18:38:57,210 [INFO]   [DDG] → https://artero.com/es/petcare/razas/golden-retriever
+2026-05-27 18:39:03,249 [INFO]   Sanity check falla (0/2 tokens de ['300', 'higiene', 'seco', 'speedchampu'] ∩ ['cuidados', 'del', 'golden', 'retriever']): 'Cuidados del Golden Retriever'
+2026-05-27 18:39:03,249 [WARNING]   Sin resolución para slug esperado 'artero-higiene-speedchampu-seco-300ml'
+2026-05-27 18:39:03,249 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:39:03,749 [INFO] 
+[25/34] ARTERO INTENSIFYNG 1LT (NDR)  (ID: 15509637595523)
+2026-05-27 18:39:03,749 [INFO]   [slug] https://artero.com/es/petcare/artero-intensifyng-1lt
+2026-05-27 18:39:05,161 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO INTENSIFYNG 1LT
+2026-05-27 18:39:05,351 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20INTENSIFYNG%201LT 200
+2026-05-27 18:39:05,468 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT&limit=1 200
+2026-05-27 18:39:05,624 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:39:05,782 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:39:06,289 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT 403
+2026-05-27 18:39:06,393 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:39:06,468 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT&source=web 429
+2026-05-27 18:39:07,411 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT&web=1&searchid=4384108 200
+2026-05-27 18:39:07,718 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:39:07,874 [INFO] response: https://search.yahoo.com/search;_ylt=zA3pvawQxeXF3TyvQ3XWljGp;_ylu=vgd23zwKV-AcaLMK4VoqCt78Yiw-H8TYmIkxiMQEg4csm8s?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+INTENSIFYNG+1LT 200
+2026-05-27 18:39:07,897 [INFO]   [DDG] → https://artero.com/es/petcare/artero-champu-intensificador-1lt
+2026-05-27 18:39:16,156 [INFO]   ✓ Resuelto vía DDG: artero-champu-intensificador-1lt (13 imgs)
+2026-05-27 18:39:17,651 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-champu-intensificador-1lt
+2026-05-27 18:39:17,651 [INFO]   → https://artero.com/es/petcare/artero-champu-intensificador-1lt  (score=1.00)
+2026-05-27 18:39:18,151 [INFO] 
+[26/34] ARTERO LACA PODIUM DRY HOLD 500 ML (NDR)  (ID: 15509637628291)
+2026-05-27 18:39:18,151 [INFO]   [slug] https://artero.com/es/petcare/artero-laca-podium-dry-hold-500ml
+2026-05-27 18:39:19,451 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO LACA PODIUM DRY HOLD 500 ML
+2026-05-27 18:39:19,688 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20LACA%20PODIUM%20DRY%20HOLD%20500%20ML 200
+2026-05-27 18:39:19,843 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&limit=1 200
+2026-05-27 18:39:20,188 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:39:20,374 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:39:20,533 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:39:21,033 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LACA+PODIUM+DRY+HOLD+500+ML&source=web 200
+2026-05-27 18:39:21,038 [INFO]   [DDG] → https://artero.com/es/petcare/documentos
+2026-05-27 18:39:25,914 [WARNING]   Sin resolución para slug esperado 'artero-laca-podium-dry-hold-500ml'
+2026-05-27 18:39:25,914 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:39:26,415 [INFO] 
+[27/34] ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)  (ID: 15509637661059)
+2026-05-27 18:39:26,415 [INFO]   Match caché exacto: artero-laca-podium-strong-hold-500ml
+2026-05-27 18:39:27,862 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-laca-podium-strong-hold-285gr
+2026-05-27 18:39:27,862 [INFO]   → https://artero.com/es/petcare/artero-laca-podium-strong-hold-285gr  (score=1.00)
+2026-05-27 18:39:28,362 [INFO] 
+[28/34] ARTERO LAZOS VARIADOS 10 UNI (NDR)  (ID: 15509637726595)
+2026-05-27 18:39:28,363 [INFO]   [slug] https://artero.com/es/petcare/artero-lazos-variados-10-uni
+2026-05-27 18:39:29,708 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO LAZOS VARIADOS 10 UNI
+2026-05-27 18:39:29,903 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20LAZOS%20VARIADOS%2010%20UNI 200
+2026-05-27 18:39:30,745 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&limit=1 200
+2026-05-27 18:39:30,854 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:39:31,137 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:39:32,192 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&web=1&searchid=7683422 200
+2026-05-27 18:39:32,367 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:39:32,528 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:39:32,665 [INFO] response: https://search.yahoo.com/search;_ylt=vhy1fVY4dO6J0xDNh6kankrk;_ylu=XcWq8or5--BQBE-kswXrM959ntjglcAu_NMB0nxpROwLPe0?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI 200
+2026-05-27 18:39:32,712 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI&source=web 429
+2026-05-27 18:39:33,201 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+LAZOS+VARIADOS+10+UNI 403
+2026-05-27 18:39:33,201 [INFO]   [DDG] → https://artero.com/es/petcare/utillaje/gomitas-lazos
+2026-05-27 18:39:39,215 [INFO]   Sanity check falla (1/2 tokens de ['10', 'lazos', 'uni', 'variados'] ∩ ['lazos', 'perros', 'vendas']): 'Vendas y Lazos para Perros'
+2026-05-27 18:39:39,215 [WARNING]   Sin resolución para slug esperado 'artero-lazos-variados-10-uni'
+2026-05-27 18:39:39,215 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:39:39,715 [INFO] 
+[29/34] ARTERO MATT-X (NDR)  (ID: 15509637759363)
+2026-05-27 18:39:39,716 [INFO]   Match caché exacto: artero-matt-x
+2026-05-27 18:39:41,165 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-matt-x-desenredante-para-perros-y-gatos
+2026-05-27 18:39:41,165 [INFO]   → https://artero.com/es/petcare/artero-matt-x-desenredante-para-perros-y-gatos  (score=1.00)
+2026-05-27 18:39:41,665 [INFO] 
+[30/34] ARTERO MIX ACONDICIONADOR SPRAY (NDR)  (ID: 15509637824899)
+2026-05-27 18:39:41,665 [INFO]   [slug] https://artero.com/es/petcare/artero-mix-acondicionador-spray
+2026-05-27 18:39:42,944 [INFO]   [DDG] site:artero.com/es/petcare/ ARTERO MIX ACONDICIONADOR SPRAY
+2026-05-27 18:39:43,136 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aartero.com/es/petcare/%20ARTERO%20MIX%20ACONDICIONADOR%20SPRAY 200
+2026-05-27 18:39:43,144 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&limit=1 200
+2026-05-27 18:39:43,270 [INFO] response: https://search.yahoo.com/search;_ylt=duTZ6E9R0XOkJ9weR9rdHVIz;_ylu=h6l2nqVKYgwdKwZiPXDkN8bsGAvE1mccmZDt5ildOyaaOcc?p=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY 200
+2026-05-27 18:39:43,804 [INFO] response: https://www.mojeek.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY 403
+2026-05-27 18:39:44,855 [INFO] response: https://yandex.com/search/site/?text=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&web=1&searchid=2722049 200
+2026-05-27 18:39:45,098 [INFO] response: https://www.google.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 18:39:45,162 [INFO] response: https://search.brave.com/search?q=site%3Aartero.com%2Fes%2Fpetcare%2F+ARTERO+MIX+ACONDICIONADOR+SPRAY&source=web 429
+2026-05-27 18:39:45,278 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-27 18:39:45,445 [INFO] response: https://www.startpage.com/ 200
+2026-05-27 18:39:45,709 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-27 18:39:45,710 [INFO]   [DDG] → https://artero.com/es/petcare/artero-acondicionador-mix
+2026-05-27 18:39:46,995 [WARNING]   Sin resolución para slug esperado 'artero-mix-acondicionador-spray'
+2026-05-27 18:39:46,995 [WARNING]   Sin URL (score=0.00)
+2026-05-27 18:39:47,495 [INFO] 
+[31/34] ARTERO PRETTY EYES (NDR)  (ID: 15509637890435)
+2026-05-27 18:39:47,496 [INFO]   Match caché exacto: artero-pretty-eyes
+2026-05-27 18:39:48,912 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-pretty-eyes
+2026-05-27 18:39:48,912 [INFO]   → https://artero.com/es/petcare/artero-pretty-eyes  (score=1.00)
+2026-05-27 18:39:49,412 [INFO] 
+[32/34] Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes  (ID: 15415511908739)
+2026-05-27 18:39:49,412 [INFO]   Match caché exacto: artero-samba-bayeta-ultra-absorbente-para-perros-medianos-y-grandes
+2026-05-27 18:39:50,894 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-samba
+2026-05-27 18:39:50,894 [INFO]   → https://artero.com/es/petcare/artero-samba  (score=1.00)
+2026-05-27 18:39:51,394 [INFO] 
+[33/34] ARTERO SPRAY BALSAM 250 ML (NDR)  (ID: 15509637955971)
+2026-05-27 18:39:51,395 [INFO]   Match caché exacto: artero-spray-balsam-250ml
+2026-05-27 18:39:52,839 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-spray-balsam-250-ml
+2026-05-27 18:39:52,839 [INFO]   → https://artero.com/es/petcare/artero-spray-balsam-250-ml  (score=1.00)
+2026-05-27 18:39:53,339 [INFO] 
+[34/34] ARTERO STATIC CONTROL 150 ML (NDR)  (ID: 15509637988739)
+2026-05-27 18:39:53,339 [INFO]   Match caché exacto: artero-static-control-150ml
+2026-05-27 18:39:54,783 [INFO]   [metacampo] url_fabricante guardada: https://artero.com/es/petcare/artero-static-control-300ml
+2026-05-27 18:39:54,783 [INFO]   → https://artero.com/es/petcare/artero-static-control-300ml  (score=1.00)
+2026-05-27 18:39:55,283 [INFO] 
+============================================================
+2026-05-27 18:39:55,283 [INFO] RESUMEN
+2026-05-27 18:39:55,284 [INFO] ============================================================
+2026-05-27 18:39:55,284 [INFO]   total         : 34
+2026-05-27 18:39:55,284 [INFO]   guardadas     : 26
+2026-05-27 18:39:55,284 [INFO]   sin_match     : 8
