@@ -1,0 +1,39 @@
+2026-05-27 14:32:40,786 [INFO] ============================================================
+2026-05-27 14:32:40,786 [INFO]   Vendor   : Applaws
+2026-05-27 14:32:40,786 [INFO]   Modo     : RESOLVER-URLS
+2026-05-27 14:32:40,786 [INFO]   Pipeline : standard
+2026-05-27 14:32:40,786 [INFO]   Padding  : auto
+2026-05-27 14:32:40,786 [INFO]   Web    : https://applaws.pet/
+2026-05-27 14:32:40,786 [INFO] ============================================================
+2026-05-27 14:32:41,131 [INFO] Token obtenido
+2026-05-27 14:32:41,136 [INFO] Catálogo vacío — se rellenará bajo demanda
+2026-05-27 14:32:41,671 [INFO] 
+[1/1] APPLAWS CAT DRY KITTEN POLLO  (ID: 15509630452099)
+2026-05-27 14:32:48,980 [INFO]   [slug directo] https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/ → 'APPLAWS CAT DRY KITTEN POLLO 2KG'
+2026-05-27 14:32:48,980 [INFO]   [DDG] site:applaws.pet/producto/ APPLAWS CAT DRY KITTEN POLLO
+2026-05-27 14:32:49,364 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+DRY+KITTEN+POLLO&limit=1 200
+2026-05-27 14:32:49,414 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aapplaws.pet/producto/%20APPLAWS%20CAT%20DRY%20KITTEN%20POLLO 200
+2026-05-27 14:32:49,793 [INFO] response: https://www.google.com/search?q=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+DRY+KITTEN+POLLO&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-27 14:32:49,961 [INFO] response: https://search.yahoo.com/search;_ylt=CxEijAAydmQENsCefA6f7Cih;_ylu=GB1PBCNBAGZLezYUOzPOLOYia1dWq5vrI3x42ayMAyGHwDk?p=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+DRY+KITTEN+POLLO 200
+2026-05-27 14:32:51,027 [INFO] response: https://yandex.com/search/site/?text=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+DRY+KITTEN+POLLO&web=1&searchid=8896171 200
+2026-05-27 14:32:51,608 [INFO] response: https://search.brave.com/search?q=site%3Aapplaws.pet%2Fproducto%2F+APPLAWS+CAT+DRY+KITTEN+POLLO&source=web 200
+2026-05-27 14:32:51,615 [INFO]   [DDG] 6 candidatos: ['https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-400gr/', 'https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-75kg/', 'https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-2kg/', 'https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-y-salmon-75kg/', 'https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-400gr/', 'https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-y-salmon-400gr/']
+2026-05-27 14:32:57,110 [INFO]   [cand] score=1.00 'APPLAWS CAT DRY KITTEN POLLO 2KG' https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/
+2026-05-27 14:32:57,110 [INFO]   [cand] score=0.80 'APPLAWS CAT DRY KITTEN POLLO 400GR' https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-400gr/
+2026-05-27 14:32:57,111 [INFO]   [cand] score=1.00 'APPLAWS CAT DRY KITTEN POLLO 7,5KG' https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-75kg/
+2026-05-27 14:32:57,111 [INFO]   [cand] score=1.00 'APPLAWS CAT DRY KITTEN POLLO 2KG' https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-2kg/
+2026-05-27 14:32:57,111 [INFO]   [cand] score=0.50 'APPLAWS CAT DRY ADULTO POLLO Y SALMON 7,5KG' https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-y-salmon-75kg/
+2026-05-27 14:32:57,111 [INFO]   [cand] score=0.50 'APPLAWS CAT DRY ADULTO POLLO 400GR' https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-400gr/
+2026-05-27 14:32:57,111 [INFO]   [cand] score=0.43 'APPLAWS CAT DRY ADULTO POLLO Y SALMON 400GR' https://applaws.pet/producto/applaws-cat-dry-adulto-pollo-y-salmon-400gr/
+2026-05-27 14:32:57,111 [INFO]   Extrayendo imágenes del ganador: https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/
+2026-05-27 14:33:01,541 [INFO]     Imágenes extraídas: 1
+2026-05-27 14:33:01,541 [INFO]   ✓ Resuelto: APPLAWS CAT DRY KITTEN POLLO 2KG (score=1.00, 1 imgs) https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/
+2026-05-27 14:33:02,800 [INFO]   [metacampo] url_fabricante guardada: https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/
+2026-05-27 14:33:02,800 [INFO]   → https://applaws.pet/producto/applaws-cat-dry-kitten-pollo/  (score=1.00)
+2026-05-27 14:33:03,300 [INFO] 
+============================================================
+2026-05-27 14:33:03,300 [INFO] RESUMEN
+2026-05-27 14:33:03,300 [INFO] ============================================================
+2026-05-27 14:33:03,300 [INFO]   total         : 1
+2026-05-27 14:33:03,300 [INFO]   guardadas     : 1
+2026-05-27 14:33:03,300 [INFO]   sin_match     : 0
