@@ -651,6 +651,62 @@ def run_backfill_urls(api: ShopifyAPI, vendor: str):
     _print_stats(stats)
 
 
+# ─── Modo resolver URLs (busca en la web y guarda el metacampo) ─────────────────
+
+def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
+                     rebuild: bool, product_id: int = None,
+                     only_ids: set = None):
+    """Para cada producto resuelve su URL oficial vía el scraper de la marca
+    (find_best_match: slug directo + DDG) y la guarda en el metacampo
+    fuentes.url_fabricante. NO procesa ni toca las imágenes."""
+    slug = vendor_slug(vendor)
+    try:
+        scraper = importlib.import_module(f"marcas.{slug}")
+    except ImportError:
+        log.error(f"No existe scraper para '{vendor}'. "
+                  f"Crea marcas/{slug}.py con scrape_catalog() y find_best_match().")
+        sys.exit(1)
+
+    RESULTS_DIR.mkdir(exist_ok=True)
+    catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
+
+    if product_id:
+        products = [api.get_product(product_id)]
+    elif only_ids:
+        products = [api.get_product(pid) for pid in only_ids]
+    else:
+        products = api.get_products(vendor)
+
+    has_barcode = "barcode" in inspect.signature(scraper.find_best_match).parameters
+    stats = dict(total=len(products), guardadas=0, sin_match=0)
+    for i, product in enumerate(products, 1):
+        pid, title = product["id"], product["title"]
+        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+
+        barcode = next(
+            (str(v.get("barcode", "")).strip()
+             for v in product.get("variants", [])
+             if v.get("barcode")),
+            ""
+        )
+
+        if has_barcode:
+            handle, score = scraper.find_best_match(title, catalog, barcode=barcode)
+        else:
+            handle, score = scraper.find_best_match(title, catalog)
+
+        url = catalog.get(handle, {}).get("url") if handle else None
+        if handle is not None and score >= 0.10 and url:
+            _save_source_url(api, pid, url, "resolver-urls", f"score={score:.2f}")
+            stats["guardadas"] += 1
+            log.info(f"  → {url}  (score={score:.2f})")
+        else:
+            stats["sin_match"] += 1
+            log.warning(f"  Sin URL (score={score:.2f})")
+        time.sleep(0.5)
+    _print_stats(stats)
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -667,6 +723,9 @@ def main():
                         help="Crear las definiciones de metacampo fuentes.* en Shopify")
     parser.add_argument("--backfill-urls",   action="store_true",
                         help="Importar URLs cacheadas a metacampos fuentes.url_fabricante")
+    parser.add_argument("--resolver-urls",   action="store_true",
+                        help="Buscar la URL oficial de cada producto (web) y "
+                             "guardarla en fuentes.url_fabricante (sin tocar imágenes)")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -691,6 +750,7 @@ def main():
     mode = ("BACKUP" if args.backup else
             "CREAR-METACAMPOS" if args.crear_metacampos else
             "BACKFILL-URLS" if args.backfill_urls else
+            "RESOLVER-URLS" if args.resolver_urls else
             (args.fuente or "?").upper())
     log.info(f"  Vendor   : {args.vendor}")
     log.info(f"  Modo     : {mode}")
@@ -715,6 +775,9 @@ def main():
         run_create_metafield_defs(api)
     elif args.backfill_urls:
         run_backfill_urls(api, args.vendor)
+    elif args.resolver_urls:
+        run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
+                         args.product_id, only_ids or None)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)

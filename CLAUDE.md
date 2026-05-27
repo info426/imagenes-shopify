@@ -129,6 +129,14 @@ admin del producto y se puedan pegar las URLs a mano. Ejecutar una sola vez.
 importa las URLs ya cacheadas en `resultados/{slug}_catalog.json` a los
 metacampos sin lanzar DDG. Requiere que el scraper exponga `title_cache_key(title)`.
 
+**Resolver URLs desde cero** (workflow `Resolver URLs fabricante` / `--resolver-urls`):
+cuando todavía no hay URLs cacheadas, busca la URL oficial de **cada** producto
+con el scraper de la marca (`find_best_match`: slug directo + DDG) y la escribe en
+`fuentes.url_fabricante` + histórico. **No procesa imágenes** — solo resuelve y
+guarda la URL. Requiere `marcas/{slug}.py` (Playwright). Inputs: `vendor`,
+`web_url`, `product_ids` (opcional), `rebuild_catalog`. Usado para poblar las URLs
+de Applaws (`applaws.pet/producto/{slug}/`).
+
 ---
 
 ## Estándar de imagen
@@ -342,7 +350,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina N&D | Farmina | Completado | — |
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
-| Applaws | Applaws | Completado | — |
+| Applaws | Applaws | Completado (imágenes) — **pendiente** poblar `fuentes.url_fabricante` (web oficial) | web_oficial → marcas/applaws.py (applaws.pet/producto/) |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
@@ -354,6 +362,29 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
 | Menforsan | MENFORSAN | **En proceso** — fuente `web_y_amazon` probada, fixes aplicados, pendiente proceso masivo | web_y_amazon → marcas/menforsan.py (menforsan.com) |
+
+### Applaws — notas de estrategia (URLs fabricante)
+
+**Objetivo:** poblar `fuentes.url_fabricante` de cada producto Applaws con su URL
+oficial en `applaws.pet` (las imágenes ya están hechas). Útil para el futuro
+workflow de descripciones y para reprocesar imágenes desde la web si hace falta.
+
+**Scraper `marcas/applaws.py`:**
+- CMS: **WooCommerce** en español — URLs `/producto/{slug}/`. El slug incluye el
+  peso (`applaws-cat-dry-kitten-pollo-2kg`), que no siempre está en el título Shopify.
+- Anti-bot: `applaws.pet` devuelve **HTTP 403** sin navegador → Playwright + Chrome
+  UA + headers `Sec-Fetch-*` + bypass `navigator.webdriver` + warm-up homepage.
+- Resolución por producto: (1) slug directo desde el título; (2) DDG
+  `site:applaws.pet/producto/` con cascada (sin marca / por EAN) y ranking del h1.
+- `_normalize` divide número+unidad (`2kg`→`2 kg`) y descarta la unidad como
+  stopword → el peso no rompe el matching. `MATCH_THRESHOLD = 0.30`.
+
+**Cómo ejecutar:** workflow `Resolver URLs fabricante` (`--resolver-urls`) con
+`vendor=Applaws`, `web_url=https://applaws.pet/`. Test con un `product_ids` antes
+del lote completo. Escribe solo el metacampo, no toca imágenes.
+
+**Infra:** el workflow hace checkout de `main`; el scraper + el modo `--resolver-urls`
+deben estar en `main` antes de lanzarlo.
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 

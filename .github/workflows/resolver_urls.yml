@@ -1,0 +1,82 @@
+name: Resolver URLs fabricante (web → metacampos)
+
+# Busca la URL oficial de cada producto en la web del fabricante (vía el scraper
+# marcas/<slug>.py) y la guarda en el metacampo fuentes.url_fabricante.
+# NO procesa imágenes — solo resuelve y escribe la URL.
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify (p. ej. Applaws)'
+        required: true
+      web_url:
+        description: 'URL base de la web del fabricante'
+        required: false
+        default: 'https://applaws.pet/'
+      product_ids:
+        description: 'Un ID para test, varios separados por coma, vacío = todos'
+        required: false
+      rebuild_catalog:
+        description: 'Forzar re-scraping del catálogo web'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
+
+jobs:
+  resolver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Instalar Playwright
+        run: playwright install chromium --with-deps
+
+      - name: Resolver URLs y guardar metacampos
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          EXTRA=""
+          WEB=""
+          IDS=""
+          [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
+          [ -n "${{ github.event.inputs.web_url }}" ]     && WEB="--web-url ${{ github.event.inputs.web_url }}"
+          [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
+          python3 core/process_brand.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --resolver-urls \
+            $WEB $IDS $EXTRA \
+            2>&1 | tee resultados/resolver_urls_${{ github.event.inputs.vendor }}.txt
+
+      - name: Guardar log y catálogo
+        if: always()
+        run: |
+          if [ ! -d .git ]; then
+            echo "No hay workspace git. Nada que commitear."
+            exit 0
+          fi
+          if [ ! -d resultados ] || [ -z "$(ls -A resultados 2>/dev/null)" ]; then
+            echo "resultados/ vacío o ausente. Nada que commitear."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "resolver-urls: ${{ github.event.inputs.vendor }}"
+          git pull --rebase && git push
