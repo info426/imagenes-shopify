@@ -1,20 +1,27 @@
 """
-Scraper para Applaws — web oficial. Soporta dos sitios:
+Scraper para Applaws — web oficial. Soporta dos sitios con CMS distintos:
 
   - España (WooCommerce ES): https://applaws.pet/producto/{slug}/
-      slug en español con peso, p. ej. applaws-cat-dry-kitten-pollo-2kg
-  - Reino Unido (EN):        https://applaws.com/uk/...
-      títulos/slug en inglés (chicken, breast, pouch...)
+      slug en español con peso, p. ej. applaws-cat-dry-kitten-pollo-2kg.
+      Resolución bajo demanda: slug directo + DDG + ranking del h1.
+
+  - Reino Unido (Shopify EN): https://applaws.com/uk/products/{handle}/
+      Es una tienda Shopify → se descarga el catálogo COMPLETO de una vez vía
+      el endpoint público products.json (títulos, handles, imágenes, body_html,
+      SKUs). El matching se hace localmente contra todos los títulos reales,
+      sin DDG. El handle no lleva el peso (es una variante), p. ej.
+      tuna-fillet-with-crab-in-broth-wet-cat-food.
 
 El sitio activo se decide por el `web_url` que recibe scrape_catalog():
-  applaws.com → UK (inglés);  resto → ES (español).
+  applaws.com → UK (Shopify, inglés);  resto → ES (WooCommerce, español).
 
-Como los títulos en Shopify están en español y el sitio UK en inglés, para el
-sitio UK se traducen los términos del título (ES→EN) antes de buscar/puntuar y
-se prioriza la búsqueda por EAN (independiente del idioma).
+Como los títulos en Shopify (origen) están en español y el sitio UK en inglés,
+para el sitio UK se traducen los términos del título (ES→EN) antes de puntuar.
+El EAN/SKU se usa como señal exacta cuando está disponible.
 
-applaws.pet/applaws.com bloquean peticiones sin navegador real (HTTP 403), por
-lo que toda la navegación se hace con Playwright + anti-bot completo.
+applaws.pet bloquea peticiones sin navegador (HTTP 403) → Playwright + anti-bot.
+applaws.com sirve products.json desde el CDN de Shopify; se navega con el
+navegador ya "calentado" para esquivar el filtro de bots.
 
 Interfaz estándar (core/process_brand.py):
   scrape_catalog(web_url, rebuild=False) -> dict
@@ -47,14 +54,18 @@ _SITES = {
         "catalog":   Path("resultados/applaws_catalog.json"),
         "threshold": 0.30,
         "slug_direct": True,
+        "shopify":   False,
     },
     "uk": {
         "lang":      "en",
         "base":      "https://applaws.com/uk/",
-        "host_path": "applaws.com/uk/",
+        "host_path": "applaws.com/uk/products/",
         "catalog":   Path("resultados/applaws_uk_catalog.json"),
         "threshold": 0.22,   # traducción imperfecta → umbral algo más bajo
         "slug_direct": False,
+        "shopify":   True,
+        # Endpoint público del catálogo Shopify (handles compartidos entre mercados).
+        "json_base": "https://applaws.com",
     },
 }
 
@@ -73,7 +84,7 @@ IGNORE_TOKENS = {
     "applaws",
     # stopwords ES
     "de", "el", "la", "los", "las", "con", "sin", "y", "e", "o", "a", "para",
-    "un", "una", "al", "del",
+    "un", "una", "al", "del", "en", "su", "sus",
     # stopwords EN
     "with", "and", "the", "in", "of", "for", "to",
     # unidades
@@ -91,17 +102,23 @@ _ES_EN = {
     "cordero": "lamb", "ternera": "beef", "buey": "beef", "vacuno": "beef",
     "res": "beef", "pavo": "turkey", "pato": "duck", "conejo": "rabbit",
     "jamon": "ham", "higado": "liver", "gambas": "prawn", "gamba": "prawn",
-    "langostinos": "prawn", "cangrejo": "crab", "queso": "cheese",
+    "langostinos": "prawn", "langostino": "prawn", "cangrejo": "crab",
+    "queso": "cheese", "cerdo": "pork",
     "sobre": "pouch", "sobres": "pouch", "lata": "tin", "latas": "tin",
     "bolsa": "bag", "caldo": "broth", "gelatina": "jelly", "jalea": "jelly",
     "esparragos": "asparagus", "arroz": "rice", "verduras": "vegetable",
-    "verdura": "vegetable", "calabaza": "pumpkin",
+    "verdura": "vegetable", "vegetales": "vegetable", "calabaza": "pumpkin",
     "seco": "dry", "seca": "dry", "humedo": "wet", "humeda": "wet",
+    "mojado": "wet", "mojada": "wet",
     "adulto": "adult", "adultos": "adult", "senior": "senior",
     "esterilizado": "sterilised", "esterilizada": "sterilised",
     "seleccion": "selection", "suprema": "supreme", "supremo": "supreme",
     "natural": "natural", "naturaleza": "nature", "arena": "litter",
     "multipack": "multipack", "comida": "food", "alimento": "food",
+    "filete": "fillet", "filetes": "fillet", "trozos": "chunks",
+    "trozo": "chunks", "tarrina": "pot", "tarrinas": "pot", "tarro": "pot",
+    "receta": "recipe", "pate": "pate", "mousse": "mousse",
+    "anchoas": "anchovy", "anchoa": "anchovy", "mar": "ocean",
 }
 
 USER_AGENT = (
@@ -114,7 +131,8 @@ USER_AGENT = (
 _NON_PRODUCT = ("/blog", "/news", "/pages", "/page/", "/cart", "/checkout",
                 "/account", "/category", "/product-category", "/brand",
                 "/where-to-buy", "/stockist", "/contact", "/about",
-                "/faq", "/privacy", "/terms", "/recipes", "/tag/")
+                "/faq", "/privacy", "/terms", "/recipes", "/tag/",
+                "/collections", "/collection/", "/policies", "/search")
 
 _PW = {"pw": None, "browser": None, "ctx": None, "page": None, "warmed": False}
 
@@ -160,10 +178,15 @@ def _tokenize(text: str) -> set:
 
 
 def _title_tokens(title: str) -> set:
-    """Tokens del título Shopify, traducidos a EN si el sitio activo es UK."""
+    """Tokens del título Shopify, traducidos a EN si el sitio activo es UK.
+
+    En UK el peso/formato (12x70, 70, 2, 400…) va en la variante, no en el
+    título/handle del producto → se descartan los tokens numéricos para que no
+    bajen el Jaccard contra el título inglés."""
     toks = _tokenize(title)
     if _ACTIVE["lang"] == "en":
         toks = _translate(toks)
+        toks = {t for t in toks if not re.fullmatch(r"\d+(?:x\d+)?", t)}
     return toks
 
 
@@ -488,6 +511,138 @@ def _ddg_find_product_urls(title: str, barcode: str = "",
     return urls
 
 
+# ─── Catálogo Shopify (UK) vía products.json ────────────────────────────────────
+
+def _fetch_json(page, url: str):
+    """Descarga una URL JSON reutilizando las cookies/headers del navegador ya
+    calentado (esquiva el filtro de bots del CDN de Shopify). Devuelve (data, status).
+
+    Método 1 (preferido): APIRequestContext del contexto → JSON crudo.
+    Método 2 (fallback): navegar y parsear el body (por si el método 1 falla)."""
+    # Método 1: petición cruda con las cookies/UA del contexto del navegador.
+    try:
+        resp = page.context.request.get(url, timeout=30000)
+        status = resp.status
+        if status < 400:
+            try:
+                return resp.json(), status
+            except Exception:
+                try:
+                    return json.loads(resp.text()), status
+                except Exception:
+                    pass
+    except Exception as e:
+        log.info(f"  _fetch_json (request) error en {url}: {e}")
+        status = 0
+
+    # Método 2: navegación + innerText del body.
+    try:
+        nav = page.goto(url, timeout=30000, wait_until="domcontentloaded")
+        status = nav.status if nav else status
+        if nav and nav.status >= 400:
+            return None, status
+        txt = page.evaluate("() => document.body ? document.body.innerText : ''")
+        return json.loads(txt), status
+    except Exception as e:
+        log.info(f"  _fetch_json (goto) error en {url}: {e}")
+        return None, status
+
+
+def _shopify_img_full(url: str) -> str:
+    """Quita el sufijo de tamaño del CDN de Shopify para obtener el original."""
+    return re.sub(
+        r"_(?:\d+x\d*|grande|large|medium|small|compact|pico|icon|thumb|"
+        r"original|master)(?=\.(?:jpg|jpeg|png|webp|gif)\b)",
+        "", url, flags=re.IGNORECASE,
+    )
+
+
+def _build_shopify_catalog(catalog: dict) -> dict:
+    """Descarga el catálogo completo del sitio Shopify (UK) vía products.json
+    (paginado, 250/pág). Indexa por handle: {name, url, images, body_html,
+    skus, barcodes, handle, product_type}."""
+    page = _get_page()
+    if page is None:
+        return catalog
+    _warm_up(page)
+    base = _ACTIVE.get("json_base", "https://applaws.com")
+    total = 0
+    for page_n in range(1, 21):   # tope de seguridad: 20 × 250 = 5000 productos
+        url = f"{base}/products.json?limit=250&page={page_n}"
+        data, status = _fetch_json(page, url)
+        prods = (data or {}).get("products", []) if isinstance(data, dict) else []
+        if not prods:
+            log.info(f"  products.json pág {page_n}: vacío / HTTP {status} — fin")
+            break
+        for p in prods:
+            handle = p.get("handle")
+            if not handle:
+                continue
+            images = []
+            for img in p.get("images", []):
+                src = img.get("src") if isinstance(img, dict) else None
+                if src and _should_keep_url(src):
+                    images.append(_shopify_img_full(src))
+            variants = p.get("variants", []) or []
+            skus = [str(v.get("sku")).strip()
+                    for v in variants if v.get("sku")]
+            barcodes = [str(v.get("barcode")).strip()
+                        for v in variants if v.get("barcode")]
+            catalog[handle] = {
+                "name":         p.get("title", "") or "",
+                "url":          f"{base}/uk/products/{handle}/",
+                "images":       images,
+                "body_html":    p.get("body_html", "") or "",
+                "skus":         skus,
+                "barcodes":     barcodes,
+                "handle":       handle,
+                "product_type": p.get("product_type", "") or "",
+            }
+            total += 1
+        log.info(f"  products.json pág {page_n}: {len(prods)} productos "
+                 f"(acumulado {total})")
+        if len(prods) < 250:
+            break
+    log.info(f"  Catálogo UK (Shopify) construido: {total} productos")
+    return catalog
+
+
+def _match_shopify_local(shopify_title: str, catalog: dict,
+                         barcode: str = "") -> tuple:
+    """Matching local contra el catálogo Shopify completo:
+      1. EAN/SKU exacto (idioma-independiente) → score 1.0.
+      2. Jaccard del título traducido vs título inglés → mejor candidato.
+    Devuelve (handle, score) o (None, 0.0) si nada supera el umbral."""
+    title_tokens = _title_tokens(shopify_title)
+
+    if barcode:
+        for handle, entry in catalog.items():
+            if (barcode in (entry.get("barcodes") or [])
+                    or barcode in (entry.get("skus") or [])):
+                log.info(f"  [EAN/SKU] {barcode} → {handle} "
+                         f"('{entry.get('name','')}')")
+                return handle, 1.0
+
+    ranked = []
+    for handle, entry in catalog.items():
+        score = _similarity(title_tokens, _tokenize(entry.get("name", "")))
+        ranked.append((score, handle, entry.get("name", "")))
+    ranked.sort(reverse=True)
+
+    for score, handle, name in ranked[:3]:
+        log.info(f"  [shopify cand] score={score:.2f} '{name}' → {handle}")
+
+    if ranked and ranked[0][0] >= _ACTIVE["threshold"]:
+        score, handle, name = ranked[0]
+        log.info(f"  ✓ Match local: '{name}' (score={score:.2f}) → {handle}")
+        return handle, score
+
+    if ranked:
+        log.info(f"  Mejor local score={ranked[0][0]:.2f} < "
+                 f"{_ACTIVE['threshold']} — sin match Shopify")
+    return None, 0.0
+
+
 # ─── Persistencia del catálogo ──────────────────────────────────────────────────
 
 def _save_catalog(catalog: dict):
@@ -506,16 +661,21 @@ save_catalog = _save_catalog
 # ─── Interfaz pública ────────────────────────────────────────────────────────────
 
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
-    """Fija el sitio activo según web_url y carga el catálogo cacheado de ese sitio."""
+    """Fija el sitio activo según web_url y carga/construye el catálogo.
+
+    - ES (WooCommerce): catálogo bajo demanda (se rellena en find_best_match).
+    - UK (Shopify): se descarga el catálogo COMPLETO vía products.json y se
+      cachea. Si el endpoint falla, se cae al modo bajo demanda (DDG)."""
     global _ACTIVE
     _ACTIVE = _site_for(web_url)
     path = _ACTIVE["catalog"]
     log.info(f"Sitio activo: {_ACTIVE['lang'].upper()} ({_ACTIVE['base']}) "
              f"— catálogo {path}")
+
     if rebuild and path.exists():
         path.unlink()
-        log.info("Catálogo borrado (rebuild) — se reconstruirá bajo demanda")
-        return {}
+        log.info("Catálogo borrado (rebuild)")
+
     if path.exists():
         try:
             catalog = json.loads(path.read_text(encoding="utf-8"))
@@ -523,6 +683,17 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
             return catalog
         except Exception:
             pass
+
+    if _ACTIVE.get("shopify"):
+        log.info("Construyendo catálogo Shopify completo (products.json)…")
+        catalog = _build_shopify_catalog({})
+        if catalog:
+            _save_catalog(catalog)
+        else:
+            log.warning("products.json no devolvió productos — se usará DDG "
+                        "bajo demanda como fallback")
+        return catalog
+
     log.info("Catálogo vacío — se rellenará bajo demanda")
     return {}
 
@@ -567,6 +738,13 @@ def find_best_match(shopify_title: str, catalog: dict,
     """
     title_tokens = _title_tokens(shopify_title)
     title_key = _title_key(shopify_title)
+
+    # UK Shopify: el catálogo completo ya está en memoria → matching local.
+    if _ACTIVE.get("shopify") and catalog:
+        handle, score = _match_shopify_local(shopify_title, catalog, barcode)
+        if handle is not None:
+            return handle, score
+        log.info("  Sin match en catálogo Shopify — fallback a DDG bajo demanda")
 
     if title_key in catalog and catalog[title_key].get("url"):
         log.info(f"  Match caché: {title_key}")

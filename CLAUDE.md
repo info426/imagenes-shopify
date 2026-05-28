@@ -224,12 +224,24 @@ un nuevo scraper o diagnosticar fallos.
 | PrestaShop | `/es/{categoria}/{id}-{slug}.html` | `menforsan.com/es/champus/248-champu-biotina.html` | Extensión `.html`, segmento `{numero}-{texto}` |
 | PrestaShop (EN) | `/en/{category}/{id}-{slug}.html` | igual pero `/en/` | Mismo patrón, idioma diferente |
 | WooCommerce multidioma | `/es/producto/{slug}/` | artero.com/es/petcare/{slug}/ | Prefijo de idioma + `/producto/` |
+| **Shopify** | `/products/{handle}/` (plural) | `applaws.com/uk/products/tuna-fillet-...` | `/products/` en **plural**; existe `/products.json` |
 
 **Regla para `_is_product_url()`:** hacer el filtro lo más estricto posible.
 DDG devuelve páginas de categoría, marca y blog mezcladas con productos.
 Cada URL que pasa el filtro cuesta una navegación Playwright (lenta y costosa).
 - PrestaShop: `re.match(r'^\d+-.+\.html$', last_segment)` — probado en menforsan.com
 - WooCommerce: comprobar que el path tiene el prefijo correcto Y no es categoría/tag/blog
+
+**Shopify → NO uses DDG, descarga el catálogo entero con `products.json`.** Si la URL
+de producto lleva `/products/` (plural), es Shopify y expone un endpoint público
+paginado: `GET {dominio}/products.json?limit=250&page=N` (hasta vaciarse). Devuelve
+por producto: `handle`, `title`, `body_html`, `images[].src`, `variants[]` (con `sku`,
+**sin `barcode`** en el endpoint público), `product_type`, `tags`. Ventajas vs DDG:
+un solo fetch trae todo el catálogo, el matching es local (sin coste por producto) y
+se compara contra el **título real** (no contra un snippet de DDG). Para multi-mercado
+(Shopify Markets) los `handle` se comparten entre mercados → se construye la URL del
+mercado deseado como `{dominio}/{mercado}/products/{handle}/`. Implementado en
+`marcas/applaws.py` (`_build_shopify_catalog` + `_match_shopify_local`).
 
 ### Protección anti-bot y cómo superarla
 
@@ -382,28 +394,41 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 
 **Objetivo:** poblar los metacampos de URL de cada producto Applaws:
 - `fuentes.url_fabricante` ← web ES (`applaws.pet/producto/{slug}/`)
-- `fuentes.url_fabricante_2` ← web UK (`applaws.com/uk/product/{slug}/`)
+- `fuentes.url_fabricante_2` ← web UK (`applaws.com/uk/products/{handle}/`)
 
-**Scraper `marcas/applaws.py` — soporta ambos sitios:**
+**Los dos sitios usan CMS distintos** → estrategias distintas en `marcas/applaws.py`:
 
-| Sitio | `web_url` | Idioma | Catálogo caché | Threshold | Slug directo |
+| Sitio | `web_url` | CMS | Idioma | Catálogo caché | Threshold |
 |---|---|---|---|---|---|
-| ES (WooCommerce ES) | `https://applaws.pet/` | es | `resultados/applaws_catalog.json` | 0.30 | Sí |
-| UK (WooCommerce EN) | `https://applaws.com/uk/` | en | `resultados/applaws_uk_catalog.json` | 0.22 | No |
+| ES | `https://applaws.pet/` | WooCommerce | es | `resultados/applaws_catalog.json` | 0.30 |
+| UK | `https://applaws.com/uk/` | **Shopify** | en | `resultados/applaws_uk_catalog.json` | 0.22 |
 
-- **ES**: slug directo desde el título → fallback DDG `site:applaws.pet/producto/` + ranking h1.
-- **UK**: títulos Shopify en español → se traducen con diccionario `_ES_EN` (~80 términos) antes
-  de buscar/puntuar. Prioridad EAN (DDG independiente del idioma) → título traducido → DDG genérico.
-- Anti-bot ambos: Playwright + Chrome UA + Sec-Fetch-* + bypass `navigator.webdriver` + warm-up.
-- `_normalize` divide número+unidad (`2kg`→`2 kg`) → la unidad se descarta como stopword → el
-  peso no rompe el matching.
-- `_is_product_url()` filtra URLs de blog/news/páginas UK para no navegar recursos inútiles.
+- **ES (WooCommerce, bajo demanda):** slug directo desde el título → fallback DDG
+  `site:applaws.pet/producto/` + ranking del h1. URL `/producto/{slug}/` (slug con peso).
+- **UK (Shopify, catálogo completo):** se detecta por la URL `/uk/products/{handle}/`
+  (plural = Shopify). Se descarga el **catálogo entero de una vez** vía el endpoint
+  público `products.json` (`applaws.com/products.json?limit=250&page=N`) — títulos,
+  handles, imágenes, `body_html`, SKUs — y el matching se hace **localmente** contra
+  todos los títulos reales. **No usa DDG** (salvo fallback si products.json falla).
 
-**Matching ES→UK (cross-language):**
-- Ejemplo: "APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR"
-  - Tokens ES: `['12x70', 'cat', 'pechuga', 'pollo', 'salmon', 'sobre']`
-  - Tokens EN (traducidos): `['12x70', 'breast', 'cat', 'chicken', 'pouch', 'salmon']`
-  - vs h1 UK "Applaws Cat Pouch Chicken Breast with Salmon 12x70g": score **1.0** ✅
+**Por qué products.json y no DDG en UK:** la primera versión usaba DDG por producto con
+título traducido y **falló en 17/17** — la traducción ES→EN es demasiado lossy
+(`ATUN Y CANGREJO EN CALDO` → la web es `Tuna Fillet with Crab in Broth Wet Cat Food`,
+con "fillet"/"wet cat food" que no están en el título ES). Con el catálogo completo se
+compara contra el título inglés real y se elige el de mayor Jaccard, mucho más fiable.
+
+**Matching UK (en `_match_shopify_local`):**
+1. **EAN/SKU exacto** (idioma-independiente) → score 1.0. (Nota: el `products.json`
+   público de Shopify **no** expone `barcode`, sí `sku`; se prueban ambos por si acaso.)
+2. **Jaccard del título traducido** (`_ES_EN`, ~95 términos) vs título inglés. Los tokens
+   numéricos/peso (`12x70`, `70`, `2`) se descartan en UK porque el peso es una **variante**
+   del producto, no parte del título/handle. Se loguean los 3 mejores candidatos.
+- Ejemplo "APPLAWS CAT SOBRE ATUN Y CANGREJO EN CALDO 12X70GR" → tokens EN
+  `{broth, cat, crab, pouch, tuna}` vs "Tuna Fillet with Crab in Broth Wet Cat Food":
+  score **0.50** → handle `tuna-fillet-with-crab-in-broth-wet-cat-food` ✅
+  (distingue de las variantes prawn / jelly, que puntúan menos).
+- `_fetch_json` usa el `APIRequestContext` del navegador ya calentado (cookies/UA del
+  contexto) para esquivar el filtro de bots del CDN; fallback a navegación + innerText.
 
 **Metacampo destino:** usar el parámetro `url_key` del workflow:
 - `url_fabricante` → campo 1 (ES)
@@ -415,12 +440,19 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - **Próximo paso ES:** lanzar lote completo (vendor=Applaws, web_url=https://applaws.pet/,
   url_key=url_fabricante, product_ids vacío = todos los ~80 productos).
 
-**⏳ PENDIENTE — UK (próxima sesión — RECORDAR AL USUARIO):**
+**⏳ PENDIENTE — UK (RECORDAR AL USUARIO):**
+- Reescrito a estrategia Shopify products.json (la versión DDG falló 17/17). Pendiente
+  de probar en Actions (el sitio `applaws.com` está bloqueado desde el sandbox local
+  `host_not_allowed`, pero en GitHub Actions hay salida a internet).
 - Workflow `Resolver URLs fabricante` con `vendor=Applaws`,
   `web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`,
-  `product_ids=<un ID para test>` antes del lote completo.
-- Confirmar que escribe en `fuentes.url_fabricante_2` (NO en campo 1) con score ≥ 0.22.
-- El scraper `marcas/applaws.py` y el parámetro `--url-key` ya están en `main`.
+  `product_ids=<un ID para test>` (con uno basta: igualmente construye el catálogo
+  completo y matchea ese producto). Si va bien, lote completo (`product_ids` vacío).
+- **Qué revisar en el log:** "Catálogo UK (Shopify) construido: N productos" (N>0),
+  los "[shopify cand]" top-3 y el score del ganador. Confirmar que escribe en
+  `fuentes.url_fabricante_2` (NO en campo 1).
+- **Si N=0** (products.json bloqueado o vacío): revisar el warm-up / si el sitio exige
+  challenge JS. Fallback automático a DDG bajo demanda (menos fiable).
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
