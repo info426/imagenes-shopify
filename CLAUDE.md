@@ -446,17 +446,30 @@ compara contra el título inglés real y se elige el de mayor Jaccard, mucho má
   applaws.com filtra las IPs de los runners de GitHub (datacenter), igual que el
   sandbox local. El fallback DDG también dio 0/80 porque cada navegación recibe 403.
 
-**Estrategia actual (en `main`) para superar el bloqueo — cascada:**
-1. **sitemap de productos** (`applaws.com/sitemap_products_*.xml`): los sitemaps suelen
-   estar permitidos para bots. Trae handle + título (`<image:title>`) + imagen sin pegarle
-   a la API. Parser `_parse_product_sitemap` (maneja CDATA).
-2. **products.json** como complemento (añade `body_html`/SKUs) si está accesible.
-3. **Navegador headed bajo xvfb** (`APPLAWS_HEADED=1` + `xvfb-run` en el workflow):
-   Chromium headless es detectado y bloqueado desde datacenter; headed pasa más retos.
-   `_warm_up` espera a que se resuelva el reto JS de Cloudflare y registra si obtuvo
-   `cf_clearance`; `_fetch_raw` reutiliza esa cookie vía `APIRequestContext`.
-4. **Diagnóstico** en cada 403: `[bloqueo] HTTP 403 … server=… cf=… body='…'` → permite
-   ver si es Cloudflare, Shopify o geo-bloqueo en el log.
+**Hallazgo (run 14:48):** el navegador **headed bajo xvfb SÍ pasa Cloudflare** en la home
+(`[warm-up] HTTP 200, cf_clearance=sí`), PERO `sitemap.xml` y `products.json` seguían dando
+**403 "Just a moment…"**. Causa: el `APIRequestContext` (`page.context.request.get`) tiene
+**otro fingerprint** que el navegador, así que Cloudflare no acepta la cookie `cf_clearance`
+emitida al navegador y lo vuelve a retar.
+
+**Fix (en `main`): `fetch()` DENTRO del contexto JS de la página** (`_PAGE_FETCH_JS` vía
+`page.evaluate`). Es una petición **same-origin** (la página ya está en `applaws.com/uk/`
+tras el warm-up) → usa la cookie `cf_clearance` y el fingerprint del navegador que YA
+superó el reto. Es exactamente cómo el propio storefront carga sus datos por AJAX.
+`_fetch_raw`: método 1 = `fetch()` en la página; método 2 (fallback) = `APIRequestContext`.
+
+**Estrategia completa (cascada):**
+1. **`fetch()` in-page** del **sitemap de productos** (`/sitemap_products_*.xml`):
+   handle + título (`<image:title>`) + imagen, sin API. Parser `_parse_product_sitemap`.
+2. **`fetch()` in-page** de **products.json** (añade `body_html`/SKUs) como complemento.
+3. **Navegador headed bajo xvfb** (`APPLAWS_HEADED=1` + `xvfb-run`): imprescindible —
+   Chromium headless es bloqueado desde IPs de datacenter; headed obtiene `cf_clearance`.
+4. **Diagnóstico** en cada 403: `[bloqueo]/[fetch] HTTP … server/cf/body` en el log.
+
+**Lección anti-Cloudflare reutilizable:** cuando el warm-up headed obtiene `cf_clearance`
+pero `request.get`/`APIRequestContext` siguen dando 403, **haz el fetch desde el JS de la
+página** (`page.evaluate(async u => (await fetch(u)).text())`). Mismo origen + mismo
+fingerprint = pasa. (Aplicable a cualquier marca con Cloudflare + endpoint JSON/XML.)
 
 **Probar de nuevo:** workflow `Resolver URLs fabricante`, `vendor=Applaws`,
 `web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`, `product_ids=<un ID>`.

@@ -563,10 +563,43 @@ def _log_block_diag(resp, url: str):
         pass
 
 
+_PAGE_FETCH_JS = """
+async (u) => {
+    try {
+        const r = await fetch(u, {credentials: 'include', redirect: 'follow'});
+        return {status: r.status, body: await r.text()};
+    } catch (e) {
+        return {status: 0, body: '', err: String(e)};
+    }
+}
+"""
+
+
 def _fetch_raw(page, url: str):
-    """Descarga el body crudo de una URL reutilizando cookies/UA del contexto
-    del navegador (incluida cf_clearance tras el warm-up). Devuelve (texto, status).
-    Si request.get falla con bloqueo, prueba navegación con el navegador real."""
+    """Descarga el body crudo de una URL. Devuelve (texto, status).
+
+    Método 1 (clave): fetch() DENTRO del contexto JS de la página ya calentada.
+    Es una petición same-origin → usa las cookies cf_clearance y el fingerprint
+    del navegador que YA superó el reto de Cloudflare en la home. El
+    APIRequestContext, en cambio, tiene otro fingerprint y Cloudflare lo vuelve
+    a retar aunque tenga la cookie (visto en producción: 403 'Just a moment').
+    Método 2 (fallback): APIRequestContext."""
+    # Método 1: fetch() en el contexto de la página (same-origin con cf_clearance).
+    try:
+        res = page.evaluate(_PAGE_FETCH_JS, url) or {}
+        status = int(res.get("status") or 0)
+        body = res.get("body") or ""
+        low = body[:400].lower()
+        challenged = any(h in low for h in _CHALLENGE_HINTS)
+        if status and status < 400 and body and not challenged:
+            return body, status
+        log.info(f"  [fetch] HTTP {status} reto={challenged} {url}"
+                 + (f" err={res.get('err')}" if res.get("err") else ""))
+    except Exception as e:
+        log.info(f"  _fetch_raw (page.fetch) error en {url}: {e}")
+        status = 0
+
+    # Método 2: APIRequestContext del contexto del navegador.
     try:
         resp = page.context.request.get(url, timeout=30000)
         if resp.status < 400:
@@ -575,19 +608,8 @@ def _fetch_raw(page, url: str):
         status = resp.status
     except Exception as e:
         log.info(f"  _fetch_raw (request) error en {url}: {e}")
-        status = 0
 
-    # Fallback: navegación con el navegador (headed bajo xvfb pasa más retos).
-    try:
-        nav = page.goto(url, timeout=30000, wait_until="domcontentloaded")
-        st = nav.status if nav else status
-        if nav and nav.status >= 400:
-            return None, st
-        txt = page.evaluate("() => document.body ? document.body.innerText : ''")
-        return txt, st
-    except Exception as e:
-        log.info(f"  _fetch_raw (goto) error en {url}: {e}")
-        return None, status
+    return None, status
 
 
 def _fetch_json(page, url: str):
