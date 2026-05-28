@@ -1,39 +1,57 @@
-2026-05-28 15:06:29,988 [INFO] ============================================================
-2026-05-28 15:06:29,988 [INFO]   Vendor   : Applaws
-2026-05-28 15:06:29,988 [INFO]   Modo     : RESOLVER-URLS
-2026-05-28 15:06:29,989 [INFO]   Pipeline : standard
-2026-05-28 15:06:29,989 [INFO]   Padding  : auto
-2026-05-28 15:06:29,989 [INFO]   Web    : https://applaws.com/uk/
-2026-05-28 15:06:29,989 [INFO] ============================================================
-2026-05-28 15:06:30,383 [INFO] Token obtenido
-2026-05-28 15:06:30,395 [INFO] Sitio activo: EN (https://applaws.com/uk/) — catálogo resultados/applaws_uk_catalog.json
-2026-05-28 15:06:30,395 [INFO] Construyendo catálogo Shopify completo (products.json)…
-2026-05-28 15:06:30,539 [INFO]   [playwright] headless=False
-2026-05-28 15:06:41,666 [INFO]   [warm-up] HTTP 200, 1 cookies, cf_clearance=sí
-2026-05-28 15:06:41,689 [INFO]   [fetch] HTTP 403 reto=True https://applaws.com/sitemap.xml
-2026-05-28 15:07:08,015 [INFO]   sitemap: 0 sub-sitemaps de productos
-2026-05-28 15:07:08,015 [INFO]   Catálogo UK por sitemap: 0 productos
-2026-05-28 15:07:08,032 [INFO]   [fetch] HTTP 403 reto=True https://applaws.com/products.json?limit=250&page=1
-2026-05-28 15:07:34,214 [INFO]   products.json pág 1: vacío / HTTP 200 — fin
-2026-05-28 15:07:34,214 [INFO]   Catálogo UK por products.json: 0 productos
-2026-05-28 15:07:34,214 [INFO]   Catálogo UK (Shopify) construido: 0 productos
-2026-05-28 15:07:34,214 [WARNING] products.json no devolvió productos — se usará DDG bajo demanda como fallback
-Traceback (most recent call last):
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 802, in <module>
-    main()
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 785, in main
-    run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 677, in run_resolve_urls
-    products = [api.get_product(pid) for pid in only_ids]
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 677, in <listcomp>
-    products = [api.get_product(pid) for pid in only_ids]
-                ^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 64, in get_product
-    r = _request("GET", f"{self.base}/products/{pid}.json",
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 37, in _request
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://7ev1zx-eg.myshopify.com/admin/api/2024-10/products/5060333430979.json
+2026-05-28 15:11:40,347 [INFO] ============================================================
+2026-05-28 15:11:40,347 [INFO]   Vendor   : Applaws
+2026-05-28 15:11:40,347 [INFO]   Modo     : RESOLVER-URLS
+2026-05-28 15:11:40,347 [INFO]   Pipeline : standard
+2026-05-28 15:11:40,347 [INFO]   Padding  : auto
+2026-05-28 15:11:40,347 [INFO]   Web    : https://applaws.com/uk/
+2026-05-28 15:11:40,347 [INFO] ============================================================
+2026-05-28 15:11:40,671 [INFO] Token obtenido
+2026-05-28 15:11:40,682 [INFO] Sitio activo: EN (https://applaws.com/uk/) — catálogo resultados/applaws_uk_catalog.json
+2026-05-28 15:11:40,682 [INFO] Construyendo catálogo Shopify completo (products.json)…
+2026-05-28 15:11:40,780 [INFO]   [playwright] headless=False
+2026-05-28 15:11:45,949 [INFO]   [warm-up] HTTP 200, 1 cookies, cf_clearance=sí
+2026-05-28 15:11:45,979 [INFO]   [fetch] HTTP 403 reto=True https://applaws.com/sitemap.xml
+2026-05-28 15:11:56,126 [INFO]   sitemap: 0 sub-sitemaps de productos
+2026-05-28 15:11:56,126 [INFO]   Catálogo UK por sitemap: 0 productos
+2026-05-28 15:11:56,151 [INFO]   [fetch] HTTP 403 reto=True https://applaws.com/products.json?limit=250&page=1
+2026-05-28 15:12:06,238 [INFO]   products.json pág 1: vacío / HTTP 200 — fin
+2026-05-28 15:12:06,238 [INFO]   Catálogo UK por products.json: 0 productos
+2026-05-28 15:12:06,238 [INFO]   Catálogo UK (Shopify) construido: 0 productos
+2026-05-28 15:12:06,238 [WARNING] products.json no devolvió productos — se usará DDG bajo demanda como fallback
+2026-05-28 15:12:06,494 [INFO] 
+[1/1] APPLAWS CAT TARRINA PECHUGA POLLO Y PATO 10X60GR  (ID: 15509633859971)
+2026-05-28 15:12:06,500 [INFO]   [DDG EAN] site:applaws.com 5060333430979
+2026-05-28 15:12:06,859 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aapplaws.com%205060333430979 200
+2026-05-28 15:12:06,888 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aapplaws.com+5060333430979&limit=1 200
+2026-05-28 15:12:07,063 [INFO] response: https://www.google.com/search?q=site%3Aapplaws.com+5060333430979&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-28 15:12:07,462 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-28 15:12:07,709 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-28 15:12:08,643 [INFO] response: https://yandex.com/search/site/?text=site%3Aapplaws.com+5060333430979&web=1&searchid=3171413 200
+2026-05-28 15:12:08,734 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-28 15:12:08,893 [INFO] response: https://search.yahoo.com/search;_ylt=9GBbGZYLYBhjkX_OkwGm6aQU;_ylu=7ZFdOCvqtlLLRS-TyXy9xqLXN0AfIGdcKMiwlCijGHEGXKc?p=site%3Aapplaws.com+5060333430979 200
+2026-05-28 15:12:09,887 [INFO] response: https://search.brave.com/search?q=site%3Aapplaws.com+5060333430979&source=web 200
+2026-05-28 15:12:09,894 [INFO]   [DDG EN] site:applaws.com/uk/products/ cat pot breast chicken duck 10x60
+2026-05-28 15:12:10,077 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aapplaws.com/uk/products/%20cat%20pot%20breast%20chicken%20duck%2010x60 200
+2026-05-28 15:12:10,149 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aapplaws.com%2Fuk%2Fproducts%2F+cat+pot+breast+chicken+duck+10x60&limit=1 200
+2026-05-28 15:12:10,245 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-05-28 15:12:10,534 [INFO] response: https://www.google.com/search?q=site%3Aapplaws.com%2Fuk%2Fproducts%2F+cat+pot+breast+chicken+duck+10x60&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-05-28 15:12:10,895 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-28 15:12:11,111 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-05-28 15:12:11,502 [INFO] response: https://www.mojeek.com/search?q=site%3Aapplaws.com%2Fuk%2Fproducts%2F+cat+pot+breast+chicken+duck+10x60 403
+2026-05-28 15:12:12,009 [INFO] response: https://search.brave.com/search?q=site%3Aapplaws.com%2Fuk%2Fproducts%2F+cat+pot+breast+chicken+duck+10x60&source=web 200
+2026-05-28 15:12:12,018 [INFO]   [DDG] 10 candidatos: ['https://applaws.com/uk/products/chicken-breast-with-duck-in-broth/', 'https://applaws.com/uk/products/chicken-breast-with-duck-in-broth-2/', 'https://applaws.com/uk/products/chicken-breast-in-broth-3/', 'https://applaws.com/uk/products/chicken-selection-multipack-in-broth-2/', 'https://applaws.com/uk/products/chicken-breast-with-duck-in-broth-3/', 'https://applaws.com/uk/products/chicken-with-duck-adult-dry-cat-food/', 'https://applaws.com/uk/products/chicken-breast-with-wild-rice-in-broth/', 'https://applaws.com/uk/products/chicken-breast-in-broth/', 'https://applaws.com/uk/products/wet-cat-food-chicken-breast-in-broth/', 'https://applaws.com/uk/products/chicken-breast-with-tuna-fillet-in-broth-wet-cat-food/']
+2026-05-28 15:12:12,018 [INFO]   [uk cand] score=0.50 chicken-breast-with-duck-in-broth
+2026-05-28 15:12:12,018 [INFO]   [uk cand] score=0.50 chicken-breast-with-duck-in-broth-3
+2026-05-28 15:12:12,018 [INFO]   [uk cand] score=0.50 chicken-breast-with-duck-in-broth-2
+2026-05-28 15:12:12,018 [INFO]   [uk cand] score=0.38 wet-cat-food-chicken-breast-in-broth
+2026-05-28 15:12:12,019 [INFO]   [uk cand] score=0.38 chicken-with-duck-adult-dry-cat-food
+2026-05-28 15:12:12,019 [INFO]   ✓ Resuelto (handle de búsqueda): score=0.50 https://applaws.com/uk/products/chicken-breast-with-duck-in-broth/
+2026-05-28 15:12:13,301 [INFO]   [metacampo] url_fabricante_2 guardada: https://applaws.com/uk/products/chicken-breast-with-duck-in-broth/
+2026-05-28 15:12:13,301 [INFO]   → https://applaws.com/uk/products/chicken-breast-with-duck-in-broth/  (score=0.50)
+2026-05-28 15:12:13,801 [INFO] 
+============================================================
+2026-05-28 15:12:13,801 [INFO] RESUMEN
+2026-05-28 15:12:13,801 [INFO] ============================================================
+2026-05-28 15:12:13,801 [INFO]   total         : 1
+2026-05-28 15:12:13,801 [INFO]   guardadas     : 1
+2026-05-28 15:12:13,801 [INFO]   sin_match     : 0
