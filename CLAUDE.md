@@ -377,7 +377,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina N&D | Farmina | Completado | — |
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
-| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — **pendiente** lote ES completo + UK test (url_fabricante_2) | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/) |
+| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK URL test ✅ por handle de búsqueda (url_fabricante_2) — **pendiente** lotes completos ES y UK | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
@@ -466,20 +466,30 @@ superó el reto. Es exactamente cómo el propio storefront carga sus datos por A
    Chromium headless es bloqueado desde IPs de datacenter; headed obtiene `cf_clearance`.
 4. **Diagnóstico** en cada 403: `[bloqueo]/[fetch] HTTP … server/cf/body` en el log.
 
-**Lección anti-Cloudflare reutilizable:** cuando el warm-up headed obtiene `cf_clearance`
-pero `request.get`/`APIRequestContext` siguen dando 403, **haz el fetch desde el JS de la
-página** (`page.evaluate(async u => (await fetch(u)).text())`). Mismo origen + mismo
-fingerprint = pasa. (Aplicable a cualquier marca con Cloudflare + endpoint JSON/XML.)
+**Conclusión: Cloudflare bloquea TODO desde datacenter** (sitemap, products.json y
+páginas de producto → 403, incluso el `fetch()` in-page). El catálogo vía navegador
+**no es viable** desde Actions. La home pasa (da `cf_clearance`) pero no sirve para
+los recursos. (La técnica `fetch()` in-page queda documentada por si otra marca con
+Cloudflare menos agresivo la necesita.)
 
-**Probar de nuevo:** workflow `Resolver URLs fabricante`, `vendor=Applaws`,
-`web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`, `product_ids=<un ID>`.
-**Qué revisar en el log:**
-- `[warm-up] HTTP … cf_clearance=sí/no` — si `no`, el reto no se resolvió.
-- `Catálogo UK por sitemap: N` y `… por products.json: M` — al menos uno debe ser >0.
-- Si todo da 403, mirar el `[bloqueo] … server=/cf=/body=` para decidir el siguiente
-  paso (p. ej. `playwright-stealth`, o resolver URLs vía **Google CSE** desde fuera del
-  runner — Google ya tiene indexado `applaws.com/uk/products/`, y solo necesitamos la URL,
-  no navegar la página).
+**✅ SOLUCIÓN UK QUE FUNCIONA — resolver por HANDLE de la búsqueda (sin navegar):**
+La búsqueda multi-motor (`_ddg_find_product_urls`) SÍ devuelve las URLs
+`applaws.com/uk/products/{handle}/` correctas; el handle ya viene en la URL, así que
+**no hace falta abrir la página** (que es lo que Cloudflare bloquea). `_resolve_uk_via_search`
+puntúa el handle (traducido ES→EN) vs el título, quita el sufijo `-2/-3/-4` de Shopify y
+prefiere el handle canónico. `find_best_match` UK: catálogo local (si se pudiera) →
+si no, handle de búsqueda. **No navega candidatos** (antes hacía 6×80 navegaciones 403).
+
+**Estado UK — ✅ TEST PASADO (run 15:11):**
+- Producto 15509633859971 "APPLAWS CAT TARRINA PECHUGA POLLO Y PATO 10X60GR" →
+  tokens EN `cat pot breast chicken duck` → `chicken-breast-with-duck-in-broth`
+  (score 0.50, eligió el canónico entre 3 empatados), guardado en `url_fabricante_2` ✅.
+- **Próximo paso UK:** lote completo (`vendor=Applaws`, `web_url=https://applaws.com/uk/`,
+  `url_key=url_fabricante_2`, `product_ids` vacío = todos). Revisar `sin_match` en el
+  resumen (productos que la búsqueda no indexa bien, p. ej. arena "Natures Calling") y
+  reintentarlos a mano o con un product_id concreto.
+- **Importante:** en `product_ids` va el **ID de Shopify** (número grande tipo
+  `15509633859971`), NO el EAN. Si se pasa un EAN da 404 (ahora se salta, no aborta).
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
