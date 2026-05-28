@@ -34,6 +34,7 @@ Interfaz estándar (core/process_brand.py):
 import atexit
 import json
 import logging
+import os
 import re
 import time
 import unicodedata
@@ -225,12 +226,17 @@ def _get_page():
                   "playwright install chromium")
         return None
 
+    # APPLAWS_HEADED=1 → navegador headed (bajo xvfb en CI) para esquivar el
+    # filtro anti-bot que bloquea Chromium headless desde IPs de datacenter.
+    headed = os.getenv("APPLAWS_HEADED", "").lower() in ("1", "true", "yes")
+    launch_args = ["--no-sandbox", "--disable-setuid-sandbox",
+                   "--disable-dev-shm-usage",
+                   "--disable-blink-features=AutomationControlled"]
+    if not headed:
+        launch_args.append("--disable-gpu")
+    log.info(f"  [playwright] headless={not headed}")
     pw = sync_playwright().start()
-    browser = pw.chromium.launch(
-        headless=True,
-        args=["--no-sandbox", "--disable-setuid-sandbox",
-              "--disable-dev-shm-usage", "--disable-gpu"],
-    )
+    browser = pw.chromium.launch(headless=not headed, args=launch_args)
     locale = "en-GB" if _ACTIVE["lang"] == "en" else "es-ES"
     accept_lang = ("en-GB,en;q=0.9,es;q=0.8" if _ACTIVE["lang"] == "en"
                    else "es-ES,es;q=0.9,en;q=0.8")
@@ -270,12 +276,39 @@ def _get_page():
     return page
 
 
+_CHALLENGE_HINTS = ("just a moment", "checking your browser",
+                    "attention required", "cf-challenge", "cf_chl",
+                    "enable javascript and cookies")
+
+
 def _warm_up(page):
+    """Visita la home para establecer cookies y, si hay reto anti-bot
+    (Cloudflare 'Just a moment…'), espera a que se resuelva y deje la cookie
+    de clearance en el contexto (que luego reutiliza request.get)."""
     if _PW["warmed"]:
         return
     try:
-        page.goto(_ACTIVE["base"], timeout=20000, wait_until="domcontentloaded")
-        page.wait_for_timeout(2000)
+        resp = page.goto(_ACTIVE["base"], timeout=30000, wait_until="domcontentloaded")
+        status = resp.status if resp else 0
+        # Espera a que un posible reto JS de Cloudflare se resuelva.
+        for _ in range(8):   # hasta ~16s
+            try:
+                html = (page.content() or "").lower()
+                title = (page.title() or "").lower()
+            except Exception:
+                html, title = "", ""
+            if not any(h in html or h in title for h in _CHALLENGE_HINTS):
+                break
+            log.info("  [warm-up] reto anti-bot detectado, esperando…")
+            page.wait_for_timeout(2000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=8000)
+        except Exception:
+            pass
+        cookies = page.context.cookies()
+        has_cf = any(c.get("name") == "cf_clearance" for c in cookies)
+        log.info(f"  [warm-up] HTTP {status}, {len(cookies)} cookies, "
+                 f"cf_clearance={'sí' if has_cf else 'no'}")
     except Exception as e:
         log.info(f"  [warm-up] {e}")
     _PW["warmed"] = True
@@ -511,40 +544,59 @@ def _ddg_find_product_urls(title: str, barcode: str = "",
     return urls
 
 
-# ─── Catálogo Shopify (UK) vía products.json ────────────────────────────────────
+# ─── Catálogo Shopify (UK): sitemap + products.json ─────────────────────────────
 
-def _fetch_json(page, url: str):
-    """Descarga una URL JSON reutilizando las cookies/headers del navegador ya
-    calentado (esquiva el filtro de bots del CDN de Shopify). Devuelve (data, status).
+def _log_block_diag(resp, url: str):
+    """Loguea por qué un endpoint devolvió error (Cloudflare/Shopify/geo…)."""
+    try:
+        h = resp.headers or {}
+        server = h.get("server", "?")
+        cf = h.get("cf-ray") or h.get("cf-mitigated") or ""
+        snippet = ""
+        try:
+            snippet = (resp.text() or "")[:160].replace("\n", " ")
+        except Exception:
+            pass
+        log.info(f"  [bloqueo] HTTP {resp.status} {url} — server={server} "
+                 f"cf={cf} body='{snippet}'")
+    except Exception:
+        pass
 
-    Método 1 (preferido): APIRequestContext del contexto → JSON crudo.
-    Método 2 (fallback): navegar y parsear el body (por si el método 1 falla)."""
-    # Método 1: petición cruda con las cookies/UA del contexto del navegador.
+
+def _fetch_raw(page, url: str):
+    """Descarga el body crudo de una URL reutilizando cookies/UA del contexto
+    del navegador (incluida cf_clearance tras el warm-up). Devuelve (texto, status).
+    Si request.get falla con bloqueo, prueba navegación con el navegador real."""
     try:
         resp = page.context.request.get(url, timeout=30000)
+        if resp.status < 400:
+            return resp.text(), resp.status
+        _log_block_diag(resp, url)
         status = resp.status
-        if status < 400:
-            try:
-                return resp.json(), status
-            except Exception:
-                try:
-                    return json.loads(resp.text()), status
-                except Exception:
-                    pass
     except Exception as e:
-        log.info(f"  _fetch_json (request) error en {url}: {e}")
+        log.info(f"  _fetch_raw (request) error en {url}: {e}")
         status = 0
 
-    # Método 2: navegación + innerText del body.
+    # Fallback: navegación con el navegador (headed bajo xvfb pasa más retos).
     try:
         nav = page.goto(url, timeout=30000, wait_until="domcontentloaded")
-        status = nav.status if nav else status
+        st = nav.status if nav else status
         if nav and nav.status >= 400:
-            return None, status
+            return None, st
         txt = page.evaluate("() => document.body ? document.body.innerText : ''")
-        return json.loads(txt), status
+        return txt, st
     except Exception as e:
-        log.info(f"  _fetch_json (goto) error en {url}: {e}")
+        log.info(f"  _fetch_raw (goto) error en {url}: {e}")
+        return None, status
+
+
+def _fetch_json(page, url: str):
+    txt, status = _fetch_raw(page, url)
+    if not txt:
+        return None, status
+    try:
+        return json.loads(txt), status
+    except Exception:
         return None, status
 
 
@@ -557,13 +609,79 @@ def _shopify_img_full(url: str) -> str:
     )
 
 
-def _build_shopify_catalog(catalog: dict) -> dict:
-    """Descarga el catálogo completo del sitio Shopify (UK) vía products.json
-    (paginado, 250/pág). Indexa por handle: {name, url, images, body_html,
-    skus, barcodes, handle, product_type}."""
+_URL_BLOCK_RE = re.compile(r"<url>(.*?)</url>", re.S | re.I)
+_LOC_RE       = re.compile(r"<loc>\s*([^<]+?)\s*</loc>", re.I)
+_IMG_LOC_RE   = re.compile(r"<image:loc>\s*([^<]+?)\s*</image:loc>", re.I)
+_IMG_TITLE_RE = re.compile(
+    r"<image:title>\s*(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?\s*</image:title>", re.S | re.I)
+
+
+def _parse_product_sitemap(xml: str) -> list:
+    """Extrae (handle, título, imagen) de un sitemap de productos Shopify.
+    El sitemap incluye <image:title> con el nombre real del producto."""
+    out = []
+    for block in _URL_BLOCK_RE.findall(xml):
+        m = _LOC_RE.search(block)
+        if not m or "/products/" not in m.group(1):
+            continue
+        loc = m.group(1).strip()
+        handle = loc.rstrip("/").split("/products/")[-1].split("/")[0].split("?")[0]
+        if not handle:
+            continue
+        t = _IMG_TITLE_RE.search(block)
+        title = (t.group(1).strip() if t else "")
+        im = _IMG_LOC_RE.search(block)
+        img = (im.group(1).strip() if im else "")
+        out.append((handle, title, img))
+    return out
+
+
+def _build_from_sitemap(catalog: dict) -> int:
+    """Construye el catálogo desde el sitemap de Shopify (vía-preferida: los
+    sitemaps suelen estar permitidos para bots). Devuelve nº de productos."""
     page = _get_page()
     if page is None:
-        return catalog
+        return 0
+    _warm_up(page)
+    base = _ACTIVE.get("json_base", "https://applaws.com")
+    index, status = _fetch_raw(page, f"{base}/sitemap.xml")
+    if not index:
+        log.info(f"  sitemap.xml no accesible (HTTP {status})")
+        return 0
+    subs = re.findall(r"<loc>\s*([^<]*sitemap_products[^<]*)</loc>", index, re.I)
+    if not subs:
+        # sitemap.xml podría ser ya el de productos (tiendas pequeñas).
+        subs = [f"{base}/sitemap.xml"] if "image:title" in index.lower() else []
+    log.info(f"  sitemap: {len(subs)} sub-sitemaps de productos")
+    total = 0
+    for sm in subs:
+        xmltxt, st = _fetch_raw(page, sm.strip())
+        if not xmltxt:
+            log.info(f"  sub-sitemap no accesible (HTTP {st}): {sm}")
+            continue
+        for handle, title, img in _parse_product_sitemap(xmltxt):
+            if handle in catalog:
+                continue
+            catalog[handle] = {
+                "name":         title or handle.replace("-", " "),
+                "url":          f"{base}/uk/products/{handle}/",
+                "images":       [_shopify_img_full(img)] if img else [],
+                "body_html":    "",
+                "skus":         [],
+                "barcodes":     [],
+                "handle":       handle,
+                "product_type": "",
+            }
+            total += 1
+        log.info(f"  sub-sitemap '{sm.split('/')[-1]}': acumulado {total}")
+    return total
+
+
+def _build_from_products_json(catalog: dict) -> int:
+    """Construye el catálogo vía products.json (paginado). Devuelve nº productos."""
+    page = _get_page()
+    if page is None:
+        return 0
     _warm_up(page)
     base = _ACTIVE.get("json_base", "https://applaws.com")
     total = 0
@@ -603,7 +721,19 @@ def _build_shopify_catalog(catalog: dict) -> dict:
                  f"(acumulado {total})")
         if len(prods) < 250:
             break
-    log.info(f"  Catálogo UK (Shopify) construido: {total} productos")
+    return total
+
+
+def _build_shopify_catalog(catalog: dict) -> dict:
+    """Catálogo completo del sitio Shopify (UK). Estrategia en cascada:
+      1. sitemap de productos (handle + título + imagen) — vía bot-friendly.
+      2. products.json (añade body_html/SKUs) — completa lo que falte.
+    Indexa por handle."""
+    n_sitemap = _build_from_sitemap(catalog)
+    log.info(f"  Catálogo UK por sitemap: {n_sitemap} productos")
+    n_json = _build_from_products_json(catalog)
+    log.info(f"  Catálogo UK por products.json: {n_json} productos")
+    log.info(f"  Catálogo UK (Shopify) construido: {len(catalog)} productos")
     return catalog
 
 

@@ -51,11 +51,17 @@ jobs:
       - name: Instalar Playwright
         run: playwright install chromium --with-deps
 
+      - name: Instalar xvfb (navegador headed anti-bot)
+        run: sudo apt-get update && sudo apt-get install -y xvfb
+
       - name: Resolver URLs y guardar metacampos
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          # Navegador headed (bajo xvfb) para esquivar el filtro anti-bot que
+          # bloquea Chromium headless desde las IPs de datacenter de Actions.
+          APPLAWS_HEADED: '1'
         run: |
           mkdir -p resultados
           EXTRA=""
@@ -66,7 +72,7 @@ jobs:
           [ -n "${{ github.event.inputs.web_url }}" ]     && WEB="--web-url ${{ github.event.inputs.web_url }}"
           [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
           [ -n "${{ github.event.inputs.url_key }}" ]     && URLKEY="--url-key ${{ github.event.inputs.url_key }}"
-          python3 core/process_brand.py \
+          xvfb-run -a python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --resolver-urls \
             $WEB $IDS $EXTRA $URLKEY \
