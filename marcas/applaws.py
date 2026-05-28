@@ -637,7 +637,7 @@ def _fetch_via_nav(page, url: str):
     except Exception as e:
         log.info(f"  _fetch_via_nav goto error en {url}: {e}")
         return None, 0
-    _wait_challenge(page)
+    _wait_challenge(page, max_wait=10)
     try:
         txt = page.evaluate("() => document.body ? document.body.innerText : ''") or ""
     except Exception:

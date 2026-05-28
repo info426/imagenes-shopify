@@ -671,10 +671,18 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     RESULTS_DIR.mkdir(exist_ok=True)
     catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
 
+    def _safe_get(pid):
+        try:
+            return api.get_product(pid)
+        except Exception as e:
+            log.warning(f"  No se pudo cargar el producto {pid} (¿es el ID de "
+                        f"Shopify, no el EAN?): {e}")
+            return None
+
     if product_id:
-        products = [api.get_product(product_id)]
+        products = [p for p in [_safe_get(product_id)] if p]
     elif only_ids:
-        products = [api.get_product(pid) for pid in only_ids]
+        products = [p for p in (_safe_get(pid) for pid in only_ids) if p]
     else:
         products = api.get_products(vendor)
 
