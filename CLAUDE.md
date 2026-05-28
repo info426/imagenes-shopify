@@ -440,19 +440,33 @@ compara contra el título inglés real y se elige el de mayor Jaccard, mucho má
 - **Próximo paso ES:** lanzar lote completo (vendor=Applaws, web_url=https://applaws.pet/,
   url_key=url_fabricante, product_ids vacío = todos los ~80 productos).
 
-**⏳ PENDIENTE — UK (RECORDAR AL USUARIO):**
-- Reescrito a estrategia Shopify products.json (la versión DDG falló 17/17). Pendiente
-  de probar en Actions (el sitio `applaws.com` está bloqueado desde el sandbox local
-  `host_not_allowed`, pero en GitHub Actions hay salida a internet).
-- Workflow `Resolver URLs fabricante` con `vendor=Applaws`,
-  `web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`,
-  `product_ids=<un ID para test>` (con uno basta: igualmente construye el catálogo
-  completo y matchea ese producto). Si va bien, lote completo (`product_ids` vacío).
-- **Qué revisar en el log:** "Catálogo UK (Shopify) construido: N productos" (N>0),
-  los "[shopify cand]" top-3 y el score del ganador. Confirmar que escribe en
-  `fuentes.url_fabricante_2` (NO en campo 1).
-- **Si N=0** (products.json bloqueado o vacío): revisar el warm-up / si el sitio exige
-  challenge JS. Fallback automático a DDG bajo demanda (menos fiable).
+**⚠️ Problema detectado en Actions: applaws.com bloquea IPs de datacenter.**
+- 1er intento (DDG por producto): **0/80** — traducción demasiado lossy + navegación 403.
+- 2º intento (products.json): **HTTP 403** (`products.json pág 1: vacío / HTTP 403`).
+  applaws.com filtra las IPs de los runners de GitHub (datacenter), igual que el
+  sandbox local. El fallback DDG también dio 0/80 porque cada navegación recibe 403.
+
+**Estrategia actual (en `main`) para superar el bloqueo — cascada:**
+1. **sitemap de productos** (`applaws.com/sitemap_products_*.xml`): los sitemaps suelen
+   estar permitidos para bots. Trae handle + título (`<image:title>`) + imagen sin pegarle
+   a la API. Parser `_parse_product_sitemap` (maneja CDATA).
+2. **products.json** como complemento (añade `body_html`/SKUs) si está accesible.
+3. **Navegador headed bajo xvfb** (`APPLAWS_HEADED=1` + `xvfb-run` en el workflow):
+   Chromium headless es detectado y bloqueado desde datacenter; headed pasa más retos.
+   `_warm_up` espera a que se resuelva el reto JS de Cloudflare y registra si obtuvo
+   `cf_clearance`; `_fetch_raw` reutiliza esa cookie vía `APIRequestContext`.
+4. **Diagnóstico** en cada 403: `[bloqueo] HTTP 403 … server=… cf=… body='…'` → permite
+   ver si es Cloudflare, Shopify o geo-bloqueo en el log.
+
+**Probar de nuevo:** workflow `Resolver URLs fabricante`, `vendor=Applaws`,
+`web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`, `product_ids=<un ID>`.
+**Qué revisar en el log:**
+- `[warm-up] HTTP … cf_clearance=sí/no` — si `no`, el reto no se resolvió.
+- `Catálogo UK por sitemap: N` y `… por products.json: M` — al menos uno debe ser >0.
+- Si todo da 403, mirar el `[bloqueo] … server=/cf=/body=` para decidir el siguiente
+  paso (p. ej. `playwright-stealth`, o resolver URLs vía **Google CSE** desde fuera del
+  runner — Google ya tiene indexado `applaws.com/uk/products/`, y solo necesitamos la URL,
+  no navegar la página).
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
