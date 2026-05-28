@@ -203,12 +203,13 @@ def _read_source_urls(api: ShopifyAPI, pid: int) -> list:
 
 
 def _save_source_url(api: ShopifyAPI, pid: int, url: str,
-                     workflow: str, resultado: str):
-    """Guarda la URL activa y la añade al histórico JSON (append-only)."""
+                     workflow: str, resultado: str,
+                     url_key: str = MF_KEY_URL):
+    """Guarda la URL en el metacampo indicado y la añade al histórico JSON (append-only)."""
     if not url:
         return
     try:
-        api.set_metafield(pid, MF_NAMESPACE, MF_KEY_URL, url, "url")
+        api.set_metafield(pid, MF_NAMESPACE, url_key, url, "url")
         hist = []
         hist_mf = api.get_metafield(pid, MF_NAMESPACE, MF_KEY_HIST)
         if hist_mf and hist_mf.get("value"):
@@ -228,9 +229,9 @@ def _save_source_url(api: ShopifyAPI, pid: int, url: str,
             })
             api.set_metafield(pid, MF_NAMESPACE, MF_KEY_HIST,
                               json.dumps(hist, ensure_ascii=False), "json")
-        log.info(f"  [metacampo] url_fabricante guardada: {url}")
+        log.info(f"  [metacampo] {url_key} guardada: {url}")
     except Exception as e:
-        log.warning(f"  [metacampo] no se pudo guardar url_fabricante: {e}")
+        log.warning(f"  [metacampo] no se pudo guardar {url_key}: {e}")
 
 
 # ─── Modo backup ──────────────────────────────────────────────────────────────
@@ -655,10 +656,10 @@ def run_backfill_urls(api: ShopifyAPI, vendor: str):
 
 def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
                      rebuild: bool, product_id: int = None,
-                     only_ids: set = None):
+                     only_ids: set = None, url_key: str = MF_KEY_URL):
     """Para cada producto resuelve su URL oficial vía el scraper de la marca
     (find_best_match: slug directo + DDG) y la guarda en el metacampo
-    fuentes.url_fabricante. NO procesa ni toca las imágenes."""
+    indicado por url_key (por defecto fuentes.url_fabricante). NO procesa imágenes."""
     slug = vendor_slug(vendor)
     try:
         scraper = importlib.import_module(f"marcas.{slug}")
@@ -697,7 +698,8 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
 
         url = catalog.get(handle, {}).get("url") if handle else None
         if handle is not None and score >= 0.10 and url:
-            _save_source_url(api, pid, url, "resolver-urls", f"score={score:.2f}")
+            _save_source_url(api, pid, url, "resolver-urls", f"score={score:.2f}",
+                             url_key=url_key)
             stats["guardadas"] += 1
             log.info(f"  → {url}  (score={score:.2f})")
         else:
@@ -726,6 +728,10 @@ def main():
     parser.add_argument("--resolver-urls",   action="store_true",
                         help="Buscar la URL oficial de cada producto (web) y "
                              "guardarla en fuentes.url_fabricante (sin tocar imágenes)")
+    parser.add_argument("--url-key",
+                        choices=["url_fabricante", "url_fabricante_2"],
+                        default="url_fabricante",
+                        help="Metacampo destino para --resolver-urls / --backfill-urls")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -777,7 +783,7 @@ def main():
         run_backfill_urls(api, args.vendor)
     elif args.resolver_urls:
         run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
-                         args.product_id, only_ids or None)
+                         args.product_id, only_ids or None, url_key=args.url_key)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)

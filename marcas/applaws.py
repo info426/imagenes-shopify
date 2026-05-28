@@ -1,26 +1,27 @@
 """
-Scraper para Applaws — applaws.pet (web oficial en español, WooCommerce)
+Scraper para Applaws — web oficial. Soporta dos sitios:
 
-Las páginas de producto usan URLs WooCommerce en español con el peso/tamaño
-incluido en el slug, p. ej.:
+  - España (WooCommerce ES): https://applaws.pet/producto/{slug}/
+      slug en español con peso, p. ej. applaws-cat-dry-kitten-pollo-2kg
+  - Reino Unido (EN):        https://applaws.com/uk/...
+      títulos/slug en inglés (chicken, breast, pouch...)
 
-    https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-2kg/
+El sitio activo se decide por el `web_url` que recibe scrape_catalog():
+  applaws.com → UK (inglés);  resto → ES (español).
 
-El peso ("2kg") forma parte del slug pero no siempre está en el título Shopify,
-así que el slug no es 100% derivable. La resolución es bajo demanda:
-  1. Slug directo desde el título (rápido) — cubre los títulos que ya incluyen
-     el peso tal cual aparece en la web.
-  2. DuckDuckGo con filtro `site:applaws.pet/producto/` y ranking del h1.
+Como los títulos en Shopify están en español y el sitio UK en inglés, para el
+sitio UK se traducen los términos del título (ES→EN) antes de buscar/puntuar y
+se prioriza la búsqueda por EAN (independiente del idioma).
 
-applaws.pet bloquea peticiones sin navegador real (HTTP 403), por lo que toda
-la navegación se hace con Playwright + user-agent de Chrome + anti-bot completo.
+applaws.pet/applaws.com bloquean peticiones sin navegador real (HTTP 403), por
+lo que toda la navegación se hace con Playwright + anti-bot completo.
 
-Interfaz estándar (requerida por core/process_brand.py):
+Interfaz estándar (core/process_brand.py):
   scrape_catalog(web_url, rebuild=False) -> dict
   find_best_match(shopify_title, catalog, barcode="") -> (handle, score)
-  scrape_product_url(url, barcode="") -> {name, url, images} | None   (override metacampo)
-  title_cache_key(title) -> str                                       (backfill URLs)
-  get_ddg_query(shopify_title) -> str                                 (fallback web_y_amazon)
+  scrape_product_url(url, barcode="") -> {name, url, images} | None
+  title_cache_key(title) -> str
+  get_ddg_query(shopify_title) -> str
 """
 
 import atexit
@@ -34,21 +35,73 @@ from urllib.parse import urljoin, urlparse
 
 log = logging.getLogger(__name__)
 
-CATALOG_PATH = Path("resultados/applaws_catalog.json")
-BASE_URL     = "https://applaws.pet/"
-PRODUCT_PATH = "applaws.pet/producto/"
-MIN_SCORE    = 0.10
-MATCH_THRESHOLD = 0.30
+MIN_SCORE = 0.10
+
+# ─── Configuración por sitio ────────────────────────────────────────────────────
+
+_SITES = {
+    "es": {
+        "lang":      "es",
+        "base":      "https://applaws.pet/",
+        "host_path": "applaws.pet/producto/",
+        "catalog":   Path("resultados/applaws_catalog.json"),
+        "threshold": 0.30,
+        "slug_direct": True,
+    },
+    "uk": {
+        "lang":      "en",
+        "base":      "https://applaws.com/uk/",
+        "host_path": "applaws.com/uk/",
+        "catalog":   Path("resultados/applaws_uk_catalog.json"),
+        "threshold": 0.22,   # traducción imperfecta → umbral algo más bajo
+        "slug_direct": False,
+    },
+}
+
+# Sitio activo (lo fija scrape_catalog según web_url). Por defecto ES.
+_ACTIVE = _SITES["es"]
+
+
+def _site_for(web_url: str) -> dict:
+    return _SITES["uk"] if "applaws.com" in (web_url or "").lower() else _SITES["es"]
+
 
 # Notas internas que la tienda añade a los títulos: *DX*, (NDR), (PV)...
 _TITLE_NOISE = re.compile(r'\s*(?:\*[^*]*\*|\((?:NDR|PV|NV|ONLINE)\))\s*', re.IGNORECASE)
 
 IGNORE_TOKENS = {
     "applaws",
+    # stopwords ES
     "de", "el", "la", "los", "las", "con", "sin", "y", "e", "o", "a", "para",
     "un", "una", "al", "del",
+    # stopwords EN
+    "with", "and", "the", "in", "of", "for", "to",
+    # unidades
     "ml", "gr", "g", "kg", "mg", "cl", "l", "cm", "mm", "x", "ud", "uds", "pack",
     "dx",
+}
+
+# Traducción de términos del dominio (ES → EN) para el sitio UK.
+_ES_EN = {
+    "gato": "cat", "gatos": "cat", "gatito": "kitten", "gatitos": "kitten",
+    "perro": "dog", "perros": "dog", "cachorro": "puppy", "cachorros": "puppy",
+    "pollo": "chicken", "pechuga": "breast", "muslo": "thigh",
+    "salmon": "salmon", "atun": "tuna", "pescado": "fish", "sardina": "sardine",
+    "sardinas": "sardine", "caballa": "mackerel", "trucha": "trout",
+    "cordero": "lamb", "ternera": "beef", "buey": "beef", "vacuno": "beef",
+    "res": "beef", "pavo": "turkey", "pato": "duck", "conejo": "rabbit",
+    "jamon": "ham", "higado": "liver", "gambas": "prawn", "gamba": "prawn",
+    "langostinos": "prawn", "cangrejo": "crab", "queso": "cheese",
+    "sobre": "pouch", "sobres": "pouch", "lata": "tin", "latas": "tin",
+    "bolsa": "bag", "caldo": "broth", "gelatina": "jelly", "jalea": "jelly",
+    "esparragos": "asparagus", "arroz": "rice", "verduras": "vegetable",
+    "verdura": "vegetable", "calabaza": "pumpkin",
+    "seco": "dry", "seca": "dry", "humedo": "wet", "humeda": "wet",
+    "adulto": "adult", "adultos": "adult", "senior": "senior",
+    "esterilizado": "sterilised", "esterilizada": "sterilised",
+    "seleccion": "selection", "suprema": "supreme", "supremo": "supreme",
+    "natural": "natural", "naturaleza": "nature", "arena": "litter",
+    "multipack": "multipack", "comida": "food", "alimento": "food",
 }
 
 USER_AGENT = (
@@ -57,7 +110,12 @@ USER_AGENT = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-# Estado Playwright reutilizado entre llamadas
+# URLs UK que no son ficha de producto.
+_NON_PRODUCT = ("/blog", "/news", "/pages", "/page/", "/cart", "/checkout",
+                "/account", "/category", "/product-category", "/brand",
+                "/where-to-buy", "/stockist", "/contact", "/about",
+                "/faq", "/privacy", "/terms", "/recipes", "/tag/")
+
 _PW = {"pw": None, "browser": None, "ctx": None, "page": None, "warmed": False}
 
 
@@ -67,7 +125,6 @@ def _normalize(text: str) -> str:
     text = unicodedata.normalize("NFD", text.lower())
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
     text = re.sub(r"[^a-z0-9\s]", " ", text)
-    # "2kg" → "2 kg" para que la unidad caiga como stopword y quede el número
     text = re.sub(r"(\d+)\s*(ml|gr|kg|mg|cl|l|cm|mm|g)\b", r"\1 \2", text)
     return text
 
@@ -77,19 +134,22 @@ def _clean_title(title: str) -> str:
 
 
 def _title_key(title: str) -> str:
-    """Clave de caché estable derivada del título Shopify."""
     norm = _normalize(_clean_title(title))
     return re.sub(r"\s+", "-", norm.strip()).strip("-")
 
 
 def _direct_slug(title: str) -> str:
-    """Slug WooCommerce directo desde el título: 'applaws-...-2kg'."""
     norm = unicodedata.normalize("NFD", _clean_title(title).lower())
     ascii_str = norm.encode("ascii", "ignore").decode()
     slug = re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", ascii_str)).strip("-")
     if slug and not slug.startswith("applaws"):
         slug = "applaws-" + slug
     return slug
+
+
+def _translate(tokens: set) -> set:
+    """Traduce tokens ES→EN (solo se usa para el sitio UK)."""
+    return {_ES_EN.get(t, t) for t in tokens}
 
 
 def _tokenize(text: str) -> set:
@@ -99,8 +159,15 @@ def _tokenize(text: str) -> set:
     return tokens
 
 
+def _title_tokens(title: str) -> set:
+    """Tokens del título Shopify, traducidos a EN si el sitio activo es UK."""
+    toks = _tokenize(title)
+    if _ACTIVE["lang"] == "en":
+        toks = _translate(toks)
+    return toks
+
+
 def _stem(token: str) -> str:
-    """Stemming mínimo de plurales españoles: 'gatos'→'gato'."""
     if len(token) > 4 and token.endswith("es"):
         return token[:-2]
     if len(token) > 3 and token.endswith("s"):
@@ -112,15 +179,14 @@ def _stem_set(tokens: set) -> set:
     return {_stem(t) for t in tokens}
 
 
-def _similarity(title_tokens: set, name_tokens: set) -> float:
-    a = _stem_set(title_tokens)
-    b = _stem_set(name_tokens)
+def _similarity(a_tokens: set, b_tokens: set) -> float:
+    a = _stem_set(a_tokens)
+    b = _stem_set(b_tokens)
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
 
 
-# Alias público para --backfill-urls
 title_cache_key = _title_key
 
 
@@ -142,12 +208,15 @@ def _get_page():
         args=["--no-sandbox", "--disable-setuid-sandbox",
               "--disable-dev-shm-usage", "--disable-gpu"],
     )
+    locale = "en-GB" if _ACTIVE["lang"] == "en" else "es-ES"
+    accept_lang = ("en-GB,en;q=0.9,es;q=0.8" if _ACTIVE["lang"] == "en"
+                   else "es-ES,es;q=0.9,en;q=0.8")
     ctx = browser.new_context(
         user_agent=USER_AGENT,
-        locale="es-ES",
+        locale=locale,
         viewport={"width": 1440, "height": 900},
         extra_http_headers={
-            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Accept-Language": accept_lang,
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,"
                       "image/avif,image/webp,image/apng,*/*;q=0.8",
             "Accept-Encoding": "gzip, deflate, br",
@@ -162,7 +231,7 @@ def _get_page():
     ctx.add_init_script("""
         Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
         Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
-        Object.defineProperty(navigator, 'languages', {get: () => ['es-ES', 'es', 'en']});
+        Object.defineProperty(navigator, 'languages', {get: () => ['en-GB', 'en', 'es']});
         window.chrome = {runtime: {}, loadTimes: function(){}, csi: function(){}, app: {}};
     """)
     page = ctx.new_page()
@@ -179,11 +248,10 @@ def _get_page():
 
 
 def _warm_up(page):
-    """Visita la homepage para establecer cookies antes de navegar a productos."""
     if _PW["warmed"]:
         return
     try:
-        page.goto(BASE_URL, timeout=20000, wait_until="domcontentloaded")
+        page.goto(_ACTIVE["base"], timeout=20000, wait_until="domcontentloaded")
         page.wait_for_timeout(2000)
     except Exception as e:
         log.info(f"  [warm-up] {e}")
@@ -203,11 +271,10 @@ def _should_keep_url(url: str) -> bool:
 
 
 def _strip_size_suffix(url: str) -> str:
-    """WordPress añade '-300x300' antes de la extensión en los thumbnails."""
     return re.sub(r'-\d+x\d+(\.[a-zA-Z]{3,4})(?:\?.*)?$', r'\1', url.split("?")[0])
 
 
-# ─── Extracción de imágenes (WooCommerce) ───────────────────────────────────────
+# ─── Extracción de imágenes ─────────────────────────────────────────────────────
 
 def _extract_images(page, page_url: str) -> list:
     ordered: list = []
@@ -227,7 +294,6 @@ def _extract_images(page, page_url: str) -> list:
         seen.add(clean)
         ordered.append(clean)
 
-    # 1. og:image
     try:
         for sel in ("meta[property='og:image']",
                     "meta[property='og:image:secure_url']",
@@ -238,7 +304,6 @@ def _extract_images(page, page_url: str) -> list:
     except Exception:
         pass
 
-    # 2. JSON-LD (schema.org Product)
     try:
         ld_texts = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -266,7 +331,6 @@ def _extract_images(page, page_url: str) -> list:
     except Exception:
         pass
 
-    # 3. <img> de la galería del producto (excluye relacionados/upsells)
     try:
         img_data = page.evaluate("""() => {
             return Array.from(document.querySelectorAll('img'))
@@ -329,6 +393,27 @@ def get_ddg_query(title: str) -> str:
     return f"applaws {_clean_title(title)}"
 
 
+def _translate_text(text: str) -> str:
+    """Traduce palabra a palabra ES→EN (para construir queries del sitio UK)."""
+    out = []
+    for w in _normalize(text).split():
+        if w in IGNORE_TOKENS:
+            continue
+        out.append(_ES_EN.get(w, w))
+    return " ".join(out)
+
+
+def _is_product_url(url: str) -> bool:
+    low = url.lower()
+    if _ACTIVE["host_path"] not in low:
+        return False
+    if any(seg in low for seg in _NON_PRODUCT):
+        return False
+    # debe haber algo después de host_path (no la home /uk/)
+    tail = low.split(_ACTIVE["host_path"], 1)[-1].strip("/")
+    return len(tail) > 0
+
+
 def _ddg_query_urls(query: str, max_urls: int, seen: set) -> list:
     try:
         from ddgs import DDGS
@@ -343,7 +428,7 @@ def _ddg_query_urls(query: str, max_urls: int, seen: set) -> list:
             with DDGS() as ddgs:
                 for r in ddgs.text(query, max_results=10):
                     url = r.get("href") or r.get("url") or ""
-                    if PRODUCT_PATH not in url:
+                    if not _is_product_url(url):
                         continue
                     url = url.split("?")[0].split("#")[0].rstrip("/") + "/"
                     if url in seen:
@@ -365,27 +450,39 @@ def _ddg_query_urls(query: str, max_urls: int, seen: set) -> list:
 
 def _ddg_find_product_urls(title: str, barcode: str = "",
                            max_urls: int = 6) -> list:
-    """URLs candidatas de applaws.pet/producto/. Cascada: título completo →
-    sin prefijo 'APPLAWS' → por EAN."""
+    """URLs candidatas del sitio activo. Cascada distinta por idioma."""
     seen: set = set()
     urls: list = []
+    host_path = _ACTIVE["host_path"]
     clean = _clean_title(title)
 
-    q1 = f"site:applaws.pet/producto/ {clean}"
-    log.info(f"  [DDG] {q1}")
-    urls += _ddg_query_urls(q1, max_urls - len(urls), seen)
-
-    if len(urls) < max_urls:
+    if _ACTIVE["lang"] == "en":
+        # UK: EAN primero (idioma-independiente), luego título traducido
+        if barcode:
+            q0 = f"site:applaws.com {barcode}"
+            log.info(f"  [DDG EAN] {q0}")
+            urls += _ddg_query_urls(q0, max_urls - len(urls), seen)
+        en = _translate_text(clean)
+        q1 = f"site:{host_path} {en}"
+        log.info(f"  [DDG EN] {q1}")
+        urls += _ddg_query_urls(q1, max_urls - len(urls), seen)
+        if len(urls) < max_urls:
+            q2 = f"applaws uk {en}"
+            log.info(f"  [DDG EN libre] {q2}")
+            urls += _ddg_query_urls(q2, max_urls - len(urls), seen)
+    else:
+        q1 = f"site:{host_path} {clean}"
+        log.info(f"  [DDG] {q1}")
+        urls += _ddg_query_urls(q1, max_urls - len(urls), seen)
         no_brand = re.sub(r'^APPLAWS\s+', '', clean, flags=re.IGNORECASE).strip()
-        if no_brand != clean:
-            q2 = f"site:applaws.pet/producto/ {no_brand}"
+        if len(urls) < max_urls and no_brand != clean:
+            q2 = f"site:{host_path} {no_brand}"
             log.info(f"  [DDG sin marca] {q2}")
             urls += _ddg_query_urls(q2, max_urls - len(urls), seen)
-
-    if len(urls) < 2 and barcode:
-        q3 = f"site:applaws.pet/producto/ {barcode}"
-        log.info(f"  [DDG EAN] {q3}")
-        urls += _ddg_query_urls(q3, max_urls - len(urls), seen)
+        if len(urls) < 2 and barcode:
+            q3 = f"site:{host_path} {barcode}"
+            log.info(f"  [DDG EAN] {q3}")
+            urls += _ddg_query_urls(q3, max_urls - len(urls), seen)
 
     log.info(f"  [DDG] {len(urls)} candidatos: {urls}")
     return urls
@@ -395,10 +492,10 @@ def _ddg_find_product_urls(title: str, barcode: str = "",
 
 def _save_catalog(catalog: dict):
     try:
-        CATALOG_PATH.parent.mkdir(exist_ok=True)
-        CATALOG_PATH.write_text(
-            json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        path = _ACTIVE["catalog"]
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2),
+                        encoding="utf-8")
     except Exception as e:
         log.warning(f"No se pudo guardar catálogo: {e}")
 
@@ -409,15 +506,19 @@ save_catalog = _save_catalog
 # ─── Interfaz pública ────────────────────────────────────────────────────────────
 
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
-    """Carga el catálogo cacheado. Cada producto se resuelve bajo demanda en
-    find_best_match() (slug directo + DDG), así que aquí solo se gestiona caché."""
-    if rebuild and CATALOG_PATH.exists():
-        CATALOG_PATH.unlink()
+    """Fija el sitio activo según web_url y carga el catálogo cacheado de ese sitio."""
+    global _ACTIVE
+    _ACTIVE = _site_for(web_url)
+    path = _ACTIVE["catalog"]
+    log.info(f"Sitio activo: {_ACTIVE['lang'].upper()} ({_ACTIVE['base']}) "
+             f"— catálogo {path}")
+    if rebuild and path.exists():
+        path.unlink()
         log.info("Catálogo borrado (rebuild) — se reconstruirá bajo demanda")
         return {}
-    if CATALOG_PATH.exists():
+    if path.exists():
         try:
-            catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+            catalog = json.loads(path.read_text(encoding="utf-8"))
             log.info(f"Catálogo cargado desde caché: {len(catalog)} entradas")
             return catalog
         except Exception:
@@ -427,7 +528,6 @@ def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
 
 
 def scrape_product_url(url: str, barcode: str = "") -> dict | None:
-    """Extrae imágenes de una URL exacta (override metacampo fuentes.url_fabricante)."""
     page = _get_page()
     if page is None:
         return None
@@ -459,13 +559,13 @@ def scrape_product_url(url: str, barcode: str = "") -> dict | None:
 def find_best_match(shopify_title: str, catalog: dict,
                     barcode: str = "") -> tuple:
     """
-    Resolución por producto:
+    Resolución por producto en el sitio activo:
       1. Cache hit por clave de título normalizada.
-      2. Slug directo (rápido): applaws.pet/producto/<slug>/ desde el título.
-      3. DDG site:applaws.pet/producto/ → ranking del h1 por similitud.
-    Extrae las imágenes solo del candidato ganador. Devuelve (handle, score).
+      2. (ES) Slug directo applaws.pet/producto/<slug>/.
+      3. DDG (ES: título; UK: EAN + título traducido) → ranking del h1.
+    Extrae imágenes solo del candidato ganador. Devuelve (handle, score).
     """
-    title_tokens = _tokenize(shopify_title)
+    title_tokens = _title_tokens(shopify_title)
     title_key = _title_key(shopify_title)
 
     if title_key in catalog and catalog[title_key].get("url"):
@@ -480,17 +580,16 @@ def find_best_match(shopify_title: str, catalog: dict,
     candidates: list = []   # (url, name)
     seen: set = set()
 
-    # 2. Slug directo
-    direct = _direct_slug(shopify_title)
-    if direct:
-        durl = f"{BASE_URL}producto/{direct}/"
-        name = _fetch_name(page, durl)
-        if name:
-            candidates.append((durl, name))
-            seen.add(durl)
-            log.info(f"  [slug directo] {durl} → '{name}'")
+    if _ACTIVE["slug_direct"]:
+        direct = _direct_slug(shopify_title)
+        if direct:
+            durl = f"{_ACTIVE['base']}producto/{direct}/"
+            name = _fetch_name(page, durl)
+            if name:
+                candidates.append((durl, name))
+                seen.add(durl)
+                log.info(f"  [slug directo] {durl} → '{name}'")
 
-    # 3. DDG (siempre, para cubrir el peso desconocido en el slug)
     for url in _ddg_find_product_urls(shopify_title, barcode=barcode):
         if url in seen:
             continue
@@ -499,7 +598,6 @@ def find_best_match(shopify_title: str, catalog: dict,
             candidates.append((url, name))
             seen.add(url)
 
-    # Ranking por similitud del h1
     best = None   # (score, url, name)
     for url, name in candidates:
         score = _similarity(title_tokens, _tokenize(name))
@@ -507,7 +605,7 @@ def find_best_match(shopify_title: str, catalog: dict,
         if best is None or score > best[0]:
             best = (score, url, name)
 
-    if best and best[0] >= MATCH_THRESHOLD:
+    if best and best[0] >= _ACTIVE["threshold"]:
         score, url, name = best
         log.info(f"  Extrayendo imágenes del ganador: {url}")
         entry = scrape_product_url(url, barcode=barcode) or {
@@ -524,7 +622,7 @@ def find_best_match(shopify_title: str, catalog: dict,
         return title_key, score
 
     if best:
-        log.warning(f"  Mejor candidato score={best[0]:.2f} < {MATCH_THRESHOLD} "
+        log.warning(f"  Mejor candidato score={best[0]:.2f} < {_ACTIVE['threshold']} "
                     f"— descartado: '{best[2]}'")
     log.warning(f"  Sin resolución para '{shopify_title}'")
     return None, 0.0

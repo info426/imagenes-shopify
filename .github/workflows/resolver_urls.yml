@@ -23,6 +23,12 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      url_key:
+        description: 'Metacampo destino (url_fabricante = campo 1, url_fabricante_2 = campo 2)'
+        required: false
+        type: choice
+        options: ['url_fabricante', 'url_fabricante_2']
+        default: 'url_fabricante'
 
 jobs:
   resolver:
@@ -55,13 +61,15 @@ jobs:
           EXTRA=""
           WEB=""
           IDS=""
+          URLKEY=""
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ] && EXTRA="--rebuild-catalog"
           [ -n "${{ github.event.inputs.web_url }}" ]     && WEB="--web-url ${{ github.event.inputs.web_url }}"
           [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
+          [ -n "${{ github.event.inputs.url_key }}" ]     && URLKEY="--url-key ${{ github.event.inputs.url_key }}"
           python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --resolver-urls \
-            $WEB $IDS $EXTRA \
+            $WEB $IDS $EXTRA $URLKEY \
             2>&1 | tee resultados/resolver_urls_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log y catálogo

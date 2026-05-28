@@ -365,7 +365,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina N&D | Farmina | Completado | — |
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
-| Applaws | Applaws | Completado (imágenes) — **pendiente** poblar `fuentes.url_fabricante` (web oficial) | web_oficial → marcas/applaws.py (applaws.pet/producto/) |
+| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — **pendiente** lote ES completo + UK test (url_fabricante_2) | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/) |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
@@ -380,39 +380,47 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 
 ### Applaws — notas de estrategia (URLs fabricante)
 
-**Objetivo:** poblar `fuentes.url_fabricante` de cada producto Applaws con su URL
-oficial en `applaws.pet` (las imágenes ya están hechas). Útil para el futuro
-workflow de descripciones y para reprocesar imágenes desde la web si hace falta.
+**Objetivo:** poblar los metacampos de URL de cada producto Applaws:
+- `fuentes.url_fabricante` ← web ES (`applaws.pet/producto/{slug}/`)
+- `fuentes.url_fabricante_2` ← web UK (`applaws.com/uk/product/{slug}/`)
 
-**Scraper `marcas/applaws.py`:**
-- CMS: **WooCommerce** en español — URLs `/producto/{slug}/`. El slug incluye el
-  peso (`applaws-cat-dry-kitten-pollo-2kg`), que no siempre está en el título Shopify.
-- Anti-bot: `applaws.pet` devuelve **HTTP 403** sin navegador → Playwright + Chrome
-  UA + headers `Sec-Fetch-*` + bypass `navigator.webdriver` + warm-up homepage.
-- Resolución por producto: (1) slug directo desde el título; (2) DDG
-  `site:applaws.pet/producto/` con cascada (sin marca / por EAN) y ranking del h1.
-- `_normalize` divide número+unidad (`2kg`→`2 kg`) y descarta la unidad como
-  stopword → el peso no rompe el matching. `MATCH_THRESHOLD = 0.30`.
+**Scraper `marcas/applaws.py` — soporta ambos sitios:**
 
-**Cómo ejecutar:** workflow `Resolver URLs fabricante` (`--resolver-urls`) con
-`vendor=Applaws`, `web_url=https://applaws.pet/`. Test con un `product_ids` antes
-del lote completo. Escribe solo el metacampo, no toca imágenes.
+| Sitio | `web_url` | Idioma | Catálogo caché | Threshold | Slug directo |
+|---|---|---|---|---|---|
+| ES (WooCommerce ES) | `https://applaws.pet/` | es | `resultados/applaws_catalog.json` | 0.30 | Sí |
+| UK (WooCommerce EN) | `https://applaws.com/uk/` | en | `resultados/applaws_uk_catalog.json` | 0.22 | No |
 
-**Infra:** el workflow hace checkout de `main`; el scraper + el modo `--resolver-urls`
-deben estar en `main` antes de lanzarlo.
+- **ES**: slug directo desde el título → fallback DDG `site:applaws.pet/producto/` + ranking h1.
+- **UK**: títulos Shopify en español → se traducen con diccionario `_ES_EN` (~80 términos) antes
+  de buscar/puntuar. Prioridad EAN (DDG independiente del idioma) → título traducido → DDG genérico.
+- Anti-bot ambos: Playwright + Chrome UA + Sec-Fetch-* + bypass `navigator.webdriver` + warm-up.
+- `_normalize` divide número+unidad (`2kg`→`2 kg`) → la unidad se descarta como stopword → el
+  peso no rompe el matching.
+- `_is_product_url()` filtra URLs de blog/news/páginas UK para no navegar recursos inútiles.
 
-**⏳ PENDIENTE DE VERIFICAR (próxima sesión — RECORDAR AL USUARIO):**
-- Workflow `Resolver URLs fabricante` lanzado en modo **test** con
-  `product_ids=15509630452099` (APPLAWS CAT DRY KITTEN POLLO). Estaba **en progreso**
-  al cerrar la sesión.
-- **Qué revisar al volver:** Actions → run de `Resolver URLs fabricante` → log/artefacto
-  (`resultados/resolver_urls_Applaws.txt`). Confirmar que escribió
-  `https://applaws.pet/producto/applaws-cat-dry-kitten-pollo-2kg/` (o equivalente)
-  en `fuentes.url_fabricante` del producto y que el score ≥ 0.30.
-- **Si el test fue OK:** lanzar el lote completo (mismo workflow, `product_ids` vacío
-  = todos los Applaws, ~80 productos).
-- **Si falló:** revisar si fue 403 (ajustar anti-bot/warm-up), DDG sin candidatos
-  (revisar query/threshold) o slug directo erróneo. Ver el log para diagnosticar.
+**Matching ES→UK (cross-language):**
+- Ejemplo: "APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR"
+  - Tokens ES: `['12x70', 'cat', 'pechuga', 'pollo', 'salmon', 'sobre']`
+  - Tokens EN (traducidos): `['12x70', 'breast', 'cat', 'chicken', 'pouch', 'salmon']`
+  - vs h1 UK "Applaws Cat Pouch Chicken Breast with Salmon 12x70g": score **1.0** ✅
+
+**Metacampo destino:** usar el parámetro `url_key` del workflow:
+- `url_fabricante` → campo 1 (ES)
+- `url_fabricante_2` → campo 2 (UK) — **nunca sobreescribe el campo 1**
+
+**Estado ES — ✅ TEST PASADO:**
+- Producto 15509633204611 ("APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR"):
+  score=1.00, guardado en `fuentes.url_fabricante` → `https://applaws.pet/producto/applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70gr/`
+- **Próximo paso ES:** lanzar lote completo (vendor=Applaws, web_url=https://applaws.pet/,
+  url_key=url_fabricante, product_ids vacío = todos los ~80 productos).
+
+**⏳ PENDIENTE — UK (próxima sesión — RECORDAR AL USUARIO):**
+- Workflow `Resolver URLs fabricante` con `vendor=Applaws`,
+  `web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`,
+  `product_ids=<un ID para test>` antes del lote completo.
+- Confirmar que escribe en `fuentes.url_fabricante_2` (NO en campo 1) con score ≥ 0.22.
+- El scraper `marcas/applaws.py` y el parámetro `--url-key` ya están en `main`.
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
