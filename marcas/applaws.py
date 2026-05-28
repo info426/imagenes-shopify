@@ -281,26 +281,34 @@ _CHALLENGE_HINTS = ("just a moment", "checking your browser",
                     "enable javascript and cookies")
 
 
+def _wait_challenge(page, max_wait: int = 25) -> bool:
+    """Espera a que un reto JS de Cloudflare ('Just a moment…') se resuelva solo
+    en el navegador headed (lo resuelve sin interacción). Devuelve True si la
+    página ya NO es un reto."""
+    waited = 0
+    while waited < max_wait:
+        try:
+            html = (page.content() or "").lower()[:4000]
+            title = (page.title() or "").lower()
+        except Exception:
+            html, title = "", ""
+        if not any(h in html or h in title for h in _CHALLENGE_HINTS):
+            return True
+        page.wait_for_timeout(2000)
+        waited += 2
+    return False
+
+
 def _warm_up(page):
     """Visita la home para establecer cookies y, si hay reto anti-bot
     (Cloudflare 'Just a moment…'), espera a que se resuelva y deje la cookie
-    de clearance en el contexto (que luego reutiliza request.get)."""
+    de clearance en el contexto."""
     if _PW["warmed"]:
         return
     try:
         resp = page.goto(_ACTIVE["base"], timeout=30000, wait_until="domcontentloaded")
         status = resp.status if resp else 0
-        # Espera a que un posible reto JS de Cloudflare se resuelva.
-        for _ in range(8):   # hasta ~16s
-            try:
-                html = (page.content() or "").lower()
-                title = (page.title() or "").lower()
-            except Exception:
-                html, title = "", ""
-            if not any(h in html or h in title for h in _CHALLENGE_HINTS):
-                break
-            log.info("  [warm-up] reto anti-bot detectado, esperando…")
-            page.wait_for_timeout(2000)
+        _wait_challenge(page)
         try:
             page.wait_for_load_state("networkidle", timeout=8000)
         except Exception:
@@ -599,7 +607,15 @@ def _fetch_raw(page, url: str):
         log.info(f"  _fetch_raw (page.fetch) error en {url}: {e}")
         status = 0
 
-    # Método 2: APIRequestContext del contexto del navegador.
+    # Método 2: navegar con el navegador y esperar a que el reto Cloudflare se
+    # resuelva (la home demostró que el headed lo resuelve). Sirve para JSON/texto;
+    # el visor XML de Chromium puede perder etiquetas en innerText.
+    txt, st = _fetch_via_nav(page, url)
+    if txt:
+        return txt, st
+    status = st or status
+
+    # Método 3: APIRequestContext del contexto del navegador.
     try:
         resp = page.context.request.get(url, timeout=30000)
         if resp.status < 400:
@@ -610,6 +626,27 @@ def _fetch_raw(page, url: str):
         log.info(f"  _fetch_raw (request) error en {url}: {e}")
 
     return None, status
+
+
+def _fetch_via_nav(page, url: str):
+    """Navega a la URL con el navegador real y espera a que el reto Cloudflare
+    se resuelva solo; devuelve (texto, status) o (None, status)."""
+    try:
+        nav = page.goto(url, timeout=45000, wait_until="domcontentloaded")
+        st = nav.status if nav else 0
+    except Exception as e:
+        log.info(f"  _fetch_via_nav goto error en {url}: {e}")
+        return None, 0
+    _wait_challenge(page)
+    try:
+        txt = page.evaluate("() => document.body ? document.body.innerText : ''") or ""
+    except Exception:
+        txt = ""
+    low = txt[:400].lower()
+    if not txt or any(h in low for h in _CHALLENGE_HINTS):
+        log.info(f"  [nav] reto no resuelto / vacío en {url} (HTTP {st})")
+        return None, (st or 403)
+    return txt, 200
 
 
 def _fetch_json(page, url: str):
@@ -795,6 +832,33 @@ def _match_shopify_local(shopify_title: str, catalog: dict,
     return None, 0.0
 
 
+def _resolve_uk_via_search(shopify_title: str, barcode: str = "") -> tuple:
+    """Resuelve la URL UK puntuando el HANDLE de cada candidato de búsqueda,
+    SIN navegar la página (Cloudflare bloquea la navegación desde datacenter,
+    pero el handle ya viene en la URL del resultado). Devuelve (url, score).
+
+    Shopify añade sufijos -2/-3/-4 a handles duplicados (multi-mercado); se
+    quitan para puntuar y se prefiere el handle canónico (sin sufijo)."""
+    title_tokens = _title_tokens(shopify_title)
+    urls = _ddg_find_product_urls(shopify_title, barcode=barcode, max_urls=10)
+    ranked = []
+    for url in urls:
+        handle = url.rstrip("/").split("/products/")[-1].split("/")[0].split("?")[0]
+        if not handle:
+            continue
+        base = re.sub(r"-\d+$", "", handle)
+        htoks = _tokenize(base.replace("-", " "))
+        score = _similarity(title_tokens, htoks)
+        has_suffix = 1 if re.search(r"-\d+$", handle) else 0
+        ranked.append((score, -has_suffix, url, handle))
+    ranked.sort(reverse=True)
+    for score, _suf, url, handle in ranked[:5]:
+        log.info(f"  [uk cand] score={score:.2f} {handle}")
+    if ranked and ranked[0][0] >= _ACTIVE["threshold"]:
+        return ranked[0][2], ranked[0][0]
+    return None, 0.0
+
+
 # ─── Persistencia del catálogo ──────────────────────────────────────────────────
 
 def _save_catalog(catalog: dict):
@@ -891,12 +955,26 @@ def find_best_match(shopify_title: str, catalog: dict,
     title_tokens = _title_tokens(shopify_title)
     title_key = _title_key(shopify_title)
 
-    # UK Shopify: el catálogo completo ya está en memoria → matching local.
-    if _ACTIVE.get("shopify") and catalog:
-        handle, score = _match_shopify_local(shopify_title, catalog, barcode)
-        if handle is not None:
-            return handle, score
-        log.info("  Sin match en catálogo Shopify — fallback a DDG bajo demanda")
+    # UK Shopify: 1) catálogo local si se pudo construir; 2) si no, resolver por
+    # el HANDLE de los resultados de búsqueda (sin navegar → Cloudflare bloquea
+    # la navegación desde las IPs de datacenter de Actions).
+    if _ACTIVE.get("shopify"):
+        if title_key in catalog and catalog[title_key].get("url"):
+            log.info(f"  Match caché: {title_key}")
+            return title_key, 1.0
+        if catalog:
+            handle, score = _match_shopify_local(shopify_title, catalog, barcode)
+            if handle is not None:
+                return handle, score
+            log.info("  Sin match en catálogo — probando búsqueda por handle")
+        url, score = _resolve_uk_via_search(shopify_title, barcode)
+        if url:
+            catalog[title_key] = {"name": shopify_title, "url": url, "images": []}
+            _save_catalog(catalog)
+            log.info(f"  ✓ Resuelto (handle de búsqueda): score={score:.2f} {url}")
+            return title_key, score
+        log.warning(f"  Sin resolución UK para '{shopify_title}'")
+        return None, 0.0
 
     if title_key in catalog and catalog[title_key].get("url"):
         log.info(f"  Match caché: {title_key}")
