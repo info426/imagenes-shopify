@@ -211,6 +211,52 @@ def _similarity(a_tokens: set, b_tokens: set) -> float:
     return len(a & b) / len(a | b)
 
 
+# ─── Guard de especie (perro/gato) y etapa de vida (kitten/adulto/senior) ───────
+# Los títulos Shopify usan las palabras inglesas DOG/CAT/KITTEN. applaws.com es
+# mayoritariamente GATO; sin este guard, un producto DOG hereda la URL de un gato
+# con el mismo sabor (p. ej. 'DOG ... POLLO CORDERO' → 'chicken-with-lamb-...-cat-food').
+
+def _animal_of(tokens: set) -> str:
+    if "dog" in tokens or "puppy" in tokens:
+        return "dog"
+    if "cat" in tokens or "kitten" in tokens:
+        return "cat"
+    return ""
+
+
+def _stage_of(tokens: set) -> str:
+    if "kitten" in tokens or "puppy" in tokens:
+        return "junior"
+    if "senior" in tokens:
+        return "senior"
+    if "adult" in tokens:
+        return "adult"
+    return ""
+
+
+def _species_ok(title_tokens: set, cand_tokens: set) -> bool:
+    """False si la especie del candidato choca con la del título. Un producto
+    DOG solo casa con un handle que lleve marca 'dog' explícita (en applaws,
+    web gato-first, un handle sin marca casi siempre es de gato)."""
+    t = _animal_of(title_tokens)
+    c = _animal_of(cand_tokens)
+    if t == "dog":
+        return c == "dog"
+    return c != "dog"   # gato (o sin especie) nunca casa con un handle de perro
+
+
+def _stage_penalty(title_tokens: set, cand_tokens: set) -> float:
+    """Multiplicador <1 si la etapa de vida no coincide. Los productos kitten en
+    applaws UK llevan 'kitten' en el handle → penaliza handles sin 'kitten'."""
+    t = _stage_of(title_tokens)
+    if t == "junior" and "kitten" not in cand_tokens:
+        return 0.5
+    c = _stage_of(cand_tokens)
+    if t and c and t != c:
+        return 0.5
+    return 1.0
+
+
 title_cache_key = _title_key
 
 
@@ -838,7 +884,10 @@ def _match_shopify_local(shopify_title: str, catalog: dict,
     for handle, entry in catalog.items():
         if not _is_catalog_entry(entry):
             continue
-        score = _similarity(title_tokens, _tokenize(entry.get("name", "")))
+        cand = _tokenize(entry.get("name", ""))
+        if not _species_ok(title_tokens, cand):
+            continue
+        score = _similarity(title_tokens, cand) * _stage_penalty(title_tokens, cand)
         ranked.append((score, handle, entry.get("name", "")))
     ranked.sort(reverse=True)
 
@@ -872,7 +921,10 @@ def _resolve_uk_via_search(shopify_title: str, barcode: str = "") -> tuple:
             continue
         base = re.sub(r"-\d+$", "", handle)
         htoks = _tokenize(base.replace("-", " "))
-        score = _similarity(title_tokens, htoks)
+        if not _species_ok(title_tokens, htoks):
+            log.info(f"  [uk skip especie] {handle}")
+            continue
+        score = _similarity(title_tokens, htoks) * _stage_penalty(title_tokens, htoks)
         has_suffix = 1 if re.search(r"-\d+$", handle) else 0
         ranked.append((score, -has_suffix, url, handle))
     ranked.sort(reverse=True)
