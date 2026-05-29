@@ -115,6 +115,15 @@ class ShopifyAPI:
                          timeout=30)
         return r.json().get("metafield", {})
 
+    def delete_metafield(self, pid: int, namespace: str, key: str) -> bool:
+        """Elimina el metacampo si existe. Devuelve True si se borró, False si no existía."""
+        existing = self.get_metafield(pid, namespace, key)
+        if not existing:
+            return False
+        _request("DELETE", f"{self.base}/metafields/{existing['id']}.json",
+                 headers=self.h, timeout=30)
+        return True
+
     def graphql(self, query: str, variables: dict = None) -> dict:
         """Ejecuta una consulta GraphQL Admin. Necesario para crear definiciones
         de metacampo (no soportado por la REST API)."""

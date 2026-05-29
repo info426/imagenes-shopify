@@ -234,6 +234,19 @@ def _save_source_url(api: ShopifyAPI, pid: int, url: str,
         log.warning(f"  [metacampo] no se pudo guardar {url_key}: {e}")
 
 
+def _clear_source_url(api: ShopifyAPI, pid: int, url_key: str):
+    """Elimina el metacampo url_key si existe (p. ej. para limpiar URLs erróneas
+    de un run anterior cuando el re-run no encuentra match para ese producto)."""
+    try:
+        deleted = api.delete_metafield(pid, MF_NAMESPACE, url_key)
+        if deleted:
+            log.info(f"  [metacampo] {url_key} eliminada (sin match en este run)")
+        else:
+            log.info(f"  [metacampo] {url_key} no existía — nada que limpiar")
+    except Exception as e:
+        log.warning(f"  [metacampo] no se pudo eliminar {url_key}: {e}")
+
+
 # ─── Modo backup ──────────────────────────────────────────────────────────────
 
 def run_backup(api: ShopifyAPI, vendor: str, force: bool = False):
@@ -656,10 +669,14 @@ def run_backfill_urls(api: ShopifyAPI, vendor: str):
 
 def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
                      rebuild: bool, product_id: int = None,
-                     only_ids: set = None, url_key: str = MF_KEY_URL):
+                     only_ids: set = None, url_key: str = MF_KEY_URL,
+                     clear_on_no_match: bool = False):
     """Para cada producto resuelve su URL oficial vía el scraper de la marca
     (find_best_match: slug directo + DDG) y la guarda en el metacampo
-    indicado por url_key (por defecto fuentes.url_fabricante). NO procesa imágenes."""
+    indicado por url_key (por defecto fuentes.url_fabricante). NO procesa imágenes.
+
+    Si clear_on_no_match=True, elimina el metacampo url_key cuando no se
+    encuentra URL (útil para limpiar valores erróneos de un run anterior)."""
     slug = vendor_slug(vendor)
     try:
         scraper = importlib.import_module(f"marcas.{slug}")
@@ -713,6 +730,8 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
         else:
             stats["sin_match"] += 1
             log.warning(f"  Sin URL (score={score:.2f})")
+            if clear_on_no_match:
+                _clear_source_url(api, pid, url_key)
         time.sleep(0.5)
     _print_stats(stats)
 
@@ -740,6 +759,10 @@ def main():
                         choices=["url_fabricante", "url_fabricante_2"],
                         default="url_fabricante",
                         help="Metacampo destino para --resolver-urls / --backfill-urls")
+    parser.add_argument("--clear-on-no-match", action="store_true",
+                        help="Si --resolver-urls no encuentra URL para un producto, "
+                             "elimina el metacampo --url-key (limpia valores erróneos "
+                             "de un run anterior)")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -791,7 +814,8 @@ def main():
         run_backfill_urls(api, args.vendor)
     elif args.resolver_urls:
         run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
-                         args.product_id, only_ids or None, url_key=args.url_key)
+                         args.product_id, only_ids or None, url_key=args.url_key,
+                         clear_on_no_match=args.clear_on_no_match)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)
