@@ -377,7 +377,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina N&D | Farmina | Completado | — |
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
-| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK URL test ✅ por handle de búsqueda (url_fabricante_2) — **pendiente** lotes completos ES y UK | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
+| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK: 1er lote completo dio URLs duplicadas/erróneas → **2 bugs corregidos** (cache-pollution + especie perro/gato) y caché borrada → **pendiente re-lanzar lote UK** y lote ES | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
@@ -490,6 +490,40 @@ si no, handle de búsqueda. **No navega candidatos** (antes hacía 6×80 navegac
   reintentarlos a mano o con un product_id concreto.
 - **Importante:** en `product_ids` va el **ID de Shopify** (número grande tipo
   `15509633859971`), NO el EAN. Si se pasa un EAN da 404 (ahora se salta, no aborta).
+
+**1er lote UK completo (80 productos) — 2 bugs detectados y corregidos:**
+
+El primer lote masivo (`url_fabricante_2`) dio 68 "guardadas" / 12 sin_match,
+pero **muchas URLs estaban repetidas/erróneas** (p. ej. `ocean-fish-with-salmon`
+asignada a 12 productos). Dos causas distintas, ambas corregidas en `main`:
+
+| Bug | Síntoma | Causa | Fix |
+|---|---|---|---|
+| **Cache-pollution** | 28 productos heredaban la URL de otro ya resuelto | `find_best_match` guarda cada resolución en el dict `catalog` con clave = título ES y SIN `handle`. Para el siguiente producto, `_match_shopify_local` hacía Jaccard **contra esas entradas cacheadas** (no contra un catálogo real) → falso positivo (POLLO ~0.29 vs PESCADO Y SALMON, supera 0.22). | `_is_catalog_entry()`/`_has_real_catalog()` separan catálogo Shopify REAL (entradas con `handle`) de la caché de resoluciones. `_match_shopify_local` **ignora** la caché; `find_best_match` solo hace matching difuso si `_has_real_catalog()`. Si no, cada producto resuelve su propia URL por búsqueda. |
+| **Especie perro/gato** | Los **6 productos DOG** recibieron URL de gato (`chicken-...-cat-food`) | applaws.com es gato-first; el scoring solo miraba el sabor (pollo, cordero) e ignoraba la especie. KITTEN caía en productos adultos. | `_species_ok()`: un título DOG solo casa con handles con marca `dog` explícita; gato/sin-especie nunca casa con handle de perro. `_stage_penalty()` x0.5 para kitten↔adulto. Aplicado en `_resolve_uk_via_search` y `_match_shopify_local`. |
+
+**Caché contaminada borrada:** `resultados/applaws_uk_catalog.json` (40 entradas del
+run con bug) se eliminó del repo. Como `find_best_match` hace **cache-hit exacto por
+título antes** de resolver, esas URLs erróneas se reutilizarían sin pasar por los
+guards nuevos. Al borrarla, el re-run resuelve cada producto desde cero.
+
+**⚠️ Metacampos ya escritos en Shopify:** el run con bug dejó URLs erróneas en
+`url_fabricante_2` de ~34 productos (28 cache-pollution + 6 DOG). El re-run las
+**sobrescribe** si las resuelve bien; pero si un producto pasa a `sin_match`, la
+URL errónea **permanece**. Tras el re-run, revisar manualmente los `sin_match`
+(sobre todo los 6 DOG y los KITTEN) y limpiar su `url_fabricante_2` si quedó mal.
+
+**Limitaciones conocidas (sin catálogo UK por Cloudflare):**
+- **Formato (lata/sobre/tarrina) del mismo sabor** → mismo handle UK. El sabor es
+  correcto pero la variante de formato exacta puede diferir (UK los vende como
+  productos distintos). Sin el catálogo completo no se distinguen por búsqueda.
+- **Variante "plain" vs con ingrediente extra** (p. ej. `FILETE DE ATUN` → quedó
+  `tuna-fillet-with-crab`): depende de que DDG devuelva el handle "plain" entre los
+  candidatos. Revisar a mano si el sabor base no encaja.
+
+**Re-lanzar el lote UK** (mismos parámetros): `vendor=Applaws`,
+`web_url=https://applaws.com/uk/`, `url_key=url_fabricante_2`, `product_ids` vacío,
+`rebuild_catalog=false` (la caché ya está borrada → resolución limpia).
 
 ### Menforsan — notas de estrategia (EN PROCESO)
 
