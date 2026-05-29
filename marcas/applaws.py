@@ -796,16 +796,38 @@ def _build_shopify_catalog(catalog: dict) -> dict:
     return catalog
 
 
+def _is_catalog_entry(entry) -> bool:
+    """True solo para entradas del catálogo Shopify REAL (construido vía
+    products.json/sitemap), que llevan campo 'handle' y título en inglés.
+
+    Las entradas de la CACHÉ de resoluciones por producto —que find_best_match
+    guarda con clave = título ES y SIN 'handle'— NO son catálogo y NUNCA deben
+    entrar en el matching difuso: provocarían falsos positivos (p. ej. 'POLLO'
+    puntúa 0.29 contra la entrada cacheada 'PESCADO Y SALMON' y heredaría su URL).
+    Solo se usan para el cache-hit exacto por título en find_best_match."""
+    return isinstance(entry, dict) and bool(entry.get("handle"))
+
+
+def _has_real_catalog(catalog: dict) -> bool:
+    """True si el dict contiene al menos una entrada del catálogo Shopify real."""
+    return any(_is_catalog_entry(e) for e in catalog.values())
+
+
 def _match_shopify_local(shopify_title: str, catalog: dict,
                          barcode: str = "") -> tuple:
     """Matching local contra el catálogo Shopify completo:
       1. EAN/SKU exacto (idioma-independiente) → score 1.0.
       2. Jaccard del título traducido vs título inglés → mejor candidato.
-    Devuelve (handle, score) o (None, 0.0) si nada supera el umbral."""
+    Devuelve (handle, score) o (None, 0.0) si nada supera el umbral.
+
+    Solo considera entradas del catálogo REAL (con 'handle'); ignora la caché
+    de resoluciones por producto para no producir falsos positivos."""
     title_tokens = _title_tokens(shopify_title)
 
     if barcode:
         for handle, entry in catalog.items():
+            if not _is_catalog_entry(entry):
+                continue
             if (barcode in (entry.get("barcodes") or [])
                     or barcode in (entry.get("skus") or [])):
                 log.info(f"  [EAN/SKU] {barcode} → {handle} "
@@ -814,6 +836,8 @@ def _match_shopify_local(shopify_title: str, catalog: dict,
 
     ranked = []
     for handle, entry in catalog.items():
+        if not _is_catalog_entry(entry):
+            continue
         score = _similarity(title_tokens, _tokenize(entry.get("name", "")))
         ranked.append((score, handle, entry.get("name", "")))
     ranked.sort(reverse=True)
@@ -962,14 +986,20 @@ def find_best_match(shopify_title: str, catalog: dict,
         if title_key in catalog and catalog[title_key].get("url"):
             log.info(f"  Match caché: {title_key}")
             return title_key, 1.0
-        if catalog:
+        # Matching difuso SOLO si existe catálogo Shopify real (handles ingleses).
+        # Si solo hay caché de resoluciones por producto, NO se usa: cada producto
+        # debe resolver su propia URL por búsqueda (evita heredar la URL de otro).
+        if _has_real_catalog(catalog):
             handle, score = _match_shopify_local(shopify_title, catalog, barcode)
             if handle is not None:
                 return handle, score
-            log.info("  Sin match en catálogo — probando búsqueda por handle")
+            log.info("  Sin match en catálogo Shopify — búsqueda por handle")
         url, score = _resolve_uk_via_search(shopify_title, barcode)
         if url:
-            catalog[title_key] = {"name": shopify_title, "url": url, "images": []}
+            # Entrada de CACHÉ (sin 'handle'): solo para cache-hit exacto por
+            # título; nunca entra en el matching difuso (ver _is_catalog_entry).
+            catalog[title_key] = {"name": shopify_title, "url": url,
+                                  "images": [], "resolved": True}
             _save_catalog(catalog)
             log.info(f"  ✓ Resuelto (handle de búsqueda): score={score:.2f} {url}")
             return title_key, score
