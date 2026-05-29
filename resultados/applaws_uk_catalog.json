@@ -1,0 +1,332 @@
+{
+  "applaws-cat-dry-adulto-pescado-y-salmon": {
+    "name": "APPLAWS CAT DRY ADULTO PESCADO Y SALMON",
+    "url": "https://applaws.com/uk/products/ocean-fish-with-salmon-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-adulto-pollo": {
+    "name": "APPLAWS CAT DRY ADULTO POLLO",
+    "url": "https://applaws.com/uk/products/chicken-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-adulto-pollo-y-pato": {
+    "name": "APPLAWS CAT DRY ADULTO POLLO Y PATO",
+    "url": "https://applaws.com/uk/products/chicken-with-duck-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-adulto-pollo-y-salmon": {
+    "name": "APPLAWS CAT DRY ADULTO POLLO Y SALMON",
+    "url": "https://applaws.com/uk/products/chicken-with-salmon-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-kitten-pollo": {
+    "name": "APPLAWS CAT DRY KITTEN POLLO",
+    "url": "https://applaws.com/uk/products/chicken-kitten-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-pollo-y-cordero": {
+    "name": "APPLAWS CAT DRY POLLO Y CORDERO",
+    "url": "https://applaws.com/uk/products/chicken-with-lamb-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-dry-senior-pollo": {
+    "name": "APPLAWS CAT DRY SENIOR POLLO",
+    "url": "https://applaws.com/uk/products/chicken-senior-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-atun-con-queso": {
+    "name": "APPLAWS CAT LATA ATUN CON QUESO",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-cheese-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-atun-y-cangrejo-24x70-gr": {
+    "name": "APPLAWS CAT LATA ATUN Y CANGREJO 24X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-crab-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-atun-y-gambas": {
+    "name": "APPLAWS CAT LATA ATUN Y GAMBAS",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-prawn-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-caballa-y-sardina-24x70-gr": {
+    "name": "APPLAWS CAT LATA CABALLA Y SARDINA 24X70GR",
+    "url": "https://applaws.com/uk/products/mackerel-with-sardine-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-filete-atun": {
+    "name": "APPLAWS CAT LATA FILETE ATUN",
+    "url": "https://applaws.com/uk/products/tuna-fillet-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-kitten-atun-24x70-gr": {
+    "name": "APPLAWS CAT LATA KITTEN ATUN 24X70GR",
+    "url": "https://applaws.com/uk/products/kitten-tuna-fillet-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-kitten-pechuga-de-pollo-24x70-gr": {
+    "name": "APPLAWS CAT LATA KITTEN PECHUGA DE POLLO 24X70GR",
+    "url": "https://applaws.com/uk/products/kitten-chicken-breast-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-pechuga-pollo": {
+    "name": "APPLAWS CAT LATA PECHUGA POLLO",
+    "url": "https://applaws.com/uk/products/wet-cat-food-chicken-breast-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-pollo-con-queso-24x70-gr": {
+    "name": "APPLAWS CAT LATA POLLO CON QUESO 24X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-cheese-in-broth-4/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-pollo-multipack-12x70-gr": {
+    "name": "APPLAWS CAT LATA POLLO MULTIPACK 12X70GR",
+    "url": "https://applaws.com/uk/products/wet-cat-food-multipack-chicken-selection-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-pollo-y-pato": {
+    "name": "APPLAWS CAT LATA POLLO Y PATO",
+    "url": "https://applaws.com/uk/products/chicken-with-duck-adult-dry-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-selec-pescado-gelatina-multi-12x70-gr": {
+    "name": "APPLAWS CAT LATA SELEC PESCADO GELATINA MULTI 12X70GR",
+    "url": "https://applaws.com/uk/products/fish-selection-multipack-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-seleccion-pescado-multipack-12x70-gr": {
+    "name": "APPLAWS CAT LATA SELECCION PESCADO MULTIPACK 12X70GR",
+    "url": "https://applaws.com/uk/products/fish-selection-multipack-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-lata-seleccion-suprema-multipack-12x70-gr": {
+    "name": "APPLAWS CAT LATA SELECCION SUPREMA MULTIPACK 12X70GR",
+    "url": "https://applaws.com/uk/products/variety-selection-multipack-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-senior-lata-atun-y-salmon-24x70-gr": {
+    "name": "APPLAWS CAT SENIOR LATA ATUN Y SALMON 24X70GR",
+    "url": "https://applaws.com/uk/products/senior-tuna-fillet-with-salmon-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-senior-lata-atun-y-sardina-24x70-gr": {
+    "name": "APPLAWS CAT SENIOR LATA ATUN Y SARDINA 24X70GR",
+    "url": "https://applaws.com/uk/products/senior-tuna-fillet-with-sardine-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-snack-filete-de-atun-liofilizado-12x10-gr": {
+    "name": "APPLAWS CAT SNACK FILETE DE ATUN LIOFILIZADO 12X10GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-snack-lomo-atun-12x30-gr": {
+    "name": "APPLAWS CAT SNACK LOMO ATUN 12X30GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-salmon-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-snack-lomo-salmon-12x30-gr": {
+    "name": "APPLAWS CAT SNACK LOMO SALMON 12X30GR",
+    "url": "https://applaws.com/uk/products/chicken-with-salmon-adult-dry-cat-food-2/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-snack-pechuga-de-pollo-liofilizado-12x10-gr": {
+    "name": "APPLAWS CAT SNACK PECHUGA DE POLLO LIOFILIZADO 12X10GR",
+    "url": "https://applaws.com/uk/products/freeze-dried-chicken-breast-cat-treats/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-atun-con-anchoa-entera-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE ATUN CON ANCHOA ENTERA 12X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-anchovy-seaweed-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-atun-y-cangrejo-en-caldo-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE ATUN Y CANGREJO EN CALDO 12X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-crab-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-atun-y-gambas-del-pacifico-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE ATUN Y GAMBAS DEL PACIFICO 12X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-prawn-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-caldo-pescado-multipack-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE CALDO PESCADO MULTIPACK 12X70GR",
+    "url": "https://applaws.com/uk/products/fish-selection-multipack-in-broth-4/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-caldo-pollo-multipack-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE CALDO POLLO MULTIPACK 12X70GR",
+    "url": "https://applaws.com/uk/products/wet-cat-food-multipack-chicken-selection-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-filete-de-atun-caballa-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE FILETE DE ATUN CABALLA GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-mackerel-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-filete-de-atun-en-caldo-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE FILETE DE ATUN EN CALDO 12X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-sea-bream-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-filete-de-atun-en-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE FILETE DE ATUN EN GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-in-jelly-5/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-filete-de-atun-y-salmon-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE FILETE DE ATUN Y SALMON 12X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-salmon-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-filete-de-atun-y-salmon-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE FILETE DE ATUN Y SALMON GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-salmon-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-higado-y-pollo-en-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE HIGADO Y POLLO EN GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-chicken-liver-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pechuga-de-pollo-en-caldo-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE PECHUGA DE POLLO EN CALDO 12X70GR",
+    "url": "https://applaws.com/uk/products/wet-cat-food-chicken-breast-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pechuga-de-pollo-y-salmon-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE PECHUGA DE POLLO Y SALMON 12X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-salmon-in-broth-natural-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-peguga-de-pollo-y-filete-de-atun-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE PEGUGA DE POLLO Y FILETE DE ATUN 12X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-tuna-fillet-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pollo-con-arroz-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE POLLO CON ARROZ 12X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-wild-rice-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pollo-con-calabaza-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE POLLO CON CALABAZA 12X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-pumpkin-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pollo-con-esparragos-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE POLLO CON ESPARRAGOS 12X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-asparagus-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pollo-y-cordero-en-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE POLLO Y CORDERO EN GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-lamb-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-pollo-y-ternera-en-gelatina-16x70-gr": {
+    "name": "APPLAWS CAT SOBRE POLLO Y TERNERA EN GELATINA 16X70GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-beef-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-sobre-selec-pescado-gelatina-multi-12x70-gr": {
+    "name": "APPLAWS CAT SOBRE SELEC PESCADO GELATINA MULTI 12X70GR",
+    "url": "https://applaws.com/uk/products/pouch-multipack-fish-selection-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-atun-y-cangrejo-10x60-gr": {
+    "name": "APPLAWS CAT TARRINA ATUN Y CANGREJO 10X60GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-crab-in-broth-wet-cat-food/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-filete-atun-y-gambas-10x60-gr": {
+    "name": "APPLAWS CAT TARRINA FILETE ATUN Y GAMBAS 10X60GR",
+    "url": "https://applaws.com/uk/products/tuna-fillet-with-prawn-in-jelly/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-multi-seleccion-pescado-8x60-gr": {
+    "name": "APPLAWS CAT TARRINA MULTI SELECCION PESCADO 8X60GR",
+    "url": "https://applaws.com/uk/products/multipack-fish-selection/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-multipack-seleccion-pollo-8x60": {
+    "name": "APPLAWS CAT TARRINA MULTIPACK SELECCION POLLO 8X60",
+    "url": "https://applaws.com/uk/products/wet-cat-food-multipack-chicken-selection-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-pechuga-pollo-y-arroz-10x60-gr": {
+    "name": "APPLAWS CAT TARRINA PECHUGA POLLO Y ARROZ 10X60GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-wild-rice-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-cat-tarrina-pechuga-pollo-y-pato-10x60-gr": {
+    "name": "APPLAWS CAT TARRINA PECHUGA POLLO Y PATO 10X60GR",
+    "url": "https://applaws.com/uk/products/chicken-breast-with-duck-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-kitten-sobre-pechuga-de-pollo-en-caldo-12x50-gr": {
+    "name": "APPLAWS KITTEN SOBRE PECHUGA DE POLLO EN CALDO 12X50GR",
+    "url": "https://applaws.com/uk/products/kitten-chicken-breast-in-broth/",
+    "images": [],
+    "resolved": true
+  },
+  "applaws-kitten-sobre-filete-de-atun-en-caldo-12x50-gr": {
+    "name": "APPLAWS KITTEN SOBRE  FILETE DE ATUN EN CALDO 12X50GR",
+    "url": "https://applaws.com/uk/products/kitten-tuna-fillet-in-broth/",
+    "images": [],
+    "resolved": true
+  }
+}
