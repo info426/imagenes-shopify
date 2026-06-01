@@ -775,7 +775,9 @@ def run_snapshot_urls(api: ShopifyAPI, vendor: str, product_id: int = None,
             n_url1 += 1
         if url2:
             n_url2 += 1
-            title_to_url2[title] = url2
+        # Se registra siempre (incluso vacío) para que seed_uk_cache pueda
+        # eliminar de la caché los productos cuyo url_fabricante_2 se borró.
+        title_to_url2[title] = url2
         log.info(f"[{i}/{len(products)}] {title}  (ID: {pid})\n"
                  f"    url_fabricante  : {url1 or '—'}\n"
                  f"    url_fabricante_2: {url2 or '—'}")

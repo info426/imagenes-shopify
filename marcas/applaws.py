@@ -951,11 +951,15 @@ save_catalog = _save_catalog
 
 
 def seed_uk_cache(title_to_url: dict) -> int:
-    """Siembra la caché UK con URLs ya verificadas (título Shopify → URL), p. ej.
+    """Sincroniza la caché UK con URLs verificadas (título Shopify → URL), p. ej.
     las url_fabricante_2 corregidas a mano en Shopify. Las entradas se indexan por
     clave de título (sin 'handle') → find_best_match hace cache-hit EXACTO y
-    devuelve la URL verificada sin volver a resolver (ni pasar por los guards).
-    Marca source='shopify_manual'. Devuelve nº de URLs sembradas."""
+    devuelve la URL verificada sin volver a resolver (ni pasar por los guards),
+    con source='shopify_manual'.
+
+    Para cada (título, url): si hay URL la fija; si la URL viene vacía, **elimina**
+    la entrada de la caché (así un producto cuyo url_fabricante_2 se borró en
+    Shopify no conserva un valor obsoleto). Devuelve nº de URLs fijadas."""
     path = _SITES["uk"]["catalog"]
     cache: dict = {}
     if path.exists():
@@ -965,12 +969,13 @@ def seed_uk_cache(title_to_url: dict) -> int:
             cache = {}
     n = 0
     for title, url in title_to_url.items():
-        if not url:
-            continue
-        cache[_title_key(title)] = {
-            "name": title, "url": url, "images": [], "source": "shopify_manual",
-        }
-        n += 1
+        key = _title_key(title)
+        if url:
+            cache[key] = {"name": title, "url": url, "images": [],
+                          "source": "shopify_manual"}
+            n += 1
+        else:
+            cache.pop(key, None)
     path.parent.mkdir(exist_ok=True)
     path.write_text(json.dumps(cache, ensure_ascii=False, indent=2),
                     encoding="utf-8")
