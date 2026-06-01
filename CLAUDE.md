@@ -152,6 +152,25 @@ guarda la URL. Requiere `marcas/{slug}.py` (Playwright). Inputs: `vendor`,
 `web_url`, `product_ids` (opcional), `rebuild_catalog`. Usado para poblar las URLs
 de Applaws (`applaws.pet/producto/{slug}/`).
 
+Opción `clear_on_no_match` (input `true`/`false`): si un producto queda `sin_match`,
+**elimina** su metacampo `url_key` (limpia URLs erróneas de un run anterior en vez
+de dejarlas). Usa `ShopifyAPI.delete_metafield`.
+
+**Snapshot (Shopify → repo)** (workflow `Snapshot URLs fabricante` / `--snapshot-urls`):
+operación **inversa** al resolver — **lee** los metacampos `url_fabricante` y
+`url_fabricante_2` actuales de Shopify (la fuente de verdad tras correcciones
+manuales) y los **guarda en el repo** como memoria duradera:
+1. `resultados/{slug}_urls_snapshot.json` — registro auditable `[{id, title,
+   url_fabricante, url_fabricante_2}]` de **todos** los productos.
+2. Siembra la caché del scraper con las `url_fabricante_2` verificadas (si el
+   scraper expone `seed_uk_cache(title→url)`, p. ej. Applaws): las entradas se
+   indexan por clave de título y **sin `handle`** → `find_best_match` hace
+   **cache-hit exacto** y devuelve la URL verificada sin volver a resolver ni
+   pasar por los guards (`source: shopify_manual`).
+**No escribe nada en Shopify** (solo lee) y **no usa navegador** (sin scraping).
+Inputs: `vendor`, `product_ids` (opcional). Sirve para fijar el trabajo manual
+como autoridad y evitar que un re-run accidental vuelva a romper las URLs.
+
 ---
 
 ## Estándar de imagen
@@ -377,7 +396,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina N&D | Farmina | Completado | — |
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
-| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK: 1er lote completo dio URLs duplicadas/erróneas → **2 bugs corregidos** (cache-pollution + especie perro/gato) y caché borrada → **pendiente re-lanzar lote UK** y lote ES | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
+| Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK `url_fabricante_2` **corregidos a mano en Shopify y verificados** → ejecutar `Snapshot URLs fabricante` para fijarlos en el repo (registro + caché sembrada) — **pendiente** lote ES (url_fabricante) | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
 | CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |

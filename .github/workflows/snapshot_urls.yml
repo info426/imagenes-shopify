@@ -1,0 +1,66 @@
+name: Snapshot URLs fabricante (Shopify → repo)
+
+# Lee los metacampos fuentes.url_fabricante y url_fabricante_2 ACTUALES de cada
+# producto del vendor (la fuente de verdad tras correcciones manuales) y los
+# guarda en resultados/{slug}_urls_snapshot.json + siembra la caché del scraper.
+# NO escribe nada en Shopify — solo lee. No necesita navegador (sin scraping web).
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: 'Vendor exacto en Shopify (p. ej. Applaws)'
+        required: true
+      product_ids:
+        description: 'Un ID para test, varios separados por coma, vacío = todos'
+        required: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Leer metacampos y guardar snapshot
+        env:
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          mkdir -p resultados
+          IDS=""
+          [ -n "${{ github.event.inputs.product_ids }}" ] && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
+          python3 core/process_brand.py \
+            --vendor "${{ github.event.inputs.vendor }}" \
+            --snapshot-urls \
+            $IDS \
+            2>&1 | tee resultados/snapshot_urls_${{ github.event.inputs.vendor }}.txt
+
+      - name: Commitear snapshot y caché
+        if: always()
+        run: |
+          if [ ! -d .git ]; then
+            echo "No hay workspace git. Nada que commitear."
+            exit 0
+          fi
+          if [ ! -d resultados ] || [ -z "$(ls -A resultados 2>/dev/null)" ]; then
+            echo "resultados/ vacío o ausente. Nada que commitear."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/
+          git diff --cached --quiet || git commit -m "snapshot-urls: ${{ github.event.inputs.vendor }}"
+          git pull --rebase && git push

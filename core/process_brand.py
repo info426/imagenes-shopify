@@ -736,6 +736,70 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     _print_stats(stats)
 
 
+def run_snapshot_urls(api: ShopifyAPI, vendor: str, product_id: int = None,
+                      only_ids: set = None):
+    """Lee los metacampos fuentes.url_fabricante y url_fabricante_2 actuales de
+    cada producto del vendor (la fuente de verdad tras correcciones manuales) y:
+      1. Guarda un registro auditable en resultados/{slug}_urls_snapshot.json.
+      2. Siembra la caché del scraper con las url_fabricante_2 verificadas
+         (si el scraper expone seed_uk_cache) → futuras resoluciones devuelven
+         estas URLs por cache-hit exacto, sin volver a resolver.
+    NO escribe nada en Shopify (solo lee)."""
+    slug = vendor_slug(vendor)
+    RESULTS_DIR.mkdir(exist_ok=True)
+
+    def _safe_get(pid):
+        try:
+            return api.get_product(pid)
+        except Exception as e:
+            log.warning(f"  No se pudo cargar el producto {pid}: {e}")
+            return None
+
+    if product_id:
+        products = [p for p in [_safe_get(product_id)] if p]
+    elif only_ids:
+        products = [p for p in (_safe_get(pid) for pid in only_ids) if p]
+    else:
+        products = api.get_products(vendor)
+
+    snapshot = []
+    title_to_url2 = {}
+    n_url1 = n_url2 = 0
+    for i, product in enumerate(products, 1):
+        pid, title = product["id"], product["title"]
+        url1 = (api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL) or {}).get("value") or ""
+        url2 = (api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL_2) or {}).get("value") or ""
+        snapshot.append({"id": pid, "title": title,
+                         "url_fabricante": url1, "url_fabricante_2": url2})
+        if url1:
+            n_url1 += 1
+        if url2:
+            n_url2 += 1
+            title_to_url2[title] = url2
+        log.info(f"[{i}/{len(products)}] {title}  (ID: {pid})\n"
+                 f"    url_fabricante  : {url1 or '—'}\n"
+                 f"    url_fabricante_2: {url2 or '—'}")
+        time.sleep(0.2)
+
+    out = RESULTS_DIR / f"{slug}_urls_snapshot.json"
+    out.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2),
+                   encoding="utf-8")
+    log.info(f"\nSnapshot guardado: {out} ({len(snapshot)} productos, "
+             f"{n_url1} con url_fabricante, {n_url2} con url_fabricante_2)")
+
+    # Sembrar la caché del scraper con las url_fabricante_2 verificadas.
+    try:
+        scraper = importlib.import_module(f"marcas.{slug}")
+        if hasattr(scraper, "seed_uk_cache") and title_to_url2:
+            n = scraper.seed_uk_cache(title_to_url2)
+            log.info(f"Caché UK sembrada con {n} URLs verificadas "
+                     f"(cache-hit exacto en futuras resoluciones)")
+    except ImportError:
+        pass
+    except Exception as e:
+        log.warning(f"No se pudo sembrar la caché: {e}")
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -755,6 +819,10 @@ def main():
     parser.add_argument("--resolver-urls",   action="store_true",
                         help="Buscar la URL oficial de cada producto (web) y "
                              "guardarla en fuentes.url_fabricante (sin tocar imágenes)")
+    parser.add_argument("--snapshot-urls",   action="store_true",
+                        help="Leer fuentes.url_fabricante(_2) actuales de Shopify y "
+                             "guardarlos en resultados/{slug}_urls_snapshot.json + "
+                             "sembrar la caché (no escribe en Shopify)")
     parser.add_argument("--url-key",
                         choices=["url_fabricante", "url_fabricante_2"],
                         default="url_fabricante",
@@ -788,6 +856,7 @@ def main():
             "CREAR-METACAMPOS" if args.crear_metacampos else
             "BACKFILL-URLS" if args.backfill_urls else
             "RESOLVER-URLS" if args.resolver_urls else
+            "SNAPSHOT-URLS" if args.snapshot_urls else
             (args.fuente or "?").upper())
     log.info(f"  Vendor   : {args.vendor}")
     log.info(f"  Modo     : {mode}")
@@ -816,6 +885,8 @@ def main():
         run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
                          args.product_id, only_ids or None, url_key=args.url_key,
                          clear_on_no_match=args.clear_on_no_match)
+    elif args.snapshot_urls:
+        run_snapshot_urls(api, args.vendor, args.product_id, only_ids or None)
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)
