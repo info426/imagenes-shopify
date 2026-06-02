@@ -1,1086 +1,518 @@
-2026-06-02 21:57:39,382 [INFO] ============================================================
-2026-06-02 21:57:39,382 [INFO]   Vendor   : CALIBRA
-2026-06-02 21:57:39,382 [INFO]   Modo     : RESOLVER-URLS
-2026-06-02 21:57:39,382 [INFO]   Pipeline : standard
-2026-06-02 21:57:39,382 [INFO]   Padding  : auto
-2026-06-02 21:57:39,382 [INFO]   Web    : https://www.mycalibra.es/
-2026-06-02 21:57:39,382 [INFO] ============================================================
-2026-06-02 21:57:39,696 [INFO] Token obtenido
-2026-06-02 21:57:39,706 [INFO] Catálogo borrado (rebuild): calibra_es_catalog.json
-2026-06-02 21:57:39,755 [INFO] Scraping catálogo Calibra (https://www.mycalibra.es) con Playwright [headed]...
-2026-06-02 21:57:43,710 [INFO] 
-=== Fuente: https://www.mycalibra.es ===
-2026-06-02 21:57:48,881 [INFO]   Recogiendo links: https://www.mycalibra.es/comida-para-perros
-2026-06-02 21:57:53,684 [INFO]     Página 1: 14 nuevos links (14 total)
-2026-06-02 21:57:58,386 [INFO]     Página 2: 14 nuevos links (26 total)
-2026-06-02 21:58:02,987 [INFO]     Página 3: 14 nuevos links (38 total)
-2026-06-02 21:58:07,620 [INFO]     Página 4: 14 nuevos links (50 total)
-2026-06-02 21:58:12,236 [INFO]     Página 5: 14 nuevos links (62 total)
-2026-06-02 21:58:16,826 [INFO]     Página 6: 14 nuevos links (74 total)
-2026-06-02 21:58:21,427 [INFO]     Página 7: 14 nuevos links (86 total)
-2026-06-02 21:58:26,005 [INFO]     Página 8: 14 nuevos links (98 total)
-2026-06-02 21:58:30,618 [INFO]     Página 9: 14 nuevos links (110 total)
-2026-06-02 21:58:35,200 [INFO]     Página 10: 14 nuevos links (122 total)
-2026-06-02 21:58:39,764 [INFO]     Página 11: 12 nuevos links (132 total)
-2026-06-02 21:58:44,177 [INFO]     Página 12: 2 nuevos links (132 total)
-2026-06-02 21:58:44,177 [INFO]   Recogiendo links: https://www.mycalibra.es/comida-para-gatos
-2026-06-02 21:58:48,796 [INFO]     Página 1: 14 nuevos links (144 total)
-2026-06-02 21:58:53,398 [INFO]     Página 2: 14 nuevos links (156 total)
-2026-06-02 21:58:58,001 [INFO]     Página 3: 14 nuevos links (168 total)
-2026-06-02 21:59:02,565 [INFO]     Página 4: 14 nuevos links (178 total)
-2026-06-02 21:59:07,138 [INFO]     Página 5: 10 nuevos links (186 total)
-2026-06-02 21:59:11,521 [INFO]     Página 6: 2 nuevos links (186 total)
-2026-06-02 21:59:11,521 [INFO]   Recogiendo links: https://www.mycalibra.es/productos
-2026-06-02 21:59:16,088 [INFO]     Página 1: 19 nuevos links (192 total)
-2026-06-02 21:59:20,662 [INFO]     Página 2: 19 nuevos links (192 total)
-2026-06-02 21:59:41,531 [INFO]   Sitemap: 203 URLs de producto descubiertas
-2026-06-02 21:59:41,531 [INFO]   +13 productos nuevos del sitemap
-2026-06-02 21:59:41,531 [INFO]   205 productos únicos a procesar de https://www.mycalibra.es
-2026-06-02 21:59:49,078 [INFO] Parsing model identifier. Schema: None, Identifier: ViT-B-32
-2026-06-02 21:59:49,078 [INFO] Loaded built-in ViT-B-32 model config.
-2026-06-02 21:59:49,133 [INFO] HTTP Request: HEAD https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/resolve/main/open_clip_model.safetensors "HTTP/1.1 302 Found"
-2026-06-02 21:59:49,155 [INFO] HTTP Request: GET https://huggingface.co/api/models/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/xet-read-token/1a25a446712ba5ee05982a381eed697ef9b435cf "HTTP/1.1 200 OK"
-2026-06-02 22:00:15,037 [INFO] Instantiating model architecture: CLIP
-2026-06-02 22:00:15,914 [INFO] Loading full pretrained weights from: /home/runner/.cache/huggingface/hub/models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K/snapshots/1a25a446712ba5ee05982a381eed697ef9b435cf/open_clip_model.safetensors
-2026-06-02 22:00:15,956 [INFO] Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
-2026-06-02 22:00:15,956 [INFO] Model ViT-B-32 creation process complete.
-2026-06-02 22:00:15,958 [INFO] [image_match] backend CLIP (open_clip ViT-B-32) cargado
-2026-06-02 22:00:16,098 [INFO]     calibra-cat-life-adult-beef-200g: 1 img +img — Calibra Cat Life Adult Beef 200g
-2026-06-02 22:00:21,630 [INFO]     calibra-cat-life-adult-chicken: 1 img +img — Calibra Cat Life Adult Chicken 1,5kg
-2026-06-02 22:00:27,063 [INFO]     calibra-cat-life-adult-chicken-200g: 1 img +img — Calibra Cat Life Adult Chicken 200g
-2026-06-02 22:00:32,457 [INFO]     calibra-cat-life-adult-herring: 1 img +img — Calibra Cat Life Adult Herring 1,5kg
-2026-06-02 22:00:37,864 [INFO]     calibra-cat-life-adult-lamb: 1 img +img — Calibra Cat Life Adult Lamb 1,5kg
-2026-06-02 22:00:43,215 [INFO]     calibra-cat-life-adult-salmon-200g: 1 img +img — Calibra Cat Life Adult Salmon 200g
-2026-06-02 22:00:48,593 [INFO]     calibra-cat-life-kitten-chicken: 1 img +img — Calibra Cat Life Kitten Chicken 1,5kg
-2026-06-02 22:00:53,953 [INFO]     calibra-cat-life-kitten-chicken-200g: 1 img +img — Calibra Cat Life Kitten Chicken 200g
-2026-06-02 22:00:59,417 [INFO]     calibra-cat-life-pouch-adult-beef-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Adult Beef in gravy 85g
-2026-06-02 22:01:04,779 [INFO]     calibra-cat-life-pouch-adult-duck-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Adult Duck in gravy 85g
-2026-06-02 22:01:10,143 [INFO]     calibra-cat-life-pouch-adult-turkey-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Adult Turkey in gravy 85g
-2026-06-02 22:01:15,499 [INFO]     calibra-cat-life-pouch-adult-veal-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Adult Veal in gravy 85g
-2026-06-02 22:01:20,869 [INFO]     calibra-cat-life-pouch-kitten-salmon-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Kitten Salmon in gravy 85g
-2026-06-02 22:01:26,231 [INFO]     calibra-cat-life-pouch-kitten-turkey-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Kitten Turkey in gravy 85g
-2026-06-02 22:01:31,578 [INFO]     calibra-cat-life-pouch-sterilised-duck-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Sterilised Duck in gravy 85g
-2026-06-02 22:01:36,923 [INFO]     calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g: 1 img +img — Calibra Cat Life pouch Sterilised Salmon in gravy 85g
-2026-06-02 22:01:42,248 [INFO]     calibra-cat-life-pouches-adult-multipack-12x85g: 1 img +img — Calibra Cat Life pouches Adult Multipack 12x85g
-2026-06-02 22:01:47,608 [INFO]     calibra-cat-life-pouches-kitten-multipack-12x85g: 1 img +img — Calibra Cat Life pouches Kitten Multipack 12x85g
-2026-06-02 22:01:52,962 [INFO]     calibra-cat-life-pouches-sterilised-multipack-12x85g: 1 img +img — Calibra Cat Life pouches Sterilised Multipack 12x85g
-2026-06-02 22:01:58,305 [INFO]     calibra-cat-life-sensitive-lamb-200g: 1 img +img — Calibra Cat Life Sensitive Lamb 200g
-2026-06-02 22:02:03,649 [INFO]     calibra-cat-life-sensitive-rabbit-200g: 1 img +img — Calibra Cat Life Sensitive Rabbit 200g
-2026-06-02 22:02:08,983 [INFO]     calibra-cat-life-sterilised-beef: 1 img +img — Calibra Cat Life Sterilised Beef 1,5kg
-2026-06-02 22:02:14,334 [INFO]     calibra-cat-life-sterilised-chicken: 1 img +img — Calibra Cat Life Sterilised Chicken 1,5kg
-2026-06-02 22:02:19,692 [INFO]     calibra-cat-life-sterilised-duck-200g: 1 img +img — Calibra Cat Life Sterilised Duck 200g
-2026-06-02 22:02:25,048 [INFO]     calibra-cat-life-sterilised-turkey-200g: 1 img +img — Calibra Cat Life Sterilised Turkey 200g
-2026-06-02 22:02:30,389 [INFO]     calibra-cat-premium-adult-chicken-beef-100g: 1 img +img — Calibra Cat Premium Adult Chicken & Beef 100g
-2026-06-02 22:02:35,715 [INFO]     calibra-cat-premium-adult-duck-chicken-100g: 1 img +img — Calibra Cat Premium Adult Duck & Chicken 100g
-2026-06-02 22:02:41,045 [INFO]     calibra-cat-premium-adult-lamb-poultry-100g: 1 img +img — Calibra Cat Premium Adult Lamb & Poultry 100g
-2026-06-02 22:02:46,377 [INFO]     calibra-cat-premium-adult-pouches-multipack-12x100g: 1 img +img — Calibra Cat Premium Adult Pouches Multipack 12x100g
-2026-06-02 22:02:51,708 [INFO]     calibra-cat-premium-adult-trout-salmon-100g: 1 img +img — Calibra Cat Premium Adult Trout & Salmon 100g
-2026-06-02 22:02:57,057 [INFO]     calibra-cat-premium-kitten-pouches-multipack-12x100g: 1 img +img — Calibra Cat Premium Kitten Pouches multipack 12x100g
-2026-06-02 22:03:02,422 [INFO]     calibra-cat-premium-kitten-salmon-100g: 1 img +img — Calibra Cat Premium Kitten Salmon 100g
-2026-06-02 22:03:07,760 [INFO]     calibra-cat-premium-kitten-turkey-chicken-100g: 1 img +img — Calibra Cat Premium Kitten Turkey & Chicken 100g
-2026-06-02 22:03:13,107 [INFO]     calibra-cat-premium-line-adult-beef: 1 img +img — Calibra Cat Premium Line Adult Beef 2kg
-2026-06-02 22:03:18,444 [INFO]     calibra-cat-premium-line-adult-poultry: 1 img +img — Calibra Cat Premium Line Adult Poultry 2kg
-2026-06-02 22:03:23,778 [INFO]     calibra-cat-premium-line-adult-turkey: 1 img +img — Calibra Cat Premium Line Adult Turkey 2kg
-2026-06-02 22:03:29,125 [INFO]     calibra-cat-premium-line-kitten-poultry: 1 img +img — Calibra Cat Premium Line Kitten Poultry 2kg
-2026-06-02 22:03:34,473 [INFO]     calibra-cat-premium-line-sterilised-poultry: 1 img +img — Calibra Cat Premium Line Sterilised Poultry 2kg
-2026-06-02 22:03:39,803 [INFO]     calibra-cat-premium-steril-pouches-multipack-12x100g: 1 img +img — Calibra Cat Premium Steril. Pouches Multipack 12x100g
-2026-06-02 22:03:45,119 [INFO]     calibra-cat-premium-sterilised-liver-100g: 1 img +img — Calibra Cat Premium Sterilised Liver 100g
-2026-06-02 22:03:50,441 [INFO]     calibra-cat-premium-sterilised-salmon-100g: 1 img +img — Calibra Cat Premium Sterilised Salmon 100g
-2026-06-02 22:03:55,892 [INFO]     calibra-cat-verve: 1 img +img — Calibra Cat Verve
-2026-06-02 22:04:01,255 [INFO]     calibra-dog-en-energy-new: 1 img +img — Calibra Dog EN Energy 12kg
-2026-06-02 22:04:06,625 [INFO]     calibra-dog-en-light-new: 1 img +img — Calibra Dog EN Light 12kg
-2026-06-02 22:04:11,959 [INFO]     calibra-dog-en-mobility-new: 1 img +img — Calibra Dog EN Mobility 12kg
-2026-06-02 22:04:17,355 [INFO]     calibra-dog-en-neutered-new: 1 img +img — Calibra Dog EN Neutered 7kg
-2026-06-02 22:04:22,699 [INFO]     calibra-dog-en-sensitive-salmon-new: 1 img +img — Calibra Dog EN Sensitive Salmon 12kg
-2026-06-02 22:04:28,014 [INFO]     calibra-dog-konz-turk-chick-pasta-in-jelly-1240g-new: 1 img +img — Calibra Dog konz.Turk,chick&pasta in jelly 1240g
-2026-06-02 22:04:33,353 [INFO]     calibra-dog-konz-veal-turkey-in-gravy-1240g-new: 1 img +img — Calibra Dog konz.Veal&turkey in gravy 1240g NEW
-2026-06-02 22:04:38,696 [INFO]     calibra-dog-life-adult-beef-with-carrots-400g: 1 img +img — Calibra Dog Life  Adult Beef with carrots 400g
-2026-06-02 22:04:44,039 [INFO]     calibra-dog-life-adult-chicken-with-rice-400g: 1 img +img — Calibra Dog Life Adult Chicken with rice 400g
-2026-06-02 22:04:49,374 [INFO]     calibra-dog-life-adult-duck-with-rice-400g: 1 img +img — Calibra Dog Life Adult Duck with rice 400g
-2026-06-02 22:04:54,711 [INFO]     calibra-dog-life-adult-lamb-400g: 1 img +img — Calibra Dog Life Adult Lamb 400g
-2026-06-02 22:05:00,052 [INFO]     calibra-dog-life-adult-large-breed-chicken: 1 img +img — Calibra Dog Life Adult Large Breed Chicken 12kg
-2026-06-02 22:05:05,432 [INFO]     calibra-dog-life-adult-large-breed-lamb: 1 img +img — Calibra Dog Life Adult Large Breed Lamb 12kg
-2026-06-02 22:05:10,805 [INFO]     calibra-dog-life-adult-large-fresh-beef: 1 img +img — Calibra Dog Life Adult Large Fresh Beef 12kg
-2026-06-02 22:05:16,171 [INFO]     calibra-dog-life-adult-medium-breed-chicken: 1 img +img — Calibra Dog Life Adult Medium Breed Chicken 12kg
-2026-06-02 22:05:21,543 [INFO]     calibra-dog-life-adult-medium-breed-lamb: 1 img +img — Calibra Dog Life Adult Medium Breed Lamb 12kg
-2026-06-02 22:05:26,888 [INFO]     calibra-dog-life-adult-medium-fresh-beef: 1 img +img — Calibra Dog Life Adult Medium Fresh Beef 12kg
-2026-06-02 22:05:32,241 [INFO]     calibra-dog-life-adult-small-breed-chicken: 1 img +img — Calibra Dog Life Adult Small Breed Chicken 1,5kg
-2026-06-02 22:05:37,609 [INFO]     calibra-dog-life-adult-small-breed-lamb: 1 img +img — Calibra Dog Life Adult Small Breed Lamb 1,5kg
-2026-06-02 22:05:42,955 [INFO]     calibra-dog-life-adult-small-fresh-beef: 1 img +img — Calibra Dog Life Adult Small Fresh Beef 6kg
-2026-06-02 22:05:48,281 [INFO]     calibra-dog-life-adult-turkey-with-apples-400g: 1 img +img — Calibra Dog Life Adult Turkey with apples 400g
-2026-06-02 22:05:53,606 [INFO]     calibra-dog-life-adult-wild-boar-with-cran-400g: 1 img +img — Calibra Dog Life Adult Wild boar with cran. 400g
-2026-06-02 22:05:58,975 [INFO]     calibra-dog-life-junior-large-breed-chicken: 1 img +img — Calibra Dog Life Junior Large Breed Chicken 12kg
-2026-06-02 22:06:04,345 [INFO]     calibra-dog-life-junior-large-breed-lamb: 1 img +img — Calibra Dog Life Junior Large Breed Lamb 12kg
-2026-06-02 22:06:09,722 [INFO]     calibra-dog-life-junior-large-fresh-beef: 1 img +img — Calibra Dog Life Junior Large Fresh Beef 12kg
-2026-06-02 22:06:15,130 [INFO]     calibra-dog-life-junior-medium-breed-chicken: 1 img +img — Calibra Dog Life Junior Medium Breed Chicken 12kg
-2026-06-02 22:06:20,493 [INFO]     calibra-dog-life-junior-small-breed-chicken: 1 img +img — Calibra Dog Life Junior Small Breed Chicken 1,5kg
-2026-06-02 22:06:25,899 [INFO]     calibra-dog-life-junior-small-medium-breed-lamb: 1 img +img — Calibra Dog Life Junior Small&Medium Breed Lamb 2,5kg
-2026-06-02 22:06:31,261 [INFO]     calibra-dog-life-junior-small-medium-fresh-beef: 1 img +img — Calibra Dog Life Junior Small&Medium Fresh Beef 12kg
-2026-06-02 22:06:36,633 [INFO]     calibra-dog-life-puppy-junior-chicken-rice-400g: 1 img +img — Calibra Dog Life Puppy&Junior Chicken&rice 400g
-2026-06-02 22:06:42,012 [INFO]     calibra-dog-life-puppy-junior-lamb-rice-400g: 1 img +img — Calibra Dog Life Puppy&Junior Lamb&rice 400g
-2026-06-02 22:06:47,383 [INFO]     calibra-dog-life-senior-large-fresh-beef: 1 img +img — Calibra Dog Life Senior Large Fresh Beef 12kg
-2026-06-02 22:06:52,737 [INFO]     calibra-dog-life-senior-medium-fresh-beef: 1 img +img — Calibra Dog Life Senior Medium Fresh Beef 12kg
-2026-06-02 22:06:58,078 [INFO]     calibra-dog-life-senior-medium-large-chicken: 1 img +img — Calibra Dog Life Senior Medium&Large Chicken 12kg
-2026-06-02 22:07:03,414 [INFO]     calibra-dog-life-senior-small-breed-lamb: 1 img +img — Calibra Dog Life Senior Small Breed Lamb 1,5kg
-2026-06-02 22:07:08,750 [INFO]     calibra-dog-life-senior-small-fresh-beef: 1 img +img — Calibra Dog Life Senior Small Fresh Beef 6kg
-2026-06-02 22:07:14,075 [INFO]     calibra-dog-life-sensitive-rabbit-400g: 1 img +img — Calibra Dog Life Sensitive Rabbit 400g
-2026-06-02 22:07:19,443 [INFO]     calibra-dog-life-sensitive-salmon-with-rice-400g: 1 img +img — Calibra Dog Life Sensitive Salmon with rice 400g
-2026-06-02 22:07:24,796 [INFO]     calibra-dog-life-starter-puppy-fresh-beef: 1 img +img — Calibra Dog Life Starter&Puppy Fresh Beef 12kg
-2026-06-02 22:07:30,158 [INFO]     calibra-dog-life-starter-puppy-lamb: 1 img +img — Calibra Dog Life Starter & Puppy Lamb 12kg
-2026-06-02 22:07:35,479 [INFO]     calibra-dog-premium-can-with-beef-1240g: 1 img +img — Calibra Dog Premium can with Beef 1240g
-2026-06-02 22:07:40,824 [INFO]     calibra-dog-premium-can-with-chicken-beef-1240g: 1 img +img — Calibra Dog Premium can with Chicken&Beef 1240g
-2026-06-02 22:07:46,143 [INFO]     calibra-dog-premium-can-with-lamb-chicken-1240g: 1 img +img — Calibra Dog Premium can with Lamb&Chicken 1240g
-2026-06-02 22:07:51,483 [INFO]     calibra-dog-premium-line-adult-12-kg-new: 1 img +img — Calibra Dog Premium Line Adult 12 kg NEW
-2026-06-02 22:07:56,841 [INFO]     calibra-dog-premium-line-adult-beef-12-kg-new: 1 img +img — Calibra Dog Premium Line Adult Beef 12 kg NEW
-2026-06-02 22:08:02,210 [INFO]     calibra-dog-premium-line-adult-large-12-kg-new: 1 img +img — Calibra Dog Premium Line Adult Large 12 kg NEW
-2026-06-02 22:08:07,564 [INFO]     calibra-dog-premium-line-junior-large-12-kg-new: 1 img +img — Calibra Dog Premium Line Junior Large 12 kg NEW
-2026-06-02 22:08:12,931 [INFO]     calibra-dog-premium-line-puppy-junior-12-kg-new: 1 img +img — Calibra Dog Premium Line Puppy&Junior 12 kg NEW
-2026-06-02 22:08:18,291 [INFO]     calibra-dog-premium-line-senior-light-12-kg-new: 1 img +img — Calibra Dog Premium Line Senior&Light 12 kg NEW
-2026-06-02 22:08:23,915 [INFO]     calibra-dog-verve: 13 img +img — Calibra Dog Verve
-2026-06-02 22:08:29,233 [INFO]     calibra-dog-verve-crunchy-snack-fresh-duck-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Fresh Duck 150g
-2026-06-02 22:08:34,585 [INFO]     calibra-dog-verve-crunchy-snack-fresh-salmon-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Fresh Salmon 150g
-2026-06-02 22:08:39,903 [INFO]     calibra-dog-verve-crunchy-snack-fresh-turkey-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Fresh Turkey 150g
-2026-06-02 22:08:45,217 [INFO]     calibra-dog-verve-crunchy-snack-insect-fresh-duck-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Insect&Fresh Duck 150g
-2026-06-02 22:08:50,552 [INFO]     calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Insect&Fresh Lamb 150g
-2026-06-02 22:08:55,883 [INFO]     calibra-dog-verve-crunchy-snack-insect-salmon-150g: 1 img +img — Calibra Dog Verve Crunchy Snack Insect&Salmon 150g
-2026-06-02 22:09:01,207 [INFO]     calibra-dog-verve-gf-adult-chicken-duck-400g: 1 img +img — Calibra Dog Verve GF Adult Chicken&Duck 400g
-2026-06-02 22:09:06,577 [INFO]     calibra-dog-verve-gf-adult-pork-venison-400g: 1 img +img — Calibra Dog Verve GF Adult Pork&Venison 400g
-2026-06-02 22:09:11,889 [INFO]     calibra-dog-verve-gf-adult-salmon-turkey-400g: 1 img +img — Calibra Dog Verve GF Adult Salmon&Turkey 400g
-2026-06-02 22:09:17,241 [INFO]     calibra-dog-verve-gf-adult-small-beef-chicken-200g: 1 img +img — Calibra Dog Verve GF Adult Small Beef&Chicken 200g
-2026-06-02 22:09:22,577 [INFO]     calibra-dog-verve-gf-adult-small-duck-turkey-200g: 1 img +img — Calibra Dog Verve GF Adult Small Duck&Turkey 200g
-2026-06-02 22:09:27,917 [INFO]     calibra-dog-verve-gf-adult-wild-boar-beef-400g: 1 img +img — Calibra Dog Verve GF Adult Wild Boar&Beef 400g
-2026-06-02 22:09:33,251 [INFO]     calibra-dog-verve-gf-junior-turkey-lamb-400g: 1 img +img — Calibra Dog Verve GF Junior Turkey&Lamb 400g
-2026-06-02 22:09:38,643 [INFO]     calibra-dog-verve-gf-senior-turkey-lamb-400g: 1 img +img — Calibra Dog Verve GF Senior Turkey&Lamb 400g
-2026-06-02 22:09:43,975 [INFO]     calibra-dog-verve-semi-moist-snack-fresh-chicken-150g: 1 img +img — Calibra Dog Verve Semi-Moist Snack Fresh Chicken 150g
-2026-06-02 22:09:49,303 [INFO]     calibra-dog-verve-semi-moist-snack-fresh-duck-150g: 1 img +img — Calibra Dog Verve Semi-Moist Snack Fresh Duck 150g
-2026-06-02 22:09:54,727 [INFO]     calibra-eazzy: 3 img +img — Calibra EAZZY
-2026-06-02 22:10:00,043 [INFO]     calibra-eazzy-cat-fine-10kg: 1 img +img — Calibra EAZZY Cat Fine 10kg
-2026-06-02 22:10:05,353 [INFO]     calibra-eazzy-cat-ultra-fine-10kg: 1 img +img — Calibra EAZZY Cat Ultra Fine 10kg
-2026-06-02 22:10:10,828 [INFO]     calibra-expert-nutrition: 6 img +img — Calibra Expert Nutrition
-2026-06-02 22:10:16,245 [INFO]     calibra-gato-premium-line: 6 img +img — Calibra Gato Premium Line
-2026-06-02 22:10:21,635 [INFO]     calibra-grain-free: 1 img +img — Calibra Grain Free
-2026-06-02 22:10:27,018 [INFO]     calibra-hypoallergenic: 1 img +img — Calibra Hypoallergenic
-2026-06-02 22:10:32,651 [INFO]     calibra-joy: 13 img +img — Calibra Joy
-2026-06-02 22:10:37,984 [INFO]     calibra-joy-dog-classic-beef-bits-new: 1 img +img — Calibra Joy Dog Classic Beef Bits 80g NEW
-2026-06-02 22:10:43,349 [INFO]     calibra-joy-dog-classic-beef-sticks: 1 img +img — Calibra Joy Dog Classic Beef Sticks 80g
-2026-06-02 22:10:48,683 [INFO]     calibra-joy-dog-classic-beef-sticks-new: 1 img +img — Calibra Joy Dog Classic Beef Sticks 80g NEW
-2026-06-02 22:10:54,024 [INFO]     calibra-joy-dog-classic-chicken-bits-new: 1 img +img — Calibra Joy Dog Classic Chicken Bits 80g NEW
-2026-06-02 22:10:59,378 [INFO]     calibra-joy-dog-classic-cod-chicken-sushi-80g-new: 1 img +img — Calibra Joy Dog Classic Cod & Chicken Sushi 80g
-2026-06-02 22:11:04,728 [INFO]     calibra-joy-dog-classic-dental-brushes-85g-new: 1 img +img — Calibra Joy Dog Classic Dental Brushes 85g NEW
-2026-06-02 22:11:10,055 [INFO]     calibra-joy-dog-classic-duck-bits-new: 1 img +img — Calibra Joy Dog Classic Duck Bits 80g NEW
-2026-06-02 22:11:15,392 [INFO]     calibra-joy-dog-classic-duck-strips-80g-new: 1 img +img — Calibra Joy Dog Classic Duck Strips 80g NEW
-2026-06-02 22:11:20,732 [INFO]     calibra-joy-dog-classic-duck-strips-new: 1 img +img — Calibra Joy Dog Classic Duck Strips 80g NEW
-2026-06-02 22:11:26,088 [INFO]     calibra-joy-dog-classic-fish-chicken-sandwich: 1 img +img — Calibra Joy Dog Classic Fish&Chicken Sandwich 80g NEW
-2026-06-02 22:11:31,417 [INFO]     calibra-joy-dog-classic-fish-chicken-sandwich-new: 1 img +img — Calibra Joy Dog Classic Fish&Chicken Sandwich 250g NEW
-2026-06-02 22:11:36,761 [INFO]     calibra-joy-dog-classic-fish-chicken-slice-80g-new: 1 img +img — Calibra Joy Dog Classic Fish & Chicken Slice 80g NEW
-2026-06-02 22:11:42,116 [INFO]     calibra-joy-dog-classic-lamb-bits-new: 1 img +img — Calibra Joy Dog Classic Lamb Bits 80g NEW
-2026-06-02 22:11:47,464 [INFO]     calibra-joy-dog-classic-lamb-strips: 1 img +img — Calibra Joy Dog Classic Lamb Strips 250g NEW
-2026-06-02 22:11:52,799 [INFO]     calibra-joy-dog-classic-lamb-strips-new: 1 img +img — Calibra Joy Dog Classic Lamb Strips 80g NEW
-2026-06-02 22:11:58,145 [INFO]     calibra-joy-dog-classic-large-lamb-fillets-80g-new: 1 img +img — Calibra Joy Dog Classic Large Lamb Fillets 80g
-2026-06-02 22:12:03,511 [INFO]     calibra-joy-dog-classic-salmon-sticks-80g-new: 1 img +img — Calibra Joy Dog Classic Salmon Sticks 80g NEW
-2026-06-02 22:12:08,836 [INFO]     calibra-joy-dog-classic-salmon-sticks-new: 1 img +img — Calibra Joy Dog Classic Salmon Sticks 80g NEW
-2026-06-02 22:12:14,161 [INFO]     calibra-joy-dog-mini-chicken-cod-sandwich-70g-new: 1 img +img — Calibra Joy Dog Mini Chicken & Cod Sandwich 70g
-2026-06-02 22:12:19,489 [INFO]     calibra-joy-dog-mini-cod-chicken-cube-70g-new: 1 img +img — Calibra Joy Dog Mini Cod & Chicken Cube 70g NEW
-2026-06-02 22:12:24,807 [INFO]     calibra-joy-dog-mini-duck-cod-cube-70g-new: 1 img +img — Calibra Joy Dog Mini Duck & Cod Cube 70g NEW
-2026-06-02 22:12:30,135 [INFO]     calibra-joy-dog-mini-duck-cod-sandwich-70g-new: 1 img +img — Calibra Joy Dog Mini Duck & Cod Sandwich 70g
-2026-06-02 22:12:35,476 [INFO]     calibra-joy-dog-mini-salmon-cube-70g-new: 1 img +img — Calibra Joy Dog Mini Salmon Cube 70g
-2026-06-02 22:12:40,800 [INFO]     calibra-joy-dog-salami-beef-30g: 1 img +img — Calibra Joy Dog Salami Beef 30g
-2026-06-02 22:12:46,123 [INFO]     calibra-joy-dog-salami-chicken-30g: 1 img +img — Calibra Joy Dog Salami Chicken 30g
-2026-06-02 22:12:51,459 [INFO]     calibra-joy-dog-salami-duck-30g: 1 img +img — Calibra Joy Dog Salami Duck 30g
-2026-06-02 22:12:56,782 [INFO]     calibra-joy-dog-salami-fish-30g: 1 img +img — Calibra Joy Dog Salami Fish 30g
-2026-06-02 22:13:02,151 [INFO]     calibra-joy-dog-salami-lamb-30g: 1 img +img — Calibra Joy Dog Salami Lamb 30g
-2026-06-02 22:13:07,478 [INFO]     calibra-joy-dog-training-m-l-duck-chicken-300g: 1 img +img — Calibra Joy Dog Training M&L Duck&Chicken 300g
-2026-06-02 22:13:12,822 [INFO]     calibra-joy-dog-training-m-l-venison-duck-300g: 1 img +img — Calibra Joy Dog Training M&L Venison&Duck 300g
-2026-06-02 22:13:18,192 [INFO]     calibra-joy-dog-training-puppy-adult-s-chicken-150g: 1 img +img — Calibra Joy Dog Training Puppy&Adult S Chicken 150g
-2026-06-02 22:13:23,523 [INFO]     calibra-joy-dog-training-s-m-beef-150g: 1 img +img — Calibra Joy Dog Training S&M Beef 150g
-2026-06-02 22:13:28,864 [INFO]     calibra-joy-dog-training-s-m-salmon-insect-150g: 1 img +img — Calibra Joy Dog Training S&M Salmon&Insect 150g
-2026-06-02 22:13:34,227 [INFO]     calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g: 1 img +img — Calibra Joy Dog Training Sensitive Puppy&Adult S Salmon 150g
-2026-06-02 22:13:39,609 [INFO]     calibra-joy-dog-yummy-chicken-salmon-treat-100-g: 1 img +img — Calibra Joy Dog Yummy Chicken & Salmon Treat 100 g
-2026-06-02 22:13:44,992 [INFO]     calibra-joy-dog-yummy-chicken-treat-100-g: 1 img +img — Calibra Joy Dog Yummy Chicken Treat 100 g
-2026-06-02 22:13:50,389 [INFO]     calibra-joy-dog-yummy-duck-beef-treat-100-g: 1 img +img — Calibra Joy Dog Yummy Duck & Beef Treat 100 g
-2026-06-02 22:13:55,762 [INFO]     calibra-joy-dog-yummy-duck-chicken-treat-100-g: 1 img +img — Calibra Joy Dog Yummy Duck & Chicken Treat 100 g
-2026-06-02 22:14:01,148 [INFO]     calibra-joy-dog-yummy-tuna-treat-100-g: 1 img +img — Calibra Joy Dog Yummy Tuna Treat 100 g
-2026-06-02 22:14:06,872 [INFO]     calibra-life: 13 img +img — Calibra Life
-2026-06-02 22:14:12,583 [INFO]     calibra-premium-line: 13 img +img — Calibra Premium Line
-2026-06-02 22:14:18,136 [INFO]     calibra-rockets: 9 img +img — Calibra Rockets
-2026-06-02 22:14:23,511 [INFO]     calibra-rockets-mix-chinchillas-degus-900g: 1 img +img — Calibra Rockets Mix Chinchillas & Degus 900g
-2026-06-02 22:14:28,869 [INFO]     calibra-rockets-mix-guinea-pigs-900g: 1 img +img — Calibra Rockets Mix Guinea pigs 900g
-2026-06-02 22:14:34,210 [INFO]     calibra-rockets-mix-hamsters-small-rodents-900g: 1 img +img — Calibra Rockets Mix Hamsters & Small rodents 900g
-2026-06-02 22:14:39,563 [INFO]     calibra-rockets-mix-rabbits-900g: 1 img +img — Calibra Rockets Mix Rabbits 900g
-2026-06-02 22:14:44,932 [INFO]     calibra-rockets-sticks-rabbits-rodents-fruits-120g: 1 img +img — Calibra Rockets Sticks Rabbits&Rodents Fruits 120g
-2026-06-02 22:14:50,301 [INFO]     calibra-rockets-sticks-rabbits-rodents-vegetables-120g: 1 img +img — Calibra Rockets Sticks Rabbits&Rodents Vegetables 120g
-2026-06-02 22:14:55,700 [INFO]     calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g: 1 img +img — Calibra Rockets Sticks Rabbits&Rodents Wild fruit 120g
-2026-06-02 22:15:01,059 [INFO]     calibra-rockets-sticks-small-rodents-nuts-coconut-120g: 1 img +img — Calibra Rockets Sticks Small rodents Nuts&Coconut 120g
-2026-06-02 22:15:06,447 [INFO]     calibra-rockets-sticks-small-rodents-vegeta-nuts-120g: 1 img +img — Calibra Rockets Sticks Small rodents Vegeta&Nuts 120g
-2026-06-02 22:15:11,826 [INFO]     calibra-vd-cat-can-struvite-200g-new: 1 img +img — Calibra VD Cat can Struvite 200g NEW
-2026-06-02 22:15:17,191 [INFO]     calibra-vd-cat-diabetes-2-kg-new: 1 img +img — Calibra VD Cat Diabetes 2 kg NEW
-2026-06-02 22:15:22,573 [INFO]     calibra-vd-cat-diabetes-200g: 1 img +img — Calibra VD Cat Diabetes 200g
-2026-06-02 22:15:27,968 [INFO]     calibra-vd-cat-gastrointestinal-200g-1: 1 img +img — Calibra VD Cat Gastrointestinal 200g
-2026-06-02 22:15:33,330 [INFO]     calibra-vd-cat-gastrointestinal-pancreas-2-kg-new: 1 img +img — Calibra VD Cat Gastrointestinal & Pancreas 2 kg NEW
-2026-06-02 22:15:38,721 [INFO]     calibra-vd-cat-hypoallergenic-duck-200g: 1 img +img — Calibra VD Cat Hypoallergenic Duck 200g
-2026-06-02 22:15:44,085 [INFO]     calibra-vd-cat-hypoallergenic-tuna-200g: 1 img +img — Calibra VD Cat Hypoallergenic Tuna 200g
-2026-06-02 22:15:49,442 [INFO]     calibra-vd-cat-konz-renal-200g-new: 1 img +img — Calibra VD Cat konz. Renal 200g NEW
-2026-06-02 22:15:54,841 [INFO]     calibra-vd-cat-renal-cardiac-2-kg-new: 1 img +img — Calibra VD Cat Renal & Cardiac 2 kg NEW
-2026-06-02 22:16:00,221 [INFO]     calibra-vd-cat-struvite-2-kg-new: 1 img +img — Calibra VD Cat Struvite 2 kg NEW
-2026-06-02 22:16:05,599 [INFO]     calibra-vd-dog-can-gastrointestinal-low-fat-400g: 1 img +img — Calibra VD Dog can Gastrointestinal Low Fat 400g
-2026-06-02 22:16:10,972 [INFO]     calibra-vd-dog-cat-can-recovery-100g: 1 img +img — Calibra VD Dog & Cat can Recovery 100g
-2026-06-02 22:16:16,349 [INFO]     calibra-vd-dog-cat-can-recovery-400g-new: 1 img +img — Calibra VD Dog & Cat can Recovery 400g NEW
-2026-06-02 22:16:21,695 [INFO]     calibra-vd-dog-cat-recovery-400g: 1 img +img — Calibra VD Dog & Cat Recovery 400g
-2026-06-02 22:16:27,093 [INFO]     calibra-vd-dog-diabetes-obesity-12kg-new: 1 img +img — Calibra VD Dog Diabetes&Obesity 12kg NEW
-2026-06-02 22:16:32,469 [INFO]     calibra-vd-dog-gastrointestinal-pancreas-12kg-new: 1 img +img — Calibra VD Dog Gastrointestinal & Pancreas 12kg NEW
-2026-06-02 22:16:37,850 [INFO]     calibra-vd-dog-gastrointestinal-pancreas-low-fat-12kg: 1 img +img — Calibra VD Dog Gastrointestinal&Pancreas Low Fat 12kg
-2026-06-02 22:16:43,222 [INFO]     calibra-vd-dog-hepatic-new: 1 img +img — Calibra VD Dog Hepatic 12kg NEW
-2026-06-02 22:16:48,581 [INFO]     calibra-vd-dog-hypoallergenic-insect-salmon-400g: 1 img +img — Calibra VD Dog Hypoallergenic Insect&Salmon 400g
-2026-06-02 22:16:53,950 [INFO]     calibra-vd-dog-hypoallergenic-rabbit-insect-400g: 1 img +img — Calibra VD Dog Hypoallergenic Rabit&Insect 400g
-2026-06-02 22:16:59,337 [INFO]     calibra-vd-dog-hypoallergenic-skin-coat-support: 1 img +img — Calibra VD Dog Hypoallergenic Skin&Coat Support 12kg
-2026-06-02 22:17:04,709 [INFO]     calibra-vd-dog-joint-mobility-12kg-new: 1 img +img — Calibra VD Dog Joint & Mobility 12kg NEW
-2026-06-02 22:17:10,095 [INFO]     calibra-vd-dog-joint-mobility-low-calorie-12kg-new: 1 img +img — Calibra VD Dog Joint&Mobility Low Calorie 12kg NEW
-2026-06-02 22:17:15,450 [INFO]     calibra-vd-dog-konz-gastrointestinal-400g-new: 1 img +img — Calibra VD Dog konz. Gastrointestinal 400g NEW
-2026-06-02 22:17:20,853 [INFO]     calibra-vd-dog-konz-hepatic-400g-new: 1 img +img — Calibra VD Dog konz. Hepatic 400g NEW
-2026-06-02 22:17:26,228 [INFO]     calibra-vd-dog-konz-renal-400g-new: 1 img +img — Calibra VD Dog konz. Renal 400g NEW
-2026-06-02 22:17:31,611 [INFO]     calibra-vd-dog-oxalate-urate-cystine-12kg-new: 1 img +img — Calibra VD Dog Oxalate&Urate&Cystine 12kg NEW
-2026-06-02 22:17:36,977 [INFO]     calibra-vd-dog-renal-cardiac-12kg-new: 1 img +img — Calibra VD Dog Renal&Cardiac 12kg NEW
-2026-06-02 22:17:42,344 [INFO]     calibra-vd-dog-snack-gastrointestinal-120g: 1 img +img — Calibra VD Dog Snack Gastrointestinal 120g
-2026-06-02 22:17:47,698 [INFO]     calibra-vd-dog-snack-hypoallergenic-120g: 1 img +img — Calibra VD Dog Snack Hypoallergenic 120g
-2026-06-02 22:17:53,048 [INFO]     calibra-vd-dog-snack-mobility-support-120g: 1 img +img — Calibra VD Dog Snack Mobility Support 120g
-2026-06-02 22:17:58,419 [INFO]     calibra-vd-dog-snack-urinary-care-120g: 1 img +img — Calibra VD Dog Snack Urinary Care 120g
-2026-06-02 22:18:03,781 [INFO]     calibra-vd-dog-snack-vitality-support-120g: 1 img +img — Calibra VD Dog Snack Vitality Support 120g
-2026-06-02 22:18:09,138 [INFO]     calibra-vd-dog-snack-weight-management-120g: 1 img +img — Calibra VD Dog Snack Weight Management 120g
-2026-06-02 22:18:14,519 [INFO]     calibra-vd-dog-struvite-12kg-new: 1 img +img — Calibra VD Dog Struvite 12kg NEW
-2026-06-02 22:18:19,888 [INFO]     calibra-vd-dog-ultra-hypoallergenic-insect-12kg: 1 img +img — Calibra VD Dog Ultra-Hypoallergenic Insect 12kg
-2026-06-02 22:18:25,494 [INFO]     calibra-vd-snacks: 7 img +img — Calibra Veterinary Diets Snacks
-2026-06-02 22:18:31,170 [INFO]     calibra-veterinary-diets: 13 img +img — Calibra Veterinary Diets
-2026-06-02 22:18:31,970 [INFO]   → 205 productos nuevos de https://www.mycalibra.es
-2026-06-02 22:18:32,357 [INFO] 
-Catálogo guardado: 205 productos → resultados/calibra_es_catalog.json
-2026-06-02 22:18:32,806 [INFO] MODO DRY-RUN — no se escribirá nada en Shopify
-2026-06-02 22:18:32,806 [INFO] 
+2026-06-02 22:44:29,896 [INFO] ============================================================
+2026-06-02 22:44:29,896 [INFO]   Vendor   : CALIBRA
+2026-06-02 22:44:29,896 [INFO]   Modo     : RESOLVER-URLS
+2026-06-02 22:44:29,896 [INFO]   Pipeline : standard
+2026-06-02 22:44:29,896 [INFO]   Padding  : auto
+2026-06-02 22:44:29,896 [INFO]   Web    : https://www.mycalibra.es/
+2026-06-02 22:44:29,896 [INFO] ============================================================
+2026-06-02 22:44:30,298 [INFO] Token obtenido
+2026-06-02 22:44:30,344 [INFO] Catálogo cargado desde caché (calibra_es_catalog.json): 205 productos
+2026-06-02 22:44:30,813 [INFO] MODO DRY-RUN — no se escribirá nada en Shopify
+2026-06-02 22:44:30,814 [INFO] 
 [1/146] CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G  (ID: 15509672296835)
-2026-06-02 22:18:33,782 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:33,788 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-adult-pouches-multipack-12x100g' img=0.94 texto=0.50
-2026-06-02 22:18:33,788 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-pouches-multipack-12x100g  (score=0.94)
-2026-06-02 22:18:33,889 [INFO] 
+2026-06-02 22:44:34,022 [INFO] Parsing model identifier. Schema: None, Identifier: ViT-B-32
+2026-06-02 22:44:34,022 [INFO] Loaded built-in ViT-B-32 model config.
+2026-06-02 22:44:34,171 [INFO] HTTP Request: HEAD https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/resolve/main/open_clip_model.safetensors "HTTP/1.1 302 Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-02 22:44:34,172 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-02 22:44:34,240 [INFO] HTTP Request: GET https://huggingface.co/api/models/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/xet-read-token/1a25a446712ba5ee05982a381eed697ef9b435cf "HTTP/1.1 200 OK"
+2026-06-02 22:44:38,109 [INFO] Instantiating model architecture: CLIP
+2026-06-02 22:44:39,015 [INFO] Loading full pretrained weights from: /home/runner/.cache/huggingface/hub/models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K/snapshots/1a25a446712ba5ee05982a381eed697ef9b435cf/open_clip_model.safetensors
+2026-06-02 22:44:39,063 [INFO] Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+2026-06-02 22:44:39,063 [INFO] Model ViT-B-32 creation process complete.
+2026-06-02 22:44:39,064 [INFO] [image_match] backend CLIP (open_clip ViT-B-32) cargado
+2026-06-02 22:44:39,239 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-pouches-multipack-12x100g  (score=0.50)
+2026-06-02 22:44:39,339 [INFO] 
 [2/146] CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR  (ID: 15509672395139)
-2026-06-02 22:18:34,603 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:34,609 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-adult-duck-chicken-100g' img=0.91 texto=0.64
-2026-06-02 22:18:34,609 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g  (score=0.91)
-2026-06-02 22:18:34,710 [INFO] 
+2026-06-02 22:44:39,701 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g  (score=0.64)
+2026-06-02 22:44:39,802 [INFO] 
 [3/146] CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR  (ID: 15509672460675)
-2026-06-02 22:18:35,542 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:35,548 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-adult-trout-salmon-100g' img=0.92 texto=0.46
-2026-06-02 22:18:35,548 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-trout-salmon-100g  (score=0.92)
-2026-06-02 22:18:35,648 [INFO] 
+2026-06-02 22:44:40,165 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-trout-salmon-100g  (score=0.54)
+2026-06-02 22:44:40,265 [INFO] 
 [4/146] CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR  (ID: 15509672526211)
-2026-06-02 22:18:36,401 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:36,408 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-kitten-pouches-multipack-12x100g' img=0.95 texto=0.50
-2026-06-02 22:18:36,408 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-pouches-multipack-12x100g  (score=0.95)
-2026-06-02 22:18:36,509 [INFO] 
+2026-06-02 22:44:40,632 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-pouches-multipack-12x100g  (score=0.50)
+2026-06-02 22:44:40,732 [INFO] 
 [5/146] CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR  (ID: 15509672558979)
-2026-06-02 22:18:37,329 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:37,336 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-kitten-turkey-chicken-100g' img=0.91 texto=0.64
-2026-06-02 22:18:37,336 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g  (score=0.91)
-2026-06-02 22:18:37,436 [INFO] 
+2026-06-02 22:44:41,109 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g  (score=0.64)
+2026-06-02 22:44:41,209 [INFO] 
 [6/146] CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR  (ID: 15509672624515)
-2026-06-02 22:18:38,264 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:38,270 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-kitten-turkey-chicken-100g' img=0.90 texto=0.33
-2026-06-02 22:18:38,271 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g  (score=0.90)
-2026-06-02 22:18:38,371 [INFO] 
+2026-06-02 22:44:41,608 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g  (score=0.55)
+2026-06-02 22:44:41,708 [INFO] 
 [7/146] CALIBRA CAT LIFE ADULT ARENQUE  (ID: 15509672755587)
-2026-06-02 22:18:39,195 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:39,201 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-adult-herring' img=0.96 texto=0.70
-2026-06-02 22:18:39,201 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-herring  (score=0.96)
-2026-06-02 22:18:39,302 [INFO] 
+2026-06-02 22:44:42,058 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-herring  (score=0.80)
+2026-06-02 22:44:42,158 [INFO] 
 [8/146] CALIBRA CAT LIFE ADULT CORDERO  (ID: 15509672853891)
-2026-06-02 22:18:40,080 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:40,087 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-adult-lamb' img=0.97 texto=0.90
-2026-06-02 22:18:40,087 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-lamb  (score=0.97)
-2026-06-02 22:18:40,187 [INFO] 
+2026-06-02 22:44:42,503 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-lamb  (score=0.90)
+2026-06-02 22:44:42,603 [INFO] 
 [9/146] CALIBRA CAT LIFE ADULT POLLO 6KG  (ID: 15509672886659)
-2026-06-02 22:18:40,915 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:40,922 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-adult-chicken' img=0.97 texto=0.82
-2026-06-02 22:18:40,922 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-chicken  (score=0.97)
-2026-06-02 22:18:41,022 [INFO] 
+2026-06-02 22:44:42,982 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-chicken  (score=0.82)
+2026-06-02 22:44:43,082 [INFO] 
 [10/146] CALIBRA CAT LIFE KITTEN POLLO  (ID: 15509673083267)
-2026-06-02 22:18:41,817 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:41,823 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-kitten-chicken' img=0.95 texto=0.90
-2026-06-02 22:18:41,823 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-kitten-chicken  (score=0.95)
-2026-06-02 22:18:41,923 [INFO] 
+2026-06-02 22:44:43,430 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-kitten-chicken  (score=0.90)
+2026-06-02 22:44:43,530 [INFO] 
 [11/146] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR  (ID: 15509673148803)
-2026-06-02 22:18:42,642 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:42,649 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-chicken-with-rice-400g' img=0.87 texto=0.33
-2026-06-02 22:18:42,649 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g  (score=0.87)
-2026-06-02 22:18:42,749 [INFO] 
+2026-06-02 22:44:43,887 [INFO]   [img] desempate 2 cand. texto≈0.69 → calibra-cat-life-adult-chicken-200g (img=0.74)
+2026-06-02 22:44:43,887 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-chicken-200g  (score=0.69)
+2026-06-02 22:44:43,988 [INFO] 
 [12/146] CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR  (ID: 15509673181571)
-2026-06-02 22:18:43,508 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:43,515 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-lamb-400g' img=0.86 texto=0.25
-2026-06-02 22:18:43,515 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g  (score=0.86)
-2026-06-02 22:18:43,615 [INFO] 
+2026-06-02 22:44:44,333 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-salmon-200g  (score=0.67)
+2026-06-02 22:44:44,434 [INFO] 
 [13/146] CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR  (ID: 15509673279875)
-2026-06-02 22:18:44,447 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:44,454 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-wild-boar-with-cran-400g' img=0.85 texto=0.20
-2026-06-02 22:18:44,454 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g  (score=0.85)
-2026-06-02 22:18:44,555 [INFO] 
+2026-06-02 22:44:44,809 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-adult-beef-200g  (score=0.60)
+2026-06-02 22:44:44,909 [INFO] 
 [14/146] CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR  (ID: 15509673312643)
-2026-06-02 22:18:45,375 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:45,382 [INFO]   [img] mejor: 'calibra-cat-life-kitten-chicken-200g' texto=0.75 img=0.73 combinado=0.74
-2026-06-02 22:18:45,382 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-kitten-chicken-200g  (score=0.74)
-2026-06-02 22:18:45,482 [INFO] 
+2026-06-02 22:44:45,244 [INFO]   [img] desempate 2 cand. texto≈0.69 → calibra-cat-life-kitten-chicken-200g (img=0.73)
+2026-06-02 22:44:45,244 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-kitten-chicken-200g  (score=0.69)
+2026-06-02 22:44:45,344 [INFO] 
 [15/146] CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR  (ID: 15509673345411)
-2026-06-02 22:18:46,198 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:46,204 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-sensitive-rabbit-400g' img=0.87 texto=0.40
-2026-06-02 22:18:46,205 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g  (score=0.87)
-2026-06-02 22:18:46,305 [INFO] 
+2026-06-02 22:44:45,693 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sensitive-rabbit-200g  (score=0.69)
+2026-06-02 22:44:45,793 [INFO] 
 [16/146] CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR  (ID: 15509673443715)
-2026-06-02 22:18:47,105 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:47,112 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-sensitive-salmon-with-rice-400g' img=0.88 texto=0.21
-2026-06-02 22:18:47,112 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g  (score=0.88)
-2026-06-02 22:18:47,212 [INFO] 
+2026-06-02 22:44:46,148 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sensitive-lamb-200g  (score=0.69)
+2026-06-02 22:44:46,248 [INFO] 
 [17/146] CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR  (ID: 15509673476483)
-2026-06-02 22:18:48,006 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:48,012 [INFO]   [img] mejor: 'calibra-cat-life-sterilised-duck-200g' texto=0.77 img=0.75 combinado=0.76
-2026-06-02 22:18:48,013 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-duck-200g  (score=0.76)
-2026-06-02 22:18:48,113 [INFO] 
+2026-06-02 22:44:46,573 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-duck-200g  (score=0.71)
+2026-06-02 22:44:46,673 [INFO] 
 [18/146] CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR  (ID: 15509673509251)
-2026-06-02 22:18:48,851 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:48,858 [INFO]   [img] mejor: 'calibra-cat-life-sterilised-turkey-200g' texto=0.77 img=0.74 combinado=0.75
-2026-06-02 22:18:48,858 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-turkey-200g  (score=0.75)
-2026-06-02 22:18:48,958 [INFO] 
+2026-06-02 22:44:47,039 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-turkey-200g  (score=0.71)
+2026-06-02 22:44:47,139 [INFO] 
 [19/146] CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR  (ID: 15509673574787)
-2026-06-02 22:18:49,744 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:49,751 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-adult-beef-in-gravy-85g' img=0.91 texto=0.56
-2026-06-02 22:18:49,751 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-beef-in-gravy-85g  (score=0.91)
-2026-06-02 22:18:49,851 [INFO] 
+2026-06-02 22:44:47,498 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-beef-in-gravy-85g  (score=0.63)
+2026-06-02 22:44:47,599 [INFO] 
 [20/146] CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR  (ID: 15509673673091)
-2026-06-02 22:18:50,600 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:50,607 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouches-sterilised-multipack-12x85g' img=0.91 texto=0.40
-2026-06-02 22:18:50,607 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g  (score=0.91)
-2026-06-02 22:18:50,707 [INFO] 
+2026-06-02 22:44:47,957 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-adult-multipack-12x85g  (score=0.67)
+2026-06-02 22:44:48,057 [INFO] 
 [21/146] CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR  (ID: 15509673705859)
-2026-06-02 22:18:51,508 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:51,515 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-adult-duck-in-gravy-85g' img=0.92 texto=0.62
-2026-06-02 22:18:51,515 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-duck-in-gravy-85g  (score=0.92)
-2026-06-02 22:18:51,615 [INFO] 
+2026-06-02 22:44:48,419 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-duck-in-gravy-85g  (score=0.71)
+2026-06-02 22:44:48,519 [INFO] 
 [22/146] CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR  (ID: 15509673738627)
-2026-06-02 22:18:52,519 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:52,525 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-adult-turkey-in-gravy-85g' img=0.91 texto=0.62
-2026-06-02 22:18:52,525 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-turkey-in-gravy-85g  (score=0.91)
-2026-06-02 22:18:52,626 [INFO] 
+2026-06-02 22:44:48,873 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-turkey-in-gravy-85g  (score=0.71)
+2026-06-02 22:44:48,973 [INFO] 
 [23/146] CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR  (ID: 15509673804163)
-2026-06-02 22:18:53,494 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:53,501 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-adult-veal-in-gravy-85g' img=0.91 texto=0.59
-2026-06-02 22:18:53,501 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-veal-in-gravy-85g  (score=0.91)
-2026-06-02 22:18:53,602 [INFO] 
+2026-06-02 22:44:49,328 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-adult-veal-in-gravy-85g  (score=0.67)
+2026-06-02 22:44:49,428 [INFO] 
 [24/146] CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR  (ID: 15509673836931)
-2026-06-02 22:18:54,489 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:54,495 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouches-kitten-multipack-12x85g' img=0.92 texto=0.67
-2026-06-02 22:18:54,495 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-kitten-multipack-12x85g  (score=0.92)
-2026-06-02 22:18:54,596 [INFO] 
+2026-06-02 22:44:49,802 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-kitten-multipack-12x85g  (score=0.67)
+2026-06-02 22:44:49,902 [INFO] 
 [25/146] CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR  (ID: 15509673869699)
-2026-06-02 22:18:55,456 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:55,463 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-kitten-turkey-in-gravy-85g' img=0.93 texto=0.62
-2026-06-02 22:18:55,463 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-kitten-turkey-in-gravy-85g  (score=0.93)
-2026-06-02 22:18:55,563 [INFO] 
+2026-06-02 22:44:50,252 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-kitten-turkey-in-gravy-85g  (score=0.71)
+2026-06-02 22:44:50,353 [INFO] 
 [26/146] CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR  (ID: 15509674000771)
-2026-06-02 22:18:56,630 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:56,637 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-kitten-salmon-in-gravy-85g' img=0.94 texto=0.60
-2026-06-02 22:18:56,637 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-kitten-salmon-in-gravy-85g  (score=0.94)
-2026-06-02 22:18:56,737 [INFO] 
+2026-06-02 22:44:50,715 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-kitten-salmon-in-gravy-85g  (score=0.69)
+2026-06-02 22:44:50,815 [INFO] 
 [27/146] CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR  (ID: 15509674033539)
-2026-06-02 22:18:57,476 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:57,483 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouches-sterilised-multipack-12x85g' img=0.93 texto=0.69
-2026-06-02 22:18:57,483 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g  (score=0.93)
-2026-06-02 22:18:57,583 [INFO] 
+2026-06-02 22:44:51,222 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g  (score=0.69)
+2026-06-02 22:44:51,322 [INFO] 
 [28/146] CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR  (ID: 15509674066307)
-2026-06-02 22:18:58,333 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:58,339 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-sterilised-duck-in-gravy-85g' img=0.90 texto=0.65
-2026-06-02 22:18:58,339 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-duck-in-gravy-85g  (score=0.90)
-2026-06-02 22:18:58,439 [INFO] 
+2026-06-02 22:44:51,680 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-duck-in-gravy-85g  (score=0.72)
+2026-06-02 22:44:51,781 [INFO] 
 [29/146] CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR  (ID: 15509674099075)
-2026-06-02 22:18:59,196 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:18:59,204 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g' img=0.88 texto=0.62
-2026-06-02 22:18:59,204 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g  (score=0.88)
-2026-06-02 22:18:59,304 [INFO] 
+2026-06-02 22:44:52,142 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g  (score=0.71)
+2026-06-02 22:44:52,243 [INFO] 
 [30/146] CALIBRA CAT LIFE STERILISED POLLO  (ID: 15509674230147)
-2026-06-02 22:19:00,045 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:00,052 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-sterilised-chicken' img=0.97 texto=0.91
-2026-06-02 22:19:00,052 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-chicken  (score=0.97)
-2026-06-02 22:19:00,152 [INFO] 
+2026-06-02 22:44:52,624 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-chicken  (score=0.91)
+2026-06-02 22:44:52,724 [INFO] 
 [31/146] CALIBRA CAT LIFE STERILISED TERNERA  (ID: 15509674393987)
-2026-06-02 22:19:00,862 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:00,869 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-life-sterilised-beef' img=0.95 texto=0.77
-2026-06-02 22:19:00,869 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-beef  (score=0.95)
-2026-06-02 22:19:00,969 [INFO] 
+2026-06-02 22:44:53,066 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-life-sterilised-beef  (score=0.77)
+2026-06-02 22:44:53,167 [INFO] 
 [32/146] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR  (ID: 15509674426755)
-2026-06-02 22:19:01,639 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:01,647 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-adult-duck-chicken-100g' img=0.87 texto=0.44
-2026-06-02 22:19:01,647 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g  (score=0.87)
-2026-06-02 22:19:01,747 [INFO] 
+2026-06-02 22:44:53,557 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-lamb-poultry-100g  (score=0.56)
+2026-06-02 22:44:53,658 [INFO] 
 [33/146] CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR  (ID: 15509674459523)
-2026-06-02 22:19:02,558 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:02,564 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-adult-chicken-beef-100g' img=0.92 texto=0.44
-2026-06-02 22:19:02,565 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-chicken-beef-100g  (score=0.92)
-2026-06-02 22:19:02,665 [INFO] 
+2026-06-02 22:44:54,536 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-adult-chicken-beef-100g  (score=0.44)
+2026-06-02 22:44:54,636 [INFO] 
 [34/146] CALIBRA CAT PREMIUM ADULT CARNE DE AVE  (ID: 15509674525059)
-2026-06-02 22:19:03,447 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:03,454 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-line-adult-poultry' img=0.94 texto=0.55
-2026-06-02 22:19:03,454 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-poultry  (score=0.94)
-2026-06-02 22:19:03,554 [INFO] 
+2026-06-02 22:44:55,002 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-poultry  (score=0.62)
+2026-06-02 22:44:55,102 [INFO] 
 [35/146] CALIBRA CAT PREMIUM ADULT CARNE VACUNO  (ID: 15509674688899)
-2026-06-02 22:19:04,339 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:04,347 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-line-adult-beef' img=0.96 texto=0.46
-2026-06-02 22:19:04,347 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-beef  (score=0.96)
-2026-06-02 22:19:04,447 [INFO] 
+2026-06-02 22:44:55,457 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-beef  (score=0.54)
+2026-06-02 22:44:55,558 [INFO] 
 [36/146] CALIBRA CAT PREMIUM ADULT PAVO  (ID: 15509674885507)
-2026-06-02 22:19:05,117 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:05,124 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-line-adult-beef' img=0.91 texto=0.46
-2026-06-02 22:19:05,124 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-beef  (score=0.91)
-2026-06-02 22:19:05,224 [INFO] 
+2026-06-02 22:44:55,901 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-adult-turkey  (score=0.80)
+2026-06-02 22:44:56,001 [INFO] 
 [37/146] CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE  (ID: 15509675016579)
-2026-06-02 22:19:06,001 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:06,007 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-line-sterilised-poultry' img=0.92 texto=0.31
-2026-06-02 22:19:06,007 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-sterilised-poultry  (score=0.92)
-2026-06-02 22:19:06,108 [INFO] 
+2026-06-02 22:44:56,370 [INFO]   [img] desempate 5 cand. texto≈0.44 → calibra-cat-premium-line-sterilised-poultry (img=0.92)
+2026-06-02 22:44:56,370 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-sterilised-poultry  (score=0.40)
+2026-06-02 22:44:56,470 [INFO] 
 [38/146] CALIBRA CAT PREMIUM KITTEN CARNE DE AVE  (ID: 15509675213187)
-2026-06-02 22:19:06,996 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:07,003 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-line-kitten-poultry' img=0.93 texto=0.55
-2026-06-02 22:19:07,003 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-kitten-poultry  (score=0.93)
-2026-06-02 22:19:07,103 [INFO] 
+2026-06-02 22:44:56,827 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-line-kitten-poultry  (score=0.62)
+2026-06-02 22:44:56,927 [INFO] 
 [39/146] CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR  (ID: 15509675311491)
-2026-06-02 22:19:07,848 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:07,854 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-sterilised-salmon-100g' img=0.92 texto=0.46
-2026-06-02 22:19:07,854 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g  (score=0.92)
-2026-06-02 22:19:07,954 [INFO] 
+2026-06-02 22:44:57,283 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-sterilised-liver-100g  (score=0.54)
+2026-06-02 22:44:57,383 [INFO] 
 [40/146] CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR  (ID: 15509675377027)
-2026-06-02 22:19:08,796 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:08,803 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-steril-pouches-multipack-12x100g' img=0.94 texto=0.29
-2026-06-02 22:19:08,803 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-steril-pouches-multipack-12x100g  (score=0.94)
-2026-06-02 22:19:08,903 [INFO] 
+2026-06-02 22:44:57,738 [INFO]   [img] desempate 3 cand. texto≈0.50 → calibra-cat-premium-sterilised-liver-100g (img=0.82)
+2026-06-02 22:44:57,738 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-sterilised-liver-100g  (score=0.46)
+2026-06-02 22:44:57,838 [INFO] 
 [41/146] CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR  (ID: 15509675409795)
-2026-06-02 22:19:09,805 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:09,812 [INFO]   [img] CONFIRMADO visualmente: 'calibra-cat-premium-sterilised-salmon-100g' img=0.90 texto=0.58
-2026-06-02 22:19:09,812 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g  (score=0.90)
-2026-06-02 22:19:09,912 [INFO] 
+2026-06-02 22:44:58,215 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g  (score=0.58)
+2026-06-02 22:44:58,315 [INFO] 
 [42/146] CALIBRA DOG EXPERT NUTRITION ENERGY 12KG  (ID: 15509675442563)
-2026-06-02 22:19:10,730 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:10,737 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-en-energy-new' img=0.85 texto=0.50
-2026-06-02 22:19:10,737 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-energy-new  (score=0.85)
-2026-06-02 22:19:10,837 [INFO] 
+2026-06-02 22:44:58,687 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-energy-new  (score=0.50)
+2026-06-02 22:44:58,788 [INFO] 
 [43/146] CALIBRA DOG EXPERT NUTRITION LIGHT  (ID: 15509675508099)
-2026-06-02 22:19:11,551 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:11,558 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-en-light-new' img=0.84 texto=0.45
-2026-06-02 22:19:11,558 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-light-new  (score=0.84)
-2026-06-02 22:19:11,658 [INFO] 
+2026-06-02 22:44:59,176 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-light-new  (score=0.45)
+2026-06-02 22:44:59,277 [INFO] 
 [44/146] CALIBRA DOG EXPERT NUTRITION MOBILITY  (ID: 15509675671939)
-2026-06-02 22:19:12,496 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:12,503 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-en-mobility-new' img=0.86 texto=0.50
-2026-06-02 22:19:12,503 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-mobility-new  (score=0.86)
-2026-06-02 22:19:12,603 [INFO] 
+2026-06-02 22:44:59,650 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-mobility-new  (score=0.50)
+2026-06-02 22:44:59,750 [INFO] 
 [45/146] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG  (ID: 15509675835779)
-2026-06-02 22:19:13,329 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:13,336 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-en-neutered-new' img=0.84 texto=0.36
-2026-06-02 22:19:13,336 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-neutered-new  (score=0.84)
-2026-06-02 22:19:13,436 [INFO] 
+2026-06-02 22:45:00,101 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-expert-nutrition  (score=0.44)
+2026-06-02 22:45:00,201 [INFO] 
 [46/146] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID: 15509675868547)
-2026-06-02 22:19:13,936 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:13,947 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-en-sensitive-salmon-new' img=0.82 texto=0.50
-2026-06-02 22:19:13,948 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-sensitive-salmon-new  (score=0.82)
-2026-06-02 22:19:14,048 [INFO] 
+2026-06-02 22:45:00,934 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-en-sensitive-salmon-new  (score=0.50)
+2026-06-02 22:45:01,034 [INFO] 
 [47/146] CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR  (ID: 15509676065155)
-2026-06-02 22:19:14,766 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:14,772 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-adult-pork-venison-400g' img=0.88 texto=0.64
-2026-06-02 22:19:14,772 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-pork-venison-400g  (score=0.88)
-2026-06-02 22:19:14,872 [INFO] 
+2026-06-02 22:45:01,403 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-pork-venison-400g  (score=0.64)
+2026-06-02 22:45:01,503 [INFO] 
 [48/146] CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR  (ID: 15509676130691)
-2026-06-02 22:19:15,622 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:15,629 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-adult-wild-boar-beef-400g' img=0.86 texto=0.53
-2026-06-02 22:19:15,629 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-wild-boar-beef-400g  (score=0.86)
-2026-06-02 22:19:15,729 [INFO] 
+2026-06-02 22:45:01,874 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-wild-boar-beef-400g  (score=0.65)
+2026-06-02 22:45:01,974 [INFO] 
 [49/146] CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR  (ID: 15509676163459)
-2026-06-02 22:19:16,486 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:16,492 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-adult-salmon-turkey-400g' img=0.83 texto=0.41
-2026-06-02 22:19:16,492 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g  (score=0.83)
-2026-06-02 22:19:16,592 [INFO] 
+2026-06-02 22:45:02,335 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-chicken-duck-400g  (score=0.79)
+2026-06-02 22:45:02,435 [INFO] 
 [50/146] CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR  (ID: 15509676228995)
-2026-06-02 22:19:17,399 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:17,405 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-adult-salmon-turkey-400g' img=0.86 texto=0.77
-2026-06-02 22:19:17,405 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g  (score=0.86)
-2026-06-02 22:19:17,505 [INFO] 
+2026-06-02 22:45:02,817 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g  (score=0.77)
+2026-06-02 22:45:02,917 [INFO] 
 [51/146] CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR  (ID: 15509676294531)
-2026-06-02 22:19:18,309 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:18,316 [INFO]   [img] mejor: 'calibra-dog-verve-gf-adult-small-duck-turkey-200g' texto=0.80 img=0.68 combinado=0.73
-2026-06-02 22:19:18,316 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-duck-turkey-200g  (score=0.73)
-2026-06-02 22:19:18,416 [INFO] 
+2026-06-02 22:45:03,303 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-duck-turkey-200g  (score=0.80)
+2026-06-02 22:45:03,403 [INFO] 
 [52/146] CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR  (ID: 15509676327299)
-2026-06-02 22:19:19,211 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:19,218 [INFO]   [img] mejor: 'calibra-dog-verve-gf-adult-small-beef-chicken-200g' texto=0.71 img=0.72 combinado=0.72
-2026-06-02 22:19:19,218 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-beef-chicken-200g  (score=0.72)
-2026-06-02 22:19:19,318 [INFO] 
+2026-06-02 22:45:03,770 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-beef-chicken-200g  (score=0.71)
+2026-06-02 22:45:03,871 [INFO] 
 [53/146] CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676392835)
-2026-06-02 22:19:20,126 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:20,132 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-junior-turkey-lamb-400g' img=0.88 texto=0.80
-2026-06-02 22:19:20,133 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-junior-turkey-lamb-400g  (score=0.88)
-2026-06-02 22:19:20,233 [INFO] 
+2026-06-02 22:45:04,231 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-junior-turkey-lamb-400g  (score=0.80)
+2026-06-02 22:45:04,331 [INFO] 
 [54/146] CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676425603)
-2026-06-02 22:19:21,048 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:21,054 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-verve-gf-senior-turkey-lamb-400g' img=0.90 texto=0.79
-2026-06-02 22:19:21,054 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-senior-turkey-lamb-400g  (score=0.90)
-2026-06-02 22:19:21,154 [INFO] 
+2026-06-02 22:45:04,727 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-gf-senior-turkey-lamb-400g  (score=0.79)
+2026-06-02 22:45:04,827 [INFO] 
 [55/146] CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG  (ID: 15509676523907)
-2026-06-02 22:19:21,873 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:21,879 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-large-breed-lamb' img=0.94 texto=1.00
-2026-06-02 22:19:21,879 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb  (score=1.00)
-2026-06-02 22:19:21,979 [INFO] 
+2026-06-02 22:45:05,202 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb  (score=1.00)
+2026-06-02 22:45:05,302 [INFO] 
 [56/146] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID: 15509676589443)
-2026-06-02 22:19:22,472 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:22,484 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-small-breed-lamb' img=0.92 texto=0.35
-2026-06-02 22:19:22,484 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb  (score=0.92)
-2026-06-02 22:19:22,585 [INFO] 
+2026-06-02 22:45:06,010 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-breed-chicken  (score=0.92)
+2026-06-02 22:45:06,110 [INFO] 
 [57/146] CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG  (ID: 15509676720515)
-2026-06-02 22:19:23,463 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:23,469 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-large-fresh-beef' img=0.90 texto=0.86
-2026-06-02 22:19:23,469 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-fresh-beef  (score=0.90)
-2026-06-02 22:19:23,570 [INFO] 
+2026-06-02 22:45:06,475 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-fresh-beef  (score=0.86)
+2026-06-02 22:45:06,575 [INFO] 
 [58/146] CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO  (ID: 15509676786051)
-2026-06-02 22:19:24,425 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:24,431 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-medium-breed-lamb' img=0.93 texto=0.92
-2026-06-02 22:19:24,431 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-lamb  (score=0.93)
-2026-06-02 22:19:24,532 [INFO] 
+2026-06-02 22:45:06,948 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-lamb  (score=0.92)
+2026-06-02 22:45:07,048 [INFO] 
 [59/146] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID: 15509676949891)
-2026-06-02 22:19:25,006 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:25,018 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-medium-breed-chicken' img=0.92 texto=0.62
-2026-06-02 22:19:25,018 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken  (score=0.92)
-2026-06-02 22:19:25,118 [INFO] 
+2026-06-02 22:45:07,787 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-chicken  (score=0.92)
+2026-06-02 22:45:07,888 [INFO] 
 [60/146] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG  (ID: 15509677146499)
-2026-06-02 22:19:25,822 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:25,828 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-medium-fresh-beef' img=0.90 texto=0.65
-2026-06-02 22:19:25,828 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef  (score=0.90)
-2026-06-02 22:19:25,929 [INFO] 
+2026-06-02 22:45:08,244 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-medium-fresh-beef  (score=0.87)
+2026-06-02 22:45:08,344 [INFO] 
 [61/146] CALIBRA DOG LIFE ADULT SMALL BREED CORDERO  (ID: 15509677310339)
-2026-06-02 22:19:26,641 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:26,647 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-small-breed-lamb' img=0.93 texto=0.92
-2026-06-02 22:19:26,647 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-small-breed-lamb  (score=0.93)
-2026-06-02 22:19:26,748 [INFO] 
+2026-06-02 22:45:08,707 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-small-breed-lamb  (score=0.92)
+2026-06-02 22:45:08,807 [INFO] 
 [62/146] CALIBRA DOG LIFE ADULT SMALL BREED POLLO  (ID: 15509677408643)
-2026-06-02 22:19:27,544 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:27,550 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-small-breed-chicken' img=0.92 texto=0.60
-2026-06-02 22:19:27,551 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken  (score=0.92)
-2026-06-02 22:19:27,651 [INFO] 
+2026-06-02 22:45:09,157 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-small-breed-chicken  (score=0.92)
+2026-06-02 22:45:09,257 [INFO] 
 [63/146] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG  (ID: 15509677474179)
-2026-06-02 22:19:28,333 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:28,340 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-starter-puppy-fresh-beef' img=0.91 texto=0.42
-2026-06-02 22:19:28,340 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef  (score=0.91)
-2026-06-02 22:19:28,440 [INFO] 
+2026-06-02 22:45:09,613 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-small-fresh-beef  (score=0.86)
+2026-06-02 22:45:09,713 [INFO] 
 [64/146] CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG  (ID: 15509677539715)
-2026-06-02 22:19:29,231 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:29,238 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-large-breed-lamb' img=0.93 texto=0.67
-2026-06-02 22:19:29,238 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb  (score=0.93)
-2026-06-02 22:19:29,338 [INFO] 
+2026-06-02 22:45:10,067 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-breed-lamb  (score=1.00)
+2026-06-02 22:45:10,167 [INFO] 
 [65/146] CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG  (ID: 15509677638019)
-2026-06-02 22:19:30,162 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:30,169 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-small-breed-lamb' img=0.91 texto=0.32
-2026-06-02 22:19:30,169 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb  (score=0.91)
-2026-06-02 22:19:30,269 [INFO] 
+2026-06-02 22:45:10,508 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-breed-chicken  (score=1.00)
+2026-06-02 22:45:10,608 [INFO] 
 [66/146] CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG  (ID: 15509677703555)
-2026-06-02 22:19:30,983 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:30,989 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-large-fresh-beef' img=0.90 texto=0.87
-2026-06-02 22:19:30,989 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef  (score=0.90)
-2026-06-02 22:19:31,089 [INFO] 
+2026-06-02 22:45:10,966 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef  (score=0.87)
+2026-06-02 22:45:11,067 [INFO] 
 [67/146] CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO  (ID: 15509677736323)
-2026-06-02 22:19:31,758 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:31,765 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-medium-breed-chicken' img=0.93 texto=0.93
-2026-06-02 22:19:31,765 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken  (score=0.93)
-2026-06-02 22:19:31,865 [INFO] 
+2026-06-02 22:45:11,397 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken  (score=0.93)
+2026-06-02 22:45:11,497 [INFO] 
 [68/146] CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG  (ID: 15509677834627)
-2026-06-02 22:19:32,540 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:32,546 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-small-medium-fresh-beef' img=0.89 texto=0.88
-2026-06-02 22:19:32,546 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-medium-fresh-beef  (score=0.89)
-2026-06-02 22:19:32,646 [INFO] 
+2026-06-02 22:45:11,854 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-medium-fresh-beef  (score=0.88)
+2026-06-02 22:45:11,954 [INFO] 
 [69/146] CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG  (ID: 15509677932931)
-2026-06-02 22:19:33,463 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:33,470 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-small-breed-chicken' img=0.93 texto=1.00
-2026-06-02 22:19:33,470 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken  (score=1.00)
-2026-06-02 22:19:33,571 [INFO] 
+2026-06-02 22:45:12,287 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken  (score=1.00)
+2026-06-02 22:45:12,387 [INFO] 
 [70/146] CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO  (ID: 15509677965699)
-2026-06-02 22:19:34,371 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:34,378 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-junior-small-medium-breed-lamb' img=0.94 texto=0.93
-2026-06-02 22:19:34,378 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-medium-breed-lamb  (score=0.94)
-2026-06-02 22:19:34,478 [INFO] 
+2026-06-02 22:45:12,736 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-small-medium-breed-lamb  (score=0.93)
+2026-06-02 22:45:12,836 [INFO] 
 [71/146] CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR  (ID: 15509678064003)
-2026-06-02 22:19:35,288 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:35,295 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-lamb-400g' img=0.97 texto=0.75
-2026-06-02 22:19:35,295 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g  (score=0.97)
-2026-06-02 22:19:35,395 [INFO] 
+2026-06-02 22:45:13,207 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g  (score=0.69)
+2026-06-02 22:45:13,308 [INFO] 
 [72/146] CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR  (ID: 15509678129539)
-2026-06-02 22:19:36,089 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:36,095 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-wild-boar-with-cran-400g' img=0.97 texto=0.44
-2026-06-02 22:19:36,095 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g  (score=0.97)
-2026-06-02 22:19:36,196 [INFO] 
+2026-06-02 22:45:13,677 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g  (score=0.56)
+2026-06-02 22:45:13,777 [INFO] 
 [73/146] CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR  (ID: 15509678162307)
-2026-06-02 22:19:36,922 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:36,928 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-duck-with-rice-400g' img=0.97 texto=0.73
-2026-06-02 22:19:36,928 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-duck-with-rice-400g  (score=0.97)
-2026-06-02 22:19:37,029 [INFO] 
+2026-06-02 22:45:14,142 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-duck-with-rice-400g  (score=0.69)
+2026-06-02 22:45:14,243 [INFO] 
 [74/146] CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR  (ID: 15509678227843)
-2026-06-02 22:19:37,806 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:37,813 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-turkey-with-apples-400g' img=0.97 texto=0.60
-2026-06-02 22:19:37,813 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-turkey-with-apples-400g  (score=0.97)
-2026-06-02 22:19:37,913 [INFO] 
+2026-06-02 22:45:14,715 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-turkey-with-apples-400g  (score=0.56)
+2026-06-02 22:45:14,815 [INFO] 
 [75/146] CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR  (ID: 15509678293379)
-2026-06-02 22:19:38,645 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:38,652 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-chicken-with-rice-400g' img=0.97 texto=0.73
-2026-06-02 22:19:38,652 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g  (score=0.97)
-2026-06-02 22:19:38,752 [INFO] 
+2026-06-02 22:45:15,161 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g  (score=0.69)
+2026-06-02 22:45:15,262 [INFO] 
 [76/146] CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR  (ID: 15509678326147)
-2026-06-02 22:19:39,414 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:39,420 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-adult-beef-with-carrots-400g' img=0.96 texto=0.53
-2026-06-02 22:19:39,420 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g  (score=0.96)
-2026-06-02 22:19:39,521 [INFO] 
+2026-06-02 22:45:15,616 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g  (score=0.50)
+2026-06-02 22:45:15,717 [INFO] 
 [77/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR  (ID: 15509678391683)
-2026-06-02 22:19:40,233 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:40,240 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-puppy-junior-lamb-rice-400g' img=0.97 texto=0.80
-2026-06-02 22:19:40,240 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-lamb-rice-400g  (score=0.97)
-2026-06-02 22:19:40,340 [INFO] 
+2026-06-02 22:45:16,069 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-lamb-rice-400g  (score=0.75)
+2026-06-02 22:45:16,169 [INFO] 
 [78/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR  (ID: 15509678457219)
-2026-06-02 22:19:41,014 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:41,020 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-puppy-junior-chicken-rice-400g' img=0.97 texto=0.80
-2026-06-02 22:19:41,021 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g  (score=0.97)
-2026-06-02 22:19:41,121 [INFO] 
+2026-06-02 22:45:16,523 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g  (score=0.75)
+2026-06-02 22:45:16,623 [INFO] 
 [79/146] CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR  (ID: 15509678522755)
-2026-06-02 22:19:41,724 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:41,730 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-sensitive-rabbit-400g' img=0.97 texto=0.75
-2026-06-02 22:19:41,730 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g  (score=0.97)
-2026-06-02 22:19:41,831 [INFO] 
+2026-06-02 22:45:16,979 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g  (score=0.69)
+2026-06-02 22:45:17,079 [INFO] 
 [80/146] CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR  (ID: 15509678555523)
-2026-06-02 22:19:42,590 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:42,597 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-sensitive-salmon-with-rice-400g' img=0.96 texto=0.71
-2026-06-02 22:19:42,597 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g  (score=0.96)
-2026-06-02 22:19:42,697 [INFO] 
+2026-06-02 22:45:17,450 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g  (score=0.67)
+2026-06-02 22:45:17,550 [INFO] 
 [81/146] CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG  (ID: 15509678653827)
-2026-06-02 22:19:43,434 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:43,441 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-large-fresh-beef' img=0.90 texto=0.86
-2026-06-02 22:19:43,441 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-large-fresh-beef  (score=0.90)
-2026-06-02 22:19:43,541 [INFO] 
+2026-06-02 22:45:17,931 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-large-fresh-beef  (score=0.86)
+2026-06-02 22:45:18,031 [INFO] 
 [82/146] CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO  (ID: 15509678686595)
-2026-06-02 22:19:44,345 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:44,352 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-medium-large-chicken' img=0.93 texto=0.92
-2026-06-02 22:19:44,352 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-medium-large-chicken  (score=0.93)
-2026-06-02 22:19:44,452 [INFO] 
+2026-06-02 22:45:18,393 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-medium-large-chicken  (score=0.92)
+2026-06-02 22:45:18,493 [INFO] 
 [83/146] CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG  (ID: 15509678784899)
-2026-06-02 22:19:45,317 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:45,324 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-medium-fresh-beef' img=0.90 texto=0.87
-2026-06-02 22:19:45,324 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef  (score=0.90)
-2026-06-02 22:19:45,424 [INFO] 
+2026-06-02 22:45:18,836 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef  (score=0.87)
+2026-06-02 22:45:18,936 [INFO] 
 [84/146] CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG  (ID: 15509678850435)
-2026-06-02 22:19:46,201 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:46,208 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-senior-small-breed-lamb' img=0.93 texto=1.00
-2026-06-02 22:19:46,208 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb  (score=1.00)
-2026-06-02 22:19:46,308 [INFO] 
+2026-06-02 22:45:19,281 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb  (score=1.00)
+2026-06-02 22:45:19,381 [INFO] 
 [85/146] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA  (ID: 15509678948739)
-2026-06-02 22:19:47,082 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:47,088 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-starter-puppy-fresh-beef' img=0.92 texto=0.44
-2026-06-02 22:19:47,089 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef  (score=0.92)
-2026-06-02 22:19:47,189 [INFO] 
+2026-06-02 22:45:19,758 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-senior-small-fresh-beef  (score=0.79)
+2026-06-02 22:45:19,858 [INFO] 
 [86/146] CALIBRA DOG LIFE STARTER & PUPPY CORDERO  (ID: 15509679014275)
-2026-06-02 22:19:47,935 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:47,941 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-starter-puppy-lamb' img=0.93 texto=0.92
-2026-06-02 22:19:47,941 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-lamb  (score=0.93)
-2026-06-02 22:19:48,041 [INFO] 
+2026-06-02 22:45:20,216 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-lamb  (score=0.92)
+2026-06-02 22:45:20,316 [INFO] 
 [87/146] CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG  (ID: 15509679112579)
-2026-06-02 22:19:48,842 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:48,848 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-life-starter-puppy-fresh-beef' img=0.88 texto=0.87
-2026-06-02 22:19:48,848 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef  (score=0.88)
-2026-06-02 22:19:48,949 [INFO] 
+2026-06-02 22:45:20,658 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef  (score=0.87)
+2026-06-02 22:45:20,759 [INFO] 
 [88/146] CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  (ID: 15509679243651)
-2026-06-02 22:19:49,736 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:49,742 [INFO]   [img] mejor: 'calibra-dog-life-adult-chicken-with-rice-400g' texto=0.60 img=0.78 combinado=0.70
-2026-06-02 22:19:49,742 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g  (score=0.70)
-2026-06-02 22:19:49,843 [INFO] 
+2026-06-02 22:45:21,138 [INFO]   [img] desempate 4 cand. texto≈0.64 → calibra-dog-life-adult-chicken-with-rice-400g (img=0.78)
+2026-06-02 22:45:21,138 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g  (score=0.60)
+2026-06-02 22:45:21,238 [INFO] 
 [89/146] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G  (ID: 15509679178115)
-2026-06-02 22:19:50,573 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:50,579 [INFO]   [img] mejor: 'calibra-dog-life-adult-beef-with-carrots-400g' texto=0.56 img=0.80 combinado=0.69
-2026-06-02 22:19:50,579 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g  (score=0.69)
-2026-06-02 22:19:50,680 [INFO] 
+2026-06-02 22:45:21,688 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g  (score=0.56)
+2026-06-02 22:45:21,788 [INFO] 
 [90/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G  (ID: 15509679309187)
-2026-06-02 22:19:51,455 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:51,462 [INFO]   [img] mejor: 'calibra-dog-life-junior-large-fresh-beef' texto=0.69 img=0.72 combinado=0.70
-2026-06-02 22:19:51,462 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef  (score=0.70)
-2026-06-02 22:19:51,562 [INFO] 
+2026-06-02 22:45:22,159 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef  (score=0.69)
+2026-06-02 22:45:22,259 [INFO] 
 [91/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO 10X150G  (ID: 15509679374723)
-2026-06-02 22:19:52,225 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:52,231 [INFO]   [img] mejor: 'calibra-dog-life-puppy-junior-chicken-rice-400g' texto=0.67 img=0.78 combinado=0.73
-2026-06-02 22:19:52,232 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g  (score=0.73)
-2026-06-02 22:19:52,332 [INFO] 
+2026-06-02 22:45:22,613 [INFO]   [img] desempate 4 cand. texto≈0.67 → calibra-dog-life-puppy-junior-chicken-rice-400g (img=0.78)
+2026-06-02 22:45:22,613 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g  (score=0.67)
+2026-06-02 22:45:22,713 [INFO] 
 [92/146] CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G  (ID: 15509679407491)
-2026-06-02 22:19:53,176 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:53,182 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-can-with-lamb-chicken-1240g' img=0.87 texto=0.62
-2026-06-02 22:19:53,183 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-lamb-chicken-1240g  (score=0.87)
-2026-06-02 22:19:53,283 [INFO] 
+2026-06-02 22:45:23,107 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-lamb-chicken-1240g  (score=0.69)
+2026-06-02 22:45:23,207 [INFO] 
 [93/146] CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G  (ID: 15509679538563)
-2026-06-02 22:19:54,031 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:54,038 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-can-with-beef-1240g' img=0.90 texto=0.29
-2026-06-02 22:19:54,038 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g  (score=0.90)
-2026-06-02 22:19:54,138 [INFO] 
+2026-06-02 22:45:23,593 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g  (score=0.43)
+2026-06-02 22:45:23,693 [INFO] 
 [94/146] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID: 15509679735171)
-2026-06-02 22:19:54,642 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:54,653 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-adult-large-12-kg-new' img=0.90 texto=0.73
-2026-06-02 22:19:54,653 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-large-12-kg-new  (score=0.90)
-2026-06-02 22:19:54,754 [INFO] 
+2026-06-02 22:45:24,425 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-large-12-kg-new  (score=0.73)
+2026-06-02 22:45:24,525 [INFO] 
 [95/146] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID: 15509679833475)
-2026-06-02 22:19:55,236 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:55,248 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-adult-12-kg-new' img=0.93 texto=0.70
-2026-06-02 22:19:55,248 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new  (score=0.93)
-2026-06-02 22:19:55,348 [INFO] 
+2026-06-02 22:45:25,275 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new  (score=0.70)
+2026-06-02 22:45:25,375 [INFO] 
 [96/146] CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO  (ID: 15509679964547)
-2026-06-02 22:19:56,111 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:56,117 [INFO]   [img] mejor: 'calibra-dog-premium-line-adult-12-kg-new' texto=0.58 img=0.81 combinado=0.71
-2026-06-02 22:19:56,117 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new  (score=0.71)
-2026-06-02 22:19:56,218 [INFO] 
+2026-06-02 22:45:25,726 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new  (score=0.58)
+2026-06-02 22:45:25,826 [INFO] 
 [97/146] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID: 15509680128387)
-2026-06-02 22:19:56,720 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:56,732 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-adult-beef-12-kg-new' img=0.91 texto=0.75
-2026-06-02 22:19:56,732 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-beef-12-kg-new  (score=0.91)
-2026-06-02 22:19:56,832 [INFO] 
+2026-06-02 22:45:26,529 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-adult-beef-12-kg-new  (score=0.75)
+2026-06-02 22:45:26,629 [INFO] 
 [98/146] CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG  (ID: 15509680161155)
-2026-06-02 22:19:57,538 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:57,544 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-junior-large-12-kg-new' img=0.90 texto=0.69
-2026-06-02 22:19:57,544 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-junior-large-12-kg-new  (score=0.90)
-2026-06-02 22:19:57,645 [INFO] 
+2026-06-02 22:45:26,988 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-junior-large-12-kg-new  (score=0.69)
+2026-06-02 22:45:27,088 [INFO] 
 [99/146] CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO  (ID: 15509680193923)
-2026-06-02 22:19:58,391 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:58,397 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-puppy-junior-12-kg-new' img=0.88 texto=0.73
-2026-06-02 22:19:58,398 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-puppy-junior-12-kg-new  (score=0.88)
-2026-06-02 22:19:58,498 [INFO] 
+2026-06-02 22:45:27,459 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-puppy-junior-12-kg-new  (score=0.73)
+2026-06-02 22:45:27,560 [INFO] 
 [100/146] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID: 15509680357763)
-2026-06-02 22:19:58,986 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:19:58,998 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-line-senior-light-12-kg-new' img=0.90 texto=0.75
-2026-06-02 22:19:58,998 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-senior-light-12-kg-new  (score=0.90)
-2026-06-02 22:19:59,098 [INFO] 
+2026-06-02 22:45:28,268 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-line-senior-light-12-kg-new  (score=0.75)
+2026-06-02 22:45:28,368 [INFO] 
 [101/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G  (ID: 15509680554371)
-2026-06-02 22:19:59,859 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:19:59,866 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-fresh-salmon-150g' texto=0.50 img=0.72 combinado=0.62
-2026-06-02 22:19:59,866 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g  (score=0.62)
-2026-06-02 22:19:59,966 [INFO] 
+2026-06-02 22:45:28,734 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g  (score=0.53)
+2026-06-02 22:45:28,834 [INFO] 
 [102/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G  (ID: 15509680587139)
-2026-06-02 22:20:00,728 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:00,735 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g' texto=0.69 img=0.76 combinado=0.73
-2026-06-02 22:20:00,735 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g  (score=0.73)
-2026-06-02 22:20:00,835 [INFO] 
+2026-06-02 22:45:29,221 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g  (score=0.77)
+2026-06-02 22:45:29,321 [INFO] 
 [103/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESCO 150G  (ID: 15509680619907)
-2026-06-02 22:20:01,454 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:01,460 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-insect-salmon-150g' texto=0.73 img=0.77 combinado=0.75
-2026-06-02 22:20:01,461 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-salmon-150g  (score=0.75)
-2026-06-02 22:20:01,561 [INFO] 
+2026-06-02 22:45:29,687 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-salmon-150g  (score=0.82)
+2026-06-02 22:45:29,787 [INFO] 
 [104/146] CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G  (ID: 15509680718211)
-2026-06-02 22:20:02,369 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:02,376 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-fresh-duck-150g' texto=0.82 img=0.79 combinado=0.80
-2026-06-02 22:20:02,376 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g  (score=0.80)
-2026-06-02 22:20:02,476 [INFO] 
+2026-06-02 22:45:30,194 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g  (score=0.82)
+2026-06-02 22:45:30,294 [INFO] 
 [105/146] CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G  (ID: 15509680783747)
-2026-06-02 22:20:03,273 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:03,280 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-fresh-salmon-150g' texto=0.80 img=0.73 combinado=0.76
-2026-06-02 22:20:03,280 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g  (score=0.76)
-2026-06-02 22:20:03,380 [INFO] 
+2026-06-02 22:45:30,652 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g  (score=0.80)
+2026-06-02 22:45:30,752 [INFO] 
 [106/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G  (ID: 15509680816515)
-2026-06-02 22:20:04,182 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:04,189 [INFO]   [img] mejor: 'calibra-dog-verve-crunchy-snack-fresh-duck-150g' texto=0.67 img=0.79 combinado=0.73
-2026-06-02 22:20:04,189 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g  (score=0.73)
-2026-06-02 22:20:04,289 [INFO] 
+2026-06-02 22:45:31,119 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-duck-150g  (score=0.77)
+2026-06-02 22:45:31,219 [INFO] 
 [107/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G  (ID: 15509680849283)
-2026-06-02 22:20:05,073 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:05,079 [INFO]   [img] mejor: 'calibra-dog-verve-semi-moist-snack-fresh-chicken-150g' texto=0.62 img=0.75 combinado=0.69
-2026-06-02 22:20:05,080 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g  (score=0.69)
-2026-06-02 22:20:05,180 [INFO] 
+2026-06-02 22:45:31,626 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g  (score=0.77)
+2026-06-02 22:45:31,727 [INFO] 
 [108/146] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G  (ID: 15509680947587)
-2026-06-02 22:20:05,919 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:05,926 [INFO]   [img] CONFIRMADO visualmente: 'calibra-dog-premium-can-with-beef-1240g' img=0.83 texto=0.06
-2026-06-02 22:20:05,926 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g  (score=0.83)
-2026-06-02 22:20:06,027 [INFO] 
+2026-06-02 22:45:32,100 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-dog-premium-can-with-chicken-beef-1240g  (score=0.31)
+2026-06-02 22:45:32,200 [INFO] 
 [109/146] CALIBRA EAZZY ARENA GATO FINE 10KG  (ID: 15509681013123)
-2026-06-02 22:20:06,928 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:06,934 [INFO]   [img] CONFIRMADO visualmente: 'calibra-eazzy-cat-fine-10kg' img=0.90 texto=0.86
-2026-06-02 22:20:06,934 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-eazzy-cat-fine-10kg  (score=0.90)
-2026-06-02 22:20:07,035 [INFO] 
+2026-06-02 22:45:32,556 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-eazzy-cat-fine-10kg  (score=0.86)
+2026-06-02 22:45:32,656 [INFO] 
 [110/146] CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG  (ID: 15509681045891)
-2026-06-02 22:20:07,719 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:07,725 [INFO]   [img] CONFIRMADO visualmente: 'calibra-eazzy-cat-ultra-fine-10kg' img=0.87 texto=0.88
-2026-06-02 22:20:07,725 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-eazzy-cat-ultra-fine-10kg  (score=0.88)
-2026-06-02 22:20:07,825 [INFO] 
+2026-06-02 22:45:33,013 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-eazzy-cat-ultra-fine-10kg  (score=0.88)
+2026-06-02 22:45:33,113 [INFO] 
 [111/146] CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  (ID: 15509681078659)
-2026-06-02 22:20:08,591 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:08,599 [INFO]   [img] mejor: 'calibra-cat-premium-kitten-salmon-100g' texto=0.33 img=0.68 combinado=0.53
-2026-06-02 22:20:08,599 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g  (score=0.53)
-2026-06-02 22:20:08,699 [INFO] 
+2026-06-02 22:45:33,448 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g  (score=0.33)
+2026-06-02 22:45:33,548 [INFO] 
 [112/146] CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR  (ID: 15509681176963)
-2026-06-02 22:20:09,487 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:09,494 [INFO]   [img] mejor: 'calibra-joy-dog-classic-fish-chicken-slice-80g-new' texto=0.25 img=0.74 combinado=0.52
-2026-06-02 22:20:09,494 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new  (score=0.52)
-2026-06-02 22:20:09,594 [INFO] 
+2026-06-02 22:45:33,917 [INFO]   [img] desempate 6 cand. texto≈0.30 → calibra-gato-premium-line (img=0.45)
+2026-06-02 22:45:33,917 [INFO]   texto=0.27 < 0.3 → sin_match
+2026-06-02 22:45:33,917 [WARNING]   Sin URL (score=0.27)
+2026-06-02 22:45:34,017 [INFO] 
 [113/146] CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G  (ID: 15509681209731)
-2026-06-02 22:20:11,897 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (3 foto(s) Shopify)
-2026-06-02 22:20:11,914 [INFO]   [img] mejor: 'calibra-joy-dog-training-m-l-duck-chicken-300g' texto=0.25 img=0.65 combinado=0.47
-2026-06-02 22:20:11,914 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g  (score=0.47)
-2026-06-02 22:20:12,014 [INFO] 
+2026-06-02 22:45:35,187 [INFO]   [img] desempate 42 cand. texto≈0.29 → calibra-joy-dog-training-m-l-duck-chicken-300g (img=0.65)
+2026-06-02 22:45:35,187 [INFO]   texto=0.25 < 0.3 → sin_match
+2026-06-02 22:45:35,187 [WARNING]   Sin URL (score=0.25)
+2026-06-02 22:45:35,287 [INFO] 
 [114/146] CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG  (ID: 15509681242499)
-2026-06-02 22:20:14,109 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (3 foto(s) Shopify)
-2026-06-02 22:20:14,126 [INFO]   [img] mejor: 'calibra-joy-dog-training-m-l-duck-chicken-300g' texto=0.25 img=0.66 combinado=0.47
-2026-06-02 22:20:14,126 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g  (score=0.47)
-2026-06-02 22:20:14,226 [INFO] 
+2026-06-02 22:45:36,315 [INFO]   [img] desempate 14 cand. texto≈0.33 → calibra-joy-dog-training-s-m-beef-150g (img=0.60)
+2026-06-02 22:45:36,315 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g  (score=0.33)
+2026-06-02 22:45:36,415 [INFO] 
 [115/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR  (ID: 15509681308035)
-2026-06-02 22:20:16,639 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (3 foto(s) Shopify)
-2026-06-02 22:20:16,656 [INFO]   [img] mejor: 'calibra-joy-dog-training-m-l-duck-chicken-300g' texto=0.25 img=0.68 combinado=0.49
-2026-06-02 22:20:16,657 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g  (score=0.49)
-2026-06-02 22:20:16,757 [INFO] 
+2026-06-02 22:45:37,515 [INFO]   [img] desempate 14 cand. texto≈0.33 → calibra-joy-dog-training-s-m-salmon-insect-150g (img=0.61)
+2026-06-02 22:45:37,515 [INFO]   texto=0.27 < 0.3 → sin_match
+2026-06-02 22:45:37,515 [WARNING]   Sin URL (score=0.27)
+2026-06-02 22:45:37,615 [INFO] 
 [116/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR  (ID: 15509681373571)
-2026-06-02 22:20:18,290 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:20:18,302 [INFO]   [img] mejor: 'calibra-joy-dog-training-m-l-duck-chicken-300g' texto=0.25 img=0.61 combinado=0.45
-2026-06-02 22:20:18,302 [INFO]   [img] RECHAZO: img=0.61 ≤ WEAK y texto=0.25 < 0.55 → sin_match (evita falso positivo)
-2026-06-02 22:20:18,302 [WARNING]   Sin URL (score=0.45)
-2026-06-02 22:20:18,402 [INFO] 
+2026-06-02 22:45:38,322 [INFO]   [img] desempate 14 cand. texto≈0.33 → calibra-joy-dog-salami-chicken-30g (img=0.58)
+2026-06-02 22:45:38,322 [INFO]   texto=0.27 < 0.3 → sin_match
+2026-06-02 22:45:38,322 [WARNING]   Sin URL (score=0.27)
+2026-06-02 22:45:38,423 [INFO] 
 [117/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR  (ID: 15509681406339)
-2026-06-02 22:20:19,911 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:20:19,923 [INFO]   [img] mejor: 'calibra-joy-dog-classic-salmon-sticks-80g-new' texto=0.38 img=0.56 combinado=0.48
-2026-06-02 22:20:19,924 [INFO]   [img] RECHAZO: img=0.56 ≤ WEAK y texto=0.38 < 0.55 → sin_match (evita falso positivo)
-2026-06-02 22:20:19,924 [WARNING]   Sin URL (score=0.48)
-2026-06-02 22:20:20,024 [INFO] 
+2026-06-02 22:45:39,122 [INFO]   [img] desempate 7 cand. texto≈0.35 → calibra-joy-dog-salami-beef-30g (img=0.60)
+2026-06-02 22:45:39,122 [INFO]   texto=0.29 < 0.3 → sin_match
+2026-06-02 22:45:39,122 [WARNING]   Sin URL (score=0.29)
+2026-06-02 22:45:39,223 [INFO] 
 [118/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR  (ID: 15509681439107)
-2026-06-02 22:20:21,559 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (2 foto(s) Shopify)
-2026-06-02 22:20:21,571 [INFO]   [img] mejor: 'calibra-joy-dog-classic-salmon-sticks-80g-new' texto=0.38 img=0.57 combinado=0.49
-2026-06-02 22:20:21,571 [INFO]   [img] RECHAZO: img=0.57 ≤ WEAK y texto=0.38 < 0.55 → sin_match (evita falso positivo)
-2026-06-02 22:20:21,571 [WARNING]   Sin URL (score=0.49)
-2026-06-02 22:20:21,671 [INFO] 
+2026-06-02 22:45:40,140 [INFO]   [img] desempate 6 cand. texto≈0.40 → calibra-joy-dog-salami-beef-30g (img=0.58)
+2026-06-02 22:45:40,140 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-salami-beef-30g  (score=0.33)
+2026-06-02 22:45:40,240 [INFO] 
 [119/146] CALIBRA JOY DOG CLASSIC AROS POLLO 80GR  (ID: 15509681504643)
-2026-06-02 22:20:22,504 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:22,510 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-chicken-bits-new' img=0.90 texto=0.64
-2026-06-02 22:20:22,510 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-chicken-bits-new  (score=0.90)
-2026-06-02 22:20:22,611 [INFO] 
+2026-06-02 22:45:40,587 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-chicken-bits-new  (score=0.64)
+2026-06-02 22:45:40,687 [INFO] 
 [120/146] CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR  (ID: 15509681537411)
-2026-06-02 22:20:23,353 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:23,360 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-cod-chicken-sushi-80g-new' img=0.83 texto=0.67
-2026-06-02 22:20:23,360 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-cod-chicken-sushi-80g-new  (score=0.83)
-2026-06-02 22:20:23,460 [INFO] 
+2026-06-02 22:45:41,045 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-cod-chicken-sushi-80g-new  (score=0.67)
+2026-06-02 22:45:41,146 [INFO] 
 [121/146] CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR  (ID: 15509681701251)
-2026-06-02 22:20:24,250 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:24,257 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-dental-brushes-85g-new' img=0.84 texto=0.78
-2026-06-02 22:20:24,257 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-dental-brushes-85g-new  (score=0.84)
-2026-06-02 22:20:24,357 [INFO] 
+2026-06-02 22:45:41,523 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-dental-brushes-85g-new  (score=0.78)
+2026-06-02 22:45:41,623 [INFO] 
 [122/146] CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR  (ID: 15509681766787)
-2026-06-02 22:20:25,291 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:25,298 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-large-lamb-fillets-80g-new' img=0.89 texto=0.67
-2026-06-02 22:20:25,298 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-large-lamb-fillets-80g-new  (score=0.89)
-2026-06-02 22:20:25,398 [INFO] 
+2026-06-02 22:45:41,997 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-large-lamb-fillets-80g-new  (score=0.67)
+2026-06-02 22:45:42,097 [INFO] 
 [123/146] CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO  (ID: 15509682061699)
-2026-06-02 22:20:25,645 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:25,652 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-fish-chicken-sandwich' img=0.87 texto=0.91
-2026-06-02 22:20:25,652 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-sandwich  (score=0.91)
-2026-06-02 22:20:25,752 [INFO] 
+2026-06-02 22:45:42,453 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-sandwich  (score=0.91)
+2026-06-02 22:45:42,553 [INFO] 
 [124/146] CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR  (ID: 15509682160003)
-2026-06-02 22:20:26,594 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:26,601 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-fish-chicken-slice-80g-new' img=0.88 texto=0.83
-2026-06-02 22:20:26,601 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new  (score=0.88)
-2026-06-02 22:20:26,701 [INFO] 
+2026-06-02 22:45:42,913 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new  (score=0.83)
+2026-06-02 22:45:43,013 [INFO] 
 [125/146] CALIBRA JOY DOG CLASSIC STICKS SALMON  (ID: 15509682192771)
-2026-06-02 22:20:26,957 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:26,964 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-salmon-sticks-80g-new' img=0.85 texto=0.88
-2026-06-02 22:20:26,964 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-salmon-sticks-80g-new  (score=0.88)
-2026-06-02 22:20:27,064 [INFO] 
+2026-06-02 22:45:43,386 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-salmon-sticks-80g-new  (score=0.88)
+2026-06-02 22:45:43,486 [INFO] 
 [126/146] CALIBRA JOY DOG CLASSIC STICKS TERNERA  (ID: 15509682291075)
-2026-06-02 22:20:27,324 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:27,331 [INFO]   [img] mejor: 'calibra-joy-dog-classic-beef-sticks' texto=0.73 img=0.77 combinado=0.75
-2026-06-02 22:20:27,331 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-beef-sticks  (score=0.75)
-2026-06-02 22:20:27,431 [INFO] 
+2026-06-02 22:45:43,881 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-beef-sticks  (score=0.73)
+2026-06-02 22:45:43,981 [INFO] 
 [127/146] CALIBRA JOY DOG CLASSIC STRIPS CORDERO  (ID: 15509682389379)
-2026-06-02 22:20:27,675 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:27,681 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-lamb-strips' img=0.91 texto=0.89
-2026-06-02 22:20:27,682 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-lamb-strips  (score=0.91)
-2026-06-02 22:20:27,782 [INFO] 
+2026-06-02 22:45:44,345 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-lamb-strips  (score=0.89)
+2026-06-02 22:45:44,445 [INFO] 
 [128/146] CALIBRA JOY DOG CLASSIC STRIPS PATO  (ID: 15509682454915)
-2026-06-02 22:20:28,038 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:28,045 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-classic-duck-strips-80g-new' img=0.84 texto=0.89
-2026-06-02 22:20:28,045 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-duck-strips-80g-new  (score=0.89)
-2026-06-02 22:20:28,145 [INFO] 
+2026-06-02 22:45:44,806 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-classic-duck-strips-80g-new  (score=0.89)
+2026-06-02 22:45:44,906 [INFO] 
 [129/146] CALIBRA JOY DOG MINI DADOS SALMON 70GR  (ID: 15509682553219)
-2026-06-02 22:20:28,973 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:28,980 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-mini-salmon-cube-70g-new' img=0.87 texto=0.67
-2026-06-02 22:20:28,980 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-salmon-cube-70g-new  (score=0.87)
-2026-06-02 22:20:29,080 [INFO] 
+2026-06-02 22:45:45,272 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-salmon-cube-70g-new  (score=0.67)
+2026-06-02 22:45:45,372 [INFO] 
 [130/146] CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR  (ID: 15509682585987)
-2026-06-02 22:20:29,888 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:29,894 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-mini-duck-cod-sandwich-70g-new' img=0.86 texto=0.71
-2026-06-02 22:20:29,895 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-duck-cod-sandwich-70g-new  (score=0.86)
-2026-06-02 22:20:29,995 [INFO] 
+2026-06-02 22:45:45,729 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-duck-cod-sandwich-70g-new  (score=0.71)
+2026-06-02 22:45:45,829 [INFO] 
 [131/146] CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR  (ID: 15509682651523)
-2026-06-02 22:20:30,793 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:30,799 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-mini-chicken-cod-sandwich-70g-new' img=0.85 texto=0.71
-2026-06-02 22:20:30,800 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-chicken-cod-sandwich-70g-new  (score=0.85)
-2026-06-02 22:20:30,900 [INFO] 
+2026-06-02 22:45:46,183 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-mini-chicken-cod-sandwich-70g-new  (score=0.71)
+2026-06-02 22:45:46,284 [INFO] 
 [132/146] CALIBRA JOY DOG TRAINING M&L PATO Y POLLO 300G  (ID: 15509682684291)
-2026-06-02 22:20:31,601 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:31,608 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-m-l-duck-chicken-300g' img=0.89 texto=1.00
-2026-06-02 22:20:31,608 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g  (score=1.00)
-2026-06-02 22:20:31,708 [INFO] 
+2026-06-02 22:45:46,638 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g  (score=1.00)
+2026-06-02 22:45:46,739 [INFO] 
 [133/146] CALIBRA JOY DOG TRAINING M&L VENADO Y PATO 300G  (ID: 15509682749827)
-2026-06-02 22:20:32,424 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:32,431 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-m-l-venison-duck-300g' img=0.88 texto=1.00
-2026-06-02 22:20:32,431 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-venison-duck-300g  (score=1.00)
-2026-06-02 22:20:32,531 [INFO] 
+2026-06-02 22:45:47,091 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-m-l-venison-duck-300g  (score=1.00)
+2026-06-02 22:45:47,192 [INFO] 
 [134/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S POLLO 150G  (ID: 15509682782595)
-2026-06-02 22:20:33,282 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:33,289 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-puppy-adult-s-chicken-150g' img=0.85 texto=1.00
-2026-06-02 22:20:33,289 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-puppy-adult-s-chicken-150g  (score=1.00)
-2026-06-02 22:20:33,389 [INFO] 
+2026-06-02 22:45:47,566 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-puppy-adult-s-chicken-150g  (score=1.00)
+2026-06-02 22:45:47,666 [INFO] 
 [135/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR  (ID: 15509682848131)
-2026-06-02 22:20:34,086 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:34,093 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g' img=0.87 texto=0.73
-2026-06-02 22:20:34,093 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g  (score=0.87)
-2026-06-02 22:20:34,193 [INFO] 
+2026-06-02 22:45:48,038 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g  (score=0.73)
+2026-06-02 22:45:48,138 [INFO] 
 [136/146] CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR  (ID: 15509682946435)
-2026-06-02 22:20:34,909 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:34,916 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-s-m-salmon-insect-150g' img=0.88 texto=0.78
-2026-06-02 22:20:34,916 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-s-m-salmon-insect-150g  (score=0.88)
-2026-06-02 22:20:35,016 [INFO] 
+2026-06-02 22:45:48,494 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-s-m-salmon-insect-150g  (score=0.78)
+2026-06-02 22:45:48,594 [INFO] 
 [137/146] CALIBRA JOY DOG TRAINING S&M TERNERA 150GR  (ID: 15509682880899)
-2026-06-02 22:20:35,831 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:35,838 [INFO]   [img] CONFIRMADO visualmente: 'calibra-joy-dog-training-s-m-beef-150g' img=0.86 texto=0.64
-2026-06-02 22:20:35,838 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g  (score=0.86)
-2026-06-02 22:20:35,938 [INFO] 
+2026-06-02 22:45:48,942 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g  (score=0.64)
+2026-06-02 22:45:49,042 [INFO] 
 [138/146] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G  (ID: 15509682979203)
-2026-06-02 22:20:36,662 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:36,668 [INFO]   [img] CONFIRMADO visualmente: 'calibra-rockets' img=0.86 texto=0.25
-2026-06-02 22:20:36,669 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets  (score=0.86)
-2026-06-02 22:20:36,769 [INFO] 
+2026-06-02 22:45:49,416 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-chinchillas-degus-900g  (score=0.86)
+2026-06-02 22:45:49,516 [INFO] 
 [139/146] CALIBRA ROCKETS COBAYAS 900G  (ID: 15509683044739)
-2026-06-02 22:20:37,507 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:37,513 [INFO]   [img] CONFIRMADO visualmente: 'calibra-rockets-mix-guinea-pigs-900g' img=0.85 texto=0.33
-2026-06-02 22:20:37,513 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-guinea-pigs-900g  (score=0.85)
-2026-06-02 22:20:37,614 [INFO] 
+2026-06-02 22:45:49,875 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-guinea-pigs-900g  (score=0.50)
+2026-06-02 22:45:49,975 [INFO] 
 [140/146] CALIBRA ROCKETS CONEJOS 900G  (ID: 15509683143043)
-2026-06-02 22:20:38,464 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:38,470 [INFO]   [img] CONFIRMADO visualmente: 'calibra-rockets-mix-rabbits-900g' img=0.88 texto=0.40
-2026-06-02 22:20:38,470 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-rabbits-900g  (score=0.88)
-2026-06-02 22:20:38,571 [INFO] 
+2026-06-02 22:45:50,351 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-rabbits-900g  (score=0.40)
+2026-06-02 22:45:50,451 [INFO] 
 [141/146] CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G  (ID: 15509683175811)
-2026-06-02 22:20:39,278 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:39,285 [INFO]   [img] CONFIRMADO visualmente: 'calibra-rockets-mix-hamsters-small-rodents-900g' img=0.87 texto=0.22
-2026-06-02 22:20:39,285 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-hamsters-small-rodents-900g  (score=0.87)
-2026-06-02 22:20:39,385 [INFO] 
+2026-06-02 22:45:50,820 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-mix-hamsters-small-rodents-900g  (score=0.30)
+2026-06-02 22:45:50,920 [INFO] 
 [142/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G  (ID: 15509683241347)
-2026-06-02 22:20:40,163 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:40,169 [INFO]   [img] mejor: 'calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g' texto=0.25 img=0.79 combinado=0.55
-2026-06-02 22:20:40,169 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g  (score=0.55)
-2026-06-02 22:20:40,269 [INFO] 
+2026-06-02 22:45:51,295 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g  (score=0.43)
+2026-06-02 22:45:51,396 [INFO] 
 [143/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G  (ID: 15509683274115)
-2026-06-02 22:20:40,995 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:41,002 [INFO]   [img] mejor: 'calibra-rockets-sticks-rabbits-rodents-fruits-120g' texto=0.30 img=0.80 combinado=0.58
-2026-06-02 22:20:41,002 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-fruits-120g  (score=0.58)
-2026-06-02 22:20:41,102 [INFO] 
+2026-06-02 22:45:51,749 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-fruits-120g  (score=0.42)
+2026-06-02 22:45:51,850 [INFO] 
 [144/146] CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G  (ID: 15509683405187)
-2026-06-02 22:20:41,806 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:41,813 [INFO]   [img] mejor: 'calibra-rockets-sticks-rabbits-rodents-vegetables-120g' texto=0.33 img=0.81 combinado=0.59
-2026-06-02 22:20:41,813 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-vegetables-120g  (score=0.59)
-2026-06-02 22:20:41,913 [INFO] 
+2026-06-02 22:45:52,196 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-vegetables-120g  (score=0.42)
+2026-06-02 22:45:52,296 [INFO] 
 [145/146] CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G  (ID: 15509683470723)
-2026-06-02 22:20:42,608 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:42,614 [INFO]   [img] mejor: 'calibra-rockets-sticks-small-rodents-nuts-coconut-120g' texto=0.30 img=0.79 combinado=0.57
-2026-06-02 22:20:42,614 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-nuts-coconut-120g  (score=0.57)
-2026-06-02 22:20:42,714 [INFO] 
+2026-06-02 22:45:52,651 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-nuts-coconut-120g  (score=0.50)
+2026-06-02 22:45:52,751 [INFO] 
 [146/146] CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G  (ID: 15509683569027)
-2026-06-02 22:20:43,448 [INFO]   [img] backend=clip STRONG=0.82 WEAK=0.62 (1 foto(s) Shopify)
-2026-06-02 22:20:43,455 [INFO]   [img] mejor: 'calibra-rockets-sticks-small-rodents-vegeta-nuts-120g' texto=0.30 img=0.76 combinado=0.55
-2026-06-02 22:20:43,455 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-vegeta-nuts-120g  (score=0.55)
-2026-06-02 22:20:43,555 [INFO] 
+2026-06-02 22:45:53,101 [INFO]   [dry-run] PONDRÍA → https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-vegeta-nuts-120g  (score=0.43)
+2026-06-02 22:45:53,201 [INFO] 
 ============================================================
-2026-06-02 22:20:43,555 [INFO] RESUMEN
-2026-06-02 22:20:43,555 [INFO] ============================================================
-2026-06-02 22:20:43,555 [INFO]   total         : 146
-2026-06-02 22:20:43,555 [INFO]   guardadas     : 143
-2026-06-02 22:20:43,555 [INFO]   sin_match     : 3
-2026-06-02 22:20:43,557 [INFO] 
+2026-06-02 22:45:53,201 [INFO] RESUMEN
+2026-06-02 22:45:53,201 [INFO] ============================================================
+2026-06-02 22:45:53,201 [INFO]   total         : 146
+2026-06-02 22:45:53,201 [INFO]   guardadas     : 141
+2026-06-02 22:45:53,201 [INFO]   sin_match     : 5
+2026-06-02 22:45:53,202 [INFO] 
 [dry-run] resultados guardados en resultados/calibra_resolver_dryrun.json (no se escribió en Shopify)
-2026-06-02 22:20:43,558 [INFO] 
+2026-06-02 22:45:53,204 [INFO] 
 ============================================================
-2026-06-02 22:20:43,558 [INFO] DRY-RUN vs SNAPSHOT (url_fabricante)
-2026-06-02 22:20:43,558 [INFO] ============================================================
-2026-06-02 22:20:43,558 [INFO]   Snapshot con URL          : 134
-2026-06-02 22:20:43,558 [INFO]   ✓ Reproduce igual         : 111  (82%)
-2026-06-02 22:20:43,558 [INFO]   ✗ Distinto (REGRESIÓN)    : 23
-2026-06-02 22:20:43,558 [INFO]   ✗ Borraría (sin_match)    : 0
-2026-06-02 22:20:43,558 [INFO]   + Aporta nueva (snap vacío): 9
-2026-06-02 22:20:43,558 [INFO]     [DISTINTO] CALIBRA CAT KITTEN POUCH SALMON CAJA 24X10
-2026-06-02 22:20:43,558 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g
-2026-06-02 22:20:43,558 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g
-2026-06-02 22:20:43,558 [INFO]     [DISTINTO] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR
-2026-06-02 22:20:43,558 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-adult-chicken-200g
-2026-06-02 22:20:43,558 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g
-2026-06-02 22:20:43,558 [INFO]     [DISTINTO] CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-adult-salmon-200g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT LIFE LATA ADULT TERNERA 6X200G
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-adult-beef-200g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X2
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-sensitive-rabbit-200g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-sensitive-lamb-200g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-life-pouches-adult-multipack-12x85g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-premium-adult-lamb-poultry-100g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT PREMIUM ADULT PAVO
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-premium-line-adult-turkey
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-premium-line-adult-beef
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA CAT STERILISED POUCH HIGADO CAJA 2
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-premium-sterilised-liver-100g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG GF VERVE ADULT POLLO Y PATO CA
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-verve-gf-adult-chicken-duck-400g
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE ADULT LARGE BREED POLLO
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-large-breed-chicken
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-chicken
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNER
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-medium-fresh-beef
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE ADULT SMALL BREED POLLO
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-small-breed-chicken
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-small-fresh-beef
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE JUNIOR LARGE BREED CORDER
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-junior-large-breed-lamb
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb
-2026-06-02 22:20:43,559 [INFO]     [DISTINTO] CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 
-2026-06-02 22:20:43,559 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-junior-large-breed-chicken
-2026-06-02 22:20:43,559 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb
-2026-06-02 22:20:43,560 [INFO]     [DISTINTO] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNER
-2026-06-02 22:20:43,560 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-senior-small-fresh-beef
-2026-06-02 22:20:43,560 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef
-2026-06-02 22:20:43,560 [INFO]     [DISTINTO] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X15
-2026-06-02 22:20:43,560 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400ghttps://www.mycalibra.eu/calibra-dog-life-kapsa-adult-beef-150g
-2026-06-02 22:20:43,560 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g
-2026-06-02 22:20:43,560 [INFO]     [DISTINTO] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE
-2026-06-02 22:20:43,560 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-herring-150g
-2026-06-02 22:20:43,560 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g
-2026-06-02 22:20:43,560 [INFO]     [DISTINTO] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LA
-2026-06-02 22:20:43,560 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-premium-can-with-chicken-beef-1240g
-2026-06-02 22:20:43,560 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g
-2026-06-02 22:20:43,560 [INFO]     [DISTINTO] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G
-2026-06-02 22:20:43,560 [INFO]        snapshot : https://www.mycalibra.es/calibra-rockets-mix-chinchillas-degus-900g
-2026-06-02 22:20:43,560 [INFO]        resolver : https://www.mycalibra.es/calibra-rockets
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 1  → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO   → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA DOG PREMIUM LINE ADULT SENSITIVE C  → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  → https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70G  → https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALA  → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUC  → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g
-2026-06-02 22:20:43,560 [INFO]     [APORTA]   CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALAB  → https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g
-2026-06-02 22:20:43,560 [INFO] ============================================================
+2026-06-02 22:45:53,204 [INFO] DRY-RUN vs SNAPSHOT (url_fabricante)
+2026-06-02 22:45:53,204 [INFO] ============================================================
+2026-06-02 22:45:53,204 [INFO]   Snapshot con URL          : 134
+2026-06-02 22:45:53,204 [INFO]   ✓ Reproduce igual         : 129  (96%)
+2026-06-02 22:45:53,204 [INFO]   ✗ Distinto (REGRESIÓN)    : 5
+2026-06-02 22:45:53,204 [INFO]   ✗ Borraría (sin_match)    : 0
+2026-06-02 22:45:53,204 [INFO]   + Aporta nueva (snap vacío): 7
+2026-06-02 22:45:53,204 [INFO]     [DISTINTO] CALIBRA CAT STERILISED POUCH MULTIPACK CAJ
+2026-06-02 22:45:53,204 [INFO]        snapshot : https://www.mycalibra.es/calibra-cat-premium-steril-pouches-multipack-12x100g
+2026-06-02 22:45:53,204 [INFO]        resolver : https://www.mycalibra.es/calibra-cat-premium-sterilised-liver-100g
+2026-06-02 22:45:53,205 [INFO]     [DISTINTO] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG
+2026-06-02 22:45:53,205 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-en-neutered-new
+2026-06-02 22:45:53,205 [INFO]        resolver : https://www.mycalibra.es/calibra-expert-nutrition
+2026-06-02 22:45:53,205 [INFO]     [DISTINTO] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X15
+2026-06-02 22:45:53,205 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400ghttps://www.mycalibra.eu/calibra-dog-life-kapsa-adult-beef-150g
+2026-06-02 22:45:53,205 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g
+2026-06-02 22:45:53,205 [INFO]     [DISTINTO] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE
+2026-06-02 22:45:53,205 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-herring-150g
+2026-06-02 22:45:53,205 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g
+2026-06-02 22:45:53,205 [INFO]     [DISTINTO] CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FR
+2026-06-02 22:45:53,205 [INFO]        snapshot : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g
+2026-06-02 22:45:53,205 [INFO]        resolver : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-duck-150g
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  → https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 1  → https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO   → https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA DOG PREMIUM LINE ADULT SENSITIVE C  → https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  → https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUC  → https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g
+2026-06-02 22:45:53,205 [INFO]     [APORTA]   CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIR  → https://www.mycalibra.es/calibra-joy-dog-salami-beef-30g
+2026-06-02 22:45:53,205 [INFO] ============================================================
