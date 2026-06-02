@@ -1,0 +1,87 @@
+2026-06-02 08:05:43,784 [INFO] ============================================================
+2026-06-02 08:05:43,784 [INFO]   Vendor   : ACANA
+2026-06-02 08:05:43,784 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-02 08:05:43,784 [INFO]   Pipeline : standard
+2026-06-02 08:05:43,784 [INFO]   Padding  : auto
+2026-06-02 08:05:43,784 [INFO] ============================================================
+2026-06-02 08:05:44,045 [INFO] Token obtenido
+2026-06-02 08:05:45,452 [INFO] [1/26] ACANA CANINE ADULT DOG RECIPE  (ID: 15509599551875)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-adult.html
+    url_fabricante_2: —
+2026-06-02 08:05:46,056 [INFO] [2/26] ACANA CANINE ADULT FREE RUN PATO  (ID: 15509599715715)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-singles-duck-new.html
+    url_fabricante_2: —
+2026-06-02 08:05:46,679 [INFO] [3/26] ACANA CANINE ADULT HERITAGE SPORT AGILITY  (ID: 15509600108931)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-sport-agility.html
+    url_fabricante_2: —
+2026-06-02 08:05:47,292 [INFO] [4/26] ACANA CANINE ADULT LARGE BREED RECIPE  (ID: 15509599912323)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-adult-large.html
+    url_fabricante_2: —
+2026-06-02 08:05:47,916 [INFO] [5/26] ACANA CANINE ADULT LIGHT & FIT  (ID: 15509600174467)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-light-fit.html
+    url_fabricante_2: —
+2026-06-02 08:05:48,525 [INFO] [6/26] ACANA CANINE ADULT REGIONALS GRASSLANDS PRAIRIE  (ID: 15509600338307)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-grasslands.html
+    url_fabricante_2: —
+2026-06-02 08:05:49,130 [INFO] [7/26] ACANA CANINE ADULT REGIONALS PACIFICA  (ID: 15509600502147)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-pacifica.html
+    url_fabricante_2: —
+2026-06-02 08:05:49,720 [INFO] [8/26] ACANA CANINE ADULT REGIONALS RANCHLANDS PRAIRIE  (ID: 15509600665987)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-ranchlands.html
+    url_fabricante_2: —
+2026-06-02 08:05:50,324 [INFO] [9/26] ACANA CANINE ADULT REGIONALS WILD PRAIRIE  (ID: 15509600764291)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-wild-prairie.html
+    url_fabricante_2: —
+2026-06-02 08:05:50,914 [INFO] [10/26] ACANA CANINE ADULT SINGLES GRASS FED  (ID: 15509600993667)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-singles-lamb-new.html
+    url_fabricante_2: —
+2026-06-02 08:05:51,496 [INFO] [11/26] ACANA CANINE ADULT SINGLES YORKSHIRE PORK  (ID: 15509601190275)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-singles-pork-new.html
+    url_fabricante_2: —
+2026-06-02 08:05:52,084 [INFO] [12/26] ACANA CANINE ADULT SMALL BREED RECIPE  (ID: 15509600010627)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-adult-small.html
+    url_fabricante_2: —
+2026-06-02 08:05:52,685 [INFO] [13/26] ACANA CANINE CLASSIC ADULT PRAIRIE POULTRY  (ID: 15509601288579)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-prairiepoultry.html
+    url_fabricante_2: —
+2026-06-02 08:05:53,293 [INFO] [14/26] ACANA CANINE PUPPY LARGE BREED  (ID: 15509601714563)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-large.html
+    url_fabricante_2: —
+2026-06-02 08:05:53,897 [INFO] [15/26] ACANA CANINE PUPPY RECIPE  (ID: 15509601517955)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-junior.html
+    url_fabricante_2: —
+2026-06-02 08:05:54,513 [INFO] [16/26] ACANA CANINE PUPPY SMALL BREED RECIPE  (ID: 15509601812867)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-puppy-small.html
+    url_fabricante_2: —
+2026-06-02 08:05:55,119 [INFO] [17/26] ACANA CANINE RED MEAT  (ID: 15509601878403)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-classicred.html
+    url_fabricante_2: —
+2026-06-02 08:05:55,709 [INFO] [18/26] ACANA CANINE SENIOR RECIPE  (ID: 15509602042243)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-senior.html
+    url_fabricante_2: —
+2026-06-02 08:05:56,305 [INFO] [19/26] ACANA CANINE WILD COAST  (ID: 15509602238851)
+    url_fabricante  : https://emea.acana.com/es-ES/para-perros/eu-aca-wildcoast.html
+    url_fabricante_2: —
+2026-06-02 08:05:56,893 [INFO] [20/26] ACANA FELINE ADULT BOUNTIFUL  (ID: 15509602664835)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-bountiful-catch-cat.html
+    url_fabricante_2: —
+2026-06-02 08:05:57,489 [INFO] [21/26] ACANA FELINE ADULT GRASSLANDS  (ID: 15509602861443)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-grasslands-new-cat.html
+    url_fabricante_2: —
+2026-06-02 08:05:58,067 [INFO] [22/26] ACANA FELINE ADULT HOMESTEAD HARVEST  (ID: 15509602992515)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-homestead-cat.html
+    url_fabricante_2: —
+2026-06-02 08:05:58,672 [INFO] [23/26] ACANA FELINE ADULT INDOOR  (ID: 15509603058051)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-indoor-entree-cat.html
+    url_fabricante_2: —
+2026-06-02 08:05:59,274 [INFO] [24/26] ACANA FELINE ADULT PACIFICA  (ID: 15509603189123)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-pacifica-new-cat.html
+    url_fabricante_2: —
+2026-06-02 08:05:59,888 [INFO] [25/26] ACANA FELINE ADULT WILD PRAIRIE  (ID: 15509603320195)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-wild-prairie-new-cat.html
+    url_fabricante_2: —
+2026-06-02 08:06:00,484 [INFO] [26/26] ACANA FELINE KITTEN FIRST FEAST  (ID: 15509603385731)
+    url_fabricante  : https://emea.acana.com/es-ES/para-gatos/eu-aca-first-feast-cat.html
+    url_fabricante_2: —
+2026-06-02 08:06:00,685 [INFO] 
+Snapshot guardado: resultados/acana_urls_snapshot.json (26 productos, 26 con url_fabricante, 0 con url_fabricante_2)
