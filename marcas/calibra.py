@@ -277,6 +277,52 @@ def _collect_product_links(page, base: str) -> set:
     return found
 
 
+def _parse_sitemap_locs(xml_text: str) -> list:
+    """Extrae todas las <loc> de un sitemap o índice de sitemaps (regex, tolerante
+    a namespaces). Función pura para poder testearla sin red."""
+    if not xml_text:
+        return []
+    return [m.strip() for m in re.findall(r"<loc>\s*(.*?)\s*</loc>",
+                                          xml_text, re.IGNORECASE | re.DOTALL)]
+
+
+def _collect_sitemap_links(page, base: str) -> set:
+    """Descubre URLs de producto desde el/los sitemap(s) del sitio. Captura
+    productos que NO están enlazados desde las categorías crawleadas (p. ej. la
+    línea ROCKETS de roedores en mycalibra.es). Devuelve set de URLs de producto."""
+    found: set = set()
+    seen_maps: set = set()
+    queue = [base.rstrip("/") + "/sitemap.xml"]
+    depth = 0
+    while queue and depth < 3:
+        depth += 1
+        next_queue = []
+        for sm_url in queue:
+            if sm_url in seen_maps:
+                continue
+            seen_maps.add(sm_url)
+            data = _fetch_bytes_via_page(page, sm_url)
+            if not data:
+                continue
+            try:
+                text = data.decode("utf-8", "ignore")
+            except Exception:
+                continue
+            locs = _parse_sitemap_locs(text)
+            for loc in locs:
+                low = loc.lower()
+                if low.endswith(".xml") or "sitemap" in low.rsplit("/", 1)[-1]:
+                    next_queue.append(loc)          # sitemap anidado (índice)
+                else:
+                    u = loc.split("?")[0].rstrip("/")
+                    if _is_product_url(u, base):
+                        found.add(u)
+        queue = next_queue
+    if found:
+        log.info(f"  Sitemap: {len(found)} URLs de producto descubiertas")
+    return found
+
+
 def _fetch_bytes_via_page(page, url: str) -> bytes | None:
     """Descarga bytes usando el contexto del navegador ya calentado (cookies +
     fingerprint que superó el gate anti-bot). Imprescindible para el CDN de
@@ -340,6 +386,16 @@ def _scrape_source(page, source: dict) -> dict:
             # Si la página no aportó links nuevos, hemos llegado al final
             if len(all_product_urls) == links_before and page_num > 1:
                 break
+
+    # Completar con el sitemap: captura productos no enlazados desde las
+    # categorías (la línea ROCKETS de roedores, snacks sueltos, etc.).
+    try:
+        before = len(all_product_urls)
+        all_product_urls |= _collect_sitemap_links(page, base)
+        if len(all_product_urls) > before:
+            log.info(f"  +{len(all_product_urls) - before} productos nuevos del sitemap")
+    except Exception as e:
+        log.warning(f"  sitemap {base} falló: {e}")
 
     log.info(f"  {len(all_product_urls)} productos únicos a procesar de {base}")
 

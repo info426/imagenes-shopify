@@ -41,6 +41,12 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      dry_run:
+        description: 'Modo prueba: NO escribe en Shopify. Calcula qué pondría y lo compara con el snapshot (precisión sin riesgo)'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
 
 jobs:
   resolver:
@@ -91,15 +97,17 @@ jobs:
           IDS=""
           URLKEY=""
           CLEAR=""
+          DRY=""
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ]  && EXTRA="--rebuild-catalog"
           [ -n "${{ github.event.inputs.web_url }}" ]                 && WEB="--web-url ${{ github.event.inputs.web_url }}"
           [ -n "${{ github.event.inputs.product_ids }}" ]             && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
           [ -n "${{ github.event.inputs.url_key }}" ]                 && URLKEY="--url-key ${{ github.event.inputs.url_key }}"
           [ "${{ github.event.inputs.clear_on_no_match }}" = "true" ] && CLEAR="--clear-on-no-match"
+          [ "${{ github.event.inputs.dry_run }}" = "true" ]           && DRY="--dry-run"
           xvfb-run -a python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --resolver-urls \
-            $WEB $IDS $EXTRA $URLKEY $CLEAR \
+            $WEB $IDS $EXTRA $URLKEY $CLEAR $DRY \
             2>&1 | tee resultados/resolver_urls_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log y catálogo

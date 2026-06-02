@@ -667,16 +667,83 @@ def run_backfill_urls(api: ShopifyAPI, vendor: str):
 
 # ─── Modo resolver URLs (busca en la web y guarda el metacampo) ─────────────────
 
+def _norm_url(u: str) -> str:
+    """Normaliza una URL para comparar (sin esquema, sin www, sin barra final)."""
+    if not u:
+        return ""
+    u = u.strip().split("#")[0].split("?")[0].rstrip("/")
+    u = re.sub(r"^https?://", "", u, flags=re.IGNORECASE)
+    u = re.sub(r"^www\.", "", u, flags=re.IGNORECASE)
+    return u.lower()
+
+
+def _compare_dryrun_vs_snapshot(slug: str, url_key: str, dry_results: list):
+    """Compara lo que el resolver PONDRÍA (dry-run) contra el snapshot guardado
+    (las URLs correctas verificadas a mano). Imprime un informe de precisión y
+    lista las diferencias para revisar antes de un run real."""
+    snap_path = RESULTS_DIR / f"{slug}_urls_snapshot.json"
+    if not snap_path.exists():
+        log.info(f"[dry-run] No hay snapshot ({snap_path.name}) — sin comparación.")
+        return
+    try:
+        snap = json.loads(snap_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        log.warning(f"[dry-run] no pude leer snapshot: {e}")
+        return
+    snap_by_id = {str(e.get("id")): (e.get(url_key) or "") for e in snap}
+    dry_by_id  = {str(r["id"]): (r.get("url") or "") for r in dry_results}
+    titles     = {str(r["id"]): r.get("title", "") for r in dry_results}
+
+    cats = {"igual": [], "distinto": [], "resolver_borraria": [],
+            "resolver_aporta": [], "ambos_vacio": []}
+    for pid in dry_by_id:
+        want = _norm_url(snap_by_id.get(pid, ""))
+        got  = _norm_url(dry_by_id.get(pid, ""))
+        if want and got:
+            cats["igual" if want == got else "distinto"].append(pid)
+        elif want and not got:
+            cats["resolver_borraria"].append(pid)   # snapshot tiene, resolver no
+        elif got and not want:
+            cats["resolver_aporta"].append(pid)      # resolver tiene, snapshot no
+        else:
+            cats["ambos_vacio"].append(pid)
+
+    base = [pid for pid in dry_by_id if _norm_url(snap_by_id.get(pid, ""))]
+    igual = len(cats["igual"])
+    log.info("\n" + "=" * 60)
+    log.info(f"DRY-RUN vs SNAPSHOT ({url_key})")
+    log.info("=" * 60)
+    log.info(f"  Snapshot con URL          : {len(base)}")
+    log.info(f"  ✓ Reproduce igual         : {igual}"
+             + (f"  ({igual*100//len(base)}%)" if base else ""))
+    log.info(f"  ✗ Distinto (REGRESIÓN)    : {len(cats['distinto'])}")
+    log.info(f"  ✗ Borraría (sin_match)    : {len(cats['resolver_borraria'])}")
+    log.info(f"  + Aporta nueva (snap vacío): {len(cats['resolver_aporta'])}")
+    for pid in cats["distinto"]:
+        log.info(f"    [DISTINTO] {titles.get(pid,'')[:42]}")
+        log.info(f"       snapshot : {snap_by_id.get(pid,'')}")
+        log.info(f"       resolver : {dry_by_id.get(pid,'')}")
+    for pid in cats["resolver_borraria"]:
+        log.info(f"    [BORRARÍA] {titles.get(pid,'')[:42]}  → snapshot tiene: "
+                 f"{snap_by_id.get(pid,'')}")
+    for pid in cats["resolver_aporta"]:
+        log.info(f"    [APORTA]   {titles.get(pid,'')[:42]}  → {dry_by_id.get(pid,'')}")
+    log.info("=" * 60)
+
+
 def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
                      rebuild: bool, product_id: int = None,
                      only_ids: set = None, url_key: str = MF_KEY_URL,
-                     clear_on_no_match: bool = False):
+                     clear_on_no_match: bool = False, dry_run: bool = False):
     """Para cada producto resuelve su URL oficial vía el scraper de la marca
     (find_best_match: slug directo + DDG) y la guarda en el metacampo
     indicado por url_key (por defecto fuentes.url_fabricante). NO procesa imágenes.
 
     Si clear_on_no_match=True, elimina el metacampo url_key cuando no se
-    encuentra URL (útil para limpiar valores erróneos de un run anterior)."""
+    encuentra URL (útil para limpiar valores erróneos de un run anterior).
+
+    Si dry_run=True NO escribe en Shopify: guarda lo que pondría en
+    resultados/{slug}_resolver_dryrun.json y, si existe el snapshot, lo compara."""
     slug = vendor_slug(vendor)
     try:
         scraper = importlib.import_module(f"marcas.{slug}")
@@ -707,6 +774,9 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     has_barcode = "barcode" in fbm_params
     has_images  = "product_images" in fbm_params
     stats = dict(total=len(products), guardadas=0, sin_match=0)
+    dry_results: list = []
+    if dry_run:
+        log.info("MODO DRY-RUN — no se escribirá nada en Shopify")
     for i, product in enumerate(products, 1):
         pid, title = product["id"], product["title"]
         log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
@@ -730,18 +800,34 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
         handle, score = scraper.find_best_match(title, catalog, **kwargs)
 
         url = catalog.get(handle, {}).get("url") if handle else None
-        if handle is not None and score >= 0.10 and url:
-            _save_source_url(api, pid, url, "resolver-urls", f"score={score:.2f}",
-                             url_key=url_key)
+        matched = handle is not None and score >= 0.10 and url
+        dry_results.append({"id": pid, "title": title,
+                            "url": url if matched else None,
+                            "score": round(score, 3)})
+        if matched:
             stats["guardadas"] += 1
-            log.info(f"  → {url}  (score={score:.2f})")
+            if dry_run:
+                log.info(f"  [dry-run] PONDRÍA → {url}  (score={score:.2f})")
+            else:
+                _save_source_url(api, pid, url, "resolver-urls",
+                                 f"score={score:.2f}", url_key=url_key)
+                log.info(f"  → {url}  (score={score:.2f})")
         else:
             stats["sin_match"] += 1
             log.warning(f"  Sin URL (score={score:.2f})")
-            if clear_on_no_match:
+            if clear_on_no_match and not dry_run:
                 _clear_source_url(api, pid, url_key)
-        time.sleep(0.5)
+            elif clear_on_no_match and dry_run:
+                log.info(f"  [dry-run] BORRARÍA {url_key} (sin_match)")
+        time.sleep(0.1 if dry_run else 0.5)
     _print_stats(stats)
+
+    if dry_run:
+        out = RESULTS_DIR / f"{slug}_resolver_dryrun.json"
+        out.write_text(json.dumps(dry_results, ensure_ascii=False, indent=2),
+                       encoding="utf-8")
+        log.info(f"\n[dry-run] resultados guardados en {out} (no se escribió en Shopify)")
+        _compare_dryrun_vs_snapshot(slug, url_key, dry_results)
 
 
 def run_snapshot_urls(api: ShopifyAPI, vendor: str, product_id: int = None,
@@ -841,6 +927,10 @@ def main():
                         help="Si --resolver-urls no encuentra URL para un producto, "
                              "elimina el metacampo --url-key (limpia valores erróneos "
                              "de un run anterior)")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="--resolver-urls sin escribir en Shopify: calcula qué URL "
+                             "pondría, lo guarda en resultados/{slug}_resolver_dryrun.json "
+                             "y, si existe el snapshot, lo compara (igual/distinto/sin_match)")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -894,7 +984,8 @@ def main():
     elif args.resolver_urls:
         run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
                          args.product_id, only_ids or None, url_key=args.url_key,
-                         clear_on_no_match=args.clear_on_no_match)
+                         clear_on_no_match=args.clear_on_no_match,
+                         dry_run=args.dry_run)
     elif args.snapshot_urls:
         run_snapshot_urls(api, args.vendor, args.product_id, only_ids or None)
     elif args.fuente == "shopify_backup":

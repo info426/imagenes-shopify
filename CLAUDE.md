@@ -743,13 +743,40 @@ acepta ese parámetro** (vía `inspect.signature`, igual que `barcode`). Hoy lo 
 CALIBRA; otras marcas lo adoptan añadiendo el parámetro. Con `IMAGE_MATCH=0` (o
 `usar_imagen=false`) todo el camino visual se desactiva (cero torch, solo texto).
 
-**Re-lanzar CALIBRA con imagen** (campo 1, corrige los 22 del run #15):
+**Modo DRY-RUN (validar sin tocar Shopify):** input `dry_run=true` (o `--dry-run`).
+El resolver calcula qué URL pondría pero **no escribe** en Shopify; guarda
+`resultados/{slug}_resolver_dryrun.json` y, si existe `{slug}_urls_snapshot.json`,
+**compara** automáticamente (igual / distinto-REGRESIÓN / borraría / aporta) e imprime
+el % de reproducción. Imprescindible antes de re-pasar el resolver por encima de un
+`url_fabricante` ya corregido a mano: mide la precisión sin riesgo de perder el trabajo.
+
+**Comportamiento de escritura (importante):** `_save_source_url` **sobrescribe** el
+metacampo `url_key` y **añade** al histórico (`fuentes.historico` es **append-only**,
+nunca se borra). `_clear_source_url` (con `clear_on_no_match=true` y sin_match) **borra**
+el metacampo `url_key` pero **no** toca el histórico. ⚠️ Re-correr el resolver sobre un
+campo ya correcto solo puede empeorarlo → usar `dry_run` primero. El backup del trabajo
+manual es el **Snapshot** (`{slug}_urls_snapshot.json`), no el histórico.
+
+**Análisis run #15 (texto-solo) vs snapshot corregido — 79% (107/134), 26 regresiones:**
+Diagnóstico con dos causas distintas (el dry-run las separa):
+- **(A) 16 — la página correcta SÍ está en el catálogo** (confusión de formato/línea/especie:
+  LATA vs seco, premium-100g vs life-200g, DOG6 PREMIUM→URL de gato). → **lo arregla la imagen (CLIP)**.
+- **(B) 10 — la página correcta FALTA del catálogo** (el crawl solo veía 3 categorías):
+  9 ROCKETS (`rockets-mix/sticks-*`, roedores) + 1 `verve-semi-moist-herring`. La imagen
+  **no** puede casar lo que no está → **arreglado con descubrimiento por sitemap**.
+
+**Descubrimiento por sitemap** (`_collect_sitemap_links` en `marcas/calibra.py`): además
+del crawl de categorías, `_scrape_source` lee `{base}/sitemap.xml` (sigue índices anidados)
+vía el navegador y añade toda URL `/{slug}` que empiece por `calibra-`. Captura los ROCKETS
+y snacks no enlazados. Requiere `rebuild_catalog=true` para reconstruir con el sitemap.
+
+**Re-lanzar CALIBRA — primero DRY-RUN** (campo 1, mide cuánto reproduce de las 134):
 `vendor=CALIBRA`, `web_url=https://www.mycalibra.es/`, `url_key=url_fabricante`,
-`usar_imagen=true`, **`rebuild_catalog=true`** (imprescindible la 1ª vez: la caché .es
-del run #15 no tiene huellas → hay que reconstruirla precomputándolas),
-`clear_on_no_match=true` (limpia las URLs erróneas que queden en `sin_match`).
-Campo 2 (`mycalibra.eu`, `url_fabricante_2`, `usar_imagen=true`) se construye fresco →
-las huellas se precomputan solas (no hace falta `rebuild` salvo que ya exista caché .eu).
+`usar_imagen=true`, **`rebuild_catalog=true`** (reconstruye con sitemap + huellas),
+`clear_on_no_match=false`, **`dry_run=true`**. Revisar el bloque "DRY-RUN vs SNAPSHOT"
+del log: si reproduce ~134/134, lanzar el real (`dry_run=false`); si quedan regresiones,
+afinar antes. Campo 2 (`mycalibra.eu`, `url_fabricante_2`) igual con `dry_run=true` primero
+(pero allí el snapshot de campo 2 está casi vacío → sirve más para revisar a ojo).
 
 ### Farmina — notas de estrategia (URLs fabricante)
 
