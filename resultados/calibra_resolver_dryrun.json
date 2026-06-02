@@ -1,0 +1,878 @@
+[
+  {
+    "id": 15509672296835,
+    "title": "CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-adult-pouches-multipack-12x100g",
+    "score": 0.942
+  },
+  {
+    "id": 15509672395139,
+    "title": "CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g",
+    "score": 0.909
+  },
+  {
+    "id": 15509672460675,
+    "title": "CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-adult-trout-salmon-100g",
+    "score": 0.917
+  },
+  {
+    "id": 15509672526211,
+    "title": "CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-kitten-pouches-multipack-12x100g",
+    "score": 0.949
+  },
+  {
+    "id": 15509672558979,
+    "title": "CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g",
+    "score": 0.911
+  },
+  {
+    "id": 15509672624515,
+    "title": "CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g",
+    "score": 0.895
+  },
+  {
+    "id": 15509672755587,
+    "title": "CALIBRA CAT LIFE ADULT ARENQUE",
+    "url": "https://www.mycalibra.es/calibra-cat-life-adult-herring",
+    "score": 0.957
+  },
+  {
+    "id": 15509672853891,
+    "title": "CALIBRA CAT LIFE ADULT CORDERO",
+    "url": "https://www.mycalibra.es/calibra-cat-life-adult-lamb",
+    "score": 0.968
+  },
+  {
+    "id": 15509672886659,
+    "title": "CALIBRA CAT LIFE ADULT POLLO 6KG",
+    "url": "https://www.mycalibra.es/calibra-cat-life-adult-chicken",
+    "score": 0.965
+  },
+  {
+    "id": 15509673083267,
+    "title": "CALIBRA CAT LIFE KITTEN POLLO",
+    "url": "https://www.mycalibra.es/calibra-cat-life-kitten-chicken",
+    "score": 0.955
+  },
+  {
+    "id": 15509673148803,
+    "title": "CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g",
+    "score": 0.867
+  },
+  {
+    "id": 15509673181571,
+    "title": "CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g",
+    "score": 0.858
+  },
+  {
+    "id": 15509673279875,
+    "title": "CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g",
+    "score": 0.848
+  },
+  {
+    "id": 15509673312643,
+    "title": "CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-kitten-chicken-200g",
+    "score": 0.739
+  },
+  {
+    "id": 15509673345411,
+    "title": "CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g",
+    "score": 0.873
+  },
+  {
+    "id": 15509673443715,
+    "title": "CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g",
+    "score": 0.883
+  },
+  {
+    "id": 15509673476483,
+    "title": "CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-sterilised-duck-200g",
+    "score": 0.761
+  },
+  {
+    "id": 15509673509251,
+    "title": "CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-sterilised-turkey-200g",
+    "score": 0.751
+  },
+  {
+    "id": 15509673574787,
+    "title": "CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-adult-beef-in-gravy-85g",
+    "score": 0.908
+  },
+  {
+    "id": 15509673673091,
+    "title": "CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g",
+    "score": 0.911
+  },
+  {
+    "id": 15509673705859,
+    "title": "CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-adult-duck-in-gravy-85g",
+    "score": 0.917
+  },
+  {
+    "id": 15509673738627,
+    "title": "CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-adult-turkey-in-gravy-85g",
+    "score": 0.908
+  },
+  {
+    "id": 15509673804163,
+    "title": "CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-adult-veal-in-gravy-85g",
+    "score": 0.911
+  },
+  {
+    "id": 15509673836931,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouches-kitten-multipack-12x85g",
+    "score": 0.917
+  },
+  {
+    "id": 15509673869699,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-kitten-turkey-in-gravy-85g",
+    "score": 0.928
+  },
+  {
+    "id": 15509674000771,
+    "title": "CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-kitten-salmon-in-gravy-85g",
+    "score": 0.936
+  },
+  {
+    "id": 15509674033539,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g",
+    "score": 0.933
+  },
+  {
+    "id": 15509674066307,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-duck-in-gravy-85g",
+    "score": 0.896
+  },
+  {
+    "id": 15509674099075,
+    "title": "CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR",
+    "url": "https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g",
+    "score": 0.881
+  },
+  {
+    "id": 15509674230147,
+    "title": "CALIBRA CAT LIFE STERILISED POLLO",
+    "url": "https://www.mycalibra.es/calibra-cat-life-sterilised-chicken",
+    "score": 0.965
+  },
+  {
+    "id": 15509674393987,
+    "title": "CALIBRA CAT LIFE STERILISED TERNERA",
+    "url": "https://www.mycalibra.es/calibra-cat-life-sterilised-beef",
+    "score": 0.953
+  },
+  {
+    "id": 15509674426755,
+    "title": "CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g",
+    "score": 0.869
+  },
+  {
+    "id": 15509674459523,
+    "title": "CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-adult-chicken-beef-100g",
+    "score": 0.917
+  },
+  {
+    "id": 15509674525059,
+    "title": "CALIBRA CAT PREMIUM ADULT CARNE DE AVE",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-line-adult-poultry",
+    "score": 0.938
+  },
+  {
+    "id": 15509674688899,
+    "title": "CALIBRA CAT PREMIUM ADULT CARNE VACUNO",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-line-adult-beef",
+    "score": 0.956
+  },
+  {
+    "id": 15509674885507,
+    "title": "CALIBRA CAT PREMIUM ADULT PAVO",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-line-adult-beef",
+    "score": 0.914
+  },
+  {
+    "id": 15509675016579,
+    "title": "CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-line-sterilised-poultry",
+    "score": 0.916
+  },
+  {
+    "id": 15509675213187,
+    "title": "CALIBRA CAT PREMIUM KITTEN CARNE DE AVE",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-line-kitten-poultry",
+    "score": 0.926
+  },
+  {
+    "id": 15509675311491,
+    "title": "CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g",
+    "score": 0.921
+  },
+  {
+    "id": 15509675377027,
+    "title": "CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-steril-pouches-multipack-12x100g",
+    "score": 0.938
+  },
+  {
+    "id": 15509675409795,
+    "title": "CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g",
+    "score": 0.901
+  },
+  {
+    "id": 15509675442563,
+    "title": "CALIBRA DOG EXPERT NUTRITION ENERGY 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-en-energy-new",
+    "score": 0.849
+  },
+  {
+    "id": 15509675508099,
+    "title": "CALIBRA DOG EXPERT NUTRITION LIGHT",
+    "url": "https://www.mycalibra.es/calibra-dog-en-light-new",
+    "score": 0.836
+  },
+  {
+    "id": 15509675671939,
+    "title": "CALIBRA DOG EXPERT NUTRITION MOBILITY",
+    "url": "https://www.mycalibra.es/calibra-dog-en-mobility-new",
+    "score": 0.86
+  },
+  {
+    "id": 15509675835779,
+    "title": "CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG",
+    "url": "https://www.mycalibra.es/calibra-dog-en-neutered-new",
+    "score": 0.841
+  },
+  {
+    "id": 15509675868547,
+    "title": "CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON",
+    "url": "https://www.mycalibra.es/calibra-dog-en-sensitive-salmon-new",
+    "score": 0.82
+  },
+  {
+    "id": 15509676065155,
+    "title": "CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-pork-venison-400g",
+    "score": 0.885
+  },
+  {
+    "id": 15509676130691,
+    "title": "CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-wild-boar-beef-400g",
+    "score": 0.862
+  },
+  {
+    "id": 15509676163459,
+    "title": "CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g",
+    "score": 0.831
+  },
+  {
+    "id": 15509676228995,
+    "title": "CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g",
+    "score": 0.864
+  },
+  {
+    "id": 15509676294531,
+    "title": "CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-duck-turkey-200g",
+    "score": 0.732
+  },
+  {
+    "id": 15509676327299,
+    "title": "CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-beef-chicken-200g",
+    "score": 0.716
+  },
+  {
+    "id": 15509676392835,
+    "title": "CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-junior-turkey-lamb-400g",
+    "score": 0.881
+  },
+  {
+    "id": 15509676425603,
+    "title": "CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-gf-senior-turkey-lamb-400g",
+    "score": 0.901
+  },
+  {
+    "id": 15509676523907,
+    "title": "CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb",
+    "score": 1.0
+  },
+  {
+    "id": 15509676589443,
+    "title": "CALIBRA DOG LIFE ADULT LARGE BREED POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb",
+    "score": 0.922
+  },
+  {
+    "id": 15509676720515,
+    "title": "CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-large-fresh-beef",
+    "score": 0.895
+  },
+  {
+    "id": 15509676786051,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-lamb",
+    "score": 0.929
+  },
+  {
+    "id": 15509676949891,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken",
+    "score": 0.919
+  },
+  {
+    "id": 15509677146499,
+    "title": "CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef",
+    "score": 0.9
+  },
+  {
+    "id": 15509677310339,
+    "title": "CALIBRA DOG LIFE ADULT SMALL BREED CORDERO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-small-breed-lamb",
+    "score": 0.935
+  },
+  {
+    "id": 15509677408643,
+    "title": "CALIBRA DOG LIFE ADULT SMALL BREED POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken",
+    "score": 0.922
+  },
+  {
+    "id": 15509677474179,
+    "title": "CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef",
+    "score": 0.909
+  },
+  {
+    "id": 15509677539715,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb",
+    "score": 0.926
+  },
+  {
+    "id": 15509677638019,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb",
+    "score": 0.913
+  },
+  {
+    "id": 15509677703555,
+    "title": "CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef",
+    "score": 0.898
+  },
+  {
+    "id": 15509677736323,
+    "title": "CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken",
+    "score": 0.931
+  },
+  {
+    "id": 15509677834627,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-small-medium-fresh-beef",
+    "score": 0.888
+  },
+  {
+    "id": 15509677932931,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken",
+    "score": 1.0
+  },
+  {
+    "id": 15509677965699,
+    "title": "CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-small-medium-breed-lamb",
+    "score": 0.937
+  },
+  {
+    "id": 15509678064003,
+    "title": "CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g",
+    "score": 0.97
+  },
+  {
+    "id": 15509678129539,
+    "title": "CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g",
+    "score": 0.967
+  },
+  {
+    "id": 15509678162307,
+    "title": "CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-duck-with-rice-400g",
+    "score": 0.972
+  },
+  {
+    "id": 15509678227843,
+    "title": "CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-turkey-with-apples-400g",
+    "score": 0.969
+  },
+  {
+    "id": 15509678293379,
+    "title": "CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g",
+    "score": 0.967
+  },
+  {
+    "id": 15509678326147,
+    "title": "CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g",
+    "score": 0.963
+  },
+  {
+    "id": 15509678391683,
+    "title": "CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-puppy-junior-lamb-rice-400g",
+    "score": 0.966
+  },
+  {
+    "id": 15509678457219,
+    "title": "CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g",
+    "score": 0.966
+  },
+  {
+    "id": 15509678522755,
+    "title": "CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g",
+    "score": 0.966
+  },
+  {
+    "id": 15509678555523,
+    "title": "CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR",
+    "url": "https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g",
+    "score": 0.964
+  },
+  {
+    "id": 15509678653827,
+    "title": "CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-large-fresh-beef",
+    "score": 0.904
+  },
+  {
+    "id": 15509678686595,
+    "title": "CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-medium-large-chicken",
+    "score": 0.928
+  },
+  {
+    "id": 15509678784899,
+    "title": "CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef",
+    "score": 0.9
+  },
+  {
+    "id": 15509678850435,
+    "title": "CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb",
+    "score": 1.0
+  },
+  {
+    "id": 15509678948739,
+    "title": "CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA",
+    "url": "https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef",
+    "score": 0.923
+  },
+  {
+    "id": 15509679014275,
+    "title": "CALIBRA DOG LIFE STARTER & PUPPY CORDERO",
+    "url": "https://www.mycalibra.es/calibra-dog-life-starter-puppy-lamb",
+    "score": 0.933
+  },
+  {
+    "id": 15509679112579,
+    "title": "CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef",
+    "score": 0.881
+  },
+  {
+    "id": 15509679243651,
+    "title": "CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g",
+    "score": 0.701
+  },
+  {
+    "id": 15509679178115,
+    "title": "CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G",
+    "url": "https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g",
+    "score": 0.694
+  },
+  {
+    "id": 15509679309187,
+    "title": "CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G",
+    "url": "https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef",
+    "score": 0.703
+  },
+  {
+    "id": 15509679374723,
+    "title": "CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO 10X150G",
+    "url": "https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g",
+    "score": 0.727
+  },
+  {
+    "id": 15509679407491,
+    "title": "CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-can-with-lamb-chicken-1240g",
+    "score": 0.868
+  },
+  {
+    "id": 15509679538563,
+    "title": "CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g",
+    "score": 0.897
+  },
+  {
+    "id": 15509679735171,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-adult-large-12-kg-new",
+    "score": 0.905
+  },
+  {
+    "id": 15509679833475,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new",
+    "score": 0.929
+  },
+  {
+    "id": 15509679964547,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new",
+    "score": 0.71
+  },
+  {
+    "id": 15509680128387,
+    "title": "CALIBRA DOG PREMIUM LINE ADULT TERNERA",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-adult-beef-12-kg-new",
+    "score": 0.915
+  },
+  {
+    "id": 15509680161155,
+    "title": "CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-junior-large-12-kg-new",
+    "score": 0.9
+  },
+  {
+    "id": 15509680193923,
+    "title": "CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-puppy-junior-12-kg-new",
+    "score": 0.881
+  },
+  {
+    "id": 15509680357763,
+    "title": "CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-line-senior-light-12-kg-new",
+    "score": 0.899
+  },
+  {
+    "id": 15509680554371,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g",
+    "score": 0.619
+  },
+  {
+    "id": 15509680587139,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g",
+    "score": 0.732
+  },
+  {
+    "id": 15509680619907,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-salmon-150g",
+    "score": 0.749
+  },
+  {
+    "id": 15509680718211,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g",
+    "score": 0.803
+  },
+  {
+    "id": 15509680783747,
+    "title": "CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g",
+    "score": 0.759
+  },
+  {
+    "id": 15509680816515,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g",
+    "score": 0.735
+  },
+  {
+    "id": 15509680849283,
+    "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G",
+    "url": "https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g",
+    "score": 0.69
+  },
+  {
+    "id": 15509680947587,
+    "title": "CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G",
+    "url": "https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g",
+    "score": 0.826
+  },
+  {
+    "id": 15509681013123,
+    "title": "CALIBRA EAZZY ARENA GATO FINE 10KG",
+    "url": "https://www.mycalibra.es/calibra-eazzy-cat-fine-10kg",
+    "score": 0.897
+  },
+  {
+    "id": 15509681045891,
+    "title": "CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG",
+    "url": "https://www.mycalibra.es/calibra-eazzy-cat-ultra-fine-10kg",
+    "score": 0.875
+  },
+  {
+    "id": 15509681078659,
+    "title": "CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR",
+    "url": "https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g",
+    "score": 0.525
+  },
+  {
+    "id": 15509681176963,
+    "title": "CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new",
+    "score": 0.519
+  },
+  {
+    "id": 15509681209731,
+    "title": "CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g",
+    "score": 0.472
+  },
+  {
+    "id": 15509681242499,
+    "title": "CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g",
+    "score": 0.474
+  },
+  {
+    "id": 15509681308035,
+    "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g",
+    "score": 0.485
+  },
+  {
+    "id": 15509681373571,
+    "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR",
+    "url": null,
+    "score": 0.45
+  },
+  {
+    "id": 15509681406339,
+    "title": "CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR",
+    "url": null,
+    "score": 0.482
+  },
+  {
+    "id": 15509681439107,
+    "title": "CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR",
+    "url": null,
+    "score": 0.487
+  },
+  {
+    "id": 15509681504643,
+    "title": "CALIBRA JOY DOG CLASSIC AROS POLLO 80GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-chicken-bits-new",
+    "score": 0.903
+  },
+  {
+    "id": 15509681537411,
+    "title": "CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-cod-chicken-sushi-80g-new",
+    "score": 0.832
+  },
+  {
+    "id": 15509681701251,
+    "title": "CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-dental-brushes-85g-new",
+    "score": 0.84
+  },
+  {
+    "id": 15509681766787,
+    "title": "CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-large-lamb-fillets-80g-new",
+    "score": 0.887
+  },
+  {
+    "id": 15509682061699,
+    "title": "CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-sandwich",
+    "score": 0.909
+  },
+  {
+    "id": 15509682160003,
+    "title": "CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new",
+    "score": 0.879
+  },
+  {
+    "id": 15509682192771,
+    "title": "CALIBRA JOY DOG CLASSIC STICKS SALMON",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-salmon-sticks-80g-new",
+    "score": 0.875
+  },
+  {
+    "id": 15509682291075,
+    "title": "CALIBRA JOY DOG CLASSIC STICKS TERNERA",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-beef-sticks",
+    "score": 0.752
+  },
+  {
+    "id": 15509682389379,
+    "title": "CALIBRA JOY DOG CLASSIC STRIPS CORDERO",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-lamb-strips",
+    "score": 0.907
+  },
+  {
+    "id": 15509682454915,
+    "title": "CALIBRA JOY DOG CLASSIC STRIPS PATO",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-classic-duck-strips-80g-new",
+    "score": 0.889
+  },
+  {
+    "id": 15509682553219,
+    "title": "CALIBRA JOY DOG MINI DADOS SALMON 70GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-mini-salmon-cube-70g-new",
+    "score": 0.872
+  },
+  {
+    "id": 15509682585987,
+    "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-mini-duck-cod-sandwich-70g-new",
+    "score": 0.863
+  },
+  {
+    "id": 15509682651523,
+    "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-mini-chicken-cod-sandwich-70g-new",
+    "score": 0.848
+  },
+  {
+    "id": 15509682684291,
+    "title": "CALIBRA JOY DOG TRAINING M&L PATO Y POLLO 300G",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g",
+    "score": 1.0
+  },
+  {
+    "id": 15509682749827,
+    "title": "CALIBRA JOY DOG TRAINING M&L VENADO Y PATO 300G",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-m-l-venison-duck-300g",
+    "score": 1.0
+  },
+  {
+    "id": 15509682782595,
+    "title": "CALIBRA JOY DOG TRAINING PUPPY&ADULT S POLLO 150G",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-puppy-adult-s-chicken-150g",
+    "score": 1.0
+  },
+  {
+    "id": 15509682848131,
+    "title": "CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g",
+    "score": 0.869
+  },
+  {
+    "id": 15509682946435,
+    "title": "CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-s-m-salmon-insect-150g",
+    "score": 0.878
+  },
+  {
+    "id": 15509682880899,
+    "title": "CALIBRA JOY DOG TRAINING S&M TERNERA 150GR",
+    "url": "https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g",
+    "score": 0.858
+  },
+  {
+    "id": 15509682979203,
+    "title": "CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G",
+    "url": "https://www.mycalibra.es/calibra-rockets",
+    "score": 0.864
+  },
+  {
+    "id": 15509683044739,
+    "title": "CALIBRA ROCKETS COBAYAS 900G",
+    "url": "https://www.mycalibra.es/calibra-rockets-mix-guinea-pigs-900g",
+    "score": 0.85
+  },
+  {
+    "id": 15509683143043,
+    "title": "CALIBRA ROCKETS CONEJOS 900G",
+    "url": "https://www.mycalibra.es/calibra-rockets-mix-rabbits-900g",
+    "score": 0.882
+  },
+  {
+    "id": 15509683175811,
+    "title": "CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G",
+    "url": "https://www.mycalibra.es/calibra-rockets-mix-hamsters-small-rodents-900g",
+    "score": 0.867
+  },
+  {
+    "id": 15509683241347,
+    "title": "CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G",
+    "url": "https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g",
+    "score": 0.546
+  },
+  {
+    "id": 15509683274115,
+    "title": "CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G",
+    "url": "https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-fruits-120g",
+    "score": 0.575
+  },
+  {
+    "id": 15509683405187,
+    "title": "CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G",
+    "url": "https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-vegetables-120g",
+    "score": 0.594
+  },
+  {
+    "id": 15509683470723,
+    "title": "CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G",
+    "url": "https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-nuts-coconut-120g",
+    "score": 0.567
+  },
+  {
+    "id": 15509683569027,
+    "title": "CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G",
+    "url": "https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-vegeta-nuts-120g",
+    "score": 0.554
+  }
+]
