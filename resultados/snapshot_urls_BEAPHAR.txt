@@ -1,0 +1,375 @@
+2026-06-02 14:33:30,894 [INFO] ============================================================
+2026-06-02 14:33:30,894 [INFO]   Vendor   : BEAPHAR
+2026-06-02 14:33:30,894 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-02 14:33:30,894 [INFO]   Pipeline : standard
+2026-06-02 14:33:30,894 [INFO]   Padding  : auto
+2026-06-02 14:33:30,894 [INFO] ============================================================
+2026-06-02 14:33:31,298 [INFO] Token obtenido
+2026-06-02 14:33:32,640 [INFO] [1/122] BEAPHAR ACEITE DE LINAZA 430ML  (ID: 15509640610179)
+    url_fabricante  : https://www.beaphar.es/product/13682-beaphar-aceite-de-linaza/
+    url_fabricante_2: —
+2026-06-02 14:33:33,378 [INFO] [2/122] BEAPHAR ACEITE DE SALMON PERRO Y GATO 425ML  (ID: 15509640642947)
+    url_fabricante  : https://www.beaphar.es/product/11295-aceite-de-salmon-perro-y-gato-425ml/
+    url_fabricante_2: —
+2026-06-02 14:33:34,116 [INFO] [3/122] BEAPHAR ALIMENTO UNIVERSAL AVES - 1KG  (ID: 15509640675715)
+    url_fabricante  : https://www.beaphar.es/product/1000137-beaphar-alimento-universal-aves-1kg/
+    url_fabricante_2: —
+2026-06-02 14:33:34,843 [INFO] [4/122] BEAPHAR BALSAMO PARA ALMOHADILLAS 40ML  (ID: 15509640708483)
+    url_fabricante  : https://www.beaphar.es/product/11762-beaphar-balsamo-para-almohadillas-40ml/
+    url_fabricante_2: —
+2026-06-02 14:33:35,593 [INFO] [5/122] BEAPHAR BOCADITOS DENTAL BITS GATO 18X35GR  (ID: 15509640741251)
+    url_fabricante  : https://www.beaphar.es/product/11623-bocaditos-dental-bits-gato-35g
+    url_fabricante_2: —
+2026-06-02 14:33:36,418 [INFO] [6/122] BEAPHAR BOCADITOS HIERBA GATO  (ID: 15509640774019)
+    url_fabricante  : https://www.beaphar.es/product/11638-bocaditos-catnip-bits-gato-35g/
+    url_fabricante_2: —
+2026-06-02 14:33:37,168 [INFO] [7/122] BEAPHAR BOCADITOS MALTA GATO  (ID: 15509640839555)
+    url_fabricante  : https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/
+    url_fabricante_2: —
+2026-06-02 14:33:37,916 [INFO] [8/122] BEAPHAR BOCADITOS MALTA SALMON GATO 18X35GR  (ID: 15509640905091)
+    url_fabricante  : https://www.beaphar.es/product/11627-bocaditos-salmon-bits-gato-35g/
+    url_fabricante_2: —
+2026-06-02 14:33:38,663 [INFO] [9/122] BEAPHAR BUCAL WATER PERRO Y GATO 250ML  (ID: 15509640937859)
+    url_fabricante  : https://www.beaphar.es/product/15682-bucal-water-perro-y-gato-250ml/
+    url_fabricante_2: —
+2026-06-02 14:33:39,402 [INFO] [10/122] BEAPHAR CALMING BITS 35GR  (ID: 15509641068931)
+    url_fabricante  : https://www.beaphar.es/product/17578-calming-bits-35g/
+    url_fabricante_2: —
+2026-06-02 14:33:40,151 [INFO] [11/122] BEAPHAR CALMING COLLAR GATO 35CM  (ID: 15509641101699)
+    url_fabricante  : https://www.beaphar.es/product/17584-calming-collar-gato-35-cm/
+    url_fabricante_2: —
+2026-06-02 14:33:40,893 [INFO] [12/122] BEAPHAR CALMING COLLAR PERRO 65CM  (ID: 15509641134467)
+    url_fabricante  : https://www.beaphar.es/product/17583-calming-collar-perro-65-cm/
+    url_fabricante_2: —
+2026-06-02 14:33:41,644 [INFO] [13/122] BEAPHAR CALMING NO STRESS PERRO 30ML  (ID: 15981869597059)
+    url_fabricante  : https://www.beaphar.es/product/14898-no-stress-perro-pack-difusor-y-recambio-30ml/
+    url_fabricante_2: —
+2026-06-02 14:33:42,400 [INFO] [14/122] BEAPHAR CALMING SPOT ON PERRO 3X0,7ML  (ID: 15509641265539)
+    url_fabricante  : https://www.beaphar.es/product/10547-calming-spot-on-perro-3x07-ml/
+    url_fabricante_2: —
+2026-06-02 14:33:43,157 [INFO] [15/122] BEAPHAR CALMING SPRAY AMBIENTE PERRO Y GATO 125ML  (ID: 15509641298307)
+    url_fabricante  : https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/
+    url_fabricante_2: —
+2026-06-02 14:33:43,892 [INFO] [16/122] BEAPHAR CANICOMFORT COLLAR CACHORROS 45CM  (ID: 15509641331075)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:33:44,641 [INFO] [17/122] BEAPHAR CANICOMFORT KIT INICIACIÓN DIFUSOR+RECAMBIO PERRO 48ML  (ID: 15509641396611)
+    url_fabricante  : https://www.beaphar.es/product/11303/
+    url_fabricante_2: —
+2026-06-02 14:33:45,380 [INFO] [18/122] BEAPHAR CANICOMFORT SPRAY PERROS - 60ML  (ID: 15509641429379)
+    url_fabricante  : https://www.beaphar.es/product/10904-canicomfort-60ml-spray/
+    url_fabricante_2: —
+2026-06-02 14:33:46,129 [INFO] [19/122] BEAPHAR CARE+ ARENA DE BAÑO 1,3KG  (ID: 15509641462147)
+    url_fabricante  : https://www.beaphar.es/product/16356-care-arena-de-bano-13-kg/
+    url_fabricante_2: —
+2026-06-02 14:33:46,884 [INFO] [20/122] BEAPHAR CARE+ CHINCHILLA 1,5KG  (ID: 15509641494915)
+    url_fabricante  : https://www.beaphar.es/product/18405-care-chinchilla-15kg/
+    url_fabricante_2: —
+2026-06-02 14:33:47,617 [INFO] [21/122] BEAPHAR CARE+ COBAYA 1,5KG  (ID: 15509641527683)
+    url_fabricante  : https://www.beaphar.es/product/18404-care-cobaya-15kg/
+    url_fabricante_2: —
+2026-06-02 14:33:48,377 [INFO] [22/122] BEAPHAR CARE+ CONEJO  (ID: 15509641625987)
+    url_fabricante  : https://www.beaphar.es/product/13002-care-conejo-5kg/
+    url_fabricante_2: —
+2026-06-02 14:33:49,113 [INFO] [23/122] BEAPHAR CARE+ CONEJO JUNIOR 1,5KG  (ID: 15509641724291)
+    url_fabricante  : https://www.beaphar.es/product/18407-care-conejo-junior-15kg/
+    url_fabricante_2: —
+2026-06-02 14:33:49,837 [INFO] [24/122] BEAPHAR CARE+ CONEJO SENIOR 1,5KG  (ID: 15509641757059)
+    url_fabricante  : https://www.beaphar.es/product/18454-care-conejo-senior-15kg/
+    url_fabricante_2: —
+2026-06-02 14:33:50,582 [INFO] [25/122] BEAPHAR CARE+ DEGU 700GR  (ID: 15509641789827)
+    url_fabricante  : https://www.beaphar.es/product/13477-beaphar-care-degu-700g/
+    url_fabricante_2: —
+2026-06-02 14:33:51,306 [INFO] [26/122] BEAPHAR CARE+ HAMSTER 700GR  (ID: 15509641822595)
+    url_fabricante  : https://www.beaphar.es/product/18400-care-hamster-700g/
+    url_fabricante_2: —
+2026-06-02 14:33:52,055 [INFO] [27/122] BEAPHAR CARE+ NATURE COBAYA 1,5KG  (ID: 15509641855363)
+    url_fabricante  : https://www.beaphar.es/product/1000410/
+    url_fabricante_2: —
+2026-06-02 14:33:52,805 [INFO] [28/122] BEAPHAR CARE+ NATURE CONEJO 1,5KG  (ID: 15509641920899)
+    url_fabricante  : https://www.beaphar.es/product/1000309/
+    url_fabricante_2: —
+2026-06-02 14:33:53,587 [INFO] [29/122] BEAPHAR CARE+ RAT 700GR  (ID: 15509641953667)
+    url_fabricante  : https://www.beaphar.es/product/18401-care-rata-700g/
+    url_fabricante_2: —
+2026-06-02 14:33:54,305 [INFO] [30/122] BEAPHAR CARE+ TIMOTHY HAY 1KG  (ID: 15509641986435)
+    url_fabricante  : https://www.beaphar.es/product/18409-heno-care-timothy-1kg/
+    url_fabricante_2: —
+2026-06-02 14:33:55,045 [INFO] [31/122] BEAPHAR CAT COMFORT GATOS 48ML  (ID: 15509642019203)
+    url_fabricante  : https://www.beaphar.es/product/12534-beaphar-catcomfort-excellence-recambio-de-difusor-gatos-48ml/
+    url_fabricante_2: https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/
+2026-06-02 14:33:55,811 [INFO] [32/122] BEAPHAR CAT COMFORT SPRAY VIAJE GATOS  (ID: 15981868876163)
+    url_fabricante  : https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/
+    url_fabricante_2: —
+2026-06-02 14:33:56,561 [INFO] [33/122] BEAPHAR CAT TRAINER EDUCADOR PARA GATOS 10ML  (ID: 15509642150275)
+    url_fabricante  : https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/
+    url_fabricante_2: —
+2026-06-02 14:33:57,445 [INFO] [34/122] BEAPHAR CATCOMFORT PIPETAS GATOS X3  (ID: 15509642183043)
+    url_fabricante  : https://www.beaphar.es/product/12253-beaphar-catcomfort-pipetas-feromonas-gatos-x3/
+    url_fabricante_2: —
+2026-06-02 14:33:58,191 [INFO] [35/122] BEAPHAR CEPILLO DENTAL  (ID: 15509642215811)
+    url_fabricante  : https://www.beaphar.es/product/1000480-beaphar-cepillo-dental-perro-y-gato/
+    url_fabricante_2: —
+2026-06-02 14:33:58,938 [INFO] [36/122] BEAPHAR CEPILLO DENTAL BAMBÚ  (ID: 15509642248579)
+    url_fabricante  : https://www.beaphar.es/product/1000504-beaphar-cepillo-dental-bambu/
+    url_fabricante_2: —
+2026-06-02 14:33:59,682 [INFO] [37/122] BEAPHAR CHAMPU GATO 250ML  (ID: 15509642346883)
+    url_fabricante  : https://www.beaphar.es/product/19987-champu-gatos-250ml
+    url_fabricante_2: —
+2026-06-02 14:34:00,410 [INFO] [38/122] BEAPHAR CHAMPU PEQUEÑO ANIMAL 250ML  (ID: 15509642379651)
+    url_fabricante  : https://www.beaphar.es/product/19985-champu-pequenos-animales-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:01,170 [INFO] [39/122] BEAPHAR CHAMPU PERRO ANTIPICORES 1L *DX*  (ID: 15509642445187)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:34:01,927 [INFO] [40/122] BEAPHAR CHAMPU PERROS PELO BLANCO  (ID: 15509642510723)
+    url_fabricante  : https://www.beaphar.es/product/19984-champu-perros-pelo-blanco-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:02,902 [INFO] [41/122] BEAPHAR CHAMPU PERROS PELO LARGO  (ID: 15509642576259)
+    url_fabricante  : https://www.beaphar.es/product/16868-champu-perros-pelo-largo-250ml/
+    url_fabricante_2: https://www.beaphar.es/product/12917-champu-perros-pelo-largo-250ml/
+2026-06-02 14:34:03,661 [INFO] [42/122] BEAPHAR CHAMPU PERROS PELO MARRON 250ML  (ID: 15509642674563)
+    url_fabricante  : https://www.beaphar.es/product/13749-champu-perros-pelo-marron-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:04,402 [INFO] [43/122] BEAPHAR CHAMPU PERROS PELO NEGRO 250ML  (ID: 15509642707331)
+    url_fabricante  : https://www.beaphar.es/product/19998-champu-perros-pelo-negro-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:05,153 [INFO] [44/122] BEAPHAR CHAMPU PERROS UNIVERSAL  (ID: 15509642740099)
+    url_fabricante  : https://www.beaphar.es/product/19974-champu-perros-universal-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:06,127 [INFO] [45/122] BEAPHAR CHAMPU REPELENTE PERRO Y GATO 250ML  (ID: 15509642838403)
+    url_fabricante  : https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:06,896 [INFO] [46/122] BEAPHAR CHAMPU TODO TIPO PELAJES PROTECCION 250ML *DX*  (ID: 15509642871171)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:34:07,659 [INFO] [47/122] BEAPHAR COLLAR BIO BAND REPELENTE GATO 35CM  (ID: 15509642903939)
+    url_fabricante  : https://www.beaphar.es/product/13096-collar-bio-band-repelente-gato-35cm/
+    url_fabricante_2: —
+2026-06-02 14:34:08,426 [INFO] [48/122] BEAPHAR COLLAR BIO BAND REPELENTE PERRO 65CM  (ID: 15509642936707)
+    url_fabricante  : https://www.beaphar.es/product/13097-collar-bio-band-repelente-perro-65cm/
+    url_fabricante_2: —
+2026-06-02 14:34:09,175 [INFO] [49/122] BEAPHAR COLLAR SEGURIDAD REFLECTANTE TALLA M/L *DX*  (ID: 15509643002243)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:34:09,928 [INFO] [50/122] BEAPHAR DENTAL PLUS 75GR  (ID: 15509643035011)
+    url_fabricante  : https://www.beaphar.es/product/12210-dental-plus-75gr/
+    url_fabricante_2: —
+2026-06-02 14:34:10,684 [INFO] [51/122] BEAPHAR DENTAL STICKS PERRO MEDIANO GRANDE 7X182GR  (ID: 15509643067779)
+    url_fabricante  : https://www.beaphar.es/product/13174-dental-sticks-perro-mediano-y-grande-7u-182gr/
+    url_fabricante_2: —
+2026-06-02 14:34:11,448 [INFO] [52/122] BEAPHAR EYE GEL 5ML  (ID: 15509643100547)
+    url_fabricante  : https://www.beaphar.es/product/15348-gel-ocular-perro-y-gato-5-ml/
+    url_fabricante_2: —
+2026-06-02 14:34:12,201 [INFO] [53/122] BEAPHAR FIPROTEC SPOT ON GATO 1X0,5ML  (ID: 15509643133315)
+    url_fabricante  : https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/
+    url_fabricante_2: —
+2026-06-02 14:34:12,928 [INFO] [54/122] BEAPHAR FIPROTEC SPRAY PERROS Y GATOS 100ML  (ID: 15509643198851)
+    url_fabricante  : https://www.beaphar.es/product/15408-fiprotec-spray-perros-gatos-100-ml-es/
+    url_fabricante_2: —
+2026-06-02 14:34:13,673 [INFO] [55/122] BEAPHAR FLEXIFIT BITS GATOS 35G  (ID: 15509643231619)
+    url_fabricante  : https://www.beaphar.es/product/1000066-beaphar-flexifit-bits-gatos-35g/
+    url_fabricante_2: —
+2026-06-02 14:34:14,438 [INFO] [56/122] BEAPHAR FLEXIFIT CHEWS PERROS 175G  (ID: 15509643297155)
+    url_fabricante  : https://www.beaphar.es/product/1000028-beaphar-flexifit-chews-condroprotector-para-perros-175g/
+    url_fabricante_2: —
+2026-06-02 14:34:15,212 [INFO] [57/122] BEAPHAR FLEXIFIT PASTA PERROS Y GATOS 250G  (ID: 15509643329923)
+    url_fabricante  : https://www.beaphar.es/product/1000143-beaphar-flexifit-pasta-perros-y-gatos-snack-articular-250g/
+    url_fabricante_2: —
+2026-06-02 14:34:15,960 [INFO] [58/122] BEAPHAR FLEXIFIT STICKS PERROS 175G  (ID: 15509643362691)
+    url_fabricante  : https://www.beaphar.es/product/1000032-beaphar-flexifit-sticks-perros-175g/
+    url_fabricante_2: —
+2026-06-02 14:34:16,697 [INFO] [59/122] BEAPHAR FLEXIFIT TREATS PERROS 150G  (ID: 15509643428227)
+    url_fabricante  : https://www.beaphar.es/product/1000023-beaphar-flexifit-treats-perros-snack-articular-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:17,434 [INFO] [60/122] BEAPHAR GEL DENTAL PERRO Y GATO 100GR  (ID: 15509643460995)
+    url_fabricante  : https://www.beaphar.es/product/15685-gel-dental-perro-y-gato-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:18,161 [INFO] [61/122] BEAPHAR GENTLE LEADER TALLA L NEGRO  (ID: 15509643493763)
+    url_fabricante  : https://www.beaphar.es/product/17950-beaphar-gentle-leader-correa-adiestramiento-negro-perro-grande
+    url_fabricante_2: —
+2026-06-02 14:34:18,890 [INFO] [62/122] BEAPHAR GENTLE LEADER TALLA L ROJO  (ID: 15509643592067)
+    url_fabricante  : https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/
+    url_fabricante_2: —
+2026-06-02 14:34:19,634 [INFO] [63/122] BEAPHAR GENTLE LEADER TALLA M NEGRO  (ID: 15509643624835)
+    url_fabricante  : https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/
+    url_fabricante_2: —
+2026-06-02 14:34:20,386 [INFO] [64/122] BEAPHAR GENTLE LEADER TALLA M ROJO  (ID: 15509643657603)
+    url_fabricante  : https://www.beaphar.es/product/17949-gentle-leader-talla-m-rojo
+    url_fabricante_2: —
+2026-06-02 14:34:21,120 [INFO] [65/122] BEAPHAR GENTLE LEADER TALLA S NEGRO  (ID: 15509643690371)
+    url_fabricante  : https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/
+    url_fabricante_2: —
+2026-06-02 14:34:21,874 [INFO] [66/122] BEAPHAR GENTLE LEADER TALLA S ROJO  (ID: 15509643723139)
+    url_fabricante  : https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/
+    url_fabricante_2: —
+2026-06-02 14:34:22,628 [INFO] [67/122] BEAPHAR LACTOL KIT: BIBERON+6TETINAS+LIMPIADOR  (ID: 15509643755907)
+    url_fabricante  : https://www.beaphar.es/product/11244-lactol-kit-biberon-6-tetinas-limpiador/
+    url_fabricante_2: —
+2026-06-02 14:34:23,378 [INFO] [68/122] BEAPHAR LACTOL KITTEN MILK LECHE EN POLVO 250GR  (ID: 15509643788675)
+    url_fabricante  : https://www.beaphar.es/product/15197-lactol-kitten-milk-leche-en-polvo-250g/
+    url_fabricante_2: —
+2026-06-02 14:34:24,136 [INFO] [69/122] BEAPHAR LACTOL PUPPY MILK LECHE EN POLVO  (ID: 15509643985283)
+    url_fabricante  : https://www.beaphar.es/product/15196-lactol-puppy-milk-leche-en-polvo-250g/
+    url_fabricante_2: —
+2026-06-02 14:34:24,873 [INFO] [70/122] BEAPHAR LECHE DE SUSTITUCIÓN PEQUEÑO ANIMAL 200G  (ID: 15509644050819)
+    url_fabricante  : https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/
+    url_fabricante_2: —
+2026-06-02 14:34:25,650 [INFO] [71/122] BEAPHAR LIMPIADOR DE LAGRIMAS PERRO Y GATO 50ML  (ID: 15509644116355)
+    url_fabricante  : https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/
+    url_fabricante_2: —
+2026-06-02 14:34:26,398 [INFO] [72/122] BEAPHAR LIMPIADOR DE OIDOS PERRO Y GATO 50ML  (ID: 15509644149123)
+    url_fabricante  : https://www.beaphar.es/product/11672-limpiador-de-oidos-perro-y-gato-50ml/
+    url_fabricante_2: —
+2026-06-02 14:34:27,142 [INFO] [73/122] BEAPHAR LIMPIADOR DE OJOS PERRO Y GATO 50ML  (ID: 15509644181891)
+    url_fabricante  : https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/
+    url_fabricante_2: —
+2026-06-02 14:34:27,881 [INFO] [74/122] BEAPHAR LOCION REPELENTE PERRO GATO 250ML  (ID: 15509644214659)
+    url_fabricante  : https://www.beaphar.es/product/10620-locion-repelente-perro-gato-250ml/
+    url_fabricante_2: —
+2026-06-02 14:34:28,631 [INFO] [75/122] BEAPHAR MIXTURA EN GOLOSINAS 150G  (ID: 15509644247427)
+    url_fabricante  : https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:29,360 [INFO] [76/122] BEAPHAR MIXTURA PARA CANTO 150G  (ID: 15509644280195)
+    url_fabricante  : https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:30,107 [INFO] [77/122] BEAPHAR MIXTURA PARA MUDA 150G  (ID: 15509644312963)
+    url_fabricante  : https://www.beaphar.es/product/1000141-beaphar-mixtura-para-muda-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:30,850 [INFO] [78/122] BEAPHAR MULTIFRESH NEUTRALIZADOR DE OLORES GATO 400G  (ID: 15981869105539)
+    url_fabricante  : https://www.beaphar.es/product/1000110-beaphar-multi-fresh-neutralizador-de-olores-orquidea-400g/
+    url_fabricante_2: —
+2026-06-02 14:34:31,815 [INFO] [79/122] BEAPHAR NEUTRALIZADOR DE OLORES ROEDORES 600GR  (ID: 15509644411267)
+    url_fabricante  : https://www.beaphar.es/product/15384-neutralizador-de-olores-roedores-600g/
+    url_fabricante_2: —
+2026-06-02 14:34:32,557 [INFO] [80/122] BEAPHAR NO LOVE SPRAY 50ML  (ID: 15509644444035)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:34:35,555 [INFO] [81/122] BEAPHAR NO STRESS GATO 30ML  (ID: 15981869367683)
+    url_fabricante  : https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/
+    url_fabricante_2: —
+2026-06-02 14:34:36,286 [INFO] [82/122] BEAPHAR PACK DENTAL PASTA DENTAL+CEPILLO  (ID: 15509644804483)
+    url_fabricante  : https://www.beaphar.es/product/1000477-beaphar-pack-dental-pasta-dental-cepillo-dental/
+    url_fabricante_2: —
+2026-06-02 14:34:37,049 [INFO] [83/122] BEAPHAR PAPICK SPRAY 200ML  (ID: 15509644837251)
+    url_fabricante  : https://www.beaphar.es/product/11538-papick-spray-aves-200ml/
+    url_fabricante_2: —
+2026-06-02 14:34:37,782 [INFO] [84/122] BEAPHAR PASTA DE HUEVO PARA CANARIOS Y AVES EXÓTICAS  (ID: 15509645099395)
+    url_fabricante  : https://www.beaphar.es/product/1000132-beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:38,529 [INFO] [85/122] BEAPHAR PASTA DE HUEVO PERIQUITOS AGAPORNIS COTORRAS  (ID: 15509645361539)
+    url_fabricante  : https://www.beaphar.es/product/1000136-beaphar-pasta-de-huevo-periquitos-agapornis-pequenas-cotorras-1kg/
+    url_fabricante_2: —
+2026-06-02 14:34:39,268 [INFO] [86/122] BEAPHAR PASTA DE MALTA GATOS 100GR  (ID: 15509645459843)
+    url_fabricante  : https://www.beaphar.es/product/12947-pasta-de-malta-gatos-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:40,028 [INFO] [87/122] BEAPHAR PASTA DENTAL MENTA Y PEREJIL PERROS Y GATOS 100GR  (ID: 15509645623683)
+    url_fabricante  : https://www.beaphar.es/product/1000501-pasta-dentifrica-perros-y-gatos-100g-menta-y-perejil/
+    url_fabricante_2: —
+2026-06-02 14:34:40,801 [INFO] [88/122] BEAPHAR PASTA DENTAL PERRO Y GATO 100GR  (ID: 15509645820291)
+    url_fabricante  : https://www.beaphar.es/product/15684-pasta-dental-perro-y-gato-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:41,570 [INFO] [89/122] BEAPHAR PASTA MALTA HURONES 100GR  (ID: 15509646082435)
+    url_fabricante  : https://www.beaphar.es/product/15367-pasta-de-malta-para-hurones-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:44,585 [INFO] [90/122] BEAPHAR PASTA MULTI VITAMINAS GATO 100GR  (ID: 15509646410115)
+    url_fabricante  : https://www.beaphar.es/product/12951-pasta-multi-vitaminas-gato-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:45,349 [INFO] [91/122] BEAPHAR PASTA MULTI VITAMINAS PERRO 100GR  (ID: 15509646770563)
+    url_fabricante  : https://www.beaphar.es/product/12952-pasta-multi-vitaminas-perro-100g/
+    url_fabricante_2: —
+2026-06-02 14:34:46,068 [INFO] [92/122] BEAPHAR PINZA GARRAPATAS  (ID: 15509647065475)
+    url_fabricante  : https://www.beaphar.es/product/17504-pinza-para-garrapatas/
+    url_fabricante_2: —
+2026-06-02 14:34:46,810 [INFO] [93/122] BEAPHAR PIPETAS CALMING SPOT ON GATO 3X0,4 ML  (ID: 15509641232771)
+    url_fabricante  : https://www.beaphar.es/product/10548-calming-spot-on-gato-3x04-ml/
+    url_fabricante_2: —
+2026-06-02 14:34:47,567 [INFO] [94/122] BEAPHAR PIPETAS REPELENTES GATO 3X1ML  (ID: 15509647262083)
+    url_fabricante  : https://www.beaphar.es/product/10617-pipetas-repelentes-gato-3-x-1ml/
+    url_fabricante_2: —
+2026-06-02 14:34:48,295 [INFO] [95/122] BEAPHAR PIPETAS REPULSIVAS ANTIPARASITARIAS PERRO  (ID: 15981868450179)
+    url_fabricante  : https://www.beaphar.es/product/10614-pipetas-repelentes-perro-pequeno-3-x-1ml/
+    url_fabricante_2: —
+2026-06-02 14:34:49,030 [INFO] [96/122] BEAPHAR PUPPY TRAINER EDUCADOR PARA CACHORROS 20ML  (ID: 15509647950211)
+    url_fabricante  : https://www.beaphar.es/product/13506-puppy-trainer-educador-para-cachorros-20ml/
+    url_fabricante_2: —
+2026-06-02 14:34:49,757 [INFO] [97/122] BEAPHAR RABBITCOMFORT SPRAY CONEJOS 30ML  (ID: 15509648081283)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:34:50,501 [INFO] [98/122] BEAPHAR ROJO INTENSIVO CANARIOS  (ID: 15509649031555)
+    url_fabricante  : https://www.beaphar.es/product/16808-rojo-intensivo-canarios-500g/
+    url_fabricante_2: —
+2026-06-02 14:34:53,517 [INFO] [99/122] BEAPHAR SEMILLAS DE FRUTAS PARA PÁJAROS 150G  (ID: 15509649195395)
+    url_fabricante  : https://www.beaphar.es/product/1000140-beaphar-semillas-de-frutas-para-pajaros-150g/
+    url_fabricante_2: —
+2026-06-02 14:34:54,245 [INFO] [100/122] BEAPHAR SPRAY ALIENTO FRESCO PERRO Y GATO 150ML  (ID: 15509649293699)
+    url_fabricante  : https://www.beaphar.es/product/15683-spray-aliento-fresco-perro-y-gato-150ml/
+    url_fabricante_2: —
+2026-06-02 14:34:55,005 [INFO] [101/122] BEAPHAR SPRAY EDUCADOR EXTERIOR 400ML  (ID: 15509649326467)
+    url_fabricante  : https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/
+    url_fabricante_2: —
+2026-06-02 14:34:55,738 [INFO] [102/122] BEAPHAR SPRAY PARA HERIDAS 75ML  (ID: 15509649457539)
+    url_fabricante  : https://www.beaphar.es/product/13747-beaphar-spray-para-heridas/
+    url_fabricante_2: —
+2026-06-02 14:34:56,492 [INFO] [103/122] BEAPHAR SPRAY PROTECTOR ALMOHADILLAS 150ML  (ID: 15509649523075)
+    url_fabricante  : https://www.beaphar.es/product/10235-spray-protector-almohadillas-150ml/
+    url_fabricante_2: —
+2026-06-02 14:34:57,228 [INFO] [104/122] BEAPHAR SUPLEMENTO ALIMENT PAJAROS MEJORA DIGEST 225GR  (ID: 15509649588611)
+    url_fabricante  : https://www.beaphar.es/product/10821-cana-grit-250g/
+    url_fabricante_2: —
+2026-06-02 14:34:57,971 [INFO] [105/122] BEAPHAR VERMIPURE COMPRIMIDOS NATURALES GATOS 50 COMPRIMIDOS  (ID: 15509649621379)
+    url_fabricante  : https://www.beaphar.es/product/14604/
+    url_fabricante_2: —
+2026-06-02 14:34:58,716 [INFO] [106/122] BEAPHAR VERMIPURE COMPRIMIDOS PERROS PEQUEÑOS <15KG 50 COMP  (ID: 15509649686915)
+    url_fabricante  : https://www.beaphar.es/product/14605/
+    url_fabricante_2: —
+2026-06-02 14:34:59,474 [INFO] [107/122] BEAPHAR VERMIPURE COMPRIMIDOS  PERROS GRANDES >15KG 50 COMP  (ID: 15509649817987)
+    url_fabricante  : https://www.beaphar.es/product/14621-beaphar-vermipure-comprimidos-naturales-perros-15kg-medianos-y-grandes-50-comprimidos/
+    url_fabricante_2: —
+2026-06-02 14:35:02,481 [INFO] [108/122] BEAPHAR VERMIPURE PASTA NATURAL PERROS 100G  (ID: 15509649916291)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 14:35:03,208 [INFO] [109/122] BEAPHAR VERMIPURE SOLUCION LIQUIDA NATURAL GATOS 50ML  (ID: 15509649981827)
+    url_fabricante  : https://www.beaphar.es/product/1000168-beaphar-vermipure-solucion-liquida-natural-gatos-y-gatitos-50ml/
+    url_fabricante_2: —
+2026-06-02 14:35:03,950 [INFO] [110/122] BEAPHAR VERMIPURE SOLUCION LIQUIDA NATURAL PERROS 50ML  (ID: 15509650014595)
+    url_fabricante  : https://www.beaphar.es/product/1000169/
+    url_fabricante_2: —
+2026-06-02 14:35:04,691 [INFO] [111/122] BEAPHAR VITAMINA A 20ML PAJAROS  (ID: 15509650080131)
+    url_fabricante  : https://www.beaphar.es/product/16108-vitamina-a-aves-20ml/
+    url_fabricante_2: —
+2026-06-02 14:35:05,423 [INFO] [112/122] BEAPHAR VITAMINA C COBAYAS 100CPD  (ID: 15509650145667)
+    url_fabricante  : https://www.beaphar.es/product/15618-vitamina-c-en-comprimidos-para-cobayas/
+    url_fabricante_2: —
+2026-06-02 14:35:06,184 [INFO] [113/122] BEAPHAR XTRAVITAL AVES EXÓTICAS 500G  (ID: 15509650178435)
+    url_fabricante  : https://www.beaphar.es/product/1000131-beaphar-xtravital-aves-exoticas-500g/
+    url_fabricante_2: —
+2026-06-02 14:35:06,960 [INFO] [114/122] BEAPHAR XTRAVITAL CANARIOS - 500G  (ID: 15509650243971)
+    url_fabricante  : https://www.beaphar.es/product/1000124-beaphar-xtravital-canarios-500g/
+    url_fabricante_2: —
+2026-06-02 14:35:07,724 [INFO] [115/122] BEAPHAR XTRAVITAL COBAYA ALIMENTO  (ID: 15509650407811)
+    url_fabricante  : https://www.beaphar.es/product/16328-xtravital-cobaya-1kg/
+    url_fabricante_2: —
+2026-06-02 14:35:08,457 [INFO] [116/122] BEAPHAR XTRAVITAL CONEJO ALIMENTO  (ID: 15509650604419)
+    url_fabricante  : https://www.beaphar.es/product/16316-xtravital-conejo-25kg/
+    url_fabricante_2: —
+2026-06-02 14:35:11,461 [INFO] [117/122] BEAPHAR XTRAVITAL LOROS  (ID: 15509650702723)
+    url_fabricante  : https://www.beaphar.es/product/1000130-beaphar-xtravital-loros-3-kg/
+    url_fabricante_2: —
+2026-06-02 14:35:12,214 [INFO] [118/122] BEAPHAR XTRAVITAL PERIQUITOS  (ID: 15509650833795)
+    url_fabricante  : https://www.beaphar.es/product/1000125-beaphar-xtravital-periquitos-500g/
+    url_fabricante_2: —
+2026-06-02 14:35:12,961 [INFO] [119/122] BEAPHAR XTRAVITAL PERIQUITOS GRANDES  (ID: 15509650866563)
+    url_fabricante  : https://www.beaphar.es/product/1000128-beaphar-xtravital-periquitos-grandes-1kg/
+    url_fabricante_2: —
+2026-06-02 14:35:13,692 [INFO] [120/122] KEEP OFF GRÁNULOS REPELENTES EXTERIORES PERRO Y GATO 2X200G  (ID: 15509650997635)
+    url_fabricante  : https://www.beaphar.es/product/1000534-beaphar-keep-off-granulos-exteriores-2-x-200g
+    url_fabricante_2: —
+2026-06-02 14:35:14,444 [INFO] [121/122] KEEP OFF SPRAY EDUCADOR INTERIORES PERROS Y GATOS 200ML  (ID: 15509651030403)
+    url_fabricante  : https://www.beaphar.es/product/1000524-beaphar-keep-off-spray-educador-interiores-200ml/
+    url_fabricante_2: —
+2026-06-02 14:35:15,184 [INFO] [122/122] KEEP OFF SPRAY EXTERIORES ANTIARAÑAZO Y MARCAJE GATOS  500ML  (ID: 15509651095939)
+    url_fabricante  : https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/
+    url_fabricante_2: —
+2026-06-02 14:35:15,385 [INFO] 
+Snapshot guardado: resultados/beaphar_urls_snapshot.json (122 productos, 115 con url_fabricante, 2 con url_fabricante_2)
