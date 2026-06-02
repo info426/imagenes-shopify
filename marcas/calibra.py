@@ -9,10 +9,12 @@ Interfaz estándar (requerida por core/process_brand.py):
 
 import json
 import logging
+import os
 import re
 import time
 import unicodedata
 from pathlib import Path
+from urllib.parse import urlparse
 
 log = logging.getLogger(__name__)
 
@@ -81,6 +83,12 @@ _MAX_PAGES = 25
 
 # Parámetro de paginación detectado en mycalibra.es
 _PAGER_PARAM = "pager-page"
+
+# Navegador headed (bajo xvfb) cuando el workflow lo pide — más resistente al gate
+# anti-bot de Calibra ("Ověření přístupu") desde IPs de datacenter (Actions).
+# Default: headless. El workflow Resolver URLs ya exporta APPLAWS_HEADED=1 + xvfb.
+_HEADED = (os.getenv("CALIBRA_HEADED") or os.getenv("APPLAWS_HEADED") or "") \
+    in ("1", "true", "True")
 
 
 # ─── Extracción de imágenes ───────────────────────────────────────────────────
@@ -331,17 +339,58 @@ def _scrape_source(page, source: dict) -> dict:
 
 # ─── Interfaz pública: scrape_catalog ────────────────────────────────────────
 
+def _norm_host(url: str) -> str:
+    """Host sin 'www.' para comparar el web_url pedido con los dominios de SOURCES."""
+    host = urlparse(url).netloc.lower() if url else ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def _source_for_web_url(web_url: str):
+    """Devuelve la fuente de SOURCES cuyo dominio coincide con web_url, o None."""
+    host = _norm_host(web_url)
+    if not host:
+        return None
+    for src in SOURCES:
+        if _norm_host(src["base"]) == host:
+            return src
+    return None
+
+
+def _catalog_path_for(source) -> Path:
+    """Caché por sitio para no mezclar las URLs de campo 1 (mycalibra.es) y campo 2
+    (mycalibra.eu / calibra.cat). Sin fuente concreta → caché legacy (todas)."""
+    if source is None:
+        return CATALOG_PATH
+    return Path(f"resultados/calibra_{source['lang']}_catalog.json")
+
+
 def scrape_catalog(web_url: str = "", rebuild: bool = False) -> dict:
     """
-    Scrapea mycalibra.es (primaria), mycalibra.eu y calibra.cat con Playwright.
-    Devuelve: { slug: { name, url, source, images: [url, ...] } }
-    Cachea en resultados/calibra_catalog.json.
-    El parámetro web_url se ignora; las URLs están hardcodeadas por fuente.
+    Scrapea el catálogo de Calibra con Playwright y devuelve
+    { slug: { name, url, source, images: [url, ...] } }.
+
+    web_url SELECCIONA el sitio a resolver, para poder rellenar dos metacampos
+    distintos con el mismo scraper (el workflow corre una vez por metacampo):
+      - mycalibra.es  → url_fabricante   (campo 1, español)
+      - mycalibra.eu  → url_fabricante_2 (campo 2, inglés; misma estructura /{slug})
+      - calibra.cat   → soportado también si expone /{slug} (hoy es portal de marca)
+    Si web_url apunta a una fuente conocida se scrapea SOLO ese dominio y se cachea
+    en resultados/calibra_{lang}_catalog.json (las URLs devueltas son siempre del
+    sitio pedido). Si web_url está vacío o no coincide → legacy: todas las fuentes
+    en resultados/calibra_catalog.json.
     """
-    if not rebuild and CATALOG_PATH.exists():
+    source     = _source_for_web_url(web_url)
+    sources    = [source] if source else SOURCES
+    cache_path = _catalog_path_for(source)
+
+    if rebuild and cache_path.exists():
+        cache_path.unlink()
+        log.info(f"Catálogo borrado (rebuild): {cache_path.name}")
+    elif cache_path.exists():
         try:
-            catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
-            log.info(f"Catálogo cargado desde caché: {len(catalog)} productos")
+            catalog = json.loads(cache_path.read_text(encoding="utf-8"))
+            log.info(f"Catálogo cargado desde caché ({cache_path.name}): "
+                     f"{len(catalog)} productos")
             return catalog
         except Exception:
             pass
@@ -354,11 +403,13 @@ def scrape_catalog(web_url: str = "", rebuild: bool = False) -> dict:
         return {}
 
     catalog: dict = {}
-    log.info("Scraping catálogo Calibra con Playwright...")
+    site_label = source["base"] if source else "todas las fuentes"
+    log.info(f"Scraping catálogo Calibra ({site_label}) con Playwright "
+             f"[{'headed' if _HEADED else 'headless'}]...")
 
     with sync_playwright() as pw:
         browser = pw.chromium.launch(
-            headless=True,
+            headless=not _HEADED,
             args=["--no-sandbox", "--disable-setuid-sandbox",
                   "--disable-dev-shm-usage", "--disable-gpu"],
         )
@@ -366,32 +417,56 @@ def scrape_catalog(web_url: str = "", rebuild: bool = False) -> dict:
             user_agent=HEADERS["User-Agent"],
             locale="es-ES",
             viewport={"width": 1440, "height": 900},
-            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
+            extra_http_headers={
+                "Accept-Language": HEADERS["Accept-Language"],
+                "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+                           "image/avif,image/webp,image/apng,*/*;q=0.8"),
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1",
+            },
             ignore_https_errors=True,
+        )
+        # Ocultar señales de automatización para pasar el gate anti-bot de Calibra
+        ctx.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+            "Object.defineProperty(navigator,'languages',{get:()=>['es-ES','es','en']});"
+            "Object.defineProperty(navigator,'plugins',{get:()=>[1,2,3,4,5]});"
+            "window.chrome={runtime:{}};"
         )
         page = ctx.new_page()
 
-        for source in SOURCES:
-            log.info(f"\n=== Fuente: {source['base']} ===")
+        for src in sources:
+            log.info(f"\n=== Fuente: {src['base']} ===")
+            # Warm-up: visitar la home para que el challenge anti-bot emita la
+            # cookie de acceso antes de crawlear las categorías.
             try:
-                entries = _scrape_source(page, source)
+                page.goto(src["base"], timeout=30000,
+                          wait_until="domcontentloaded")
+                page.wait_for_timeout(4000)
+            except Exception as e:
+                log.warning(f"  warm-up {src['base']} falló: {e}")
+            try:
+                entries = _scrape_source(page, src)
                 # Solo añadir productos no vistos en fuentes anteriores
                 new_count = 0
                 for slug, entry in entries.items():
                     if slug not in catalog:
                         catalog[slug] = entry
                         new_count += 1
-                log.info(f"  → {new_count} productos nuevos de {source['base']}")
+                log.info(f"  → {new_count} productos nuevos de {src['base']}")
             except Exception as e:
-                log.warning(f"  Error scraping {source['base']}: {e}")
+                log.warning(f"  Error scraping {src['base']}: {e}")
 
         browser.close()
 
-    CATALOG_PATH.parent.mkdir(exist_ok=True)
-    CATALOG_PATH.write_text(
+    cache_path.parent.mkdir(exist_ok=True)
+    cache_path.write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    log.info(f"\nCatálogo guardado: {len(catalog)} productos → {CATALOG_PATH}")
+    log.info(f"\nCatálogo guardado: {len(catalog)} productos → {cache_path}")
     return catalog
 
 

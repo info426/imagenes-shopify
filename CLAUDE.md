@@ -669,6 +669,32 @@ El listado de `artero.com/es/petcare/` se carga vía JS dinámico y no es fiable
 - **Pendiente revisar manualmente** (3 productos): Joy Classic LARGE FILLET CORDERO / AROS POLLO / PECHUGA POLLO → renombrados como BITS en Distrivet; verificar si el EAN ha cambiado también.
 - **Sin equivalente en Distrivet** (13 productos): Joy CAT, Joy Mini, Verve Snack, Expert Energy — decidir si desactivar o buscar proveedor alternativo.
 
+**URLs fabricante (web → metacampos):** `marcas/calibra.py` adaptado para resolver
+**por dominio** según `web_url` (antes fusionaba todas las fuentes). Cada producto
+de Calibra cuelga de la raíz con slug `calibra-…` (`/{slug}`), p. ej.
+`mycalibra.es/calibra-dog-life-adult-lamb-400g`. `scrape_catalog(web_url)` elige la
+fuente de `SOURCES` cuyo dominio coincide y cachea **por sitio**
+(`resultados/calibra_{es|eu|cat}_catalog.json`); `find_best_match` devuelve la URL
+de ese sitio. Así el workflow `Resolver URLs fabricante` se corre **dos veces**:
+
+| Run | `web_url` | `url_key` | Idioma |
+|---|---|---|---|
+| Campo 1 | `https://www.mycalibra.es/` | `url_fabricante` | español |
+| Campo 2 | `https://www.mycalibra.eu/` | `url_fabricante_2` | inglés (misma estructura `/{slug}`) |
+
+- **`calibra.cat` NO sirve como campo 2**: es portal de marca, no expone páginas
+  `/{slug}` (verificado por búsqueda). El catálogo inglés con la misma estructura que
+  mycalibra.es está en **`mycalibra.eu`** → usar esa como campo 2. El código soporta
+  los tres dominios por si calibra.cat cambia.
+- **Anti-bot**: la home devuelve un gate ("Ověření přístupu", Calibra es checa). El
+  scraper trae contexto endurecido (Sec-Fetch, bypass `navigator.webdriver`, warm-up
+  de la home) y corre **headed bajo xvfb** cuando el workflow exporta `APPLAWS_HEADED=1`
+  (el de Resolver URLs ya lo hace). Si aun así da gate desde Actions, plan B = DDG
+  `site:mycalibra.es` por producto + resolver la URL del resultado sin navegar.
+- **Test**: 1 `product_id` primero (hace el crawl completo del sitio y cachea), verificar
+  `fuentes.url_fabricante` en el admin, luego lote con `product_ids` vacío (reusa caché).
+  Matching ES↔EN ya cubierto por `_SYNONYMS`; el peso (400g/2kg) se ignora en `IGNORE_TOKENS`.
+
 ---
 
 ## Trabajo pendiente / ideas descartadas temporalmente
