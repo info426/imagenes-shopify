@@ -1,0 +1,175 @@
+2026-06-02 08:08:40,339 [INFO] ============================================================
+2026-06-02 08:08:40,339 [INFO]   Vendor   : ALPHA SPIRIT
+2026-06-02 08:08:40,339 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-02 08:08:40,340 [INFO]   Pipeline : standard
+2026-06-02 08:08:40,340 [INFO]   Padding  : auto
+2026-06-02 08:08:40,340 [INFO] ============================================================
+2026-06-02 08:08:40,683 [INFO] Token obtenido
+2026-06-02 08:08:44,296 [INFO] [1/106] ALPHA SPIRIT ALBONDIGAS CERDO CON ALCARAVEA 6X200GR  (ID: 15957141389699)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-humedo-albondigas/products/albondigas-de-cerdo-y-alcaravea-200gr?variant=55445393572166
+    url_fabricante_2: —
+2026-06-02 08:08:44,914 [INFO] [2/106] ALPHA SPIRIT ALBONDIGAS CIERVO CON ROMERO 6X200GR  (ID: 15957137162627)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-ciervo-y-romero-200gr?srsltid=AfmBOooTH6G3ZK8M3saTYojrJkXbKCCHY6yJNakN5W1ZZVb14QoK08RF&variant=55463306297670
+    url_fabricante_2: —
+2026-06-02 08:08:45,555 [INFO] [3/106] ALPHA SPIRIT ALBONDIGAS CORDERO CON COMINO 6X200GR  (ID: 15957140963715)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-humedo-albondigas/products/albondigas-de-cordero-y-comino-200gr?variant=55445419065670
+    url_fabricante_2: —
+2026-06-02 08:08:46,178 [INFO] [4/106] ALPHA SPIRIT ALBONDIGAS JABALI CON TOMILLO 6X200GR  (ID: 15957139030403)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-humedo-albondigas/products/albondigas-de-jabali-y-tomillo-200gr?variant=55445338259782
+    url_fabricante_2: —
+2026-06-02 08:08:46,807 [INFO] [5/106] ALPHA SPIRIT ALBONDIGAS PAVO CON CILANTRO 6X200GR  (ID: 15957140832643)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-humedo-albondigas/products/albondigas-de-pavo-y-cilantro-200gr?variant=55445385085254
+    url_fabricante_2: —
+2026-06-02 08:08:47,426 [INFO] [6/106] ALPHA SPIRIT ALBONDIGAS POLLO CON CURCUMA 6X200GR  (ID: 15957137260931)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-humedo-albondigas/products/albondigas-de-pollo-y-curcuma-200gr?variant=55445458092358
+    url_fabricante_2: —
+2026-06-02 08:08:48,044 [INFO] [7/106] ALPHA SPIRIT ALBONDIGAS TERNERA CON SALVIA 6X200GR  (ID: 15957141782915)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-ternera-y-salvia-200gr?srsltid=AfmBOoqdqHayacpNlIJ9dySvWAS0KXtmDMNfBO6BtU-K_bH6DKFI03fC&variant=55445443412294
+    url_fabricante_2: —
+2026-06-02 08:08:48,662 [INFO] [8/106] ALPHA SPIRIT CANINE ADULT AVES CORRAL SEMIHUMEDO  (ID: 15509624258947)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-semi-humedo-aves-de-corral?srsltid=AfmBOooh4v2YMZtt3M8buIoMimuz4fN-y3LixyW77OzICEbYtclxT-zc&variant=36409212895389
+    url_fabricante_2: —
+2026-06-02 08:08:49,287 [INFO] [9/106] ALPHA SPIRIT CANINE ADULT PESCADO SEMIHUMEDO  (ID: 15509624324483)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-semi-humedo-wild-fish?srsltid=AfmBOorwjGKvdLoiWyQTKdSyI_3wHSr7auWs6lf9u_hAxYlKUOsqzmjO&variant=36409431949469
+    url_fabricante_2: —
+2026-06-02 08:08:49,909 [INFO] [10/106] ALPHA SPIRIT CANINE ALBONDIGAS BUEY SALVIA CAJA 6X400GR  (ID: 15509624390019)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-ternera-y-salvia-400gr?srsltid=AfmBOopk8kWHVW4eNdqTDNbqG3zdtsafGcV1GUCREetyAFrILcxAAdxJ&variant=55445517074758
+    url_fabricante_2: —
+2026-06-02 08:08:50,527 [INFO] [11/106] ALPHA SPIRIT CANINE ALBONDIGAS CERDO ALCARAVEA CAJA 6X400GR  (ID: 15509624422787)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-cerdo-y-alcaravea-400gr?srsltid=AfmBOop86Hot6MdyAZxgO0t0jgZ95o20eKgmHN3kXDMEtB_RXaAf7vRO&variant=55445520384326
+    url_fabricante_2: —
+2026-06-02 08:08:51,132 [INFO] [12/106] ALPHA SPIRIT CANINE ALBONDIGAS CORDERO COMINO CAJA 6X400GR  (ID: 15509624455555)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-cordero-y-comino-400gr?srsltid=AfmBOoq6sUuf8zF8TcydVufgPSO_-6ox1NSDOL59pvT1b13HWdx0U1r9&variant=55445516058950
+    url_fabricante_2: —
+2026-06-02 08:08:51,769 [INFO] [13/106] ALPHA SPIRIT CANINE ALBONDIGAS JABALI TOMILLO 6X400GR  (ID: 15509624521091)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-jabali-y-tomillo-400gr?srsltid=AfmBOoqNJxvCOiuRQFEGQQBntadKQMB9LnvJjzDMs8j87ezXk9gFn5fM&variant=55445523890502
+    url_fabricante_2: —
+2026-06-02 08:08:52,388 [INFO] [14/106] ALPHA SPIRIT CANINE ALBONDIGAS PAVO CILANTRO 6X400GR  (ID: 15509624553859)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-pavo-y-cilantro-400gr?srsltid=AfmBOoof9Z8sHdPlmZYO0tpDhOUMQvPONmAKkn8nrrNOTyA6GLMfkajY&variant=55445523104070
+    url_fabricante_2: —
+2026-06-02 08:08:53,005 [INFO] [15/106] ALPHA SPIRIT CANINE ALBONDIGAS POLLO CURCUMA 6X400GR  (ID: 15509624586627)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-pollo-y-curcuma-400gr?srsltid=AfmBOooFL97p_2aDZU251J8OpTV9BTZdnnDa5ZfkmJRHpZC8o8eQJYIi&variant=55445522055494
+    url_fabricante_2: —
+2026-06-02 08:08:53,616 [INFO] [16/106] ALPHA SPIRIT CANINE ALBONDIGAS VENADO ROMERO 6X400GR  (ID: 15509624619395)
+    url_fabricante  : https://www.aspiritpetfood.store/products/albondigas-de-ciervo-y-romero-400gr?srsltid=AfmBOooDOInOYOJ0LTS0jbayHn74nSKIVW8uM5ESszsvtvsb6ONTsRnz&variant=55445525102918
+    url_fabricante_2: —
+2026-06-02 08:08:54,249 [INFO] [17/106] ALPHA SPIRIT CANINE BARRITAS HIGADO 16X4UDS  (ID: 15509624684931)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/ristra-de-barritas-individualesde-de-higado-4-unds?variant=55450902004038
+    url_fabricante_2: —
+2026-06-02 08:08:54,863 [INFO] [18/106] ALPHA SPIRIT CANINE BARRITAS HIGADO 30UDS  (ID: 15509624717699)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-higado-30unds?srsltid=AfmBOoqPDxOuGk3-cnBkJiaL3OJsdNCCbLtn6bTQWHcdYOMV3P5-6BOs&variant=55450704609606
+    url_fabricante_2: —
+2026-06-02 08:08:55,469 [INFO] [19/106] ALPHA SPIRIT CANINE BARRITAS JAMON 16X4UDS  (ID: 15509624816003)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/ristra-de-barritas-de-jamon-4-unds?variant=55450813006150
+    url_fabricante_2: —
+2026-06-02 08:08:56,101 [INFO] [20/106] ALPHA SPIRIT CANINE BARRITAS JAMON 30UDS  (ID: 15509624848771)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-jamon-30unds?srsltid=AfmBOorMICUi-ERmD2fsSCpJmSTfKDvCV4pB_cb8C67wcyTu70wZWhit&variant=55450683998534
+    url_fabricante_2: —
+2026-06-02 08:08:56,733 [INFO] [21/106] ALPHA SPIRIT CANINE BARRITAS PATO 16X4UDS  (ID: 15509624881539)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/ristra-de-barritas-de-pato-4-unds?variant=55450884112710
+    url_fabricante_2: —
+2026-06-02 08:08:57,353 [INFO] [22/106] ALPHA SPIRIT CANINE BARRITAS PATO 30UDS  (ID: 15509624914307)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-pato-30unds?srsltid=AfmBOoqed_7-5f1FcRN_zs50ZecSsgI65q1YXdDMTt1IHhgllET3fuPt&variant=55450673971526
+    url_fabricante_2: —
+2026-06-02 08:08:57,979 [INFO] [23/106] ALPHA SPIRIT CANINE BARRITAS PAVO 30UDS  (ID: 15509624979843)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-pavo-50gr?srsltid=AfmBOoqtGkWcUXotWQI_AOSDZvTJ_8g7Jx3125r1fHm7an8G_UW_kIi_&variant=55450691666246
+    url_fabricante_2: —
+2026-06-02 08:08:58,598 [INFO] [24/106] ALPHA SPIRIT CANINE BARRITAS PESCADO 16X4UDS  (ID: 15509625012611)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/ristra-de-barritas-individuales-de-pescado-4-unds?variant=55450891354438
+    url_fabricante_2: —
+2026-06-02 08:08:59,221 [INFO] [25/106] ALPHA SPIRIT CANINE BARRITAS PESCADO 30UDS  (ID: 15509625045379)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-pescado-30unds?srsltid=AfmBOopqIuPISi0mJrRHpDjRnsoWgts2GDFlqOLxkGByP5bjharY56Pv&variant=55450714374470
+    url_fabricante_2: —
+2026-06-02 08:08:59,843 [INFO] [26/106] ALPHA SPIRIT CANINE BARRITAS POLLO 16X4UDS  (ID: 15509625078147)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/ristra-de-barritas-individualesde-pollo-4-unds?variant=55450910064966
+    url_fabricante_2: —
+2026-06-02 08:09:00,466 [INFO] [27/106] ALPHA SPIRIT CANINE BARRITAS POLLO 30UDS  (ID: 15509625110915)
+    url_fabricante  : https://www.aspiritpetfood.store/products/barritas-individuales-de-pollo-30unds?srsltid=AfmBOoo_SzwFBf3f8Gm1L1_MXJjUjy_KPB0UxgRXGc2TG5W4C1BqOU2P&variant=55450723320134
+    url_fabricante_2: —
+2026-06-02 08:09:01,092 [INFO] [28/106] ALPHA SPIRIT CANINE BOQUERON CON MANZANA ROJA LATA 6X400GR  (ID: 15509625143683)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-anchoa?srsltid=AfmBOor-SOGvFrBWAAN1dlmlQR60H4RYjWOwGPgsyKKidbo73eRczbvb&variant=43255968268506
+    url_fabricante_2: —
+2026-06-02 08:09:01,691 [INFO] [29/106] ALPHA SPIRIT CANINE CERDO CON MANZANA AMARILLA LATA 6X400GR  (ID: 15509625176451)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 08:09:02,307 [INFO] [30/106] ALPHA SPIRIT CANINE CONEJO CON PLATANO LATA 6X400GR  (ID: 15509625209219)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-conejo-con-platano-2?srsltid=AfmBOor-J8FV11dvpLqHuCo5nyco4iaORsXU17GYdZJkLBIXU06FVnfS
+    url_fabricante_2: —
+2026-06-02 08:09:02,948 [INFO] [31/106] ALPHA SPIRIT CANINE CORDERO CON PERA LATA 6X400GR  (ID: 15509625241987)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-cordero-con-pera-1?srsltid=AfmBOoqWfNZxVV8xlArEzNk4mqo3OfHo621-XBMO5T_HCfc_gT7qlP1f&variant=55463357514054
+    url_fabricante_2: —
+2026-06-02 08:09:03,560 [INFO] [32/106] ALPHA SPIRIT CANINE HIGADO SNACKS 24X50GRS  (ID: 15509625274755)
+    url_fabricante  : https://www.aspiritpetfood.store/products/snack-de-higado-50gr?srsltid=AfmBOorvnBi04IjZaEaFTWPf5uub3ef3U_NQ3rxn849Xam7fcGjVoGjD&variant=55450773389638
+    url_fabricante_2: —
+2026-06-02 08:09:04,184 [INFO] [33/106] ALPHA SPIRIT CANINE JAMON CON MELON LATA 6X400GR  (ID: 15509625373059)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-jamon-con-melon?srsltid=AfmBOopIJbi2zFwQIrWxgbM-TNVv9hHz5HPzdvgcyTYdatX6X8FhTBu-&variant=55463356727622
+    url_fabricante_2: —
+2026-06-02 08:09:04,805 [INFO] [34/106] ALPHA SPIRIT CANINE JAMON SNACKS 24X50GRS  (ID: 15509625405827)
+    url_fabricante  : https://www.aspiritpetfood.store/products/snack-de-jamon-50gr?srsltid=AfmBOoobcVjnbfkGCe2CPA4ZixE-LmIdZuiaNoOO_5eVbPVcrpWiYkUe&variant=55450737639750
+    url_fabricante_2: —
+2026-06-02 08:09:05,418 [INFO] [35/106] ALPHA SPIRIT CANINE MULTIPROTEICO SEMIHUMEDO  (ID: 15509625471363)
+    url_fabricante  : https://www.aspiritpetfood.store/products/copia-de-alimento-semi-humedo-multiprotein?srsltid=AfmBOorwBbkOBRUfjrfTaCvmqHXDxgF5o_RBmvyFW4EjWZ3IB6317Kqt&variant=36407104471197
+    url_fabricante_2: —
+2026-06-02 08:09:06,024 [INFO] [36/106] ALPHA SPIRIT CANINE PATO CON MANZANA VERDE LATA 6X400GR  (ID: 15509625569667)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-pato-con-manzana?srsltid=AfmBOoooxjo101eqFA7n72oyp9san-2yRvMIMoLV-Pd44zzX6ZlDMcHp
+    url_fabricante_2: —
+2026-06-02 08:09:06,634 [INFO] [37/106] ALPHA SPIRIT CANINE PATO SNACKS 24X50GRS  (ID: 15509625635203)
+    url_fabricante  : https://www.aspiritpetfood.store/products/snack-de-pato-50gr?srsltid=AfmBOop-G8M2kZkzZlxS57atnsdtHkYjasiL3UWmqK2GErpMALezmbOi&variant=55450750615878
+    url_fabricante_2: —
+2026-06-02 08:09:07,261 [INFO] [38/106] ALPHA SPIRIT CANINE PAVO CON PERA LATA 6X400GR  (ID: 15509625667971)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-pavo-con-pera?srsltid=AfmBOooqoUi491nW3_FEmx9RS8bQhYZck-PPVTm5E8YoYFpwGx_cemeH&variant=55463350567238
+    url_fabricante_2: —
+2026-06-02 08:09:07,885 [INFO] [39/106] ALPHA SPIRIT CANINE PAVO SNACKS 24X50GRS  (ID: 15509625700739)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-snacks/products/snack-de-pavo-50gr?variant=55450793673030
+    url_fabricante_2: —
+2026-06-02 08:09:08,496 [INFO] [40/106] ALPHA SPIRIT CANINE PESCADO SNACKS 24X50GRS  (ID: 15509625733507)
+    url_fabricante  : https://www.aspiritpetfood.store/products/snack-de-pescado-50gr?srsltid=AfmBOor_YydHKoyP_ceA0eOtjx4hcrqC6U5jHFfXGGa_b1SpjPB0mZja&variant=55450763460934
+    url_fabricante_2: —
+2026-06-02 08:09:09,127 [INFO] [41/106] ALPHA SPIRIT CANINE POLLO CON PIÑA LATA 6X400GR  (ID: 15509625799043)
+    url_fabricante  : https://www.aspiritpetfood.store/products/alimento-humedo-de-pollo?srsltid=AfmBOoot3EYhHlgv1dec5eQPO9P9e89kOhloAlnV24AE5bTkBrD4dL5M&variant=55463408927046
+    url_fabricante_2: —
+2026-06-02 08:09:09,769 [INFO] [42/106] ALPHA SPIRIT CANINE POLLO SNACKS 24X50GRS  (ID: 15509625831811)
+    url_fabricante  : https://www.aspiritpetfood.store/products/snack-de-pollo-50gr?srsltid=AfmBOooMiz-brdfSf7NrdpMzEHqz_kgcFjAFfwBN6Xc-OFz6KZGxwsrd&variant=55450781352262
+    url_fabricante_2: —
+2026-06-02 08:09:10,397 [INFO] [43/106] ALPHA SPIRIT CANINE POUCH DORADA  (ID: 15956762329475)
+    url_fabricante  : https://www.aspiritpetfood.store/products/mousse-de-dorada-para-perros?srsltid=AfmBOoq_PcMORZAvPP59oGoY6SctzFwnvOptvLkPJSfZMJnPzmW0mApE&variant=53839087534406
+    url_fabricante_2: —
+2026-06-02 08:09:11,050 [INFO] [44/106] ALPHA SPIRIT CANINE POUCH JAMON  (ID: 15956768391555)
+    url_fabricante  : https://www.aspiritpetfood.store/products/pate-de-pavo?srsltid=AfmBOoqvvVKWcqu0AFxdZlcKP5NbD1fPThvqm2NvFX78sEFBATa4Tj6l&variant=36443948318877
+    url_fabricante_2: —
+2026-06-02 08:09:11,687 [INFO] [45/106] ALPHA SPIRIT CANINE POUCH PAVO  (ID: 15956770554243)
+    url_fabricante  : https://www.aspiritpetfood.store/products/mousse-de-pavo-para-perros?srsltid=AfmBOopuvJUIvhxS_IYAZBBFgdD2d95a2zCYV9VNO05rxwZzbog7mkpu&variant=54073919209798
+    url_fabricante_2: —
+2026-06-02 08:09:12,300 [INFO] [46/106] ALPHA SPIRIT CANINE POUCH POLLO  (ID: 15956772585859)
+    url_fabricante  : https://www.aspiritpetfood.store/collections/dr-dogs-mousse/products/mousse-de-pollo-para-perros?variant=54090504962374
+    url_fabricante_2: —
+2026-06-02 08:09:12,910 [INFO] [47/106] ALPHA SPIRIT CANINE POUCH SALMON  (ID: 15956766359939)
+    url_fabricante  : https://www.aspiritpetfood.store/products/mousse-de-salmon-para-perros?srsltid=AfmBOooGfGFiFQoq3QRFmSFJ4-GUNE-XwyLaDi6hh0krOk40hnuDr1Qp&variant=53839057682758
+    url_fabricante_2: —
+2026-06-02 08:09:13,522 [INFO] [48/106] ALPHA SPIRIT CANINE PRIMAL 60% WILDERNESS  (ID: 15509625864579)
+    url_fabricante  : https://www.aspiritpetfood.store/products/primal-60-wilderness-alimento-para-perros?srsltid=AfmBOoo-hfuFxaDf023s2ejKr3BJTeZ5fWjysmftS1hW1FhXthJ7YeNt&variant=37658974388381
+    url_fabricante_2: —
+2026-06-02 08:09:14,140 [INFO] [49/106] ALPHA SPIRIT CANINE PRIMAL 65% OCEANLAND  (ID: 15509625930115)
+    url_fabricante  : https://www.aspiritpetfood.store/products/primal-65-oceanland-alimento-para-perros?srsltid=AfmBOopJklqI21UNH_sko3R026D7Work5HyP4ed-0JkLdX1ZLPlu4Pf9
+    url_fabricante_2: —
+2026-06-02 08:09:14,738 [INFO] [50/106] ALPHA SPIRIT CANINE PRIMAL 65% REBEL FRAM  (ID: 15509626061187)
+    url_fabricante  : https://www.aspiritpetfood.store/products/primal-65-rebel-fram-alimento-para-perros?srsltid=AfmBOoq-wfwKwn0d61JeJCefGdDgz9fgfSZfq2l9oSfQnxMD9uvdjRYC&variant=37658561740957
+    url_fabricante_2: —
+2026-06-02 08:09:15,362 [INFO] [51/106] ALPHA SPIRIT CANINE PRIMAL 70% WANDERLUST  (ID: 15509626126723)
+    url_fabricante  : https://www.aspiritpetfood.store/products/primal-70-wanderlust-dog-food?srsltid=AfmBOoouZwzbNqVqASlGSrZ__vzIiedsSzQ4RQ2_lj6Ar7V6UjTYAqOp&variant=37656395546781
+    url_fabricante_2: —
+Traceback (most recent call last):
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 907, in <module>
+    main()
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 891, in main
+    run_snapshot_urls(api, args.vendor, args.product_id, only_ids or None)
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 771, in run_snapshot_urls
+    url2 = (api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL_2) or {}).get("value") or ""
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 94, in get_metafield
+    r = _request("GET", f"{self.base}/products/{pid}/metafields.json",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 33, in _request
+    retry_after = int(r.headers.get("Retry-After", wait))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '2.0'
