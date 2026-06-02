@@ -1,0 +1,76 @@
+INFORME: Resolver run #15 (solo-texto) vs url_fabricante CORREGIDO (snapshot #7)
+==============================================================================
+Snapshot con URL: 134   |   Reproduce igual: 108 (80%)   |   Regresiones: 26
+
+(A) 16 ARREGLABLES POR IMAGEN — la página correcta ya está en el catálogo:
+    (run#15 eligió mal el formato/línea/especie; CLIP los distingue)
+    • CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR
+        correcto : calibra-cat-premium-adult-trout-salmon-100g
+        run#15   : calibra-cat-life-adult-salmon-200g
+    • CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR
+        correcto : calibra-cat-life-adult-chicken-200g
+        run#15   : calibra-cat-life-adult-chicken
+    • CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR
+        correcto : calibra-cat-life-kitten-chicken-200g
+        run#15   : calibra-cat-life-kitten-chicken
+    • CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR
+        correcto : calibra-cat-life-pouch-adult-beef-in-gravy-85g
+        run#15   : calibra-cat-life-adult-beef-200g
+    • CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR
+        correcto : calibra-cat-life-pouch-sterilised-duck-in-gravy-85g
+        run#15   : calibra-cat-life-sterilised-duck-200g
+    • CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR
+        correcto : calibra-cat-premium-adult-lamb-poultry-100g
+        run#15   : calibra-cat-life-adult-chicken
+    • CALIBRA CAT PREMIUM ADULT CARNE DE AVE
+        correcto : calibra-cat-premium-line-adult-poultry
+        run#15   : calibra-cat-premium-adult-pouches-multipack-12x100g
+    • CALIBRA CAT PREMIUM ADULT CARNE VACUNO
+        correcto : calibra-cat-premium-line-adult-beef
+        run#15   : calibra-cat-premium-adult-pouches-multipack-12x100g
+    • CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE
+        correcto : calibra-cat-premium-line-sterilised-poultry
+        run#15   : calibra-cat-verve
+    • CALIBRA CAT PREMIUM KITTEN CARNE DE AVE
+        correcto : calibra-cat-premium-line-kitten-poultry
+        run#15   : calibra-cat-premium-kitten-salmon-100g
+    • CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR
+        correcto : calibra-cat-premium-steril-pouches-multipack-12x100g
+        run#15   : calibra-cat-life-pouches-sterilised-multipack-12x85g
+    • CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG
+        correcto : calibra-dog-en-neutered-new
+        run#15   : calibra-expert-nutrition
+    • CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR
+        correcto : calibra-dog-life-adult-wild-boar-with-cran-400g
+        run#15   : calibra-dog-life-adult-lamb-400g
+    • CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G
+        correcto : calibra-dog-premium-can-with-beef-1240g
+        run#15   : calibra-dog-premium-line-adult-12-kg-new
+    • CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESC 150G
+        correcto : calibra-dog-verve-crunchy-snack-insect-salmon-150g
+        run#15   : calibra-dog-verve-crunchy-snack-fresh-salmon-150g
+    • CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G
+        correcto : calibra-dog-premium-can-with-chicken-beef-1240g
+        run#15   : calibra-cat-premium-adult-duck-chicken-100g
+
+(B) 10 REQUIEREN CATÁLOGO COMPLETO — la página NO estaba crawleada (→ sitemap):
+    • CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G
+        correcto : calibra-dog-verve-semi-moist-snack-fresh-herring-150g   (run#15: calibra-dog-verve-crunchy-snack-fresh-salmon-150g)
+    • CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G
+        correcto : calibra-rockets-mix-chinchillas-degus-900g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS COBAYAS 900G
+        correcto : calibra-rockets-mix-guinea-pigs-900g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS CONEJOS 900G
+        correcto : calibra-rockets-mix-rabbits-900g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G
+        correcto : calibra-rockets-mix-hamsters-small-rodents-900g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G
+        correcto : calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g   (run#15: calibra-cat-life-sensitive-rabbit-200g)
+    • CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G
+        correcto : calibra-rockets-sticks-rabbits-rodents-fruits-120g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G
+        correcto : calibra-rockets-sticks-rabbits-rodents-vegetables-120g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G
+        correcto : calibra-rockets-sticks-small-rodents-nuts-coconut-120g   (run#15: calibra-rockets)
+    • CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G
+        correcto : calibra-rockets-sticks-small-rodents-vegeta-nuts-120g   (run#15: calibra-rockets)
