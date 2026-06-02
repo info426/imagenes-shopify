@@ -40,7 +40,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from core.image_utils import (dedupe_images, is_high_res, process_image,
                               process_image_webp_only, to_webp_b64)
-from core.shopify_api import ShopifyAPI, get_token
+from core.shopify_api import ShopifyAPI, get_token, SHOP_DOMAIN
 from core import amazon
 
 load_dotenv()
@@ -64,6 +64,13 @@ log = logging.getLogger(__name__)
 
 def vendor_slug(vendor: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", vendor.lower()).strip("_")
+
+
+def _admin_url(pid) -> str:
+    """URL del producto en el admin de Shopify (clicable en el log de Actions).
+    7ev1zx-eg.myshopify.com → https://admin.shopify.com/store/7ev1zx-eg/products/{pid}"""
+    store = SHOP_DOMAIN.split(".")[0]
+    return f"https://admin.shopify.com/store/{store}/products/{pid}"
 
 
 def title_slug(title: str) -> str:
@@ -351,7 +358,7 @@ def run_shopify_backup(api: ShopifyAPI, vendor: str,
     for i, product in enumerate(products, 1):
         pid   = product["id"]
         title = product["title"]
-        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})\n  {_admin_url(pid)}")
 
         if pid in done_ids:
             log.info("  Ya procesado — saltando")
@@ -455,7 +462,7 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     for i, product in enumerate(products, 1):
         pid   = product["id"]
         title = product["title"]
-        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})\n  {_admin_url(pid)}")
 
         # Extraer primer barcode no vacío (EAN) para scrapers que lo admitan
         barcode = next(
@@ -779,7 +786,7 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
         log.info("MODO DRY-RUN — no se escribirá nada en Shopify")
     for i, product in enumerate(products, 1):
         pid, title = product["id"], product["title"]
-        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})")
+        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})\n  {_admin_url(pid)}")
 
         barcode = next(
             (str(v.get("barcode", "")).strip()
@@ -873,6 +880,7 @@ def run_snapshot_urls(api: ShopifyAPI, vendor: str, product_id: int = None,
         # eliminar de la caché los productos cuyo url_fabricante_2 se borró.
         title_to_url2[title] = url2
         log.info(f"[{i}/{len(products)}] {title}  (ID: {pid})\n"
+                 f"    {_admin_url(pid)}\n"
                  f"    url_fabricante  : {url1 or '—'}\n"
                  f"    url_fabricante_2: {url2 or '—'}")
         time.sleep(0.2)
