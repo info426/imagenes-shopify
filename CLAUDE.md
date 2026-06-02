@@ -401,8 +401,8 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
-| Virbac | Virbac | Pendiente backup | shopify_backup |
-| Churu | Churu | Pendiente backup | shopify_backup |
+| Virbac | Virbac | **URLs pendiente** — scrapers listos (`marcas/virbac.py`) | web_oficial → marcas/virbac.py (store.es.virbac.com + vet-es.virbac.com) |
+| Churu | Churu | **URLs pendiente** — scraper listo (`marcas/churu.py`) | web_oficial → marcas/churu.py (inabafoods-europe.com ES + inabafoods.com US) |
 | Farmina ND | Farmina | **URLs pendiente** — scraper listo (`marcas/farmina.py`) | web_oficial → marcas/farmina.py (farmina.com/es) |
 | Farmina Vet Life | Farmina Vet Life | **URLs pendiente** — shim listo (`marcas/farmina_vet_life.py`) | web_oficial → marcas/farmina.py compartido |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
@@ -731,6 +731,51 @@ Ejecuciones anteriores de N&D precargan recetas que Vet Life (y viceversa) ya no
 
 Solo existe un campo URL para Farmina (no hay segunda web en otro idioma).
 Lanzar N&D primero para poblar la caché, luego Vet Life (reutiliza caché).
+
+### CHURU — notas de estrategia (URLs fabricante)
+
+**Dos sitios, un scraper:** `marcas/churu.py` enruta por `web_url`
+- `inabafoods-europe.com` → campo 1 (español, `churu_es_catalog.json`)
+- `inabafoods.com` → campo 2 (inglés, `churu_us_catalog.json`)
+
+**CMS:** Custom PHP (Europa) — URLs `/es/shop/item.php?it_id={numeric_id}` (query param, no path).
+El `it_id` numérico NO es derivable del título → DDG bajo demanda.
+El sitio US NO es Shopify (products.json devuelve 403).
+
+**Anti-bot:** Ambos bloquean directamente (HTTP 403) → Playwright necesario.
+El campo `catalog['_site']` ("es" | "us") lleva la info de sitio a `find_best_match`.
+
+**Matching US (campo 2):** `_tokenize(title, translate_en=True)` aplica `_ES_EN`
+(diccionario de ~20 sabores atun→tuna, pollo→chicken, gambas→shrimp…) antes de Jaccard.
+`MATCH_THRESHOLD=0.20` (títulos CHURU cortos, pocos tokens significativos).
+
+**Parámetros workflow `Resolver URLs fabricante`:**
+
+| Run | `vendor` | `web_url` | `url_key` |
+|---|---|---|---|
+| Campo 1 | `Churu` | `https://www.inabafoods-europe.com/` | `url_fabricante` |
+| Campo 2 | `Churu` | `https://inabafoods.com/` | `url_fabricante_2` |
+
+### Virbac — notas de estrategia (URLs fabricante)
+
+**Dos sitios, un scraper:** `marcas/virbac.py` enruta por `web_url`
+- `store.es.virbac.com` → campo 1 (tienda WooCommerce, nombres consumidor)
+- `vet-es.virbac.com` → campo 2 (portal veterinario Liferay, acceso público sin login)
+
+**store.es.virbac.com:** WooCommerce, 403 directa → Playwright. URL de producto: probablemente
+`/{animal}/{categoria}/{slug}/` (patrón jerárquico de la taxonomía WooCommerce del sitio).
+Filtro `_is_product_url`: acepta rutas con ≥2 segmentos, rechaza known non-products.
+
+**vet-es.virbac.com:** Liferay, URL de producto: `/home/productos/{animal}/{cat}/{slug}.html`.
+Filtro estricto: require `/home/productos/` + `.html` al final. No requiere login.
+`catalog['_site']` = "vet" o "store".
+
+**Parámetros workflow `Resolver URLs fabricante`:**
+
+| Run | `vendor` | `web_url` | `url_key` |
+|---|---|---|---|
+| Campo 1 | `Virbac` | `https://store.es.virbac.com/` | `url_fabricante` |
+| Campo 2 | `Virbac` | `https://vet-es.virbac.com/` | `url_fabricante_2` |
 
 ---
 
