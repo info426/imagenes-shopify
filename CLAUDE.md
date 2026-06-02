@@ -397,7 +397,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
 | Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK `url_fabricante_2` **corregidos a mano en Shopify y verificados** → ejecutar `Snapshot URLs fabricante` para fijarlos en el repo (registro + caché sembrada) — **pendiente** lote ES (url_fabricante) | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
-| CALIBRA | CALIBRA | **Completado** — EANs corregidos (9 Joy Classic), imágenes optimizadas (todos los productos) | shopify_backup |
+| CALIBRA | CALIBRA | Imágenes ✅ — **URLs**: campo 1 (.es) run #15 corregido a mano; reconocimiento por imagen (CLIP) añadido → re-lanzar con `usar_imagen=true`; campo 2 (.eu) pendiente | shopify_backup (imgs) + web_oficial (URLs) → marcas/calibra.py |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
@@ -694,6 +694,62 @@ de ese sitio. Así el workflow `Resolver URLs fabricante` se corre **dos veces**
 - **Test**: 1 `product_id` primero (hace el crawl completo del sitio y cachea), verificar
   `fuentes.url_fabricante` en el admin, luego lote con `product_ids` vacío (reusa caché).
   Matching ES↔EN ya cubierto por `_SYNONYMS`; el peso (400g/2kg) se ignora en `IGNORE_TOKENS`.
+
+**Análisis del run #15 (campo 1, mycalibra.es) — 146/146 "guardadas" pero 22 erróneas:**
+El resolver aceptaba **cualquier** match con `score ≥ 0.12` (`MIN_SCORE`), así que
+**forzaba una URL para todos** aunque el producto no existiera en mycalibra.es.
+Resultado real: 74 alta confianza (≥0.70), 50 media, **22 basura (score 0.12-0.45)**.
+Tres causas, todas por usar **solo texto**:
+1. **Producto ausente en .es** → forzado a página genérica. Los 9 ROCKETS (roedores)
+   cayeron a `calibra-rockets` (0.14-0.33). Existen en **.eu** (campo 2), no en .es.
+2. **Confusión de snack** → 6 JOY DOG CHEWY ("huesos") → `dental-brushes`/`salmon-sticks` (0.29-0.38).
+3. **Error de especie** → producto 108 `DOG6 PREMIUM LATA` → `cat-premium-...-100g` (URL de **gato**, 0.20).
+Tabla completa en `resultados/calibra_run15_resultado.csv` (columna `sospechoso`).
+
+### Reconocimiento por imagen (Google Lens) en el resolver — `core/image_match.py`
+
+Segundo eje de matching junto al texto: la foto del producto **Shopify** se compara
+con la foto del candidato del **fabricante**. Confirma matches correctos (aunque el
+texto sea flojo) y **RECHAZA** los falsos positivos forzados (→ `sin_match` en vez de
+una URL errónea). Activación: input `usar_imagen=true` del workflow Resolver URLs.
+
+**Dos backends (auto-detect, degradación segura):**
+- `clip` — embeddings CLIP ViT-B-32 (`open_clip`, `requirements-vision.txt`). Reconoce
+  el **mismo producto aunque la foto sea distinta** (ángulo/fondo/recorte) = Google Lens.
+- `hash` — hash perceptual multi-algoritmo (average+diff+DCT), **sin dependencias**.
+  Solo detecta la **misma foto** reutilizada; si CLIP no está instalado, se usa este.
+
+**Umbrales por backend** `THRESHOLDS=(STRONG, WEAK)`: clip `(0.82,0.62)`, hash `(0.86,0.72)`.
+`sim≥STRONG`→mismo producto; `sim≤WEAK`→productos distintos.
+
+**Cómo se evita el 403 del CDN de imágenes:** el CDN de mycalibra da **403 sin navegador**
+(igual que el HTML). Por eso la huella visual de cada producto del catálogo se
+**precomputa DURANTE el scrape** (navegador vivo, ya pasó el gate) vía
+`page.context.request.get` y se guarda en el catálogo (`entry["img_feat"]`, serializable
+en JSON). En match-time solo se descarga la imagen de Shopify (CDN **público**) y se
+compara contra las huellas precomputadas (matemática de vectores, sin red).
+
+**Lógica de decisión (`find_best_match`, pesos `_W_TEXT=0.45 / _W_IMG=0.55`):**
+1. **Confirmación visual fuerte** (`img≥STRONG`, foto idéntica/igual) → acepta el candidato
+   aunque el texto sea bajo. Vale para **ambos** backends. Es el caso más fiable.
+2. **CLIP**: `combinado = 0.45·texto + 0.55·img`. Si `img≤WEAK y texto<0.55` → **RECHAZO**
+   (sin_match). Si `combinado≥0.45` → acepta. Discrimina especie/formato/snack.
+3. **hash** (fallback): sin confirmación fuerte la imagen no discrimina → decide el texto
+   con umbral elevado `_TEXT_ONLY_MIN=0.30` (nunca peor que antes; mata la basura <0.30).
+
+**Plumbing genérico:** `core/process_brand.py` (`run_resolve_urls`) pasa
+`product_images` (los `images[].src` de Shopify) a `find_best_match` **si el scraper
+acepta ese parámetro** (vía `inspect.signature`, igual que `barcode`). Hoy lo implementa
+CALIBRA; otras marcas lo adoptan añadiendo el parámetro. Con `IMAGE_MATCH=0` (o
+`usar_imagen=false`) todo el camino visual se desactiva (cero torch, solo texto).
+
+**Re-lanzar CALIBRA con imagen** (campo 1, corrige los 22 del run #15):
+`vendor=CALIBRA`, `web_url=https://www.mycalibra.es/`, `url_key=url_fabricante`,
+`usar_imagen=true`, **`rebuild_catalog=true`** (imprescindible la 1ª vez: la caché .es
+del run #15 no tiene huellas → hay que reconstruirla precomputándolas),
+`clear_on_no_match=true` (limpia las URLs erróneas que queden en `sin_match`).
+Campo 2 (`mycalibra.eu`, `url_fabricante_2`, `usar_imagen=true`) se construye fresco →
+las huellas se precomputan solas (no hace falta `rebuild` salvo que ya exista caché .eu).
 
 ### Farmina — notas de estrategia (URLs fabricante)
 

@@ -703,7 +703,9 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     else:
         products = api.get_products(vendor)
 
-    has_barcode = "barcode" in inspect.signature(scraper.find_best_match).parameters
+    fbm_params = inspect.signature(scraper.find_best_match).parameters
+    has_barcode = "barcode" in fbm_params
+    has_images  = "product_images" in fbm_params
     stats = dict(total=len(products), guardadas=0, sin_match=0)
     for i, product in enumerate(products, 1):
         pid, title = product["id"], product["title"]
@@ -716,10 +718,16 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
             ""
         )
 
+        kwargs = {}
         if has_barcode:
-            handle, score = scraper.find_best_match(title, catalog, barcode=barcode)
-        else:
-            handle, score = scraper.find_best_match(title, catalog)
+            kwargs["barcode"] = barcode
+        if has_images:
+            # URLs de imagen del producto Shopify (CDN público) para el
+            # reconocimiento visual tipo Google Lens dentro del scraper.
+            kwargs["product_images"] = [
+                im.get("src") for im in product.get("images", []) if im.get("src")
+            ]
+        handle, score = scraper.find_best_match(title, catalog, **kwargs)
 
         url = catalog.get(handle, {}).get("url") if handle else None
         if handle is not None and score >= 0.10 and url:

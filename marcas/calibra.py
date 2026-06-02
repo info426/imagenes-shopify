@@ -16,7 +16,22 @@ import unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from core import image_match
+except Exception:  # pragma: no cover — degrada a solo-texto si falta el módulo
+    image_match = None
+
 log = logging.getLogger(__name__)
+
+# ─── Pesos y umbrales del matching combinado texto + imagen ───────────────────
+# La foto del producto Shopify actúa como segundo eje ("Google Lens"): confirma
+# o RECHAZA el candidato textual. Evita los falsos positivos forzados del run #15
+# (ROCKETS → calibra-rockets, JOY CHEWY → dental-brushes, DOG LATA → URL de gato).
+_W_TEXT = 0.45            # peso del Jaccard de texto en el score combinado
+_W_IMG  = 0.55            # peso de la similitud visual (discrimina mejor)
+_TEXT_ONLY_MIN = 0.30     # sin señal visual → exige texto más alto que MIN_SCORE
+_TEXT_TRUST    = 0.55     # texto tan alto que una imagen débil no debe rechazar
+_ACCEPT_COMBINED = 0.45   # score combinado mínimo para aceptar
 
 CATALOG_PATH = Path("resultados/calibra_catalog.json")
 
@@ -262,6 +277,34 @@ def _collect_product_links(page, base: str) -> set:
     return found
 
 
+def _fetch_bytes_via_page(page, url: str) -> bytes | None:
+    """Descarga bytes usando el contexto del navegador ya calentado (cookies +
+    fingerprint que superó el gate anti-bot). Imprescindible para el CDN de
+    imágenes de mycalibra, que devuelve 403 a peticiones sin navegador."""
+    try:
+        resp = page.context.request.get(url, timeout=30000)
+        if resp.ok:
+            return resp.body()
+        log.debug(f"    [img] HTTP {resp.status} {url}")
+    except Exception as e:
+        log.debug(f"    [img] fetch via page falló {url}: {e}")
+    return None
+
+
+def _attach_img_feature(page, entry: dict):
+    """Calcula y guarda en el catálogo la huella visual (CLIP o hash) de la
+    primera imagen utilizable del producto. No-op si image_match está deshabilitado."""
+    if image_match is None or not getattr(image_match, "ENABLED", False):
+        return
+    for u in (entry.get("images") or [])[:3]:
+        data = _fetch_bytes_via_page(page, u)
+        feat = image_match.compute_feature(data) if data else None
+        if feat:
+            entry["img_feat"] = feat
+            entry["img_feat_url"] = u
+            return
+
+
 def _scrape_source(page, source: dict) -> dict:
     """
     Scrapea todas las categorías de una fuente, con paginación,
@@ -322,13 +365,19 @@ def _scrape_source(page, source: dict) -> dict:
             name   = name_el.inner_text().strip() if name_el else slug
             images = _extract_images(page, base)
 
-            catalog[slug] = {
+            entry = {
                 "name":   name,
                 "url":    prod_url,
                 "source": source["lang"],
                 "images": images,
             }
-            log.info(f"    {slug}: {len(images)} img — {name[:60]}")
+            # Precomputar la huella visual AHORA, con el navegador vivo: el CDN de
+            # imágenes de mycalibra da 403 sin navegador, así que en match-time no
+            # se podría descargar. Se guarda en el catálogo (cache permanente).
+            _attach_img_feature(page, entry)
+            catalog[slug] = entry
+            feat_tag = " +img" if entry.get("img_feat") else ""
+            log.info(f"    {slug}: {len(images)} img{feat_tag} — {name[:60]}")
             time.sleep(0.8)
 
         except Exception as e:
@@ -572,27 +621,110 @@ def _expand(tokens: set) -> set:
     return expanded
 
 
-def find_best_match(shopify_title: str, catalog: dict) -> tuple:
-    """
-    Jaccard con sinónimos ES↔EN entre título Shopify y nombre+handle del catálogo.
-    Devuelve (handle, score). Si score < MIN_SCORE → (None, score).
-    """
+def _text_scores(shopify_title: str, catalog: dict) -> list:
+    """Lista [(handle, entry, text_score)] con el Jaccard texto de cada entrada."""
     title_toks = _expand(_tokenize(shopify_title))
-    best_handle, best_score = None, 0.0
-
+    out = []
     for handle, entry in catalog.items():
+        if not isinstance(entry, dict):
+            continue
         cat_toks = _expand(
             _tokenize(handle.replace("-", " "))
             | _tokenize(entry.get("name", ""))
         )
         union = title_toks | cat_toks
-        if not union:
-            continue
-        score = len(title_toks & cat_toks) / len(union)
-        if score > best_score:
-            best_score = score
-            best_handle = handle
+        score = len(title_toks & cat_toks) / len(union) if union else 0.0
+        out.append((handle, entry, score))
+    return out
 
-    if best_score < MIN_SCORE:
-        return None, best_score
-    return best_handle, best_score
+
+def find_best_match(shopify_title: str, catalog: dict,
+                    barcode: str = "", product_images: list = None) -> tuple:
+    """
+    Matching combinado: Jaccard de texto (ES↔EN) + reconocimiento por imagen.
+
+    Si se reciben las imágenes del producto Shopify (product_images) y el catálogo
+    tiene huellas visuales precomputadas (img_feat), la foto actúa como segundo eje
+    tipo Google Lens:
+      - score combinado = _W_TEXT·texto + _W_IMG·imagen
+      - confirma matches correctos aunque el texto sea flojo (foto idéntica/igual)
+      - RECHAZA candidatos cuando la imagen dice claramente "no es el mismo producto"
+        (img ≤ WEAK y texto bajo) → el producto queda sin_match en vez de forzar
+        una URL errónea (caso ROCKETS / JOY CHEWY / DOG-LATA→gato del run #15).
+
+    Sin imágenes o sin huellas en el catálogo → solo texto, con umbral elevado
+    (_TEXT_ONLY_MIN) para no arrastrar la basura de score 0.12-0.30.
+    Devuelve (handle, score). (None, score) si no hay match fiable.
+    """
+    scored = _text_scores(shopify_title, catalog)
+    if not scored:
+        return None, 0.0
+
+    has_feats = any(e.get("img_feat") for _, e, _ in scored)
+    use_img = (image_match is not None and getattr(image_match, "ENABLED", False)
+               and bool(product_images) and has_feats)
+
+    if not use_img:
+        handle, entry, t = max(scored, key=lambda x: x[2])
+        if t < _TEXT_ONLY_MIN:
+            log.info(f"  solo-texto: mejor score={t:.2f} < {_TEXT_ONLY_MIN} → sin_match")
+            return None, t
+        return handle, t
+
+    # Huellas visuales de las fotos del producto Shopify (CDN público → requests)
+    q_feats = []
+    for u in (product_images or [])[:3]:
+        f = image_match.compute_feature_from_url(u)
+        if f:
+            q_feats.append(f)
+    if not q_feats:
+        log.info("  [img] no pude obtener la huella de la imagen Shopify → solo texto")
+        handle, entry, t = max(scored, key=lambda x: x[2])
+        return (handle, t) if t >= _TEXT_ONLY_MIN else (None, t)
+
+    bk = image_match.backend()
+    STRONG, WEAK = image_match.thresholds()
+    log.info(f"  [img] backend={bk} STRONG={STRONG} WEAK={WEAK} "
+             f"({len(q_feats)} foto(s) Shopify)")
+
+    # Similitud visual de cada candidato con la foto Shopify
+    cands = []  # (handle, text, img)  img=-1 si el candidato no tiene huella
+    for handle, entry, t in scored:
+        cf = entry.get("img_feat")
+        img = image_match.best_similarity(q_feats, cf) if cf else -1.0
+        cands.append((handle, t, img))
+
+    # 1) Confirmación visual fuerte (foto prácticamente idéntica) — vale para AMBOS
+    #    backends. Es el caso más fiable: la misma foto del fabricante en Shopify.
+    strong = [c for c in cands if c[2] >= STRONG]
+    if strong:
+        handle, t, img = max(strong, key=lambda c: (c[2], c[1]))
+        log.info(f"  [img] CONFIRMADO visualmente: '{handle}' img={img:.2f} texto={t:.2f}")
+        return handle, max(t, img)
+
+    # 2) CLIP: combina texto+imagen y RECHAZA si la imagen contradice al texto.
+    if bk == "clip":
+        handle, t, img = max(
+            cands, key=lambda c: _W_TEXT * c[1] + _W_IMG * max(c[2], 0.0)
+        )
+        combined = _W_TEXT * t + _W_IMG * max(img, 0.0)
+        img_str = f"{img:.2f}" if img >= 0 else "—"
+        log.info(f"  [img] mejor: '{handle}' texto={t:.2f} img={img_str} "
+                 f"combinado={combined:.2f}")
+        if 0 <= img <= WEAK and t < _TEXT_TRUST:
+            log.info(f"  [img] RECHAZO: img={img:.2f} ≤ WEAK y texto={t:.2f} "
+                     f"< {_TEXT_TRUST} → sin_match (evita falso positivo)")
+            return None, combined
+        if combined >= _ACCEPT_COMBINED:
+            return handle, combined
+        log.info(f"  combinado={combined:.2f} < {_ACCEPT_COMBINED} → sin_match")
+        return None, combined
+
+    # 3) hash (fallback): sin confirmación fuerte la imagen no es fiable para
+    #    discriminar → decide el texto con umbral elevado (nunca peor que antes).
+    handle, t, img = max(cands, key=lambda c: c[1])
+    if t < _TEXT_ONLY_MIN:
+        log.info(f"  [img-hash] sin confirmación visual y texto={t:.2f} "
+                 f"< {_TEXT_ONLY_MIN} → sin_match")
+        return None, t
+    return handle, t

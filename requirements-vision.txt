@@ -1,0 +1,11 @@
+# Dependencias OPCIONALES para el reconocimiento de producto por imagen
+# (core/image_match.py, backend CLIP) usado por el workflow Resolver URLs cuando
+# usar_imagen=true. NO se instalan en los workflows de imágenes normales.
+#
+# torch / torchvision CPU se instalan aparte desde el índice CPU de PyTorch
+# (ver el paso del workflow) para evitar bajar la build CUDA (~2GB):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# open_clip provee el modelo CLIP ViT-B-32 (embeddings de imagen). Si no está
+# instalado, core/image_match.py degrada automáticamente a hash perceptual.
+open_clip_torch>=2.24.0

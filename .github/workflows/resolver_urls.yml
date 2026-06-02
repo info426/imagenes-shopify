@@ -35,6 +35,12 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      usar_imagen:
+        description: 'Reconocimiento por imagen tipo Google Lens (CLIP). Para CALIBRA usa rebuild_catalog=true la 1ª vez (precomputa huellas)'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
 
 jobs:
   resolver:
@@ -60,6 +66,13 @@ jobs:
       - name: Instalar xvfb (navegador headed anti-bot)
         run: sudo apt-get update && sudo apt-get install -y xvfb
 
+      - name: Instalar visión CLIP (reconocimiento por imagen)
+        if: ${{ github.event.inputs.usar_imagen == 'true' }}
+        run: |
+          # torch/torchvision CPU desde el índice oficial (evita la build CUDA ~2GB)
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-vision.txt
+
       - name: Resolver URLs y guardar metacampos
         env:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
@@ -68,6 +81,9 @@ jobs:
           # Navegador headed (bajo xvfb) para esquivar el filtro anti-bot que
           # bloquea Chromium headless desde las IPs de datacenter de Actions.
           APPLAWS_HEADED: '1'
+          # Reconocimiento por imagen (Google Lens-like). 1 = activo (requiere el
+          # paso de visión CLIP); 0 = solo texto (con umbral elevado anti-basura).
+          IMAGE_MATCH: ${{ github.event.inputs.usar_imagen == 'true' && '1' || '0' }}
         run: |
           mkdir -p resultados
           EXTRA=""
