@@ -1,0 +1,1409 @@
+2026-06-02 12:59:37,204 [INFO] ============================================================
+2026-06-02 12:59:37,204 [INFO]   Vendor   : BEAPHAR
+2026-06-02 12:59:37,204 [INFO]   Modo     : RESOLVER-URLS
+2026-06-02 12:59:37,204 [INFO]   Pipeline : standard
+2026-06-02 12:59:37,204 [INFO]   Padding  : auto
+2026-06-02 12:59:37,204 [INFO]   Web    : https://www.beaphar.es/
+2026-06-02 12:59:37,204 [INFO] ============================================================
+2026-06-02 12:59:37,654 [INFO] Token obtenido
+2026-06-02 12:59:37,659 [INFO] Catálogo cargado desde caché: 201 entradas
+2026-06-02 12:59:41,664 [INFO] 
+[1/122] BEAPHAR ACEITE DE LINAZA 430ML  (ID: 15509640610179)
+2026-06-02 12:59:41,665 [INFO]   Match caché: beaphar-aceite-de-linaza-430ml
+2026-06-02 12:59:43,272 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13682-beaphar-aceite-de-linaza/
+2026-06-02 12:59:43,272 [INFO]   → https://www.beaphar.es/product/13682-beaphar-aceite-de-linaza/  (score=1.00)
+2026-06-02 12:59:43,772 [INFO] 
+[2/122] BEAPHAR ACEITE DE SALMON PERRO Y GATO 425ML  (ID: 15509640642947)
+2026-06-02 12:59:43,772 [INFO]   Match caché: beaphar-aceite-de-salmon-perro-y-gato-425ml
+2026-06-02 12:59:45,358 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11295-aceite-de-salmon-perro-y-gato-425ml/
+2026-06-02 12:59:45,358 [INFO]   → https://www.beaphar.es/product/11295-aceite-de-salmon-perro-y-gato-425ml/  (score=1.00)
+2026-06-02 12:59:45,858 [INFO] 
+[3/122] BEAPHAR ALIMENTO UNIVERSAL AVES - 1KG  (ID: 15509640675715)
+2026-06-02 12:59:45,858 [INFO]   Match caché: beaphar-alimento-universal-aves-1kg
+2026-06-02 12:59:47,475 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000137-beaphar-alimento-universal-aves-1kg/
+2026-06-02 12:59:47,475 [INFO]   → https://www.beaphar.es/product/1000137-beaphar-alimento-universal-aves-1kg/  (score=1.00)
+2026-06-02 12:59:47,975 [INFO] 
+[4/122] BEAPHAR BALSAMO PARA ALMOHADILLAS 40ML  (ID: 15509640708483)
+2026-06-02 12:59:47,975 [INFO]   Match caché: beaphar-balsamo-para-almohadillas-40ml
+2026-06-02 12:59:49,524 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11762-beaphar-balsamo-para-almohadillas-40ml/
+2026-06-02 12:59:49,525 [INFO]   → https://www.beaphar.es/product/11762-beaphar-balsamo-para-almohadillas-40ml/  (score=1.00)
+2026-06-02 12:59:50,025 [INFO] 
+[5/122] BEAPHAR BOCADITOS DENTAL BITS GATO 18X35GR  (ID: 15509640741251)
+2026-06-02 12:59:50,025 [INFO]   Match caché: beaphar-bocaditos-dental-bits-gato-18x35gr
+2026-06-02 12:59:51,601 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/
+2026-06-02 12:59:51,601 [INFO]   → https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/  (score=1.00)
+2026-06-02 12:59:52,101 [INFO] 
+[6/122] BEAPHAR BOCADITOS HIERBA GATO  (ID: 15509640774019)
+2026-06-02 12:59:53,622 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR BOCADITOS HIERBA GATO
+2026-06-02 12:59:53,995 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+BOCADITOS+HIERBA+GATO&limit=1 200
+2026-06-02 12:59:54,012 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20BOCADITOS%20HIERBA%20GATO 200
+2026-06-02 12:59:54,749 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-06-02 12:59:54,751 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/11612-bocaditos-catnip-bits-gato-150g/', 'https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/', 'https://www.beaphar.es/product/17578-calming-bits-35g/', 'https://www.beaphar.es/product/11646-bocaditos-malta-bits-gato-35g/', 'https://www.beaphar.es/product/11627-bocaditos-salmon-bits-gato-35g/', 'https://www.beaphar.es/product/11623-bocaditos-dental-bits-gato-35g/']
+2026-06-02 13:00:00,019 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11612-hero_1613740477.jpg
+2026-06-02 13:00:00,030 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11612-hero_1613740477.jpg
+2026-06-02 13:00:00,036 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:00:00,037 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:00:00,037 [INFO]   [cand] score=0.14 'Beaphar Catnip Bits Snacks para Gato - 150g' (4 imgs) https://www.beaphar.es/product/11612-bocaditos-catnip-bits-gato-150g/
+2026-06-02 13:00:04,156 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11609-hero_1613740449.jpg
+2026-06-02 13:00:04,165 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11609-hero_1613740449.jpg
+2026-06-02 13:00:04,169 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:00:04,170 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:00:04,170 [INFO]   [cand] score=0.33 'Beaphar Bocaditos Malta Bits Gato - 150g' (4 imgs) https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/
+2026-06-02 13:00:08,736 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17578-hero_1613833190.jpg
+2026-06-02 13:00:08,745 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17578-hero_1613833190.jpg
+2026-06-02 13:00:08,750 [INFO]     DOM imgs (excl. relacionados): 10
+2026-06-02 13:00:08,750 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:00:08,750 [INFO]   [cand] score=0.17 'Beaphar Bocaditos Calming Bits - 35g' (5 imgs) https://www.beaphar.es/product/17578-calming-bits-35g/
+2026-06-02 13:00:13,033 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11646-hero_1613741595.jpg
+2026-06-02 13:00:13,041 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11646-hero_1613741595.jpg
+2026-06-02 13:00:13,046 [INFO]     DOM imgs (excl. relacionados): 10
+2026-06-02 13:00:13,046 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:00:13,046 [INFO]   [cand] score=0.33 'Beaphar Bocaditos Malta Bits Gato - 35g' (5 imgs) https://www.beaphar.es/product/11646-bocaditos-malta-bits-gato-35g/
+2026-06-02 13:00:17,199 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11627-hero_1613740524.jpg
+2026-06-02 13:00:17,207 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11627-hero_1613740524.jpg
+2026-06-02 13:00:17,212 [INFO]     DOM imgs (excl. relacionados): 10
+2026-06-02 13:00:17,212 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:00:17,212 [INFO]   [cand] score=0.14 'Beaphar Salmon Bits Snacks para Gato - 35g' (5 imgs) https://www.beaphar.es/product/11627-bocaditos-salmon-bits-gato-35g/
+2026-06-02 13:00:21,366 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11623-hero_1613740514.jpg
+2026-06-02 13:00:21,376 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11623-hero_1613740514.jpg
+2026-06-02 13:00:21,380 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:00:21,381 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:00:21,381 [INFO]   [cand] score=0.17 'Beaphar Snacks Dentales Gatos - 35g' (6 imgs) https://www.beaphar.es/product/11623-bocaditos-dental-bits-gato-35g/
+2026-06-02 13:00:21,381 [WARNING]   Mejor candidato score=0.33 < 0.34 — descartado: 'Beaphar Bocaditos Malta Bits Gato - 150g'
+2026-06-02 13:00:21,381 [WARNING]   Sin resolución para 'BEAPHAR BOCADITOS HIERBA GATO'
+2026-06-02 13:00:21,381 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:00:21,881 [INFO] 
+[7/122] BEAPHAR BOCADITOS MALTA GATO  (ID: 15509640839555)
+2026-06-02 13:00:21,881 [INFO]   Match caché: beaphar-bocaditos-malta-gato
+2026-06-02 13:00:23,557 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/
+2026-06-02 13:00:23,557 [INFO]   → https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/  (score=1.00)
+2026-06-02 13:00:24,058 [INFO] 
+[8/122] BEAPHAR BOCADITOS MALTA SALMON GATO 18X35GR  (ID: 15509640905091)
+2026-06-02 13:00:24,058 [INFO]   Match caché: beaphar-bocaditos-malta-salmon-gato-18x35gr
+2026-06-02 13:00:25,706 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/
+2026-06-02 13:00:25,706 [INFO]   → https://www.beaphar.es/product/11609-bocaditos-malta-bits-gato-150g/  (score=1.00)
+2026-06-02 13:00:26,206 [INFO] 
+[9/122] BEAPHAR BUCAL WATER PERRO Y GATO 250ML  (ID: 15509640937859)
+2026-06-02 13:00:26,206 [INFO]   Match caché: beaphar-bucal-water-perro-y-gato-250ml
+2026-06-02 13:00:27,960 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15682-bucal-water-perro-y-gato-250ml/
+2026-06-02 13:00:27,960 [INFO]   → https://www.beaphar.es/product/15682-bucal-water-perro-y-gato-250ml/  (score=1.00)
+2026-06-02 13:00:28,460 [INFO] 
+[10/122] BEAPHAR CALMING BITS 35GR  (ID: 15509641068931)
+2026-06-02 13:00:28,460 [INFO]   Match caché: beaphar-calming-bits-35gr
+2026-06-02 13:00:30,069 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17578-calming-bits-35g/
+2026-06-02 13:00:30,070 [INFO]   → https://www.beaphar.es/product/17578-calming-bits-35g/  (score=1.00)
+2026-06-02 13:00:30,570 [INFO] 
+[11/122] BEAPHAR CALMING COLLAR GATO 35CM  (ID: 15509641101699)
+2026-06-02 13:00:30,570 [INFO]   Match caché: beaphar-calming-collar-gato-35cm
+2026-06-02 13:00:32,185 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17584-calming-collar-gato-35-cm/
+2026-06-02 13:00:32,185 [INFO]   → https://www.beaphar.es/product/17584-calming-collar-gato-35-cm/  (score=1.00)
+2026-06-02 13:00:32,686 [INFO] 
+[12/122] BEAPHAR CALMING COLLAR PERRO 65CM  (ID: 15509641134467)
+2026-06-02 13:00:32,686 [INFO]   Match caché: beaphar-calming-collar-perro-65cm
+2026-06-02 13:00:34,386 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17583-calming-collar-perro-65-cm/
+2026-06-02 13:00:34,387 [INFO]   → https://www.beaphar.es/product/17583-calming-collar-perro-65-cm/  (score=1.00)
+2026-06-02 13:00:34,887 [INFO] 
+[13/122] BEAPHAR CALMING NO STRESS PERRO 30ML  (ID: 15981869597059)
+2026-06-02 13:00:34,887 [INFO]   Match caché: beaphar-calming-no-stress-perro-30ml
+2026-06-02 13:00:36,465 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/14898-no-stress-perro-pack-difusor-y-recambio-30ml/
+2026-06-02 13:00:36,465 [INFO]   → https://www.beaphar.es/product/14898-no-stress-perro-pack-difusor-y-recambio-30ml/  (score=1.00)
+2026-06-02 13:00:36,965 [INFO] 
+[14/122] BEAPHAR CALMING SPOT ON PERRO 3X0,7ML  (ID: 15509641265539)
+2026-06-02 13:00:36,965 [INFO]   Match caché: beaphar-calming-spot-on-perro-3x0-7ml
+2026-06-02 13:00:38,700 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10547-calming-spot-on-perro-3x07-ml/
+2026-06-02 13:00:38,700 [INFO]   → https://www.beaphar.es/product/10547-calming-spot-on-perro-3x07-ml/  (score=1.00)
+2026-06-02 13:00:39,200 [INFO] 
+[15/122] BEAPHAR CALMING SPRAY AMBIENTE PERRO Y GATO 125ML  (ID: 15509641298307)
+2026-06-02 13:00:39,200 [INFO]   Match caché: beaphar-calming-spray-ambiente-perro-y-gato-125ml
+2026-06-02 13:00:40,771 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/
+2026-06-02 13:00:40,771 [INFO]   → https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/  (score=1.00)
+2026-06-02 13:00:41,271 [INFO] 
+[16/122] BEAPHAR CANICOMFORT COLLAR CACHORROS 45CM  (ID: 15509641331075)
+2026-06-02 13:00:41,271 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CANICOMFORT COLLAR CACHORROS 45CM
+2026-06-02 13:00:41,481 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CANICOMFORT%20COLLAR%20CACHORROS%2045CM 200
+2026-06-02 13:00:41,615 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CANICOMFORT+COLLAR+CACHORROS+45CM&limit=1 200
+2026-06-02 13:00:42,016 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:00:42,204 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:00:42,371 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:00:42,604 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CANICOMFORT+COLLAR+CACHORROS+45CM&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:00:42,898 [INFO] response: https://search.yahoo.com/search;_ylt=pZBxprFhhMTw1ZbRZ8HDXUvB;_ylu=_uuUA7lJhKLeHNMOQGg9xa5RyexnO5pve1kqooAx1FW1exo?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CANICOMFORT+COLLAR+CACHORROS+45CM 200
+2026-06-02 13:00:44,606 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CANICOMFORT+COLLAR+CACHORROS+45CM&web=1&searchid=6317427 200
+2026-06-02 13:00:45,150 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CANICOMFORT+COLLAR+CACHORROS+45CM&source=web 200
+2026-06-02 13:00:45,158 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/17583-calming-collar-perro-65-cm/', 'https://www.beaphar.es/product/10904-canicomfort-60ml-spray/', 'https://www.beaphar.es/product/17233-collar-canishield-perro-1-x-65cm-es/', 'https://www.beaphar.es/product/17235-collar-canishield-perro-2-x-65cm-es/', 'https://www.beaphar.es/product/11303/', 'https://www.beaphar.es/product/11190-beaphar-canicomfort-collar-cachorros-35-cm/']
+2026-06-02 13:00:49,594 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17583-hero_1613833195.jpg
+2026-06-02 13:00:49,602 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17583-hero_1613833195.jpg
+2026-06-02 13:00:49,607 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:00:49,607 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:00:49,607 [INFO]   [cand] score=0.14 'Beaphar Calming Collar Perro - 65cm' (7 imgs) https://www.beaphar.es/product/17583-calming-collar-perro-65-cm/
+2026-06-02 13:00:53,993 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:00:54,001 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:00:54,007 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:00:54,007 [INFO]     EAN filter (8711231109043): 8 → 5 imgs
+2026-06-02 13:00:54,007 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:00:54,008 [INFO]   [cand] score=0.14 'Beaphar CaniComfort® Spray Perros - 60ml' (5 imgs) https://www.beaphar.es/product/10904-canicomfort-60ml-spray/
+2026-06-02 13:00:58,425 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17233.png
+2026-06-02 13:00:58,433 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17233.png
+2026-06-02 13:00:58,439 [INFO]     DOM imgs (excl. relacionados): 32
+2026-06-02 13:00:58,440 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:00:58,440 [INFO]   [cand] score=0.11 'Beaphar Canishield® Collar Antiparasitario Perro Grande - 65cm' (11 imgs) https://www.beaphar.es/product/17233-collar-canishield-perro-1-x-65cm-es/
+2026-06-02 13:01:03,221 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17235.png
+2026-06-02 13:01:03,230 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17235.png
+2026-06-02 13:01:03,235 [INFO]     DOM imgs (excl. relacionados): 35
+2026-06-02 13:01:03,236 [INFO]     Imágenes extraídas: 12
+2026-06-02 13:01:03,236 [INFO]   [cand] score=0.11 'Beaphar Canishield® Collar Antiparasitario Perro Grande - 2 x 65cm' (12 imgs) https://www.beaphar.es/product/17235-collar-canishield-perro-2-x-65cm-es/
+2026-06-02 13:01:07,851 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231113033.jpg
+2026-06-02 13:01:07,859 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231113033.jpg
+2026-06-02 13:01:07,865 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:01:07,865 [INFO]     EAN filter (8711231113033): 8 → 5 imgs
+2026-06-02 13:01:07,865 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:01:07,866 [INFO]   [cand] score=0.10 'Beaphar CaniComfort® Kit Iniciación: Difusor y Recambio Perros - 48ml' (5 imgs) https://www.beaphar.es/product/11303/
+2026-06-02 13:01:08,117 [WARNING]   Mejor candidato score=0.14 < 0.34 — descartado: 'Beaphar Calming Collar Perro - 65cm'
+2026-06-02 13:01:08,117 [WARNING]   Sin resolución para 'BEAPHAR CANICOMFORT COLLAR CACHORROS 45CM'
+2026-06-02 13:01:08,117 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:01:08,617 [INFO] 
+[17/122] BEAPHAR CANICOMFORT KIT INICIACI DIFUSOR+RECAMBIO PERRO 48ML  (ID: 15509641396611)
+2026-06-02 13:01:08,617 [INFO]   Match caché: beaphar-canicomfort-kit-iniciaci-difusor-recambio-perro-48ml
+2026-06-02 13:01:10,279 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11303/
+2026-06-02 13:01:10,279 [INFO]   → https://www.beaphar.es/product/11303/  (score=1.00)
+2026-06-02 13:01:10,779 [INFO] 
+[18/122] BEAPHAR CANICOMFORT SPRAY PERROS - 60ML  (ID: 15509641429379)
+2026-06-02 13:01:10,779 [INFO]   Match caché: beaphar-canicomfort-spray-perros-60ml
+2026-06-02 13:01:12,415 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10904-canicomfort-60ml-spray/
+2026-06-02 13:01:12,415 [INFO]   → https://www.beaphar.es/product/10904-canicomfort-60ml-spray/  (score=1.00)
+2026-06-02 13:01:12,915 [INFO] 
+[19/122] BEAPHAR CARE+ ARENA DE BAÑO 1,3KG  (ID: 15509641462147)
+2026-06-02 13:01:12,916 [INFO]   Match caché: beaphar-care-arena-de-bano-1-3kg
+2026-06-02 13:01:14,517 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16356-care-arena-de-bano-13-kg/
+2026-06-02 13:01:14,517 [INFO]   → https://www.beaphar.es/product/16356-care-arena-de-bano-13-kg/  (score=1.00)
+2026-06-02 13:01:15,017 [INFO] 
+[20/122] BEAPHAR CARE+ CHINCHILLA 1,5KG  (ID: 15509641494915)
+2026-06-02 13:01:15,017 [INFO]   Match caché: beaphar-care-chinchilla-1-5kg
+2026-06-02 13:01:16,626 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18405-care-chinchilla-15kg/
+2026-06-02 13:01:16,627 [INFO]   → https://www.beaphar.es/product/18405-care-chinchilla-15kg/  (score=1.00)
+2026-06-02 13:01:17,127 [INFO] 
+[21/122] BEAPHAR CARE+ COBAYA 1,5KG  (ID: 15509641527683)
+2026-06-02 13:01:17,127 [INFO]   Match caché: beaphar-care-cobaya-1-5kg
+2026-06-02 13:01:18,748 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18404-care-cobaya-15kg/
+2026-06-02 13:01:18,748 [INFO]   → https://www.beaphar.es/product/18404-care-cobaya-15kg/  (score=1.00)
+2026-06-02 13:01:19,248 [INFO] 
+[22/122] BEAPHAR CARE+ CONEJO  (ID: 15509641625987)
+2026-06-02 13:01:19,248 [INFO]   Match caché: beaphar-care-conejo
+2026-06-02 13:01:20,888 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13002-care-conejo-5kg/
+2026-06-02 13:01:20,888 [INFO]   → https://www.beaphar.es/product/13002-care-conejo-5kg/  (score=1.00)
+2026-06-02 13:01:21,388 [INFO] 
+[23/122] BEAPHAR CARE+ CONEJO JUNIOR 1,5KG  (ID: 15509641724291)
+2026-06-02 13:01:21,388 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CARE+ CONEJO JUNIOR 1,5KG
+2026-06-02 13:01:21,579 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+CONEJO+JUNIOR+1%2C5KG&limit=1 200
+2026-06-02 13:01:21,588 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CARE%2B%20CONEJO%20JUNIOR%201%2C5KG 200
+2026-06-02 13:01:22,071 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+CONEJO+JUNIOR+1%2C5KG&source=web 200
+2026-06-02 13:01:22,078 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/18407-care-conejo-junior-15kg/', 'https://www.beaphar.es/product/18403-care-conejo-15kg/', 'https://www.beaphar.es/product/18405-care-chinchilla-15kg/', 'https://www.beaphar.es/product/1000309/', 'https://www.beaphar.es/product/18454-care-conejo-senior-15kg/', 'https://www.beaphar.es/product/13002-care-conejo-5kg/']
+2026-06-02 13:01:26,655 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184071.jpg
+2026-06-02 13:01:26,665 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184071.jpg
+2026-06-02 13:01:26,674 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:01:26,675 [INFO]     EAN filter (8711231184071): 11 → 8 imgs
+2026-06-02 13:01:26,675 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:01:26,675 [INFO]   [cand] score=1.00 'Beaphar Care+ Conejo Junior - 1,5kg' (8 imgs) https://www.beaphar.es/product/18407-care-conejo-junior-15kg/
+2026-06-02 13:01:26,678 [INFO]   ✓ Resuelto vía DDG: Beaphar Care+ Conejo Junior - 1,5kg (score=1.00, 8 imgs)
+2026-06-02 13:01:28,268 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18407-care-conejo-junior-15kg/
+2026-06-02 13:01:28,268 [INFO]   → https://www.beaphar.es/product/18407-care-conejo-junior-15kg/  (score=1.00)
+2026-06-02 13:01:28,769 [INFO] 
+[24/122] BEAPHAR CARE+ CONEJO SENIOR 1,5KG  (ID: 15509641757059)
+2026-06-02 13:01:28,769 [INFO]   Match caché: beaphar-care-conejo-senior-1-5kg
+2026-06-02 13:01:30,435 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18454-care-conejo-senior-15kg/
+2026-06-02 13:01:30,435 [INFO]   → https://www.beaphar.es/product/18454-care-conejo-senior-15kg/  (score=1.00)
+2026-06-02 13:01:30,935 [INFO] 
+[25/122] BEAPHAR CARE+ DEGU 700GR  (ID: 15509641789827)
+2026-06-02 13:01:30,935 [INFO]   Match caché: beaphar-care-degu-700gr
+2026-06-02 13:01:32,588 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13477-beaphar-care-degu-700g/
+2026-06-02 13:01:32,588 [INFO]   → https://www.beaphar.es/product/13477-beaphar-care-degu-700g/  (score=1.00)
+2026-06-02 13:01:33,088 [INFO] 
+[26/122] BEAPHAR CARE+ HAMSTER 700GR  (ID: 15509641822595)
+2026-06-02 13:01:33,088 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CARE+ HAMSTER 700GR
+2026-06-02 13:01:33,282 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+HAMSTER+700GR&limit=1 200
+2026-06-02 13:01:33,305 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CARE%2B%20HAMSTER%20700GR 200
+2026-06-02 13:01:33,917 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+HAMSTER+700GR 403
+2026-06-02 13:01:34,264 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:01:34,431 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:01:35,337 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+HAMSTER+700GR&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:01:35,513 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:01:36,219 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+HAMSTER+700GR&source=web 200
+2026-06-02 13:01:36,226 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/18400-care-hamster-700g/', 'https://www.beaphar.es/product/18377-care-hamster-enano-700g/', 'https://www.beaphar.es/product/12998-beaphar-care-hamster-5kg/', 'https://www.beaphar.es/product/18401-care-rata-700g/', 'https://www.beaphar.es/product/18407-care-conejo-junior-15kg/', 'https://www.beaphar.es/product/13002-care-conejo-5kg/']
+2026-06-02 13:01:41,433 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184002.jpg
+2026-06-02 13:01:41,442 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184002.jpg
+2026-06-02 13:01:41,449 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:01:41,450 [INFO]     EAN filter (8711231184002): 11 → 8 imgs
+2026-06-02 13:01:41,450 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:01:41,450 [INFO]   [cand] score=0.50 'Beaphar Care+ Hamster - 750g' (8 imgs) https://www.beaphar.es/product/18400-care-hamster-700g/
+2026-06-02 13:01:47,115 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/5/18401.png
+2026-06-02 13:01:47,123 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/5/18401.png
+2026-06-02 13:01:47,129 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:01:47,129 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:01:47,130 [INFO]   [cand] score=0.20 'Beaphar Care+ Rata - 750g' (11 imgs) https://www.beaphar.es/product/18401-care-rata-700g/
+2026-06-02 13:01:51,141 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184071.jpg
+2026-06-02 13:01:51,149 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184071.jpg
+2026-06-02 13:01:51,155 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:01:51,156 [INFO]     EAN filter (8711231184071): 11 → 8 imgs
+2026-06-02 13:01:51,156 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:01:51,156 [INFO]   [cand] score=0.17 'Beaphar Care+ Conejo Junior - 1,5kg' (8 imgs) https://www.beaphar.es/product/18407-care-conejo-junior-15kg/
+2026-06-02 13:01:56,235 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130023.jpg
+2026-06-02 13:01:56,244 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130023.jpg
+2026-06-02 13:01:56,250 [INFO]     DOM imgs (excl. relacionados): 31
+2026-06-02 13:01:56,251 [INFO]     EAN filter (8711231130023): 12 → 9 imgs
+2026-06-02 13:01:56,251 [INFO]     Imágenes extraídas: 9
+2026-06-02 13:01:56,251 [INFO]   [cand] score=0.20 'Beaphar Care+ Conejo - 5kg' (9 imgs) https://www.beaphar.es/product/13002-care-conejo-5kg/
+2026-06-02 13:01:56,253 [INFO]   ✓ Resuelto vía DDG: Beaphar Care+ Hamster - 750g (score=0.50, 8 imgs)
+2026-06-02 13:01:57,855 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18400-care-hamster-700g/
+2026-06-02 13:01:57,855 [INFO]   → https://www.beaphar.es/product/18400-care-hamster-700g/  (score=0.50)
+2026-06-02 13:01:58,356 [INFO] 
+[27/122] BEAPHAR CARE+ NATURE COBAYA 1,5KG  (ID: 15509641855363)
+2026-06-02 13:01:58,356 [INFO]   Match caché: beaphar-care-nature-cobaya-1-5kg
+2026-06-02 13:01:59,963 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000410/
+2026-06-02 13:01:59,963 [INFO]   → https://www.beaphar.es/product/1000410/  (score=1.00)
+2026-06-02 13:02:00,463 [INFO] 
+[28/122] BEAPHAR CARE+ NATURE CONEJO 1,5KG  (ID: 15509641920899)
+2026-06-02 13:02:00,464 [INFO]   Match caché: beaphar-care-nature-conejo-1-5kg
+2026-06-02 13:02:02,128 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000309/
+2026-06-02 13:02:02,129 [INFO]   → https://www.beaphar.es/product/1000309/  (score=1.00)
+2026-06-02 13:02:02,629 [INFO] 
+[29/122] BEAPHAR CARE+ RAT 700GR  (ID: 15509641953667)
+2026-06-02 13:02:02,629 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CARE+ RAT 700GR
+2026-06-02 13:02:02,805 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+RAT+700GR&limit=1 200
+2026-06-02 13:02:02,843 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CARE%2B%20RAT%20700GR 200
+2026-06-02 13:02:03,793 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+RAT+700GR&web=1&searchid=8603451 200
+2026-06-02 13:02:04,319 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CARE%2B+RAT+700GR&source=web 200
+2026-06-02 13:02:04,326 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/18454-care-conejo-senior-15kg/', 'https://www.beaphar.es/product/18406-care-rata-15kg/', 'https://www.beaphar.es/product/18401-care-rata-700g/', 'https://www.beaphar.es/product/13000-beaphar-care-rata-5kg/', 'https://www.beaphar.es/product/13003-beaphar-care-cobaya-5kg/', 'https://www.beaphar.es/product/16356-care-arena-de-bano-13-kg/']
+2026-06-02 13:02:09,060 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184545.jpg
+2026-06-02 13:02:09,069 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184545.jpg
+2026-06-02 13:02:09,075 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:02:09,075 [INFO]     EAN filter (8711231184545): 11 → 8 imgs
+2026-06-02 13:02:09,075 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:02:09,076 [INFO]   [cand] score=0.17 'Beaphar Care+ Conejo Senior - 1,5kg' (8 imgs) https://www.beaphar.es/product/18454-care-conejo-senior-15kg/
+2026-06-02 13:02:13,793 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184064.jpg
+2026-06-02 13:02:13,801 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184064.jpg
+2026-06-02 13:02:13,807 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:02:13,808 [INFO]     EAN filter (8711231184064): 11 → 8 imgs
+2026-06-02 13:02:13,808 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:02:13,808 [INFO]   [cand] score=0.20 'Beaphar Care+ Rata - 1,5kg' (8 imgs) https://www.beaphar.es/product/18406-care-rata-15kg/
+2026-06-02 13:02:18,080 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/5/18401.png
+2026-06-02 13:02:18,089 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/5/18401.png
+2026-06-02 13:02:18,097 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:02:18,097 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:02:18,097 [INFO]   [cand] score=0.20 'Beaphar Care+ Rata - 750g' (11 imgs) https://www.beaphar.es/product/18401-care-rata-700g/
+2026-06-02 13:02:23,153 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130030.jpg
+2026-06-02 13:02:23,162 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130030.jpg
+2026-06-02 13:02:23,169 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:02:23,170 [INFO]     EAN filter (8711231130030): 11 → 8 imgs
+2026-06-02 13:02:23,170 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:02:23,170 [INFO]   [cand] score=0.20 'Beaphar Care+ Cobaya - 5kg' (8 imgs) https://www.beaphar.es/product/13003-beaphar-care-cobaya-5kg/
+2026-06-02 13:02:28,371 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/2/16356-.png
+2026-06-02 13:02:28,379 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/2/16356-.png
+2026-06-02 13:02:28,382 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:02:28,383 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:02:28,383 [INFO]   [cand] score=0.20 'Beaphar Care+ Arena De Baño - 1,3 kg' (4 imgs) https://www.beaphar.es/product/16356-care-arena-de-bano-13-kg/
+2026-06-02 13:02:28,383 [WARNING]   Mejor candidato score=0.20 < 0.34 — descartado: 'Beaphar Care+ Rata - 1,5kg'
+2026-06-02 13:02:28,383 [WARNING]   Sin resolución para 'BEAPHAR CARE+ RAT 700GR'
+2026-06-02 13:02:28,383 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:02:28,883 [INFO] 
+[30/122] BEAPHAR CARE+ TIMOTHY HAY 1KG  (ID: 15509641986435)
+2026-06-02 13:02:28,883 [INFO]   Match caché: beaphar-care-timothy-hay-1kg
+2026-06-02 13:02:30,506 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/18409-heno-care-timothy-1kg/
+2026-06-02 13:02:30,507 [INFO]   → https://www.beaphar.es/product/18409-heno-care-timothy-1kg/  (score=1.00)
+2026-06-02 13:02:31,007 [INFO] 
+[31/122] BEAPHAR CAT COMFORT GATOS 48ML  (ID: 15509642019203)
+2026-06-02 13:02:31,007 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CAT COMFORT GATOS 48ML
+2026-06-02 13:02:31,306 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CAT%20COMFORT%20GATOS%2048ML 200
+2026-06-02 13:02:31,385 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+GATOS+48ML&limit=1 200
+2026-06-02 13:02:31,686 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+GATOS+48ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:02:32,235 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+GATOS+48ML&source=web 200
+2026-06-02 13:02:32,242 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/12534-beaphar-catcomfort-excellence-recambio-de-difusor-gatos-48ml/', 'https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/', 'https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/', 'https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/', 'https://www.beaphar.es/product/17126-catcomfort-spray-gatos-60-ml/', 'https://www.beaphar.es/product/10548-calming-spot-on-gato-3x04-ml/']
+2026-06-02 13:02:37,117 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231125340.jpg
+2026-06-02 13:02:37,125 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231125340.jpg
+2026-06-02 13:02:37,129 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:02:37,130 [INFO]     EAN filter (8711231125340): 6 → 3 imgs
+2026-06-02 13:02:37,130 [INFO]     Imágenes extraídas: 3
+2026-06-02 13:02:37,130 [INFO]   [cand] score=0.25 'Beaphar CatComfort® Excellence Recambio de Difusor Gatos - 48ml' (3 imgs) https://www.beaphar.es/product/12534-beaphar-catcomfort-excellence-recambio-de-difusor-gatos-48ml/
+2026-06-02 13:02:41,464 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:02:41,472 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:02:41,477 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:02:41,478 [INFO]     EAN filter (8711231121069): 6 → 3 imgs
+2026-06-02 13:02:41,478 [INFO]     Imágenes extraídas: 3
+2026-06-02 13:02:41,478 [INFO]   [cand] score=0.22 'Beaphar CatComfort® Excellence Pack Difusor y Recambio Gatos - 48ml' (3 imgs) https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/
+2026-06-02 13:02:46,060 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17125-hero_1613834614.jpg
+2026-06-02 13:02:46,070 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17125-hero_1613834614.jpg
+2026-06-02 13:02:46,078 [INFO]     DOM imgs (excl. relacionados): 25
+2026-06-02 13:02:46,079 [INFO]     Imágenes extraídas: 10
+2026-06-02 13:02:46,079 [INFO]   [cand] score=0.12 'Beaphar Catcomfort® Spray Viaje Gatos - 30ml' (10 imgs) https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/
+2026-06-02 13:02:51,089 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11292-hero_1613739874.jpg
+2026-06-02 13:02:51,097 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11292-hero_1613739874.jpg
+2026-06-02 13:02:51,102 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:02:51,102 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:02:51,102 [INFO]   [cand] score=0.29 'Beaphar Cat Trainer - Educador para Gatos - 10ml' (7 imgs) https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/
+2026-06-02 13:02:56,032 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17126-hero_1613834618.jpg
+2026-06-02 13:02:56,040 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17126-hero_1613834618.jpg
+2026-06-02 13:02:56,045 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:02:56,045 [INFO]     Imágenes extraídas: 9
+2026-06-02 13:02:56,045 [INFO]   [cand] score=0.14 'Beaphar Catcomfort® Spray Gatos - 60ml' (9 imgs) https://www.beaphar.es/product/17126-catcomfort-spray-gatos-60-ml/
+2026-06-02 13:03:00,541 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/10548_337181-A_1613737306.jpg
+2026-06-02 13:03:00,549 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/10548_337181-A_1613737306.jpg
+2026-06-02 13:03:00,555 [INFO]     DOM imgs (excl. relacionados): 25
+2026-06-02 13:03:00,555 [INFO]     Imágenes extraídas: 10
+2026-06-02 13:03:00,555 [INFO]   [cand] score=0.10 'Beaphar Calming Spot On Pipetas Calmantes para Gato - 3 x 0.4ml' (10 imgs) https://www.beaphar.es/product/10548-calming-spot-on-gato-3x04-ml/
+2026-06-02 13:03:00,555 [WARNING]   Mejor candidato score=0.29 < 0.34 — descartado: 'Beaphar Cat Trainer - Educador para Gatos - 10ml'
+2026-06-02 13:03:00,555 [WARNING]   Sin resolución para 'BEAPHAR CAT COMFORT GATOS 48ML'
+2026-06-02 13:03:00,555 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:03:01,055 [INFO] 
+[32/122] BEAPHAR CAT COMFORT SPRAY VIAJE GATOS  (ID: 15981868876163)
+2026-06-02 13:03:01,056 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CAT COMFORT SPRAY VIAJE GATOS
+2026-06-02 13:03:01,268 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CAT%20COMFORT%20SPRAY%20VIAJE%20GATOS 200
+2026-06-02 13:03:01,301 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+SPRAY+VIAJE+GATOS&limit=1 200
+2026-06-02 13:03:01,571 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:03:01,731 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:03:02,283 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+SPRAY+VIAJE+GATOS 403
+2026-06-02 13:03:02,479 [INFO] response: https://search.yahoo.com/search;_ylt=EKzhGIwEDADx9yClQt9vt7Sq;_ylu=y3k1E3uyCzSta72JdBmUUVFL1FdjwyIldT9hdjwuraxZlmk?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+SPRAY+VIAJE+GATOS 200
+2026-06-02 13:03:03,092 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:03:05,327 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CAT+COMFORT+SPRAY+VIAJE+GATOS&source=web 200
+2026-06-02 13:03:05,333 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/', 'https://www.beaphar.es/product/17126-catcomfort-spray-gatos-60-ml/', 'https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/', 'https://www.beaphar.es/product/1000524-beaphar-keep-off-spray-educador-interiores-200ml/', 'https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/', 'https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/']
+2026-06-02 13:03:09,105 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17125-hero_1613834614.jpg
+2026-06-02 13:03:09,113 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17125-hero_1613834614.jpg
+2026-06-02 13:03:09,118 [INFO]     DOM imgs (excl. relacionados): 25
+2026-06-02 13:03:09,119 [INFO]     Imágenes extraídas: 10
+2026-06-02 13:03:09,119 [INFO]   [cand] score=0.43 'Beaphar Catcomfort® Spray Viaje Gatos - 30ml' (10 imgs) https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/
+2026-06-02 13:03:12,688 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17126-hero_1613834618.jpg
+2026-06-02 13:03:12,695 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17126-hero_1613834618.jpg
+2026-06-02 13:03:12,701 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:03:12,701 [INFO]     Imágenes extraídas: 9
+2026-06-02 13:03:12,701 [INFO]   [cand] score=0.29 'Beaphar Catcomfort® Spray Gatos - 60ml' (9 imgs) https://www.beaphar.es/product/17126-catcomfort-spray-gatos-60-ml/
+2026-06-02 13:03:16,065 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:03:16,073 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:03:16,077 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:03:16,077 [INFO]     EAN filter (8711231121069): 6 → 3 imgs
+2026-06-02 13:03:16,077 [INFO]     Imágenes extraídas: 3
+2026-06-02 13:03:16,077 [INFO]   [cand] score=0.09 'Beaphar CatComfort® Excellence Pack Difusor y Recambio Gatos - 48ml' (3 imgs) https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/
+2026-06-02 13:03:20,589 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000524.png
+2026-06-02 13:03:20,597 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000524.png
+2026-06-02 13:03:20,602 [INFO]     DOM imgs (excl. relacionados): 32
+2026-06-02 13:03:20,603 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:03:20,603 [INFO]   [cand] score=0.10 'Beaphar Keep Off Spray Educador Interiores - 200ml' (11 imgs) https://www.beaphar.es/product/1000524-beaphar-keep-off-spray-educador-interiores-200ml/
+2026-06-02 13:03:25,545 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11223-hero_1605887029.jpg
+2026-06-02 13:03:25,570 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11223-hero_1605887029.jpg
+2026-06-02 13:03:25,575 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:03:25,575 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:03:25,575 [INFO]   [cand] score=0.22 'Beaphar Calming Spray Ambiente Perro y Gato - 125 ml' (7 imgs) https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/
+2026-06-02 13:03:30,373 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000529.png
+2026-06-02 13:03:30,381 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000529.png
+2026-06-02 13:03:30,386 [INFO]     DOM imgs (excl. relacionados): 34
+2026-06-02 13:03:30,387 [INFO]     Imágenes extraídas: 13
+2026-06-02 13:03:30,387 [INFO]   [cand] score=0.10 'Beaphar Keep Off Spray Educador Exteriores - 500ml' (13 imgs) https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/
+2026-06-02 13:03:30,389 [INFO]   ✓ Resuelto vía DDG: Beaphar Catcomfort® Spray Viaje Gatos - 30ml (score=0.43, 10 imgs)
+2026-06-02 13:03:31,986 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/
+2026-06-02 13:03:31,987 [INFO]   → https://www.beaphar.es/product/17125-catcomfort-spray-viaje-gatos-30-ml/  (score=0.43)
+2026-06-02 13:03:32,487 [INFO] 
+[33/122] BEAPHAR CAT TRAINER EDUCADOR PARA GATOS 10ML  (ID: 15509642150275)
+2026-06-02 13:03:32,487 [INFO]   Match caché: beaphar-cat-trainer-educador-para-gatos-10ml
+2026-06-02 13:03:34,097 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/
+2026-06-02 13:03:34,097 [INFO]   → https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/  (score=1.00)
+2026-06-02 13:03:34,597 [INFO] 
+[34/122] BEAPHAR CATCOMFORT PIPETAS GATOS X3  (ID: 15509642183043)
+2026-06-02 13:03:34,597 [INFO]   Match caché: beaphar-catcomfort-pipetas-gatos-x3
+2026-06-02 13:03:36,197 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12253-beaphar-catcomfort-pipetas-feromonas-gatos-x3/
+2026-06-02 13:03:36,197 [INFO]   → https://www.beaphar.es/product/12253-beaphar-catcomfort-pipetas-feromonas-gatos-x3/  (score=1.00)
+2026-06-02 13:03:36,697 [INFO] 
+[35/122] BEAPHAR CEPILLO DENTAL  (ID: 15509642215811)
+2026-06-02 13:03:36,697 [INFO]   Match caché: beaphar-cepillo-dental
+2026-06-02 13:03:38,603 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000504-beaphar-cepillo-dental-bambu/
+2026-06-02 13:03:38,603 [INFO]   → https://www.beaphar.es/product/1000504-beaphar-cepillo-dental-bambu/  (score=1.00)
+2026-06-02 13:03:39,103 [INFO] 
+[36/122] BEAPHAR CEPILLO DENTAL BAMBÚ  (ID: 15509642248579)
+2026-06-02 13:03:39,104 [INFO]   Match caché: beaphar-cepillo-dental-bambu
+2026-06-02 13:03:40,755 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000504-beaphar-cepillo-dental-bambu/
+2026-06-02 13:03:40,756 [INFO]   → https://www.beaphar.es/product/1000504-beaphar-cepillo-dental-bambu/  (score=1.00)
+2026-06-02 13:03:41,256 [INFO] 
+[37/122] BEAPHAR CHAMPU GATO 250ML  (ID: 15509642346883)
+2026-06-02 13:03:41,256 [INFO]   Match caché: beaphar-champu-gato-250ml
+2026-06-02 13:03:42,886 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/
+2026-06-02 13:03:42,887 [INFO]   → https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/  (score=1.00)
+2026-06-02 13:03:43,387 [INFO] 
+[38/122] BEAPHAR CHAMPU PEQUEÑO ANIMAL 250ML  (ID: 15509642379651)
+2026-06-02 13:03:43,387 [INFO]   Match caché: beaphar-champu-pequeno-animal-250ml
+2026-06-02 13:03:44,980 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/19985-champu-pequenos-animales-250ml/
+2026-06-02 13:03:44,980 [INFO]   → https://www.beaphar.es/product/19985-champu-pequenos-animales-250ml/  (score=1.00)
+2026-06-02 13:03:45,480 [INFO] 
+[39/122] BEAPHAR CHAMPU PERRO ANTIPICORES 1L *DX*  (ID: 15509642445187)
+2026-06-02 13:03:45,480 [INFO]   Match caché: beaphar-champu-perro-antipicores-1l
+2026-06-02 13:03:47,073 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/19973-champu-perros-universal-1l/
+2026-06-02 13:03:47,073 [INFO]   → https://www.beaphar.es/product/19973-champu-perros-universal-1l/  (score=1.00)
+2026-06-02 13:03:47,573 [INFO] 
+[40/122] BEAPHAR CHAMPU PERROS PELO BLANCO  (ID: 15509642510723)
+2026-06-02 13:03:47,573 [INFO]   Match caché: beaphar-champu-perros-pelo-blanco
+2026-06-02 13:03:49,182 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/19984-champu-perros-pelo-blanco-250ml/
+2026-06-02 13:03:49,182 [INFO]   → https://www.beaphar.es/product/19984-champu-perros-pelo-blanco-250ml/  (score=1.00)
+2026-06-02 13:03:49,683 [INFO] 
+[41/122] BEAPHAR CHAMPU PERROS PELO LARGO  (ID: 15509642576259)
+2026-06-02 13:03:49,683 [INFO]   Match caché: beaphar-champu-perros-pelo-largo
+2026-06-02 13:03:51,292 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16868-champu-perros-pelo-largo-250ml/
+2026-06-02 13:03:51,292 [INFO]   → https://www.beaphar.es/product/16868-champu-perros-pelo-largo-250ml/  (score=1.00)
+2026-06-02 13:03:51,792 [INFO] 
+[42/122] BEAPHAR CHAMPU PERROS PELO MARRON 250ML  (ID: 15509642674563)
+2026-06-02 13:03:51,792 [INFO]   Match caché: beaphar-champu-perros-pelo-marron-250ml
+2026-06-02 13:03:53,393 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13749-champu-perros-pelo-marron-250ml/
+2026-06-02 13:03:53,393 [INFO]   → https://www.beaphar.es/product/13749-champu-perros-pelo-marron-250ml/  (score=1.00)
+2026-06-02 13:03:53,893 [INFO] 
+[43/122] BEAPHAR CHAMPU PERROS PELO NEGRO 250ML  (ID: 15509642707331)
+2026-06-02 13:03:53,893 [INFO]   Match caché: beaphar-champu-perros-pelo-negro-250ml
+2026-06-02 13:03:55,507 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/19998-champu-perros-pelo-negro-250ml/
+2026-06-02 13:03:55,507 [INFO]   → https://www.beaphar.es/product/19998-champu-perros-pelo-negro-250ml/  (score=1.00)
+2026-06-02 13:03:56,008 [INFO] 
+[44/122] BEAPHAR CHAMPU PERROS UNIVERSAL  (ID: 15509642740099)
+2026-06-02 13:03:56,008 [INFO]   Match caché: beaphar-champu-perros-universal
+2026-06-02 13:03:57,594 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/19974-champu-perros-universal-250ml/
+2026-06-02 13:03:57,595 [INFO]   → https://www.beaphar.es/product/19974-champu-perros-universal-250ml/  (score=1.00)
+2026-06-02 13:03:58,095 [INFO] 
+[45/122] BEAPHAR CHAMPU REPELENTE PERRO Y GATO 250ML  (ID: 15509642838403)
+2026-06-02 13:03:58,095 [INFO]   Match caché: beaphar-champu-repelente-perro-y-gato-250ml
+2026-06-02 13:03:59,750 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/
+2026-06-02 13:03:59,750 [INFO]   → https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/  (score=1.00)
+2026-06-02 13:04:00,250 [INFO] 
+[46/122] BEAPHAR CHAMPU TODO TIPO PELAJES PROTECCION 250ML *DX*  (ID: 15509642871171)
+2026-06-02 13:04:00,251 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR CHAMPU TODO TIPO PELAJES PROTECCION 250ML
+2026-06-02 13:04:00,456 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20CHAMPU%20TODO%20TIPO%20PELAJES%20PROTECCION%20250ML 200
+2026-06-02 13:04:00,464 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CHAMPU+TODO+TIPO+PELAJES+PROTECCION+250ML&limit=1 200
+2026-06-02 13:04:00,774 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:04:00,932 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:04:01,974 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CHAMPU+TODO+TIPO+PELAJES+PROTECCION+250ML&web=1&searchid=1231252 200
+2026-06-02 13:04:02,210 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:04:02,606 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CHAMPU+TODO+TIPO+PELAJES+PROTECCION+250ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:04:03,102 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+CHAMPU+TODO+TIPO+PELAJES+PROTECCION+250ML&source=web 200
+2026-06-02 13:04:03,109 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/', 'https://www.beaphar.es/product/1000104-sensitive-skincare-hypoallergenic-shampoo-250ml/', 'https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/', 'https://www.beaphar.es/product/1000105-sensitive-skincare-soothing-shampoo-250ml/', 'https://www.beaphar.es/product/1000106-beaphar-sensitive-skincare-anti-dandruff-shampoo-250ml/', 'https://www.beaphar.es/product/12917-champu-perros-pelo-largo-250ml/']
+2026-06-02 13:04:08,281 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231106196_MAIN.jpg
+2026-06-02 13:04:08,289 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231106196_MAIN.jpg
+2026-06-02 13:04:08,294 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:04:08,295 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:04:08,295 [INFO]   [cand] score=0.22 'Beaphar Champú Repelente Perro y Gato - 250ml' (7 imgs) https://www.beaphar.es/product/10619-champu-repelente-perro-y-gato-250ml/
+2026-06-02 13:04:12,710 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201198.jpg
+2026-06-02 13:04:12,720 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201198.jpg
+2026-06-02 13:04:12,724 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:04:12,725 [INFO]     EAN filter (8711231201198): 8 → 5 imgs
+2026-06-02 13:04:12,725 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:04:12,725 [INFO]   [cand] score=0.22 'Beaphar Champú Hipoalergénico Perros y Gatos - 250ml' (5 imgs) https://www.beaphar.es/product/1000104-sensitive-skincare-hypoallergenic-shampoo-250ml/
+2026-06-02 13:04:18,184 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:04:18,192 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:04:18,197 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:04:18,197 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:04:18,197 [INFO]   [cand] score=0.08 'Beaphar Wet Dog Spray Anti-Olor Perro Mojado - 250ml' (11 imgs) https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/
+2026-06-02 13:04:22,941 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201204.jpg
+2026-06-02 13:04:22,948 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201204.jpg
+2026-06-02 13:04:22,952 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:04:22,953 [INFO]     EAN filter (8711231201204): 8 → 5 imgs
+2026-06-02 13:04:22,953 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:04:22,953 [INFO]   [cand] score=0.22 'Beaphar Champú Calmante Perros y Gatos - 250ml' (5 imgs) https://www.beaphar.es/product/1000105-sensitive-skincare-soothing-shampoo-250ml/
+2026-06-02 13:04:27,962 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201211.jpg
+2026-06-02 13:04:27,970 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201211.jpg
+2026-06-02 13:04:27,974 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:04:27,975 [INFO]     EAN filter (8711231201211): 8 → 5 imgs
+2026-06-02 13:04:27,975 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:04:27,975 [INFO]   [cand] score=0.22 'Beaphar Champú Anticaspa Perros y Gatos - 250ml' (5 imgs) https://www.beaphar.es/product/1000106-beaphar-sensitive-skincare-anti-dandruff-shampoo-250ml/
+2026-06-02 13:04:32,529 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/4/08711231129171_C1N1.jpg
+2026-06-02 13:04:32,537 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/4/08711231129171_C1N1.jpg
+2026-06-02 13:04:32,542 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:04:32,543 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:04:32,543 [INFO]   [cand] score=0.10 'Champú Perros Pelo Largo- 1L' (8 imgs) https://www.beaphar.es/product/12917-champu-perros-pelo-largo-250ml/
+2026-06-02 13:04:32,543 [WARNING]   Mejor candidato score=0.22 < 0.34 — descartado: 'Beaphar Champú Repelente Perro y Gato - 250ml'
+2026-06-02 13:04:32,543 [WARNING]   Sin resolución para 'BEAPHAR CHAMPU TODO TIPO PELAJES PROTECCION 250ML *DX*'
+2026-06-02 13:04:32,543 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:04:33,043 [INFO] 
+[47/122] BEAPHAR COLLAR BIO BAND REPELENTE GATO 35CM  (ID: 15509642903939)
+2026-06-02 13:04:33,043 [INFO]   Match caché: beaphar-collar-bio-band-repelente-gato-35cm
+2026-06-02 13:04:34,697 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13096-collar-bio-band-repelente-gato-35cm/
+2026-06-02 13:04:34,697 [INFO]   → https://www.beaphar.es/product/13096-collar-bio-band-repelente-gato-35cm/  (score=1.00)
+2026-06-02 13:04:35,197 [INFO] 
+[48/122] BEAPHAR COLLAR BIO BAND REPELENTE PERRO 65CM  (ID: 15509642936707)
+2026-06-02 13:04:35,197 [INFO]   Match caché: beaphar-collar-bio-band-repelente-perro-65cm
+2026-06-02 13:04:36,820 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13097-collar-bio-band-repelente-perro-65cm/
+2026-06-02 13:04:36,820 [INFO]   → https://www.beaphar.es/product/13097-collar-bio-band-repelente-perro-65cm/  (score=1.00)
+2026-06-02 13:04:37,320 [INFO] 
+[49/122] BEAPHAR COLLAR SEGURIDAD REFLECTANTE TALLA M/L *DX*  (ID: 15509643002243)
+2026-06-02 13:04:37,321 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR COLLAR SEGURIDAD REFLECTANTE TALLA M/L
+2026-06-02 13:04:37,528 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20COLLAR%20SEGURIDAD%20REFLECTANTE%20TALLA%20M/L 200
+2026-06-02 13:04:37,562 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL&limit=1 200
+2026-06-02 13:04:38,548 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL&web=1&searchid=3984561 200
+2026-06-02 13:04:38,771 [INFO] response: https://search.yahoo.com/search;_ylt=oh1TVQb00gv_rfvBerwG-oU_;_ylu=aJo8x_SxF8nzh-50nYFUTjZuMhp1815Wyz7zb7MZIsP0A64?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL 200
+2026-06-02 13:04:39,552 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:04:39,905 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:04:40,156 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:04:40,683 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL 403
+2026-06-02 13:04:40,758 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+COLLAR+SEGURIDAD+REFLECTANTE+TALLA+M%2FL&source=web 429
+2026-06-02 13:04:40,768 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/', 'https://www.beaphar.es/product/17235-collar-canishield-perro-2-x-65cm-es/', 'https://www.beaphar.es/product/17300-collar-canishield-perro-1-x-48cm-es/', 'https://www.beaphar.es/product/17233-collar-canishield-perro-1-x-65cm-es/', 'https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/', 'https://www.beaphar.es/product/13096-collar-bio-band-repelente-gato-35cm/']
+2026-06-02 13:04:45,353 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:04:45,360 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:04:45,365 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:04:45,365 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:04:45,365 [INFO]   [cand] score=0.00 'Beaphar Gentle Leader® Correa Adiestramiento Rojo - Perro Grande' (6 imgs) https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/
+2026-06-02 13:04:48,908 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17235.png
+2026-06-02 13:04:48,915 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17235.png
+2026-06-02 13:04:48,921 [INFO]     DOM imgs (excl. relacionados): 35
+2026-06-02 13:04:48,922 [INFO]     Imágenes extraídas: 12
+2026-06-02 13:04:48,922 [INFO]   [cand] score=0.11 'Beaphar Canishield® Collar Antiparasitario Perro Grande - 2 x 65cm' (12 imgs) https://www.beaphar.es/product/17235-collar-canishield-perro-2-x-65cm-es/
+2026-06-02 13:04:53,576 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17300.png
+2026-06-02 13:04:53,584 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17300.png
+2026-06-02 13:04:53,590 [INFO]     DOM imgs (excl. relacionados): 32
+2026-06-02 13:04:53,590 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:04:53,590 [INFO]   [cand] score=0.10 'Beaphar Canishield® Collar Antiparasitario Perro Pequeño y Mediano - 48 cm' (11 imgs) https://www.beaphar.es/product/17300-collar-canishield-perro-1-x-48cm-es/
+2026-06-02 13:04:57,456 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17233.png
+2026-06-02 13:04:57,464 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17233.png
+2026-06-02 13:04:57,469 [INFO]     DOM imgs (excl. relacionados): 32
+2026-06-02 13:04:57,470 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:04:57,470 [INFO]   [cand] score=0.11 'Beaphar Canishield® Collar Antiparasitario Perro Grande - 65cm' (11 imgs) https://www.beaphar.es/product/17233-collar-canishield-perro-1-x-65cm-es/
+2026-06-02 13:05:01,915 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17947_338555.jpg
+2026-06-02 13:05:01,922 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17947_338555.jpg
+2026-06-02 13:05:01,927 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:05:01,927 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:05:01,927 [INFO]   [cand] score=0.00 'Beaphar Gentle Leader® Correa Adiestramiento Rojo- Perro Pequeño' (6 imgs) https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/
+2026-06-02 13:05:07,511 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130962_MAIN.jpg
+2026-06-02 13:05:07,521 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231130962_MAIN.jpg
+2026-06-02 13:05:07,526 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:05:07,527 [INFO]     Imágenes extraídas: 9
+2026-06-02 13:05:07,527 [INFO]   [cand] score=0.14 'Beaphar Collar Repelente Gato - 35cm' (9 imgs) https://www.beaphar.es/product/13096-collar-bio-band-repelente-gato-35cm/
+2026-06-02 13:05:07,527 [WARNING]   Mejor candidato score=0.14 < 0.34 — descartado: 'Beaphar Collar Repelente Gato - 35cm'
+2026-06-02 13:05:07,527 [WARNING]   Sin resolución para 'BEAPHAR COLLAR SEGURIDAD REFLECTANTE TALLA M/L *DX*'
+2026-06-02 13:05:07,527 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:05:08,027 [INFO] 
+[50/122] BEAPHAR DENTAL PLUS 75GR  (ID: 15509643035011)
+2026-06-02 13:05:08,027 [INFO]   Match caché: beaphar-dental-plus-75gr
+2026-06-02 13:05:09,619 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12210-dental-plus-75gr/
+2026-06-02 13:05:09,619 [INFO]   → https://www.beaphar.es/product/12210-dental-plus-75gr/  (score=1.00)
+2026-06-02 13:05:10,120 [INFO] 
+[51/122] BEAPHAR DENTAL STICKS PERRO MEDIANO GRANDE 1X182GR  (ID: 15509643067779)
+2026-06-02 13:05:10,120 [INFO]   Match caché: beaphar-dental-sticks-perro-mediano-grande-1x182gr
+2026-06-02 13:05:12,028 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13174-dental-sticks-perro-mediano-y-grande-7u-182gr/
+2026-06-02 13:05:12,029 [INFO]   → https://www.beaphar.es/product/13174-dental-sticks-perro-mediano-y-grande-7u-182gr/  (score=1.00)
+2026-06-02 13:05:12,529 [INFO] 
+[52/122] BEAPHAR EYE GEL 5ML  (ID: 15509643100547)
+2026-06-02 13:05:12,529 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR EYE GEL 5ML
+2026-06-02 13:05:12,769 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20EYE%20GEL%205ML 200
+2026-06-02 13:05:12,789 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+EYE+GEL+5ML&limit=1 200
+2026-06-02 13:05:12,989 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:05:13,288 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+EYE+GEL+5ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:05:14,258 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+EYE+GEL+5ML&web=1&searchid=6702161 200
+2026-06-02 13:05:14,572 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:05:14,724 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:05:15,256 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+EYE+GEL+5ML 403
+2026-06-02 13:05:15,473 [INFO] response: https://search.yahoo.com/search;_ylt=l3TageDnq5h1mkxSNv0WVKlh;_ylu=zdKHDFuyAOa_4gtu0XcowChTW3wYPuUvLT6vfzjNSyRwxPc?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+EYE+GEL+5ML 200
+2026-06-02 13:05:15,945 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/15348-gel-ocular-perro-y-gato-5-ml/', 'https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/', 'https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/', 'https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/', 'https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/', 'https://www.beaphar.es/product/15367-pasta-de-malta-para-hurones-100g/']
+2026-06-02 13:05:20,609 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153480.jpg
+2026-06-02 13:05:20,617 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153480.jpg
+2026-06-02 13:05:20,659 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:05:20,659 [INFO]     EAN filter (8711231153480): 9 → 5 imgs
+2026-06-02 13:05:20,659 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:05:20,659 [INFO]   [cand] score=0.12 'Beaphar Gel Ocular Perro, Gato, Pequeño Animal - 5 ml' (5 imgs) https://www.beaphar.es/product/15348-gel-ocular-perro-y-gato-5-ml/
+2026-06-02 13:05:25,515 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14897-hero_1613746034.jpg
+2026-06-02 13:05:25,523 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14897-hero_1613746034.jpg
+2026-06-02 13:05:25,528 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:05:25,528 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:05:25,528 [INFO]   [cand] score=0.00 'Beaphar No Stress Gato Pack Difusor y Recambio - 30ml' (8 imgs) https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/
+2026-06-02 13:05:29,944 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:05:29,951 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:05:29,956 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:05:29,957 [INFO]     EAN filter (8711231163908): 7 → 4 imgs
+2026-06-02 13:05:29,957 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:05:29,957 [INFO]   [cand] score=0.00 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 1 Pipeta' (4 imgs) https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/
+2026-06-02 13:05:34,365 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:05:34,373 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:05:34,378 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:05:34,379 [INFO]     EAN filter (8711231164486): 7 → 4 imgs
+2026-06-02 13:05:34,379 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:05:34,379 [INFO]   [cand] score=0.00 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 4 Pipetas' (4 imgs) https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/
+2026-06-02 13:05:39,373 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:05:39,381 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:05:39,386 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:05:39,387 [INFO]     EAN filter (8711231164783): 10 → 7 imgs
+2026-06-02 13:05:39,387 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:05:39,387 [INFO]   [cand] score=0.00 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Mediano (10-20kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/
+2026-06-02 13:05:43,794 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153671.png
+2026-06-02 13:05:43,802 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153671.png
+2026-06-02 13:05:43,807 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:05:43,807 [INFO]     EAN filter (8711231153671): 8 → 4 imgs
+2026-06-02 13:05:43,807 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:05:43,808 [INFO]   [cand] score=0.00 'Beaphar Pasta de Malta para Hurones - 100g' (4 imgs) https://www.beaphar.es/product/15367-pasta-de-malta-para-hurones-100g/
+2026-06-02 13:05:43,808 [WARNING]   Mejor candidato score=0.12 < 0.34 — descartado: 'Beaphar Gel Ocular Perro, Gato, Pequeño Animal - 5 ml'
+2026-06-02 13:05:43,808 [WARNING]   Sin resolución para 'BEAPHAR EYE GEL 5ML'
+2026-06-02 13:05:43,808 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:05:44,308 [INFO] 
+[53/122] BEAPHAR FIPROTEC SPOT ON GATO 1X0,5ML  (ID: 15509643133315)
+2026-06-02 13:05:44,308 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR FIPROTEC SPOT ON GATO 1X0,5ML
+2026-06-02 13:05:44,526 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20FIPROTEC%20SPOT%20ON%20GATO%201X0%2C5ML 200
+2026-06-02 13:05:44,568 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML&limit=1 200
+2026-06-02 13:05:44,906 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:05:45,210 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:05:45,416 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:05:45,984 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML 403
+2026-06-02 13:05:46,147 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:05:47,241 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML&web=1&searchid=8660410 200
+2026-06-02 13:05:47,335 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML&source=web 429
+2026-06-02 13:05:47,626 [INFO] response: https://search.yahoo.com/search;_ylt=4z0iq2ZhlwvxsZU-pz-oQVUD;_ylu=nNroRGaZI94EP_Uxe4Czcf_8RDVjSc1TMCKh3tGybq5sQIE?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+FIPROTEC+SPOT+ON+GATO+1X0%2C5ML 200
+2026-06-02 13:05:48,048 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/', 'https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/', 'https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/', 'https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/', 'https://www.beaphar.es/product/16479-fiprotec-spot-on-perro-grande-20-40kg-4-pip-x-268ml/', 'https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/']
+2026-06-02 13:05:51,312 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:05:51,320 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:05:51,325 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:05:51,325 [INFO]     EAN filter (8711231163908): 7 → 4 imgs
+2026-06-02 13:05:51,326 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:05:51,326 [INFO]   [cand] score=0.25 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 1 Pipeta' (4 imgs) https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/
+2026-06-02 13:05:54,361 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:05:54,369 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:05:54,375 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:05:54,376 [INFO]     EAN filter (8711231164783): 10 → 7 imgs
+2026-06-02 13:05:54,376 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:05:54,376 [INFO]   [cand] score=0.08 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Mediano (10-20kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/
+2026-06-02 13:05:58,084 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:05:58,092 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:05:58,097 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:05:58,097 [INFO]     EAN filter (8711231164486): 7 → 4 imgs
+2026-06-02 13:05:58,097 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:05:58,097 [INFO]   [cand] score=0.25 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 4 Pipetas' (4 imgs) https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/
+2026-06-02 13:06:02,453 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164554.jpg
+2026-06-02 13:06:02,461 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164554.jpg
+2026-06-02 13:06:02,466 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:06:02,467 [INFO]     EAN filter (8711231164554): 10 → 7 imgs
+2026-06-02 13:06:02,467 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:06:02,467 [INFO]   [cand] score=0.09 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Pequeño (2-10kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/
+2026-06-02 13:06:06,758 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164790.jpg
+2026-06-02 13:06:06,769 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164790.jpg
+2026-06-02 13:06:06,776 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:06:06,777 [INFO]     EAN filter (8711231164790): 10 → 7 imgs
+2026-06-02 13:06:06,777 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:06:06,777 [INFO]   [cand] score=0.08 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Mediano (20-40kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16479-fiprotec-spot-on-perro-grande-20-40kg-4-pip-x-268ml/
+2026-06-02 13:06:11,728 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:06:11,736 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:06:11,741 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:06:11,741 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:06:11,742 [INFO]   [cand] score=0.00 'Beaphar ProtecTix® Pipetas Perros M (10-25KG)' (8 imgs) https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/
+2026-06-02 13:06:11,742 [WARNING]   Mejor candidato score=0.25 < 0.34 — descartado: 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 1 Pipeta'
+2026-06-02 13:06:11,742 [WARNING]   Sin resolución para 'BEAPHAR FIPROTEC SPOT ON GATO 1X0,5ML'
+2026-06-02 13:06:11,742 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:06:12,242 [INFO] 
+[54/122] BEAPHAR FIPROTEC SPRAY PERROS Y GATOS 100ML  (ID: 15509643198851)
+2026-06-02 13:06:12,242 [INFO]   Match caché: beaphar-fiprotec-spray-perros-y-gatos-100ml
+2026-06-02 13:06:13,872 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15408-fiprotec-spray-perros-gatos-100-ml-es/
+2026-06-02 13:06:13,873 [INFO]   → https://www.beaphar.es/product/15408-fiprotec-spray-perros-gatos-100-ml-es/  (score=1.00)
+2026-06-02 13:06:14,373 [INFO] 
+[55/122] BEAPHAR FLEXIFIT BITS GATOS 35G  (ID: 15509643231619)
+2026-06-02 13:06:14,373 [INFO]   Match caché: beaphar-flexifit-bits-gatos-35g
+2026-06-02 13:06:15,997 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11627-bocaditos-salmon-bits-gato-35g/
+2026-06-02 13:06:15,998 [INFO]   → https://www.beaphar.es/product/11627-bocaditos-salmon-bits-gato-35g/  (score=1.00)
+2026-06-02 13:06:16,498 [INFO] 
+[56/122] BEAPHAR FLEXIFIT CHEWS PERROS 175G  (ID: 15509643297155)
+2026-06-02 13:06:16,498 [INFO]   Match caché: beaphar-flexifit-chews-perros-175g
+2026-06-02 13:06:18,095 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000028-beaphar-flexifit-chews-condroprotector-para-perros-175g/
+2026-06-02 13:06:18,095 [INFO]   → https://www.beaphar.es/product/1000028-beaphar-flexifit-chews-condroprotector-para-perros-175g/  (score=1.00)
+2026-06-02 13:06:18,595 [INFO] 
+[57/122] BEAPHAR FLEXIFIT PASTA PERROS Y GATOS 250G  (ID: 15509643329923)
+2026-06-02 13:06:18,595 [INFO]   Match caché: beaphar-flexifit-pasta-perros-y-gatos-250g
+2026-06-02 13:06:20,174 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000143-beaphar-flexifit-pasta-perros-y-gatos-snack-articular-250g/
+2026-06-02 13:06:20,175 [INFO]   → https://www.beaphar.es/product/1000143-beaphar-flexifit-pasta-perros-y-gatos-snack-articular-250g/  (score=1.00)
+2026-06-02 13:06:20,675 [INFO] 
+[58/122] BEAPHAR FLEXIFIT STICKS PERROS 175G  (ID: 15509643362691)
+2026-06-02 13:06:20,675 [INFO]   Match caché: beaphar-flexifit-sticks-perros-175g
+2026-06-02 13:06:22,377 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000032-beaphar-flexifit-sticks-perros-175g/
+2026-06-02 13:06:22,378 [INFO]   → https://www.beaphar.es/product/1000032-beaphar-flexifit-sticks-perros-175g/  (score=1.00)
+2026-06-02 13:06:22,878 [INFO] 
+[59/122] BEAPHAR FLEXIFIT TREATS PERROS 150G  (ID: 15509643428227)
+2026-06-02 13:06:22,878 [INFO]   Match caché: beaphar-flexifit-treats-perros-150g
+2026-06-02 13:06:24,521 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000023-beaphar-flexifit-treats-perros-snack-articular-150g/
+2026-06-02 13:06:24,521 [INFO]   → https://www.beaphar.es/product/1000023-beaphar-flexifit-treats-perros-snack-articular-150g/  (score=1.00)
+2026-06-02 13:06:25,022 [INFO] 
+[60/122] BEAPHAR GEL DENTAL PERRO Y GATO 100GR  (ID: 15509643460995)
+2026-06-02 13:06:25,022 [INFO]   Match caché: beaphar-gel-dental-perro-y-gato-100gr
+2026-06-02 13:06:26,609 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15685-gel-dental-perro-y-gato-100g/
+2026-06-02 13:06:26,609 [INFO]   → https://www.beaphar.es/product/15685-gel-dental-perro-y-gato-100g/  (score=1.00)
+2026-06-02 13:06:27,109 [INFO] 
+[61/122] BEAPHAR GENTLE LEADER TALLA L NEGRO  (ID: 15509643493763)
+2026-06-02 13:06:27,109 [INFO]   Match caché: beaphar-gentle-leader-talla-l-negro
+2026-06-02 13:06:28,695 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/
+2026-06-02 13:06:28,696 [INFO]   → https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/  (score=1.00)
+2026-06-02 13:06:29,196 [INFO] 
+[62/122] BEAPHAR GENTLE LEADER TALLA L ROJO  (ID: 15509643592067)
+2026-06-02 13:06:29,196 [INFO]   Match caché: beaphar-gentle-leader-talla-l-rojo
+2026-06-02 13:06:30,958 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/
+2026-06-02 13:06:30,958 [INFO]   → https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/  (score=1.00)
+2026-06-02 13:06:31,458 [INFO] 
+[63/122] BEAPHAR GENTLE LEADER TALLA M NEGRO  (ID: 15509643624835)
+2026-06-02 13:06:31,459 [INFO]   Match caché: beaphar-gentle-leader-talla-m-negro
+2026-06-02 13:06:33,113 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/
+2026-06-02 13:06:33,113 [INFO]   → https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/  (score=1.00)
+2026-06-02 13:06:33,613 [INFO] 
+[64/122] BEAPHAR GENTLE LEADER TALLA M ROJO  (ID: 15509643657603)
+2026-06-02 13:06:33,614 [INFO]   Match caché: beaphar-gentle-leader-talla-m-rojo
+2026-06-02 13:06:35,304 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/
+2026-06-02 13:06:35,305 [INFO]   → https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/  (score=1.00)
+2026-06-02 13:06:35,805 [INFO] 
+[65/122] BEAPHAR GENTLE LEADER TALLA S NEGRO  (ID: 15509643690371)
+2026-06-02 13:06:35,805 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR GENTLE LEADER TALLA S NEGRO
+2026-06-02 13:06:36,012 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20GENTLE%20LEADER%20TALLA%20S%20NEGRO 200
+2026-06-02 13:06:36,155 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO&limit=1 200
+2026-06-02 13:06:36,384 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:06:36,730 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:06:36,890 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:06:36,978 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO&source=web 429
+2026-06-02 13:06:37,180 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:06:38,226 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO&web=1&searchid=4696532 200
+2026-06-02 13:06:38,733 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO 403
+2026-06-02 13:06:38,925 [INFO] response: https://search.yahoo.com/search;_ylt=KVlKbsrVhBjs-WiZZp-B4Oab;_ylu=1-RgNpSQ8gHcDxskPN9drAi9NHCfo-hYpKFG9GyyzW8lOyA?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+GENTLE+LEADER+TALLA+S+NEGRO 200
+2026-06-02 13:06:39,391 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/', 'https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/', 'https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/', 'https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/', 'https://www.beaphar.es/product/1000355-protectix-pipetas-perros-s-4-10kg/', 'https://www.beaphar.es/product/18454-care-conejo-senior-15kg/']
+2026-06-02 13:06:42,689 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17947_338555.jpg
+2026-06-02 13:06:42,697 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17947_338555.jpg
+2026-06-02 13:06:42,702 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:06:42,702 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:06:42,702 [INFO]   [cand] score=0.22 'Beaphar Gentle Leader® Correa Adiestramiento Rojo- Perro Pequeño' (6 imgs) https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/
+2026-06-02 13:06:47,861 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17946_338556.jpg
+2026-06-02 13:06:47,869 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17946_338556.jpg
+2026-06-02 13:06:47,873 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:06:47,874 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:06:47,874 [INFO]   [cand] score=0.38 'Beaphar Gentle Leader® Correa Adiestramiento Negro - Perro Pequeño' (6 imgs) https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/
+2026-06-02 13:06:51,378 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:06:51,385 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:06:51,390 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:06:51,391 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:06:51,391 [INFO]   [cand] score=0.22 'Beaphar Gentle Leader® Correa Adiestramiento Rojo - Perro Grande' (6 imgs) https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/
+2026-06-02 13:06:56,019 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17948_338554-A_.jpg
+2026-06-02 13:06:56,026 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17948_338554-A_.jpg
+2026-06-02 13:06:56,031 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:06:56,032 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:06:56,032 [INFO]   [cand] score=0.38 'Beaphar Gentle Leader® Correa Adiestramiento Negro - Perro Mediano' (6 imgs) https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/
+2026-06-02 13:07:00,633 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000355_Ecommerce-ProtecTix-Dog-S_ES_2024-1.jpg
+2026-06-02 13:07:00,643 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000355_Ecommerce-ProtecTix-Dog-S_ES_2024-1.jpg
+2026-06-02 13:07:00,648 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:07:00,648 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:07:00,649 [INFO]   [cand] score=0.00 'Beaphar ProtecTix® Pipetas Perros S (4-10KG)' (8 imgs) https://www.beaphar.es/product/1000355-protectix-pipetas-perros-s-4-10kg/
+2026-06-02 13:07:04,437 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184545.jpg
+2026-06-02 13:07:04,445 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231184545.jpg
+2026-06-02 13:07:04,450 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:07:04,451 [INFO]     EAN filter (8711231184545): 11 → 8 imgs
+2026-06-02 13:07:04,451 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:07:04,451 [INFO]   [cand] score=0.00 'Beaphar Care+ Conejo Senior - 1,5kg' (8 imgs) https://www.beaphar.es/product/18454-care-conejo-senior-15kg/
+2026-06-02 13:07:04,453 [INFO]   ✓ Resuelto vía DDG: Beaphar Gentle Leader® Correa Adiestramiento Negro - Perro Pequeño (score=0.38, 6 imgs)
+2026-06-02 13:07:06,020 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/
+2026-06-02 13:07:06,020 [INFO]   → https://www.beaphar.es/product/17946-beaphar-gentle-leader-correa-adiestramiento-negro-perro-pequeno/  (score=0.38)
+2026-06-02 13:07:06,520 [INFO] 
+[66/122] BEAPHAR GENTLE LEADER TALLA S ROJO  (ID: 15509643723139)
+2026-06-02 13:07:06,520 [INFO]   Match caché: beaphar-gentle-leader-talla-s-rojo
+2026-06-02 13:07:08,127 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/
+2026-06-02 13:07:08,128 [INFO]   → https://www.beaphar.es/product/17947-gentle-leader-talla-s-rojo/  (score=1.00)
+2026-06-02 13:07:08,628 [INFO] 
+[67/122] BEAPHAR LACTOL KIT: BIBERON+6TETINAS+LIMPIADOR  (ID: 15509643755907)
+2026-06-02 13:07:08,628 [INFO]   Match caché: beaphar-lactol-kit-biberon-6tetinas-limpiador
+2026-06-02 13:07:10,252 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11244-lactol-kit-biberon-6-tetinas-limpiador/
+2026-06-02 13:07:10,252 [INFO]   → https://www.beaphar.es/product/11244-lactol-kit-biberon-6-tetinas-limpiador/  (score=1.00)
+2026-06-02 13:07:10,752 [INFO] 
+[68/122] BEAPHAR LACTOL KITTEN MILK LECHE EN POLVO 250GR  (ID: 15509643788675)
+2026-06-02 13:07:10,752 [INFO]   Match caché: beaphar-lactol-kitten-milk-leche-en-polvo-250gr
+2026-06-02 13:07:12,358 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15197-lactol-kitten-milk-leche-en-polvo-250g/
+2026-06-02 13:07:12,359 [INFO]   → https://www.beaphar.es/product/15197-lactol-kitten-milk-leche-en-polvo-250g/  (score=1.00)
+2026-06-02 13:07:12,859 [INFO] 
+[69/122] BEAPHAR LACTOL PUPPY MILK LECHE EN POLVO  (ID: 15509643985283)
+2026-06-02 13:07:12,859 [INFO]   Match caché: beaphar-lactol-puppy-milk-leche-en-polvo
+2026-06-02 13:07:14,420 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15196-lactol-puppy-milk-leche-en-polvo-250g/
+2026-06-02 13:07:14,421 [INFO]   → https://www.beaphar.es/product/15196-lactol-puppy-milk-leche-en-polvo-250g/  (score=1.00)
+2026-06-02 13:07:14,921 [INFO] 
+[70/122] BEAPHAR LECHE DE SUSTITUCIÓN PEQUEÑO ANIMAL 200G  (ID: 15509644050819)
+2026-06-02 13:07:14,921 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR LECHE DE SUSTITUCIÓN PEQUEÑO ANIMAL 200G
+2026-06-02 13:07:15,108 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20LECHE%20DE%20SUSTITUCI%C3%93N%20PEQUE%C3%91O%20ANIMAL%20200G 200
+2026-06-02 13:07:15,199 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G&limit=1 200
+2026-06-02 13:07:15,322 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G&source=web 429
+2026-06-02 13:07:15,494 [INFO] response: https://search.yahoo.com/search;_ylt=3RYxsdqRvN6p2hraIHwGfjfW;_ylu=HpYBqidcq3cV9S5kk7KSvoF8jd0ETuBAfgDhUMCeXmI8I14?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G 200
+2026-06-02 13:07:16,310 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:07:16,462 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:07:16,676 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:07:17,239 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G 403
+2026-06-02 13:07:18,327 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+LECHE+DE+SUSTITUCI%C3%93N+PEQUE%C3%91O+ANIMAL+200G&web=1&searchid=4080672 200
+2026-06-02 13:07:18,344 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/', 'https://www.beaphar.es/product/19985-champu-pequenos-animales-250ml/', 'https://www.beaphar.es/product/13002-care-conejo-5kg/', 'https://www.beaphar.es/product/18407-care-conejo-junior-15kg/', 'https://www.beaphar.es/product/15196-lactol-puppy-milk-leche-en-polvo-250g/', 'https://www.beaphar.es/product/13000-beaphar-care-rata-5kg/']
+2026-06-02 13:07:23,245 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231200061.jpg
+2026-06-02 13:07:23,252 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231200061.jpg
+2026-06-02 13:07:23,257 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:07:23,258 [INFO]     EAN filter (8711231200061): 9 → 6 imgs
+2026-06-02 13:07:23,258 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:07:23,258 [INFO]   [cand] score=1.00 'Beaphar Leche de Sustitución para Pequeño Animal - 200g' (6 imgs) https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/
+2026-06-02 13:07:23,260 [INFO]   ✓ Resuelto vía DDG: Beaphar Leche de Sustitución para Pequeño Animal - 200g (score=1.00, 6 imgs)
+2026-06-02 13:07:24,855 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/
+2026-06-02 13:07:24,856 [INFO]   → https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/  (score=1.00)
+2026-06-02 13:07:25,356 [INFO] 
+[71/122] BEAPHAR LIMPIADOR DE LAGRIMAS PERRO Y GATO 50ML  (ID: 15509644116355)
+2026-06-02 13:07:25,356 [INFO]   Match caché: beaphar-limpiador-de-lagrimas-perro-y-gato-50ml
+2026-06-02 13:07:27,018 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/
+2026-06-02 13:07:27,018 [INFO]   → https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/  (score=1.00)
+2026-06-02 13:07:27,519 [INFO] 
+[72/122] BEAPHAR LIMPIADOR DE OIDOS PERRO Y GATO 50ML  (ID: 15509644149123)
+2026-06-02 13:07:27,519 [INFO]   Match caché: beaphar-limpiador-de-oidos-perro-y-gato-50ml
+2026-06-02 13:07:29,070 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11672-limpiador-de-oidos-perro-y-gato-50ml/
+2026-06-02 13:07:29,070 [INFO]   → https://www.beaphar.es/product/11672-limpiador-de-oidos-perro-y-gato-50ml/  (score=1.00)
+2026-06-02 13:07:29,570 [INFO] 
+[73/122] BEAPHAR LIMPIADOR DE OJOS PERRO Y GATO 50ML  (ID: 15509644181891)
+2026-06-02 13:07:29,570 [INFO]   Match caché: beaphar-limpiador-de-ojos-perro-y-gato-50ml
+2026-06-02 13:07:31,171 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/
+2026-06-02 13:07:31,171 [INFO]   → https://www.beaphar.es/product/11673-limpiador-de-ojos-perro-y-gato-50ml/  (score=1.00)
+2026-06-02 13:07:31,671 [INFO] 
+[74/122] BEAPHAR LOCION REPELENTE PERRO GATO 250ML  (ID: 15509644214659)
+2026-06-02 13:07:31,671 [INFO]   Match caché: beaphar-locion-repelente-perro-gato-250ml
+2026-06-02 13:07:33,315 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10620-locion-repelente-perro-gato-250ml/
+2026-06-02 13:07:33,315 [INFO]   → https://www.beaphar.es/product/10620-locion-repelente-perro-gato-250ml/  (score=1.00)
+2026-06-02 13:07:33,815 [INFO] 
+[75/122] BEAPHAR MIXTURA EN GOLOSINAS 150G  (ID: 15509644247427)
+2026-06-02 13:07:33,816 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR MIXTURA EN GOLOSINAS 150G
+2026-06-02 13:07:34,018 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20MIXTURA%20EN%20GOLOSINAS%20150G 200
+2026-06-02 13:07:34,075 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G&limit=1 200
+2026-06-02 13:07:34,567 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G 403
+2026-06-02 13:07:34,812 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:07:35,019 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:07:35,177 [INFO] response: https://search.yahoo.com/search;_ylt=HYENGM8KGT66oviF9ITfqi-6;_ylu=NVD3JdryoXP-lAKFmXioJZOgMtwt86nQ52MqEn9_xJyYB6M?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G 200
+2026-06-02 13:07:35,805 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:07:35,901 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G&source=web 429
+2026-06-02 13:07:36,866 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+MIXTURA+EN+GOLOSINAS+150G&web=1&searchid=9429195 200
+2026-06-02 13:07:36,884 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/11612-bocaditos-catnip-bits-gato-150g/', 'https://www.beaphar.es/product/11711-munching-sticks-roedores-150g/', 'https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/', 'https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/', 'https://www.beaphar.es/product/1000141-beaphar-mixtura-para-muda-150g/', 'https://www.beaphar.es/product/1000140-beaphar-semillas-de-frutas-para-pajaros-150g/']
+2026-06-02 13:07:40,724 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11612-hero_1613740477.jpg
+2026-06-02 13:07:40,732 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11612-hero_1613740477.jpg
+2026-06-02 13:07:40,736 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:07:40,736 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:07:40,736 [INFO]   [cand] score=0.12 'Beaphar Catnip Bits Snacks para Gato - 150g' (4 imgs) https://www.beaphar.es/product/11612-bocaditos-catnip-bits-gato-150g/
+2026-06-02 13:07:44,851 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11711_39162-C.jpg
+2026-06-02 13:07:44,859 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11711_39162-C.jpg
+2026-06-02 13:07:44,863 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:07:44,863 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:07:44,863 [INFO]   [cand] score=0.12 'Beaphar Munching Sticks Snacks para Roedores - 150g' (4 imgs) https://www.beaphar.es/product/11711-munching-sticks-roedores-150g/
+2026-06-02 13:07:49,690 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201440.jpg
+2026-06-02 13:07:49,698 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201440.jpg
+2026-06-02 13:07:49,705 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:07:49,706 [INFO]     EAN filter (8711231201440): 7 → 4 imgs
+2026-06-02 13:07:49,706 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:07:49,706 [INFO]   [cand] score=1.00 'Beaphar Mixtura en Golosinas - 150g' (4 imgs) https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/
+2026-06-02 13:07:49,709 [INFO]   ✓ Resuelto vía DDG: Beaphar Mixtura en Golosinas - 150g (score=1.00, 4 imgs)
+2026-06-02 13:07:51,311 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/
+2026-06-02 13:07:51,311 [INFO]   → https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/  (score=1.00)
+2026-06-02 13:07:51,811 [INFO] 
+[76/122] BEAPHAR MIXTURA PARA CANTO 150G  (ID: 15509644280195)
+2026-06-02 13:07:51,811 [INFO]   Match caché: beaphar-mixtura-para-canto-150g
+2026-06-02 13:07:53,413 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/
+2026-06-02 13:07:53,413 [INFO]   → https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/  (score=1.00)
+2026-06-02 13:07:53,913 [INFO] 
+[77/122] BEAPHAR MIXTURA PARA MUDA 150G  (ID: 15509644312963)
+2026-06-02 13:07:53,913 [INFO]   Match caché: beaphar-mixtura-para-muda-150g
+2026-06-02 13:07:55,536 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000141-beaphar-mixtura-para-muda-150g/
+2026-06-02 13:07:55,537 [INFO]   → https://www.beaphar.es/product/1000141-beaphar-mixtura-para-muda-150g/  (score=1.00)
+2026-06-02 13:07:56,037 [INFO] 
+[78/122] BEAPHAR MULTIFRESH NEUTRALIZADOR DE OLORES GATO 400G  (ID: 15981869105539)
+2026-06-02 13:07:56,037 [INFO]   Match caché: beaphar-multifresh-neutralizador-de-olores-gato-400g
+2026-06-02 13:07:57,559 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000110-beaphar-multi-fresh-neutralizador-de-olores-orquidea-400g/
+2026-06-02 13:07:57,560 [INFO]   → https://www.beaphar.es/product/1000110-beaphar-multi-fresh-neutralizador-de-olores-orquidea-400g/  (score=1.00)
+2026-06-02 13:07:58,060 [INFO] 
+[79/122] BEAPHAR NEUTRALIZADOR DE OLORES ROEDORES 600GR  (ID: 15509644411267)
+2026-06-02 13:07:58,060 [INFO]   Match caché: beaphar-neutralizador-de-olores-roedores-600gr
+2026-06-02 13:07:59,804 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15384-neutralizador-de-olores-roedores-600g/
+2026-06-02 13:07:59,804 [INFO]   → https://www.beaphar.es/product/15384-neutralizador-de-olores-roedores-600g/  (score=1.00)
+2026-06-02 13:08:00,305 [INFO] 
+[80/122] BEAPHAR NO LOVE SPRAY 50ML  (ID: 15509644444035)
+2026-06-02 13:08:00,305 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR NO LOVE SPRAY 50ML
+2026-06-02 13:08:00,469 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML&limit=1 200
+2026-06-02 13:08:00,507 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20NO%20LOVE%20SPRAY%2050ML 200
+2026-06-02 13:08:01,012 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:08:01,230 [INFO] response: https://search.yahoo.com/search;_ylt=JGrZC6iQR3kJM5dsbmx2PiQn;_ylu=4WO0bqNty-6AEQMjJTkX_11Me3basXTVQ1DZdbvN61YN6wI?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML 200
+2026-06-02 13:08:01,966 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:08:02,215 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:08:02,803 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML 403
+2026-06-02 13:08:02,876 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML&source=web 429
+2026-06-02 13:08:04,026 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+NO+LOVE+SPRAY+50ML&web=1&searchid=3839227 200
+2026-06-02 13:08:04,030 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/11629-limpiador-de-lagrimas-perro-y-gato-50ml/', 'https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/', 'https://www.beaphar.es/product/10904-canicomfort-60ml-spray/', 'https://www.beaphar.es/product/13747-beaphar-spray-para-heridas/', 'https://www.beaphar.es/product/1000169/', 'https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/']
+2026-06-02 13:08:08,393 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231116294.jpg
+2026-06-02 13:08:08,401 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231116294.jpg
+2026-06-02 13:08:08,405 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:08:08,406 [INFO]     EAN filter (8711231116294): 8 → 4 imgs
+2026-06-02 13:08:08,406 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:08:08,406 [INFO]   [cand] score=0.12 'Beaphar Limpiador Lagrimal Perro y Gato - 50ml' (4 imgs) https://www.beaphar.es/product/11629-limpiador-de-lagrimas-perro-y-gato-50ml/
+2026-06-02 13:08:12,055 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11223-hero_1605887029.jpg
+2026-06-02 13:08:12,062 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11223-hero_1605887029.jpg
+2026-06-02 13:08:12,067 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:08:12,067 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:08:12,067 [INFO]   [cand] score=0.11 'Beaphar Calming Spray Ambiente Perro y Gato - 125 ml' (7 imgs) https://www.beaphar.es/product/11223-calming-spray-ambiente-perro-y-gato-125-ml/
+2026-06-02 13:08:15,267 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:08:15,274 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:08:15,279 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:08:15,279 [INFO]     EAN filter (8711231109043): 8 → 5 imgs
+2026-06-02 13:08:15,279 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:08:15,279 [INFO]   [cand] score=0.14 'Beaphar CaniComfort® Spray Perros - 60ml' (5 imgs) https://www.beaphar.es/product/10904-canicomfort-60ml-spray/
+2026-06-02 13:08:19,629 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/13747_338316.jpg
+2026-06-02 13:08:19,637 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/13747_338316.jpg
+2026-06-02 13:08:19,641 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:08:19,641 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:08:19,641 [INFO]   [cand] score=0.17 'Beaphar Spray para Heridas - 75ml' (7 imgs) https://www.beaphar.es/product/13747-beaphar-spray-para-heridas/
+2026-06-02 13:08:24,058 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201891.jpg
+2026-06-02 13:08:24,115 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201891.jpg
+2026-06-02 13:08:24,120 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:08:24,121 [INFO]     EAN filter (8711231201891): 9 → 6 imgs
+2026-06-02 13:08:24,121 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:08:24,121 [INFO]   [cand] score=0.10 'Beaphar VERMIpure Solución Líquida Natural Perros y Cachorros - 50ml' (6 imgs) https://www.beaphar.es/product/1000169/
+2026-06-02 13:08:27,445 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:08:27,452 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17951_338548-A.jpg
+2026-06-02 13:08:27,457 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:08:27,457 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:08:27,457 [INFO]   [cand] score=0.00 'Beaphar Gentle Leader® Correa Adiestramiento Rojo - Perro Grande' (6 imgs) https://www.beaphar.es/product/17951-gentle-leader-talla-l-rojo/
+2026-06-02 13:08:27,457 [WARNING]   Mejor candidato score=0.17 < 0.34 — descartado: 'Beaphar Spray para Heridas - 75ml'
+2026-06-02 13:08:27,457 [WARNING]   Sin resolución para 'BEAPHAR NO LOVE SPRAY 50ML'
+2026-06-02 13:08:27,457 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:08:27,958 [INFO] 
+[81/122] BEAPHAR NO STRESS GATO 30ML  (ID: 15981869367683)
+2026-06-02 13:08:27,958 [INFO]   Match caché: beaphar-no-stress-gato-30ml
+2026-06-02 13:08:29,863 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/
+2026-06-02 13:08:29,864 [INFO]   → https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/  (score=1.00)
+2026-06-02 13:08:30,364 [INFO] 
+[82/122] BEAPHAR PACK DENTAL PASTA DENTAL+CEPILLO  (ID: 15509644804483)
+2026-06-02 13:08:30,364 [INFO]   Match caché: beaphar-pack-dental-pasta-dental-cepillo
+2026-06-02 13:08:32,239 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000477-beaphar-pack-dental-pasta-dental-cepillo-dental/
+2026-06-02 13:08:32,239 [INFO]   → https://www.beaphar.es/product/1000477-beaphar-pack-dental-pasta-dental-cepillo-dental/  (score=1.00)
+2026-06-02 13:08:32,739 [INFO] 
+[83/122] BEAPHAR PAPICK SPRAY 200ML  (ID: 15509644837251)
+2026-06-02 13:08:32,739 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR PAPICK SPRAY 200ML
+2026-06-02 13:08:32,999 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20PAPICK%20SPRAY%20200ML 200
+2026-06-02 13:08:33,102 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML&limit=1 200
+2026-06-02 13:08:33,836 [INFO] response: https://www.google.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-06-02 13:08:34,832 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML&web=1&searchid=9726551 200
+2026-06-02 13:08:35,055 [INFO] response: https://search.yahoo.com/search;_ylt=oU-pspCbNOJ_QAOaoKC9CO-R;_ylu=u6tnyZDIrKnMNw7vuq4mZKUrUBO7ZWuuihYLa3UmtZTKauQ?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML 200
+2026-06-02 13:08:35,989 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML 403
+2026-06-02 13:08:36,192 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:08:36,452 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:08:36,614 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:08:36,774 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PAPICK+SPRAY+200ML&source=web 429
+2026-06-02 13:08:36,784 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/11538-papick-spray-aves-200ml/', 'https://www.beaphar.es/product/16173-multi-vitaminas-aves-20ml/', 'https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/', 'https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/', 'https://www.beaphar.es/product/19973-champu-perros-universal-1l/', 'https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/']
+2026-06-02 13:08:41,336 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11538-hero_1613391089.jpg
+2026-06-02 13:08:41,345 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/11538-hero_1613391089.jpg
+2026-06-02 13:08:41,350 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:08:41,350 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:08:41,350 [INFO]   [cand] score=0.33 'Beaphar Spray Anti-Picoteo para Pájaros - 200ml' (4 imgs) https://www.beaphar.es/product/11538-papick-spray-aves-200ml/
+2026-06-02 13:08:45,381 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/16173_39182-J_1605893247.jpg
+2026-06-02 13:08:45,388 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/16173_39182-J_1605893247.jpg
+2026-06-02 13:08:45,391 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:08:45,392 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:08:45,392 [INFO]   [cand] score=0.00 'Beaphar Multi-Vitaminas para Aves - 20ml' (4 imgs) https://www.beaphar.es/product/16173-multi-vitaminas-aves-20ml/
+2026-06-02 13:08:49,342 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:08:49,349 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:08:49,354 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:08:49,354 [INFO]     EAN filter (8711231121069): 6 → 3 imgs
+2026-06-02 13:08:49,354 [INFO]     Imágenes extraídas: 3
+2026-06-02 13:08:49,354 [INFO]   [cand] score=0.00 'Beaphar CatComfort® Excellence Pack Difusor y Recambio Gatos - 48ml' (3 imgs) https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/
+2026-06-02 13:08:53,052 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:08:53,059 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:08:53,064 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:08:53,065 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:08:53,065 [INFO]   [cand] score=0.10 'Beaphar Wet Dog Spray Anti-Olor Perro Mojado - 250ml' (11 imgs) https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/
+2026-06-02 13:08:57,991 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/4/08711231199730_C1N1.jpg
+2026-06-02 13:08:58,000 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/4/08711231199730_C1N1.jpg
+2026-06-02 13:08:58,005 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:08:58,006 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:08:58,006 [INFO]   [cand] score=0.00 'Champú Perros Universal - 1L' (8 imgs) https://www.beaphar.es/product/19973-champu-perros-universal-1l/
+2026-06-02 13:09:01,352 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:09:01,361 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:09:01,366 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:09:01,366 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:09:01,367 [INFO]   [cand] score=0.00 'Beaphar ProtecTix® Pipetas Perros M (10-25KG)' (8 imgs) https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/
+2026-06-02 13:09:01,367 [WARNING]   Mejor candidato score=0.33 < 0.34 — descartado: 'Beaphar Spray Anti-Picoteo para Pájaros - 200ml'
+2026-06-02 13:09:01,367 [WARNING]   Sin resolución para 'BEAPHAR PAPICK SPRAY 200ML'
+2026-06-02 13:09:01,367 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:09:01,867 [INFO] 
+[84/122] BEAPHAR PASTA DE HUEVO PARA CANARIOS Y AVES EXÓTICAS  (ID: 15509645099395)
+2026-06-02 13:09:01,867 [INFO]   Match caché: beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas
+2026-06-02 13:09:03,473 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000132-beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas-150g/
+2026-06-02 13:09:03,474 [INFO]   → https://www.beaphar.es/product/1000132-beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas-150g/  (score=1.00)
+2026-06-02 13:09:03,974 [INFO] 
+[85/122] BEAPHAR PASTA DE HUEVO PERIQUITOS AGAPORNIS COTORRAS  (ID: 15509645361539)
+2026-06-02 13:09:03,974 [INFO]   Match caché: beaphar-pasta-de-huevo-periquitos-agapornis-cotorras
+2026-06-02 13:09:05,592 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000136-beaphar-pasta-de-huevo-periquitos-agapornis-pequenas-cotorras-1kg/
+2026-06-02 13:09:05,593 [INFO]   → https://www.beaphar.es/product/1000136-beaphar-pasta-de-huevo-periquitos-agapornis-pequenas-cotorras-1kg/  (score=1.00)
+2026-06-02 13:09:06,093 [INFO] 
+[86/122] BEAPHAR PASTA DE MALTA GATOS 100GR  (ID: 15509645459843)
+2026-06-02 13:09:06,093 [INFO]   Match caché: beaphar-pasta-de-malta-gatos-100gr
+2026-06-02 13:09:07,689 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12947-pasta-de-malta-gatos-100g/
+2026-06-02 13:09:07,689 [INFO]   → https://www.beaphar.es/product/12947-pasta-de-malta-gatos-100g/  (score=1.00)
+2026-06-02 13:09:08,190 [INFO] 
+[87/122] BEAPHAR PASTA DENTAL MENTA Y PEREJIL PERROS Y GATOS 100GR  (ID: 15509645623683)
+2026-06-02 13:09:08,190 [INFO]   Match caché: beaphar-pasta-dental-menta-y-perejil-perros-y-gatos-100gr
+2026-06-02 13:09:09,754 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15684-pasta-dental-perro-y-gato-100g/
+2026-06-02 13:09:09,754 [INFO]   → https://www.beaphar.es/product/15684-pasta-dental-perro-y-gato-100g/  (score=1.00)
+2026-06-02 13:09:10,254 [INFO] 
+[88/122] BEAPHAR PASTA DENTAL PERRO Y GATO 100GR  (ID: 15509645820291)
+2026-06-02 13:09:10,254 [INFO]   Match caché: beaphar-pasta-dental-perro-y-gato-100gr
+2026-06-02 13:09:11,877 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15684-pasta-dental-perro-y-gato-100g/
+2026-06-02 13:09:11,877 [INFO]   → https://www.beaphar.es/product/15684-pasta-dental-perro-y-gato-100g/  (score=1.00)
+2026-06-02 13:09:12,378 [INFO] 
+[89/122] BEAPHAR PASTA MALTA HURONES 100GR  (ID: 15509646082435)
+2026-06-02 13:09:12,378 [INFO]   Match caché: beaphar-pasta-malta-hurones-100gr
+2026-06-02 13:09:13,978 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15367-pasta-de-malta-para-hurones-100g/
+2026-06-02 13:09:13,978 [INFO]   → https://www.beaphar.es/product/15367-pasta-de-malta-para-hurones-100g/  (score=1.00)
+2026-06-02 13:09:14,478 [INFO] 
+[90/122] BEAPHAR PASTA MULTI VITAMINAS GATO 100GR  (ID: 15509646410115)
+2026-06-02 13:09:14,479 [INFO]   Match caché: beaphar-pasta-multi-vitaminas-gato-100gr
+2026-06-02 13:09:16,079 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12951-pasta-multi-vitaminas-gato-100g/
+2026-06-02 13:09:16,079 [INFO]   → https://www.beaphar.es/product/12951-pasta-multi-vitaminas-gato-100g/  (score=1.00)
+2026-06-02 13:09:16,580 [INFO] 
+[91/122] BEAPHAR PASTA MULTI VITAMINAS PERRO 100GR  (ID: 15509646770563)
+2026-06-02 13:09:16,580 [INFO]   Match caché: beaphar-pasta-multi-vitaminas-perro-100gr
+2026-06-02 13:09:18,150 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12952-pasta-multi-vitaminas-perro-100g/
+2026-06-02 13:09:18,151 [INFO]   → https://www.beaphar.es/product/12952-pasta-multi-vitaminas-perro-100g/  (score=1.00)
+2026-06-02 13:09:18,651 [INFO] 
+[92/122] BEAPHAR PINZA GARRAPATAS  (ID: 15509647065475)
+2026-06-02 13:09:18,651 [INFO]   Match caché: beaphar-pinza-garrapatas
+2026-06-02 13:09:20,266 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/17504-pinza-para-garrapatas/
+2026-06-02 13:09:20,266 [INFO]   → https://www.beaphar.es/product/17504-pinza-para-garrapatas/  (score=1.00)
+2026-06-02 13:09:20,766 [INFO] 
+[93/122] BEAPHAR PIPETAS CALMING SPOT ON GATO 3X0,4 ML  (ID: 15509641232771)
+2026-06-02 13:09:20,766 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR PIPETAS CALMING SPOT ON GATO 3X0,4 ML
+2026-06-02 13:09:20,962 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20PIPETAS%20CALMING%20SPOT%20ON%20GATO%203X0%2C4%20ML 200
+2026-06-02 13:09:21,028 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PIPETAS+CALMING+SPOT+ON+GATO+3X0%2C4+ML&limit=1 200
+2026-06-02 13:09:21,242 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:09:21,450 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:09:21,522 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PIPETAS+CALMING+SPOT+ON+GATO+3X0%2C4+ML&source=web 429
+2026-06-02 13:09:21,695 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:09:22,161 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PIPETAS+CALMING+SPOT+ON+GATO+3X0%2C4+ML 403
+2026-06-02 13:09:22,571 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abeaphar.es%252Fproduct%252F%2BBEAPHAR%2BPIPETAS%2BCALMING%2BSPOT%2BON%2BGATO%2B3X0%252C4%2BML%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgQUqHcaGIKs-9AGIjDVqW6KmxQsiBkYGl5PQr3IHNRI4_jBDLsctaZSATsiFlP4_Nyd5ajuMpg3dL6YiOgyAnJSWgFD 429
+2026-06-02 13:09:23,651 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PIPETAS+CALMING+SPOT+ON+GATO+3X0%2C4+ML&web=1&searchid=7326546 200
+2026-06-02 13:09:23,908 [INFO] response: https://search.yahoo.com/search;_ylt=kb2YtuPLdEWqAlzTbW7cN_0j;_ylu=OmTJgTo6Y4VayTb-u-G1OUzpIZ6jg_vXApa8P1HQzthaajM?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+PIPETAS+CALMING+SPOT+ON+GATO+3X0%2C4+ML 200
+2026-06-02 13:09:24,386 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/', 'https://www.beaphar.es/product/12252-beaphar-catcomfort-pipetas-gatos-x3/', 'https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/', 'https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/', 'https://www.beaphar.es/product/16479-fiprotec-spot-on-perro-grande-20-40kg-4-pip-x-268ml/', 'https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/']
+2026-06-02 13:09:27,548 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:09:27,556 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164486.jpg
+2026-06-02 13:09:27,561 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:09:27,561 [INFO]     EAN filter (8711231164486): 7 → 4 imgs
+2026-06-02 13:09:27,561 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:09:27,561 [INFO]   [cand] score=0.25 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 4 Pipetas' (4 imgs) https://www.beaphar.es/product/16448-fiprotec-spot-on-gato-4-pip-x-05ml/
+2026-06-02 13:09:31,256 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:09:31,263 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231163908.jpg
+2026-06-02 13:09:31,269 [INFO]     DOM imgs (excl. relacionados): 20
+2026-06-02 13:09:31,269 [INFO]     EAN filter (8711231163908): 7 → 4 imgs
+2026-06-02 13:09:31,269 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:09:31,269 [INFO]   [cand] score=0.25 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 1 Pipeta' (4 imgs) https://www.beaphar.es/product/16390-fiprotec-spot-on-gato-1-pip-x-05ml/
+2026-06-02 13:09:35,037 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:09:35,045 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164783.jpg
+2026-06-02 13:09:35,051 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:09:35,051 [INFO]     EAN filter (8711231164783): 10 → 7 imgs
+2026-06-02 13:09:35,051 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:09:35,051 [INFO]   [cand] score=0.08 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Mediano (10-20kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16478-fiprotec-spot-on-perro-med-10-20kg-4-pip-x-134ml/
+2026-06-02 13:09:38,767 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164790.jpg
+2026-06-02 13:09:38,775 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164790.jpg
+2026-06-02 13:09:38,780 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:09:38,780 [INFO]     EAN filter (8711231164790): 10 → 7 imgs
+2026-06-02 13:09:38,780 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:09:38,781 [INFO]   [cand] score=0.08 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Mediano (20-40kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16479-fiprotec-spot-on-perro-grande-20-40kg-4-pip-x-268ml/
+2026-06-02 13:09:42,322 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164554.jpg
+2026-06-02 13:09:42,330 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231164554.jpg
+2026-06-02 13:09:42,335 [INFO]     DOM imgs (excl. relacionados): 29
+2026-06-02 13:09:42,336 [INFO]     EAN filter (8711231164554): 10 → 7 imgs
+2026-06-02 13:09:42,336 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:09:42,336 [INFO]   [cand] score=0.09 'Beaphar FIPROtec® Pipeta Antiparasitaria Perro Pequeño (2-10kg) - 4 Pipetas' (7 imgs) https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/
+2026-06-02 13:09:42,336 [WARNING]   Mejor candidato score=0.25 < 0.34 — descartado: 'Beaphar FIPROtec® Pipeta Antiparasitaria Gatos - 4 Pipetas'
+2026-06-02 13:09:42,336 [WARNING]   Sin resolución para 'BEAPHAR PIPETAS CALMING SPOT ON GATO 3X0,4 ML'
+2026-06-02 13:09:42,336 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:09:42,836 [INFO] 
+[94/122] BEAPHAR PIPETAS REPELENTES GATO 3X1ML  (ID: 15509647262083)
+2026-06-02 13:09:42,836 [INFO]   Match caché: beaphar-pipetas-repelentes-gato-3x1ml
+2026-06-02 13:09:44,374 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10617-pipetas-repelentes-gato-3-x-1ml/
+2026-06-02 13:09:44,375 [INFO]   → https://www.beaphar.es/product/10617-pipetas-repelentes-gato-3-x-1ml/  (score=1.00)
+2026-06-02 13:09:44,875 [INFO] 
+[95/122] BEAPHAR PIPETAS REPULSIVAS ANTIPARASITARIAS PERRO  (ID: 15981868450179)
+2026-06-02 13:09:44,875 [INFO]   Match caché: beaphar-pipetas-repulsivas-antiparasitarias-perro
+2026-06-02 13:09:46,381 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/
+2026-06-02 13:09:46,381 [INFO]   → https://www.beaphar.es/product/16455-fiprotec-spot-on-perro-peq-2-10kg-4-pip-x-067ml/  (score=1.00)
+2026-06-02 13:09:46,881 [INFO] 
+[96/122] BEAPHAR PUPPY TRAINER EDUCADOR PARA CACHORROS 20ML  (ID: 15509647950211)
+2026-06-02 13:09:46,882 [INFO]   Match caché: beaphar-puppy-trainer-educador-para-cachorros-20ml
+2026-06-02 13:09:48,451 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13506-puppy-trainer-educador-para-cachorros-20ml/
+2026-06-02 13:09:48,451 [INFO]   → https://www.beaphar.es/product/13506-puppy-trainer-educador-para-cachorros-20ml/  (score=1.00)
+2026-06-02 13:09:48,951 [INFO] 
+[97/122] BEAPHAR RABBITCOMFORT SPRAY CONEJOS 30ML  (ID: 15509648081283)
+2026-06-02 13:09:48,951 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR RABBITCOMFORT SPRAY CONEJOS 30ML
+2026-06-02 13:09:49,226 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20RABBITCOMFORT%20SPRAY%20CONEJOS%2030ML 200
+2026-06-02 13:09:49,323 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+RABBITCOMFORT+SPRAY+CONEJOS+30ML&limit=1 200
+2026-06-02 13:09:49,419 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+RABBITCOMFORT+SPRAY+CONEJOS+30ML&source=web 429
+2026-06-02 13:09:49,688 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:09:49,835 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:09:50,816 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+RABBITCOMFORT+SPRAY+CONEJOS+30ML&web=1&searchid=2815049 200
+2026-06-02 13:09:51,078 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-06-02 13:09:51,255 [INFO] response: https://search.yahoo.com/search;_ylt=lxNsg5PidWqdjC1i-NEE-UlI;_ylu=T8QUwtyLGWQ5XWgUX3gWcUg1q1Ievds8dIz7jaJsZooS02Q?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+RABBITCOMFORT+SPRAY+CONEJOS+30ML 200
+2026-06-02 13:09:52,335 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+RABBITCOMFORT+SPRAY+CONEJOS+30ML 403
+2026-06-02 13:09:52,683 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abeaphar.es%252Fproduct%252F%2BBEAPHAR%2BRABBITCOMFORT%2BSPRAY%2BCONEJOS%2B30ML%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgQUqHcaGKCs-9AGIjBIZZCY2YJnmDZOAkXqzi3zMB7JF94ENMuNQUYP6aE85VQzEYkVkXearENp3UY8rEUyAnJSWgFD 429
+2026-06-02 13:09:52,684 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/11349-beaphar-rabbitcomfort-spray-calmante-para-conejos/', 'https://www.beaphar.es/product/11290-beaphar-rabbitcomfort-pack-difusor-y-recambio-conejos-48ml/', 'https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/', 'https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/', 'https://www.beaphar.es/product/15384-neutralizador-de-olores-roedores-600g/', 'https://www.beaphar.es/product/14898-no-stress-perro-pack-difusor-y-recambio-30ml/']
+2026-06-02 13:09:56,347 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14897-hero_1613746034.jpg
+2026-06-02 13:09:56,354 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14897-hero_1613746034.jpg
+2026-06-02 13:09:56,359 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:09:56,360 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:09:56,360 [INFO]   [cand] score=0.10 'Beaphar No Stress Gato Pack Difusor y Recambio - 30ml' (8 imgs) https://www.beaphar.es/product/14897-no-stress-gato-pack-difusor-y-recambio-30ml/
+2026-06-02 13:09:59,580 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:09:59,587 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/1000773_Ecommerce_Wet_Dog_Spray_2000x2000px_EN_2025_1.jpg
+2026-06-02 13:09:59,593 [INFO]     DOM imgs (excl. relacionados): 28
+2026-06-02 13:09:59,593 [INFO]     Imágenes extraídas: 11
+2026-06-02 13:09:59,593 [INFO]   [cand] score=0.09 'Beaphar Wet Dog Spray Anti-Olor Perro Mojado - 250ml' (11 imgs) https://www.beaphar.es/product/1000773-beaphar-spray-wet-dog-250ml/
+2026-06-02 13:10:03,713 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153848.jpg
+2026-06-02 13:10:03,721 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231153848.jpg
+2026-06-02 13:10:03,725 [INFO]     DOM imgs (excl. relacionados): 10
+2026-06-02 13:10:03,726 [INFO]     EAN filter (8711231153848): 5 → 2 imgs
+2026-06-02 13:10:03,726 [INFO]     Imágenes extraídas: 2
+2026-06-02 13:10:03,726 [INFO]   [cand] score=0.00 'Beaphar Neutralizador de Olores para Roedores - 600g' (2 imgs) https://www.beaphar.es/product/15384-neutralizador-de-olores-roedores-600g/
+2026-06-02 13:10:08,394 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14898-hero_1613746038.jpg
+2026-06-02 13:10:08,402 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/3/14898-hero_1613746038.jpg
+2026-06-02 13:10:08,407 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:10:08,407 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:10:08,408 [INFO]   [cand] score=0.10 'Beaphar No Stress Perro Pack Difusor y Recambio - 30ml' (8 imgs) https://www.beaphar.es/product/14898-no-stress-perro-pack-difusor-y-recambio-30ml/
+2026-06-02 13:10:08,408 [WARNING]   Mejor candidato score=0.10 < 0.34 — descartado: 'Beaphar No Stress Gato Pack Difusor y Recambio - 30ml'
+2026-06-02 13:10:08,408 [WARNING]   Sin resolución para 'BEAPHAR RABBITCOMFORT SPRAY CONEJOS 30ML'
+2026-06-02 13:10:08,408 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:10:08,908 [INFO] 
+[98/122] BEAPHAR ROJO INTENSIVO CANARIOS  (ID: 15509649031555)
+2026-06-02 13:10:08,908 [INFO]   Match caché: beaphar-rojo-intensivo-canarios
+2026-06-02 13:10:10,487 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16808-rojo-intensivo-canarios-500g/
+2026-06-02 13:10:10,487 [INFO]   → https://www.beaphar.es/product/16808-rojo-intensivo-canarios-500g/  (score=1.00)
+2026-06-02 13:10:10,988 [INFO] 
+[99/122] BEAPHAR SEMILLAS DE FRUTAS PARA PÁJAROS 150G  (ID: 15509649195395)
+2026-06-02 13:10:10,988 [INFO]   Match caché: beaphar-semillas-de-frutas-para-pajaros-150g
+2026-06-02 13:10:12,557 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000140-beaphar-semillas-de-frutas-para-pajaros-150g/
+2026-06-02 13:10:12,557 [INFO]   → https://www.beaphar.es/product/1000140-beaphar-semillas-de-frutas-para-pajaros-150g/  (score=1.00)
+2026-06-02 13:10:13,057 [INFO] 
+[100/122] BEAPHAR SPRAY ALIENTO FRESCO PERRO Y GATO 150ML  (ID: 15509649293699)
+2026-06-02 13:10:13,058 [INFO]   Match caché: beaphar-spray-aliento-fresco-perro-y-gato-150ml
+2026-06-02 13:10:14,678 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15683-spray-aliento-fresco-perro-y-gato-150ml/
+2026-06-02 13:10:14,678 [INFO]   → https://www.beaphar.es/product/15683-spray-aliento-fresco-perro-y-gato-150ml/  (score=1.00)
+2026-06-02 13:10:15,178 [INFO] 
+[101/122] BEAPHAR SPRAY EDUCADOR EXTERIOR 400ML  (ID: 15509649326467)
+2026-06-02 13:10:15,178 [INFO]   Match caché: beaphar-spray-educador-exterior-400ml
+2026-06-02 13:10:16,754 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/
+2026-06-02 13:10:16,754 [INFO]   → https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/  (score=1.00)
+2026-06-02 13:10:17,254 [INFO] 
+[102/122] BEAPHAR SPRAY PARA HERIDAS 75ML  (ID: 15509649457539)
+2026-06-02 13:10:17,254 [INFO]   Match caché: beaphar-spray-para-heridas-75ml
+2026-06-02 13:10:18,810 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/13747-beaphar-spray-para-heridas/
+2026-06-02 13:10:18,810 [INFO]   → https://www.beaphar.es/product/13747-beaphar-spray-para-heridas/  (score=1.00)
+2026-06-02 13:10:19,310 [INFO] 
+[103/122] BEAPHAR SPRAY PROTECTOR ALMOHADILLAS 150ML  (ID: 15509649523075)
+2026-06-02 13:10:19,310 [INFO]   Match caché: beaphar-spray-protector-almohadillas-150ml
+2026-06-02 13:10:20,887 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/10235-spray-protector-almohadillas-150ml/
+2026-06-02 13:10:20,887 [INFO]   → https://www.beaphar.es/product/10235-spray-protector-almohadillas-150ml/  (score=1.00)
+2026-06-02 13:10:21,387 [INFO] 
+[104/122] BEAPHAR SUPLEMENTO ALIMENT PAJAROS MEJORA DIGEST 225GR  (ID: 15509649588611)
+2026-06-02 13:10:21,388 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR SUPLEMENTO ALIMENT PAJAROS MEJORA DIGEST 225GR
+2026-06-02 13:10:21,587 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20SUPLEMENTO%20ALIMENT%20PAJAROS%20MEJORA%20DIGEST%20225GR 200
+2026-06-02 13:10:21,779 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+SUPLEMENTO+ALIMENT+PAJAROS+MEJORA+DIGEST+225GR&limit=1 200
+2026-06-02 13:10:22,073 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:10:22,217 [INFO] response: https://www.startpage.com/sp/captcha 200
+2026-06-02 13:10:22,599 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abeaphar.es%252Fproduct%252F%2BBEAPHAR%2BSUPLEMENTO%2BALIMENT%2BPAJAROS%2BMEJORA%2BDIGEST%2B225GR%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgQUqHcaGL6s-9AGIjBp7_q4VvJa44bRQqR-mVrpflbdvQN-zmI6UdEqfKZRCdn-QRnUVa98PDu94d8vSKQyAnJSWgFD 429
+2026-06-02 13:10:22,796 [INFO] response: https://search.yahoo.com/search;_ylt=q7Ze0HLLaI_Vwf-AtDsOg6yn;_ylu=KERzg8GgHz61kKgQQNTq7rYL8n38-wrjUhQdRmNN7mIE1go?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+SUPLEMENTO+ALIMENT+PAJAROS+MEJORA+DIGEST+225GR 200
+2026-06-02 13:10:23,304 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+SUPLEMENTO+ALIMENT+PAJAROS+MEJORA+DIGEST+225GR&source=web 429
+2026-06-02 13:10:24,300 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+SUPLEMENTO+ALIMENT+PAJAROS+MEJORA+DIGEST+225GR&web=1&searchid=4779080 200
+2026-06-02 13:10:24,318 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/16173-multi-vitaminas-aves-20ml/', 'https://www.beaphar.es/product/1000137-beaphar-alimento-universal-aves-1kg/', 'https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/', 'https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/', 'https://www.beaphar.es/product/1000132-beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas-150g/', 'https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/']
+2026-06-02 13:10:27,496 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/16173_39182-J_1605893247.jpg
+2026-06-02 13:10:27,503 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/16173_39182-J_1605893247.jpg
+2026-06-02 13:10:27,507 [INFO]     DOM imgs (excl. relacionados): 5
+2026-06-02 13:10:27,507 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:10:27,507 [INFO]   [cand] score=0.00 'Beaphar Multi-Vitaminas para Aves - 20ml' (4 imgs) https://www.beaphar.es/product/16173-multi-vitaminas-aves-20ml/
+2026-06-02 13:10:32,324 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201426.jpg
+2026-06-02 13:10:32,334 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201426.jpg
+2026-06-02 13:10:32,342 [INFO]     DOM imgs (excl. relacionados): 25
+2026-06-02 13:10:32,343 [INFO]     EAN filter (8711231201426): 10 → 7 imgs
+2026-06-02 13:10:32,343 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:10:32,343 [INFO]   [cand] score=0.00 'Beaphar Alimento Universal Aves - 1kg' (7 imgs) https://www.beaphar.es/product/1000137-beaphar-alimento-universal-aves-1kg/
+2026-06-02 13:10:38,079 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201471.jpg
+2026-06-02 13:10:38,086 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201471.jpg
+2026-06-02 13:10:38,091 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:10:38,092 [INFO]     EAN filter (8711231201471): 9 → 6 imgs
+2026-06-02 13:10:38,092 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:10:38,092 [INFO]   [cand] score=0.00 'Beaphar Mixtura para Canto - 150g' (6 imgs) https://www.beaphar.es/product/1000142-beaphar-mixtura-para-canto-150g/
+2026-06-02 13:10:41,714 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201440.jpg
+2026-06-02 13:10:41,722 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201440.jpg
+2026-06-02 13:10:41,727 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:10:41,727 [INFO]     EAN filter (8711231201440): 7 → 4 imgs
+2026-06-02 13:10:41,727 [INFO]     Imágenes extraídas: 4
+2026-06-02 13:10:41,727 [INFO]   [cand] score=0.00 'Beaphar Mixtura en Golosinas - 150g' (4 imgs) https://www.beaphar.es/product/1000139-beaphar-mixtura-en-golosinas-150g/
+2026-06-02 13:10:46,973 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201372.jpg
+2026-06-02 13:10:46,982 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231201372.jpg
+2026-06-02 13:10:46,987 [INFO]     DOM imgs (excl. relacionados): 25
+2026-06-02 13:10:46,988 [INFO]     EAN filter (8711231201372): 10 → 7 imgs
+2026-06-02 13:10:46,988 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:10:46,988 [INFO]   [cand] score=0.00 'Beaphar Pasta de Huevo para Canarios y Aves Exóticas - 150g' (7 imgs) https://www.beaphar.es/product/1000132-beaphar-pasta-de-huevo-para-canarios-y-aves-exoticas-150g/
+2026-06-02 13:10:51,111 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231200061.jpg
+2026-06-02 13:10:51,118 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231200061.jpg
+2026-06-02 13:10:51,123 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:10:51,124 [INFO]     EAN filter (8711231200061): 9 → 6 imgs
+2026-06-02 13:10:51,124 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:10:51,124 [INFO]   [cand] score=0.00 'Beaphar Leche de Sustitución para Pequeño Animal - 200g' (6 imgs) https://www.beaphar.es/product/1000035-beaphar-leche-de-sustitucion-para-pequeno-animal-200g/
+2026-06-02 13:10:51,124 [WARNING]   Mejor candidato score=0.00 < 0.34 — descartado: 'Beaphar Multi-Vitaminas para Aves - 20ml'
+2026-06-02 13:10:51,124 [WARNING]   Sin resolución para 'BEAPHAR SUPLEMENTO ALIMENT PAJAROS MEJORA DIGEST 225GR'
+2026-06-02 13:10:51,124 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:10:51,624 [INFO] 
+[105/122] BEAPHAR VERMIPURE COMPRIMIDOS NATURALES GATOS 50 COMPRIMIDOS  (ID: 15509649621379)
+2026-06-02 13:10:51,624 [INFO]   Match caché: beaphar-vermipure-comprimidos-naturales-gatos-50-comprimidos
+2026-06-02 13:10:53,482 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/14604/
+2026-06-02 13:10:53,482 [INFO]   → https://www.beaphar.es/product/14604/  (score=1.00)
+2026-06-02 13:10:53,982 [INFO] 
+[106/122] BEAPHAR VERMIPURE COMPRIMIDOS PERROS PEQUEÑOS <15KG 50 COMP  (ID: 15509649686915)
+2026-06-02 13:10:53,982 [INFO]   [DDG] site:beaphar.es/product/ BEAPHAR VERMIPURE COMPRIMIDOS PERROS PEQUEÑOS <15KG 50 COMP
+2026-06-02 13:10:54,174 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20BEAPHAR%20VERMIPURE%20COMPRIMIDOS%20PERROS%20PEQUE%C3%91OS%20%3C15KG%2050%20COMP 200
+2026-06-02 13:10:54,183 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+VERMIPURE+COMPRIMIDOS+PERROS+PEQUE%C3%91OS+%3C15KG+50+COMP&limit=1 200
+2026-06-02 13:10:54,283 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+VERMIPURE+COMPRIMIDOS+PERROS+PEQUE%C3%91OS+%3C15KG+50+COMP&source=web 429
+2026-06-02 13:10:54,569 [INFO] response: https://search.yahoo.com/search;_ylt=c1lqEP1nmz8psuv1ZoEgzoLG;_ylu=EetkVwN1_P6bUYRwtOUPCfJ70N7EAH0caEnmPJVnE52EuHw?p=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+VERMIPURE+COMPRIMIDOS+PERROS+PEQUE%C3%91OS+%3C15KG+50+COMP 200
+2026-06-02 13:10:55,551 [INFO] response: https://www.mojeek.com/search?q=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+VERMIPURE+COMPRIMIDOS+PERROS+PEQUE%C3%91OS+%3C15KG+50+COMP 403
+2026-06-02 13:10:56,926 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+BEAPHAR+VERMIPURE+COMPRIMIDOS+PERROS+PEQUE%C3%91OS+%3C15KG+50+COMP&web=1&searchid=6922549 200
+2026-06-02 13:10:56,947 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/1000169/', 'https://www.beaphar.es/product/14605/', 'https://www.beaphar.es/product/14621-beaphar-vermipure-comprimidos-naturales-perros-15kg-medianos-y-grandes-50-comprimidos/', 'https://www.beaphar.es/product/14604/', 'https://www.beaphar.es/product/1000168-beaphar-vermipure-solucion-liquida-natural-gatos-y-gatitos-50ml/', 'https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/']
+2026-06-02 13:11:01,052 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201891.jpg
+2026-06-02 13:11:01,060 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201891.jpg
+2026-06-02 13:11:01,066 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:11:01,066 [INFO]     EAN filter (8711231201891): 9 → 6 imgs
+2026-06-02 13:11:01,066 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:01,066 [INFO]   [cand] score=0.18 'Beaphar VERMIpure Solución Líquida Natural Perros y Cachorros - 50ml' (6 imgs) https://www.beaphar.es/product/1000169/
+2026-06-02 13:11:06,103 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146055.jpg
+2026-06-02 13:11:06,111 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146055.jpg
+2026-06-02 13:11:06,116 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:11:06,117 [INFO]     EAN filter (8711231146055): 9 → 6 imgs
+2026-06-02 13:11:06,117 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:06,117 [INFO]   [cand] score=0.57 'Beaphar VERMIpure Comprimidos Naturales Perros Pequeños' (6 imgs) https://www.beaphar.es/product/14605/
+2026-06-02 13:11:10,536 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146215.jpg
+2026-06-02 13:11:10,543 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146215.jpg
+2026-06-02 13:11:10,548 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:11:10,549 [INFO]     EAN filter (8711231146215): 9 → 6 imgs
+2026-06-02 13:11:10,549 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:10,549 [INFO]   [cand] score=0.56 'Beaphar VERMIpure Comprimidos Naturales - Perros >15kg Medianos y Grandes - 50 comprimidos' (6 imgs) https://www.beaphar.es/product/14621-beaphar-vermipure-comprimidos-naturales-perros-15kg-medianos-y-grandes-50-comprimidos/
+2026-06-02 13:11:15,258 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146048.jpg
+2026-06-02 13:11:15,266 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231146048.jpg
+2026-06-02 13:11:15,271 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:11:15,272 [INFO]     EAN filter (8711231146048): 9 → 6 imgs
+2026-06-02 13:11:15,272 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:15,272 [INFO]   [cand] score=0.33 'Beaphar VERMIpure Comprimidos Naturales Gatos y Gatitos - 50 Comprimidos' (6 imgs) https://www.beaphar.es/product/14604/
+2026-06-02 13:11:19,836 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201877.jpg
+2026-06-02 13:11:19,844 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/temp/czVLS1Z4QUE4Znc9/8711231201877.jpg
+2026-06-02 13:11:19,849 [INFO]     DOM imgs (excl. relacionados): 22
+2026-06-02 13:11:19,850 [INFO]     EAN filter (8711231201877): 9 → 6 imgs
+2026-06-02 13:11:19,850 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:19,850 [INFO]   [cand] score=0.08 'Beaphar VERMIpure Solución Líquida Natural Gatos y Gatitos - 50ml' (6 imgs) https://www.beaphar.es/product/1000168-beaphar-vermipure-solucion-liquida-natural-gatos-y-gatitos-50ml/
+2026-06-02 13:11:23,444 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:11:23,452 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:11:23,458 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:11:23,458 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:11:23,458 [INFO]   [cand] score=0.10 'Beaphar ProtecTix® Pipetas Perros M (10-25KG)' (8 imgs) https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/
+2026-06-02 13:11:23,460 [INFO]   ✓ Resuelto vía DDG: Beaphar VERMIpure Comprimidos Naturales Perros Pequeños (score=0.57, 6 imgs)
+2026-06-02 13:11:25,039 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/14605/
+2026-06-02 13:11:25,039 [INFO]   → https://www.beaphar.es/product/14605/  (score=0.57)
+2026-06-02 13:11:25,540 [INFO] 
+[107/122] BEAPHAR VERMIPURE COMPRIMIDOS  PERROS GRANDES >15KG 50 COMP  (ID: 15509649817987)
+2026-06-02 13:11:25,540 [INFO]   Match caché: beaphar-vermipure-comprimidos-perros-grandes-15kg-50-comp
+2026-06-02 13:11:27,128 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/14621-beaphar-vermipure-comprimidos-naturales-perros-15kg-medianos-y-grandes-50-comprimidos/
+2026-06-02 13:11:27,129 [INFO]   → https://www.beaphar.es/product/14621-beaphar-vermipure-comprimidos-naturales-perros-15kg-medianos-y-grandes-50-comprimidos/  (score=1.00)
+2026-06-02 13:11:27,629 [INFO] 
+[108/122] BEAPHAR VERMIPURE PASTA NATURAL PERROS 100G  (ID: 15509649916291)
+2026-06-02 13:11:27,629 [INFO]   Match caché: beaphar-vermipure-pasta-natural-perros-100g
+2026-06-02 13:11:29,189 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/12952-pasta-multi-vitaminas-perro-100g/
+2026-06-02 13:11:29,189 [INFO]   → https://www.beaphar.es/product/12952-pasta-multi-vitaminas-perro-100g/  (score=1.00)
+2026-06-02 13:11:29,690 [INFO] 
+[109/122] BEAPHAR VERMIPURE SOLUCION LIQUIDA NATURAL GATOS 50ML  (ID: 15509649981827)
+2026-06-02 13:11:29,690 [INFO]   Match caché: beaphar-vermipure-solucion-liquida-natural-gatos-50ml
+2026-06-02 13:11:31,239 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000168-beaphar-vermipure-solucion-liquida-natural-gatos-y-gatitos-50ml/
+2026-06-02 13:11:31,239 [INFO]   → https://www.beaphar.es/product/1000168-beaphar-vermipure-solucion-liquida-natural-gatos-y-gatitos-50ml/  (score=1.00)
+2026-06-02 13:11:31,739 [INFO] 
+[110/122] BEAPHAR VERMIPURE SOLUCION LIQUIDA NATURAL PERROS 50ML  (ID: 15509650014595)
+2026-06-02 13:11:31,739 [INFO]   Match caché: beaphar-vermipure-solucion-liquida-natural-perros-50ml
+2026-06-02 13:11:33,341 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000169/
+2026-06-02 13:11:33,342 [INFO]   → https://www.beaphar.es/product/1000169/  (score=1.00)
+2026-06-02 13:11:33,842 [INFO] 
+[111/122] BEAPHAR VITAMINA A 20ML PAJAROS  (ID: 15509650080131)
+2026-06-02 13:11:33,842 [INFO]   Match caché: beaphar-vitamina-a-20ml-pajaros
+2026-06-02 13:11:35,426 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16108-vitamina-a-aves-20ml/
+2026-06-02 13:11:35,426 [INFO]   → https://www.beaphar.es/product/16108-vitamina-a-aves-20ml/  (score=1.00)
+2026-06-02 13:11:35,926 [INFO] 
+[112/122] BEAPHAR VITAMINA C COBAYAS 100CPD  (ID: 15509650145667)
+2026-06-02 13:11:35,926 [INFO]   Match caché: beaphar-vitamina-c-cobayas-100cpd
+2026-06-02 13:11:37,552 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/15618-vitamina-c-en-comprimidos-para-cobayas/
+2026-06-02 13:11:37,552 [INFO]   → https://www.beaphar.es/product/15618-vitamina-c-en-comprimidos-para-cobayas/  (score=1.00)
+2026-06-02 13:11:38,052 [INFO] 
+[113/122] BEAPHAR XTRAVITAL AVES EXÓTICAS 500G  (ID: 15509650178435)
+2026-06-02 13:11:38,052 [INFO]   Match caché: beaphar-xtravital-aves-exoticas-500g
+2026-06-02 13:11:39,561 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000131-beaphar-xtravital-aves-exoticas-500g/
+2026-06-02 13:11:39,561 [INFO]   → https://www.beaphar.es/product/1000131-beaphar-xtravital-aves-exoticas-500g/  (score=1.00)
+2026-06-02 13:11:40,062 [INFO] 
+[114/122] BEAPHAR XTRAVITAL CANARIOS - 500G  (ID: 15509650243971)
+2026-06-02 13:11:40,062 [INFO]   Match caché: beaphar-xtravital-canarios-500g
+2026-06-02 13:11:41,615 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000124-beaphar-xtravital-canarios-500g/
+2026-06-02 13:11:41,616 [INFO]   → https://www.beaphar.es/product/1000124-beaphar-xtravital-canarios-500g/  (score=1.00)
+2026-06-02 13:11:42,116 [INFO] 
+[115/122] BEAPHAR XTRAVITAL COBAYA ALIMENTO  (ID: 15509650407811)
+2026-06-02 13:11:42,116 [INFO]   Match caché: beaphar-xtravital-cobaya-alimento
+2026-06-02 13:11:43,667 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16328-xtravital-cobaya-1kg/
+2026-06-02 13:11:43,667 [INFO]   → https://www.beaphar.es/product/16328-xtravital-cobaya-1kg/  (score=1.00)
+2026-06-02 13:11:44,167 [INFO] 
+[116/122] BEAPHAR XTRAVITAL CONEJO ALIMENTO  (ID: 15509650604419)
+2026-06-02 13:11:44,167 [INFO]   Match caché: beaphar-xtravital-conejo-alimento
+2026-06-02 13:11:45,694 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/16316-xtravital-conejo-25kg/
+2026-06-02 13:11:45,695 [INFO]   → https://www.beaphar.es/product/16316-xtravital-conejo-25kg/  (score=1.00)
+2026-06-02 13:11:46,195 [INFO] 
+[117/122] BEAPHAR XTRAVITAL LOROS  (ID: 15509650702723)
+2026-06-02 13:11:46,195 [INFO]   Match caché: beaphar-xtravital-loros
+2026-06-02 13:11:47,744 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000130-beaphar-xtravital-loros-3-kg/
+2026-06-02 13:11:47,744 [INFO]   → https://www.beaphar.es/product/1000130-beaphar-xtravital-loros-3-kg/  (score=1.00)
+2026-06-02 13:11:48,244 [INFO] 
+[118/122] BEAPHAR XTRAVITAL PERIQUITOS  (ID: 15509650833795)
+2026-06-02 13:11:48,245 [INFO]   Match caché: beaphar-xtravital-periquitos
+2026-06-02 13:11:49,807 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000125-beaphar-xtravital-periquitos-500g/
+2026-06-02 13:11:49,808 [INFO]   → https://www.beaphar.es/product/1000125-beaphar-xtravital-periquitos-500g/  (score=1.00)
+2026-06-02 13:11:50,308 [INFO] 
+[119/122] BEAPHAR XTRAVITAL PERIQUITOS GRANDES  (ID: 15509650866563)
+2026-06-02 13:11:50,308 [INFO]   Match caché: beaphar-xtravital-periquitos-grandes
+2026-06-02 13:11:51,865 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000128-beaphar-xtravital-periquitos-grandes-1kg/
+2026-06-02 13:11:51,866 [INFO]   → https://www.beaphar.es/product/1000128-beaphar-xtravital-periquitos-grandes-1kg/  (score=1.00)
+2026-06-02 13:11:52,366 [INFO] 
+[120/122] KEEP OFF GRÁNULOS REPELENTES EXTERIORES PERRO Y GATO 2X200G  (ID: 15509650997635)
+2026-06-02 13:11:52,366 [INFO]   [DDG] site:beaphar.es/product/ KEEP OFF GRÁNULOS REPELENTES EXTERIORES PERRO Y GATO 2X200G
+2026-06-02 13:11:52,602 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abeaphar.es/product/%20KEEP%20OFF%20GR%C3%81NULOS%20REPELENTES%20EXTERIORES%20PERRO%20Y%20GATO%202X200G 200
+2026-06-02 13:11:52,666 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abeaphar.es%2Fproduct%2F+KEEP+OFF+GR%C3%81NULOS+REPELENTES+EXTERIORES+PERRO+Y+GATO+2X200G&limit=1 200
+2026-06-02 13:11:52,740 [INFO] response: https://search.brave.com/search?q=site%3Abeaphar.es%2Fproduct%2F+KEEP+OFF+GR%C3%81NULOS+REPELENTES+EXTERIORES+PERRO+Y+GATO+2X200G&source=web 429
+2026-06-02 13:11:53,753 [INFO] response: https://yandex.com/search/site/?text=site%3Abeaphar.es%2Fproduct%2F+KEEP+OFF+GR%C3%81NULOS+REPELENTES+EXTERIORES+PERRO+Y+GATO+2X200G&web=1&searchid=1063104 200
+2026-06-02 13:11:53,975 [INFO] response: https://search.yahoo.com/search;_ylt=RcAhQ9uLJ8AmaGjiJVUC8iBH;_ylu=Lf6ImNzNPPvJaCfd4S9-flCu81p3MCXaPNmhpJLnntSIbu8?p=site%3Abeaphar.es%2Fproduct%2F+KEEP+OFF+GR%C3%81NULOS+REPELENTES+EXTERIORES+PERRO+Y+GATO+2X200G 200
+2026-06-02 13:11:54,457 [INFO]   [DDG] 6 candidatos: ['https://www.beaphar.es/product/13667-stop-it-spray-educador-para-perros-100ml/', 'https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/', 'https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/', 'https://www.beaphar.es/product/10904-canicomfort-60ml-spray/', 'https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/', 'https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/']
+2026-06-02 13:11:58,990 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/13667-hero_1613745209.jpg
+2026-06-02 13:11:58,998 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/13667-hero_1613745209.jpg
+2026-06-02 13:11:59,002 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:11:59,002 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:11:59,003 [INFO]   [cand] score=0.08 'Beaphar Stop It - Spray Educador para Perros - 100ml' (6 imgs) https://www.beaphar.es/product/13667-stop-it-spray-educador-para-perros-100ml/
+2026-06-02 13:12:02,532 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:12:02,539 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231121069_01.jpg
+2026-06-02 13:12:02,544 [INFO]     DOM imgs (excl. relacionados): 13
+2026-06-02 13:12:02,544 [INFO]     EAN filter (8711231121069): 6 → 3 imgs
+2026-06-02 13:12:02,544 [INFO]     Imágenes extraídas: 3
+2026-06-02 13:12:02,544 [INFO]   [cand] score=0.07 'Beaphar CatComfort® Excellence Pack Difusor y Recambio Gatos - 48ml' (3 imgs) https://www.beaphar.es/product/12106-beaphar-catcomfort-excellence-pack-difusor-y-recambio-gatos-48ml/
+2026-06-02 13:12:05,730 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17948_338554-A_.jpg
+2026-06-02 13:12:05,738 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/17948_338554-A_.jpg
+2026-06-02 13:12:05,743 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:12:05,743 [INFO]     Imágenes extraídas: 6
+2026-06-02 13:12:05,743 [INFO]   [cand] score=0.07 'Beaphar Gentle Leader® Correa Adiestramiento Negro - Perro Mediano' (6 imgs) https://www.beaphar.es/product/17948-beaphar-gentle-leader-correa-adiestramiento-negro-perro-mediano/
+2026-06-02 13:12:09,546 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:12:09,553 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/8711231109043.jpg
+2026-06-02 13:12:09,558 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:12:09,559 [INFO]     EAN filter (8711231109043): 8 → 5 imgs
+2026-06-02 13:12:09,559 [INFO]     Imágenes extraídas: 5
+2026-06-02 13:12:09,559 [INFO]   [cand] score=0.09 'Beaphar CaniComfort® Spray Perros - 60ml' (5 imgs) https://www.beaphar.es/product/10904-canicomfort-60ml-spray/
+2026-06-02 13:12:12,622 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11292-hero_1613739874.jpg
+2026-06-02 13:12:12,631 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/11292-hero_1613739874.jpg
+2026-06-02 13:12:12,635 [INFO]     DOM imgs (excl. relacionados): 16
+2026-06-02 13:12:12,635 [INFO]     Imágenes extraídas: 7
+2026-06-02 13:12:12,636 [INFO]   [cand] score=0.08 'Beaphar Cat Trainer - Educador para Gatos - 10ml' (7 imgs) https://www.beaphar.es/product/11292-cat-trainer-educador-para-gatos-10ml/
+2026-06-02 13:12:15,832 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:12:15,844 [INFO]     og:image: https://d7rh5s3nxmpy4.cloudfront.net/CMP9365/1000356_Ecommerce-ProtecTix-Dog-M_ES_2024.jpg
+2026-06-02 13:12:15,851 [INFO]     DOM imgs (excl. relacionados): 19
+2026-06-02 13:12:15,852 [INFO]     Imágenes extraídas: 8
+2026-06-02 13:12:15,852 [INFO]   [cand] score=0.08 'Beaphar ProtecTix® Pipetas Perros M (10-25KG)' (8 imgs) https://www.beaphar.es/product/1000356-protectix-pipetas-perros-m-10-25kg/
+2026-06-02 13:12:15,852 [WARNING]   Mejor candidato score=0.09 < 0.34 — descartado: 'Beaphar CaniComfort® Spray Perros - 60ml'
+2026-06-02 13:12:15,852 [WARNING]   Sin resolución para 'KEEP OFF GRÁNULOS REPELENTES EXTERIORES PERRO Y GATO 2X200G'
+2026-06-02 13:12:15,852 [WARNING]   Sin URL (score=0.00)
+2026-06-02 13:12:16,352 [INFO] 
+[121/122] KEEP OFF SPRAY EDUCADOR INTERIORES PERROS Y GATOS 200ML  (ID: 15509651030403)
+2026-06-02 13:12:16,352 [INFO]   Match caché: keep-off-spray-educador-interiores-perros-y-gatos-200ml
+2026-06-02 13:12:17,905 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000524-beaphar-keep-off-spray-educador-interiores-200ml/
+2026-06-02 13:12:17,906 [INFO]   → https://www.beaphar.es/product/1000524-beaphar-keep-off-spray-educador-interiores-200ml/  (score=1.00)
+2026-06-02 13:12:18,406 [INFO] 
+[122/122] KEEP OFF SPRAY EXTERIORES ANTIARAÑAZO Y MARCAJE GATOS  500ML  (ID: 15509651095939)
+2026-06-02 13:12:18,406 [INFO]   Match caché: keep-off-spray-exteriores-antiaranazo-y-marcaje-gatos-500ml
+2026-06-02 13:12:19,913 [INFO]   [metacampo] url_fabricante guardada: https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/
+2026-06-02 13:12:19,913 [INFO]   → https://www.beaphar.es/product/1000529-beaphar-keep-off-spray-educador-exteriores-500ml/  (score=1.00)
+2026-06-02 13:12:20,413 [INFO] 
+============================================================
+2026-06-02 13:12:20,413 [INFO] RESUMEN
+2026-06-02 13:12:20,413 [INFO] ============================================================
+2026-06-02 13:12:20,413 [INFO]   total         : 122
+2026-06-02 13:12:20,414 [INFO]   guardadas     : 108
+2026-06-02 13:12:20,414 [INFO]   sin_match     : 14
