@@ -1,0 +1,169 @@
+2026-06-02 08:06:35,588 [INFO] ============================================================
+2026-06-02 08:06:35,588 [INFO]   Vendor   : AFFINITY
+2026-06-02 08:06:35,588 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-02 08:06:35,588 [INFO]   Pipeline : standard
+2026-06-02 08:06:35,588 [INFO]   Padding  : auto
+2026-06-02 08:06:35,588 [INFO] ============================================================
+2026-06-02 08:06:35,875 [INFO] Token obtenido
+2026-06-02 08:06:42,301 [INFO] [1/177] ADVANCE CANIN ADULT DENTAL CARE MINI CAJA 360GR (NDR)  (ID: 15509603746179)
+    url_fabricante  : https://www.advance-affinity.com/es/es/dental-care-stick-mini-1000442.html
+    url_fabricante_2: —
+2026-06-02 08:06:42,908 [INFO] [2/177] ADVANCE CANINE ADULT DENTAL 28 STICKS 720GR (NDR)  (ID: 15509603844483)
+    url_fabricante  : https://www.advance-affinity.com/es/es/dental-care-stick-medium-maxi-1000440.html
+    url_fabricante_2: —
+2026-06-02 08:06:43,515 [INFO] [3/177] ADVANCE CANINE ADULT DENTAL SNACK 13X180GR (NDR)  (ID: 15509603910019)
+    url_fabricante  : https://www.advance-affinity.com/es/es/dental-care-stick-medium-maxi-1000440.html
+    url_fabricante_2: —
+2026-06-02 08:06:44,134 [INFO] [4/177] ADVANCE CANINE ADULT FRENCH BULLDOG 7,5KG (NDR)  (ID: 15509604008323)
+    url_fabricante  : https://www.advance-affinity.com/es/es/french-bulldog-1000398.html
+    url_fabricante_2: —
+2026-06-02 08:06:44,715 [INFO] [5/177] ADVANCE CANINE ADULT GERMAN SHEPHERD 12KG (NDR)  (ID: 15509604073859)
+    url_fabricante  : https://www.advance-affinity.com/es/es/german-shepherd-1000399.html
+    url_fabricante_2: —
+2026-06-02 08:06:45,300 [INFO] [6/177] ADVANCE CANINE ADULT LIGHT MEDIUM POLLO (NDR)  (ID: 15509604106627)
+    url_fabricante  : https://www.advance-affinity.com/es/es/light-medium-1000415.html
+    url_fabricante_2: —
+2026-06-02 08:06:45,922 [INFO] [7/177] ADVANCE CANINE ADULT LIGHT MINI POLLO (NDR)  (ID: 15509604270467)
+    url_fabricante  : https://www.advance-affinity.com/es/es/light-mini-1000405.html
+    url_fabricante_2: —
+2026-06-02 08:06:46,539 [INFO] [8/177] ADVANCE CANINE ADULT MAXI POLLO ARROZ (NDR)  (ID: 15509604499843)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-maxi-1000419.html
+    url_fabricante_2: —
+2026-06-02 08:06:47,148 [INFO] [9/177] ADVANCE CANINE ADULT MEDIUM POLLO ARROZ (NDR)  (ID: 15509604663683)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-medium-1000414.html
+    url_fabricante_2: —
+2026-06-02 08:06:47,733 [INFO] [10/177] ADVANCE CANINE ADULT MINI DENTAL CARE 13X90GR NDR  (ID: 15509604794755)
+    url_fabricante  : https://www.advance-affinity.com/es/es/dental-care-stick-mini-1000442.html
+    url_fabricante_2: —
+2026-06-02 08:06:48,326 [INFO] [11/177] ADVANCE CANINE ADULT MINI POLLO ARROZ (NDR)  (ID: 15509604958595)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-mini-1000404.html
+    url_fabricante_2: —
+2026-06-02 08:06:48,920 [INFO] [12/177] ADVANCE CANINE ADULT SENSITIVE CORDERO ARROZ (NDR)  (ID: 15509605286275)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-sensitive-care-lamb-1000428.html
+    url_fabricante_2: —
+2026-06-02 08:06:49,534 [INFO] [13/177] ADVANCE CANINE ADULT SENSITIVE MINI SALMON (NDR)  (ID: 15509605351811)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-mini-1000434.html
+    url_fabricante_2: —
+2026-06-02 08:06:50,157 [INFO] [14/177] ADVANCE CANINE ADULT SENSITIVE SALMON ARROZ (NDR)  (ID: 15509605482883)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-medium-maxi-1000430.html
+    url_fabricante_2: —
+2026-06-02 08:06:50,736 [INFO] [15/177] ADVANCE CANINE ADULT SNACK ARTICULAR 14X155GR (NDR)  (ID: 15509605646723)
+    url_fabricante  : https://advancepetfood.com/en/product/ads-articular-sticks/
+    url_fabricante_2: —
+2026-06-02 08:06:51,356 [INFO] [16/177] ADVANCE CANINE ADULT SNACK HYPOALLERGENIC 7X150GR (NDR)  (ID: 15509605712259)
+    url_fabricante  : https://www.advance-affinity.com/es/es/hypoallergenic-snack-1000445.html
+    url_fabricante_2: —
+2026-06-02 08:06:51,955 [INFO] [17/177] ADVANCE CANINE ADULT YORKSHIRE TERRIER 1,5KG (NDR)  (ID: 15509605810563)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 08:06:52,547 [INFO] [18/177] ADVANCE CANINE PUPPY MAXI POLLO ARROZ (NDR)  (ID: 15509605974403)
+    url_fabricante  : https://www.advance-affinity.com/es/es/maxi-puppy-1000423.html
+    url_fabricante_2: —
+2026-06-02 08:06:53,145 [INFO] [19/177] ADVANCE CANINE PUPPY MEDIUM POLLO ARROZ (NDR)  (ID: 15509606138243)
+    url_fabricante  : https://www.advance-affinity.com/es/es/medium-puppy-1000416.html
+    url_fabricante_2: —
+2026-06-02 08:06:53,726 [INFO] [20/177] ADVANCE CANINE PUPPY MINI POLLO ARROZ 3KG (NDR)  (ID: 15509606203779)
+    url_fabricante  : https://www.advance-affinity.com/es/es/mini-puppy-1000409.html
+    url_fabricante_2: —
+2026-06-02 08:06:54,318 [INFO] [21/177] ADVANCE CANINE PUPPY PROTECT INITIAL 3KG (NDR)  (ID: 15509606269315)
+    url_fabricante  : https://www.advance-affinity.com/es/es/mother-dog-initial-1000426.html
+    url_fabricante_2: —
+2026-06-02 08:06:54,909 [INFO] [22/177] ADVANCE CANINE PUPPY PROTECT MINI POLLO 1,5KG (NDR)  (ID: 15509606367619)
+    url_fabricante  : https://www.advance-affinity.com/es/es/mini-puppy-1000409.html
+    url_fabricante_2: —
+2026-06-02 08:06:55,506 [INFO] [23/177] ADVANCE CANINE PUPPY SENSITIVE SALMON (NDR)  (ID: 15509606465923)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-puppy-1000431.html
+    url_fabricante_2: —
+2026-06-02 08:06:56,106 [INFO] [24/177] ADVANCE CANINE PUPPY SNACK CAJA 7X150GR (NDR)  (ID: 15509606564227)
+    url_fabricante  : https://www.advance-affinity.com/es/es/puppy-snack-1000448.html
+    url_fabricante_2: —
+2026-06-02 08:06:56,704 [INFO] [25/177] ADVANCE CANINE SENIOR MEDIUM POLLO ARROZ (NDR)  (ID: 15509606596995)
+    url_fabricante  : https://www.advance-affinity.com/es/es/senior-medium-1000417.html
+    url_fabricante_2: —
+2026-06-02 08:06:57,350 [INFO] [26/177] ADVANCE CANINE SENIOR MINI POLLO ARROZ (NDR)  (ID: 15509606793603)
+    url_fabricante  : https://www.advance-affinity.com/es/es/senior-mini-1000412.html
+    url_fabricante_2: —
+2026-06-02 08:06:57,958 [INFO] [27/177] ADVANCE CANINE SENSITIVE SNACK CAJA 7X150GR NDR  (ID: 15509606957443)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-snack-1000444.html
+    url_fabricante_2: —
+2026-06-02 08:06:58,556 [INFO] [28/177] ADVANCE CANINE WEIGHT CONTROL SNACK 7X150GR (NDR)  (ID: 15509603811715)
+    url_fabricante  : https://www.advance-affinity.com/es/es/appetite-control-snack-1000447.html
+    url_fabricante_2: —
+2026-06-02 08:06:59,150 [INFO] [29/177] ADVANCE CAT ADULT CHICKEN & RICE 6KG  (ID: 15509607022979)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-1000379.html
+    url_fabricante_2: —
+2026-06-02 08:06:59,747 [INFO] [30/177] ADVANCE CAT KITTEN 3KG  (ID: 15509607055747)
+    url_fabricante  : https://www.advance-affinity.com/es/es/kitten-1000382.html
+    url_fabricante_2: —
+2026-06-02 08:07:00,364 [INFO] [31/177] ADVANCE CAT STERILIZED 6KG  (ID: 15509607121283)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-sterilized-1000389.html
+    url_fabricante_2: —
+2026-06-02 08:07:00,964 [INFO] [32/177] ADVANCE DIETS CAT GASTRO SENSITIVE 2,75KG  (ID: 15509607186819)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-gastroenteric-sensitive-1000531.html
+    url_fabricante_2: —
+2026-06-02 08:07:01,557 [INFO] [33/177] ADVANCE DIETS DOG ATOPIC MINI 3KG  (ID: 15509607219587)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-atopic-and-food-sensitivity-mini-1000466.html
+    url_fabricante_2: —
+2026-06-02 08:07:02,153 [INFO] [34/177] ADVANCE DIETS DOG HYPOALLERGIC MINI 2KG  (ID: 15509607285123)
+    url_fabricante  : https://www.advance-affinity.com/es/es/hypoallergenic-mini-1000716.html
+    url_fabricante_2: —
+2026-06-02 08:07:02,747 [INFO] [35/177] ADVANCE DIETS DOG WEIGHT BALANCE MINI 3KG  (ID: 15509607383427)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-weight-balance-mini-1000435.html
+    url_fabricante_2: —
+2026-06-02 08:07:03,344 [INFO] [36/177] ADVANCE FELINE ADULT POLLO ARROZ (NDR)  (ID: 15509607481731)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-1000379.html
+    url_fabricante_2: —
+2026-06-02 08:07:03,972 [INFO] [37/177] ADVANCE FELINE ADULT SALMON ARROZ SENSITIVE 10 KG (NDR)  (ID: 15509607645571)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-1000380.html
+    url_fabricante_2: —
+2026-06-02 08:07:04,577 [INFO] [38/177] ADVANCE FELINE ADULT STERILIZED HAIRBALL (NDR)  (ID: 15509607711107)
+    url_fabricante  : https://www.advance-affinity.com/es/es/hairball-sterilized-1000386.html
+    url_fabricante_2: —
+2026-06-02 08:07:05,176 [INFO] [39/177] ADVANCE FELINE ADULT STERILIZED PAVO (NDR)  (ID: 15509607874947)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-sterilized-1000389.html
+    url_fabricante_2: —
+2026-06-02 08:07:05,779 [INFO] [40/177] ADVANCE FELINE ADULT STERILIZED SENSITIVE (NDR)  (ID: 15509608137091)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-sterilized-1000387.html
+    url_fabricante_2: —
+2026-06-02 08:07:06,369 [INFO] [41/177] ADVANCE FELINE KITTEN POLLO ARROZ (NDR)  (ID: 15509608300931)
+    url_fabricante  : https://www.advance-affinity.com/es/es/kitten-1000382.html
+    url_fabricante_2: —
+2026-06-02 08:07:06,978 [INFO] [42/177] ADVANCE FELINE SENIOR+10 STERIL. POLLO 1,5KG (NDR)  (ID: 15509608432003)
+    url_fabricante  : https://www.advance-affinity.com/es/es/senior-sterilized-1000392.html
+    url_fabricante_2: —
+2026-06-02 08:07:07,584 [INFO] [43/177] ADVANCE FELINE YOUNG STERILIZED 1,5KG (NDR)  (ID: 15509608563075)
+    url_fabricante  : https://www.advance-affinity.com/en/junior-sterilized-1000390.html
+    url_fabricante_2: —
+2026-06-02 08:07:08,172 [INFO] [44/177] ADVANCE MINI ADULT CHICKEN & RICE  (ID: 15509615739267)
+    url_fabricante  : https://www.advance-affinity.com/es/es/adult-mini-1000404.html
+    url_fabricante_2: —
+2026-06-02 08:07:08,772 [INFO] [45/177] ADVANCE MINI SENSITIVE  (ID: 15509603680643)
+    url_fabricante  : https://www.advance-affinity.com/es/es/sensitive-mini-1000434.html
+    url_fabricante_2: —
+2026-06-02 08:07:09,385 [INFO] [46/177] ADVANCE VET CANINE & FELINE RECOVERY POUCH 11X100GR  (ID: 15509608595843)
+    url_fabricante  : https://www.advance-affinity.com/es/es/recovery-1000482.html
+    url_fabricante_2: —
+2026-06-02 08:07:09,982 [INFO] [47/177] ADVANCE VET CANINE ADULT ARTICULAR +7 12KG (NDR)  (ID: 15509608661379)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-articular-senior-1000468.html
+    url_fabricante_2: —
+2026-06-02 08:07:10,581 [INFO] [48/177] ADVANCE VET CANINE ADULT ARTICULAR RED. (NDR)  (ID: 15509608890755)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-articular-low-calorie-1000467.html
+    url_fabricante_2: —
+2026-06-02 08:07:11,182 [INFO] [49/177] ADVANCE VET CANINE ADULT ARTICULARFORTE (NDR)  (ID: 15509608792451)
+    url_fabricante  : https://www.advance-affinity.com/es/es/veterinary-diets-articularforte-1000436.html
+    url_fabricante_2: —
+Traceback (most recent call last):
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 907, in <module>
+    main()
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 891, in main
+    run_snapshot_urls(api, args.vendor, args.product_id, only_ids or None)
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/process_brand.py", line 771, in run_snapshot_urls
+    url2 = (api.get_metafield(pid, MF_NAMESPACE, MF_KEY_URL_2) or {}).get("value") or ""
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 94, in get_metafield
+    r = _request("GET", f"{self.base}/products/{pid}/metafields.json",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/imagenes-shopify/imagenes-shopify/core/shopify_api.py", line 33, in _request
+    retry_after = int(r.headers.get("Retry-After", wait))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '2.0'
