@@ -1,0 +1,111 @@
+2026-06-02 08:21:09,198 [INFO] ============================================================
+2026-06-02 08:21:09,198 [INFO]   Vendor   : ARTERO
+2026-06-02 08:21:09,199 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-02 08:21:09,199 [INFO]   Pipeline : standard
+2026-06-02 08:21:09,199 [INFO]   Padding  : auto
+2026-06-02 08:21:09,199 [INFO] ============================================================
+2026-06-02 08:21:09,548 [INFO] Token obtenido
+2026-06-02 08:21:11,407 [INFO] [1/34] ARTERO ACONDICIONADOR FLASH 300 ML (NDR)  (ID: 15509635072387)
+    url_fabricante  : https://artero.com/es/petcare/artero-acondicionador-flash-300ml
+    url_fabricante_2: —
+2026-06-02 08:21:12,156 [INFO] [2/34] ARTERO ACONDICIONADOR KERATIN VITAL (NDR)  (ID: 15509635137923)
+    url_fabricante  : https://artero.com/es/petcare/artero-acondicionador-keratin-vital-100ml
+    url_fabricante_2: https://artero.com/es/petcare/artero-acondicionador-keratin-vital-650ml
+2026-06-02 08:21:12,888 [INFO] [3/34] ARTERO ACONDICIONADOR PROTEIN VITAL (NDR)  (ID: 15509635203459)
+    url_fabricante  : https://artero.com/es/petcare/artero-acondicionador-protein-vital-100ml
+    url_fabricante_2: https://artero.com/es/petcare/artero-protein-vital-acondicionador-650ml
+2026-06-02 08:21:13,639 [INFO] [4/34] ARTERO AURICLEAN POLVO OIDOS 30GR (NDR)  (ID: 15509635301763)
+    url_fabricante  : https://artero.com/es/petcare/artero-auroclean-polvo-oidos-30-gr
+    url_fabricante_2: —
+2026-06-02 08:21:14,386 [INFO] [5/34] ARTERO CHAMPU BABY (NDR)  (ID: 15509635432835)
+    url_fabricante  : https://artero.com/es/petcare/champu-baby
+    url_fabricante_2: —
+2026-06-02 08:21:15,144 [INFO] [6/34] ARTERO CHAMPU BASIC (NDR)  (ID: 15509635531139)
+    url_fabricante  : https://artero.com/es/petcare/champu-basic-cien-ml
+    url_fabricante_2: —
+2026-06-02 08:21:16,153 [INFO] [7/34] ARTERO CHAMPU BLANC  (ID: 15509635727747)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-blanc-300-ml
+    url_fabricante_2: —
+2026-06-02 08:21:16,909 [INFO] [8/34] ARTERO CHAMPU BYE BYE (NDR)  (ID: 15509635924355)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-bye-bye-antiparasitario-250-ml
+    url_fabricante_2: —
+2026-06-02 08:21:17,651 [INFO] [9/34] ARTERO CHAMPU DETOX CARBON ACTIVO  (ID: 15509636088195)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-detox-carbon-activo-250-ml
+    url_fabricante_2: —
+2026-06-02 08:21:18,378 [INFO] [10/34] ARTERO CHAMPU GATO (NDR)  (ID: 15509636153731)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-gato-250-ml
+    url_fabricante_2: —
+2026-06-02 08:21:19,133 [INFO] [11/34] ARTERO CHAMPU HIDRATANTE  (ID: 15509636284803)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-hidratante-250ml
+    url_fabricante_2: —
+2026-06-02 08:21:19,874 [INFO] [12/34] ARTERO CHAMPU RELAX (NDR)  (ID: 15509636415875)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-relax-para-pieles-sensibles-250-ml
+    url_fabricante_2: —
+2026-06-02 08:21:20,605 [INFO] [13/34] ARTERO CHAMPU TSUNAMI 100 ML (NDR)  (ID: 15509636579715)
+    url_fabricante  : https://artero.com/es/petcare/champu-tsunami
+    url_fabricante_2: —
+2026-06-02 08:21:21,379 [INFO] [14/34] ARTERO CHAMPU VITALIZANTE  (ID: 15509636776323)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-vitalizante-250ml
+    url_fabricante_2: —
+2026-06-02 08:21:22,093 [INFO] [15/34] ARTERO CORREA DOG CONTROL 360  (ID: 15509636809091)
+    url_fabricante  : https://artero.com/es/petcare/artero-correa-dog-control
+    url_fabricante_2: —
+2026-06-02 08:21:22,825 [INFO] [16/34] ARTERO CORREA PELUQUERIA 50CM  (ID: 15509636972931)
+    url_fabricante  : https://artero.com/es/petcare/artero-correa-peluqueria
+    url_fabricante_2: —
+2026-06-02 08:21:23,579 [INFO] [17/34] ARTERO CORREA PINZA ROSA (NDR)  (ID: 15509637169539)
+    url_fabricante  : https://artero.com/es/petcare/correa-con-pinza-para-peluqueria-canina
+    url_fabricante_2: —
+2026-06-02 08:21:24,318 [INFO] [18/34] ARTERO ESPUMA ACONDICIONADOR ZOOM (NDR)  (ID: 15509637202307)
+    url_fabricante  : https://artero.com/es/petcare/artero-espuma-voluminizadora-zoom-150ml
+    url_fabricante_2: —
+2026-06-02 08:21:25,039 [INFO] [19/34] ARTERO HIGIENE PERFUME BABY 90 ML (NDR)  (ID: 15509637333379)
+    url_fabricante  : https://artero.com/es/petcare/artero-perfume-baby
+    url_fabricante_2: —
+2026-06-02 08:21:25,784 [INFO] [20/34] ARTERO HIGIENE PERFUME FRESH 90 ML (NDR)  (ID: 15509637366147)
+    url_fabricante  : https://artero.com/es/petcare/artero-perfume-fresh-90ml
+    url_fabricante_2: —
+2026-06-02 08:21:26,537 [INFO] [21/34] ARTERO HIGIENE PERFUME IMPACT 90 ML (NDR)  (ID: 15509637398915)
+    url_fabricante  : https://artero.com/es/petcare/artero-perfume-impact-90ml
+    url_fabricante_2: —
+2026-06-02 08:21:27,686 [INFO] [22/34] ARTERO HIGIENE PERFUME TIERRA 90 ML (NDR)  (ID: 15509637464451)
+    url_fabricante  : https://artero.com/es/petcare/artero-perfume-tierra-90ml
+    url_fabricante_2: —
+2026-06-02 08:21:28,403 [INFO] [23/34] ARTERO HIGIENE PERFUME VIOLET 90 ML (NDR)  (ID: 15509637529987)
+    url_fabricante  : https://artero.com/es/petcare/artero-perfume-violet-90ml
+    url_fabricante_2: —
+2026-06-02 08:21:29,145 [INFO] [24/34] ARTERO HIGIENE SPEEDCHAMPU SECO 300 ML (NDR)  (ID: 15509637562755)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-en-seco-speed-300ml
+    url_fabricante_2: —
+2026-06-02 08:21:29,856 [INFO] [25/34] ARTERO INTENSIFYNG 1LT (NDR)  (ID: 15509637595523)
+    url_fabricante  : https://artero.com/es/petcare/artero-champu-intensificador-1lt
+    url_fabricante_2: —
+2026-06-02 08:21:30,601 [INFO] [26/34] ARTERO LACA PODIUM DRY HOLD (NDR)  (ID: 15509637628291)
+    url_fabricante  : https://artero.com/es/petcare/artero-laca-podium-dry-hold-298gr
+    url_fabricante_2: —
+2026-06-02 08:21:31,358 [INFO] [27/34] ARTERO LACA PODIUM STRONG HOLD 500 ML (NDR)  (ID: 15509637661059)
+    url_fabricante  : https://artero.com/es/petcare/artero-laca-podium-strong-hold-285gr
+    url_fabricante_2: —
+2026-06-02 08:21:32,110 [INFO] [28/34] ARTERO LAZOS VARIADOS 10 UNI (NDR)  (ID: 15509637726595)
+    url_fabricante  : —
+    url_fabricante_2: —
+2026-06-02 08:21:32,844 [INFO] [29/34] ARTERO MATT-X (NDR)  (ID: 15509637759363)
+    url_fabricante  : https://artero.com/es/petcare/artero-matt-x-desenredante-para-perros-y-gatos
+    url_fabricante_2: —
+2026-06-02 08:21:33,578 [INFO] [30/34] ARTERO MIX ACONDICIONADOR SPRAY (NDR)  (ID: 15509637824899)
+    url_fabricante  : https://artero.com/es/petcare/artero-acondicionador-mix-spray-300-ml
+    url_fabricante_2: —
+2026-06-02 08:21:34,324 [INFO] [31/34] ARTERO PRETTY EYES (NDR)  (ID: 15509637890435)
+    url_fabricante  : https://artero.com/es/petcare/artero-pretty-eyes
+    url_fabricante_2: —
+2026-06-02 08:21:35,061 [INFO] [32/34] Artero Samba - Bayeta Ultra Absorbente para Perros Medianos y Grandes  (ID: 15415511908739)
+    url_fabricante  : https://artero.com/es/petcare/artero-samba
+    url_fabricante_2: —
+2026-06-02 08:21:35,810 [INFO] [33/34] ARTERO SPRAY BALSAM 250 ML (NDR)  (ID: 15509637955971)
+    url_fabricante  : https://artero.com/es/petcare/artero-spray-balsam-250-ml
+    url_fabricante_2: —
+2026-06-02 08:21:36,517 [INFO] [34/34] ARTERO STATIC CONTROL 150 ML (NDR)  (ID: 15509637988739)
+    url_fabricante  : https://artero.com/es/petcare/artero-static-control-300ml
+    url_fabricante_2: —
+2026-06-02 08:21:36,718 [INFO] 
+Snapshot guardado: resultados/artero_urls_snapshot.json (34 productos, 33 con url_fabricante, 2 con url_fabricante_2)
