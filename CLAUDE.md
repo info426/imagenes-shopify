@@ -729,13 +729,26 @@ una URL errónea). Activación: input `usar_imagen=true` del workflow Resolver U
 en JSON). En match-time solo se descarga la imagen de Shopify (CDN **público**) y se
 compara contra las huellas precomputadas (matemática de vectores, sin red).
 
-**Lógica de decisión (`find_best_match`, pesos `_W_TEXT=0.45 / _W_IMG=0.55`):**
-1. **Confirmación visual fuerte** (`img≥STRONG`, foto idéntica/igual) → acepta el candidato
-   aunque el texto sea bajo. Vale para **ambos** backends. Es el caso más fiable.
-2. **CLIP**: `combinado = 0.45·texto + 0.55·img`. Si `img≤WEAK y texto<0.55` → **RECHAZO**
-   (sin_match). Si `combinado≥0.45` → acepta. Discrimina especie/formato/snack.
-3. **hash** (fallback): sin confirmación fuerte la imagen no discrimina → decide el texto
-   con umbral elevado `_TEXT_ONLY_MIN=0.30` (nunca peor que antes; mata la basura <0.30).
+**⚠️ LECCIÓN del 1er dry-run con CLIP (peso 0.55):** el packaging de Calibra es
+visualmente **uniforme** (misma bolsa/lata, cambia el texto del sabor) → CLIP da
+similitudes parecidas a casi todo. Con peso 0.55 + override "foto fuerte", la imagen
+**anulaba el texto** y elegía productos de **otra especie** (CAT LATA→handle DOG) o
+etapa (ADULT→SENIOR). Resultado: 111/134, peor que el texto-solo bien hecho.
+
+**Lógica corregida (`find_best_match`) — el TEXTO manda, la imagen solo desempata:**
+1. **Guard de especie** (`_species_of`): un título CAT nunca casa con un handle DOG (y
+   viceversa). Determinista, mata los errores cat→dog. ROCKETS/arena = especie "" (sin guard).
+2. **Texto Jaccard ES↔EN** con sinónimos ampliados (sabores/animales/texturas:
+   `vacuno→beef`, `ave→poultry`, `lata→can`, `arenque→herring`, `cobaya→guinea`,
+   `nuez→nuts`, `silvestre→wild`…). Gana el de mayor score.
+3. **Imagen = solo desempate** entre candidatos a `<_TIE_MARGIN(0.08)` del mejor texto
+   (variantes de tamaño/formato indistinguibles al quitar el peso: `chicken` vs
+   `chicken-200g`, lata vs pouch). **Nunca** anula un ganador claro de texto → no puede
+   arrastrar a otra especie/sabor/línea. Sin imagen → solo texto, umbral `_TEXT_ONLY_MIN=0.30`.
+
+**Precisión validada contra el snapshot (134 URLs correctas), texto-solo:**
+run#15 **80%** (108) → +guard especie **+** sitemap **111** → +sinónimos ES→EN **127 (94%)**.
+El desempate por imagen (CLIP, en Actions) sube ~2-3 más (variantes de tamaño lata/200g).
 
 **Plumbing genérico:** `core/process_brand.py` (`run_resolve_urls`) pasa
 `product_images` (los `images[].src` de Shopify) a `find_best_match` **si el scraper

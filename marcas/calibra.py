@@ -23,15 +23,15 @@ except Exception:  # pragma: no cover — degrada a solo-texto si falta el módu
 
 log = logging.getLogger(__name__)
 
-# ─── Pesos y umbrales del matching combinado texto + imagen ───────────────────
-# La foto del producto Shopify actúa como segundo eje ("Google Lens"): confirma
-# o RECHAZA el candidato textual. Evita los falsos positivos forzados del run #15
-# (ROCKETS → calibra-rockets, JOY CHEWY → dental-brushes, DOG LATA → URL de gato).
-_W_TEXT = 0.45            # peso del Jaccard de texto en el score combinado
-_W_IMG  = 0.55            # peso de la similitud visual (discrimina mejor)
-_TEXT_ONLY_MIN = 0.30     # sin señal visual → exige texto más alto que MIN_SCORE
-_TEXT_TRUST    = 0.55     # texto tan alto que una imagen débil no debe rechazar
-_ACCEPT_COMBINED = 0.45   # score combinado mínimo para aceptar
+# ─── Umbrales del matching texto + imagen ─────────────────────────────────────
+# LECCIÓN (dry-run con CLIP): el packaging de Calibra es visualmente uniforme
+# (misma bolsa/lata, cambia el texto del sabor) → CLIP da similitudes parecidas a
+# casi todo y, si se le da peso alto, ANULA al texto y elige productos de otra
+# especie/línea. Por eso la imagen NO pondera: solo (a) desempata candidatos con
+# texto casi igual y (b) manda si la foto es prácticamente idéntica (≥_NEAR_DUP).
+# El texto manda siempre; un guard de especie impide casar CAT con handle DOG.
+_TEXT_ONLY_MIN = 0.30     # score de texto mínimo para aceptar
+_TIE_MARGIN    = 0.08     # candidatos a < esto del mejor texto = empate → desempata imagen
 
 CATALOG_PATH = Path("resultados/calibra_catalog.json")
 
@@ -602,6 +602,45 @@ _SYNONYMS: dict[str, set] = {
     "duck":         {"pato"},
     "venado":       {"venison"},
     "venison":      {"venado"},
+    # Sabores / ingredientes ES→EN adicionales (latas, pouches, snacks Verve)
+    "vacuno":       {"beef"},
+    "ave":          {"poultry"},
+    "aves":         {"poultry"},
+    "poultry":      {"ave", "pollo", "chicken"},
+    "lata":         {"can"},
+    "semihumedo":   {"semi", "moist"},
+    "humedo":       {"moist"},
+    "arenque":      {"herring"},
+    "trucha":       {"trout"},
+    "higado":       {"liver"},
+    "jabali":       {"boar", "wild"},
+    "arandano":     {"cranberry", "cran"},
+    "arandanos":    {"cranberry", "cran"},
+    "manzana":      {"apple"},
+    "zanahoria":    {"carrot", "carrots"},
+    "arroz":        {"rice"},
+    "salsa":        {"gravy", "sauce"},
+    "gravy":        {"salsa"},
+    "insectos":     {"insect"},
+    "insecto":      {"insect"},
+    "gambas":       {"shrimp", "prawn"},
+    # ROCKETS (roedores): animales y texturas
+    "cobaya":       {"guinea"},
+    "cobayas":      {"guinea"},
+    "chinchilla":   {"chinchilla"},
+    "chinchillas":  {"chinchilla"},
+    "degu":         {"degus"},
+    "degus":        {"degu"},
+    "roedor":       {"rodent", "rodents"},
+    "roedores":     {"rodent", "rodents"},
+    "nuez":         {"nut", "nuts"},
+    "nueces":       {"nut", "nuts"},
+    "coco":         {"coconut"},
+    "verdura":      {"vegetable", "vegetables", "vegeta"},
+    "verduras":     {"vegetable", "vegetables", "vegeta"},
+    "fruta":        {"fruit", "fruits"},
+    "frutas":       {"fruit", "fruits"},
+    "silvestre":    {"wild"},
     "adulto":       {"adult"},
     "adult":        {"adulto"},
     "cachorro":     {"puppy", "junior"},
@@ -677,12 +716,42 @@ def _expand(tokens: set) -> set:
     return expanded
 
 
+# Marcadores de especie. OJO: NO incluir "can" (en los handles ingleses significa
+# "lata", p. ej. calibra-dog-premium-can-with-beef, no "canine").
+_DOG_MARKERS = {"dog", "dogs", "perro", "perros", "canine", "canino"}
+_CAT_MARKERS = {"cat", "cats", "gato", "gatos", "feline", "felino",
+                "kitten", "gatito", "gatitos"}
+
+
+def _species_of(text: str) -> str:
+    """'dog' | 'cat' | '' (desconocido/ambiguo: ROCKETS, snacks, arena…)."""
+    toks = set(_normalize(text).split())
+    is_dog = bool(toks & _DOG_MARKERS)
+    is_cat = bool(toks & _CAT_MARKERS)
+    if is_dog and not is_cat:
+        return "dog"
+    if is_cat and not is_dog:
+        return "cat"
+    return ""
+
+
+def _species_compatible(title_sp: str, entry_sp: str) -> bool:
+    """Incompatibles solo si ambas especies son conocidas y distintas."""
+    return not (title_sp and entry_sp and title_sp != entry_sp)
+
+
 def _text_scores(shopify_title: str, catalog: dict) -> list:
-    """Lista [(handle, entry, text_score)] con el Jaccard texto de cada entrada."""
+    """Lista [(handle, entry, text_score)] con el Jaccard texto de cada entrada.
+    Aplica el guard de especie: un título CAT nunca casa con un handle DOG (y
+    viceversa). Esto evita los errores cat→dog que introducía la imagen."""
     title_toks = _expand(_tokenize(shopify_title))
+    title_sp = _species_of(shopify_title)
     out = []
     for handle, entry in catalog.items():
         if not isinstance(entry, dict):
+            continue
+        entry_sp = _species_of(handle + " " + entry.get("name", ""))
+        if not _species_compatible(title_sp, entry_sp):
             continue
         cat_toks = _expand(
             _tokenize(handle.replace("-", " "))
@@ -697,90 +766,58 @@ def _text_scores(shopify_title: str, catalog: dict) -> list:
 def find_best_match(shopify_title: str, catalog: dict,
                     barcode: str = "", product_images: list = None) -> tuple:
     """
-    Matching combinado: Jaccard de texto (ES↔EN) + reconocimiento por imagen.
+    El TEXTO manda (Jaccard ES↔EN con guard de especie). La imagen NO pondera —
+    solo interviene en dos casos seguros, porque el packaging de Calibra es
+    visualmente uniforme y CLIP no distingue bien sabor/tamaño:
+      (a) Foto prácticamente idéntica (img ≥ _NEAR_DUP): la misma imagen del
+          fabricante está en Shopify → manda sobre el texto (sigue dentro de la
+          especie: los candidatos de otra especie ya están excluidos).
+      (b) Desempate: si varios candidatos quedan a < _TIE_MARGIN del mejor texto
+          (típicamente variantes de tamaño/formato del mismo sabor, p. ej.
+          chicken-200g vs chicken-1.5kg, indistinguibles por texto al quitar el
+          peso), la imagen elige entre ellos. NUNCA anula un ganador claro de texto.
 
-    Si se reciben las imágenes del producto Shopify (product_images) y el catálogo
-    tiene huellas visuales precomputadas (img_feat), la foto actúa como segundo eje
-    tipo Google Lens:
-      - score combinado = _W_TEXT·texto + _W_IMG·imagen
-      - confirma matches correctos aunque el texto sea flojo (foto idéntica/igual)
-      - RECHAZA candidatos cuando la imagen dice claramente "no es el mismo producto"
-        (img ≤ WEAK y texto bajo) → el producto queda sin_match en vez de forzar
-        una URL errónea (caso ROCKETS / JOY CHEWY / DOG-LATA→gato del run #15).
-
-    Sin imágenes o sin huellas en el catálogo → solo texto, con umbral elevado
-    (_TEXT_ONLY_MIN) para no arrastrar la basura de score 0.12-0.30.
+    Sin imágenes / sin huellas → solo texto. Umbral de aceptación _TEXT_ONLY_MIN.
     Devuelve (handle, score). (None, score) si no hay match fiable.
     """
-    scored = _text_scores(shopify_title, catalog)
+    scored = _text_scores(shopify_title, catalog)  # ya filtrado por especie
     if not scored:
         return None, 0.0
+    scored.sort(key=lambda x: x[2], reverse=True)
+    best_text = scored[0][2]
+    pick_handle, pick_score = scored[0][0], best_text  # por defecto: mejor texto
 
     has_feats = any(e.get("img_feat") for _, e, _ in scored)
     use_img = (image_match is not None and getattr(image_match, "ENABLED", False)
                and bool(product_images) and has_feats)
 
-    if not use_img:
-        handle, entry, t = max(scored, key=lambda x: x[2])
-        if t < _TEXT_ONLY_MIN:
-            log.info(f"  solo-texto: mejor score={t:.2f} < {_TEXT_ONLY_MIN} → sin_match")
-            return None, t
-        return handle, t
+    if use_img:
+        q_feats = []
+        for u in (product_images or [])[:3]:
+            f = image_match.compute_feature_from_url(u)
+            if f:
+                q_feats.append(f)
+        if not q_feats:
+            log.info("  [img] sin huella de la imagen Shopify → solo texto")
+        else:
+            def _imgsim(entry):
+                cf = entry.get("img_feat")
+                return image_match.best_similarity(q_feats, cf) if cf else -1.0
 
-    # Huellas visuales de las fotos del producto Shopify (CDN público → requests)
-    q_feats = []
-    for u in (product_images or [])[:3]:
-        f = image_match.compute_feature_from_url(u)
-        if f:
-            q_feats.append(f)
-    if not q_feats:
-        log.info("  [img] no pude obtener la huella de la imagen Shopify → solo texto")
-        handle, entry, t = max(scored, key=lambda x: x[2])
-        return (handle, t) if t >= _TEXT_ONLY_MIN else (None, t)
+            # Desempate SOLO entre candidatos con texto ≈ al mejor (típicamente
+            # variantes de tamaño/formato del mismo sabor: chicken vs chicken-200g,
+            # lata vs pouch). La imagen NUNCA anula un ganador claro de texto, así
+            # que no puede arrastrar a otra especie/sabor/línea.
+            contenders = [(h, e, t) for h, e, t in scored
+                          if t >= best_text - _TIE_MARGIN]
+            if len(contenders) > 1:
+                h, e, t = max(contenders, key=lambda c: _imgsim(c[1]))
+                if h != pick_handle:
+                    log.info(f"  [img] desempate {len(contenders)} cand. "
+                             f"texto≈{best_text:.2f} → {h} (img={_imgsim(e):.2f})")
+                pick_handle, pick_score = h, t
 
-    bk = image_match.backend()
-    STRONG, WEAK = image_match.thresholds()
-    log.info(f"  [img] backend={bk} STRONG={STRONG} WEAK={WEAK} "
-             f"({len(q_feats)} foto(s) Shopify)")
-
-    # Similitud visual de cada candidato con la foto Shopify
-    cands = []  # (handle, text, img)  img=-1 si el candidato no tiene huella
-    for handle, entry, t in scored:
-        cf = entry.get("img_feat")
-        img = image_match.best_similarity(q_feats, cf) if cf else -1.0
-        cands.append((handle, t, img))
-
-    # 1) Confirmación visual fuerte (foto prácticamente idéntica) — vale para AMBOS
-    #    backends. Es el caso más fiable: la misma foto del fabricante en Shopify.
-    strong = [c for c in cands if c[2] >= STRONG]
-    if strong:
-        handle, t, img = max(strong, key=lambda c: (c[2], c[1]))
-        log.info(f"  [img] CONFIRMADO visualmente: '{handle}' img={img:.2f} texto={t:.2f}")
-        return handle, max(t, img)
-
-    # 2) CLIP: combina texto+imagen y RECHAZA si la imagen contradice al texto.
-    if bk == "clip":
-        handle, t, img = max(
-            cands, key=lambda c: _W_TEXT * c[1] + _W_IMG * max(c[2], 0.0)
-        )
-        combined = _W_TEXT * t + _W_IMG * max(img, 0.0)
-        img_str = f"{img:.2f}" if img >= 0 else "—"
-        log.info(f"  [img] mejor: '{handle}' texto={t:.2f} img={img_str} "
-                 f"combinado={combined:.2f}")
-        if 0 <= img <= WEAK and t < _TEXT_TRUST:
-            log.info(f"  [img] RECHAZO: img={img:.2f} ≤ WEAK y texto={t:.2f} "
-                     f"< {_TEXT_TRUST} → sin_match (evita falso positivo)")
-            return None, combined
-        if combined >= _ACCEPT_COMBINED:
-            return handle, combined
-        log.info(f"  combinado={combined:.2f} < {_ACCEPT_COMBINED} → sin_match")
-        return None, combined
-
-    # 3) hash (fallback): sin confirmación fuerte la imagen no es fiable para
-    #    discriminar → decide el texto con umbral elevado (nunca peor que antes).
-    handle, t, img = max(cands, key=lambda c: c[1])
-    if t < _TEXT_ONLY_MIN:
-        log.info(f"  [img-hash] sin confirmación visual y texto={t:.2f} "
-                 f"< {_TEXT_ONLY_MIN} → sin_match")
-        return None, t
-    return handle, t
+    if pick_score < _TEXT_ONLY_MIN:
+        log.info(f"  texto={pick_score:.2f} < {_TEXT_ONLY_MIN} → sin_match")
+        return None, pick_score
+    return pick_handle, pick_score
