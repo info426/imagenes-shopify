@@ -30,7 +30,7 @@ def _request(method: str, url: str, **kwargs) -> requests.Response:
     for attempt in range(6):
         r = requests.request(method, url, **kwargs)
         if r.status_code == 429:
-            retry_after = int(r.headers.get("Retry-After", wait))
+            retry_after = int(float(r.headers.get("Retry-After", wait)))
             time.sleep(retry_after)
             wait = min(wait * 2, 60)
             continue
