@@ -403,8 +403,8 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |
 | Virbac | Virbac | Pendiente backup | shopify_backup |
 | Churu | Churu | Pendiente backup | shopify_backup |
-| Farmina ND | Farmina | Pendiente backup | shopify_backup |
-| Farmina Vet Life | Farmina Vet Life | Pendiente backup | shopify_backup |
+| Farmina ND | Farmina | **URLs pendiente** — scraper listo (`marcas/farmina.py`) | web_oficial → marcas/farmina.py (farmina.com/es) |
+| Farmina Vet Life | Farmina Vet Life | **URLs pendiente** — shim listo (`marcas/farmina_vet_life.py`) | web_oficial → marcas/farmina.py compartido |
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
 | Menforsan | MENFORSAN | **En proceso** — fuente `web_y_amazon` probada, fixes aplicados, pendiente proceso masivo | web_y_amazon → marcas/menforsan.py (menforsan.com) |
@@ -694,6 +694,43 @@ de ese sitio. Así el workflow `Resolver URLs fabricante` se corre **dos veces**
 - **Test**: 1 `product_id` primero (hace el crawl completo del sitio y cachea), verificar
   `fuentes.url_fabricante` en el admin, luego lote con `product_ids` vacío (reusa caché).
   Matching ES↔EN ya cubierto por `_SYNONYMS`; el peso (400g/2kg) se ignora en `IGNORE_TOKENS`.
+
+### Farmina — notas de estrategia (URLs fabricante)
+
+**Dos submarcas, un dominio:** `farmina.com/es/eshop/`
+- Vendor **"Farmina"** (N&D Natural & Delicious) → `marcas/farmina.py`
+- Vendor **"Farmina Vet Life"** → `marcas/farmina_vet_life.py` (shim que re-exporta `farmina.py`)
+
+**CMS:** PrestaShop — URLs `/es/eshop/{categoria}/{subcategoria}/{id}-{slug}.html`.
+El `id` numérico NO es derivable del título → solo DDG (igual que beaphar/menforsan).
+
+**Problema clave — peso en el título Shopify:**
+Farmina tiene una página por receta (p. ej. "Bacalao, Calabaza y Melón Puppy Mini"),
+pero Shopify tiene un producto por tamaño de saco (2.5 KG, 7 KG, 12 KG de la misma receta).
+El scraper elimina el peso del título antes del matching y usa la misma clave de caché para
+todos los tamaños → muchos-a-uno, todos apuntan a la misma URL.
+
+**Estrategia de matching:**
+- `_clean_for_match(title)`: quita prefijo ("FARMINA ND ", "VET LIFE ", "N&D ", "ND ") y peso.
+- DDG: `site:farmina.com/es/eshop/ {título limpio}` → candidatos con `_is_product_url()`.
+- Score Jaccard (con stemming ES) entre tokens del título limpio y h1 de la página.
+- `MATCH_THRESHOLD = 0.25` (tolera que el h1 web no tenga los tokens de línea/ocean/prime).
+
+**Caché compartida:** `resultados/farmina_catalog.json` — sirve para ambos vendors.
+Ejecuciones anteriores de N&D precargan recetas que Vet Life (y viceversa) ya no necesitan buscar.
+
+**Parámetros workflow `Resolver URLs fabricante`:**
+
+| Campo | Vendor N&D | Vendor Vet Life |
+|---|---|---|
+| `vendor` | `Farmina` | `Farmina Vet Life` |
+| `web_url` | `https://www.farmina.com/es/` | `https://www.farmina.com/es/` |
+| `url_key` | `url_fabricante` | `url_fabricante` |
+| `rebuild_catalog` | `false` | `false` |
+| `clear_on_no_match` | `false` | `false` |
+
+Solo existe un campo URL para Farmina (no hay segunda web en otro idioma).
+Lanzar N&D primero para poblar la caché, luego Vet Life (reutiliza caché).
 
 ---
 
