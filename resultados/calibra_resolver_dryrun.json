@@ -602,7 +602,7 @@
   {
     "id": 15509680554371,
     "title": "CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G",
-    "url": "https://www.mycalibra.eu/calibra-dog-verve-semi-moist-snack-fresh-duck-150g",
+    "url": null,
     "score": 0.533
   },
   {
@@ -668,38 +668,38 @@
   {
     "id": 15509681176963,
     "title": "CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR",
-    "url": "https://www.mycalibra.eu/calibra-cat-verve",
+    "url": null,
     "score": 0.3
   },
   {
     "id": 15509681209731,
     "title": "CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-yucca-bones-850g",
-    "score": 0.312
+    "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-tripe-pumpkin-bones-s-900g",
+    "score": 0.5
   },
   {
     "id": 15509681242499,
     "title": "CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG",
     "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-yucca-bones-850g",
-    "score": 0.467
+    "score": 0.5
   },
   {
     "id": 15509681308035,
     "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR",
     "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-tripe-pumpkin-bones-720g",
-    "score": 0.353
+    "score": 0.412
   },
   {
     "id": 15509681373571,
     "title": "CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR",
     "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-yucca-bones-850g",
-    "score": 0.467
+    "score": 0.5
   },
   {
     "id": 15509681406339,
     "title": "CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-lungs-cranberries-sticks-700g",
-    "score": 0.389
+    "url": "https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-spirulina-sticks-700g",
+    "score": 0.412
   },
   {
     "id": 15509681439107,
@@ -716,13 +716,13 @@
   {
     "id": 15509681537411,
     "title": "CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-chicken-bits-new",
-    "score": 0.583
+    "url": null,
+    "score": 0.467
   },
   {
     "id": 15509681701251,
     "title": "CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-duck-strips-new",
+    "url": null,
     "score": 0.417
   },
   {
@@ -734,13 +734,13 @@
   {
     "id": 15509682061699,
     "title": "CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-fish-chicken-sandwich-new",
+    "url": null,
     "score": 0.909
   },
   {
     "id": 15509682160003,
     "title": "CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-fish-chicken-sandwich-new",
+    "url": null,
     "score": 0.692
   },
   {
@@ -752,7 +752,7 @@
   {
     "id": 15509682291075,
     "title": "CALIBRA JOY DOG CLASSIC STICKS TERNERA",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-beef-sticks-new",
+    "url": null,
     "score": 0.727
   },
   {
@@ -776,14 +776,14 @@
   {
     "id": 15509682585987,
     "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-duck-strips-new",
-    "score": 0.4
+    "url": null,
+    "score": 0.375
   },
   {
     "id": 15509682651523,
     "title": "CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR",
-    "url": "https://www.mycalibra.eu/calibra-joy-dog-classic-chicken-bits-new",
-    "score": 0.4
+    "url": null,
+    "score": 0.375
   },
   {
     "id": 15509682684291,
