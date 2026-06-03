@@ -1,593 +1,593 @@
-2026-06-02 22:55:09,403 [INFO] ============================================================
-2026-06-02 22:55:09,403 [INFO]   Vendor   : CALIBRA
-2026-06-02 22:55:09,403 [INFO]   Modo     : SNAPSHOT-URLS
-2026-06-02 22:55:09,403 [INFO]   Pipeline : standard
-2026-06-02 22:55:09,403 [INFO]   Padding  : auto
-2026-06-02 22:55:09,403 [INFO] ============================================================
-2026-06-02 22:55:09,706 [INFO] Token obtenido
-2026-06-02 22:55:10,534 [INFO] [1/146] CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G  (ID: 15509672296835)
+2026-06-03 10:05:11,407 [INFO] ============================================================
+2026-06-03 10:05:11,407 [INFO]   Vendor   : CALIBRA
+2026-06-03 10:05:11,407 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-03 10:05:11,407 [INFO]   Pipeline : standard
+2026-06-03 10:05:11,407 [INFO]   Padding  : auto
+2026-06-03 10:05:11,407 [INFO] ============================================================
+2026-06-03 10:05:11,885 [INFO] Token obtenido
+2026-06-03 10:05:13,247 [INFO] [1/146] CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G  (ID: 15509672296835)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672296835
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-adult-pouches-multipack-12x100g
-    url_fabricante_2: —
-2026-06-02 22:55:11,172 [INFO] [2/146] CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR  (ID: 15509672395139)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-adult-pouches-multipack-12x100g-1
+2026-06-03 10:05:14,201 [INFO] [2/146] CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR  (ID: 15509672395139)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672395139
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-adult-duck-chicken-100g
-    url_fabricante_2: —
-2026-06-02 22:55:11,827 [INFO] [3/146] CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR  (ID: 15509672460675)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-adult-duck-chicken-100g
+2026-06-03 10:05:15,120 [INFO] [3/146] CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR  (ID: 15509672460675)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672460675
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-adult-trout-salmon-100g
-    url_fabricante_2: —
-2026-06-02 22:55:12,463 [INFO] [4/146] CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR  (ID: 15509672526211)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-adult-trout-salmon-100g
+2026-06-03 10:05:16,065 [INFO] [4/146] CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR  (ID: 15509672526211)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672526211
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-kitten-pouches-multipack-12x100g
-    url_fabricante_2: —
-2026-06-02 22:55:13,104 [INFO] [5/146] CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR  (ID: 15509672558979)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-kitten-pouches-multipack-12x100g
+2026-06-03 10:05:17,015 [INFO] [5/146] CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR  (ID: 15509672558979)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672558979
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-kitten-turkey-chicken-100g
-    url_fabricante_2: —
-2026-06-02 22:55:13,750 [INFO] [6/146] CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR  (ID: 15509672624515)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-kitten-turkey-chicken-100g
+2026-06-03 10:05:17,999 [INFO] [6/146] CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR  (ID: 15509672624515)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672624515
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-kitten-salmon-100g
-    url_fabricante_2: —
-2026-06-02 22:55:14,385 [INFO] [7/146] CALIBRA CAT LIFE ADULT ARENQUE  (ID: 15509672755587)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-kitten-salmon-100g
+2026-06-03 10:05:18,945 [INFO] [7/146] CALIBRA CAT LIFE ADULT ARENQUE  (ID: 15509672755587)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672755587
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-herring
-    url_fabricante_2: —
-2026-06-02 22:55:15,011 [INFO] [8/146] CALIBRA CAT LIFE ADULT CORDERO  (ID: 15509672853891)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-herring
+2026-06-03 10:05:19,917 [INFO] [8/146] CALIBRA CAT LIFE ADULT CORDERO  (ID: 15509672853891)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672853891
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-lamb
-    url_fabricante_2: —
-2026-06-02 22:55:15,640 [INFO] [9/146] CALIBRA CAT LIFE ADULT POLLO 6KG  (ID: 15509672886659)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-lamb
+2026-06-03 10:05:20,863 [INFO] [9/146] CALIBRA CAT LIFE ADULT POLLO 6KG  (ID: 15509672886659)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509672886659
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:16,253 [INFO] [10/146] CALIBRA CAT LIFE KITTEN POLLO  (ID: 15509673083267)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-chicken
+2026-06-03 10:05:21,805 [INFO] [10/146] CALIBRA CAT LIFE KITTEN POLLO  (ID: 15509673083267)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673083267
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-kitten-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:16,902 [INFO] [11/146] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR  (ID: 15509673148803)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-kitten-chicken
+2026-06-03 10:05:22,753 [INFO] [11/146] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR  (ID: 15509673148803)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673148803
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-chicken-200g
-    url_fabricante_2: —
-2026-06-02 22:55:17,529 [INFO] [12/146] CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR  (ID: 15509673181571)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-chicken-200g
+2026-06-03 10:05:24,023 [INFO] [12/146] CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR  (ID: 15509673181571)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673181571
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-salmon-200g
-    url_fabricante_2: —
-2026-06-02 22:55:18,160 [INFO] [13/146] CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR  (ID: 15509673279875)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-salmon-200g
+2026-06-03 10:05:24,977 [INFO] [13/146] CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR  (ID: 15509673279875)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673279875
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-adult-beef-200g
-    url_fabricante_2: —
-2026-06-02 22:55:18,797 [INFO] [14/146] CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR  (ID: 15509673312643)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-adult-beef-200g
+2026-06-03 10:05:25,922 [INFO] [14/146] CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR  (ID: 15509673312643)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673312643
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-kitten-chicken-200g
-    url_fabricante_2: —
-2026-06-02 22:55:19,444 [INFO] [15/146] CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR  (ID: 15509673345411)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-kitten-chicken-200g
+2026-06-03 10:05:26,865 [INFO] [15/146] CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR  (ID: 15509673345411)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673345411
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sensitive-rabbit-200g
-    url_fabricante_2: —
-2026-06-02 22:55:20,060 [INFO] [16/146] CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR  (ID: 15509673443715)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sensitive-rabbit-200g
+2026-06-03 10:05:27,804 [INFO] [16/146] CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR  (ID: 15509673443715)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673443715
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sensitive-lamb-200g
-    url_fabricante_2: —
-2026-06-02 22:55:20,685 [INFO] [17/146] CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR  (ID: 15509673476483)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sensitive-lamb-200g
+2026-06-03 10:05:28,746 [INFO] [17/146] CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR  (ID: 15509673476483)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673476483
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sterilised-duck-200g
-    url_fabricante_2: —
-2026-06-02 22:55:21,319 [INFO] [18/146] CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR  (ID: 15509673509251)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sterilised-duck-200g
+2026-06-03 10:05:29,699 [INFO] [18/146] CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR  (ID: 15509673509251)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673509251
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sterilised-turkey-200g
-    url_fabricante_2: —
-2026-06-02 22:55:21,934 [INFO] [19/146] CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR  (ID: 15509673574787)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sterilised-turkey-200g
+2026-06-03 10:05:30,655 [INFO] [19/146] CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR  (ID: 15509673574787)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673574787
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-adult-beef-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:22,581 [INFO] [20/146] CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR  (ID: 15509673673091)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-adult-beef-in-gravy-85g
+2026-06-03 10:05:31,587 [INFO] [20/146] CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR  (ID: 15509673673091)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673673091
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouches-adult-multipack-12x85g
-    url_fabricante_2: —
-2026-06-02 22:55:23,201 [INFO] [21/146] CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR  (ID: 15509673705859)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouches-adult-multipack-12x85g
+2026-06-03 10:05:32,819 [INFO] [21/146] CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR  (ID: 15509673705859)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673705859
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-adult-duck-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:23,828 [INFO] [22/146] CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR  (ID: 15509673738627)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-adult-duck-in-gravy-85g
+2026-06-03 10:05:33,758 [INFO] [22/146] CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR  (ID: 15509673738627)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673738627
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-adult-turkey-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:24,464 [INFO] [23/146] CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR  (ID: 15509673804163)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-adult-turkey-in-gravy-85g
+2026-06-03 10:05:34,669 [INFO] [23/146] CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR  (ID: 15509673804163)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673804163
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-adult-veal-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:25,088 [INFO] [24/146] CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR  (ID: 15509673836931)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-adult-veal-in-gravy-85g
+2026-06-03 10:05:35,637 [INFO] [24/146] CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR  (ID: 15509673836931)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673836931
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouches-kitten-multipack-12x85g
-    url_fabricante_2: —
-2026-06-02 22:55:25,729 [INFO] [25/146] CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR  (ID: 15509673869699)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouches-kitten-multipack-12x85g
+2026-06-03 10:05:36,589 [INFO] [25/146] CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR  (ID: 15509673869699)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509673869699
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-kitten-turkey-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:26,534 [INFO] [26/146] CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR  (ID: 15509674000771)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-kitten-turkey-in-gravy-85g
+2026-06-03 10:05:37,523 [INFO] [26/146] CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR  (ID: 15509674000771)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674000771
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-kitten-salmon-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:27,168 [INFO] [27/146] CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR  (ID: 15509674033539)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-kitten-salmon-in-gravy-85g
+2026-06-03 10:05:38,435 [INFO] [27/146] CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR  (ID: 15509674033539)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674033539
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouches-sterilised-multipack-12x85g
-    url_fabricante_2: —
-2026-06-02 22:55:27,805 [INFO] [28/146] CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR  (ID: 15509674066307)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouches-sterilised-multipack-12x85g
+2026-06-03 10:05:39,334 [INFO] [28/146] CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR  (ID: 15509674066307)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674066307
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-duck-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:28,425 [INFO] [29/146] CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR  (ID: 15509674099075)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-sterilised-duck-in-gravy-85g
+2026-06-03 10:05:40,275 [INFO] [29/146] CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR  (ID: 15509674099075)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674099075
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g
-    url_fabricante_2: —
-2026-06-02 22:55:29,066 [INFO] [30/146] CALIBRA CAT LIFE STERILISED POLLO  (ID: 15509674230147)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-pouch-sterilised-salmon-in-gravy-85g
+2026-06-03 10:05:41,215 [INFO] [30/146] CALIBRA CAT LIFE STERILISED POLLO  (ID: 15509674230147)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674230147
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sterilised-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:29,691 [INFO] [31/146] CALIBRA CAT LIFE STERILISED TERNERA  (ID: 15509674393987)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sterilised-chicken
+2026-06-03 10:05:42,148 [INFO] [31/146] CALIBRA CAT LIFE STERILISED TERNERA  (ID: 15509674393987)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674393987
     url_fabricante  : https://www.mycalibra.es/calibra-cat-life-sterilised-beef
-    url_fabricante_2: —
-2026-06-02 22:55:30,326 [INFO] [32/146] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR  (ID: 15509674426755)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-life-sterilised-beef
+2026-06-03 10:05:43,072 [INFO] [32/146] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR  (ID: 15509674426755)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674426755
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-adult-lamb-poultry-100g
-    url_fabricante_2: —
-2026-06-02 22:55:30,949 [INFO] [33/146] CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR  (ID: 15509674459523)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-adult-lamb-poultry-100g
+2026-06-03 10:05:44,005 [INFO] [33/146] CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR  (ID: 15509674459523)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674459523
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-adult-chicken-beef-100g
-    url_fabricante_2: —
-2026-06-02 22:55:31,576 [INFO] [34/146] CALIBRA CAT PREMIUM ADULT CARNE DE AVE  (ID: 15509674525059)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-adult-chicken-beef-100g
+2026-06-03 10:05:44,946 [INFO] [34/146] CALIBRA CAT PREMIUM ADULT CARNE DE AVE  (ID: 15509674525059)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674525059
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-line-adult-poultry
-    url_fabricante_2: —
-2026-06-02 22:55:32,217 [INFO] [35/146] CALIBRA CAT PREMIUM ADULT CARNE VACUNO  (ID: 15509674688899)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-line-adult-poultry
+2026-06-03 10:05:45,867 [INFO] [35/146] CALIBRA CAT PREMIUM ADULT CARNE VACUNO  (ID: 15509674688899)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674688899
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-line-adult-beef
-    url_fabricante_2: —
-2026-06-02 22:55:32,849 [INFO] [36/146] CALIBRA CAT PREMIUM ADULT PAVO  (ID: 15509674885507)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-line-adult-beef
+2026-06-03 10:05:46,802 [INFO] [36/146] CALIBRA CAT PREMIUM ADULT PAVO  (ID: 15509674885507)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509674885507
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-line-adult-turkey
-    url_fabricante_2: —
-2026-06-02 22:55:33,484 [INFO] [37/146] CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE  (ID: 15509675016579)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-line-adult-turkey
+2026-06-03 10:05:47,736 [INFO] [37/146] CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE  (ID: 15509675016579)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675016579
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-line-sterilised-poultry
-    url_fabricante_2: —
-2026-06-02 22:55:34,117 [INFO] [38/146] CALIBRA CAT PREMIUM KITTEN CARNE DE AVE  (ID: 15509675213187)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-line-sterilised-poultry
+2026-06-03 10:05:48,671 [INFO] [38/146] CALIBRA CAT PREMIUM KITTEN CARNE DE AVE  (ID: 15509675213187)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675213187
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-line-kitten-poultry
-    url_fabricante_2: —
-2026-06-02 22:55:34,726 [INFO] [39/146] CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR  (ID: 15509675311491)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-line-kitten-poultry
+2026-06-03 10:05:49,619 [INFO] [39/146] CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR  (ID: 15509675311491)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675311491
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-sterilised-liver-100g
-    url_fabricante_2: —
-2026-06-02 22:55:35,368 [INFO] [40/146] CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR  (ID: 15509675377027)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-sterilised-liver-100g
+2026-06-03 10:05:50,537 [INFO] [40/146] CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR  (ID: 15509675377027)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675377027
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-steril-pouches-multipack-12x100g
-    url_fabricante_2: —
-2026-06-02 22:55:36,012 [INFO] [41/146] CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR  (ID: 15509675409795)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-steril-pouches-multipack-12x100g
+2026-06-03 10:05:51,470 [INFO] [41/146] CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR  (ID: 15509675409795)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675409795
     url_fabricante  : https://www.mycalibra.es/calibra-cat-premium-sterilised-salmon-100g
-    url_fabricante_2: —
-2026-06-02 22:55:36,633 [INFO] [42/146] CALIBRA DOG EXPERT NUTRITION ENERGY 12KG  (ID: 15509675442563)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-cat-premium-sterilised-salmon-100g
+2026-06-03 10:05:52,370 [INFO] [42/146] CALIBRA DOG EXPERT NUTRITION ENERGY 12KG  (ID: 15509675442563)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675442563
     url_fabricante  : https://www.mycalibra.es/calibra-dog-en-energy-new
-    url_fabricante_2: —
-2026-06-02 22:55:37,470 [INFO] [43/146] CALIBRA DOG EXPERT NUTRITION LIGHT  (ID: 15509675508099)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-en-energy-new
+2026-06-03 10:05:53,314 [INFO] [43/146] CALIBRA DOG EXPERT NUTRITION LIGHT  (ID: 15509675508099)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675508099
     url_fabricante  : https://www.mycalibra.es/calibra-dog-en-light-new
-    url_fabricante_2: —
-2026-06-02 22:55:38,087 [INFO] [44/146] CALIBRA DOG EXPERT NUTRITION MOBILITY  (ID: 15509675671939)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-en-light-new
+2026-06-03 10:05:54,243 [INFO] [44/146] CALIBRA DOG EXPERT NUTRITION MOBILITY  (ID: 15509675671939)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675671939
     url_fabricante  : https://www.mycalibra.es/calibra-dog-en-mobility-new
-    url_fabricante_2: —
-2026-06-02 22:55:38,711 [INFO] [45/146] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG  (ID: 15509675835779)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-en-mobility-new
+2026-06-03 10:05:55,199 [INFO] [45/146] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG  (ID: 15509675835779)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675835779
     url_fabricante  : https://www.mycalibra.es/calibra-dog-en-neutered-new
-    url_fabricante_2: —
-2026-06-02 22:55:39,336 [INFO] [46/146] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID: 15509675868547)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-en-neutered-new
+2026-06-03 10:05:56,153 [INFO] [46/146] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID: 15509675868547)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509675868547
     url_fabricante  : https://www.mycalibra.es/calibra-dog-en-sensitive-salmon-new
-    url_fabricante_2: —
-2026-06-02 22:55:39,960 [INFO] [47/146] CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR  (ID: 15509676065155)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-en-sensitive-salmon-new
+2026-06-03 10:05:57,088 [INFO] [47/146] CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR  (ID: 15509676065155)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676065155
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-pork-venison-400g
-    url_fabricante_2: —
-2026-06-02 22:55:40,584 [INFO] [48/146] CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR  (ID: 15509676130691)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-pork-venison-400g
+2026-06-03 10:05:58,007 [INFO] [48/146] CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR  (ID: 15509676130691)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676130691
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-wild-boar-beef-400g
-    url_fabricante_2: —
-2026-06-02 22:55:41,232 [INFO] [49/146] CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR  (ID: 15509676163459)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-wild-boar-beef-400g
+2026-06-03 10:05:58,978 [INFO] [49/146] CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR  (ID: 15509676163459)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676163459
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-chicken-duck-400g
-    url_fabricante_2: —
-2026-06-02 22:55:41,858 [INFO] [50/146] CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR  (ID: 15509676228995)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-chicken-duck-400g
+2026-06-03 10:05:59,912 [INFO] [50/146] CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR  (ID: 15509676228995)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676228995
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-salmon-turkey-400g
-    url_fabricante_2: —
-2026-06-02 22:55:42,482 [INFO] [51/146] CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR  (ID: 15509676294531)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-salmon-turkey-400g
+2026-06-03 10:06:00,847 [INFO] [51/146] CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR  (ID: 15509676294531)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676294531
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-duck-turkey-200g
-    url_fabricante_2: —
-2026-06-02 22:55:43,108 [INFO] [52/146] CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR  (ID: 15509676327299)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-small-duck-turkey-200g
+2026-06-03 10:06:01,738 [INFO] [52/146] CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR  (ID: 15509676327299)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676327299
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-adult-small-beef-chicken-200g
-    url_fabricante_2: —
-2026-06-02 22:55:43,754 [INFO] [53/146] CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676392835)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-adult-small-beef-chicken-200g
+2026-06-03 10:06:02,681 [INFO] [53/146] CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676392835)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676392835
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-junior-turkey-lamb-400g
-    url_fabricante_2: —
-2026-06-02 22:55:46,591 [INFO] [54/146] CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676425603)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-junior-turkey-lamb-400g
+2026-06-03 10:06:03,622 [INFO] [54/146] CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR  (ID: 15509676425603)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676425603
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-gf-senior-turkey-lamb-400g
-    url_fabricante_2: —
-2026-06-02 22:55:47,211 [INFO] [55/146] CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG  (ID: 15509676523907)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-gf-senior-turkey-lamb-400g
+2026-06-03 10:06:04,557 [INFO] [55/146] CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG  (ID: 15509676523907)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676523907
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-large-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:55:47,849 [INFO] [56/146] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID: 15509676589443)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-large-breed-lamb
+2026-06-03 10:06:05,477 [INFO] [56/146] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID: 15509676589443)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676589443
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-large-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:48,482 [INFO] [57/146] CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG  (ID: 15509676720515)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-large-breed-chicken
+2026-06-03 10:06:06,413 [INFO] [57/146] CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG  (ID: 15509676720515)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676720515
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-large-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:55:49,099 [INFO] [58/146] CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO  (ID: 15509676786051)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-large-fresh-beef-12kg
+2026-06-03 10:06:07,332 [INFO] [58/146] CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO  (ID: 15509676786051)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676786051
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:55:49,735 [INFO] [59/146] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID: 15509676949891)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-medium-breed-lamb
+2026-06-03 10:06:08,260 [INFO] [59/146] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID: 15509676949891)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509676949891
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-medium-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:52,750 [INFO] [60/146] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG  (ID: 15509677146499)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-medium-breed-chicken
+2026-06-03 10:06:09,169 [INFO] [60/146] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG  (ID: 15509677146499)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677146499
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-medium-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:55:53,395 [INFO] [61/146] CALIBRA DOG LIFE ADULT SMALL BREED CORDERO  (ID: 15509677310339)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-medium-fresh-beef-12kg
+2026-06-03 10:06:10,107 [INFO] [61/146] CALIBRA DOG LIFE ADULT SMALL BREED CORDERO  (ID: 15509677310339)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677310339
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-small-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:55:54,019 [INFO] [62/146] CALIBRA DOG LIFE ADULT SMALL BREED POLLO  (ID: 15509677408643)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-small-breed-lamb
+2026-06-03 10:06:11,049 [INFO] [62/146] CALIBRA DOG LIFE ADULT SMALL BREED POLLO  (ID: 15509677408643)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677408643
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-small-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:54,644 [INFO] [63/146] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG  (ID: 15509677474179)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-small-breed-chicken
+2026-06-03 10:06:11,982 [INFO] [63/146] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG  (ID: 15509677474179)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677474179
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-small-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:55:55,255 [INFO] [64/146] CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG  (ID: 15509677539715)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-small-fresh-beef-6kg
+2026-06-03 10:06:12,895 [INFO] [64/146] CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG  (ID: 15509677539715)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677539715
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-large-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:55:55,889 [INFO] [65/146] CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG  (ID: 15509677638019)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-large-breed-lamb
+2026-06-03 10:06:13,805 [INFO] [65/146] CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG  (ID: 15509677638019)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677638019
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-large-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:56,534 [INFO] [66/146] CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG  (ID: 15509677703555)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-large-breed-chicken
+2026-06-03 10:06:14,743 [INFO] [66/146] CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG  (ID: 15509677703555)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677703555
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-large-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:55:59,384 [INFO] [67/146] CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO  (ID: 15509677736323)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-large-fresh-beef-12kg
+2026-06-03 10:06:15,726 [INFO] [67/146] CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO  (ID: 15509677736323)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677736323
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-medium-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:55:59,998 [INFO] [68/146] CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG  (ID: 15509677834627)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-medium-breed-chicken
+2026-06-03 10:06:16,635 [INFO] [68/146] CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG  (ID: 15509677834627)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677834627
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-small-medium-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:56:00,639 [INFO] [69/146] CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG  (ID: 15509677932931)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-small-medium-fresh-beef-12kg
+2026-06-03 10:06:17,568 [INFO] [69/146] CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG  (ID: 15509677932931)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677932931
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-small-breed-chicken
-    url_fabricante_2: —
-2026-06-02 22:56:01,272 [INFO] [70/146] CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO  (ID: 15509677965699)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-small-breed-chicken
+2026-06-03 10:06:18,492 [INFO] [70/146] CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO  (ID: 15509677965699)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509677965699
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-junior-small-medium-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:56:01,918 [INFO] [71/146] CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR  (ID: 15509678064003)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-junior-small-medium-breed-lamb
+2026-06-03 10:06:19,432 [INFO] [71/146] CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR  (ID: 15509678064003)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678064003
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-lamb-400g
-    url_fabricante_2: —
-2026-06-02 22:56:02,540 [INFO] [72/146] CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR  (ID: 15509678129539)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-lamb-400g
+2026-06-03 10:06:20,322 [INFO] [72/146] CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR  (ID: 15509678129539)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678129539
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-wild-boar-with-cran-400g
-    url_fabricante_2: —
-2026-06-02 22:56:05,391 [INFO] [73/146] CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR  (ID: 15509678162307)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-wild-boar-with-cran-400g
+2026-06-03 10:06:21,284 [INFO] [73/146] CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR  (ID: 15509678162307)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678162307
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-duck-with-rice-400g
-    url_fabricante_2: —
-2026-06-02 22:56:06,016 [INFO] [74/146] CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR  (ID: 15509678227843)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-duck-with-rice-400g
+2026-06-03 10:06:22,194 [INFO] [74/146] CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR  (ID: 15509678227843)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678227843
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-turkey-with-apples-400g
-    url_fabricante_2: —
-2026-06-02 22:56:06,658 [INFO] [75/146] CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR  (ID: 15509678293379)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-turkey-with-apples-400g
+2026-06-03 10:06:23,133 [INFO] [75/146] CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR  (ID: 15509678293379)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678293379
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-chicken-with-rice-400g
-    url_fabricante_2: —
-2026-06-02 22:56:07,480 [INFO] [76/146] CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR  (ID: 15509678326147)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-chicken-with-rice-400g
+2026-06-03 10:06:24,071 [INFO] [76/146] CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR  (ID: 15509678326147)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678326147
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400g
-    url_fabricante_2: —
-2026-06-02 22:56:08,128 [INFO] [77/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR  (ID: 15509678391683)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-adult-beef-with-carrots-400g
+2026-06-03 10:06:25,008 [INFO] [77/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR  (ID: 15509678391683)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678391683
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-puppy-junior-lamb-rice-400g
-    url_fabricante_2: —
-2026-06-02 22:56:08,778 [INFO] [78/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR  (ID: 15509678457219)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-puppy-junior-lamb-rice-400g
+2026-06-03 10:06:25,936 [INFO] [78/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR  (ID: 15509678457219)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678457219
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-puppy-junior-chicken-rice-400g
-    url_fabricante_2: —
-2026-06-02 22:56:11,617 [INFO] [79/146] CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR  (ID: 15509678522755)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-puppy-junior-chicken-rice-400g
+2026-06-03 10:06:26,844 [INFO] [79/146] CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR  (ID: 15509678522755)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678522755
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-sensitive-rabbit-400g
-    url_fabricante_2: —
-2026-06-02 22:56:12,254 [INFO] [80/146] CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR  (ID: 15509678555523)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-sensitive-rabbit-400g
+2026-06-03 10:06:27,790 [INFO] [80/146] CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR  (ID: 15509678555523)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678555523
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-sensitive-salmon-with-rice-400g
-    url_fabricante_2: —
-2026-06-02 22:56:12,883 [INFO] [81/146] CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG  (ID: 15509678653827)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-sensitive-salmon-with-rice-400g
+2026-06-03 10:06:28,719 [INFO] [81/146] CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG  (ID: 15509678653827)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678653827
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-senior-large-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:56:13,521 [INFO] [82/146] CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO  (ID: 15509678686595)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-senior-large-fresh-beef-12kg
+2026-06-03 10:06:29,633 [INFO] [82/146] CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO  (ID: 15509678686595)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678686595
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-senior-medium-large-chicken
-    url_fabricante_2: —
-2026-06-02 22:56:14,154 [INFO] [83/146] CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG  (ID: 15509678784899)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-senior-medium-large-chicken
+2026-06-03 10:06:30,577 [INFO] [83/146] CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG  (ID: 15509678784899)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678784899
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-senior-medium-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:56:14,777 [INFO] [84/146] CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG  (ID: 15509678850435)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-senior-medium-fresh-beef-12kg
+2026-06-03 10:06:31,517 [INFO] [84/146] CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG  (ID: 15509678850435)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678850435
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-senior-small-breed-lamb
-    url_fabricante_2: —
-2026-06-02 22:56:17,617 [INFO] [85/146] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA  (ID: 15509678948739)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-senior-small-breed-lamb
+2026-06-03 10:06:32,476 [INFO] [85/146] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA  (ID: 15509678948739)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509678948739
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-senior-small-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:56:18,251 [INFO] [86/146] CALIBRA DOG LIFE STARTER & PUPPY CORDERO  (ID: 15509679014275)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-senior-small-fresh-beef-6kg
+2026-06-03 10:06:33,413 [INFO] [86/146] CALIBRA DOG LIFE STARTER & PUPPY CORDERO  (ID: 15509679014275)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679014275
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-starter-puppy-lamb
-    url_fabricante_2: —
-2026-06-02 22:56:18,877 [INFO] [87/146] CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG  (ID: 15509679112579)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-starter-puppy-lamb
+2026-06-03 10:06:34,319 [INFO] [87/146] CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG  (ID: 15509679112579)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679112579
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-starter-puppy-fresh-beef
-    url_fabricante_2: —
-2026-06-02 22:56:19,519 [INFO] [88/146] CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  (ID: 15509679243651)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-starter-puppy-fresh-beef-12kg
+2026-06-03 10:06:35,255 [INFO] [88/146] CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  (ID: 15509679243651)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679243651
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-kapsa-adult-chicken-150g
-2026-06-02 22:56:20,133 [INFO] [89/146] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G  (ID: 15509679178115)
+2026-06-03 10:06:36,214 [INFO] [89/146] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G  (ID: 15509679178115)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679178115
     url_fabricante  : https://www.mycalibra.es/calibra-dog-life-adult-beef-with-carrots-400ghttps://www.mycalibra.eu/calibra-dog-life-kapsa-adult-beef-150g
-    url_fabricante_2: —
-2026-06-02 22:56:20,776 [INFO] [90/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G  (ID: 15509679309187)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-kapsa-adult-beef-150g
+2026-06-03 10:06:37,139 [INFO] [90/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G  (ID: 15509679309187)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679309187
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-kapsa-puppy-junior-beef-150g
-2026-06-02 22:56:23,627 [INFO] [91/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO 10X150G  (ID: 15509679374723)
+2026-06-03 10:06:38,049 [INFO] [91/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO 10X150G  (ID: 15509679374723)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679374723
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-dog-life-kapsa-puppy-junior-chicken-150g
-2026-06-02 22:56:24,256 [INFO] [92/146] CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G  (ID: 15509679407491)
+2026-06-03 10:06:38,986 [INFO] [92/146] CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G  (ID: 15509679407491)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679407491
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-can-with-lamb-chicken-1240g
-    url_fabricante_2: —
-2026-06-02 22:56:24,885 [INFO] [93/146] CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G  (ID: 15509679538563)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-can-with-lamb-chicken-1240g
+2026-06-03 10:06:39,951 [INFO] [93/146] CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G  (ID: 15509679538563)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679538563
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-can-with-beef-1240g
-    url_fabricante_2: —
-2026-06-02 22:56:25,512 [INFO] [94/146] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID: 15509679735171)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-can-with-beef-1240g
+2026-06-03 10:06:40,909 [INFO] [94/146] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID: 15509679735171)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679735171
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-adult-large-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:26,157 [INFO] [95/146] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID: 15509679833475)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-adult-large-12-kg-new
+2026-06-03 10:06:41,817 [INFO] [95/146] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID: 15509679833475)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679833475
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-adult-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:26,805 [INFO] [96/146] CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO  (ID: 15509679964547)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-adult-12-kg-new
+2026-06-03 10:06:42,790 [INFO] [96/146] CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO  (ID: 15509679964547)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509679964547
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-sensitive-12-kg-new
-2026-06-02 22:56:27,448 [INFO] [97/146] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID: 15509680128387)
+2026-06-03 10:06:43,753 [INFO] [97/146] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID: 15509680128387)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680128387
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-adult-beef-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:30,506 [INFO] [98/146] CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG  (ID: 15509680161155)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-adult-beef-12-kg-new
+2026-06-03 10:06:44,684 [INFO] [98/146] CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG  (ID: 15509680161155)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680161155
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-junior-large-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:31,132 [INFO] [99/146] CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO  (ID: 15509680193923)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-junior-large-12-kg-new
+2026-06-03 10:06:45,621 [INFO] [99/146] CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO  (ID: 15509680193923)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680193923
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-puppy-junior-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:31,748 [INFO] [100/146] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID: 15509680357763)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-puppy-junior-12-kg-new
+2026-06-03 10:06:46,576 [INFO] [100/146] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID: 15509680357763)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680357763
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-line-senior-light-12-kg-new
-    url_fabricante_2: —
-2026-06-02 22:56:32,399 [INFO] [101/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G  (ID: 15509680554371)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-line-senior-light-12-kg-new
+2026-06-03 10:06:47,512 [INFO] [101/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G  (ID: 15509680554371)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680554371
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-herring-150g
     url_fabricante_2: —
-2026-06-02 22:56:33,008 [INFO] [102/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G  (ID: 15509680587139)
+2026-06-03 10:06:48,400 [INFO] [102/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G  (ID: 15509680587139)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680587139
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-fresh-lamb-150g
     url_fabricante_2: —
-2026-06-02 22:56:33,640 [INFO] [103/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESCO 150G  (ID: 15509680619907)
+2026-06-03 10:06:49,313 [INFO] [103/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESCO 150G  (ID: 15509680619907)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680619907
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-insect-salmon-150g
     url_fabricante_2: —
-2026-06-02 22:56:36,500 [INFO] [104/146] CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G  (ID: 15509680718211)
+2026-06-03 10:06:50,261 [INFO] [104/146] CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G  (ID: 15509680718211)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680718211
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-duck-150g
     url_fabricante_2: —
-2026-06-02 22:56:37,110 [INFO] [105/146] CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G  (ID: 15509680783747)
+2026-06-03 10:06:51,201 [INFO] [105/146] CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G  (ID: 15509680783747)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680783747
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-crunchy-snack-fresh-salmon-150g
     url_fabricante_2: —
-2026-06-02 22:56:37,741 [INFO] [106/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G  (ID: 15509680816515)
+2026-06-03 10:06:52,179 [INFO] [106/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G  (ID: 15509680816515)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680816515
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-duck-150g
-    url_fabricante_2: —
-2026-06-02 22:56:38,367 [INFO] [107/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G  (ID: 15509680849283)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-verve-semi-moist-snack-fresh-duck-150g
+2026-06-03 10:06:53,124 [INFO] [107/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G  (ID: 15509680849283)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680849283
     url_fabricante  : https://www.mycalibra.es/calibra-dog-verve-semi-moist-snack-fresh-chicken-150g
     url_fabricante_2: —
-2026-06-02 22:56:38,987 [INFO] [108/146] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G  (ID: 15509680947587)
+2026-06-03 10:06:54,044 [INFO] [108/146] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G  (ID: 15509680947587)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509680947587
     url_fabricante  : https://www.mycalibra.es/calibra-dog-premium-can-with-chicken-beef-1240g
-    url_fabricante_2: —
-2026-06-02 22:56:39,622 [INFO] [109/146] CALIBRA EAZZY ARENA GATO FINE 10KG  (ID: 15509681013123)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-dog-premium-can-with-chicken-beef-1240g
+2026-06-03 10:06:54,989 [INFO] [109/146] CALIBRA EAZZY ARENA GATO FINE 10KG  (ID: 15509681013123)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681013123
     url_fabricante  : https://www.mycalibra.es/calibra-eazzy-cat-fine-10kg
-    url_fabricante_2: —
-2026-06-02 22:56:42,452 [INFO] [110/146] CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG  (ID: 15509681045891)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-eazzy-cat-fine-10kg
+2026-06-03 10:06:55,912 [INFO] [110/146] CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG  (ID: 15509681045891)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681045891
     url_fabricante  : https://www.mycalibra.es/calibra-eazzy-cat-ultra-fine-10kg
-    url_fabricante_2: —
-2026-06-02 22:56:43,084 [INFO] [111/146] CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  (ID: 15509681078659)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-eazzy-cat-ultra-fine-10kg
+2026-06-03 10:06:56,870 [INFO] [111/146] CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  (ID: 15509681078659)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681078659
     url_fabricante  : —
     url_fabricante_2: —
-2026-06-02 22:56:43,708 [INFO] [112/146] CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR  (ID: 15509681176963)
+2026-06-03 10:06:57,803 [INFO] [112/146] CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR  (ID: 15509681176963)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681176963
     url_fabricante  : —
     url_fabricante_2: —
-2026-06-02 22:56:44,340 [INFO] [113/146] CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G  (ID: 15509681209731)
+2026-06-03 10:06:58,733 [INFO] [113/146] CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G  (ID: 15509681209731)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681209731
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-tripe-pumpkin-bones-s-900g
-2026-06-02 22:56:44,958 [INFO] [114/146] CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG  (ID: 15509681242499)
+2026-06-03 10:06:59,682 [INFO] [114/146] CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG  (ID: 15509681242499)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681242499
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-yucca-bones-s-1000g
-2026-06-02 22:56:45,587 [INFO] [115/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR  (ID: 15509681308035)
+2026-06-03 10:07:00,602 [INFO] [115/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR  (ID: 15509681308035)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681308035
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-tripe-pumpkin-bones-720g
-2026-06-02 22:56:48,424 [INFO] [116/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR  (ID: 15509681373571)
+2026-06-03 10:07:01,764 [INFO] [116/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR  (ID: 15509681373571)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681373571
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-yucca-bones-850g
-2026-06-02 22:56:49,064 [INFO] [117/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR  (ID: 15509681406339)
+2026-06-03 10:07:02,676 [INFO] [117/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR  (ID: 15509681406339)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681406339
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-lungs-cranberries-sticks-700g
-2026-06-02 22:56:49,691 [INFO] [118/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR  (ID: 15509681439107)
+2026-06-03 10:07:03,577 [INFO] [118/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR  (ID: 15509681439107)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681439107
     url_fabricante  : —
     url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-chewy-beef-spirulina-sticks-700g
-2026-06-02 22:56:50,318 [INFO] [119/146] CALIBRA JOY DOG CLASSIC AROS POLLO 80GR  (ID: 15509681504643)
+2026-06-03 10:07:04,519 [INFO] [119/146] CALIBRA JOY DOG CLASSIC AROS POLLO 80GR  (ID: 15509681504643)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681504643
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-chicken-bits-new
-    url_fabricante_2: —
-2026-06-02 22:56:50,971 [INFO] [120/146] CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR  (ID: 15509681537411)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-classic-chicken-bits-new
+2026-06-03 10:07:05,461 [INFO] [120/146] CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR  (ID: 15509681537411)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681537411
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-cod-chicken-sushi-80g-new
     url_fabricante_2: —
-2026-06-02 22:56:51,589 [INFO] [121/146] CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR  (ID: 15509681701251)
+2026-06-03 10:07:06,406 [INFO] [121/146] CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR  (ID: 15509681701251)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681701251
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-dental-brushes-85g-new
     url_fabricante_2: —
-2026-06-02 22:56:54,450 [INFO] [122/146] CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR  (ID: 15509681766787)
+2026-06-03 10:07:07,368 [INFO] [122/146] CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR  (ID: 15509681766787)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509681766787
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-large-lamb-fillets-80g-new
     url_fabricante_2: —
-2026-06-02 22:56:55,069 [INFO] [123/146] CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO  (ID: 15509682061699)
+2026-06-03 10:07:08,329 [INFO] [123/146] CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO  (ID: 15509682061699)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682061699
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-sandwich
-    url_fabricante_2: —
-2026-06-02 22:56:55,695 [INFO] [124/146] CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR  (ID: 15509682160003)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-classic-fish-chicken-sandwich-new
+2026-06-03 10:07:09,262 [INFO] [124/146] CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR  (ID: 15509682160003)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682160003
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-fish-chicken-slice-80g-new
     url_fabricante_2: —
-2026-06-02 22:56:56,336 [INFO] [125/146] CALIBRA JOY DOG CLASSIC STICKS SALMON  (ID: 15509682192771)
+2026-06-03 10:07:10,174 [INFO] [125/146] CALIBRA JOY DOG CLASSIC STICKS SALMON  (ID: 15509682192771)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682192771
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-salmon-sticks-80g-new
     url_fabricante_2: —
-2026-06-02 22:56:56,991 [INFO] [126/146] CALIBRA JOY DOG CLASSIC STICKS TERNERA  (ID: 15509682291075)
+2026-06-03 10:07:11,110 [INFO] [126/146] CALIBRA JOY DOG CLASSIC STICKS TERNERA  (ID: 15509682291075)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682291075
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-beef-sticks
     url_fabricante_2: —
-2026-06-02 22:56:57,687 [INFO] [127/146] CALIBRA JOY DOG CLASSIC STRIPS CORDERO  (ID: 15509682389379)
+2026-06-03 10:07:12,028 [INFO] [127/146] CALIBRA JOY DOG CLASSIC STRIPS CORDERO  (ID: 15509682389379)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682389379
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-lamb-strips
     url_fabricante_2: —
-2026-06-02 22:57:00,530 [INFO] [128/146] CALIBRA JOY DOG CLASSIC STRIPS PATO  (ID: 15509682454915)
+2026-06-03 10:07:12,953 [INFO] [128/146] CALIBRA JOY DOG CLASSIC STRIPS PATO  (ID: 15509682454915)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682454915
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-classic-duck-strips-80g-new
     url_fabricante_2: —
-2026-06-02 22:57:01,174 [INFO] [129/146] CALIBRA JOY DOG MINI DADOS SALMON 70GR  (ID: 15509682553219)
+2026-06-03 10:07:13,900 [INFO] [129/146] CALIBRA JOY DOG MINI DADOS SALMON 70GR  (ID: 15509682553219)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682553219
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-mini-salmon-cube-70g-new
     url_fabricante_2: —
-2026-06-02 22:57:01,988 [INFO] [130/146] CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR  (ID: 15509682585987)
+2026-06-03 10:07:14,833 [INFO] [130/146] CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR  (ID: 15509682585987)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682585987
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-mini-duck-cod-sandwich-70g-new
     url_fabricante_2: —
-2026-06-02 22:57:02,616 [INFO] [131/146] CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR  (ID: 15509682651523)
+2026-06-03 10:07:15,775 [INFO] [131/146] CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR  (ID: 15509682651523)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682651523
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-mini-chicken-cod-sandwich-70g-new
     url_fabricante_2: —
-2026-06-02 22:57:03,251 [INFO] [132/146] CALIBRA JOY DOG TRAINING M&L PATO Y POLLO 300G  (ID: 15509682684291)
+2026-06-03 10:07:16,720 [INFO] [132/146] CALIBRA JOY DOG TRAINING M&L PATO Y POLLO 300G  (ID: 15509682684291)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682684291
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-m-l-duck-chicken-300g
-    url_fabricante_2: —
-2026-06-02 22:57:03,869 [INFO] [133/146] CALIBRA JOY DOG TRAINING M&L VENADO Y PATO 300G  (ID: 15509682749827)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-m-l-duck-chicken-300g
+2026-06-03 10:07:17,653 [INFO] [133/146] CALIBRA JOY DOG TRAINING M&L VENADO Y PATO 300G  (ID: 15509682749827)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682749827
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-m-l-venison-duck-300g
-    url_fabricante_2: —
-2026-06-02 22:57:04,495 [INFO] [134/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S POLLO 150G  (ID: 15509682782595)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-m-l-venison-duck-300g
+2026-06-03 10:07:18,590 [INFO] [134/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S POLLO 150G  (ID: 15509682782595)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682782595
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-puppy-adult-s-chicken-150g
-    url_fabricante_2: —
-2026-06-02 22:57:07,360 [INFO] [135/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR  (ID: 15509682848131)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-puppy-adult-s-chicken-150g
+2026-06-03 10:07:19,529 [INFO] [135/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR  (ID: 15509682848131)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682848131
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g
-    url_fabricante_2: —
-2026-06-02 22:57:08,002 [INFO] [136/146] CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR  (ID: 15509682946435)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-sensitive-puppy-adult-s-salmon-150g
+2026-06-03 10:07:20,520 [INFO] [136/146] CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR  (ID: 15509682946435)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682946435
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-s-m-salmon-insect-150g
-    url_fabricante_2: —
-2026-06-02 22:57:08,641 [INFO] [137/146] CALIBRA JOY DOG TRAINING S&M TERNERA 150GR  (ID: 15509682880899)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-s-m-salmon-insect-150g
+2026-06-03 10:07:21,501 [INFO] [137/146] CALIBRA JOY DOG TRAINING S&M TERNERA 150GR  (ID: 15509682880899)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682880899
     url_fabricante  : https://www.mycalibra.es/calibra-joy-dog-training-s-m-beef-150g
-    url_fabricante_2: —
-2026-06-02 22:57:09,273 [INFO] [138/146] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G  (ID: 15509682979203)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-joy-dog-training-s-m-beef-150g
+2026-06-03 10:07:22,451 [INFO] [138/146] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G  (ID: 15509682979203)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509682979203
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-mix-chinchillas-degus-900g
-    url_fabricante_2: —
-2026-06-02 22:57:09,917 [INFO] [139/146] CALIBRA ROCKETS COBAYAS 900G  (ID: 15509683044739)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-mix-chinchillas-degus-900g
+2026-06-03 10:07:23,378 [INFO] [139/146] CALIBRA ROCKETS COBAYAS 900G  (ID: 15509683044739)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683044739
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-mix-guinea-pigs-900g
-    url_fabricante_2: —
-2026-06-02 22:57:10,532 [INFO] [140/146] CALIBRA ROCKETS CONEJOS 900G  (ID: 15509683143043)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-mix-guinea-pigs-900g
+2026-06-03 10:07:24,312 [INFO] [140/146] CALIBRA ROCKETS CONEJOS 900G  (ID: 15509683143043)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683143043
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-mix-rabbits-900g
-    url_fabricante_2: —
-2026-06-02 22:57:13,353 [INFO] [141/146] CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G  (ID: 15509683175811)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-mix-rabbits-900g
+2026-06-03 10:07:25,207 [INFO] [141/146] CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G  (ID: 15509683175811)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683175811
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-mix-hamsters-small-rodents-900g
-    url_fabricante_2: —
-2026-06-02 22:57:14,011 [INFO] [142/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G  (ID: 15509683241347)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-mix-hamsters-small-rodents-900g
+2026-06-03 10:07:26,138 [INFO] [142/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G  (ID: 15509683241347)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683241347
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g
-    url_fabricante_2: —
-2026-06-02 22:57:14,672 [INFO] [143/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G  (ID: 15509683274115)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-sticks-rabbits-rodents-wild-fruit-120g
+2026-06-03 10:07:27,117 [INFO] [143/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G  (ID: 15509683274115)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683274115
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-fruits-120g
-    url_fabricante_2: —
-2026-06-02 22:57:15,282 [INFO] [144/146] CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G  (ID: 15509683405187)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-sticks-rabbits-rodents-fruits-120g
+2026-06-03 10:07:28,052 [INFO] [144/146] CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G  (ID: 15509683405187)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683405187
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-sticks-rabbits-rodents-vegetables-120g
-    url_fabricante_2: —
-2026-06-02 22:57:15,919 [INFO] [145/146] CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G  (ID: 15509683470723)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-sticks-rabbits-rodents-vegetables-120g
+2026-06-03 10:07:28,935 [INFO] [145/146] CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G  (ID: 15509683470723)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683470723
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-nuts-coconut-120g
-    url_fabricante_2: —
-2026-06-02 22:57:16,556 [INFO] [146/146] CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G  (ID: 15509683569027)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-sticks-small-rodents-nuts-coconut-120g
+2026-06-03 10:07:29,873 [INFO] [146/146] CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G  (ID: 15509683569027)
     https://admin.shopify.com/store/7ev1zx-eg/products/15509683569027
     url_fabricante  : https://www.mycalibra.es/calibra-rockets-sticks-small-rodents-vegeta-nuts-120g
-    url_fabricante_2: —
-2026-06-02 22:57:16,757 [INFO] 
-Snapshot guardado: resultados/calibra_urls_snapshot.json (146 productos, 134 con url_fabricante, 10 con url_fabricante_2)
+    url_fabricante_2: https://www.mycalibra.eu/calibra-rockets-sticks-small-rodents-vegeta-nuts-120g
+2026-06-03 10:07:30,074 [INFO] 
+Snapshot guardado: resultados/calibra_urls_snapshot.json (146 productos, 134 con url_fabricante, 127 con url_fabricante_2)
