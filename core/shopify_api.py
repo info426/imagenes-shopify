@@ -11,17 +11,30 @@ API_VERSION   = "2024-10"
 
 
 def get_token() -> str:
-    resp = requests.post(
-        f"https://{SHOP_DOMAIN}/admin/oauth/access_token",
-        data={"grant_type": "client_credentials",
-              "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET},
-        timeout=15,
-    )
-    resp.raise_for_status()
-    token = resp.json().get("access_token")
-    if not token:
-        raise ValueError(f"No se pudo obtener token: {resp.text}")
-    return token
+    """Obtiene el access_token (client_credentials). Reintenta ante errores
+    transitorios (red, 5xx, e incluso 404 puntual de Shopify durante un blip)."""
+    url = f"https://{SHOP_DOMAIN}/admin/oauth/access_token"
+    data = {"grant_type": "client_credentials",
+            "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET}
+    last = None
+    for attempt in range(5):
+        try:
+            resp = requests.post(url, data=data, timeout=20)
+            if resp.status_code == 200:
+                token = resp.json().get("access_token")
+                if token:
+                    return token
+                last = f"sin access_token en la respuesta: {resp.text[:200]}"
+            else:
+                last = f"HTTP {resp.status_code}: {resp.text[:200]}"
+        except requests.RequestException as e:
+            last = str(e)
+        wait = 3 * (2 ** attempt)
+        if attempt < 4:
+            print(f"[auth] intento {attempt+1}/5 falló ({last}); reintento en {wait}s",
+                  flush=True)
+            time.sleep(wait)
+    raise RuntimeError(f"No se pudo obtener token Shopify tras 5 intentos: {last}")
 
 
 def _request(method: str, url: str, **kwargs) -> requests.Response:

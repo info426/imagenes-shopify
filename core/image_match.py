@@ -119,17 +119,24 @@ def _init_clip() -> bool:
         import time as _time
         import torch  # noqa
         import open_clip
+        # (model_name, pretrained). OJO: los pesos 'openai' usan QuickGELU → el
+        # nombre de modelo DEBE ser 'ViT-B-32-quickgelu' (si no, embeddings malos).
         forced = os.getenv("IMAGE_CLIP_PRETRAINED", "").strip()
-        tags = [forced] if forced else ["openai", "laion2b_s34b_b79k"]
+        if forced:
+            mn = "ViT-B-32-quickgelu" if forced == "openai" else "ViT-B-32"
+            combos = [(mn, forced)]
+        else:
+            combos = [("ViT-B-32-quickgelu", "openai"),
+                      ("ViT-B-32", "laion2b_s34b_b79k")]
         model = preprocess = None
         loaded_tag = None
-        for tag in tags:
+        for model_name, tag in combos:
             for attempt in range(3):
                 try:
                     model, _, preprocess = open_clip.create_model_and_transforms(
-                        "ViT-B-32", pretrained=tag
+                        model_name, pretrained=tag
                     )
-                    loaded_tag = tag
+                    loaded_tag = f"{model_name}/{tag}"
                     break
                 except Exception as de:
                     wait = 3 * (2 ** attempt)

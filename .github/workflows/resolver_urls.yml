@@ -96,7 +96,7 @@ jobs:
           # Pre-descargar los pesos CLIP. 'openai' viene del CDN de OpenAI (Azure),
           # que NO da el 429 de HuggingFace; laion (HF) queda como fallback.
           for i in 1 2 3; do
-            python -c "import open_clip; open_clip.create_model_and_transforms('ViT-B-32', pretrained='openai')" && break
+            python -c "import open_clip; open_clip.create_model_and_transforms('ViT-B-32-quickgelu', pretrained='openai')" && break
             echo "Pre-descarga CLIP 'openai' intento $i falló; reintento en $((i*10))s"; sleep $((i*10))
           done || echo "No se pudieron pre-descargar los pesos CLIP; el run usará hash/texto"
 
