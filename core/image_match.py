@@ -367,7 +367,9 @@ def gate_threshold() -> float:
             return float(env)
         except ValueError:
             pass
-    # clip: 0.74 (calibrado con CALIBRA: los productos que NO existen en la web
-    # dan img ≤ 0.73 forzados a otro parecido; los correctos, mediana 0.90).
+    # Calibrado por modelo. El modelo 'openai' (quickgelu) da cosenos MÁS BAJOS
+    # que laion: basura/otro-tipo ~0.36-0.40, producto real de la marca ~0.70-0.77
+    # (datos de Farmina run #24). Gate 0.60 separa real vs basura sin vetar el
+    # correcto (RENAL daba 0.71). Override con env IMAGE_GATE.
     # hash: 0.80 (solo confirma fotos casi idénticas).
-    return 0.74 if backend() == "clip" else 0.80
+    return 0.60 if backend() == "clip" else 0.80

@@ -123,9 +123,40 @@ def _stem_set(tokens: set) -> set:
     return {_stem(t) for t in tokens}
 
 
+# Sinónimos EN↔ES: los títulos Shopify mezclan inglés (DOG, PUPPY, CHICKEN) con
+# español, y la web farmina.com/es está en español (CACHORRO, POLLO, LATA).
+_SYNONYMS = {
+    "dog": {"perro"}, "perro": {"dog"},
+    "cat": {"gato"}, "gato": {"cat"},
+    "puppy": {"cachorro"}, "cachorro": {"puppy"},
+    "kitten": {"gatito"}, "gatito": {"kitten"},
+    "adult": {"adulto"}, "adulto": {"adult"},
+    "chicken": {"pollo"}, "pollo": {"chicken"},
+    "lamb": {"cordero"}, "cordero": {"lamb"},
+    "fish": {"pescado", "arenque"}, "pescado": {"fish"},
+    "cod": {"bacalao"}, "bacalao": {"cod"},
+    "herring": {"arenque"}, "arenque": {"herring"},
+    "boar": {"jabali"}, "jabali": {"boar"},
+    "pork": {"cerdo"}, "cerdo": {"pork"},
+    "lata": {"can", "wet", "humedo"}, "can": {"lata"}, "humedo": {"lata", "wet"},
+    "caja": {"lata", "can", "wet"},  # CAJA 6X285GR = caja de latas → formato húmedo
+    "pomegranate": {"granada"}, "granada": {"pomegranate"},
+    "pumpkin": {"calabaza"}, "calabaza": {"pumpkin"},
+    "mini": {"small", "pequeno"}, "maxi": {"large", "grande"},
+    "renal": {"renal"}, "neutered": {"neutered", "esterilizado"},
+}
+
+
+def _expand(tokens: set) -> set:
+    out = set(tokens)
+    for t in tokens:
+        out |= _SYNONYMS.get(t, set())
+    return out
+
+
 def _similarity(a_tokens: set, b_tokens: set) -> float:
-    a = _stem_set(a_tokens)
-    b = _stem_set(b_tokens)
+    a = _stem_set(_expand(a_tokens))
+    b = _stem_set(_expand(b_tokens))
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
