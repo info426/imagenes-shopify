@@ -26,7 +26,7 @@ import re
 import time
 import unicodedata
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, unquote
 
 try:
     from core import image_match
@@ -41,6 +41,8 @@ MATCH_THRESHOLD = 0.25       # umbral de texto cuando NO hay filtro de imagen
 # Con el gate de imagen activo, la foto es el filtro de precisión → se acepta
 # texto más flojo (títulos Farmina escuetos vs nombres web largos con "& GRANADA").
 _TEXT_MIN_WITH_IMG = 0.12
+# Nº de candidatos del catálogo (mejor texto) que se visitan para el gate de imagen.
+_TOPK = 8
 
 # Prefijo de marca y submarca a eliminar del título Shopify antes del matching.
 # Cubre variantes: "FARMINA ND", "FARMINA N&D", "FARMINA VET LIFE", "ND", etc.
@@ -470,25 +472,106 @@ def save_catalog(catalog: dict):
 
 # ─── Interfaz pública ─────────────────────────────────────────────────────────
 
+def _slug_of(url: str) -> str:
+    """Último segmento de la URL de producto (clave del catálogo)."""
+    return unquote(url).rstrip("/").split("?")[0].split("/")[-1]
+
+
+def _name_from_slug(url: str) -> str:
+    """Nombre legible desde el slug: '484-pollo-&-granada-cachorro-lata-.html'
+    → 'pollo & granada cachorro lata'."""
+    seg = _slug_of(url)
+    seg = re.sub(r"\.html?$", "", seg, flags=re.IGNORECASE)
+    seg = re.sub(r"^\d+[-_]", "", seg)            # quitar el id PrestaShop
+    return re.sub(r"[-_]+", " ", seg).strip()
+
+
+def _parse_sitemap_locs(xml_text: str) -> list:
+    if not xml_text:
+        return []
+    return [m.strip() for m in re.findall(r"<loc>\s*(.*?)\s*</loc>",
+                                          xml_text, re.IGNORECASE | re.DOTALL)]
+
+
+def _collect_sitemap_links(page) -> set:
+    """Descubre URLs de producto desde el/los sitemap(s) de farmina.com.
+    PrestaShop expone sitemap.xml (a veces índice anidado)."""
+    found: set = set()
+    seen: set = set()
+    queue = [
+        "https://www.farmina.com/sitemap.xml",
+        "https://www.farmina.com/es/sitemap.xml",
+        "https://www.farmina.com/1_es_0_sitemap.xml",
+    ]
+    # robots.txt suele declarar la ubicación real del sitemap (PrestaShop varía)
+    try:
+        rob = _fetch_bytes_via_page(page, "https://www.farmina.com/robots.txt")
+        if rob:
+            for line in rob.decode("utf-8", "ignore").splitlines():
+                if line.lower().startswith("sitemap:"):
+                    queue.insert(0, line.split(":", 1)[1].strip())
+    except Exception as e:
+        log.debug(f"  robots.txt: {e}")
+    depth = 0
+    while queue and depth < 4:
+        depth += 1
+        nxt = []
+        for sm in queue:
+            if sm in seen:
+                continue
+            seen.add(sm)
+            data = _fetch_bytes_via_page(page, sm)
+            if not data:
+                continue
+            try:
+                text = data.decode("utf-8", "ignore")
+            except Exception:
+                continue
+            for loc in _parse_sitemap_locs(text):
+                low = loc.lower()
+                if low.endswith(".xml") or "sitemap" in low.rsplit("/", 1)[-1]:
+                    nxt.append(loc)
+                elif _is_product_url(loc):
+                    found.add(loc.split("?")[0])
+        queue = nxt
+    log.info(f"  Sitemap Farmina: {len(found)} URLs de producto")
+    return found
+
+
 def scrape_catalog(web_url: str, rebuild: bool = False) -> dict:
     """
-    Carga el catálogo cacheado. La resolución real es bajo demanda en
-    find_best_match() vía DDG. Con rebuild=True borra la caché.
-    Soporta vendor 'Farmina' (N&D) y 'Farmina Vet Life' — comparten caché.
+    Construye el catálogo COMPLETO de farmina.com/es desde el sitemap
+    { slug: { name, url } } y lo cachea. El matching es local en find_best_match
+    (sin depender de DDG). Soporta 'Farmina' (N&D) y 'Farmina Vet Life' (misma caché).
     """
     if rebuild and CATALOG_PATH.exists():
         CATALOG_PATH.unlink()
-        log.info("Catálogo Farmina borrado (rebuild) — se reconstruirá bajo demanda")
-        return {}
-    if CATALOG_PATH.exists():
+        log.info("Catálogo Farmina borrado (rebuild)")
+    elif CATALOG_PATH.exists():
         try:
             catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
             log.info(f"Catálogo Farmina cargado desde caché: {len(catalog)} entradas")
             return catalog
         except Exception:
             pass
-    log.info("Catálogo Farmina vacío — resolución bajo demanda vía DDG")
-    return {}
+
+    page = _get_page()
+    if page is None:
+        log.warning("Sin navegador — find_best_match caerá a DDG")
+        return {}
+
+    catalog: dict = {}
+    for url in sorted(_collect_sitemap_links(page)):
+        slug = _slug_of(url)
+        if slug and slug not in catalog:
+            catalog[slug] = {"name": _name_from_slug(url), "url": url}
+
+    if catalog:
+        _save_catalog(catalog)
+        log.info(f"Catálogo Farmina: {len(catalog)} productos del sitemap")
+    else:
+        log.warning("Sitemap vacío/inaccesible — find_best_match usará DDG por producto")
+    return catalog
 
 
 # Alias público para backfill de metacampos (mapea título Shopify → clave caché)
@@ -542,46 +625,90 @@ def _candidate_feat(page, images: list):
     return None
 
 
+# Caché en memoria de resoluciones (title_key → score) para el many-to-one:
+# varias tallas (2.5/7/12 KG) de la misma receta resuelven una sola vez por run.
+_RESOLVED: dict = {}
+
+
+def _has_real_catalog(catalog: dict) -> bool:
+    """True si el catálogo trae entradas del sitemap (clave = slug con /eshop/)."""
+    return any(isinstance(e, dict) and "/eshop/" in (e.get("url") or "")
+               for e in catalog.values())
+
+
+def _catalog_candidates(page, title: str, catalog: dict, q_feats: list) -> list:
+    """Rankea TODO el catálogo por texto y visita los top-K para bajar su imagen.
+    Candidatos deterministas y completos (del sitemap), sin depender de DDG."""
+    clean = _tokenize(_clean_for_match(title))
+    ranked = []
+    for slug, e in catalog.items():
+        url = e.get("url") if isinstance(e, dict) else None
+        if not url or "/eshop/" not in url:
+            continue
+        cat_toks = _tokenize(e.get("name", "")) | _tokenize(slug.replace("-", " "))
+        ranked.append((_similarity(clean, cat_toks), url, e))
+    ranked.sort(key=lambda x: x[0], reverse=True)
+
+    cands = []  # (text, name, images, url, cand_feat)
+    for tscore, url, e in ranked[:_TOPK]:
+        if tscore <= 0:
+            break
+        name, images = _try_url(page, url)
+        name = name or e.get("name", "")
+        score = max(tscore, _similarity(clean, _tokenize(name)))
+        cf = _candidate_feat(page, images) if q_feats else None
+        cands.append((score, name, images, url, cf))
+        log.info(f"  [cand] texto={score:.2f} img={'sí' if cf else '—'} '{name}' {url}")
+    return cands
+
+
+def _ddg_candidates(page, title: str, q_feats: list) -> list:
+    """Fallback: candidatos por DDG (si el sitemap no dio catálogo)."""
+    clean = _tokenize(_clean_for_match(title))
+    cands = []
+    for url in _ddg_find_product_urls(title):
+        name, images = _try_url(page, url)
+        if not name:
+            continue
+        cf = _candidate_feat(page, images) if q_feats else None
+        cands.append((_similarity(clean, _tokenize(name)), name, images, url, cf))
+        log.info(f"  [cand-ddg] texto={cands[-1][0]:.2f} img={'sí' if cf else '—'} "
+                 f"'{name}' {url}")
+    return cands
+
+
 def find_best_match(shopify_title: str, catalog: dict,
                     barcode: str = "", product_images: list = None) -> tuple:
     """
-    1. Cache hit exacto por clave de título sin peso.
-    2. DDG site:farmina.com/es/eshop/ → candidatos → Jaccard contra h1.
-    3. FILTRO de imagen (si usar_imagen + CLIP): la foto del producto Shopify
-       debe coincidir con la del candidato (≥ gate_threshold). Solo se aceptan
-       candidatos confirmados por imagen; entre ellos gana el de mejor texto. Si
-       ninguno confirma → sin_match (campo vacío, NO se inventa la URL).
-       Sin CLIP / sin imagen Shopify → solo texto (comportamiento previo).
-    Devuelve (handle, score). handle es la clave en catalog con la URL real.
-
-    Nota: varios productos Shopify de distinto tamaño (2.5/7/12 KG) de la misma
-    receta comparten clave y URL (many-to-one).
+    Catálogo completo del sitemap (determinista) + filtro de imagen:
+    1. Cache de resolución (many-to-one: tallas de la misma receta).
+    2. Candidatos = top-K del catálogo rankeado por texto (EN↔ES). Si no hay
+       catálogo (sitemap falló) → fallback DDG.
+    3. GATE de imagen (si usar_imagen + CLIP): solo se aceptan candidatos cuya
+       foto confirma la de Shopify (≥ gate_threshold); entre confirmados gana el
+       de mejor texto. Ninguno confirma → sin_match (vacío, no inventa).
+       Sin CLIP/sin foto → solo texto (umbral MATCH_THRESHOLD).
+    Devuelve (handle, score); handle es clave en catalog con la URL real.
     """
     title_key = _title_key(shopify_title)
-    if title_key in catalog:
-        log.info(f"  Match caché: {title_key}")
-        return title_key, 1.0
+    if title_key in _RESOLVED:
+        slug, sc = _RESOLVED[title_key]
+        log.info(f"  Cache resolución: {title_key} → {slug or 'sin_match'}")
+        return (title_key, sc) if slug else (None, sc)
 
     page = _get_page()
     if page is None:
         return None, 0.0
 
     q_feats = _shopify_feats(product_images)
-    clean_tokens = _tokenize(_clean_for_match(shopify_title))
-    urls = _ddg_find_product_urls(shopify_title)
-
-    cands = []  # (text, name, images, url, cand_feat)
-    for url in urls:
-        name, images = _try_url(page, url)
-        if not name:
-            continue
-        score = _similarity(clean_tokens, _tokenize(name))
-        cand_feat = _candidate_feat(page, images) if q_feats else None
-        cands.append((score, name, images, url, cand_feat))
-        log.info(f"  [cand] texto={score:.2f} img={'sí' if cand_feat else '—'} "
-                 f"'{name}' ({len(images)} imgs) {url}")
+    if _has_real_catalog(catalog):
+        cands = _catalog_candidates(page, shopify_title, catalog, q_feats)
+    else:
+        log.info("  (sin catálogo sitemap — fallback DDG)")
+        cands = _ddg_candidates(page, shopify_title, q_feats)
 
     if not cands:
+        _RESOLVED[title_key] = (None, 0.0)
         log.warning(f"  Sin resolución para '{shopify_title}'")
         return None, 0.0
 
@@ -589,15 +716,19 @@ def find_best_match(shopify_title: str, catalog: dict,
                    and bool(q_feats) and image_match.backend() == "clip")
 
     def _accept(score, name, images, url, why):
-        entry = {"name": name, "url": url, "images": images}
-        catalog[title_key] = entry
+        catalog[title_key] = {"name": name, "url": url, "images": images}
+        _RESOLVED[title_key] = (title_key, score)
         _save_catalog(catalog)
-        log.info(f"  ✓ Resuelto ({why}): '{name}' (texto={score:.2f})")
+        log.info(f"  ✓ Resuelto ({why}): '{name}' (texto={score:.2f}) {url}")
         return title_key, score
+
+    def _no_match(score):
+        _RESOLVED[title_key] = (None, score)
+        return None, score
 
     if gate_active:
         gate = image_match.gate_threshold()
-        survivors = []  # (text, name, images, url, img)
+        survivors = []
         for score, name, images, url, cf in cands:
             if cf is None:
                 continue
@@ -608,15 +739,14 @@ def find_best_match(shopify_title: str, catalog: dict,
                 log.info(f"  [img-gate] descarta '{name}': img={isim:.2f} < {gate:.2f}")
         if not survivors:
             log.warning("  [img-gate] ningún candidato confirma imagen → sin_match (vacío)")
-            return None, 0.0
+            return _no_match(0.0)
         score, name, images, url, isim = max(survivors, key=lambda c: c[0])
         if score < _TEXT_MIN_WITH_IMG:
             log.warning(f"  Confirmado por imagen (img={isim:.2f}) pero texto={score:.2f}"
                         f" < {_TEXT_MIN_WITH_IMG} → sin_match")
-            return None, score
+            return _no_match(score)
         return _accept(score, name, images, url, f"img-gate OK, img={isim:.2f}")
 
-    # Sin gate → solo texto (CLIP no cargó o sin imagen Shopify)
     if image_match is not None and getattr(image_match, "ENABLED", False) \
             and product_images and image_match.backend() != "clip":
         log.info("  [img-gate] CLIP no cargó → solo texto")
@@ -624,4 +754,4 @@ def find_best_match(shopify_title: str, catalog: dict,
     if score >= MATCH_THRESHOLD:
         return _accept(score, name, images, url, f"texto={score:.2f}")
     log.warning(f"  Mejor candidato score={score:.2f} < {MATCH_THRESHOLD} → sin_match")
-    return None, score
+    return _no_match(score)

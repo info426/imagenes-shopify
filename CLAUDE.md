@@ -820,14 +820,27 @@ pero Shopify tiene un producto por tamaño de saco (2.5 KG, 7 KG, 12 KG de la mi
 El scraper elimina el peso del título antes del matching y usa la misma clave de caché para
 todos los tamaños → muchos-a-uno, todos apuntan a la misma URL.
 
-**Estrategia de matching:**
-- `_clean_for_match(title)`: quita prefijo ("FARMINA ND ", "VET LIFE ", "N&D ", "ND ") y peso.
-- DDG: `site:farmina.com/es/eshop/ {título limpio}` → candidatos con `_is_product_url()`.
-- Score Jaccard (con stemming ES) entre tokens del título limpio y h1 de la página.
-- `MATCH_THRESHOLD = 0.25` (tolera que el h1 web no tenga los tokens de línea/ocean/prime).
+**Estrategia de matching — CATÁLOGO por SITEMAP (no DDG):**
+DDG resultó poco fiable (run #24: no devolvía la página correcta `484-cachorro-lata`).
+Reescrito al estilo CALIBRA — catálogo completo y determinista:
+- `scrape_catalog`: lee el/los **sitemap(s)** de farmina.com (robots.txt → `sitemap.xml`,
+  sigue índices anidados) y construye `{slug: {name, url}}` de TODA la web. Sin visitar
+  páginas (rápido). Requiere `rebuild_catalog=true` la 1ª vez.
+- `find_best_match`: rankea TODO el catálogo por texto (Jaccard + sinónimos EN↔ES) →
+  **top-K (8)** candidatos → visita esas páginas, baja su imagen y aplica el **gate**
+  (igual que el patrón DDG, pero con candidatos completos del sitemap, no de DDG).
+  La página correcta SIEMPRE está en el catálogo → adiós flakiness de DDG.
+- `_clean_for_match`: quita prefijo ("FARMINA ND ", "VET LIFE ", "N&D ") y peso.
+- **Sinónimos EN↔ES** (`_SYNONYMS`): los títulos Shopify mezclan inglés (DOG, PUPPY,
+  CHICKEN) con la web española (CACHORRO, POLLO, LATA): `puppy↔cachorro`, `chicken↔pollo`,
+  `lata/caja→can`, `dog↔perro`, `adult↔adulto`… Sin esto "PUPPY POLLO" no casaba.
+- `MATCH_THRESHOLD = 0.25` (solo texto); con gate de imagen activo, `_TEXT_MIN_WITH_IMG=0.12`
+  (la imagen es el filtro de precisión → se acepta texto más flojo).
+- Fallback DDG (`_ddg_candidates`) solo si el sitemap no da catálogo.
 
-**Caché compartida:** `resultados/farmina_catalog.json` — sirve para ambos vendors.
-Ejecuciones anteriores de N&D precargan recetas que Vet Life (y viceversa) ya no necesitan buscar.
+**Caché compartida:** `resultados/farmina_catalog.json` (catálogo del sitemap) —
+sirve para ambos vendors (N&D y Vet Life). Resoluciones del run en `_RESOLVED` (memoria,
+many-to-one: las tallas 2.5/7/12 KG de una receta resuelven una sola vez).
 
 **Parámetros workflow `Resolver URLs fabricante`:**
 
