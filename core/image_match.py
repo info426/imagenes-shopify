@@ -352,5 +352,7 @@ def gate_threshold() -> float:
             return float(env)
         except ValueError:
             pass
-    # clip: 0.65 (calibrable); hash: 0.80 (solo confirma fotos casi idénticas)
-    return 0.65 if backend() == "clip" else 0.80
+    # clip: 0.74 (calibrado con CALIBRA: los productos que NO existen en la web
+    # dan img ≤ 0.73 forzados a otro parecido; los correctos, mediana 0.90).
+    # hash: 0.80 (solo confirma fotos casi idénticas).
+    return 0.74 if backend() == "clip" else 0.80

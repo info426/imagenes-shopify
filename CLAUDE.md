@@ -741,13 +741,27 @@ etapa (ADULT→SENIOR). Resultado: 111/134, peor que el texto-solo bien hecho.
 2. **Texto Jaccard ES↔EN** con sinónimos ampliados (sabores/animales/texturas:
    `vacuno→beef`, `ave→poultry`, `lata→can`, `arenque→herring`, `cobaya→guinea`,
    `nuez→nuts`, `silvestre→wild`…). Gana el de mayor score.
-3. **Imagen = solo desempate** entre candidatos a `<_TIE_MARGIN(0.08)` del mejor texto
-   (variantes de tamaño/formato indistinguibles al quitar el peso: `chicken` vs
-   `chicken-200g`, lata vs pouch). **Nunca** anula un ganador claro de texto → no puede
-   arrastrar a otra especie/sabor/línea. Sin imagen → solo texto, umbral `_TEXT_ONLY_MIN=0.30`.
+3. **Imagen = FILTRO (gate) + desempate.** (a) **Desempate**: entre candidatos a
+   `<_TIE_MARGIN(0.08)` del mejor texto (variantes de tamaño/formato del mismo sabor:
+   `chicken` vs `chicken-200g`), la imagen elige; nunca anula un ganador claro de texto.
+   (b) **GATE**: el candidato elegido solo se acepta si su similitud visual ≥
+   `gate_threshold()`; si no → **sin_match, campo vacío (no se inventa la URL)**. Si CLIP
+   no carga → sin gate (solo texto), para no vaciar todo por un fallo de red.
+
+**Calibración del gate (CLIP, con CALIBRA .eu run #20 + ground-truth del usuario):**
+Distribución de similitud img: **correctos** mediana 0.90 (110/117 ≥0.74); **productos
+que NO existen en la web** (texto los fuerza a otro parecido) **todos ≤ 0.73**. Corte
+natural → **`IMAGE_GATE=0.74`** (default clip): veta **19/19** inexistentes (0 URLs
+inventadas) a cambio de **7 correctos** con foto muy distinta que caen a revisión manual.
+Las **variantes de tamaño del mismo sabor** (img 0.71-0.92, misma bolsa) la imagen **no**
+las distingue → eso lo arregla el texto/manual, no el gate. Override con env `IMAGE_GATE`.
+
+**Lista de no-matcheados:** al final del log, `run_resolve_urls` imprime los IDs sin
+URL (sin_match o vetados por imagen) con su enlace `https://admin.shopify.com/store/...`
+para asignarlos a mano rápido.
 
 **Precisión validada contra el snapshot (134 URLs correctas), texto-solo:**
-run#15 **80%** (108) → +guard especie **+** sitemap **111** → +sinónimos ES→EN **127 (94%)**.
+run#15 **80%** (108) → +guard especie **+** sitemap **111** → +sinónimos ES→EN **127-128 (95%)**.
 El desempate por imagen (CLIP, en Actions) sube ~2-3 más (variantes de tamaño lata/200g).
 
 **Plumbing genérico:** `core/process_brand.py` (`run_resolve_urls`) pasa
