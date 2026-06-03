@@ -156,6 +156,32 @@ def _expand(tokens: set) -> set:
     return out
 
 
+# ─── Guard de especie (perro ≠ gato) ─────────────────────────────────────────
+_DOG_M = {"dog", "dogs", "perro", "perros", "canine", "canino"}
+_CAT_M = {"cat", "cats", "gato", "gatos", "feline", "felino", "kitten", "gatito"}
+
+
+def _species_of_text(text: str) -> str:
+    toks = set(_normalize(text).split())
+    d, c = bool(toks & _DOG_M), bool(toks & _CAT_M)
+    return "dog" if (d and not c) else ("cat" if (c and not d) else "")
+
+
+def _species_of_url(url: str) -> str:
+    u = (url or "").lower()
+    if "alimento-para-perros" in u or "canine" in u:
+        return "dog"
+    if "alimento-para-gatos" in u or "feline" in u:
+        return "cat"
+    return ""
+
+
+def _species_ok(title_sp: str, cand_url: str, cand_name: str) -> bool:
+    """Incompatible solo si ambas especies son conocidas y distintas."""
+    cs = _species_of_url(cand_url) or _species_of_text(cand_name)
+    return not (title_sp and cs and title_sp != cs)
+
+
 def _similarity(a_tokens: set, b_tokens: set) -> float:
     a = _stem_set(_expand(a_tokens))
     b = _stem_set(_expand(b_tokens))
@@ -493,46 +519,75 @@ def _parse_sitemap_locs(xml_text: str) -> list:
                                           xml_text, re.IGNORECASE | re.DOTALL)]
 
 
+def _fetch_text(page, url: str) -> str:
+    """Texto de una URL. 1) APIRequestContext; 2) fallback con fetch() DENTRO de
+    la página (mismo origen farmina.com → mismo fingerprint/cookies del navegador
+    que ya pasó el anti-bot; el APIRequestContext tiene otro fingerprint y puede
+    ser bloqueado — lección Applaws)."""
+    data = _fetch_bytes_via_page(page, url)
+    if data:
+        try:
+            return data.decode("utf-8", "ignore")
+        except Exception:
+            pass
+    try:
+        # Asegurar que la página está en el origen farmina.com (same-origin fetch)
+        if "farmina.com" not in (page.url or ""):
+            page.goto("https://www.farmina.com/es/", timeout=20000,
+                      wait_until="domcontentloaded")
+        txt = page.evaluate(
+            """async (u) => {
+                try { const r = await fetch(u, {credentials:'include'});
+                      return r.ok ? await r.text() : ''; }
+                catch (e) { return ''; }
+            }""", url)
+        return txt or ""
+    except Exception as e:
+        log.info(f"    [sitemap] fetch in-page {url} falló: {e}")
+    return ""
+
+
 def _collect_sitemap_links(page) -> set:
     """Descubre URLs de producto desde el/los sitemap(s) de farmina.com.
-    PrestaShop expone sitemap.xml (a veces índice anidado)."""
+    PrestaShop: robots.txt declara el sitemap; índices `{shop}_{lang}_0_sitemap.xml`."""
     found: set = set()
     seen: set = set()
     queue = [
+        "https://www.farmina.com/robots.txt",   # declara el sitemap real
         "https://www.farmina.com/sitemap.xml",
         "https://www.farmina.com/es/sitemap.xml",
         "https://www.farmina.com/1_es_0_sitemap.xml",
+        "https://www.farmina.com/2_es_0_sitemap.xml",
+        "https://www.farmina.com/1_en_0_sitemap.xml",
     ]
-    # robots.txt suele declarar la ubicación real del sitemap (PrestaShop varía)
-    try:
-        rob = _fetch_bytes_via_page(page, "https://www.farmina.com/robots.txt")
-        if rob:
-            for line in rob.decode("utf-8", "ignore").splitlines():
-                if line.lower().startswith("sitemap:"):
-                    queue.insert(0, line.split(":", 1)[1].strip())
-    except Exception as e:
-        log.debug(f"  robots.txt: {e}")
     depth = 0
-    while queue and depth < 4:
+    while queue and depth < 6:
         depth += 1
         nxt = []
         for sm in queue:
             if sm in seen:
                 continue
             seen.add(sm)
-            data = _fetch_bytes_via_page(page, sm)
-            if not data:
+            text = _fetch_text(page, sm)
+            if not text:
+                log.info(f"    [sitemap] {sm} → vacío/inaccesible")
                 continue
-            try:
-                text = data.decode("utf-8", "ignore")
-            except Exception:
+            # robots.txt: extraer las líneas Sitemap:
+            if sm.endswith("robots.txt"):
+                sms = [ln.split(":", 1)[1].strip() for ln in text.splitlines()
+                       if ln.lower().startswith("sitemap:")]
+                log.info(f"    [robots] declara {len(sms)} sitemap(s): {sms}")
+                nxt += sms
                 continue
-            for loc in _parse_sitemap_locs(text):
-                low = loc.lower()
-                if low.endswith(".xml") or "sitemap" in low.rsplit("/", 1)[-1]:
-                    nxt.append(loc)
-                elif _is_product_url(loc):
-                    found.add(loc.split("?")[0])
+            locs = _parse_sitemap_locs(text)
+            prods = [l for l in locs if _is_product_url(l)]
+            maps = [l for l in locs if l.lower().endswith(".xml")
+                    or "sitemap" in l.rsplit("/", 1)[-1].lower()]
+            log.info(f"    [sitemap] {sm} → {len(locs)} locs ({len(prods)} producto, "
+                     f"{len(maps)} sub-sitemaps)")
+            for l in prods:
+                found.add(l.split("?")[0])
+            nxt += maps
         queue = nxt
     log.info(f"  Sitemap Farmina: {len(found)} URLs de producto")
     return found
@@ -640,11 +695,14 @@ def _catalog_candidates(page, title: str, catalog: dict, q_feats: list) -> list:
     """Rankea TODO el catálogo por texto y visita los top-K para bajar su imagen.
     Candidatos deterministas y completos (del sitemap), sin depender de DDG."""
     clean = _tokenize(_clean_for_match(title))
+    title_sp = _species_of_text(title)
     ranked = []
     for slug, e in catalog.items():
         url = e.get("url") if isinstance(e, dict) else None
         if not url or "/eshop/" not in url:
             continue
+        if not _species_ok(title_sp, url, e.get("name", "")):
+            continue  # guard de especie: perro nunca casa con gato
         cat_toks = _tokenize(e.get("name", "")) | _tokenize(slug.replace("-", " "))
         ranked.append((_similarity(clean, cat_toks), url, e))
     ranked.sort(key=lambda x: x[0], reverse=True)
@@ -665,10 +723,16 @@ def _catalog_candidates(page, title: str, catalog: dict, q_feats: list) -> list:
 def _ddg_candidates(page, title: str, q_feats: list) -> list:
     """Fallback: candidatos por DDG (si el sitemap no dio catálogo)."""
     clean = _tokenize(_clean_for_match(title))
+    title_sp = _species_of_text(title)
     cands = []
     for url in _ddg_find_product_urls(title):
+        if not _species_ok(title_sp, url, ""):
+            log.info(f"  [especie] descarta {url} (≠ {title_sp})")
+            continue
         name, images = _try_url(page, url)
         if not name:
+            continue
+        if not _species_ok(title_sp, url, name):
             continue
         cf = _candidate_feat(page, images) if q_feats else None
         cands.append((_similarity(clean, _tokenize(name)), name, images, url, cf))
