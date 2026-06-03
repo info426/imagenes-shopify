@@ -1,0 +1,11 @@
+usage: process_brand.py [-h] [--vendor VENDOR]
+                        [--fuente {shopify_backup,web_oficial,web_y_amazon}]
+                        [--web-url WEB_URL] [--product-id PRODUCT_ID]
+                        [--only-ids ONLY_IDS] [--rebuild-catalog] [--backup]
+                        [--crear-metacampos] [--backfill-urls]
+                        [--resolver-urls] [--snapshot-urls]
+                        [--url-key {url_fabricante,url_fabricante_2}]
+                        [--clear-on-no-match] [--dry-run] [--force-backup]
+                        [--pipeline {standard,webp_only}]
+                        [--force-padding {auto,true,false}]
+process_brand.py: error: unrecognized arguments: 15509739635075, 15469438402947
