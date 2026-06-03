@@ -397,7 +397,7 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 | Farmina Vet Life | Farmina Vet Life | Completado | — |
 | Alpha Spirit | Alpha Spirit | Completado | — |
 | Applaws | Applaws | Imágenes ✅ — ES URL test ✅ (url_fabricante) — UK `url_fabricante_2` **corregidos a mano en Shopify y verificados** → ejecutar `Snapshot URLs fabricante` para fijarlos en el repo (registro + caché sembrada) — **pendiente** lote ES (url_fabricante) | web_oficial → marcas/applaws.py (ES: applaws.pet / UK: applaws.com/uk/ vía handle de búsqueda) |
-| CALIBRA | CALIBRA | Imágenes ✅ — **URLs**: campo 1 (.es) run #15 corregido a mano; reconocimiento por imagen (CLIP) añadido → re-lanzar con `usar_imagen=true`; campo 2 (.eu) pendiente | shopify_backup (imgs) + web_oficial (URLs) → marcas/calibra.py |
+| CALIBRA | CALIBRA | Imágenes ✅ — **URLs**: campo 1 (.es) corregido a mano + resolver validado 96-98% (no re-pasar); campo 2 (.eu) **escrito 146/146** (run #19, texto-only por fallo de descarga CLIP) — revisar ~4 snacks JOY | shopify_backup (imgs) + web_oficial (URLs) → marcas/calibra.py |
 | Acana | Acana | En proceso | web_oficial → marcas/acana.py |
 | ARTERO | ARTERO | **Listo para proceso masivo** — scraper testado OK | web_oficial → marcas/artero.py (artero.com/es/petcare/) |
 | AFFINITY (ADVANCE, ADVANCE VET, LIBRA, BREKKIES, NATURAL TRAINER, NATURE'S VARIETY) | AFFINITY | Completado — backup OK, listo para optimizar imágenes | web_y_amazon → marcas/affinity.py |

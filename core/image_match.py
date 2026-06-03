@@ -110,13 +110,28 @@ def _init_clip() -> bool:
     if _FORCE_BACKEND == "hash":
         log.info("[image_match] backend forzado a hash (IMAGE_MATCH_BACKEND=hash)")
         return False
-    # 1) open_clip
+    # 1) open_clip — con reintentos porque la descarga de pesos desde HuggingFace
+    #    Hub es intermitente (falló en el run #19 de CALIBRA → degradó a hash).
     try:
+        import time as _time
         import torch  # noqa
         import open_clip
-        model, _, preprocess = open_clip.create_model_and_transforms(
-            "ViT-B-32", pretrained="laion2b_s34b_b79k"
-        )
+        model = preprocess = None
+        last_err = None
+        for attempt in range(4):
+            try:
+                model, _, preprocess = open_clip.create_model_and_transforms(
+                    "ViT-B-32", pretrained="laion2b_s34b_b79k"
+                )
+                break
+            except Exception as de:
+                last_err = de
+                wait = 3 * (2 ** attempt)
+                log.info(f"[image_match] descarga pesos CLIP intento "
+                         f"{attempt+1}/4 falló ({de}); reintento en {wait}s")
+                _time.sleep(wait)
+        if model is None:
+            raise last_err or RuntimeError("no se pudieron descargar los pesos CLIP")
         model.eval()
         _CLIP.update({"ok": True, "kind": "open_clip", "model": model,
                       "preprocess": preprocess, "torch": torch})

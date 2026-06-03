@@ -78,6 +78,12 @@ jobs:
           # torch/torchvision CPU desde el índice oficial (evita la build CUDA ~2GB)
           pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-vision.txt
+          # Pre-descargar los pesos CLIP a la caché de HuggingFace (la descarga es
+          # intermitente; con reintentos aquí evitamos degradar a hash en match-time).
+          for i in 1 2 3 4; do
+            python -c "import open_clip; open_clip.create_model_and_transforms('ViT-B-32', pretrained='laion2b_s34b_b79k')" && break
+            echo "Pre-descarga CLIP intento $i falló; reintento en $((i*5))s"; sleep $((i*5))
+          done || echo "No se pudieron pre-descargar los pesos CLIP; el run usará hash/texto"
 
       - name: Resolver URLs y guardar metacampos
         env:
