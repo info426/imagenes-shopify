@@ -339,3 +339,18 @@ def score_candidates(query_urls: list, candidate_urls: list, fetch=None) -> list
 def thresholds() -> tuple:
     """(STRONG, WEAK) del backend activo."""
     return THRESHOLDS[backend()]
+
+
+def gate_threshold() -> float:
+    """Umbral del FILTRO de imagen: si la similitud visual del candidato elegido
+    es menor que esto, NO se asigna la URL (se deja el campo vacío). Evita
+    'inventar' una URL cuando la foto del producto Shopify no coincide con la del
+    candidato. Configurable con IMAGE_GATE (float); si no, default por backend."""
+    env = os.getenv("IMAGE_GATE", "").strip()
+    if env:
+        try:
+            return float(env)
+        except ValueError:
+            pass
+    # clip: 0.65 (calibrable); hash: 0.80 (solo confirma fotos casi idénticas)
+    return 0.65 if backend() == "clip" else 0.80

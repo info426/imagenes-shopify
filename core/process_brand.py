@@ -782,6 +782,7 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     has_images  = "product_images" in fbm_params
     stats = dict(total=len(products), guardadas=0, sin_match=0)
     dry_results: list = []
+    no_match: list = []   # (pid, title) sin URL → se listan al final con enlaces
     if dry_run:
         log.info("MODO DRY-RUN — no se escribirá nada en Shopify")
     for i, product in enumerate(products, 1):
@@ -821,13 +822,24 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
                 log.info(f"  → {url}  (score={score:.2f})")
         else:
             stats["sin_match"] += 1
-            log.warning(f"  Sin URL (score={score:.2f})")
+            no_match.append((pid, title))
+            log.warning(f"  Sin URL (score={score:.2f}) → campo vacío")
             if clear_on_no_match and not dry_run:
                 _clear_source_url(api, pid, url_key)
             elif clear_on_no_match and dry_run:
                 log.info(f"  [dry-run] BORRARÍA {url_key} (sin_match)")
         time.sleep(0.1 if dry_run else 0.5)
     _print_stats(stats)
+
+    # Lista de no-matcheados con enlace al admin para asignarlos a mano cómodamente
+    if no_match:
+        log.info("\n" + "=" * 60)
+        log.info(f"SIN MATCH — {len(no_match)} producto(s) a revisar/asignar a mano "
+                 f"({url_key}):")
+        log.info("=" * 60)
+        for pid, title in no_match:
+            log.info(f"  • {title}")
+            log.info(f"    {_admin_url(pid)}")
 
     if dry_run:
         out = RESULTS_DIR / f"{slug}_resolver_dryrun.json"

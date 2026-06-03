@@ -776,18 +776,18 @@ def _text_scores(shopify_title: str, catalog: dict) -> list:
 def find_best_match(shopify_title: str, catalog: dict,
                     barcode: str = "", product_images: list = None) -> tuple:
     """
-    El TEXTO manda (Jaccard ES↔EN con guard de especie). La imagen NO pondera —
-    solo interviene en dos casos seguros, porque el packaging de Calibra es
-    visualmente uniforme y CLIP no distingue bien sabor/tamaño:
-      (a) Foto prácticamente idéntica (img ≥ _NEAR_DUP): la misma imagen del
-          fabricante está en Shopify → manda sobre el texto (sigue dentro de la
-          especie: los candidatos de otra especie ya están excluidos).
-      (b) Desempate: si varios candidatos quedan a < _TIE_MARGIN del mejor texto
-          (típicamente variantes de tamaño/formato del mismo sabor, p. ej.
-          chicken-200g vs chicken-1.5kg, indistinguibles por texto al quitar el
-          peso), la imagen elige entre ellos. NUNCA anula un ganador claro de texto.
+    El TEXTO propone y la IMAGEN confirma (filtro/gate):
+      1. Texto: Jaccard ES↔EN con guard de especie (CAT nunca casa con DOG).
+      2. Desempate por imagen entre candidatos a < _TIE_MARGIN del mejor texto
+         (variantes de tamaño/formato del mismo sabor: chicken vs chicken-200g).
+      3. GATE de imagen: si CLIP está cargado, el candidato elegido SOLO se acepta
+         si la similitud visual (foto Shopify ↔ foto fabricante) ≥ gate_threshold().
+         Si no llega → se devuelve sin_match: **NO se inventa la URL, el campo
+         queda vacío** para revisión manual. Así los productos que no existen en
+         esa web (y que el texto forzaría a otro parecido) se descartan.
 
-    Sin imágenes / sin huellas → solo texto. Umbral de aceptación _TEXT_ONLY_MIN.
+    Si CLIP no está cargado (no se pudo descargar) → no se puede filtrar por imagen
+    → se cae a solo-texto (con aviso) para no vaciar todo por un fallo de red.
     Devuelve (handle, score). (None, score) si no hay match fiable.
     """
     scored = _text_scores(shopify_title, catalog)  # ya filtrado por especie
@@ -795,39 +795,49 @@ def find_best_match(shopify_title: str, catalog: dict,
         return None, 0.0
     scored.sort(key=lambda x: x[2], reverse=True)
     best_text = scored[0][2]
-    pick_handle, pick_score = scored[0][0], best_text  # por defecto: mejor texto
+    pick_handle, pick_entry, pick_score = scored[0]  # por defecto: mejor texto
 
+    q_feats = []
     has_feats = any(e.get("img_feat") for _, e, _ in scored)
     use_img = (image_match is not None and getattr(image_match, "ENABLED", False)
                and bool(product_images) and has_feats)
-
     if use_img:
-        q_feats = []
         for u in (product_images or [])[:3]:
             f = image_match.compute_feature_from_url(u)
             if f:
                 q_feats.append(f)
-        if not q_feats:
-            log.info("  [img] sin huella de la imagen Shopify → solo texto")
-        else:
-            def _imgsim(entry):
-                cf = entry.get("img_feat")
-                return image_match.best_similarity(q_feats, cf) if cf else -1.0
 
-            # Desempate SOLO entre candidatos con texto ≈ al mejor (típicamente
-            # variantes de tamaño/formato del mismo sabor: chicken vs chicken-200g,
-            # lata vs pouch). La imagen NUNCA anula un ganador claro de texto, así
-            # que no puede arrastrar a otra especie/sabor/línea.
-            contenders = [(h, e, t) for h, e, t in scored
-                          if t >= best_text - _TIE_MARGIN]
-            if len(contenders) > 1:
-                h, e, t = max(contenders, key=lambda c: _imgsim(c[1]))
-                if h != pick_handle:
-                    log.info(f"  [img] desempate {len(contenders)} cand. "
-                             f"texto≈{best_text:.2f} → {h} (img={_imgsim(e):.2f})")
-                pick_handle, pick_score = h, t
+    def _imgsim(entry):
+        cf = entry.get("img_feat")
+        return image_match.best_similarity(q_feats, cf) if (cf and q_feats) else -1.0
 
+    # Desempate por imagen entre candidatos con texto ≈ al mejor (mismo sabor,
+    # distinta variante de tamaño/formato). Nunca anula un ganador claro de texto.
+    if q_feats:
+        contenders = [(h, e, t) for h, e, t in scored if t >= best_text - _TIE_MARGIN]
+        if len(contenders) > 1:
+            h, e, t = max(contenders, key=lambda c: _imgsim(c[1]))
+            if h != pick_handle:
+                log.info(f"  [img] desempate {len(contenders)} cand. texto≈"
+                         f"{best_text:.2f} → {h} (img={_imgsim(e):.2f})")
+            pick_handle, pick_entry, pick_score = h, e, t
+
+    # Umbral de texto: sin candidato textual decente → vacío
     if pick_score < _TEXT_ONLY_MIN:
         log.info(f"  texto={pick_score:.2f} < {_TEXT_ONLY_MIN} → sin_match")
         return None, pick_score
+
+    # FILTRO de imagen: la foto debe confirmar el candidato, o se deja vacío
+    if q_feats and image_match.backend() == "clip":
+        gate = image_match.gate_threshold()
+        pimg = _imgsim(pick_entry)
+        if pimg < gate:
+            log.info(f"  [img-gate] RECHAZADO '{pick_handle}': img={pimg:.2f} < "
+                     f"{gate:.2f} → sin_match (no se inventa URL)")
+            return None, pick_score
+        log.info(f"  [img-gate] OK '{pick_handle}': img={pimg:.2f} ≥ {gate:.2f} "
+                 f"(texto={pick_score:.2f})")
+    elif use_img and image_match.backend() != "clip":
+        log.info("  [img-gate] CLIP no cargó → sin filtro de imagen (solo texto)")
+
     return pick_handle, pick_score
