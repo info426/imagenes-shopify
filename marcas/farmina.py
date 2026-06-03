@@ -28,6 +28,11 @@ import unicodedata
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
+try:
+    from core import image_match
+except Exception:  # pragma: no cover — degrada a solo-texto si falta el módulo
+    image_match = None
+
 log = logging.getLogger(__name__)
 
 CATALOG_PATH    = Path("resultados/farmina_catalog.json")
@@ -468,20 +473,57 @@ def scrape_product_url(url: str, barcode: str = "") -> dict | None:
     return {"name": name or "", "url": url, "images": images}
 
 
+def _fetch_bytes_via_page(page, url: str) -> bytes | None:
+    """Bytes de imagen vía el contexto del navegador (cookies/anti-bot)."""
+    try:
+        resp = page.context.request.get(url, timeout=30000)
+        if resp.ok:
+            return resp.body()
+    except Exception as e:
+        log.debug(f"  [img] fetch via page falló {url}: {e}")
+    return None
+
+
+def _shopify_feats(product_images: list) -> list:
+    """Huellas visuales de las fotos del producto Shopify (CDN público)."""
+    if image_match is None or not getattr(image_match, "ENABLED", False):
+        return []
+    feats = []
+    for u in (product_images or [])[:3]:
+        f = image_match.compute_feature_from_url(u)
+        if f:
+            feats.append(f)
+    return feats
+
+
+def _candidate_feat(page, images: list):
+    """Huella visual de la imagen principal del candidato (vía navegador)."""
+    if image_match is None or not getattr(image_match, "ENABLED", False):
+        return None
+    for u in (images or [])[:2]:
+        data = _fetch_bytes_via_page(page, u)
+        feat = image_match.compute_feature(data) if data else None
+        if feat:
+            return feat
+    return None
+
+
 def find_best_match(shopify_title: str, catalog: dict,
-                    barcode: str = "") -> tuple:
+                    barcode: str = "", product_images: list = None) -> tuple:
     """
     1. Cache hit exacto por clave de título sin peso.
     2. DDG site:farmina.com/es/eshop/ → candidatos → Jaccard contra h1.
-    3. Guarda resultado en catálogo para evitar repetir DDG/navegación.
+    3. FILTRO de imagen (si usar_imagen + CLIP): la foto del producto Shopify
+       debe coincidir con la del candidato (≥ gate_threshold). Solo se aceptan
+       candidatos confirmados por imagen; entre ellos gana el de mejor texto. Si
+       ninguno confirma → sin_match (campo vacío, NO se inventa la URL).
+       Sin CLIP / sin imagen Shopify → solo texto (comportamiento previo).
     Devuelve (handle, score). handle es la clave en catalog con la URL real.
 
-    Nota: varios productos Shopify del mismo tamaño distinto (2.5/7/12 KG)
-    de la misma receta comparten la misma clave y la misma URL (many-to-one).
+    Nota: varios productos Shopify de distinto tamaño (2.5/7/12 KG) de la misma
+    receta comparten clave y URL (many-to-one).
     """
     title_key = _title_key(shopify_title)
-
-    # 1. Cache exacto (incluye resultados de ejecuciones anteriores)
     if title_key in catalog:
         log.info(f"  Match caché: {title_key}")
         return title_key, 1.0
@@ -490,33 +532,62 @@ def find_best_match(shopify_title: str, catalog: dict,
     if page is None:
         return None, 0.0
 
-    # 2. DDG: título limpio (sin marca, sin peso) → candidatos → score Jaccard
+    q_feats = _shopify_feats(product_images)
     clean_tokens = _tokenize(_clean_for_match(shopify_title))
     urls = _ddg_find_product_urls(shopify_title)
-    best = None  # (score, name, images, url)
+
+    cands = []  # (text, name, images, url, cand_feat)
     for url in urls:
         name, images = _try_url(page, url)
         if not name:
             continue
         score = _similarity(clean_tokens, _tokenize(name))
-        log.info(f"  [cand] score={score:.2f} '{name}' ({len(images)} imgs) {url}")
-        if best is None or score > best[0]:
-            best = (score, name, images, url)
-        if score >= 0.85:
-            break
+        cand_feat = _candidate_feat(page, images) if q_feats else None
+        cands.append((score, name, images, url, cand_feat))
+        log.info(f"  [cand] texto={score:.2f} img={'sí' if cand_feat else '—'} "
+                 f"'{name}' ({len(images)} imgs) {url}")
 
-    if best and best[0] >= MATCH_THRESHOLD:
-        score, name, images, url = best
+    if not cands:
+        log.warning(f"  Sin resolución para '{shopify_title}'")
+        return None, 0.0
+
+    gate_active = (image_match is not None and getattr(image_match, "ENABLED", False)
+                   and bool(q_feats) and image_match.backend() == "clip")
+
+    def _accept(score, name, images, url, why):
         entry = {"name": name, "url": url, "images": images}
         catalog[title_key] = entry
         _save_catalog(catalog)
-        log.info(f"  ✓ Resuelto: '{name}' (score={score:.2f}, {len(images)} imgs)")
+        log.info(f"  ✓ Resuelto ({why}): '{name}' (texto={score:.2f})")
         return title_key, score
 
-    if best:
-        log.warning(
-            f"  Mejor candidato score={best[0]:.2f} < {MATCH_THRESHOLD} "
-            f"— descartado: '{best[1]}'"
-        )
-    log.warning(f"  Sin resolución para '{shopify_title}'")
-    return None, 0.0
+    if gate_active:
+        gate = image_match.gate_threshold()
+        survivors = []  # (text, name, images, url, img)
+        for score, name, images, url, cf in cands:
+            if cf is None:
+                continue
+            isim = image_match.best_similarity(q_feats, cf)
+            if isim >= gate:
+                survivors.append((score, name, images, url, isim))
+            else:
+                log.info(f"  [img-gate] descarta '{name}': img={isim:.2f} < {gate:.2f}")
+        if not survivors:
+            log.warning("  [img-gate] ningún candidato confirma imagen → sin_match (vacío)")
+            return None, 0.0
+        score, name, images, url, isim = max(survivors, key=lambda c: c[0])
+        if score < MATCH_THRESHOLD:
+            log.warning(f"  Confirmado por imagen (img={isim:.2f}) pero texto={score:.2f}"
+                        f" < {MATCH_THRESHOLD} → sin_match")
+            return None, score
+        return _accept(score, name, images, url, f"img-gate OK, img={isim:.2f}")
+
+    # Sin gate → solo texto (CLIP no cargó o sin imagen Shopify)
+    if image_match is not None and getattr(image_match, "ENABLED", False) \
+            and product_images and image_match.backend() != "clip":
+        log.info("  [img-gate] CLIP no cargó → solo texto")
+    score, name, images, url, _ = max(cands, key=lambda c: c[0])
+    if score >= MATCH_THRESHOLD:
+        return _accept(score, name, images, url, f"texto={score:.2f}")
+    log.warning(f"  Mejor candidato score={score:.2f} < {MATCH_THRESHOLD} → sin_match")
+    return None, score

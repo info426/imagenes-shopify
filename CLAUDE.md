@@ -842,6 +842,16 @@ Ejecuciones anteriores de N&D precargan recetas que Vet Life (y viceversa) ya no
 Solo existe un campo URL para Farmina (no hay segunda web en otro idioma).
 Lanzar N&D primero para poblar la caché, luego Vet Life (reutiliza caché).
 
+**Filtro de imagen (gate) — Farmina lo implementa** (1er scraper DDG con gate, además
+de CALIBRA que es catálogo-local). Patrón reutilizable para scrapers DDG (Churu/Virbac):
+- `find_best_match(..., product_images=...)`: el plumbing pasa las fotos Shopify.
+- Por cada candidato DDG visitado, `_candidate_feat(page, images)` descarga su imagen
+  **vía el navegador** (`page.context.request.get`, esquiva anti-bot) y calcula su huella.
+- Con `usar_imagen=true` + CLIP: solo se aceptan candidatos cuya foto confirma la de
+  Shopify (≥ `gate_threshold` 0.74); entre los confirmados gana el de mejor texto. Si
+  ninguno confirma → **sin_match (vacío, no inventa)**. Sin CLIP/sin foto → solo texto.
+- Lanzar con `usar_imagen=true` para activar el filtro (instala CLIP + pre-descarga).
+
 ### CHURU — notas de estrategia (URLs fabricante)
 
 **Dos sitios, un scraper:** `marcas/churu.py` enruta por `web_url`
