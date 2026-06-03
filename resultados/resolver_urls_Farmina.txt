@@ -1,110 +1,97 @@
-2026-06-03 14:07:31,287 [INFO] ============================================================
-2026-06-03 14:07:31,287 [INFO]   Vendor   : Farmina
-2026-06-03 14:07:31,287 [INFO]   Modo     : RESOLVER-URLS
-2026-06-03 14:07:31,287 [INFO]   Pipeline : standard
-2026-06-03 14:07:31,287 [INFO]   Padding  : auto
-2026-06-03 14:07:31,288 [INFO]   Web    : https://www.farmina.com/es/
-2026-06-03 14:07:31,288 [INFO] ============================================================
-2026-06-03 14:07:31,674 [INFO] Token obtenido
-2026-06-03 14:07:31,685 [INFO] Catálogo Farmina borrado (rebuild)
-2026-06-03 14:07:37,137 [INFO] [warm-up] farmina.com/es OK (state=complete)
-2026-06-03 14:07:37,899 [INFO]     [sitemap] https://www.farmina.com/robots.txt → vacío/inaccesible
-2026-06-03 14:07:38,196 [INFO]     [sitemap] https://www.farmina.com/sitemap.xml → vacío/inaccesible
-2026-06-03 14:07:38,492 [INFO]     [sitemap] https://www.farmina.com/es/sitemap.xml → vacío/inaccesible
-2026-06-03 14:07:38,791 [INFO]     [sitemap] https://www.farmina.com/1_es_0_sitemap.xml → vacío/inaccesible
-2026-06-03 14:07:39,086 [INFO]     [sitemap] https://www.farmina.com/2_es_0_sitemap.xml → vacío/inaccesible
-2026-06-03 14:07:39,386 [INFO]     [sitemap] https://www.farmina.com/1_en_0_sitemap.xml → vacío/inaccesible
-2026-06-03 14:07:39,386 [INFO]   Sitemap Farmina: 0 URLs de producto
-2026-06-03 14:07:39,386 [WARNING] Sitemap vacío/inaccesible — find_best_match usará DDG por producto
-2026-06-03 14:07:39,964 [INFO] MODO DRY-RUN — no se escribirá nada en Shopify
-2026-06-03 14:07:39,964 [INFO] 
+2026-06-03 14:20:34,803 [INFO] ============================================================
+2026-06-03 14:20:34,803 [INFO]   Vendor   : Farmina
+2026-06-03 14:20:34,803 [INFO]   Modo     : RESOLVER-URLS
+2026-06-03 14:20:34,804 [INFO]   Pipeline : standard
+2026-06-03 14:20:34,804 [INFO]   Padding  : auto
+2026-06-03 14:20:34,804 [INFO]   Web    : https://www.farmina.com/es/
+2026-06-03 14:20:34,804 [INFO] ============================================================
+2026-06-03 14:20:35,135 [INFO] Token obtenido
+2026-06-03 14:20:35,146 [INFO] Catálogo Farmina borrado (rebuild)
+2026-06-03 14:20:39,886 [INFO] [warm-up] farmina.com/es OK (state=complete)
+2026-06-03 14:20:40,463 [INFO]     [sitemap] https://www.farmina.com/robots.txt → HTTP 404
+2026-06-03 14:20:40,463 [INFO]     [sitemap] https://www.farmina.com/robots.txt → vacío/inaccesible
+2026-06-03 14:20:40,699 [INFO]     [sitemap] https://www.farmina.com/sitemap.xml → HTTP 404
+2026-06-03 14:20:40,699 [INFO]     [sitemap] https://www.farmina.com/sitemap.xml → vacío/inaccesible
+2026-06-03 14:20:40,937 [INFO]     [sitemap] https://www.farmina.com/es/sitemap.xml → HTTP 404
+2026-06-03 14:20:40,938 [INFO]     [sitemap] https://www.farmina.com/es/sitemap.xml → vacío/inaccesible
+2026-06-03 14:20:41,177 [INFO]     [sitemap] https://www.farmina.com/1_es_0_sitemap.xml → HTTP 404
+2026-06-03 14:20:41,177 [INFO]     [sitemap] https://www.farmina.com/1_es_0_sitemap.xml → vacío/inaccesible
+2026-06-03 14:20:41,417 [INFO]     [sitemap] https://www.farmina.com/2_es_0_sitemap.xml → HTTP 404
+2026-06-03 14:20:41,417 [INFO]     [sitemap] https://www.farmina.com/2_es_0_sitemap.xml → vacío/inaccesible
+2026-06-03 14:20:41,654 [INFO]     [sitemap] https://www.farmina.com/1_en_0_sitemap.xml → HTTP 404
+2026-06-03 14:20:41,654 [INFO]     [sitemap] https://www.farmina.com/1_en_0_sitemap.xml → vacío/inaccesible
+2026-06-03 14:20:41,654 [INFO]   Sitemap Farmina: 0 URLs de producto
+2026-06-03 14:20:41,654 [WARNING] Sitemap vacío/inaccesible — find_best_match usará DDG por producto
+2026-06-03 14:20:42,297 [INFO] MODO DRY-RUN — no se escribirá nada en Shopify
+2026-06-03 14:20:42,297 [INFO] 
 [1/2] FARMINA ND DOG PUPPY PRIME POLLO CAJA 6X285GR  (ID: 15509739635075)
   https://admin.shopify.com/store/7ev1zx-eg/products/15509739635075
-2026-06-03 14:07:42,653 [INFO] Parsing model identifier. Schema: None, Identifier: ViT-B-32-quickgelu
-2026-06-03 14:07:42,653 [INFO] Loaded built-in ViT-B-32-quickgelu model config.
-2026-06-03 14:07:42,749 [INFO] HTTP Request: HEAD https://huggingface.co/timm/vit_base_patch32_clip_224.openai/resolve/main/open_clip_model.safetensors "HTTP/1.1 302 Found"
-2026-06-03 14:07:42,750 [INFO] Instantiating model architecture: CLIP
-2026-06-03 14:07:43,686 [INFO] Loading full pretrained weights from: /home/runner/.cache/huggingface/hub/models--timm--vit_base_patch32_clip_224.openai/snapshots/a6f597a30f7b82c51704746581f9a4e41421e878/open_clip_model.safetensors
-2026-06-03 14:07:43,764 [INFO] Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
-2026-06-03 14:07:43,765 [INFO] Model ViT-B-32-quickgelu creation process complete.
-2026-06-03 14:07:43,766 [INFO] [image_match] backend CLIP (open_clip ViT-B-32, pretrained=ViT-B-32-quickgelu/openai) cargado
-2026-06-03 14:07:44,475 [INFO]   (sin catálogo sitemap — fallback DDG)
-2026-06-03 14:07:44,475 [INFO]   [DDG] site:farmina.com/es/eshop/ DOG PUPPY PRIME POLLO CAJA 6X285GR
-2026-06-03 14:07:44,730 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Afarmina.com/es/eshop/%20DOG%20PUPPY%20PRIME%20POLLO%20CAJA%206X285GR 200
-2026-06-03 14:07:44,973 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR&limit=1 200
-2026-06-03 14:07:45,313 [INFO] response: https://www.google.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
-2026-06-03 14:07:45,542 [INFO] response: https://search.yahoo.com/search;_ylt=iu3kR3EgZJgXfiU0Vb7i8Lqn;_ylu=4KmjDIF_pnwtSZmrfW-JJ8aWgL6-PN6sOKyXMT92JPR2wgI?p=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR 200
-2026-06-03 14:07:45,916 [INFO] response: https://search.brave.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR&source=web 200
-2026-06-03 14:07:45,925 [INFO]   [DDG] 6 candidatos: ['https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/588-pollo-&-granada-adult-medium-&-maxi.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-ancestral-grain-canine/594-pollo-&-granada-adult-medium-&-maxi.html', 'https://www.farmina.com/es/eshop/alimento-para-gatos/n&d-prime-feline/145-pollo-&-granada-adulto.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/fun-dog/201-mix.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-tropical-selection-canine/1012-pollo,-espelta,-avena-y-frutas-tropicales-adult-mini.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/590-jabalí-&-manzana-adult-medium-&-maxi.html']
-2026-06-03 14:07:49,774 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:07:49,782 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:07:49,783 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:07:50,311 [INFO]   [cand-ddg] texto=0.10 img=sí 'POLLO & GRANADA ADULT MEDIUM & MAXI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/588-pollo-&-granada-adult-medium-&-maxi.html
-2026-06-03 14:07:54,111 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:07:54,119 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:07:54,119 [INFO]     Imágenes extraídas: 2
-2026-06-03 14:07:55,069 [INFO]   [cand-ddg] texto=0.10 img=sí 'POLLO & GRANADA ADULT MEDIUM & MAXI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-ancestral-grain-canine/594-pollo-&-granada-adult-medium-&-maxi.html
-2026-06-03 14:07:55,069 [INFO]   [especie] descarta https://www.farmina.com/es/eshop/alimento-para-gatos/n&d-prime-feline/145-pollo-&-granada-adulto.html (≠ dog)
-2026-06-03 14:07:59,046 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:07:59,055 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:07:59,055 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:07:59,304 [INFO]   [cand-ddg] texto=0.00 img=sí 'MIX' https://www.farmina.com/es/eshop/alimento-para-perros/fun-dog/201-mix.html
-2026-06-03 14:08:03,062 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:08:03,071 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:08:03,071 [INFO]     Imágenes extraídas: 2
-2026-06-03 14:08:03,902 [INFO]   [cand-ddg] texto=0.10 img=sí 'POLLO, ESPELTA, AVENA Y FRUTAS TROPICALES ADULT MINI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-tropical-selection-canine/1012-pollo,-espelta,-avena-y-frutas-tropicales-adult-mini.html
-2026-06-03 14:08:07,678 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:08:07,686 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:08:07,687 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:08:08,212 [INFO]   [cand-ddg] texto=0.00 img=sí 'JABALÍ & MANZANA ADULT MEDIUM & MAXI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/590-jabalí-&-manzana-adult-medium-&-maxi.html
-2026-06-03 14:08:08,213 [INFO]   [img-gate] descarta 'MIX': img=0.40 < 0.60
-2026-06-03 14:08:08,213 [WARNING]   Confirmado por imagen (img=0.72) pero texto=0.10 < 0.12 → sin_match
-2026-06-03 14:08:08,213 [WARNING]   Sin URL (score=0.10) → campo vacío
-2026-06-03 14:08:08,314 [INFO] 
+2026-06-03 14:20:44,843 [INFO] Parsing model identifier. Schema: None, Identifier: ViT-B-32-quickgelu
+2026-06-03 14:20:44,843 [INFO] Loaded built-in ViT-B-32-quickgelu model config.
+2026-06-03 14:20:44,906 [INFO] HTTP Request: HEAD https://huggingface.co/timm/vit_base_patch32_clip_224.openai/resolve/main/open_clip_model.safetensors "HTTP/1.1 302 Found"
+2026-06-03 14:20:44,907 [INFO] Instantiating model architecture: CLIP
+2026-06-03 14:20:45,843 [INFO] Loading full pretrained weights from: /home/runner/.cache/huggingface/hub/models--timm--vit_base_patch32_clip_224.openai/snapshots/a6f597a30f7b82c51704746581f9a4e41421e878/open_clip_model.safetensors
+2026-06-03 14:20:45,917 [INFO] Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+2026-06-03 14:20:45,918 [INFO] Model ViT-B-32-quickgelu creation process complete.
+2026-06-03 14:20:45,919 [INFO] [image_match] backend CLIP (open_clip ViT-B-32, pretrained=ViT-B-32-quickgelu/openai) cargado
+2026-06-03 14:20:46,517 [INFO]   (sin catálogo sitemap — fallback DDG)
+2026-06-03 14:20:46,517 [INFO]   [DDG] site:farmina.com/es/eshop/ DOG PUPPY PRIME POLLO CAJA 6X285GR
+2026-06-03 14:20:46,830 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR&limit=1 200
+2026-06-03 14:20:46,912 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Afarmina.com/es/eshop/%20DOG%20PUPPY%20PRIME%20POLLO%20CAJA%206X285GR 200
+2026-06-03 14:20:48,149 [INFO] response: https://yandex.com/search/site/?text=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR&web=1&searchid=2256378 200
+2026-06-03 14:20:48,541 [INFO] response: https://www.mojeek.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR 403
+2026-06-03 14:20:48,725 [INFO] response: https://search.yahoo.com/search;_ylt=Xlqd8h7hGt6g709xUNxIiJC8;_ylu=G_d8NO8Zcxz1BRCNYqpywKWm3A3J00vsZSXfvoIJY8WokOo?p=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+PUPPY+PRIME+POLLO+CAJA+6X285GR 200
+2026-06-03 14:20:49,164 [INFO]   [DDG] 6 candidatos: ['https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/586-pollo-&-granada-puppy-medium-&-maxi.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/585-pollo-&-granada-puppy-mini.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-grain-free-canine/586-pollo-&-granada-puppy-medium-&-maxi.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-pumpkin-canine/532-pollo,-calabaza-&-granada-starter-puppy-lata.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/n&d-ancestral-grain-canine/105-pollo-&-granada-starter-puppy-.html', 'https://www.farmina.com/es/eshop/alimento-para-su-perro/farmina-team-breeder-canine/174-puppy-maxi-chicken-&-pomegranate.html']
+2026-06-03 14:20:53,906 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:20:53,915 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:20:53,915 [INFO]     Imágenes extraídas: 3
+2026-06-03 14:20:54,344 [INFO]   [cand-ddg] texto=0.22 img=sí 'POLLO & GRANADA PUPPY MEDIUM & MAXI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/586-pollo-&-granada-puppy-medium-&-maxi.html
+2026-06-03 14:20:57,990 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:20:57,998 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:20:57,999 [INFO]     Imágenes extraídas: 3
+2026-06-03 14:20:58,563 [INFO]   [cand-ddg] texto=0.24 img=sí 'POLLO & GRANADA PUPPY MINI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-prime-canine/585-pollo-&-granada-puppy-mini.html
+2026-06-03 14:21:01,811 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:21:01,819 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:21:01,819 [INFO]     Imágenes extraídas: 3
+2026-06-03 14:21:02,275 [INFO]   [cand-ddg] texto=0.22 img=sí 'POLLO & GRANADA PUPPY MEDIUM & MAXI' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-grain-free-canine/586-pollo-&-granada-puppy-medium-&-maxi.html
+2026-06-03 14:21:06,003 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:21:06,012 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:21:06,012 [INFO]     Imágenes extraídas: 2
+2026-06-03 14:21:06,789 [INFO]   [cand-ddg] texto=0.39 img=sí 'POLLO, CALABAZA & GRANADA STARTER PUPPY LATA' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-pumpkin-canine/532-pollo,-calabaza-&-granada-starter-puppy-lata.html
+2026-06-03 14:21:10,433 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:21:10,441 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:21:10,442 [INFO]     Imágenes extraídas: 2
+2026-06-03 14:21:11,281 [INFO]   [cand-ddg] texto=0.27 img=sí 'POLLO & GRANADA STARTER PUPPY' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-ancestral-grain-canine/105-pollo-&-granada-starter-puppy-.html
+2026-06-03 14:21:14,852 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:21:14,859 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:21:14,859 [INFO]     Imágenes extraídas: 3
+2026-06-03 14:21:15,172 [INFO]   [cand-ddg] texto=0.24 img=sí 'PUPPY MAXI CHICKEN & POMEGRANATE' https://www.farmina.com/es/eshop/alimento-para-su-perro/farmina-team-breeder-canine/174-puppy-maxi-chicken-&-pomegranate.html
+2026-06-03 14:21:15,173 [INFO]   [img-gate] descarta 'PUPPY MAXI CHICKEN & POMEGRANATE': img=0.51 < 0.60
+2026-06-03 14:21:15,173 [INFO]   ✓ Resuelto (img-gate OK, img=0.74): 'POLLO, CALABAZA & GRANADA STARTER PUPPY LATA' (texto=0.39) https://www.farmina.com/es/eshop/alimento-para-perros/n&d-pumpkin-canine/532-pollo,-calabaza-&-granada-starter-puppy-lata.html
+2026-06-03 14:21:15,173 [INFO]   [dry-run] PONDRÍA → https://www.farmina.com/es/eshop/alimento-para-perros/n&d-pumpkin-canine/532-pollo,-calabaza-&-granada-starter-puppy-lata.html  (score=0.39)
+2026-06-03 14:21:15,274 [INFO] 
 [2/2] FARMINA VET LIFE DOG RENAL  (ID: 15469438402947)
   https://admin.shopify.com/store/7ev1zx-eg/products/15469438402947
-2026-06-03 14:08:08,549 [INFO]   (sin catálogo sitemap — fallback DDG)
-2026-06-03 14:08:08,549 [INFO]   [DDG] site:farmina.com/es/eshop/ DOG RENAL
-2026-06-03 14:08:08,683 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+RENAL&limit=1 200
-2026-06-03 14:08:08,734 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Afarmina.com/es/eshop/%20DOG%20RENAL 200
-2026-06-03 14:08:09,963 [INFO] response: https://yandex.com/search/site/?text=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+RENAL&web=1&searchid=8693223 200
-2026-06-03 14:08:10,286 [INFO] response: https://www.google.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+RENAL&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
-2026-06-03 14:08:10,358 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
-2026-06-03 14:08:11,482 [INFO] response: https://www.mojeek.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+RENAL 403
-2026-06-03 14:08:12,004 [INFO] response: https://www.startpage.com/sp/captcha 200
-2026-06-03 14:08:12,409 [INFO] response: https://www.startpage.com/sp/captcha 200
-2026-06-03 14:08:12,806 [INFO] response: https://search.brave.com/search?q=site%3Afarmina.com%2Fes%2Feshop%2F+DOG+RENAL&source=web 200
-2026-06-03 14:08:12,813 [INFO]   [DDG] 6 candidatos: ['https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/82-renal.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/69-renal.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/376-renal-húmedo.html', 'https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html', 'https://www.farmina.com/es/eshop/alimento-para-tu-gato/farmina-vet-life/82-renal-feline.html', 'https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/70-obesity.html']
-2026-06-03 14:08:12,813 [INFO]   [especie] descarta https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/82-renal.html (≠ dog)
-2026-06-03 14:08:17,553 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:08:17,561 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:08:17,561 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:08:17,945 [INFO]   [cand-ddg] texto=0.33 img=sí 'RENAL' https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/69-renal.html
-2026-06-03 14:08:21,947 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:08:21,954 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:08:21,954 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:08:22,335 [INFO]   [cand-ddg] texto=0.17 img=sí 'RENAL HÚMEDO' https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/376-renal-húmedo.html
-2026-06-03 14:08:22,335 [INFO]   [especie] descarta https://www.farmina.com/es/eshop/alimento-para-gatos/farmina-vet-life/381-renal-húmedo.html (≠ dog)
-2026-06-03 14:08:22,335 [INFO]   [especie] descarta https://www.farmina.com/es/eshop/alimento-para-tu-gato/farmina-vet-life/82-renal-feline.html (≠ dog)
-2026-06-03 14:08:26,226 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
-2026-06-03 14:08:26,234 [INFO]     DOM imgs (excl. relacionados): 4
-2026-06-03 14:08:26,234 [INFO]     Imágenes extraídas: 3
-2026-06-03 14:08:26,619 [INFO]   [cand-ddg] texto=0.00 img=sí 'OBESITY' https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/70-obesity.html
-2026-06-03 14:08:26,619 [INFO]   ✓ Resuelto (img-gate OK, img=0.71): 'RENAL' (texto=0.33) https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/69-renal.html
-2026-06-03 14:08:26,619 [INFO]   [dry-run] PONDRÍA → https://www.farmina.com/es/eshop/alimento-para-perros/farmina-vet-life/69-renal.html  (score=0.33)
-2026-06-03 14:08:26,719 [INFO] 
+2026-06-03 14:21:20,297 [INFO]     og:image: https://www.farmina.com/images/logo-Farmina.png
+2026-06-03 14:21:20,304 [INFO]     DOM imgs (excl. relacionados): 4
+2026-06-03 14:21:20,304 [INFO]     Imágenes extraídas: 2
+2026-06-03 14:21:21,062 [INFO]   [cand] texto=0.11 img=sí 'POLLO, CALABAZA & GRANADA STARTER PUPPY LATA' https://www.farmina.com/es/eshop/alimento-para-perros/n&d-pumpkin-canine/532-pollo,-calabaza-&-granada-starter-puppy-lata.html
+2026-06-03 14:21:21,063 [INFO]   [img-gate] descarta 'POLLO, CALABAZA & GRANADA STARTER PUPPY LATA': img=0.48 < 0.60
+2026-06-03 14:21:21,063 [WARNING]   [img-gate] ningún candidato confirma imagen → sin_match (vacío)
+2026-06-03 14:21:21,063 [WARNING]   Sin URL (score=0.00) → campo vacío
+2026-06-03 14:21:21,163 [INFO] 
 ============================================================
-2026-06-03 14:08:26,720 [INFO] RESUMEN
-2026-06-03 14:08:26,720 [INFO] ============================================================
-2026-06-03 14:08:26,720 [INFO]   total         : 2
-2026-06-03 14:08:26,720 [INFO]   guardadas     : 1
-2026-06-03 14:08:26,720 [INFO]   sin_match     : 1
-2026-06-03 14:08:26,720 [INFO] 
+2026-06-03 14:21:21,163 [INFO] RESUMEN
+2026-06-03 14:21:21,163 [INFO] ============================================================
+2026-06-03 14:21:21,163 [INFO]   total         : 2
+2026-06-03 14:21:21,163 [INFO]   guardadas     : 1
+2026-06-03 14:21:21,163 [INFO]   sin_match     : 1
+2026-06-03 14:21:21,163 [INFO] 
 ============================================================
-2026-06-03 14:08:26,720 [INFO] SIN MATCH — 1 producto(s) a revisar/asignar a mano (url_fabricante):
-2026-06-03 14:08:26,720 [INFO] ============================================================
-2026-06-03 14:08:26,720 [INFO]   • FARMINA ND DOG PUPPY PRIME POLLO CAJA 6X285GR
-2026-06-03 14:08:26,720 [INFO]     https://admin.shopify.com/store/7ev1zx-eg/products/15509739635075
-2026-06-03 14:08:26,720 [INFO] 
+2026-06-03 14:21:21,163 [INFO] SIN MATCH — 1 producto(s) a revisar/asignar a mano (url_fabricante):
+2026-06-03 14:21:21,163 [INFO] ============================================================
+2026-06-03 14:21:21,163 [INFO]   • FARMINA VET LIFE DOG RENAL
+2026-06-03 14:21:21,163 [INFO]     https://admin.shopify.com/store/7ev1zx-eg/products/15469438402947
+2026-06-03 14:21:21,164 [INFO] 
 [dry-run] resultados guardados en resultados/farmina_resolver_dryrun.json (no se escribió en Shopify)
-2026-06-03 14:08:26,720 [INFO] [dry-run] No hay snapshot (farmina_urls_snapshot.json) — sin comparación.
+2026-06-03 14:21:21,164 [INFO] [dry-run] No hay snapshot (farmina_urls_snapshot.json) — sin comparación.
