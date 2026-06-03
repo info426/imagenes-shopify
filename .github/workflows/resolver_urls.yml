@@ -72,17 +72,30 @@ jobs:
       - name: Instalar xvfb (navegador headed anti-bot)
         run: sudo apt-get update && sudo apt-get install -y xvfb
 
+      - name: Caché de pesos CLIP (evita el rate-limit 429 de HuggingFace)
+        if: ${{ github.event.inputs.usar_imagen == 'true' }}
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-clip-vit-b32-laion2b-s34b-b79k-v1
+          restore-keys: hf-clip-vit-b32-
+
       - name: Instalar visión CLIP (reconocimiento por imagen)
         if: ${{ github.event.inputs.usar_imagen == 'true' }}
+        env:
+          # Token HF opcional (secret): autenticado sube el límite y evita el 429.
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HUGGING_FACE_HUB_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_HUB_DISABLE_TELEMETRY: '1'
         run: |
           # torch/torchvision CPU desde el índice oficial (evita la build CUDA ~2GB)
           pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-vision.txt
-          # Pre-descargar los pesos CLIP a la caché de HuggingFace (la descarga es
-          # intermitente; con reintentos aquí evitamos degradar a hash en match-time).
-          for i in 1 2 3 4; do
+          # Pre-descargar los pesos CLIP a la caché de HuggingFace (que actions/cache
+          # persiste entre runs). Reintentos con backoff largo por si HF da 429.
+          for i in 1 2 3 4 5; do
             python -c "import open_clip; open_clip.create_model_and_transforms('ViT-B-32', pretrained='laion2b_s34b_b79k')" && break
-            echo "Pre-descarga CLIP intento $i falló; reintento en $((i*5))s"; sleep $((i*5))
+            echo "Pre-descarga CLIP intento $i falló; reintento en $((i*15))s"; sleep $((i*15))
           done || echo "No se pudieron pre-descargar los pesos CLIP; el run usará hash/texto"
 
       - name: Resolver URLs y guardar metacampos
@@ -96,24 +109,27 @@ jobs:
           # Reconocimiento por imagen (Google Lens-like). 1 = activo (requiere el
           # paso de visión CLIP); 0 = solo texto (con umbral elevado anti-basura).
           IMAGE_MATCH: ${{ github.event.inputs.usar_imagen == 'true' && '1' || '0' }}
+          # IDs por env (process_brand los lee y parte por coma con strip) → inmune
+          # a que se peguen con espacios tras la coma en el campo de GitHub.
+          PRODUCT_IDS: ${{ github.event.inputs.product_ids }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HUGGING_FACE_HUB_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           mkdir -p resultados
           EXTRA=""
           WEB=""
-          IDS=""
           URLKEY=""
           CLEAR=""
           DRY=""
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ]  && EXTRA="--rebuild-catalog"
           [ -n "${{ github.event.inputs.web_url }}" ]                 && WEB="--web-url ${{ github.event.inputs.web_url }}"
-          [ -n "${{ github.event.inputs.product_ids }}" ]             && IDS="--only-ids ${{ github.event.inputs.product_ids }}"
           [ -n "${{ github.event.inputs.url_key }}" ]                 && URLKEY="--url-key ${{ github.event.inputs.url_key }}"
           [ "${{ github.event.inputs.clear_on_no_match }}" = "true" ] && CLEAR="--clear-on-no-match"
           [ "${{ github.event.inputs.dry_run }}" = "true" ]           && DRY="--dry-run"
           xvfb-run -a python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --resolver-urls \
-            $WEB $IDS $EXTRA $URLKEY $CLEAR $DRY \
+            $WEB $EXTRA $URLKEY $CLEAR $DRY \
             2>&1 | tee resultados/resolver_urls_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log y catálogo
