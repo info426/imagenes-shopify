@@ -37,7 +37,10 @@ log = logging.getLogger(__name__)
 
 CATALOG_PATH    = Path("resultados/farmina_catalog.json")
 PRODUCT_DOMAIN  = "farmina.com"
-MATCH_THRESHOLD = 0.25
+MATCH_THRESHOLD = 0.25       # umbral de texto cuando NO hay filtro de imagen
+# Con el gate de imagen activo, la foto es el filtro de precisión → se acepta
+# texto más flojo (títulos Farmina escuetos vs nombres web largos con "& GRANADA").
+_TEXT_MIN_WITH_IMG = 0.12
 
 # Prefijo de marca y submarca a eliminar del título Shopify antes del matching.
 # Cubre variantes: "FARMINA ND", "FARMINA N&D", "FARMINA VET LIFE", "ND", etc.
@@ -576,9 +579,9 @@ def find_best_match(shopify_title: str, catalog: dict,
             log.warning("  [img-gate] ningún candidato confirma imagen → sin_match (vacío)")
             return None, 0.0
         score, name, images, url, isim = max(survivors, key=lambda c: c[0])
-        if score < MATCH_THRESHOLD:
+        if score < _TEXT_MIN_WITH_IMG:
             log.warning(f"  Confirmado por imagen (img={isim:.2f}) pero texto={score:.2f}"
-                        f" < {MATCH_THRESHOLD} → sin_match")
+                        f" < {_TEXT_MIN_WITH_IMG} → sin_match")
             return None, score
         return _accept(score, name, images, url, f"img-gate OK, img={isim:.2f}")
 
