@@ -520,10 +520,11 @@ def _parse_sitemap_locs(xml_text: str) -> list:
 
 
 def _fetch_text(page, url: str) -> str:
-    """Texto de una URL. 1) APIRequestContext; 2) fallback con fetch() DENTRO de
-    la página (mismo origen farmina.com → mismo fingerprint/cookies del navegador
-    que ya pasó el anti-bot; el APIRequestContext tiene otro fingerprint y puede
-    ser bloqueado — lección Applaws)."""
+    """Texto crudo de una URL (robots.txt / sitemap XML).
+    1) APIRequestContext (rápido). 2) NAVEGACIÓN + cuerpo de la respuesta: usa el
+    fingerprint del navegador (pasa anti-bot) y `resp.text()` da el cuerpo crudo;
+    a diferencia de fetch() in-page NO está sujeto a la CSP connect-src de la página
+    (que en el run #26 devolvía vacío)."""
     data = _fetch_bytes_via_page(page, url)
     if data:
         try:
@@ -531,19 +532,16 @@ def _fetch_text(page, url: str) -> str:
         except Exception:
             pass
     try:
-        # Asegurar que la página está en el origen farmina.com (same-origin fetch)
-        if "farmina.com" not in (page.url or ""):
-            page.goto("https://www.farmina.com/es/", timeout=20000,
-                      wait_until="domcontentloaded")
-        txt = page.evaluate(
-            """async (u) => {
-                try { const r = await fetch(u, {credentials:'include'});
-                      return r.ok ? await r.text() : ''; }
-                catch (e) { return ''; }
-            }""", url)
-        return txt or ""
+        resp = page.goto(url, timeout=30000, wait_until="domcontentloaded")
+        status = resp.status if resp else "?"
+        if resp and resp.ok:
+            try:
+                return resp.text()
+            except Exception:
+                return page.content() or ""
+        log.info(f"    [sitemap] {url} → HTTP {status}")
     except Exception as e:
-        log.info(f"    [sitemap] fetch in-page {url} falló: {e}")
+        log.info(f"    [sitemap] navegación {url} falló: {e}")
     return ""
 
 
