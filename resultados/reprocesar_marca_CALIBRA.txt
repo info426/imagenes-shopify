@@ -1,0 +1,856 @@
+2026-06-03 10:56:33,015 [INFO] ============================================================
+2026-06-03 10:56:33,015 [INFO]   Vendor    : CALIBRA
+2026-06-03 10:56:33,015 [INFO]   Modo      : ESCANEO MARCA
+2026-06-03 10:56:33,015 [INFO]   Pipeline  : standard
+2026-06-03 10:56:33,015 [INFO]   Padding   : auto
+2026-06-03 10:56:33,015 [INFO]   sRGB      : no
+2026-06-03 10:56:33,015 [INFO] ============================================================
+2026-06-03 10:56:33,762 [INFO] Total productos de 'CALIBRA': 146
+2026-06-03 10:56:33,979 [INFO] 
+[1/146] CALIBRA CAT ADULT POUCH MULTIPAK CAJA 12X100G  (ID 15509672296835) — 2 imágenes
+2026-06-03 10:56:34,211 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:34,211 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:34,298 [INFO]     cargada RGB (1220, 1220) ← NVPRE17CalibraCatPremiumPouchAdultMultipack12x100g_02_1x1_1220x1220_crop_center_1d4ed352-71ce-4d0d-aed0-5e5e22c1e94a.webp
+2026-06-03 10:56:34,323 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:56:34,337 [INFO]     [autocrop] (1220, 1220) → (1128, 595)
+2026-06-03 10:56:34,337 [INFO]     [padding 5%]
+2026-06-03 10:56:37,799 [INFO]     ✓ reprocesada y subida [calibra-cat-adult-pouch-multipak-caja-12x100g_2.webp] en posición 2
+2026-06-03 10:56:38,509 [INFO] 
+[2/146] CALIBRA CAT ADULT POUCH PATO POLLO CAJA 24X100GR  (ID 15509672395139) — 1 imágenes
+2026-06-03 10:56:38,731 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:38,958 [INFO] 
+[3/146] CALIBRA CAT ADULT POUCH TRUCHA SALMON CAJA 24X100GR  (ID 15509672460675) — 1 imágenes
+2026-06-03 10:56:39,189 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:39,409 [INFO] 
+[4/146] CALIBRA CAT KITTEN POUCH MULTIPACK CAJA 12X100GR  (ID 15509672526211) — 2 imágenes
+2026-06-03 10:56:39,632 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:39,633 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:39,678 [INFO]     cargada RGB (1220, 1220) ← NVPRE21CalibraCatPremiumPouchKittenMultipack12x100g_02_1x1_1220x1220_crop_center_090cdcd6-5abf-4d6d-9e39-0f6082f2b637.webp
+2026-06-03 10:56:39,697 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:56:39,710 [INFO]     [autocrop] (1220, 1220) → (1118, 573)
+2026-06-03 10:56:39,710 [INFO]     [padding 5%]
+2026-06-03 10:56:42,705 [INFO]     ✓ reprocesada y subida [calibra-cat-kitten-pouch-multipack-caja-12x100gr_2.webp] en posición 2
+2026-06-03 10:56:43,427 [INFO] 
+[5/146] CALIBRA CAT KITTEN POUCH PAVO POLLO CAJA 24X100GR  (ID 15509672558979) — 1 imágenes
+2026-06-03 10:56:43,638 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:43,861 [INFO] 
+[6/146] CALIBRA CAT KITTEN POUCH SALMON CAJA 24X100GR  (ID 15509672624515) — 1 imágenes
+2026-06-03 10:56:44,080 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:44,310 [INFO] 
+[7/146] CALIBRA CAT LIFE ADULT ARENQUE  (ID 15509672755587) — 3 imágenes
+2026-06-03 10:56:44,508 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:44,508 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:44,558 [INFO]     cargada RGB (1220, 1220) ← NVFEL63CalibraCatLifeAdultHerring1.5kg_03_1x1_1220x1220_crop_center_a5ad7c76-f725-4444-a2a2-3e6e00455d36.webp
+2026-06-03 10:56:44,577 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:56:44,577 [INFO]     [sin padding]
+2026-06-03 10:56:48,299 [INFO]     ✓ reprocesada y subida [calibra-cat-life-adult-arenque_2.webp] en posición 2
+2026-06-03 10:56:48,801 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:48,855 [INFO]     cargada RGB (1220, 1220) ← NVFEL63CalibraCatLifeAdultHerring1.5kg_04_1x1_1220x1220_crop_center_f90dbe5b-cf7b-493f-97f1-88f3bbe1ab4f.webp
+2026-06-03 10:56:48,880 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:56:48,881 [INFO]     [sin padding]
+2026-06-03 10:56:52,300 [INFO]     ✓ reprocesada y subida [calibra-cat-life-adult-arenque_3.webp] en posición 3
+2026-06-03 10:56:53,032 [INFO] 
+[8/146] CALIBRA CAT LIFE ADULT CORDERO  (ID 15509672853891) — 1 imágenes
+2026-06-03 10:56:53,232 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:53,466 [INFO] 
+[9/146] CALIBRA CAT LIFE ADULT POLLO 6KG  (ID 15509672886659) — 3 imágenes
+2026-06-03 10:56:53,714 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:56:53,714 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:53,759 [INFO]     cargada RGB (1220, 1220) ← NVFEL61CalibraCatLifeAdultChicken1.5kg_03_1x1_1220x1220_crop_center_abeaaabe-af07-44bb-9084-6b1fcb3d6102.webp
+2026-06-03 10:56:53,776 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:56:53,776 [INFO]     [sin padding]
+2026-06-03 10:56:56,825 [INFO]     ✓ reprocesada y subida [calibra-cat-life-adult-pollo-6kg_2.webp] en posición 2
+2026-06-03 10:56:57,328 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:56:57,393 [INFO]     cargada RGB (1220, 1220) ← NVFEL61CalibraCatLifeAdultChicken1.5kg_04_1x1_1220x1220_crop_center_af3fed21-c98b-4a3e-89dc-1b0005ac7638.webp
+2026-06-03 10:56:57,417 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:56:57,417 [INFO]     [sin padding]
+2026-06-03 10:57:01,067 [INFO]     ✓ reprocesada y subida [calibra-cat-life-adult-pollo-6kg_3.webp] en posición 3
+2026-06-03 10:57:01,793 [INFO] 
+[10/146] CALIBRA CAT LIFE KITTEN POLLO  (ID 15509673083267) — 1 imágenes
+2026-06-03 10:57:02,006 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:02,229 [INFO] 
+[11/146] CALIBRA CAT LIFE LATA ADULT POLLO 6X200GR  (ID 15509673148803) — 1 imágenes
+2026-06-03 10:57:02,443 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:02,680 [INFO] 
+[12/146] CALIBRA CAT LIFE LATA ADULT SALMON 6X200GR  (ID 15509673181571) — 1 imágenes
+2026-06-03 10:57:02,886 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:03,098 [INFO] 
+[13/146] CALIBRA CAT LIFE LATA ADULT TERNERA 6X200GR  (ID 15509673279875) — 1 imágenes
+2026-06-03 10:57:03,322 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:03,532 [INFO] 
+[14/146] CALIBRA CAT LIFE LATA KITTEN POLLO 6X200GR  (ID 15509673312643) — 1 imágenes
+2026-06-03 10:57:03,735 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:03,977 [INFO] 
+[15/146] CALIBRA CAT LIFE LATA SENSITIVE CONEJO 6X200GR  (ID 15509673345411) — 1 imágenes
+2026-06-03 10:57:04,197 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:04,438 [INFO] 
+[16/146] CALIBRA CAT LIFE LATA SENSITIVE CORDERO 6X200GR  (ID 15509673443715) — 4 imágenes
+2026-06-03 10:57:04,662 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:04,662 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:04,711 [INFO]     cargada RGB (1220, 1220) ← NVFEL39CalibraCatLifeCanSensitiveLamb6x200g_03_1x1_1220x1220_crop_center_a94d398e-cb1e-472c-add2-878fc3145e6f.webp
+2026-06-03 10:57:04,731 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:04,732 [INFO]     [sin padding]
+2026-06-03 10:57:07,987 [INFO]     ✓ reprocesada y subida [calibra-cat-life-lata-sensitive-cordero-6x200gr_2.webp] en posición 2
+2026-06-03 10:57:08,489 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:08,541 [INFO]     cargada RGB (1220, 1220) ← NVFEL39CalibraCatLifeCanSensitiveLamb6x200g_06_1__1x1_1220x1220_crop_center_ceb172d9-674d-44ce-898b-b0967320008b.webp
+2026-06-03 10:57:08,564 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:08,564 [INFO]     [sin padding]
+2026-06-03 10:57:12,736 [INFO]     ✓ reprocesada y subida [calibra-cat-life-lata-sensitive-cordero-6x200gr_3.webp] en posición 3
+2026-06-03 10:57:13,238 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:13,285 [INFO]     cargada RGB (1220, 1220) ← NVFEL39CalibraCatLifeCanSensitiveLamb6x200g_04_1x1_1220x1220_crop_center_d29b6288-e778-4952-9ccc-cf8557a440dc.webp
+2026-06-03 10:57:13,305 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:13,305 [INFO]     [sin padding]
+2026-06-03 10:57:16,778 [INFO]     ✓ reprocesada y subida [calibra-cat-life-lata-sensitive-cordero-6x200gr_4.webp] en posición 4
+2026-06-03 10:57:17,507 [INFO] 
+[17/146] CALIBRA CAT LIFE LATA STERILISED PATO 6X200GR  (ID 15509673476483) — 1 imágenes
+2026-06-03 10:57:17,727 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:17,934 [INFO] 
+[18/146] CALIBRA CAT LIFE LATA STERILISED PAVO 6X200GR  (ID 15509673509251) — 1 imágenes
+2026-06-03 10:57:18,157 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:18,377 [INFO] 
+[19/146] CALIBRA CAT LIFE POUCH ADULT BUEY EN SALSA 28X85GR  (ID 15509673574787) — 4 imágenes
+2026-06-03 10:57:18,584 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:18,584 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:18,635 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_06_1x1_1220x1220_crop_center_5649a20f-54f6-48ee-8f59-71df61e07028.webp
+2026-06-03 10:57:18,657 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:18,657 [INFO]     [sin padding]
+2026-06-03 10:57:22,009 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-buey-en-salsa-28x85gr_2.webp] en posición 2
+2026-06-03 10:57:22,512 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:22,556 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_03_1x1_1220x1220_crop_center_de816337-d036-4835-befc-0352af2cb97c.webp
+2026-06-03 10:57:22,573 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:22,573 [INFO]     [sin padding]
+2026-06-03 10:57:25,848 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-buey-en-salsa-28x85gr_3.webp] en posición 3
+2026-06-03 10:57:26,350 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:26,399 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_04_1x1_1220x1220_crop_center_66987af1-303e-4471-8bf0-c6e460538d06.webp
+2026-06-03 10:57:26,429 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:26,429 [INFO]     [sin padding]
+2026-06-03 10:57:30,159 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-buey-en-salsa-28x85gr_4.webp] en posición 4
+2026-06-03 10:57:30,897 [INFO] 
+[20/146] CALIBRA CAT LIFE POUCH ADULT MULTIPACK 12X85GR  (ID 15509673673091) — 1 imágenes
+2026-06-03 10:57:31,096 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:31,311 [INFO] 
+[21/146] CALIBRA CAT LIFE POUCH ADULT PATO EN SALSA 28X85GR  (ID 15509673705859) — 4 imágenes
+2026-06-03 10:57:31,535 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:31,536 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:31,583 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_06_1x1_1220x1220_crop_center_574acacc-cfc0-4e16-91c6-17604687a492.webp
+2026-06-03 10:57:31,605 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:31,605 [INFO]     [sin padding]
+2026-06-03 10:57:35,109 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pato-en-salsa-28x85gr_2.webp] en posición 2
+2026-06-03 10:57:35,612 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:35,661 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_03_1x1_1220x1220_crop_center_6d6546f8-16d7-4f80-9f88-8d97dd1ce70c.webp
+2026-06-03 10:57:35,679 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:35,679 [INFO]     [sin padding]
+2026-06-03 10:57:38,824 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pato-en-salsa-28x85gr_3.webp] en posición 3
+2026-06-03 10:57:39,327 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:39,373 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_04_1x1_1220x1220_crop_center_e5c45683-24c2-45dc-879d-cac3dee4799d.webp
+2026-06-03 10:57:39,400 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:39,401 [INFO]     [sin padding]
+2026-06-03 10:57:43,190 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pato-en-salsa-28x85gr_4.webp] en posición 4
+2026-06-03 10:57:43,926 [INFO] 
+[22/146] CALIBRA CAT LIFE POUCH ADULT PAVO EN SALSA 28X85GR  (ID 15509673738627) — 4 imágenes
+2026-06-03 10:57:44,175 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:44,175 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:44,221 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_06_1x1_1220x1220_crop_center_d20b0946-e54f-48b2-aa98-39d01c5b0e7c.webp
+2026-06-03 10:57:44,243 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:44,243 [INFO]     [sin padding]
+2026-06-03 10:57:47,643 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pavo-en-salsa-28x85gr_2.webp] en posición 2
+2026-06-03 10:57:48,146 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:48,193 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_03_1x1_1220x1220_crop_center_9ee42f45-bf82-47f5-91a7-346d4dfd1359.webp
+2026-06-03 10:57:48,210 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:48,210 [INFO]     [sin padding]
+2026-06-03 10:57:51,330 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pavo-en-salsa-28x85gr_3.webp] en posición 3
+2026-06-03 10:57:51,833 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:51,876 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_04_1x1_1220x1220_crop_center_b2244c41-927b-4455-add7-c5aea6d21c4a.webp
+2026-06-03 10:57:51,903 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:51,903 [INFO]     [sin padding]
+2026-06-03 10:57:55,535 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-pavo-en-salsa-28x85gr_4.webp] en posición 4
+2026-06-03 10:57:56,268 [INFO] 
+[23/146] CALIBRA CAT LIFE POUCH ADULT TERNERA EN SALSA 28X85GR  (ID 15509673804163) — 3 imágenes
+2026-06-03 10:57:56,476 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:57:56,476 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:57:56,524 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_06_1x1_1220x1220_crop_center_c463519a-6992-4bde-9dfd-f72584a2643f.webp
+2026-06-03 10:57:56,546 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:57:56,546 [INFO]     [sin padding]
+2026-06-03 10:58:00,085 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-ternera-en-salsa-28x85gr_2.webp] en posición 2
+2026-06-03 10:58:00,587 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:00,634 [INFO]     cargada RGB (1220, 1220) ← NVFEL79CalibraCatLifePouchAdultMultipack12x85g_03_1x1_1220x1220_crop_center_0d97e40e-c109-4a22-8450-61d4dd221ddc.webp
+2026-06-03 10:58:00,651 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:58:00,651 [INFO]     [sin padding]
+2026-06-03 10:58:03,764 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-adult-ternera-en-salsa-28x85gr_3.webp] en posición 3
+2026-06-03 10:58:04,500 [INFO] 
+[24/146] CALIBRA CAT LIFE POUCH KITTEN MULTIPACK 12X85GR  (ID 15509673836931) — 4 imágenes
+2026-06-03 10:58:04,700 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:04,700 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:04,743 [INFO]     cargada RGB (1220, 1220) ← NVFEL82CalibraCatLifePouchKittenMultipack12x85g_02_1x1_1220x1220_crop_center_f6694d85-ec03-430f-9042-fbeeaece1915.webp
+2026-06-03 10:58:04,765 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:04,778 [INFO]     [autocrop] (1220, 1220) → (1122, 563)
+2026-06-03 10:58:04,778 [INFO]     [padding 5%]
+2026-06-03 10:58:08,013 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-kitten-multipack-12x85gr_2.webp] en posición 2
+2026-06-03 10:58:08,516 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:08,570 [INFO]     cargada RGB (1220, 1220) ← NVFEL82CalibraCatLifePouchKittenMultipack12x85g_04_1x1_1220x1220_crop_center_58a7de41-36c0-4c35-80f1-a6e27e2d932f.webp
+2026-06-03 10:58:08,593 [INFO]     [bg] 2/3844 (0%)
+2026-06-03 10:58:08,593 [INFO]     [sin padding]
+2026-06-03 10:58:12,140 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-kitten-multipack-12x85gr_3.webp] en posición 3
+2026-06-03 10:58:12,642 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:12,693 [INFO]     cargada RGB (1220, 1220) ← NVFEL82CalibraCatLifePouchKittenMultipack12x85g_06_1x1_1220x1220_crop_center_4c770cf4-b847-4a5f-be96-058194d8aeb5.webp
+2026-06-03 10:58:12,716 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:58:12,716 [INFO]     [sin padding]
+2026-06-03 10:58:16,682 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-kitten-multipack-12x85gr_4.webp] en posición 4
+2026-06-03 10:58:17,400 [INFO] 
+[25/146] CALIBRA CAT LIFE POUCH KITTEN PAVO EN SALSA 28X85GR  (ID 15509673869699) — 1 imágenes
+2026-06-03 10:58:17,612 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:17,818 [INFO] 
+[26/146] CALIBRA CAT LIFE POUCH KITTEN SALMON EN SALSA 28X85GR  (ID 15509674000771) — 1 imágenes
+2026-06-03 10:58:18,034 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:18,267 [INFO] 
+[27/146] CALIBRA CAT LIFE POUCH STERILISED MULTIPACK 12X85GR  (ID 15509674033539) — 2 imágenes
+2026-06-03 10:58:18,472 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:18,472 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:18,514 [INFO]     cargada RGB (1220, 1220) ← NVFEL85CalibraCatLifePouchSterilisedMultipack12x85g_02_1x1_1220x1220_crop_center_f4bbd02f-da6e-46d5-a0a1-ad325105c2da.webp
+2026-06-03 10:58:18,537 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:18,549 [INFO]     [autocrop] (1220, 1220) → (1109, 602)
+2026-06-03 10:58:18,549 [INFO]     [padding 5%]
+2026-06-03 10:58:24,208 [INFO]     ✓ reprocesada y subida [calibra-cat-life-pouch-sterilised-multipack-12x85gr_2.webp] en posición 2
+2026-06-03 10:58:24,950 [INFO] 
+[28/146] CALIBRA CAT LIFE POUCH STERILISED PATO EN SALSA 28X85GR  (ID 15509674066307) — 1 imágenes
+2026-06-03 10:58:25,163 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:25,388 [INFO] 
+[29/146] CALIBRA CAT LIFE POUCH STERILISED SALMÓN EN SALSA 28X85GR  (ID 15509674099075) — 1 imágenes
+2026-06-03 10:58:25,596 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:25,809 [INFO] 
+[30/146] CALIBRA CAT LIFE STERILISED POLLO  (ID 15509674230147) — 1 imágenes
+2026-06-03 10:58:26,022 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:26,245 [INFO] 
+[31/146] CALIBRA CAT LIFE STERILISED TERNERA  (ID 15509674393987) — 1 imágenes
+2026-06-03 10:58:26,472 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:26,684 [INFO] 
+[32/146] CALIBRA CAT POUCH ADULT CORDERO POLLO CAJA 24X100GR  (ID 15509674426755) — 1 imágenes
+2026-06-03 10:58:26,907 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:27,132 [INFO] 
+[33/146] CALIBRA CAT POUCH POLLO TERNERA CAJA 24X100GR  (ID 15509674459523) — 1 imágenes
+2026-06-03 10:58:27,340 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:27,568 [INFO] 
+[34/146] CALIBRA CAT PREMIUM ADULT CARNE DE AVE  (ID 15509674525059) — 1 imágenes
+2026-06-03 10:58:27,764 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:27,994 [INFO] 
+[35/146] CALIBRA CAT PREMIUM ADULT CARNE VACUNO  (ID 15509674688899) — 1 imágenes
+2026-06-03 10:58:28,216 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:28,434 [INFO] 
+[36/146] CALIBRA CAT PREMIUM ADULT PAVO  (ID 15509674885507) — 1 imágenes
+2026-06-03 10:58:28,649 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:28,892 [INFO] 
+[37/146] CALIBRA CAT PREMIUM ESTERLIZADO CARNE DE AVE  (ID 15509675016579) — 1 imágenes
+2026-06-03 10:58:29,108 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:29,331 [INFO] 
+[38/146] CALIBRA CAT PREMIUM KITTEN CARNE DE AVE  (ID 15509675213187) — 2 imágenes
+2026-06-03 10:58:29,551 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:29,551 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:29,597 [INFO]     cargada RGB (1220, 1220) ← NVPRE71_Calibra_Cat_Premium_Line_Kitten_Poultry_2kg_04_1x1_1220x1220_crop_center_dced8d56-dcbf-4109-937b-794a9ccf1e21.webp
+2026-06-03 10:58:29,622 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:58:29,622 [INFO]     [sin padding]
+2026-06-03 10:58:32,954 [INFO]     ✓ reprocesada y subida [calibra-cat-premium-kitten-carne-de-ave_2.webp] en posición 2
+2026-06-03 10:58:33,671 [INFO] 
+[39/146] CALIBRA CAT STERILISED POUCH HIGADO CAJA 24X100GR  (ID 15509675311491) — 1 imágenes
+2026-06-03 10:58:33,898 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:34,113 [INFO] 
+[40/146] CALIBRA CAT STERILISED POUCH MULTIPACK CAJA 12X100GR  (ID 15509675377027) — 2 imágenes
+2026-06-03 10:58:34,318 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:34,318 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:34,360 [INFO]     cargada RGB (1220, 1220) ← NVPRE18CalibraCatPremiumPouchSterilMultipack12x100g_02_1x1_1220x1220_crop_center_8781df4d-ebef-4769-989d-6628363df76a.webp
+2026-06-03 10:58:34,379 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:34,392 [INFO]     [autocrop] (1220, 1220) → (1124, 603)
+2026-06-03 10:58:34,392 [INFO]     [padding 5%]
+2026-06-03 10:58:37,975 [INFO]     ✓ reprocesada y subida [calibra-cat-sterilised-pouch-multipack-caja-12x100gr_2.webp] en posición 2
+2026-06-03 10:58:38,689 [INFO] 
+[41/146] CALIBRA CAT STERILISED POUCH SALMON CAJA 24X100GR  (ID 15509675409795) — 1 imágenes
+2026-06-03 10:58:38,918 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:39,146 [INFO] 
+[42/146] CALIBRA DOG EXPERT NUTRITION ENERGY 12KG  (ID 15509675442563) — 2 imágenes
+2026-06-03 10:58:39,363 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:39,364 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:39,418 [INFO]     cargada RGB (1220, 1220) ← NVCAN1NCalibraDogExpertNutrition_EN_Energy2kg_01_1x1_1220x1220_crop_center_eb20c1e4-472a-4544-b505-abe005fc14ac.webp
+2026-06-03 10:58:39,438 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:39,451 [INFO]     [autocrop] (1220, 1220) → (690, 1149)
+2026-06-03 10:58:39,451 [INFO]     [padding 5%]
+2026-06-03 10:58:42,523 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-energy-12kg_2.webp] en posición 2
+2026-06-03 10:58:43,268 [INFO] 
+[43/146] CALIBRA DOG EXPERT NUTRITION LIGHT  (ID 15509675508099) — 4 imágenes
+2026-06-03 10:58:43,486 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:43,486 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:43,540 [INFO]     cargada RGB (1220, 1220) ← NVCAN1P_Calibra_Dog_Expert_Nutrition_EN_Light_2kg_01_1x1_1220x1220_crop_center_e77e2e8d-61be-4a42-a1fd-79d92d3a880c.webp
+2026-06-03 10:58:43,560 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:43,573 [INFO]     [autocrop] (1220, 1220) → (700, 1150)
+2026-06-03 10:58:43,573 [INFO]     [padding 5%]
+2026-06-03 10:58:46,753 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-light_2.webp] en posición 2
+2026-06-03 10:58:47,256 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:47,304 [INFO]     cargada RGB (1220, 1220) ← NVCAN1QCalibraDogExpertNutrition_EN_Light12kg_03_1x1_1220x1220_crop_center_a18a06ad-b921-44e0-bbfd-fdc7ef7b495d.webp
+2026-06-03 10:58:47,324 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:58:47,324 [INFO]     [sin padding]
+2026-06-03 10:58:50,698 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-light_3.webp] en posición 3
+2026-06-03 10:58:51,200 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:51,252 [INFO]     cargada RGB (1220, 1220) ← NVCAN1QCalibraDogExpertNutrition_EN_Light12kg_04_1x1_1220x1220_crop_center_a987672c-ff58-4144-b21e-9e5b277f8b44.webp
+2026-06-03 10:58:51,273 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:58:51,273 [INFO]     [sin padding]
+2026-06-03 10:58:54,445 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-light_4.webp] en posición 4
+2026-06-03 10:58:55,162 [INFO] 
+[44/146] CALIBRA DOG EXPERT NUTRITION MOBILITY  (ID 15509675671939) — 2 imágenes
+2026-06-03 10:58:55,393 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:55,394 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:55,439 [INFO]     cargada RGB (1220, 1220) ← NVCAN1RCalibraDogExpertNutrition_EN_Mobility2kg_01_1x1_1220x1220_crop_center_db029f9a-f8b8-4846-8bf2-8d9847094dea.webp
+2026-06-03 10:58:55,459 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:55,472 [INFO]     [autocrop] (1220, 1220) → (689, 1150)
+2026-06-03 10:58:55,472 [INFO]     [padding 5%]
+2026-06-03 10:58:58,428 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-mobility_2.webp] en posición 2
+2026-06-03 10:58:59,162 [INFO] 
+[45/146] CALIBRA DOG EXPERT NUTRITION NEUTERED 2KG  (ID 15509675835779) — 3 imágenes
+2026-06-03 10:58:59,368 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:58:59,368 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:58:59,417 [INFO]     cargada RGB (1220, 1220) ← NVCAN1T_Calibra_Dog_Expert_Nutrition_EN_Neutered_2kg_01_1x1_1220x1220_crop_center_42e923d6-dbf1-41f9-8a68-47e57095c77c.webp
+2026-06-03 10:58:59,438 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:58:59,451 [INFO]     [autocrop] (1220, 1220) → (698, 1150)
+2026-06-03 10:58:59,451 [INFO]     [padding 5%]
+2026-06-03 10:59:02,819 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-neutered-2kg_2.webp] en posición 2
+2026-06-03 10:59:03,322 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:03,397 [INFO]     cargada RGB (1220, 1220) ← NVCAN1U_Calibra_Dog_Expert_Nutrition_EN_Neutered_7kg_03_1x1_1220x1220_crop_center_1a547a12-6ad9-47f0-92b6-3527174c60d0.webp
+2026-06-03 10:59:03,413 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:03,413 [INFO]     [sin padding]
+2026-06-03 10:59:06,328 [INFO]     ✓ reprocesada y subida [calibra-dog-expert-nutrition-neutered-2kg_3.webp] en posición 3
+2026-06-03 10:59:07,047 [INFO] 
+[46/146] CALIBRA DOG EXPERT NUTRITION SENSITIVE SALMON  (ID 15509675868547) — 2 imágenes
+2026-06-03 10:59:07,250 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:07,251 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:07,468 [INFO] 
+[47/146] CALIBRA DOG GF VERVE ADULT CERDO Y VENADO CAJA 6X400GR  (ID 15509676065155) — 1 imágenes
+2026-06-03 10:59:07,672 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:07,889 [INFO] 
+[48/146] CALIBRA DOG GF VERVE ADULT JABALÍ Y TERNERA CAJA 6X400GR  (ID 15509676130691) — 1 imágenes
+2026-06-03 10:59:08,104 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:08,307 [INFO] 
+[49/146] CALIBRA DOG GF VERVE ADULT POLLO Y PATO CAJA 6X400GR  (ID 15509676163459) — 1 imágenes
+2026-06-03 10:59:08,516 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:08,750 [INFO] 
+[50/146] CALIBRA DOG GF VERVE ADULT SALMÓN Y PAVO CAJA 6X400GR  (ID 15509676228995) — 4 imágenes
+2026-06-03 10:59:08,948 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:08,949 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:08,994 [INFO]     cargada RGB (1220, 1220) ← NVCAN3ZCalibraDogVerveGFAdultSalmon_Turkey6x400g_03_1x1_1220x1220_crop_center_2bb0a5a8-fa38-441b-afa8-05a25ad41bb0.webp
+2026-06-03 10:59:09,012 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:09,012 [INFO]     [sin padding]
+2026-06-03 10:59:12,101 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-adult-salmon-y-pavo-caja-6x400gr_2.webp] en posición 2
+2026-06-03 10:59:12,603 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:12,660 [INFO]     cargada RGB (1220, 1220) ← NVCAN3ZCalibraDogVerveGFAdultSalmon_Turkey6x400g_04_1x1_1220x1220_crop_center_25772cb7-6d1a-4338-9321-10ac3f38397e.webp
+2026-06-03 10:59:12,682 [INFO]     [bg] 3/3844 (0%)
+2026-06-03 10:59:12,682 [INFO]     [sin padding]
+2026-06-03 10:59:16,182 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-adult-salmon-y-pavo-caja-6x400gr_3.webp] en posición 3
+2026-06-03 10:59:16,685 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:16,735 [INFO]     cargada RGB (1220, 1220) ← NVCAN3ZCalibraDogVerveGFAdultSalmon_Turkey6x400g_02_1x1_1220x1220_crop_center_b8149d1e-e416-44b2-9f86-f81dfa65ebf4.webp
+2026-06-03 10:59:16,756 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 10:59:16,769 [INFO]     [autocrop] (1220, 1220) → (760, 1156)
+2026-06-03 10:59:16,769 [INFO]     [padding 5%]
+2026-06-03 10:59:20,314 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-adult-salmon-y-pavo-caja-6x400gr_4.webp] en posición 4
+2026-06-03 10:59:21,028 [INFO] 
+[51/146] CALIBRA DOG GF VERVE ADULT SMALL PATO Y PAVO CAJA 6X200GR  (ID 15509676294531) — 1 imágenes
+2026-06-03 10:59:21,229 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:21,449 [INFO] 
+[52/146] CALIBRA DOG GF VERVE ADULT SMALL TERNERA POLLO CAJA 6X200GR  (ID 15509676327299) — 1 imágenes
+2026-06-03 10:59:21,658 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:21,883 [INFO] 
+[53/146] CALIBRA DOG GF VERVE JUNIOR PAVO Y CORDERO CAJA 6X400GR  (ID 15509676392835) — 3 imágenes
+2026-06-03 10:59:22,106 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:22,106 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:22,146 [INFO]     cargada RGB (1220, 1220) ← NVCAN4ECalibraDogVerveGFPuppy_JuniorTurk_Lamb6x400g_03_1x1_1220x1220_crop_center_5f894599-d3bf-494d-a1b9-58b60055393e.webp
+2026-06-03 10:59:22,164 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:22,164 [INFO]     [sin padding]
+2026-06-03 10:59:24,911 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-junior-pavo-y-cordero-caja-6x400gr_2.webp] en posición 2
+2026-06-03 10:59:25,414 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:25,461 [INFO]     cargada RGB (1220, 1220) ← NVCAN4ECalibraDogVerveGFPuppy_JuniorTurk_Lamb6x400g_04_1x1_1220x1220_crop_center_b6eaa95e-66de-45e3-890d-af48fc1df4a3.webp
+2026-06-03 10:59:25,481 [INFO]     [bg] 4/3844 (0%)
+2026-06-03 10:59:25,481 [INFO]     [sin padding]
+2026-06-03 10:59:28,973 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-junior-pavo-y-cordero-caja-6x400gr_3.webp] en posición 3
+2026-06-03 10:59:29,697 [INFO] 
+[54/146] CALIBRA DOG GF VERVE SENIOR PAVO Y CORDERO CAJA 6X400GR  (ID 15509676425603) — 3 imágenes
+2026-06-03 10:59:29,963 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:29,964 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:30,009 [INFO]     cargada RGB (1220, 1220) ← NVCAN4ACalibraDogVerveGFAdultSeniorTurk_Lamb6x400g_03_1x1_1220x1220_crop_center_cfc2b0ab-a458-43b3-83ab-b3913f01569b.webp
+2026-06-03 10:59:30,028 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:30,028 [INFO]     [sin padding]
+2026-06-03 10:59:33,588 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-senior-pavo-y-cordero-caja-6x400gr_2.webp] en posición 2
+2026-06-03 10:59:34,091 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:34,132 [INFO]     cargada RGB (1220, 1220) ← NVCAN4ACalibraDogVerveGFAdultSeniorTurk_Lamb6x400g_04_1x1_1220x1220_crop_center_3d67bcfb-ead6-433e-a4b3-88ac80d1bf59.webp
+2026-06-03 10:59:34,153 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:34,153 [INFO]     [sin padding]
+2026-06-03 10:59:37,712 [INFO]     ✓ reprocesada y subida [calibra-dog-gf-verve-senior-pavo-y-cordero-caja-6x400gr_3.webp] en posición 3
+2026-06-03 10:59:38,433 [INFO] 
+[55/146] CALIBRA DOG LIFE ADULT LARGE BREED CORDERO 12KG  (ID 15509676523907) — 1 imágenes
+2026-06-03 10:59:38,641 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:38,872 [INFO] 
+[56/146] CALIBRA DOG LIFE ADULT LARGE BREED POLLO  (ID 15509676589443) — 2 imágenes
+2026-06-03 10:59:39,084 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:39,084 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:39,298 [INFO] 
+[57/146] CALIBRA DOG LIFE ADULT LARGE FRESH TERNERA 12KG  (ID 15509676720515) — 1 imágenes
+2026-06-03 10:59:39,496 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:39,705 [INFO] 
+[58/146] CALIBRA DOG LIFE ADULT MEDIUM BREED CORDERO  (ID 15509676786051) — 1 imágenes
+2026-06-03 10:59:39,911 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:40,134 [INFO] 
+[59/146] CALIBRA DOG LIFE ADULT MEDIUM BREED POLLO  (ID 15509676949891) — 2 imágenes
+2026-06-03 10:59:40,343 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:40,344 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:40,567 [INFO] 
+[60/146] CALIBRA DOG LIFE ADULT MEDIUM FRESH TERNERA 12KG  (ID 15509677146499) — 1 imágenes
+2026-06-03 10:59:40,773 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:40,998 [INFO] 
+[61/146] CALIBRA DOG LIFE ADULT SMALL BREED CORDERO  (ID 15509677310339) — 1 imágenes
+2026-06-03 10:59:41,200 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:41,431 [INFO] 
+[62/146] CALIBRA DOG LIFE ADULT SMALL BREED POLLO  (ID 15509677408643) — 1 imágenes
+2026-06-03 10:59:41,645 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:41,867 [INFO] 
+[63/146] CALIBRA DOG LIFE ADULT SMALL FRESH TERNERA 6KG  (ID 15509677474179) — 1 imágenes
+2026-06-03 10:59:42,078 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:42,304 [INFO] 
+[64/146] CALIBRA DOG LIFE JUNIOR LARGE BREED CORDERO 12KG  (ID 15509677539715) — 1 imágenes
+2026-06-03 10:59:42,539 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:42,756 [INFO] 
+[65/146] CALIBRA DOG LIFE JUNIOR LARGE BREED POLLO 12KG  (ID 15509677638019) — 1 imágenes
+2026-06-03 10:59:42,965 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:43,180 [INFO] 
+[66/146] CALIBRA DOG LIFE JUNIOR LARGE FRESH TERNERA 12KG  (ID 15509677703555) — 1 imágenes
+2026-06-03 10:59:43,406 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:43,622 [INFO] 
+[67/146] CALIBRA DOG LIFE JUNIOR MEDIUM BREED POLLO  (ID 15509677736323) — 1 imágenes
+2026-06-03 10:59:43,844 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:44,068 [INFO] 
+[68/146] CALIBRA DOG LIFE JUNIOR SMALL & MEDIUM FRESH TERNERA 12KG  (ID 15509677834627) — 1 imágenes
+2026-06-03 10:59:44,292 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:44,540 [INFO] 
+[69/146] CALIBRA DOG LIFE JUNIOR SMALL BREED POLLO 1,5KG  (ID 15509677932931) — 1 imágenes
+2026-06-03 10:59:44,753 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:44,966 [INFO] 
+[70/146] CALIBRA DOG LIFE JUNIOR SMALL&MEDIUM BREED CORDERO  (ID 15509677965699) — 1 imágenes
+2026-06-03 10:59:45,180 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:45,395 [INFO] 
+[71/146] CALIBRA DOG LIFE LATA ADULT CORDERO 6X400GR  (ID 15509678064003) — 1 imágenes
+2026-06-03 10:59:45,617 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:45,823 [INFO] 
+[72/146] CALIBRA DOG LIFE LATA ADULT JABALÍ CON ARANDANOS 6X400GR  (ID 15509678129539) — 3 imágenes
+2026-06-03 10:59:46,029 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:46,029 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:46,125 [INFO]     cargada RGB (1220, 1220) ← NVCAN3SCalibraDogLifeCanAdultWildBoar_Cranb6x400g_03_1x1_1220x1220_crop_center_7128f37b-8ccf-4bbb-8d40-503931f366c5.webp
+2026-06-03 10:59:46,143 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 10:59:46,143 [INFO]     [sin padding]
+2026-06-03 10:59:48,982 [INFO]     ✓ reprocesada y subida [calibra-dog-life-lata-adult-jabali-con-arandanos-6x400gr_2.webp] en posición 2
+2026-06-03 10:59:49,484 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 10:59:49,532 [INFO]     cargada RGB (1220, 1220) ← NVCAN3SCalibraDogLifeCanAdultWildBoar_Cranb6x400g_04_1x1_1220x1220_crop_center_6ada3e0e-d1c8-4d6c-8cd3-b1476b7039ef.webp
+2026-06-03 10:59:49,552 [INFO]     [bg] 4/3844 (0%)
+2026-06-03 10:59:49,552 [INFO]     [sin padding]
+2026-06-03 10:59:52,993 [INFO]     ✓ reprocesada y subida [calibra-dog-life-lata-adult-jabali-con-arandanos-6x400gr_3.webp] en posición 3
+2026-06-03 10:59:53,709 [INFO] 
+[73/146] CALIBRA DOG LIFE LATA ADULT PATO Y ARROZ 6X400GR  (ID 15509678162307) — 1 imágenes
+2026-06-03 10:59:53,923 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:54,132 [INFO] 
+[74/146] CALIBRA DOG LIFE LATA ADULT PAVO CON MANZANAS 6X400GR  (ID 15509678227843) — 1 imágenes
+2026-06-03 10:59:54,347 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:54,570 [INFO] 
+[75/146] CALIBRA DOG LIFE LATA ADULT POLLO Y ARROZ 6X400GR  (ID 15509678293379) — 1 imágenes
+2026-06-03 10:59:54,789 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:54,992 [INFO] 
+[76/146] CALIBRA DOG LIFE LATA ADULT TERNERA CON ZANAHORÍAS 6X400GR  (ID 15509678326147) — 1 imágenes
+2026-06-03 10:59:55,198 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:55,422 [INFO] 
+[77/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR CORDERO Y ARROZ 6X400GR  (ID 15509678391683) — 1 imágenes
+2026-06-03 10:59:55,622 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:55,826 [INFO] 
+[78/146] CALIBRA DOG LIFE LATA PUPPY&JUNIOR POLLO Y ARROZ 6X400GR  (ID 15509678457219) — 1 imágenes
+2026-06-03 10:59:56,044 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:56,256 [INFO] 
+[79/146] CALIBRA DOG LIFE LATA SENSITIVE CONEJO 6X400GR  (ID 15509678522755) — 1 imágenes
+2026-06-03 10:59:56,473 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:56,693 [INFO] 
+[80/146] CALIBRA DOG LIFE LATA SENSITIVE SALMON Y ARROZ 6X400GR  (ID 15509678555523) — 1 imágenes
+2026-06-03 10:59:56,902 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:57,132 [INFO] 
+[81/146] CALIBRA DOG LIFE SENIOR LARGE FRESH TERNERA 12KG  (ID 15509678653827) — 1 imágenes
+2026-06-03 10:59:57,338 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:57,550 [INFO] 
+[82/146] CALIBRA DOG LIFE SENIOR MEDIUM & LARGE POLLO  (ID 15509678686595) — 1 imágenes
+2026-06-03 10:59:57,772 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:57,986 [INFO] 
+[83/146] CALIBRA DOG LIFE SENIOR MEDIUM FRESH TERNERA 12KG  (ID 15509678784899) — 1 imágenes
+2026-06-03 10:59:58,202 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:58,410 [INFO] 
+[84/146] CALIBRA DOG LIFE SENIOR SMALL BREED CORDERO 1,5KG  (ID 15509678850435) — 1 imágenes
+2026-06-03 10:59:58,629 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:58,849 [INFO] 
+[85/146] CALIBRA DOG LIFE SENIOR SMALL FRESH TERNERA  (ID 15509678948739) — 1 imágenes
+2026-06-03 10:59:59,268 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:59,487 [INFO] 
+[86/146] CALIBRA DOG LIFE STARTER & PUPPY CORDERO  (ID 15509679014275) — 1 imágenes
+2026-06-03 10:59:59,702 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 10:59:59,944 [INFO] 
+[87/146] CALIBRA DOG LIFE STARTER & PUPPY FRESH TERNERA 12KG  (ID 15509679112579) — 1 imágenes
+2026-06-03 11:00:00,162 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:00,385 [INFO] 
+[88/146] CALIBRA DOG LIFE POUCH ADULT POLLO 10X150G  (ID 15509679243651) — 1 imágenes
+2026-06-03 11:00:00,582 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:00,789 [INFO] 
+[89/146] CALIBRA DOG LIFE POUCH ADULT TERNERA 10X150G  (ID 15509679178115) — 2 imágenes
+2026-06-03 11:00:00,992 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:00,993 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:01,048 [INFO]     cargada RGB (1220, 1220) ← NVPOU01CalibraDogLifePouchAdultBeef10x150g_06_1x1_1220x1220_crop_center_690c3eca-af86-42d8-b479-92d17323d3ba.webp
+2026-06-03 11:00:01,073 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:01,073 [INFO]     [sin padding]
+2026-06-03 11:00:05,322 [INFO]     ✓ reprocesada y subida [calibra-dog-lifepouch-adult-ternera-10x150g_2.webp] en posición 2
+2026-06-03 11:00:06,054 [INFO] 
+[90/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR BEEF 10X150G  (ID 15509679309187) — 1 imágenes
+2026-06-03 11:00:06,276 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:06,505 [INFO] 
+[91/146] CALIBRA DOG LIFE POUCH PUPPY&JUNIOR POLLO 10X150G  (ID 15509679374723) — 1 imágenes
+2026-06-03 11:00:06,740 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:06,968 [INFO] 
+[92/146] CALIBRA DOG PREMIUM CON CORDERO Y POLLO LATA 12X1240G  (ID 15509679407491) — 1 imágenes
+2026-06-03 11:00:07,186 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:07,407 [INFO] 
+[93/146] CALIBRA DOG PREMIUM CON VACUNO JELLY LATA 12X1240G  (ID 15509679538563) — 1 imágenes
+2026-06-03 11:00:07,624 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:07,852 [INFO] 
+[94/146] CALIBRA DOG PREMIUM LINE ADULT LARGE POLLO  (ID 15509679735171) — 2 imágenes
+2026-06-03 11:00:08,066 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:08,066 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:08,296 [INFO] 
+[95/146] CALIBRA DOG PREMIUM LINE ADULT POLLO  (ID 15509679833475) — 2 imágenes
+2026-06-03 11:00:08,504 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:08,505 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:08,745 [INFO] 
+[96/146] CALIBRA DOG PREMIUM LINE ADULT SENSITIVE CORDERO  (ID 15509679964547) — 2 imágenes
+2026-06-03 11:00:08,961 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:08,961 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:09,016 [INFO]     cargada RGB (1220, 1220) ← NVPRE41_CalibraDogPremiumSensitive3kg_01_1x1_1220x1220_crop_center_45e8e3a5-1e79-4a03-ae23-eed58cfb13a7.webp
+2026-06-03 11:00:09,038 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:00:09,050 [INFO]     [autocrop] (1220, 1220) → (678, 1146)
+2026-06-03 11:00:09,050 [INFO]     [padding 5%]
+2026-06-03 11:00:12,706 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-adult-sensitive-cordero_2.webp] en posición 2
+2026-06-03 11:00:13,452 [INFO] 
+[97/146] CALIBRA DOG PREMIUM LINE ADULT TERNERA  (ID 15509680128387) — 2 imágenes
+2026-06-03 11:00:13,675 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:13,675 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:13,899 [INFO] 
+[98/146] CALIBRA DOG PREMIUM LINE JUNIOR LARGE POLLO 12KG  (ID 15509680161155) — 1 imágenes
+2026-06-03 11:00:14,122 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:14,351 [INFO] 
+[99/146] CALIBRA DOG PREMIUM LINE PUPPY JUNIOR POLLO  (ID 15509680193923) — 4 imágenes
+2026-06-03 11:00:14,568 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:14,569 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:14,614 [INFO]     cargada RGB (1220, 1220) ← NVPRE35_CalibraDogPremiumPuppy_Junior3kg_01_1x1_1220x1220_crop_center_b9676ece-2e03-4281-a1d4-e6e1da3b84ac.webp
+2026-06-03 11:00:14,637 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:00:14,650 [INFO]     [autocrop] (1220, 1220) → (684, 1149)
+2026-06-03 11:00:14,650 [INFO]     [padding 5%]
+2026-06-03 11:00:17,854 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-puppy-junior-pollo_2.webp] en posición 2
+2026-06-03 11:00:18,357 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:18,423 [INFO]     cargada RGB (1220, 1220) ← NVPRE34CalibraDogPremiumPuppy_Junior12kg_03_1x1_1220x1220_crop_center_8d78884f-f6da-4a27-b5fd-80c35e57cd86.webp
+2026-06-03 11:00:18,443 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:18,443 [INFO]     [sin padding]
+2026-06-03 11:00:21,832 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-puppy-junior-pollo_3.webp] en posición 3
+2026-06-03 11:00:22,335 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:22,381 [INFO]     cargada RGB (1220, 1220) ← NVPRE34CalibraDogPremiumPuppy_Junior12kg_04_1x1_1220x1220_crop_center_883ca418-b642-4e4c-9c6c-8b2e386a424f.webp
+2026-06-03 11:00:22,399 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:22,400 [INFO]     [sin padding]
+2026-06-03 11:00:25,781 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-puppy-junior-pollo_4.webp] en posición 4
+2026-06-03 11:00:26,523 [INFO] 
+[100/146] CALIBRA DOG PREMIUM LINE SENIOR LIGHT POLLO  (ID 15509680357763) — 5 imágenes
+2026-06-03 11:00:26,742 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:26,742 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:26,742 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:26,798 [INFO]     cargada RGB (1220, 1220) ← NVPRE38_CalibraDogPremiumSenior_Light3kg_01_1x1_1220x1220_crop_center_e0d0d327-0bb5-49c1-8e2d-71743e71da94.webp
+2026-06-03 11:00:26,817 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:00:26,829 [INFO]     [autocrop] (1220, 1220) → (689, 1149)
+2026-06-03 11:00:26,829 [INFO]     [padding 5%]
+2026-06-03 11:00:30,349 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-senior-light-pollo_3.webp] en posición 3
+2026-06-03 11:00:30,852 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:30,909 [INFO]     cargada RGB (1220, 1220) ← NVPRE37CalibraDogPremiumSenior_Light12kg_03_1x1_1220x1220_crop_center_7b4dd448-eea4-46ed-820a-6733414f06a1.webp
+2026-06-03 11:00:30,930 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:30,930 [INFO]     [sin padding]
+2026-06-03 11:00:34,625 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-senior-light-pollo_4.webp] en posición 4
+2026-06-03 11:00:35,128 [INFO]   pos 5: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:35,177 [INFO]     cargada RGB (1220, 1220) ← NVPRE37CalibraDogPremiumSenior_Light12kg_04_1x1_1220x1220_crop_center_2cb3cf19-f300-4e9a-a7ef-c67bd3287b4a.webp
+2026-06-03 11:00:35,198 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:35,199 [INFO]     [sin padding]
+2026-06-03 11:00:38,850 [INFO]     ✓ reprocesada y subida [calibra-dog-premium-line-senior-light-pollo_5.webp] en posición 5
+2026-06-03 11:00:39,590 [INFO] 
+[101/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO ARENQUE FRESCO 150G  (ID 15509680554371) — 1 imágenes
+2026-06-03 11:00:39,813 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:40,035 [INFO] 
+[102/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y CORDERO FRES 150G  (ID 15509680587139) — 1 imágenes
+2026-06-03 11:00:40,251 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:40,484 [INFO] 
+[103/146] CALIBRA DOG VERVE CRUNCHY SNACK INSECTOS Y SALMÓN FRESCO 150G  (ID 15509680619907) — 1 imágenes
+2026-06-03 11:00:40,705 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:40,939 [INFO] 
+[104/146] CALIBRA DOG VERVE CRUNCHY SNACK PATO FRESCO 150G  (ID 15509680718211) — 1 imágenes
+2026-06-03 11:00:41,152 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:41,474 [INFO] 
+[105/146] CALIBRA DOG VERVE CRUNCHY SNACK SALMÓN FRESCO 150G  (ID 15509680783747) — 1 imágenes
+2026-06-03 11:00:41,698 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:41,911 [INFO] 
+[106/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO PATO FRESCO 150G  (ID 15509680816515) — 1 imágenes
+2026-06-03 11:00:42,129 [INFO]   pos 1: NO optimizada (webp 1300×1300) — reprocesando
+2026-06-03 11:00:42,177 [INFO]     cargada RGB (1300, 1300) ← 2417-calibra-verve-semimoist-duck.webp
+2026-06-03 11:00:42,192 [INFO]     [bg] 4356/4356 (100%)
+2026-06-03 11:00:42,205 [INFO]     [autocrop] (1300, 1300) → (804, 890)
+2026-06-03 11:00:42,205 [INFO]     [padding 5%]
+2026-06-03 11:00:45,394 [INFO]     ✓ reprocesada y subida [calibra-dog-vervesnack-semihumedo-pato-fresco-150g_1.webp] en posición 1
+2026-06-03 11:00:46,110 [INFO] 
+[107/146] CALIBRA DOG VERVE SNACK SEMIHÚMEDO POLLO FRESCO 150G  (ID 15509680849283) — 1 imágenes
+2026-06-03 11:00:46,329 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:46,564 [INFO] 
+[108/146] CALIBRA DOG6 PREMIUM CON POLLO Y VACUNO LATA 12X1240G  (ID 15509680947587) — 3 imágenes
+2026-06-03 11:00:46,776 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:46,776 [INFO]   pos 2: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:46,842 [INFO]     cargada RGB (1220, 1220) ← NVPRE60CalibraDogPremiumCanChicken_Beef12x1240g_03_1x1_1220x1220_crop_center_86f2e1cb-915a-44ce-be9a-7c9c81aa9c02.webp
+2026-06-03 11:00:46,859 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:00:46,859 [INFO]     [sin padding]
+2026-06-03 11:00:50,045 [INFO]     ✓ reprocesada y subida [calibra-dog6-premium-con-pollo-y-vacuno-lata-12x1240g_2.webp] en posición 2
+2026-06-03 11:00:50,548 [INFO]   pos 3: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:50,596 [INFO]     cargada RGB (1220, 1220) ← NVPRE60CalibraDogPremiumCanChicken_Beef12x1240_04_1x1_1220x1220_crop_center_cd722840-83ef-4888-81d4-343b380110f8.webp
+2026-06-03 11:00:50,616 [INFO]     [bg] 5/3844 (0%)
+2026-06-03 11:00:50,616 [INFO]     [sin padding]
+2026-06-03 11:00:54,248 [INFO]     ✓ reprocesada y subida [calibra-dog6-premium-con-pollo-y-vacuno-lata-12x1240g_3.webp] en posición 3
+2026-06-03 11:00:54,979 [INFO] 
+[109/146] CALIBRA EAZZY ARENA GATO FINE 10KG  (ID 15509681013123) — 1 imágenes
+2026-06-03 11:00:55,212 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:55,421 [INFO] 
+[110/146] CALIBRA EAZZY ARENA GATO ULTRA FINE 10KG  (ID 15509681045891) — 1 imágenes
+2026-06-03 11:00:55,622 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:55,852 [INFO] 
+[111/146] CALIBRA JOY CAT CLASSIC STICKS SALMON 70GR  (ID 15509681078659) — 1 imágenes
+2026-06-03 11:00:56,058 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:56,263 [INFO] 
+[112/146] CALIBRA JOY CAT CLASSIC STRIPS PESCADO 70GR  (ID 15509681176963) — 1 imágenes
+2026-06-03 11:00:56,484 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:56,719 [INFO] 
+[113/146] CALIBRA JOY DOG CHEWY HUESO S TRIPA Y CALABAZA +40UDS 900G  (ID 15509681209731) — 3 imágenes
+2026-06-03 11:00:56,929 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:56,930 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:56,930 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:00:57,184 [INFO] 
+[114/146] CALIBRA JOY DOG CHEWY HUESO S VACUNO Y YUCCA +40UDS 1KG  (ID 15509681242499) — 7 imágenes
+2026-06-03 11:00:57,384 [INFO]   pos 1: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:00:57,436 [INFO]     cargada RGB (1220, 1220) ← NVTRE92CalibraJoyDogChewyBeef_YuccaSmBones40_pcs_01_1x1_1220x1220_crop_center_ec9895b5-8248-4c93-bf9f-9c07e14c4715.webp
+2026-06-03 11:00:57,458 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:00:57,470 [INFO]     [autocrop] (1220, 1220) → (850, 1151)
+2026-06-03 11:00:57,470 [INFO]     [padding 5%]
+2026-06-03 11:01:00,928 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_1.webp] en posición 1
+2026-06-03 11:01:01,431 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:01,431 [INFO]   pos 3: NO optimizada (webp 1018×1300) — reprocesando
+2026-06-03 11:01:01,490 [INFO]     cargada RGBA (1018, 1300) ← 4051-chewy-beef-yucca-bones-s-open.webp
+2026-06-03 11:01:01,522 [INFO]     [alpha] 76% transparente
+2026-06-03 11:01:01,535 [INFO]     [bg] 2500/2500 (100%)
+2026-06-03 11:01:01,544 [INFO]     [autocrop] (1018, 1300) → (726, 974)
+2026-06-03 11:01:01,544 [INFO]     [padding 5%]
+2026-06-03 11:01:04,613 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_3.webp] en posición 3
+2026-06-03 11:01:05,116 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:05,164 [INFO]     cargada RGB (1220, 1220) ← NVTRE92CalibraJoyDogChewyBeef_YuccaSmBones40_pcs_02_1x1_1220x1220_crop_center_f8c5f5bf-90b8-4ba8-bdfd-3030a20be1f6.webp
+2026-06-03 11:01:05,183 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:01:05,196 [INFO]     [autocrop] (1220, 1220) → (818, 1149)
+2026-06-03 11:01:05,196 [INFO]     [padding 5%]
+2026-06-03 11:01:08,499 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_4.webp] en posición 4
+2026-06-03 11:01:09,002 [INFO]   pos 5: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:09,047 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_03_01_1x1_1220x1220_crop_center_69e70a94-21fe-4ee4-9ee3-11c4751ee065.webp
+2026-06-03 11:01:09,066 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:09,066 [INFO]     [sin padding]
+2026-06-03 11:01:12,299 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_5.webp] en posición 5
+2026-06-03 11:01:12,802 [INFO]   pos 6: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:12,849 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_03_02_1x1_1220x1220_crop_center_e5862021-2f9d-4d44-89ce-edda29f76fb3.webp
+2026-06-03 11:01:12,868 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:12,868 [INFO]     [sin padding]
+2026-06-03 11:01:16,274 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_6.webp] en posición 6
+2026-06-03 11:01:16,777 [INFO]   pos 7: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:16,829 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_04_02_1x1_1220x1220_crop_center_0c4846a7-d90f-45ae-a581-2d31ab9980b5.webp
+2026-06-03 11:01:16,848 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:16,849 [INFO]     [sin padding]
+2026-06-03 11:01:20,463 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-s-vacuno-y-yucca-40uds-1kg_7.webp] en posición 7
+2026-06-03 11:01:21,226 [INFO] 
+[115/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y CALABAZA 30UDS 720GR  (ID 15509681308035) — 7 imágenes
+2026-06-03 11:01:21,439 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:21,439 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:21,439 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:21,439 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:21,493 [INFO]     cargada RGB (1220, 1220) ← NVTRE91_Calibra_Joy_Dog_Chewy_Beef_Pump_Bones_30pcs_02_1x1_1220x1220_crop_center_0b85f43e-944c-4b85-ac3d-51b91c268889.webp
+2026-06-03 11:01:21,512 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:01:21,525 [INFO]     [autocrop] (1220, 1220) → (805, 1148)
+2026-06-03 11:01:21,525 [INFO]     [padding 5%]
+2026-06-03 11:01:24,769 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_4.webp] en posición 4
+2026-06-03 11:01:25,272 [INFO]   pos 5: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:25,318 [INFO]     cargada RGB (1220, 1220) ← NVTRE91_Calibra_Joy_Dog_Chewy_Beef_Pump_Bones_30pcs_03_01_1x1_1220x1220_crop_center_c1bf63fc-010b-481f-a1e1-ee86cf6ea837.webp
+2026-06-03 11:01:25,336 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:25,336 [INFO]     [sin padding]
+2026-06-03 11:01:28,528 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_5.webp] en posición 5
+2026-06-03 11:01:29,030 [INFO]   pos 6: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:29,071 [INFO]     cargada RGB (1220, 1220) ← NVTRE91_Calibra_Joy_Dog_Chewy_Beef_Pump_Bones_30pcs_03_02_1x1_1220x1220_crop_center_509c3c90-db8f-4cdc-b09f-0e05bda725a2.webp
+2026-06-03 11:01:29,090 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:29,090 [INFO]     [sin padding]
+2026-06-03 11:01:32,529 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_6.webp] en posición 6
+2026-06-03 11:01:33,031 [INFO]   pos 7: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:33,083 [INFO]     cargada RGB (1220, 1220) ← NVTRE91_Calibra_Joy_Dog_Chewy_Beef_Pump_Bones_30pcs_04_02_1x1_1220x1220_crop_center_dec8f2c6-0c47-4800-aa21-6bd1f0d85355.webp
+2026-06-03 11:01:33,103 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:33,103 [INFO]     [sin padding]
+2026-06-03 11:01:36,791 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-calabaza-30uds-720gr_7.webp] en posición 7
+2026-06-03 11:01:37,528 [INFO] 
+[116/146] CALIBRA JOY DOG CHEWY HUESO VACUNO Y YUCCA 30UDS 850GR  (ID 15509681373571) — 7 imágenes
+2026-06-03 11:01:37,760 [INFO]   pos 1: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:37,809 [INFO]     cargada RGB (1220, 1220) ← NVTRE93CalibraJoyDogChewyBeef_YuccaBones30pcs_01_1x1_1220x1220_crop_center_b2f4ccb7-4941-4279-92fd-c669311f2e7a.webp
+2026-06-03 11:01:37,832 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:01:37,844 [INFO]     [autocrop] (1220, 1220) → (846, 1150)
+2026-06-03 11:01:37,845 [INFO]     [padding 5%]
+2026-06-03 11:01:41,291 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr_1.webp] en posición 1
+2026-06-03 11:01:41,794 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:41,794 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:41,794 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:41,838 [INFO]     cargada RGB (1220, 1220) ← NVTRE93CalibraJoyDogChewyBeef_YuccaBones30pcs_02_1x1_1220x1220_crop_center_1c1fd834-5c3a-4d59-b501-56ffb2d6f903.webp
+2026-06-03 11:01:41,858 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:01:41,870 [INFO]     [autocrop] (1220, 1220) → (826, 1150)
+2026-06-03 11:01:41,870 [INFO]     [padding 5%]
+2026-06-03 11:01:45,587 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr_4.webp] en posición 4
+2026-06-03 11:01:46,090 [INFO]   pos 5: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:46,134 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_03_01_1x1_1220x1220_crop_center_dfefe78d-d96c-42ad-b74e-0f71adbc84fc.webp
+2026-06-03 11:01:46,153 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:46,153 [INFO]     [sin padding]
+2026-06-03 11:01:49,323 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr_5.webp] en posición 5
+2026-06-03 11:01:49,826 [INFO]   pos 6: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:49,888 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_03_02_1x1_1220x1220_crop_center_22a2139e-e599-48fd-acf7-77b2144dc830.webp
+2026-06-03 11:01:49,907 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:49,908 [INFO]     [sin padding]
+2026-06-03 11:01:52,951 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr_6.webp] en posición 6
+2026-06-03 11:01:53,454 [INFO]   pos 7: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:01:53,502 [INFO]     cargada RGB (1220, 1220) ← NVTRE91CalibraJoyDogChewyBeef_PumpBones30pcs_04_02_1x1_1220x1220_crop_center_487ab418-7d75-4959-a0cc-45320fd87dd2.webp
+2026-06-03 11:01:53,522 [INFO]     [bg] 0/3844 (0%)
+2026-06-03 11:01:53,522 [INFO]     [sin padding]
+2026-06-03 11:01:57,109 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-hueso-vacuno-y-yucca-30uds-850gr_7.webp] en posición 7
+2026-06-03 11:01:57,837 [INFO] 
+[117/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y ARANDANO 50UDS 700GR  (ID 15509681406339) — 4 imágenes
+2026-06-03 11:01:58,046 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:58,047 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:01:58,047 [INFO]   pos 3: NO optimizada (webp 1018×1300) — reprocesando
+2026-06-03 11:01:58,099 [INFO]     cargada RGBA (1018, 1300) ← 4056-chewy-beef-lung-cranberries-sticks-open.webp
+2026-06-03 11:01:58,130 [INFO]     [alpha] 76% transparente
+2026-06-03 11:01:58,143 [INFO]     [bg] 2500/2500 (100%)
+2026-06-03 11:01:58,152 [INFO]     [autocrop] (1018, 1300) → (726, 974)
+2026-06-03 11:01:58,152 [INFO]     [padding 5%]
+2026-06-03 11:02:01,385 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-sticks-vacuno-y-arandano-50uds-700gr_3.webp] en posición 3
+2026-06-03 11:02:01,888 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:02:01,936 [INFO]     cargada RGB (1220, 1220) ← NVTRE94CalibraJoyDogChewyBeefLungs_CranSticks50pcs_02_1x1_1_1220x1220_crop_center_a993b2a2-17d1-44e4-86f8-326a495b5fdc.webp
+2026-06-03 11:02:01,957 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:02:01,971 [INFO]     [autocrop] (1220, 1220) → (803, 1149)
+2026-06-03 11:02:01,971 [INFO]     [padding 5%]
+2026-06-03 11:02:05,374 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-sticks-vacuno-y-arandano-50uds-700gr_4.webp] en posición 4
+2026-06-03 11:02:06,101 [INFO] 
+[118/146] CALIBRA JOY DOG CHEWY STICKS VACUNO Y SPIRULINA 50UDS 700GR  (ID 15509681439107) — 4 imágenes
+2026-06-03 11:02:06,329 [INFO]   pos 1: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:02:06,377 [INFO]     cargada RGB (1220, 1220) ← NVTRE89CalibraJoyDogChewyBeef_SpirulinaSticks50pc_01_1x1_1220x1220_crop_center_00662be4-3142-4af4-a005-718969422301.webp
+2026-06-03 11:02:06,398 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:02:06,411 [INFO]     [autocrop] (1220, 1220) → (855, 1157)
+2026-06-03 11:02:06,411 [INFO]     [padding 5%]
+2026-06-03 11:02:09,832 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-sticks-vacuno-y-spirulina-50uds-700gr_1.webp] en posición 1
+2026-06-03 11:02:10,334 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:10,334 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:10,334 [INFO]   pos 4: NO optimizada (webp 1220×1220) — reprocesando
+2026-06-03 11:02:10,385 [INFO]     cargada RGB (1220, 1220) ← NVTRE89CalibraJoyDogChewyBeef_SpirulinaSticks50pc_02_1x1_1220x1220_crop_center_c9d2710f-bfb8-4e77-99b4-2adf59c4c735.webp
+2026-06-03 11:02:10,405 [INFO]     [bg] 3844/3844 (100%)
+2026-06-03 11:02:10,418 [INFO]     [autocrop] (1220, 1220) → (810, 1150)
+2026-06-03 11:02:10,418 [INFO]     [padding 5%]
+2026-06-03 11:02:14,123 [INFO]     ✓ reprocesada y subida [calibra-joy-dog-chewy-sticks-vacuno-y-spirulina-50uds-700gr_4.webp] en posición 4
+2026-06-03 11:02:14,852 [INFO] 
+[119/146] CALIBRA JOY DOG CLASSIC AROS POLLO 80GR  (ID 15509681504643) — 1 imágenes
+2026-06-03 11:02:15,098 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:15,317 [INFO] 
+[120/146] CALIBRA JOY DOG CLASSIC BACALAO POLLO SUSHI 80GR  (ID 15509681537411) — 1 imágenes
+2026-06-03 11:02:15,522 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:15,740 [INFO] 
+[121/146] CALIBRA JOY DOG CLASSIC DENTAL BRUSHES 85GR  (ID 15509681701251) — 1 imágenes
+2026-06-03 11:02:15,966 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:16,203 [INFO] 
+[122/146] CALIBRA JOY DOG CLASSIC LARGE FILLET CORDERO 80GR  (ID 15509681766787) — 1 imágenes
+2026-06-03 11:02:16,416 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:16,637 [INFO] 
+[123/146] CALIBRA JOY DOG CLASSIC SANDWICH PESCADO POLLO  (ID 15509682061699) — 1 imágenes
+2026-06-03 11:02:16,853 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:17,086 [INFO] 
+[124/146] CALIBRA JOY DOG CLASSIC SLICE PESCADO POLLO 80GR  (ID 15509682160003) — 1 imágenes
+2026-06-03 11:02:17,305 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:17,543 [INFO] 
+[125/146] CALIBRA JOY DOG CLASSIC STICKS SALMON  (ID 15509682192771) — 1 imágenes
+2026-06-03 11:02:17,745 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:17,956 [INFO] 
+[126/146] CALIBRA JOY DOG CLASSIC STICKS TERNERA  (ID 15509682291075) — 1 imágenes
+2026-06-03 11:02:18,174 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:18,399 [INFO] 
+[127/146] CALIBRA JOY DOG CLASSIC STRIPS CORDERO  (ID 15509682389379) — 1 imágenes
+2026-06-03 11:02:18,618 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:18,834 [INFO] 
+[128/146] CALIBRA JOY DOG CLASSIC STRIPS PATO  (ID 15509682454915) — 1 imágenes
+2026-06-03 11:02:19,050 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:19,286 [INFO] 
+[129/146] CALIBRA JOY DOG MINI DADOS SALMON 70GR  (ID 15509682553219) — 1 imágenes
+2026-06-03 11:02:19,492 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:19,717 [INFO] 
+[130/146] CALIBRA JOY DOG MINI SANDWICH BACALAO PATO 70GR  (ID 15509682585987) — 1 imágenes
+2026-06-03 11:02:19,938 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:20,152 [INFO] 
+[131/146] CALIBRA JOY DOG MINI SANDWICH BACALAO POLLO 70GR  (ID 15509682651523) — 1 imágenes
+2026-06-03 11:02:20,374 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:20,604 [INFO] 
+[132/146] CALIBRA JOY DOG TRAINING M&L PATO Y POLLO 300G  (ID 15509682684291) — 1 imágenes
+2026-06-03 11:02:20,821 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:21,040 [INFO] 
+[133/146] CALIBRA JOY DOG TRAINING M&L VENADO Y PATO 300G  (ID 15509682749827) — 1 imágenes
+2026-06-03 11:02:21,256 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:21,474 [INFO] 
+[134/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S POLLO 150G  (ID 15509682782595) — 1 imágenes
+2026-06-03 11:02:21,706 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:21,952 [INFO] 
+[135/146] CALIBRA JOY DOG TRAINING PUPPY&ADULT S SALMON 150GR  (ID 15509682848131) — 1 imágenes
+2026-06-03 11:02:22,163 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:22,414 [INFO] 
+[136/146] CALIBRA JOY DOG TRAINING S&M SALMON&INSECT 150GR  (ID 15509682946435) — 1 imágenes
+2026-06-03 11:02:22,625 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:22,867 [INFO] 
+[137/146] CALIBRA JOY DOG TRAINING S&M TERNERA 150GR  (ID 15509682880899) — 1 imágenes
+2026-06-03 11:02:23,095 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:23,320 [INFO] 
+[138/146] CALIBRA ROCKETS CHINCHILLAS Y DEGÚS 900G  (ID 15509682979203) — 1 imágenes
+2026-06-03 11:02:23,528 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:23,749 [INFO] 
+[139/146] CALIBRA ROCKETS COBAYAS 900G  (ID 15509683044739) — 1 imágenes
+2026-06-03 11:02:23,978 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:24,239 [INFO] 
+[140/146] CALIBRA ROCKETS CONEJOS 900G  (ID 15509683143043) — 1 imágenes
+2026-06-03 11:02:24,439 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:24,661 [INFO] 
+[141/146] CALIBRA ROCKETS HAMSTER Y PEQUEÑOS ROEDORES 900G  (ID 15509683175811) — 1 imágenes
+2026-06-03 11:02:24,857 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:25,084 [INFO] 
+[142/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTA SILVESTRE 120G  (ID 15509683241347) — 1 imágenes
+2026-06-03 11:02:25,302 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:25,542 [INFO] 
+[143/146] CALIBRA ROCKETS STICKS CONEJO - ROEDOR - FRUTAS 120G  (ID 15509683274115) — 1 imágenes
+2026-06-03 11:02:25,764 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:25,979 [INFO] 
+[144/146] CALIBRA ROCKETS STICKS CONEJOS Y ROEDORES - VERDURAS 120G  (ID 15509683405187) — 1 imágenes
+2026-06-03 11:02:26,184 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:26,416 [INFO] 
+[145/146] CALIBRA ROCKETS STICKS ROEDORES - NUEZ Y COCO 120G  (ID 15509683470723) — 1 imágenes
+2026-06-03 11:02:26,656 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:26,872 [INFO] 
+[146/146] CALIBRA ROCKETS STICKS ROEDORES - VERDURAS Y NUECES 120G  (ID 15509683569027) — 1 imágenes
+2026-06-03 11:02:27,077 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-03 11:02:27,078 [INFO] 
+============================================================
+2026-06-03 11:02:27,078 [INFO] RESUMEN
+2026-06-03 11:02:27,078 [INFO] ============================================================
+2026-06-03 11:02:27,078 [INFO]   productos     : 146
+2026-06-03 11:02:27,078 [INFO]   reprocesadas  : 72
+2026-06-03 11:02:27,078 [INFO]   omitidas      : 159
+2026-06-03 11:02:27,078 [INFO]   sin_imagenes  : 0
+2026-06-03 11:02:27,078 [INFO]   errores       : 0
+2026-06-03 11:02:27,078 [INFO] 
+✓ Completado
