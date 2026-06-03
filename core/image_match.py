@@ -110,32 +110,40 @@ def _init_clip() -> bool:
     if _FORCE_BACKEND == "hash":
         log.info("[image_match] backend forzado a hash (IMAGE_MATCH_BACKEND=hash)")
         return False
-    # 1) open_clip — con reintentos porque la descarga de pesos desde HuggingFace
-    #    Hub es intermitente (falló en el run #19 de CALIBRA → degradó a hash).
+    # 1) open_clip. La fuente de pesos importa MUCHO desde GitHub Actions:
+    #    - 'openai'            → CDN de OpenAI (Azure): fiable, sin rate-limit.
+    #    - 'laion2b_s34b_b79k' → HuggingFace Hub: da HTTP 429 desde IPs de Actions.
+    #    Por eso se prueba 'openai' PRIMERO (Azure) y laion como fallback. El env
+    #    IMAGE_CLIP_PRETRAINED permite forzar uno concreto.
     try:
         import time as _time
         import torch  # noqa
         import open_clip
+        forced = os.getenv("IMAGE_CLIP_PRETRAINED", "").strip()
+        tags = [forced] if forced else ["openai", "laion2b_s34b_b79k"]
         model = preprocess = None
-        last_err = None
-        for attempt in range(4):
-            try:
-                model, _, preprocess = open_clip.create_model_and_transforms(
-                    "ViT-B-32", pretrained="laion2b_s34b_b79k"
-                )
+        loaded_tag = None
+        for tag in tags:
+            for attempt in range(3):
+                try:
+                    model, _, preprocess = open_clip.create_model_and_transforms(
+                        "ViT-B-32", pretrained=tag
+                    )
+                    loaded_tag = tag
+                    break
+                except Exception as de:
+                    wait = 3 * (2 ** attempt)
+                    log.info(f"[image_match] pesos CLIP '{tag}' intento "
+                             f"{attempt+1}/3 falló ({de}); reintento en {wait}s")
+                    _time.sleep(wait)
+            if model is not None:
                 break
-            except Exception as de:
-                last_err = de
-                wait = 3 * (2 ** attempt)
-                log.info(f"[image_match] descarga pesos CLIP intento "
-                         f"{attempt+1}/4 falló ({de}); reintento en {wait}s")
-                _time.sleep(wait)
         if model is None:
-            raise last_err or RuntimeError("no se pudieron descargar los pesos CLIP")
+            raise RuntimeError("no se pudieron descargar los pesos CLIP (openai/laion)")
         model.eval()
         _CLIP.update({"ok": True, "kind": "open_clip", "model": model,
                       "preprocess": preprocess, "torch": torch})
-        log.info("[image_match] backend CLIP (open_clip ViT-B-32) cargado")
+        log.info(f"[image_match] backend CLIP (open_clip ViT-B-32, pretrained={loaded_tag}) cargado")
         return True
     except Exception as e:
         log.info(f"[image_match] open_clip no disponible ({e}); pruebo sentence-transformers")
