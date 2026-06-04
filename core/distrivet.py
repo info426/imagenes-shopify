@@ -802,14 +802,42 @@ def _pick_product_href(page, hrefs: list, ean: str) -> str:
     return hrefs[0]
 
 
-def _dump_autocomplete(page, ean: str, new_hrefs: list):
-    """Diagnóstico del autocomplete: fichas nuevas tras escribir; si no hay,
+def _autocomplete_items(page, before_set) -> list:
+    """Devuelve [{href, text}] de enlaces de ficha NUEVOS (no en before_set), con
+    el texto de su fila — para diagnóstico y para elegir la ficha del EAN."""
+    try:
+        base = page.url
+        raw = page.evaluate("""(part) =>
+            Array.from(document.querySelectorAll('a[href]'))
+                 .filter(a => (a.getAttribute('href')||'').toLowerCase().includes(part))
+                 .map(a => ({
+                     href: a.getAttribute('href') || '',
+                     text: ((a.closest('li,tr,div') || a).innerText || a.innerText || '').trim().slice(0,90)
+                 }))
+        """, PRODUCT_URL_PART)
+    except Exception:
+        return []
+    out, seen = [], set()
+    for it in (raw or []):
+        try:
+            full = urljoin(base, it.get("href", ""))
+        except Exception:
+            full = it.get("href", "")
+        if not full or full in seen or full in before_set:
+            continue
+        seen.add(full)
+        out.append({"href": full, "text": it.get("text", "")})
+    return out
+
+
+def _dump_autocomplete(page, ean: str, items: list):
+    """Diagnóstico del autocomplete: fichas nuevas (href + texto); si no hay,
     vuelca contenedores candidatos a dropdown para fijar el selector."""
     pre = "[distrivet][diag][autocomplete]"
-    log.info(f"{pre} EAN={ean} fichas nuevas tras escribir: {len(new_hrefs)}")
-    for h in new_hrefs[:10]:
-        log.info(f"{pre} nuevo: {h}")
-    if new_hrefs:
+    log.info(f"{pre} EAN={ean} fichas nuevas: {len(items)}")
+    for it in items[:12]:
+        log.info(f"{pre} nuevo: {it.get('href')}  txt={it.get('text')!r}")
+    if items:
         return
     try:
         info = page.evaluate(r"""() => {
@@ -863,11 +891,12 @@ def images_for_ean(ean: str) -> list:
             log.warning(f"    [distrivet] no encontré el buscador. Revisa "
                         f"[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
         else:
-            # El buscador (#main-search) es autocomplete JS: input sin name y form
-            # action='' → Enter NO busca por GET. Estrategia: escribir el EAN, esperar
-            # el dropdown AJAX y quedarnos con los enlaces de ficha NUEVOS (los que no
-            # estaban antes = excluye los productos destacados de la home).
-            before = _product_hrefs(page)
+            # Buscador autocomplete JS (#main-search, input sin name, form action='').
+            # Escribimos el EAN, esperamos a que el dropdown se ESTABILICE (debounce;
+            # no leer estados intermedios del tecleo) y abrimos cada ficha candidata
+            # NUEVA verificando que contiene el EAN — la URL usa la REF (p.ej. ORD201),
+            # no el EAN, así que no se puede elegir por href.
+            before = set(_product_hrefs(page))
             try:
                 search.click()
             except Exception:
@@ -877,63 +906,66 @@ def images_for_ean(ean: str) -> list:
             except Exception:
                 pass
             try:
-                search.type(ean, delay=60)
+                search.type(ean, delay=50)
             except Exception:
                 try:
                     search.fill(ean)
                 except Exception:
                     pass
-            page.wait_for_timeout(2800)           # esperar autocomplete (AJAX)
+            page.wait_for_timeout(3500)           # debounce + AJAX del autocomplete
             try:
                 page.wait_for_load_state("networkidle", timeout=6000)
             except Exception:
                 pass
 
-            after = _product_hrefs(page)
-            new = [h for h in after if h not in before]
-            _dump_autocomplete(page, ean, new)
-            target = _pick_product_href(page, new, ean)
+            items = _autocomplete_items(page, before)
+            _dump_autocomplete(page, ean, items)
+            cands = [it["href"] for it in items]
 
-            # Fallback: si el autocomplete no dejó enlaces nuevos, probar Enter por
-            # si navega a una página de resultados, y reintentar.
-            if not target:
+            # Fallback: sin candidatas nuevas → Enter por si va a una página de resultados.
+            if not cands:
                 try:
                     search.press("Enter")
                     page.wait_for_load_state("networkidle", timeout=8000)
-                    page.wait_for_timeout(1200)
+                    page.wait_for_timeout(1500)
                 except Exception:
                     pass
                 if PRODUCT_URL_PART in (page.url or "").lower():
-                    target = page.url
+                    cands = [page.url]
                 else:
-                    res = _product_hrefs(page)
-                    target = (_pick_product_href(page, [h for h in res if h not in before], ean)
-                              or _pick_product_href(page, res, ean))
+                    cands = [h for h in _product_hrefs(page) if h not in before]
 
-            if target and not (PRODUCT_URL_PART in (page.url or "").lower()
-                               and target == page.url):
-                try:
-                    resp = page.goto(target, timeout=30000, wait_until="domcontentloaded")
-                    log.info(f"    [distrivet] ficha: {target} → HTTP "
-                             f"{resp.status if resp else '?'}")
+            # Abrir cada candidata y quedarnos con la PRIMERA que contiene el EAN.
+            chosen = ""
+            for cand in cands[:8]:
+                if PRODUCT_URL_PART in (page.url or "").lower() and cand == page.url:
+                    pass
+                else:
                     try:
-                        page.wait_for_load_state("networkidle", timeout=8000)
+                        page.goto(cand, timeout=30000, wait_until="domcontentloaded")
                     except Exception:
-                        pass
-                    page.wait_for_timeout(1000)
-                except Exception as e:
-                    log.info(f"    [distrivet] no pude abrir ficha {target}: {e}")
+                        continue
+                try:
+                    page.wait_for_load_state("networkidle", timeout=8000)
+                except Exception:
+                    pass
+                page.wait_for_timeout(800)
+                if _page_contains_ean(page, ean):
+                    chosen = page.url
+                    log.info(f"    [distrivet] ficha con EAN {ean}: {chosen}")
+                    break
+                log.info(f"    [distrivet] candidata sin EAN, descarto: {cand}")
 
             _dump_structure(page, "product")
-            product_url = page.url
-            if target and _page_contains_ean(page, ean):
+            if chosen:
+                product_url = chosen
                 images = _extract_images(page, page.url, ean)
-            elif not target:
-                log.warning(f"    [distrivet] búsqueda sin ficha para EAN {ean}. "
-                            f"Revisa [distrivet][diag][autocomplete].")
+                if not images:
+                    log.warning(f"    [distrivet] ficha correcta pero sin imagen con "
+                                f"EAN {ean} (revisa [distrivet][diag][img])")
             else:
-                log.warning(f"    [distrivet] la ficha NO contiene el EAN {ean} "
-                            f"— descarto (url={page.url})")
+                log.warning(f"    [distrivet] ninguna candidata ({len(cands)}) contiene "
+                            f"el EAN {ean}. Revisa [distrivet][diag][autocomplete].")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
 
