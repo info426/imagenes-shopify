@@ -289,145 +289,122 @@ def _on_address_page(page) -> bool:
 
 def _select_delivery_address(page) -> bool:
     """Pasa el interstitial post-login de selección de dirección de entrega
-    (Distrivet → bienvenido.asp). Devuelve True si lo resolvió. Defensivo: prueba
-    <select>+enviar, botones de continuar/aceptar y, en último recurso, el primer
-    enlace de dirección. Vuelca el DOM ([distrivet][diag][address]) para fijar
-    selectores tras el 1er test (DISTRIVET_ADDRESS_SEL / _ADDRESS_SUBMIT_SEL)."""
-    if not _on_address_page(page):
+    (Distrivet → bienvenido.asp): marca un radio de dirección (`customer_web`) y
+    pulsa «Seleccionar dirección».
+
+    Robusto ante la navegación que dispara el envío: cualquier llamada al DOM
+    puede fallar con 'Execution context was destroyed' justo cuando la página
+    navega — se captura y se interpreta como «ya no estamos en la dirección»
+    (éxito). La función NUNCA lanza. Vuelca [distrivet][diag][address] para fijar
+    el botón con DISTRIVET_ADDRESS_SUBMIT_SEL si hiciera falta."""
+    try:
+        if not _on_address_page(page):
+            return False
+    except Exception:
         return False
-    log.info(f"[distrivet] selección de dirección de entrega detectada "
-             f"(URL={page.url})")
+    try:
+        log.info(f"[distrivet] selección de dirección de entrega detectada "
+                 f"(URL={page.url})")
+    except Exception:
+        pass
     _dump_structure(page, "address")
     _dump_links(page, "address")
+
+    def _qs(selector):
+        try:
+            return page.query_selector(selector)
+        except Exception:
+            return None
 
     def _settle():
         try:
             page.wait_for_load_state("networkidle", timeout=12000)
         except Exception:
             pass
-        page.wait_for_timeout(1200)
+        try:
+            page.wait_for_timeout(1000)
+        except Exception:
+            pass
 
-    # 1. Override por env (enlace/botón a clicar directamente)
-    if _ENV_ADDRESS_SEL:
-        el = page.query_selector(_ENV_ADDRESS_SEL)
-        if el:
-            try:
-                el.click(); _settle()
-                if not _on_address_page(page):
-                    log.info("[distrivet] dirección seleccionada (env sel)")
-                    return True
-            except Exception:
-                pass
+    def _still_here():
+        # Si el contexto se destruyó por navegación → ya salimos de la dirección.
+        try:
+            return _on_address_page(page)
+        except Exception:
+            return False
 
-    # 2. Radios de dirección (Distrivet: name='customer_web') → marcar uno y enviar.
-    #    Para sacar la imagen del producto la dirección concreta es indiferente, así
-    #    que vale cualquier dirección válida (la primera, salvo override por env).
+    # 1. Marcar un radio de dirección (customer_web; el primero o DISTRIVET_ADDRESS_ID)
     addr_id = os.getenv("DISTRIVET_ADDRESS_ID", "")
-    radios = page.query_selector_all("input[type='radio']")
-    if radios:
-        target = None
-        if addr_id:
-            target = (page.query_selector(f"input[type='radio'][id='{addr_id}']")
-                      or page.query_selector(f"input[type='radio'][value='{addr_id}']"))
-        if target is None:
-            target = (page.query_selector("input[type='radio'][name='customer_web']")
-                      or radios[0])
+    target = None
+    if addr_id:
+        target = (_qs(f"input[type='radio'][id='{addr_id}']")
+                  or _qs(f"input[type='radio'][value='{addr_id}']"))
+    if target is None:
+        target = (_qs("input[type='radio'][name='customer_web']")
+                  or _qs("input[type='radio']"))
+    if target is not None:
         try:
-            target.check()
+            target.check(timeout=4000)
         except Exception:
             try:
-                target.click()
+                target.click(timeout=4000)
             except Exception:
                 pass
-        try:
-            rid = target.get_attribute("id") or target.get_attribute("value") or "?"
-        except Exception:
-            rid = "?"
-        log.info(f"[distrivet] dirección de entrega marcada (radio id={rid})")
+        log.info("[distrivet] radio de dirección marcado")
         _settle()
-        # Marcar el radio puede no bastar: suele requerir enviar el formulario
-        # (botón continuar/aceptar). Eso lo cubre el bloque de botones de abajo.
 
-    # 3. <select> de direcciones → primera opción con value real, luego enviar
-    sel = page.query_selector("select")
-    if sel:
-        try:
-            opts = page.evaluate(
-                "(s)=>Array.from(s.options).map(o=>({v:o.value,t:(o.text||'').trim()}))",
-                sel)
-            target = next((o for o in (opts or [])
-                           if (o.get("v") or "").strip() not in ("", "0", "-1")), None)
-            if target:
-                try:
-                    sel.select_option(value=target["v"])
-                except Exception:
-                    sel.select_option(label=target["t"])
-                log.info(f"[distrivet] dirección elegida en <select>: "
-                         f"{target.get('t')!r}")
-                try:
-                    page.evaluate(
-                        "(s)=>s.dispatchEvent(new Event('change',{bubbles:true}))", sel)
-                except Exception:
-                    pass
-                _settle()
-        except Exception as e:
-            log.info(f"[distrivet] error con <select> de dirección: {e}")
-
-    # 4. Botón/enlace de continuar/aceptar/seleccionar/entrar
-    if _on_address_page(page) and _ENV_ADDRESS_SUBMIT_SEL:
-        b = page.query_selector(_ENV_ADDRESS_SUBMIT_SEL)
-        if b:
+    # 2. Pulsar «Seleccionar dirección» (botón principal de bienvenido.asp)
+    if _still_here():
+        candidates = []
+        if _ENV_ADDRESS_SUBMIT_SEL:
+            candidates.append(_ENV_ADDRESS_SUBMIT_SEL)
+        candidates += [
+            "button:has-text('Seleccionar dirección')",
+            "button:has-text('Seleccionar direcci')",
+            "input[value*='Seleccionar direcci' i]",
+            "a:has-text('Seleccionar dirección')",
+            "text=Seleccionar dirección",
+            "button:has-text('Seleccionar')",
+            "input[value*='seleccionar' i]",
+            "input[value*='continuar' i]", "input[value*='aceptar' i]",
+            "input[type='submit']", "button[type='submit']",
+        ]
+        for sel in candidates:
+            el = _qs(sel)
+            if not el:
+                continue
             try:
-                b.click(); _settle()
+                el.click(timeout=5000)
+                log.info(f"[distrivet] botón de dirección pulsado: {sel}")
             except Exception:
-                pass
-    if _on_address_page(page):
-        for s in ("input[type='submit']", "button[type='submit']",
-                  "input[value*='continuar' i]", "input[value*='aceptar' i]",
-                  "input[value*='seleccionar' i]", "input[value*='entrar' i]",
-                  "input[value*='enviar' i]", "input[value*='confirmar' i]",
-                  "a:has-text('Continuar')", "a:has-text('Aceptar')",
-                  "button:has-text('Continuar')", "button:has-text('Aceptar')",
-                  "button:has-text('Seleccionar')"):
-            b = page.query_selector(s)
-            if b:
-                try:
-                    b.click(); _settle()
-                    if not _on_address_page(page):
-                        break
-                except Exception:
-                    continue
+                # La propia navegación puede destruir el contexto → se da por OK
+                log.info(f"[distrivet] botón de dirección pulsado "
+                         f"(navegación en curso): {sel}")
+            _settle()
+            if not _still_here():
+                break
 
-    # 5. Último recurso: primer enlace de dirección (no logout/menú)
-    if _on_address_page(page):
+    # 3. Último recurso: enviar por JS (click del primer botón / submit del form)
+    if _still_here():
         try:
-            href = page.evaluate("""() => {
-                const bad = ['logout','salir','cerrar','login','password','idioma'];
-                for (const a of Array.from(document.querySelectorAll('a[href]'))) {
-                    const h=(a.getAttribute('href')||'').toLowerCase();
-                    const t=(a.innerText||'').toLowerCase();
-                    if (!h || h.startsWith('#') || h.startsWith('javascript:')) continue;
-                    if (bad.some(b=>h.includes(b)||t.includes(b))) continue;
-                    return a.getAttribute('href');
-                }
-                return '';
+            page.evaluate("""() => {
+                const b = document.querySelector("button, input[type=submit]");
+                if (b) { b.click(); return; }
+                const f = document.querySelector('form'); if (f) f.submit();
             }""")
+            _settle()
         except Exception:
-            href = ""
-        if href:
-            try:
-                page.goto(urljoin(page.url, href), timeout=30000,
-                          wait_until="domcontentloaded"); _settle()
-            except Exception:
-                pass
+            pass
 
-    handled = not _on_address_page(page)
+    handled = not _still_here()
     if handled:
-        log.info(f"[distrivet] ✓ dirección de entrega resuelta (URL={page.url})")
+        try:
+            log.info(f"[distrivet] ✓ dirección de entrega resuelta (URL={page.url})")
+        except Exception:
+            log.info("[distrivet] ✓ dirección de entrega resuelta")
     else:
         log.warning("[distrivet] no pude pasar la selección de dirección. Revisa "
-                    "[distrivet][diag][address] y fija DISTRIVET_ADDRESS_SEL / "
-                    "DISTRIVET_ADDRESS_SUBMIT_SEL.")
+                    "[distrivet][diag][address] y fija DISTRIVET_ADDRESS_SUBMIT_SEL.")
     return handled
 
 
@@ -530,7 +507,10 @@ def login(user: str, pwd: str) -> bool:
     page.wait_for_timeout(1500)
 
     # Interstitial post-login: selección de dirección de entrega (bienvenido.asp)
-    _select_delivery_address(page)
+    try:
+        _select_delivery_address(page)
+    except Exception as e:
+        log.warning(f"[distrivet] error en selección de dirección (continúo): {e}")
 
     # Asegurar que estamos en una página con buscador (home del webshop)
     if _find_search_input(page) is None:
@@ -692,8 +672,14 @@ def _page_contains_ean(page, ean: str) -> bool:
 # ─── Búsqueda por EAN ────────────────────────────────────────────────────────
 
 def _find_search_input(page):
+    def _qs(s):
+        try:
+            return page.query_selector(s)
+        except Exception:
+            return None
+    # Evitar el filtro de direcciones de bienvenido.asp (no es el buscador)
     if _ENV_SEARCH_SEL:
-        return page.query_selector(_ENV_SEARCH_SEL)
+        return _qs(_ENV_SEARCH_SEL)
     for sel in ("input[type='search']",
                 "input[name*='busc' i]", "input[id*='busc' i]",
                 "input[placeholder*='busc' i]",
@@ -701,10 +687,18 @@ def _find_search_input(page):
                 "input[placeholder*='search' i]",
                 "input[name*='ean' i]", "input[placeholder*='ean' i]",
                 "input[name*='referencia' i]", "input[name*='articulo' i]",
+                "input[name*='producto' i]", "input[id*='producto' i]",
                 "input[name*='palabra' i]", "input[name*='texto' i]",
                 "input[name='q']"):
-        el = page.query_selector(sel)
+        # 'filtroDirecciones' de bienvenido.asp matchea 'busc'? no, pero por si
+        # acaso lo excluimos explícitamente.
+        el = _qs(sel)
         if el:
+            try:
+                if (el.get_attribute("id") or "") == "filtroDirecciones":
+                    continue
+            except Exception:
+                pass
             return el
     return None
 
