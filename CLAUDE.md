@@ -3,7 +3,39 @@
 Repositorio para actualizar las imágenes de productos Shopify con las imágenes
 oficiales de cada marca, procesadas al estándar de la tienda.
 
-Tienda: `7ev1zx-eg.myshopify.com`
+Tienda: `7ev1zx-eg.myshopify.com` — frontend público: [www.shopypet.eu](https://www.shopypet.eu)
+
+---
+
+## Contexto del proyecto / negocio
+
+**Quién:** tienda online de productos para mascotas **shopypet.eu**, montada sobre
+**Shopify**. Vende muchas marcas.
+
+**Proveedor principal: Distrivet** — `https://tienda.distrivet.es/home-webshop.asp`
+(requiere login con usuario/contraseña; las credenciales **no se guardan en el repo**,
+van en GitHub Secrets `DISTRIVET_USER` / `DISTRIVET_PASS`). Su webshop muestra por
+producto: **Referencia, EAN, Fabricante, Stock, Precio** y una **foto de producto**.
+
+**De dónde salen los productos:** se ha volcado por CSV el catálogo que vende
+Distrivet con **Nombre, Marca, EAN y precio**, y se ha cargado en Shopify. Por eso
+cada producto Shopify tiene su **EAN en `variant.barcode`** (clave para cruzar con
+fuentes externas — ver «Distrivet como fuente»).
+
+**Objetivo del proyecto:** que **cada producto** tenga la **imagen correcta** de la
+marca, procesada al **estándar de la tienda** (WebP 2000×2000, fondo blanco, etc.).
+Se trabaja **por fases y por marca**, usando GitHub Actions (Backup → Test → Proceso
+masivo, + resolución de URLs de fabricante en metacampos). Algunas marcas están
+completas, otras parcialmente trabajadas y otras pendientes.
+
+**Dos grandes vías para conseguir la imagen de cada producto:**
+1. **Web oficial de la marca** (matching por título + DDG/Google + gate por imagen) —
+   da la imagen más limpia, pero requiere un scraper por marca y es propenso a
+   falsos positivos. Es la vía de mayor calidad.
+2. **Distrivet (el proveedor), buscando por EAN** — lookup **exacto y
+   brand-agnóstico** (un EAN → un producto → su foto). Es la vía más rápida, barata y
+   fiable para dar cobertura a cualquier marca sin escribir un scraper específico.
+   Ver «Caso D — Proveedor Distrivet (búsqueda por EAN)».
 
 ---
 
@@ -91,6 +123,26 @@ para cada producto y combina los resultados:
 Todas las imágenes pasan el filtro de resolución mínima (≥800px) antes del
 dedup. **No** se baja el mínimo: preferimos menos imágenes pero de calidad.
 
+### Caso D — Proveedor Distrivet (búsqueda por EAN)  *(propuesto / pendiente de implementar)*
+
+Para marcas **sin imagen en Shopify y sin web oficial cómoda de scrapear**, la vía más
+rápida y fiable es ir al **proveedor** (Distrivet), que tiene la ficha de **todos** los
+productos que vende shopypet.eu. Como cada producto Shopify ya lleva su **EAN** en
+`variant.barcode`, el cruce es un **lookup exacto** (no hay matching difuso ni DDG).
+
+Flujo previsto (fuente `distrivet`, brand-agnóstica):
+1. **Login una vez** en `tienda.distrivet.es` (Playwright + anti-bot; la web da 403 a
+   peticiones sin navegador, como beaphar/menforsan). Sesión reutilizada en todo el run.
+2. Por cada producto del vendor: leer EAN → **buscar por EAN** en el webshop → abrir la
+   ficha → extraer la **foto de producto** (og:image / `<img>` principal / galería) a su
+   máxima resolución.
+3. Descargar (`_download_hires`, mín. 800px), dedup perceptual, `process_image`, y
+   **reemplazar** en Shopify con el mismo pipeline que el resto de fuentes.
+4. **Caché por EAN** en `resultados/distrivet_ean_cache.json` → re-runs y tests no
+   repiten búsquedas.
+
+Ver detalles, riesgos y decisiones en «Distrivet como fuente (proveedor)».
+
 ---
 
 ## Los 3 workflows
@@ -107,6 +159,8 @@ dedup. **No** se baja el mínimo: preferimos menos imágenes pero de calidad.
 - `shopify_backup` — lee de `backups/{slug}/` (marcas con imágenes en Shopify)
 - `web_oficial` — scrapea web del fabricante (requiere `marcas/{slug}.py`)
 - `web_y_amazon` — web oficial + búsqueda DDG adicional
+- `distrivet` *(propuesto)* — login en el proveedor + búsqueda por EAN, brand-agnóstica
+  (ver «Distrivet como fuente (proveedor)»)
 
 ---
 
@@ -386,6 +440,74 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 - `log.info` para todo lo que ayuda a diagnosticar desde el artefacto del workflow (HTTP status, candidatos DDG, scores, imágenes extraídas)
 - `log.debug` solo para errores de bajo nivel que no afectan al flujo (excepciones internas de Playwright, etc.)
 - **Lección (menforsan test 1):** los HTTP 403 estaban en `log.debug` → invisibles en el artefacto. Cambiar siempre los errores de navegación a `log.info`.
+
+---
+
+## Distrivet como fuente (proveedor) — búsqueda por EAN  *(propuesto / pendiente de implementar)*
+
+**Idea central:** Distrivet es el **proveedor** que surte a shopypet.eu, así que tiene
+la ficha (con foto) de **todos** los productos de la tienda. Como cada producto Shopify
+ya lleva su **EAN** en `variant.barcode`, conseguir la imagen es un **lookup exacto por
+EAN**, no un matching difuso. Esto lo hace radicalmente **más simple, barato y fiable**
+que los scrapers por marca (sin DDG, sin Jaccard, sin gate CLIP, sin falsos positivos) y
+**brand-agnóstico** (un solo módulo sirve para TODAS las marcas).
+
+**Posicionamiento frente a las otras fuentes:**
+- `distrivet` = **baseline rápido** para dar cobertura a cualquier marca sin escribir
+  `marcas/{slug}.py`. La mejor relación coste/cobertura.
+- `web_oficial` = **upgrade de calidad** (renders más limpios) cuando merezca la pena.
+- Recomendación: usar Distrivet para vaciar el backlog de marcas pendientes, y reservar
+  el scraper de web oficial para las marcas premium donde se quiera la imagen más limpia.
+
+**Arquitectura propuesta (encaja con el orquestador actual, mínimo código nuevo):**
+- `core/distrivet.py` — gestor de sesión autenticada:
+  - `login()` — Playwright con la plantilla anti-bot del repo (Chrome UA, `Sec-Fetch-*`,
+    bypass `navigator.webdriver`, warm-up de la home). Rellena el formulario de login y
+    verifica sesión. **Login una sola vez por run**, sesión/cookies reutilizadas.
+  - `image_urls_for_ean(ean) -> list[str]` — escribe el EAN en el buscador del webshop,
+    abre la ficha del resultado y extrae la(s) imagen(es) de producto (og:image / `<img>`
+    principal / galería), subidas a su máxima resolución. Caché en
+    `resultados/distrivet_ean_cache.json` (`ean → {ref, url, images, found}`).
+- `core/process_brand.py` — nueva rama `--fuente distrivet` que reusa **todo** el
+  pipeline existente: itera productos del vendor (o `--only-ids`), lee el EAN, llama a
+  `distrivet.image_urls_for_ean`, `_download_hires` → `dedupe_images` → `process_image`
+  → `_replace_images`. Credenciales desde `os.getenv("DISTRIVET_USER"/"DISTRIVET_PASS")`.
+- Workflows: añadir `distrivet` a las choices de `fuente` en `test_marca.yml` y
+  `procesar_marca.yml` y exponer los secrets `DISTRIVET_USER`/`DISTRIVET_PASS` en el
+  bloque `env`. Playwright ya se instala para fuentes ≠ `shopify_backup`. `web_url` no
+  hace falta (Distrivet es fija).
+
+**Coste / eficiencia:** corre en GitHub Actions (sin APIs de pago: ni Google CSE ni
+CLIP). Login 1×, ~1 búsqueda + 1 navegación por producto (segundos), caché por EAN →
+re-runs casi gratis. Coste marginal ≈ $0.
+
+**Vía rápida a probar primero (más barata que Playwright):** intentar login con
+`requests.Session` (POST credenciales + cookies de sesión, sin navegador). Si el WAF
+sigue dando 403 (probable, es ASP clásico como beaphar/menforsan) → caer a Playwright.
+
+**Decisiones / riesgos a confirmar en el primer test (diagnóstico):**
+1. **Selectores de login y búsqueda desconocidos** — la web da 403 a no-navegadores, no
+   se pueden inspeccionar sin sesión real. El primer run de test debe **loguear el DOM**
+   (nombres de inputs, action del form, estructura de resultados) para fijar selectores.
+   Construir el login de forma defensiva (probar patrones comunes + volcar HTML si falla).
+2. **Resolución de imagen** — los catálogos B2B suelen servir imágenes pequeñas
+   (~300-600px) < el mínimo de 800px de la tienda → se descartarían. Decidir: mantener el
+   suelo de 800 (calidad, posible baja cobertura) o relajarlo solo para Distrivet
+   (cobertura, menor calidad). Recomendación: medir qué sirve Distrivet en el 1er test y
+   decidir; buscar si hay versión "zoom"/grande de la imagen.
+3. **EAN ausente o no encontrado en Distrivet** → saltar, **no** borrar la imagen actual
+   (mismo manejo `sin_match`/`sin_imagen` que hoy).
+4. **Naturaleza de la imagen** — son fotos del proveedor (packaging real, quizá con marca
+   de agua/ángulos), no necesariamente el render limpio de la web oficial. Garantizan
+   "producto correcto" pero pueden ser menos pulidas.
+
+**Seguridad / credenciales:** `usuario`/`contraseña` de Distrivet **NUNCA** en el repo,
+en código ni en CLAUDE.md → solo como GitHub Secrets `DISTRIVET_USER` / `DISTRIVET_PASS`
+(Settings → Secrets and variables → Actions), igual que `CLIENT_ID`/`CLIENT_SECRET`.
+
+**Parámetros previstos workflow `Test marca` / `Procesar imágenes de marca`:**
+`vendor=<marca>`, `fuente=distrivet`, `product_id`/`product_ids` (test/lote/vacío=todos),
+`pipeline=standard`, `force_padding=auto`. (No requiere `web_url`.)
 
 ---
 
