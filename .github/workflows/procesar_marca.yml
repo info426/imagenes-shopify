@@ -14,6 +14,7 @@ on:
           - shopify_backup
           - web_oficial
           - web_y_amazon
+          - distrivet
         default: shopify_backup
       web_url:
         description: 'URL web fabricante (si fuente != shopify_backup)'
@@ -79,6 +80,8 @@ jobs:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          DISTRIVET_USER: ${{ secrets.DISTRIVET_USER }}
+          DISTRIVET_PASS: ${{ secrets.DISTRIVET_PASS }}
         run: |
           mkdir -p resultados
           EXTRA=""

@@ -592,6 +592,104 @@ def run_web(api: ShopifyAPI, vendor: str, web_url: str, fuente: str,
     _print_stats(stats)
 
 
+# ─── Modo distrivet (proveedor — búsqueda por EAN) ──────────────────────────────
+
+def run_distrivet(api: ShopifyAPI, vendor: str,
+                  product_id: int = None, only_ids: set = None,
+                  pipeline: str = "standard", force_padding: bool | None = None):
+    """Para cada producto del vendor, busca su EAN en Distrivet (el proveedor),
+    extrae la foto oficial de la ficha, la procesa y la sube a Shopify.
+
+    Brand-agnóstico: NO usa scraper por marca. El cruce es un lookup EXACTO por
+    EAN (variant.barcode), así que no hay matching difuso ni falsos positivos.
+    Login una sola vez; sesión reutilizada; caché por EAN."""
+    from core import distrivet
+
+    user = os.getenv("DISTRIVET_USER", "")
+    pwd  = os.getenv("DISTRIVET_PASS", "")
+    if not user or not pwd:
+        log.error("Faltan DISTRIVET_USER / DISTRIVET_PASS "
+                  "(GitHub Secrets del workflow).")
+        sys.exit(1)
+
+    slug = vendor_slug(vendor)
+
+    if not distrivet.login(user, pwd):
+        log.error("No se pudo iniciar sesión en Distrivet — abortando.")
+        sys.exit(1)
+
+    if product_id:
+        products = [api.get_product(product_id)]
+    elif only_ids:
+        products = [api.get_product(pid) for pid in only_ids]
+    else:
+        products = api.get_products(vendor)
+
+    stats = dict(total=len(products), ok=0, sin_ean=0, sin_match=0,
+                 sin_imagen=0, errores=0)
+
+    for i, product in enumerate(products, 1):
+        pid   = product["id"]
+        title = product["title"]
+        log.info(f"\n[{i}/{len(products)}] {title}  (ID: {pid})\n  {_admin_url(pid)}")
+
+        # EAN desde la primera variante con barcode
+        barcode = next(
+            (str(v.get("barcode", "")).strip()
+             for v in product.get("variants", [])
+             if v.get("barcode")),
+            ""
+        )
+        if not barcode:
+            log.warning("  Sin EAN (variant.barcode) — saltando")
+            stats["sin_ean"] += 1
+            continue
+        log.info(f"  EAN: {barcode}")
+
+        try:
+            urls = distrivet.images_for_ean(barcode)
+        except Exception as e:
+            log.warning(f"  [distrivet] error resolviendo EAN: {e}")
+            urls = []
+
+        if not urls:
+            log.warning("  Sin imagen en Distrivet para este EAN — saltando")
+            stats["sin_match"] += 1
+            continue
+
+        # _download_hires loguea WxH de cada imagen (también las rechazadas por
+        # <800px) → así medimos la resolución real que sirve Distrivet.
+        raw_images = _download_hires(urls, "distrivet")
+        if not raw_images:
+            log.warning("  Imágenes por debajo del mínimo (800px) — saltando")
+            stats["sin_imagen"] += 1
+            continue
+
+        raw_images = dedupe_images(raw_images)
+
+        processed = []
+        for j, (raw, _) in enumerate(raw_images, 1):
+            try:
+                img = Image.open(BytesIO(raw))
+                log.info(f"  Imagen {j}: {img.mode} {img.size}")
+                fn = process_image_webp_only if pipeline == "webp_only" else process_image
+                kwargs = {} if pipeline == "webp_only" else {"force_padding": force_padding}
+                processed.append(fn(img, **kwargs))
+            except Exception as e:
+                log.warning(f"  Error procesando imagen {j}: {e}")
+
+        if not processed:
+            stats["errores"] += 1
+            continue
+
+        _replace_images(api, pid, title, slug, processed)
+        stats["ok"] += 1
+        time.sleep(1)
+
+    distrivet.close()
+    _print_stats(stats)
+
+
 # ─── Modo crear definiciones de metacampo ───────────────────────────────────────
 
 def run_create_metafield_defs(api: ShopifyAPI):
@@ -944,7 +1042,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--vendor",          default="")
     parser.add_argument("--fuente",
-                        choices=["shopify_backup", "web_oficial", "web_y_amazon"])
+                        choices=["shopify_backup", "web_oficial", "web_y_amazon",
+                                 "distrivet"])
     parser.add_argument("--web-url",         default="")
     parser.add_argument("--product-id",      type=int, default=None)
     parser.add_argument("--only-ids",        default="")
@@ -1037,6 +1136,9 @@ def main():
     elif args.fuente == "shopify_backup":
         run_shopify_backup(api, args.vendor, args.product_id, only_ids or None,
                            pipeline=args.pipeline, force_padding=force_padding)
+    elif args.fuente == "distrivet":
+        run_distrivet(api, args.vendor, args.product_id, only_ids or None,
+                      pipeline=args.pipeline, force_padding=force_padding)
     elif args.fuente in ("web_oficial", "web_y_amazon"):
         if not args.web_url:
             log.error("--web-url requerido para fuente web_oficial / web_y_amazon")

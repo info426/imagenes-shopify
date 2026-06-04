@@ -14,6 +14,7 @@ on:
           - web_oficial
           - shopify_backup
           - web_y_amazon
+          - distrivet
         default: web_oficial
       product_id:
         description: 'ID del producto a procesar (Shopify product ID)'
@@ -65,6 +66,8 @@ jobs:
           SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          DISTRIVET_USER: ${{ secrets.DISTRIVET_USER }}
+          DISTRIVET_PASS: ${{ secrets.DISTRIVET_PASS }}
         run: |
           mkdir -p resultados
           EXTRA=""
