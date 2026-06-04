@@ -123,7 +123,7 @@ para cada producto y combina los resultados:
 Todas las imágenes pasan el filtro de resolución mínima (≥800px) antes del
 dedup. **No** se baja el mínimo: preferimos menos imágenes pero de calidad.
 
-### Caso D — Proveedor Distrivet (búsqueda por EAN)  *(propuesto / pendiente de implementar)*
+### Caso D — Proveedor Distrivet (búsqueda por EAN)  *(implementado — pendiente 1er test)*
 
 Para marcas **sin imagen en Shopify y sin web oficial cómoda de scrapear**, la vía más
 rápida y fiable es ir al **proveedor** (Distrivet), que tiene la ficha de **todos** los
@@ -159,7 +159,7 @@ Ver detalles, riesgos y decisiones en «Distrivet como fuente (proveedor)».
 - `shopify_backup` — lee de `backups/{slug}/` (marcas con imágenes en Shopify)
 - `web_oficial` — scrapea web del fabricante (requiere `marcas/{slug}.py`)
 - `web_y_amazon` — web oficial + búsqueda DDG adicional
-- `distrivet` *(propuesto)* — login en el proveedor + búsqueda por EAN, brand-agnóstica
+- `distrivet` — login en el proveedor + búsqueda por EAN, brand-agnóstica
   (ver «Distrivet como fuente (proveedor)»)
 
 ---
@@ -443,7 +443,18 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 
 ---
 
-## Distrivet como fuente (proveedor) — búsqueda por EAN  *(propuesto / pendiente de implementar)*
+## Distrivet como fuente (proveedor) — búsqueda por EAN  *(implementado — pendiente 1er test de diagnóstico)*
+
+**Estado:** `core/distrivet.py` + rama `--fuente distrivet` en el orquestador + opción
+en los workflows `Test marca` / `Procesar imágenes de marca` → **en `main`**. Falta:
+(1) añadir los **Secrets** `DISTRIVET_USER` / `DISTRIVET_PASS` en GitHub; (2) lanzar un
+**Test de 1 producto** y leer el log del artefacto, en concreto las líneas
+`[distrivet][diag][login|search|product]` que **vuelcan la estructura del DOM** (nombres
+de inputs del login, buscador, patrón de URL de ficha) y los `[distrivet] ✓×… W×H` para
+**medir la resolución real** que sirve Distrivet. Con eso se fijan los selectores
+definitivos (heurística OK, o forzarlos con `DISTRIVET_*_SEL`) y se decide la política de
+resolución (mantener 800px o relajar). El primer run quizá no acierte los selectores a la
+primera — es **esperado**: el volcado de diagnóstico existe justo para eso.
 
 **Idea central:** Distrivet es el **proveedor** que surte a shopypet.eu, así que tiene
 la ficha (con foto) de **todos** los productos de la tienda. Como cada producto Shopify
