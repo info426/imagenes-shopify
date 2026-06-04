@@ -603,9 +603,7 @@ def _extract_images(page, page_url: str, ean: str = "") -> list:
     except Exception:
         pass
 
-    # 2. <img> del DOM — TODAS (sin filtrar por tamaño: la principal puede ser
-    #    lazy/pequeña en el DOM). Capturamos todos los atributos lazy y volcamos
-    #    diagnóstico para localizar la principal si el filtro por EAN fallara.
+    # 2. <img> del DOM (src + atributos lazy + data-zoom del visor con zoom)
     try:
         img_data = page.evaluate(r"""() => {
             return Array.from(document.querySelectorAll('img')).map(img => ({
@@ -614,41 +612,70 @@ def _extract_images(page, page_url: str, ean: str = "") -> list:
                 dataOrig:   img.getAttribute('data-original')  || '',
                 dataLazy:   img.getAttribute('data-lazy-src')  || img.getAttribute('data-lazy') || '',
                 srcset:     img.getAttribute('srcset')         || img.getAttribute('data-srcset') || '',
-                dataZoom:   img.getAttribute('data-zoom-image')|| '',
-                dataLarge:  img.getAttribute('data-large_image')|| '',
-                parentHref: (img.closest('a') && /\.(jpe?g|png|webp)/i.test(img.closest('a').href||'')) ? img.closest('a').href : '',
-                w:          img.naturalWidth || 0,
-                cls:        (img.className || '').toString().slice(0,40),
-                pcls:       ((img.closest('[class]') || {}).className || '').toString().slice(0,50)
+                dataZoom:   img.getAttribute('data-zoom-image')|| img.getAttribute('data-zoom') || '',
+                dataLarge:  img.getAttribute('data-large_image')|| img.getAttribute('data-large') || '',
             }));
         }""")
-        log.info(f"    [distrivet] DOM imgs: {len(img_data or [])}")
-        for it in (img_data or [])[:30]:
-            u = (it.get("src") or it.get("dataSrc") or it.get("dataOrig")
-                 or it.get("dataLazy") or "")
-            log.info(f"    [distrivet][diag][img] w={it.get('w')} cls={it.get('cls')!r} "
-                     f"pcls={it.get('pcls')!r} {u}")
         for item in (img_data or []):
             srcset = item.get("srcset", "")
             parts = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
                 _add(parts[-1].split()[0])
-            for key in ("parentHref", "dataZoom", "dataLarge", "dataOrig",
-                        "dataLazy", "dataSrc", "src"):
+            for key in ("dataZoom", "dataLarge", "dataOrig", "dataLazy",
+                        "dataSrc", "src"):
                 _add(item.get(key, ""))
     except Exception as e:
         log.info(f"    [distrivet] DOM imgs error: {e}")
 
-    # 3. Filtro por EAN: las imágenes del producto llevan el EAN en el nombre.
-    if ean:
-        ean_imgs = [u for u in ordered if ean in u]
-        if ean_imgs:
-            log.info(f"    [distrivet] filtro EAN {ean}: {len(ordered)} → "
-                     f"{len(ean_imgs)} (descarta relacionados)")
-            return ean_imgs
-        log.warning(f"    [distrivet] NINGUNA imagen contiene el EAN {ean} entre "
-                    f"{len(ordered)} candidatas → no pongo relacionados (revisa "
-                    f"[distrivet][diag][img])")
+    # 3. background-image y data-zoom de cualquier elemento (la foto del producto
+    #    de Distrivet va en un visor con zoom y NO es un <img> normal).
+    try:
+        bg_urls = page.evaluate(r"""() => {
+            const out = [];
+            for (const el of document.querySelectorAll('*')) {
+                const bg = (el.style && el.style.backgroundImage) ||
+                           getComputedStyle(el).backgroundImage || '';
+                const m = bg && bg.match(/url\(["']?([^"')]+)["']?\)/);
+                if (m) out.push(m[1]);
+                for (const at of ['data-zoom-image','data-zoom','data-large','data-image','data-big','href']) {
+                    const v = el.getAttribute && el.getAttribute(at);
+                    if (v && /\.(jpe?g|png|webp)/i.test(v)) out.push(v);
+                }
+            }
+            return out;
+        }""")
+        for u in (bg_urls or []):
+            _add(u)
+    except Exception as e:
+        log.info(f"    [distrivet] bg-image scan error: {e}")
+
+    # 4. HTML crudo: cualquier URL de imagen embebida en atributos/JS/estilos.
+    try:
+        html = page.content()
+        for u in re.findall(r'[^\s"\'()<>]+\.(?:jpe?g|png|webp)', html, re.I):
+            _add(u)
+    except Exception:
+        pass
+
+    # 5. Filtro por EAN (o REF de la URL): las imágenes del producto llevan el EAN
+    #    en el nombre; algunas fichas usan la REF (p. ej. ORD201). Descarta relacionados.
+    m = re.search(r'noproducto=([^&\s]+)', (page_url or ""), re.I)
+    ref = (m.group(1) if m else "").strip()
+    keys = [k for k in (ean, ref) if k]
+    if keys:
+        sel = [u for u in ordered
+               if any(k.lower() in u.lower() for k in keys)]
+        # Volcar candidatas con secuencias largas de dígitos (EAN-like) para diagnóstico
+        eanlike = [u for u in ordered if re.search(r'\d{8,}', u)]
+        log.info(f"    [distrivet] candidatas={len(ordered)} (EAN-like={len(eanlike)}); "
+                 f"claves={keys}")
+        for u in eanlike[:25]:
+            log.info(f"    [distrivet][diag][img] {u}")
+        if sel:
+            log.info(f"    [distrivet] filtro {keys}: {len(ordered)} → {len(sel)}")
+            return sel
+        log.warning(f"    [distrivet] NINGUNA imagen contiene EAN/REF {keys} entre "
+                    f"{len(ordered)} candidatas → no pongo relacionados.")
         return []
 
     log.info(f"    [distrivet] URLs candidatas: {len(ordered)}")
