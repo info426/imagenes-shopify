@@ -770,6 +770,66 @@ def _open_first_result(page, ean: str) -> bool:
     return True
 
 
+def _product_hrefs(page) -> list:
+    """Hrefs absolutos a fichas (webshop-producto.asp) presentes ahora, orden DOM."""
+    try:
+        base = page.url
+        hrefs = page.evaluate("""(part) =>
+            Array.from(document.querySelectorAll('a[href]'))
+                 .map(a => a.getAttribute('href') || '')
+                 .filter(h => h.toLowerCase().includes(part))
+        """, PRODUCT_URL_PART)
+    except Exception:
+        return []
+    out, seen = [], set()
+    for h in (hrefs or []):
+        try:
+            full = urljoin(base, h)
+        except Exception:
+            full = h
+        if full and full not in seen:
+            seen.add(full)
+            out.append(full)
+    return out
+
+
+def _pick_product_href(page, hrefs: list, ean: str) -> str:
+    """De una lista de hrefs de ficha, elige el del EAN: primero el href que
+    contenga el EAN; si no, el primero (el sanity check del EAN en la ficha valida)."""
+    if not hrefs:
+        return ""
+    for h in hrefs:
+        if ean and ean in h:
+            return h
+    return hrefs[0]
+
+
+def _dump_autocomplete(page, ean: str, new_hrefs: list):
+    """Diagnóstico del autocomplete: fichas nuevas tras escribir; si no hay,
+    vuelca contenedores candidatos a dropdown para fijar el selector."""
+    pre = "[distrivet][diag][autocomplete]"
+    log.info(f"{pre} EAN={ean} fichas nuevas tras escribir: {len(new_hrefs)}")
+    for h in new_hrefs[:10]:
+        log.info(f"{pre} nuevo: {h}")
+    if new_hrefs:
+        return
+    try:
+        info = page.evaluate(r"""() => {
+            const sel = '[class*="result"],[class*="autocomplet"],[class*="suggest"],'
+                      + '[class*="dropdown"],[id*="result"],[id*="autocomplet"],[id*="suggest"]';
+            return Array.from(document.querySelectorAll(sel)).slice(0,6).map(c => ({
+                tag: c.tagName.toLowerCase(), cls: c.className || '', id: c.id || '',
+                a: Array.from(c.querySelectorAll('a[href]')).slice(0,5).map(a=>a.getAttribute('href')||''),
+                txt: (c.innerText||'').trim().slice(0,120)
+            }));
+        }""")
+        for c in (info or []):
+            log.info(f"{pre} cont <{c.get('tag')}> cls={c.get('cls')!r} id={c.get('id')!r} "
+                     f"a={c.get('a')} txt={c.get('txt')!r}")
+    except Exception as e:
+        log.info(f"{pre} no pude volcar dropdown: {e}")
+
+
 def images_for_ean(ean: str) -> list:
     """Busca el EAN en Distrivet y devuelve la lista de URLs de imagen de la
     ficha (a máxima resolución posible). Cachea el resultado por EAN."""
@@ -805,41 +865,77 @@ def images_for_ean(ean: str) -> list:
             log.warning(f"    [distrivet] no encontré el buscador. Revisa "
                         f"[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
         else:
+            # El buscador (#main-search) es autocomplete JS: input sin name y form
+            # action='' → Enter NO busca por GET. Estrategia: escribir el EAN, esperar
+            # el dropdown AJAX y quedarnos con los enlaces de ficha NUEVOS (los que no
+            # estaban antes = excluye los productos destacados de la home).
+            before = _product_hrefs(page)
             try:
-                search.fill("")
-                search.fill(ean)
-            except Exception:
-                search.type(ean)
-            # Enviar la búsqueda
-            sent = False
-            if _ENV_SEARCH_SUBMIT_SEL:
-                b = page.query_selector(_ENV_SEARCH_SUBMIT_SEL)
-                if b:
-                    try:
-                        b.click(); sent = True
-                    except Exception:
-                        pass
-            if not sent:
-                try:
-                    search.press("Enter"); sent = True
-                except Exception:
-                    pass
-            try:
-                page.wait_for_load_state("networkidle", timeout=12000)
+                search.click()
             except Exception:
                 pass
-            page.wait_for_timeout(1200)
+            try:
+                search.fill("")
+            except Exception:
+                pass
+            try:
+                search.type(ean, delay=60)
+            except Exception:
+                try:
+                    search.fill(ean)
+                except Exception:
+                    pass
+            page.wait_for_timeout(2800)           # esperar autocomplete (AJAX)
+            try:
+                page.wait_for_load_state("networkidle", timeout=6000)
+            except Exception:
+                pass
 
-            _dump_links(page, "search")
-            _open_first_result(page, ean)
+            after = _product_hrefs(page)
+            new = [h for h in after if h not in before]
+            _dump_autocomplete(page, ean, new)
+            target = _pick_product_href(page, new, ean)
+
+            # Fallback: si el autocomplete no dejó enlaces nuevos, probar Enter por
+            # si navega a una página de resultados, y reintentar.
+            if not target:
+                try:
+                    search.press("Enter")
+                    page.wait_for_load_state("networkidle", timeout=8000)
+                    page.wait_for_timeout(1200)
+                except Exception:
+                    pass
+                if PRODUCT_URL_PART in (page.url or "").lower():
+                    target = page.url
+                else:
+                    res = _product_hrefs(page)
+                    target = (_pick_product_href(page, [h for h in res if h not in before], ean)
+                              or _pick_product_href(page, res, ean))
+
+            if target and not (PRODUCT_URL_PART in (page.url or "").lower()
+                               and target == page.url):
+                try:
+                    resp = page.goto(target, timeout=30000, wait_until="domcontentloaded")
+                    log.info(f"    [distrivet] ficha: {target} → HTTP "
+                             f"{resp.status if resp else '?'}")
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=8000)
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(1000)
+                except Exception as e:
+                    log.info(f"    [distrivet] no pude abrir ficha {target}: {e}")
+
             _dump_structure(page, "product")
-
             product_url = page.url
-            if _page_contains_ean(page, ean):
+            if target and _page_contains_ean(page, ean):
                 images = _extract_images(page, page.url)
+            elif not target:
+                log.warning(f"    [distrivet] búsqueda sin ficha para EAN {ean}. "
+                            f"Revisa [distrivet][diag][autocomplete].")
             else:
-                log.warning(f"    [distrivet] la ficha abierta NO contiene el "
-                            f"EAN {ean} — posible producto equivocado, descarto")
+                log.warning(f"    [distrivet] la ficha NO contiene el EAN {ean} "
+                            f"— descarto (url={page.url})")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
 

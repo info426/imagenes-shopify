@@ -7,6 +7,11 @@ Tienda: `7ev1zx-eg.myshopify.com` — frontend público: [www.shopypet.eu](https
 
 ---
 
+## Preferencias del usuario (idioma y estilo)
+
+- **Responder SIEMPRE en español.**
+- **Ser breve** en el chat (ahorrar contexto): ir al grano, sin texto de relleno.
+
 ## Contexto del proyecto / negocio
 
 **Quién:** tienda online de productos para mascotas **shopypet.eu**, montada sobre
@@ -456,17 +461,23 @@ definitivos (heurística OK, o forzarlos con `DISTRIVET_*_SEL`) y se decide la p
 resolución (mantener 800px o relajar). El primer run quizá no acierte los selectores a la
 primera — es **esperado**: el volcado de diagnóstico existe justo para eso.
 
-**Estructura real de la web (confirmada por el usuario, ya cableada en el código):**
-1. **Login → interstitial de dirección de entrega.** Tras enviar usuario/contraseña, la
-   web abre `bienvenido.asp` que **pide seleccionar la dirección de entrega** antes de
-   dejar entrar al webshop. Hay que pasarlo (`_select_delivery_address`: prueba
-   `<select>`+enviar, botones continuar/aceptar, o el primer enlace de dirección).
-   Detección por URL `bienvenido.asp` o texto "dirección de entrega". Overrides:
-   `DISTRIVET_ADDRESS_SEL` / `DISTRIVET_ADDRESS_SUBMIT_SEL`.
-2. **Ficha de producto = `webshop-producto.asp?NoProducto={ref}`** (la `ref` es la
-   Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). La búsqueda por EAN
-   devuelve un listado con un enlace a esa URL → `_open_first_result` prioriza
-   `a[href*="webshop-producto.asp"]`, eligiendo la fila que contiene el EAN.
+**Estructura real de la web (confirmada por logs de test, ya cableada en el código):**
+0. **Login:** `home-webshop.asp` redirige a `homepage.asp` con form `conexion.asp`;
+   campos `IdUsuario` (text) + `Password`, botón submit. Funciona con las heurísticas.
+1. **Login → interstitial de dirección de entrega (`bienvenido.asp`).** Pide elegir
+   dirección vía **radio `name='customer_web'`** (id = nº cliente, p.ej. `62073272`) +
+   botón **«Seleccionar dirección»**. `_select_delivery_address` marca el radio y pulsa
+   el botón; es **robusto ante la navegación** (marcar el radio dispara navegación →
+   captura 'context destroyed'). Overrides: `DISTRIVET_ADDRESS_SEL/_SUBMIT_SEL/_ID`.
+2. **Buscador = autocomplete JS** (`home-webshop.asp`, input `id='main-search'` **sin
+   `name`**, form `action=''`): `Enter` NO busca por GET. `images_for_ean` escribe el
+   EAN, espera el dropdown AJAX y coge los enlaces de ficha **nuevos** (diff antes/después
+   = excluye destacados de la home). Diagnóstico en `[distrivet][diag][autocomplete]`.
+3. **Ficha de producto = `webshop-producto.asp?NoProducto={ref}`** (la `ref` es la
+   Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). Tiene la foto del producto
+   arriba a la izquierda + datos (REF/EAN/Fabricante/PVP) + "Ficha del producto" +
+   carrusel "También le puede interesar" (relacionados → excluir). Sanity check: la
+   ficha abierta debe **contener el EAN** buscado (si no, se descarta).
 3. **Mapeo de ejemplo (producto Shopify 15510048342403, 2 variantes de peso):**
    EAN `064992280185` → `ORD201` (1.8 KG) · EAN `064992280543` → `ORD202` (5.4 KG).
    ⚠️ Un producto Shopify puede tener **varias variantes con EAN distinto**; hoy se usa
