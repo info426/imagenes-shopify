@@ -456,6 +456,23 @@ definitivos (heurística OK, o forzarlos con `DISTRIVET_*_SEL`) y se decide la p
 resolución (mantener 800px o relajar). El primer run quizá no acierte los selectores a la
 primera — es **esperado**: el volcado de diagnóstico existe justo para eso.
 
+**Estructura real de la web (confirmada por el usuario, ya cableada en el código):**
+1. **Login → interstitial de dirección de entrega.** Tras enviar usuario/contraseña, la
+   web abre `bienvenido.asp` que **pide seleccionar la dirección de entrega** antes de
+   dejar entrar al webshop. Hay que pasarlo (`_select_delivery_address`: prueba
+   `<select>`+enviar, botones continuar/aceptar, o el primer enlace de dirección).
+   Detección por URL `bienvenido.asp` o texto "dirección de entrega". Overrides:
+   `DISTRIVET_ADDRESS_SEL` / `DISTRIVET_ADDRESS_SUBMIT_SEL`.
+2. **Ficha de producto = `webshop-producto.asp?NoProducto={ref}`** (la `ref` es la
+   Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). La búsqueda por EAN
+   devuelve un listado con un enlace a esa URL → `_open_first_result` prioriza
+   `a[href*="webshop-producto.asp"]`, eligiendo la fila que contiene el EAN.
+3. **Mapeo de ejemplo (producto Shopify 15510048342403, 2 variantes de peso):**
+   EAN `064992280185` → `ORD201` (1.8 KG) · EAN `064992280543` → `ORD202` (5.4 KG).
+   ⚠️ Un producto Shopify puede tener **varias variantes con EAN distinto**; hoy se usa
+   el **primer** `variant.barcode`. Si interesa una imagen por variante, habría que
+   iterar variantes (pendiente de decidir; ver `assign_variant_images.py`).
+
 **Idea central:** Distrivet es el **proveedor** que surte a shopypet.eu, así que tiene
 la ficha (con foto) de **todos** los productos de la tienda. Como cada producto Shopify
 ya lleva su **EAN** en `variant.barcode`, conseguir la imagen es un **lookup exacto por

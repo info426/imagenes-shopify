@@ -41,6 +41,15 @@ log = logging.getLogger(__name__)
 BASE_URL  = "https://tienda.distrivet.es/"
 HOME_URL  = os.getenv("DISTRIVET_LOGIN_URL",
                       "https://tienda.distrivet.es/home-webshop.asp")
+# Home del webshop (con buscador) a la que volvemos para buscar por EAN.
+SHOP_URL  = os.getenv("DISTRIVET_SHOP_URL",
+                      "https://tienda.distrivet.es/home-webshop.asp")
+# Tras el login, Distrivet muestra una página de selección de dirección de
+# entrega antes de dejar entrar al webshop (p. ej. bienvenido.asp). Hay que
+# elegir una dirección para continuar.
+ADDRESS_PAGE_PART = os.getenv("DISTRIVET_ADDRESS_PAGE", "bienvenido.asp").lower()
+# Patrón de URL de la ficha de producto: webshop-producto.asp?NoProducto={ref}
+PRODUCT_URL_PART  = os.getenv("DISTRIVET_PRODUCT_PART", "webshop-producto.asp").lower()
 CACHE_PATH = Path("resultados/distrivet_ean_cache.json")
 
 USER_AGENT = (
@@ -57,12 +66,15 @@ _ENV_SUBMIT_SEL = os.getenv("DISTRIVET_SUBMIT_SEL", "")
 _ENV_SEARCH_SEL = os.getenv("DISTRIVET_SEARCH_SEL", "")
 _ENV_SEARCH_SUBMIT_SEL = os.getenv("DISTRIVET_SEARCH_SUBMIT_SEL", "")
 _ENV_PRODUCT_LINK_SEL  = os.getenv("DISTRIVET_PRODUCT_LINK_SEL", "")
+# Selección de dirección de entrega (interstitial post-login)
+_ENV_ADDRESS_SEL        = os.getenv("DISTRIVET_ADDRESS_SEL", "")
+_ENV_ADDRESS_SUBMIT_SEL = os.getenv("DISTRIVET_ADDRESS_SUBMIT_SEL", "")
 
 # Estado Playwright reutilizado en todo el proceso
 _PW = {"pw": None, "browser": None, "ctx": None, "page": None}
 _LOGGED_IN = False
 _CACHE = None
-_DIAG_DUMPED = {"login": False, "search": False, "product": False}
+_DIAG_DUMPED = {"login": False, "address": False, "search": False, "product": False}
 
 
 # ─── Caché por EAN ──────────────────────────────────────────────────────────
@@ -258,6 +270,167 @@ def _looks_logged_in(page) -> bool:
     return any(ind in body for ind in indicators)
 
 
+def _on_address_page(page) -> bool:
+    """¿Estamos en el interstitial de selección de dirección de entrega?"""
+    try:
+        url = (page.url or "").lower()
+    except Exception:
+        url = ""
+    if ADDRESS_PAGE_PART and ADDRESS_PAGE_PART in url:
+        return True
+    try:
+        body = (page.inner_text("body") or "").lower()
+    except Exception:
+        body = ""
+    return ("direccion de entrega" in body or "dirección de entrega" in body
+            or ("seleccione" in body and "direccion" in body)
+            or ("seleccione" in body and "dirección" in body))
+
+
+def _select_delivery_address(page) -> bool:
+    """Pasa el interstitial post-login de selección de dirección de entrega
+    (Distrivet → bienvenido.asp). Devuelve True si lo resolvió. Defensivo: prueba
+    <select>+enviar, botones de continuar/aceptar y, en último recurso, el primer
+    enlace de dirección. Vuelca el DOM ([distrivet][diag][address]) para fijar
+    selectores tras el 1er test (DISTRIVET_ADDRESS_SEL / _ADDRESS_SUBMIT_SEL)."""
+    if not _on_address_page(page):
+        return False
+    log.info(f"[distrivet] selección de dirección de entrega detectada "
+             f"(URL={page.url})")
+    _dump_structure(page, "address")
+    _dump_links(page, "address")
+
+    def _settle():
+        try:
+            page.wait_for_load_state("networkidle", timeout=12000)
+        except Exception:
+            pass
+        page.wait_for_timeout(1200)
+
+    # 1. Override por env (enlace/botón a clicar directamente)
+    if _ENV_ADDRESS_SEL:
+        el = page.query_selector(_ENV_ADDRESS_SEL)
+        if el:
+            try:
+                el.click(); _settle()
+                if not _on_address_page(page):
+                    log.info("[distrivet] dirección seleccionada (env sel)")
+                    return True
+            except Exception:
+                pass
+
+    # 2. Radios de dirección (Distrivet: name='customer_web') → marcar uno y enviar.
+    #    Para sacar la imagen del producto la dirección concreta es indiferente, así
+    #    que vale cualquier dirección válida (la primera, salvo override por env).
+    addr_id = os.getenv("DISTRIVET_ADDRESS_ID", "")
+    radios = page.query_selector_all("input[type='radio']")
+    if radios:
+        target = None
+        if addr_id:
+            target = (page.query_selector(f"input[type='radio'][id='{addr_id}']")
+                      or page.query_selector(f"input[type='radio'][value='{addr_id}']"))
+        if target is None:
+            target = (page.query_selector("input[type='radio'][name='customer_web']")
+                      or radios[0])
+        try:
+            target.check()
+        except Exception:
+            try:
+                target.click()
+            except Exception:
+                pass
+        try:
+            rid = target.get_attribute("id") or target.get_attribute("value") or "?"
+        except Exception:
+            rid = "?"
+        log.info(f"[distrivet] dirección de entrega marcada (radio id={rid})")
+        _settle()
+        # Marcar el radio puede no bastar: suele requerir enviar el formulario
+        # (botón continuar/aceptar). Eso lo cubre el bloque de botones de abajo.
+
+    # 3. <select> de direcciones → primera opción con value real, luego enviar
+    sel = page.query_selector("select")
+    if sel:
+        try:
+            opts = page.evaluate(
+                "(s)=>Array.from(s.options).map(o=>({v:o.value,t:(o.text||'').trim()}))",
+                sel)
+            target = next((o for o in (opts or [])
+                           if (o.get("v") or "").strip() not in ("", "0", "-1")), None)
+            if target:
+                try:
+                    sel.select_option(value=target["v"])
+                except Exception:
+                    sel.select_option(label=target["t"])
+                log.info(f"[distrivet] dirección elegida en <select>: "
+                         f"{target.get('t')!r}")
+                try:
+                    page.evaluate(
+                        "(s)=>s.dispatchEvent(new Event('change',{bubbles:true}))", sel)
+                except Exception:
+                    pass
+                _settle()
+        except Exception as e:
+            log.info(f"[distrivet] error con <select> de dirección: {e}")
+
+    # 4. Botón/enlace de continuar/aceptar/seleccionar/entrar
+    if _on_address_page(page) and _ENV_ADDRESS_SUBMIT_SEL:
+        b = page.query_selector(_ENV_ADDRESS_SUBMIT_SEL)
+        if b:
+            try:
+                b.click(); _settle()
+            except Exception:
+                pass
+    if _on_address_page(page):
+        for s in ("input[type='submit']", "button[type='submit']",
+                  "input[value*='continuar' i]", "input[value*='aceptar' i]",
+                  "input[value*='seleccionar' i]", "input[value*='entrar' i]",
+                  "input[value*='enviar' i]", "input[value*='confirmar' i]",
+                  "a:has-text('Continuar')", "a:has-text('Aceptar')",
+                  "button:has-text('Continuar')", "button:has-text('Aceptar')",
+                  "button:has-text('Seleccionar')"):
+            b = page.query_selector(s)
+            if b:
+                try:
+                    b.click(); _settle()
+                    if not _on_address_page(page):
+                        break
+                except Exception:
+                    continue
+
+    # 5. Último recurso: primer enlace de dirección (no logout/menú)
+    if _on_address_page(page):
+        try:
+            href = page.evaluate("""() => {
+                const bad = ['logout','salir','cerrar','login','password','idioma'];
+                for (const a of Array.from(document.querySelectorAll('a[href]'))) {
+                    const h=(a.getAttribute('href')||'').toLowerCase();
+                    const t=(a.innerText||'').toLowerCase();
+                    if (!h || h.startsWith('#') || h.startsWith('javascript:')) continue;
+                    if (bad.some(b=>h.includes(b)||t.includes(b))) continue;
+                    return a.getAttribute('href');
+                }
+                return '';
+            }""")
+        except Exception:
+            href = ""
+        if href:
+            try:
+                page.goto(urljoin(page.url, href), timeout=30000,
+                          wait_until="domcontentloaded"); _settle()
+            except Exception:
+                pass
+
+    handled = not _on_address_page(page)
+    if handled:
+        log.info(f"[distrivet] ✓ dirección de entrega resuelta (URL={page.url})")
+    else:
+        log.warning("[distrivet] no pude pasar la selección de dirección. Revisa "
+                    "[distrivet][diag][address] y fija DISTRIVET_ADDRESS_SEL / "
+                    "DISTRIVET_ADDRESS_SUBMIT_SEL.")
+    return handled
+
+
 def login(user: str, pwd: str) -> bool:
     """Inicia sesión en Distrivet (una vez). Devuelve True si parece logueado."""
     global _LOGGED_IN
@@ -356,16 +529,28 @@ def login(user: str, pwd: str) -> bool:
         pass
     page.wait_for_timeout(1500)
 
-    _LOGGED_IN = _looks_logged_in(page)
-    if _LOGGED_IN:
-        log.info(f"[distrivet] ✓ sesión iniciada (URL={page.url})")
+    # Interstitial post-login: selección de dirección de entrega (bienvenido.asp)
+    _select_delivery_address(page)
+
+    # Asegurar que estamos en una página con buscador (home del webshop)
+    if _find_search_input(page) is None:
+        try:
+            page.goto(SHOP_URL, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(1200)
+        except Exception:
+            pass
+
+    has_search = _find_search_input(page) is not None
+    confirmed = _looks_logged_in(page) or has_search
+    _LOGGED_IN = True  # seguimos; la búsqueda confirma/desmiente definitivamente
+    if confirmed:
+        log.info(f"[distrivet] ✓ sesión lista (URL={page.url}, "
+                 f"buscador={'sí' if has_search else 'no'})")
     else:
-        # Puede que la heurística falle aunque estemos dentro. Avisar y seguir;
-        # la búsqueda revelará si seguimos bloqueados.
         log.warning(f"[distrivet] login enviado pero no confirmo sesión por "
-                    f"heurística (URL={page.url}). Continúo; si las búsquedas "
-                    f"fallan, revisa el volcado de diagnóstico.")
-        _LOGGED_IN = True  # optimista: dejar que la búsqueda lo confirme/desmienta
+                    f"heurística (URL={page.url}, sin buscador detectado). "
+                    f"Continúo; revisa el volcado de diagnóstico si las búsquedas "
+                    f"fallan.")
     return True
 
 
@@ -526,38 +711,49 @@ def _find_search_input(page):
 
 def _open_first_result(page, ean: str) -> bool:
     """En la página de resultados, abre la ficha del producto que coincide con
-    el EAN. Devuelve True si navegó a una ficha. Heurística defensiva."""
-    # Si la búsqueda ya nos dejó en una ficha (redirección a producto único),
-    # la propia página de resultados puede ser la ficha → detectarlo por imagen.
-    cur = page.url
-    # 1. Enlace cuyo entorno contiene el EAN (fila de resultado con ese EAN)
-    try:
-        href = page.evaluate("""(ean) => {
-            // Buscar el nodo que contiene el texto del EAN y subir hasta una
-            // fila/tarjeta que tenga un enlace a la ficha.
-            const all = Array.from(document.querySelectorAll('a[href]'));
-            // a) enlace cuyo contenedor (tr/li/div tarjeta) contiene el EAN
-            for (const a of all) {
-                let n = a;
-                for (let up = 0; up < 5 && n; up++) {
-                    if (n.innerText && n.innerText.includes(ean)) return a.getAttribute('href');
-                    n = n.parentElement;
-                }
-            }
-            // b) enlace cuyo propio href o data-* contiene el EAN
-            for (const a of all) {
-                const h = a.getAttribute('href') || '';
-                if (h.includes(ean)) return h;
-            }
-            return '';
-        }""", ean)
-    except Exception:
-        href = ""
+    el EAN. Devuelve True si navegó a una ficha (o si ya estábamos en una).
 
-    if _ENV_PRODUCT_LINK_SEL and not href:
+    La ficha de Distrivet es webshop-producto.asp?NoProducto={ref}, así que se
+    priorizan los enlaces a ese patrón; entre varios, el de la fila que contiene
+    el EAN buscado."""
+    cur = page.url
+    # 0. Si la búsqueda ya nos dejó en una ficha (resultado único / redirección)
+    if PRODUCT_URL_PART in (cur or "").lower():
+        log.info(f"    [distrivet] ya en ficha: {cur}")
+        return True
+
+    # 1. Override por env
+    href = ""
+    if _ENV_PRODUCT_LINK_SEL:
         el = page.query_selector(_ENV_PRODUCT_LINK_SEL)
         if el:
             href = el.get_attribute("href") or ""
+
+    # 2. Enlace a la ficha (webshop-producto.asp), priorizando la fila del EAN
+    if not href:
+        try:
+            href = page.evaluate("""([ean, part]) => {
+                const prod = Array.from(document.querySelectorAll('a[href]'))
+                    .filter(a => (a.getAttribute('href')||'').toLowerCase().includes(part));
+                // a) enlace de ficha cuya fila/tarjeta contiene el EAN
+                for (const a of prod) {
+                    let n = a;
+                    for (let up = 0; up < 7 && n; up++) {
+                        if (n.innerText && n.innerText.includes(ean)) return a.getAttribute('href');
+                        n = n.parentElement;
+                    }
+                }
+                // b) primer enlace de ficha de la página de resultados
+                if (prod.length) return prod[0].getAttribute('href');
+                // c) cualquier enlace cuyo href contenga el EAN
+                for (const a of Array.from(document.querySelectorAll('a[href]'))) {
+                    const h = a.getAttribute('href') || '';
+                    if (h.includes(ean)) return h;
+                }
+                return '';
+            }""", [ean, PRODUCT_URL_PART])
+        except Exception:
+            href = ""
 
     if href and not href.lower().startswith("javascript:") and href != "#":
         target = urljoin(cur, href)
@@ -602,12 +798,14 @@ def images_for_ean(ean: str) -> list:
     images: list = []
     product_url = ""
     try:
-        # Partir de una página con buscador (home) si no estamos ya en una
-        if "home-webshop" not in page.url and "distrivet" not in page.url:
-            page.goto(HOME_URL, timeout=30000, wait_until="domcontentloaded")
-            page.wait_for_timeout(800)
-
+        # Asegurar que estamos en una página con buscador; si no, ir a la home
+        # del webshop (tras pasar el login + selección de dirección).
         search = _find_search_input(page)
+        if search is None:
+            page.goto(SHOP_URL, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(1000)
+            search = _find_search_input(page)
+
         _dump_structure(page, "search")
         if not search:
             log.warning(f"    [distrivet] no encontré el buscador. Revisa "
