@@ -557,9 +557,14 @@ def _upgrade_url(url: str) -> str:
 
 # ─── Extracción de imágenes de la ficha ──────────────────────────────────────
 
-def _extract_images(page, page_url: str) -> list:
-    """Extrae URLs de imágenes de producto: og:image > JSON-LD > <img> del DOM
-    (excluye cabecera/pie/nav/carrusel de relacionados). Sube a máxima resolución."""
+def _extract_images(page, page_url: str, ean: str = "") -> list:
+    """Extrae la foto del PRODUCTO de la ficha Distrivet.
+
+    Las imágenes del CDN de Distrivet se nombran por EAN (p. ej. 064992280185.webp),
+    igual que beaphar. La ficha incluye un carrusel "También le puede interesar"
+    (relacionados, con OTROS EAN) → la forma fiable de quedarnos solo con la del
+    producto es **filtrar por el EAN buscado**. Si ninguna imagen contiene el EAN,
+    devolvemos [] (mejor sin imagen que poner una de un relacionado)."""
     ordered: list = []
     seen: set = set()
 
@@ -577,6 +582,13 @@ def _extract_images(page, page_url: str) -> list:
         seen.add(clean)
         ordered.append(clean)
 
+    # Subir arriba y esperar para forzar la carga lazy de la imagen principal
+    try:
+        page.evaluate("window.scrollTo(0, 0)")
+        page.wait_for_timeout(800)
+    except Exception:
+        pass
+
     # 1. og:image
     try:
         for sel in ("meta[property='og:image']",
@@ -591,67 +603,53 @@ def _extract_images(page, page_url: str) -> list:
     except Exception:
         pass
 
-    # 2. JSON-LD Product
+    # 2. <img> del DOM — TODAS (sin filtrar por tamaño: la principal puede ser
+    #    lazy/pequeña en el DOM). Capturamos todos los atributos lazy y volcamos
+    #    diagnóstico para localizar la principal si el filtro por EAN fallara.
     try:
-        ld_texts = page.evaluate("""() =>
-            Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-                 .map(s => s.textContent || '')""")
-        for text in (ld_texts or []):
-            try:
-                data = json.loads(text)
-                items = data if isinstance(data, list) else [data]
-                if isinstance(data, dict) and "@graph" in data:
-                    items = data["@graph"]
-                for item in items:
-                    if not isinstance(item, dict):
-                        continue
-                    imgs = item.get("image", [])
-                    if isinstance(imgs, str):
-                        imgs = [imgs]
-                    for img in imgs:
-                        if isinstance(img, str):
-                            _add(img)
-                        elif isinstance(img, dict):
-                            _add(img.get("url") or img.get("contentUrl") or "")
-            except Exception:
-                pass
-    except Exception:
-        pass
-
-    # 3. <img> del DOM (galería del producto; excluye chrome y relacionados)
-    try:
-        img_data = page.evaluate("""() => {
-            return Array.from(document.querySelectorAll('img'))
-                .filter(img =>
-                    !img.closest('header') && !img.closest('footer') &&
-                    !img.closest('nav') &&
-                    !img.closest('.related') && !img.closest('.upsells') &&
-                    !img.closest('.cross-sells') &&
-                    !img.closest('[class*="relacionad"]') &&
-                    !img.closest('[id*="relacionad"]') &&
-                    (img.naturalWidth === 0 || img.naturalWidth >= 200))
-                .map(img => ({
-                    srcset:        img.getAttribute('srcset')           || '',
-                    dataSrc:       img.getAttribute('data-src')         || '',
-                    dataZoom:      img.getAttribute('data-zoom-image')  || '',
-                    dataLarge:     img.getAttribute('data-large_image') || '',
-                    dataFull:      img.getAttribute('data-full-url')    || '',
-                    parentHref:    (img.closest('a') && /\\.(jpe?g|png|webp)/i.test(img.closest('a').href)) ? img.closest('a').href : '',
-                    src:           img.getAttribute('src')              || '',
-                    w:             img.naturalWidth || 0
-                }));
+        img_data = page.evaluate(r"""() => {
+            return Array.from(document.querySelectorAll('img')).map(img => ({
+                src:        img.getAttribute('src')            || '',
+                dataSrc:    img.getAttribute('data-src')       || '',
+                dataOrig:   img.getAttribute('data-original')  || '',
+                dataLazy:   img.getAttribute('data-lazy-src')  || img.getAttribute('data-lazy') || '',
+                srcset:     img.getAttribute('srcset')         || img.getAttribute('data-srcset') || '',
+                dataZoom:   img.getAttribute('data-zoom-image')|| '',
+                dataLarge:  img.getAttribute('data-large_image')|| '',
+                parentHref: (img.closest('a') && /\.(jpe?g|png|webp)/i.test(img.closest('a').href||'')) ? img.closest('a').href : '',
+                w:          img.naturalWidth || 0,
+                cls:        (img.className || '').toString().slice(0,40),
+                pcls:       ((img.closest('[class]') || {}).className || '').toString().slice(0,50)
+            }));
         }""")
-        log.info(f"    [distrivet] DOM imgs (filtradas): {len(img_data or [])}")
+        log.info(f"    [distrivet] DOM imgs: {len(img_data or [])}")
+        for it in (img_data or [])[:30]:
+            u = (it.get("src") or it.get("dataSrc") or it.get("dataOrig")
+                 or it.get("dataLazy") or "")
+            log.info(f"    [distrivet][diag][img] w={it.get('w')} cls={it.get('cls')!r} "
+                     f"pcls={it.get('pcls')!r} {u}")
         for item in (img_data or []):
             srcset = item.get("srcset", "")
             parts = [p.strip() for p in srcset.split(",") if p.strip()]
             if parts:
                 _add(parts[-1].split()[0])
-            for key in ("parentHref", "dataZoom", "dataLarge", "dataFull",
-                        "dataSrc", "src"):
+            for key in ("parentHref", "dataZoom", "dataLarge", "dataOrig",
+                        "dataLazy", "dataSrc", "src"):
                 _add(item.get(key, ""))
     except Exception as e:
         log.info(f"    [distrivet] DOM imgs error: {e}")
+
+    # 3. Filtro por EAN: las imágenes del producto llevan el EAN en el nombre.
+    if ean:
+        ean_imgs = [u for u in ordered if ean in u]
+        if ean_imgs:
+            log.info(f"    [distrivet] filtro EAN {ean}: {len(ordered)} → "
+                     f"{len(ean_imgs)} (descarta relacionados)")
+            return ean_imgs
+        log.warning(f"    [distrivet] NINGUNA imagen contiene el EAN {ean} entre "
+                    f"{len(ordered)} candidatas → no pongo relacionados (revisa "
+                    f"[distrivet][diag][img])")
+        return []
 
     log.info(f"    [distrivet] URLs candidatas: {len(ordered)}")
     return ordered
@@ -929,7 +927,7 @@ def images_for_ean(ean: str) -> list:
             _dump_structure(page, "product")
             product_url = page.url
             if target and _page_contains_ean(page, ean):
-                images = _extract_images(page, page.url)
+                images = _extract_images(page, page.url, ean)
             elif not target:
                 log.warning(f"    [distrivet] búsqueda sin ficha para EAN {ean}. "
                             f"Revisa [distrivet][diag][autocomplete].")
