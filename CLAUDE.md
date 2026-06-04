@@ -805,6 +805,29 @@ del log: si reproduce ~134/134, lanzar el real (`dry_run=false`); si quedan regr
 afinar antes. Campo 2 (`mycalibra.eu`, `url_fabricante_2`) igual con `dry_run=true` primero
 (pero allí el snapshot de campo 2 está casi vacío → sirve más para revisar a ojo).
 
+### Resolver GENÉRICO por Google (`core/google_resolver.py`) — `usar_google=true`
+
+Replica el método manual fiable: **copiar el nombre del producto → buscarlo en
+Google → la web oficial sale #1 (SEO) → confirmar por imagen + nombre**. Es
+**brand-agnóstico**: no necesita scraper por marca, solo el dominio (de `web_url`).
+Sustituye a DDG (que mezclaba motores y fallaba).
+
+**Flujo** (`resolve(title, product_images, domain)`):
+1. **Google Custom Search API** (web): `{nombre} site:{dominio}` → resultados en orden
+   de Google (fallback: búsqueda libre filtrada al dominio). Reusa el cliente CSE que
+   ya existía para Amazon. Requiere secrets `GOOGLE_API_KEY` + `GOOGLE_CSE_ID` (motor
+   con "buscar en toda la web" ON). 100 búsquedas/día gratis (1 por producto).
+2. Recorre los **top-K (4)** candidatos **en orden de Google**; del primero que pase
+   los dos filtros, se queda su URL:
+   - **Nombre** (doble verificación): guard de especie (perro≠gato) + overlap Jaccard
+     ES↔EN mínimo.
+   - **Imagen** (gate CLIP): foto Shopify ↔ foto de la página ≥ `gate_threshold()`.
+3. Si **ninguno** confirma → **vacío** (no inventa). Sin CLIP → solo nombre+ranking Google.
+
+**Workflow**: input `usar_google=true` (+ `usar_imagen=true` para el gate). El dominio
+sale de `web_url`. Funciona para CUALQUIER vendor sin tocar `marcas/`. Ventaja: mucho
+menos flaky que DDG → menos ciclos de prueba.
+
 ### Farmina — notas de estrategia (URLs fabricante)
 
 **Dos submarcas, un dominio:** `farmina.com/es/eshop/`

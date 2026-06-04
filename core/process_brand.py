@@ -741,26 +741,43 @@ def _compare_dryrun_vs_snapshot(slug: str, url_key: str, dry_results: list):
 def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
                      rebuild: bool, product_id: int = None,
                      only_ids: set = None, url_key: str = MF_KEY_URL,
-                     clear_on_no_match: bool = False, dry_run: bool = False):
-    """Para cada producto resuelve su URL oficial vía el scraper de la marca
-    (find_best_match: slug directo + DDG) y la guarda en el metacampo
-    indicado por url_key (por defecto fuentes.url_fabricante). NO procesa imágenes.
+                     clear_on_no_match: bool = False, dry_run: bool = False,
+                     usar_google: bool = False):
+    """Para cada producto resuelve su URL oficial y la guarda en el metacampo
+    url_key. NO procesa imágenes.
 
-    Si clear_on_no_match=True, elimina el metacampo url_key cuando no se
-    encuentra URL (útil para limpiar valores erróneos de un run anterior).
+    Dos motores de búsqueda de candidatos:
+      - Por defecto: scraper de la marca (marcas/{slug}.py → find_best_match).
+      - usar_google=True: resolver GENÉRICO basado en Google CSE
+        (core/google_resolver) — busca el nombre del producto en Google
+        restringido al dominio (de web_url), entra a los primeros resultados y
+        confirma por imagen + nombre. No necesita scraper por marca.
 
-    Si dry_run=True NO escribe en Shopify: guarda lo que pondría en
-    resultados/{slug}_resolver_dryrun.json y, si existe el snapshot, lo compara."""
+    Si clear_on_no_match=True, borra el metacampo cuando no hay URL.
+    Si dry_run=True NO escribe en Shopify (guarda dryrun.json + compara snapshot)."""
     slug = vendor_slug(vendor)
-    try:
-        scraper = importlib.import_module(f"marcas.{slug}")
-    except ImportError:
-        log.error(f"No existe scraper para '{vendor}'. "
-                  f"Crea marcas/{slug}.py con scrape_catalog() y find_best_match().")
-        sys.exit(1)
+    gresolver = None
+    gdomain = ""
+    scraper = None
+    catalog = {}
+    if usar_google:
+        from core import google_resolver as gresolver
+        gdomain = gresolver.domain_of(web_url)
+        if not gdomain:
+            log.error("usar_google requiere web_url con un dominio válido")
+            sys.exit(1)
+        log.info(f"  Motor    : GOOGLE CSE (dominio {gdomain})")
+    else:
+        try:
+            scraper = importlib.import_module(f"marcas.{slug}")
+        except ImportError:
+            log.error(f"No existe scraper para '{vendor}'. "
+                      f"Crea marcas/{slug}.py con scrape_catalog() y find_best_match().")
+            sys.exit(1)
 
     RESULTS_DIR.mkdir(exist_ok=True)
-    catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
+    if scraper is not None:
+        catalog = scraper.scrape_catalog(web_url, rebuild=rebuild)
 
     def _safe_get(pid):
         try:
@@ -777,9 +794,12 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
     else:
         products = api.get_products(vendor)
 
-    fbm_params = inspect.signature(scraper.find_best_match).parameters
-    has_barcode = "barcode" in fbm_params
-    has_images  = "product_images" in fbm_params
+    if scraper is not None:
+        fbm_params = inspect.signature(scraper.find_best_match).parameters
+        has_barcode = "barcode" in fbm_params
+        has_images  = "product_images" in fbm_params
+    else:
+        has_barcode = has_images = False
     stats = dict(total=len(products), guardadas=0, sin_match=0)
     dry_results: list = []
     no_match: list = []   # (pid, title) sin URL → se listan al final con enlaces
@@ -796,19 +816,21 @@ def run_resolve_urls(api: ShopifyAPI, vendor: str, web_url: str,
             ""
         )
 
-        kwargs = {}
-        if has_barcode:
-            kwargs["barcode"] = barcode
-        if has_images:
-            # URLs de imagen del producto Shopify (CDN público) para el
-            # reconocimiento visual tipo Google Lens dentro del scraper.
-            kwargs["product_images"] = [
-                im.get("src") for im in product.get("images", []) if im.get("src")
-            ]
-        handle, score = scraper.find_best_match(title, catalog, **kwargs)
-
-        url = catalog.get(handle, {}).get("url") if handle else None
-        matched = handle is not None and score >= 0.10 and url
+        shopify_imgs = [im.get("src") for im in product.get("images", [])
+                        if im.get("src")]
+        if usar_google:
+            url, score = gresolver.resolve(title, shopify_imgs, gdomain)
+            matched = bool(url)
+        else:
+            kwargs = {}
+            if has_barcode:
+                kwargs["barcode"] = barcode
+            if has_images:
+                # Fotos Shopify (CDN público) para el gate de imagen del scraper.
+                kwargs["product_images"] = shopify_imgs
+            handle, score = scraper.find_best_match(title, catalog, **kwargs)
+            url = catalog.get(handle, {}).get("url") if handle else None
+            matched = handle is not None and score >= 0.10 and url
         dry_results.append({"id": pid, "title": title,
                             "url": url if matched else None,
                             "score": round(score, 3)})
@@ -951,6 +973,10 @@ def main():
                         help="--resolver-urls sin escribir en Shopify: calcula qué URL "
                              "pondría, lo guarda en resultados/{slug}_resolver_dryrun.json "
                              "y, si existe el snapshot, lo compara (igual/distinto/sin_match)")
+    parser.add_argument("--usar-google", action="store_true",
+                        help="--resolver-urls con el resolver genérico de Google CSE "
+                             "(busca el nombre en Google site:dominio y confirma por "
+                             "imagen+nombre). No usa el scraper de la marca.")
     parser.add_argument("--force-backup",    action="store_true",
                         help="Sobreescribir backups existentes")
     parser.add_argument("--pipeline",
@@ -1005,7 +1031,7 @@ def main():
         run_resolve_urls(api, args.vendor, args.web_url, args.rebuild_catalog,
                          args.product_id, only_ids or None, url_key=args.url_key,
                          clear_on_no_match=args.clear_on_no_match,
-                         dry_run=args.dry_run)
+                         dry_run=args.dry_run, usar_google=args.usar_google)
     elif args.snapshot_urls:
         run_snapshot_urls(api, args.vendor, args.product_id, only_ids or None)
     elif args.fuente == "shopify_backup":

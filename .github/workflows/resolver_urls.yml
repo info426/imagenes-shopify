@@ -47,6 +47,12 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      usar_google:
+        description: 'Buscar con Google (nombre→ficha oficial→confirma imagen+nombre). Requiere GOOGLE_API_KEY+GOOGLE_CSE_ID. Genérico, no usa scraper de marca'
+        required: false
+        type: choice
+        options: ['false', 'true']
+        default: 'false'
 
 jobs:
   resolver:
@@ -116,6 +122,9 @@ jobs:
           PRODUCT_IDS: ${{ github.event.inputs.product_ids }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HUGGING_FACE_HUB_TOKEN: ${{ secrets.HF_TOKEN }}
+          # Google Custom Search (resolver por Google). 100 búsquedas/día gratis.
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
         run: |
           mkdir -p resultados
           EXTRA=""
@@ -123,7 +132,9 @@ jobs:
           URLKEY=""
           CLEAR=""
           DRY=""
+          GOOG=""
           [ "${{ github.event.inputs.rebuild_catalog }}" = "true" ]  && EXTRA="--rebuild-catalog"
+          [ "${{ github.event.inputs.usar_google }}" = "true" ]      && GOOG="--usar-google"
           [ -n "${{ github.event.inputs.web_url }}" ]                 && WEB="--web-url ${{ github.event.inputs.web_url }}"
           [ -n "${{ github.event.inputs.url_key }}" ]                 && URLKEY="--url-key ${{ github.event.inputs.url_key }}"
           [ "${{ github.event.inputs.clear_on_no_match }}" = "true" ] && CLEAR="--clear-on-no-match"
@@ -131,7 +142,7 @@ jobs:
           xvfb-run -a python3 core/process_brand.py \
             --vendor "${{ github.event.inputs.vendor }}" \
             --resolver-urls \
-            $WEB $EXTRA $URLKEY $CLEAR $DRY \
+            $WEB $EXTRA $URLKEY $CLEAR $DRY $GOOG \
             2>&1 | tee resultados/resolver_urls_${{ github.event.inputs.vendor }}.txt
 
       - name: Guardar log y catálogo
