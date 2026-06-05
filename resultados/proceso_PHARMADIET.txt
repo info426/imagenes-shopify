@@ -1,0 +1,656 @@
+2026-06-05 07:39:22,137 [INFO] ============================================================
+2026-06-05 07:39:22,137 [INFO]   Vendor   : PHARMADIET
+2026-06-05 07:39:22,137 [INFO]   Modo     : DISTRIVET
+2026-06-05 07:39:22,137 [INFO]   Pipeline : standard
+2026-06-05 07:39:22,137 [INFO]   Padding  : auto
+2026-06-05 07:39:22,137 [INFO] ============================================================
+2026-06-05 07:39:22,531 [INFO] Token obtenido
+2026-06-05 07:39:24,694 [INFO] [distrivet] login GET https://tienda.distrivet.es/home-webshop.asp → HTTP 200
+2026-06-05 07:39:26,866 [INFO] [distrivet][diag][login] URL=https://tienda.distrivet.es/homepage.asp?Session=Expired
+2026-06-05 07:39:26,870 [INFO] [distrivet][diag][login] title='Distrivet'
+2026-06-05 07:39:26,874 [INFO] [distrivet][diag][login] form[0] action='conexion.asp?PaginaAnterior=bienvenido.asp' method=post id='authentication_user' name=''
+2026-06-05 07:39:26,874 [INFO] [distrivet][diag][login]   <input> type='hidden' name='PaginaAnterior' id='' ph=''
+2026-06-05 07:39:26,874 [INFO] [distrivet][diag][login]   <input> type='text' name='IdUsuario' id='IdUsuario' ph=''
+2026-06-05 07:39:26,874 [INFO] [distrivet][diag][login]   <input> type='password' name='Password' id='Password' ph=''
+2026-06-05 07:39:26,875 [INFO] [distrivet][diag][login]   <button> type='submit' name='' id='' ph=''
+2026-06-05 07:39:26,924 [INFO] [distrivet] credenciales introducidas — enviando formulario
+2026-06-05 07:39:30,021 [INFO] [distrivet] selección de dirección de entrega detectada (URL=https://tienda.distrivet.es/bienvenido.asp)
+2026-06-05 07:39:30,021 [INFO] [distrivet][diag][address] URL=https://tienda.distrivet.es/bienvenido.asp
+2026-06-05 07:39:30,024 [INFO] [distrivet][diag][address] title='Bienvenido a Distrivet'
+2026-06-05 07:39:30,028 [INFO] [distrivet][diag][address] input(suelto) type='text' name='' id='filtroDirecciones' ph='Filtrar por dirección, provincia o CP...'
+2026-06-05 07:39:30,028 [INFO] [distrivet][diag][address] input(suelto) type='radio' name='customer_web' id='62073272' ph=''
+2026-06-05 07:39:30,048 [INFO] [distrivet] radio de dirección marcado
+2026-06-05 07:39:31,080 [INFO] [distrivet] botón de dirección pulsado: button:has-text('Seleccionar dirección')
+2026-06-05 07:39:34,130 [INFO] [distrivet] ✓ dirección de entrega resuelta (URL=https://tienda.distrivet.es/home-webshop.asp)
+2026-06-05 07:39:34,170 [INFO] [distrivet] ✓ sesión lista (URL=https://tienda.distrivet.es/home-webshop.asp, buscador=sí)
+2026-06-05 07:39:35,638 [INFO] 
+[1/47] ALOEVET GEL 50ML  (ID: 15510057091459)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057091459
+2026-06-05 07:39:35,638 [INFO]   EAN: 8414042003783
+2026-06-05 07:39:35,638 [INFO] [distrivet] caché cargada: 17 EANs
+2026-06-05 07:39:35,649 [INFO] [distrivet][diag][search] URL=https://tienda.distrivet.es/home-webshop.asp
+2026-06-05 07:39:35,650 [INFO] [distrivet][diag][search] title='Home webshop - Distrivet'
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search] form[0] action='' method=get id='' name=''
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search]   <button> type='button' name='' id='' ph=''
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search] form[1] action='' method=get id='' name=''
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
+2026-06-05 07:39:35,652 [INFO] [distrivet][diag][search] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] EAN=8414042003783 fichas nuevas: 30
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=applaws+24  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=calibra+gastrointestinal  txt=''
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=115228  txt='CALIBRA DOG PREMIUM LINE ADULT POLLO 12KG'
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240  txt='TASTE CANINE ADULT PACIFIC STREAM SALMON 12,2KG'
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=EU127  txt='CHURU CAT VARIEDADES DE POLLO 20X14GR'
+2026-06-05 07:39:39,918 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=EU124  txt='CHURU CAT VARIEDADES DE ATUN 20X14GR'
+2026-06-05 07:39:41,884 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:39:43,865 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:39:45,843 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:39:48,450 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:39:50,926 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:39:53,427 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:39:58,665 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=applaws+24
+2026-06-05 07:39:59,587 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=calibra+gastrointestinal
+2026-06-05 07:40:02,083 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=115228
+2026-06-05 07:40:04,568 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240
+2026-06-05 07:40:04,568 [INFO] [distrivet][diag][product] URL=https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240
+2026-06-05 07:40:04,570 [INFO] [distrivet][diag][product] title='Producto - Distrivet'
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product] form[0] action='' method=get id='' name=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product] form[1] action='' method=get id='' name=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product] form[3] action='' method=post id='form_addToCart' name=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <input> type='hidden' name='tipo_1' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <input> type='hidden' name='noProducto_1' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <input> type='number' name='cantidad_1' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='addToCart' ph=''
+2026-06-05 07:40:04,573 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 07:40:04,575 [WARNING]     [distrivet] ninguna ficha (30) contiene el EAN 8414042003783. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:40:04,575 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:40:04,575 [INFO] 
+[2/47] BIBERON LACTADIET GATOS 120ML ( NDR)  (ID: 15510057156995)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057156995
+2026-06-05 07:40:04,575 [INFO]   EAN: 8414042004902
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] EAN=8414042004902 fichas nuevas: 15
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=605869  txt="HILL'S HPD CANINE DERM COMPLETE 1,5KG"
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=M475121  txt='PEDIGREE CAN AVES CAJA 12X800GR'
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN155  txt='LENDA PURE HIGH MEAT PESCADO GF 2KG'
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=RC156150  txt='ROYAL CANINE ADULT YORKSHIRE TERRIER 28 7,5KG'
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PVN1200002  txt='FARMINA VET LIFE DOG JOINT 12KG'
+2026-06-05 07:40:08,830 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=106027  txt='CALIBRA DOG LIFE ADULT LARGE BREED POLLO 12KG'
+2026-06-05 07:40:10,701 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:40:12,533 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:40:14,539 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:40:17,159 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:40:19,563 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:40:22,099 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:40:24,857 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=605869
+2026-06-05 07:40:27,653 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=M475121
+2026-06-05 07:40:30,400 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN155
+2026-06-05 07:40:33,242 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=RC156150
+2026-06-05 07:40:33,242 [WARNING]     [distrivet] ninguna ficha (15) contiene el EAN 8414042004902. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:40:33,243 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:40:33,243 [INFO] 
+[3/47] BIBERON LACTADIET PERRO 120ML (NDR)  (ID: 15510057189763)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057189763
+2026-06-05 07:40:33,243 [INFO]   EAN: 8414042004919
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] EAN=8414042004919 fichas nuevas: 15
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:40:37,504 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=12501673  txt='PRO PLAN VET CANINE HP HEPATIC 12KG'
+2026-06-05 07:40:37,505 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0200027  txt='FARMINA ND DOG TROPICAL SELECTION MED MAXI SALMON 2KG'
+2026-06-05 07:40:37,505 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=M305113  txt='PEDIGREE TASTY BITES CHEWY CUBES AVE 6X130GR'
+2026-06-05 07:40:37,505 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PVN0200016  txt='FARMINA VET LIFE DOG CARDIAC 2KG'
+2026-06-05 07:40:37,505 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PVN1000013  txt='FARMINA VET LIFE DOG INTESTINAL ULTRACARE LOW FAT 10KG'
+2026-06-05 07:40:37,505 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=605847  txt="HILL'S HPD CANINE GASTROINTESTINAL BIOME 4KG"
+2026-06-05 07:40:39,522 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:40:41,526 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:40:43,537 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:40:45,823 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:40:48,012 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:40:50,238 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:40:52,935 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=12501673
+2026-06-05 07:40:55,685 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0200027
+2026-06-05 07:40:58,396 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=M305113
+2026-06-05 07:41:01,108 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PVN0200016
+2026-06-05 07:41:01,108 [WARNING]     [distrivet] ninguna ficha (15) contiene el EAN 8414042004919. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:41:01,109 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:41:01,109 [INFO] 
+[4/47] CALMATONINE XR BICAPA  (ID: 15510057222531)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057222531
+2026-06-05 07:41:01,109 [INFO]   EAN: 8414042006784
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] EAN=8414042006784 fichas nuevas: 15
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=RC159068  txt='ROYAL CANINE ADULT GOLDEN RETRIEVER 29 12KG'
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0250146  txt='FARMINA ND DOG QUINOA SKIN COAT PATO MINI 2,5KG'
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=APPDD4520LC  txt='APPLAWS DOG DRY ADULTO RAZA PEQ MEDIANAS POLLO CORDERO 2KG'
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=212024  txt='SPECIFIC CANINE CIW DIGESTIVE SUPPORT 7X100GR'
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9176N  txt="HILL'S HPD CANINE C/D MULTICARE 12KG"
+2026-06-05 07:41:05,395 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=F89612112-2  txt='FERPLAST SNACK DENTAL SNOWFLAKE M ASCOPHILLUM BAG 8X4X30GR'
+2026-06-05 07:41:07,392 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:41:09,402 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:41:11,245 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:41:13,519 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:41:15,737 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:41:17,972 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:41:20,712 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=RC159068
+2026-06-05 07:41:23,408 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0250146
+2026-06-05 07:41:26,074 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=APPDD4520LC
+2026-06-05 07:41:28,814 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=212024
+2026-06-05 07:41:28,814 [WARNING]     [distrivet] ninguna ficha (15) contiene el EAN 8414042006784. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:41:28,815 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:41:28,815 [INFO] 
+[5/47] COGNIDINE  (ID: 15510057353603)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057353603
+2026-06-05 07:41:28,815 [INFO]   EAN: 8414042006777
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] EAN=8414042006777 fichas nuevas: 15
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=700359  txt='CALIBRA DOG EXPERT+ ADULT ACTIVE & ENERGY TERNERA 2KG'
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=965804  txt='ADVANCE\xa0MAXI SENIOR CHICKEN & RICE12KG (NDR)'
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=8008180352676  txt='PRO PLAN VET CANINE HA HYPOALLERGENIC 3KG'
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0250120  txt='FARMINA ND DOG OCEAN PUPPY BACALAO PUMPKIN MEDIUM MAXI 2,5KG'
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND285022  txt='FARMINA ND DOG QUINOA WEIGHT MANAGEMENT CAJA 6X285GR'
+2026-06-05 07:41:33,073 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND285003  txt='FARMINA ND DOG OCEAN SALMON BACALAO CAJA 6X285GR'
+2026-06-05 07:41:35,161 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:41:37,211 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:41:39,208 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:41:41,504 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:41:44,225 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:41:46,450 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:41:51,091 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=700359
+2026-06-05 07:41:53,961 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=965804
+2026-06-05 07:41:56,641 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=8008180352676
+2026-06-05 07:41:59,314 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0250120
+2026-06-05 07:41:59,314 [WARNING]     [distrivet] ninguna ficha (15) contiene el EAN 8414042006777. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:41:59,314 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:41:59,314 [INFO] 
+[6/47] DAFORTE SUSPENSION ORAL  (ID: 15510057484675)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057484675
+2026-06-05 07:41:59,314 [INFO]   EAN: 8414042003868
+2026-06-05 07:42:03,591 [INFO] [distrivet][diag][autocomplete] EAN=8414042003868 fichas nuevas: 29
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=604282  txt="HILL'S HSP CANINE ADULT LIGHT MEDIANA POLLO 2,5KG"
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0700025  txt='FARMINA ND DOG PUMPKIN MINI POLLO 7KG'
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0700043  txt='FARMINA ND DOG OCEAN PUMPKIN MINI BACALAO 7KG'
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN055  txt='LENDA VET PERRO LEISHMANIASIS 2KG'
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=UNINPSC70010  txt="NATURE'S P SC TOPPER WHITE DOGS ADULT ATUN 24X70GR"
+2026-06-05 07:42:03,592 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LENDA PERRO ADULTO MAXI POLLO 12KG'
+2026-06-05 07:42:05,591 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:42:07,433 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:42:09,438 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:42:11,740 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:42:13,967 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:42:16,201 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:42:18,875 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=604282
+2026-06-05 07:42:21,522 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0700025
+2026-06-05 07:42:24,190 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=PND0700043
+2026-06-05 07:42:28,054 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN055
+2026-06-05 07:42:28,054 [WARNING]     [distrivet] ninguna ficha (29) contiene el EAN 8414042003868. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:42:28,055 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:42:28,055 [INFO] 
+[7/47] DERMADIET ZINC 60CPD  (ID: 15510057517443)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057517443
+2026-06-05 07:42:28,055 [INFO]   EAN: 8437002582029
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] EAN=8437002582029 fichas nuevas: 141
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:32,468 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:42:34,405 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:42:36,414 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:42:38,394 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:42:40,698 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:42:42,894 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:42:45,193 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:42:48,984 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:42:53,543 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:42:57,203 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:43:01,042 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:43:01,042 [WARNING]     [distrivet] ninguna ficha (141) contiene el EAN 8437002582029. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:43:01,043 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:43:01,043 [INFO] 
+[8/47] DERMADUAL GEL 55ML  (ID: 15510057582979)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057582979
+2026-06-05 07:43:01,043 [INFO]   EAN: 8414042003776
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] EAN=8414042003776 fichas nuevas: 141
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:05,446 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:07,298 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:43:09,638 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:43:11,646 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:43:13,940 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:43:16,149 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:43:18,436 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:43:22,531 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:43:27,135 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:43:30,719 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:43:34,458 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:43:34,458 [WARNING]     [distrivet] ninguna ficha (141) contiene el EAN 8414042003776. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:43:34,458 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:43:34,459 [INFO] 
+[9/47] HEPATOSIL PLUS RAZAS GRANDES 30CPD  (ID: 15510057648515)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057648515
+2026-06-05 07:43:34,459 [INFO]   EAN: 8414042006067
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] EAN=8414042006067 fichas nuevas: 139
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:38,847 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:43:40,721 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:43:42,764 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:43:44,771 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:43:47,092 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:43:49,325 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:43:51,581 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:43:54,924 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:43:58,318 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:44:01,820 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:44:05,254 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:44:05,254 [WARNING]     [distrivet] ninguna ficha (139) contiene el EAN 8414042006067. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:44:05,255 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:44:05,255 [INFO] 
+[10/47] HEPATOSIL PLUS RAZAS MEDIANAS 30 COMPRIMIDOS  (ID: 15510057681283)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057681283
+2026-06-05 07:44:05,255 [INFO]   EAN: 8414042006050
+2026-06-05 07:44:09,699 [INFO] [distrivet][diag][autocomplete] EAN=8414042006050 fichas nuevas: 153
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:09,700 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:11,531 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:44:13,591 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:44:15,441 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:44:17,783 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:44:20,005 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:44:22,188 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:44:25,550 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:44:28,945 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:44:32,332 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:44:35,654 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:44:35,654 [WARNING]     [distrivet] ninguna ficha (153) contiene el EAN 8414042006050. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:44:35,654 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:44:35,654 [INFO] 
+[11/47] HEPATOSIL PLUS RAZAS PEQUEÑAS  (ID: 15510057714051)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057714051
+2026-06-05 07:44:35,654 [INFO]   EAN: 8414042006074
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] EAN=8414042006074 fichas nuevas: 140
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:40,037 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:44:41,912 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:44:43,898 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:44:45,907 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:44:48,214 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:44:50,456 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:44:52,728 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:44:56,122 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:44:59,430 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:45:02,918 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:45:06,346 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:45:06,346 [WARNING]     [distrivet] ninguna ficha (140) contiene el EAN 8414042006074. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:45:06,347 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:45:06,347 [INFO] 
+[12/47] HYALORAL CLASIC PERRO RAZA GRANDE GIGANTE 360CPD  (ID: 15510057779587)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057779587
+2026-06-05 07:45:06,347 [INFO]   EAN: 8414042003882
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] EAN=8414042003882 fichas nuevas: 141
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:10,832 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:12,837 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:45:14,873 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:45:16,927 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:45:19,338 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:45:21,853 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:45:24,606 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:45:27,802 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:45:31,215 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:45:34,516 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:45:37,836 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:45:37,836 [WARNING]     [distrivet] ninguna ficha (141) contiene el EAN 8414042003882. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:45:37,836 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:45:37,836 [INFO] 
+[13/47] HYALORAL CLASIC PERRO RAZA PEQUEÑA MEDIANA 270CPD  (ID: 15510057845123)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057845123
+2026-06-05 07:45:37,836 [INFO]   EAN: 8414042003486
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] EAN=8414042003486 fichas nuevas: 149
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:42,232 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:45:44,256 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:45:46,078 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:45:48,093 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:45:50,378 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:45:52,609 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:45:54,931 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:45:58,369 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:46:01,761 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:46:05,148 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:46:08,495 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:46:08,495 [WARNING]     [distrivet] ninguna ficha (149) contiene el EAN 8414042003486. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:46:08,496 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:46:08,496 [INFO] 
+[14/47] HYALORAL GEL CACHORROS GATOS 50ML  (ID: 15510057877891)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057877891
+2026-06-05 07:46:08,496 [INFO]   EAN: 8414042003851
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] EAN=8414042003851 fichas nuevas: 140
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:12,949 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:14,797 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:46:16,821 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:46:18,825 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:46:21,090 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:46:23,155 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:46:25,330 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:46:28,862 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:46:32,234 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:46:35,700 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:46:39,011 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:46:39,011 [WARNING]     [distrivet] ninguna ficha (140) contiene el EAN 8414042003851. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:46:39,012 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:46:39,012 [INFO] 
+[15/47] HYALORAL PERRO RAZA GRANDE GIGANTE 120CPD  (ID: 15510057910659)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057910659
+2026-06-05 07:46:39,012 [INFO]   EAN: 8437002582739
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] EAN=8437002582739 fichas nuevas: 144
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:43,413 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:46:45,424 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:46:47,440 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:46:49,422 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:46:51,618 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:46:53,780 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:46:55,939 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:46:59,297 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:47:02,686 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:47:05,985 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:47:09,367 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:47:09,367 [WARNING]     [distrivet] ninguna ficha (144) contiene el EAN 8437002582739. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:47:09,368 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:47:09,368 [INFO] 
+[16/47] HYALORAL PERRO RAZA PEQUEÑA MEDIANA 90CPD  (ID: 15510057976195)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510057976195
+2026-06-05 07:47:09,368 [INFO]   EAN: 8437002582883
+2026-06-05 07:47:13,737 [INFO] [distrivet][diag][autocomplete] EAN=8437002582883 fichas nuevas: 140
+2026-06-05 07:47:13,737 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:47:13,737 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:47:13,737 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:47:13,737 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:13,738 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:15,824 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:47:17,807 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:47:19,840 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:47:22,083 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:47:24,333 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:47:26,570 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:47:29,951 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:47:33,203 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:47:36,665 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:47:40,072 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:47:40,072 [WARNING]     [distrivet] ninguna ficha (140) contiene el EAN 8437002582883. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:47:40,072 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:47:40,072 [INFO] 
+[17/47] HYALORAL PLASMA  (ID: 15510058041731)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510058041731
+2026-06-05 07:47:40,072 [INFO]   EAN: 8414042006739
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] EAN=8414042006739 fichas nuevas: 150
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:44,455 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:47:46,492 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:47:48,504 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:47:50,503 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:47:52,788 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:47:54,967 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:47:57,301 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:48:00,565 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:48:03,960 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:48:07,219 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:48:10,678 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:48:10,679 [WARNING]     [distrivet] ninguna ficha (150) contiene el EAN 8414042006739. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:48:10,679 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:48:10,679 [INFO] 
+[18/47] HYALORAL PLASMA GEL 50ml  (ID: 15510058205571)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510058205571
+2026-06-05 07:48:10,679 [INFO]   EAN: 8414042006715
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] EAN=8414042006715 fichas nuevas: 140
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:15,136 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:15,137 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:15,137 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:15,137 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:17,169 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:48:19,173 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:48:21,232 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:48:23,515 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:48:25,733 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:48:27,929 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:48:31,374 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:48:34,713 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:48:38,153 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:48:41,420 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:48:41,420 [WARNING]     [distrivet] ninguna ficha (140) contiene el EAN 8414042006715. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:48:41,421 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:48:41,421 [INFO] 
+[19/47] INFLAVET 60CPD  (ID: 15510058238339)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510058238339
+2026-06-05 07:48:41,421 [INFO]   EAN: 8437002582890
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] EAN=8437002582890 fichas nuevas: 141
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:45,841 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:48:47,727 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:48:49,808 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:48:51,811 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:48:54,045 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:48:56,271 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:48:58,452 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:49:01,836 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:49:05,225 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:49:08,546 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:49:11,979 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:49:11,979 [WARNING]     [distrivet] ninguna ficha (141) contiene el EAN 8437002582890. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:49:11,979 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:49:11,979 [INFO] 
+[20/47] IRCVET PERRO GATO 60CPD  (ID: 15510058369411)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510058369411
+2026-06-05 07:49:11,979 [INFO]   EAN: 8437002582937
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] EAN=8437002582937 fichas nuevas: 140
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:16,401 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:18,435 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:49:20,445 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:49:22,477 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:49:24,708 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:49:26,950 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:49:29,102 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:49:32,603 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:49:36,220 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:49:40,100 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
+2026-06-05 07:49:43,717 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004
+2026-06-05 07:49:43,717 [WARNING]     [distrivet] ninguna ficha (140) contiene el EAN 8437002582937. Revisa [distrivet][diag][autocomplete].
+2026-06-05 07:49:43,717 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 07:49:43,717 [INFO] 
+[21/47] IRCVET PERRO GATO GEL ORAL 50ML  (ID: 15510058434947)
+  https://admin.shopify.com/store/7ev1zx-eg/products/15510058434947
+2026-06-05 07:49:43,717 [INFO]   EAN: 8414042003837
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] EAN=8414042003837 fichas nuevas: 150
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001  txt='LEN001\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002  txt='LEN002\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003  txt='LEN003\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN004  txt='LEN004\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN005  txt='LEN005\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:48,186 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN006  txt='LEN006\n                \n              \n            \n            \n              \n          '
+2026-06-05 07:49:50,213 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 07:49:52,267 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 07:49:54,329 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 07:49:56,679 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
+2026-06-05 07:49:59,102 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 07:50:01,406 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 07:50:05,383 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN001
+2026-06-05 07:50:09,228 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN002
+2026-06-05 07:50:12,879 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN003
