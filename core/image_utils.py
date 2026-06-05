@@ -195,15 +195,15 @@ def to_webp_srgb_b64(img: Image.Image) -> str:
     return to_webp_b64(img)
 
 
-def is_high_res(raw: bytes) -> tuple:
+def is_high_res(raw: bytes, min_dim: int = MIN_DIM) -> tuple:
     """
-    Comprueba si la imagen cumple resolución mínima.
+    Comprueba si la imagen cumple resolución mínima (min_dim px por lado).
     Devuelve (ok, width, height).
     """
     try:
         img = Image.open(BytesIO(raw))
         w, h = img.size
-        return (w >= MIN_DIM and h >= MIN_DIM), w, h
+        return (w >= min_dim and h >= min_dim), w, h
     except Exception:
         return False, 0, 0
 

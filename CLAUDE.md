@@ -474,10 +474,17 @@ primera — es **esperado**: el volcado de diagnóstico existe justo para eso.
    EAN, espera el dropdown AJAX y coge los enlaces de ficha **nuevos** (diff antes/después
    = excluye destacados de la home). Diagnóstico en `[distrivet][diag][autocomplete]`.
 3. **Ficha de producto = `webshop-producto.asp?NoProducto={ref}`** (la `ref` es la
-   Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). Tiene la foto del producto
-   arriba a la izquierda + datos (REF/EAN/Fabricante/PVP) + "Ficha del producto" +
-   carrusel "También le puede interesar" (relacionados → excluir). Sanity check: la
-   ficha abierta debe **contener el EAN** buscado (si no, se descarta).
+   Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). Buscar por EAN da varias
+   sugerencias en el autocomplete → se **abre cada candidata y se verifica que la ficha
+   contiene el EAN** (la URL usa la REF, no el EAN). Carrusel "También le puede interesar"
+   (relacionados → excluir).
+4. **Foto del producto = CDN `repo.distrivet.es/imagenes_producto/{c}/{id}.webp`**
+   donde `{c}` = primer carácter (minúscula) y `{id}` = la **REFERENCIA** (`ORD201`) o,
+   en otros productos, el EAN. **NO es un `<img>` normal** (visor con zoom, clic derecho
+   bloqueado). `_extract_images` construye la **URL canónica** por REF y por EAN, además
+   de rastrear HTML crudo / background-image, y **filtra por EAN o REF** (descarta
+   relacionados). **Resolución ~728×800** → para Distrivet el mínimo se baja a **600px**
+   (`_download_hires(..., min_dim=600)`; medido en el 1er test, cobertura > nitidez).
 3. **Mapeo de ejemplo (producto Shopify 15510048342403, 2 variantes de peso):**
    EAN `064992280185` → `ORD201` (1.8 KG) · EAN `064992280543` → `ORD202` (5.4 KG).
    ⚠️ Un producto Shopify puede tener **varias variantes con EAN distinto**; hoy se usa

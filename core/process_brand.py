@@ -410,14 +410,15 @@ def _clean_title_for_ddg(title: str) -> str:
     return _TITLE_NOISE.sub(" ", title).strip() + " product image"
 
 
-def _download_hires(urls: list, label: str) -> list:
-    """Descarga URLs y conserva solo las que cumplen la resolución mínima (800px).
+def _download_hires(urls: list, label: str, min_dim: int = 800) -> list:
+    """Descarga URLs y conserva solo las que cumplen la resolución mínima
+    (min_dim px por lado; 800 por defecto, menor para fuentes como Distrivet).
     Devuelve lista [(raw_bytes, ext), ...]."""
     out = []
     for url in urls:
         try:
             raw, ext = download_raw(url)
-            ok, w, h = is_high_res(raw)
+            ok, w, h = is_high_res(raw, min_dim=min_dim)
             fname = url.split("/")[-1].split("?")[0]
             if ok:
                 out.append((raw, ext))
@@ -657,11 +658,11 @@ def run_distrivet(api: ShopifyAPI, vendor: str,
             stats["sin_match"] += 1
             continue
 
-        # _download_hires loguea WxH de cada imagen (también las rechazadas por
-        # <800px) → así medimos la resolución real que sirve Distrivet.
-        raw_images = _download_hires(urls, "distrivet")
+        # Distrivet sirve la foto del producto a ~728×800 → bajamos el mínimo a
+        # 600px para esta fuente (medido en el 1er test; cobertura > nitidez).
+        raw_images = _download_hires(urls, "distrivet", min_dim=600)
         if not raw_images:
-            log.warning("  Imágenes por debajo del mínimo (800px) — saltando")
+            log.warning("  Imágenes por debajo del mínimo (600px) — saltando")
             stats["sin_imagen"] += 1
             continue
 

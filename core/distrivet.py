@@ -557,23 +557,33 @@ def _upgrade_url(url: str) -> str:
 
 # ─── Extracción de imágenes de la ficha ──────────────────────────────────────
 
+CDN_BASE = "https://repo.distrivet.es/imagenes_producto"
+
+
 def _extract_images(page, page_url: str, ean: str = "") -> list:
     """Extrae la foto del PRODUCTO de la ficha Distrivet.
 
-    Las imágenes del CDN de Distrivet se nombran por EAN (p. ej. 064992280185.webp),
-    igual que beaphar. La ficha incluye un carrusel "También le puede interesar"
-    (relacionados, con OTROS EAN) → la forma fiable de quedarnos solo con la del
-    producto es **filtrar por el EAN buscado**. Si ninguna imagen contiene el EAN,
-    devolvemos [] (mejor sin imagen que poner una de un relacionado)."""
+    La foto vive en el CDN repo.distrivet.es/imagenes_producto/{c}/{id}.webp donde
+    {c} = primer carácter (minúscula) del identificador y {id} = la REFERENCIA del
+    producto (p. ej. ORD201) o, en otros productos, el EAN. NO es un <img> normal
+    (visor con zoom, clic derecho bloqueado), así que se construye la URL canónica
+    por REF y EAN y además se rastrea el HTML crudo / background-image. Se filtra por
+    EAN o REF para descartar el carrusel 'También le puede interesar'."""
     ordered: list = []
     seen: set = set()
 
     def _add(raw_url: str):
         if not raw_url or raw_url.startswith("data:"):
             return
+        # Limpiar URLs mal formadas extraídas del HTML crudo
+        raw_url = (raw_url.replace("&quot;", "").replace("&#34;", "")
+                   .replace("%2F", "/").replace("%2f", "/").strip())
         full = urljoin(page_url, raw_url)
         if not full.startswith("http"):
             return
+        # La foto del producto vive en repo.distrivet.es, no en tienda.distrivet.es
+        if "imagenes_producto" in full and "tienda.distrivet.es" in full:
+            full = full.replace("tienda.distrivet.es", "repo.distrivet.es")
         if not _should_keep_url(full):
             return
         clean = _upgrade_url(full)
@@ -581,6 +591,15 @@ def _extract_images(page, page_url: str, ean: str = "") -> list:
             return
         seen.add(clean)
         ordered.append(clean)
+
+    # REF del producto desde la URL (NoProducto=ORD201)
+    m = re.search(r'noproducto=([^&\s]+)', (page_url or ""), re.I)
+    ref = (m.group(1) if m else "").strip()
+
+    # URL(s) canónica(s) del CDN: por REF y por EAN (la que exista; la otra da 404)
+    for key in (ref, ean):
+        if key:
+            _add(f"{CDN_BASE}/{key[0].lower()}/{key}.webp")
 
     # Subir arriba y esperar para forzar la carga lazy de la imagen principal
     try:
@@ -659,8 +678,6 @@ def _extract_images(page, page_url: str, ean: str = "") -> list:
 
     # 5. Filtro por EAN (o REF de la URL): las imágenes del producto llevan el EAN
     #    en el nombre; algunas fichas usan la REF (p. ej. ORD201). Descarta relacionados.
-    m = re.search(r'noproducto=([^&\s]+)', (page_url or ""), re.I)
-    ref = (m.group(1) if m else "").strip()
     keys = [k for k in (ean, ref) if k]
     if keys:
         sel = [u for u in ordered
