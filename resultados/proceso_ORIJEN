@@ -1,266 +1,322 @@
-2026-06-05 07:29:59,374 [INFO] ============================================================
-2026-06-05 07:29:59,375 [INFO]   Vendor   : ORIJEN 
-2026-06-05 07:29:59,375 [INFO]   Modo     : DISTRIVET
-2026-06-05 07:29:59,375 [INFO]   Pipeline : standard
-2026-06-05 07:29:59,375 [INFO]   Padding  : auto
-2026-06-05 07:29:59,375 [INFO] ============================================================
-2026-06-05 07:29:59,716 [INFO] Token obtenido
-2026-06-05 07:30:02,932 [INFO] [distrivet] login GET https://tienda.distrivet.es/home-webshop.asp → HTTP 200
-2026-06-05 07:30:05,095 [INFO] [distrivet][diag][login] URL=https://tienda.distrivet.es/homepage.asp?Session=Expired
-2026-06-05 07:30:05,100 [INFO] [distrivet][diag][login] title='Distrivet'
-2026-06-05 07:30:05,104 [INFO] [distrivet][diag][login] form[0] action='conexion.asp?PaginaAnterior=bienvenido.asp' method=post id='authentication_user' name=''
-2026-06-05 07:30:05,104 [INFO] [distrivet][diag][login]   <input> type='hidden' name='PaginaAnterior' id='' ph=''
-2026-06-05 07:30:05,105 [INFO] [distrivet][diag][login]   <input> type='text' name='IdUsuario' id='IdUsuario' ph=''
-2026-06-05 07:30:05,105 [INFO] [distrivet][diag][login]   <input> type='password' name='Password' id='Password' ph=''
-2026-06-05 07:30:05,105 [INFO] [distrivet][diag][login]   <button> type='submit' name='' id='' ph=''
-2026-06-05 07:30:05,166 [INFO] [distrivet] credenciales introducidas — enviando formulario
-2026-06-05 07:30:08,727 [INFO] [distrivet] selección de dirección de entrega detectada (URL=https://tienda.distrivet.es/bienvenido.asp)
-2026-06-05 07:30:08,727 [INFO] [distrivet][diag][address] URL=https://tienda.distrivet.es/bienvenido.asp
-2026-06-05 07:30:08,731 [INFO] [distrivet][diag][address] title='Bienvenido a Distrivet'
-2026-06-05 07:30:08,735 [INFO] [distrivet][diag][address] input(suelto) type='text' name='' id='filtroDirecciones' ph='Filtrar por dirección, provincia o CP...'
-2026-06-05 07:30:08,735 [INFO] [distrivet][diag][address] input(suelto) type='radio' name='customer_web' id='62073272' ph=''
-2026-06-05 07:30:08,761 [INFO] [distrivet] radio de dirección marcado
-2026-06-05 07:30:09,798 [INFO] [distrivet] botón de dirección pulsado: button:has-text('Seleccionar dirección')
-2026-06-05 07:30:15,805 [INFO] [distrivet] ✓ dirección de entrega resuelta (URL=https://tienda.distrivet.es/home-webshop.asp)
-2026-06-05 07:30:15,854 [INFO] [distrivet] ✓ sesión lista (URL=https://tienda.distrivet.es/home-webshop.asp, buscador=sí)
-2026-06-05 07:30:16,132 [INFO] 
+2026-06-05 08:02:14,783 [INFO] ============================================================
+2026-06-05 08:02:14,783 [INFO]   Vendor   : ORIJEN 
+2026-06-05 08:02:14,783 [INFO]   Modo     : DISTRIVET
+2026-06-05 08:02:14,783 [INFO]   Pipeline : standard
+2026-06-05 08:02:14,783 [INFO]   Padding  : auto
+2026-06-05 08:02:14,783 [INFO] ============================================================
+2026-06-05 08:02:15,065 [INFO] Token obtenido
+2026-06-05 08:02:17,668 [INFO] [distrivet] login GET https://tienda.distrivet.es/home-webshop.asp → HTTP 200
+2026-06-05 08:02:19,703 [INFO] [distrivet][diag][login] URL=https://tienda.distrivet.es/homepage.asp?Session=Expired
+2026-06-05 08:02:19,708 [INFO] [distrivet][diag][login] title='Distrivet'
+2026-06-05 08:02:19,712 [INFO] [distrivet][diag][login] form[0] action='conexion.asp?PaginaAnterior=bienvenido.asp' method=post id='authentication_user' name=''
+2026-06-05 08:02:19,712 [INFO] [distrivet][diag][login]   <input> type='hidden' name='PaginaAnterior' id='' ph=''
+2026-06-05 08:02:19,713 [INFO] [distrivet][diag][login]   <input> type='text' name='IdUsuario' id='IdUsuario' ph=''
+2026-06-05 08:02:19,713 [INFO] [distrivet][diag][login]   <input> type='password' name='Password' id='Password' ph=''
+2026-06-05 08:02:19,713 [INFO] [distrivet][diag][login]   <button> type='submit' name='' id='' ph=''
+2026-06-05 08:02:19,767 [INFO] [distrivet] credenciales introducidas — enviando formulario
+2026-06-05 08:02:22,677 [INFO] [distrivet] selección de dirección de entrega detectada (URL=https://tienda.distrivet.es/bienvenido.asp)
+2026-06-05 08:02:22,677 [INFO] [distrivet][diag][address] URL=https://tienda.distrivet.es/bienvenido.asp
+2026-06-05 08:02:22,681 [INFO] [distrivet][diag][address] title='Bienvenido a Distrivet'
+2026-06-05 08:02:22,685 [INFO] [distrivet][diag][address] input(suelto) type='text' name='' id='filtroDirecciones' ph='Filtrar por dirección, provincia o CP...'
+2026-06-05 08:02:22,685 [INFO] [distrivet][diag][address] input(suelto) type='radio' name='customer_web' id='62073272' ph=''
+2026-06-05 08:02:22,708 [INFO] [distrivet] radio de dirección marcado
+2026-06-05 08:02:23,731 [INFO] [distrivet] botón de dirección pulsado: button:has-text('Seleccionar dirección')
+2026-06-05 08:02:26,582 [INFO] [distrivet] ✓ dirección de entrega resuelta (URL=https://tienda.distrivet.es/home-webshop.asp)
+2026-06-05 08:02:26,821 [INFO] [distrivet] ✓ sesión lista (URL=https://tienda.distrivet.es/home-webshop.asp, buscador=sí)
+2026-06-05 08:02:27,058 [INFO] 
 [1/17] ORIJEN 6 FISH CAT 340 GR  (ID: 15510046015875)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510046015875
-2026-06-05 07:30:16,133 [INFO]   EAN: 064992281342
-2026-06-05 07:30:16,133 [INFO] [distrivet] caché cargada: 17 EANs
-2026-06-05 07:30:16,133 [INFO]     [distrivet] caché EAN 064992281342: 2 URLs
-2026-06-05 07:30:18,816 [INFO]   [distrivet] ✓ OOFC00.webp  1280×1280
-2026-06-05 07:30:19,058 [INFO]   [distrivet] ✓ 064992281342.webp  2000×2828
-2026-06-05 07:30:19,139 [INFO]   [dedupe] descartada (1280, 1280) 96KB → queda (2000, 2828) 222KB (posición 1)
-2026-06-05 07:30:19,139 [INFO]   [dedupe] 2 → 1 imágenes únicas
-2026-06-05 07:30:19,141 [INFO]   Imagen 1: RGB (2000, 2828)
-2026-06-05 07:30:19,190 [INFO]     [bg] 10000/10000 (100%)
-2026-06-05 07:30:19,231 [INFO]     [autocrop] (2000, 2828) → (1401, 2125)
-2026-06-05 07:30:19,231 [INFO]     [padding 5%]
-2026-06-05 07:30:20,251 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:30:23,423 [INFO]   ✓ 1/1 subida  [orijen-6-fish-cat-340-gr_1.webp]
-2026-06-05 07:30:24,924 [INFO] 
+2026-06-05 08:02:27,058 [INFO]   EAN: 064992281342
+2026-06-05 08:02:27,059 [INFO] [distrivet] caché cargada: 37 EANs
+2026-06-05 08:02:27,059 [INFO]     [distrivet] caché EAN 064992281342: 2 URLs
+2026-06-05 08:02:27,160 [INFO]   [distrivet] ✓ OOFC00.webp  1280×1280
+2026-06-05 08:02:27,221 [INFO]   [distrivet] ✓ 064992281342.webp  2000×2828
+2026-06-05 08:02:27,307 [INFO]   [dedupe] descartada (1280, 1280) 96KB → queda (2000, 2828) 222KB (posición 1)
+2026-06-05 08:02:27,307 [INFO]   [dedupe] 2 → 1 imágenes únicas
+2026-06-05 08:02:27,308 [INFO]   Imagen 1: RGB (2000, 2828)
+2026-06-05 08:02:27,361 [INFO]     [bg] 10000/10000 (100%)
+2026-06-05 08:02:27,399 [INFO]     [autocrop] (2000, 2828) → (1401, 2125)
+2026-06-05 08:02:27,399 [INFO]     [padding 5%]
+2026-06-05 08:02:28,276 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:02:32,345 [INFO]   ✓ 1/1 subida  [orijen-6-fish-cat-340-gr_1.webp]
+2026-06-05 08:02:33,845 [INFO] 
 [2/17] ORIJEN CANINE ADULT 6 PESCADOS  (ID: 15510046048643)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510046048643
-2026-06-05 07:30:24,924 [INFO]   EAN: 064992183127
-2026-06-05 07:30:24,924 [INFO]     [distrivet] caché EAN 064992183127: 1 URLs
-2026-06-05 07:30:25,134 [WARNING]   [distrivet] baja res 500×500 — omitida: 064992183127.webp
-2026-06-05 07:30:25,134 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:30:25,134 [INFO] 
+2026-06-05 08:02:33,845 [INFO]   EAN: 064992183127
+2026-06-05 08:02:33,845 [INFO]     [distrivet] caché EAN 064992183127: 1 URLs
+2026-06-05 08:02:33,886 [INFO]   [distrivet] ✓ 064992183127.webp  500×500
+2026-06-05 08:02:33,887 [INFO]   Imagen 1: RGB (500, 500)
+2026-06-05 08:02:33,890 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:02:33,891 [INFO]     [autocrop] (500, 500) → (258, 406)
+2026-06-05 08:02:33,891 [INFO]     [padding 5%]
+2026-06-05 08:02:34,149 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:02:36,423 [INFO]   ✓ 1/1 subida  [orijen-canine-adult-6-pescados_1.webp]
+2026-06-05 08:02:37,923 [INFO] 
 [3/17] ORIJEN CANINE ADULT FIT&TRIM  (ID: 15510046179715)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510046179715
-2026-06-05 07:30:25,134 [INFO]   EAN: 064992181710
-2026-06-05 07:30:25,134 [INFO]     [distrivet] caché EAN 064992181710: 2 URLs
-2026-06-05 07:30:25,342 [INFO]   [distrivet] ✓ ORD126.webp  1280×1280
-2026-06-05 07:30:25,529 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992181710.webp
-2026-06-05 07:30:25,530 [INFO]   Imagen 1: RGBA (1280, 1280)
-2026-06-05 07:30:25,550 [INFO]     [alpha] 62% transparente
-2026-06-05 07:30:25,563 [INFO]     [bg] 4096/4096 (100%)
-2026-06-05 07:30:25,574 [INFO]     [autocrop] (1280, 1280) → (726, 977)
-2026-06-05 07:30:25,574 [INFO]     [padding 5%]
-2026-06-05 07:30:26,476 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:30:29,046 [INFO]   ✓ 1/1 subida  [orijen-canine-adult-fit-trim_1.webp]
-2026-06-05 07:30:30,547 [INFO] 
+2026-06-05 08:02:37,923 [INFO]   EAN: 064992181710
+2026-06-05 08:02:37,923 [INFO]     [distrivet] caché EAN 064992181710: 2 URLs
+2026-06-05 08:02:37,963 [INFO]   [distrivet] ✓ ORD126.webp  1280×1280
+2026-06-05 08:02:38,002 [INFO]   [distrivet] ✓ 064992181710.webp  501×500
+2026-06-05 08:02:38,029 [INFO]   [dedupe] 2 → 2 imágenes únicas
+2026-06-05 08:02:38,030 [INFO]   Imagen 1: RGBA (1280, 1280)
+2026-06-05 08:02:38,048 [INFO]     [alpha] 62% transparente
+2026-06-05 08:02:38,061 [INFO]     [bg] 4096/4096 (100%)
+2026-06-05 08:02:38,072 [INFO]     [autocrop] (1280, 1280) → (726, 977)
+2026-06-05 08:02:38,073 [INFO]     [padding 5%]
+2026-06-05 08:02:38,115 [INFO]   Imagen 2: RGB (501, 500)
+2026-06-05 08:02:38,118 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:02:38,120 [INFO]     [autocrop] (501, 500) → (241, 383)
+2026-06-05 08:02:38,120 [INFO]     [padding 5%]
+2026-06-05 08:02:38,933 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:02:41,594 [INFO]   ✓ 1/2 subida  [orijen-canine-adult-fit-trim_1.webp]
+2026-06-05 08:02:44,431 [INFO]   ✓ 2/2 subida  [orijen-canine-adult-fit-trim_2.webp]
+2026-06-05 08:02:45,931 [INFO] 
 [4/17] ORIJEN CANINE ADULT ORIGINAL  (ID: 15510046474627)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510046474627
-2026-06-05 07:30:30,547 [INFO]   EAN: 064992182120
-2026-06-05 07:30:30,547 [INFO]     [distrivet] caché EAN 064992182120: 1 URLs
-2026-06-05 07:30:30,756 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992182120.webp
-2026-06-05 07:30:30,756 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:30:30,756 [INFO] 
+2026-06-05 08:02:45,931 [INFO]   EAN: 064992182120
+2026-06-05 08:02:45,931 [INFO]     [distrivet] caché EAN 064992182120: 1 URLs
+2026-06-05 08:02:45,967 [INFO]   [distrivet] ✓ 064992182120.webp  501×500
+2026-06-05 08:02:45,967 [INFO]   Imagen 1: RGB (501, 500)
+2026-06-05 08:02:45,970 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:02:45,972 [INFO]     [autocrop] (501, 500) → (241, 383)
+2026-06-05 08:02:45,972 [INFO]     [padding 5%]
+2026-06-05 08:02:46,214 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:02:48,932 [INFO]   ✓ 1/1 subida  [orijen-canine-adult-original_1.webp]
+2026-06-05 08:02:50,432 [INFO] 
 [5/17] ORIJEN CANINE ADULT REGIONAL RED  (ID: 15510046638467)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510046638467
-2026-06-05 07:30:30,756 [INFO]   EAN: 064992184124
-2026-06-05 07:30:30,756 [INFO]     [distrivet] caché EAN 064992184124: 3 URLs
-2026-06-05 07:30:30,958 [INFO]   [distrivet] ✓ ORD118.webp  666×800
-2026-06-05 07:30:31,164 [WARNING]   [distrivet] baja res 500×500 — omitida: 064992184124.webp
-2026-06-05 07:30:31,362 [INFO]   [distrivet] ✓ ORD118.webp  666×800
-2026-06-05 07:30:31,378 [INFO]   [dedupe] 2 → 2 imágenes únicas
-2026-06-05 07:30:31,378 [INFO]   Imagen 1: RGBA (666, 800)
-2026-06-05 07:30:31,386 [INFO]     [alpha] 29% transparente
-2026-06-05 07:30:31,390 [INFO]     [bg] 647/1156 (56%)
-2026-06-05 07:30:31,390 [INFO]     [sin padding]
-2026-06-05 07:30:31,452 [INFO]   Imagen 2: RGB (666, 800)
-2026-06-05 07:30:31,458 [INFO]     [bg] 644/1156 (56%)
-2026-06-05 07:30:31,458 [INFO]     [sin padding]
-2026-06-05 07:30:32,966 [INFO]   2 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:30:35,559 [INFO]   ✓ 1/2 subida  [orijen-canine-adult-regional-red_1.webp]
-2026-06-05 07:30:38,603 [INFO]   ✓ 2/2 subida  [orijen-canine-adult-regional-red_2.webp]
-2026-06-05 07:30:40,103 [INFO] 
+2026-06-05 08:02:50,432 [INFO]   EAN: 064992184124
+2026-06-05 08:02:50,432 [INFO]     [distrivet] caché EAN 064992184124: 3 URLs
+2026-06-05 08:02:50,472 [INFO]   [distrivet] ✓ ORD118.webp  666×800
+2026-06-05 08:02:50,507 [INFO]   [distrivet] ✓ 064992184124.webp  500×500
+2026-06-05 08:02:50,545 [INFO]   [distrivet] ✓ ORD118.webp  666×800
+2026-06-05 08:02:50,564 [INFO]   [dedupe] 3 → 3 imágenes únicas
+2026-06-05 08:02:50,565 [INFO]   Imagen 1: RGBA (666, 800)
+2026-06-05 08:02:50,573 [INFO]     [alpha] 29% transparente
+2026-06-05 08:02:50,577 [INFO]     [bg] 647/1156 (56%)
+2026-06-05 08:02:50,577 [INFO]     [sin padding]
+2026-06-05 08:02:50,629 [INFO]   Imagen 2: RGB (500, 500)
+2026-06-05 08:02:50,631 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:02:50,633 [INFO]     [autocrop] (500, 500) → (260, 402)
+2026-06-05 08:02:50,633 [INFO]     [padding 5%]
+2026-06-05 08:02:50,662 [INFO]   Imagen 3: RGB (666, 800)
+2026-06-05 08:02:50,669 [INFO]     [bg] 644/1156 (56%)
+2026-06-05 08:02:50,669 [INFO]     [sin padding]
+2026-06-05 08:02:52,026 [INFO]   2 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:02:54,407 [INFO]   ✓ 1/3 subida  [orijen-canine-adult-regional-red_1.webp]
+2026-06-05 08:02:57,628 [INFO]   ✓ 2/3 subida  [orijen-canine-adult-regional-red_2.webp]
+2026-06-05 08:03:01,912 [INFO]   ✓ 3/3 subida  [orijen-canine-adult-regional-red_3.webp]
+2026-06-05 08:03:03,413 [INFO] 
 [6/17] ORIJEN CANINE ADULT SMALL  (ID: 15510047031683)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047031683
-2026-06-05 07:30:40,103 [INFO]   EAN: 064992714772
-2026-06-05 07:30:40,117 [INFO] [distrivet][diag][search] URL=https://tienda.distrivet.es/home-webshop.asp
-2026-06-05 07:30:40,119 [INFO] [distrivet][diag][search] title='Home webshop - Distrivet'
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search] form[0] action='' method=get id='' name=''
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search]   <button> type='button' name='' id='' ph=''
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search] form[1] action='' method=get id='' name=''
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
-2026-06-05 07:30:40,121 [INFO] [distrivet][diag][search] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] EAN=064992714772 fichas nuevas: 20
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859   txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=applaws+24  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=calibra+gastrointestinal  txt=''
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=115228  txt='CALIBRA DOG PREMIUM LINE ADULT POLLO 12KG'
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240  txt='TASTE CANINE ADULT PACIFIC STREAM SALMON 12,2KG'
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=EU127  txt='CHURU CAT VARIEDADES DE POLLO 20X14GR'
-2026-06-05 07:30:44,357 [INFO] [distrivet][diag][autocomplete] nuevo: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=EU124  txt='CHURU CAT VARIEDADES DE ATUN 20X14GR'
-2026-06-05 07:30:46,509 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
-2026-06-05 07:30:48,476 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
-2026-06-05 07:30:50,435 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
-2026-06-05 07:30:53,213 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859 
-2026-06-05 07:30:55,790 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
-2026-06-05 07:30:58,512 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
-2026-06-05 07:31:05,979 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=applaws+24
-2026-06-05 07:31:06,933 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041#e7c2/ai-fullscreen/m=and&q=calibra+gastrointestinal
-2026-06-05 07:31:09,709 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=115228
-2026-06-05 07:31:12,899 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240
-2026-06-05 07:31:12,899 [INFO] [distrivet][diag][product] URL=https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614240
-2026-06-05 07:31:12,901 [INFO] [distrivet][diag][product] title='Producto - Distrivet'
-2026-06-05 07:31:12,904 [INFO] [distrivet][diag][product] form[0] action='' method=get id='' name=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product] form[1] action='' method=get id='' name=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product] form[3] action='' method=post id='form_addToCart' name=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <input> type='hidden' name='tipo_1' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <input> type='hidden' name='noProducto_1' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <input> type='number' name='cantidad_1' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='addToCart' ph=''
-2026-06-05 07:31:12,905 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
-2026-06-05 07:31:12,907 [WARNING]     [distrivet] ninguna ficha (20) contiene el EAN 064992714772. Revisa [distrivet][diag][autocomplete].
-2026-06-05 07:31:12,907 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
-2026-06-05 07:31:12,907 [INFO] 
+2026-06-05 08:03:03,413 [INFO]   EAN: 064992714772
+2026-06-05 08:03:04,923 [INFO] [distrivet][diag][search] URL=https://tienda.distrivet.es/home-webshop.asp
+2026-06-05 08:03:04,925 [INFO] [distrivet][diag][search] title='Home webshop - Distrivet'
+2026-06-05 08:03:04,927 [INFO] [distrivet][diag][search] form[0] action='' method=get id='' name=''
+2026-06-05 08:03:04,927 [INFO] [distrivet][diag][search]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
+2026-06-05 08:03:04,928 [INFO] [distrivet][diag][search]   <button> type='button' name='' id='' ph=''
+2026-06-05 08:03:04,928 [INFO] [distrivet][diag][search] form[1] action='' method=get id='' name=''
+2026-06-05 08:03:04,928 [INFO] [distrivet][diag][search]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
+2026-06-05 08:03:04,928 [INFO] [distrivet][diag][search] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] EAN=064992714772 links de ficha en el layer: 19
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=74198614349
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=LEN041
+2026-06-05 08:03:06,047 [INFO] [distrivet][diag][doofinder] link: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=115228
+2026-06-05 08:03:07,814 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463693
+2026-06-05 08:03:09,551 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463697
+2026-06-05 08:03:11,407 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=463695
+2026-06-05 08:03:14,023 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=127859
+2026-06-05 08:03:16,415 [INFO]     [distrivet] candidata sin EAN, descarto: https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 08:03:16,415 [INFO] [distrivet][diag][product] URL=https://tienda.distrivet.es/webshop-producto.asp?NoProducto=9100221
+2026-06-05 08:03:16,417 [INFO] [distrivet][diag][product] title='Producto - Distrivet'
+2026-06-05 08:03:16,420 [INFO] [distrivet][diag][product] form[0] action='' method=get id='' name=''
+2026-06-05 08:03:16,420 [INFO] [distrivet][diag][product]   <input> type='' name='' id='main-search' ph='Busca por nombre, referencia, principio activo, etc.. '
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product] form[1] action='' method=get id='' name=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <input> type='text' name='' id='main-search' ph='Busca por nombre, referencia, etc..'
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product] form[2] action='webshop-finalizar-pedido.asp' method=get id='finalizarForm' name=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product] form[3] action='' method=post id='form_addToCart' name=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <input> type='hidden' name='tipo_1' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <input> type='hidden' name='noProducto_1' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <input> type='number' name='cantidad_1' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='addToCart' ph=''
+2026-06-05 08:03:16,421 [INFO] [distrivet][diag][product]   <button> type='button' name='' id='' ph=''
+2026-06-05 08:03:16,422 [WARNING]     [distrivet] ninguna ficha (19) del layer contiene el EAN 064992714772. Revisa [distrivet][diag][doofinder].
+2026-06-05 08:03:16,423 [WARNING]   Sin imagen en Distrivet para este EAN — saltando
+2026-06-05 08:03:16,423 [INFO] 
 [7/17] ORIJEN CANINE PUPPY  (ID: 15510047097219)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047097219
-2026-06-05 07:31:12,907 [INFO]   EAN: 064992180126
-2026-06-05 07:31:12,907 [INFO]     [distrivet] caché EAN 064992180126: 2 URLs
-2026-06-05 07:31:13,123 [INFO]   [distrivet] ✓ ORD103.webp  734×1000
-2026-06-05 07:31:13,327 [WARNING]   [distrivet] baja res 500×500 — omitida: 064992180126.webp
-2026-06-05 07:31:13,328 [INFO]   Imagen 1: RGB (734, 1000)
-2026-06-05 07:31:13,337 [INFO]     [bg] 768/1296 (59%)
-2026-06-05 07:31:13,337 [INFO]     [sin padding]
-2026-06-05 07:31:14,272 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:17,195 [INFO]   ✓ 1/1 subida  [orijen-canine-puppy_1.webp]
-2026-06-05 07:31:18,696 [INFO] 
+2026-06-05 08:03:16,423 [INFO]   EAN: 064992180126
+2026-06-05 08:03:16,423 [INFO]     [distrivet] caché EAN 064992180126: 2 URLs
+2026-06-05 08:03:16,467 [INFO]   [distrivet] ✓ ORD103.webp  734×1000
+2026-06-05 08:03:16,505 [INFO]   [distrivet] ✓ 064992180126.webp  500×500
+2026-06-05 08:03:16,520 [INFO]   [dedupe] 2 → 2 imágenes únicas
+2026-06-05 08:03:16,521 [INFO]   Imagen 1: RGB (734, 1000)
+2026-06-05 08:03:16,531 [INFO]     [bg] 768/1296 (59%)
+2026-06-05 08:03:16,531 [INFO]     [sin padding]
+2026-06-05 08:03:16,582 [INFO]   Imagen 2: RGB (500, 500)
+2026-06-05 08:03:16,585 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:03:16,587 [INFO]     [autocrop] (500, 500) → (244, 413)
+2026-06-05 08:03:16,587 [INFO]     [padding 5%]
+2026-06-05 08:03:17,353 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:21,155 [INFO]   ✓ 1/2 subida  [orijen-canine-puppy_1.webp]
+2026-06-05 08:03:23,997 [INFO]   ✓ 2/2 subida  [orijen-canine-puppy_2.webp]
+2026-06-05 08:03:25,498 [INFO] 
 [8/17] ORIJEN CANINE PUPPY LARGE  (ID: 15510047359363)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047359363
-2026-06-05 07:31:18,696 [INFO]   EAN: 064992181123
-2026-06-05 07:31:18,696 [INFO]     [distrivet] caché EAN 064992181123: 1 URLs
-2026-06-05 07:31:18,897 [WARNING]   [distrivet] baja res 500×500 — omitida: 064992181123.webp
-2026-06-05 07:31:18,897 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:31:18,897 [INFO] 
+2026-06-05 08:03:25,498 [INFO]   EAN: 064992181123
+2026-06-05 08:03:25,498 [INFO]     [distrivet] caché EAN 064992181123: 1 URLs
+2026-06-05 08:03:25,538 [INFO]   [distrivet] ✓ 064992181123.webp  500×500
+2026-06-05 08:03:25,539 [INFO]   Imagen 1: RGB (500, 500)
+2026-06-05 08:03:25,543 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:03:25,544 [INFO]     [autocrop] (500, 500) → (242, 408)
+2026-06-05 08:03:25,545 [INFO]     [padding 5%]
+2026-06-05 08:03:25,790 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:29,463 [INFO]   ✓ 1/1 subida  [orijen-canine-puppy-large_1.webp]
+2026-06-05 08:03:30,963 [INFO] 
 [9/17] ORIJEN CANINE SENIOR  (ID: 15510047490435)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047490435
-2026-06-05 07:31:18,897 [INFO]   EAN: 064992186128
-2026-06-05 07:31:18,897 [INFO]     [distrivet] caché EAN 064992186128: 2 URLs
-2026-06-05 07:31:19,116 [INFO]   [distrivet] ✓ ORD130.webp  1280×1280
-2026-06-05 07:31:19,315 [WARNING]   [distrivet] baja res 500×500 — omitida: 064992186128.webp
-2026-06-05 07:31:19,316 [INFO]   Imagen 1: RGBA (1280, 1280)
-2026-06-05 07:31:19,335 [INFO]     [alpha] 62% transparente
-2026-06-05 07:31:19,349 [INFO]     [bg] 4096/4096 (100%)
-2026-06-05 07:31:19,360 [INFO]     [autocrop] (1280, 1280) → (726, 977)
-2026-06-05 07:31:19,360 [INFO]     [padding 5%]
-2026-06-05 07:31:20,628 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:23,511 [INFO]   ✓ 1/1 subida  [orijen-canine-senior_1.webp]
-2026-06-05 07:31:25,011 [INFO] 
+2026-06-05 08:03:30,963 [INFO]   EAN: 064992186128
+2026-06-05 08:03:30,963 [INFO]     [distrivet] caché EAN 064992186128: 2 URLs
+2026-06-05 08:03:31,009 [INFO]   [distrivet] ✓ ORD130.webp  1280×1280
+2026-06-05 08:03:31,045 [INFO]   [distrivet] ✓ 064992186128.webp  500×500
+2026-06-05 08:03:31,070 [INFO]   [dedupe] 2 → 2 imágenes únicas
+2026-06-05 08:03:31,071 [INFO]   Imagen 1: RGBA (1280, 1280)
+2026-06-05 08:03:31,088 [INFO]     [alpha] 62% transparente
+2026-06-05 08:03:31,101 [INFO]     [bg] 4096/4096 (100%)
+2026-06-05 08:03:31,112 [INFO]     [autocrop] (1280, 1280) → (726, 977)
+2026-06-05 08:03:31,112 [INFO]     [padding 5%]
+2026-06-05 08:03:31,154 [INFO]   Imagen 2: RGB (500, 500)
+2026-06-05 08:03:31,157 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:03:31,158 [INFO]     [autocrop] (500, 500) → (273, 400)
+2026-06-05 08:03:31,158 [INFO]     [padding 5%]
+2026-06-05 08:03:31,943 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:34,360 [INFO]   ✓ 1/2 subida  [orijen-canine-senior_1.webp]
+2026-06-05 08:03:38,401 [INFO]   ✓ 2/2 subida  [orijen-canine-senior_2.webp]
+2026-06-05 08:03:39,902 [INFO] 
 [10/17] ORIJEN FELINE ADULT 6 PESCADOS  (ID: 15510047752579)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047752579
-2026-06-05 07:31:25,012 [INFO]   EAN: 064992281540
-2026-06-05 07:31:25,012 [INFO]     [distrivet] caché EAN 064992281540: 1 URLs
-2026-06-05 07:31:25,217 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992281540.webp
-2026-06-05 07:31:25,217 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:31:25,217 [INFO] 
+2026-06-05 08:03:39,902 [INFO]   EAN: 064992281540
+2026-06-05 08:03:39,902 [INFO]     [distrivet] caché EAN 064992281540: 1 URLs
+2026-06-05 08:03:39,941 [INFO]   [distrivet] ✓ 064992281540.webp  501×500
+2026-06-05 08:03:39,942 [INFO]   Imagen 1: RGB (501, 500)
+2026-06-05 08:03:39,945 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:03:39,946 [INFO]     [autocrop] (501, 500) → (251, 383)
+2026-06-05 08:03:39,946 [INFO]     [padding 5%]
+2026-06-05 08:03:40,182 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:42,311 [INFO]   ✓ 1/1 subida  [orijen-feline-adult-6-pescados_1.webp]
+2026-06-05 08:03:43,811 [INFO] 
 [11/17] ORIJEN FELINE ADULT ORIJEN FIT TRIM  (ID: 15510047850883)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047850883
-2026-06-05 07:31:25,217 [INFO]   EAN: 064992284541
-2026-06-05 07:31:25,217 [INFO]     [distrivet] caché EAN 064992284541: 2 URLs
-2026-06-05 07:31:25,433 [INFO]   [distrivet] ✓ ORD214.webp  1280×1280
-2026-06-05 07:31:25,634 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992284541.webp
-2026-06-05 07:31:25,635 [INFO]   Imagen 1: RGBA (1280, 1280)
-2026-06-05 07:31:25,653 [INFO]     [alpha] 58% transparente
-2026-06-05 07:31:25,666 [INFO]     [bg] 4096/4096 (100%)
-2026-06-05 07:31:25,676 [INFO]     [autocrop] (1280, 1280) → (772, 1015)
-2026-06-05 07:31:25,676 [INFO]     [padding 5%]
-2026-06-05 07:31:26,544 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:29,073 [INFO]   ✓ 1/1 subida  [orijen-feline-adult-orijen-fit-trim_1.webp]
-2026-06-05 07:31:30,574 [INFO] 
+2026-06-05 08:03:43,811 [INFO]   EAN: 064992284541
+2026-06-05 08:03:43,811 [INFO]     [distrivet] caché EAN 064992284541: 2 URLs
+2026-06-05 08:03:43,954 [INFO]   [distrivet] ✓ ORD214.webp  1280×1280
+2026-06-05 08:03:44,003 [INFO]   [distrivet] ✓ 064992284541.webp  501×500
+2026-06-05 08:03:44,028 [INFO]   [dedupe] 2 → 2 imágenes únicas
+2026-06-05 08:03:44,029 [INFO]   Imagen 1: RGBA (1280, 1280)
+2026-06-05 08:03:44,046 [INFO]     [alpha] 58% transparente
+2026-06-05 08:03:44,059 [INFO]     [bg] 4096/4096 (100%)
+2026-06-05 08:03:44,069 [INFO]     [autocrop] (1280, 1280) → (772, 1015)
+2026-06-05 08:03:44,069 [INFO]     [padding 5%]
+2026-06-05 08:03:44,114 [INFO]   Imagen 2: RGB (501, 500)
+2026-06-05 08:03:44,116 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:03:44,118 [INFO]     [autocrop] (501, 500) → (253, 381)
+2026-06-05 08:03:44,118 [INFO]     [padding 5%]
+2026-06-05 08:03:44,897 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:47,515 [INFO]   ✓ 1/2 subida  [orijen-feline-adult-orijen-fit-trim_1.webp]
+2026-06-05 08:03:50,331 [INFO]   ✓ 2/2 subida  [orijen-feline-adult-orijen-fit-trim_2.webp]
+2026-06-05 08:03:51,832 [INFO] 
 [12/17] ORIJEN FELINE GUARDIAN 8  (ID: 15510047949187)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047949187
-2026-06-05 07:31:30,574 [INFO]   EAN: 064992718930
-2026-06-05 07:31:30,574 [INFO]     [distrivet] caché EAN 064992718930: 1 URLs
-2026-06-05 07:31:30,809 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992718930.webp
-2026-06-05 07:31:30,810 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:31:30,810 [INFO] 
+2026-06-05 08:03:51,832 [INFO]   EAN: 064992718930
+2026-06-05 08:03:51,832 [INFO]     [distrivet] caché EAN 064992718930: 1 URLs
+2026-06-05 08:03:51,975 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992718930.webp
+2026-06-05 08:03:51,976 [WARNING]   Imágenes por debajo del mínimo (450px) — saltando
+2026-06-05 08:03:51,976 [INFO] 
 [13/17] ORIJEN FELINE KITTEN 1,8KG  (ID: 15510047981955)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510047981955
-2026-06-05 07:31:30,810 [INFO]   EAN: 064992718862
-2026-06-05 07:31:30,810 [INFO]     [distrivet] caché EAN 064992718862: 2 URLs
-2026-06-05 07:31:31,050 [INFO]   [distrivet] ✓ OKC01.webp  728×800
-2026-06-05 07:31:31,245 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992718862.webp
-2026-06-05 07:31:31,248 [INFO]   Imagen 1: RGB (728, 800)
-2026-06-05 07:31:31,257 [INFO]     [bg] 710/1296 (55%)
-2026-06-05 07:31:31,257 [INFO]     [sin padding]
-2026-06-05 07:31:32,176 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:35,006 [INFO]   ✓ 1/1 subida  [orijen-feline-kitten-1-8kg_1.webp]
-2026-06-05 07:31:36,506 [INFO] 
+2026-06-05 08:03:51,976 [INFO]   EAN: 064992718862
+2026-06-05 08:03:51,976 [INFO]     [distrivet] caché EAN 064992718862: 2 URLs
+2026-06-05 08:03:52,023 [INFO]   [distrivet] ✓ OKC01.webp  728×800
+2026-06-05 08:03:52,166 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992718862.webp
+2026-06-05 08:03:52,168 [INFO]   Imagen 1: RGB (728, 800)
+2026-06-05 08:03:52,176 [INFO]     [bg] 710/1296 (55%)
+2026-06-05 08:03:52,176 [INFO]     [sin padding]
+2026-06-05 08:03:53,040 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:03:55,903 [INFO]   ✓ 1/1 subida  [orijen-feline-kitten-1-8kg_1.webp]
+2026-06-05 08:03:57,404 [INFO] 
 [14/17] ORIJEN FELINE ORIGINAL CAT 340GR  (ID: 15510048080259)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510048080259
-2026-06-05 07:31:36,506 [INFO]   EAN: 064992280345
-2026-06-05 07:31:36,506 [INFO]     [distrivet] caché EAN 064992280345: 1 URLs
-2026-06-05 07:31:36,745 [INFO]   [distrivet] ✓ 064992280345.webp  2000×2828
-2026-06-05 07:31:36,747 [INFO]   Imagen 1: RGB (2000, 2828)
-2026-06-05 07:31:36,799 [INFO]     [bg] 10000/10000 (100%)
-2026-06-05 07:31:36,842 [INFO]     [autocrop] (2000, 2828) → (1400, 2125)
-2026-06-05 07:31:36,842 [INFO]     [padding 5%]
-2026-06-05 07:31:37,715 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:40,843 [INFO]   ✓ 1/1 subida  [orijen-feline-original-cat-340gr_1.webp]
-2026-06-05 07:31:42,343 [INFO] 
+2026-06-05 08:03:57,404 [INFO]   EAN: 064992280345
+2026-06-05 08:03:57,404 [INFO]     [distrivet] caché EAN 064992280345: 1 URLs
+2026-06-05 08:03:57,454 [INFO]   [distrivet] ✓ 064992280345.webp  2000×2828
+2026-06-05 08:03:57,456 [INFO]   Imagen 1: RGB (2000, 2828)
+2026-06-05 08:03:57,512 [INFO]     [bg] 10000/10000 (100%)
+2026-06-05 08:03:57,549 [INFO]     [autocrop] (2000, 2828) → (1400, 2125)
+2026-06-05 08:03:57,549 [INFO]     [padding 5%]
+2026-06-05 08:03:58,361 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:04:01,353 [INFO]   ✓ 1/1 subida  [orijen-feline-original-cat-340gr_1.webp]
+2026-06-05 08:04:02,854 [INFO] 
 [15/17] ORIJEN FELINE REGIONAL RED  (ID: 15510048211331)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510048211331
-2026-06-05 07:31:42,343 [INFO]   EAN: 064992282547
-2026-06-05 07:31:42,343 [INFO]     [distrivet] caché EAN 064992282547: 2 URLs
-2026-06-05 07:31:42,560 [INFO]   [distrivet] ✓ ORD208.webp  1280×1280
-2026-06-05 07:31:42,752 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992282547.webp
-2026-06-05 07:31:42,753 [INFO]   Imagen 1: RGBA (1280, 1280)
-2026-06-05 07:31:42,772 [INFO]     [alpha] 58% transparente
-2026-06-05 07:31:42,785 [INFO]     [bg] 4096/4096 (100%)
-2026-06-05 07:31:42,796 [INFO]     [autocrop] (1280, 1280) → (772, 1015)
-2026-06-05 07:31:42,796 [INFO]     [padding 5%]
-2026-06-05 07:31:43,737 [INFO]   1 imagen(es) antigua(s) eliminada(s)
-2026-06-05 07:31:46,473 [INFO]   ✓ 1/1 subida  [orijen-feline-regional-red_1.webp]
-2026-06-05 07:31:47,973 [INFO] 
+2026-06-05 08:04:02,854 [INFO]   EAN: 064992282547
+2026-06-05 08:04:02,854 [INFO]     [distrivet] caché EAN 064992282547: 2 URLs
+2026-06-05 08:04:02,998 [INFO]   [distrivet] ✓ ORD208.webp  1280×1280
+2026-06-05 08:04:03,037 [INFO]   [distrivet] ✓ 064992282547.webp  501×500
+2026-06-05 08:04:03,062 [INFO]   [dedupe] 2 → 2 imágenes únicas
+2026-06-05 08:04:03,065 [INFO]   Imagen 1: RGBA (1280, 1280)
+2026-06-05 08:04:03,085 [INFO]     [alpha] 58% transparente
+2026-06-05 08:04:03,101 [INFO]     [bg] 4096/4096 (100%)
+2026-06-05 08:04:03,112 [INFO]     [autocrop] (1280, 1280) → (772, 1015)
+2026-06-05 08:04:03,112 [INFO]     [padding 5%]
+2026-06-05 08:04:03,156 [INFO]   Imagen 2: RGB (501, 500)
+2026-06-05 08:04:03,159 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:04:03,161 [INFO]     [autocrop] (501, 500) → (252, 381)
+2026-06-05 08:04:03,161 [INFO]     [padding 5%]
+2026-06-05 08:04:03,995 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:04:07,557 [INFO]   ✓ 1/2 subida  [orijen-feline-regional-red_1.webp]
+2026-06-05 08:04:10,757 [INFO]   ✓ 2/2 subida  [orijen-feline-regional-red_2.webp]
+2026-06-05 08:04:12,258 [INFO] 
 [16/17] ORIJEN ORIGINAL CAT  (ID: 15510048342403)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510048342403
-2026-06-05 07:31:47,973 [INFO]   EAN: 064992280185
-2026-06-05 07:31:47,973 [INFO]     [distrivet] caché EAN 064992280185: 1 URLs
-2026-06-05 07:31:48,173 [WARNING]   [distrivet] baja res 501×500 — omitida: 064992280185.webp
-2026-06-05 07:31:48,173 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:31:48,173 [INFO] 
+2026-06-05 08:04:12,258 [INFO]   EAN: 064992280185
+2026-06-05 08:04:12,258 [INFO]     [distrivet] caché EAN 064992280185: 1 URLs
+2026-06-05 08:04:12,297 [INFO]   [distrivet] ✓ 064992280185.webp  501×500
+2026-06-05 08:04:12,299 [INFO]   Imagen 1: RGB (501, 500)
+2026-06-05 08:04:12,302 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:04:12,303 [INFO]     [autocrop] (501, 500) → (252, 383)
+2026-06-05 08:04:12,303 [INFO]     [padding 5%]
+2026-06-05 08:04:13,055 [INFO]   1 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:04:16,881 [INFO]   ✓ 1/1 subida  [orijen-original-cat_1.webp]
+2026-06-05 08:04:18,381 [INFO] 
 [17/17] ORIJEN PUPPY SMALL 4.5 KG  (ID: 15510048506243)
   https://admin.shopify.com/store/7ev1zx-eg/products/15510048506243
-2026-06-05 07:31:48,173 [INFO]   EAN: 064992722487
-2026-06-05 07:31:48,173 [INFO]     [distrivet] caché EAN 064992722487: 3 URLs
-2026-06-05 07:31:48,363 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/o/OPS04.webp
-2026-06-05 07:31:48,573 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992722487.webp
-2026-06-05 07:31:48,767 [WARNING]   [distrivet] baja res 530×626 — omitida: OPS04.webp
-2026-06-05 07:31:48,767 [WARNING]   Imágenes por debajo del mínimo (600px) — saltando
-2026-06-05 07:31:48,827 [INFO] 
+2026-06-05 08:04:18,381 [INFO]   EAN: 064992722487
+2026-06-05 08:04:18,381 [INFO]     [distrivet] caché EAN 064992722487: 3 URLs
+2026-06-05 08:04:18,526 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/o/OPS04.webp
+2026-06-05 08:04:18,667 [WARNING]   [distrivet] error descargando: 404 Client Error: Not Found for url: https://repo.distrivet.es/imagenes_producto/0/064992722487.webp
+2026-06-05 08:04:18,709 [INFO]   [distrivet] ✓ OPS04.webp  530×626
+2026-06-05 08:04:18,709 [INFO]   Imagen 1: RGB (530, 626)
+2026-06-05 08:04:18,713 [INFO]     [bg] 676/676 (100%)
+2026-06-05 08:04:18,715 [INFO]     [autocrop] (530, 626) → (443, 572)
+2026-06-05 08:04:18,715 [INFO]     [padding 5%]
+2026-06-05 08:04:18,966 [INFO]   0 imagen(es) antigua(s) eliminada(s)
+2026-06-05 08:04:21,695 [INFO]   ✓ 1/1 subida  [orijen-puppy-small-4-5-kg_1.webp]
+2026-06-05 08:04:23,233 [INFO] 
 ============================================================
-2026-06-05 07:31:48,827 [INFO] RESUMEN
-2026-06-05 07:31:48,827 [INFO] ============================================================
-2026-06-05 07:31:48,827 [INFO]   total         : 17
-2026-06-05 07:31:48,827 [INFO]   ok            : 9
-2026-06-05 07:31:48,827 [INFO]   sin_ean       : 0
-2026-06-05 07:31:48,827 [INFO]   sin_match     : 1
-2026-06-05 07:31:48,827 [INFO]   sin_imagen    : 7
-2026-06-05 07:31:48,827 [INFO]   errores       : 0
+2026-06-05 08:04:23,233 [INFO] RESUMEN
+2026-06-05 08:04:23,233 [INFO] ============================================================
+2026-06-05 08:04:23,233 [INFO]   total         : 17
+2026-06-05 08:04:23,233 [INFO]   ok            : 15
+2026-06-05 08:04:23,233 [INFO]   sin_ean       : 0
+2026-06-05 08:04:23,233 [INFO]   sin_match     : 1
+2026-06-05 08:04:23,233 [INFO]   sin_imagen    : 1
+2026-06-05 08:04:23,233 [INFO]   errores       : 0
