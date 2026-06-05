@@ -448,18 +448,15 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
 
 ---
 
-## Distrivet como fuente (proveedor) — búsqueda por EAN  *(implementado — pendiente 1er test de diagnóstico)*
+## Distrivet como fuente (proveedor) — búsqueda por EAN  *(✅ funcionando — validado end-to-end con ORIJEN ORD201)*
 
-**Estado:** `core/distrivet.py` + rama `--fuente distrivet` en el orquestador + opción
-en los workflows `Test marca` / `Procesar imágenes de marca` → **en `main`**. Falta:
-(1) añadir los **Secrets** `DISTRIVET_USER` / `DISTRIVET_PASS` en GitHub; (2) lanzar un
-**Test de 1 producto** y leer el log del artefacto, en concreto las líneas
-`[distrivet][diag][login|search|product]` que **vuelcan la estructura del DOM** (nombres
-de inputs del login, buscador, patrón de URL de ficha) y los `[distrivet] ✓×… W×H` para
-**medir la resolución real** que sirve Distrivet. Con eso se fijan los selectores
-definitivos (heurística OK, o forzarlos con `DISTRIVET_*_SEL`) y se decide la política de
-resolución (mantener 800px o relajar). El primer run quizá no acierte los selectores a la
-primera — es **esperado**: el volcado de diagnóstico existe justo para eso.
+**Estado:** `core/distrivet.py` + rama `--fuente distrivet` + opción en `Test marca` /
+`Procesar imágenes de marca` → **en `main` y FUNCIONANDO**. Test ORIJEN (product
+`15510048342403`, EAN `064992280185`): login → dirección → buscador → ficha `ORD201`
+(verificada por EAN) → foto del CDN `repo.distrivet.es/imagenes_producto/o/ORD201.webp`
+(728×800) → procesada 2000×2000 → subida a Shopify. `RESUMEN ok:1`. Secrets
+`DISTRIVET_USER`/`DISTRIVET_PASS` ya configurados. Mínimo de resolución para Distrivet =
+**600px**.
 
 **Estructura real de la web (confirmada por logs de test, ya cableada en el código):**
 0. **Login:** `home-webshop.asp` redirige a `homepage.asp` con form `conexion.asp`;
@@ -576,6 +573,7 @@ en código ni en CLAUDE.md → solo como GitHub Secrets `DISTRIVET_USER` / `DIST
 | Lenda | Lenda | Pendiente (mixto) | shopify_backup + web_oficial |
 | Beaphar | BEAPHAR | **Completado** — 126/126 productos con imágenes oficiales; unificaciones B, C, E, L, M aplicadas vía API | web_oficial → marcas/beaphar.py (beaphar.es) |
 | Menforsan | MENFORSAN | **En proceso** — fuente `web_y_amazon` probada, fixes aplicados, pendiente proceso masivo | web_y_amazon → marcas/menforsan.py (menforsan.com) |
+| ORIJEN | ORIJEN | **Test distrivet OK** (ORD201) — pendiente lote completo | distrivet (proveedor, por EAN) |
 
 ### Applaws — notas de estrategia (URLs fabricante)
 
