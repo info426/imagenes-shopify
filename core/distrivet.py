@@ -917,6 +917,77 @@ def _dump_autocomplete(page, ean: str, items: list):
         log.info(f"{pre} no pude volcar dropdown: {e}")
 
 
+_DOOFINDER = {"hashid": None, "zone": "eu1", "checked": False}
+
+
+def _ensure_doofinder_config(page) -> str:
+    """Extrae el hashid y la zona de Doofinder del HTML de la página (una vez).
+    El buscador de Distrivet es Doofinder; con el hashid podemos llamar a su API
+    de búsqueda directamente (determinista, no depende del DOM)."""
+    if _DOOFINDER["checked"]:
+        return _DOOFINDER["hashid"]
+    _DOOFINDER["checked"] = True
+    try:
+        html = page.content()
+    except Exception:
+        html = ""
+    hashid = None
+    for pat in (r'hashid["\']?\s*[:=]\s*["\']([0-9a-f]{32})["\']',
+                r'["\']hashid["\']\s*:\s*["\']([0-9a-f]{32})["\']',
+                r'data-hashid=["\']([0-9a-f]{32})["\']',
+                r'doofinder[^{}<>]{0,300}?([0-9a-f]{32})'):
+        m = re.search(pat, html, re.I)
+        if m:
+            hashid = m.group(1)
+            break
+    mz = (re.search(r'([a-z]{2}\d)-search\.doofinder\.com', html, re.I)
+          or re.search(r'\b(eu1|us1|eu2|us2)\b', html, re.I))
+    zone = mz.group(1).lower() if mz else "eu1"
+    _DOOFINDER["hashid"] = hashid
+    _DOOFINDER["zone"] = zone
+    log.info(f"[distrivet][doofinder] config: hashid={hashid} zone={zone}")
+    return hashid
+
+
+def _doofinder_api_links(page, ean: str) -> list:
+    """Busca el EAN en la API de Doofinder y devuelve las URLs de ficha de los
+    resultados (en orden de relevancia). Determinista y brand-agnóstico."""
+    hashid = _DOOFINDER.get("hashid")
+    zone = _DOOFINDER.get("zone", "eu1")
+    if not hashid:
+        return []
+    headers = {"Origin": "https://tienda.distrivet.es",
+               "Referer": "https://tienda.distrivet.es/"}
+    for ver in ("6", "5", "7"):
+        url = (f"https://{zone}-search.doofinder.com/{ver}/search"
+               f"?hashid={hashid}&query={ean}&rpp=10")
+        try:
+            resp = page.request.get(url, headers=headers, timeout=15000)
+            status = resp.status
+            if status != 200:
+                log.info(f"[distrivet][doofinder] API v{ver} HTTP {status}")
+                continue
+            data = resp.json()
+        except Exception as e:
+            log.info(f"[distrivet][doofinder] API v{ver} error: {e}")
+            continue
+        results = (data.get("results") or data.get("hits")
+                   or (data.get("data") or {}).get("results") or [])
+        links = []
+        for r in results:
+            if not isinstance(r, dict):
+                continue
+            link = r.get("link") or r.get("url") or r.get("href") or ""
+            if link:
+                links.append(urljoin("https://tienda.distrivet.es/",
+                                     str(link).split("#")[0]))
+        log.info(f"[distrivet][doofinder] API v{ver}: {len(results)} resultados, "
+                 f"{len(links)} links")
+        if links:
+            return links
+    return []
+
+
 def _doofinder_links(page) -> list:
     """Enlaces a fichas (?NoProducto=) que están DENTRO del layer de resultados de
     Doofinder (#df-hook-results / .dfd* / [class*=doofinder]). Esto excluye los
@@ -1018,11 +1089,17 @@ def images_for_ean(ean: str) -> list:
 
         search = _find_search_input(page)
         _dump_structure(page, "search")
-        if not search:
+
+        # VÍA PRIMARIA: API de Doofinder (determinista, por EAN). No depende del DOM.
+        _ensure_doofinder_config(page)
+        cands = _doofinder_api_links(page, ean)
+        via_api = bool(cands)
+
+        if not cands and not search:
             log.warning("    [distrivet] no encontré el buscador. Revisa "
                         "[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
-        else:
-            # 2. Escribir el EAN y sondear el layer de resultados de Doofinder.
+        elif not cands:
+            # VÍA FALLBACK: escribir el EAN y sondear el layer de resultados Doofinder.
             try:
                 search.click()
             except Exception:
@@ -1038,34 +1115,30 @@ def images_for_ean(ean: str) -> list:
                     search.fill(ean)
                 except Exception:
                     pass
-
-            cands = []
             for _ in range(14):            # ~14×500ms = 7s sondeando el layer
                 page.wait_for_timeout(500)
                 cands = _doofinder_links(page)
                 if cands:
                     break
-
-            # Fallback: pulsar Enter (abre resultados fullscreen) y volver a sondear.
             if not cands:
                 try:
                     search.press("Enter")
                     page.wait_for_load_state("networkidle", timeout=8000)
                 except Exception:
                     pass
-                for _ in range(10):        # ~10×500ms = 5s
+                for _ in range(10):
                     page.wait_for_timeout(500)
                     cands = _doofinder_links(page)
                     if cands:
                         break
-
             _dump_doofinder(page, ean, cands)
 
-            # 3. Abrir cada ficha del layer y quedarse con la que contiene el EAN.
+        if cands:
+            log.info(f"    [distrivet] {len(cands)} candidata(s) "
+                     f"({'API' if via_api else 'layer'})")
+            # Abrir cada ficha candidata y quedarse con la que contiene el EAN.
             chosen = ""
             for cand in cands[:5]:
-                if not _is_ficha(cand):
-                    continue
                 try:
                     page.goto(cand, timeout=30000, wait_until="domcontentloaded")
                 except Exception:
@@ -1075,7 +1148,7 @@ def images_for_ean(ean: str) -> list:
                 except Exception:
                     pass
                 page.wait_for_timeout(600)
-                if _is_ficha(page.url) and _page_contains_ean(page, ean):
+                if _page_contains_ean(page, ean):
                     chosen = page.url
                     log.info(f"    [distrivet] ficha con EAN {ean}: {chosen}")
                     break
@@ -1089,8 +1162,8 @@ def images_for_ean(ean: str) -> list:
                     log.warning(f"    [distrivet] ficha correcta pero sin imagen con "
                                 f"EAN {ean} (revisa [distrivet][diag][img])")
             else:
-                log.warning(f"    [distrivet] ninguna ficha ({len(cands)}) del layer "
-                            f"contiene el EAN {ean}. Revisa [distrivet][diag][doofinder].")
+                log.warning(f"    [distrivet] ninguna de {len(cands)} candidata(s) "
+                            f"contiene el EAN {ean} (vía {'API' if via_api else 'layer'}).")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
 
