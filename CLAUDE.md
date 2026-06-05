@@ -466,10 +466,20 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
    botón **«Seleccionar dirección»**. `_select_delivery_address` marca el radio y pulsa
    el botón; es **robusto ante la navegación** (marcar el radio dispara navegación →
    captura 'context destroyed'). Overrides: `DISTRIVET_ADDRESS_SEL/_SUBMIT_SEL/_ID`.
-2. **Buscador = autocomplete JS** (`home-webshop.asp`, input `id='main-search'` **sin
-   `name`**, form `action=''`): `Enter` NO busca por GET. `images_for_ean` escribe el
-   EAN, espera el dropdown AJAX y coge los enlaces de ficha **nuevos** (diff antes/después
-   = excluye destacados de la home). Diagnóstico en `[distrivet][diag][autocomplete]`.
+2. **Buscador = Doofinder** (`home-webshop.asp`, input `id='main-search'` **sin `name`**,
+   form `action=''`): es un buscador SaaS (Doofinder) que renderiza los resultados en un
+   **layer** `#df-hook-results-*` / `.dfd-content`. Reglas para que funcione **en
+   cualquier marca** (`images_for_ean`):
+   - **RESET**: navegar a la home limpia **antes de cada EAN** (el dropdown arrastra
+     resultados de búsquedas anteriores → si no, salen EANs de otras marcas).
+   - Escribir el EAN y **sondear el layer Doofinder** (`_doofinder_links`): coger los
+     enlaces `?NoProducto=` **solo de dentro del layer** (los destacados de la home están
+     fuera → se excluyen). Quitar el sufijo `#…ai-fullscreen` (estado).
+   - Abrir cada ficha (máx 5) y quedarse con la que **contiene el EAN**. Fallback: `Enter`
+     → resultados fullscreen → re-sondear. Diagnóstico en `[distrivet][diag][doofinder]`.
+   - ⚠️ NO leer enlaces `?NoProducto=` del DOM global: son los **destacados de la home**
+     (`463693`, `463697`…) que aparecen idénticos en todas las marcas (causa de
+     "candidata sin EAN" / "ninguna ficha (N)").
 3. **Ficha de producto = `webshop-producto.asp?NoProducto={ref}`** (la `ref` es la
    Referencia de Distrivet, p. ej. `ORD201`, **no** el EAN). Buscar por EAN da varias
    sugerencias en el autocomplete → se **abre cada candidata y se verifica que la ficha
@@ -480,8 +490,8 @@ Con el filtro PrestaShop corregido, solo quedan las URLs `.html` reales.
    en otros productos, el EAN. **NO es un `<img>` normal** (visor con zoom, clic derecho
    bloqueado). `_extract_images` construye la **URL canónica** por REF y por EAN, además
    de rastrear HTML crudo / background-image, y **filtra por EAN o REF** (descarta
-   relacionados). **Resolución ~728×800** → para Distrivet el mínimo se baja a **600px**
-   (`_download_hires(..., min_dim=600)`; medido en el 1er test, cobertura > nitidez).
+   relacionados). **Resolución variable (500×500 … 1280×1280)** → para Distrivet el mínimo
+   se baja a **450px** (`_download_hires(..., min_dim=450)`; cobertura > nitidez).
 3. **Mapeo de ejemplo (producto Shopify 15510048342403, 2 variantes de peso):**
    EAN `064992280185` → `ORD201` (1.8 KG) · EAN `064992280543` → `ORD202` (5.4 KG).
    ⚠️ Un producto Shopify puede tener **varias variantes con EAN distinto**; hoy se usa

@@ -658,11 +658,11 @@ def run_distrivet(api: ShopifyAPI, vendor: str,
             stats["sin_match"] += 1
             continue
 
-        # Distrivet sirve la foto del producto a ~728×800 → bajamos el mínimo a
-        # 600px para esta fuente (medido en el 1er test; cobertura > nitidez).
-        raw_images = _download_hires(urls, "distrivet", min_dim=600)
+        # Distrivet sirve la foto a tamaños variables (500×500 … 1280×1280) →
+        # mínimo 450px para esta fuente (cobertura > nitidez; medido en lotes).
+        raw_images = _download_hires(urls, "distrivet", min_dim=450)
         if not raw_images:
-            log.warning("  Imágenes por debajo del mínimo (600px) — saltando")
+            log.warning("  Imágenes por debajo del mínimo (450px) — saltando")
             stats["sin_imagen"] += 1
             continue
 
