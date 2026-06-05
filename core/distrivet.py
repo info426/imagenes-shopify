@@ -76,6 +76,100 @@ _LOGGED_IN = False
 _CACHE = None
 _DIAG_DUMPED = {"login": False, "address": False, "search": False, "product": False}
 
+# Última petición de búsqueda Doofinder observada (URL + headers de la request, sin
+# leer el body dentro del handler para evitar reentrada en la API sync de Playwright).
+_DF_RESULT = {"url": None, "headers": None, "method": "GET", "post_data": None}
+
+
+def _df_extract_results(data) -> list:
+    """Extrae la lista de resultados de un JSON de respuesta de Doofinder (formato
+    variable según versión: results / hits / data.results). Función pura → testeable."""
+    if not isinstance(data, dict):
+        return []
+    for r in (data.get("results"), data.get("hits"),
+              (data.get("data") or {}).get("results") if isinstance(data.get("data"), dict) else None):
+        if isinstance(r, list):
+            return r
+    return []
+
+
+def _df_result_links(results: list) -> list:
+    """De los resultados de Doofinder saca las URLs de ficha (campo link/url/href),
+    absolutas a tienda.distrivet.es y sin el hash de estado. Función pura → testeable."""
+    out, seen = [], set()
+    for r in (results or []):
+        if not isinstance(r, dict):
+            continue
+        link = r.get("link") or r.get("url") or r.get("href") or ""
+        if not link:
+            continue
+        full = urljoin("https://tienda.distrivet.es/", str(link).split("#")[0])
+        if full not in seen:
+            seen.add(full)
+            out.append(full)
+    return out
+
+
+def _df_capture_response(response):
+    """Handler de red: anota la URL + headers de la petición de búsqueda que el
+    buscador Doofinder hace al teclear el EAN (la que ve el navegador del usuario).
+    Solo lee metadatos (sin body) para no reentrar en la API sync de Playwright."""
+    try:
+        url = response.url or ""
+        if "doofinder.com" not in url:
+            return
+        if not any(k in url for k in ("/search", "_search", "query=")):
+            return
+        _DF_RESULT["url"] = url
+        try:
+            req = response.request
+            _DF_RESULT["headers"] = dict(req.headers)
+            _DF_RESULT["method"] = (req.method or "GET").upper()
+            _DF_RESULT["post_data"] = req.post_data
+        except Exception:
+            _DF_RESULT["headers"] = None
+            _DF_RESULT["method"] = "GET"
+            _DF_RESULT["post_data"] = None
+    except Exception:
+        pass
+
+
+def _df_fetch_results(page, ean: str) -> list:
+    """Re-hace la petición de búsqueda Doofinder observada (misma URL + headers que
+    el navegador) y devuelve sus links de ficha. Devuelve [] si no hubo petición."""
+    url = _DF_RESULT.get("url") or ""
+    if not url:
+        return []
+    h = {}
+    for k, v in (_DF_RESULT.get("headers") or {}).items():
+        if k.lower() in ("authorization", "x-name", "x-api-key", "origin",
+                         "referer", "accept", "content-type"):
+            h[k] = v
+    h.setdefault("Origin", "https://tienda.distrivet.es")
+    h.setdefault("Referer", "https://tienda.distrivet.es/")
+    method = (_DF_RESULT.get("method") or "GET").upper()
+    post_data = _DF_RESULT.get("post_data")
+    try:
+        if method == "POST":
+            resp = page.request.post(url, headers=h, data=post_data, timeout=15000)
+        else:
+            resp = page.request.get(url, headers=h, timeout=15000)
+        if resp.status != 200:
+            log.info(f"    [distrivet][doofinder] re-fetch {method} HTTP {resp.status}")
+            return []
+        data = resp.json()
+    except Exception as e:
+        log.info(f"    [distrivet][doofinder] re-fetch error: {e}")
+        return []
+    results = _df_extract_results(data)
+    links = _df_result_links(results)
+    log.info(f"    [distrivet][doofinder] respuesta: {len(results)} resultados → "
+             f"{len(links)} links")
+    if results and not links:
+        log.info(f"    [distrivet][doofinder] resultado sin 'link'; keys: "
+                 f"{list(results[0].keys())[:15]}")
+    return links
+
 
 # ─── Caché por EAN ──────────────────────────────────────────────────────────
 
@@ -152,6 +246,7 @@ def _get_page():
         window.chrome = {runtime: {}, loadTimes: function(){}, csi: function(){}, app: {}};
     """)
     page = ctx.new_page()
+    page.on("response", _df_capture_response)
     _PW.update({"pw": pw, "browser": browser, "ctx": ctx, "page": page})
 
     def _cleanup():
@@ -917,77 +1012,6 @@ def _dump_autocomplete(page, ean: str, items: list):
         log.info(f"{pre} no pude volcar dropdown: {e}")
 
 
-_DOOFINDER = {"hashid": None, "zone": "eu1", "checked": False}
-
-
-def _ensure_doofinder_config(page) -> str:
-    """Extrae el hashid y la zona de Doofinder del HTML de la página (una vez).
-    El buscador de Distrivet es Doofinder; con el hashid podemos llamar a su API
-    de búsqueda directamente (determinista, no depende del DOM)."""
-    if _DOOFINDER["checked"]:
-        return _DOOFINDER["hashid"]
-    _DOOFINDER["checked"] = True
-    try:
-        html = page.content()
-    except Exception:
-        html = ""
-    hashid = None
-    for pat in (r'hashid["\']?\s*[:=]\s*["\']([0-9a-f]{32})["\']',
-                r'["\']hashid["\']\s*:\s*["\']([0-9a-f]{32})["\']',
-                r'data-hashid=["\']([0-9a-f]{32})["\']',
-                r'doofinder[^{}<>]{0,300}?([0-9a-f]{32})'):
-        m = re.search(pat, html, re.I)
-        if m:
-            hashid = m.group(1)
-            break
-    mz = (re.search(r'([a-z]{2}\d)-search\.doofinder\.com', html, re.I)
-          or re.search(r'\b(eu1|us1|eu2|us2)\b', html, re.I))
-    zone = mz.group(1).lower() if mz else "eu1"
-    _DOOFINDER["hashid"] = hashid
-    _DOOFINDER["zone"] = zone
-    log.info(f"[distrivet][doofinder] config: hashid={hashid} zone={zone}")
-    return hashid
-
-
-def _doofinder_api_links(page, ean: str) -> list:
-    """Busca el EAN en la API de Doofinder y devuelve las URLs de ficha de los
-    resultados (en orden de relevancia). Determinista y brand-agnóstico."""
-    hashid = _DOOFINDER.get("hashid")
-    zone = _DOOFINDER.get("zone", "eu1")
-    if not hashid:
-        return []
-    headers = {"Origin": "https://tienda.distrivet.es",
-               "Referer": "https://tienda.distrivet.es/"}
-    for ver in ("6", "5", "7"):
-        url = (f"https://{zone}-search.doofinder.com/{ver}/search"
-               f"?hashid={hashid}&query={ean}&rpp=10")
-        try:
-            resp = page.request.get(url, headers=headers, timeout=15000)
-            status = resp.status
-            if status != 200:
-                log.info(f"[distrivet][doofinder] API v{ver} HTTP {status}")
-                continue
-            data = resp.json()
-        except Exception as e:
-            log.info(f"[distrivet][doofinder] API v{ver} error: {e}")
-            continue
-        results = (data.get("results") or data.get("hits")
-                   or (data.get("data") or {}).get("results") or [])
-        links = []
-        for r in results:
-            if not isinstance(r, dict):
-                continue
-            link = r.get("link") or r.get("url") or r.get("href") or ""
-            if link:
-                links.append(urljoin("https://tienda.distrivet.es/",
-                                     str(link).split("#")[0]))
-        log.info(f"[distrivet][doofinder] API v{ver}: {len(results)} resultados, "
-                 f"{len(links)} links")
-        if links:
-            return links
-    return []
-
-
 def _doofinder_links(page) -> list:
     """Enlaces a fichas (?NoProducto=) que están DENTRO del layer de resultados de
     Doofinder (#df-hook-results / .dfd* / [class*=doofinder]). Esto excluye los
@@ -1089,17 +1113,18 @@ def images_for_ean(ean: str) -> list:
 
         search = _find_search_input(page)
         _dump_structure(page, "search")
+        cands = []
+        via = ""
 
-        # VÍA PRIMARIA: API de Doofinder (determinista, por EAN). No depende del DOM.
-        _ensure_doofinder_config(page)
-        cands = _doofinder_api_links(page, ean)
-        via_api = bool(cands)
-
-        if not cands and not search:
+        if not search:
             log.warning("    [distrivet] no encontré el buscador. Revisa "
                         "[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
-        elif not cands:
-            # VÍA FALLBACK: escribir el EAN y sondear el layer de resultados Doofinder.
+        else:
+            # Escribir el EAN para disparar la búsqueda de Doofinder. Observamos su
+            # petición de red (URL + headers) → vía primaria, no depende del DOM ni
+            # de adivinar el endpoint/hashid.
+            _DF_RESULT.update({"url": None, "headers": None,
+                               "method": "GET", "post_data": None})
             try:
                 search.click()
             except Exception:
@@ -1115,27 +1140,44 @@ def images_for_ean(ean: str) -> list:
                     search.fill(ean)
                 except Exception:
                     pass
-            for _ in range(14):            # ~14×500ms = 7s sondeando el layer
+
+            # Esperar a observar la petición de Doofinder del EAN COMPLETO (el EAN
+            # va en la URL si es GET, o en el body si es POST).
+            for _ in range(24):            # ~24×500ms = 12s
                 page.wait_for_timeout(500)
-                cands = _doofinder_links(page)
-                if cands:
+                u = _DF_RESULT.get("url") or ""
+                pd = _DF_RESULT.get("post_data") or ""
+                if u and (ean in u or ean in pd):
                     break
+            if _DF_RESULT.get("url"):
+                cands = _df_fetch_results(page, ean)
+                via = "doofinder-net"
+                for c in cands[:5]:
+                    log.info(f"    [distrivet][doofinder] result link: {c}")
+
+            # FALLBACK: sondear el layer del DOM (y Enter → fullscreen).
             if not cands:
-                try:
-                    search.press("Enter")
-                    page.wait_for_load_state("networkidle", timeout=8000)
-                except Exception:
-                    pass
-                for _ in range(10):
+                for _ in range(8):
                     page.wait_for_timeout(500)
                     cands = _doofinder_links(page)
                     if cands:
                         break
-            _dump_doofinder(page, ean, cands)
+                if not cands:
+                    try:
+                        search.press("Enter")
+                        page.wait_for_load_state("networkidle", timeout=8000)
+                    except Exception:
+                        pass
+                    for _ in range(10):
+                        page.wait_for_timeout(500)
+                        cands = _doofinder_links(page)
+                        if cands:
+                            break
+                via = via or "layer"
+                _dump_doofinder(page, ean, cands)
 
         if cands:
-            log.info(f"    [distrivet] {len(cands)} candidata(s) "
-                     f"({'API' if via_api else 'layer'})")
+            log.info(f"    [distrivet] {len(cands)} candidata(s) (vía {via})")
             # Abrir cada ficha candidata y quedarse con la que contiene el EAN.
             chosen = ""
             for cand in cands[:5]:
@@ -1163,7 +1205,7 @@ def images_for_ean(ean: str) -> list:
                                 f"EAN {ean} (revisa [distrivet][diag][img])")
             else:
                 log.warning(f"    [distrivet] ninguna de {len(cands)} candidata(s) "
-                            f"contiene el EAN {ean} (vía {'API' if via_api else 'layer'}).")
+                            f"contiene el EAN {ean} (vía {via}).")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
 
