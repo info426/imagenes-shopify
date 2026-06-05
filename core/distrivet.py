@@ -812,15 +812,21 @@ def _open_first_result(page, ean: str) -> bool:
     return True
 
 
+def _is_ficha(url: str) -> bool:
+    """Ficha de producto REAL = webshop-producto.asp?NoProducto=REF (query), no la
+    página de resultados fullscreen de Doofinder (webshop-producto.asp#...q=EAN)."""
+    return "noproducto=" in (url or "").lower()
+
+
 def _product_hrefs(page) -> list:
-    """Hrefs absolutos a fichas (webshop-producto.asp) presentes ahora, orden DOM."""
+    """Hrefs absolutos a FICHAS reales (con ?NoProducto=) presentes ahora, orden DOM."""
     try:
         base = page.url
-        hrefs = page.evaluate("""(part) =>
+        hrefs = page.evaluate("""() =>
             Array.from(document.querySelectorAll('a[href]'))
                  .map(a => a.getAttribute('href') || '')
-                 .filter(h => h.toLowerCase().includes(part))
-        """, PRODUCT_URL_PART)
+                 .filter(h => h.toLowerCase().includes('noproducto='))
+        """)
     except Exception:
         return []
     out, seen = [], set()
@@ -847,18 +853,24 @@ def _pick_product_href(page, hrefs: list, ean: str) -> str:
 
 
 def _autocomplete_items(page, before_set) -> list:
-    """Devuelve [{href, text}] de enlaces de ficha NUEVOS (no en before_set), con
-    el texto de su fila — para diagnóstico y para elegir la ficha del EAN."""
+    """Devuelve [{href, text}] de FICHAS reales (?NoProducto=) que son RESULTADOS de
+    la búsqueda: las que cuelgan del contenedor de resultados (Doofinder: .dfd-*,
+    #df-hook-*) o que son nuevas respecto a before_set (destacados de la home).
+    El buscador de Distrivet es Doofinder; el enlace a la ficha vive en su dropdown."""
     try:
         base = page.url
-        raw = page.evaluate("""(part) =>
-            Array.from(document.querySelectorAll('a[href]'))
-                 .filter(a => (a.getAttribute('href')||'').toLowerCase().includes(part))
-                 .map(a => ({
-                     href: a.getAttribute('href') || '',
-                     text: ((a.closest('li,tr,div') || a).innerText || a.innerText || '').trim().slice(0,90)
-                 }))
-        """, PRODUCT_URL_PART)
+        raw = page.evaluate("""() => {
+            const inRes = (a) => !!a.closest(
+                '[class*="dfd"],[id*="df-hook"],[class*="doofinder"],[class*="result"],'
+                + '[class*="autocomplet"],[class*="suggest"],[class*="dropdown"]');
+            return Array.from(document.querySelectorAll('a[href]'))
+              .filter(a => (a.getAttribute('href')||'').toLowerCase().includes('noproducto='))
+              .map(a => ({
+                  href: a.getAttribute('href') || '',
+                  inResults: inRes(a),
+                  text: ((a.closest('li,tr,div') || a).innerText || a.innerText || '').trim().slice(0,90)
+              }));
+        }""")
     except Exception:
         return []
     out, seen = [], set()
@@ -867,10 +879,15 @@ def _autocomplete_items(page, before_set) -> list:
             full = urljoin(base, it.get("href", ""))
         except Exception:
             full = it.get("href", "")
-        if not full or full in seen or full in before_set:
+        if not full or full in seen:
+            continue
+        # Válido si está en el contenedor de resultados, o es nuevo (no destacado)
+        if not it.get("inResults") and full in before_set:
             continue
         seen.add(full)
-        out.append({"href": full, "text": it.get("text", "")})
+        out.append({"href": full, "text": it.get("text", ""),
+                    "inResults": bool(it.get("inResults"))})
+    out.sort(key=lambda x: (not x.get("inResults")))  # resultados primero
     return out
 
 
@@ -908,11 +925,11 @@ def images_for_ean(ean: str) -> list:
         return []
 
     cache = _load_cache()
-    if ean in cache:
-        hit = cache[ean]
-        imgs = hit.get("images", [])
-        log.info(f"    [distrivet] caché EAN {ean}: "
-                 f"{'sin resultado' if not hit.get('found') else f'{len(imgs)} URLs'}")
+    # Solo se sirve de caché un resultado POSITIVO. Los negativos (found:false)
+    # se reintentan (pudo ser un fallo transitorio del buscador/Doofinder).
+    if ean in cache and cache[ean].get("found"):
+        imgs = cache[ean].get("images", [])
+        log.info(f"    [distrivet] caché EAN {ean}: {len(imgs)} URLs")
         return imgs
 
     page = _get_page()
@@ -964,37 +981,35 @@ def images_for_ean(ean: str) -> list:
 
             items = _autocomplete_items(page, before)
             _dump_autocomplete(page, ean, items)
-            cands = [it["href"] for it in items]
+            cands = [it["href"] for it in items if _is_ficha(it["href"])]
 
-            # Fallback: sin candidatas nuevas → Enter por si va a una página de resultados.
+            # Fallback: sin fichas en el dropdown → forzar la página de resultados
+            # (Doofinder fullscreen) con Enter y recoger las fichas (?NoProducto=)
+            # de ahí. NUNCA se acepta la URL fullscreen como ficha (no tiene REF).
             if not cands:
                 try:
                     search.press("Enter")
                     page.wait_for_load_state("networkidle", timeout=8000)
-                    page.wait_for_timeout(1500)
+                    page.wait_for_timeout(2500)
                 except Exception:
                     pass
-                if PRODUCT_URL_PART in (page.url or "").lower():
-                    cands = [page.url]
-                else:
-                    cands = [h for h in _product_hrefs(page) if h not in before]
+                cands = [h for h in _product_hrefs(page)]   # solo fichas reales
 
-            # Abrir cada candidata y quedarnos con la PRIMERA que contiene el EAN.
+            # Abrir cada ficha candidata y quedarnos con la PRIMERA que contiene el EAN.
             chosen = ""
-            for cand in cands[:8]:
-                if PRODUCT_URL_PART in (page.url or "").lower() and cand == page.url:
-                    pass
-                else:
-                    try:
-                        page.goto(cand, timeout=30000, wait_until="domcontentloaded")
-                    except Exception:
-                        continue
+            for cand in cands[:10]:
+                if not _is_ficha(cand):
+                    continue
+                try:
+                    page.goto(cand, timeout=30000, wait_until="domcontentloaded")
+                except Exception:
+                    continue
                 try:
                     page.wait_for_load_state("networkidle", timeout=8000)
                 except Exception:
                     pass
-                page.wait_for_timeout(800)
-                if _page_contains_ean(page, ean):
+                page.wait_for_timeout(700)
+                if _is_ficha(page.url) and _page_contains_ean(page, ean):
                     chosen = page.url
                     log.info(f"    [distrivet] ficha con EAN {ean}: {chosen}")
                     break
@@ -1008,7 +1023,7 @@ def images_for_ean(ean: str) -> list:
                     log.warning(f"    [distrivet] ficha correcta pero sin imagen con "
                                 f"EAN {ean} (revisa [distrivet][diag][img])")
             else:
-                log.warning(f"    [distrivet] ninguna candidata ({len(cands)}) contiene "
+                log.warning(f"    [distrivet] ninguna ficha ({len(cands)}) contiene "
                             f"el EAN {ean}. Revisa [distrivet][diag][autocomplete].")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
