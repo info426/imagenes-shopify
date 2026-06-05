@@ -917,16 +917,85 @@ def _dump_autocomplete(page, ean: str, items: list):
         log.info(f"{pre} no pude volcar dropdown: {e}")
 
 
+def _doofinder_links(page) -> list:
+    """Enlaces a fichas (?NoProducto=) que están DENTRO del layer de resultados de
+    Doofinder (#df-hook-results / .dfd* / [class*=doofinder]). Esto excluye los
+    productos destacados de la home (que están FUERA del layer) y se queda solo con
+    los resultados reales de la búsqueda. Quita el sufijo #...ai-fullscreen (estado)."""
+    try:
+        base = page.url
+        hrefs = page.evaluate("""() => {
+            const out = [];
+            const conts = document.querySelectorAll(
+                '[id^="df-hook"],[id*="df-hook"],[class*="dfd"],[class*="doofinder"],'
+                + '[class*="df-card"],[class*="df-results"]');
+            for (const c of conts)
+                for (const a of c.querySelectorAll('a[href]')) {
+                    const h = a.getAttribute('href') || '';
+                    if (h.toLowerCase().includes('noproducto=')) out.push(h);
+                }
+            return out;
+        }""")
+    except Exception:
+        return []
+    out, seen = [], set()
+    for h in (hrefs or []):
+        h = (h or "").split("#")[0].strip()      # quitar #e7c2/ai-fullscreen (estado viejo)
+        if "noproducto=" not in h.lower():
+            continue
+        try:
+            full = urljoin(base, h)
+        except Exception:
+            full = h
+        if full and full not in seen:
+            seen.add(full)
+            out.append(full)
+    return out
+
+
+def _dump_doofinder(page, ean: str, links: list):
+    """Diagnóstico del layer Doofinder: links de ficha encontrados; si no hay,
+    vuelca el HTML del contenedor de resultados para ver su estructura."""
+    pre = "[distrivet][diag][doofinder]"
+    log.info(f"{pre} EAN={ean} links de ficha en el layer: {len(links)}")
+    for u in links[:8]:
+        log.info(f"{pre} link: {u}")
+    if links:
+        return
+    try:
+        info = page.evaluate(r"""() => {
+            const conts = document.querySelectorAll('[id^="df-hook"],[id*="df-hook"],[class*="dfd"],[class*="doofinder"]');
+            return Array.from(conts).slice(0,4).map(c => ({
+                tag: c.tagName.toLowerCase(), id: c.id || '', cls: (c.className||'').toString().slice(0,60),
+                a: Array.from(c.querySelectorAll('a[href]')).slice(0,6).map(a=>a.getAttribute('href')||''),
+                txt: (c.innerText||'').trim().slice(0,140)
+            }));
+        }""")
+        for c in (info or []):
+            log.info(f"{pre} cont <{c.get('tag')}> id={c.get('id')!r} cls={c.get('cls')!r} "
+                     f"a={c.get('a')} txt={c.get('txt')!r}")
+    except Exception as e:
+        log.info(f"{pre} no pude volcar layer: {e}")
+
+
 def images_for_ean(ean: str) -> list:
-    """Busca el EAN en Distrivet y devuelve la lista de URLs de imagen de la
-    ficha (a máxima resolución posible). Cachea el resultado por EAN."""
+    """Busca el EAN en Distrivet (buscador Doofinder) y devuelve las URLs de imagen
+    de la ficha. Cachea por EAN. Universal (brand-agnóstico): no depende de la marca.
+
+    Flujo robusto:
+      1. RESET: navegar a la home limpia antes de cada búsqueda (el dropdown de
+         Doofinder arrastra resultados de búsquedas anteriores si no se resetea).
+      2. Escribir el EAN y sondear el LAYER de resultados de Doofinder
+         (#df-hook-results / .dfd*) hasta que aparezcan enlaces de ficha — solo los
+         de DENTRO del layer (excluye los destacados de la home).
+      3. Abrir cada ficha (máx 5) y quedarse con la que contiene el EAN.
+    """
     ean = (ean or "").strip()
     if not ean:
         return []
 
     cache = _load_cache()
-    # Solo se sirve de caché un resultado POSITIVO. Los negativos (found:false)
-    # se reintentan (pudo ser un fallo transitorio del buscador/Doofinder).
+    # Solo se sirve de caché un resultado POSITIVO. Los negativos se reintentan.
     if ean in cache and cache[ean].get("found"):
         imgs = cache[ean].get("images", [])
         log.info(f"    [distrivet] caché EAN {ean}: {len(imgs)} URLs")
@@ -939,25 +1008,21 @@ def images_for_ean(ean: str) -> list:
     images: list = []
     product_url = ""
     try:
-        # Asegurar que estamos en una página con buscador; si no, ir a la home
-        # del webshop (tras pasar el login + selección de dirección).
-        search = _find_search_input(page)
-        if search is None:
+        # 1. RESET a la home limpia (evita arrastrar el dropdown de Doofinder de
+        #    búsquedas anteriores).
+        try:
             page.goto(SHOP_URL, timeout=30000, wait_until="domcontentloaded")
-            page.wait_for_timeout(1000)
-            search = _find_search_input(page)
+            page.wait_for_timeout(900)
+        except Exception:
+            pass
 
+        search = _find_search_input(page)
         _dump_structure(page, "search")
         if not search:
-            log.warning(f"    [distrivet] no encontré el buscador. Revisa "
-                        f"[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
+            log.warning("    [distrivet] no encontré el buscador. Revisa "
+                        "[distrivet][diag][search] y fija DISTRIVET_SEARCH_SEL.")
         else:
-            # Buscador autocomplete JS (#main-search, input sin name, form action='').
-            # Escribimos el EAN, esperamos a que el dropdown se ESTABILICE (debounce;
-            # no leer estados intermedios del tecleo) y abrimos cada ficha candidata
-            # NUEVA verificando que contiene el EAN — la URL usa la REF (p.ej. ORD201),
-            # no el EAN, así que no se puede elegir por href.
-            before = set(_product_hrefs(page))
+            # 2. Escribir el EAN y sondear el layer de resultados de Doofinder.
             try:
                 search.click()
             except Exception:
@@ -967,37 +1032,38 @@ def images_for_ean(ean: str) -> list:
             except Exception:
                 pass
             try:
-                search.type(ean, delay=50)
+                search.type(ean, delay=40)
             except Exception:
                 try:
                     search.fill(ean)
                 except Exception:
                     pass
-            page.wait_for_timeout(3500)           # debounce + AJAX del autocomplete
-            try:
-                page.wait_for_load_state("networkidle", timeout=6000)
-            except Exception:
-                pass
 
-            items = _autocomplete_items(page, before)
-            _dump_autocomplete(page, ean, items)
-            cands = [it["href"] for it in items if _is_ficha(it["href"])]
+            cands = []
+            for _ in range(14):            # ~14×500ms = 7s sondeando el layer
+                page.wait_for_timeout(500)
+                cands = _doofinder_links(page)
+                if cands:
+                    break
 
-            # Fallback: sin fichas en el dropdown → forzar la página de resultados
-            # (Doofinder fullscreen) con Enter y recoger las fichas (?NoProducto=)
-            # de ahí. NUNCA se acepta la URL fullscreen como ficha (no tiene REF).
+            # Fallback: pulsar Enter (abre resultados fullscreen) y volver a sondear.
             if not cands:
                 try:
                     search.press("Enter")
                     page.wait_for_load_state("networkidle", timeout=8000)
-                    page.wait_for_timeout(2500)
                 except Exception:
                     pass
-                cands = [h for h in _product_hrefs(page)]   # solo fichas reales
+                for _ in range(10):        # ~10×500ms = 5s
+                    page.wait_for_timeout(500)
+                    cands = _doofinder_links(page)
+                    if cands:
+                        break
 
-            # Abrir cada ficha candidata y quedarnos con la PRIMERA que contiene el EAN.
+            _dump_doofinder(page, ean, cands)
+
+            # 3. Abrir cada ficha del layer y quedarse con la que contiene el EAN.
             chosen = ""
-            for cand in cands[:10]:
+            for cand in cands[:5]:
                 if not _is_ficha(cand):
                     continue
                 try:
@@ -1008,7 +1074,7 @@ def images_for_ean(ean: str) -> list:
                     page.wait_for_load_state("networkidle", timeout=8000)
                 except Exception:
                     pass
-                page.wait_for_timeout(700)
+                page.wait_for_timeout(600)
                 if _is_ficha(page.url) and _page_contains_ean(page, ean):
                     chosen = page.url
                     log.info(f"    [distrivet] ficha con EAN {ean}: {chosen}")
@@ -1023,8 +1089,8 @@ def images_for_ean(ean: str) -> list:
                     log.warning(f"    [distrivet] ficha correcta pero sin imagen con "
                                 f"EAN {ean} (revisa [distrivet][diag][img])")
             else:
-                log.warning(f"    [distrivet] ninguna ficha ({len(cands)}) contiene "
-                            f"el EAN {ean}. Revisa [distrivet][diag][autocomplete].")
+                log.warning(f"    [distrivet] ninguna ficha ({len(cands)}) del layer "
+                            f"contiene el EAN {ean}. Revisa [distrivet][diag][doofinder].")
     except Exception as e:
         log.warning(f"    [distrivet] error buscando EAN {ean}: {e}")
 
