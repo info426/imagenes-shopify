@@ -1,0 +1,1894 @@
+2026-06-08 10:32:37,836 [INFO] ============================================================
+2026-06-08 10:32:37,836 [INFO]   Vendor    : AUDEVARD
+2026-06-08 10:32:37,836 [INFO]   Modo      : ESCANEO MARCA
+2026-06-08 10:32:37,837 [INFO]   Pipeline  : standard
+2026-06-08 10:32:37,837 [INFO]   Padding   : auto
+2026-06-08 10:32:37,837 [INFO]   sRGB      : no
+2026-06-08 10:32:37,837 [INFO] ============================================================
+2026-06-08 10:32:38,681 [INFO] Total productos de 'AUDEVARD': 31
+2026-06-08 10:32:38,987 [INFO] 
+[1/31] AUDEVARD BALSAMIC AIR 500ML (NDR)  (ID 15509638119811) — 13 imágenes
+2026-06-08 10:32:39,258 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:32:39,543 [INFO]     cargada RGB (1800, 1800) ← 1_7d78a9fe-8298-4366-9fbd-28b55bf48f88.png
+2026-06-08 10:32:39,601 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:32:39,625 [INFO]     [autocrop] (1800, 1800) → (653, 1270)
+2026-06-08 10:32:39,626 [INFO]     [padding 5%]
+2026-06-08 10:32:43,102 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_1.webp] en posición 1
+2026-06-08 10:32:43,604 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:32:43,927 [INFO]     cargada RGB (1800, 1800) ← 2_36ecdde8-2152-4a39-a5f3-0fb8ad2124a1.png
+2026-06-08 10:32:43,990 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:32:44,016 [INFO]     [autocrop] (1800, 1800) → (1257, 1313)
+2026-06-08 10:32:44,016 [INFO]     [padding 5%]
+2026-06-08 10:32:47,282 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_2.webp] en posición 2
+2026-06-08 10:32:47,785 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:32:48,149 [INFO]     cargada RGB (1800, 1800) ← 3_ff96b64b-73d7-4e92-b701-bb8893c3660b.png
+2026-06-08 10:32:48,217 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:32:48,243 [INFO]     [autocrop] (1800, 1800) → (1355, 1376)
+2026-06-08 10:32:48,243 [INFO]     [padding 5%]
+2026-06-08 10:32:51,682 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_3.webp] en posición 3
+2026-06-08 10:32:52,185 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:32:52,501 [INFO]     cargada RGB (1800, 1800) ← 4_64bbf822-fcdc-41f3-8a03-44491d359d10.png
+2026-06-08 10:32:52,567 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:32:52,592 [INFO]     [autocrop] (1800, 1800) → (1352, 1350)
+2026-06-08 10:32:52,592 [INFO]     [padding 5%]
+2026-06-08 10:32:56,003 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_4.webp] en posición 4
+2026-06-08 10:32:56,506 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:32:56,804 [INFO]     cargada RGB (1800, 1800) ← 5_2a3c5fe0-341e-4870-8e6c-e68b9345d0ae.png
+2026-06-08 10:32:56,862 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:32:56,889 [INFO]     [autocrop] (1800, 1800) → (1428, 1234)
+2026-06-08 10:32:56,889 [INFO]     [padding 5%]
+2026-06-08 10:33:00,262 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_5.webp] en posición 5
+2026-06-08 10:33:00,765 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:01,077 [INFO]     cargada RGB (1800, 1800) ← 6_8f323f11-b7fa-4137-b78a-bcb801daf09b.png
+2026-06-08 10:33:01,130 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:01,157 [INFO]     [autocrop] (1800, 1800) → (1271, 1255)
+2026-06-08 10:33:01,157 [INFO]     [padding 5%]
+2026-06-08 10:33:04,474 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_6.webp] en posición 6
+2026-06-08 10:33:04,977 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:05,309 [INFO]     cargada RGB (1800, 1800) ← 7_d43a82ab-cbc0-4287-9202-fe4ada6ed3d6.png
+2026-06-08 10:33:05,373 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:05,400 [INFO]     [autocrop] (1800, 1800) → (1207, 1197)
+2026-06-08 10:33:05,400 [INFO]     [padding 5%]
+2026-06-08 10:33:08,740 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_7.webp] en posición 7
+2026-06-08 10:33:09,242 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:09,561 [INFO]     cargada RGB (1800, 1800) ← 8_6fbb7c6c-89f2-4d24-9f40-68e7cf2016a2.png
+2026-06-08 10:33:09,620 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:09,647 [INFO]     [autocrop] (1800, 1800) → (877, 1340)
+2026-06-08 10:33:09,647 [INFO]     [padding 5%]
+2026-06-08 10:33:13,594 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_8.webp] en posición 8
+2026-06-08 10:33:14,096 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:14,427 [INFO]     cargada RGB (1800, 1800) ← 9_698aa7c5-6f28-469e-90ec-af22a812aaa7.png
+2026-06-08 10:33:14,487 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:14,513 [INFO]     [autocrop] (1800, 1800) → (1244, 1324)
+2026-06-08 10:33:14,513 [INFO]     [padding 5%]
+2026-06-08 10:33:17,900 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_9.webp] en posición 9
+2026-06-08 10:33:18,403 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:18,700 [INFO]     cargada RGB (1800, 1800) ← 10_09a40e70-fa6a-4d40-8c8e-2698f1bf6935.png
+2026-06-08 10:33:18,764 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:18,788 [INFO]     [autocrop] (1800, 1800) → (1652, 1493)
+2026-06-08 10:33:18,788 [INFO]     [padding 5%]
+2026-06-08 10:33:22,165 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_10.webp] en posición 10
+2026-06-08 10:33:22,668 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:23,006 [INFO]     cargada RGB (1800, 1800) ← 11_ae88b7cf-7660-4877-b7b1-e62887963268.png
+2026-06-08 10:33:23,101 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:33:23,101 [INFO]     [sin padding]
+2026-06-08 10:33:26,896 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_11.webp] en posición 11
+2026-06-08 10:33:27,399 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:27,700 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_5d3ad4f7-f477-40d2-a3a6-6d3cf563b5f8.png
+2026-06-08 10:33:27,751 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:27,778 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:33:27,778 [INFO]     [padding 5%]
+2026-06-08 10:33:31,415 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_12.webp] en posición 12
+2026-06-08 10:33:31,918 [INFO]   pos 13: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:32,173 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_f94168ac-d462-4364-b6b1-4290e4c5741b.png
+2026-06-08 10:33:32,226 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:32,250 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:33:32,250 [INFO]     [padding 5%]
+2026-06-08 10:33:36,083 [INFO]     ✓ reprocesada y subida [audevard-balsamic-air-500ml-ndr_13.webp] en posición 13
+2026-06-08 10:33:36,893 [INFO] 
+[2/31] AUDEVARD BALSAMIC CONTROL (NDR)  (ID 15509638218115) — 14 imágenes
+2026-06-08 10:33:37,187 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:37,525 [INFO]     cargada RGB (1800, 1800) ← 1_d1dfde62-11c5-4c1a-9dae-e1afd5adc51e.png
+2026-06-08 10:33:37,590 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:37,614 [INFO]     [autocrop] (1800, 1800) → (1512, 1263)
+2026-06-08 10:33:37,614 [INFO]     [padding 5%]
+2026-06-08 10:33:41,912 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_1.webp] en posición 1
+2026-06-08 10:33:42,415 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:42,786 [INFO]     cargada RGB (1800, 1800) ← 2_127ae2ab-d74a-47b2-a6f3-817b1ec69fe7.png
+2026-06-08 10:33:42,848 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:42,874 [INFO]     [autocrop] (1800, 1800) → (1390, 1277)
+2026-06-08 10:33:42,874 [INFO]     [padding 5%]
+2026-06-08 10:33:46,009 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_2.webp] en posición 2
+2026-06-08 10:33:46,511 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:46,827 [INFO]     cargada RGB (1800, 1800) ← 3_77e9e206-3cea-48f2-91ea-40ed167ca11c.png
+2026-06-08 10:33:46,892 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:46,917 [INFO]     [autocrop] (1800, 1800) → (1352, 1371)
+2026-06-08 10:33:46,917 [INFO]     [padding 5%]
+2026-06-08 10:33:50,484 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_3.webp] en posición 3
+2026-06-08 10:33:50,987 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:51,334 [INFO]     cargada RGB (1800, 1800) ← 4_fa0d61c2-d5b5-4d19-a99f-870aeb8af3ce.png
+2026-06-08 10:33:51,399 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:51,425 [INFO]     [autocrop] (1800, 1800) → (1352, 1372)
+2026-06-08 10:33:51,425 [INFO]     [padding 5%]
+2026-06-08 10:33:54,685 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_4.webp] en posición 4
+2026-06-08 10:33:55,188 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:55,497 [INFO]     cargada RGB (1800, 1800) ← 5_fc4c0d6b-bed3-449e-a97a-9c084a8f9a6c.png
+2026-06-08 10:33:55,550 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:55,577 [INFO]     [autocrop] (1800, 1800) → (1294, 1252)
+2026-06-08 10:33:55,577 [INFO]     [padding 5%]
+2026-06-08 10:33:58,827 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_5.webp] en posición 5
+2026-06-08 10:33:59,330 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:33:59,622 [INFO]     cargada RGB (1800, 1800) ← 6_28bd23c1-7833-43ed-995d-86348acd4558.png
+2026-06-08 10:33:59,679 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:33:59,707 [INFO]     [autocrop] (1800, 1800) → (1425, 1234)
+2026-06-08 10:33:59,707 [INFO]     [padding 5%]
+2026-06-08 10:34:03,322 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_6.webp] en posición 6
+2026-06-08 10:34:03,825 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:04,152 [INFO]     cargada RGB (1800, 1800) ← 7_f7c358f3-7a91-4619-96c8-ddbccded4375.png
+2026-06-08 10:34:04,213 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:04,239 [INFO]     [autocrop] (1800, 1800) → (1395, 1208)
+2026-06-08 10:34:04,239 [INFO]     [padding 5%]
+2026-06-08 10:34:07,685 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_7.webp] en posición 7
+2026-06-08 10:34:08,188 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:08,500 [INFO]     cargada RGB (1800, 1800) ← 8_4cde8042-b772-40cc-93ab-d85dc7d7d638.png
+2026-06-08 10:34:08,556 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:08,582 [INFO]     [autocrop] (1800, 1800) → (1013, 1350)
+2026-06-08 10:34:08,582 [INFO]     [padding 5%]
+2026-06-08 10:34:11,565 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_8.webp] en posición 8
+2026-06-08 10:34:12,067 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:12,355 [INFO]     cargada RGB (1800, 1800) ← 9_e80956d0-5109-4f2e-ba77-00f2f50f0f4f.png
+2026-06-08 10:34:12,414 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:12,439 [INFO]     [autocrop] (1800, 1800) → (1255, 1261)
+2026-06-08 10:34:12,439 [INFO]     [padding 5%]
+2026-06-08 10:34:15,613 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_9.webp] en posición 9
+2026-06-08 10:34:16,116 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:16,424 [INFO]     cargada RGB (1800, 1800) ← 10_45a2f1d9-863e-4e2e-884c-a5cd9f0fcb78.png
+2026-06-08 10:34:16,488 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:16,512 [INFO]     [autocrop] (1800, 1800) → (1652, 1494)
+2026-06-08 10:34:16,512 [INFO]     [padding 5%]
+2026-06-08 10:34:19,835 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_10.webp] en posición 10
+2026-06-08 10:34:20,337 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:20,690 [INFO]     cargada RGB (1800, 1800) ← 11_2278ba41-4504-4980-be55-b68fe9c0b156.png
+2026-06-08 10:34:20,791 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:34:20,791 [INFO]     [sin padding]
+2026-06-08 10:34:24,618 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_11.webp] en posición 11
+2026-06-08 10:34:25,121 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:25,470 [INFO]     cargada RGB (1800, 1800) ← 12_fe00e4f6-fddb-412d-8773-7731735c8f92.png
+2026-06-08 10:34:25,567 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:34:25,567 [INFO]     [sin padding]
+2026-06-08 10:34:29,291 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_12.webp] en posición 12
+2026-06-08 10:34:29,793 [INFO]   pos 13: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:30,094 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_afc8eb97-bee3-4b4e-a97d-4a898a295f3e.png
+2026-06-08 10:34:30,146 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:30,173 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:34:30,174 [INFO]     [padding 5%]
+2026-06-08 10:34:33,317 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_13.webp] en posición 13
+2026-06-08 10:34:33,820 [INFO]   pos 14: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:34,080 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_485bfe9a-5294-4b27-b345-7290bcc6ce9c.png
+2026-06-08 10:34:34,133 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:34,156 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:34:34,156 [INFO]     [padding 5%]
+2026-06-08 10:34:36,972 [INFO]     ✓ reprocesada y subida [audevard-balsamic-control-ndr_14.webp] en posición 14
+2026-06-08 10:34:37,776 [INFO] 
+[3/31] AUDEVARD BO YEAS ACT ULTRA (NDR)  (ID 15509638250883) — 12 imágenes
+2026-06-08 10:34:38,054 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 8: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 9: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 10: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 11: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,054 [INFO]   pos 12: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:34:38,358 [INFO] 
+[4/31] AUDEVARD BONUTRON GALOP (NDR)  (ID 15509638283651) — 7 imágenes
+2026-06-08 10:34:38,634 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:38,958 [INFO]     cargada RGB (1800, 1800) ← 1_480e9d9e-1085-4dd1-93ee-d377b6175506.png
+2026-06-08 10:34:39,024 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:39,047 [INFO]     [autocrop] (1800, 1800) → (1647, 1032)
+2026-06-08 10:34:39,047 [INFO]     [padding 5%]
+2026-06-08 10:34:42,582 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_1.webp] en posición 1
+2026-06-08 10:34:43,085 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:43,386 [INFO]     cargada RGB (1800, 1800) ← 2_68f2444c-a9a6-4a7a-b6d9-1edf61bf56db.png
+2026-06-08 10:34:43,434 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:43,458 [INFO]     [autocrop] (1800, 1800) → (1238, 589)
+2026-06-08 10:34:43,458 [INFO]     [padding 5%]
+2026-06-08 10:34:46,403 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_2.webp] en posición 2
+2026-06-08 10:34:46,905 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:47,202 [INFO]     cargada RGB (1800, 1800) ← 3_eb784776-b083-4827-a587-baef26f76901.png
+2026-06-08 10:34:47,262 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:47,285 [INFO]     [autocrop] (1800, 1800) → (1052, 1108)
+2026-06-08 10:34:47,285 [INFO]     [padding 5%]
+2026-06-08 10:34:50,646 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_3.webp] en posición 3
+2026-06-08 10:34:51,149 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:51,449 [INFO]     cargada RGB (1800, 1800) ← 4_d0b3ee13-6437-437a-9b1f-9ead081176ae.png
+2026-06-08 10:34:51,508 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:34:51,531 [INFO]     [autocrop] (1800, 1800) → (1098, 1114)
+2026-06-08 10:34:51,531 [INFO]     [padding 5%]
+2026-06-08 10:34:54,733 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_4.webp] en posición 4
+2026-06-08 10:34:55,235 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:34:55,571 [INFO]     cargada RGB (1800, 1800) ← 5_6dc2dc92-0c6c-4ae5-903c-f9f0f40c55e0.png
+2026-06-08 10:34:55,667 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:34:55,668 [INFO]     [sin padding]
+2026-06-08 10:34:59,468 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_5.webp] en posición 5
+2026-06-08 10:34:59,971 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:00,262 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_5901f765-c72b-4449-996c-c4e62266e124.png
+2026-06-08 10:35:00,313 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:00,339 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:35:00,340 [INFO]     [padding 5%]
+2026-06-08 10:35:03,601 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_6.webp] en posición 6
+2026-06-08 10:35:04,103 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:04,359 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_a7f1c703-3ba7-4689-9ddd-8102fdf5967e.png
+2026-06-08 10:35:04,411 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:04,435 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:35:04,435 [INFO]     [padding 5%]
+2026-06-08 10:35:07,373 [INFO]     ✓ reprocesada y subida [audevard-bonutron-galop-ndr_7.webp] en posición 7
+2026-06-08 10:35:08,175 [INFO] 
+[5/31] AUDEVARD BONUTRON SENIOR 17 PLUS 2,4KG (NDR)  (ID 15509638381955) — 6 imágenes
+2026-06-08 10:35:08,438 [INFO]   pos 1: NO optimizada (png 939×600) — reprocesando
+2026-06-08 10:35:08,696 [INFO]     cargada RGBA (939, 600) ← Visuelfiche-senior.png
+2026-06-08 10:35:08,716 [INFO]     [alpha] 28% transparente
+2026-06-08 10:35:08,722 [INFO]     [bg] 900/900 (100%)
+2026-06-08 10:35:08,726 [INFO]     [autocrop] (939, 600) → (882, 540)
+2026-06-08 10:35:08,726 [INFO]     [fills-frame 94%×90%] → sin padding
+2026-06-08 10:35:08,726 [INFO]     [sin padding]
+2026-06-08 10:35:12,735 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_1.webp] en posición 1
+2026-06-08 10:35:13,238 [INFO]   pos 2: NO optimizada (png 700×869) — reprocesando
+2026-06-08 10:35:13,481 [INFO]     cargada RGBA (700, 869) ← bonutron-senior-17.png
+2026-06-08 10:35:13,494 [INFO]     [alpha] 87% transparente
+2026-06-08 10:35:13,501 [INFO]     [bg] 1296/1296 (100%)
+2026-06-08 10:35:13,506 [INFO]     [autocrop] (700, 869) → (617, 293)
+2026-06-08 10:35:13,506 [INFO]     [padding 5%]
+2026-06-08 10:35:16,674 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_2.webp] en posición 2
+2026-06-08 10:35:17,177 [INFO]   pos 3: NO optimizada (png 700×869) — reprocesando
+2026-06-08 10:35:17,420 [INFO]     cargada RGBA (700, 869) ← bonutron-senior-17_5bf1d2ca-25e5-44bf-9b34-538734aac88d.png
+2026-06-08 10:35:17,437 [INFO]     [alpha] 61% transparente
+2026-06-08 10:35:17,444 [INFO]     [bg] 1296/1296 (100%)
+2026-06-08 10:35:17,448 [INFO]     [autocrop] (700, 869) → (505, 531)
+2026-06-08 10:35:17,449 [INFO]     [padding 5%]
+2026-06-08 10:35:20,707 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_3.webp] en posición 3
+2026-06-08 10:35:21,210 [INFO]   pos 4: NO optimizada (png 800×800) — reprocesando
+2026-06-08 10:35:21,435 [INFO]     cargada P (800, 800) ← Situation_2.png
+2026-06-08 10:35:21,443 [INFO]     [bg] 0/1600 (0%)
+2026-06-08 10:35:21,443 [INFO]     [sin padding]
+2026-06-08 10:35:25,217 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_4.webp] en posición 4
+2026-06-08 10:35:25,719 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:26,008 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_b8880875-5549-423e-a50f-945a32ff7854.png
+2026-06-08 10:35:26,059 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:26,085 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:35:26,085 [INFO]     [padding 5%]
+2026-06-08 10:35:29,319 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_5.webp] en posición 5
+2026-06-08 10:35:29,821 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:30,076 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_d541bfcb-7ed2-4959-9349-5f24017297dd.png
+2026-06-08 10:35:30,128 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:30,152 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:35:30,152 [INFO]     [padding 5%]
+2026-06-08 10:35:33,431 [INFO]     ✓ reprocesada y subida [audevard-bonutron-senior-17-plus-2-4kg-ndr_6.webp] en posición 6
+2026-06-08 10:35:34,268 [INFO] 
+[6/31] AUDEVARD BONUTRON SPORT PRO (NDR)  (ID 15509638414723) — 8 imágenes
+2026-06-08 10:35:34,546 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:35,035 [INFO]     cargada RGB (1800, 1800) ← 1_01b7eda2-99d6-45e8-a879-1acc164d639a.png
+2026-06-08 10:35:35,100 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:35,123 [INFO]     [autocrop] (1800, 1800) → (1666, 1026)
+2026-06-08 10:35:35,123 [INFO]     [padding 5%]
+2026-06-08 10:35:39,006 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_1.webp] en posición 1
+2026-06-08 10:35:39,509 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:39,799 [INFO]     cargada RGB (1800, 1800) ← 2_7db92f4b-73c7-469c-86b4-239f72ca9c40.png
+2026-06-08 10:35:39,847 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:39,871 [INFO]     [autocrop] (1800, 1800) → (1246, 595)
+2026-06-08 10:35:39,871 [INFO]     [padding 5%]
+2026-06-08 10:35:43,356 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_2.webp] en posición 2
+2026-06-08 10:35:43,859 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:44,233 [INFO]     cargada RGB (1800, 1800) ← 3_65ee32ac-c154-41fe-82f1-ffc271d3b948.png
+2026-06-08 10:35:44,293 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:44,316 [INFO]     [autocrop] (1800, 1800) → (1048, 1103)
+2026-06-08 10:35:44,316 [INFO]     [padding 5%]
+2026-06-08 10:35:47,579 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_3.webp] en posición 3
+2026-06-08 10:35:48,081 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:48,682 [INFO]     cargada RGB (1800, 1800) ← 4_f4d796af-b35d-4073-8bca-f0838c686987.png
+2026-06-08 10:35:48,744 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:48,768 [INFO]     [autocrop] (1800, 1800) → (1214, 1051)
+2026-06-08 10:35:48,768 [INFO]     [padding 5%]
+2026-06-08 10:35:52,172 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_4.webp] en posición 4
+2026-06-08 10:35:52,675 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:52,985 [INFO]     cargada RGB (1800, 1800) ← 5_181c5fce-b90c-4621-bc0a-aa93cf88bec4.png
+2026-06-08 10:35:53,045 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:35:53,069 [INFO]     [autocrop] (1800, 1800) → (1104, 1117)
+2026-06-08 10:35:53,069 [INFO]     [padding 5%]
+2026-06-08 10:35:56,450 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_5.webp] en posición 5
+2026-06-08 10:35:56,953 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:35:57,293 [INFO]     cargada RGB (1800, 1800) ← 6_0d72df14-51c9-49e4-8061-315addfae98d.png
+2026-06-08 10:35:57,385 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:35:57,385 [INFO]     [sin padding]
+2026-06-08 10:36:01,063 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_6.webp] en posición 6
+2026-06-08 10:36:01,566 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:01,865 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_38b8196f-d8a8-4822-a141-6079fdfd794b.png
+2026-06-08 10:36:01,916 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:01,943 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:36:01,943 [INFO]     [padding 5%]
+2026-06-08 10:36:05,107 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_7.webp] en posición 7
+2026-06-08 10:36:05,610 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:05,872 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_e196647d-59ec-4d4f-b1d3-15a4631e5c53.png
+2026-06-08 10:36:05,925 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:05,948 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:36:05,948 [INFO]     [padding 5%]
+2026-06-08 10:36:09,044 [INFO]     ✓ reprocesada y subida [audevard-bonutron-sport-pro-ndr_8.webp] en posición 8
+2026-06-08 10:36:09,824 [INFO] 
+[7/31] AUDEVARD BONUTRON START 15ML  (ID 15509638513027) — 4 imágenes
+2026-06-08 10:36:10,089 [INFO]   pos 1: NO optimizada (png 800×800) — reprocesando
+2026-06-08 10:36:10,299 [INFO]     cargada P (800, 800) ← Packshot.png
+2026-06-08 10:36:10,305 [INFO]     [alpha] 90% transparente
+2026-06-08 10:36:10,313 [INFO]     [bg] 1600/1600 (100%)
+2026-06-08 10:36:10,317 [INFO]     [autocrop] (800, 800) → (714, 489)
+2026-06-08 10:36:10,317 [INFO]     [padding 5%]
+2026-06-08 10:36:14,470 [INFO]     ✓ reprocesada y subida [audevard-bonutron-start-15ml_1.webp] en posición 1
+2026-06-08 10:36:14,972 [INFO]   pos 2: NO optimizada (png 800×800) — reprocesando
+2026-06-08 10:36:15,222 [INFO]     cargada P (800, 800) ← Situation.png
+2026-06-08 10:36:15,230 [INFO]     [bg] 1/1600 (0%)
+2026-06-08 10:36:15,230 [INFO]     [sin padding]
+2026-06-08 10:36:20,618 [INFO]     ✓ reprocesada y subida [audevard-bonutron-start-15ml_2.webp] en posición 2
+2026-06-08 10:36:21,121 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:21,408 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_70ea8477-321a-4944-b56c-158ed3fbb62a.png
+2026-06-08 10:36:21,460 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:21,486 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:36:21,486 [INFO]     [padding 5%]
+2026-06-08 10:36:25,029 [INFO]     ✓ reprocesada y subida [audevard-bonutron-start-15ml_3.webp] en posición 3
+2026-06-08 10:36:25,532 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:25,786 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_a5fe59fa-75f9-48ce-9208-031d792b2b1c.png
+2026-06-08 10:36:25,839 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:25,862 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:36:25,862 [INFO]     [padding 5%]
+2026-06-08 10:36:29,416 [INFO]     ✓ reprocesada y subida [audevard-bonutron-start-15ml_4.webp] en posición 4
+2026-06-08 10:36:30,236 [INFO] 
+[8/31] AUDEVARD BONUTRON STUD G1-L6 (NDR)  (ID 15509638545795) — 8 imágenes
+2026-06-08 10:36:30,535 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:30,873 [INFO]     cargada RGB (1800, 1800) ← 1_d83e9d72-8159-425a-9d65-ebf3c9f8c866.png
+2026-06-08 10:36:30,937 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:30,960 [INFO]     [autocrop] (1800, 1800) → (1619, 1010)
+2026-06-08 10:36:30,960 [INFO]     [padding 5%]
+2026-06-08 10:36:35,540 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_1.webp] en posición 1
+2026-06-08 10:36:36,042 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:36,333 [INFO]     cargada RGB (1800, 1800) ← 3_2028a1b9-6554-4e65-b2f5-3f44573fe66f.png
+2026-06-08 10:36:36,380 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:36,404 [INFO]     [autocrop] (1800, 1800) → (1287, 570)
+2026-06-08 10:36:36,404 [INFO]     [padding 5%]
+2026-06-08 10:36:40,308 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_2.webp] en posición 2
+2026-06-08 10:36:40,811 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:41,090 [INFO]     cargada RGB (1800, 1800) ← 2_1e0e0124-5af1-4d22-8b5b-61f9866e7c33.png
+2026-06-08 10:36:41,150 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:41,173 [INFO]     [autocrop] (1800, 1800) → (1072, 1139)
+2026-06-08 10:36:41,173 [INFO]     [padding 5%]
+2026-06-08 10:36:44,477 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_3.webp] en posición 3
+2026-06-08 10:36:44,980 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:45,299 [INFO]     cargada RGB (1800, 1800) ← 4_90f77267-f8f3-4a66-90ce-7caf080259e9.png
+2026-06-08 10:36:45,360 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:45,383 [INFO]     [autocrop] (1800, 1800) → (1190, 1033)
+2026-06-08 10:36:45,384 [INFO]     [padding 5%]
+2026-06-08 10:36:48,742 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_4.webp] en posición 4
+2026-06-08 10:36:49,245 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:49,544 [INFO]     cargada RGB (1800, 1800) ← 5_406e2cd2-14e5-4711-b3c8-5c927f0411e4.png
+2026-06-08 10:36:49,604 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:49,627 [INFO]     [autocrop] (1800, 1800) → (1114, 1128)
+2026-06-08 10:36:49,627 [INFO]     [padding 5%]
+2026-06-08 10:36:52,932 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_5.webp] en posición 5
+2026-06-08 10:36:53,434 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:53,801 [INFO]     cargada RGB (1800, 1800) ← 6_89dae0a1-ed61-4e13-ab8e-90ffeaab732c.png
+2026-06-08 10:36:53,899 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:36:53,900 [INFO]     [sin padding]
+2026-06-08 10:36:57,522 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_6.webp] en posición 6
+2026-06-08 10:36:58,025 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:36:58,319 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_9cc64c34-2ddf-4bd3-89c9-fffa6bb60a9c.png
+2026-06-08 10:36:58,371 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:36:58,397 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:36:58,397 [INFO]     [padding 5%]
+2026-06-08 10:37:01,420 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_7.webp] en posición 7
+2026-06-08 10:37:01,923 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:02,191 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_7670e0e5-cd9e-416d-b2a5-e9f4c5411894.png
+2026-06-08 10:37:02,243 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:02,266 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:37:02,266 [INFO]     [padding 5%]
+2026-06-08 10:37:05,164 [INFO]     ✓ reprocesada y subida [audevard-bonutron-stud-g1-l6-ndr_8.webp] en posición 8
+2026-06-08 10:37:05,957 [INFO] 
+[9/31] AUDEVARD BONUTRON YEARLING 6-36M (NDR)  (ID 15509638676867) — 8 imágenes
+2026-06-08 10:37:06,235 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:06,584 [INFO]     cargada RGB (1800, 1800) ← 1_048e5189-73de-479f-aa48-26b658ca9566.png
+2026-06-08 10:37:06,649 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:06,673 [INFO]     [autocrop] (1800, 1800) → (1643, 1081)
+2026-06-08 10:37:06,673 [INFO]     [padding 5%]
+2026-06-08 10:37:10,109 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_1.webp] en posición 1
+2026-06-08 10:37:10,612 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:10,903 [INFO]     cargada RGB (1800, 1800) ← 2_fde41fb6-c407-430d-81d2-1c49ad86df80.png
+2026-06-08 10:37:10,950 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:10,974 [INFO]     [autocrop] (1800, 1800) → (1256, 557)
+2026-06-08 10:37:10,974 [INFO]     [padding 5%]
+2026-06-08 10:37:14,160 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_2.webp] en posición 2
+2026-06-08 10:37:14,662 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:14,966 [INFO]     cargada RGB (1800, 1800) ← 3_c278b63e-bac3-40d4-bb88-1fccaa7c8d05.png
+2026-06-08 10:37:15,025 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:15,049 [INFO]     [autocrop] (1800, 1800) → (1057, 1121)
+2026-06-08 10:37:15,049 [INFO]     [padding 5%]
+2026-06-08 10:37:18,442 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_3.webp] en posición 3
+2026-06-08 10:37:18,944 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:19,244 [INFO]     cargada RGB (1800, 1800) ← 4_fdaec75e-b0fd-405b-bd0b-f821f61d8f24.png
+2026-06-08 10:37:19,306 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:19,329 [INFO]     [autocrop] (1800, 1800) → (1202, 1047)
+2026-06-08 10:37:19,330 [INFO]     [padding 5%]
+2026-06-08 10:37:23,135 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_4.webp] en posición 4
+2026-06-08 10:37:23,638 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:23,938 [INFO]     cargada RGB (1800, 1800) ← 5_6337f571-db88-429f-beee-e238eb081cca.png
+2026-06-08 10:37:23,998 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:24,021 [INFO]     [autocrop] (1800, 1800) → (1124, 1145)
+2026-06-08 10:37:24,021 [INFO]     [padding 5%]
+2026-06-08 10:37:27,286 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_5.webp] en posición 5
+2026-06-08 10:37:27,788 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:28,159 [INFO]     cargada RGB (1800, 1800) ← 6_189da7a8-77a5-4b2e-a0c1-6f9188bdc112.png
+2026-06-08 10:37:28,255 [INFO]     [bg] 7/8100 (0%)
+2026-06-08 10:37:28,255 [INFO]     [sin padding]
+2026-06-08 10:37:32,989 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_6.webp] en posición 6
+2026-06-08 10:37:33,492 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:33,805 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_9ebccf1a-f88f-4338-84bc-ac46ddc05fcc.png
+2026-06-08 10:37:33,856 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:33,885 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:37:33,885 [INFO]     [padding 5%]
+2026-06-08 10:37:37,833 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_7.webp] en posición 7
+2026-06-08 10:37:38,336 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:38,601 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_7373ceeb-2a32-4477-8ac0-984ee4fdd0a0.png
+2026-06-08 10:37:38,653 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:38,677 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:37:38,677 [INFO]     [padding 5%]
+2026-06-08 10:37:41,704 [INFO]     ✓ reprocesada y subida [audevard-bonutron-yearling-6-36m-ndr_8.webp] en posición 8
+2026-06-08 10:37:42,526 [INFO] 
+[10/31] AUDEVARD EKYFLEX ARTHRO EVO (NDR)  (ID 15509638873475) — 14 imágenes
+2026-06-08 10:37:42,797 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:43,105 [INFO]     cargada RGB (1800, 1800) ← 1_d18435b8-3084-48cb-8386-704ca68b2947.png
+2026-06-08 10:37:43,169 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:43,193 [INFO]     [autocrop] (1800, 1800) → (1526, 1267)
+2026-06-08 10:37:43,193 [INFO]     [padding 5%]
+2026-06-08 10:37:47,071 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_1.webp] en posición 1
+2026-06-08 10:37:47,574 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:47,923 [INFO]     cargada RGB (1800, 1800) ← 2_0d9159a3-b53d-472f-98a2-ebd75741b9ab.png
+2026-06-08 10:37:47,983 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:48,009 [INFO]     [autocrop] (1800, 1800) → (1171, 1303)
+2026-06-08 10:37:48,009 [INFO]     [padding 5%]
+2026-06-08 10:37:51,231 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_2.webp] en posición 2
+2026-06-08 10:37:51,734 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:52,042 [INFO]     cargada RGB (1800, 1800) ← 3_c378a173-8f17-483e-8e0c-2b1e0d63fe3b.png
+2026-06-08 10:37:52,109 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:52,135 [INFO]     [autocrop] (1800, 1800) → (1352, 1372)
+2026-06-08 10:37:52,135 [INFO]     [padding 5%]
+2026-06-08 10:37:55,573 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_3.webp] en posición 3
+2026-06-08 10:37:56,075 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:37:56,379 [INFO]     cargada RGB (1800, 1800) ← 4_7b055c21-5e09-4057-b11a-1da987d6052f.png
+2026-06-08 10:37:56,446 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:37:56,471 [INFO]     [autocrop] (1800, 1800) → (1352, 1353)
+2026-06-08 10:37:56,471 [INFO]     [padding 5%]
+2026-06-08 10:37:59,893 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_4.webp] en posición 4
+2026-06-08 10:38:00,396 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:00,714 [INFO]     cargada RGB (1800, 1800) ← 5_1abca5c7-6020-41b3-898e-cd8947a2054d.png
+2026-06-08 10:38:00,772 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:00,798 [INFO]     [autocrop] (1800, 1800) → (1273, 1237)
+2026-06-08 10:38:00,799 [INFO]     [padding 5%]
+2026-06-08 10:38:04,237 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_5.webp] en posición 5
+2026-06-08 10:38:04,739 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:05,045 [INFO]     cargada RGB (1800, 1800) ← 6_afe87283-9406-4f1f-a8c9-38631d7cb75f.png
+2026-06-08 10:38:05,106 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:05,132 [INFO]     [autocrop] (1800, 1800) → (1288, 1252)
+2026-06-08 10:38:05,132 [INFO]     [padding 5%]
+2026-06-08 10:38:08,509 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_6.webp] en posición 6
+2026-06-08 10:38:09,011 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:09,310 [INFO]     cargada RGB (1800, 1800) ← 7_12494e88-c9bc-4d28-a688-62de83cda2e4.png
+2026-06-08 10:38:09,371 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:09,398 [INFO]     [autocrop] (1800, 1800) → (1329, 1146)
+2026-06-08 10:38:09,398 [INFO]     [padding 5%]
+2026-06-08 10:38:12,667 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_7.webp] en posición 7
+2026-06-08 10:38:13,169 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:13,496 [INFO]     cargada RGB (1800, 1800) ← 8_9805c7e3-24ca-4367-8fac-dfc223efd8aa.png
+2026-06-08 10:38:13,560 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:13,586 [INFO]     [autocrop] (1800, 1800) → (1422, 1358)
+2026-06-08 10:38:13,587 [INFO]     [padding 5%]
+2026-06-08 10:38:16,980 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_8.webp] en posición 8
+2026-06-08 10:38:17,483 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:17,798 [INFO]     cargada RGB (1800, 1800) ← 9_27c1f7fb-3c86-4b8b-ab5e-6e0b409a9daa.png
+2026-06-08 10:38:17,863 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:17,888 [INFO]     [autocrop] (1800, 1800) → (1256, 1321)
+2026-06-08 10:38:17,888 [INFO]     [padding 5%]
+2026-06-08 10:38:21,652 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_9.webp] en posición 9
+2026-06-08 10:38:22,155 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:22,507 [INFO]     cargada RGB (1800, 1800) ← 10_ebef305e-ffa7-4fba-ad89-fee2bda72466.png
+2026-06-08 10:38:22,601 [INFO]     [bg] 4050/8100 (50%)
+2026-06-08 10:38:22,601 [INFO]     [sin padding]
+2026-06-08 10:38:26,249 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_10.webp] en posición 10
+2026-06-08 10:38:26,752 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:27,033 [INFO]     cargada RGB (1800, 1800) ← 11_11bf3e83-b6dc-413e-81f3-fe0e9518b949.png
+2026-06-08 10:38:27,086 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:27,111 [INFO]     [autocrop] (1800, 1800) → (1753, 886)
+2026-06-08 10:38:27,111 [INFO]     [padding 5%]
+2026-06-08 10:38:30,162 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_11.webp] en posición 11
+2026-06-08 10:38:30,664 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:31,042 [INFO]     cargada RGB (1800, 1800) ← 12_f4ba2b5b-c2ce-4a9b-a9f2-3ca454916541.png
+2026-06-08 10:38:31,140 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:38:31,140 [INFO]     [sin padding]
+2026-06-08 10:38:34,916 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_12.webp] en posición 12
+2026-06-08 10:38:35,419 [INFO]   pos 13: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:35,720 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_31509d5c-038d-49e6-860b-4b4be19d02ba.png
+2026-06-08 10:38:35,770 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:35,798 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:38:35,798 [INFO]     [padding 5%]
+2026-06-08 10:38:39,386 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_13.webp] en posición 13
+2026-06-08 10:38:39,889 [INFO]   pos 14: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:40,146 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_37e23751-2134-4fba-90ba-0a94da1d6528.png
+2026-06-08 10:38:40,198 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:40,222 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:38:40,222 [INFO]     [padding 5%]
+2026-06-08 10:38:43,158 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-arthro-evo-ndr_14.webp] en posición 14
+2026-06-08 10:38:43,979 [INFO] 
+[11/31] AUDEVARD EKYFLEX MOBILITY 1L (NDR)  (ID 15509639135619) — 12 imágenes
+2026-06-08 10:38:44,252 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:44,547 [INFO]     cargada RGB (1800, 1800) ← 1_42dcaf2a-8644-4ea1-9739-f706d257d9f9.png
+2026-06-08 10:38:44,604 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:44,627 [INFO]     [autocrop] (1800, 1800) → (596, 1282)
+2026-06-08 10:38:44,627 [INFO]     [padding 5%]
+2026-06-08 10:38:47,870 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_1.webp] en posición 1
+2026-06-08 10:38:48,372 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:48,799 [INFO]     cargada RGB (1800, 1800) ← 2_baefee20-a0bc-40d7-bf44-abe32303e699.png
+2026-06-08 10:38:48,860 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:48,887 [INFO]     [autocrop] (1800, 1800) → (1028, 1327)
+2026-06-08 10:38:48,887 [INFO]     [padding 5%]
+2026-06-08 10:38:52,064 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_2.webp] en posición 2
+2026-06-08 10:38:52,566 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:52,924 [INFO]     cargada RGB (1800, 1800) ← 3_bfd368e0-bc5e-4769-9028-5adadaa0b16d.png
+2026-06-08 10:38:52,992 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:53,018 [INFO]     [autocrop] (1800, 1800) → (1351, 1372)
+2026-06-08 10:38:53,018 [INFO]     [padding 5%]
+2026-06-08 10:38:56,328 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_3.webp] en posición 3
+2026-06-08 10:38:56,831 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:38:57,147 [INFO]     cargada RGB (1800, 1800) ← 4_ca4a8662-bec2-4d6e-abd5-d3d2de5e7c00.png
+2026-06-08 10:38:57,213 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:38:57,240 [INFO]     [autocrop] (1800, 1800) → (1352, 1353)
+2026-06-08 10:38:57,240 [INFO]     [padding 5%]
+2026-06-08 10:39:00,772 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_4.webp] en posición 4
+2026-06-08 10:39:01,274 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:01,525 [INFO]     cargada RGB (1800, 1800) ← 5_8ddb51a8-57c3-430f-b011-5017f2043677.png
+2026-06-08 10:39:01,579 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:01,603 [INFO]     [autocrop] (1800, 1800) → (1340, 1116)
+2026-06-08 10:39:01,603 [INFO]     [padding 5%]
+2026-06-08 10:39:04,670 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_5.webp] en posición 5
+2026-06-08 10:39:05,172 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:05,454 [INFO]     cargada RGB (1800, 1800) ← 6_b78a7ca2-039d-4fb1-9690-36a634b06fda.png
+2026-06-08 10:39:05,507 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:05,534 [INFO]     [autocrop] (1800, 1800) → (1254, 1225)
+2026-06-08 10:39:05,534 [INFO]     [padding 5%]
+2026-06-08 10:39:08,837 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_6.webp] en posición 6
+2026-06-08 10:39:09,340 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:09,695 [INFO]     cargada RGB (1800, 1800) ← 7_e61c772f-9872-4bdb-a893-42032e4f6d42.png
+2026-06-08 10:39:09,758 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:09,785 [INFO]     [autocrop] (1800, 1800) → (1258, 1207)
+2026-06-08 10:39:09,785 [INFO]     [padding 5%]
+2026-06-08 10:39:13,064 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_7.webp] en posición 7
+2026-06-08 10:39:13,567 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:13,866 [INFO]     cargada RGB (1800, 1800) ← 8_42268b2f-71c9-4b5a-ae33-1fbe452c4f97.png
+2026-06-08 10:39:13,920 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:13,947 [INFO]     [autocrop] (1800, 1800) → (927, 1352)
+2026-06-08 10:39:13,947 [INFO]     [padding 5%]
+2026-06-08 10:39:16,896 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_8.webp] en posición 8
+2026-06-08 10:39:17,399 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:17,729 [INFO]     cargada RGB (1800, 1800) ← 9_e0d91d26-0ec6-497a-890f-238017b1a982.png
+2026-06-08 10:39:17,790 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:17,817 [INFO]     [autocrop] (1800, 1800) → (1263, 1324)
+2026-06-08 10:39:17,817 [INFO]     [padding 5%]
+2026-06-08 10:39:21,062 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_9.webp] en posición 9
+2026-06-08 10:39:21,564 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:21,904 [INFO]     cargada RGB (1800, 1800) ← 10_90f81eb8-4f3a-440a-b00b-25675f4c1f11.png
+2026-06-08 10:39:21,998 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:39:21,998 [INFO]     [sin padding]
+2026-06-08 10:39:25,387 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_10.webp] en posición 10
+2026-06-08 10:39:25,890 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:26,172 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_5a28348f-22a2-49c9-a92f-e7c6ef858e0e.png
+2026-06-08 10:39:26,223 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:26,251 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:39:26,251 [INFO]     [padding 5%]
+2026-06-08 10:39:29,460 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_11.webp] en posición 11
+2026-06-08 10:39:29,963 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:30,226 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_1f263b88-9d8e-4ba8-8711-8154c6c91bba.png
+2026-06-08 10:39:30,278 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:30,301 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:39:30,302 [INFO]     [padding 5%]
+2026-06-08 10:39:33,376 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-mobility-1l-ndr_12.webp] en posición 12
+2026-06-08 10:39:34,195 [INFO] 
+[12/31] AUDEVARD EKYFLEX NODOLOX (NDR)  (ID 15509639201155) — 12 imágenes
+2026-06-08 10:39:34,468 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:34,799 [INFO]     cargada RGB (1800, 1800) ← 1_37f331fc-50f2-485b-979b-b82444923fae.png
+2026-06-08 10:39:34,865 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:34,888 [INFO]     [autocrop] (1800, 1800) → (1475, 1286)
+2026-06-08 10:39:34,888 [INFO]     [padding 5%]
+2026-06-08 10:39:38,647 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_1.webp] en posición 1
+2026-06-08 10:39:39,149 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:39,533 [INFO]     cargada RGB (1800, 1800) ← 2_dc5c0e1c-4fa7-4a57-9c5e-474eec2a693f.png
+2026-06-08 10:39:39,592 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:39,618 [INFO]     [autocrop] (1800, 1800) → (1027, 1273)
+2026-06-08 10:39:39,618 [INFO]     [padding 5%]
+2026-06-08 10:39:42,830 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_2.webp] en posición 2
+2026-06-08 10:39:43,333 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:43,666 [INFO]     cargada RGB (1800, 1800) ← 3_582cef93-fbfe-437b-9049-38bf1cba6b56.png
+2026-06-08 10:39:43,731 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:43,756 [INFO]     [autocrop] (1800, 1800) → (1351, 1370)
+2026-06-08 10:39:43,757 [INFO]     [padding 5%]
+2026-06-08 10:39:47,143 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_3.webp] en posición 3
+2026-06-08 10:39:47,646 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:47,975 [INFO]     cargada RGB (1800, 1800) ← 4_92ef2626-f8ca-4856-a09f-6ad94bb0981b.png
+2026-06-08 10:39:48,040 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:48,066 [INFO]     [autocrop] (1800, 1800) → (1353, 1353)
+2026-06-08 10:39:48,066 [INFO]     [padding 5%]
+2026-06-08 10:39:51,396 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_4.webp] en posición 4
+2026-06-08 10:39:51,899 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:52,227 [INFO]     cargada RGB (1800, 1800) ← 5_52bd2cfe-2c8b-4aa7-8b55-5389f74a07e6.png
+2026-06-08 10:39:52,285 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:52,312 [INFO]     [autocrop] (1800, 1800) → (1450, 1237)
+2026-06-08 10:39:52,312 [INFO]     [padding 5%]
+2026-06-08 10:39:55,542 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_5.webp] en posición 5
+2026-06-08 10:39:56,045 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:39:56,333 [INFO]     cargada RGB (1800, 1800) ← 6_a0e9b831-49a5-4fae-a978-0cb95e1ea718.png
+2026-06-08 10:39:56,388 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:39:56,414 [INFO]     [autocrop] (1800, 1800) → (1286, 1277)
+2026-06-08 10:39:56,414 [INFO]     [padding 5%]
+2026-06-08 10:39:59,617 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_6.webp] en posición 6
+2026-06-08 10:40:00,120 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:00,429 [INFO]     cargada RGB (1800, 1800) ← 7_85915443-d111-4742-a080-154095057ca5.png
+2026-06-08 10:40:00,491 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:00,517 [INFO]     [autocrop] (1800, 1800) → (1367, 1186)
+2026-06-08 10:40:00,517 [INFO]     [padding 5%]
+2026-06-08 10:40:03,796 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_7.webp] en posición 7
+2026-06-08 10:40:04,299 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:04,601 [INFO]     cargada RGB (1800, 1800) ← 8_51e0f427-609a-4e33-9efb-0a05786c6138.png
+2026-06-08 10:40:04,662 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:04,688 [INFO]     [autocrop] (1800, 1800) → (920, 1315)
+2026-06-08 10:40:04,688 [INFO]     [padding 5%]
+2026-06-08 10:40:07,776 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_8.webp] en posición 8
+2026-06-08 10:40:08,278 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:08,583 [INFO]     cargada RGB (1800, 1800) ← 9_01cf27f0-cebf-4f7c-94ba-42c276303ce3.png
+2026-06-08 10:40:08,644 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:08,670 [INFO]     [autocrop] (1800, 1800) → (1255, 1211)
+2026-06-08 10:40:08,670 [INFO]     [padding 5%]
+2026-06-08 10:40:12,047 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_9.webp] en posición 9
+2026-06-08 10:40:12,549 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:13,025 [INFO]     cargada RGB (1800, 1800) ← 10_602b6481-8ccd-4284-ba09-ace65893e8d6.png
+2026-06-08 10:40:13,117 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:40:13,117 [INFO]     [sin padding]
+2026-06-08 10:40:16,647 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_10.webp] en posición 10
+2026-06-08 10:40:17,149 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:17,449 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_38234a9b-87fe-4bb1-b002-433ad797e3d5.png
+2026-06-08 10:40:17,500 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:17,526 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:40:17,526 [INFO]     [padding 5%]
+2026-06-08 10:40:20,694 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_11.webp] en posición 11
+2026-06-08 10:40:21,197 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:21,453 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_604b69e2-c50d-4eba-9297-40050c15b523.png
+2026-06-08 10:40:21,505 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:21,529 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:40:21,529 [INFO]     [padding 5%]
+2026-06-08 10:40:24,586 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-ndr_12.webp] en posición 12
+2026-06-08 10:40:25,404 [INFO] 
+[13/31] AUDEVARD EKYFLEX NODOLOX FLASH 60ML (NDR)  (ID 15509639299459) — 11 imágenes
+2026-06-08 10:40:25,678 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:25,916 [INFO]     cargada RGB (1800, 1800) ← 1_701eb4ad-d591-460c-8816-12553bbac90f.png
+2026-06-08 10:40:25,962 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:25,986 [INFO]     [autocrop] (1800, 1800) → (1520, 359)
+2026-06-08 10:40:25,986 [INFO]     [padding 5%]
+2026-06-08 10:40:29,061 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_1.webp] en posición 1
+2026-06-08 10:40:29,563 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:29,856 [INFO]     cargada RGB (1800, 1800) ← 2_e0eae320-a98f-49b7-b68e-daf567078908.png
+2026-06-08 10:40:29,913 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:29,940 [INFO]     [autocrop] (1800, 1800) → (1033, 1184)
+2026-06-08 10:40:29,940 [INFO]     [padding 5%]
+2026-06-08 10:40:33,155 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_2.webp] en posición 2
+2026-06-08 10:40:33,658 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:33,974 [INFO]     cargada RGB (1800, 1800) ← 3_f29b3f59-ad95-4670-851f-19ade4d0f486.png
+2026-06-08 10:40:34,040 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:34,066 [INFO]     [autocrop] (1800, 1800) → (1352, 1345)
+2026-06-08 10:40:34,066 [INFO]     [padding 5%]
+2026-06-08 10:40:37,627 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_3.webp] en posición 3
+2026-06-08 10:40:38,130 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:38,487 [INFO]     cargada RGB (1800, 1800) ← 4_20df5032-e135-4e04-b76d-0816a7bbc2d2.png
+2026-06-08 10:40:38,554 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:38,580 [INFO]     [autocrop] (1800, 1800) → (1354, 1351)
+2026-06-08 10:40:38,580 [INFO]     [padding 5%]
+2026-06-08 10:40:42,440 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_4.webp] en posición 4
+2026-06-08 10:40:42,943 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:43,256 [INFO]     cargada RGB (1800, 1800) ← 5_7bd3a0ea-449c-457c-877b-8e46ca7deb0f.png
+2026-06-08 10:40:43,316 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:43,344 [INFO]     [autocrop] (1800, 1800) → (1350, 1271)
+2026-06-08 10:40:43,344 [INFO]     [padding 5%]
+2026-06-08 10:40:46,384 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_5.webp] en posición 5
+2026-06-08 10:40:46,886 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:47,127 [INFO]     cargada RGB (1800, 1800) ← 6_86b59b04-f440-4ddd-a15b-c460280bf350.png
+2026-06-08 10:40:47,182 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:47,206 [INFO]     [autocrop] (1800, 1800) → (1060, 1221)
+2026-06-08 10:40:47,206 [INFO]     [padding 5%]
+2026-06-08 10:40:50,353 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_6.webp] en posición 6
+2026-06-08 10:40:50,856 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:51,188 [INFO]     cargada RGB (1800, 1800) ← 7_e20bffec-ab9d-40b3-b516-b12666a1d50e.png
+2026-06-08 10:40:51,242 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:51,269 [INFO]     [autocrop] (1800, 1800) → (1285, 1260)
+2026-06-08 10:40:51,269 [INFO]     [padding 5%]
+2026-06-08 10:40:54,461 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_7.webp] en posición 7
+2026-06-08 10:40:54,964 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:55,303 [INFO]     cargada RGB (1800, 1800) ← 8_b805402e-e328-4989-9c94-8e5caf5d5189.png
+2026-06-08 10:40:55,365 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:40:55,391 [INFO]     [autocrop] (1800, 1800) → (1261, 1260)
+2026-06-08 10:40:55,391 [INFO]     [padding 5%]
+2026-06-08 10:40:58,920 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_8.webp] en posición 8
+2026-06-08 10:40:59,423 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:40:59,763 [INFO]     cargada RGB (1800, 1800) ← 9_40a3626d-0199-4b08-a7a4-032e48433ff8.png
+2026-06-08 10:40:59,863 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:40:59,863 [INFO]     [sin padding]
+2026-06-08 10:41:03,845 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_9.webp] en posición 9
+2026-06-08 10:41:04,347 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:04,641 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_c4825dfb-606f-4204-8c77-83aeb57d1625.png
+2026-06-08 10:41:04,692 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:04,720 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:41:04,720 [INFO]     [padding 5%]
+2026-06-08 10:41:07,861 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_10.webp] en posición 10
+2026-06-08 10:41:08,364 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:08,625 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_08f29b44-7f89-4ff8-a635-db3292d87ca8.png
+2026-06-08 10:41:08,677 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:08,701 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:41:08,701 [INFO]     [padding 5%]
+2026-06-08 10:41:11,667 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-nodolox-flash-60ml-ndr_11.webp] en posición 11
+2026-06-08 10:41:12,483 [INFO] 
+[14/31] AUDEVARD EKYFLEX OSTEO 1,5KG (NDR)  (ID 15509639332227) — 12 imágenes
+2026-06-08 10:41:12,774 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:13,117 [INFO]     cargada RGB (1800, 1800) ← 1_60939953-ed90-41ae-a315-fe00e0b5c78a.png
+2026-06-08 10:41:13,183 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:13,206 [INFO]     [autocrop] (1800, 1800) → (1444, 1269)
+2026-06-08 10:41:13,206 [INFO]     [padding 5%]
+2026-06-08 10:41:17,047 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_1.webp] en posición 1
+2026-06-08 10:41:17,550 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:17,855 [INFO]     cargada RGB (1800, 1800) ← 2_d1f200c9-79e2-45e4-97bd-486242c70c70.png
+2026-06-08 10:41:17,915 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:17,941 [INFO]     [autocrop] (1800, 1800) → (894, 1246)
+2026-06-08 10:41:17,942 [INFO]     [padding 5%]
+2026-06-08 10:41:21,347 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_2.webp] en posición 2
+2026-06-08 10:41:21,849 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:22,152 [INFO]     cargada RGB (1800, 1800) ← 3_7e6bb999-059e-4b1e-8bfb-fa06a8701983.png
+2026-06-08 10:41:22,218 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:22,243 [INFO]     [autocrop] (1800, 1800) → (1343, 1345)
+2026-06-08 10:41:22,244 [INFO]     [padding 5%]
+2026-06-08 10:41:25,720 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_3.webp] en posición 3
+2026-06-08 10:41:26,223 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:26,526 [INFO]     cargada RGB (1800, 1800) ← 4_aafb8d34-a54e-485e-93d7-6c652e91b21f.png
+2026-06-08 10:41:26,591 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:26,617 [INFO]     [autocrop] (1800, 1800) → (1352, 1379)
+2026-06-08 10:41:26,617 [INFO]     [padding 5%]
+2026-06-08 10:41:30,101 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_4.webp] en posición 4
+2026-06-08 10:41:30,604 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:30,882 [INFO]     cargada RGB (1800, 1800) ← 5_db606150-f768-4459-a247-c97056f3c5dc.png
+2026-06-08 10:41:30,935 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:30,959 [INFO]     [autocrop] (1800, 1800) → (1274, 1237)
+2026-06-08 10:41:30,959 [INFO]     [padding 5%]
+2026-06-08 10:41:34,118 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_5.webp] en posición 5
+2026-06-08 10:41:34,621 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:34,906 [INFO]     cargada RGB (1800, 1800) ← 6_af6c8bd2-7f1e-4758-b361-94363a978d71.png
+2026-06-08 10:41:34,961 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:34,987 [INFO]     [autocrop] (1800, 1800) → (1289, 1261)
+2026-06-08 10:41:34,987 [INFO]     [padding 5%]
+2026-06-08 10:41:38,211 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_6.webp] en posición 6
+2026-06-08 10:41:38,713 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:39,006 [INFO]     cargada RGB (1800, 1800) ← 7_bba44f6b-f5cb-4bd6-bafe-93eb2c5a184d.png
+2026-06-08 10:41:39,070 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:39,095 [INFO]     [autocrop] (1800, 1800) → (1397, 1227)
+2026-06-08 10:41:39,096 [INFO]     [padding 5%]
+2026-06-08 10:41:42,367 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_7.webp] en posición 7
+2026-06-08 10:41:42,870 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:43,173 [INFO]     cargada RGB (1800, 1800) ← 8_65704961-b4b3-4c42-a463-df0f3294f4b0.png
+2026-06-08 10:41:43,228 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:43,254 [INFO]     [autocrop] (1800, 1800) → (1123, 1265)
+2026-06-08 10:41:43,254 [INFO]     [padding 5%]
+2026-06-08 10:41:46,325 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_8.webp] en posición 8
+2026-06-08 10:41:46,828 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:47,191 [INFO]     cargada RGB (1800, 1800) ← 9_d9470a0b-f5ce-4bd6-98c2-0178bdc2ee7c.png
+2026-06-08 10:41:47,252 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:47,277 [INFO]     [autocrop] (1800, 1800) → (1256, 1321)
+2026-06-08 10:41:47,277 [INFO]     [padding 5%]
+2026-06-08 10:41:50,841 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_9.webp] en posición 9
+2026-06-08 10:41:51,343 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:51,691 [INFO]     cargada RGB (1800, 1800) ← 10_228e8685-b720-4b07-9472-3fc4a9ae3771.png
+2026-06-08 10:41:51,790 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:41:51,790 [INFO]     [sin padding]
+2026-06-08 10:41:55,660 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_10.webp] en posición 10
+2026-06-08 10:41:56,163 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:41:56,486 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_062b0b9a-69d9-421c-a283-e22e1812ef33.png
+2026-06-08 10:41:56,537 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:41:56,563 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:41:56,564 [INFO]     [padding 5%]
+2026-06-08 10:41:59,685 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_11.webp] en posición 11
+2026-06-08 10:42:00,188 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:00,470 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_64db981e-93ba-447e-b174-347c803a7186.png
+2026-06-08 10:42:00,522 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:00,546 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:42:00,546 [INFO]     [padding 5%]
+2026-06-08 10:42:03,409 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-osteo-1-5kg-ndr_12.webp] en posición 12
+2026-06-08 10:42:04,257 [INFO] 
+[15/31] AUDEVARD EKYFLEX TENDON EVO (NDR)  (ID 15509639364995) — 13 imágenes
+2026-06-08 10:42:04,529 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:04,869 [INFO]     cargada RGB (1800, 1800) ← 1_6cd9388f-059b-4095-bf0b-3ed7a284dad5.png
+2026-06-08 10:42:04,935 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:04,958 [INFO]     [autocrop] (1800, 1800) → (1530, 1287)
+2026-06-08 10:42:04,958 [INFO]     [padding 5%]
+2026-06-08 10:42:08,646 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_1.webp] en posición 1
+2026-06-08 10:42:09,148 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:09,455 [INFO]     cargada RGB (1800, 1800) ← 2_e09d0d44-37a8-422b-af7d-9f7ff7473557.png
+2026-06-08 10:42:09,515 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:09,541 [INFO]     [autocrop] (1800, 1800) → (1357, 1276)
+2026-06-08 10:42:09,541 [INFO]     [padding 5%]
+2026-06-08 10:42:12,971 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_2.webp] en posición 2
+2026-06-08 10:42:13,473 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:13,787 [INFO]     cargada RGB (1800, 1800) ← 3_5d3f6f76-502d-45e7-ac35-2d629f928cb2.png
+2026-06-08 10:42:13,855 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:13,880 [INFO]     [autocrop] (1800, 1800) → (1351, 1377)
+2026-06-08 10:42:13,880 [INFO]     [padding 5%]
+2026-06-08 10:42:17,422 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_3.webp] en posición 3
+2026-06-08 10:42:17,924 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:18,269 [INFO]     cargada RGB (1800, 1800) ← 4_e1fd5c40-6322-4d4d-8989-d472c8294042.png
+2026-06-08 10:42:18,335 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:18,360 [INFO]     [autocrop] (1800, 1800) → (1354, 1353)
+2026-06-08 10:42:18,360 [INFO]     [padding 5%]
+2026-06-08 10:42:22,236 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_4.webp] en posición 4
+2026-06-08 10:42:22,738 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:23,032 [INFO]     cargada RGB (1800, 1800) ← 5_c7a8bd10-0a05-4c75-8807-5d7106c1c9bd.png
+2026-06-08 10:42:23,091 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:23,118 [INFO]     [autocrop] (1800, 1800) → (1274, 1341)
+2026-06-08 10:42:23,118 [INFO]     [padding 5%]
+2026-06-08 10:42:26,449 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_5.webp] en posición 5
+2026-06-08 10:42:26,952 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:27,284 [INFO]     cargada RGB (1800, 1800) ← 6_315c9f71-6913-4c96-8d3d-5451ce56b35a.png
+2026-06-08 10:42:27,343 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:27,370 [INFO]     [autocrop] (1800, 1800) → (1273, 1254)
+2026-06-08 10:42:27,370 [INFO]     [padding 5%]
+2026-06-08 10:42:30,820 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_6.webp] en posición 6
+2026-06-08 10:42:31,323 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:31,664 [INFO]     cargada RGB (1800, 1800) ← 7_220b57cf-0499-4a3b-aaef-02798f07be1b.png
+2026-06-08 10:42:31,726 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:31,752 [INFO]     [autocrop] (1800, 1800) → (1376, 1157)
+2026-06-08 10:42:31,752 [INFO]     [padding 5%]
+2026-06-08 10:42:34,871 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_7.webp] en posición 7
+2026-06-08 10:42:35,374 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:35,671 [INFO]     cargada RGB (1800, 1800) ← 8_9bfcc8e7-b651-49a8-8236-2efc369103ab.png
+2026-06-08 10:42:35,732 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:35,759 [INFO]     [autocrop] (1800, 1800) → (972, 1362)
+2026-06-08 10:42:35,759 [INFO]     [padding 5%]
+2026-06-08 10:42:38,847 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_8.webp] en posición 8
+2026-06-08 10:42:39,350 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:39,686 [INFO]     cargada RGB (1800, 1800) ← 9_badec262-2cf1-476f-9565-3cd6aa29684e.png
+2026-06-08 10:42:39,747 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:39,772 [INFO]     [autocrop] (1800, 1800) → (1257, 1283)
+2026-06-08 10:42:39,772 [INFO]     [padding 5%]
+2026-06-08 10:42:43,232 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_9.webp] en posición 9
+2026-06-08 10:42:43,735 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:44,091 [INFO]     cargada RGB (1800, 1800) ← 10_a26e3836-b72e-4335-8650-ed56e86e7ea7.png
+2026-06-08 10:42:44,185 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:42:44,185 [INFO]     [sin padding]
+2026-06-08 10:42:48,011 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_10.webp] en posición 10
+2026-06-08 10:42:48,513 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:48,943 [INFO]     cargada RGB (1800, 1800) ← 11_29552ee1-b8e1-4a37-b8ed-e4eb53bde63f.png
+2026-06-08 10:42:49,038 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:42:49,038 [INFO]     [sin padding]
+2026-06-08 10:42:52,886 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_11.webp] en posición 11
+2026-06-08 10:42:53,388 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:53,679 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_635c1f49-f304-4161-a35c-d171f3e1c0e9.png
+2026-06-08 10:42:53,730 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:53,756 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:42:53,756 [INFO]     [padding 5%]
+2026-06-08 10:42:57,077 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_12.webp] en posición 12
+2026-06-08 10:42:57,580 [INFO]   pos 13: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:42:57,867 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_1de1cfce-ee76-452c-8882-0a33ccb269bd.png
+2026-06-08 10:42:57,919 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:42:57,943 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:42:57,943 [INFO]     [padding 5%]
+2026-06-08 10:43:00,844 [INFO]     ✓ reprocesada y subida [audevard-ekyflex-tendon-evo-ndr_13.webp] en posición 13
+2026-06-08 10:43:01,714 [INFO] 
+[16/31] AUDEVARD EKYGARD (NDR)  (ID 15509639463299) — 13 imágenes
+2026-06-08 10:43:01,989 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:02,363 [INFO]     cargada RGB (1800, 1800) ← 1_0e2733a0-4f6d-40ce-a391-9be46596e869.png
+2026-06-08 10:43:02,428 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:02,452 [INFO]     [autocrop] (1800, 1800) → (1433, 1274)
+2026-06-08 10:43:02,452 [INFO]     [padding 5%]
+2026-06-08 10:43:06,130 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_1.webp] en posición 1
+2026-06-08 10:43:06,632 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:06,922 [INFO]     cargada RGB (1800, 1800) ← 2_3478b24e-6567-45f4-81fd-8328e9ad4663.png
+2026-06-08 10:43:06,983 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:07,009 [INFO]     [autocrop] (1800, 1800) → (1112, 1285)
+2026-06-08 10:43:07,009 [INFO]     [padding 5%]
+2026-06-08 10:43:10,251 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_2.webp] en posición 2
+2026-06-08 10:43:10,754 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:11,088 [INFO]     cargada RGB (1800, 1800) ← 3_8eafc2ec-8c9a-4f28-b877-cc9f6b429cc2.png
+2026-06-08 10:43:11,154 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:11,181 [INFO]     [autocrop] (1800, 1800) → (1352, 1371)
+2026-06-08 10:43:11,181 [INFO]     [padding 5%]
+2026-06-08 10:43:14,615 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_3.webp] en posición 3
+2026-06-08 10:43:15,117 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:15,412 [INFO]     cargada RGB (1800, 1800) ← 4_d67ce18a-e22a-4d88-91f5-26f0b0700b5d.png
+2026-06-08 10:43:15,477 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:15,502 [INFO]     [autocrop] (1800, 1800) → (1353, 1372)
+2026-06-08 10:43:15,503 [INFO]     [padding 5%]
+2026-06-08 10:43:18,862 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_4.webp] en posición 4
+2026-06-08 10:43:19,364 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:19,691 [INFO]     cargada RGB (1800, 1800) ← 5_dc17e9ea-0bed-47e8-a67c-9d0eb9c15a5b.png
+2026-06-08 10:43:19,749 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:19,776 [INFO]     [autocrop] (1800, 1800) → (1301, 1236)
+2026-06-08 10:43:19,776 [INFO]     [padding 5%]
+2026-06-08 10:43:23,150 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_5.webp] en posición 5
+2026-06-08 10:43:23,652 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:24,049 [INFO]     cargada RGB (1800, 1800) ← 6_5b1e69ad-b902-477e-98a2-adc35d96e420.png
+2026-06-08 10:43:24,109 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:24,134 [INFO]     [autocrop] (1800, 1800) → (1291, 1298)
+2026-06-08 10:43:24,134 [INFO]     [padding 5%]
+2026-06-08 10:43:27,455 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_6.webp] en posición 6
+2026-06-08 10:43:27,958 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:28,275 [INFO]     cargada RGB (1800, 1800) ← 7_9fa5f67f-b801-4a14-b1e3-9397234a6ad4.png
+2026-06-08 10:43:28,339 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:28,365 [INFO]     [autocrop] (1800, 1800) → (1265, 1182)
+2026-06-08 10:43:28,365 [INFO]     [padding 5%]
+2026-06-08 10:43:31,626 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_7.webp] en posición 7
+2026-06-08 10:43:32,129 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:32,476 [INFO]     cargada RGB (1800, 1800) ← 8_8de0ef59-67d2-42ee-849d-17215b8173fd.png
+2026-06-08 10:43:32,538 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:32,564 [INFO]     [autocrop] (1800, 1800) → (1350, 1350)
+2026-06-08 10:43:32,565 [INFO]     [padding 5%]
+2026-06-08 10:43:35,990 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_8.webp] en posición 8
+2026-06-08 10:43:36,493 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:36,822 [INFO]     cargada RGB (1800, 1800) ← 9_7464cedf-d84a-43a3-80e4-f2b8094fc73e.png
+2026-06-08 10:43:36,881 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:36,907 [INFO]     [autocrop] (1800, 1800) → (1253, 1261)
+2026-06-08 10:43:36,907 [INFO]     [padding 5%]
+2026-06-08 10:43:40,956 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_9.webp] en posición 9
+2026-06-08 10:43:41,458 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:41,821 [INFO]     cargada RGB (1800, 1800) ← 10_af8902f8-ebd7-4595-be5a-c22e50aa0167.png
+2026-06-08 10:43:41,923 [INFO]     [bg] 7/8100 (0%)
+2026-06-08 10:43:41,923 [INFO]     [sin padding]
+2026-06-08 10:43:45,773 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_10.webp] en posición 10
+2026-06-08 10:43:46,276 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:46,678 [INFO]     cargada RGB (1800, 1800) ← 11_a4aff2ca-1584-49fb-9c90-39bf4c28afbe.png
+2026-06-08 10:43:46,781 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:43:46,781 [INFO]     [sin padding]
+2026-06-08 10:43:51,031 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_11.webp] en posición 11
+2026-06-08 10:43:51,534 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:51,843 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_36ef1cff-c280-465a-807b-8a5b13b5efec.png
+2026-06-08 10:43:51,895 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:51,921 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:43:51,921 [INFO]     [padding 5%]
+2026-06-08 10:43:55,029 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_12.webp] en posición 12
+2026-06-08 10:43:55,532 [INFO]   pos 13: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:43:55,804 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_ab72ece9-15a5-4a23-b235-21fc504cf5be.png
+2026-06-08 10:43:55,856 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:43:55,880 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:43:55,880 [INFO]     [padding 5%]
+2026-06-08 10:43:59,102 [INFO]     ✓ reprocesada y subida [audevard-ekygard-ndr_13.webp] en posición 13
+2026-06-08 10:43:59,922 [INFO] 
+[17/31] AUDEVARD EKYGARD FLASH 60ML (NDR)  (ID 15509639528835) — 11 imágenes
+2026-06-08 10:44:00,195 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:00,482 [INFO]     cargada RGB (1800, 1800) ← 1_3048d008-fb79-4230-8bf5-ded641290dcf.png
+2026-06-08 10:44:00,530 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:00,553 [INFO]     [autocrop] (1800, 1800) → (1562, 416)
+2026-06-08 10:44:00,553 [INFO]     [padding 5%]
+2026-06-08 10:44:03,730 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_1.webp] en posición 1
+2026-06-08 10:44:04,232 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:04,676 [INFO]     cargada RGB (1800, 1800) ← 2_5e5d4733-d8a3-468e-844a-3e059b124b6a.png
+2026-06-08 10:44:04,731 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:04,757 [INFO]     [autocrop] (1800, 1800) → (1196, 1218)
+2026-06-08 10:44:04,758 [INFO]     [padding 5%]
+2026-06-08 10:44:07,936 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_2.webp] en posición 2
+2026-06-08 10:44:08,439 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:08,777 [INFO]     cargada RGB (1800, 1800) ← 3_bf352ed2-62cc-4ad4-919e-b6cc90ac5b9d.png
+2026-06-08 10:44:08,842 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:08,867 [INFO]     [autocrop] (1800, 1800) → (1352, 1346)
+2026-06-08 10:44:08,867 [INFO]     [padding 5%]
+2026-06-08 10:44:12,178 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_3.webp] en posición 3
+2026-06-08 10:44:12,681 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:13,111 [INFO]     cargada RGB (1800, 1800) ← 4_3ad10c51-1ac1-4387-a927-55ed56f31cb9.png
+2026-06-08 10:44:13,174 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:13,199 [INFO]     [autocrop] (1800, 1800) → (1355, 1358)
+2026-06-08 10:44:13,199 [INFO]     [padding 5%]
+2026-06-08 10:44:16,499 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_4.webp] en posición 4
+2026-06-08 10:44:17,002 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:17,294 [INFO]     cargada RGB (1800, 1800) ← 5_8d0b58a6-f7ea-4730-aad1-c73fa6011d22.png
+2026-06-08 10:44:17,345 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:17,369 [INFO]     [autocrop] (1800, 1800) → (1122, 1274)
+2026-06-08 10:44:17,369 [INFO]     [padding 5%]
+2026-06-08 10:44:20,541 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_5.webp] en posición 5
+2026-06-08 10:44:21,043 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:21,358 [INFO]     cargada RGB (1800, 1800) ← 6_812f38ef-edc5-4117-857f-0d836afc6b9e.png
+2026-06-08 10:44:21,419 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:21,445 [INFO]     [autocrop] (1800, 1800) → (1330, 1271)
+2026-06-08 10:44:21,446 [INFO]     [padding 5%]
+2026-06-08 10:44:24,831 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_6.webp] en posición 6
+2026-06-08 10:44:25,334 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:25,596 [INFO]     cargada RGB (1800, 1800) ← 7_0d38ed6b-d7a0-41fc-bf73-5dcb3f76e8ee.png
+2026-06-08 10:44:25,651 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:25,674 [INFO]     [autocrop] (1800, 1800) → (1083, 1219)
+2026-06-08 10:44:25,674 [INFO]     [padding 5%]
+2026-06-08 10:44:28,556 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_7.webp] en posición 7
+2026-06-08 10:44:29,058 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:29,374 [INFO]     cargada RGB (1800, 1800) ← 8_74686ee5-b32c-4cbc-be94-53707baf923d.png
+2026-06-08 10:44:29,432 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:29,458 [INFO]     [autocrop] (1800, 1800) → (1261, 1264)
+2026-06-08 10:44:29,458 [INFO]     [padding 5%]
+2026-06-08 10:44:32,960 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_8.webp] en posición 8
+2026-06-08 10:44:33,463 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:33,808 [INFO]     cargada RGB (1800, 1800) ← 9_917784c4-780a-4966-bd36-3c69148bcbb4.png
+2026-06-08 10:44:33,897 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:44:33,897 [INFO]     [sin padding]
+2026-06-08 10:44:37,206 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_9.webp] en posición 9
+2026-06-08 10:44:37,709 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:37,994 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_8ed6ca82-fb56-4902-b778-658d9116828a.png
+2026-06-08 10:44:38,046 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:38,073 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:44:38,073 [INFO]     [padding 5%]
+2026-06-08 10:44:41,199 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_10.webp] en posición 10
+2026-06-08 10:44:41,702 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:41,970 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_d71e622b-3522-461a-a00e-edf19afa3fa3.png
+2026-06-08 10:44:42,022 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:42,046 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:44:42,046 [INFO]     [padding 5%]
+2026-06-08 10:44:45,060 [INFO]     ✓ reprocesada y subida [audevard-ekygard-flash-60ml-ndr_11.webp] en posición 11
+2026-06-08 10:44:45,860 [INFO] 
+[18/31] AUDEVARD EKYMASH BOOSTER 1L  (ID 15509639594371) — 5 imágenes
+2026-06-08 10:44:46,131 [INFO]   pos 1: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:44:46,412 [INFO]     cargada RGB (1500, 1500) ← 1_e1c9d9b7-3739-41b1-8941-b61c53db4f3f.png
+2026-06-08 10:44:46,452 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:44:46,469 [INFO]     [autocrop] (1500, 1500) → (409, 1137)
+2026-06-08 10:44:46,469 [INFO]     [padding 5%]
+2026-06-08 10:44:49,894 [INFO]     ✓ reprocesada y subida [audevard-ekymash-booster-1l_1.webp] en posición 1
+2026-06-08 10:44:50,396 [INFO]   pos 2: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:44:50,637 [INFO]     cargada RGB (1500, 1500) ← 2_2bdd0d43-3883-4fe2-abb1-e774769a3332.png
+2026-06-08 10:44:50,675 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:44:50,692 [INFO]     [autocrop] (1500, 1500) → (403, 941)
+2026-06-08 10:44:50,692 [INFO]     [padding 5%]
+2026-06-08 10:44:53,515 [INFO]     ✓ reprocesada y subida [audevard-ekymash-booster-1l_2.webp] en posición 2
+2026-06-08 10:44:54,017 [INFO]   pos 3: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:44:54,454 [INFO]     cargada RGB (1500, 1500) ← 3_6971a5d4-fa32-4e15-b48c-29f98b3dfa97.png
+2026-06-08 10:44:54,527 [INFO]     [bg] 0/5776 (0%)
+2026-06-08 10:44:54,527 [INFO]     [sin padding]
+2026-06-08 10:44:58,513 [INFO]     ✓ reprocesada y subida [audevard-ekymash-booster-1l_3.webp] en posición 3
+2026-06-08 10:44:59,016 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:44:59,317 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_248683fa-4400-4da1-beae-07a423464845.png
+2026-06-08 10:44:59,368 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:44:59,395 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:44:59,395 [INFO]     [padding 5%]
+2026-06-08 10:45:02,737 [INFO]     ✓ reprocesada y subida [audevard-ekymash-booster-1l_4.webp] en posición 4
+2026-06-08 10:45:03,239 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:45:03,521 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_0cba8ec1-b9aa-4105-9917-57b05832376f.png
+2026-06-08 10:45:03,573 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:45:03,596 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:45:03,596 [INFO]     [padding 5%]
+2026-06-08 10:45:06,663 [INFO]     ✓ reprocesada y subida [audevard-ekymash-booster-1l_5.webp] en posición 5
+2026-06-08 10:45:07,488 [INFO] 
+[19/31] AUDEVARD EKYRENAL PLUS (NDR)  (ID 15509639659907) — 12 imágenes
+2026-06-08 10:45:07,746 [INFO]   pos 1: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:07,986 [INFO]     cargada RGB (1500, 1500) ← 1_2ceb6fa3-6d01-44f6-9734-830fb247e80b.png
+2026-06-08 10:45:08,027 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:08,044 [INFO]     [autocrop] (1500, 1500) → (551, 1069)
+2026-06-08 10:45:08,044 [INFO]     [padding 5%]
+2026-06-08 10:45:11,203 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_1.webp] en posición 1
+2026-06-08 10:45:11,706 [INFO]   pos 2: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:11,989 [INFO]     cargada RGB (1500, 1500) ← 2_6f1dba53-531d-435f-9099-07b27d1a449d.png
+2026-06-08 10:45:12,032 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:12,052 [INFO]     [autocrop] (1500, 1500) → (1012, 1124)
+2026-06-08 10:45:12,052 [INFO]     [padding 5%]
+2026-06-08 10:45:15,413 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_2.webp] en posición 2
+2026-06-08 10:45:15,916 [INFO]   pos 3: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:16,258 [INFO]     cargada RGB (1500, 1500) ← 3_c65c124f-f375-4408-abe9-0bf1fea8b83c.png
+2026-06-08 10:45:16,306 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:16,325 [INFO]     [autocrop] (1500, 1500) → (1129, 1126)
+2026-06-08 10:45:16,325 [INFO]     [padding 5%]
+2026-06-08 10:45:19,665 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_3.webp] en posición 3
+2026-06-08 10:45:20,168 [INFO]   pos 4: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:20,456 [INFO]     cargada RGB (1500, 1500) ← 4_8b96e53b-ada6-4def-9467-3f958213615e.png
+2026-06-08 10:45:20,505 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:20,524 [INFO]     [autocrop] (1500, 1500) → (1138, 1147)
+2026-06-08 10:45:20,524 [INFO]     [padding 5%]
+2026-06-08 10:45:24,097 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_4.webp] en posición 4
+2026-06-08 10:45:24,600 [INFO]   pos 5: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:24,884 [INFO]     cargada RGB (1500, 1500) ← 5_639b6f4c-5033-4b48-ac02-64a54a113d96.png
+2026-06-08 10:45:24,922 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:24,939 [INFO]     [autocrop] (1500, 1500) → (1047, 1097)
+2026-06-08 10:45:24,939 [INFO]     [padding 5%]
+2026-06-08 10:45:28,344 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_5.webp] en posición 5
+2026-06-08 10:45:28,847 [INFO]   pos 6: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:29,152 [INFO]     cargada RGB (1500, 1500) ← 6_5e1cac5c-78c4-44b8-a1bc-b28889740944.png
+2026-06-08 10:45:29,191 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:29,211 [INFO]     [autocrop] (1500, 1500) → (1100, 1054)
+2026-06-08 10:45:29,211 [INFO]     [padding 5%]
+2026-06-08 10:45:32,619 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_6.webp] en posición 6
+2026-06-08 10:45:33,121 [INFO]   pos 7: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:33,428 [INFO]     cargada RGB (1500, 1500) ← 7_04a5aff7-debe-4dd7-b7d7-00cbd38f8a7f.png
+2026-06-08 10:45:33,477 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:33,496 [INFO]     [autocrop] (1500, 1500) → (1098, 996)
+2026-06-08 10:45:33,496 [INFO]     [padding 5%]
+2026-06-08 10:45:36,868 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_7.webp] en posición 7
+2026-06-08 10:45:37,371 [INFO]   pos 8: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:37,693 [INFO]     cargada RGB (1500, 1500) ← 8_e14e9343-526c-457a-9d4c-bf685329e1ba.png
+2026-06-08 10:45:37,738 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:37,757 [INFO]     [autocrop] (1500, 1500) → (975, 1057)
+2026-06-08 10:45:37,757 [INFO]     [padding 5%]
+2026-06-08 10:45:41,033 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_8.webp] en posición 8
+2026-06-08 10:45:41,536 [INFO]   pos 9: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:41,850 [INFO]     cargada RGB (1500, 1500) ← 9.png
+2026-06-08 10:45:41,896 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:41,915 [INFO]     [autocrop] (1500, 1500) → (1126, 1105)
+2026-06-08 10:45:41,915 [INFO]     [padding 5%]
+2026-06-08 10:45:45,811 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_9.webp] en posición 9
+2026-06-08 10:45:46,314 [INFO]   pos 10: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:46,598 [INFO]     cargada RGB (1500, 1500) ← 10.png
+2026-06-08 10:45:46,634 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:46,654 [INFO]     [autocrop] (1500, 1500) → (950, 948)
+2026-06-08 10:45:46,654 [INFO]     [padding 5%]
+2026-06-08 10:45:49,810 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_10.webp] en posición 10
+2026-06-08 10:45:50,312 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:45:50,578 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_de9b155e-f59e-40e6-af86-0fcfc9d0cacb.png
+2026-06-08 10:45:50,630 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:45:50,653 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:45:50,653 [INFO]     [padding 5%]
+2026-06-08 10:45:53,597 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_11.webp] en posición 11
+2026-06-08 10:45:54,100 [INFO]   pos 12: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:54,416 [INFO]     cargada RGB (1500, 1500) ← 11.png
+2026-06-08 10:45:54,486 [INFO]     [bg] 2456/5776 (43%)
+2026-06-08 10:45:54,486 [INFO]     [sin padding]
+2026-06-08 10:45:58,111 [INFO]     ✓ reprocesada y subida [audevard-ekyrenal-plus-ndr_12.webp] en posición 12
+2026-06-08 10:45:58,936 [INFO] 
+[20/31] AUDEVARD HARPAGYL (NDR)  (ID 15509639692675) — 11 imágenes
+2026-06-08 10:45:59,208 [INFO]   pos 1: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:45:59,545 [INFO]     cargada RGB (1500, 1500) ← 1_62aa9ea5-2b3c-45c9-8139-92fedb44f765.png
+2026-06-08 10:45:59,593 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:45:59,611 [INFO]     [autocrop] (1500, 1500) → (1272, 1055)
+2026-06-08 10:45:59,611 [INFO]     [padding 5%]
+2026-06-08 10:46:03,481 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_1.webp] en posición 1
+2026-06-08 10:46:03,984 [INFO]   pos 2: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:04,309 [INFO]     cargada RGB (1500, 1500) ← 2.png
+2026-06-08 10:46:04,351 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:04,370 [INFO]     [autocrop] (1500, 1500) → (880, 1069)
+2026-06-08 10:46:04,370 [INFO]     [padding 5%]
+2026-06-08 10:46:07,798 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_2.webp] en posición 2
+2026-06-08 10:46:08,300 [INFO]   pos 3: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:08,623 [INFO]     cargada RGB (1500, 1500) ← 3.png
+2026-06-08 10:46:08,670 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:08,689 [INFO]     [autocrop] (1500, 1500) → (1129, 1143)
+2026-06-08 10:46:08,689 [INFO]     [padding 5%]
+2026-06-08 10:46:11,959 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_3.webp] en posición 3
+2026-06-08 10:46:12,461 [INFO]   pos 4: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:12,777 [INFO]     cargada RGB (1500, 1500) ← 4.png
+2026-06-08 10:46:12,825 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:12,844 [INFO]     [autocrop] (1500, 1500) → (1130, 1129)
+2026-06-08 10:46:12,844 [INFO]     [padding 5%]
+2026-06-08 10:46:16,075 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_4.webp] en posición 4
+2026-06-08 10:46:16,578 [INFO]   pos 5: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:16,876 [INFO]     cargada RGB (1500, 1500) ← 5.png
+2026-06-08 10:46:16,917 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:16,936 [INFO]     [autocrop] (1500, 1500) → (1069, 1045)
+2026-06-08 10:46:16,936 [INFO]     [padding 5%]
+2026-06-08 10:46:20,365 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_5.webp] en posición 5
+2026-06-08 10:46:20,868 [INFO]   pos 6: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:21,171 [INFO]     cargada RGB (1500, 1500) ← 6.png
+2026-06-08 10:46:21,214 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:21,234 [INFO]     [autocrop] (1500, 1500) → (1156, 977)
+2026-06-08 10:46:21,234 [INFO]     [padding 5%]
+2026-06-08 10:46:24,871 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_6.webp] en posición 6
+2026-06-08 10:46:25,374 [INFO]   pos 7: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:25,663 [INFO]     cargada RGB (1500, 1500) ← 7.png
+2026-06-08 10:46:25,707 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:25,727 [INFO]     [autocrop] (1500, 1500) → (1155, 1136)
+2026-06-08 10:46:25,727 [INFO]     [padding 5%]
+2026-06-08 10:46:29,077 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_7.webp] en posición 7
+2026-06-08 10:46:29,579 [INFO]   pos 8: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:29,875 [INFO]     cargada RGB (1500, 1500) ← 8.png
+2026-06-08 10:46:29,913 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:29,933 [INFO]     [autocrop] (1500, 1500) → (1048, 1047)
+2026-06-08 10:46:29,933 [INFO]     [padding 5%]
+2026-06-08 10:46:33,357 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_8.webp] en posición 8
+2026-06-08 10:46:33,860 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:46:34,151 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_IMMUNO_RS_NDR_1.png
+2026-06-08 10:46:34,204 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:46:34,227 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:46:34,227 [INFO]     [padding 5%]
+2026-06-08 10:46:37,276 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_9.webp] en posición 9
+2026-06-08 10:46:37,778 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:46:38,080 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_IMMUNO_RS_NDR.png
+2026-06-08 10:46:38,132 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:46:38,159 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:46:38,159 [INFO]     [padding 5%]
+2026-06-08 10:46:41,513 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_10.webp] en posición 10
+2026-06-08 10:46:42,016 [INFO]   pos 11: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:42,345 [INFO]     cargada RGB (1500, 1500) ← AUDEVARDHARPAGYL_NDR.png
+2026-06-08 10:46:42,401 [INFO]     [bg] 2888/5776 (50%)
+2026-06-08 10:46:42,401 [INFO]     [sin padding]
+2026-06-08 10:46:45,683 [INFO]     ✓ reprocesada y subida [audevard-harpagyl-ndr_11.webp] en posición 11
+2026-06-08 10:46:46,530 [INFO] 
+[21/31] AUDEVARD HOOF BIOTINE (NDR)  (ID 15509639790979) — 14 imágenes
+2026-06-08 10:46:46,806 [INFO]   pos 1: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:47,110 [INFO]     cargada RGB (1500, 1500) ← 1_63bfe46f-6a3d-471a-8bb5-3a932f66fb86.png
+2026-06-08 10:46:47,157 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:47,174 [INFO]     [autocrop] (1500, 1500) → (1252, 1038)
+2026-06-08 10:46:47,175 [INFO]     [padding 5%]
+2026-06-08 10:46:50,963 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_1.webp] en posición 1
+2026-06-08 10:46:51,466 [INFO]   pos 2: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:51,768 [INFO]     cargada RGB (1500, 1500) ← 2_6eff5b79-32fc-43ed-9c69-8353365a764f.png
+2026-06-08 10:46:51,811 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:51,831 [INFO]     [autocrop] (1500, 1500) → (1075, 1068)
+2026-06-08 10:46:51,831 [INFO]     [padding 5%]
+2026-06-08 10:46:55,219 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_2.webp] en posición 2
+2026-06-08 10:46:55,722 [INFO]   pos 3: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:46:56,040 [INFO]     cargada RGB (1500, 1500) ← 3_065dc2bd-82f7-4e8e-9d53-f097dc39ad2d.png
+2026-06-08 10:46:56,089 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:46:56,108 [INFO]     [autocrop] (1500, 1500) → (1129, 1125)
+2026-06-08 10:46:56,108 [INFO]     [padding 5%]
+2026-06-08 10:46:59,499 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_3.webp] en posición 3
+2026-06-08 10:47:00,002 [INFO]   pos 4: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:00,345 [INFO]     cargada RGB (1500, 1500) ← 4_f72df13c-93af-4fe8-9e7a-ef073d031f4f.png
+2026-06-08 10:47:00,393 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:00,412 [INFO]     [autocrop] (1500, 1500) → (1128, 1147)
+2026-06-08 10:47:00,412 [INFO]     [padding 5%]
+2026-06-08 10:47:03,865 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_4.webp] en posición 4
+2026-06-08 10:47:04,368 [INFO]   pos 5: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:04,648 [INFO]     cargada RGB (1500, 1500) ← 5_9a5d5923-5fc5-4e7b-9aff-7eefd4b2acf1.png
+2026-06-08 10:47:04,682 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:04,699 [INFO]     [autocrop] (1500, 1500) → (1064, 1035)
+2026-06-08 10:47:04,699 [INFO]     [padding 5%]
+2026-06-08 10:47:07,972 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_5.webp] en posición 5
+2026-06-08 10:47:08,474 [INFO]   pos 6: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:08,928 [INFO]     cargada RGB (1500, 1500) ← 6_9ceec321-7469-4fb5-9a75-21a5949c6120.png
+2026-06-08 10:47:08,965 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:08,986 [INFO]     [autocrop] (1500, 1500) → (1079, 1058)
+2026-06-08 10:47:08,986 [INFO]     [padding 5%]
+2026-06-08 10:47:12,447 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_6.webp] en posición 6
+2026-06-08 10:47:12,950 [INFO]   pos 7: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:13,239 [INFO]     cargada RGB (1500, 1500) ← 7_a5b3191f-dce8-4597-80fc-0e92cf94b948.png
+2026-06-08 10:47:13,283 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:13,303 [INFO]     [autocrop] (1500, 1500) → (1109, 958)
+2026-06-08 10:47:13,303 [INFO]     [padding 5%]
+2026-06-08 10:47:16,620 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_7.webp] en posición 7
+2026-06-08 10:47:17,122 [INFO]   pos 8: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:17,430 [INFO]     cargada RGB (1500, 1500) ← 8_f5573eba-3a1a-42e4-9076-b85bea2e4c0a.png
+2026-06-08 10:47:17,473 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:17,492 [INFO]     [autocrop] (1500, 1500) → (1107, 1074)
+2026-06-08 10:47:17,493 [INFO]     [padding 5%]
+2026-06-08 10:47:21,121 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_8.webp] en posición 8
+2026-06-08 10:47:21,624 [INFO]   pos 9: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:21,952 [INFO]     cargada RGB (1500, 1500) ← 9_2ed19f75-b1fc-4e71-b193-1bff738d1d6a.png
+2026-06-08 10:47:21,998 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:22,017 [INFO]     [autocrop] (1500, 1500) → (1049, 1105)
+2026-06-08 10:47:22,017 [INFO]     [padding 5%]
+2026-06-08 10:47:25,901 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_9.webp] en posición 9
+2026-06-08 10:47:26,404 [INFO]   pos 10: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:26,714 [INFO]     cargada RGB (1500, 1500) ← 11_3bac26f5-9daf-41e7-8d2d-f184b5831e33.png
+2026-06-08 10:47:26,781 [INFO]     [bg] 0/5776 (0%)
+2026-06-08 10:47:26,781 [INFO]     [sin padding]
+2026-06-08 10:47:30,409 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_10.webp] en posición 10
+2026-06-08 10:47:30,911 [INFO]   pos 11: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:31,191 [INFO]     cargada RGB (1500, 1500) ← 10_8e8397ab-fa9e-4aba-984e-20c195b4a68a.png
+2026-06-08 10:47:31,226 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:31,247 [INFO]     [autocrop] (1500, 1500) → (920, 951)
+2026-06-08 10:47:31,247 [INFO]     [padding 5%]
+2026-06-08 10:47:34,509 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_11.webp] en posición 11
+2026-06-08 10:47:35,011 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:47:35,273 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_ef0d1ba2-bc8b-4841-95fa-ed441f0bcb88.png
+2026-06-08 10:47:35,325 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:47:35,349 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:47:35,349 [INFO]     [padding 5%]
+2026-06-08 10:47:38,494 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_12.webp] en posición 12
+2026-06-08 10:47:38,997 [INFO]   pos 13: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:39,575 [INFO]     cargada RGB (1500, 1500) ← AUDEVARD_HOOF_BIOTINE_NDR_1.png
+2026-06-08 10:47:39,619 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:39,637 [INFO]     [autocrop] (1500, 1500) → (953, 952)
+2026-06-08 10:47:39,637 [INFO]     [padding 5%]
+2026-06-08 10:47:43,182 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_13.webp] en posición 13
+2026-06-08 10:47:43,685 [INFO]   pos 14: NO optimizada (png 1500×1500) — reprocesando
+2026-06-08 10:47:43,956 [INFO]     cargada RGB (1500, 1500) ← AUDEVARD_HOOF_BIOTINE_NDR.png
+2026-06-08 10:47:43,997 [INFO]     [bg] 5776/5776 (100%)
+2026-06-08 10:47:44,016 [INFO]     [autocrop] (1500, 1500) → (744, 1056)
+2026-06-08 10:47:44,016 [INFO]     [padding 5%]
+2026-06-08 10:47:47,303 [INFO]     ✓ reprocesada y subida [audevard-hoof-biotine-ndr_14.webp] en posición 14
+2026-06-08 10:47:48,127 [INFO] 
+[22/31] AUDEVARD IMMUNO RS (NDR)  (ID 15509639922051) — 12 imágenes
+2026-06-08 10:47:48,406 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:47:48,712 [INFO]     cargada RGB (1800, 1800) ← 1_6b4adcb2-354c-4791-b902-77d610dfdc32.png
+2026-06-08 10:47:48,779 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:47:48,802 [INFO]     [autocrop] (1800, 1800) → (1535, 1262)
+2026-06-08 10:47:48,802 [INFO]     [padding 5%]
+2026-06-08 10:47:52,478 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_1.webp] en posición 1
+2026-06-08 10:47:52,981 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:47:53,294 [INFO]     cargada RGB (1800, 1800) ← 2_ea2982e2-3c63-4589-8ca4-0678434440c3.png
+2026-06-08 10:47:53,354 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:47:53,379 [INFO]     [autocrop] (1800, 1800) → (1349, 1156)
+2026-06-08 10:47:53,379 [INFO]     [padding 5%]
+2026-06-08 10:47:56,731 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_2.webp] en posición 2
+2026-06-08 10:47:57,233 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:47:57,553 [INFO]     cargada RGB (1800, 1800) ← 3_bcb9d510-4964-4602-b7ac-e22a5deeb1ec.png
+2026-06-08 10:47:57,618 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:47:57,643 [INFO]     [autocrop] (1800, 1800) → (1350, 1372)
+2026-06-08 10:47:57,643 [INFO]     [padding 5%]
+2026-06-08 10:48:01,140 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_3.webp] en posición 3
+2026-06-08 10:48:01,642 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:01,986 [INFO]     cargada RGB (1800, 1800) ← 4_23a5364d-c4e1-40f1-a8ee-2431bed48426.png
+2026-06-08 10:48:02,051 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:02,076 [INFO]     [autocrop] (1800, 1800) → (1354, 1374)
+2026-06-08 10:48:02,076 [INFO]     [padding 5%]
+2026-06-08 10:48:05,468 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_4.webp] en posición 4
+2026-06-08 10:48:05,971 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:06,275 [INFO]     cargada RGB (1800, 1800) ← 5_b2251cc6-a63f-422d-b664-3feb00c015fd.png
+2026-06-08 10:48:06,328 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:06,354 [INFO]     [autocrop] (1800, 1800) → (1272, 1258)
+2026-06-08 10:48:06,354 [INFO]     [padding 5%]
+2026-06-08 10:48:09,688 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_5.webp] en posición 5
+2026-06-08 10:48:10,190 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:10,530 [INFO]     cargada RGB (1800, 1800) ← 10_6ad544d1-d18a-4ac3-8f5d-b4fbc59f6b26.png
+2026-06-08 10:48:10,593 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:10,618 [INFO]     [autocrop] (1800, 1800) → (1207, 1261)
+2026-06-08 10:48:10,618 [INFO]     [padding 5%]
+2026-06-08 10:48:14,104 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_6.webp] en posición 6
+2026-06-08 10:48:14,607 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:14,931 [INFO]     cargada RGB (1800, 1800) ← 9_236aeeed-c9da-4649-b84f-df2ed2148504.png
+2026-06-08 10:48:14,992 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:15,018 [INFO]     [autocrop] (1800, 1800) → (1412, 1137)
+2026-06-08 10:48:15,018 [INFO]     [padding 5%]
+2026-06-08 10:48:18,376 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_7.webp] en posición 7
+2026-06-08 10:48:18,878 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:19,195 [INFO]     cargada RGB (1800, 1800) ← 8_50d525b1-388c-492b-9d36-1c2bca38aa22.png
+2026-06-08 10:48:19,255 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:19,279 [INFO]     [autocrop] (1800, 1800) → (1323, 1267)
+2026-06-08 10:48:19,279 [INFO]     [padding 5%]
+2026-06-08 10:48:22,741 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_8.webp] en posición 8
+2026-06-08 10:48:23,244 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:23,525 [INFO]     cargada RGB (1800, 1800) ← 12.png
+2026-06-08 10:48:23,577 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:23,601 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:48:23,601 [INFO]     [padding 5%]
+2026-06-08 10:48:27,111 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_9.webp] en posición 9
+2026-06-08 10:48:27,613 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:27,906 [INFO]     cargada RGB (1800, 1800) ← 11_a7be8de2-34ef-4152-91aa-289479bd3d1b.png
+2026-06-08 10:48:27,957 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:27,984 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:48:27,984 [INFO]     [padding 5%]
+2026-06-08 10:48:31,290 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_10.webp] en posición 10
+2026-06-08 10:48:31,793 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:32,149 [INFO]     cargada RGB (1800, 1800) ← 14.png
+2026-06-08 10:48:32,249 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:48:32,249 [INFO]     [sin padding]
+2026-06-08 10:48:35,997 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_11.webp] en posición 11
+2026-06-08 10:48:36,500 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:36,786 [INFO]     cargada RGB (1800, 1800) ← 13.png
+2026-06-08 10:48:36,847 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:36,872 [INFO]     [autocrop] (1800, 1800) → (1133, 1122)
+2026-06-08 10:48:36,872 [INFO]     [padding 5%]
+2026-06-08 10:48:40,249 [INFO]     ✓ reprocesada y subida [audevard-immuno-rs-ndr_12.webp] en posición 12
+2026-06-08 10:48:41,079 [INFO] 
+[23/31] AUDEVARD LACTOFOAL (NDR)  (ID 15509639954819) — 12 imágenes
+2026-06-08 10:48:41,367 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:41,684 [INFO]     cargada RGB (1800, 1800) ← 1_63abfbaf-d97c-4fd0-9ef7-640fb40f9a8b.png
+2026-06-08 10:48:41,745 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:41,768 [INFO]     [autocrop] (1800, 1800) → (1315, 1257)
+2026-06-08 10:48:41,768 [INFO]     [padding 5%]
+2026-06-08 10:48:45,456 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_1.webp] en posición 1
+2026-06-08 10:48:45,958 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:46,284 [INFO]     cargada RGB (1800, 1800) ← 2_c3728656-0d75-4791-93c1-58f82a9dded5.png
+2026-06-08 10:48:46,344 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:46,370 [INFO]     [autocrop] (1800, 1800) → (1183, 1238)
+2026-06-08 10:48:46,370 [INFO]     [padding 5%]
+2026-06-08 10:48:49,683 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_2.webp] en posición 2
+2026-06-08 10:48:50,185 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:50,488 [INFO]     cargada RGB (1800, 1800) ← 3_2ef3f4f1-6662-4e7c-b156-7627cf948b6b.png
+2026-06-08 10:48:50,554 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:50,578 [INFO]     [autocrop] (1800, 1800) → (1353, 1345)
+2026-06-08 10:48:50,578 [INFO]     [padding 5%]
+2026-06-08 10:48:54,027 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_3.webp] en posición 3
+2026-06-08 10:48:54,529 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:54,857 [INFO]     cargada RGB (1800, 1800) ← 4_ef832e83-064e-4875-a5fb-6aafb9ea0a1b.png
+2026-06-08 10:48:54,922 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:48:54,947 [INFO]     [autocrop] (1800, 1800) → (1354, 1376)
+2026-06-08 10:48:54,947 [INFO]     [padding 5%]
+2026-06-08 10:48:58,428 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_4.webp] en posición 4
+2026-06-08 10:48:58,931 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:48:59,245 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDLACTOFOAL_NDR_1.png
+2026-06-08 10:48:59,313 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:48:59,313 [INFO]     [sin padding]
+2026-06-08 10:49:02,688 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_5.webp] en posición 5
+2026-06-08 10:49:03,190 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:03,540 [INFO]     cargada RGB (1800, 1800) ← 6_3dc56fd5-f5aa-4548-a659-7415d1b228ce.png
+2026-06-08 10:49:03,599 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:03,626 [INFO]     [autocrop] (1800, 1800) → (1253, 1302)
+2026-06-08 10:49:03,626 [INFO]     [padding 5%]
+2026-06-08 10:49:07,811 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_6.webp] en posición 6
+2026-06-08 10:49:08,314 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:08,653 [INFO]     cargada RGB (1800, 1800) ← 8_362a26c8-e75c-4763-a084-83c86b8372c5.png
+2026-06-08 10:49:08,714 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:08,741 [INFO]     [autocrop] (1800, 1800) → (1329, 1274)
+2026-06-08 10:49:08,741 [INFO]     [padding 5%]
+2026-06-08 10:49:12,372 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_7.webp] en posición 7
+2026-06-08 10:49:12,875 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:13,244 [INFO]     cargada RGB (1800, 1800) ← 9_30d473f7-98cd-4716-80fa-027a39b77b14.png
+2026-06-08 10:49:13,308 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:13,333 [INFO]     [autocrop] (1800, 1800) → (1361, 1328)
+2026-06-08 10:49:13,333 [INFO]     [padding 5%]
+2026-06-08 10:49:17,500 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_8.webp] en posición 8
+2026-06-08 10:49:18,002 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:18,322 [INFO]     cargada RGB (1800, 1800) ← 7_5006f662-25ba-4082-8373-53d91eeac353.png
+2026-06-08 10:49:18,381 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:18,407 [INFO]     [autocrop] (1800, 1800) → (1381, 1130)
+2026-06-08 10:49:18,407 [INFO]     [padding 5%]
+2026-06-08 10:49:21,612 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_9.webp] en posición 9
+2026-06-08 10:49:22,115 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:22,393 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1.png
+2026-06-08 10:49:22,445 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:22,468 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:49:22,468 [INFO]     [padding 5%]
+2026-06-08 10:49:25,384 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_10.webp] en posición 10
+2026-06-08 10:49:25,887 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:26,163 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR.png
+2026-06-08 10:49:26,214 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:26,241 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:49:26,241 [INFO]     [padding 5%]
+2026-06-08 10:49:29,350 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_11.webp] en posición 11
+2026-06-08 10:49:29,853 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:30,143 [INFO]     cargada RGB (1800, 1800) ← 10_5c57bf68-f41b-4c10-a42b-1a76946c261d.png
+2026-06-08 10:49:30,199 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:30,223 [INFO]     [autocrop] (1800, 1800) → (1141, 1151)
+2026-06-08 10:49:30,223 [INFO]     [padding 5%]
+2026-06-08 10:49:33,421 [INFO]     ✓ reprocesada y subida [audevard-lactofoal-ndr_12.webp] en posición 12
+2026-06-08 10:49:34,253 [INFO] 
+[24/31] AUDEVARD MYOSTEM MASS (NDR)  (ID 15509640053123) — 12 imágenes
+2026-06-08 10:49:34,524 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:34,830 [INFO]     cargada RGB (1800, 1800) ← 1_5f529038-9f87-4d36-9b54-b83d6cde4f9d.png
+2026-06-08 10:49:34,896 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:34,919 [INFO]     [autocrop] (1800, 1800) → (1446, 1269)
+2026-06-08 10:49:34,919 [INFO]     [padding 5%]
+2026-06-08 10:49:38,574 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_1.webp] en posición 1
+2026-06-08 10:49:39,077 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:39,369 [INFO]     cargada RGB (1800, 1800) ← 2_cdfb6fc3-a6cd-4a9a-babf-e361104fc9cf.png
+2026-06-08 10:49:39,428 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:39,455 [INFO]     [autocrop] (1800, 1800) → (1250, 1209)
+2026-06-08 10:49:39,455 [INFO]     [padding 5%]
+2026-06-08 10:49:42,855 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_2.webp] en posición 2
+2026-06-08 10:49:43,357 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:43,690 [INFO]     cargada RGB (1800, 1800) ← 3_5d83d82a-3696-4a8f-8e06-fd01cfe7eb9f.png
+2026-06-08 10:49:43,758 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:43,783 [INFO]     [autocrop] (1800, 1800) → (1351, 1372)
+2026-06-08 10:49:43,783 [INFO]     [padding 5%]
+2026-06-08 10:49:47,177 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_3.webp] en posición 3
+2026-06-08 10:49:47,680 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:48,001 [INFO]     cargada RGB (1800, 1800) ← 4_f3d1368c-0eb3-4070-b0ba-a324da484d68.png
+2026-06-08 10:49:48,068 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:48,093 [INFO]     [autocrop] (1800, 1800) → (1352, 1353)
+2026-06-08 10:49:48,093 [INFO]     [padding 5%]
+2026-06-08 10:49:51,647 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_4.webp] en posición 4
+2026-06-08 10:49:52,149 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:52,436 [INFO]     cargada RGB (1800, 1800) ← 5_e0755ff4-4324-4b1a-82f7-bd390b0ad6f5.png
+2026-06-08 10:49:52,490 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:52,513 [INFO]     [autocrop] (1800, 1800) → (1273, 1115)
+2026-06-08 10:49:52,514 [INFO]     [padding 5%]
+2026-06-08 10:49:55,678 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_5.webp] en posición 5
+2026-06-08 10:49:56,180 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:49:56,479 [INFO]     cargada RGB (1800, 1800) ← 6_b44b48e1-beea-41c1-9887-23f680deb5a1.png
+2026-06-08 10:49:56,532 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:49:56,559 [INFO]     [autocrop] (1800, 1800) → (1254, 1296)
+2026-06-08 10:49:56,559 [INFO]     [padding 5%]
+2026-06-08 10:49:59,678 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_6.webp] en posición 6
+2026-06-08 10:50:00,180 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:00,487 [INFO]     cargada RGB (1800, 1800) ← 7_82e85dc0-5843-4402-b4d3-9cab85da4143.png
+2026-06-08 10:50:00,549 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:00,575 [INFO]     [autocrop] (1800, 1800) → (1428, 1207)
+2026-06-08 10:50:00,575 [INFO]     [padding 5%]
+2026-06-08 10:50:03,994 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_7.webp] en posición 7
+2026-06-08 10:50:04,497 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:04,816 [INFO]     cargada RGB (1800, 1800) ← 8_cb356bd1-aab9-4fee-91a0-b74df2605c20.png
+2026-06-08 10:50:04,877 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:04,902 [INFO]     [autocrop] (1800, 1800) → (1148, 1367)
+2026-06-08 10:50:04,902 [INFO]     [padding 5%]
+2026-06-08 10:50:08,340 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_8.webp] en posición 8
+2026-06-08 10:50:08,843 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:09,188 [INFO]     cargada RGB (1800, 1800) ← 9_889f8a93-4e6d-48c2-a838-d5051a8080a7.png
+2026-06-08 10:50:09,245 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:09,272 [INFO]     [autocrop] (1800, 1800) → (1254, 1184)
+2026-06-08 10:50:09,272 [INFO]     [padding 5%]
+2026-06-08 10:50:12,699 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_9.webp] en posición 9
+2026-06-08 10:50:13,202 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:13,574 [INFO]     cargada RGB (1800, 1800) ← 10_b5256afd-68df-4b90-8b69-226b3bbdb6d4.png
+2026-06-08 10:50:13,671 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:50:13,671 [INFO]     [sin padding]
+2026-06-08 10:50:17,195 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_10.webp] en posición 10
+2026-06-08 10:50:17,698 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:17,995 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_083fdf97-c8d7-4a25-8ff8-90afcee81257.png
+2026-06-08 10:50:18,047 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:18,073 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:50:18,073 [INFO]     [padding 5%]
+2026-06-08 10:50:21,355 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_11.webp] en posición 11
+2026-06-08 10:50:21,857 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:22,114 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_2f5e4519-cfa5-4da2-90ec-6b3305e4efbe.png
+2026-06-08 10:50:22,167 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:22,190 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:50:22,190 [INFO]     [padding 5%]
+2026-06-08 10:50:25,300 [INFO]     ✓ reprocesada y subida [audevard-myostem-mass-ndr_12.webp] en posición 12
+2026-06-08 10:50:26,169 [INFO] 
+[25/31] AUDEVARD MYOSTEM PROTEC (NDR)  (ID 15509640085891) — 12 imágenes
+2026-06-08 10:50:26,444 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:26,702 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_MYOSTEM_PROTEC_NDR.png
+2026-06-08 10:50:26,759 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:26,782 [INFO]     [autocrop] (1800, 1800) → (668, 1274)
+2026-06-08 10:50:26,782 [INFO]     [padding 5%]
+2026-06-08 10:50:30,319 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_1.webp] en posición 1
+2026-06-08 10:50:30,821 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:31,145 [INFO]     cargada RGB (1800, 1800) ← 1_e8c6a198-e0e5-4955-8201-9b80785c16c7.png
+2026-06-08 10:50:31,204 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:31,230 [INFO]     [autocrop] (1800, 1800) → (1144, 1251)
+2026-06-08 10:50:31,230 [INFO]     [padding 5%]
+2026-06-08 10:50:34,656 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_2.webp] en posición 2
+2026-06-08 10:50:35,159 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:35,504 [INFO]     cargada RGB (1800, 1800) ← 2_f3a6546f-2fd5-4e94-aa02-7c2943a37cac.png
+2026-06-08 10:50:35,569 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:35,595 [INFO]     [autocrop] (1800, 1800) → (1350, 1346)
+2026-06-08 10:50:35,595 [INFO]     [padding 5%]
+2026-06-08 10:50:39,036 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_3.webp] en posición 3
+2026-06-08 10:50:39,539 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:39,844 [INFO]     cargada RGB (1800, 1800) ← 3_6378bee9-d08d-4fbb-b766-11ac021f3863.png
+2026-06-08 10:50:39,910 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:39,935 [INFO]     [autocrop] (1800, 1800) → (1352, 1375)
+2026-06-08 10:50:39,936 [INFO]     [padding 5%]
+2026-06-08 10:50:43,308 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_4.webp] en posición 4
+2026-06-08 10:50:43,811 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:44,063 [INFO]     cargada RGB (1800, 1800) ← 4_56f4a3c2-9f7b-48af-87fa-fbb1b80359ff.png
+2026-06-08 10:50:44,117 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:44,140 [INFO]     [autocrop] (1800, 1800) → (1273, 1116)
+2026-06-08 10:50:44,140 [INFO]     [padding 5%]
+2026-06-08 10:50:47,473 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_5.webp] en posición 5
+2026-06-08 10:50:47,976 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:48,263 [INFO]     cargada RGB (1800, 1800) ← 5_03644358-ff75-46be-889d-39cbcdb62107.png
+2026-06-08 10:50:48,316 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:48,343 [INFO]     [autocrop] (1800, 1800) → (1356, 1255)
+2026-06-08 10:50:48,343 [INFO]     [padding 5%]
+2026-06-08 10:50:51,520 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_6.webp] en posición 6
+2026-06-08 10:50:52,022 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:52,311 [INFO]     cargada RGB (1800, 1800) ← 6_396f6288-8a40-4add-8be7-8388f22c41f2.png
+2026-06-08 10:50:52,375 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:52,400 [INFO]     [autocrop] (1800, 1800) → (1264, 1224)
+2026-06-08 10:50:52,400 [INFO]     [padding 5%]
+2026-06-08 10:50:55,722 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_7.webp] en posición 7
+2026-06-08 10:50:56,224 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:50:56,512 [INFO]     cargada RGB (1800, 1800) ← 7_6611df87-0a2d-4445-ae86-ed3108823dcc.png
+2026-06-08 10:50:56,567 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:50:56,593 [INFO]     [autocrop] (1800, 1800) → (974, 1351)
+2026-06-08 10:50:56,593 [INFO]     [padding 5%]
+2026-06-08 10:50:59,749 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_8.webp] en posición 8
+2026-06-08 10:51:00,252 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:00,583 [INFO]     cargada RGB (1800, 1800) ← 8_ac226816-d31a-4ffa-81f9-5b109e346dcb.png
+2026-06-08 10:51:00,645 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:00,671 [INFO]     [autocrop] (1800, 1800) → (1296, 1273)
+2026-06-08 10:51:00,671 [INFO]     [padding 5%]
+2026-06-08 10:51:04,192 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_9.webp] en posición 9
+2026-06-08 10:51:04,695 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:05,008 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_MYOSTEM_PROTEC_NDR_1.png
+2026-06-08 10:51:05,099 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:51:05,099 [INFO]     [sin padding]
+2026-06-08 10:51:08,491 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_10.webp] en posición 10
+2026-06-08 10:51:08,994 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:09,284 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_062ac78d-c10a-4a48-9523-3ce8adcdf425.png
+2026-06-08 10:51:09,335 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:09,363 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:51:09,363 [INFO]     [padding 5%]
+2026-06-08 10:51:12,586 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_11.webp] en posición 11
+2026-06-08 10:51:13,089 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:13,358 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_2625e4a4-88e8-4c0b-ad88-94a6f973b822.png
+2026-06-08 10:51:13,410 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:13,433 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:51:13,434 [INFO]     [padding 5%]
+2026-06-08 10:51:16,454 [INFO]     ✓ reprocesada y subida [audevard-myostem-protec-ndr_12.webp] en posición 12
+2026-06-08 10:51:17,263 [INFO] 
+[26/31] AUDEVARD REDPLEX BOOSTER 60ML (NDR)  (ID 15509640184195) — 12 imágenes
+2026-06-08 10:51:17,544 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:17,826 [INFO]     cargada RGB (1800, 1800) ← 1_ebf365eb-0385-4e01-a54a-b8803cc80cbf.png
+2026-06-08 10:51:17,875 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:17,899 [INFO]     [autocrop] (1800, 1800) → (1628, 406)
+2026-06-08 10:51:17,899 [INFO]     [padding 5%]
+2026-06-08 10:51:21,068 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_1.webp] en posición 1
+2026-06-08 10:51:21,570 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:21,878 [INFO]     cargada RGB (1800, 1800) ← 2_c57cfdb3-3fae-436b-91c7-b427670cafd6.png
+2026-06-08 10:51:21,936 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:21,963 [INFO]     [autocrop] (1800, 1800) → (1117, 1208)
+2026-06-08 10:51:21,963 [INFO]     [padding 5%]
+2026-06-08 10:51:25,271 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_2.webp] en posición 2
+2026-06-08 10:51:25,774 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:26,103 [INFO]     cargada RGB (1800, 1800) ← 3_ce6e0e1b-c2d7-42c7-b165-8728445bae06.png
+2026-06-08 10:51:26,169 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:26,194 [INFO]     [autocrop] (1800, 1800) → (1352, 1348)
+2026-06-08 10:51:26,195 [INFO]     [padding 5%]
+2026-06-08 10:51:29,558 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_3.webp] en posición 3
+2026-06-08 10:51:30,061 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:30,363 [INFO]     cargada RGB (1800, 1800) ← 4_7925db59-2777-47f6-a471-180b919f5160.png
+2026-06-08 10:51:30,430 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:30,456 [INFO]     [autocrop] (1800, 1800) → (1354, 1377)
+2026-06-08 10:51:30,456 [INFO]     [padding 5%]
+2026-06-08 10:51:33,880 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_4.webp] en posición 4
+2026-06-08 10:51:34,383 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:34,637 [INFO]     cargada RGB (1800, 1800) ← 5_bfab8e35-f4c2-4e91-b4d9-dc6052aee1de.png
+2026-06-08 10:51:34,689 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:34,714 [INFO]     [autocrop] (1800, 1800) → (1102, 1188)
+2026-06-08 10:51:34,714 [INFO]     [padding 5%]
+2026-06-08 10:51:38,121 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_5.webp] en posición 5
+2026-06-08 10:51:38,624 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:38,936 [INFO]     cargada RGB (1800, 1800) ← 6_43bcb13f-74e0-4a36-b196-8209ce33b61e.png
+2026-06-08 10:51:38,989 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:39,016 [INFO]     [autocrop] (1800, 1800) → (1308, 1010)
+2026-06-08 10:51:39,016 [INFO]     [padding 5%]
+2026-06-08 10:51:42,148 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_6.webp] en posición 6
+2026-06-08 10:51:42,651 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:42,997 [INFO]     cargada RGB (1800, 1800) ← 7_6936c689-f366-4c7c-9ca2-8a76cc3ccf32.png
+2026-06-08 10:51:43,059 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:43,085 [INFO]     [autocrop] (1800, 1800) → (1305, 1154)
+2026-06-08 10:51:43,085 [INFO]     [padding 5%]
+2026-06-08 10:51:46,226 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_7.webp] en posición 7
+2026-06-08 10:51:46,729 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:46,960 [INFO]     cargada RGB (1800, 1800) ← 8_4546ee31-4702-4f4c-a2a2-cba969b9df95.png
+2026-06-08 10:51:47,017 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:47,040 [INFO]     [autocrop] (1800, 1800) → (1227, 1212)
+2026-06-08 10:51:47,040 [INFO]     [padding 5%]
+2026-06-08 10:51:50,619 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_8.webp] en posición 8
+2026-06-08 10:51:51,121 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:51,446 [INFO]     cargada RGB (1800, 1800) ← 9_e74f8738-6319-41ed-8f26-ae1e94981ad4.png
+2026-06-08 10:51:51,513 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:51:51,535 [INFO]     [autocrop] (1800, 1800) → (1363, 1414)
+2026-06-08 10:51:51,536 [INFO]     [padding 5%]
+2026-06-08 10:51:55,122 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_9.webp] en posición 9
+2026-06-08 10:51:55,625 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:51:55,976 [INFO]     cargada RGB (1800, 1800) ← 10_78f82399-bdb5-4791-85b0-fd9033682b36.png
+2026-06-08 10:51:56,075 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:51:56,075 [INFO]     [sin padding]
+2026-06-08 10:51:59,966 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_10.webp] en posición 10
+2026-06-08 10:52:00,469 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:00,763 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_928d715b-2c9d-413d-b6f6-bec850e97bca.png
+2026-06-08 10:52:00,814 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:00,842 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:52:00,842 [INFO]     [padding 5%]
+2026-06-08 10:52:04,040 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_11.webp] en posición 11
+2026-06-08 10:52:04,543 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:04,789 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_dedd83ec-6d18-41cb-9bee-e24f2ab5b17a.png
+2026-06-08 10:52:04,842 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:04,865 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:52:04,865 [INFO]     [padding 5%]
+2026-06-08 10:52:07,896 [INFO]     ✓ reprocesada y subida [audevard-redplex-booster-60ml-ndr_12.webp] en posición 12
+2026-06-08 10:52:08,737 [INFO] 
+[27/31] AUDEVARD REDPLEX+  (ID 15509640216963) — 12 imágenes
+2026-06-08 10:52:09,018 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:09,272 [INFO]     cargada RGB (1800, 1800) ← 1_494a5ca3-d655-4954-acdd-ff4171c0544a.png
+2026-06-08 10:52:09,330 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:09,354 [INFO]     [autocrop] (1800, 1800) → (642, 1305)
+2026-06-08 10:52:09,354 [INFO]     [padding 5%]
+2026-06-08 10:52:12,635 [INFO]     ✓ reprocesada y subida [audevard-redplex_1.webp] en posición 1
+2026-06-08 10:52:13,137 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:13,434 [INFO]     cargada RGB (1800, 1800) ← 2_bcac0746-8bbb-4ddc-8333-5785a4d51863.png
+2026-06-08 10:52:13,494 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:13,521 [INFO]     [autocrop] (1800, 1800) → (1097, 1345)
+2026-06-08 10:52:13,521 [INFO]     [padding 5%]
+2026-06-08 10:52:16,742 [INFO]     ✓ reprocesada y subida [audevard-redplex_2.webp] en posición 2
+2026-06-08 10:52:17,244 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:17,553 [INFO]     cargada RGB (1800, 1800) ← 3_2544fe1e-a273-48cc-9023-a1d1beb6bb2a.png
+2026-06-08 10:52:17,621 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:17,646 [INFO]     [autocrop] (1800, 1800) → (1352, 1372)
+2026-06-08 10:52:17,647 [INFO]     [padding 5%]
+2026-06-08 10:52:21,145 [INFO]     ✓ reprocesada y subida [audevard-redplex_3.webp] en posición 3
+2026-06-08 10:52:21,648 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:21,987 [INFO]     cargada RGB (1800, 1800) ← 4_08d3b9d8-6967-4655-a443-37855ce5856f.png
+2026-06-08 10:52:22,052 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:22,077 [INFO]     [autocrop] (1800, 1800) → (1353, 1372)
+2026-06-08 10:52:22,077 [INFO]     [padding 5%]
+2026-06-08 10:52:25,570 [INFO]     ✓ reprocesada y subida [audevard-redplex_4.webp] en posición 4
+2026-06-08 10:52:26,073 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:26,353 [INFO]     cargada RGB (1800, 1800) ← 5_7afccc48-57d1-4eeb-a204-eb7826fd47cc.png
+2026-06-08 10:52:26,402 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:26,429 [INFO]     [autocrop] (1800, 1800) → (1274, 1257)
+2026-06-08 10:52:26,429 [INFO]     [padding 5%]
+2026-06-08 10:52:29,672 [INFO]     ✓ reprocesada y subida [audevard-redplex_5.webp] en posición 5
+2026-06-08 10:52:30,175 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:30,520 [INFO]     cargada RGB (1800, 1800) ← 6_5a0e7508-4d55-415f-96f8-e80136ade2e2.png
+2026-06-08 10:52:30,583 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:30,609 [INFO]     [autocrop] (1800, 1800) → (1333, 1224)
+2026-06-08 10:52:30,609 [INFO]     [padding 5%]
+2026-06-08 10:52:34,029 [INFO]     ✓ reprocesada y subida [audevard-redplex_6.webp] en posición 6
+2026-06-08 10:52:34,531 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:34,858 [INFO]     cargada RGB (1800, 1800) ← 7_5d57efd9-fbf7-41e2-95a3-e5e2e74b0e49.png
+2026-06-08 10:52:34,920 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:34,945 [INFO]     [autocrop] (1800, 1800) → (1160, 1345)
+2026-06-08 10:52:34,945 [INFO]     [padding 5%]
+2026-06-08 10:52:39,097 [INFO]     ✓ reprocesada y subida [audevard-redplex_7.webp] en posición 7
+2026-06-08 10:52:39,599 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:39,891 [INFO]     cargada RGB (1800, 1800) ← 8_e0352e54-2581-4ab9-adcd-060cebb35d88.png
+2026-06-08 10:52:39,946 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:39,972 [INFO]     [autocrop] (1800, 1800) → (1280, 1286)
+2026-06-08 10:52:39,973 [INFO]     [padding 5%]
+2026-06-08 10:52:43,588 [INFO]     ✓ reprocesada y subida [audevard-redplex_8.webp] en posición 8
+2026-06-08 10:52:44,091 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:44,441 [INFO]     cargada RGB (1800, 1800) ← 9_b1db65d4-028e-439c-b5da-15f4b36cacc7.png
+2026-06-08 10:52:44,512 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:44,537 [INFO]     [autocrop] (1800, 1800) → (1362, 1343)
+2026-06-08 10:52:44,537 [INFO]     [padding 5%]
+2026-06-08 10:52:48,406 [INFO]     ✓ reprocesada y subida [audevard-redplex_9.webp] en posición 9
+2026-06-08 10:52:48,909 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:49,258 [INFO]     cargada RGB (1800, 1800) ← 10_a7634caf-fbf3-45e3-8fbc-ebc25569d51c.png
+2026-06-08 10:52:49,350 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:52:49,351 [INFO]     [sin padding]
+2026-06-08 10:52:52,716 [INFO]     ✓ reprocesada y subida [audevard-redplex_10.webp] en posición 10
+2026-06-08 10:52:53,219 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:53,507 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_IMMUNO_RS_NDR_f6b810cb-6646-44e7-9fb7-dc9634157117.png
+2026-06-08 10:52:53,558 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:53,586 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:52:53,586 [INFO]     [padding 5%]
+2026-06-08 10:52:56,784 [INFO]     ✓ reprocesada y subida [audevard-redplex_11.webp] en posición 11
+2026-06-08 10:52:57,287 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:52:57,552 [INFO]     cargada RGB (1800, 1800) ← AUDEVARD_IMMUNO_RS_NDR_1_812c4d92-dbbe-44ce-8abd-89e12f78d164.png
+2026-06-08 10:52:57,604 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:52:57,627 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:52:57,627 [INFO]     [padding 5%]
+2026-06-08 10:53:00,710 [INFO]     ✓ reprocesada y subida [audevard-redplex_12.webp] en posición 12
+2026-06-08 10:53:01,546 [INFO] 
+[28/31] AUDEVARD VETIDRAL SOLUCION 1L (NDR)  (ID 15509640249731) — 12 imágenes
+2026-06-08 10:53:01,830 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:02,108 [INFO]     cargada RGB (1800, 1800) ← 1_8500783e-f26f-4c53-a228-89e68ad4f2a1.png
+2026-06-08 10:53:02,166 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:02,189 [INFO]     [autocrop] (1800, 1800) → (610, 1272)
+2026-06-08 10:53:02,189 [INFO]     [padding 5%]
+2026-06-08 10:53:05,398 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_1.webp] en posición 1
+2026-06-08 10:53:05,900 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:06,202 [INFO]     cargada RGB (1800, 1800) ← 2_d4b6efdc-3b88-4046-8caf-920ca12792a3.png
+2026-06-08 10:53:06,261 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:06,286 [INFO]     [autocrop] (1800, 1800) → (851, 1318)
+2026-06-08 10:53:06,286 [INFO]     [padding 5%]
+2026-06-08 10:53:09,393 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_2.webp] en posición 2
+2026-06-08 10:53:09,896 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:10,223 [INFO]     cargada RGB (1800, 1800) ← 3_049278e8-9abf-4dc1-8156-bc259e13de23.png
+2026-06-08 10:53:10,289 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:10,314 [INFO]     [autocrop] (1800, 1800) → (1352, 1346)
+2026-06-08 10:53:10,314 [INFO]     [padding 5%]
+2026-06-08 10:53:13,761 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_3.webp] en posición 3
+2026-06-08 10:53:14,263 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:14,593 [INFO]     cargada RGB (1800, 1800) ← 4_664f223e-53db-49bb-92bb-fb9dd6d2a820.png
+2026-06-08 10:53:14,659 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:14,684 [INFO]     [autocrop] (1800, 1800) → (1354, 1372)
+2026-06-08 10:53:14,684 [INFO]     [padding 5%]
+2026-06-08 10:53:17,944 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_4.webp] en posición 4
+2026-06-08 10:53:18,446 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:18,749 [INFO]     cargada RGB (1800, 1800) ← 5_c2cab685-eede-481c-8604-9ff12ee29d82.png
+2026-06-08 10:53:18,804 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:18,831 [INFO]     [autocrop] (1800, 1800) → (1175, 1312)
+2026-06-08 10:53:18,831 [INFO]     [padding 5%]
+2026-06-08 10:53:22,178 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_5.webp] en posición 5
+2026-06-08 10:53:22,680 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:23,071 [INFO]     cargada RGB (1800, 1800) ← 6_fff35a8a-66c7-4279-8e32-1d3a99a08f0d.png
+2026-06-08 10:53:23,131 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:23,157 [INFO]     [autocrop] (1800, 1800) → (1319, 1315)
+2026-06-08 10:53:23,157 [INFO]     [padding 5%]
+2026-06-08 10:53:26,660 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_6.webp] en posición 6
+2026-06-08 10:53:27,162 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:27,492 [INFO]     cargada RGB (1800, 1800) ← 7_21977203-9e29-431f-a053-980ca36ad67e.png
+2026-06-08 10:53:27,557 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:27,582 [INFO]     [autocrop] (1800, 1800) → (1333, 1129)
+2026-06-08 10:53:27,582 [INFO]     [padding 5%]
+2026-06-08 10:53:30,936 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_7.webp] en posición 7
+2026-06-08 10:53:31,439 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:31,713 [INFO]     cargada RGB (1800, 1800) ← 8_e271efb0-9eef-4873-aa68-7d615772a384.png
+2026-06-08 10:53:31,770 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:31,796 [INFO]     [autocrop] (1800, 1800) → (1156, 1284)
+2026-06-08 10:53:31,796 [INFO]     [padding 5%]
+2026-06-08 10:53:35,044 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_8.webp] en posición 8
+2026-06-08 10:53:35,547 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:35,935 [INFO]     cargada RGB (1800, 1800) ← 9_e2a31ee0-fefb-482c-8fc6-4767df6c6188.png
+2026-06-08 10:53:35,997 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:36,023 [INFO]     [autocrop] (1800, 1800) → (1291, 1323)
+2026-06-08 10:53:36,023 [INFO]     [padding 5%]
+2026-06-08 10:53:40,024 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_9.webp] en posición 9
+2026-06-08 10:53:40,527 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:41,064 [INFO]     cargada RGB (1800, 1800) ← 10_c2bcc88a-4ba0-4594-ad09-a7ca97a33c0c.png
+2026-06-08 10:53:41,161 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:53:41,162 [INFO]     [sin padding]
+2026-06-08 10:53:45,565 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_10.webp] en posición 10
+2026-06-08 10:53:46,068 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:46,355 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_fa9c408a-fddb-491e-af01-9c5ed851c067.png
+2026-06-08 10:53:46,406 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:46,434 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:53:46,434 [INFO]     [padding 5%]
+2026-06-08 10:53:49,862 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_11.webp] en posición 11
+2026-06-08 10:53:50,364 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:50,621 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_faee89e9-ee85-47e2-9ccb-3475149b26d9.png
+2026-06-08 10:53:50,673 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:50,697 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:53:50,697 [INFO]     [padding 5%]
+2026-06-08 10:53:53,790 [INFO]     ✓ reprocesada y subida [audevard-vetidral-solucion-1l-ndr_12.webp] en posición 12
+2026-06-08 10:53:54,596 [INFO] 
+[29/31] AUDEVARD ZZEN FLASH 60ML  (ID 15509640282499) — 10 imágenes
+2026-06-08 10:53:54,875 [INFO]   pos 1: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 2: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 3: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 4: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 5: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 6: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 7: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 8: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 9: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:54,875 [INFO]   pos 10: ya optimizada (webp 2000×2000) — omitida
+2026-06-08 10:53:55,176 [INFO] 
+[30/31] AUDEVARD ZZEN SOLUTION 1L (NDR)  (ID 15509640315267) — 10 imágenes
+2026-06-08 10:53:55,453 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:53:55,705 [INFO]     cargada RGB (1800, 1800) ← 1_98b34ebc-7fec-4cd4-85ca-19c9a67eea9b.png
+2026-06-08 10:53:55,762 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:53:55,785 [INFO]     [autocrop] (1800, 1800) → (625, 1277)
+2026-06-08 10:53:55,785 [INFO]     [padding 5%]
+2026-06-08 10:53:59,325 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_1.webp] en posición 1
+2026-06-08 10:53:59,827 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:00,114 [INFO]     cargada RGB (1800, 1800) ← 2_ed90de14-6203-464d-8e6b-83aea99403ab.png
+2026-06-08 10:54:00,172 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:00,197 [INFO]     [autocrop] (1800, 1800) → (1356, 1305)
+2026-06-08 10:54:00,198 [INFO]     [padding 5%]
+2026-06-08 10:54:03,601 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_2.webp] en posición 2
+2026-06-08 10:54:04,104 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:04,453 [INFO]     cargada RGB (1800, 1800) ← 3_c8a191df-32dc-4666-b1e4-5ccc7772ed0f.png
+2026-06-08 10:54:04,515 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:04,540 [INFO]     [autocrop] (1800, 1800) → (1359, 1369)
+2026-06-08 10:54:04,540 [INFO]     [padding 5%]
+2026-06-08 10:54:07,828 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_3.webp] en posición 3
+2026-06-08 10:54:08,330 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:08,647 [INFO]     cargada RGB (1800, 1800) ← 4_4c920248-34c5-4d57-8e2f-5c9ff3f2dd48.png
+2026-06-08 10:54:08,710 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:08,735 [INFO]     [autocrop] (1800, 1800) → (1360, 1369)
+2026-06-08 10:54:08,735 [INFO]     [padding 5%]
+2026-06-08 10:54:12,369 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_4.webp] en posición 4
+2026-06-08 10:54:12,872 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:13,194 [INFO]     cargada RGB (1800, 1800) ← 5_6cf5e896-5e36-4c7f-a774-4d00b3dd45b3.png
+2026-06-08 10:54:13,258 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:13,283 [INFO]     [autocrop] (1800, 1800) → (1268, 1240)
+2026-06-08 10:54:13,283 [INFO]     [padding 5%]
+2026-06-08 10:54:16,824 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_5.webp] en posición 5
+2026-06-08 10:54:17,327 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:17,632 [INFO]     cargada RGB (1800, 1800) ← 6_97b21b3c-4e91-4757-bc1a-9abfe1514365.png
+2026-06-08 10:54:17,687 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:17,713 [INFO]     [autocrop] (1800, 1800) → (532, 1388)
+2026-06-08 10:54:17,713 [INFO]     [padding 5%]
+2026-06-08 10:54:20,925 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_6.webp] en posición 6
+2026-06-08 10:54:21,427 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:21,750 [INFO]     cargada RGB (1800, 1800) ← 7_9554f283-9670-49da-9ae8-09911ceaf8dc.png
+2026-06-08 10:54:21,812 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:21,837 [INFO]     [autocrop] (1800, 1800) → (1246, 1324)
+2026-06-08 10:54:21,837 [INFO]     [padding 5%]
+2026-06-08 10:54:25,262 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_7.webp] en posición 7
+2026-06-08 10:54:25,765 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:26,117 [INFO]     cargada RGB (1800, 1800) ← 8_08cf944f-ba27-45f7-89a3-a8deb0bf6128.png
+2026-06-08 10:54:26,194 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:54:26,194 [INFO]     [sin padding]
+2026-06-08 10:54:29,757 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_8.webp] en posición 8
+2026-06-08 10:54:30,260 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:30,561 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_dcbb084e-1111-48c8-bd5e-1b6def03c8ab.png
+2026-06-08 10:54:30,612 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:30,639 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:54:30,640 [INFO]     [padding 5%]
+2026-06-08 10:54:33,855 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_9.webp] en posición 9
+2026-06-08 10:54:34,358 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:34,616 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_80d4c7fa-5dd0-4ad0-9eb5-de94a554d6a5.png
+2026-06-08 10:54:34,668 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:34,692 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:54:34,692 [INFO]     [padding 5%]
+2026-06-08 10:54:37,588 [INFO]     ✓ reprocesada y subida [audevard-zzen-solution-1l-ndr_10.webp] en posición 10
+2026-06-08 10:54:38,381 [INFO] 
+[31/31] GASTRIGEL 500 ML(NDR)  (ID 15509640348035) — 1 imágenes
+2026-06-08 10:54:38,671 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:54:38,978 [INFO]     cargada RGB (1800, 1800) ← GASTRIGEL500ML_NDR.png
+2026-06-08 10:54:39,036 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:54:39,058 [INFO]     [autocrop] (1800, 1800) → (893, 1240)
+2026-06-08 10:54:39,058 [INFO]     [padding 5%]
+2026-06-08 10:54:42,355 [INFO]     ✓ reprocesada y subida [gastrigel-500-ml-ndr_1.webp] en posición 1
+2026-06-08 10:54:42,857 [INFO] 
+============================================================
+2026-06-08 10:54:42,858 [INFO] RESUMEN
+2026-06-08 10:54:42,858 [INFO] ============================================================
+2026-06-08 10:54:42,858 [INFO]   productos     : 31
+2026-06-08 10:54:42,858 [INFO]   reprocesadas  : 303
+2026-06-08 10:54:42,858 [INFO]   omitidas      : 22
+2026-06-08 10:54:42,858 [INFO]   sin_imagenes  : 0
+2026-06-08 10:54:42,858 [INFO]   errores       : 0
+2026-06-08 10:54:42,858 [INFO] 
+✓ Completado
