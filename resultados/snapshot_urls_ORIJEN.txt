@@ -1,0 +1,77 @@
+2026-06-08 11:04:28,807 [INFO] ============================================================
+2026-06-08 11:04:28,807 [INFO]   Vendor   : ORIJEN
+2026-06-08 11:04:28,807 [INFO]   Modo     : SNAPSHOT-URLS
+2026-06-08 11:04:28,807 [INFO]   Pipeline : standard
+2026-06-08 11:04:28,807 [INFO]   Padding  : auto
+2026-06-08 11:04:28,807 [INFO] ============================================================
+2026-06-08 11:04:29,225 [INFO] Token obtenido
+2026-06-08 11:04:30,817 [INFO] [1/17] ORIJEN CANINE ADULT FIT&TRIM  (ID: 15510046179715)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510046179715
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-fittrim.html
+    url_fabricante_2: —
+2026-06-08 11:04:31,598 [INFO] [2/17] ORIJEN CANINE ADULT ORIGINAL  (ID: 15510046474627)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510046474627
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-original.html
+    url_fabricante_2: —
+2026-06-08 11:04:32,388 [INFO] [3/17] ORIJEN CANINE ADULT REGIONAL RED  (ID: 15510046638467)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510046638467
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/eu-ori-ns-ori-regionalred.html
+    url_fabricante_2: —
+2026-06-08 11:04:33,178 [INFO] [4/17] ORIJEN CANINE ADULT SIX FISH  (ID: 15510046048643)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510046048643
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-sixfish.html
+    url_fabricante_2: —
+2026-06-08 11:04:33,971 [INFO] [5/17] ORIJEN CANINE ADULT SMALL BREED  (ID: 15510047031683)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047031683
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-small-breed.html
+    url_fabricante_2: —
+2026-06-08 11:04:34,794 [INFO] [6/17] ORIJEN CANINE PUPPY  (ID: 15510047097219)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047097219
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-puppy.html
+    url_fabricante_2: —
+2026-06-08 11:04:35,604 [INFO] [7/17] ORIJEN CANINE PUPPY LARGE  (ID: 15510047359363)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047359363
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-puppy-large.html
+    url_fabricante_2: —
+2026-06-08 11:04:36,394 [INFO] [8/17] ORIJEN CANINE SENIOR  (ID: 15510047490435)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047490435
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-senior.html
+    url_fabricante_2: —
+2026-06-08 11:04:37,180 [INFO] [9/17] ORIJEN FELINE ADULT ORIJEN FIT TRIM  (ID: 15510047850883)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047850883
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-fittrim-cat.html
+    url_fabricante_2: —
+2026-06-08 11:04:37,950 [INFO] [10/17] ORIJEN FELINE ADULT SIX FISH  (ID: 15510047752579)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047752579
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-sixfish-cat.html
+    url_fabricante_2: —
+2026-06-08 11:04:38,745 [INFO] [11/17] ORIJEN FELINE GUARDIAN 8  (ID: 15510047949187)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047949187
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-guardian-8.html
+    url_fabricante_2: —
+2026-06-08 11:04:39,531 [INFO] [12/17] ORIJEN FELINE KITTEN 1,8KG  (ID: 15510047981955)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510047981955
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-kitten.html
+    url_fabricante_2: —
+2026-06-08 11:04:40,352 [INFO] [13/17] ORIJEN FELINE ORIGINAL CAT 340GR  (ID: 15510048080259)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510048080259
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-catkitten.html
+    url_fabricante_2: —
+2026-06-08 11:04:41,154 [INFO] [14/17] ORIJEN FELINE REGIONAL RED  (ID: 15510048211331)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510048211331
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-regionalred-cat.html
+    url_fabricante_2: —
+2026-06-08 11:04:41,979 [INFO] [15/17] ORIJEN ORIGINAL CAT  (ID: 15510048342403)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510048342403
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-catkitten.html
+    url_fabricante_2: —
+2026-06-08 11:04:42,811 [INFO] [16/17] ORIJEN PUPPY SMALL 4.5 KG  (ID: 15510048506243)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510048506243
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-small-breed-puppy.html
+    url_fabricante_2: —
+2026-06-08 11:04:43,589 [INFO] [17/17] ORIJEN SIX FISH CAT 340 GR  (ID: 15510046015875)
+    https://admin.shopify.com/store/7ev1zx-eg/products/15510046015875
+    url_fabricante  : https://emea.orijenpetfoods.com/es-ES/cats/cat-food/eu-ori-ns-ori-sixfish-cat.html
+    url_fabricante_2: —
+2026-06-08 11:04:43,790 [INFO] 
+Snapshot guardado: resultados/orijen_urls_snapshot.json (17 productos, 17 con url_fabricante, 0 con url_fabricante_2)
