@@ -1,9 +1,8 @@
-2026-06-08 11:03:29,441 [INFO] ============================================================
-2026-06-08 11:03:29,441 [INFO]   Vendor   : ORIJEN
-2026-06-08 11:03:29,441 [INFO]   Modo     : WEB_OFICIAL
-2026-06-08 11:03:29,441 [INFO]   Pipeline : standard
-2026-06-08 11:03:29,441 [INFO]   Padding  : auto
-2026-06-08 11:03:29,441 [INFO]   Web    : https://emea.orijenpetfoods.com/es-ES/dogs/dog-food/eu-ori-ns-ori-small-breed.html
-2026-06-08 11:03:29,441 [INFO] ============================================================
-2026-06-08 11:03:29,761 [INFO] Token obtenido
-2026-06-08 11:03:29,762 [ERROR] No existe scraper para 'ORIJEN'. Crea marcas/orijen.py con scrape_catalog() y find_best_match().
+2026-06-08 11:07:40,589 [INFO] ============================================================
+2026-06-08 11:07:40,589 [INFO]   Vendor   : ORIJEN
+2026-06-08 11:07:40,589 [INFO]   Modo     : SHOPIFY_BACKUP
+2026-06-08 11:07:40,589 [INFO]   Pipeline : standard
+2026-06-08 11:07:40,589 [INFO]   Padding  : auto
+2026-06-08 11:07:40,589 [INFO] ============================================================
+2026-06-08 11:07:41,005 [INFO] Token obtenido
+2026-06-08 11:07:41,005 [ERROR] No existe backup para 'ORIJEN'. Ejecuta primero 'Backup imágenes de marca'.
