@@ -1,0 +1,74 @@
+2026-06-08 10:24:34,074 [INFO] ============================================================
+2026-06-08 10:24:34,074 [INFO]   Vendor    : AUDEVARD
+2026-06-08 10:24:34,074 [INFO]   Modo      : ESCANEO PRODUCTO
+2026-06-08 10:24:34,074 [INFO]   Pipeline  : standard
+2026-06-08 10:24:34,074 [INFO]   Padding   : auto
+2026-06-08 10:24:34,074 [INFO]   sRGB      : no
+2026-06-08 10:24:34,074 [INFO] ============================================================
+2026-06-08 10:24:35,192 [INFO] [15509640282499] AUDEVARD ZZEN FLASH 60ML — 10 imágenes
+2026-06-08 10:24:35,502 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:35,731 [INFO]     cargada RGB (1800, 1800) ← 1_3a727708-ec0c-4b81-8ffb-1cdaa2e7b3d3.png
+2026-06-08 10:24:35,773 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:35,799 [INFO]     [autocrop] (1800, 1800) → (1588, 421)
+2026-06-08 10:24:35,799 [INFO]     [padding 5%]
+2026-06-08 10:24:39,004 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_1.webp] en posición 1
+2026-06-08 10:24:39,505 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:39,751 [INFO]     cargada RGB (1800, 1800) ← 2_bb354df0-a6ee-44f8-a348-a5341a43c6d8.png
+2026-06-08 10:24:39,804 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:39,832 [INFO]     [autocrop] (1800, 1800) → (1274, 1234)
+2026-06-08 10:24:39,832 [INFO]     [padding 5%]
+2026-06-08 10:24:43,128 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_2.webp] en posición 2
+2026-06-08 10:24:43,630 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:43,830 [INFO]     cargada RGB (1800, 1800) ← 3_e8f6ba06-62f0-4307-8e3e-8c02a772e4f6.png
+2026-06-08 10:24:43,899 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:43,926 [INFO]     [autocrop] (1800, 1800) → (1353, 1343)
+2026-06-08 10:24:43,926 [INFO]     [padding 5%]
+2026-06-08 10:24:47,301 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_3.webp] en posición 3
+2026-06-08 10:24:47,803 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:47,988 [INFO]     cargada RGB (1800, 1800) ← 4_c2828935-18fb-4a38-a7ea-5de9cd87d73f.png
+2026-06-08 10:24:48,052 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:48,079 [INFO]     [autocrop] (1800, 1800) → (1354, 1352)
+2026-06-08 10:24:48,080 [INFO]     [padding 5%]
+2026-06-08 10:24:51,496 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_4.webp] en posición 4
+2026-06-08 10:24:51,998 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:52,168 [INFO]     cargada RGB (1800, 1800) ← 5_f944fc40-64be-4ed7-9e41-cfb81a5619c8.png
+2026-06-08 10:24:52,216 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:52,244 [INFO]     [autocrop] (1800, 1800) → (1272, 1236)
+2026-06-08 10:24:52,244 [INFO]     [padding 5%]
+2026-06-08 10:24:55,407 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_5.webp] en posición 5
+2026-06-08 10:24:55,909 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:24:56,090 [INFO]     cargada RGB (1800, 1800) ← 6_f4da7a35-16ca-413a-b620-a0bf28a62b57.png
+2026-06-08 10:24:56,147 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:24:56,176 [INFO]     [autocrop] (1800, 1800) → (1330, 1270)
+2026-06-08 10:24:56,176 [INFO]     [padding 5%]
+2026-06-08 10:24:59,574 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_6.webp] en posición 6
+2026-06-08 10:25:00,075 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:25:00,264 [INFO]     cargada RGB (1800, 1800) ← 7_126d01e2-4bc9-4247-912a-4ce4e09f9a35.png
+2026-06-08 10:25:00,313 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:25:00,337 [INFO]     [autocrop] (1800, 1800) → (901, 1281)
+2026-06-08 10:25:00,337 [INFO]     [padding 5%]
+2026-06-08 10:25:03,287 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_7.webp] en posición 7
+2026-06-08 10:25:03,789 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:25:04,020 [INFO]     cargada RGB (1800, 1800) ← 8_5565e585-71f8-439f-b390-34ca344ed284.png
+2026-06-08 10:25:04,077 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:25:04,105 [INFO]     [autocrop] (1800, 1800) → (1261, 1264)
+2026-06-08 10:25:04,105 [INFO]     [padding 5%]
+2026-06-08 10:25:07,594 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_8.webp] en posición 8
+2026-06-08 10:25:08,096 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:25:08,282 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_6e2cacf0-bd3a-485d-81e5-b9651f9eedf1.png
+2026-06-08 10:25:08,330 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:25:08,359 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:25:08,359 [INFO]     [padding 5%]
+2026-06-08 10:25:12,014 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_9.webp] en posición 9
+2026-06-08 10:25:12,515 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:25:12,673 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_bc454d42-d95d-4fa2-9343-6843d09c9a60.png
+2026-06-08 10:25:12,721 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:25:12,746 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:25:12,746 [INFO]     [padding 5%]
+2026-06-08 10:25:15,768 [INFO]     ✓ reprocesada y subida [audevard-zzen-flash-60ml_10.webp] en posición 10
+2026-06-08 10:25:16,270 [INFO] ============================================================
+2026-06-08 10:25:16,270 [INFO]   reprocesadas  : 10
+2026-06-08 10:25:16,270 [INFO]   omitidas      : 0
+2026-06-08 10:25:16,270 [INFO]   errores       : 0
+2026-06-08 10:25:16,270 [INFO] 
+✓ Completado
