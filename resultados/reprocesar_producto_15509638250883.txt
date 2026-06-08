@@ -1,0 +1,85 @@
+2026-06-08 10:28:43,857 [INFO] ============================================================
+2026-06-08 10:28:43,858 [INFO]   Vendor    : AUDEVARD
+2026-06-08 10:28:43,858 [INFO]   Modo      : ESCANEO PRODUCTO
+2026-06-08 10:28:43,858 [INFO]   Pipeline  : standard
+2026-06-08 10:28:43,858 [INFO]   Padding   : auto
+2026-06-08 10:28:43,858 [INFO]   sRGB      : no
+2026-06-08 10:28:43,858 [INFO] ============================================================
+2026-06-08 10:28:44,641 [INFO] [15509638250883] AUDEVARD BO YEAS ACT ULTRA (NDR) — 12 imágenes
+2026-06-08 10:28:44,845 [INFO]   pos 1: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:28:44,940 [INFO]     cargada RGB (1800, 1800) ← 1_1d137b4d-6b87-4ae0-9db7-c7013bde4f81.png
+2026-06-08 10:28:45,007 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:28:45,032 [INFO]     [autocrop] (1800, 1800) → (1481, 1272)
+2026-06-08 10:28:45,033 [INFO]     [padding 5%]
+2026-06-08 10:28:48,676 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_1.webp] en posición 1
+2026-06-08 10:28:49,178 [INFO]   pos 2: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:28:49,245 [INFO]     cargada RGB (1800, 1800) ← 2_0af2680e-14d1-4491-9f48-0169410e1cef.png
+2026-06-08 10:28:49,306 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:28:49,332 [INFO]     [autocrop] (1800, 1800) → (1187, 1217)
+2026-06-08 10:28:49,332 [INFO]     [padding 5%]
+2026-06-08 10:28:53,548 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_2.webp] en posición 2
+2026-06-08 10:28:54,051 [INFO]   pos 3: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:28:54,110 [INFO]     cargada RGB (1800, 1800) ← 3_425b5c9b-f66e-41de-b445-10cbf7be0735.png
+2026-06-08 10:28:54,175 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:28:54,201 [INFO]     [autocrop] (1800, 1800) → (1352, 1371)
+2026-06-08 10:28:54,201 [INFO]     [padding 5%]
+2026-06-08 10:28:58,254 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_3.webp] en posición 3
+2026-06-08 10:28:58,757 [INFO]   pos 4: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:28:58,816 [INFO]     cargada RGB (1800, 1800) ← 4_102b2f2d-8f07-420b-8799-e19f2c49bfb7.png
+2026-06-08 10:28:58,866 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:28:58,894 [INFO]     [autocrop] (1800, 1800) → (1274, 1219)
+2026-06-08 10:28:58,894 [INFO]     [padding 5%]
+2026-06-08 10:29:02,100 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_4.webp] en posición 4
+2026-06-08 10:29:02,603 [INFO]   pos 5: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:02,668 [INFO]     cargada RGB (1800, 1800) ← 5_dac741ff-b29b-42ca-a051-bff65e70c3cf.png
+2026-06-08 10:29:02,728 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:02,755 [INFO]     [autocrop] (1800, 1800) → (1270, 1311)
+2026-06-08 10:29:02,755 [INFO]     [padding 5%]
+2026-06-08 10:29:07,092 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_5.webp] en posición 5
+2026-06-08 10:29:07,595 [INFO]   pos 6: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:07,654 [INFO]     cargada RGB (1800, 1800) ← 6_22cef353-5ec8-4c2e-b572-464db6b0c883.png
+2026-06-08 10:29:07,715 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:07,744 [INFO]     [autocrop] (1800, 1800) → (1347, 1150)
+2026-06-08 10:29:07,744 [INFO]     [padding 5%]
+2026-06-08 10:29:10,827 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_6.webp] en posición 6
+2026-06-08 10:29:11,329 [INFO]   pos 7: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:11,389 [INFO]     cargada RGB (1800, 1800) ← 7_763b6533-34ff-4da0-9964-fdf1eee51758.png
+2026-06-08 10:29:11,447 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:11,473 [INFO]     [autocrop] (1800, 1800) → (1355, 1294)
+2026-06-08 10:29:11,473 [INFO]     [padding 5%]
+2026-06-08 10:29:14,644 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_7.webp] en posición 7
+2026-06-08 10:29:15,147 [INFO]   pos 8: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:15,242 [INFO]     cargada RGB (1800, 1800) ← 8_7ec1602b-1523-4f67-816d-4e59655ab0b4.png
+2026-06-08 10:29:15,303 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:15,329 [INFO]     [autocrop] (1800, 1800) → (1254, 1261)
+2026-06-08 10:29:15,329 [INFO]     [padding 5%]
+2026-06-08 10:29:18,761 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_8.webp] en posición 8
+2026-06-08 10:29:19,264 [INFO]   pos 9: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:19,320 [INFO]     cargada RGB (1800, 1800) ← 9_5ca1febe-e906-4071-beef-c3849b78825b.png
+2026-06-08 10:29:19,378 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:19,402 [INFO]     [autocrop] (1800, 1800) → (1095, 1096)
+2026-06-08 10:29:19,402 [INFO]     [padding 5%]
+2026-06-08 10:29:22,635 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_9.webp] en posición 9
+2026-06-08 10:29:23,137 [INFO]   pos 10: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:23,210 [INFO]     cargada RGB (1800, 1800) ← 10_e8ee3783-f9e9-471a-8b54-f7f997a3da1e.png
+2026-06-08 10:29:23,303 [INFO]     [bg] 0/8100 (0%)
+2026-06-08 10:29:23,303 [INFO]     [sin padding]
+2026-06-08 10:29:26,628 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_10.webp] en posición 10
+2026-06-08 10:29:27,130 [INFO]   pos 11: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:27,191 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_004af88f-cb0c-4969-ac8b-271915bc8ff2.png
+2026-06-08 10:29:27,242 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:27,269 [INFO]     [autocrop] (1800, 1800) → (1149, 1117)
+2026-06-08 10:29:27,269 [INFO]     [padding 5%]
+2026-06-08 10:29:30,158 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_11.webp] en posición 11
+2026-06-08 10:29:30,661 [INFO]   pos 12: NO optimizada (png 1800×1800) — reprocesando
+2026-06-08 10:29:30,721 [INFO]     cargada RGB (1800, 1800) ← AUDEVARDIMMUNORS_NDR_1_ca564bb5-3ba9-4e3a-8010-f2b9f1967ecd.png
+2026-06-08 10:29:30,771 [INFO]     [bg] 8100/8100 (100%)
+2026-06-08 10:29:30,795 [INFO]     [autocrop] (1800, 1800) → (1298, 750)
+2026-06-08 10:29:30,795 [INFO]     [padding 5%]
+2026-06-08 10:29:33,503 [INFO]     ✓ reprocesada y subida [audevard-bo-yeas-act-ultra-ndr_12.webp] en posición 12
+2026-06-08 10:29:34,005 [INFO] ============================================================
+2026-06-08 10:29:34,005 [INFO]   reprocesadas  : 12
+2026-06-08 10:29:34,005 [INFO]   omitidas      : 0
+2026-06-08 10:29:34,005 [INFO]   errores       : 0
+2026-06-08 10:29:34,006 [INFO] 
+✓ Completado
